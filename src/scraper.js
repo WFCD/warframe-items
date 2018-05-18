@@ -73,6 +73,17 @@ class Scraper {
         obj.isArchwing = true
       }
 
+      // Use `name` and `uniqueName` keys for abilities as well.
+      if (obj.abilities) {
+        obj.abilities = obj.abilities.map(a => {
+          return {
+            uniqueName: a.abilityUniqueName,
+            name: a.abilityName,
+            description: a.description
+          }
+        })
+      }
+
       // Set other all-caps values to lowercase
       if (obj.trigger) obj.trigger = obj.trigger.toLowerCase()
       if (obj.noise) obj.noise = obj.noise.toLowerCase()
