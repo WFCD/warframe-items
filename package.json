@@ -1,0 +1,36 @@
+{
+  "name": "warframe-items",
+  "version": "0.0.0",
+  "description": "Get all warframe items directly from Warframe's API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "store": "node ./build/store.js",
+    "test": "mocha",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wfcd/warframe-item-scraper.git"
+  },
+  "author": "Kaptard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wfcd/warframe-item-scraper/issues"
+  },
+  "homepage": "https://github.com/wfcd/warframe-item-scraper#readme",
+  "dependencies": {
+    "dirty-json": "^0.6.0",
+    "request": "^2.86.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "mocha": "^5.1.1"
+  }
+}
