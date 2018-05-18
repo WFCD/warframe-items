@@ -1,7 +1,7 @@
 const scraper = require('./src/scraper.js')
 
 class Items extends Array {
-  constructor(options, ...items) {
+  constructor (options, ...items) {
     super(...items)
 
     // Merge provided options with defaults
@@ -12,7 +12,7 @@ class Items extends Array {
 
     // Add items from options to array. Type equals the file name.
     // Tradable determines if we should use sub-folder or stay on root.
-    const tradable = this.options.tradable ? 'tradable/' : ( this.options.tradable === false ? 'non-tradable/' : '' )
+    const tradable = this.options.tradable ? 'tradable/' : (this.options.tradable === false ? 'non-tradable/' : '')
     const generated = require(`./data/json/${tradable}/${this.options.type}.json`)
     for (let item of generated) {
       this.push(item)
@@ -27,9 +27,9 @@ class Items extends Array {
 
     // Fetch single type or all
     if (this.options.type === 'All') {
-      items = scraper.fetchAll(this.options.tradable)
+      updated = scraper.fetchAll(this.options.tradable)
     } else {
-      items = scraper.fetch(this.options.type, this.options.tradable)
+      updated = scraper.fetch(this.options.type, this.options.tradable)
     }
 
     // Clear current array and add new items
