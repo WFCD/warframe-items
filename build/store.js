@@ -20,14 +20,14 @@ class Store {
 
       // Hashed data
       var { all, tradable, untradable } = await this.fetch(name, true)
-      this.write(`${name}-lock.json`, all, tradable, untradable)
+      this.write(`.${name}.json`, all, tradable, untradable)
     }
 
     // Get all.json
     var { all, tradable, untradable } = await this.fetch('All')
     this.write('All.json', all, tradable, untradable)
     var { all, tradable, untradable } = await this.fetch('All', true)
-    this.write('All-lock.json', all, tradable, untradable)
+    this.write('.All.json', all, tradable, untradable)
   }
 
   async fetch (name, hash) {

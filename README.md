@@ -36,10 +36,8 @@ allows you to add your own items before our gathered ones.
 <br>
 
 ### Pre-compiled data
-You can find all automatically compiled data in `/data/json`. File names ending in
-`-lock` include the item's `contentHash`, `dropRateHash` and `imageHash`. These
-values are used to figure out which items need updating but don't matter much
-otherwise.
+You can find all automatically compiled data in `/data/json`. Images are stored
+in `/data/img`.
 
 <br>
 
