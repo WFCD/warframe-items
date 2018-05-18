@@ -53,9 +53,16 @@ class Scraper {
    * management.
    */
   filter (data, tradable, hash) {
-    for (let obj of data) {
-      // Add hash to check if udpates are necessary
-      if (hash) obj.contentHash = this.hash(JSON.stringify(obj))
+    for (let i = 0; i < data.length; i++) {
+      let obj = data[i]
+
+      // Add hash to check if udpates are necessary, don't keep any other data
+      if (hash) {
+        data[i] = {
+          uniqueName: obj.uniqueName,
+          contentHash: this.hash(JSON.stringify(obj))
+        }
+      }
 
       // Capitalize item names which are usually all uppercase
       if (obj.name) obj.name = obj.name.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
