@@ -1,5 +1,5 @@
 /**
- * Store all items locally by default. The entrypoint can then pick those up
+ * Update all items locally by default. The entrypoint can then pick those up
  * immediately without fetching them. This storing process is automated by the
  * docker image.
  */
@@ -7,7 +7,7 @@ const scraper = require('../src/scraper.js')
 const fs = require('fs')
 
 /* eslint no-redeclare: "off" */
-class Store {
+class Update {
   async save () {
     // Get individual items
     for (let endpoint of scraper.endpoints) {
@@ -51,5 +51,5 @@ class Store {
   }
 }
 
-const store = new Store()
-store.save()
+const update = new Update()
+update.save()

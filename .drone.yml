@@ -11,3 +11,12 @@ pipeline:
     image: node
     commands:
       - npm test
+  publish:
+    image: node
+    commands:
+      - git fetch --tags --quiet origin
+      - npx semantic-release
+    secrets: [ gh_token, npm_token ]
+    when:
+      branch: master
+      event: [ push ]
