@@ -17,7 +17,7 @@ npm install warframe-items
 <br>
 
 ### Usage
-```
+```js
 const Items = require('warframe-items')
 const items = new Items(options, ...items)
 ```
