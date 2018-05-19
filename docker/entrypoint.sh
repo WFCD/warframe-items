@@ -1,9 +1,9 @@
 #!/bin/sh
 cd /app/warframe-items
 
-while : ; then
+while : ; do
   # Run update function. This will only update files if necessary.
-  npm run update
+  npm run watchdog
 
   # If files have changed, push updates to repo. From there, the ci pipeline will
   # handle the rest.

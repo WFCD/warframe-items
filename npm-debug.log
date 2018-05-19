@@ -1,18 +1,18 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'store' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'update' ]
 2 info using npm@3.10.10
 3 info using node@v6.9.5
-4 verbose run-script [ 'prestore', 'store', 'poststore' ]
-5 info lifecycle warframe-items@0.0.0~prestore: warframe-items@0.0.0
-6 silly lifecycle warframe-items@0.0.0~prestore: no script for prestore, continuing
-7 info lifecycle warframe-items@0.0.0~store: warframe-items@0.0.0
-8 verbose lifecycle warframe-items@0.0.0~store: unsafe-perm in lifecycle true
-9 verbose lifecycle warframe-items@0.0.0~store: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/mnt/d/dev/projects/warframe/warframe-items/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/mnt/c/Program\ Files/Docker/Docker/resources/bin
-10 verbose lifecycle warframe-items@0.0.0~store: CWD: /mnt/d/dev/projects/warframe/warframe-items
-11 silly lifecycle warframe-items@0.0.0~store: Args: [ '-c', 'node ./build/store.js' ]
-12 silly lifecycle warframe-items@0.0.0~store: Returned: code: 1  signal: null
-13 info lifecycle warframe-items@0.0.0~store: Failed to exec store script
-14 verbose stack Error: warframe-items@0.0.0 store: `node ./build/store.js`
+4 verbose run-script [ 'preupdate', 'update', 'postupdate' ]
+5 info lifecycle warframe-items@0.0.0-development~preupdate: warframe-items@0.0.0-development
+6 silly lifecycle warframe-items@0.0.0-development~preupdate: no script for preupdate, continuing
+7 info lifecycle warframe-items@0.0.0-development~update: warframe-items@0.0.0-development
+8 verbose lifecycle warframe-items@0.0.0-development~update: unsafe-perm in lifecycle true
+9 verbose lifecycle warframe-items@0.0.0-development~update: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/mnt/d/dev/projects/warframe/warframe-items/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/mnt/c/Program\ Files/Docker/Docker/resources/bin
+10 verbose lifecycle warframe-items@0.0.0-development~update: CWD: /mnt/d/dev/projects/warframe/warframe-items
+11 silly lifecycle warframe-items@0.0.0-development~update: Args: [ '-c', 'node ./build/update.js' ]
+12 silly lifecycle warframe-items@0.0.0-development~update: Returned: code: 1  signal: null
+13 info lifecycle warframe-items@0.0.0-development~update: Failed to exec update script
+14 verbose stack Error: warframe-items@0.0.0-development update: `node ./build/update.js`
 14 verbose stack Exit status 1
 14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
 14 verbose stack     at emitTwo (events.js:106:13)
@@ -22,21 +22,21 @@
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
 14 verbose stack     at maybeClose (internal/child_process.js:877:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
-15 verbose pkgid warframe-items@0.0.0
+15 verbose pkgid warframe-items@0.0.0-development
 16 verbose cwd /mnt/d/dev/projects/warframe/warframe-items
 17 error Linux 4.4.0-43-Microsoft
-18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "store"
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "update"
 19 error node v6.9.5
 20 error npm  v3.10.10
 21 error code ELIFECYCLE
-22 error warframe-items@0.0.0 store: `node ./build/store.js`
+22 error warframe-items@0.0.0-development update: `node ./build/update.js`
 22 error Exit status 1
-23 error Failed at the warframe-items@0.0.0 store script 'node ./build/store.js'.
+23 error Failed at the warframe-items@0.0.0-development update script 'node ./build/update.js'.
 23 error Make sure you have the latest version of node.js and npm installed.
 23 error If you do, this is most likely a problem with the warframe-items package,
 23 error not with npm itself.
 23 error Tell the author that this fails on your system:
-23 error     node ./build/store.js
+23 error     node ./build/update.js
 23 error You can get information on how to open an issue for this project with:
 23 error     npm bugs warframe-items
 23 error Or if that isn't available, you can get their info via:
