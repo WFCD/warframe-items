@@ -17,4 +17,4 @@ RUN apk del make gcc g++ python \
 
 # Entry point for starting the app
 COPY entrypoint.sh /
-ENTRYPOINT [ "/entrypoint.sh" ]
+CMD [ "bash", "/entrypoint.sh" ]
