@@ -25,7 +25,7 @@ while : ; do
     # Stage changes
     git stash pop
     git add .
-    git commit -m "fix: Add new items for $date."
+    git commit -m "feat(items): Add new items for $date."
 
     # Push
     git push "https://nexus-ci:"$gh_token"@github.com/nexus-devs/warframe-items"
