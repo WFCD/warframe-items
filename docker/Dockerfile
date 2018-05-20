@@ -1,7 +1,7 @@
 FROM node:alpine
 
 # Build deps
-RUN apk add --update --no-cache git openssh make gcc g++ python curl libpng-dev bash \
+RUN apk add --update --no-cache git openssh make gcc g++ python curl libpng-dev bash iproute2 \
   && npm install node-gyp -g
 
 # Clone repo
