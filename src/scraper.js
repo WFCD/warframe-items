@@ -43,81 +43,118 @@ class Scraper {
     const url = this.endpoints.find(e => e.includes(type))
     const res = await request.get(url)
     const sanitized = res.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
-    const data = JSON.parse(sanitized)[`Export${type}`]
+    const items = JSON.parse(sanitized)[`Export${type}`]
 
-    return this.filter(data, tradable, hash)
+    return this.filter(items, tradable, hash)
   }
 
   /**
    * Add, modify, remove certain keys as I deem sensible. Complaints go to
    * management.
    */
-  filter (data, tradable, hash) {
-    for (let i = 0; i < data.length; i++) {
-      let obj = data[i]
+  filter (items, tradable, hash) {
+    // Filter individual items
+    for (let i = 0; i < items.length; i++) {
+      let item = items[i]
 
       // Add hash to check if udpates are necessary, don't keep any other data
       if (hash) {
-        data[i] = {
-          uniqueName: obj.uniqueName,
-          contentHash: this.hash(JSON.stringify(obj))
+        items[i] = {
+          uniqueName: item.uniqueName,
+          contentHash: this.hash(JSON.stringify(item))
         }
       }
-
-      // Capitalize item names which are usually all uppercase
-      if (obj.name) obj.name = obj.name.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
-
-      // Remove <Archwing> from archwing names, add archwing key instead
-      if (obj.name && obj.name.includes('<Archwing>')) {
-        obj.name = obj.name.replace(/<Archwing> /, '')
-        obj.isArchwing = true
-      }
-
-      // Use `name` and `uniqueName` keys for abilities as well.
-      if (obj.abilities) {
-        obj.abilities = obj.abilities.map(a => {
-          return {
-            uniqueName: a.abilityUniqueName,
-            name: a.abilityName,
-            description: a.description
-          }
-        })
-      }
-
-      // Set other all-caps values to lowercase
-      if (obj.trigger) obj.trigger = obj.trigger.toLowerCase()
-      if (obj.noise) obj.noise = obj.noise.toLowerCase()
-      if (obj.type) obj.type = obj.type.toLowerCase()
-      if (obj.rarity) obj.rarity = obj.rarity.toLowerCase()
-
-      // Make descriptions a string, not array
-      if (obj.description && obj.description instanceof Array) obj.description = obj.description.join()
-
-      // Use proper polarity names
-      switch (obj.polarity) {
-        case 'AP_DEFENSE':
-          obj.polarity = 'vazarin'
-          break
-        case 'AP_TACTIC':
-          obj.polarity = 'naramon'
-          break
-        case 'AP_ATTACK':
-          obj.polarity = 'madurai'
-          break
-        case 'AP_POWER':
-          obj.polarity = 'zenurik'
-          break
-        case 'AP_WARD':
-          obj.polarity = 'unairu'
-      }
-
-      // Remove keys that only increase output size.
-      delete obj.codexSecret
-      delete obj.longDescription
-      delete obj.parentName
-      delete obj.relicRewards // We'll fetch the official drop data for this
+      this.addType(item)
+      this.sanitize(item)
     }
-    return data
+    return items
+  }
+
+  /**
+   * Remove unnecessary values, use consistent string casing, clarify some
+   * obscure conventions.
+   */
+  sanitize (item) {
+    // Capitalize item names which are usually all uppercase
+    if (item.name) item.name = item.name.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+    if (item.type) item.type = item.type.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+
+    // Remove <Archwing> from archwing names, add archwing key instead
+    if (item.name && item.name.includes('<Archwing>')) {
+      item.name = item.name.replace(/<Archwing> /, '')
+      item.isArchwing = true
+    }
+
+    // Use `name` key for abilities as well.
+    if (item.abilities) {
+      item.abilities = item.abilities.map(a => {
+        return {
+          name: a.abilityName,
+          description: a.description
+        }
+      })
+    }
+
+    // Set other all-caps values to lowercase
+    if (item.trigger) item.trigger = item.trigger.toLowerCase()
+    if (item.noise) item.noise = item.noise.toLowerCase()
+    if (item.type) item.type = item.type.toLowerCase()
+    if (item.rarity) item.rarity = item.rarity.toLowerCase()
+
+    // Make descriptions a string, not array
+    if (item.description && item.description instanceof Array) item.description = item.description.join()
+
+    // Use proper polarity names
+    switch (item.polarity) {
+      case 'AP_DEFENSE':
+        item.polarity = 'vazarin'
+        break
+      case 'AP_TACTIC':
+        item.polarity = 'naramon'
+        break
+      case 'AP_ATTACK':
+        item.polarity = 'madurai'
+        break
+      case 'AP_POWER':
+        item.polarity = 'zenurik'
+        break
+      case 'AP_WARD':
+        item.polarity = 'unairu'
+    }
+
+    // Remove keys that only increase output size.
+    delete item.codexSecret
+    delete item.longDescription
+    delete item.parentName
+    delete item.relicRewards // We'll fetch the official drop data for this
+    delete item.subtype
+    delete item.uniqueName
+  }
+
+  /**
+   * Add item type. Stuff like warframe, archwing, polearm, dagger, etc.
+   * Most types can be found in the uniqueName key. If present, just assign it
+   * as the type. Note that whatever key is found first 'wins'. For example
+   * Archwings are saved as /Lotus/Powersuits/Archwing/*, while Warframes are
+   * saved as /Lotus/Powersuits/*, meaning that Archwing has to be looked for
+   * first, otherwise it would consider it a Warframe.
+   */
+  addType (item) {
+    // Keep existing types. Mods have this for instance.
+    if (item.type) {
+      return
+    }
+
+    const types = require('../config/types.json')
+    for (let type of types) {
+      if (item.uniqueName.includes(`/${type.id}`)) {
+        item.type = type.name
+      }
+    }
+    // No type assigned? Add 'Special'.
+    if (!item.type) {
+      item.type = 'Special'
+    }
   }
 }
 
