@@ -5,6 +5,7 @@
  */
 const scraper = require('../src/scraper.js')
 const fs = require('fs')
+const stringify = require('./stringify.js')
 
 /* eslint no-redeclare: "off" */
 class Update {
@@ -45,9 +46,9 @@ class Update {
   }
 
   write (filename, all, tradable, untradable) {
-    fs.writeFileSync(`${__dirname}/../data/json/${filename}`, JSON.stringify(all, null, 1))
-    fs.writeFileSync(`${__dirname}/../data/json/tradable/${filename}`, JSON.stringify(tradable, null, 1))
-    fs.writeFileSync(`${__dirname}/../data/json/untradable/${filename}`, JSON.stringify(untradable, null, 1))
+    fs.writeFileSync(`${__dirname}/../data/json/${filename}`, stringify(all))
+    fs.writeFileSync(`${__dirname}/../data/json/tradable/${filename}`, stringify(tradable))
+    fs.writeFileSync(`${__dirname}/../data/json/untradable/${filename}`, stringify(untradable))
   }
 }
 
