@@ -56,7 +56,7 @@ class Scraper {
   async filter (items, tradable, hash, resourceExports) {
     // Delete components if included in item list. We'll assign them to the
     // parent directly.
-    this.removeComponents(items)
+    items = this.removeComponents(items)
 
     // Filter individual items
     for (let i = 0; i < items.length; i++) {
@@ -81,13 +81,14 @@ class Scraper {
    * working to unite families here at nexus :^)
    */
   removeComponents (items) {
-    for (let i = 0; i < items.length; i++) {
-      const item = items[i]
+    const result = []
 
-      if (item.uniqueName.includes('/Recipes')) {
-        items.splice(i, 1)
+    for (let item of items) {
+      if (!item.uniqueName.includes('/Recipes') && item.name) {
+        result.push(item)
       }
     }
+    return result
   }
 
   /**
