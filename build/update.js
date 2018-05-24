@@ -45,9 +45,9 @@ class Update {
   }
 
   write (filename, all, tradable, untradable) {
-    fs.writeFileSync(`${__dirname}/../data/json/${filename}`, JSON.stringify(all))
-    fs.writeFileSync(`${__dirname}/../data/json/tradable/${filename}`, JSON.stringify(tradable))
-    fs.writeFileSync(`${__dirname}/../data/json/untradable/${filename}`, JSON.stringify(untradable))
+    fs.writeFileSync(`${__dirname}/../data/json/${filename}`, JSON.stringify(all, null, 1))
+    fs.writeFileSync(`${__dirname}/../data/json/tradable/${filename}`, JSON.stringify(tradable, null, 1))
+    fs.writeFileSync(`${__dirname}/../data/json/untradable/${filename}`, JSON.stringify(untradable, null, 1))
   }
 }
 
