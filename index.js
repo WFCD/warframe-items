@@ -11,7 +11,7 @@ class Items extends Array {
     // Add items from options to array. Type equals the file name.
     // Tradable determines if we should use sub-folder or stay on root.
     const tradable = this.options.tradable ? 'tradable/' : (this.options.tradable === false ? 'non-tradable/' : '')
-    const generated = require(`./data/json/${tradable}/${this.options.type}.json`)
+    const generated = require(`./data/json/${tradable}/${this.options.category}.json`)
     for (let item of generated) {
       this.push(item)
     }
