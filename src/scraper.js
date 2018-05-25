@@ -320,12 +320,12 @@ class Scraper {
     if (type === 'Sentinels') item.category = 'Sentinels'
     if (type === 'Upgrades') item.category = 'Mods'
     if (type === 'Warframes') {
-      if (item.isArchwing) item.category = 'Archwings'
+      if (item.isArchwing) item.category = 'Archwing'
       else item.category = 'Warframes'
       delete item.isArchwing
     }
     if (type === 'Weapons') {
-      if (item.isArchwing) item.category = 'Archwings'
+      if (item.isArchwing) item.category = 'Archwing'
       else if (item.slot === 5) item.category = 'Melee'
       else if (item.slot === 0) item.category = 'Secondary'
       else if (item.slot === 1) item.category = 'Primary'
