@@ -4,7 +4,7 @@ class Items extends Array {
 
     // Merge provided options with defaults
     this.options = Object.assign({
-      type: 'All',
+      category: 'All',
       tradable: null
     }, options)
 

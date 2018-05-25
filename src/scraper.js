@@ -1,6 +1,6 @@
 const request = require('request-promise')
-const crypto = require('crypto')
 const cheerio = require('cheerio')
+const _ = require('lodash')
 
 // Capitaliz each word. No idea why this isn't a js standard yet.
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
@@ -27,28 +27,25 @@ class Scraper {
   }
 
   /**
-   * Utility function for content hashes
-   */
-  hash (value) {
-    return crypto.createHash('md5').update(value).digest('hex')
-  }
-
-  /**
    * Generate All.json data
    */
-  async fetchAll (tradable, hash) {
-    const items = await Promise.all(this.endpoints.map(async e => {
+  async fetchAll (tradable) {
+    let data = {}
+
+    await Promise.all(this.endpoints.map(async e => {
       const type = e.split('/').slice(-1)[0].replace('Export', '').replace('.json', '')
-      return this.fetch(type, tradable, hash)
+      const categories = await this.fetch(type, tradable)
+      data = _.mergeWith(data, categories, (a, b) => _.isArray(a) ? a.concat(b) : undefined)
     }))
-    return items.reduce((a, b) => a.concat(b)) // merged array of arrays
+    return data
   }
 
   /**
    * Generate single .json data
    */
-  async fetch (type, tradable, hash) {
-    console.log(`* Fetching ${type} ${tradable ? '- tradable ' : ''}${hash ? '- hash ' : ''} `)
+  async fetch (type, tradable) {
+    const trade = tradable === false ? '- untradable' : (tradable ? '- tradable' : '')
+    console.log(`* Fetching ${type} ${trade}`)
     const url = this.endpoints.find(e => e.includes(type))
     const res = await request.get(url)
     const sanitized = res.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
@@ -56,7 +53,7 @@ class Scraper {
     await this.fetchAdditional()
 
     console.log(`* Fetched data for ${type}, processing...`)
-    return this.filter(items, tradable, hash, new Date())
+    return this.filter(items, tradable, type, new Date())
   }
 
   /**
@@ -81,29 +78,30 @@ class Scraper {
    * Add, modify, remove certain keys as I deem sensible. Complaints go to
    * management.
    */
-  async filter (items, tradable, hash, timer) {
-    // Delete components if included in item list. We'll assign them to the
-    // parent directly.
+  async filter (items, tradable, type, timer) {
+    const data = {}
     items = this.removeComponents(items)
 
-    // Filter individual items
     for (let i = 0; i < items.length; i++) {
       let item = items[i]
 
-      // Add hash to check if udpates are necessary, don't keep any other data
-      if (hash) {
-        items[i] = {
-          uniqueName: item.uniqueName,
-          contentHash: this.hash(JSON.stringify(item))
-        }
+      this.addType(item)
+      if (this.removeTradable(item, tradable, type)) {
         continue
       }
-      this.addType(item)
-      this.addComponents(item)
       this.sanitize(item)
+      this.addComponents(item)
+      this.addCategory(item, type)
+
+      // Add to category
+      if (!data[item.category]) {
+        data[item.category] = [item]
+      } else {
+        data[item.category].push(item)
+      }
     }
     console.log(`* Finished in ${new Date() - timer}ms \n`)
-    return items
+    return data
   }
 
   /**
@@ -119,6 +117,41 @@ class Scraper {
       }
     }
     return result
+  }
+
+  /**
+   * Limit items to tradable/untradable if specified.
+   */
+  removeTradable (item, tradable, type) {
+    const tradableTypes = ['Gem', 'Fish', 'Key', 'Focus Lens']
+    const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
+    const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
+    const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
+
+    // Nothing specified for tradability? Just return the original.
+    if (tradable === null) {
+      return false
+    }
+
+    const notFiltered = !untradableTypes.includes(item.type) && !item.name.match(untradableRegex)
+    const isTradable = (item.name.match(tradableRegex) && notFiltered) || (tradableTypes.includes(item.type) && notFiltered)
+
+    if (tradable) {
+      if (type === 'Upgrades') {
+        return false
+      }
+      if (isTradable) {
+        return false
+      }
+    } else {
+      if (type === 'Upgrades') {
+        return true
+      }
+      if (!isTradable) {
+        return false
+      }
+    }
+    return true
   }
 
   /**
@@ -167,6 +200,9 @@ class Scraper {
       case 'AP_POWER':
         item.polarity = 'Zenurik'
         break
+      case 'AP_PRECEPT':
+        item.polarity = 'Penjaga'
+        break
       case 'AP_WARD':
         item.polarity = 'Unairu'
     }
@@ -177,7 +213,6 @@ class Scraper {
     delete item.parentName
     delete item.relicRewards // We'll fetch the official drop data for this
     delete item.subtype
-    delete item.uniqueName
   }
 
   /**
@@ -197,7 +232,7 @@ class Scraper {
     }
     // No type assigned? Add 'Special'.
     if (!item.type) {
-      item.type = 'Special'
+      item.type = 'Misc'
     }
   }
 
@@ -262,6 +297,50 @@ class Scraper {
         component.ducats = stub.ducats
         return false // break loop
       }
+    }
+  }
+
+  /**
+   * Add more meaningful item categories. These will be used to determine the
+   * output file name.
+   */
+  addCategory (item, type) {
+    if (type === 'Customs') item.category = 'Skins'
+    if (type === 'Drones') item.category = 'Misc'
+    if (type === 'Flavour') item.category = 'Skins'
+    if (type === 'Gear') item.category = 'Gear'
+    if (type === 'Keys') {
+      if (item.name.includes('Derelict')) item.category = 'Relics'
+      else item.category = 'Quests'
+    }
+    if (type === 'RelicArcane') {
+      if (!item.name.includes('Relic')) item.category = 'Arcanes'
+      else item.category = 'Relics'
+    }
+    if (type === 'Sentinels') item.category = 'Sentinels'
+    if (type === 'Upgrades') item.category = 'Mods'
+    if (type === 'Warframes') {
+      if (item.isArchwing) item.category = 'Archwings'
+      else item.category = 'Warframes'
+      delete item.isArchwing
+    }
+    if (type === 'Weapons') {
+      if (item.isArchwing) item.category = 'Archwings'
+      else if (item.slot === 5) item.category = 'Melee'
+      else if (item.slot === 0) item.category = 'Secondary'
+      else if (item.slot === 1) item.category = 'Primary'
+      else item.category = 'Misc'
+      delete item.isArchwing
+    }
+    if (type === 'Resources') {
+      if (item.type === 'Pets') item.category = 'Pets'
+      else if (item.type === 'Specter') item.category = 'Gear'
+      else if (item.type === 'Resource') item.category = 'Resources'
+      else if (item.type === 'Fish') item.category = 'Fish'
+      else if (item.type === 'Ship Decoration') item.category = 'Skins'
+      else if (item.type === 'Gem') item.category = 'Resources'
+      else if (item.type === 'Plant') item.category = 'Resources'
+      else item.category = 'Misc'
     }
   }
 }

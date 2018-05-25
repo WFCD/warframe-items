@@ -1,5 +1,6 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit",
     "name": "Wyrm",
     "description": "With 'Warrior' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.\nNote: This item requires two open slots.",
     "health": 200,
@@ -7,9 +8,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit",
     "name": "Taxon",
     "description": "With 'Retarget' and 'Molecular Conversion' as its default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.\nNote: This item requires two open slots.",
     "health": 200,
@@ -17,9 +20,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit",
     "name": "Shade",
     "description": "With 'Revenge' and 'Ghost' as default Precepts, Shade is well suited for stealth gameplay. Shade also comes with a burst laser pistol.\nNote: This item requires two open slots.",
     "health": 350,
@@ -27,9 +32,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit",
     "name": "Prisma Shade",
     "description": "A rare jewel of the void. How could anything so beautiful be crafted for stealth?",
     "health": 350,
@@ -37,9 +44,11 @@
     "armor": 75,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
     "name": "Wyrm Prime",
     "description": "Both bodyguard and status symbol, the Wyrm Prime Sentinel was the last line of defense for high ranking Tenno in the Orokin Era.",
     "health": 225,
@@ -50,24 +59,26 @@
     "type": "Sentinel",
     "components": [
       {
-        "name": "Carapace",
-        "ducats": 15
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace",
+        "name": "Wyrm Prime Carapace"
       },
       {
-        "name": "Cerebrum",
-        "ducats": 15
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum",
+        "name": "Wyrm Prime Cerebrum"
       },
       {
-        "name": "Systems",
-        "ducats": 45
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems",
+        "name": "Wyrm Prime Systems"
       },
       {
         "name": "Blueprint",
         "ducats": 15
       }
-    ]
+    ],
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit",
     "name": "Helios Prime",
     "description": "This knowledge hungry protector defends its master with Deconstructor Prime.",
     "health": 250,
@@ -78,24 +89,26 @@
     "type": "Sentinel",
     "components": [
       {
-        "name": "Carapace",
-        "ducats": 15
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCarapace",
+        "name": "Helios Prime Carapace"
       },
       {
-        "name": "Cerebrum",
-        "ducats": 100
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCerebrum",
+        "name": "Helios Prime Cerebrum"
       },
       {
-        "name": "Systems",
-        "ducats": 45
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosSystems",
+        "name": "Helios Prime Systems"
       },
       {
         "name": "Blueprint",
         "ducats": 45
       }
-    ]
+    ],
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
     "name": "Carrier Prime",
     "description": "This ornate sentinel is an excellent example of late Orokin craftsmanship and styling.",
     "health": 400,
@@ -106,24 +119,26 @@
     "type": "Sentinel",
     "components": [
       {
-        "name": "Carapace",
-        "ducats": 15
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace",
+        "name": "Carrier Prime Carapace"
       },
       {
-        "name": "Cerebrum",
-        "ducats": 65
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum",
+        "name": "Carrier Prime Cerebrum"
       },
       {
-        "name": "Systems",
-        "ducats": 15
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems",
+        "name": "Carrier Prime Systems"
       },
       {
         "name": "Blueprint",
         "ducats": 15
       }
-    ]
+    ],
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit",
     "name": "Helios",
     "description": "With 'Investigator' as its unique Precept and 'Deconstructor' as its weapon, the versatile Helios Sentinel acts as both a lethal guardian and an automatic codex scanner. Scans require an equipped Codex Scanner and an available charge.\nNote: This item requires two open slots.",
     "health": 200,
@@ -131,9 +146,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Melee"
+    "type": "Melee",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit",
     "name": "Djinn",
     "description": "With 'Thumper' and 'Fatal Attraction' as default Precepts, Djinn is a combat Sentinel. Djinn also comes with a poison dart weapon.\nNote: This item requires two open slots.",
     "health": 200,
@@ -141,9 +158,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit",
     "name": "Dethcube",
     "description": "With 'Swift Deth' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.\nNote: This item requires two open slots.",
     "health": 200,
@@ -151,9 +170,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit",
     "name": "Carrier",
     "description": "With 'Striker' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.\nNote: This item requires two open slots.",
     "health": 200,
@@ -161,9 +182,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit",
     "name": "Diriga",
     "description": "Diriga shocks nearby enemies, and picks off distant threats, utilizing the Vulklok sniper rifle and the 'Calculated Shot', 'Arc Coil' and 'Electro Pulse' precepts.\nNote: This item requires two open slots.",
     "health": 350,
@@ -171,9 +194,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Sentinel"
+    "type": "Sentinel",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit",
     "name": "Chesa Kubrow",
     "description": "This Kubrow will disarm adversaries and retrieve the spoils of battle.",
     "health": 125,
@@ -181,9 +206,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit",
     "name": "Sunika Kubrow",
     "description": "Once the value of Orokin guard-pets had been realized, Orokin scientists began experimenting with strains designed for combat. These were no longer household pets but superior war animals bred for ferocity and aggression.",
     "health": 110,
@@ -191,9 +218,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit",
     "name": "Raksa Kubrow",
     "description": "Designed by the Orokin to be the perfect companion, a Kubrow was never far from its master's side. Loyal and obedient, these creatures made ideal bodyguards. Equipped with shield generators for added protection, their fierce growl could paralyze any attacker with fear.",
     "health": 100,
@@ -201,9 +230,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit",
     "name": "Huras Kubrow",
     "description": "Prized for its ability to sneak up on unsuspecting prey, the Huras Kubrow were first used as hunting companions by the Orokin elite. Orokin Era Tenno soon adapted the strain for use in covert missions and assassinations.",
     "health": 75,
@@ -211,9 +242,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit",
     "name": "Helminth Charger",
     "description": "An Infested pet bred from the Helminth Cyst",
     "health": 95,
@@ -221,9 +254,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit",
     "name": "Sahasa Kubrow",
     "description": "Enterprising Orokin genetic designers recognized that the Kubrow's affinity for games of fetch could be used for more serious endeavors. They soon developed a strain adept at reconnaissance and contraband recovery. Tenno often used the creatures to help resupply while in the field.",
     "health": 125,
@@ -231,9 +266,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit",
     "name": "Adarza Kavat",
     "description": "Piercing eyes reflect deadly instincts.",
     "health": 40,
@@ -241,9 +278,11 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   },
   {
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit",
     "name": "Smeeta Kavat",
     "description": "This sly feline is playful yet devious.",
     "health": 50,
@@ -251,6 +290,7 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets"
+    "type": "Pets",
+    "category": "Sentinels"
   }
 ]
