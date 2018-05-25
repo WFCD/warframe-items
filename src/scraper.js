@@ -1,5 +1,13 @@
 const request = require('request-promise')
 const crypto = require('crypto')
+const cheerio = require('cheerio')
+
+// Capitaliz each word. No idea why this isn't a js standard yet.
+const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+
+// We'll get these in the fetch function
+let resourceExports
+let ducats = []
 
 class Scraper {
   constructor () {
@@ -40,20 +48,40 @@ class Scraper {
    * Generate single .json data
    */
   async fetch (type, tradable, hash) {
+    console.log(`* Fetching ${type} ${tradable ? '- tradable ' : ''}${hash ? '- hash ' : ''} `)
     const url = this.endpoints.find(e => e.includes(type))
     const res = await request.get(url)
     const sanitized = res.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
     const items = JSON.parse(sanitized)[`Export${type}`]
-    const resourceExports = await request.get('http://content.warframe.com/MobileExport/Manifest/ExportResources.json')
+    await this.fetchAdditional()
 
-    return this.filter(items, tradable, hash, resourceExports)
+    console.log(`* Fetched data for ${type}, processing...`)
+    return this.filter(items, tradable, hash, new Date())
+  }
+
+  /**
+   * Retrieve additional resources required for processing. Ducats, components,
+   * etc
+   */
+  async fetchAdditional () {
+    resourceExports = await request.get('http://content.warframe.com/MobileExport/Manifest/ExportResources.json')
+    const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
+    const $ = cheerio.load(ducatsWikia)
+
+    // Add ducats to an array here immediately because processing this for
+    // every component is *very* slow compared to running through an array.
+    $('.mw-content-text table tbody tr').each(function () {
+      const name = $(this).find('td:nth-of-type(1) a:nth-of-type(2)').text()
+      const value = $(this).find('td:nth-of-type(3) b').text()
+      ducats.push({ name, ducats: parseInt(value) })
+    })
   }
 
   /**
    * Add, modify, remove certain keys as I deem sensible. Complaints go to
    * management.
    */
-  async filter (items, tradable, hash, resourceExports) {
+  async filter (items, tradable, hash, timer) {
     // Delete components if included in item list. We'll assign them to the
     // parent directly.
     items = this.removeComponents(items)
@@ -68,11 +96,13 @@ class Scraper {
           uniqueName: item.uniqueName,
           contentHash: this.hash(JSON.stringify(item))
         }
+        continue
       }
       this.addType(item)
-      await this.addComponents(item, resourceExports)
+      this.addComponents(item)
       this.sanitize(item)
     }
+    console.log(`* Finished in ${new Date() - timer}ms \n`)
     return items
   }
 
@@ -96,8 +126,6 @@ class Scraper {
    * obscure conventions.
    */
   sanitize (item) {
-    const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
-
     // Capitalize item names which are usually all uppercase
     if (item.name) item.name = title(item.name)
     if (item.type) item.type = title(item.type)
@@ -178,7 +206,7 @@ class Scraper {
    * so we can just look for items with /Lotus/Types/Recipes/* there and match
    * them with the parents.
    */
-  async addComponents (item, resourceExports) {
+  addComponents (item) {
     const sanitized = resourceExports.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
     const resources = JSON.parse(sanitized).ExportResources
     const keywords = ['prime', 'vandal', 'wraith']
@@ -205,25 +233,35 @@ class Scraper {
       }
     })
 
-    // Right now we have an array of full items for components, so we'll reduce
-    // it to strings here.
-    if (item.components.length) {
-      const components = []
+    // Delete components key if array is empty
+    if (!item.components.length) {
+      delete item.components
+    }
+
+    // Otherwise, clean up component object as it currently holds the entire
+    // original component item.
+    else {
+      // Add Blueprint. For some reason it's not present in resources.json
+      item.components.push({ name: 'Blueprint' })
 
       for (let component of item.components) {
-        const resourceName = component.name.toLowerCase()
-        const itemName = item.name.toLowerCase()
-        const words = resourceName.split(' ')
-        const comp = words.splice(itemName.split(' ').length).join(' ')
-
-        components.push(comp.replace(/\b\w/g, l => l.toUpperCase()))
-        item.components = components
+        component.name = component.name.replace(item.name + ' ', '')
+        this.sanitize(component)
+        delete component.description
+        this.addDucats(item, component)
       }
+    }
+  }
 
-      // For some reason these don't seem to be included by default.
-      item.components.push('Blueprint')
-    } else {
-      delete item.components
+  /**
+   * Add ducats for prime items. We'll need to get this data from the wikia.
+   */
+  addDucats (item, component) {
+    for (let stub of ducats) {
+      if (`${title(item.name)} ${component.name}` === stub.name) {
+        component.ducats = stub.ducats
+        return false // break loop
+      }
     }
   }
 }

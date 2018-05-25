@@ -26,8 +26,7 @@ npm install warframe-items
 const Items = require('warframe-items')
 const items = new Items(options, ...items)
 ```
-In this example, `items` is an Array with all items. You can force it to fetch
-new data based on your options with `await items.update()`. The `...items` param
+In this example, `items` is an Array with all items. The `...items` param
 allows you to add your own items before our gathered ones.
 
 <br>

@@ -1,5 +1,3 @@
-const scraper = require('./src/scraper.js')
-
 class Items extends Array {
   constructor (options, ...items) {
     super(...items)
@@ -17,24 +15,6 @@ class Items extends Array {
     for (let item of generated) {
       this.push(item)
     }
-  }
-
-  /**
-   * Update the item list with options set in constructor
-   */
-  async update () {
-    let updated
-
-    // Fetch single type or all
-    if (this.options.type === 'All') {
-      updated = scraper.fetchAll(this.options.tradable)
-    } else {
-      updated = scraper.fetch(this.options.type, this.options.tradable)
-    }
-
-    // Clear current array and add new items
-    this.splice(0, this.length)
-    this.concat(updated)
   }
 }
 
