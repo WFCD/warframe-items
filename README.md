@@ -34,7 +34,7 @@ allows you to add your own items before our gathered ones.
 ### Options
 | Option        | Default       | Description   |
 |:------------- |:------------- |:------------- |
-| type | `'All'` | Item type to retrieve. Parallel to file names in /data
+| category | `'All'` | Item category to retrieve. Parallel to file names in /data/json
 | tradable | `null` | Wether only tradable or untradable items should be returned. Default returns all.
 
 <br>

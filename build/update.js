@@ -10,45 +10,27 @@ const stringify = require('./stringify.js')
 /* eslint no-redeclare: "off" */
 class Update {
   async save () {
-    // Get individual items
-    for (let endpoint of scraper.endpoints) {
-      const filename = endpoint.split('/').slice(-1)[0].replace('Export', '')
-      const name = filename.replace('.json', '')
-
-      // Non-hash data
-      var { all, tradable, untradable } = await this.fetch(name)
-      this.write(filename, all, tradable, untradable)
-
-      // Hashed data
-      var { all, tradable, untradable } = await this.fetch(name, true)
-      this.write(`.${name}.json`, all, tradable, untradable)
-    }
-
-    // Get all.json
     var { all, tradable, untradable } = await this.fetch('All')
-    this.write('All.json', all, tradable, untradable)
-    var { all, tradable, untradable } = await this.fetch('All', true)
-    this.write('.All.json', all, tradable, untradable)
+    this.write(all)
+    this.write(tradable, 'tradable/')
+    this.write(untradable, 'untradable/')
   }
 
   async fetch (name, hash) {
-    if (name === 'All') {
-      const all = await scraper.fetchAll(null, hash)
-      const tradable = await scraper.fetchAll(true, hash)
-      const untradable = await scraper.fetchAll(false, hash)
-      return { all, tradable, untradable }
-    } else {
-      const all = await scraper.fetch(name, null, hash)
-      const tradable = await scraper.fetch(name, true, hash)
-      const untradable = await scraper.fetch(name, false, hash)
-      return { all, tradable, untradable }
-    }
+    const all = await scraper.fetchAll(null, hash)
+    const tradable = await scraper.fetchAll(true, hash)
+    const untradable = await scraper.fetchAll(false, hash)
+    return { all, tradable, untradable }
   }
 
-  write (filename, all, tradable, untradable) {
-    fs.writeFileSync(`${__dirname}/../data/json/${filename}`, stringify(all))
-    fs.writeFileSync(`${__dirname}/../data/json/tradable/${filename}`, stringify(tradable))
-    fs.writeFileSync(`${__dirname}/../data/json/untradable/${filename}`, stringify(untradable))
+  write (items, prefix = '') {
+    let all = []
+
+    Object.keys(items).forEach(key => {
+      fs.writeFileSync(`${__dirname}/../data/json/${prefix}${key}.json`, stringify(items[key]))
+      all = all.concat(items[key])
+    })
+    fs.writeFileSync(`${__dirname}/../data/json/${prefix}All.json`, stringify(all))
   }
 }
 
