@@ -35,7 +35,7 @@ allows you to add your own items before our gathered ones.
 | Option        | Default       | Description   |
 |:------------- |:------------- |:------------- |
 | category | `'All'` | Item category to retrieve. Parallel to file names in /data/json
-| tradable | `null` | Wether only tradable or untradable items should be returned. Default returns all.
+| tradable | `null` | Whether only tradable or untradable items should be returned. Default returns all.
 
 <br>
 
