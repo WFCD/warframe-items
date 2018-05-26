@@ -1,8 +1,13 @@
 const request = require('requestretry').defaults({ fullResponse: false })
 const cheerio = require('cheerio')
 const _ = require('lodash')
-const Patchlogs = require('warframe-patchlogs')
+const Patchlogs = require('../../warframe-patchlogs')
 const patchlogs = new Patchlogs()
+
+process.on('unhandledRejection', err => {
+  console.log(err)
+  process.exit()
+})
 
 // Capitaliz each word. No idea why this isn't a js standard yet.
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
