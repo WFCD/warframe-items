@@ -46,4 +46,4 @@ in `/data/img`.
 <br>
 
 ## License
-[MIT](/LICENSE.md)
+[MIT](/LICENSE)
