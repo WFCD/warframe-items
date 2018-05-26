@@ -1,7 +1,7 @@
 const request = require('requestretry').defaults({ fullResponse: false })
 const cheerio = require('cheerio')
 const _ = require('lodash')
-const Patchlogs = require('../../warframe-patchlogs')
+const Patchlogs = require('warframe-patchlogs')
 const patchlogs = new Patchlogs()
 
 process.on('unhandledRejection', err => {
