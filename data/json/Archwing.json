@@ -27,15 +27,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowBarrel",
-        "name": "Fluctus Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowReceiver",
-        "name": "Fluctus Stock"
+        "name": "Stock"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowStock",
-        "name": "Fluctus Limbs"
+        "name": "Limbs"
       },
       {
         "name": "Blueprint"
@@ -98,15 +98,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel",
-        "name": "Velocitus Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver",
-        "name": "Velocitus Receiver"
+        "name": "Receiver"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock",
-        "name": "Velocitus Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -142,15 +142,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonBarrel",
-        "name": "Corvas Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonReceiver",
-        "name": "Corvas Receiver"
+        "name": "Receiver"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonStock",
-        "name": "Corvas Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -186,14 +186,38 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalBarrel",
-        "name": "Imperator Vandal Barrel"
+        "name": "Barrel",
+        "drops": [
+          {
+            "location": "Fomorian Sabotage",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1128
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalReceiver",
-        "name": "Imperator Vandal Receiver"
+        "name": "Receiver",
+        "drops": [
+          {
+            "location": "Fomorian Sabotage",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1128
+          }
+        ]
       },
       {
-        "name": "Blueprint"
+        "name": "Blueprint",
+        "drops": [
+          {
+            "location": "Fomorian Sabotage",
+            "type": "Transient Rewards",
+            "rarity": "Common",
+            "chance": 0.3872
+          }
+        ]
       }
     ],
     "category": "Archwing"
@@ -280,15 +304,35 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleBarrel",
-        "name": "Phaedra Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleReceiver",
-        "name": "Phaedra Receiver"
+        "name": "Receiver",
+        "drops": [
+          {
+            "location": "Mercury - Caduceus",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          },
+          {
+            "location": "Venus - Montes",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          },
+          {
+            "location": "Mars - Syrtis",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleStock",
-        "name": "Phaedra Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -324,15 +368,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunBarrel",
-        "name": "Cyngas Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunReceiver",
-        "name": "Cyngas Receiver"
+        "name": "Receiver"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunStock",
-        "name": "Cyngas Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -422,15 +466,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldAegis",
-        "name": "Centaur Aegis"
+        "name": "Aegis"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldBlade",
-        "name": "Centaur Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldHandle",
-        "name": "Centaur Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -493,11 +537,11 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
-        "name": "Onorix Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle",
-        "name": "Onorix Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -533,15 +577,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordBlade",
-        "name": "Agkuza Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordGuard",
-        "name": "Agkuza Guard"
+        "name": "Guard"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordHandle",
-        "name": "Agkuza Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -577,11 +621,11 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheBlade",
-        "name": "Kaszas Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheHandle",
-        "name": "Kaszas Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -617,11 +661,11 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle",
-        "name": "Rathbone Handle"
+        "name": "Handle"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead",
-        "name": "Rathbone Head"
+        "name": "Head"
       },
       {
         "name": "Blueprint"
@@ -660,15 +704,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent",
-        "name": "Amesha Harness"
+        "name": "Harness"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent",
-        "name": "Amesha Systems"
+        "name": "Systems"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent",
-        "name": "Amesha Wings"
+        "name": "Wings"
       },
       {
         "name": "Blueprint"
@@ -707,15 +751,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingChassisComponent",
-        "name": "Itzal Harness"
+        "name": "Harness"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingSystemsComponent",
-        "name": "Itzal Systems"
+        "name": "Systems"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingWingsComponent",
-        "name": "Itzal Wings"
+        "name": "Wings"
       },
       {
         "name": "Blueprint"
@@ -754,15 +798,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingChassisComponent",
-        "name": "Odonata Harness"
+        "name": "Harness"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingSystemsComponent",
-        "name": "Odonata Systems"
+        "name": "Systems"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingWingsComponent",
-        "name": "Odonata Wings"
+        "name": "Wings"
       },
       {
         "name": "Blueprint"
@@ -801,19 +845,390 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingChassisComponent",
-        "name": "Odonata Prime Harness"
+        "name": "Harness",
+        "ducats": 15,
+        "drops": [
+          {
+            "location": "Axi K1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi K1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi K1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi K1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Axi T1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi T1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi T1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi T1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Axi V4 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi V4 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi V4 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi V4 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Lith K1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith K1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith K1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith K1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo O1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo O1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo O1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo O1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingSystemsComponent",
-        "name": "Odonata Prime Systems"
+        "name": "Systems",
+        "ducats": 15,
+        "drops": [
+          {
+            "location": "Axi V1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi V1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi V1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi V1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Axi V8 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi V8 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi V8 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi V8 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Lith F2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith F2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith F2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith F2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo N3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo N3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo N3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo N3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingWingsComponent",
-        "name": "Odonata Prime Wings"
+        "name": "Wings",
+        "ducats": 65,
+        "drops": [
+          {
+            "location": "Axi N1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Axi N1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Axi N1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Axi N1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo O1 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Neo O1 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Neo O1 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Neo O1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          }
+        ]
       },
       {
         "name": "Blueprint",
-        "ducats": 45
+        "ducats": 45,
+        "drops": [
+          {
+            "location": "Axi V8 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Axi V8 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Axi V8 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Axi V8 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith F1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Lith F1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Lith F1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Lith F1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso C2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso C2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso C2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso C2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso S1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso S1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso S1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso S1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ]
       }
     ],
     "category": "Archwing"
@@ -849,15 +1264,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent",
-        "name": "Elytron Harness"
+        "name": "Harness"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent",
-        "name": "Elytron Systems"
+        "name": "Systems"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent",
-        "name": "Elytron Wings"
+        "name": "Wings"
       },
       {
         "name": "Blueprint"

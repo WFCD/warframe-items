@@ -1,5 +1,595 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Ship/BasicUcResourceDrone",
+    "name": "Distilling Extractor",
+    "description": "The Distilling Extractor has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect resources. It must be emptied regularly and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 1,
+    "fillRate": 8,
+    "durability": 200,
+    "repairRate": 20,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Ship/BasicResourceDrone",
+    "name": "Titan Extractor",
+    "description": "Deploy the EXTRACTOR on a planet to collect resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 1,
+    "fillRate": 4,
+    "durability": 100,
+    "repairRate": 10,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Ship/AdvancedUcResourceDrone",
+    "name": "Distilling Extractor Prime",
+    "description": "The Distilling Extractor Prime has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect large amounts of resources. It must be emptied regularly and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 2,
+    "fillRate": 8,
+    "durability": 200,
+    "repairRate": 20,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Ship/AdvancedResourceDrone",
+    "name": "Titan Extractor Prime",
+    "description": "Deploy the EXTRACTOR on a planet to collect large amounts of resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 2,
+    "fillRate": 4,
+    "durability": 100,
+    "repairRate": 10,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
+    "name": "Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Vargeet Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Vargeet Ii Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritII",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ruhang Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageII",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Vargeet Ruhang Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIICritI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ekwana Ruhang Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIIStatusI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ekwana Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ekwana Ii Ruhang",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusII",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Vargeet Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Vargeet Ii Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritII",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Jai Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedII",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Vargeet Jai Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIICritI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ekwana Jai Ii",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIIStatusI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ekwana Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusI",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ekwana Ii Jai",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusII",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Jayap",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFive",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Seekalla",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFour",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Peye",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleOne",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Kroostra",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleSix",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Kwath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleThree",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Laka",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleTwo",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Dehtat",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFive",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Cyath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFour",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Balla",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipOne",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Kronsh",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipSix",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Mewan",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipThree",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Ooltha",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipTwo",
+    "type": "Melee",
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0357,
+        "rotation": "Annihilation"
+      }
+    ]
+  },
+  {
+    "name": "Korb",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleNine",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Shtung",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleTen",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Dokrahm",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipEleven",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Sepfahn",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipNine",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Rabvee",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipTen",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Plague Akwin",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleOne",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Plague Bokwin",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleTwo",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Plague Kripath",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipOne",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Plague Keewar",
+    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipTwo",
+    "type": "Melee",
+    "category": "Misc"
+  },
+  {
+    "name": "Mote Prism",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/SentTrainingAmplifier/SentAmpTrainingBarrel",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Raplak Prism",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartA",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Shwaak Prism",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartB",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Granmu Prism",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartC",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Pencha Scaffold",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Chassis/SentAmpSet1ChassisPartA",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Shraksun Scaffold",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Chassis/SentAmpSet1ChassisPartB",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Klebrik Scaffold",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Chassis/SentAmpSet1ChassisPartC",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Clapkra Brace",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartA",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Juttni Brace",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartB",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
+    "name": "Lohrin Brace",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartC",
+    "type": "Amp",
+    "category": "Misc"
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/FusionTreasures/OroFusexA",
     "name": "Ayatan Sah Sculpture",
     "description": "This kinetic Orokin sculpture springs to life when filled with Ayatan Stars. It may also be a source of Endo.",
@@ -39,7 +629,15 @@
     "name": "Ayatan Anasa Sculpture",
     "description": "This kinetic Orokin sculpture springs to life when filled with Ayatan Stars. It may also be a source of Endo.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Ayatan Anasa Sculpture Uncommon",
+        "type": "Sortie Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.28
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/FusionTreasures/OroFusexG",
@@ -53,7 +651,166 @@
     "name": "Nitain Extract",
     "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Mercury - Terminus",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Mercury - Neruda",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Venus - Ishtar",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Mars - Gradivus",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Jupiter - Adrastea",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Pallene",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Calypso",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Uranus - Portia",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Thalassa",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Halimede",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Charon",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Cypress",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Ceres - Thon",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Kelpie",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Void - Stribog",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Void - Marduk",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0101,
+        "rotation": "C"
+      },
+      {
+        "location": "Lua - Plato",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0129,
+        "rotation": "C"
+      },
+      {
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Level 15 - 25 Ghoul Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0412
+      },
+      {
+        "location": "Level 15 - 25 Ghoul Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.059500000000000004
+      },
+      {
+        "location": "Level 40 - 50 Ghoul Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0412
+      },
+      {
+        "location": "Level 40 - 50 Ghoul Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.059500000000000004
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
@@ -81,7 +838,253 @@
     "name": "Argon Crystal",
     "description": "Void based radioactive resource that decays every day it is out of the void.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Mercury - Terminus",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Mercury - Neruda",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Venus - Ishtar",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Mars - Gradivus",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Jupiter - Adrastea",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Pallene",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Calypso",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Uranus - Portia",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Thalassa",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Halimede",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Pluto - Charon",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Cypress",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Ceres - Thon",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.01,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Kelpie",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Void - Stribog",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Void - Marduk",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0442,
+        "rotation": "C"
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1936,
+        "rotation": "Sabotage"
+      },
+      {
+        "location": "Lua - Plato",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1082,
+        "rotation": "C"
+      },
+      {
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Corrupted Vor 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.5
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Beacon",
@@ -109,7 +1112,39 @@
     "name": "Circuits",
     "description": "Various electronic components.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Turret 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.6802
+      },
+      {
+        "location": "Tusk Bolkor 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.6802
+      },
+      {
+        "location": "Akkalak Turret 70.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.6802
+      },
+      {
+        "location": "Mordda Turret 70.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.6802
+      },
+      {
+        "location": "Vruush Turret 70.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.6802
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ClanCreator",
@@ -123,7 +1158,107 @@
     "name": "Control Module",
     "description": "Autonomy processor for Robotics. A Corpus design.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
@@ -151,14 +1286,221 @@
     "name": "Breath Of The Eidolon",
     "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "Annihilation"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Eventium",
     "name": "Synthula",
     "description": "Distilled fuel for stims.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Mercury - Apollodorus",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Mercury - Lares",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Mercury - Odin",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833,
+        "rotation": "A"
+      },
+      {
+        "location": "Mercury - Suisei",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Venus - V",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Venus - Vesper",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Venus - Cytherean",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833,
+        "rotation": "A"
+      },
+      {
+        "location": "Venus - Unda",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Venus - Tessera",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Earth - Cambria",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Earth - Lith",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Earth - Gaia",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833,
+        "rotation": "A"
+      },
+      {
+        "location": "Mars - Arcadia",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Mars - Spear",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Mars - Alator",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833,
+        "rotation": "A"
+      },
+      {
+        "location": "Mars - Arval",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Ceres - Varro",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Ceres - Hapke",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Ceres - Casta",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Ceres - Cinxia",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833,
+        "rotation": "A"
+      },
+      {
+        "location": "Ceres - Egeria",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Void - Taranis",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Phobos - Grildrig",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Phobos - Stickney",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Phobos - Drunlo",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Phobos - Gulliver",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.07690000000000001,
+        "rotation": "A"
+      },
+      {
+        "location": "Phobos - Shklovsky",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      },
+      {
+        "location": "Phobos - Flimnap",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "A"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
@@ -179,21 +1521,2523 @@
     "name": "Eidolon Lens",
     "description": "An enhanced Greater Lens that has been infused with Breath of the Eidolon.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Level 40 - 60 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0507
+      },
+      {
+        "location": "Level 40 - 60 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0795
+      },
+      {
+        "location": "Level 40 - 60 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0507
+      },
+      {
+        "location": "Level 40 - 60 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0795
+      },
+      {
+        "location": "Level 40 - 60 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0507
+      },
+      {
+        "location": "Level 40 - 60 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0795
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
     "name": "Forma",
     "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Earth - Cervantes",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Earth - Cervantes",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.005,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Sedna - Vodyanoi",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.005
+      },
+      {
+        "location": "Sedna - Undine",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.004
+      },
+      {
+        "location": "Sedna - Nakki",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002
+      },
+      {
+        "location": "Sedna - Yam",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.005
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.2256,
+        "rotation": "Defense"
+      },
+      {
+        "location": "Axi A2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi A2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi A2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi A2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi B2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi B2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi B2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi B2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi C1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi C1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi C1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi C1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi C2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi C2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi C2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi C2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi E1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi E1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi E1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi E1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi E2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi E2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi E2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi E2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi G1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi G1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi G1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi G1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi H1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi H1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi H1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi H1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi H3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi H3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi H3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi H3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi K1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi K1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi K1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi K1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi K2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi K2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi K2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi K2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi L1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi L1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi L1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi L1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi N1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi N1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi N1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi N1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi N2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi N2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi N2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi N2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi N3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi N3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi N3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi N3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi O1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi O1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi O1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi O1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi S1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi S1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi S1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi S1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi S2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi S2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi S2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi S2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi V1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi V1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi V1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi V1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi V4 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Axi V4 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Axi V4 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Axi V4 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi V5 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi V5 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi V5 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi V5 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi V6 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi V6 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi V6 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi V6 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Axi V8 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Axi V8 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Axi V8 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Axi V8 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith A1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith A1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith A1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith A1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith A2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith A2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith A2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith A2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith B1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith B1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith B1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith B1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith B2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith B2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith B2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith B2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith C1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith C1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith C1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith C1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith F1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith F1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith F1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith F1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith G1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith G1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith G1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith G1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith H2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith H2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith H2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith H2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith M1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith M1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith M1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith M1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith N1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith N1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith N1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith N1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith N3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith N3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith N3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith N3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith S1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith S1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith S1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith S1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith S2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith S2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith S2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith S2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith S4 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith S4 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith S4 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith S4 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith S6 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith S6 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith S6 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith S6 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith T1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Lith T1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Lith T1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith T1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Lith V1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith V1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith V1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith V1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith V2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith V2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith V2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith V2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Lith Z1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Lith Z1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Lith Z1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Lith Z1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso B1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso B1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso B1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso B1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso C1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso C1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso C1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso C1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso D1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso D1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso D1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso D1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso D1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso D1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso D1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso D1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso E1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso E1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso E1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso E1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso F2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso F2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso F2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso F2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso F3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso F3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso F3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso F3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso G1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso G1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso G1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso G1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso N1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso N1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso N1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso N1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso N2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso N2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso N2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso N2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso N4 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso N4 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso N4 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso N4 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso N5 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso N5 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso N5 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso N5 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso O1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso O1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso O1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso O1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso S2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso S2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso S2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso S2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso S3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso S3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso S3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso S3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso S5 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso S5 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso S5 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso S5 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso T1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso T1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso T1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso T1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso T2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso T2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso T2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso T2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso V1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso V1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso V1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso V1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso V2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Meso V2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Meso V2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Meso V2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso V3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso V3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso V3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso V3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Meso V4 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Meso V4 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Meso V4 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Meso V4 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo A1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo A1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo A1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo A1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo B2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo B2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo B2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo B2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo B3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo B3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo B3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo B3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo B4 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo B4 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo B4 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo B4 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo D1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo D1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo D1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo D1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo E1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo E1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo E1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo E1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo F1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo F1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo F1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo F1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo N1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo N1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo N1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo N1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo N2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo N2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo N2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo N2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo N4 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo N4 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo N4 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo N4 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo N5 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo N5 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo N5 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo N5 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo O1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo O1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo O1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo O1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo S1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo S1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo S1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo S1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo S3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo S3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo S3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo S3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo S6 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo S6 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo S6 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo S6 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo S8 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo S8 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo S8 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo S8 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo T1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo T1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo T1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo T1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo V1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo V1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo V1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo V1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo V2 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo V2 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo V2 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo V2 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo V3 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo V3 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo V3 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo V3 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo V5 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo V5 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo V5 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo V5 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo V6 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.25329999999999997
+      },
+      {
+        "location": "Neo V6 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.23329999999999998
+      },
+      {
+        "location": "Neo V6 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Neo V6 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.16670000000000001
+      },
+      {
+        "location": "Neo Z1 Intact",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.11
+      },
+      {
+        "location": "Neo Z1 Exceptional",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.13
+      },
+      {
+        "location": "Neo Z1 Flawless",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.17
+      },
+      {
+        "location": "Neo Z1 Radiant",
+        "type": "Relics",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      },
+      {
+        "location": "Forma Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.025
+      },
+      {
+        "location": "Orokin Derelict Defense",
+        "type": "Key Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.2256
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
     "name": "Gallium",
     "description": "Soft metal used in microelectronics and energy weapons.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Mercury - Terminus",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Mercury - Neruda",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Venus - Ishtar",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Mars - Gradivus",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Jupiter - Adrastea",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Pallene",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Calypso",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Uranus - Portia",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Thalassa",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Halimede",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Pluto - Charon",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Cypress",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Ceres - Thon",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Kelpie",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Lua - Plato",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1082,
+        "rotation": "C"
+      },
+      {
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1079,
+        "rotation": "rewards"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/GrnFlameSpearPart",
@@ -214,35 +4058,185 @@
     "name": "Mutalist Alad V Nav Coordinate",
     "description": "Nav coordinates of Alad V's Infestation Research Ship",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Eris - Candiru",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0451,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Lepis",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0451,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Psoro",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0451,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Viver",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0451,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Naeglar",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0451,
+        "rotation": "C"
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.2256,
+        "rotation": "Defense"
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0201,
+        "rotation": "Sabotage"
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429,
+        "rotation": "Survival"
+      },
+      {
+        "location": "Orokin Derelict Defense",
+        "type": "Key Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.2256
+      },
+      {
+        "location": "Orokin Derelict Survival",
+        "type": "Key Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1429
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartA",
     "name": "Pulsating Tubercles",
     "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Juggernaut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Juggernaut Behemoth 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Jack O'Naut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartB",
     "name": "Infected Palpators",
     "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Juggernaut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Juggernaut Behemoth 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Jack O'Naut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartC",
     "name": "Chitinous Husk",
     "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Juggernaut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Juggernaut Behemoth 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Jack O'Naut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartD",
     "name": "Severed Bile Sac",
     "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Juggernaut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Juggernaut Behemoth 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      },
+      {
+        "location": "Jack O'Naut 100.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.25
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Kuva",
@@ -298,7 +4292,135 @@
     "name": "Morphics",
     "description": "An amorphous solid. Possibly Orokin technology.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Mercury - Terminus",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Mercury - Neruda",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Venus - Ishtar",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Mars - Gradivus",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
@@ -312,21 +4434,497 @@
     "name": "Nav Coordinate",
     "description": "Coordinate used to locate lost ships.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Kubrow 25.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.2256
+      },
+      {
+        "location": "Drahk 25.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.2256
+      },
+      {
+        "location": "Kuva Drahk 25.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.2256
+      },
+      {
+        "location": "Hyekka 25.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.2256
+      },
+      {
+        "location": "Kavat 25.00",
+        "type": "Misc Items",
+        "rarity": "Uncommon",
+        "chance": 0.2256
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
     "name": "Neural Sensors",
     "description": "Implanted neural-link for controlling augmentations. Grineer design.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1936,
+        "rotation": "Sabotage"
+      },
+      {
+        "location": "Raptor 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.5
+      },
+      {
+        "location": "Raptor Mt 10.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.5
+      },
+      {
+        "location": "Raptor Rv 10.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.5
+      },
+      {
+        "location": "Raptor Ns 10.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.5
+      },
+      {
+        "location": "Raptor 10.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.5
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
     "name": "Neurodes",
     "description": "Biotech sensor organ harvested from Infested entities.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Mercury - Terminus",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Mercury - Neruda",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Venus - Ishtar",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Earth - Cervantes",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1218,
+        "rotation": "B"
+      },
+      {
+        "location": "Earth - Cervantes",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Mars - Gradivus",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Jupiter - Adrastea",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Pallene",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Calypso",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Uranus - Portia",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Thalassa",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Halimede",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Pluto - Charon",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Cypress",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Ceres - Thon",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Candiru",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Lepis",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Psoro",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Viver",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Eris - Naeglar",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Kelpie",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Void - Stribog",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1888,
+        "rotation": "C"
+      },
+      {
+        "location": "Void - Marduk",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.2529,
+        "rotation": "C"
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1518,
+        "rotation": "Sabotage"
+      },
+      {
+        "location": "Lua - Plato",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1082,
+        "rotation": "C"
+      },
+      {
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1079,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Vem Tabook 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 1
+      },
+      {
+        "location": "Leekter 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.7744
+      },
+      {
+        "location": "Shik Tal 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.7744
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OmegaIsotope",
@@ -340,28 +4938,466 @@
     "name": "Orokin Catalyst",
     "description": "Orokin modification technology used to super-charge weaponry. Doubles the available Mod Capacity on a Weapon.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Orokin Catalyst Blueprint Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.025
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
     "name": "Orokin Cell",
     "description": "Ancient energy cell from the Orokin era.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Jupiter - Adrastea",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Pallene",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Calypso",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Team",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "B"
+      },
+      {
+        "location": "Saturn - Annihilation",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Lunaro",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "(Extra)"
+      },
+      {
+        "location": "Uranus - Portia",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Thalassa",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Halimede",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Pluto - Charon",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Cypress",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Ceres - Thon",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.151,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Kelpie",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1258,
+        "rotation": "C"
+      },
+      {
+        "location": "Derelict - Orokin",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1936,
+        "rotation": "Sabotage"
+      },
+      {
+        "location": "Lua - Plato",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1082,
+        "rotation": "C"
+      },
+      {
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1079,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Captain Vor 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Lt Lech Kril 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Lephantis 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Alad V 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Mutalist Alad V 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Stalker 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Vay Hek Terra Frame 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Councilor Vay Hek 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Ambulas 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Jackal 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Corrupted Vor 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 0.5
+      },
+      {
+        "location": "Battalyst 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Conculyst 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Shadow Stalker 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Decaying Battalyst 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Decaying Conculyst 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Hunhow 50.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Phorid 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Tyl Regor 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Kela De Thaym 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "The Sergeant 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "General Sargas Ruk 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Hyena Pack 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "J3 Jordas Golem 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Commander 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Councilor Vay Hek 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Jordas Golem 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Artificer 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Hyena Th 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Hyena Pb 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Hyena Ln2 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Hyena Ng 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Tyl Regor 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      },
+      {
+        "location": "Kela De Thaym 100.00",
+        "type": "Misc Items",
+        "rarity": "Rare",
+        "chance": 0.0258
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinReactor",
     "name": "Orokin Reactor",
     "description": "Reactor used to super-charge Warframes. Doubles the available Mod Capacity on a Warframe, Archwing, and Companions.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Orokin Reactor Blueprint Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.025
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
     "name": "Oxium",
     "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Oxium Osprey 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 1
+      },
+      {
+        "location": "Nemes 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 1
+      },
+      {
+        "location": "Carabus 100.00",
+        "type": "Misc Items",
+        "rarity": "Common",
+        "chance": 1
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
@@ -424,14 +5460,164 @@
     "name": "Tellurium",
     "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Mercury - Terminus",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Mercury - Neruda",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Venus - Ishtar",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Mars - Gradivus",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Jupiter - Adrastea",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.044000000000000004,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Pallene",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.044000000000000004,
+        "rotation": "C"
+      },
+      {
+        "location": "Saturn - Calypso",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.044000000000000004,
+        "rotation": "C"
+      },
+      {
+        "location": "Uranus - Portia",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Uranus - Desdemona",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Uranus - Prospero",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Uranus - Setebos",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1549,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Thalassa",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Neptune - Halimede",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Charon",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Cypress",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Ceres - Thon",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.044000000000000004,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Kelpie",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "C"
+      },
+      {
+        "location": "Lua - Plato",
+        "type": "Mission Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1082,
+        "rotation": "C"
+      },
+      {
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
+        "rotation": "rewards"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/UtilityUnlocker",
     "name": "Exilus Adapter",
     "description": "Fuses with a Warframe to create an additional Exilus Mod Slot.",
     "type": "Misc",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Exilus Adapter Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.025
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/VayHekCoordinateFragmentA",
@@ -585,7 +5771,33 @@
     "name": "Kavat Incubator Upgrade Segment",
     "description": "Allows the Incubator to breed Kavats.",
     "type": "Ship Segment",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Hyekka Master 1.50 1.50",
+        "type": "Enemy Blueprint Tables",
+        "rarity": "Common",
+        "chance": 1
+      },
+      {
+        "location": "Hyekka Master 1.50 1.50",
+        "type": "Enemy Blueprint Tables",
+        "rarity": "Common",
+        "chance": 1
+      },
+      {
+        "location": "Kuva Hyekka Master 1.50 1.50",
+        "type": "Enemy Blueprint Tables",
+        "rarity": "Common",
+        "chance": 1
+      },
+      {
+        "location": "Kuva Hyekka Master 1.50 1.50",
+        "type": "Enemy Blueprint Tables",
+        "rarity": "Common",
+        "chance": 1
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryFeatureItem",
@@ -760,7 +5972,45 @@
     "name": "Madurai Lens",
     "description": "Channels Affinity into Focus for the Madurai Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1379
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0842
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0825
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0851
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/AttackLensGreater",
@@ -774,14 +6024,60 @@
     "name": "Eidolon Madurai Lens",
     "description": "Channels a large amount of Affinity into Focus for the Madurai Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Plains of Eidolon Incursions",
+        "type": "Transient Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0029
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/DefenseLens",
     "name": "Vazarin Lens",
     "description": "Channels Affinity into Focus for the Vazarin Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.086
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0842
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0851
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/DefenseLensGreater",
@@ -795,14 +6091,60 @@
     "name": "Eidolon Vazarin Lens",
     "description": "Channels a large amount of Affinity into Focus for the Vazarin Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Plains of Eidolon Incursions",
+        "type": "Transient Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0029
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/PowerLens",
     "name": "Zenurik Lens",
     "description": "Channels Affinity into Focus for the Zenurik Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0851
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0851
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/PowerLensGreater",
@@ -816,14 +6158,60 @@
     "name": "Eidolon Zenurik Lens",
     "description": "Channels a large amount of Affinity into Focus for the Zenurik Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Plains of Eidolon Incursions",
+        "type": "Transient Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0029
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/TacticLens",
     "name": "Naramon Lens",
     "description": "Channels Affinity into Focus for the Naramon Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0851
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1379
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0816
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/TacticLensGreater",
@@ -837,14 +6225,60 @@
     "name": "Eidolon Naramon Lens",
     "description": "Channels a large amount of Affinity into Focus for the Naramon Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Plains of Eidolon Incursions",
+        "type": "Transient Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0029
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/WardLens",
     "name": "Unairu Lens",
     "description": "Channels Affinity into Focus for the Unairu Way.",
     "type": "Focus Lens",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.086
+      },
+      {
+        "location": "Level 20 - 40 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0842
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.1481
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0851
+      },
+      {
+        "location": "Level 30 - 50 Bounty",
+        "type": "Cetus Bounty Rewards",
+        "rarity": "Rare",
+        "chance": 0.0833
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/WardLensGreater",
@@ -858,344 +6292,14 @@
     "name": "Eidolon Unairu Lens",
     "description": "Channels a large amount of Affinity into Focus for the Unairu Way.",
     "type": "Focus Lens",
-    "category": "Misc"
-  },
-  {
-    "name": "Ruhang",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Vargeet Ruhang",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Vargeet Ii Ruhang",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageICritII",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ruhang Ii",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageII",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Vargeet Ruhang Ii",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIICritI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ekwana Ruhang Ii",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIIStatusI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ekwana Ruhang",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ekwana Ii Ruhang",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceDamageIStatusII",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Jai",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Vargeet Jai",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Vargeet Ii Jai",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritII",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Jai Ii",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedII",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Vargeet Jai Ii",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIICritI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ekwana Jai Ii",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIIStatusI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ekwana Jai",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusI",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ekwana Ii Jai",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedIStatusII",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Jayap",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFive",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Seekalla",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleFour",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Peye",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleOne",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Kroostra",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleSix",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Kwath",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleThree",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Laka",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleTwo",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Dehtat",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFive",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Cyath",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipFour",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Balla",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipOne",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Kronsh",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipSix",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Mewan",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipThree",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Ooltha",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipTwo",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Korb",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleNine",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Shtung",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Handle/HandleTen",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Dokrahm",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipEleven",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Sepfahn",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipNine",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Rabvee",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee02/Tip/TipTen",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Plague Akwin",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleOne",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Plague Bokwin",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleTwo",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Plague Kripath",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipOne",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Plague Keewar",
-    "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Tips/InfestedTipTwo",
-    "type": "Melee",
-    "category": "Misc"
-  },
-  {
-    "name": "Mote Prism",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/SentTrainingAmplifier/SentAmpTrainingBarrel",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Raplak Prism",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartA",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Shwaak Prism",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartB",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Granmu Prism",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartC",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Pencha Scaffold",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Chassis/SentAmpSet1ChassisPartA",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Shraksun Scaffold",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Chassis/SentAmpSet1ChassisPartB",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Klebrik Scaffold",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Chassis/SentAmpSet1ChassisPartC",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Clapkra Brace",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartA",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Juttni Brace",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartB",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "name": "Lohrin Brace",
-    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartC",
-    "type": "Amp",
-    "category": "Misc"
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/BasicUcResourceDrone",
-    "name": "Distilling Extractor",
-    "description": "The Distilling Extractor has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect resources. It must be emptied regularly and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 1,
-    "fillRate": 8,
-    "durability": 200,
-    "repairRate": 20,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/BasicResourceDrone",
-    "name": "Titan Extractor",
-    "description": "Deploy the EXTRACTOR on a planet to collect resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 1,
-    "fillRate": 4,
-    "durability": 100,
-    "repairRate": 10,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/AdvancedUcResourceDrone",
-    "name": "Distilling Extractor Prime",
-    "description": "The Distilling Extractor Prime has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect large amounts of resources. It must be emptied regularly and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 2,
-    "fillRate": 8,
-    "durability": 200,
-    "repairRate": 20,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/AdvancedResourceDrone",
-    "name": "Titan Extractor Prime",
-    "description": "Deploy the EXTRACTOR on a planet to collect large amounts of resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 2,
-    "fillRate": 4,
-    "durability": 100,
-    "repairRate": 10,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
+    "category": "Misc",
+    "drops": [
+      {
+        "location": "Plains of Eidolon Incursions",
+        "type": "Transient Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0029
+      }
+    ]
   }
 ]

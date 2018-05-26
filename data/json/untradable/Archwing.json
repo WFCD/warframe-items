@@ -1,5 +1,193 @@
 [
   {
+    "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
+    "name": "Amesha",
+    "description": "Transform into a winged guardian.",
+    "health": 400,
+    "shield": 200,
+    "armor": 200,
+    "stamina": 150,
+    "power": 200,
+    "abilities": [
+      {
+        "name": "Watchful Swarm",
+        "description": "Tiny drones orbit the Warframe or an ally, and intercept enemy fire."
+      },
+      {
+        "name": "Benevolent Decoy",
+        "description": "Creates beacons that draw enemy fire, converting the damage into healing pulses."
+      },
+      {
+        "name": "Warding Grace",
+        "description": "Renders the Warframe and nearby allies immune to Status Effects, while slowing nearby enemies."
+      },
+      {
+        "name": "Vengeful Rush",
+        "description": "All damage taken is transformed into Energy, while abilities gain enhanced Range, Duration and Power. Affects the Warframe and nearby allies."
+      }
+    ],
+    "type": "Warframe",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent",
+        "name": "Harness"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent",
+        "name": "Systems"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent",
+        "name": "Wings"
+      },
+      {
+        "name": "Blueprint"
+      }
+    ],
+    "category": "Archwing"
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
+    "name": "Itzal",
+    "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
+    "health": 200,
+    "shield": 200,
+    "armor": 50,
+    "stamina": 500,
+    "power": 200,
+    "abilities": [
+      {
+        "name": "Blink",
+        "description": "The Itzal Archwing teleports a short distance, dropping all enemy target locks."
+      },
+      {
+        "name": "Penumbra",
+        "description": "Activates a cloaking field that hides the Warframe and any nearby allies who remain stationary."
+      },
+      {
+        "name": "Cosmic Crush",
+        "description": "Forms a miniature black hole that sucks in all nearby objects before rupturing in a massive shock wave."
+      },
+      {
+        "name": "Fighter Escort",
+        "description": "Deploys drones that fight alongside the Warframe, each detonating in a destructive blast when killed."
+      }
+    ],
+    "type": "Warframe",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingChassisComponent",
+        "name": "Harness"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingSystemsComponent",
+        "name": "Systems"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingWingsComponent",
+        "name": "Wings"
+      },
+      {
+        "name": "Blueprint"
+      }
+    ],
+    "category": "Archwing"
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
+    "name": "Odonata",
+    "description": "The systems built into this Archwing balance offensive capabilities with defensive countermeasures.",
+    "health": 300,
+    "shield": 300,
+    "armor": 100,
+    "stamina": 200,
+    "power": 100,
+    "abilities": [
+      {
+        "name": "Energy Shell",
+        "description": "Forms a protective energy shell around the Warframe"
+      },
+      {
+        "name": "Disarray",
+        "description": "Drops flare beacons confusing incoming guided missiles."
+      },
+      {
+        "name": "Seeking Fire",
+        "description": "Fires a large volley of homing missiles."
+      },
+      {
+        "name": "Repel",
+        "description": "The Warframe emits a massive pulse of energy, stunning nearby enemies and sending them flying."
+      }
+    ],
+    "type": "Warframe",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingChassisComponent",
+        "name": "Harness"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingSystemsComponent",
+        "name": "Systems"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingWingsComponent",
+        "name": "Wings"
+      },
+      {
+        "name": "Blueprint"
+      }
+    ],
+    "category": "Archwing"
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
+    "name": "Elytron",
+    "description": "This heavy duty Archwing was designed for one purpose, destruction.",
+    "health": 450,
+    "shield": 450,
+    "armor": 150,
+    "stamina": 150,
+    "power": 125,
+    "abilities": [
+      {
+        "name": "Bloomer",
+        "description": "Fires a high-yield, remotely detonated explosive projectile capable of latching onto targets."
+      },
+      {
+        "name": "Core Vent",
+        "description": "Vents out the Archwing's propulsion core, confusing enemy projectiles and causing them to detonate."
+      },
+      {
+        "name": "Thumper",
+        "description": "Creates a localized storm of punishing explosions."
+      },
+      {
+        "name": "Warhead",
+        "description": "Launches a plodding missile capable of unleashing a massive explosion."
+      }
+    ],
+    "type": "Warframe",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent",
+        "name": "Harness"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent",
+        "name": "Systems"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent",
+        "name": "Wings"
+      },
+      {
+        "name": "Blueprint"
+      }
+    ],
+    "category": "Archwing"
+  },
+  {
     "name": "Fluctus",
     "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/RocketArtillery/ArchRocketCrossbow",
     "secondsPerShot": 0.19999999,
@@ -27,15 +215,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowBarrel",
-        "name": "Fluctus Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowReceiver",
-        "name": "Fluctus Stock"
+        "name": "Stock"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowStock",
-        "name": "Fluctus Limbs"
+        "name": "Limbs"
       },
       {
         "name": "Blueprint"
@@ -98,15 +286,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel",
-        "name": "Velocitus Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver",
-        "name": "Velocitus Receiver"
+        "name": "Receiver"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock",
-        "name": "Velocitus Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -142,15 +330,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonBarrel",
-        "name": "Corvas Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonReceiver",
-        "name": "Corvas Receiver"
+        "name": "Receiver"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonStock",
-        "name": "Corvas Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -240,15 +428,35 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleBarrel",
-        "name": "Phaedra Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleReceiver",
-        "name": "Phaedra Receiver"
+        "name": "Receiver",
+        "drops": [
+          {
+            "location": "Mercury - Caduceus",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          },
+          {
+            "location": "Venus - Montes",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          },
+          {
+            "location": "Mars - Syrtis",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleStock",
-        "name": "Phaedra Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -284,15 +492,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunBarrel",
-        "name": "Cyngas Barrel"
+        "name": "Barrel"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunReceiver",
-        "name": "Cyngas Receiver"
+        "name": "Receiver"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunStock",
-        "name": "Cyngas Stock"
+        "name": "Stock"
       },
       {
         "name": "Blueprint"
@@ -382,15 +590,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldAegis",
-        "name": "Centaur Aegis"
+        "name": "Aegis"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldBlade",
-        "name": "Centaur Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldHandle",
-        "name": "Centaur Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -453,11 +661,11 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
-        "name": "Onorix Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle",
-        "name": "Onorix Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -493,15 +701,15 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordBlade",
-        "name": "Agkuza Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordGuard",
-        "name": "Agkuza Guard"
+        "name": "Guard"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordHandle",
-        "name": "Agkuza Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -537,11 +745,11 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheBlade",
-        "name": "Kaszas Blade"
+        "name": "Blade"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheHandle",
-        "name": "Kaszas Handle"
+        "name": "Handle"
       },
       {
         "name": "Blueprint"
@@ -577,199 +785,11 @@
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle",
-        "name": "Rathbone Handle"
+        "name": "Handle"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead",
-        "name": "Rathbone Head"
-      },
-      {
-        "name": "Blueprint"
-      }
-    ],
-    "category": "Archwing"
-  },
-  {
-    "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
-    "name": "Amesha",
-    "description": "Transform into a winged guardian.",
-    "health": 400,
-    "shield": 200,
-    "armor": 200,
-    "stamina": 150,
-    "power": 200,
-    "abilities": [
-      {
-        "name": "Watchful Swarm",
-        "description": "Tiny drones orbit the Warframe or an ally, and intercept enemy fire."
-      },
-      {
-        "name": "Benevolent Decoy",
-        "description": "Creates beacons that draw enemy fire, converting the damage into healing pulses."
-      },
-      {
-        "name": "Warding Grace",
-        "description": "Renders the Warframe and nearby allies immune to Status Effects, while slowing nearby enemies."
-      },
-      {
-        "name": "Vengeful Rush",
-        "description": "All damage taken is transformed into Energy, while abilities gain enhanced Range, Duration and Power. Affects the Warframe and nearby allies."
-      }
-    ],
-    "type": "Warframe",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent",
-        "name": "Amesha Harness"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent",
-        "name": "Amesha Systems"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent",
-        "name": "Amesha Wings"
-      },
-      {
-        "name": "Blueprint"
-      }
-    ],
-    "category": "Archwing"
-  },
-  {
-    "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
-    "name": "Itzal",
-    "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
-    "health": 200,
-    "shield": 200,
-    "armor": 50,
-    "stamina": 500,
-    "power": 200,
-    "abilities": [
-      {
-        "name": "Blink",
-        "description": "The Itzal Archwing teleports a short distance, dropping all enemy target locks."
-      },
-      {
-        "name": "Penumbra",
-        "description": "Activates a cloaking field that hides the Warframe and any nearby allies who remain stationary."
-      },
-      {
-        "name": "Cosmic Crush",
-        "description": "Forms a miniature black hole that sucks in all nearby objects before rupturing in a massive shock wave."
-      },
-      {
-        "name": "Fighter Escort",
-        "description": "Deploys drones that fight alongside the Warframe, each detonating in a destructive blast when killed."
-      }
-    ],
-    "type": "Warframe",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingChassisComponent",
-        "name": "Itzal Harness"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingSystemsComponent",
-        "name": "Itzal Systems"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingWingsComponent",
-        "name": "Itzal Wings"
-      },
-      {
-        "name": "Blueprint"
-      }
-    ],
-    "category": "Archwing"
-  },
-  {
-    "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
-    "name": "Odonata",
-    "description": "The systems built into this Archwing balance offensive capabilities with defensive countermeasures.",
-    "health": 300,
-    "shield": 300,
-    "armor": 100,
-    "stamina": 200,
-    "power": 100,
-    "abilities": [
-      {
-        "name": "Energy Shell",
-        "description": "Forms a protective energy shell around the Warframe"
-      },
-      {
-        "name": "Disarray",
-        "description": "Drops flare beacons confusing incoming guided missiles."
-      },
-      {
-        "name": "Seeking Fire",
-        "description": "Fires a large volley of homing missiles."
-      },
-      {
-        "name": "Repel",
-        "description": "The Warframe emits a massive pulse of energy, stunning nearby enemies and sending them flying."
-      }
-    ],
-    "type": "Warframe",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingChassisComponent",
-        "name": "Odonata Harness"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingSystemsComponent",
-        "name": "Odonata Systems"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingWingsComponent",
-        "name": "Odonata Wings"
-      },
-      {
-        "name": "Blueprint"
-      }
-    ],
-    "category": "Archwing"
-  },
-  {
-    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
-    "name": "Elytron",
-    "description": "This heavy duty Archwing was designed for one purpose, destruction.",
-    "health": 450,
-    "shield": 450,
-    "armor": 150,
-    "stamina": 150,
-    "power": 125,
-    "abilities": [
-      {
-        "name": "Bloomer",
-        "description": "Fires a high-yield, remotely detonated explosive projectile capable of latching onto targets."
-      },
-      {
-        "name": "Core Vent",
-        "description": "Vents out the Archwing's propulsion core, confusing enemy projectiles and causing them to detonate."
-      },
-      {
-        "name": "Thumper",
-        "description": "Creates a localized storm of punishing explosions."
-      },
-      {
-        "name": "Warhead",
-        "description": "Launches a plodding missile capable of unleashing a massive explosion."
-      }
-    ],
-    "type": "Warframe",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent",
-        "name": "Elytron Harness"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent",
-        "name": "Elytron Systems"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent",
-        "name": "Elytron Wings"
+        "name": "Head"
       },
       {
         "name": "Blueprint"

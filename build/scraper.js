@@ -7,6 +7,7 @@ const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 
 // We'll get these in the fetch function
 let resourceExports
+let dropChances
 let ducats = []
 
 class Scraper {
@@ -61,6 +62,7 @@ class Scraper {
    * etc
    */
   async fetchAdditional () {
+    dropChances = JSON.parse(await request.get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json'))
     resourceExports = await request.get('http://content.warframe.com/MobileExport/Manifest/ExportResources.json')
     const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
@@ -92,6 +94,7 @@ class Scraper {
       this.sanitize(item)
       this.addComponents(item)
       this.addCategory(item, type)
+      this.addDropRate(item)
 
       // Add to category
       if (!data[item.category]) {
@@ -280,7 +283,7 @@ class Scraper {
       item.components.push({ name: 'Blueprint' })
 
       for (let component of item.components) {
-        component.name = component.name.replace(item.name + ' ', '')
+        component.name = title(component.name).replace(item.name + ' ', '')
         this.sanitize(component)
         delete component.description
         this.addDucats(item, component)
@@ -341,6 +344,96 @@ class Scraper {
       else if (item.type === 'Gem') item.category = 'Resources'
       else if (item.type === 'Plant') item.category = 'Resources'
       else item.category = 'Misc'
+    }
+  }
+
+  /**
+   * Add drop chances based on official drop tables
+   */
+  addDropRate (item) {
+    if (item.components) {
+      for (let component of item.components) {
+        const drops = this.findDropLocations(`${item.name} ${component.name}`)
+        if (drops.length) component.drops = drops
+      }
+    } else {
+      const drops = this.findDropLocations(`${item.name}`)
+      if (drops.length) item.drops = drops
+    }
+  }
+
+  findDropLocations (item) {
+    let result = []
+    let dropLocations = []
+
+    this.findDropRecursive(item, dropChances, dropLocations, '')
+
+    if (!dropLocations.length) {
+      return []
+    }
+
+    // The find function returns an array of mentions with their respective paths.
+    // So because I'm lazy and don't want to directly implement it into the
+    // recursion, we'll gather the info "around" the found key here.
+    dropLocations.forEach(location => {
+      const propBlacklist = ['_id', 'ememyModDropChance', 'enemyModDropChance']
+      const path = location.path.replace(/\[/g, '').replace(/\]/g, ' ').split(' ')
+      const dropData = dropChances[path[0]][path[1]]
+      const drop = {
+        location: '',
+        type: path[0].replace(/([a-z](?=[A-Z]))/g, '$1 '), // Regex transforms camelCase to normal words
+        rarity: location.drop.rarity,
+        chance: location.drop.chance * 0.01
+      }
+      // Capitalize drop type
+      drop.type = drop.type[0].toUpperCase() + drop.type.slice(1)
+
+      // If enemy mod drop chance is present, multiply drop chance with that
+      // value, so the drop chance is accurate for each kill, not for each drop.
+      if (dropData && dropData.ememyModDropChance) {
+        drop.chance = drop.chance * (dropData.ememyModDropChance * 0.01)
+      }
+
+      // First few Properties of the first object form the drop location name
+      for (let prop in dropData) {
+        if (typeof dropData[prop] === 'string' && !propBlacklist.includes(prop)) {
+          drop.location += dropData[prop] + ' '
+        }
+      }
+
+      // Add some fixes for Mission rewards. Their results are more nested
+      // than other drop locations. Path looks like:
+      // [missionRewards][Void][Belenus][rewards][C][12][itemName]
+      if (drop.type === 'Mission Rewards') {
+        drop.location = `${path[1]} - ${path[2]}`
+
+        // Has rotations
+        if (path[4].match(/[a-z]/i)) {
+          drop.rotation = path[4]
+        }
+      }
+
+      // Remove trailing space from location
+      drop.location = drop.location.trim()
+      result.push(drop)
+    })
+    return result
+  }
+
+  findDropRecursive (target, child, dropLocations, path) {
+    if (typeof child === 'object') {
+      for (let prop in child) {
+        const nextPath = `${path}[${prop}]`
+        const found = this.findDropRecursive(target, child[prop], dropLocations, nextPath)
+        if (found && !child.enemies) {
+          dropLocations.push({ path: nextPath, drop: child })
+        }
+      }
+    }
+
+    // String ? check if it's the component we want
+    else if (typeof child === 'string') {
+      return child === target || child === target + ' Blueprint' ? child : null
     }
   }
 }
