@@ -3,7 +3,7 @@
  * immediately without fetching them. This storing process is automated by the
  * docker image.
  */
-const scraper = require('../src/scraper.js')
+const scraper = require('./scraper.js')
 const fs = require('fs')
 const stringify = require('./stringify.js')
 
