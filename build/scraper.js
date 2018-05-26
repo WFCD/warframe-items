@@ -1,6 +1,8 @@
-const request = require('request-promise')
+const request = require('requestretry').defaults({ fullResponse: false })
 const cheerio = require('cheerio')
 const _ = require('lodash')
+const Patchlogs = require('warframe-patchlogs')
+const patchlogs = new Patchlogs()
 
 // Capitaliz each word. No idea why this isn't a js standard yet.
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
@@ -33,6 +35,12 @@ class Scraper {
   async fetchAll (tradable) {
     let data = {}
 
+    // this would heavily interfere with other downloads. So I'd rather wait a bit.
+    console.log('Waiting for patchlogs to download, this will take a while...')
+    const t0 = new Date()
+    await patchlogs.setup
+    console.log(`Finished in ${new Date() - t0}ms\n`)
+
     await Promise.all(this.endpoints.map(async e => {
       const type = e.split('/').slice(-1)[0].replace('Export', '').replace('.json', '')
       const categories = await this.fetch(type, tradable)
@@ -46,14 +54,14 @@ class Scraper {
    */
   async fetch (type, tradable) {
     const trade = tradable === false ? '- untradable' : (tradable ? '- tradable' : '')
-    console.log(`* Fetching ${type} ${trade}`)
+    console.log(`Fetching ${type} ${trade}`)
     const url = this.endpoints.find(e => e.includes(type))
     const res = await request.get(url)
     const sanitized = res.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
     const items = JSON.parse(sanitized)[`Export${type}`]
     await this.fetchAdditional()
 
-    console.log(`* Fetched data for ${type}, processing...`)
+    console.log(`Fetched data for ${type}, processing...`)
     return this.filter(items, tradable, type, new Date())
   }
 
@@ -95,6 +103,7 @@ class Scraper {
       this.addComponents(item)
       this.addCategory(item, type)
       this.addDropRate(item)
+      await this.addPatchlogs(item)
 
       // Add to category
       if (!data[item.category]) {
@@ -103,7 +112,7 @@ class Scraper {
         data[item.category].push(item)
       }
     }
-    console.log(`* Finished in ${new Date() - timer}ms \n`)
+    console.log(`Finished in ${new Date() - timer}ms \n`)
     return data
   }
 
@@ -320,7 +329,10 @@ class Scraper {
       if (!item.name.includes('Relic')) item.category = 'Arcanes'
       else item.category = 'Relics'
     }
-    if (type === 'Sentinels') item.category = 'Sentinels'
+    if (type === 'Sentinels') {
+      if (item.type === 'Sentinel') item.category = 'Sentinels'
+      else item.category = 'Pets'
+    }
     if (type === 'Upgrades') item.category = 'Mods'
     if (type === 'Warframes') {
       if (item.isArchwing) item.category = 'Archwing'
@@ -435,6 +447,14 @@ class Scraper {
     else if (typeof child === 'string') {
       return child === target || child === target + ' Blueprint' ? child : null
     }
+  }
+
+  /**
+   * Get patchlogs from forums and attach when changes are found for item.
+   */
+  async addPatchlogs (item) {
+    const logs = await patchlogs.getItemChanges(item)
+    if (logs.length) item.patchlogs = logs
   }
 }
 
