@@ -37,7 +37,7 @@ class Scraper {
   /**
    * Generate All.json data
    */
-  async fetchAll (tradable) {
+  async fetchAll () {
     let data = {}
 
     // this would heavily interfere with other downloads. So I'd rather wait a bit.
@@ -48,7 +48,7 @@ class Scraper {
 
     await Promise.all(this.endpoints.map(async e => {
       const type = e.split('/').slice(-1)[0].replace('Export', '').replace('.json', '')
-      const categories = await this.fetch(type, tradable)
+      const categories = await this.fetch(type)
       data = _.mergeWith(data, categories, (a, b) => _.isArray(a) ? a.concat(b) : undefined)
     }))
     return data
@@ -57,9 +57,8 @@ class Scraper {
   /**
    * Generate single .json data
    */
-  async fetch (type, tradable) {
-    const trade = tradable === false ? '- untradable' : (tradable ? '- tradable' : '')
-    console.log(`Fetching ${type} ${trade}`)
+  async fetch (type) {
+    console.log(`Fetching ${type}`)
     const url = this.endpoints.find(e => e.includes(type))
     const res = await request.get(url)
     const sanitized = res.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
@@ -67,7 +66,7 @@ class Scraper {
     await this.fetchAdditional()
 
     console.log(`Fetched data for ${type}, processing...`)
-    return this.filter(items, tradable, type, new Date())
+    return this.filter(items, type, new Date())
   }
 
   /**
@@ -93,7 +92,7 @@ class Scraper {
    * Add, modify, remove certain keys as I deem sensible. Complaints go to
    * management.
    */
-  async filter (items, tradable, type, timer) {
+  async filter (items, type, timer) {
     const data = {}
     items = this.removeComponents(items)
 
@@ -101,12 +100,10 @@ class Scraper {
       let item = items[i]
 
       this.addType(item)
-      if (this.removeTradable(item, tradable, type)) {
-        continue
-      }
       this.sanitize(item)
       this.addComponents(item)
       this.addCategory(item, type)
+      this.addTradable(item, type)
       this.addDropRate(item)
       await this.addPatchlogs(item)
 
@@ -139,41 +136,6 @@ class Scraper {
       }
     }
     return result
-  }
-
-  /**
-   * Limit items to tradable/untradable if specified.
-   */
-  removeTradable (item, tradable, type) {
-    const tradableTypes = ['Gem', 'Fish', 'Key', 'Focus Lens']
-    const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
-    const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
-    const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
-
-    // Nothing specified for tradability? Just return the original.
-    if (tradable === null) {
-      return false
-    }
-
-    const notFiltered = !untradableTypes.includes(item.type) && !item.name.match(untradableRegex)
-    const isTradable = (item.name.match(tradableRegex) && notFiltered) || (tradableTypes.includes(item.type) && notFiltered)
-
-    if (tradable) {
-      if (type === 'Upgrades') {
-        return false
-      }
-      if (isTradable) {
-        return false
-      }
-    } else {
-      if (type === 'Upgrades') {
-        return true
-      }
-      if (!isTradable) {
-        return false
-      }
-    }
-    return true
   }
 
   /**
@@ -322,6 +284,20 @@ class Scraper {
         return false // break loop
       }
     }
+  }
+
+  /**
+   * Limit items to tradable/untradable if specified.
+   */
+  addTradable (item, type) {
+    const tradableTypes = ['Gem', 'Fish', 'Key', 'Focus Lens']
+    const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
+    const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
+    const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
+    const notFiltered = !untradableTypes.includes(item.type) && !item.name.match(untradableRegex)
+    const isTradable = type === 'Upgrades' || (item.name.match(tradableRegex) && notFiltered) || (tradableTypes.includes(item.type) && notFiltered)
+
+    item.tradable = isTradable
   }
 
   /**
