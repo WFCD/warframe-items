@@ -3,10 +3,12 @@
 [![build](https://ci.nexus-stats.com/api/badges/nexus-devs/warframe-items/status.svg)](https://ci.nexus-stats.com/nexus-devs/warframe-items)
 [![dependencies](https://david-dm.org/nexus-devs/warframe-items.svg)](https://david-dm.org/nexus-devs/warframe-items)
 
+[![Supported by Warframe Community Developers](https://warframestat.us/wfcd.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
+
 <br>
 
 Fetches all items available on Warframe's mobile API endpoints while also
-adding images, drop rates and related rivens.
+adding images, drop rates, patch logs and related rivens.
 
 The aim of this library is to create a complete collection of data for every
 item in Warframe based on the game's own data. This repo will be automatically
