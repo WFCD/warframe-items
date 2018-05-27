@@ -118,6 +118,19 @@ class Scraper {
       }
     }
     console.log(`Finished in ${new Date() - timer}ms \n`)
+
+    // Sort everything alphabetically
+    for (let category of Object.keys(data)) {
+      data[category].sort((a, b) => {
+        if (a.name < b.name) {
+          return -1
+        }
+        if (a.name > b.name) {
+          return 1
+        }
+        return 0
+      })
+    }
     return data
   }
 
@@ -197,6 +210,15 @@ class Scraper {
           name: title(a.abilityName),
           description: a.description
         }
+      })
+      item.abilities.sort((a, b) => {
+        if (a.name < b.name) {
+          return -1
+        }
+        if (a.name > b.name) {
+          return 1
+        }
+        return 0
       })
     }
 
@@ -302,6 +324,15 @@ class Scraper {
         delete component.description
         this.addDucats(item, component)
       }
+      item.components.sort((a, b) => {
+        if (a.name < b.name) {
+          return -1
+        }
+        if (a.name > b.name) {
+          return 1
+        }
+        return 0
+      })
     }
   }
 
@@ -376,6 +407,10 @@ class Scraper {
     } else {
       const drops = this.findDropLocations(`${item.name}`)
       if (drops.length) item.drops = drops
+    }
+    // Sort by drop rate
+    if (item.drops) {
+      item.drops.sort((a, b) => b.chance - a.chance)
     }
   }
 
