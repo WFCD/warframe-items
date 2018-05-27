@@ -1,6 +1,6 @@
 ## Warframe-items
 [![npm](https://img.shields.io/npm/v/warframe-items.svg)](https://npmjs.org/warframe-items)
-[![build](https://ci.nexus-stats.com/api/badges/nexus-devs/warframe-items/status.svg)](https://ci.nexus-stats.com/nexus-devs/warframe-items)
+[![build](https://ci.nexus-stats.com/api/badges/WFCD/warframe-items/status.svg)](https://ci.nexus-stats.com/WFCD/warframe-items)
 [![dependencies](https://david-dm.org/nexus-devs/warframe-items.svg)](https://david-dm.org/nexus-devs/warframe-items)
 
 [![Supported by Warframe Community Developers](https://warframestat.us/wfcd.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
