@@ -1,5 +1,37 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/PlatinumSpectreArmy",
+    "name": "Cosmic Specter Regiment",
+    "description": "An army composed of cosmic-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for four conflicts.",
+    "type": "Specter",
+    "category": "Gear",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/GoldSpectreArmy",
+    "name": "Force Specter Regiment",
+    "description": "An army composed of force-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for three conflicts.",
+    "type": "Specter",
+    "category": "Gear",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/SilverSpectreArmy",
+    "name": "Phase Specter Regiment",
+    "description": "An army composed of phase-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for two conflicts.",
+    "type": "Specter",
+    "category": "Gear",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/SpectreArmies/BronzeSpectreArmy",
+    "name": "Vapor Specter Regiment",
+    "description": "An army composed of vapor-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for one conflict.",
+    "type": "Specter",
+    "category": "Gear",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/LocationMarkerCombat",
     "name": "[Ph] Combat Marker",
     "description": "[PH] Place a persistent marker with a combat icon at your position",
@@ -37,7 +69,15 @@
     "description": "Charges consumed by Landing Craft Air Support.",
     "type": "Gear",
     "category": "Gear",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "fixes": "Fixed an issue with Sentry Gun Air Support Charges disappearing after Host migration."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/AlphaCorruptor",
@@ -164,6 +204,12 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 18.8.0",
+        "date": "2016-04-06T20:31:30Z",
+        "url": "https://forums.warframe.com/topic/635136-update-1880/",
+        "fixes": "•    Fixed players not receiving Orokin Ciphers or Corrupted Mods after completing the Derelict Survival Vault and surviving 10+ minutes. "
+      },
+      {
         "name": "Update 17.11.0 + 17.11.0.1",
         "date": "2015-11-12T22:55:35Z",
         "url": "https://forums.warframe.com/topic/560104-update-17110-171101/",
@@ -188,16 +234,52 @@
         "fixes": "Fixed Ciphers not being usable for Grineer hack panels."
       },
       {
+        "name": "Hotfix 15.0.6",
+        "date": "2014-10-27T22:45:51Z",
+        "url": "https://forums.warframe.com/topic/333871-hotfix-1506/",
+        "fixes": "Optimized both Grineer and Corpus Cipher minigames."
+      },
+      {
+        "name": "Hotfix 15.0.1",
+        "date": "2014-10-24T20:59:41Z",
+        "url": "https://forums.warframe.com/topic/329586-hotfix-1501/",
+        "fixes": "Fixed Cipher minigames not working with a controller."
+      },
+      {
         "name": "Warframe: Archwing",
         "date": "2014-10-24T12:52:08Z",
         "url": "https://forums.warframe.com/topic/328727-warframe-archwing/",
         "changes": "Ciphers now scale in difficulty with enemy level."
       },
       {
+        "name": "Hotfix 14.0.8",
+        "date": "2014-07-23T22:39:59Z",
+        "url": "https://forums.warframe.com/topic/272088-hotfix-1408/",
+        "fixes": "Added in additional visual cues near the Cipher pickup area.Fixes:Fixed a number of localization issues."
+      },
+      {
+        "name": "Update 13: Dark Sectors",
+        "date": "2014-04-10T05:28:14Z",
+        "url": "https://forums.warframe.com/topic/209324-update-13-dark-sectors/",
+        "changes": "- Melee Channel mod has had its name changed to Energy Channel.- UI Loading screen now shows random Codex entry instead of outdated loading tips.- Boss achievements are now unlocked by completing the appropriate node, rather than being tied to the enemy.- Oberon pieces have been moved off Vay Hek to make room for Hydroid, and now have a chance to drop from Grineer Leader enemy types.- Improved the skybox visualizing Mars so as to make the dark side of the planet appear less “see-through”.- Prevented players from being able to click outside of the sign in rewards screen.- Improved Sentinel Vacuum functionality.- Optimized audio and improved ambiance on the Forest Tileset.- Improved 3D transmissions with better lip-syncs and centered textfields.- Graphical tweaks to numerous Grineer Forest art assets.- Tweaked the damage amount and proc chance of environmental hazards in conclave missions.- Tweaked Grineer melee hit react animations.- Tweaked the cast sounds of multiple frames including Zephyr, Loki, and Excalibur.- Added hit proxies to Grineer breakable fans which should improve their ability to be destroyed.- Changed when zooming in and out of Mods occurs in the Upgrade menu so as to prevent any potential unneeded zooms.- Improvements to the way Transmissions are generated and perform.- Removed a number of faulty player spawns in the Grineer Galleon and Forest Tilesets.- Sentinels are now invincible during Ash's Bladestorm.- Added in a unique descriptor for the Livestream alerts.- Improved the Grineer hit reaction animations.- Improved the Corpus bipedal walk animation.- Melee stats now round to 1 digit in the arsenal.- Changed 'Grineer Cipher' to 'Cipher' as they appear across different tilesets.- Repeated Lotus transmissions now only play once every 60 seconds and a maximum of 5 times per mission.- Tweaked Loki's Invisibility enter sound.- Tweaked the Grineer Piston hit sound.- The shield drain effect present in Hijack missions is no longer adversely affected by high/low framerates.- Prevented dojo rooms from being queued for destruction if there are pending recipes being built.- Improved the performance of Zephyr's Tornado ability.- Improved the code performance on Banshee's Sonic Boom ability.- Improved the performance of the Stug.- Improved the performance of the snow effects in the Outpost tilesets.- Improved the performance of a number of in game timers for Retrieval missions.- Improved the performance of the Gas City tilesets.- Improved the performance of the Tutorial level.- Improved the performance of Reactor Core destruction effects.- Improved the performance and Apex visuals of Vauban's Vortex ability.- Improved the Apex visuals on the Infested Death effect.- Improved the 3D reload sound effects for multiple weapons.- Improved the performance of Nekros' Shadows of the Dead ability.- Improved the pickup messages received when using ammo mutator mods.- Improved the Stalker and other hunter AI types targeting selection so as to ensure that they do not attack low level players.- Made the warning message displayed when leaving a clan as the last member more robust, including a full description of all benefits and perks lost.- Improved Zephyr’s Dive Bomb ability by making it emanate slightly above ground allowing it to more effectively hit nearby targets.- Arc Traps will no longer attack players who are siding with Grineer.- Visual FX tweaks to Mag’s Pull and Ember’s Fireball.- Tweaked the Sentinel destruction sound effect.- Tweaked the Explosive arrow sound effect.- Removed the Revive Screen from a number of modes where the screen was incongruous.- Removed Gallium from the Void (replaced with Argon Crystal).- Improved the performance of smoke visual effects."
+      },
+      {
         "name": "Update 11: Valkyr Unleashed",
         "date": "2013-11-21T00:23:32Z",
         "url": "https://forums.warframe.com/topic/132825-update-11-valkyr-unleashed/",
         "changes": "Fixed issue where Ciphers were being consumed twice on a single hack"
+      },
+      {
+        "name": "Update 9.6",
+        "date": "2013-08-16T19:47:03Z",
+        "url": "https://forums.warframe.com/topic/96343-update-96/",
+        "changes": "Flux energy beam is now affected by Energy Colour!Dera muzzle flash is now affected by Energy Colour!Excalibur Radial Blind now uses Energy Colours!Removed the Corpus Void Key Blueprint from the Store - owned copies can be sold for the same purchase priceEnabled selling of Corpus Ciphers and Data Masses.Improvements  to the Transmutation system: you can no longer transmute your final power card of a given type.Improvements to Enemy AI on Settlement defense, they are not as cowardly and won’t huddle in their Spawn location.Added Sobek reload animiaton tweaks.Audio updates to the Desert Skate and Grineer Jetpack TroopsTweaks to Twin Viper soundsTweaks to Orthos hit soundsTweaks to Grineer Miter sounds.Tweaks to Rhino’s Iron Skin lighting.Tweaks to settlement enemy navigation.Added fancy footwork to Grineer Jetpack landing animations.Mods and Blueprints will never expire as drops.Elite Grineer Lancers now use the Hind!"
+      },
+      {
+        "name": "Update 7.2 Hot-Fixes",
+        "date": "2013-03-22T23:14:11Z",
+        "url": "https://forums.warframe.com/topic/17320-update-72-hot-fixes/",
+        "fixes": "7.2 Hot-fixes!- fixed chat window not appearing when running at certain resolutions, added diagnostic output if connection fails- additional fixes for enemies getting stuck behind doors in Endless Defense missions- enemy variety now changes as players progress through waves of Endless Defense- Ciphers should no longer appear as rewards when completing high level waves of Endless Defense- Sentinel weapons now gain XP- Sentinels are now affected by Trinity's healing powers- Reactors and Catalysts are now listed in the Arsenal / Inventory screen- fixed APEX effects being disabled on laptops running nVidia Optimus Technology- fixed issues with Dual Zoren's responsiveness when speed mods are equipped- fixed melee weapon getting stuck in hand if player rolls while meleeing- fixed Cryopod not receiving damage from Infested melee attacks- fixed animation bug when executing idle enemies- fixed being able to fall through the floor in a couple areas within Outpost levels- tweaked Sentinel movement to make it less jittery- fixed bleeding-out players being able to stand and move with limited input if downed by a knock-back attack- fixed issue where context action prompts would sometimes remain on screen or fail to appear entirely- fixes for reported crashes"
       }
     ]
   },
@@ -338,10 +420,34 @@
         "changes": "If you do not  have a Scanner equipped, scannable plants/objects will display a 'requires Codex Scanner' to give players hints on how to interact with various environment objects. "
       },
       {
+        "name": "The Vacuum Within: Hotfix #3",
+        "date": "2016-10-13T18:16:13Z",
+        "url": "https://forums.warframe.com/topic/708168-the-vacuum-within-hotfix-3/",
+        "fixes": "Fixed the Codex Scanner not working on ragdolled enemies."
+      },
+      {
+        "name": "Warframe: Archwing",
+        "date": "2014-10-24T12:52:08Z",
+        "url": "https://forums.warframe.com/topic/328727-warframe-archwing/",
+        "fixes": "Fixed a number of problems with the Codex Scanner (including Helios’s user of the Scanner):\n"
+      },
+      {
         "name": "Hotfix 14.10.3",
         "date": "2014-10-15T22:05:49Z",
         "url": "https://forums.warframe.com/topic/324763-hotfix-14103/",
         "fixes": "Fixed an issue with the Codex Scanner overlay appearing even when no HUD was toggled, content creators rejoice!"
+      },
+      {
+        "name": "13.4.0: Serro + Psa!",
+        "date": "2014-05-21T22:18:51Z",
+        "url": "https://forums.warframe.com/topic/234889-1340-serro-psa/",
+        "fixes": "Added in a new Green visual effect that will appear on enemies that have been fully scanned when viewed with the Codex Scanner."
+      },
+      {
+        "name": "Update 11.1.0",
+        "date": "2013-11-27T22:50:48Z",
+        "url": "https://forums.warframe.com/topic/139326-update-1110/",
+        "fixes": "Volt’s blueprints added to Mission Reward tables. We would like to clarify here that the original U11 notes suggested that his former Boss, J3Golem, would be dropping them in systemic invasions. This is no longer the case, and his parts can be found by playing various missions.FIXES:Fixed issue where players knocked into bleedout while using Codex Scanner would lose weapon firing functionality until revived."
       }
     ]
   },
@@ -494,7 +600,15 @@
     "description": "Damage is greatly reduced while key is equipped.",
     "type": "Gear",
     "category": "Gear",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Silver Grove: Hotfix 2",
+        "date": "2016-08-22T22:32:21Z",
+        "url": "https://forums.warframe.com/topic/690677-the-silver-grove-hotfix-2/",
+        "fixes": "- Fixed many UI bugs that would occur in DirectX 9 when Fullscreen as per:- Fixed the Extinguished Dragon Key causing the SCanner to work very slowly."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/CreditChipMedium",
@@ -952,7 +1066,15 @@
     "description": "Specialized trap for attracting and slowing the movement of synthesis targets.",
     "type": "Gear",
     "category": "Gear",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 18.7.0",
+        "date": "2016-03-30T22:18:10Z",
+        "url": "https://forums.warframe.com/topic/632293-update-1870/",
+        "fixes": "•    Fixed some hitching caused by deploying Kinetic Siphon Traps."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/RareAntitoxin",
@@ -1212,7 +1334,21 @@
     "description": "Ordis hacks into enemy systems and disrupts security protocols for a short period.",
     "type": "Gear",
     "category": "Gear",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 18.7.0",
+        "date": "2016-03-30T22:18:10Z",
+        "url": "https://forums.warframe.com/topic/632293-update-1870/",
+        "fixes": "•    Fixed buff icons not displaying for Systemic Override (Zenurik) and New Moon (Vazarin) abilities."
+      },
+      {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "fixes": "Improved the quality of the HUD icons for Zenurik Systemic Override and Vazarin New Moon Focus abilities."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/CreditChipLarge",
@@ -1546,7 +1682,21 @@
     "description": "Ordis delivers an automatic turret that will fire upon nearby visible enemies.",
     "type": "Gear",
     "category": "Gear",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "fixes": "Fixed an issue with Sentry Gun Air Support Charges disappearing after Host migration."
+      },
+      {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "fixes": "DESICCATION: blasts enemies with a wave of cursed sand, blinding and damaging them while also stealing their health.DEVOUR  marks your target, trapping it in quicksand. Charging the ability will draw them towards Inaros for devouring.  Alternatively, Inaros or his allies can activate the target, transferring a percentage of its health and shields. If the target dies by the hands of Inaros, a sand shadow will spawn to assist him.SANDSTORM transforms Inaros into a whirling spiral of sand, gathering nearby pickups and throwing enemies away. Enemies previously marked for devour within its radius will drained of shields and health.SCARAB SWARM is a charged ability, converting your health into hardened scarab armor. Discharge it to inflict a swarm of insects toward your enemies. Any survivors will have their health drained and bestowed upon your allies within radius.New Quest: Sands of InarosBaro Ki’Teer is searching for riches under the sands of Phobos, but he needs Tenno help in order to find his fortune.New EnemiesFERAL KAVAT -  A feral Kavat. Feral Kavats can be found in all Derelict Missions, except Defense.HYEKKA -  A Grineer-enhanced Kavat, trained to hunt down Infestation.HYEKKA MASTER -  Summons a Hyekka to fight for it.  Hyekka Masters will replace Drahk Masters on Phobos (Grineer Settlement tileset).  They will also appear in any Grineer Mission that features Infested, and may also appear in other Missions that spawn Grineer enemies.New WeaponsLESION -  Pierce enemy defenses at a comfortable melee distanceMUTALIST CERNOS - Overcome with Infestation, this bow’s arrows now spread poisonous contagion to any surface they hit.DUAL TOXOCYST - Brain-strikes excite this bioweapon, causing it to rapidly release toxic munitions.New CosmeticsNew Landing Craft - XIPHOS - Featuring Sentry Gun air-support, this stylish Landing Craft is an asset in any battle.ABRASYS SYANDANA - Evokes stone scarred but not destroyed by the sea’s tireless onslaught.CELESTIA SYANDANA - Displays Daily Conclave Challenge progress, with a beam of light for each completed challenge.INAROS ANUBIS HELMET - A uniquely-styled alternate helmet for Inaros.'DOJO' COLOUR PICKER - a colour palette based on the Dojo Pigment colours!NEW PROFILE ICONS - Palatine Rhino, Nemesis Nyx, and The Corpus have new Profile Icons!New General Features:The Randomizer is here! Players can now customize their loadout and appearance using the ‘Randomize’ button in the Arsenal under Loadout Options!"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/ShieldDroneBall",
@@ -1601,6 +1751,12 @@
         "fixes": "Fixed Frost’s Snow Globe disappearing if a large amount of damage is taken during its invulnerable phase. "
       },
       {
+        "name": "Plains of Eidolon: Hotfix 22.1.1",
+        "date": "2017-10-27T20:21:43Z",
+        "url": "https://forums.warframe.com/topic/868348-plains-of-eidolon-hotfix-2211/",
+        "fixes": "Fixed Frost’s Snow Globe having visible holes when observed from the inside. "
+      },
+      {
         "name": "Hydroid Prime: Hotfix 21.7.1",
         "date": "2017-09-12T14:29:16Z",
         "url": "https://forums.warframe.com/topic/841802-hydroid-prime-hotfix-2171/",
@@ -1613,10 +1769,22 @@
         "fixes": "Fixed Frost’s Snow Globe ability radius stating the incorrect value in the Arsenal."
       },
       {
+        "name": "Banshee Prime: Hotfix 19.11.5 + 19.11.6",
+        "date": "2017-02-28T22:44:49Z",
+        "url": "https://forums.warframe.com/topic/767736-banshee-prime-hotfix-19115-19116/",
+        "fixes": "Fixed Arctic Eximus Snow Globe blocking explosion damage that they should not be blocking (and not blocking it when it should have). The barrier should now be closer to the visual representation."
+      },
+      {
         "name": "The Index Preview: Hotfix #3",
         "date": "2016-10-21T21:33:05Z",
         "url": "https://forums.warframe.com/topic/709998-the-index-preview-hotfix-3/",
         "fixes": "Fixed cases where NPCs would teleport sporadically when pushed by Frost's Snow Globe."
+      },
+      {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "fixes": "Frost’s Snow Globe will no longer freeze or push boss-type enemies."
       },
       {
         "name": "Update 17.7",
@@ -1643,16 +1811,70 @@
         "fixes": "Fixed Frost’s Snow Globe not properly being affected by power range Mods."
       },
       {
+        "name": "Update 16.2",
+        "date": "2015-04-01T22:22:39Z",
+        "url": "https://forums.warframe.com/topic/432384-update-162/",
+        "fixes": "There is a 2 minute cooldown between use.Conclave ChangesIncreased Frost’s Snow Globe slowdown effect in PvP."
+      },
+      {
+        "name": "Hotfix 16.1.3",
+        "date": "2015-03-26T22:31:46Z",
+        "url": "https://forums.warframe.com/topic/427542-hotfix-1613/",
+        "fixes": "Fixed some instances of black textures appearing on Frost’s Snow Globe."
+      },
+      {
         "name": "Hotfix 15.13.3",
         "date": "2015-02-06T16:44:41Z",
         "url": "https://forums.warframe.com/topic/397107-hotfix-15133/",
         "changes": "Players should now be able to clearly see the short pulse of Frost’s Snow Globe that indicates its invulnerability period."
       },
       {
+        "name": "Hotfix 15.0.7",
+        "date": "2014-10-28T23:04:04Z",
+        "url": "https://forums.warframe.com/topic/334873-hotfix-1507/",
+        "fixes": "• Fixed an issue with the game pad bindings for Crouch was appearing incorrectly.• Fixed a number of display issues seen on the End of Match results screen.• Fixed an issue with Archwing abilities using incorrect stats.• Fixed an issue with Void laser traps still harming Limbo while in Rift Walk mode.• Fixed an issue with gravity building up during repeated casts of Zephyr's Tail Wind.• Fixed an issue with Nav Segments not properly dropping from the Phobos Boss.• Fixed an issue with incorrect Master Ranks being displayed on the Profile Screen.• Fixed an issue with Coolant Leak removing Snow Globe slow on enemies.• Fixed some geometry clipping issues seen on certain Ice Planet tilesets.• Fixed the charge damage multiplier not working correctly for the Opticor.• Fixed a number of broken art and lighting assets seen in numerous Ice Planet tiles.• Fixed an issue with Clients not hearing Grineer Skiff sound effects correctly.• Fixed an issue with Phorid bolts damaging Limbo whilst Rift Walking.• Fixed an issue with erroneous Elytron Wing descriptions.• Fixed an issue with certain Ice Planet tilesets missing proper minimaps and thus breaking waypoints.• Fixed an instance of Bladestorm attacks getting stuck as continually in use.• Fixed an issue with broken Beastmaster item pickups.• Fixed an issue certain art assets clipping into certain Archwing tilesets causing potential progression stoppers.• Fixed Bloomer explosion visual effects not appearing correctly for clients.• Fixed the HUD marker for Demolitions Archwing abilities registering and appearing incorrectly.• Fixed an issue with clicking on the top menu while inside Clan Stats causing the menu system to break.• Fixed an issue where selecting a color picker would cause the currently equipped color to be switched to an incorrect color selection.• Fixed an issue with erroneous Infested art assets appearing in certain Ice Planet tilesets.• Fixed an issue with the Beastmaster boomerang switching hands when equipping and throwing."
+      },
+      {
+        "name": "Warframe: Archwing",
+        "date": "2014-10-24T12:52:08Z",
+        "url": "https://forums.warframe.com/topic/328727-warframe-archwing/",
+        "fixes": "Fixed Frost’s Snow Globe inner snowstorm effects not scaling properly with Range mods, resulting in it not matching the outer globe scale."
+      },
+      {
+        "name": "Hotfix 14.1.4",
+        "date": "2014-08-06T22:13:47Z",
+        "url": "https://forums.warframe.com/topic/284750-hotfix-1414/",
+        "changes": "Reduced the Snow Globe health and duration in Dark Sector conflicts."
+      },
+      {
         "name": "Update 13.3.0: Pack Hunters",
         "date": "2014-05-14T23:33:51Z",
         "url": "https://forums.warframe.com/topic/231590-update-1330-pack-hunters/",
         "changes": "Set a max limit on the max instances of Frost's Snow Globe sound effects."
+      },
+      {
+        "name": "Hotfix 8.3.1",
+        "date": "2013-07-05T23:10:32Z",
+        "url": "https://forums.warframe.com/topic/74108-hotfix-831/",
+        "fixes": "Fix for Snow Globe “Power in Use” bug."
+      },
+      {
+        "name": "Hotfix 8.1.2",
+        "date": "2013-06-13T14:02:52Z",
+        "url": "https://forums.warframe.com/topic/64338-hotfix-812/",
+        "fixes": "- Fixed Banshee Sonar \"power in use\" issue- Fixed Infested bosses disappearing after being damaged by Kestrel- Added Mobile Defense missions to alerts- Fixed Tower Exterminate keys sometimes resulting in Raid missions- Fixed elevator direction being reversed in Dojo builder UI- Fixed elevator textures in Dojo- Fixed elemental effects not outlining Dual Cleavers properly- Fixed Acrid darts not disappearing- Updated Bo unequip sound- Fixed Polearm not collapsing after performing a jumping melee attack- Improved collision detection on Polearm attacks- Fixed Polearm sometimes appearing blurry after attacking- Fixed Sentinels missing muzzle flash when attacking- Fixed Ignis and Flux Rifle showing a clip size of 1.$ in the arsenal- Fixed incorrect tooltip description for Snow Globe- Fixed sign-in reward UI showing 1 star when awarding coupon (consecutive sign-in count wasn’t actually affected)- Fixed gameplay crashes"
+      },
+      {
+        "name": "Update 7.9.0: The Glaive",
+        "date": "2013-04-26T22:56:42Z",
+        "url": "https://forums.warframe.com/topic/35529-update-790-the-glaive/",
+        "fixes": "- Fixed Saryn's Miasma power not awarding XP or kills.- Fixed Saryn's Miasma power not being affected by Continuity or Focus mods.- Fixed Saryn's Venom power not being affected by Continuity mod.- Fixed the linking of Loki's Decoy and Switch Teleport powers that was causing avatars to sometimes fall outside the level.- Fixed Trinity's link ability that was affecting/destroying her Sentinel.- Fixed Rhino Charge and Slash Dash powers framerate dependencies, powers now consistently work as intended.- Fixed Banshee Soundquake power that was causing visibility issues for other players (not the caster).- Fixed Ember's Fire Blast power that was causing visibility issues for other players (not the caster).- Fixed Apex particles that would remain on ragdolls after using Nyx's Mind Control power.- Fixed Mag's Shield Polarize power playing sound twice.- Fixed Frost's Freeze power not being affected by Continuity mod.- Fixed Frost's Snow Globe power not being affected by Continuity and Range mods.- Fixed Ancient Healer power that was not healing surrounding Infested.- Fixed Nyx's armband FX showing up with projectors.- Fixed some Defense mission issues with enemies spawning in areas they can't get down from.- Fixed host migration during Spy missions where objectives would reset for clients after a host migration.- Fixed Slash Dash not dealing appropriate damage on clients.- Fixed login rewards clobbering your current loadout.- Fixed Long Range weapons not consistently hitting targets at 50m or greater.- Fixed visibility of \"BACK\" button on color customization screen.- Fixed various bugs and nav mesh issues in reported levels.- Fixed common matchmaking issue where users would receive a “Disconnected” error.- Fixed Sentinel death affect that was causing frame rate issues.- Fixed Ash’s Bladestorm power, it will no longer target turrets or security cameras.- Fixed Login reward handing out \"0 Shotgun Ammo\" boxes."
+      },
+      {
+        "name": "Update 6.5 Hotfixes",
+        "date": "2013-03-01T19:41:34Z",
+        "url": "https://forums.warframe.com/topic/13457-update-65-hotfixes/",
+        "fixes": "Fixed boss kill counts not tracking properly in stats.Leaper should no longer jump through walls.Fixed issue with Rhino Stomp breaking if an enemy is just killed before the stomp.Fixed an issue with Loki Switch Teleport breaking if a target dies at right moment.Fixed osprey exhaust effect.Fixed an issue with Crawlers standing upright when shot.Fixed an issue with Snow Globe persisting if user dies and then revives while it is active.Fixed poison clouds persisting after they've expired for clients.Resolution should now save properly when switching from fullscreen to windowed mode.Fixed a UI error displaying incorrect resolution in options menu.Excalibur Radial Javelin + Nyx Absorb no longer kills nearby Clients.Chargers killed with freeze damage should now properly ragdoll.Fixed a case where the player could be stuck finding squads.Fixed Bolto projectiles firing in the wrong direction when standing close to an object.Active squads count now properly shows matches from the appropriate region.Improved loading times for large levels.Fix for melee AI having issues attacking larger targets.AI should no longer target invisible players.Bolto projectiles should now be less affected by lag and more reliable at hitting targets.Radial Disarm should no longer de-level the enemy to level 1.Log file should no longer receive error spam when using Nyx.Fixed some enemy ragdolls not despawning properly.Corrected Shuriken accuracy, especially on higher FOV settings.Radial Javelin should now target airborne enemies properly.Ash Shuriken crash fixed!Idle Warframe Animation no longer breaks head/neck.Squad count fixed.Frozen Leaper animation for Client fixed.Lato Mods are now Compatible with Lato Prime.Network ImprovementsAnimation with holding \"floating\" gun fixed."
       }
     ]
   },
@@ -1833,10 +2055,28 @@
         "changes": "The number of items received from purchasing or crafting items that give more than one of it is now indicated in the UI (i.e Specter Blueprints from Syndicates, Synthesis Scanners from Simaris, etc)."
       },
       {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "fixes": "Fixed Codex and Synthesis Scanner audio FX playing for entire squad, instead of just for the player using the Scanner."
+      },
+      {
         "name": "Update 17.2",
         "date": "2015-08-19T21:49:41Z",
         "url": "https://forums.warframe.com/topic/514266-update-172/",
         "fixes": "Fixed the UI becoming permanently tinted the wrong color if using a hotkey to switch off the Synthesis Scanner."
+      },
+      {
+        "name": "Update 16.1: Volt Prime",
+        "date": "2015-03-24T18:01:52Z",
+        "url": "https://forums.warframe.com/topic/425416-update-161-volt-prime/",
+        "fixes": "Fixed players without a Synthesis Scanner equipped receiving mid-Mission notification of a rare capture target."
+      },
+      {
+        "name": "Hotfix 16.0.4",
+        "date": "2015-03-23T22:18:24Z",
+        "url": "https://forums.warframe.com/topic/424657-hotfix-1604/",
+        "fixes": "Players without a Synthesis Scanner equipped during a scan will no longer receive Synthesis progress."
       }
     ]
   },
@@ -1977,6 +2217,14 @@
         "chance": 1,
         "rotation": "B"
       }
+    ],
+    "patchlogs": [
+      {
+        "name": "Specters of the Rail: Hotfix 4",
+        "date": "2016-07-11T21:59:04Z",
+        "url": "https://forums.warframe.com/topic/671654-specters-of-the-rail-hotfix-4/",
+        "fixes": "- Fixed an issue with a Junction progression stopper task by replacing the crafting requirements of Vapor Specters."
+      }
     ]
   },
   {
@@ -2014,6 +2262,24 @@
         "changes": "Excluded Reactant and Index Point pickups from Simulor, Inaros' Sandstorm, Zephyr Tornado, and Vauban's Vortex. This also fixes the exception lists for the Simulor; it wasn't supposed to be moving  gameplay objects (eg Datamass, Excavation Power Cells, Raptor Cells, etc) but it generally wasn't of a problem because the objects were heavy enough (properly excluding them should run faster too!). As more and more gameplay components rely on pickups, we've addressed this issue as it is commonly discussed by you all."
       },
       {
+        "name": "The Index Preview",
+        "date": "2016-10-20T23:28:18Z",
+        "url": "https://forums.warframe.com/topic/709665-the-index-preview/",
+        "fixes": "Fixed Vauban Bastille and Vortex balls being auto-destroyed a second after they collided with something."
+      },
+      {
+        "name": "Hotfix 18.13.2",
+        "date": "2016-06-01T22:37:51Z",
+        "url": "https://forums.warframe.com/topic/655270-hotfix-18132/",
+        "fixes": "Fixed Mag’s Magnetize bubble lingering permanently when Vauban’s Vortex/Bastille is thrown inside it. This also fixes intensified FX in this situation that caused performance issues. "
+      },
+      {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "fixes": "Increased the duration of Vauban’s Vortex in Conclave."
+      },
+      {
         "name": "Hotfix 17.10.1",
         "date": "2015-11-05T23:37:10Z",
         "url": "https://forums.warframe.com/topic/556984-hotfix-17101/",
@@ -2038,6 +2304,24 @@
         "fixes": "Fixes reported cases of clients not being able to damage enemies caught in Vortex when using the Ogris, Torid, etc."
       },
       {
+        "name": "Hotfix 14.7.4",
+        "date": "2014-09-19T21:06:34Z",
+        "url": "https://forums.warframe.com/topic/312574-hotfix-1474/",
+        "fixes": "Fixes- Fixed buffs not being applied correctly to weapons with damage falloff (i.e. Shotguns). Fixes amount of damage dealt at the extent of the weapon's range. Before, damage dealt at maximum falloff range was not considering Mods like Blaze and Point Blank. After, it will now consider these mod buffs in the damage value at maximum falloff range. - Fixed extra Lotus transmissions playing/repeating after bleeding out and switching to spectator mode.- Fixed multi-shot mods causing Buzlok to fire an extra homing beacon.- Fixed Buzlok's homing beacon firing from wrong position when using scope sights.- Fixed Atterax not animating when viewed in the arsenal.- Fixed Vor being susceptible to Mind Control when encountered in Void T4 missions.- Fixed incorrect backdrop appearing in opening cinematic when launching Gate Crash mission.- Fixed instances of blue steam jets that were appearing in some Derelict rooms.- Fixed Team Health Restores not functioning properly when deployed on a moving object.- Fixed Vauban's Bounce and Vortex appearing with default energy colour for clients.- Fixed some missing Bounce FX on clients.- Optimized visual effects on Vauban's Tesla grenades for lower end hardware.- Fixed enemy bodies contorting when killed inside/near Void Portal in Gate Crash missions.- Fixed objects from adjacent rooms protruding through walls in Gate Crash/Orokin Derelict tileset.- Fixed several gameplay crashes."
+      },
+      {
+        "name": "Update 14.7.0: Operation Gate Crash!",
+        "date": "2014-09-18T03:51:15Z",
+        "url": "https://forums.warframe.com/topic/311669-update-1470-operation-gate-crash/",
+        "fixes": "Fixed an issue where enemies caught in Vauban’s Vortex will oscillate and vibrate in an unappealing way."
+      },
+      {
+        "name": "Hotfix 14.0.11",
+        "date": "2014-07-29T22:08:19Z",
+        "url": "https://forums.warframe.com/topic/278042-hotfix-14011/",
+        "fixes": "Reduced the duration of Vauban's Vortex in Dark Sector conflicts."
+      },
+      {
         "name": "Update 14: The Mad Cephalon",
         "date": "2014-07-18T09:44:52Z",
         "url": "https://forums.warframe.com/topic/263213-update-14-the-mad-cephalon/",
@@ -2050,16 +2334,94 @@
         "changes": "Vauban’s Vortex"
       },
       {
+        "name": "Update 13: Dark Sectors",
+        "date": "2014-04-10T05:28:14Z",
+        "url": "https://forums.warframe.com/topic/209324-update-13-dark-sectors/",
+        "changes": "- Melee Channel mod has had its name changed to Energy Channel.- UI Loading screen now shows random Codex entry instead of outdated loading tips.- Boss achievements are now unlocked by completing the appropriate node, rather than being tied to the enemy.- Oberon pieces have been moved off Vay Hek to make room for Hydroid, and now have a chance to drop from Grineer Leader enemy types.- Improved the skybox visualizing Mars so as to make the dark side of the planet appear less “see-through”.- Prevented players from being able to click outside of the sign in rewards screen.- Improved Sentinel Vacuum functionality.- Optimized audio and improved ambiance on the Forest Tileset.- Improved 3D transmissions with better lip-syncs and centered textfields.- Graphical tweaks to numerous Grineer Forest art assets.- Tweaked the damage amount and proc chance of environmental hazards in conclave missions.- Tweaked Grineer melee hit react animations.- Tweaked the cast sounds of multiple frames including Zephyr, Loki, and Excalibur.- Added hit proxies to Grineer breakable fans which should improve their ability to be destroyed.- Changed when zooming in and out of Mods occurs in the Upgrade menu so as to prevent any potential unneeded zooms.- Improvements to the way Transmissions are generated and perform.- Removed a number of faulty player spawns in the Grineer Galleon and Forest Tilesets.- Sentinels are now invincible during Ash's Bladestorm.- Added in a unique descriptor for the Livestream alerts.- Improved the Grineer hit reaction animations.- Improved the Corpus bipedal walk animation.- Melee stats now round to 1 digit in the arsenal.- Changed 'Grineer Cipher' to 'Cipher' as they appear across different tilesets.- Repeated Lotus transmissions now only play once every 60 seconds and a maximum of 5 times per mission.- Tweaked Loki's Invisibility enter sound.- Tweaked the Grineer Piston hit sound.- The shield drain effect present in Hijack missions is no longer adversely affected by high/low framerates.- Prevented dojo rooms from being queued for destruction if there are pending recipes being built.- Improved the performance of Zephyr's Tornado ability.- Improved the code performance on Banshee's Sonic Boom ability.- Improved the performance of the Stug.- Improved the performance of the snow effects in the Outpost tilesets.- Improved the performance of a number of in game timers for Retrieval missions.- Improved the performance of the Gas City tilesets.- Improved the performance of the Tutorial level.- Improved the performance of Reactor Core destruction effects.- Improved the performance and Apex visuals of Vauban's Vortex ability.- Improved the Apex visuals on the Infested Death effect.- Improved the 3D reload sound effects for multiple weapons.- Improved the performance of Nekros' Shadows of the Dead ability.- Improved the pickup messages received when using ammo mutator mods.- Improved the Stalker and other hunter AI types targeting selection so as to ensure that they do not attack low level players.- Made the warning message displayed when leaving a clan as the last member more robust, including a full description of all benefits and perks lost.- Improved Zephyr’s Dive Bomb ability by making it emanate slightly above ground allowing it to more effectively hit nearby targets.- Arc Traps will no longer attack players who are siding with Grineer.- Visual FX tweaks to Mag’s Pull and Ember’s Fireball.- Tweaked the Sentinel destruction sound effect.- Tweaked the Explosive arrow sound effect.- Removed the Revive Screen from a number of modes where the screen was incongruous.- Removed Gallium from the Void (replaced with Argon Crystal).- Improved the performance of smoke visual effects."
+      },
+      {
+        "name": "Hotfix 12.4.3",
+        "date": "2014-03-10T22:18:21Z",
+        "url": "https://forums.warframe.com/topic/193399-hotfix-1243/",
+        "changes": "- Fixed enemies not being affected by Vortex or Tornado if one was placed in the vicinity of a 'friendly' target (cryopod, sentinel, etc).- Fixed Rifle Ammo Mutation mod not being compatible with Boltor Prime.- Fixed incorrect mission type being activated when playing Rescue alerts.- Fixed being unable to complete an Extermination mission after hacking Moa Cabinets to produce an ally Moa.- Fixed Hijack mission failure effects not appearing for clients.- Fixed Interception mission issue where enemy AI would try to hack control towers that had already been captured by their own faction.- Fixed inaccessible Void and Derelict labels appearing in Solar Map after backing out of a lobby.- Fixed Infestation Outbreak missions on Earth not occurring within the proper forest tileset.- Fixed graphical issue where dojo elevator doors weren't being lit correctly.- Fixed players occasionally spawning in mid-air when launching Grineer Galleon missions.- Graphical tweaks to improve Forest frame rate/performance in scenes containing rivers.- Fixed gameplay crashes."
+      },
+      {
+        "name": "Hotfix 12.4.2",
+        "date": "2014-03-07T19:44:13Z",
+        "url": "https://forums.warframe.com/topic/191237-hotfix-1242/",
+        "fixes": "- Fixed Zephyr’s Tornado and Vauban’s Vortex being able to ragdoll harder enemies (Mini-bosses like Stalker, etc). The Tornado will still deal DOT, but it won’t ragdoll. It is now consistent with other ragdoll-esque powers.- Fixed problems where users get stuck to Life Support capsules in Survival.- Fixed some life support capsule pacing issues, the first 2-3 capsule spawns weren't being disabled after use and capsules were able to spawn in rooms other than intermediates and the boss room branch.- Fixed Dual Kama Whooshes!- Fixed ‘Rank 30 Furax’ bug appearing if using Hysteria and Valkyr.- Fixed rings on Saryn's Chlora helm not using energy color.- Fixed Shipyard Grineer-robot-environment arms not moving for clients.- Fixed Crashes related to loading levels  or shutting down game."
+      },
+      {
+        "name": "Update 12.2.0: Castanas!",
+        "date": "2014-02-19T22:24:33Z",
+        "url": "https://forums.warframe.com/topic/182229-update-1220-castanas/",
+        "fixes": "- Fixed issue where players would complete missions and not receive any rewards.- Fixed issues where power duration timers were reflecting casts made by other players.- Fixed image of Excalibur appearing for Frost Helmet skin.- Fixed typos in training section of Codex.- Fixed issues with overlapping Russian text.- Fixed issues where HUD marker for Survival Pickup was using wrong image.- Fixed issue where new accounts may be unable to login.- Fixed issue where settings tab would intersect in some languages.-  Fixed issues where the new Survival objective marker wasn’t properly pathing meaning that some users wouldn’t be able to find the right door in the zone to lead them further.- Fixed issue where enemies would stand up in the middle of a blackhole or blackhole like situation (Vortex, etc.).- Fixed an issue where the \"dual wielded firing\" animations would get out of sync with what the weapon attachments were doing (so you'd see a muzzle flash on left gun and recoil on right gun).- Fixed the display of ammunition/total for all weapons. Bows will display a single value, as will the scanner, the former has no magazines and the latter has no ammunition. All other weapons will still show current ammo in weapon/ total ammo in inventory.- Fixed issues where mod fusion could become de-synced or exploited, implemented preventative measures.- Fixed possible errors when accounts are being updated with content.- Fixed issues where some instances of switch teleporting involved attempted melee attempts on the player after the teleport has taken place.- Fixed issue where fusing into an equipped mod would let you exceed mod capacity on a given weapon/Warframe.- Fixed about two dozen Warframe abilities not working in Conclaves/Dojo PVP.- Fixed issues where weapon skins in player’s inventories will show as negative counts in the foundry.- Fixed inconsistencies in the naming conventions for the way Gear and Rank are displayed in the game (UNRANKED vs 0).- Fixed issue with Zephyr’s Turbulence letting most shots through even when maxed and rarely redirecting.- Fixed steam not damaging players in the Forest Defense map as it should – things just got a bit deadlier on that map!- Fixed issue where players would complete missions and not receive any rewards.- Fixed issue where Grineer Commander’s would not move in proper sequence after Switch Teleporting player.- Various Crash fixes."
+      },
+      {
+        "name": "Hotfix 12.0.2",
+        "date": "2014-02-06T23:08:22Z",
+        "url": "https://forums.warframe.com/topic/174127-hotfix-1202/",
+        "fixes": "- Fixed Zoom Out option vanishing forever if you back out of a diorama in Solo mode.- Fixed location and position of Emblems on Zephyr Warframe.- Fixed missing minimap in Jungle Tileset.- Fixed issue with Client not getting capture progress when battling.- Fixed Auto-Fuse not fusing rare duplicates.- Fixed Vauban’s Vortex not ragdolling enemies.- Fixed multi-boss fights not working (Phobos).- Fixed issue where client’s destroying an enemies armor would not be considered by the host.- Fixed “C” switching melee weapons instead of triggering voice chat.- Fixed issue with enemies spawning through the ground.- Fix for issues loading Earth missions where on clients in long load scenario.- Fixed and implemented preventive measures for this issues of AI falling into water basins in defense map: https://forums.warframe.com/index.php?/topic/173284-earth-defense-lith-bug-pictures-included/- Fixed issue where enemies requiring extermination were not being marked.- Fixed issue with enemies potentially spawning in floor.- Fixed issue where Survival missions could be failed if you were in the process of reviving/ being revived.- Fixed various crashes."
+      },
+      {
+        "name": "Hotfix 11.9.2",
+        "date": "2014-01-30T18:32:11Z",
+        "url": "https://forums.warframe.com/topic/170183-hotfix-1192/",
+        "fixes": "- Fixed Oxium collected during Defense missions not counting towards Operation Oxium Epsionage progress if the mission failed after reaching a checkpoint.- Fixed Oxium description appearing as a file-path in the foundry.- Fixed performance issues when using Vauban's Vortex in situations with high enemy counts."
+      },
+      {
+        "name": "Hotfix 11.1.2",
+        "date": "2013-11-29T17:55:49Z",
+        "url": "https://forums.warframe.com/topic/140638-hotfix-1112/",
+        "fixes": "Hotfix 11.1.2Changes:- A lot of players have expressed that the “15 minute mark” reward tier is often the most desirable for Survival missions. Changes have been made to Survival Reward tiers reward logic to reflect this feedback. We now cycle more efficiently through these tiers to ensure more reward variety.Supplementary info: Before, there would be a limited amount of chances to get rewards within certain tiers as the mission time progressed. Now, with the tier cycling, this means after the 20 minute mark you will have more chances to earn rewards from all tiers.- Changed tooltip “View Warframe Profile” to “Profile”.- Tweaked Contact to delay showing you the in-session icon until the session details are available and you can attempt to join themFixes:- Nyx’s Absorb will now go affect enemies behind walls or cover.- Fixed Nyx’s absorb not doing damage to Infested Crawlers and Chargers.- Fixed issues with whisper awareness while in game. Incoming private messages are now shown in squad chat as well as in their own tab.- Fixed Volt Chassis dropping instead of Volt Chassis Blueprint.- Fixed Grineer sawblade residing in the heads of the Anti Moa. We know the Corpus are trying to save money wherever possible, but their imports of Grineer Parts has caused them much embarrassment.- Fixed Valkyr’s Warcry being permanent on enemies.- Fixed Soul Punch not ragdolling enemies.- Fixed issues with only Hellions and Eviscerators spawning on Phobos Survivals.- Fixed issues where “Ceiling Fish” would occur in Dojo. This marks the end of Ceiling Fish’s times of horseplay.- Fixed issue where users Keys would not show up in menu if the game suffered very low frame-rate.- Fixed issues with Vauban’s Vortex causing crashes when dealing damage.- Fixed enemies being stationary on Xini.- Fixed issues where equipping  2 mod cards with same elemental damage messes up the compound types created- Fixed issues where enemies would not ragdoll for Clients.- Improvements to issues with in-game chat. Progress ongoing.Are you experiencing crashes or other game-breaking issues like freezes or hangs? Please visit our support.warframe.com desk for assistance. Making a ticket with yourwill greatly assist us.Thank you."
+      },
+      {
         "name": "Update 10.3.0: Hump Day!",
         "date": "2013-10-09T22:12:04Z",
         "url": "https://forums.warframe.com/topic/117806-update-1030-hump-day/",
         "fixes": "Fixed Infested chargers and ancients not being appropriately affected by Vauban’s Vortex ability."
       },
       {
+        "name": "Update 9.8",
+        "date": "2013-09-06T18:30:21Z",
+        "url": "https://forums.warframe.com/topic/102835-update-98/",
+        "changes": "Absorb: Ability now has higher base damage and should attract more attention.General:Energy color tinting for Vauban’s Tesla and Vortex abilities."
+      },
+      {
         "name": "Hotfix 9.6.1",
         "date": "2013-08-22T21:42:24Z",
         "url": "https://forums.warframe.com/topic/98468-hotfix-961/",
         "changes": "Fixed energy colors not being applied to Vortex"
+      },
+      {
+        "name": "Hotfix 9.3",
+        "date": "2013-07-26T21:25:16Z",
+        "url": "https://forums.warframe.com/topic/86462-hotfix-93/",
+        "fixes": "Fixed Vortex damaging teammates if a player using Vauban casts it then disconnects"
+      },
+      {
+        "name": "Hotfix 9.1.1",
+        "date": "2013-07-15T22:29:07Z",
+        "url": "https://forums.warframe.com/topic/80292-hotfix-911/",
+        "fixes": "Fix for Nightmare mode appearing on nodes before entire planet had been completed.Fix for issues completing Corpus Exterminate missions.Fix for Vauban Vortex preventing revives in squad.Fix for Raptor boss drops not being in reachable place.Fix for Paris Prime blueprint not having icon or saving to inventory.Raptor boss will no longer flee to the surrounding mountains.Fix for Infested Ancients replaying taunt animation if shot while playing.Fix for players getting stuck in lobby after host leaves.Fix for crash with Banshee “Soundquake” if gore was disabled.Fix for Nova Molecular Prime not damaging nearby enemies after explosion.Fix for Loki Decoy putting Vor in an inactive state.Fix for doors not opening in Exterminate missions.Fix for some tilesets not having hack panels in Grineer Galleon.Fix for contact list involuntarily scrolling when contacts status changed.Fix for Rifle Amp Aura stacking. A word from the designer: Rifle Amp, 45% damage buff stacking was too much, reduced to 27& (4.5% base).This was a typo on my part.Fix for NOT being able to contribute to tech projects from the Clan Vault."
+      },
+      {
+        "name": "Hotfix 8.3.1",
+        "date": "2013-07-05T23:10:32Z",
+        "url": "https://forums.warframe.com/topic/74108-hotfix-831/",
+        "fixes": "Fix for Vauban’s Vortex killing friendlies if owner dies and respawns."
+      },
+      {
+        "name": "Hotfix 8.3",
+        "date": "2013-07-04T22:45:50Z",
+        "url": "https://forums.warframe.com/topic/73282-hotfix-83/",
+        "fixes": "Fixed ragdolls being destroyed when held in a Vortex for too long (more than 15 seconds)."
+      },
+      {
+        "name": "Hotfix 8.1.3",
+        "date": "2013-06-19T13:43:51Z",
+        "url": "https://forums.warframe.com/topic/66795-hotfix-813/",
+        "fixes": "- Fixed an issue causing players to not acquire Pickups when rolling, sliding or using a power through them- Fixed crash that could occur when using Vortex- Fixed shields not replenishing if damaged while using Nyx's Absorb- Fixed missing Charge-up Sound FX on various swords- Fixed dead ends appearing in Dojo at the point where two rooms perfectly connect- Fixed some collision and AI navigation issues in Corpus Defense missions- Fixed an issue causing enemies to continue spawning in an Extermination mission, after the count had reached zero- Fixed an issue with Saryn’s Poison ability, so that the globes now replicate correctly for clients- Fixed Hornet Strike not affecting DOT from the Acrid- Fixed an issue causing some traps in the Orokin Void levels to not take any damage from certain weapons- Fixed an issue causing players to be left in an unresponsive, black screen state when a duel round completes"
       }
     ]
   },
@@ -2150,37 +2512,5 @@
         "fixes": "Fixed a crash that could occur when being attacked by Zanuka after using a Zanuka Hunter Beacon."
       }
     ]
-  },
-  {
-    "uniqueName": "/Lotus/Types/Game/SpectreArmies/PlatinumSpectreArmy",
-    "name": "Cosmic Specter Regiment",
-    "description": "An army composed of cosmic-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for four conflicts.",
-    "type": "Specter",
-    "category": "Gear",
-    "tradable": false
-  },
-  {
-    "uniqueName": "/Lotus/Types/Game/SpectreArmies/GoldSpectreArmy",
-    "name": "Force Specter Regiment",
-    "description": "An army composed of force-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for three conflicts.",
-    "type": "Specter",
-    "category": "Gear",
-    "tradable": false
-  },
-  {
-    "uniqueName": "/Lotus/Types/Game/SpectreArmies/SilverSpectreArmy",
-    "name": "Phase Specter Regiment",
-    "description": "An army composed of phase-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for two conflicts.",
-    "type": "Specter",
-    "category": "Gear",
-    "tradable": false
-  },
-  {
-    "uniqueName": "/Lotus/Types/Game/SpectreArmies/BronzeSpectreArmy",
-    "name": "Vapor Specter Regiment",
-    "description": "An army composed of vapor-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for one conflict.",
-    "type": "Specter",
-    "category": "Gear",
-    "tradable": false
   }
 ]
