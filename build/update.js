@@ -10,27 +10,18 @@ const stringify = require('./stringify.js')
 /* eslint no-redeclare: "off" */
 class Update {
   async save () {
-    var { all, tradable, untradable } = await this.fetch('All')
-    this.write(all)
-    this.write(tradable, 'tradable/')
-    this.write(untradable, 'untradable/')
+    const items = await scraper.fetchAll()
+    this.write(items)
   }
 
-  async fetch (name, hash) {
-    const all = await scraper.fetchAll(null, hash)
-    const tradable = await scraper.fetchAll(true, hash)
-    const untradable = await scraper.fetchAll(false, hash)
-    return { all, tradable, untradable }
-  }
-
-  write (items, prefix = '') {
+  write (items) {
     let all = []
 
     Object.keys(items).forEach(key => {
-      fs.writeFileSync(`${__dirname}/../data/json/${prefix}${key}.json`, stringify(items[key]))
+      fs.writeFileSync(`${__dirname}/../data/json/${key}.json`, stringify(items[key]))
       all = all.concat(items[key])
     })
-    fs.writeFileSync(`${__dirname}/../data/json/${prefix}All.json`, stringify(all))
+    fs.writeFileSync(`${__dirname}/../data/json/All.json`, stringify(all))
   }
 }
 
