@@ -19,7 +19,7 @@ class Update {
 
     Object.keys(items).forEach(key => {
       fs.writeFileSync(`${__dirname}/../data/json/${key}.json`, stringify(items[key]))
-      all = all.concat(items[key])
+      all = all.concat(items[key]).sort((a, b) => a.name.localeCompare(b.name))
     })
     fs.writeFileSync(`${__dirname}/../data/json/All.json`, stringify(all))
   }
