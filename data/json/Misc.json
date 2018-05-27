@@ -1,5 +1,61 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Ship/BasicUcResourceDrone",
+    "name": "Distilling Extractor",
+    "description": "The Distilling Extractor has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect resources. It must be emptied regularly and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 1,
+    "fillRate": 8,
+    "durability": 200,
+    "repairRate": 20,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Ship/AdvancedUcResourceDrone",
+    "name": "Distilling Extractor Prime",
+    "description": "The Distilling Extractor Prime has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect large amounts of resources. It must be emptied regularly and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 2,
+    "fillRate": 8,
+    "durability": 200,
+    "repairRate": 20,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Ship/BasicResourceDrone",
+    "name": "Titan Extractor",
+    "description": "Deploy the EXTRACTOR on a planet to collect resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 1,
+    "fillRate": 4,
+    "durability": 100,
+    "repairRate": 10,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Ship/AdvancedResourceDrone",
+    "name": "Titan Extractor Prime",
+    "description": "Deploy the EXTRACTOR on a planet to collect large amounts of resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
+    "binCount": 1,
+    "binCapacity": 2,
+    "fillRate": 4,
+    "durability": 100,
+    "repairRate": 10,
+    "capacityMultiplier": [ 8, 6, 4, 1 ],
+    "specialities": [  ],
+    "type": "Extractor",
+    "category": "Misc"
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ClanCreator",
     "name": "/Lotus/Language/Items/Clancreator",
     "description": "/Lotus/Language/Items/ClanCreatorDesc",
@@ -341,12 +397,6 @@
         "date": "2018-02-15T16:35:03Z",
         "url": "https://forums.warframe.com/topic/922109-shrine-of-the-eidolon-update-22130/",
         "changes": "Ivara’s Prowl will now only steal from each enemy once total, instead of once per Ivara. Our intent is to mirror how Nekros’ Desecrate also functions, considering the recent movement of Sentient Cores to certain Sentient variants. It’s rewarding to be the warmly welcomed Nekros in an Argon Crystal run, and we hope Ivara will now be welcomed equivalently."
-      },
-      {
-        "name": "Warframe Update 22: Plains of Eidolon",
-        "date": "2017-10-12T22:00:20Z",
-        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
-        "changes": "Players who have the blueprints for The Limbo Theorem, Hidden Messages, or Patient Zero will now automatically receive the quest itself upon logging in. The blueprints will be removed and if they were under construction, the resources and credits will be refunded (except for the argon crystals for The Limbo Theorem, sorry!)."
       },
       {
         "name": "Octavia’s Anthem: Hotfix 20.6.1",
@@ -3229,142 +3279,10 @@
     ],
     "patchlogs": [
       {
-        "name": "Beasts of the Sanctuary: Update 22.20.0",
-        "date": "2018-05-17T14:55:31Z",
-        "url": "https://forums.warframe.com/topic/957066-beasts-of-the-sanctuary-update-22200/",
-        "changes": "Standardized format across all Warframe ability descriptions."
-      },
-      {
-        "name": "Beasts of the Sanctuary: Hotfix 22.18.1",
-        "date": "2018-04-20T18:49:33Z",
-        "url": "https://forums.warframe.com/topic/947482-beasts-of-the-sanctuary-hotfix-22181/",
-        "fixes": "Fixed wonky Leaderboard score formatting after viewing Obstacle Course Leaderboard."
-      },
-      {
-        "name": "Beasts of the Sanctuary: Update 22.18.0",
-        "date": "2018-04-20T14:27:12Z",
-        "url": "https://forums.warframe.com/topic/947321-beasts-of-the-sanctuary-update-22180/",
-        "changes": "Removed Weekly Kills Leaderboards and Leaderboard Top 20 placement notification. Full information here: https://forums.warframe.com/topic/946652-removing-kill-leaderboard-and-leaderboard-notifications/"
-      },
-      {
-        "name": "Shrine of the Eidolon: Hotfix 22.17.4",
-        "date": "2018-04-13T20:03:57Z",
-        "url": "https://forums.warframe.com/topic/944966-shrine-of-the-eidolon-hotfix-22174/",
-        "changes": "Improved performance of a few “laser beam” effects (including security cameras, Mirage's Blinding Disco Ball of Pain beams, trip lasers, etc). "
-      },
-      {
-        "name": "Shrine of the Eidolon: Update 22.17.3",
-        "date": "2018-04-11T21:25:15Z",
-        "url": "https://forums.warframe.com/topic/944270-shrine-of-the-eidolon-update-22173/",
-        "changes": "Improved performance issues when firing the Furis or Kohm."
-      },
-      {
-        "name": "Shrine of the Eidolon: Hotfix 22.17.2",
-        "date": "2018-04-10T17:59:14Z",
-        "url": "https://forums.warframe.com/topic/943833-shrine-of-the-eidolon-hotfix-22172/",
-        "changes": "Updated many Glyph descriptions formatting and removed mentions of \"Skin\" in some."
-      },
-      {
-        "name": "Shrine of the Eidolon: Update 22.17.0 + 22.17.0.1",
-        "date": "2018-03-28T18:49:46Z",
-        "url": "https://forums.warframe.com/topic/939097-shrine-of-the-eidolon-update-22170-221701/",
-        "fixes": "Fixed Star Chart Node information UI appearing off screen on 4K monitors."
-      },
-      {
-        "name": "Shrine of the Eidolon: Hotfix 22.15.1",
-        "date": "2018-03-08T20:29:51Z",
-        "url": "https://forums.warframe.com/topic/931023-shrine-of-the-eidolon-hotfix-22151/",
-        "changes": "Improved performance when attempting to use a context action."
-      },
-      {
-        "name": "Shrine of the Eidolon: Hotfix 22.13.3",
-        "date": "2018-02-21T20:18:33Z",
-        "url": "https://forums.warframe.com/topic/924885-shrine-of-the-eidolon-hotfix-22133/",
-        "changes": "Lowered particle burst for Vomvalyst charge up attacks to alleviate performance issues."
-      },
-      {
-        "name": "Plains of Eidolon: Update 22.10.0",
-        "date": "2018-01-25T23:53:14Z",
-        "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
-        "fixes": "Fixed an issue where Clients viewing 'End of Mission' information in the Index would cause disconnection. "
-      },
-      {
-        "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
-        "date": "2017-12-07T22:05:21Z",
-        "url": "https://forums.warframe.com/topic/891096-plains-of-eidolon-update-2260-hotfix-22601/",
-        "changes": "Made performance and memory optimizations to the Plains of Eidolon and other tilesets. If you were experiencing crashes before, we hope that these changes will be the fix!"
-      },
-      {
-        "name": "Plains of Eidolon: Update 22.4.0",
-        "date": "2017-11-23T20:03:52Z",
-        "url": "https://forums.warframe.com/topic/884329-plains-of-eidolon-update-2240/",
-        "changes": "Improvements towards performance issues that was caused by lingering (yet invisible) reticles even when the respective weapon was no longer being held."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.2.5",
-        "date": "2017-11-11T02:19:26Z",
-        "url": "https://forums.warframe.com/topic/877028-plains-of-eidolon-hotfix-2225/",
-        "changes": "Made a handful of performance Optimizations (mainly in the Plains). These performance fixes were largely discovered on the Console build, and graciously brought over to PC for an overall improvement on all platforms!"
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.0.7",
-        "date": "2017-10-19T20:48:18Z",
-        "url": "https://forums.warframe.com/topic/862704-plains-of-eidolon-hotfix-2207/",
-        "fixes": "Improved performance issues when hitting multiple enemies with Valkyr’s Paralysis."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.0.5",
-        "date": "2017-10-17T20:41:28Z",
-        "url": "https://forums.warframe.com/topic/860760-plains-of-eidolon-hotfix-2205/",
-        "fixes": "Fixed Captain Vor’s mission information not listing his name. "
-      },
-      {
-        "name": "Warframe Update 22: Plains of Eidolon",
-        "date": "2017-10-12T22:00:20Z",
-        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
-        "changes": "Made many small performance optimizations to all Warframe abilities."
-      },
-      {
-        "name": "Hydroid Prime: Update 21.6.0",
-        "date": "2017-08-29T17:55:46Z",
-        "url": "https://forums.warframe.com/topic/836927-hydroid-prime-update-2160/",
-        "changes": "Improved performance when using Melee weapons with Mods that increase Range."
-      },
-      {
-        "name": "Chains of Harrow: Hotfix 21.4.2",
-        "date": "2017-08-11T22:11:07Z",
-        "url": "https://forums.warframe.com/topic/830166-chains-of-harrow-hotfix-2142/",
-        "changes": "Optimized character lighting performance in the Earth Forest Defense tileset (among others)."
-      },
-      {
-        "name": "Chains of Harrow: Hotfix 21.2.1",
-        "date": "2017-08-01T17:58:55Z",
-        "url": "https://forums.warframe.com/topic/825578-chains-of-harrow-hotfix-2121/",
-        "fixes": "Fixed empty Inventory slots showing the owned/format count element."
-      },
-      {
         "name": "Chains of Harrow: Update 21.2.0 + 21.2.0.1",
         "date": "2017-07-26T21:16:57Z",
         "url": "https://forums.warframe.com/topic/823165-chains-of-harrow-update-2120-21201/",
         "changes": "Forma count can now be seen on weapons and Warframes in the Inventory screen (similar to in the Arsenal). "
-      },
-      {
-        "name": "Chains of Harrow: Hotfix 21.0.7",
-        "date": "2017-07-13T16:02:08Z",
-        "url": "https://forums.warframe.com/topic/817066-chains-of-harrow-hotfix-2107/",
-        "changes": "Made several small performance improvements for the remastered Earth tileset (more to come)."
-      },
-      {
-        "name": "Chains of Harrow: Hotfix 21.0.5",
-        "date": "2017-07-06T20:47:36Z",
-        "url": "https://forums.warframe.com/topic/813821-chains-of-harrow-hotfix-2105/",
-        "fixes": "Fixed a number of performance regressions related to physics interactions between objects; in some cases this would cause a dramatic but temporary drop in frame-rate."
-      },
-      {
-        "name": "Update 21: Chains of Harrow",
-        "date": "2017-06-29T03:00:20Z",
-        "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
-        "fixes": "Made a small performance fix to Operator gameplay. "
       },
       {
         "name": "Oberon Prime: Update 20.7.0",
@@ -3373,248 +3291,10 @@
         "fixes": "Fixed selecting ‘Mods’ on an un-Forma'd weapon with no Mods equipped resulting in the category selection disappearing. "
       },
       {
-        "name": "Octavia's Anthem: Hotfix 20.5.2",
-        "date": "2017-05-18T21:01:22Z",
-        "url": "https://forums.warframe.com/topic/798353-octavias-anthem-hotfix-2052/",
-        "changes": "Refreshing Chat text now only processes the last 200 visible lines (based on the size of the Chat area) instead of the last 200 messages. This improves performance whenever a message takes up more than one line."
-      },
-      {
-        "name": "Octavia’s Anthem: Hotfix 20.4.6",
-        "date": "2017-05-11T19:05:55Z",
-        "url": "https://forums.warframe.com/topic/795965-octavia%E2%80%99s-anthem-hotfix-2046/",
-        "changes": "Balanced the amount of the Panthera’s Alt Fire beams fired in Limbo’s Rift to match other beam weapons in an effort to reduce performance issues."
-      },
-      {
-        "name": "Octavia’s Anthem: Update 20.4.0",
-        "date": "2017-05-04T13:58:50Z",
-        "url": "https://forums.warframe.com/topic/793570-octavia%E2%80%99s-anthem-update-2040/",
-        "changes": "Adjusted the Rift weight of the Cycron beams in Limb’s Stasis to fix performance issues."
-      },
-      {
-        "name": "Octavia’s Anthem: Hotfix 20.2.3",
-        "date": "2017-04-19T22:08:42Z",
-        "url": "https://forums.warframe.com/topic/788574-octavia%E2%80%99s-anthem-hotfix-2023/",
-        "fixes": "Fixed some rare performance issues when teleporting far away from your Sentinel."
-      },
-      {
-        "name": "Octavia’s Anthem: Hotfix 20.2.1",
-        "date": "2017-04-12T22:06:27Z",
-        "url": "https://forums.warframe.com/topic/785900-octavia%E2%80%99s-anthem-hotfix-2021/",
-        "fixes": "Fixed possible minor performance issue when a Drahk Master steals your weapon."
-      },
-      {
-        "name": "Octavia’s Anthem: Hotfix 20.1.1",
-        "date": "2017-04-07T19:15:36Z",
-        "url": "https://forums.warframe.com/topic/784058-octavia%E2%80%99s-anthem-hotfix-2011/",
-        "changes": "Fomorians & Razorbacks now use the Tactical Alert format in the World State Window."
-      },
-      {
-        "name": "Octavia's Anthem: Hotfix 20.0.9",
-        "date": "2017-04-03T21:18:36Z",
-        "url": "https://forums.warframe.com/topic/782477-octavias-anthem-hotfix-2009/",
-        "changes": "Tweaked the Abilities screen for Mirage’s Eclipse and Rhino’s Roar to show damage increase and reduction as a % to match the formatting of the HUD indicator in-game."
-      },
-      {
-        "name": "Octavia's Anthem: Hotfix 20.0.7",
-        "date": "2017-03-30T19:04:41Z",
-        "url": "https://forums.warframe.com/topic/780658-octavias-anthem-hotfix-2007/",
-        "changes": "Improved the performance of Octavia’s Metronome ability. "
-      },
-      {
-        "name": "Update 19.13.0",
-        "date": "2017-03-09T20:40:48Z",
-        "url": "https://forums.warframe.com/topic/771036-update-19130/",
-        "changes": "Made improvements towards performance in the Relays. ",
-        "fixes": "Fixed format cost for when \"increasing Way capacity by 1\" to have a comma, and made Focus names Title Case when in \"commit Focus changes\" prompt instead of UPPERCASE."
-      },
-      {
-        "name": "The Pacifism Defect: Hotfix 19.12.2",
-        "date": "2017-03-06T22:01:18Z",
-        "url": "https://forums.warframe.com/topic/770075-the-pacifism-defect-hotfix-19122/",
-        "changes": "Changed formatting of ‘MUTALIST’ names to avoid using a dash."
-      },
-      {
-        "name": "The Glast Gambit: Hotfix 19.9.3",
-        "date": "2017-02-07T21:51:44Z",
-        "url": "https://forums.warframe.com/topic/760078-the-glast-gambit-hotfix-1993/",
-        "fixes": "Fixed massive performance issues on Kuva Fortress Defense when walking around and meleeing around the Defense Target."
-      },
-      {
-        "name": "The Glast Gambit: Update 19.9.0",
-        "date": "2017-02-01T21:04:20Z",
-        "url": "https://forums.warframe.com/topic/757465-the-glast-gambit-update-1990/",
-        "changes": "More optimization to improve Relay/Dojo performance."
-      },
-      {
-        "name": "The Glast Gambit: Hotfix 19.6.3",
-        "date": "2017-01-17T19:30:07Z",
-        "url": "https://forums.warframe.com/topic/751177-the-glast-gambit-hotfix-1963/",
-        "changes": "More performance optimizations for the Helminth Infirmary. ",
-        "fixes": "Fixed Friends/Clan screen presence information for real-time missions (Alerts, Invasions, Sorties, etc) showing the default mission type of the underlying Star Chart node. "
-      },
-      {
-        "name": "The Glast Gambit: Hotfix 19.6.2",
-        "date": "2017-01-13T21:09:22Z",
-        "url": "https://forums.warframe.com/topic/749509-the-glast-gambit-hotfix-1962/",
-        "fixes": "Fixed the Crowd Dispersion Mod showing unformatted values in its description."
-      },
-      {
-        "name": "The Glast Gambit: Hotfix 19.6.1",
-        "date": "2017-01-13T16:41:08Z",
-        "url": "https://forums.warframe.com/topic/749385-the-glast-gambit-hotfix-1961/",
-        "fixes": "Fixed Hydroid’s Tentacle Swarm sometimes violently throwing ragdolls outside of the world. Should also provide a minor improvement to performance when Tentacle Swarm is active."
-      },
-      {
-        "name": "The Glast Gambit: Update 19.6.0 + 19.6.0.1",
-        "date": "2017-01-11T23:47:27Z",
-        "url": "https://forums.warframe.com/topic/748631-the-glast-gambit-update-1960-19601/",
-        "changes": "Removed ability to see Codex information about Relics you do not own. "
-      },
-      {
-        "name": "The War Within: Update 19.2.0",
-        "date": "2016-12-01T21:22:08Z",
-        "url": "https://forums.warframe.com/topic/728401-the-war-within-update-1920/",
-        "changes": "Made numerous performance improvements in the Kuva Fortress tileset. "
-      },
-      {
-        "name": "Hotfix 19.0.5",
-        "date": "2016-11-18T16:09:29Z",
-        "url": "https://forums.warframe.com/topic/721283-hotfix-1905/",
-        "changes": "Optimized performance of the Solar Chart."
-      },
-      {
         "name": "Update 19: The War Within",
         "date": "2016-11-12T04:02:28Z",
         "url": "https://forums.warframe.com/topic/715768-update-19-the-war-within/",
-        "changes": "Improved the back-end spawning logic of AI types for increased performance."
-      },
-      {
-        "name": "The Index Preview: Hotfix #2",
-        "date": "2016-10-21T15:49:40Z",
-        "url": "https://forums.warframe.com/topic/709888-the-index-preview-hotfix-2/",
-        "changes": "Changed formatting for Dedicated Servers leaderboards so that uptime shows as hh:mm:ss not \"X minute(s)\"."
-      },
-      {
-        "name": "The Index Preview",
-        "date": "2016-10-20T23:28:18Z",
-        "url": "https://forums.warframe.com/topic/709665-the-index-preview/",
-        "changes": "Tweaked Mastery Rank formatting in the HUD."
-      },
-      {
-        "name": "The Silver Grove: U2",
-        "date": "2016-09-15T21:31:02Z",
-        "url": "https://forums.warframe.com/topic/699623-the-silver-grove-u2/",
-        "changes": "Improved performance issues related to Leech Ospreys. ",
-        "fixes": "Fixed a performance hitch related to Ancient Healers, Grineer Scorpions and other enemies that use a grappling hook. "
-      },
-      {
-        "name": "The Silver Grove: U1.4",
-        "date": "2016-09-09T15:49:51Z",
-        "url": "https://forums.warframe.com/topic/697770-the-silver-grove-u14/",
-        "fixes": "Fixed a particle system leak that would gradually erode performance and memory over time; it may also have resulted in missing effects in some cases."
-      },
-      {
-        "name": "The Silver Grove: Update 1",
-        "date": "2016-08-31T18:28:02Z",
-        "url": "https://forums.warframe.com/topic/694786-the-silver-grove-update-1/",
-        "fixes": "Fixed a long performance hitch upon entering the Shrine mission without an Apothic in The Silver Grove quest."
-      },
-      {
-        "name": "The Silver Grove",
-        "date": "2016-08-19T17:32:55Z",
-        "url": "https://forums.warframe.com/topic/688644-the-silver-grove/",
-        "fixes": "Fixed the Heliocor not having information on its Blueprint location (Simaris) in the Market."
-      },
-      {
-        "name": "Specters of the Rail: Hotfix 13",
-        "date": "2016-07-26T18:38:42Z",
-        "url": "https://forums.warframe.com/topic/679601-specters-of-the-rail-hotfix-13/",
-        "changes": "Your Equipped Relic information will now be shown in the Squad info dropdown box (where Equipped Dragon keys appears).",
-        "fixes": "Fixed a tiny performance problem on Ice Planet maps where a sound effect would be started and stopped every few frames."
-      },
-      {
-        "name": "Specters of the Rail: Hotfix 11",
-        "date": "2016-07-19T21:24:37Z",
-        "url": "https://forums.warframe.com/topic/676666-specters-of-the-rail-hotfix-11/",
-        "changes": "Improved system performance while optimizing the cache on systems with less than 12GB of RAM; large cache blocks would eagerly consume all physical memory in the operating system IO-cache to accelerate defrag however this would force other applications into the page-file and make the system unresponsive."
-      },
-      {
-        "name": "Specters of the Rail: Hotfix 4",
-        "date": "2016-07-11T21:59:04Z",
-        "url": "https://forums.warframe.com/topic/671654-specters-of-the-rail-hotfix-4/",
-        "changes": "Script Information:\n"
-      },
-      {
-        "name": "Hotfix 18.5.3",
-        "date": "2016-03-06T05:25:40Z",
-        "url": "https://forums.warframe.com/topic/620027-hotfix-1853/",
-        "fixes": "Fixed regression in sound code causing performance issues."
-      },
-      {
-        "name": "Hotfix 18.5.2",
-        "date": "2016-03-05T22:31:10Z",
-        "url": "https://forums.warframe.com/topic/619803-hotfix-1852/",
-        "fixes": "Possible fixes and improvements for performance issues related to the PhysX effects."
-      },
-      {
-        "name": "Hotfix 18.4.10 & Tactial Alert: Divine Will",
-        "date": "2016-02-11T23:27:12Z",
-        "url": "https://forums.warframe.com/topic/608673-hotfix-18410-tactial-alert-divine-will/",
-        "fixes": "Fixed the Porta Chest Plate’s Arsenal description not displaying the proper information."
-      },
-      {
-        "name": "Hotfix 18.2.3",
-        "date": "2016-01-08T17:32:52Z",
-        "url": "https://forums.warframe.com/topic/591655-hotfix-1823/",
-        "fixes": "Fixed an issue causing slow performance on Missions due to excessive visual FX replication of the Tar-Mutalist MOA’s goo."
-      },
-      {
-        "name": "Hotfix 18.2.2",
-        "date": "2016-01-07T22:26:17Z",
-        "url": "https://forums.warframe.com/topic/591319-hotfix-1822/",
-        "fixes": "Fixed a performance issue caused by improper audio FX settings."
-      },
-      {
-        "name": "Update 18.2.0",
-        "date": "2016-01-05T18:24:20Z",
-        "url": "https://forums.warframe.com/topic/590253-update-1820/",
-        "fixes": "Fixed an error causing markers placed on Mods to display resource information instead."
-      },
-      {
-        "name": "Update 18.1.0   ",
-        "date": "2015-12-16T21:59:04Z",
-        "url": "https://forums.warframe.com/topic/579670-update-1810-spoilers/",
-        "fixes": "Fixed Conclave ‘Player Slain’ messages sometimes providing incorrect information."
-      },
-      {
-        "name": "Hotfix 18.0.4 ",
-        "date": "2015-12-08T17:59:59Z",
-        "url": "https://forums.warframe.com/topic/573817-hotfix-1804-spoilers/",
-        "fixes": "Fixed Archwing information displaying in the Warframe’s Equipment category in the Profile stats page."
-      },
-      {
-        "name": "Hotfix 18.0.2",
-        "date": "2015-12-05T01:52:31Z",
-        "url": "https://forums.warframe.com/topic/570056-hotfix-1802/",
-        "fixes": "Fixed the ‘Mobility’ stat in the Arsenal not properly displaying information."
-      },
-      {
-        "name": "Update 18: The Second Dream",
-        "date": "2015-12-03T23:46:40Z",
-        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
-        "fixes": "Fixed Syndicate Standing not displaying the correct information at the End of Mission screen if the player has negative Standing with a Syndicate."
-      },
-      {
-        "name": "Hotfix 17.11.1",
-        "date": "2015-11-13T17:03:54Z",
-        "url": "https://forums.warframe.com/topic/560373-hotfix-17111/",
-        "fixes": "Improved performance in various stages of the Jords Verdict."
-      },
-      {
-        "name": "Update 17.5: The Jordas Precept. + Hotfix 17.5.1",
-        "date": "2015-10-02T02:05:33Z",
-        "url": "https://forums.warframe.com/topic/536207-update-175-the-jordas-precept-hotfix-1751/",
-        "fixes": "Fixed some performance issues in Hive Missions due to higher-than-normal enemy spawning."
+        "changes": "The Companion stasis grid will now display Polarization counts for pets who have been Forma’d."
       },
       {
         "name": "Update 17.3.0",
@@ -3623,223 +3303,16 @@
         "changes": "T4S Rotation B: Forma Blueprint for Rare Fusion Core 5 Pack."
       },
       {
-        "name": "Update 17.2.4",
-        "date": "2015-08-26T19:41:39Z",
-        "url": "https://forums.warframe.com/topic/518275-update-1724/",
-        "fixes": "Fixed an issue with players viewing their Last Mission Results after changing their gear displaying incorrect information on the latest equipped gear, not the gear that was actually used in mission.  "
-      },
-      {
-        "name": "Hotfix 17.2.2",
-        "date": "2015-08-21T17:00:36Z",
-        "url": "https://forums.warframe.com/topic/515298-hotfix-1722/",
-        "fixes": "Fixed Sentinel information appearing in the HUD when players were in an Archwing Mission or under-water."
-      },
-      {
-        "name": "Hotfix 17.2.1",
-        "date": "2015-08-20T18:51:40Z",
-        "url": "https://forums.warframe.com/topic/514816-hotfix-1721/",
-        "fixes": "Fixed a small performance problem that could accumulate each time a frozen enemy was shattered before the regular melt-down effect could remove the body."
-      },
-      {
-        "name": "Update 17.2",
-        "date": "2015-08-19T21:49:41Z",
-        "url": "https://forums.warframe.com/topic/514266-update-172/",
-        "changes": "Players constructing Spectres for the first time will receive additional information on construction to help clarify Spectre use."
-      },
-      {
-        "name": "Hotfix 17.0.3",
-        "date": "2015-08-04T22:21:45Z",
-        "url": "https://forums.warframe.com/topic/503583-hotfix-1703/",
-        "fixes": "Fixed an issue preventing accounts from saving any information after Missions have been complete."
-      },
-      {
-        "name": "Update 17: Echoes Of The Sentient",
-        "date": "2015-07-31T15:09:25Z",
-        "url": "https://forums.warframe.com/topic/498793-update-17-echoes-of-the-sentient/",
-        "changes": "Clones produced by Mirage’s Hall of Mirrors will no longer show cosmetic items for performance reasons."
-      },
-      {
         "name": "Hotfix 16.11.4",
         "date": "2015-07-10T20:17:36Z",
         "url": "https://forums.warframe.com/topic/488176-hotfix-16114/",
         "changes": "Reduced the frequency of Forma Blueprints dropping in T3 Defense Rotation C."
       },
       {
-        "name": "Update 16.8.0",
-        "date": "2015-06-10T22:03:09Z",
-        "url": "https://forums.warframe.com/topic/473028-update-1680/",
-        "changes": "Mirage’s Hall of Mirror clones will no longer show cosmetic attachments for clients, or if your particle quality is set to low. This change is in an attempt to resolve reports of Performance/crash reports related to Mirage."
-      },
-      {
-        "name": "Update 16.7",
-        "date": "2015-06-04T21:14:52Z",
-        "url": "https://forums.warframe.com/topic/469825-update-167/",
-        "fixes": "Fixed issues related to Sentinel movement that would cause performance problems in PhysX."
-      },
-      {
-        "name": "Hotfix 16.5.4",
-        "date": "2015-05-14T15:41:07Z",
-        "url": "https://forums.warframe.com/topic/457698-hotfix-1654/",
-        "fixes": "Fixed performance issues related to dual-core machines."
-      },
-      {
-        "name": "Update 16.5: Tubemen Of Regor",
-        "date": "2015-05-12T17:09:40Z",
-        "url": "https://forums.warframe.com/topic/455995-update-165-tubemen-of-regor/",
-        "changes": "General performance improvements have been made across Warframe."
-      },
-      {
-        "name": "Update 16.2",
-        "date": "2015-04-01T22:22:39Z",
-        "url": "https://forums.warframe.com/topic/432384-update-162/",
-        "changes": "Fixed profile information being wrong the first time a player profile is viewed in a Mission."
-      },
-      {
-        "name": "Warframe: Sanctuary",
-        "date": "2015-03-20T02:21:54Z",
-        "url": "https://forums.warframe.com/topic/420448-warframe-sanctuary/",
-        "fixes": "Fixed Spy Rewards displaying more information than just an unidentified item."
-      },
-      {
         "name": "Hotfix 15.16.2",
         "date": "2015-03-11T22:21:44Z",
         "url": "https://forums.warframe.com/topic/415936-hotfix-15162/",
         "changes": "Tenno can now buy Forma directly from upgrade screen"
-      },
-      {
-        "name": "Update 15.16 + Tactical Alert!",
-        "date": "2015-02-25T22:12:36Z",
-        "url": "https://forums.warframe.com/topic/408193-update-1516-tactical-alert/",
-        "fixes": "Fixed an issue where a host cannot rejoin a Mission they were disconnected from due to their player information still being registered to the squad."
-      },
-      {
-        "name": "Update 15.13",
-        "date": "2015-02-05T21:08:01Z",
-        "url": "https://forums.warframe.com/topic/396379-update-1513/",
-        "fixes": "Fixed a wide variety of missing Codex information; including missing art from various art galleries, weapons, and enemies for the Corpus, Grineer, Infested and Corrupted."
-      },
-      {
-        "name": "Hotfix 15.12.2",
-        "date": "2015-01-30T19:12:24Z",
-        "url": "https://forums.warframe.com/topic/393586-hotfix-15122/",
-        "fixes": "Fixed high CPU processing strain caused by using weapons with punchthrough on densely packed enemies.  Players should have noticeably better performance in these scenarios."
-      },
-      {
-        "name": "Update 15.12.0",
-        "date": "2015-01-29T22:14:29Z",
-        "url": "https://forums.warframe.com/topic/393115-update-15120/",
-        "fixes": "Fixed performance issues caused when moving through connecting rooms on Corpus Outpost."
-      },
-      {
-        "name": "Hotfix 15.5.5",
-        "date": "2014-12-01T23:09:22Z",
-        "url": "https://forums.warframe.com/topic/356440-hotfix-1555/",
-        "fixes": "Fixed an error on Dark Sector battlepay that inadvertently caused Defender information to be erased once there was no reserve pay available."
-      },
-      {
-        "name": "Update 15.1.0+15.1.01",
-        "date": "2014-11-05T22:46:16Z",
-        "url": "https://forums.warframe.com/topic/340143-update-151015101/",
-        "changes": "Removed redundant textures, tuned sound and texture defaults for better performance and faster load times.",
-        "fixes": "Fixed Ragdoll death effects causing performance drops."
-      },
-      {
-        "name": "Warframe: Archwing",
-        "date": "2014-10-24T12:52:08Z",
-        "url": "https://forums.warframe.com/topic/328727-warframe-archwing/",
-        "changes": "Reduced the explosion effects of Quanta's cubes in an attempt to improve performance."
-      },
-      {
-        "name": "Update 14.10.0",
-        "date": "2014-10-08T22:00:00Z",
-        "url": "https://forums.warframe.com/topic/321746-update-14100/",
-        "changes": "Improved the performance of numerous Gas City tilesets."
-      },
-      {
-        "name": "Update 14.9.0",
-        "date": "2014-10-01T21:39:21Z",
-        "url": "https://forums.warframe.com/topic/318500-update-1490/",
-        "changes": "Improved performance on the visual effects of Vauban’s Bastille for longer durations in an effort to reduce crashes."
-      },
-      {
-        "name": "Update 14.7.0: Operation Gate Crash!",
-        "date": "2014-09-18T03:51:15Z",
-        "url": "https://forums.warframe.com/topic/311669-update-1470-operation-gate-crash/",
-        "changes": "Fixed numerous crashes and squad formation issues."
-      },
-      {
-        "name": "Hotfix 14.6.1",
-        "date": "2014-09-11T21:03:05Z",
-        "url": "https://forums.warframe.com/topic/308432-hotfix-1461/",
-        "changes": "Tweaked performance of Local Reflections code on Dx10 and Dx11 to address potential FPS loss."
-      },
-      {
-        "name": "Hotfix 14.1.1",
-        "date": "2014-07-31T01:22:26Z",
-        "url": "https://forums.warframe.com/topic/279252-hotfix-1411/",
-        "fixes": "Further fixes to squad formation issues when unwanted party members are able to join your sessions."
-      },
-      {
-        "name": "Hotfix 14.0.5",
-        "date": "2014-07-21T23:42:33Z",
-        "url": "https://forums.warframe.com/topic/269089-hotfix-1405/",
-        "changes": "Improved performance on Mirage’s Prism when Particle Quality is set to low.",
-        "fixes": "Fixed improper information in Codex Sector Wars area."
-      },
-      {
-        "name": "Update 14: The Mad Cephalon",
-        "date": "2014-07-18T09:44:52Z",
-        "url": "https://forums.warframe.com/topic/263213-update-14-the-mad-cephalon/",
-        "changes": "Improved the performance of Ash's Smoke Screen on lower end PC's.",
-        "fixes": "Fixed \"Failed to send game invitation\" that would occur if you invited to your game after opening up your contact list, and it was still collecting session information for your friends' games."
-      },
-      {
-        "name": "Update 13.7.1",
-        "date": "2014-06-12T19:52:13Z",
-        "url": "https://forums.warframe.com/topic/245171-update-1371/",
-        "changes": "Improved the performance of the Ignis visual effects."
-      },
-      {
-        "name": "Update 13.7.0 + 13.7.0.1: Depths Of The Void",
-        "date": "2014-06-11T23:25:36Z",
-        "url": "https://forums.warframe.com/topic/244507-update-1370-13701-depths-of-the-void/",
-        "changes": "Improved the performance of the Penta on low end computers.13.7.0.1:\n"
-      },
-      {
-        "name": "Update 13.3.0: Pack Hunters",
-        "date": "2014-05-14T23:33:51Z",
-        "url": "https://forums.warframe.com/topic/231590-update-1330-pack-hunters/",
-        "changes": "Optimized the type of collision calculations used on certain Grineer settlement art assets to address performance concerns."
-      },
-      {
-        "name": "Hotfix 13.1.2",
-        "date": "2014-04-25T23:07:07Z",
-        "url": "https://forums.warframe.com/topic/222026-hotfix-1312/",
-        "changes": "Improved the performance of in game Transmissions."
-      },
-      {
-        "name": "Hotfix 12.1.2",
-        "date": "2014-02-14T23:07:37Z",
-        "url": "https://forums.warframe.com/topic/179717-hotfix-1212/",
-        "changes": "Performance:\n"
-      },
-      {
-        "name": "Hotfix 10.3.3 + 10.3.4",
-        "date": "2013-10-11T20:36:10Z",
-        "url": "https://forums.warframe.com/topic/118923-hotfix-1033-1034/",
-        "changes": "Added a profile setting to enable/disable runtime tessellation for DirectX 11. We encourage players to give us feedback whether disabling this option results in performance improvement on mid-to-low-end video cards when playing Orokin Derelicts."
-      },
-      {
-        "name": "Update 9.8",
-        "date": "2013-09-06T18:30:21Z",
-        "url": "https://forums.warframe.com/topic/102835-update-98/",
-        "fixes": "Fixed performance issues relating to Saryn’s Venom ability."
-      },
-      {
-        "name": "Update 9.7",
-        "date": "2013-08-30T16:01:06Z",
-        "url": "https://forums.warframe.com/topic/100482-update-97/",
-        "fixes": "Fixed performance issues relating to Saryn’s Venom orbs."
       }
     ]
   },
@@ -4321,12 +3794,6 @@
         "fixes": "Fixed the Kuva Siphon sometimes missing shadows."
       },
       {
-        "name": "Plains of Eidolon: Hotfix 22.10.2",
-        "date": "2018-01-26T19:02:16Z",
-        "url": "https://forums.warframe.com/topic/912278-plains-of-eidolon-hotfix-22102/",
-        "fixes": "Fixed kuva braids not disappearing after being destroyed. "
-      },
-      {
         "name": "Plains of Eidolon: Hotfix 22.6.1",
         "date": "2017-12-08T22:06:04Z",
         "url": "https://forums.warframe.com/topic/891922-plains-of-eidolon-hotfix-2261/",
@@ -4701,40 +4168,10 @@
     "category": "Misc",
     "patchlogs": [
       {
-        "name": "Beasts of the Sanctuary: Hotfix 22.20.5",
-        "date": "2018-05-24T19:33:19Z",
-        "url": "https://forums.warframe.com/topic/960082-beasts-of-the-sanctuary-hotfix-22205/",
-        "changes": "Removed the glowing in-world marker from Quill Onkko. "
-      },
-      {
-        "name": "Beasts of the Sanctuary: Update 22.20.0",
-        "date": "2018-05-17T14:55:31Z",
-        "url": "https://forums.warframe.com/topic/957066-beasts-of-the-sanctuary-update-22200/",
-        "changes": "Syndicate Pickups are now auto-marked on the first pickup! "
-      },
-      {
         "name": "Beasts of the Sanctuary: Update 22.19.0",
         "date": "2018-05-02T18:30:06Z",
         "url": "https://forums.warframe.com/topic/952702-beasts-of-the-sanctuary-update-22190/",
         "changes": "Shortened \"Warframe Animation Sets\" to just \"Animation Sets\" in the Market category since it's redundant and crowds the box."
-      },
-      {
-        "name": "Beasts of the Sanctuary: Update 22.18.0",
-        "date": "2018-04-20T14:27:12Z",
-        "url": "https://forums.warframe.com/topic/947321-beasts-of-the-sanctuary-update-22180/",
-        "fixes": "Fixed minimap markers for Ayatan Stars remaining visible after pickup."
-      },
-      {
-        "name": "Shrine of the Eidolon: Update 22.17.0 + 22.17.0.1",
-        "date": "2018-03-28T18:49:46Z",
-        "url": "https://forums.warframe.com/topic/939097-shrine-of-the-eidolon-update-22170-221701/",
-        "fixes": "Fixed objective markers disappearing when underwater in Archwing."
-      },
-      {
-        "name": "Shrine of the Eidolon: Zephyr Prime 22.16.4",
-        "date": "2018-03-20T17:58:34Z",
-        "url": "https://forums.warframe.com/topic/935648-shrine-of-the-eidolon-zephyr-prime-22164/",
-        "fixes": "Fixed mission objective markers behaving weirdly in the Corpus Ice Planet tileset. "
       },
       {
         "name": "Shrine of the Eidolon: Hotfix 22.16.3",
@@ -4753,12 +4190,6 @@
         "date": "2018-02-22T22:25:01Z",
         "url": "https://forums.warframe.com/topic/925435-shrine-of-the-eidolon-hotfix-22134/",
         "fixes": "Fixed some TennoGen items having a giftable option in the Market. Upon selecting this it would fail and not charge you the respective Platinum."
-      },
-      {
-        "name": "Shrine of the Eidolon: Hotfix 22.13.1",
-        "date": "2018-02-15T21:48:54Z",
-        "url": "https://forums.warframe.com/topic/922278-shrine-of-the-eidolon-hotfix-22131/",
-        "fixes": "Fixed the ‘*’ symbol replacing letters with a diacritical mark (non-English languages)  "
       },
       {
         "name": "Shrine of the Eidolon: Update 22.13.0",
@@ -4785,53 +4216,16 @@
         "fixes": "Fixed Market Warframe Skins/Helmets that use the default diorama showing the equipped Warframe instead of the Warframe the Skin is for."
       },
       {
-        "name": "Shrine of the Eidolon: Update 22.12.0",
-        "date": "2018-02-09T23:37:46Z",
-        "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
-        "fixes": "Fixed sometimes spawning into an Excavation mission on Earth with the first Excavator not marked on the minimap."
-      },
-      {
         "name": "Plains of Eidolon: Hotfix 22.11.1",
         "date": "2018-02-06T18:58:57Z",
         "url": "https://forums.warframe.com/topic/916858-plains-of-eidolon-hotfix-22111/",
-        "changes": "Improved the lighting in the Market diorama.",
-        "fixes": "Fixed completing Konzu’s first Plains quest resulting in the objective marker pointing the Plains after returning to Cetus."
-      },
-      {
-        "name": "Plains of Eidolon: Update 22.11.0",
-        "date": "2018-01-31T21:41:13Z",
-        "url": "https://forums.warframe.com/topic/914315-plains-of-eidolon-update-22110/",
-        "fixes": "Fixed Exterminate Extraction markers appearing when there are still enemies left to kill."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.10.2",
-        "date": "2018-01-26T19:02:16Z",
-        "url": "https://forums.warframe.com/topic/912278-plains-of-eidolon-hotfix-22102/",
-        "fixes": "Fixed elevator markers sticking to the edge of the screen."
+        "changes": "Improved the lighting in the Market diorama."
       },
       {
         "name": "Plains of Eidolon: Update 22.10.0",
         "date": "2018-01-25T23:53:14Z",
         "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
         "fixes": "Fixed color customization for Tenno Markings affecting Accessories as well. "
-      },
-      {
-        "name": "Plains of Eidolon: Update 22.9.0",
-        "date": "2018-01-17T18:31:13Z",
-        "url": "https://forums.warframe.com/topic/908909-plains-of-eidolon-update-2290/",
-        "fixes": "Fixes towards objective marker not guiding you to each stage of Vay Hek’s Assassination boss fight."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.8.3",
-        "date": "2018-01-11T14:32:42Z",
-        "url": "https://forums.warframe.com/topic/906556-plains-of-eidolon-hotfix-2283/",
-        "fixes": "Fixed waypoint markers remaining visible in Cetus after that player has left."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.8.2",
-        "date": "2018-01-04T20:43:45Z",
-        "url": "https://forums.warframe.com/topic/904138-plains-of-eidolon-hotfix-2282/",
-        "fixes": "Fixed objective markers remaining after destroying the corresponding vents in the Raptor boss fight. This also brings a potential fix for the objective vent being incorrect if a Host migration occured. "
       },
       {
         "name": "Plains of Eidolon: Hotfix 22.5.1",
@@ -4846,28 +4240,10 @@
         "changes": "Clarified verbiage when buying a Warframe from the Market. Players were confused by thinking they got a Reactor, when really it’s an ‘installed Reactor’."
       },
       {
-        "name": "Plains of Eidolon: Hotfix 22.2.5",
-        "date": "2017-11-11T02:19:26Z",
-        "url": "https://forums.warframe.com/topic/877028-plains-of-eidolon-hotfix-2225/",
-        "fixes": "Fixed the Lunaro ball marker disappearing."
-      },
-      {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
         "date": "2017-11-06T21:33:22Z",
         "url": "https://forums.warframe.com/topic/874821-plains-of-eidolon-hotfix-2224/",
         "fixes": "Fixed certain Kavat Skins being shown in Market previews for Kavats Armor even though those Skins are not compatible with Armor."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.2.3",
-        "date": "2017-11-02T23:10:08Z",
-        "url": "https://forums.warframe.com/topic/872261-plains-of-eidolon-hotfix-2223/",
-        "changes": "Bounty Incursions will no longer abort automatically upon leaving the marked area. A grace period timer indicted on your HUD is displayed to alert you to reenter the area and continue the Incursion."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.1.1",
-        "date": "2017-10-27T20:21:43Z",
-        "url": "https://forums.warframe.com/topic/868348-plains-of-eidolon-hotfix-2211/",
-        "fixes": "Progress on fixing an issue where after finishing the first part of a Bounty the mission would not progress and no second marker will appear on the minimap."
       },
       {
         "name": "Plains of Eidolon: Hotfix 22.0.3",
@@ -4876,17 +4252,10 @@
         "fixes": "Fixed Octavia’s Mandachord Instrument Packs being sold for Credits in the Market."
       },
       {
-        "name": "Plains of Eidolon: Hotfix 22.0.2",
-        "date": "2017-10-13T19:57:07Z",
-        "url": "https://forums.warframe.com/topic/855756-plains-of-eidolon-hotfix-2202/",
-        "fixes": "Fixed Clients seeing their Bounty objective marker as Cetus when on the Plains."
-      },
-      {
         "name": "Warframe Update 22: Plains of Eidolon",
         "date": "2017-10-12T22:00:20Z",
         "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
-        "changes": "The in-game Market now includes a separate category for Warframe Deluxe Bundles! ",
-        "additions": "Added a new ‘shield-like’ objective marker to Defense, Mobile Defense, Hijack, and Sabotage missions."
+        "changes": "The in-game Market now includes a separate category for Warframe Deluxe Bundles! "
       },
       {
         "name": "Hydroid Prime: Hotfix 21.7.1",
@@ -4895,46 +4264,16 @@
         "fixes": "Fixed getting stuck in the ESC menu when attempting to access the Market during Vor’s Prize."
       },
       {
-        "name": "Hydroid Prime: Update 21.6.1",
-        "date": "2017-08-31T19:21:56Z",
-        "url": "https://forums.warframe.com/topic/837704-hydroid-prime-update-2161/",
-        "changes": "Improved objective marker pathing in the Grineer Asteroid tileset. "
-      },
-      {
         "name": "Hydroid Prime: Update 21.6.0",
         "date": "2017-08-29T17:55:46Z",
         "url": "https://forums.warframe.com/topic/836927-hydroid-prime-update-2160/",
         "changes": "Stalker Death Marks"
       },
       {
-        "name": "Chains of Harrow: Hotfix 21.5.2",
-        "date": "2017-08-18T20:40:16Z",
-        "url": "https://forums.warframe.com/topic/832984-chains-of-harrow-hotfix-2152/",
-        "fixes": "Fixed Clients not seeing the in-world markers for Ayatan Stars and Datamasses."
-      },
-      {
-        "name": "Chains of Harrow: Update 21.4.0",
-        "date": "2017-08-10T17:26:21Z",
-        "url": "https://forums.warframe.com/topic/829596-chains-of-harrow-update-2140/",
-        "fixes": "Fixed Banshee's Sonar in Team-based Conclave overriding team-markers, resulting in opponent team seeing red markers for each other."
-      },
-      {
-        "name": "Chains of Harrow: Update 21.3.0",
-        "date": "2017-08-02T21:28:54Z",
-        "url": "https://forums.warframe.com/topic/826127-chains-of-harrow-update-2130/",
-        "fixes": "Fixed Kuva Siphon markers appearing prematurely. Will now only be visible once a player is in the same tile as the Kuva Siphon."
-      },
-      {
         "name": "Update 21: Chains of Harrow",
         "date": "2017-06-29T03:00:20Z",
         "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
-        "fixes": "Fixed mission objective waypoint marker not disappearing after completing the objective in the Second Dream."
-      },
-      {
-        "name": "Oberon Prime: Hotfix 20.7.1",
-        "date": "2017-06-14T21:01:39Z",
-        "url": "https://forums.warframe.com/topic/806282-oberon-prime-hotfix-2071/",
-        "fixes": "Fixed the marker disappearing on ragdolled Bomb carrier enemies in The Law of Retribution. We have also added some logging in general to Bomb carriers to solve future issues."
+        "fixes": "Fixed viewing one item in the Market and clicking on a related item sometimes causing duplicate items to appear in the diorama if you press ESC before the related item loaded completely. "
       },
       {
         "name": "Octavia’s Anthem: Update 20.6.0 + 20.6.0.1",
@@ -4949,58 +4288,10 @@
         "fixes": "Fixed missing fade FX from Market icons."
       },
       {
-        "name": "Octavia’s Anthem: Hotfix 20.2.3",
-        "date": "2017-04-19T22:08:42Z",
-        "url": "https://forums.warframe.com/topic/788574-octavia%E2%80%99s-anthem-hotfix-2023/",
-        "fixes": "Fixed the generic marker FX being a broken texture."
-      },
-      {
-        "name": "Octavia's Anthem: Hotfix 20.2.2",
-        "date": "2017-04-13T19:58:41Z",
-        "url": "https://forums.warframe.com/topic/786250-octavias-anthem-hotfix-2022/",
-        "fixes": "Fixed quest marker/dialogue appearing in Suda's Datascape Scene."
-      },
-      {
-        "name": "Octavia’s Anthem: Hotfix 20.2.1",
-        "date": "2017-04-12T22:06:27Z",
-        "url": "https://forums.warframe.com/topic/785900-octavia%E2%80%99s-anthem-hotfix-2021/",
-        "fixes": "Fixed Ivara’s Piercing Navigator Augment being marked as an Exilus Mod."
-      },
-      {
-        "name": "Octavia’s Anthem: Hotfix 20.1.1",
-        "date": "2017-04-07T19:15:36Z",
-        "url": "https://forums.warframe.com/topic/784058-octavia%E2%80%99s-anthem-hotfix-2011/",
-        "fixes": "Fixed hud & mini-map markers not always pathing correctly in some Archwing missions."
-      },
-      {
-        "name": "Octavia's Anthem: Hotfix 20.0.8",
-        "date": "2017-03-30T21:56:27Z",
-        "url": "https://forums.warframe.com/topic/780730-octavias-anthem-hotfix-2008/",
-        "fixes": "Fixed Ergo’s Boardroom Scene showing a quest marker for Glast Gambit."
-      },
-      {
         "name": "Octavia's Anthem: Hotfix 20.0.6",
         "date": "2017-03-29T21:11:47Z",
         "url": "https://forums.warframe.com/topic/780209-octavias-anthem-hotfix-2006/",
         "fixes": "Fixed missing descriptions for Instrument Packs in the Market."
-      },
-      {
-        "name": "Update 19.13.0",
-        "date": "2017-03-09T20:40:48Z",
-        "url": "https://forums.warframe.com/topic/771036-update-19130/",
-        "changes": "Removed the UI sound for Objective markers."
-      },
-      {
-        "name": "The Pacifism Defect: Hotfix 19.12.2",
-        "date": "2017-03-06T22:01:18Z",
-        "url": "https://forums.warframe.com/topic/770075-the-pacifism-defect-hotfix-19122/",
-        "fixes": "Fixed the Extraction marker remaining on screen for Clients after a minute in Survival."
-      },
-      {
-        "name": "The Pacifism Defect: Update 19.12.0",
-        "date": "2017-03-02T22:20:36Z",
-        "url": "https://forums.warframe.com/topic/768600-the-pacifism-defect-update-19120/",
-        "fixes": "Fixed the Ambulas boss room waypoint marker pointing the wrong direction."
       },
       {
         "name": "Banshee Prime: Hotfix 19.11.5 + 19.11.6",
@@ -5021,18 +4312,6 @@
         "fixes": "Fixed Nidus’ Market Build tab stating his parts drop from the ‘Purify’ mission when it’s actually the ‘Infested Salvage’ mission."
       },
       {
-        "name": "The Glast Gambit: Hotfix 19.9.1",
-        "date": "2017-02-02T22:32:29Z",
-        "url": "https://forums.warframe.com/topic/757913-the-glast-gambit-hotfix-1991/",
-        "fixes": "Fixed objective markers in Lua Rescue directing you off into space. "
-      },
-      {
-        "name": "The Glast Gambit: Update 19.9.0",
-        "date": "2017-02-01T21:04:20Z",
-        "url": "https://forums.warframe.com/topic/757465-the-glast-gambit-update-1990/",
-        "changes": "Reduced the size of the Excavation Power Cell marker. "
-      },
-      {
         "name": "The Glast Gambit: Hotfix 19.6.2",
         "date": "2017-01-13T21:09:22Z",
         "url": "https://forums.warframe.com/topic/749509-the-glast-gambit-hotfix-1962/",
@@ -5045,28 +4324,15 @@
         "fixes": "Fixed numerous weapons and items not having a ‘Build’ tab in the Market."
       },
       {
-        "name": "The Glast Gambit: Hotfix 19.5.7",
-        "date": "2017-01-06T21:10:08Z",
-        "url": "https://forums.warframe.com/topic/746343-the-glast-gambit-hotfix-1957/",
-        "changes": "Changed Interception to prevent new players joining right before the round ends (it now locks the mission at the 60% mark).Please Note That We Are Investigating A Ui Bug Where The Round 2 Buff Icon Does Not Display During An Endless Void Fissure Mission.:\n"
-      },
-      {
         "name": "The War Within: Update 19.4 + 19.4.1",
         "date": "2016-12-16T17:50:13Z",
         "url": "https://forums.warframe.com/topic/735406-the-war-within-update-194-1941/",
         "fixes": "Fixed some unreleased Corpus Cosmetics from showing in the Market"
       },
       {
-        "name": "Hotfix 19.0.3",
-        "date": "2016-11-14T23:41:18Z",
-        "url": "https://forums.warframe.com/topic/718965-hotfix-1903/",
-        "changes": "Fixed a confusing minimap marker in the Kuva Fortress tileset."
-      },
-      {
         "name": "Update 19: The War Within",
         "date": "2016-11-12T04:02:28Z",
         "url": "https://forums.warframe.com/topic/715768-update-19-the-war-within/",
-        "changes": "The icon used to displayed dropped weapons from a disarm move now use the same Friendly marker on the minimap instead of the major objective iconography.",
         "fixes": "Fixed the Vasto Day of the Dead skin not appearing as ‘Owned’ in the Market. "
       },
       {
@@ -5079,20 +4345,7 @@
         "name": "The Vacuum Within",
         "date": "2016-10-05T21:17:28Z",
         "url": "https://forums.warframe.com/topic/705566-the-vacuum-within%C2%A0/",
-        "changes": "You can now place Resource decorations in your Landing Craft! Check out the Landing Craft section in the Market.",
-        "fixes": "Fixed an issue with Ayatan minimap markers not disappearing after pickup. "
-      },
-      {
-        "name": "The Silver Grove: U4.2",
-        "date": "2016-09-30T21:03:12Z",
-        "url": "https://forums.warframe.com/topic/704257-the-silver-grove-u42/",
-        "changes": "Fixed duplicate Marelok appearing in the market. Players who purchased this item have automatically received a refund."
-      },
-      {
-        "name": "The Silver Grove: U4+4.1",
-        "date": "2016-09-29T19:31:28Z",
-        "url": "https://forums.warframe.com/topic/703921-the-silver-grove-u441/",
-        "additions": "Added a mini-map marker for Ayatan Stars. "
+        "changes": "You can now place Resource decorations in your Landing Craft! Check out the Landing Craft section in the Market."
       },
       {
         "name": "The Silver Grove: Update 1",
@@ -5104,20 +4357,13 @@
         "name": "The Silver Grove",
         "date": "2016-08-19T17:32:55Z",
         "url": "https://forums.warframe.com/topic/688644-the-silver-grove/",
-        "changes": "Bosses now appear on your mini-map as a red 'destroy/kill' marker instead of the yellow marker for consistency.",
         "fixes": "Fixed the Heliocor not having information on its Blueprint location (Simaris) in the Market."
       },
       {
         "name": "Specters of the Rail: Update 1",
         "date": "2016-07-28T15:17:30Z",
         "url": "https://forums.warframe.com/topic/680396-specters-of-the-rail-update-1/",
-        "fixes": "Fixed joining a Void Fissure mission in progress and seeing previously dropped Reactant with objective markers on them."
-      },
-      {
-        "name": "Specters of the Rail: Hotfix 13",
-        "date": "2016-07-26T18:38:42Z",
-        "url": "https://forums.warframe.com/topic/679601-specters-of-the-rail-hotfix-13/",
-        "changes": "Reactant marker now uses the Void Tear icon. The marker is only visible if players don't have enough Reactant."
+        "fixes": "Fixed the Orthos icon in the Market."
       },
       {
         "name": "Specters of the Rail: Hotfix 4",
@@ -5129,31 +4375,13 @@
         "name": "Specters of the Rail: Hotfix 1",
         "date": "2016-07-08T21:33:56Z",
         "url": "https://forums.warframe.com/topic/668573-specters-of-the-rail-hotfix-1/",
-        "fixes": "Fixed an issue with other players mini map player markers appearing very pixilated."
-      },
-      {
-        "name": "Hotfix 18.5.2",
-        "date": "2016-03-05T22:31:10Z",
-        "url": "https://forums.warframe.com/topic/619803-hotfix-1852/",
-        "changes": "Removed Cannonade from Transmutation and marked it untradable until it can be balanced and released properly. If you have it, you can keep it, but note it might change. "
+        "fixes": "Fixed the resolution of Prime Access images in the Market."
       },
       {
         "name": "Hotfix 18.4.11",
         "date": "2016-02-12T19:59:22Z",
         "url": "https://forums.warframe.com/topic/609136-hotfix-18411/",
         "changes": "Changed the description and names of Baro's 'Mark' items to better indicate their purpose and usability. They are now called Beacons."
-      },
-      {
-        "name": "Hotfix 18.4.10 & Tactial Alert: Divine Will",
-        "date": "2016-02-11T23:27:12Z",
-        "url": "https://forums.warframe.com/topic/608673-hotfix-18410-tactial-alert-divine-will/",
-        "fixes": "Fixed an additional revive marker appearing after an ally has been revived while irradiation."
-      },
-      {
-        "name": "Hotfix 18.4.7",
-        "date": "2016-02-04T22:43:36Z",
-        "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
-        "fixes": "Fixed objective markers not properly pointing down the vertical shaft at the start of some Missions on the Grineer Settlement tileset."
       },
       {
         "name": "Hotfix 18.4.3",
@@ -5165,19 +4393,12 @@
         "name": "Update 18.4.0",
         "date": "2016-01-22T00:24:23Z",
         "url": "https://forums.warframe.com/topic/597888-update-1840/",
-        "fixes": "Fixed a navigation issue preventing minimap markers from moving properly through upper and lower areas of the Corpus Gas City tileset."
-      },
-      {
-        "name": "Hotfix 18.2.3",
-        "date": "2016-01-08T17:32:52Z",
-        "url": "https://forums.warframe.com/topic/591655-hotfix-1823/",
-        "changes": "Adjusted an objective marker navigation through Corpus ventilation shafts that was difficult to follow."
+        "fixes": "Fixed an issue where coupons would not immediately show up in the Market upon reception of a coupon as a login reward."
       },
       {
         "name": "Hotfix 18.2.2",
         "date": "2016-01-07T22:26:17Z",
         "url": "https://forums.warframe.com/topic/591319-hotfix-1822/",
-        "changes": "Adjusted the minimap markers in Exterminate Missions to more accurately track slow NPCs.",
         "fixes": "Fixed the Hyena Pack, Tyl Regor, Vay Hek and Infested Alad V not properly giving Death Marks to players."
       },
       {
@@ -5185,12 +4406,6 @@
         "date": "2016-01-06T00:23:07Z",
         "url": "https://forums.warframe.com/topic/590417-hotfix-1821/",
         "fixes": "Fixed players not receiving a Death Mark if their Sentinel or Kubrow is responsible for the death of a boss."
-      },
-      {
-        "name": "Update 18.2.0",
-        "date": "2016-01-05T18:24:20Z",
-        "url": "https://forums.warframe.com/topic/590253-update-1820/",
-        "fixes": "Fixed an error causing markers placed on Mods to display resource information instead."
       },
       {
         "name": "Hotfix 18.1.3.1",
@@ -5202,7 +4417,7 @@
         "name": "Update 18.1.0   ",
         "date": "2015-12-16T21:59:04Z",
         "url": "https://forums.warframe.com/topic/579670-update-1810-spoilers/",
-        "fixes": "Fixed enemy markers not appearing in Archwing Defense Missions, making it difficult to locate surviving enemies."
+        "fixes": "Fixed some Warframe skins not being properly viewable after previewing a Deluxe skin in the Market."
       },
       {
         "name": "Hotfix 18.0.7 ",
@@ -5241,12 +4456,6 @@
         "fixes": "Fixed the Mk-1 Kunai showing a Platinum cost in the Market."
       },
       {
-        "name": "Update 17.8.0",
-        "date": "2015-10-21T21:58:23Z",
-        "url": "https://forums.warframe.com/topic/549118-update-1780/",
-        "fixes": "Fixed the minimap objective marker not pathing to the correct objective in Archwing Sabotage Missions."
-      },
-      {
         "name": "Update 17.7",
         "date": "2015-10-14T21:37:19Z",
         "url": "https://forums.warframe.com/topic/545312-update-177/",
@@ -5257,7 +4466,6 @@
         "name": "Hotfix 17.6.2",
         "date": "2015-10-08T21:38:43Z",
         "url": "https://forums.warframe.com/topic/541693-hotfix-1762/",
-        "changes": "Made adjustments to help improve minimap navigation markers.",
         "fixes": "Fixed the Day of the Dead Imperator Skin not showing an appropriate description in the Market. WOOOOOOO SPOOKY GHOST LEAK"
       },
       {
@@ -5267,40 +4475,16 @@
         "changes": "Improved the resolution on Trinity Prime’s image in the Market."
       },
       {
-        "name": "Hotfix 17.5.5",
-        "date": "2015-10-05T22:15:15Z",
-        "url": "https://forums.warframe.com/topic/539640-hotfix-1755/",
-        "fixes": "Fixed issues with the navigation marker when going through doors in the Orokin Void tileset."
-      },
-      {
-        "name": "Update 17.5: The Jordas Precept. + Hotfix 17.5.1",
-        "date": "2015-10-02T02:05:33Z",
-        "url": "https://forums.warframe.com/topic/536207-update-175-the-jordas-precept-hotfix-1751/",
-        "fixes": "Fixed an issue causing improper pathing for the objective marker in the Grineer Underwater Sealab tileset."
-      },
-      {
         "name": "Update 17.4.5",
         "date": "2015-09-23T22:02:55Z",
         "url": "https://forums.warframe.com/topic/532623-update-1745/",
         "additions": "New Noggles are now available in the Market!  Add Oberon, Valkyr and Zephyr to your collection today!"
       },
       {
-        "name": "Hotfix 17.4.3",
-        "date": "2015-09-16T20:35:30Z",
-        "url": "https://forums.warframe.com/topic/529270-hotfix-1743/",
-        "fixes": "Fixed dig site ‘E’ in Excavation always showing up as a yellow marker."
-      },
-      {
         "name": "Hotfix 17.3.1",
         "date": "2015-09-04T15:59:08Z",
         "url": "https://forums.warframe.com/topic/522855-hotfix-1731/",
         "fixes": "Fixed purchased Prisma items not showing up in the Void Trader’s Market as purchased."
-      },
-      {
-        "name": "Update 17.3.0",
-        "date": "2015-09-02T20:56:46Z",
-        "url": "https://forums.warframe.com/topic/521781-update-1730/",
-        "fixes": "Fixed certain waypoint markers not disappearing after the enemy has been defeated (such as Void Vor, Oculysts and Synthesis targets)."
       },
       {
         "name": "Hotfix 17.2.5",
@@ -5320,49 +4504,6 @@
         "url": "https://forums.warframe.com/topic/498793-update-17-echoes-of-the-sentient/",
         "changes": "Players can now see a more detailed Noggle preview available in the Market.",
         "fixes": "Fixed an issue preventing players from exiting the Market when pushing ‘escape’ on a controller / gamepad."
-      },
-      {
-        "name": "Update 16.10.0",
-        "date": "2015-06-25T21:50:17Z",
-        "url": "https://forums.warframe.com/topic/480637-update-16100/",
-        "fixes": "Fixed markers in Archwing Interception Missions sometimes appearing in the wrong locations."
-      },
-      {
-        "name": "Hotfix 16.8.3",
-        "date": "2015-06-12T19:25:15Z",
-        "url": "https://forums.warframe.com/topic/474057-hotfix-1683/",
-        "changes": "Exterminate minimap markers have been tweaked to make it less likely that you will leave a stray enemy behind and have to backtrack."
-      },
-      {
-        "name": "Hotfix 16.7.2",
-        "date": "2015-06-05T19:12:58Z",
-        "url": "https://forums.warframe.com/topic/470391-hotfix-1672/",
-        "changes": "Added a marker to capture consoles to make the target more easily visible.",
-        "fixes": "Fixed navigation markers not showing proper pathing on Corpus Gas City tilesets."
-      },
-      {
-        "name": "Update 16.6.0",
-        "date": "2015-05-27T21:08:21Z",
-        "url": "https://forums.warframe.com/topic/465618-update-1660/",
-        "fixes": "Fixed red enemy markers appearing on the mini map/HUD after a Kubrow has been revived."
-      },
-      {
-        "name": "Hotfix 16.5.6",
-        "date": "2015-05-19T19:46:51Z",
-        "url": "https://forums.warframe.com/topic/461080-hotfix-1656/",
-        "fixes": "Fixed an issue on Void tilesets that would break navigation markers and enemy navigation."
-      },
-      {
-        "name": "Hotfix 16.5.3",
-        "date": "2015-05-13T22:21:59Z",
-        "url": "https://forums.warframe.com/topic/457163-hotfix-1653/",
-        "fixes": "Fixed persisting enemy markers after an enemy has died."
-      },
-      {
-        "name": "Hotfix 16.5.1",
-        "date": "2015-05-12T20:51:22Z",
-        "url": "https://forums.warframe.com/topic/456211-hotfix-1651/",
-        "fixes": "Fixed waypoint markers in Interception not properly updating."
       },
       {
         "name": "Update 16.4",
@@ -5396,12 +4537,6 @@
         "fixes": "Fixed an issue caused by purchasing the Soma in the Marketplace."
       },
       {
-        "name": "Update 15.13",
-        "date": "2015-02-05T21:08:01Z",
-        "url": "https://forums.warframe.com/topic/396379-update-1513/",
-        "fixes": "Fixed various issues causing broken objective markers on the Corpus Ice Planet tilesets."
-      },
-      {
         "name": "Hotfix 15.10.1",
         "date": "2015-01-15T22:48:21Z",
         "url": "https://forums.warframe.com/topic/385712-hotfix-15101/",
@@ -5426,19 +4561,6 @@
         "fixes": "Fixed the Patient Zero blueprint not appearing in Marketplace."
       },
       {
-        "name": "Hotfix 15.5.6",
-        "date": "2014-12-02T23:33:26Z",
-        "url": "https://forums.warframe.com/topic/357182-hotfix-1556/",
-        "fixes": "Fixed various broken objective markers on Ice Planet tileset."
-      },
-      {
-        "name": "Hotfix 15.5.5",
-        "date": "2014-12-01T23:09:22Z",
-        "url": "https://forums.warframe.com/topic/356440-hotfix-1555/",
-        "changes": "Removed ally markers from various NPCs located in the Tenno hub.",
-        "fixes": "Fixed the main menu occasionally becoming blocked by other text elements on screen (ie - objectives, player names, markers)"
-      },
-      {
         "name": "Hotfix 15.5.1",
         "date": "2014-11-27T20:40:47Z",
         "url": "https://forums.warframe.com/topic/353150-hotfix-1551/",
@@ -5451,40 +4573,10 @@
         "fixes": "Fixed player not being able to leave the Market after entering the Market"
       },
       {
-        "name": "Update 15.2.0",
-        "date": "2014-11-13T01:00:05Z",
-        "url": "https://forums.warframe.com/topic/344505-update-1520/",
-        "fixes": "Fixed Trench Run minimap issues to correctly display objective marker and load correct room."
-      },
-      {
-        "name": "Hotfix 15.1.3",
-        "date": "2014-11-11T16:29:12Z",
-        "url": "https://forums.warframe.com/topic/343682-hotfix-1513/",
-        "fixes": "Fixed issues with the correct appearance of Harvester/Grustrag 3 Deathmarks on Profile Screens."
-      },
-      {
-        "name": "Hotfix 15.1.2",
-        "date": "2014-11-08T00:06:22Z",
-        "url": "https://forums.warframe.com/topic/341594-hotfix-1512/",
-        "fixes": "Fixed an incorrect objective marker on the minimap during the Archwing Quest."
-      },
-      {
         "name": "Update 15.1.0+15.1.01",
         "date": "2014-11-05T22:46:16Z",
         "url": "https://forums.warframe.com/topic/340143-update-151015101/",
         "fixes": "Fixed the in-game Market not showing the price of items if you've already purchased them."
-      },
-      {
-        "name": "Hotfix 15.0.9",
-        "date": "2014-10-30T22:22:26Z",
-        "url": "https://forums.warframe.com/topic/336430-hotfix-1509/",
-        "fixes": "Fixed waypoint marker issues in certain Archwing Trenchrun Maps."
-      },
-      {
-        "name": "Hotfix 15.0.8",
-        "date": "2014-10-29T23:32:35Z",
-        "url": "https://forums.warframe.com/topic/335717-hotfix-1508/",
-        "changes": "Fixed an issue with objective markers not properly pointing towards the objective in certain Archwing tilesets."
       },
       {
         "name": "Hotfix 14.8.1",
@@ -5499,23 +4591,11 @@
         "changes": "Fixed an issue in the Market regarding proper classification of Kubrow starter kits and color bundles."
       },
       {
-        "name": "Hotfix 14.1.4",
-        "date": "2014-08-06T22:13:47Z",
-        "url": "https://forums.warframe.com/topic/284750-hotfix-1414/",
-        "fixes": "Fixed an issue with objective markers being missing in certain Settlement Rescue tiles."
-      },
-      {
         "name": "Hotfix 14.0.5",
         "date": "2014-07-21T23:42:33Z",
         "url": "https://forums.warframe.com/topic/269089-hotfix-1405/",
         "changes": "Don't show Market notification before unlocking the Market.",
         "additions": "Added in a XP locked message that will be received when the player attempts to purchase an item from the Market that is currently XP locked."
-      },
-      {
-        "name": "Update 14: The Mad Cephalon",
-        "date": "2014-07-18T09:44:52Z",
-        "url": "https://forums.warframe.com/topic/263213-update-14-the-mad-cephalon/",
-        "fixes": "Fixed an issue with Objective markers not appearing correctly on certain Shipyards tilesets."
       },
       {
         "name": "Update 13.3.0: Pack Hunters",
@@ -5524,22 +4604,10 @@
         "fixes": "Fixed an issue with erroneous blueprints appearing in the Market place."
       },
       {
-        "name": "Update 13.1.0: Amprex",
-        "date": "2014-04-23T21:22:13Z",
-        "url": "https://forums.warframe.com/topic/220848-update-1310-amprex/",
-        "changes": "HUD: manually-placed waypoint markers can now be cleared by aiming at them and pressing G."
-      },
-      {
         "name": "Update 9.7",
         "date": "2013-08-30T16:01:06Z",
         "url": "https://forums.warframe.com/topic/100482-update-97/",
         "fixes": "Fixed text field for Market sale items in Russian language."
-      },
-      {
-        "name": "Hotfix 8.3",
-        "date": "2013-07-04T22:45:50Z",
-        "url": "https://forums.warframe.com/topic/73282-hotfix-83/",
-        "fixes": "Fixed edge case issue where objective marker would not clear upon completing Capture objective."
       }
     ]
   },
@@ -8628,14 +7696,6 @@
         "chance": 0.0357,
         "rotation": "Annihilation"
       }
-    ],
-    "patchlogs": [
-      {
-        "name": "Plains of Eidolon: Update 22.2.0",
-        "date": "2017-11-01T20:54:33Z",
-        "url": "https://forums.warframe.com/topic/871334-plains-of-eidolon-update-2220/",
-        "changes": "Ruhang II additional damage increased from 18 to 28."
-      }
     ]
   },
   {
@@ -8804,61 +7864,5 @@
         "rotation": "Annihilation"
       }
     ]
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/BasicUcResourceDrone",
-    "name": "Distilling Extractor",
-    "description": "The Distilling Extractor has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect resources. It must be emptied regularly and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 1,
-    "fillRate": 8,
-    "durability": 200,
-    "repairRate": 20,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/AdvancedUcResourceDrone",
-    "name": "Distilling Extractor Prime",
-    "description": "The Distilling Extractor Prime has an increased chance of acquiring uncommon and rare resources.\nDeploy this Extractor on a planet to collect large amounts of resources. It must be emptied regularly and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 2,
-    "fillRate": 8,
-    "durability": 200,
-    "repairRate": 20,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/BasicResourceDrone",
-    "name": "Titan Extractor",
-    "description": "Deploy the EXTRACTOR on a planet to collect resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 1,
-    "fillRate": 4,
-    "durability": 100,
-    "repairRate": 10,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
-  },
-  {
-    "uniqueName": "/Lotus/Types/Ship/AdvancedResourceDrone",
-    "name": "Titan Extractor Prime",
-    "description": "Deploy the EXTRACTOR on a planet to collect large amounts of resources.\nMust be emptied regularly for maximum efficiency and monitored for damage.",
-    "binCount": 1,
-    "binCapacity": 2,
-    "fillRate": 4,
-    "durability": 100,
-    "repairRate": 10,
-    "capacityMultiplier": [ 8, 6, 4, 1 ],
-    "specialities": [  ],
-    "type": "Extractor",
-    "category": "Misc"
   }
 ]
