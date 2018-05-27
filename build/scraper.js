@@ -121,15 +121,7 @@ class Scraper {
 
     // Sort everything alphabetically
     for (let category of Object.keys(data)) {
-      data[category].sort((a, b) => {
-        if (a.name < b.name) {
-          return -1
-        }
-        if (a.name > b.name) {
-          return 1
-        }
-        return 0
-      })
+      data[category].sort((a, b) => a.name.localeCompare(b.name))
     }
     return data
   }
@@ -211,15 +203,7 @@ class Scraper {
           description: a.description
         }
       })
-      item.abilities.sort((a, b) => {
-        if (a.name < b.name) {
-          return -1
-        }
-        if (a.name > b.name) {
-          return 1
-        }
-        return 0
-      })
+      item.abilities.sort((a, b) => a.name.localeCompare(b.name))
     }
 
     // Make descriptions a string, not array
@@ -324,15 +308,7 @@ class Scraper {
         delete component.description
         this.addDucats(item, component)
       }
-      item.components.sort((a, b) => {
-        if (a.name < b.name) {
-          return -1
-        }
-        if (a.name > b.name) {
-          return 1
-        }
-        return 0
-      })
+      item.components.sort((a, b) => a.name.localeCompare(b.name))
     }
   }
 
