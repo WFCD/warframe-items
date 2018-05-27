@@ -51,6 +51,11 @@ class Scraper {
       const categories = await this.fetch(type)
       data = _.mergeWith(data, categories, (a, b) => _.isArray(a) ? a.concat(b) : undefined)
     }))
+
+    // Order everything alphabetically
+    for (let category of Object.keys(data)) {
+      data[category].sort((a, b) => a.name.localeCompare(b.name))
+    }
     return data
   }
 
@@ -115,11 +120,6 @@ class Scraper {
       }
     }
     console.log(`Finished in ${new Date() - timer}ms \n`)
-
-    // Sort everything alphabetically
-    for (let category of Object.keys(data)) {
-      data[category].sort((a, b) => a.name.localeCompare(b.name))
-    }
     return data
   }
 
