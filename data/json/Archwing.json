@@ -45,6 +45,68 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
+    "name": "Amesha",
+    "description": "Transform into a winged guardian.",
+    "health": 400,
+    "shield": 200,
+    "armor": 200,
+    "stamina": 150,
+    "power": 200,
+    "abilities": [
+      {
+        "name": "Benevolent Decoy",
+        "description": "Creates beacons that draw enemy fire, converting the damage into healing pulses."
+      },
+      {
+        "name": "Vengeful Rush",
+        "description": "All damage taken is transformed into Energy, while abilities gain enhanced Range, Duration and Power. Affects the Warframe and nearby allies."
+      },
+      {
+        "name": "Warding Grace",
+        "description": "Renders the Warframe and nearby allies immune to Status Effects, while slowing nearby enemies."
+      },
+      {
+        "name": "Watchful Swarm",
+        "description": "Tiny drones orbit the Warframe or an ally, and intercept enemy fire."
+      }
+    ],
+    "type": "Warframe",
+    "components": [
+      {
+        "name": "Blueprint"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent",
+        "name": "Harness"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent",
+        "name": "Systems"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent",
+        "name": "Wings"
+      }
+    ],
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.9",
+        "date": "2017-10-23T21:51:59Z",
+        "url": "https://forums.warframe.com/topic/865725-plains-of-eidolon-hotfix-2209/",
+        "fixes": "Fixed Archwing disabler projectiles not being affected by bullet attractor pulls (Mag, Amesha, etc)"
+      },
+      {
+        "name": "The Vacuum Within: Hotfix #3",
+        "date": "2016-10-13T18:16:13Z",
+        "url": "https://forums.warframe.com/topic/708168-the-vacuum-within-hotfix-3/",
+        "fixes": "Fixed Amesha’s Watchful Swarm not ending if you exit Archwing modeas per: https://forums.warframe.com/topic/704078-ameshas-watchful-swarm-animation-doesnt-end-when-you-resurface-in-uranus/ "
+      }
+    ]
+  },
+  {
     "name": "Centaur",
     "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archswordandshield/ArchSwordShield",
     "secondsPerShot": 0.92307687,
@@ -232,6 +294,104 @@
         "date": "2014-11-27T20:40:47Z",
         "url": "https://forums.warframe.com/topic/353150-hotfix-1551/",
         "fixes": "Fixed Dual Decurion blueprint appearing in Clan Tech, removed blueprint from Clan Tech Research. This is a Market blueprint for you to craft once you obtain the parts!"
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
+    "name": "Elytron",
+    "description": "This heavy duty Archwing was designed for one purpose, destruction.",
+    "health": 450,
+    "shield": 450,
+    "armor": 150,
+    "stamina": 150,
+    "power": 125,
+    "abilities": [
+      {
+        "name": "Bloomer",
+        "description": "Fires a high-yield, remotely detonated explosive projectile capable of latching onto targets."
+      },
+      {
+        "name": "Core Vent",
+        "description": "Vents out the Archwing's propulsion core, confusing enemy projectiles and causing them to detonate."
+      },
+      {
+        "name": "Thumper",
+        "description": "Creates a localized storm of punishing explosions."
+      },
+      {
+        "name": "Warhead",
+        "description": "Launches a plodding missile capable of unleashing a massive explosion."
+      }
+    ],
+    "type": "Warframe",
+    "components": [
+      {
+        "name": "Blueprint"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent",
+        "name": "Harness"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent",
+        "name": "Systems"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent",
+        "name": "Wings"
+      }
+    ],
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chains of Harrow: Hotfix 21.1.1",
+        "date": "2017-07-20T19:33:36Z",
+        "url": "https://forums.warframe.com/topic/820507-chains-of-harrow-hotfix-2111/",
+        "fixes": "More fixes towards Energy color issues when using Core Vent on the Elytron."
+      },
+      {
+        "name": "Update 18.1.0   ",
+        "date": "2015-12-16T21:59:04Z",
+        "url": "https://forums.warframe.com/topic/579670-update-1810-spoilers/",
+        "fixes": "Fixed Clients seeing duplicate visual FX trails from the Elytron’s exhaust."
+      },
+      {
+        "name": "Update 17.9.0",
+        "date": "2015-10-28T15:12:27Z",
+        "url": "https://forums.warframe.com/topic/552544-update-1790/",
+        "changes": "Reduced the particle FX on Elytron’s Core Vent Ability."
+      },
+      {
+        "name": "Update 17.2",
+        "date": "2015-08-19T21:49:41Z",
+        "url": "https://forums.warframe.com/topic/514266-update-172/",
+        "changes": "The Elytron`s Thumper will now combine with previous Thumpers if it detonates within its radius. This will refresh the duration on the previous Thumper and allow damage to stack up to 4 times."
+      },
+      {
+        "name": "Hotfix 16.8.3",
+        "date": "2015-06-12T19:25:15Z",
+        "url": "https://forums.warframe.com/topic/474057-hotfix-1683/",
+        "fixes": "Fixed another issue causing players to take damage from Elytron’s Warhead ability."
+      },
+      {
+        "name": "Update 16.8.0",
+        "date": "2015-06-10T22:03:09Z",
+        "url": "https://forums.warframe.com/topic/473028-update-1680/",
+        "fixes": "Fixed an issue allowing players to take damage from Elytron’s Warhead."
+      },
+      {
+        "name": "Update 15.3.0",
+        "date": "2014-11-20T17:57:48Z",
+        "url": "https://forums.warframe.com/topic/349166-update-1530/",
+        "fixes": "Fixed Elytron Warhead damage and radius not increasing when ranked up."
+      },
+      {
+        "name": "Hotfix 15.0.7",
+        "date": "2014-10-28T23:04:04Z",
+        "url": "https://forums.warframe.com/topic/334873-hotfix-1507/",
+        "fixes": "• Fixed an issue with the game pad bindings for Crouch was appearing incorrectly.• Fixed a number of display issues seen on the End of Match results screen.• Fixed an issue with Archwing abilities using incorrect stats.• Fixed an issue with Void laser traps still harming Limbo while in Rift Walk mode.• Fixed an issue with gravity building up during repeated casts of Zephyr's Tail Wind.• Fixed an issue with Nav Segments not properly dropping from the Phobos Boss.• Fixed an issue with incorrect Master Ranks being displayed on the Profile Screen.• Fixed an issue with Coolant Leak removing Snow Globe slow on enemies.• Fixed some geometry clipping issues seen on certain Ice Planet tilesets.• Fixed the charge damage multiplier not working correctly for the Opticor.• Fixed a number of broken art and lighting assets seen in numerous Ice Planet tiles.• Fixed an issue with Clients not hearing Grineer Skiff sound effects correctly.• Fixed an issue with Phorid bolts damaging Limbo whilst Rift Walking.• Fixed an issue with erroneous Elytron Wing descriptions.• Fixed an issue with certain Ice Planet tilesets missing proper minimaps and thus breaking waypoints.• Fixed an instance of Bladestorm attacks getting stuck as continually in use.• Fixed an issue with broken Beastmaster item pickups.• Fixed an issue certain art assets clipping into certain Archwing tilesets causing potential progression stoppers.• Fixed Bloomer explosion visual effects not appearing correctly for clients.• Fixed the HUD marker for Demolitions Archwing abilities registering and appearing incorrectly.• Fixed an issue with clicking on the top menu while inside Clan Stats causing the menu system to break.• Fixed an issue where selecting a color picker would cause the currently equipped color to be switched to an incorrect color selection.• Fixed an issue with erroneous Infested art assets appearing in certain Ice Planet tilesets.• Fixed an issue with the Beastmaster boomerang switching hands when equipping and throwing."
       }
     ]
   },
@@ -504,589 +664,6 @@
     ]
   },
   {
-    "name": "Kaszas",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchScythe/ArchScythe",
-    "secondsPerShot": 1,
-    "damagePerShot": [ 17.875, 286, 53.624992, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 0,
-    "reloadTime": 0,
-    "totalDamage": 357.5,
-    "damagePerSecond": 358,
-    "trigger": "",
-    "description": "Become an angel of death, with this Archwing scythe.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Melee",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheBlade",
-        "name": "Blade"
-      },
-      {
-        "name": "Blueprint"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheHandle",
-        "name": "Handle"
-      }
-    ],
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Hotfix 18.8.2",
-        "date": "2016-04-13T18:53:32Z",
-        "url": "https://forums.warframe.com/topic/637581-hotfix-1882/",
-        "fixes": "•    Fixed the Kaszas not having its unique combo attacks."
-      },
-      {
-        "name": "Hotfix 17.6.1",
-        "date": "2015-10-07T21:04:29Z",
-        "url": "https://forums.warframe.com/topic/540998-hotfix-1761/",
-        "fixes": "Fixed the Kaszas not properly displaying channeling FX."
-      }
-    ]
-  },
-  {
-    "name": "Knux",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/GrnArchHand/GrnArchHandWeapon",
-    "secondsPerShot": 1,
-    "damagePerShot": [ 321.75, 17.875, 17.875004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 0,
-    "reloadTime": 0,
-    "totalDamage": 357.5,
-    "damagePerSecond": 358,
-    "trigger": "",
-    "description": "Gallium-alloy gauntlets for close-range Archwing combat. Designed by the infamous Tyl Regor.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Melee",
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Update 17.2.4",
-        "date": "2015-08-26T19:41:39Z",
-        "url": "https://forums.warframe.com/topic/518275-update-1724/",
-        "fixes": "Fixed missing audio on certain Knux attacks."
-      }
-    ]
-  },
-  {
-    "name": "Onorix",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archaxe/ArchAxeWeapon",
-    "secondsPerShot": 1,
-    "damagePerShot": [ 90.262505, 60.175003, 150.4375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 0,
-    "reloadTime": 0,
-    "totalDamage": 300.875,
-    "damagePerSecond": 301,
-    "trigger": "",
-    "description": "This laser bladed battle-axe easily hacks through a ship's defenses and the forces protecting it.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Melee",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
-        "name": "Blade"
-      },
-      {
-        "name": "Blueprint"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle",
-        "name": "Handle"
-      }
-    ],
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Hotfix 18.2.1",
-        "date": "2016-01-06T00:23:07Z",
-        "url": "https://forums.warframe.com/topic/590417-hotfix-1821/",
-        "changes": "The Onorix’s Handle has now been added to Archwing Mobile Defense Mission drop tables."
-      }
-    ]
-  },
-  {
-    "name": "Phaedra",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchLongRifle/ArchLongRifle",
-    "secondsPerShot": 0.11263169,
-    "damagePerShot": [ 12.375, 32.174999, 4.9500012, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 250,
-    "reloadTime": 0.25,
-    "totalDamage": 49.5,
-    "damagePerSecond": 436,
-    "trigger": "",
-    "description": "Devastate free-space enemies with Phaedra, the Soma's big-sister.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Archwing",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleBarrel",
-        "name": "Barrel"
-      },
-      {
-        "name": "Blueprint"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleReceiver",
-        "name": "Receiver",
-        "drops": [
-          {
-            "location": "Mercury - Caduceus",
-            "type": "Mission Rewards",
-            "rarity": "Rare",
-            "chance": 0.0564
-          },
-          {
-            "location": "Venus - Montes",
-            "type": "Mission Rewards",
-            "rarity": "Rare",
-            "chance": 0.0564
-          },
-          {
-            "location": "Mars - Syrtis",
-            "type": "Mission Rewards",
-            "rarity": "Rare",
-            "chance": 0.0564
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleStock",
-        "name": "Stock"
-      }
-    ],
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Update 17.7",
-        "date": "2015-10-14T21:37:19Z",
-        "url": "https://forums.warframe.com/topic/545312-update-177/",
-        "fixes": "Fixed the Phaedra not having proper audio FX."
-      }
-    ]
-  },
-  {
-    "name": "Prisma Veritux",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/VoidTraderArchsword/VTArchSwordWeapon",
-    "secondsPerShot": 1,
-    "damagePerShot": [ 51.75, 51.75, 241.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 0,
-    "reloadTime": 0,
-    "totalDamage": 345,
-    "damagePerSecond": 345,
-    "trigger": "",
-    "description": "A rare object of beauty, this Archwing sword has been sheathed in prisma crystal and baptized in the void’s energy.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Melee",
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Hotfix 15.13.7",
-        "date": "2015-02-09T23:43:26Z",
-        "url": "https://forums.warframe.com/topic/399446-hotfix-15137/",
-        "fixes": "Fixed Prisma Veritux not being Tradeable."
-      },
-      {
-        "name": "Hotfix 15.13.4",
-        "date": "2015-02-06T19:59:26Z",
-        "url": "https://forums.warframe.com/topic/397275-hotfix-15134/",
-        "fixes": "Fixed the Prisma Veritux being untradeable."
-      }
-    ]
-  },
-  {
-    "name": "Rathbone",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchHammer/ArchHammer",
-    "secondsPerShot": 1.0909091,
-    "damagePerShot": [ 257.60001, 48.299999, 16.099985, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 0,
-    "reloadTime": 0,
-    "totalDamage": 321.99997,
-    "damagePerSecond": 295,
-    "trigger": "",
-    "description": "Using Archwing’s jets for thrust, this massive hammer crushes anything in its path.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Melee",
-    "components": [
-      {
-        "name": "Blueprint"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle",
-        "name": "Handle"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead",
-        "name": "Head"
-      }
-    ],
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Specters of the Rail: Hotfix 13",
-        "date": "2016-07-26T18:38:42Z",
-        "url": "https://forums.warframe.com/topic/679601-specters-of-the-rail-hotfix-13/",
-        "fixes": "Fixed not being able to obtain Corvas and Rathbone Blueprint parts."
-      }
-    ]
-  },
-  {
-    "name": "Velocitus",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/Railgun/ArchRailgun",
-    "secondsPerShot": 1.2,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2700, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 100,
-    "reloadTime": 1,
-    "totalDamage": 2700,
-    "damagePerSecond": 2231,
-    "trigger": "",
-    "description": "When fully charged, the magnetized barrel of the Velocitus accelerates a metal slug to tremendous speeds, piercing hulls and obliterating armor.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Archwing",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel",
-        "name": "Barrel"
-      },
-      {
-        "name": "Blueprint"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver",
-        "name": "Receiver"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock",
-        "name": "Stock"
-      }
-    ],
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Update: Lunaro",
-        "date": "2016-06-15T23:58:19Z",
-        "url": "https://forums.warframe.com/topic/660347-update-lunaro/",
-        "fixes": "•    Fixed a script error when exiting the water with a Velocitus equipped."
-      },
-      {
-        "name": "Update 18: The Second Dream",
-        "date": "2015-12-03T23:46:40Z",
-        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
-        "fixes": "Fixed players being able to damage a Fomorian Core multiple times with a single shot using the Velocitus."
-      },
-      {
-        "name": "Hotfix 15.5.6",
-        "date": "2014-12-02T23:33:26Z",
-        "url": "https://forums.warframe.com/topic/357182-hotfix-1556/",
-        "fixes": "Fixed Velocitus weapon fire sound ending prematurely, also corrected various weapon fire animations."
-      },
-      {
-        "name": "Update 15.2.0",
-        "date": "2014-11-13T01:00:05Z",
-        "url": "https://forums.warframe.com/topic/344505-update-1520/",
-        "additions": "Using Archwing’s jets for thrust, this massive hammer crushes anything in its path.When fully charged, the magnetized barrel of the Velocitus accelerates a metal slug to tremendous speeds, piercing hulls and obliterating armor.Intercepted Grineer communications reveal that Grineer have been experimenting with some sort of bio weapon. You must investigate.This new quest will be immediately available to any player who has completed Vor’s Prize, and can be accepted directly from the Codex.  It will also be made available to players who skipped Vor’s Prize when the quest system was first implemented, meaning that only players who are yet to complete Vor’s Prize and are brand new to Warframe will need to wait to play!"
-      }
-    ]
-  },
-  {
-    "name": "Veritux",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archsword/ArchSwordWeapon",
-    "secondsPerShot": 1.1999999,
-    "damagePerShot": [ 46.125, 46.125, 215.25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "magazineSize": 0,
-    "reloadTime": 0,
-    "totalDamage": 307.5,
-    "damagePerSecond": 256,
-    "trigger": "",
-    "description": "Weightless space turns this impossibly massive sword into an agile instrument of destruction.",
-    "accuracy": 100,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "procChance": 0,
-    "fireRate": 0,
-    "chargeAttack": 0,
-    "spinAttack": 0,
-    "leapAttack": 0,
-    "wallAttack": 0,
-    "slot": 0,
-    "noise": "",
-    "sentinel": false,
-    "masteryReq": 0,
-    "type": "Melee",
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Update 17.9.0",
-        "date": "2015-10-28T15:12:27Z",
-        "url": "https://forums.warframe.com/topic/552544-update-1790/",
-        "additions": "Veritux"
-      },
-      {
-        "name": "Hotfix 15.13.7",
-        "date": "2015-02-09T23:43:26Z",
-        "url": "https://forums.warframe.com/topic/399446-hotfix-15137/",
-        "fixes": "Fixed Prisma Veritux not being Tradeable."
-      },
-      {
-        "name": "Hotfix 15.13.4",
-        "date": "2015-02-06T19:59:26Z",
-        "url": "https://forums.warframe.com/topic/397275-hotfix-15134/",
-        "fixes": "Fixed the Prisma Veritux being untradeable."
-      }
-    ]
-  },
-  {
-    "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
-    "name": "Amesha",
-    "description": "Transform into a winged guardian.",
-    "health": 400,
-    "shield": 200,
-    "armor": 200,
-    "stamina": 150,
-    "power": 200,
-    "abilities": [
-      {
-        "name": "Benevolent Decoy",
-        "description": "Creates beacons that draw enemy fire, converting the damage into healing pulses."
-      },
-      {
-        "name": "Vengeful Rush",
-        "description": "All damage taken is transformed into Energy, while abilities gain enhanced Range, Duration and Power. Affects the Warframe and nearby allies."
-      },
-      {
-        "name": "Warding Grace",
-        "description": "Renders the Warframe and nearby allies immune to Status Effects, while slowing nearby enemies."
-      },
-      {
-        "name": "Watchful Swarm",
-        "description": "Tiny drones orbit the Warframe or an ally, and intercept enemy fire."
-      }
-    ],
-    "type": "Warframe",
-    "components": [
-      {
-        "name": "Blueprint"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent",
-        "name": "Harness"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent",
-        "name": "Systems"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent",
-        "name": "Wings"
-      }
-    ],
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Plains of Eidolon: Hotfix 22.0.9",
-        "date": "2017-10-23T21:51:59Z",
-        "url": "https://forums.warframe.com/topic/865725-plains-of-eidolon-hotfix-2209/",
-        "fixes": "Fixed Archwing disabler projectiles not being affected by bullet attractor pulls (Mag, Amesha, etc)"
-      },
-      {
-        "name": "The Vacuum Within: Hotfix #3",
-        "date": "2016-10-13T18:16:13Z",
-        "url": "https://forums.warframe.com/topic/708168-the-vacuum-within-hotfix-3/",
-        "fixes": "Fixed Amesha’s Watchful Swarm not ending if you exit Archwing modeas per: https://forums.warframe.com/topic/704078-ameshas-watchful-swarm-animation-doesnt-end-when-you-resurface-in-uranus/ "
-      }
-    ]
-  },
-  {
-    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
-    "name": "Elytron",
-    "description": "This heavy duty Archwing was designed for one purpose, destruction.",
-    "health": 450,
-    "shield": 450,
-    "armor": 150,
-    "stamina": 150,
-    "power": 125,
-    "abilities": [
-      {
-        "name": "Bloomer",
-        "description": "Fires a high-yield, remotely detonated explosive projectile capable of latching onto targets."
-      },
-      {
-        "name": "Core Vent",
-        "description": "Vents out the Archwing's propulsion core, confusing enemy projectiles and causing them to detonate."
-      },
-      {
-        "name": "Thumper",
-        "description": "Creates a localized storm of punishing explosions."
-      },
-      {
-        "name": "Warhead",
-        "description": "Launches a plodding missile capable of unleashing a massive explosion."
-      }
-    ],
-    "type": "Warframe",
-    "components": [
-      {
-        "name": "Blueprint"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent",
-        "name": "Harness"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent",
-        "name": "Systems"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent",
-        "name": "Wings"
-      }
-    ],
-    "category": "Archwing",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Chains of Harrow: Hotfix 21.1.1",
-        "date": "2017-07-20T19:33:36Z",
-        "url": "https://forums.warframe.com/topic/820507-chains-of-harrow-hotfix-2111/",
-        "fixes": "More fixes towards Energy color issues when using Core Vent on the Elytron."
-      },
-      {
-        "name": "Update 18.1.0   ",
-        "date": "2015-12-16T21:59:04Z",
-        "url": "https://forums.warframe.com/topic/579670-update-1810-spoilers/",
-        "fixes": "Fixed Clients seeing duplicate visual FX trails from the Elytron’s exhaust."
-      },
-      {
-        "name": "Update 17.9.0",
-        "date": "2015-10-28T15:12:27Z",
-        "url": "https://forums.warframe.com/topic/552544-update-1790/",
-        "changes": "Reduced the particle FX on Elytron’s Core Vent Ability."
-      },
-      {
-        "name": "Update 17.2",
-        "date": "2015-08-19T21:49:41Z",
-        "url": "https://forums.warframe.com/topic/514266-update-172/",
-        "changes": "The Elytron`s Thumper will now combine with previous Thumpers if it detonates within its radius. This will refresh the duration on the previous Thumper and allow damage to stack up to 4 times."
-      },
-      {
-        "name": "Hotfix 16.8.3",
-        "date": "2015-06-12T19:25:15Z",
-        "url": "https://forums.warframe.com/topic/474057-hotfix-1683/",
-        "fixes": "Fixed another issue causing players to take damage from Elytron’s Warhead ability."
-      },
-      {
-        "name": "Update 16.8.0",
-        "date": "2015-06-10T22:03:09Z",
-        "url": "https://forums.warframe.com/topic/473028-update-1680/",
-        "fixes": "Fixed an issue allowing players to take damage from Elytron’s Warhead."
-      },
-      {
-        "name": "Update 15.3.0",
-        "date": "2014-11-20T17:57:48Z",
-        "url": "https://forums.warframe.com/topic/349166-update-1530/",
-        "fixes": "Fixed Elytron Warhead damage and radius not increasing when ranked up."
-      },
-      {
-        "name": "Hotfix 15.0.7",
-        "date": "2014-10-28T23:04:04Z",
-        "url": "https://forums.warframe.com/topic/334873-hotfix-1507/",
-        "fixes": "• Fixed an issue with the game pad bindings for Crouch was appearing incorrectly.• Fixed a number of display issues seen on the End of Match results screen.• Fixed an issue with Archwing abilities using incorrect stats.• Fixed an issue with Void laser traps still harming Limbo while in Rift Walk mode.• Fixed an issue with gravity building up during repeated casts of Zephyr's Tail Wind.• Fixed an issue with Nav Segments not properly dropping from the Phobos Boss.• Fixed an issue with incorrect Master Ranks being displayed on the Profile Screen.• Fixed an issue with Coolant Leak removing Snow Globe slow on enemies.• Fixed some geometry clipping issues seen on certain Ice Planet tilesets.• Fixed the charge damage multiplier not working correctly for the Opticor.• Fixed a number of broken art and lighting assets seen in numerous Ice Planet tiles.• Fixed an issue with Clients not hearing Grineer Skiff sound effects correctly.• Fixed an issue with Phorid bolts damaging Limbo whilst Rift Walking.• Fixed an issue with erroneous Elytron Wing descriptions.• Fixed an issue with certain Ice Planet tilesets missing proper minimaps and thus breaking waypoints.• Fixed an instance of Bladestorm attacks getting stuck as continually in use.• Fixed an issue with broken Beastmaster item pickups.• Fixed an issue certain art assets clipping into certain Archwing tilesets causing potential progression stoppers.• Fixed Bloomer explosion visual effects not appearing correctly for clients.• Fixed the HUD marker for Demolitions Archwing abilities registering and appearing incorrectly.• Fixed an issue with clicking on the top menu while inside Clan Stats causing the menu system to break.• Fixed an issue where selecting a color picker would cause the currently equipped color to be switched to an incorrect color selection.• Fixed an issue with erroneous Infested art assets appearing in certain Ice Planet tilesets.• Fixed an issue with the Beastmaster boomerang switching hands when equipping and throwing."
-      }
-    ]
-  },
-  {
     "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
     "name": "Itzal",
     "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
@@ -1223,6 +800,97 @@
         "date": "2015-01-08T21:39:10Z",
         "url": "https://forums.warframe.com/topic/381637-update-159/",
         "fixes": "Fixed typo in the Itzal Pack Market description."
+      }
+    ]
+  },
+  {
+    "name": "Kaszas",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchScythe/ArchScythe",
+    "secondsPerShot": 1,
+    "damagePerShot": [ 17.875, 286, 53.624992, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 0,
+    "reloadTime": 0,
+    "totalDamage": 357.5,
+    "damagePerSecond": 358,
+    "trigger": "",
+    "description": "Become an angel of death, with this Archwing scythe.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Melee",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheBlade",
+        "name": "Blade"
+      },
+      {
+        "name": "Blueprint"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheHandle",
+        "name": "Handle"
+      }
+    ],
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 18.8.2",
+        "date": "2016-04-13T18:53:32Z",
+        "url": "https://forums.warframe.com/topic/637581-hotfix-1882/",
+        "fixes": "•    Fixed the Kaszas not having its unique combo attacks."
+      },
+      {
+        "name": "Hotfix 17.6.1",
+        "date": "2015-10-07T21:04:29Z",
+        "url": "https://forums.warframe.com/topic/540998-hotfix-1761/",
+        "fixes": "Fixed the Kaszas not properly displaying channeling FX."
+      }
+    ]
+  },
+  {
+    "name": "Knux",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/GrnArchHand/GrnArchHandWeapon",
+    "secondsPerShot": 1,
+    "damagePerShot": [ 321.75, 17.875, 17.875004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 0,
+    "reloadTime": 0,
+    "totalDamage": 357.5,
+    "damagePerSecond": 358,
+    "trigger": "",
+    "description": "Gallium-alloy gauntlets for close-range Archwing combat. Designed by the infamous Tyl Regor.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Melee",
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 17.2.4",
+        "date": "2015-08-26T19:41:39Z",
+        "url": "https://forums.warframe.com/topic/518275-update-1724/",
+        "fixes": "Fixed missing audio on certain Knux attacks."
       }
     ]
   },
@@ -1791,6 +1459,338 @@
         "date": "2014-11-08T00:06:22Z",
         "url": "https://forums.warframe.com/topic/341594-hotfix-1512/",
         "fixes": "Fixed an issue with Odonata’s Energy Shell impeding Melee attack homing on enemies."
+      }
+    ]
+  },
+  {
+    "name": "Onorix",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archaxe/ArchAxeWeapon",
+    "secondsPerShot": 1,
+    "damagePerShot": [ 90.262505, 60.175003, 150.4375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 0,
+    "reloadTime": 0,
+    "totalDamage": 300.875,
+    "damagePerSecond": 301,
+    "trigger": "",
+    "description": "This laser bladed battle-axe easily hacks through a ship's defenses and the forces protecting it.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Melee",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
+        "name": "Blade"
+      },
+      {
+        "name": "Blueprint"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle",
+        "name": "Handle"
+      }
+    ],
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 18.2.1",
+        "date": "2016-01-06T00:23:07Z",
+        "url": "https://forums.warframe.com/topic/590417-hotfix-1821/",
+        "changes": "The Onorix’s Handle has now been added to Archwing Mobile Defense Mission drop tables."
+      }
+    ]
+  },
+  {
+    "name": "Phaedra",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchLongRifle/ArchLongRifle",
+    "secondsPerShot": 0.11263169,
+    "damagePerShot": [ 12.375, 32.174999, 4.9500012, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 250,
+    "reloadTime": 0.25,
+    "totalDamage": 49.5,
+    "damagePerSecond": 436,
+    "trigger": "",
+    "description": "Devastate free-space enemies with Phaedra, the Soma's big-sister.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Archwing",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleBarrel",
+        "name": "Barrel"
+      },
+      {
+        "name": "Blueprint"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleReceiver",
+        "name": "Receiver",
+        "drops": [
+          {
+            "location": "Mercury - Caduceus",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          },
+          {
+            "location": "Venus - Montes",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          },
+          {
+            "location": "Mars - Syrtis",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0564
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleStock",
+        "name": "Stock"
+      }
+    ],
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 17.7",
+        "date": "2015-10-14T21:37:19Z",
+        "url": "https://forums.warframe.com/topic/545312-update-177/",
+        "fixes": "Fixed the Phaedra not having proper audio FX."
+      }
+    ]
+  },
+  {
+    "name": "Prisma Veritux",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/VoidTraderArchsword/VTArchSwordWeapon",
+    "secondsPerShot": 1,
+    "damagePerShot": [ 51.75, 51.75, 241.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 0,
+    "reloadTime": 0,
+    "totalDamage": 345,
+    "damagePerSecond": 345,
+    "trigger": "",
+    "description": "A rare object of beauty, this Archwing sword has been sheathed in prisma crystal and baptized in the void’s energy.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Melee",
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 15.13.7",
+        "date": "2015-02-09T23:43:26Z",
+        "url": "https://forums.warframe.com/topic/399446-hotfix-15137/",
+        "fixes": "Fixed Prisma Veritux not being Tradeable."
+      },
+      {
+        "name": "Hotfix 15.13.4",
+        "date": "2015-02-06T19:59:26Z",
+        "url": "https://forums.warframe.com/topic/397275-hotfix-15134/",
+        "fixes": "Fixed the Prisma Veritux being untradeable."
+      }
+    ]
+  },
+  {
+    "name": "Rathbone",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchHammer/ArchHammer",
+    "secondsPerShot": 1.0909091,
+    "damagePerShot": [ 257.60001, 48.299999, 16.099985, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 0,
+    "reloadTime": 0,
+    "totalDamage": 321.99997,
+    "damagePerSecond": 295,
+    "trigger": "",
+    "description": "Using Archwing’s jets for thrust, this massive hammer crushes anything in its path.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Melee",
+    "components": [
+      {
+        "name": "Blueprint"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle",
+        "name": "Handle"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead",
+        "name": "Head"
+      }
+    ],
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Specters of the Rail: Hotfix 13",
+        "date": "2016-07-26T18:38:42Z",
+        "url": "https://forums.warframe.com/topic/679601-specters-of-the-rail-hotfix-13/",
+        "fixes": "Fixed not being able to obtain Corvas and Rathbone Blueprint parts."
+      }
+    ]
+  },
+  {
+    "name": "Velocitus",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/Railgun/ArchRailgun",
+    "secondsPerShot": 1.2,
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2700, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 100,
+    "reloadTime": 1,
+    "totalDamage": 2700,
+    "damagePerSecond": 2231,
+    "trigger": "",
+    "description": "When fully charged, the magnetized barrel of the Velocitus accelerates a metal slug to tremendous speeds, piercing hulls and obliterating armor.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Archwing",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel",
+        "name": "Barrel"
+      },
+      {
+        "name": "Blueprint"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver",
+        "name": "Receiver"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock",
+        "name": "Stock"
+      }
+    ],
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update: Lunaro",
+        "date": "2016-06-15T23:58:19Z",
+        "url": "https://forums.warframe.com/topic/660347-update-lunaro/",
+        "fixes": "•    Fixed a script error when exiting the water with a Velocitus equipped."
+      },
+      {
+        "name": "Update 18: The Second Dream",
+        "date": "2015-12-03T23:46:40Z",
+        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
+        "fixes": "Fixed players being able to damage a Fomorian Core multiple times with a single shot using the Velocitus."
+      },
+      {
+        "name": "Hotfix 15.5.6",
+        "date": "2014-12-02T23:33:26Z",
+        "url": "https://forums.warframe.com/topic/357182-hotfix-1556/",
+        "fixes": "Fixed Velocitus weapon fire sound ending prematurely, also corrected various weapon fire animations."
+      },
+      {
+        "name": "Update 15.2.0",
+        "date": "2014-11-13T01:00:05Z",
+        "url": "https://forums.warframe.com/topic/344505-update-1520/",
+        "additions": "Using Archwing’s jets for thrust, this massive hammer crushes anything in its path.When fully charged, the magnetized barrel of the Velocitus accelerates a metal slug to tremendous speeds, piercing hulls and obliterating armor.Intercepted Grineer communications reveal that Grineer have been experimenting with some sort of bio weapon. You must investigate.This new quest will be immediately available to any player who has completed Vor’s Prize, and can be accepted directly from the Codex.  It will also be made available to players who skipped Vor’s Prize when the quest system was first implemented, meaning that only players who are yet to complete Vor’s Prize and are brand new to Warframe will need to wait to play!"
+      }
+    ]
+  },
+  {
+    "name": "Veritux",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archsword/ArchSwordWeapon",
+    "secondsPerShot": 1.1999999,
+    "damagePerShot": [ 46.125, 46.125, 215.25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 0,
+    "reloadTime": 0,
+    "totalDamage": 307.5,
+    "damagePerSecond": 256,
+    "trigger": "",
+    "description": "Weightless space turns this impossibly massive sword into an agile instrument of destruction.",
+    "accuracy": 100,
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "",
+    "sentinel": false,
+    "masteryReq": 0,
+    "type": "Melee",
+    "category": "Archwing",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 17.9.0",
+        "date": "2015-10-28T15:12:27Z",
+        "url": "https://forums.warframe.com/topic/552544-update-1790/",
+        "additions": "Veritux"
+      },
+      {
+        "name": "Hotfix 15.13.7",
+        "date": "2015-02-09T23:43:26Z",
+        "url": "https://forums.warframe.com/topic/399446-hotfix-15137/",
+        "fixes": "Fixed Prisma Veritux not being Tradeable."
+      },
+      {
+        "name": "Hotfix 15.13.4",
+        "date": "2015-02-06T19:59:26Z",
+        "url": "https://forums.warframe.com/topic/397275-hotfix-15134/",
+        "fixes": "Fixed the Prisma Veritux being untradeable."
       }
     ]
   }
