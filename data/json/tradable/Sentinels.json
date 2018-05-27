@@ -1,40 +1,190 @@
 [
   {
-    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
-    "name": "Wyrm Prime",
-    "description": "Both bodyguard and status symbol, the Wyrm Prime Sentinel was the last line of defense for high ranking Tenno in the Orokin Era.",
-    "health": 225,
-    "shield": 300,
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
+    "name": "Carrier Prime",
+    "description": "This ornate sentinel is an excellent example of late Orokin craftsmanship and styling.",
+    "health": 400,
+    "shield": 100,
     "armor": 150,
     "stamina": 8,
     "power": 100,
     "type": "Sentinel",
     "components": [
       {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace",
+        "name": "Blueprint",
+        "ducats": 15,
+        "drops": [
+          {
+            "location": "Meso V1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Meso V1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Meso V1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso V1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Meso V3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Meso V3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Meso V3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso V3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Meso V4 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Meso V4 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Meso V4 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso V4 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo S3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo S3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo S3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo S3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace",
         "name": "Carapace",
         "ducats": 15,
         "drops": [
           {
-            "location": "Axi L1 Intact",
+            "location": "Axi N2 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.25329999999999997
           },
           {
-            "location": "Axi L1 Exceptional",
+            "location": "Axi N2 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.23329999999999998
           },
           {
-            "location": "Axi L1 Flawless",
+            "location": "Axi N2 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
           },
           {
-            "location": "Axi L1 Radiant",
+            "location": "Axi N2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Lith S5 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith S5 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith S5 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith S5 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo S1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo S1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo S1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo S1 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
@@ -42,61 +192,102 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum",
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum",
         "name": "Cerebrum",
-        "ducats": 15,
+        "ducats": 65,
         "drops": [
           {
-            "location": "Lith G2 Intact",
+            "location": "Lith C1 Intact",
             "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
+            "rarity": "Rare",
+            "chance": 0.02
           },
           {
-            "location": "Lith G2 Exceptional",
+            "location": "Lith C1 Exceptional",
             "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
+            "rarity": "Rare",
+            "chance": 0.04
           },
           {
-            "location": "Lith G2 Flawless",
+            "location": "Lith C1 Flawless",
             "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
+            "rarity": "Rare",
+            "chance": 0.06
           },
           {
-            "location": "Lith G2 Radiant",
+            "location": "Lith C1 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems",
-        "name": "Systems",
-        "ducats": 45,
-        "drops": [
+            "chance": 0.1
+          },
           {
-            "location": "Meso E1 Intact",
+            "location": "Meso C1 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Meso C1 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Meso C1 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Meso C1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          },
+          {
+            "location": "Meso C2 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Meso C2 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Meso C2 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Meso C2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          },
+          {
+            "location": "Meso N3 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.11
           },
           {
-            "location": "Meso E1 Exceptional",
+            "location": "Meso N3 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.13
           },
           {
-            "location": "Meso E1 Flawless",
+            "location": "Meso N3 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.17
           },
           {
-            "location": "Meso E1 Radiant",
+            "location": "Meso N3 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
@@ -104,53 +295,150 @@
         ]
       },
       {
-        "name": "Blueprint",
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems",
+        "name": "Systems",
         "ducats": 15,
         "drops": [
           {
-            "location": "Axi S2 Intact",
+            "location": "Axi V1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.25329999999999997
           },
           {
-            "location": "Axi S2 Exceptional",
+            "location": "Axi V1 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.23329999999999998
           },
           {
-            "location": "Axi S2 Flawless",
+            "location": "Axi V1 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
           },
           {
-            "location": "Axi S2 Radiant",
+            "location": "Axi V1 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
           },
           {
-            "location": "Neo E1 Intact",
+            "location": "Lith N2 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.25329999999999997
           },
           {
-            "location": "Neo E1 Exceptional",
+            "location": "Lith N2 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.23329999999999998
           },
           {
-            "location": "Neo E1 Flawless",
+            "location": "Lith N2 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
           },
           {
-            "location": "Neo E1 Radiant",
+            "location": "Lith N2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Lith S2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith S2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith S2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith S2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Lith S3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith S3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith S3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith S3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo A1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo A1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo A1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo A1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo V3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo V3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo V3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo V3 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
@@ -161,34 +449,83 @@
     "category": "Sentinels",
     "patchlogs": [
       {
-        "name": "Hydroid Prime: Update 21.6.0",
-        "date": "2017-08-29T17:55:46Z",
-        "url": "https://forums.warframe.com/topic/836927-hydroid-prime-update-2160/",
-        "changes": "Warframe’s first Prime Sentinel, Wyrm Prime, has had its base Health increased from 100 to 225! "
+        "name": "Oberon Prime: Hotfix 20.7.1",
+        "date": "2017-06-14T21:01:39Z",
+        "url": "https://forums.warframe.com/topic/806282-oberon-prime-hotfix-2071/",
+        "fixes": "Fixed the marker disappearing on ragdolled Bomb carrier enemies in The Law of Retribution. We have also added some logging in general to Bomb carriers to solve future issues."
+      },
+      {
+        "name": "Oberon Prime: Update 20.7.0",
+        "date": "2017-06-07T19:08:59Z",
+        "url": "https://forums.warframe.com/topic/804548-oberon-prime-update-2070/",
+        "fixes": "Fixed disarming Corpus Power Carriers resulting in their Provas floating outside of their hands."
+      },
+      {
+        "name": "The Glast Gambit: Update 19.8.0",
+        "date": "2017-01-25T19:24:45Z",
+        "url": "https://forums.warframe.com/topic/754548-the-glast-gambit-update-1980/",
+        "fixes": "Fixed an issue with Carrier's Ammo Case Mod being exploitable. "
+      },
+      {
+        "name": "The Vacuum Within: Hotfix #2",
+        "date": "2016-10-06T20:50:11Z",
+        "url": "https://forums.warframe.com/topic/705955-the-vacuum-within-hotfix-2/",
+        "fixes": "Fixed Ammo Case still applying its buffs after Carrier has died."
       },
       {
         "name": "Hotfix 18.4.7",
         "date": "2016-02-04T22:43:36Z",
         "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
-        "fixes": "Fixed an error in Wyrmius’ loading screen causing an oversized Liset to appear instead of a Wyrm."
+        "fixes": "Fixed a potential issue causing pickups to become stuck to the Carrier Sentinel as a Host."
       },
       {
-        "name": "Update 18.12.0: Vauban Prime & 18.12.1",
-        "date": "2016-05-17T18:00:00Z",
-        "url": "https://forums.warframe.com/topic/649037-update-18120-vauban-prime-18121/",
-        "changes": "Removed Wyrm Prime Blueprint from T2 Exterminate reward table."
+        "name": "Update 18.4.0",
+        "date": "2016-01-22T00:24:23Z",
+        "url": "https://forums.warframe.com/topic/597888-update-1840/",
+        "changes": "Enabled Scavenger Drones, Sapping Ospreys, Leech Ospreys, Mine Ospreys, and Mutalist Osprey Carriers in the Simulacrum."
       },
       {
-        "name": "Update 18.3",
-        "date": "2016-01-13T22:55:58Z",
-        "url": "https://forums.warframe.com/topic/594267-update-183/",
-        "changes": "Fixed an error causing no enemies to spawn in Wyrmius."
+        "name": "Hotfix 18.0.4 ",
+        "date": "2015-12-08T17:59:59Z",
+        "url": "https://forums.warframe.com/topic/573817-hotfix-1804-spoilers/",
+        "fixes": "Fixed Madurai and Unairu beam attacks being blocked by pickups and Sentinels as per: https://forums.warframe.com/index.php?/topic/572970-marudai-focus-beam-blocked-by-loot-when-using-carrier/"
+      },
+      {
+        "name": "Hotfix 17.6.1",
+        "date": "2015-10-07T21:04:29Z",
+        "url": "https://forums.warframe.com/topic/540998-hotfix-1761/",
+        "changes": "Infested Carrier Drones now have a unique explosion FX.",
+        "fixes": "Fixed projectiles from Infested Carriers in the J-3 Golem fight not properly dealing damage to players."
+      },
+      {
+        "name": "Hotfix 17.5.3",
+        "date": "2015-10-02T16:07:50Z",
+        "url": "https://forums.warframe.com/topic/536870-hotfix-1753/",
+        "fixes": "Fixed Excavation missions not spawning enough power cell carriers."
       },
       {
         "name": "Update 17.3.0",
         "date": "2015-09-02T20:56:46Z",
         "url": "https://forums.warframe.com/topic/521781-update-1730/",
-        "fixes": "Fixed a permanent motion blur effect that would occur after the second room in Wyrmius."
+        "changes": "T3S Rotation C: Forma BP for Prime Carrier BP."
+      },
+      {
+        "name": "Hotfix 17.0.2",
+        "date": "2015-07-31T22:56:16Z",
+        "url": "https://forums.warframe.com/topic/499470-hotfix-1702/",
+        "fixes": "Fixed the Carrier pulling items towards players while on a Rampart."
+      },
+      {
+        "name": "Update 17: Echoes Of The Sentient",
+        "date": "2015-07-31T15:09:25Z",
+        "url": "https://forums.warframe.com/topic/498793-update-17-echoes-of-the-sentient/",
+        "changes": "Carrier's Vacuum will no longer pick up items while the player is bleeding out."
+      },
+      {
+        "name": "Hotfix 16.11.5",
+        "date": "2015-07-15T19:56:44Z",
+        "url": "https://forums.warframe.com/topic/490942-hotfix-16115/",
+        "fixes": "Fixed an issue where ammo pickups mutated by Hosts would confuse Clients-side Carriers as per: https://forums.warframe.com/index.php?/topic/480877-carrier-looting-bug-ammo-clicking/"
       },
       {
         "name": "Hotfix 16.11.2",
@@ -197,34 +534,64 @@
         "fixes": "Fixed the Carrier Prime’s Carapace description reading the description for Wyrm Prime."
       },
       {
-        "name": "Update 17: Echoes Of The Sentient",
-        "date": "2015-07-31T15:09:25Z",
-        "url": "https://forums.warframe.com/topic/498793-update-17-echoes-of-the-sentient/",
-        "changes": "Wyrm Prime now has 150 base Armor."
+        "name": "Update 16.11: Ash Prime + Hotfix 16.11.1",
+        "date": "2015-07-07T18:41:10Z",
+        "url": "https://forums.warframe.com/topic/486216-update-1611-ash-prime-hotfix-16111/",
+        "fixes": "Fixed Ash, Vectis and Carrier parts not dropping for players in the Void."
+      },
+      {
+        "name": "Update 16.9.0",
+        "date": "2015-06-17T21:50:27Z",
+        "url": "https://forums.warframe.com/topic/476490-update-1690/",
+        "fixes": "Fixed the Para Carrier skin showing code in its description."
+      },
+      {
+        "name": "Hotfix 16.6.1",
+        "date": "2015-05-28T20:43:00Z",
+        "url": "https://forums.warframe.com/topic/466144-hotfix-1661/",
+        "fixes": "Fixed items vacuumed in by the Carrier becoming stuck to the Carrier."
+      },
+      {
+        "name": "Update 16.6.0",
+        "date": "2015-05-27T21:08:21Z",
+        "url": "https://forums.warframe.com/topic/465618-update-1660/",
+        "fixes": "Fixed Carrier Sentinels not sucking in Sigils and other item drops."
+      },
+      {
+        "name": "Hotfix 16.5.4",
+        "date": "2015-05-14T15:41:07Z",
+        "url": "https://forums.warframe.com/topic/457698-hotfix-1654/",
+        "fixes": "Fixed Carrier’s Vacuum not picking up Pigments."
       },
       {
         "name": "Warframe: Sanctuary",
         "date": "2015-03-20T02:21:54Z",
         "url": "https://forums.warframe.com/topic/420448-warframe-sanctuary/",
-        "fixes": "Fixed Wyrmius respawning behind a wall if the player died behind a wall."
+        "fixes": "Fixed the Carrier Sentinel dragging items that have not (or cannot) be claimed, following the player forever."
       },
       {
-        "name": "Hotfix 15.11.1",
-        "date": "2015-01-22T21:18:54Z",
-        "url": "https://forums.warframe.com/topic/389459-hotfix-15111/",
-        "fixes": "Fixed Wyrmius being able to shoot during respawn period."
+        "name": "Update 15.13",
+        "date": "2015-02-05T21:08:01Z",
+        "url": "https://forums.warframe.com/topic/396379-update-1513/",
+        "fixes": "Fixed Stamina orbs in the Dojo becoming vacuumed up by Carrier for eternity."
       },
       {
-        "name": "Update 13.7.1",
-        "date": "2014-06-12T19:52:13Z",
-        "url": "https://forums.warframe.com/topic/245171-update-1371/",
-        "fixes": "Fixed issue with Wyrm Prime Blueprint not being tradeable."
+        "name": "Update 15.9",
+        "date": "2015-01-08T21:39:10Z",
+        "url": "https://forums.warframe.com/topic/381637-update-159/",
+        "fixes": "Fixed Corpus Power Carrier appearing twice in the Codex."
       },
       {
-        "name": "Hotfix 9.4: Double Affinity Weekend!",
-        "date": "2013-08-02T16:37:28Z",
-        "url": "https://forums.warframe.com/topic/89853-hotfix-94-double-affinity-weekend/",
-        "fixes": "Fixes for badges on Wyrm and DethCube being offset."
+        "name": "Hotfix 14.0.9",
+        "date": "2014-07-26T01:03:34Z",
+        "url": "https://forums.warframe.com/topic/273702-hotfix-1409/",
+        "fixes": "Fixed the Carrier sentinel being seemingly 1 hit killed by enemy Kubrows and Volatile Infested."
+      },
+      {
+        "name": "Update 10.3.0: Hump Day!",
+        "date": "2013-10-09T22:12:04Z",
+        "url": "https://forums.warframe.com/topic/117806-update-1030-hump-day/",
+        "fixes": "Fixed emblem deco positions on Carrier and Djinn sentinels."
       }
     ]
   },
@@ -239,6 +606,132 @@
     "power": 100,
     "type": "Sentinel",
     "components": [
+      {
+        "name": "Blueprint",
+        "ducats": 45,
+        "drops": [
+          {
+            "location": "Lith N2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Lith N2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Lith N2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Lith N2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith V4 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Lith V4 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Lith V4 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Lith V4 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso C3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso C3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso C3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso C3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo K1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Neo K1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Neo K1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Neo K1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo M1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Neo M1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Neo M1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Neo M1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ]
+      },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCarapace",
         "name": "Carapace",
@@ -595,132 +1088,6 @@
             "chance": 0.2
           }
         ]
-      },
-      {
-        "name": "Blueprint",
-        "ducats": 45,
-        "drops": [
-          {
-            "location": "Lith N2 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.11
-          },
-          {
-            "location": "Lith N2 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.13
-          },
-          {
-            "location": "Lith N2 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.17
-          },
-          {
-            "location": "Lith N2 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Lith V4 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.11
-          },
-          {
-            "location": "Lith V4 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.13
-          },
-          {
-            "location": "Lith V4 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.17
-          },
-          {
-            "location": "Lith V4 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Meso C3 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.11
-          },
-          {
-            "location": "Meso C3 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.13
-          },
-          {
-            "location": "Meso C3 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.17
-          },
-          {
-            "location": "Meso C3 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo K1 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.11
-          },
-          {
-            "location": "Neo K1 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.13
-          },
-          {
-            "location": "Neo K1 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.17
-          },
-          {
-            "location": "Neo K1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo M1 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.11
-          },
-          {
-            "location": "Neo M1 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.13
-          },
-          {
-            "location": "Neo M1 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.17
-          },
-          {
-            "location": "Neo M1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          }
-        ]
       }
     ],
     "category": "Sentinels",
@@ -732,16 +1099,16 @@
         "changes": "Optimized Helios' Investigator Precept: it should now find targets more than 10x faster and no longer causes periodic spikes in frame-time as high as 7ms. "
       },
       {
-        "name": "Banshee Prime: Hotfix 19.11.5 + 19.11.6",
-        "date": "2017-02-28T22:44:49Z",
-        "url": "https://forums.warframe.com/topic/767736-banshee-prime-hotfix-19115-19116/",
-        "fixes": "Fixed a bug where non-Helios Sentinels could equip the Deconstructor when randomizing their loadout."
-      },
-      {
         "name": "The Pacifism Defect: Update 19.12.0",
         "date": "2017-03-02T22:20:36Z",
         "url": "https://forums.warframe.com/topic/768600-the-pacifism-defect-update-19120/",
         "fixes": "Fixed being able to equip Deconstructor on a Sentinel that is not Helios. "
+      },
+      {
+        "name": "Banshee Prime: Hotfix 19.11.5 + 19.11.6",
+        "date": "2017-02-28T22:44:49Z",
+        "url": "https://forums.warframe.com/topic/767736-banshee-prime-hotfix-19115-19116/",
+        "fixes": "Fixed a bug where non-Helios Sentinels could equip the Deconstructor when randomizing their loadout."
       },
       {
         "name": "Hotfix 17.0.3",
@@ -750,16 +1117,16 @@
         "fixes": "Fixed Helios being able to scan Oddities."
       },
       {
-        "name": "Hotfix 16.5.6",
-        "date": "2015-05-19T19:46:51Z",
-        "url": "https://forums.warframe.com/topic/461080-hotfix-1656/",
-        "fixes": "Fixed Helios not attacking enemies when equipped with the Deconstructor."
-      },
-      {
         "name": "Hotfix 17.0.2",
         "date": "2015-07-31T22:56:16Z",
         "url": "https://forums.warframe.com/topic/499470-hotfix-1702/",
         "fixes": "Fixed Helios being able to scan Oddities."
+      },
+      {
+        "name": "Hotfix 16.5.6",
+        "date": "2015-05-19T19:46:51Z",
+        "url": "https://forums.warframe.com/topic/461080-hotfix-1656/",
+        "fixes": "Fixed Helios not attacking enemies when equipped with the Deconstructor."
       },
       {
         "name": "Warframe: Sanctuary",
@@ -800,89 +1167,64 @@
     ]
   },
   {
-    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
-    "name": "Carrier Prime",
-    "description": "This ornate sentinel is an excellent example of late Orokin craftsmanship and styling.",
-    "health": 400,
-    "shield": 100,
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
+    "name": "Wyrm Prime",
+    "description": "Both bodyguard and status symbol, the Wyrm Prime Sentinel was the last line of defense for high ranking Tenno in the Orokin Era.",
+    "health": 225,
+    "shield": 300,
     "armor": 150,
     "stamina": 8,
     "power": 100,
     "type": "Sentinel",
     "components": [
       {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace",
-        "name": "Carapace",
+        "name": "Blueprint",
         "ducats": 15,
         "drops": [
           {
-            "location": "Axi N2 Intact",
+            "location": "Axi S2 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.25329999999999997
           },
           {
-            "location": "Axi N2 Exceptional",
+            "location": "Axi S2 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.23329999999999998
           },
           {
-            "location": "Axi N2 Flawless",
+            "location": "Axi S2 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
           },
           {
-            "location": "Axi N2 Radiant",
+            "location": "Axi S2 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
           },
           {
-            "location": "Lith S5 Intact",
+            "location": "Neo E1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.25329999999999997
           },
           {
-            "location": "Lith S5 Exceptional",
+            "location": "Neo E1 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.23329999999999998
           },
           {
-            "location": "Lith S5 Flawless",
+            "location": "Neo E1 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
           },
           {
-            "location": "Lith S5 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Neo S1 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Neo S1 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Neo S1 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo S1 Radiant",
+            "location": "Neo E1 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
@@ -890,358 +1232,95 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum",
-        "name": "Cerebrum",
-        "ducats": 65,
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace",
+        "name": "Carapace",
+        "ducats": 15,
         "drops": [
           {
-            "location": "Lith C1 Intact",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.02
-          },
-          {
-            "location": "Lith C1 Exceptional",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.04
-          },
-          {
-            "location": "Lith C1 Flawless",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.06
-          },
-          {
-            "location": "Lith C1 Radiant",
+            "location": "Axi L1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
-            "chance": 0.1
+            "chance": 0.25329999999999997
           },
           {
-            "location": "Meso C1 Intact",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.02
-          },
-          {
-            "location": "Meso C1 Exceptional",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.04
-          },
-          {
-            "location": "Meso C1 Flawless",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.06
-          },
-          {
-            "location": "Meso C1 Radiant",
+            "location": "Axi L1 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
-            "chance": 0.1
+            "chance": 0.23329999999999998
           },
           {
-            "location": "Meso C2 Intact",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.02
-          },
-          {
-            "location": "Meso C2 Exceptional",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.04
-          },
-          {
-            "location": "Meso C2 Flawless",
-            "type": "Relics",
-            "rarity": "Rare",
-            "chance": 0.06
-          },
-          {
-            "location": "Meso C2 Radiant",
+            "location": "Axi L1 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
-            "chance": 0.1
+            "chance": 0.2
           },
           {
-            "location": "Meso N3 Intact",
+            "location": "Axi L1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum",
+        "name": "Cerebrum",
+        "ducats": 15,
+        "drops": [
+          {
+            "location": "Lith G2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith G2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith G2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith G2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems",
+        "name": "Systems",
+        "ducats": 45,
+        "drops": [
+          {
+            "location": "Meso E1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.11
           },
           {
-            "location": "Meso N3 Exceptional",
+            "location": "Meso E1 Exceptional",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.13
           },
           {
-            "location": "Meso N3 Flawless",
+            "location": "Meso E1 Flawless",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.17
           },
           {
-            "location": "Meso N3 Radiant",
+            "location": "Meso E1 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems",
-        "name": "Systems",
-        "ducats": 15,
-        "drops": [
-          {
-            "location": "Axi V1 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Axi V1 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Axi V1 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Axi V1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Lith N2 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Lith N2 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Lith N2 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Lith N2 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Lith S2 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Lith S2 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Lith S2 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Lith S2 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Lith S3 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Lith S3 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Lith S3 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Lith S3 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Neo A1 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Neo A1 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Neo A1 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo A1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Neo V3 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Neo V3 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Neo V3 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo V3 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          }
-        ]
-      },
-      {
-        "name": "Blueprint",
-        "ducats": 15,
-        "drops": [
-          {
-            "location": "Meso V1 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Meso V1 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Meso V1 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Meso V1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Meso V3 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Meso V3 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Meso V3 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Meso V3 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Meso V4 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Meso V4 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Meso V4 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Meso V4 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
-          },
-          {
-            "location": "Neo S3 Intact",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.25329999999999997
-          },
-          {
-            "location": "Neo S3 Exceptional",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.23329999999999998
-          },
-          {
-            "location": "Neo S3 Flawless",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo S3 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.16670000000000001
           }
         ]
       }
@@ -1249,65 +1328,40 @@
     "category": "Sentinels",
     "patchlogs": [
       {
-        "name": "Oberon Prime: Update 20.7.0",
-        "date": "2017-06-07T19:08:59Z",
-        "url": "https://forums.warframe.com/topic/804548-oberon-prime-update-2070/",
-        "fixes": "Fixed disarming Corpus Power Carriers resulting in their Provas floating outside of their hands."
+        "name": "Hydroid Prime: Update 21.6.0",
+        "date": "2017-08-29T17:55:46Z",
+        "url": "https://forums.warframe.com/topic/836927-hydroid-prime-update-2160/",
+        "changes": "Warframe’s first Prime Sentinel, Wyrm Prime, has had its base Health increased from 100 to 225! "
       },
       {
-        "name": "Oberon Prime: Hotfix 20.7.1",
-        "date": "2017-06-14T21:01:39Z",
-        "url": "https://forums.warframe.com/topic/806282-oberon-prime-hotfix-2071/",
-        "fixes": "Fixed the marker disappearing on ragdolled Bomb carrier enemies in The Law of Retribution. We have also added some logging in general to Bomb carriers to solve future issues."
-      },
-      {
-        "name": "The Glast Gambit: Update 19.8.0",
-        "date": "2017-01-25T19:24:45Z",
-        "url": "https://forums.warframe.com/topic/754548-the-glast-gambit-update-1980/",
-        "fixes": "Fixed an issue with Carrier's Ammo Case Mod being exploitable. "
-      },
-      {
-        "name": "The Vacuum Within: Hotfix #2",
-        "date": "2016-10-06T20:50:11Z",
-        "url": "https://forums.warframe.com/topic/705955-the-vacuum-within-hotfix-2/",
-        "fixes": "Fixed Ammo Case still applying its buffs after Carrier has died."
-      },
-      {
-        "name": "Update 18.4.0",
-        "date": "2016-01-22T00:24:23Z",
-        "url": "https://forums.warframe.com/topic/597888-update-1840/",
-        "changes": "Enabled Scavenger Drones, Sapping Ospreys, Leech Ospreys, Mine Ospreys, and Mutalist Osprey Carriers in the Simulacrum."
+        "name": "Update 18.12.0: Vauban Prime & 18.12.1",
+        "date": "2016-05-17T18:00:00Z",
+        "url": "https://forums.warframe.com/topic/649037-update-18120-vauban-prime-18121/",
+        "changes": "Removed Wyrm Prime Blueprint from T2 Exterminate reward table."
       },
       {
         "name": "Hotfix 18.4.7",
         "date": "2016-02-04T22:43:36Z",
         "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
-        "fixes": "Fixed a potential issue causing pickups to become stuck to the Carrier Sentinel as a Host."
+        "fixes": "Fixed an error in Wyrmius’ loading screen causing an oversized Liset to appear instead of a Wyrm."
       },
       {
-        "name": "Hotfix 18.0.4 ",
-        "date": "2015-12-08T17:59:59Z",
-        "url": "https://forums.warframe.com/topic/573817-hotfix-1804-spoilers/",
-        "fixes": "Fixed Madurai and Unairu beam attacks being blocked by pickups and Sentinels as per: https://forums.warframe.com/index.php?/topic/572970-marudai-focus-beam-blocked-by-loot-when-using-carrier/"
+        "name": "Update 18.3",
+        "date": "2016-01-13T22:55:58Z",
+        "url": "https://forums.warframe.com/topic/594267-update-183/",
+        "changes": "Fixed an error causing no enemies to spawn in Wyrmius."
       },
       {
         "name": "Update 17.3.0",
         "date": "2015-09-02T20:56:46Z",
         "url": "https://forums.warframe.com/topic/521781-update-1730/",
-        "changes": "T3S Rotation C: Forma BP for Prime Carrier BP."
+        "fixes": "Fixed a permanent motion blur effect that would occur after the second room in Wyrmius."
       },
       {
-        "name": "Hotfix 17.6.1",
-        "date": "2015-10-07T21:04:29Z",
-        "url": "https://forums.warframe.com/topic/540998-hotfix-1761/",
-        "changes": "Infested Carrier Drones now have a unique explosion FX.",
-        "fixes": "Fixed projectiles from Infested Carriers in the J-3 Golem fight not properly dealing damage to players."
-      },
-      {
-        "name": "Hotfix 17.5.3",
-        "date": "2015-10-02T16:07:50Z",
-        "url": "https://forums.warframe.com/topic/536870-hotfix-1753/",
-        "fixes": "Fixed Excavation missions not spawning enough power cell carriers."
+        "name": "Update 17: Echoes Of The Sentient",
+        "date": "2015-07-31T15:09:25Z",
+        "url": "https://forums.warframe.com/topic/498793-update-17-echoes-of-the-sentient/",
+        "changes": "Wyrm Prime now has 150 base Armor."
       },
       {
         "name": "Hotfix 16.11.2",
@@ -1316,82 +1370,28 @@
         "fixes": "Fixed the Carrier Prime’s Carapace description reading the description for Wyrm Prime."
       },
       {
-        "name": "Update 16.11: Ash Prime + Hotfix 16.11.1",
-        "date": "2015-07-07T18:41:10Z",
-        "url": "https://forums.warframe.com/topic/486216-update-1611-ash-prime-hotfix-16111/",
-        "fixes": "Fixed Ash, Vectis and Carrier parts not dropping for players in the Void."
-      },
-      {
-        "name": "Update 16.9.0",
-        "date": "2015-06-17T21:50:27Z",
-        "url": "https://forums.warframe.com/topic/476490-update-1690/",
-        "fixes": "Fixed the Para Carrier skin showing code in its description."
-      },
-      {
-        "name": "Hotfix 16.5.4",
-        "date": "2015-05-14T15:41:07Z",
-        "url": "https://forums.warframe.com/topic/457698-hotfix-1654/",
-        "fixes": "Fixed Carrier’s Vacuum not picking up Pigments."
-      },
-      {
-        "name": "Update 16.6.0",
-        "date": "2015-05-27T21:08:21Z",
-        "url": "https://forums.warframe.com/topic/465618-update-1660/",
-        "fixes": "Fixed Carrier Sentinels not sucking in Sigils and other item drops."
-      },
-      {
-        "name": "Update 17: Echoes Of The Sentient",
-        "date": "2015-07-31T15:09:25Z",
-        "url": "https://forums.warframe.com/topic/498793-update-17-echoes-of-the-sentient/",
-        "changes": "Carrier's Vacuum will no longer pick up items while the player is bleeding out."
-      },
-      {
-        "name": "Hotfix 17.0.2",
-        "date": "2015-07-31T22:56:16Z",
-        "url": "https://forums.warframe.com/topic/499470-hotfix-1702/",
-        "fixes": "Fixed the Carrier pulling items towards players while on a Rampart."
-      },
-      {
-        "name": "Hotfix 16.6.1",
-        "date": "2015-05-28T20:43:00Z",
-        "url": "https://forums.warframe.com/topic/466144-hotfix-1661/",
-        "fixes": "Fixed items vacuumed in by the Carrier becoming stuck to the Carrier."
-      },
-      {
-        "name": "Hotfix 16.11.5",
-        "date": "2015-07-15T19:56:44Z",
-        "url": "https://forums.warframe.com/topic/490942-hotfix-16115/",
-        "fixes": "Fixed an issue where ammo pickups mutated by Hosts would confuse Clients-side Carriers as per: https://forums.warframe.com/index.php?/topic/480877-carrier-looting-bug-ammo-clicking/"
-      },
-      {
         "name": "Warframe: Sanctuary",
         "date": "2015-03-20T02:21:54Z",
         "url": "https://forums.warframe.com/topic/420448-warframe-sanctuary/",
-        "fixes": "Fixed the Carrier Sentinel dragging items that have not (or cannot) be claimed, following the player forever."
+        "fixes": "Fixed Wyrmius respawning behind a wall if the player died behind a wall."
       },
       {
-        "name": "Update 15.9",
-        "date": "2015-01-08T21:39:10Z",
-        "url": "https://forums.warframe.com/topic/381637-update-159/",
-        "fixes": "Fixed Corpus Power Carrier appearing twice in the Codex."
+        "name": "Hotfix 15.11.1",
+        "date": "2015-01-22T21:18:54Z",
+        "url": "https://forums.warframe.com/topic/389459-hotfix-15111/",
+        "fixes": "Fixed Wyrmius being able to shoot during respawn period."
       },
       {
-        "name": "Update 15.13",
-        "date": "2015-02-05T21:08:01Z",
-        "url": "https://forums.warframe.com/topic/396379-update-1513/",
-        "fixes": "Fixed Stamina orbs in the Dojo becoming vacuumed up by Carrier for eternity."
+        "name": "Update 13.7.1",
+        "date": "2014-06-12T19:52:13Z",
+        "url": "https://forums.warframe.com/topic/245171-update-1371/",
+        "fixes": "Fixed issue with Wyrm Prime Blueprint not being tradeable."
       },
       {
-        "name": "Hotfix 14.0.9",
-        "date": "2014-07-26T01:03:34Z",
-        "url": "https://forums.warframe.com/topic/273702-hotfix-1409/",
-        "fixes": "Fixed the Carrier sentinel being seemingly 1 hit killed by enemy Kubrows and Volatile Infested."
-      },
-      {
-        "name": "Update 10.3.0: Hump Day!",
-        "date": "2013-10-09T22:12:04Z",
-        "url": "https://forums.warframe.com/topic/117806-update-1030-hump-day/",
-        "fixes": "Fixed emblem deco positions on Carrier and Djinn sentinels."
+        "name": "Hotfix 9.4: Double Affinity Weekend!",
+        "date": "2013-08-02T16:37:28Z",
+        "url": "https://forums.warframe.com/topic/89853-hotfix-94-double-affinity-weekend/",
+        "fixes": "Fixes for badges on Wyrm and DethCube being offset."
       }
     ]
   }
