@@ -1,8 +1,7 @@
 const request = require('requestretry').defaults({ fullResponse: false })
 const cheerio = require('cheerio')
 const _ = require('lodash')
-const Patchlogs = require('warframe-patchlogs')
-const patchlogs = new Patchlogs()
+const patchlogs = require('warframe-patchlogs')
 
 process.on('unhandledRejection', err => {
   console.log(err)
@@ -110,7 +109,7 @@ class Scraper {
       this.addCategory(item, type)
       this.addTradable(item, type)
       this.addDropRate(item)
-      await this.addPatchlogs(item)
+      this.addPatchlogs(item)
 
       // Add to category
       if (!data[item.category]) {
@@ -444,8 +443,8 @@ class Scraper {
   /**
    * Get patchlogs from forums and attach when changes are found for item.
    */
-  async addPatchlogs (item) {
-    const logs = await patchlogs.getItemChanges(item)
+  addPatchlogs (item) {
+    const logs = patchlogs.getItemChanges(item)
     if (logs.length) item.patchlogs = logs
   }
 }
