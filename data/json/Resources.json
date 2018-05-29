@@ -4,6 +4,7 @@
     "name": "Auron",
     "description": "A brilliant, dense and conductive metal.",
     "type": "Gem",
+    "imageName": "Auron.png",
     "category": "Resources",
     "tradable": true
   },
@@ -12,14 +13,26 @@
     "name": "Auroxium Alloy",
     "description": "Auron that has been forged into a stronger metal.",
     "type": "Gem",
+    "imageName": "Auroxium-Alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Auroxium Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemAItem",
     "name": "Azurite",
     "description": "A blue gem layered with impurities.",
     "type": "Gem",
+    "imageName": "Azurite.png",
     "category": "Resources",
     "tradable": true,
     "patchlogs": [
@@ -27,43 +40,27 @@
         "name": "Plains of Eidolon: Hotfix 22.0.5",
         "date": "2017-10-17T20:41:28Z",
         "url": "https://forums.warframe.com/topic/860760-plains-of-eidolon-hotfix-2205/",
+        "additions": "",
+        "changes": "",
         "fixes": "Fixed Pyrol and Azurite being rarer than intended and Coprun and Devar being more likely than intended. They should now be equally as likely."
       }
     ]
   },
   {
-    "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardBrilliantItem",
-    "name": "Brilliant Eidolon Shard",
-    "description": "Rare shard gained from capturing the Sentients roaming the Plains of Eidolon. Use it to gain Focus or to unbind Way-bound focus nodes.",
-    "type": "Resource",
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/OroFungusAPlantItem",
+    "name": "Cerulean Fungus Extract",
+    "description": "Extracted from a Cerulean Fungus colony.",
+    "type": "Plant",
+    "imageName": "Cerulean-Fungus-Extract.png",
     "category": "Resources",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Shrine of the Eidolon: Update 22.12.0",
-        "date": "2018-02-09T23:37:46Z",
-        "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
-        "fixes": "Fixed Clients not being able to see/pick up the dropped Brilliant Eidolon Shard when a Host Migration occurred and no one had picked it up yet. "
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.1.2",
-        "date": "2017-10-30T21:36:20Z",
-        "url": "https://forums.warframe.com/topic/870250-plains-of-eidolon-hotfix-2212/",
-        "fixes": "Fixed an issue where Brilliant Eidolon Shards were not properly accounted for in the Focus Conversion screen after used to unlock Way-Bound nodes. "
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.0.9",
-        "date": "2017-10-23T21:51:59Z",
-        "url": "https://forums.warframe.com/topic/865725-plains-of-eidolon-hotfix-2209/",
-        "fixes": "Fixed a UI issue that occurred upon spending Focus while also redeeming Brilliant Eidolon Shards for Focus."
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
     "name": "Cetus Wisp",
     "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
     "type": "Resource",
+    "imageName": "Cetus-Wisp.png",
     "category": "Resources",
     "tradable": false,
     "drops": [
@@ -181,19 +178,49 @@
         "name": "Beasts of the Sanctuary: Hotfix 22.18.7",
         "date": "2018-04-25T21:12:12Z",
         "url": "https://forums.warframe.com/topic/950089-beasts-of-the-sanctuary-hotfix-22187/",
-        "changes": "Quill Onkko has added a Cetus Wisp to his Offerings in Cetus. These can be purchased with Quill Standing for Architect level Tenno."
+        "additions": "",
+        "changes": "Quill Onkko has added a Cetus Wisp to his Offerings in Cetus. These can be purchased with Quill Standing for Architect level Tenno.",
+        "fixes": ""
       },
       {
         "name": "Shrine of the Eidolon: Update 22.16.0",
         "date": "2018-03-15T20:27:52Z",
         "url": "https://forums.warframe.com/topic/933296-shrine-of-the-eidolon-update-22160/",
-        "changes": "A special UI message is now displayed when picking up a Syndicate Medallion or Cetus Wisp (similar to Argon Crystal). "
+        "additions": "",
+        "changes": "A special UI message is now displayed when picking up a Syndicate Medallion or Cetus Wisp (similar to Argon Crystal). ",
+        "fixes": ""
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.13.4",
+        "date": "2018-02-22T22:25:01Z",
+        "url": "https://forums.warframe.com/topic/925435-shrine-of-the-eidolon-hotfix-22134/",
+        "additions": "",
+        "changes": "Picking up a Cetus Wisp will now display the same special UI message like when you pick up an Argon Crystal.",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.10.0",
+        "date": "2018-01-25T23:53:14Z",
+        "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
+        "additions": "",
+        "changes": "Ghoul Bounty tables have received new items including Nitain, Cetus Wisps, and Breath of the Eidolon!",
+        "fixes": ""
       },
       {
         "name": "Plains of Eidolon: Hotfix 22.8.3",
         "date": "2018-01-11T14:32:42Z",
         "url": "https://forums.warframe.com/topic/906556-plains-of-eidolon-hotfix-2283/",
+        "additions": "",
+        "changes": "More than doubled the size of the Cetus Wisp pickup radius. This will allow you to obtain the Cetus Wisp from further away instead of needing to be right on top of it.",
         "fixes": "Fixed Cetus Wisps being updated while the game was paused -- this could lead to them escaping while you answered the phone."
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Cetus Wisp",
+        "changes": "",
+        "fixes": ""
       }
     ]
   },
@@ -202,6 +229,7 @@
     "name": "Condroc Wing",
     "description": "The talon on a condroc's wing is is sharp enough to tear through bone.",
     "type": "Resource",
+    "imageName": "Condroc-Wing.png",
     "category": "Resources",
     "tradable": false
   },
@@ -210,14 +238,26 @@
     "name": "Coprite Alloy",
     "description": "Coprun that has been forged into a stronger metal.",
     "type": "Gem",
+    "imageName": "Coprite-Alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Coprite Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBItem",
     "name": "Coprun",
     "description": "A soft, malleable metal.",
     "type": "Gem",
+    "imageName": "Coprun.png",
     "category": "Resources",
     "tradable": true,
     "patchlogs": [
@@ -225,6 +265,8 @@
         "name": "Plains of Eidolon: Hotfix 22.0.5",
         "date": "2017-10-17T20:41:28Z",
         "url": "https://forums.warframe.com/topic/860760-plains-of-eidolon-hotfix-2205/",
+        "additions": "",
+        "changes": "",
         "fixes": "Fixed Pyrol and Azurite being rarer than intended and Coprun and Devar being more likely than intended. They should now be equally as likely."
       }
     ]
@@ -234,6 +276,7 @@
     "name": "Corpus Cipher",
     "description": "A cipher used to decode Corpus intel. Crafting component required to create a CORPUS VOID KEY",
     "type": "Resource",
+    "imageName": "Corpus-Cipher.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
@@ -241,13 +284,17 @@
         "name": "Hotfix 15.0.6",
         "date": "2014-10-27T22:45:51Z",
         "url": "https://forums.warframe.com/topic/333871-hotfix-1506/",
+        "additions": "",
+        "changes": "",
         "fixes": "Optimized both Grineer and Corpus Cipher minigames."
       },
       {
         "name": "Update 9.6",
         "date": "2013-08-16T19:47:03Z",
         "url": "https://forums.warframe.com/topic/96343-update-96/",
-        "changes": "Flux energy beam is now affected by Energy Colour!Dera muzzle flash is now affected by Energy Colour!Excalibur Radial Blind now uses Energy Colours!Removed the Corpus Void Key Blueprint from the Store - owned copies can be sold for the same purchase priceEnabled selling of Corpus Ciphers and Data Masses.Improvements  to the Transmutation system: you can no longer transmute your final power card of a given type.Improvements to Enemy AI on Settlement defense, they are not as cowardly and won’t huddle in their Spawn location.Added Sobek reload animiaton tweaks.Audio updates to the Desert Skate and Grineer Jetpack TroopsTweaks to Twin Viper soundsTweaks to Orthos hit soundsTweaks to Grineer Miter sounds.Tweaks to Rhino’s Iron Skin lighting.Tweaks to settlement enemy navigation.Added fancy footwork to Grineer Jetpack landing animations.Mods and Blueprints will never expire as drops.Elite Grineer Lancers now use the Hind!"
+        "additions": "",
+        "changes": "Enabled selling of Corpus Ciphers and Data Masses.",
+        "fixes": ""
       }
     ]
   },
@@ -256,6 +303,7 @@
     "name": "Corpus Datamass",
     "description": "A Corpus datamass containing encrypted intel. Crafting component required to create a CORPUS VOID KEY",
     "type": "Resource",
+    "imageName": "Corpus-Datamass.png",
     "category": "Resources",
     "tradable": false
   },
@@ -264,14 +312,26 @@
     "name": "Crimzian",
     "description": "A blood-red gem.",
     "type": "Gem",
+    "imageName": "Crimzian.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Star Crimzian",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Research/ChemFragment",
     "name": "Detonite Ampule",
     "description": "Researching the Detonite traces within could advance our weapon technology.",
     "type": "Resource",
+    "imageName": "Detonite-Ampule.png",
     "category": "Resources",
     "tradable": false,
     "drops": [
@@ -282,6 +342,16 @@
         "chance": 0.1218,
         "rotation": "B"
       }
+    ],
+    "patchlogs": [
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "additions": "",
+        "changes": "Detonite Ampule replaced with Detonite Injector - 1 for 10 Platinum",
+        "fixes": ""
+      }
     ]
   },
   {
@@ -289,82 +359,62 @@
     "name": "Detonite Injector",
     "description": "Detonite injectors are the basis for explosive and incendiary weapons.",
     "type": "Resource",
+    "imageName": "Detonite-Injector.png",
     "category": "Resources",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "additions": "",
+        "changes": "Detonite Ampule replaced with Detonite Injector - 1 for 10 Platinum",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBItem",
     "name": "Devar",
     "description": "A cloudy crystal.",
     "type": "Gem",
+    "imageName": "Devar.png",
     "category": "Resources",
     "tradable": true,
     "patchlogs": [
       {
+        "name": "Beasts of the Sanctuary: Update 22.20.0",
+        "date": "2018-05-17T14:55:31Z",
+        "url": "https://forums.warframe.com/topic/957066-beasts-of-the-sanctuary-update-22200/",
+        "additions": "",
+        "changes": "Devar Grey: Tusk Bombard ",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon: Hotfix 22.0.5",
         "date": "2017-10-17T20:41:28Z",
         "url": "https://forums.warframe.com/topic/860760-plains-of-eidolon-hotfix-2205/",
+        "additions": "",
+        "changes": "",
         "fixes": "Fixed Pyrol and Azurite being rarer than intended and Coprun and Devar being more likely than intended. They should now be equally as likely."
       }
     ]
   },
   {
-    "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
-    "name": "Eidolon Shard",
-    "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
-    "type": "Resource",
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenCobraLotusPlantItem",
+    "name": "Dusklight Sarracenia",
+    "description": "This robust, carnivorous plant has adapted to conditions in polluted waters.",
+    "type": "Plant",
+    "imageName": "Dusklight-Sarracenia.png",
     "category": "Resources",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Beasts of the Sanctuary: Hotfix 22.18.1",
-        "date": "2018-04-20T18:49:33Z",
-        "url": "https://forums.warframe.com/topic/947482-beasts-of-the-sanctuary-hotfix-22181/",
-        "fixes": "Fixed seeing unowned Eidolon Shards in the ‘Focus Conversion’ screen."
-      },
-      {
-        "name": "Beasts of the Sanctuary: Update 22.18.0",
-        "date": "2018-04-20T14:27:12Z",
-        "url": "https://forums.warframe.com/topic/947321-beasts-of-the-sanctuary-update-22180/",
-        "fixes": "Fixed the Focus ‘Buy Capacity’ button not updating after converting Eidolon Shards into Focus. "
-      },
-      {
-        "name": "Shrine of the Eidolon: Update 22.15.0",
-        "date": "2018-03-07T21:04:32Z",
-        "url": "https://forums.warframe.com/topic/930667-shrine-of-the-eidolon-update-22150/",
-        "changes": "A special UI message is now displayed when picking up Tellurium, or any of the Eidolon Shards (similar to Argon Crystal). "
-      },
-      {
-        "name": "Shrine of the Eidolon: Update 22.12.0",
-        "date": "2018-02-09T23:37:46Z",
-        "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
-        "fixes": "Fixed Clients not being able to see/pick up the dropped Brilliant Eidolon Shard when a Host Migration occurred and no one had picked it up yet. "
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.10.1",
-        "date": "2018-01-26T04:48:38Z",
-        "url": "https://forums.warframe.com/topic/911974-plains-of-eidolon-hotfix-22101/",
-        "fixes": "Fixed UI locking up when attempting to do a Focus Conversion with Eidolon Shards."
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.1.2",
-        "date": "2017-10-30T21:36:20Z",
-        "url": "https://forums.warframe.com/topic/870250-plains-of-eidolon-hotfix-2212/",
-        "fixes": "Fixed an issue where Brilliant Eidolon Shards were not properly accounted for in the Focus Conversion screen after used to unlock Way-Bound nodes. "
-      },
-      {
-        "name": "Plains of Eidolon: Hotfix 22.0.9",
-        "date": "2017-10-23T21:51:59Z",
-        "url": "https://forums.warframe.com/topic/865725-plains-of-eidolon-hotfix-2209/",
-        "fixes": "Fixed a UI issue that occurred upon spending Focus while also redeeming Brilliant Eidolon Shards for Focus."
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
     "name": "Esher Devar",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "imageName": "Esher-Devar.png",
     "category": "Resources",
     "tradable": true
   },
@@ -373,14 +423,33 @@
     "name": "Exceptional Sentient Core",
     "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
     "type": "Resource",
+    "imageName": "Exceptional-Sentient-Core.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Shrine of the Eidolon: Hotfix 22.13.3",
+        "date": "2018-02-21T20:18:33Z",
+        "url": "https://forums.warframe.com/topic/924885-shrine-of-the-eidolon-hotfix-22133/",
+        "additions": "",
+        "changes": "Picking up a Syndicate Medallion, Exceptional Sentient Core, or Flawless Sentient Core will now display the same special UI message like when you pick up an Argon Crystal.",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon: Update 22.10.0",
         "date": "2018-01-25T23:53:14Z",
         "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
-        "additions": "Added a reusable Blueprint for converting Intact Sentient Cores to Exceptional Sentient Cores. This Blueprint is available from Onkko in Cetus. This is an addition to help provide an alternative, but still invested, way for players to progress in the Quills. "
+        "additions": "Added a reusable Blueprint for converting Intact Sentient Cores to Exceptional Sentient Cores. This Blueprint is available from Onkko in Cetus. This is an addition to help provide an alternative, but still invested, way for players to progress in the Quills. ",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.3",
+        "date": "2017-10-16T21:47:16Z",
+        "url": "https://forums.warframe.com/topic/859709-plains-of-eidolon-hotfix-2203/",
+        "additions": "",
+        "changes": "Increased Exceptional Sentient Cores from 400 Standing to 500 Standing. ",
+        "fixes": ""
       }
     ]
   },
@@ -389,6 +458,7 @@
     "name": "Ferros",
     "description": "A resilient metal that is hardened by the inpurities within it.",
     "type": "Gem",
+    "imageName": "Ferros.png",
     "category": "Resources",
     "tradable": true
   },
@@ -397,21 +467,59 @@
     "name": "Fersteel Alloy",
     "description": "Ferros that has been forged into a stronger metal.",
     "type": "Gem",
+    "imageName": "Fersteel-Alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Fersteel Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
     "name": "Fieldron",
     "description": "ClanTech weaponized containment field to contain super-heated substances.",
     "type": "Resource",
+    "imageName": "Fieldron.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Specters of the Rail: Hotfix 13",
+        "date": "2016-07-26T18:38:42Z",
+        "url": "https://forums.warframe.com/topic/679601-specters-of-the-rail-hotfix-13/",
+        "additions": "",
+        "changes": "Detonite/Fieldron rewards from Invasion missions will now always be a bundle of 3.",
+        "fixes": ""
+      },
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "additions": "",
+        "changes": "Fieldron Sample replaced with Fieldron - 1 for 10 Platinum",
+        "fixes": ""
+      },
+      {
+        "name": "Mesa Update",
+        "date": "2014-11-27T17:30:05Z",
+        "url": "https://forums.warframe.com/topic/352963-mesa-update/",
+        "additions": "",
+        "changes": "Increased Outbreak rewards on ‘Hard’ Planets: Doubled the offered rewards (i.e 2x Fieldron, etc).",
+        "fixes": ""
+      },
+      {
         "name": "Hotfix 14.0.9",
         "date": "2014-07-26T01:03:34Z",
         "url": "https://forums.warframe.com/topic/273702-hotfix-1409/",
+        "additions": "",
+        "changes": "",
         "fixes": "Fixed issue where the Dual Cestra project can be started before you ever start the Fieldron research. Every other item in the energy lab has prior requirements except for Dual Cestras."
       }
     ]
@@ -421,22 +529,72 @@
     "name": "Fieldron Sample",
     "description": "This destroyed Fieldron could further research into super-heated containment fields.",
     "type": "Resource",
+    "imageName": "Fieldron-Sample.png",
     "category": "Resources",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "additions": "",
+        "changes": "Fieldron Sample replaced with Fieldron - 1 for 10 Platinum",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsRareDogTag",
     "name": "Flawless Sentient Core",
     "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
     "type": "Resource",
+    "imageName": "Flawless-Sentient-Core.png",
     "category": "Resources",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.13.3",
+        "date": "2018-02-21T20:18:33Z",
+        "url": "https://forums.warframe.com/topic/924885-shrine-of-the-eidolon-hotfix-22133/",
+        "additions": "",
+        "changes": "Picking up a Syndicate Medallion, Exceptional Sentient Core, or Flawless Sentient Core will now display the same special UI message like when you pick up an Argon Crystal.",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.3",
+        "date": "2017-10-16T21:47:16Z",
+        "url": "https://forums.warframe.com/topic/859709-plains-of-eidolon-hotfix-2203/",
+        "additions": "",
+        "changes": "The Quills Standing increases (Flawless Sentient Cores remains the same for now): ",
+        "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/WildGingerBPlantItem",
+    "name": "Frostleaf",
+    "description": "This resilient plant provides a natural food source in frigid areas of the Origin system.",
+    "type": "Plant",
+    "imageName": "Frostleaf.png",
+    "category": "Resources",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Silver Grove: Hotfix 4",
+        "date": "2016-08-25T20:05:06Z",
+        "url": "https://forums.warframe.com/topic/692289-the-silver-grove-hotfix-4/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed issues with scanning the Frostleaf plant."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
     "name": "Grokdrul",
     "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
     "type": "Resource",
+    "imageName": "Grokdrul.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
@@ -444,7 +602,41 @@
         "name": "Plains of Eidolon: Update 22.10.0",
         "date": "2018-01-25T23:53:14Z",
         "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
+        "additions": "",
+        "changes": "",
         "fixes": "Fixed a mislabeled Grokdrul Injector. "
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.3.5",
+        "date": "2017-11-20T23:06:42Z",
+        "url": "https://forums.warframe.com/topic/882798-plains-of-eidolon-hotfix-2235/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Carrier's Looter precept not working for some Plains resources like Grokdrul containers."
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.3.4",
+        "date": "2017-11-16T23:30:13Z",
+        "url": "https://forums.warframe.com/topic/880465-plains-of-eidolon-hotfix-2234/",
+        "additions": "",
+        "changes": "The 2x Neurodes Sacrifice to Collaborator has been replaced with 10x Grokdrul.",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.2.0",
+        "date": "2017-11-01T20:54:33Z",
+        "url": "https://forums.warframe.com/topic/871334-plains-of-eidolon-update-2220/",
+        "additions": "",
+        "changes": "Replaced Grokdrul and Iradite pickups from crates and caches with Rubedo and Ferrite in the Plains to better expose the deeper Resource system.",
+        "fixes": ""
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Grokdrul",
+        "changes": "",
+        "fixes": ""
       }
     ]
   },
@@ -453,22 +645,26 @@
     "name": "Heart Nyth",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "imageName": "Heart-Nyth.png",
     "category": "Resources",
-    "tradable": true
-  },
-  {
-    "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/LephantisShardItem",
-    "name": "Hemocyte Cystolith",
-    "description": "Torn from the bile duct of a fallen Hemocyte.",
-    "type": "Resource",
-    "category": "Resources",
-    "tradable": false
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Heart Nyth",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
     "name": "Intact Sentient Core",
     "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
     "type": "Resource",
+    "imageName": "Intact-Sentient-Core.png",
     "category": "Resources",
     "tradable": false,
     "drops": [
@@ -484,7 +680,17 @@
         "name": "Plains of Eidolon: Update 22.10.0",
         "date": "2018-01-25T23:53:14Z",
         "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
-        "additions": "Added a reusable Blueprint for converting Intact Sentient Cores to Exceptional Sentient Cores. This Blueprint is available from Onkko in Cetus. This is an addition to help provide an alternative, but still invested, way for players to progress in the Quills. "
+        "additions": "Added a reusable Blueprint for converting Intact Sentient Cores to Exceptional Sentient Cores. This Blueprint is available from Onkko in Cetus. This is an addition to help provide an alternative, but still invested, way for players to progress in the Quills. ",
+        "changes": "Increased the drop chance of Intact Sentient Cores from Vomvalysts to 100%.",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.3",
+        "date": "2017-10-16T21:47:16Z",
+        "url": "https://forums.warframe.com/topic/859709-plains-of-eidolon-hotfix-2203/",
+        "additions": "",
+        "changes": "Increased Intact Sentient Cores from 25 Standing to 100 Standing. ",
+        "fixes": ""
       }
     ]
   },
@@ -493,14 +699,49 @@
     "name": "Iradite",
     "description": "A valuable mineral found on the Plains.",
     "type": "Resource",
+    "imageName": "Iradite.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Plains of Eidolon: Hotfix 22.3.4",
+        "date": "2017-11-16T23:30:13Z",
+        "url": "https://forums.warframe.com/topic/880465-plains-of-eidolon-hotfix-2234/",
+        "additions": "",
+        "changes": "The Forma Sacrifice to Defender has been replaced with 10x Iradite.",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.2.0",
+        "date": "2017-11-01T20:54:33Z",
+        "url": "https://forums.warframe.com/topic/871334-plains-of-eidolon-update-2220/",
+        "additions": "",
+        "changes": "Replaced Grokdrul and Iradite pickups from crates and caches with Rubedo and Ferrite in the Plains to better expose the deeper Resource system.",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon: Hotfix 22.0.3",
         "date": "2017-10-16T21:47:16Z",
         "url": "https://forums.warframe.com/topic/859709-plains-of-eidolon-hotfix-2203/",
+        "additions": "",
+        "changes": "100 Iradite to 50 Iradite",
         "fixes": "Fixed not being able to waypoint Iradite, Grokdul, or Maprico Trees in the Plains."
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.2",
+        "date": "2017-10-13T19:57:07Z",
+        "url": "https://forums.warframe.com/topic/855756-plains-of-eidolon-hotfix-2202/",
+        "additions": "",
+        "changes": "Adjusted the positioning, size, and hit radius of the Iradite Resource in the Plains.",
+        "fixes": ""
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Iradite",
+        "changes": "",
+        "fixes": ""
       }
     ]
   },
@@ -509,6 +750,7 @@
     "name": "Kuaka Spinal Claw",
     "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
     "type": "Resource",
+    "imageName": "Kuaka-Spinal-Claw.png",
     "category": "Resources",
     "tradable": false,
     "drops": [
@@ -527,10 +769,20 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenPitcherPlantItem",
+    "name": "Lunar Pitcher",
+    "description": "This carnivorous plant can be found growing in the wilderness on Lua.",
+    "type": "Plant",
+    "imageName": "Lunar-Pitcher.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
     "name": "Maprico",
     "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
     "type": "Resource",
+    "imageName": "Maprico.png",
     "category": "Resources",
     "tradable": false,
     "drops": [
@@ -546,7 +798,17 @@
         "name": "Plains of Eidolon: Hotfix 22.0.3",
         "date": "2017-10-16T21:47:16Z",
         "url": "https://forums.warframe.com/topic/859709-plains-of-eidolon-hotfix-2203/",
+        "additions": "",
+        "changes": "",
         "fixes": "Fixed not being able to waypoint Iradite, Grokdul, or Maprico Trees in the Plains."
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Maprico",
+        "changes": "",
+        "fixes": ""
       }
     ]
   },
@@ -555,46 +817,137 @@
     "name": "Marquise Veridos",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "imageName": "Marquise-Veridos.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Marquise Veridos",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
+    "name": "Moonlight Dragonlily",
+    "description": "This uncommon plant can only be found at night.",
+    "type": "Plant",
+    "imageName": "Moonlight-Dragonlily.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
+    "name": "Moonlight Jadeleaf",
+    "description": "This rare plant can only be found at night.",
+    "type": "Plant",
+    "imageName": "Moonlight-Jadeleaf.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
+    "name": "Moonlight Threshcone",
+    "description": "This common plant can only be found at night.",
+    "type": "Plant",
+    "imageName": "Moonlight-Threshcone.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
     "name": "Mutagen Mass",
     "description": "This living mass can produce weaponized toxins for weaponry.",
     "type": "Resource",
+    "imageName": "Mutagen-Mass.png",
     "category": "Resources",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "additions": "",
+        "changes": "Mutagen Sample replaced with Mutagen Mass - 1 for 10 Platinum",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Research/BioFragment",
     "name": "Mutagen Sample",
     "description": "These samples could advance our knowledge of biological research.",
     "type": "Resource",
+    "imageName": "Mutagen-Sample.png",
     "category": "Resources",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Hotfix 22.3.4",
+        "date": "2017-11-16T23:30:13Z",
+        "url": "https://forums.warframe.com/topic/880465-plains-of-eidolon-hotfix-2234/",
+        "additions": "",
+        "changes": "The Mutagen Sample Sacrifice to Champion has been replaced with 10x Nistlebrush.",
+        "fixes": ""
+      },
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "additions": "",
+        "changes": "Mutagen Sample replaced with Mutagen Mass - 1 for 10 Platinum",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
     "name": "Nistlepod",
     "description": "Used by the Nistlebrush to trap and kill prey.",
     "type": "Resource",
+    "imageName": "Nistlepod.png",
     "category": "Resources",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Nistlepod",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBItem",
     "name": "Nyth",
     "description": "A rare local Gem, formed when the gas known as Breath of the Eidolon becomes trapped in molten iradite.",
     "type": "Gem",
+    "imageName": "Nyth.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Heart Nyth",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAItem",
     "name": "Pyrol",
     "description": "A tarnished, brittle metal.",
     "type": "Gem",
+    "imageName": "Pyrol.png",
     "category": "Resources",
     "tradable": true,
     "patchlogs": [
@@ -602,6 +955,8 @@
         "name": "Plains of Eidolon: Hotfix 22.0.5",
         "date": "2017-10-17T20:41:28Z",
         "url": "https://forums.warframe.com/topic/860760-plains-of-eidolon-hotfix-2205/",
+        "additions": "",
+        "changes": "",
         "fixes": "Fixed Pyrol and Azurite being rarer than intended and Coprun and Devar being more likely than intended. They should now be equally as likely."
       }
     ]
@@ -611,22 +966,35 @@
     "name": "Pyrotic Alloy",
     "description": "Pyrol that has been forged into a stronger metal.",
     "type": "Gem",
+    "imageName": "Pyrotic-Alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Pyrotic Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
     "name": "Radian Sentirum",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "imageName": "Radian-Sentirum.png",
     "category": "Resources",
     "tradable": true
   },
   {
-    "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardBrilliantTierTwoItem",
-    "name": "Radiant Eidolon Shard",
-    "description": "Rare shard gained from capturing the Sentients roaming the Plains of Eidolon. Use it to gain Focus or to unbind Way-bound focus nodes.",
-    "type": "Resource",
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GftPlantRuksClawMaturePlantItem",
+    "name": "Ruk'S Claw",
+    "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments.",
+    "type": "Plant",
+    "imageName": "Ruk'S-Claw.png",
     "category": "Resources",
     "tradable": false
   },
@@ -635,6 +1003,7 @@
     "name": "Sentirum",
     "description": "A rare Eidolon Gem, created from the fossilized blood of an ancient Sentient.",
     "type": "Gem",
+    "imageName": "Sentirum.png",
     "category": "Resources",
     "tradable": true
   },
@@ -643,38 +1012,53 @@
     "name": "Star Crimzian",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "imageName": "Star-Crimzian.png",
     "category": "Resources",
-    "tradable": true
-  },
-  {
-    "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardSynthesizedItem",
-    "name": "Synthetic Eidolon Shard",
-    "description": "",
-    "type": "Resource",
-    "category": "Resources",
-    "tradable": false,
-    "drops": [
+    "tradable": true,
+    "patchlogs": [
       {
-        "location": "Sanctuary - Elite",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.18969999999999998,
-        "rotation": "Onslaught"
-      },
-      {
-        "location": "Sanctuary - Sanctuary",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.07690000000000001,
-        "rotation": "rewards"
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Star Crimzian",
+        "changes": "",
+        "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem",
+    "name": "Sunlight Dragonlily",
+    "description": "This uncommon plant can only be found during the day.",
+    "type": "Plant",
+    "imageName": "Sunlight-Dragonlily.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem",
+    "name": "Sunlight Jadeleaf",
+    "description": "This rare plant can only be found during the day.",
+    "type": "Plant",
+    "imageName": "Sunlight-Jadeleaf.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem",
+    "name": "Sunlight Threshcone",
+    "description": "This common plant can only be found during the day.",
+    "type": "Plant",
+    "imageName": "Sunlight-Threshcone.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
     "name": "Tear Azurite",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "imageName": "Tear-Azurite.png",
     "category": "Resources",
     "tradable": true
   },
@@ -683,7 +1067,27 @@
     "name": "Veridos",
     "description": "A highly reflective, green gem.",
     "type": "Gem",
+    "imageName": "Veridos.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Marquise Veridos",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/MossGroundCoverAPlantItem",
+    "name": "Vestan Moss",
+    "description": "One of the few known plant species able to thrive on asteroids in deep space.",
+    "type": "Plant",
+    "imageName": "Vestan-Moss.png",
+    "category": "Resources",
+    "tradable": false
   }
 ]
