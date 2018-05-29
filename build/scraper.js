@@ -1,19 +1,22 @@
 const request = require('requestretry').defaults({ fullResponse: false })
 const cheerio = require('cheerio')
+const crypto = require('crypto')
+const fs = require('fs')
 const _ = require('lodash')
 const patchlogs = require('warframe-patchlogs')
+const precompiled = require('../data/json/All.json')
+const exportCache = require('../data/cache/.export.json')
 
 process.on('unhandledRejection', err => {
   console.log(err)
   process.exit()
 })
 
-// Capitaliz each word. No idea why this isn't a js standard yet.
+// Capitalizе each word. No idea why this isn't a js standard yet.
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 
 // We'll get these in the fetch function
-let resourceExports
-let dropChances
+let resourceExports, dropChances, dropChancesChanged, patchlogsChanged, manifest
 let ducats = []
 
 class Scraper {
@@ -39,12 +42,6 @@ class Scraper {
   async fetchAll () {
     let data = {}
 
-    // this would heavily interfere with other downloads. So I'd rather wait a bit.
-    console.log('Waiting for patchlogs to download, this will take a while...')
-    const t0 = new Date()
-    await patchlogs.setup
-    console.log(`Finished in ${new Date() - t0}ms\n`)
-
     await Promise.all(this.endpoints.map(async e => {
       const type = e.split('/').slice(-1)[0].replace('Export', '').replace('.json', '')
       const categories = await this.fetch(type)
@@ -64,7 +61,7 @@ class Scraper {
   async fetch (type) {
     console.log(`Fetching ${type}`)
     const url = this.endpoints.find(e => e.includes(type))
-    const res = await request.get(url)
+    const res = await request(url)
     const sanitized = res.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
     const items = JSON.parse(sanitized)[`Export${type}`]
     await this.fetchAdditional()
@@ -78,8 +75,10 @@ class Scraper {
    * etc
    */
   async fetchAdditional () {
-    dropChances = JSON.parse(await request.get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json'))
-    resourceExports = await request.get('http://content.warframe.com/MobileExport/Manifest/ExportResources.json')
+    const Manifest = await request('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')
+    manifest = JSON.parse(Manifest).Manifest
+    dropChances = JSON.parse(await request('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json'))
+    resourceExports = await request('http://content.warframe.com/MobileExport/Manifest/ExportResources.json')
     const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
 
@@ -90,6 +89,21 @@ class Scraper {
       const value = $(this).find('td:nth-of-type(3) b').text()
       ducats.push({ name, ducats: parseInt(value) })
     })
+
+    // Check if sources have changed from previous compilation
+    const dropChanceHash = crypto.createHash('md5').update(JSON.stringify(dropChances)).digest('hex')
+    const patchlogsHash = crypto.createHash('md5').update(JSON.stringify(patchlogs.posts)).digest('hex')
+
+    if (exportCache.DropChances.hash !== dropChanceHash) {
+      dropChancesChanged = true
+      exportCache.DropChances.hash = dropChanceHash
+      fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
+    }
+    if (exportCache.Patchlogs.hash !== patchlogsHash) {
+      patchlogsChanged = true
+      exportCache.Patchlogs.hash = patchlogsHash
+      fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
+    }
   }
 
   /**
@@ -105,6 +119,7 @@ class Scraper {
 
       this.addType(item)
       this.sanitize(item)
+      this.addImageName(item)
       this.addComponents(item)
       this.addCategory(item, type)
       this.addTradable(item, type)
@@ -200,6 +215,15 @@ class Scraper {
   }
 
   /**
+   * Add image name for images that will be fetched outside of this scraper.
+   */
+  addImageName (item) {
+    const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation
+    const ext = imageStub.split('.').slice(-1)[0] // .png, .jpg, etc
+    item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-') + `.${ext}`
+  }
+
+  /**
    * Add item type. Stuff like warframe, archwing, polearm, dagger, etc.
    * Most types can be found in the uniqueName key. If present, just assign it
    * as the type. Note that whatever key is found first 'wins'. For example
@@ -212,6 +236,7 @@ class Scraper {
     for (let type of types) {
       if (item.uniqueName.includes(`/${type.id}`)) {
         item.type = type.name
+        break
       }
     }
     // No type assigned? Add 'Special'.
@@ -304,45 +329,69 @@ class Scraper {
    * output file name.
    */
   addCategory (item, type) {
-    if (type === 'Customs') item.category = 'Skins'
-    if (type === 'Drones') item.category = 'Misc'
-    if (type === 'Flavour') item.category = 'Skins'
-    if (type === 'Gear') item.category = 'Gear'
-    if (type === 'Keys') {
-      if (item.name.includes('Derelict')) item.category = 'Relics'
-      else item.category = 'Quests'
-    }
-    if (type === 'RelicArcane') {
-      if (!item.name.includes('Relic')) item.category = 'Arcanes'
-      else item.category = 'Relics'
-    }
-    if (type === 'Sentinels') {
-      if (item.type === 'Sentinel') item.category = 'Sentinels'
-      else item.category = 'Pets'
-    }
-    if (type === 'Upgrades') item.category = 'Mods'
-    if (type === 'Warframes') {
-      if (item.isArchwing) item.category = 'Archwing'
-      else item.category = 'Warframes'
-      delete item.isArchwing
-    }
-    if (type === 'Weapons') {
-      if (item.isArchwing) item.category = 'Archwing'
-      else if (item.slot === 5) item.category = 'Melee'
-      else if (item.slot === 0) item.category = 'Secondary'
-      else if (item.slot === 1) item.category = 'Primary'
-      else item.category = 'Misc'
-      delete item.isArchwing
-    }
-    if (type === 'Resources') {
-      if (item.type === 'Pets') item.category = 'Pets'
-      else if (item.type === 'Specter') item.category = 'Gear'
-      else if (item.type === 'Resource') item.category = 'Resources'
-      else if (item.type === 'Fish') item.category = 'Fish'
-      else if (item.type === 'Ship Decoration') item.category = 'Skins'
-      else if (item.type === 'Gem') item.category = 'Resources'
-      else if (item.type === 'Plant') item.category = 'Resources'
-      else item.category = 'Misc'
+    switch (type) {
+      case 'Customs':
+        if (item.type === 'Sigil') item.category = 'Sigils'
+        else item.category = 'Skins'
+        break
+
+      case 'Drones':
+        item.category = 'Misc'
+        break
+
+      case 'Flavour':
+        if (item.name.includes('Sigil')) item.category = 'Sigils'
+        else if (item.name.includes('Glyph')) item.category = 'Glyphs'
+        else item.category = 'Skins'
+        break
+
+      case 'Gear':
+        item.category = 'Gear'
+        break
+
+      case 'Keys':
+        if (item.name.includes('Derelict')) item.category = 'Relics'
+        else item.category = 'Quests'
+        break
+
+      case 'RelicArcane':
+        if (!item.name.includes('Relic')) item.category = 'Arcanes'
+        else item.category = 'Relics'
+        break
+
+      case 'Sentinels':
+        if (item.type === 'Sentinel') item.category = 'Sentinels'
+        else item.category = 'Pets'
+        break
+
+      case 'Upgrades':
+        item.category = 'Mods'
+        break
+
+      case 'Warframes':
+        if (item.isArchwing) item.category = 'Archwing'
+        else item.category = 'Warframes'
+        delete item.isArchwing
+        break
+
+      case 'Weapons':
+        if (item.isArchwing) item.category = 'Archwing'
+        else if (item.slot === 5) item.category = 'Melee'
+        else if (item.slot === 0) item.category = 'Secondary'
+        else if (item.slot === 1) item.category = 'Primary'
+        else item.category = 'Misc'
+        delete item.isArchwing
+        break
+
+      case 'Resources':
+        if (item.type === 'Pets') item.category = 'Pets'
+        else if (item.type === 'Specter') item.category = 'Gear'
+        else if (item.type === 'Resource') item.category = 'Resources'
+        else if (item.type === 'Fish') item.category = 'Fish'
+        else if (item.type === 'Ship Decoration') item.category = 'Skins'
+        else if (item.type === 'Gem') item.category = 'Resources'
+        else if (item.type === 'Plant') item.category = 'Resources'
+        else item.category = 'Misc'
     }
   }
 
@@ -350,6 +399,22 @@ class Scraper {
    * Add drop chances based on official drop tables
    */
   addDropRate (item) {
+    // This process takes quite a bit of cpu time, so skip if drop rates haven't
+    // changed.
+    if (!dropChancesChanged) {
+      if (item.components) {
+        for (let component of item.components) {
+          const savedDrops = precompiled.find(i => i.name === item.name).components.find(c => c.name === component.name).drops
+          if (savedDrops) component.drops = savedDrops
+        }
+      } else {
+        const savedDrops = precompiled.find(i => i.name === item.name).drops
+        if (savedDrops) item.drops = savedDrops
+      }
+      return
+    }
+
+    // Do the actual processing
     if (item.components) {
       for (let component of item.components) {
         const drops = this.findDropLocations(`${item.name} ${component.name}`)
@@ -359,6 +424,7 @@ class Scraper {
       const drops = this.findDropLocations(`${item.name}`)
       if (drops.length) item.drops = drops
     }
+
     // Sort by drop rate
     if (item.drops) {
       item.drops.sort((a, b) => b.chance - a.chance)
@@ -444,6 +510,14 @@ class Scraper {
    * Get patchlogs from forums and attach when changes are found for item.
    */
   addPatchlogs (item) {
+    // This process takes a lot of cpu time, so we won't repeat it unless the
+    // patchlog hash changed.
+    if (!patchlogsChanged) {
+      const savedPatchlogs = precompiled.find(i => i.name === item.name).patchlogs
+      if (savedPatchlogs) item.patchlogs = savedPatchlogs
+      return
+    }
+
     const logs = patchlogs.getItemChanges(item)
     if (logs.length) item.patchlogs = logs
   }
