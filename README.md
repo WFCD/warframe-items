@@ -16,9 +16,10 @@ updated on every new release, drop rate change or image change.
 
 <br>
 
-### Why use this over any other scraper?
-Because we use literally all of the data out there, including data that would not
-be accessible without the API. To give you some idea of what's included:
+### Why use this instead of any other scraper?
+Because this gives you literally every item in Warframe, many of which can't even
+be found on the wikia. We also make sure to include every other data aspect
+that you could possibly need. To give you some idea:
 
 - Unique ingame name - (/Lotus/Weapons/Tenno/...) - Especially useful when working with worldState
 - Drop rates
@@ -31,7 +32,7 @@ And tons more item specific data. Check out [/data/json](/data/json) to get an
 idea.
 
 You can also rest assured that this repository will be maintained for as long
-as Warframe stays alive, since it is has been built to gather all the data for [Nexus-Stats](https://github.com/nexus-devs/nexus-stats).
+as Warframe stays alive, as it is has been built to provide all item data for [Nexus-Stats](https://github.com/nexus-devs/nexus-stats).
 
 <br>
 
