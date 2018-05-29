@@ -16,6 +16,25 @@ updated on every new release, drop rate change or image change.
 
 <br>
 
+### Why use this over any other scraper?
+Because we use literally all of the data out there, including data that would not
+be accessible without the API. To give you some idea of what's included:
+
+- Unique ingame name - (/Lotus/Weapons/Tenno/...) - Especially useful when working with worldState
+- Drop rates
+- Patchlogs for each item
+- Minified source images
+- Rivens
+- Whether items are tradable
+
+And tons more item specific data. Check out [/data/json](/data/json) to get an
+idea.
+
+You can also rest assured that this repository will be maintained for as long
+as Warframe stays alive, since it is has been built to gather all the data for [Nexus-Stats](https://github.com/nexus-devs/nexus-stats).
+
+<br>
+
 ### Installation
 ```
 npm install warframe-items
@@ -42,7 +61,7 @@ allows you to add your own items before our gathered ones.
 
 ### Pre-compiled data
 You can find all automatically compiled data in `/data/json`. Images are stored
-in `/data/img`.
+in `/data/img`. You can find every item's image name stored in `item.imageName`.
 
 <br>
 
