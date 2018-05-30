@@ -14,7 +14,7 @@ while : ; do
   # handle the rest.
   if [[ ! -z $(git status --porcelain) ]]; then
     gh_token=$(cat /run/secrets/warframe-items-gh-token)
-    date=`date +%Y-%m-%d`
+    date=`date "+%B %d %Y"`
 
     printf "Found new items - Pushing..."
     git config --global user.email "apps@nexus-stats.com"
