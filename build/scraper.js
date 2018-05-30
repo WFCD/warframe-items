@@ -171,6 +171,21 @@ class Scraper {
       item.isArchwing = true
     }
 
+    // Relics don't have their grade in the name for some reason
+    if (item.type === 'Relic') {
+      const grades = [
+        { id: 'Bronze', tier: 'Intact' },
+        { id: 'Silver', tier: 'Exceptional' },
+        { id: 'Gold', tier: 'Flawless' },
+        { id: 'Platinum', tier: 'Radiant' }
+      ]
+      for (let grade of grades) {
+        if (item.uniqueName.includes(grade.id)) {
+          item.name = item.name.replace('Relic', grade.tier)
+        }
+      }
+    }
+
     // Use `name` key for abilities as well.
     if (item.abilities) {
       item.abilities = item.abilities.map(a => {
@@ -314,7 +329,7 @@ class Scraper {
    * Limit items to tradable/untradable if specified.
    */
   addTradable (item, type) {
-    const tradableTypes = ['Gem', 'Fish', 'Key', 'Focus Lens']
+    const tradableTypes = ['Gem', 'Fish', 'Key', 'Focus Lens', 'Relic']
     const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
@@ -355,7 +370,7 @@ class Scraper {
         break
 
       case 'RelicArcane':
-        if (!item.name.includes('Relic')) item.category = 'Arcanes'
+        if (!item.type === 'Relic') item.category = 'Arcanes'
         else item.category = 'Relics'
         break
 
@@ -404,12 +419,12 @@ class Scraper {
     if (!dropChancesChanged) {
       if (item.components) {
         for (let component of item.components) {
-          const savedDrops = precompiled.find(i => i.name === item.name).components.find(c => c.name === component.name).drops
-          if (savedDrops) component.drops = savedDrops
+          const savedDrops = precompiled.find(i => i.name === item.name).components.find(c => c.name === component.name)
+          if (savedDrops && savedDrops.drops) component.drops = savedDrops.drops
         }
       } else {
-        const savedDrops = precompiled.find(i => i.name === item.name).drops
-        if (savedDrops) item.drops = savedDrops
+        const savedDrops = precompiled.find(i => i.name === item.name)
+        if (savedDrops && savedDrops.drops) item.drops = savedDrops.drops
       }
       return
     }
@@ -421,7 +436,9 @@ class Scraper {
         if (drops.length) component.drops = drops
       }
     } else {
-      const drops = this.findDropLocations(`${item.name}`)
+      // Last word of relic is intact/rad, etc instead of 'Relic'
+      const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name
+      const drops = this.findDropLocations(name)
       if (drops.length) item.drops = drops
     }
 
@@ -513,12 +530,13 @@ class Scraper {
     // This process takes a lot of cpu time, so we won't repeat it unless the
     // patchlog hash changed.
     if (!patchlogsChanged) {
-      const savedPatchlogs = precompiled.find(i => i.name === item.name).patchlogs
-      if (savedPatchlogs) item.patchlogs = savedPatchlogs
+      const savedPatchlogs = precompiled.find(i => i.name === item.name)
+      if (savedPatchlogs && savedPatchlogs.patchlogs) item.patchlogs = savedPatchlogs.patchlogs
       return
     }
 
-    const logs = patchlogs.getItemChanges(item)
+    const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name
+    const logs = patchlogs.getItemChanges(name)
     if (logs.length) item.patchlogs = logs
   }
 }
