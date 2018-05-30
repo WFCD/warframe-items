@@ -23,7 +23,14 @@ class Update {
 
     // Save json data
     Object.keys(items).forEach(key => {
-      all = all.concat(items[key]).sort((a, b) => a.name.localeCompare(b.name))
+      all = all.concat(items[key]).sort((a, b) => {
+        const res = a.name.localeCompare(b.name)
+        if (res === 0) {
+          return a.uniqueName.localeCompare(b.uniqueName)
+        } else {
+          return res
+        }
+      })
       fs.writeFileSync(`${__dirname}/../data/json/${key}.json`, stringify(items[key]))
     })
     fs.writeFileSync(`${__dirname}/../data/json/All.json`, stringify(all))
