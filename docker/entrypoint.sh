@@ -39,5 +39,5 @@ while : ; do
     printf "No new items.\n"
   fi
 
-  sleep 3600
+  sleep 600
 done
