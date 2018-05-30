@@ -50,7 +50,14 @@ class Scraper {
 
     // Order everything alphabetically
     for (let category of Object.keys(data)) {
-      data[category].sort((a, b) => a.name.localeCompare(b.name))
+      data[category].sort((a, b) => {
+        const res = a.name.localeCompare(b.name)
+        if (res === 0) {
+          return a.uniqueName.localeCompare(b.uniqueName)
+        } else {
+          return res
+        }
+      })
     }
     return data
   }
