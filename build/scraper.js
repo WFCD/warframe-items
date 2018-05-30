@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 const crypto = require('crypto')
 const fs = require('fs')
 const _ = require('lodash')
-const patchlogs = require('warframe-patchlogs')
+const patchlogs = require('../../warframe-patchlogs')
 const precompiled = require('../data/json/All.json')
 const exportCache = require('../data/cache/.export.json')
 
@@ -535,8 +535,11 @@ class Scraper {
       return
     }
 
-    const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name
-    const logs = patchlogs.getItemChanges(name)
+    const target = {
+      name: item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name,
+      type: item.type
+    }
+    const logs = patchlogs.getItemChanges(target)
     if (logs.length) item.patchlogs = logs
   }
 }
