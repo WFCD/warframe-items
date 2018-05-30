@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 const crypto = require('crypto')
 const fs = require('fs')
 const _ = require('lodash')
-const patchlogs = require('../../warframe-patchlogs')
+const patchlogs = require('warframe-patchlogs')
 const precompiled = require('../data/json/All.json')
 const exportCache = require('../data/cache/.export.json')
 
