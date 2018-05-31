@@ -126,7 +126,7 @@ class Scraper {
 
       this.addType(item)
       this.sanitize(item)
-      this.addImageName(item)
+      this.addImageName(item, items[i - 1])
       this.addComponents(item)
       this.addCategory(item, type)
       this.addTradable(item, type)
@@ -239,10 +239,16 @@ class Scraper {
   /**
    * Add image name for images that will be fetched outside of this scraper.
    */
-  addImageName (item) {
+  addImageName (item, previous) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation
     const ext = imageStub.split('.').slice(-1)[0] // .png, .jpg, etc
-    item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-') + `.${ext}`
+    item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').toLowerCase()
+
+    // Some items have the same name - so add their uniqueName as an identifier
+    if (previous && item.name === previous.name) {
+      item.imageName += ` - ${item.uniqueName.replace('/', '').replace(/( |\/|\*)/g, '-')}`
+    }
+    item.imageName += `.${ext}`
   }
 
   /**
