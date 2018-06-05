@@ -8,15 +8,15 @@ tc qdisc add dev eth0 root tbf rate 1mbit latency 25ms burst 10k
 
 while : ; do
   # Run update function. This will only update files if necessary.
-  npm run watchdog
+  npm run build
 
   # If files have changed, push updates to repo. From there, the ci pipeline will
   # handle the rest.
   if [[ ! -z $(git status --porcelain) ]]; then
     gh_token=$(cat /run/secrets/warframe-items-gh-token)
-    date=`date +%Y-%m-%d`
+    date=`date "+%B %d %Y"`
 
-    printf "* Found new items - Pushing..."
+    printf "Found new items - Pushing..."
     git config --global user.email "apps@nexus-stats.com"
     git config --global user.name "nexus-ci"
 
@@ -34,10 +34,10 @@ while : ; do
 
     # Push
     git push "https://nexus-ci:"$gh_token"@github.com/nexus-devs/warframe-items"
-    printf "* Changes have been pushed to git!\n"
+    printf "Changes have been pushed to git!\n"
   else
-    printf "* No new items.\n"
+    printf "No new items.\n"
   fi
 
-  sleep 3600
+  sleep 600
 done

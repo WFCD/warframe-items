@@ -7,7 +7,7 @@ RUN apk add --update --no-cache git openssh make gcc g++ python curl libpng-dev 
 # Clone repo
 RUN mkdir -p /app/warframe-items \
   && cd app \
-  && git clone https://github.com/nexus-devs/warframe-items \
+  && git clone https://github.com/WFCD/warframe-items \
   && cd warframe-items \
   && npm install
 
