@@ -10,39 +10,50 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "carrier.png",
-    "category": "Sentinels",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
       {
-        "location": "Argon Plating",
-        "type": "Mod Locations",
-        "rarity": "Common",
-        "chance": 0.37939999999999996
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 1000,
+        "tradable": false
       },
       {
-        "location": "Furor",
-        "type": "Mod Locations",
-        "rarity": "Rare",
-        "chance": 0.0737
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/CarrierSentinelBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Striker' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Venomous Clip",
-        "type": "Mod Locations",
-        "rarity": "Rare",
-        "chance": 0.0737
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 400,
+        "tradable": false
       },
       {
-        "location": "Automatic Trigger",
-        "type": "Mod Locations",
-        "rarity": "Rare",
-        "chance": 0.0201
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "itemCount": 3,
+        "tradable": false
       },
       {
-        "location": "Carrier",
-        "type": "Enemy Mod Tables",
-        "chance": null
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 1500,
+        "tradable": false
       }
     ],
+    "category": "Sentinels",
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.3.5",
@@ -369,10 +380,19 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "carrier-prime.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/PrimeCarrierSentinelBlueprint",
         "name": "Blueprint",
+        "description": "This ornate sentinel is an excellent example of late Orokin craftsmanship and styling.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso V1 Intact",
@@ -475,7 +495,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace",
         "name": "Carapace",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi N2 Intact",
@@ -554,7 +577,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum",
         "name": "Cerebrum",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 65,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith C1 Intact",
@@ -655,9 +681,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 6,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems",
         "name": "Systems",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi V1 Intact",
@@ -838,6 +874,48 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "dethcube.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/DethCubeSentinelBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Swift Deth' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 400,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 200,
+        "tradable": false
+      }
+    ],
     "category": "Sentinels",
     "tradable": false,
     "patchlogs": [
@@ -926,6 +1004,48 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "diriga.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 600,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/ArcTrapSentinelBlueprint",
+        "name": "Blueprint",
+        "description": "Diriga shocks nearby enemies, and picks off distant threats, utilizing the Vulklok sniper rifle and the 'Calculated Shot', 'Arc Coil' and 'Electro Pulse' precepts.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.",
+        "itemCount": 350,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 500,
+        "tradable": false
+      }
+    ],
     "category": "Sentinels",
     "tradable": false,
     "patchlogs": [
@@ -1006,6 +1126,48 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "djinn.png",
+    "buildPrice": 30000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Bio/InfestedSentinelWeaponBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Thumper' and 'Fatal Attraction' as default Precepts, Djinn is a combat Sentinel. Djinn also comes with a poison dart weapon.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 3500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
+        "name": "Forma",
+        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
+        "name": "Mutagen Mass",
+        "description": "This living mass can produce weaponized toxins for weaponry.",
+        "itemCount": 6,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 30000,
+        "tradable": false
+      }
+    ],
     "category": "Sentinels",
     "tradable": false,
     "patchlogs": [
@@ -1142,6 +1304,48 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "helios.png",
+    "buildPrice": 5000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Energy/HeliosSentinelBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Investigator' as its unique Precept and 'Deconstructor' as its weapon, the versatile Helios Sentinel acts as both a lethal guardian and an automatic codex scanner. Scans require an equipped Codex Scanner and an available charge.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 5000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
+        "name": "Fieldron",
+        "description": "ClanTech weaponized containment field to contain super-heated substances.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
+        "name": "Forma",
+        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+        "itemCount": 300,
+        "tradable": false
+      }
+    ],
     "category": "Sentinels",
     "tradable": false,
     "patchlogs": [
@@ -1350,10 +1554,19 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "helios-prime.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/PrimeHeliosSentinelBlueprint",
         "name": "Blueprint",
+        "description": "This knowledge hungry protector defends its master with Deconstructor Prime.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith N2 Intact",
@@ -1480,7 +1693,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCarapace",
         "name": "Carapace",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi A3 Intact",
@@ -1631,7 +1847,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCerebrum",
         "name": "Cerebrum",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi H1 Intact",
@@ -1756,9 +1975,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 6,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosSystems",
         "name": "Systems",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi N5 Intact",
@@ -1881,6 +2110,48 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "shade.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/ShadeSentinelBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Revenge' and 'Ghost' as default Precepts, Shade is well suited for stealth gameplay. Shade also comes with a burst laser pistol.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 400,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 200,
+        "tradable": false
+      }
+    ],
     "category": "Sentinels",
     "tradable": false,
     "patchlogs": [
@@ -1985,6 +2256,48 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "taxon.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/TnSentinelCrossBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Retarget' and 'Molecular Conversion' as its default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 200,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "itemCount": 200,
+        "tradable": false
+      }
+    ],
     "category": "Sentinels",
     "tradable": false,
     "patchlogs": [
@@ -2033,6 +2346,48 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "wyrm.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/WyrmSentinelBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Warrior' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 400,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 200,
+        "tradable": false
+      }
+    ],
     "category": "Sentinels",
     "tradable": false,
     "patchlogs": [
@@ -2233,10 +2588,19 @@
     "power": 100,
     "type": "Sentinel",
     "imageName": "wyrm-prime.png",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/PrimeWyrmSentinelBlueprint",
         "name": "Blueprint",
+        "description": "Both bodyguard and status symbol, the Wyrm Prime Sentinel was the last line of defense for high ranking Tenno in the Orokin Era.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi S2 Intact",
@@ -2291,7 +2655,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace",
         "name": "Carapace",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi L1 Intact",
@@ -2322,7 +2689,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum",
         "name": "Cerebrum",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith G2 Intact",
@@ -2351,9 +2721,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 6,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems",
         "name": "Systems",
+        "description": "A prime sentinel-crafting component.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso E1 Intact",

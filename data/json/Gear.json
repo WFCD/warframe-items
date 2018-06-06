@@ -32,6 +32,48 @@
     "description": "Elevates adrenaline levels to enable faster movement while increasing sensitivity to damage.",
     "type": "Gear",
     "imageName": "adrenal-stim.png",
+    "buildPrice": 10000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 1000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/NpcBuffs/SpeedBuffArmorDebuffBlueprint",
+        "name": "Blueprint",
+        "description": "Elevates adrenaline levels to enable faster movement while increasing sensitivity to damage.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 1500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Eventium",
+        "name": "Synthula",
+        "description": "Distilled fuel for stims.",
+        "itemCount": 2,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -41,6 +83,49 @@
     "description": "Charges consumed by Landing Craft Air Support.",
     "type": "Gear",
     "imageName": "air-support-charges.png",
+    "buildPrice": 4000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "alwaysAvailable": true,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/LisetAirSupportBlueprint",
+        "name": "Blueprint",
+        "description": "Charges consumed by Landing Craft Air Support.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 1200,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.",
+        "itemCount": 700,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2000,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -85,6 +170,27 @@
     "description": "This is a mildly effective antitoxin.",
     "type": "Gear",
     "imageName": "amethyst-antitoxin.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/Toxins/NightCommonAntitoxinBlueprint",
+        "name": "Blueprint",
+        "description": "This is a mildly effective antitoxin.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
+        "name": "Moonlight Threshcone",
+        "description": "This common plant can only be found at night.",
+        "itemCount": 4,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -94,6 +200,41 @@
     "description": "Deploys an ANCIENT HEALER EXIMUS unit to fight for you.",
     "type": "Gear",
     "imageName": "ancient-healer-specter.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/AncientHealerBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys an ANCIENT HEALER EXIMUS unit to fight for you.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -103,6 +244,48 @@
     "description": "Injects antiserum into Vaporizers or the user to prevent armor degradation.",
     "type": "Gear",
     "imageName": "antiserum-injector.png",
+    "buildPrice": 30000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/InfestedSyringeBlueprint",
+        "name": "Blueprint",
+        "description": "Injects antiserum into Vaporizers or the user to prevent armor degradation.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
+        "name": "Fieldron",
+        "description": "ClanTech weaponized containment field to contain super-heated substances.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/SyringeComponent",
+        "name": "Fragment",
+        "description": "A component of the Antiserum Injector",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 6000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
+        "name": "Tellurium",
+        "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.",
+        "itemCount": 2,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -138,6 +321,49 @@
     "description": "Summons an Archwing for use during free roam missions.",
     "type": "Gear",
     "imageName": "archwing-launcher.png",
+    "buildPrice": 7500,
+    "buildTime": 1800,
+    "skipBuildTimePrice": 10,
+    "alwaysAvailable": true,
+    "buildQuantity": 50,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/OpenArchwingSummonBlueprint",
+        "name": "Blueprint",
+        "description": "Summons an Archwing for use during free roam missions.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 600,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 30,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
+        "name": "Grokdrul",
+        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "itemCount": 50,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 50,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -165,6 +391,27 @@
     "description": "This is a mildly effective antitoxin.",
     "type": "Gear",
     "imageName": "beryl-antitoxin.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/Toxins/DayCommonAntitoxinBlueprint",
+        "name": "Blueprint",
+        "description": "This is a mildly effective antitoxin.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem",
+        "name": "Sunlight Threshcone",
+        "description": "This common plant can only be found during the day.",
+        "itemCount": 4,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -183,6 +430,34 @@
     "description": "Health is greatly reduced while key is equipped.",
     "type": "Gear",
     "imageName": "bleeding-dragon-key.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/HealthDebuffKeyBlueprint",
+        "name": "Blueprint",
+        "description": "Health is greatly reduced while key is equipped.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 250,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
+        "name": "Void Traces",
+        "description": "A substance used to increase the power within Relics.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -192,6 +467,48 @@
     "description": "Hardens skin, fortifying against damage while restricting movement.",
     "type": "Gear",
     "imageName": "calcifin-stim.png",
+    "buildPrice": 10000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 1500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/NpcBuffs/ArmorBuffSpeedDebuffBlueprint",
+        "name": "Blueprint",
+        "description": "Hardens skin, fortifying against damage while restricting movement.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 1000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Eventium",
+        "name": "Synthula",
+        "description": "Distilled fuel for stims.",
+        "itemCount": 2,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -210,6 +527,41 @@
     "description": "Deploys a CHARGER EXIMUS unit to fight for you.",
     "type": "Gear",
     "imageName": "charger-specter.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/ChargerBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a CHARGER EXIMUS unit to fight for you.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -219,6 +571,34 @@
     "description": "Single-use device used for auto-hacking the lockdown control panels.",
     "type": "Gear",
     "imageName": "cipher.png",
+    "buildPrice": 100,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/CipherBlueprint",
+        "name": "Blueprint",
+        "description": "Single-use device used for auto-hacking the lockdown control panels.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 400,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 400,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -358,6 +738,34 @@
     "description": "This is a moderately effective antitoxin.",
     "type": "Gear",
     "imageName": "citrine-antitoxin.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/Toxins/DayUnCommonAntitoxinBlueprint",
+        "name": "Blueprint",
+        "description": "This is a moderately effective antitoxin.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem",
+        "name": "Sunlight Dragonlily",
+        "description": "This uncommon plant can only be found during the day.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem",
+        "name": "Sunlight Threshcone",
+        "description": "This common plant can only be found during the day.",
+        "itemCount": 2,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -367,100 +775,135 @@
     "description": "Deploys a clone of Clem to fight for you.",
     "type": "Gear",
     "imageName": "clem-clone.png",
-    "category": "Gear",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
       {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Recipes/Components/ClemBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a clone of Clem to fight for you.",
+        "itemCount": 1,
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Help Clem Retrieve The Relic",
+            "type": "Key Rewards",
+            "rarity": "Common",
+            "chance": 1
+          }
+        ]
       },
       {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
       },
       {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
       },
       {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Help Clem Retrieve The Relic",
-        "type": "Key Rewards",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
       }
-    ]
+    ],
+    "category": "Gear",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/ReviveBuff",
@@ -468,6 +911,48 @@
     "description": "Revives a target that is bleeding out, and provides a bonus revive to any allies in range.",
     "type": "Gear",
     "imageName": "clotra-stim.png",
+    "buildPrice": 10000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/NpcBuffs/ReviveBuffBlueprint",
+        "name": "Blueprint",
+        "description": "Revives a target that is bleeding out, and provides a bonus revive to any allies in range.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "itemCount": 1500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 1000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Eventium",
+        "name": "Synthula",
+        "description": "Distilled fuel for stims.",
+        "itemCount": 2,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -568,6 +1053,41 @@
     "description": "Deploys a CORRUPTED BOMBARD unit to fight for you.",
     "type": "Gear",
     "imageName": "corrupted-bombard-specter.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/CorruptedBombardBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a CORRUPTED BOMBARD unit to fight for you.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -577,6 +1097,41 @@
     "description": "Deploys a CORRUPTED LANCER EXIMUS unit to fight for you.",
     "type": "Gear",
     "imageName": "corrupted-lancer-specter.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/CorruptedLancerBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a CORRUPTED LANCER EXIMUS unit to fight for you.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -586,87 +1141,129 @@
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Cosmic Specter Regiment to assist in Solar Rail defense.",
     "type": "Gear",
     "imageName": "cosmic-specter.png",
-    "category": "Gear",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 60000,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 20,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
       {
-        "location": "Eris - Brugia",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Recipes/Components/PlatinumSpectreBlueprint",
+        "name": "Blueprint",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Cosmic Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 1,
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Saturn - Anthe",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Mab",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Caliban",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Triton",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Regna",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Brugia",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Ranova",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Sparga",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Naga",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Lua - Zeipel",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
-        "location": "Saturn - Anthe",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 500,
+        "tradable": false
       },
       {
-        "location": "Uranus - Caliban",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Neptune - Triton",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 5000,
+        "tradable": false
       },
       {
-        "location": "Pluto - Regna",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Uranus - Mab",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Eris - Ranova",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Eris - Sparga",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Sedna - Naga",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Lua - Zeipel",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Kuva - Fortress",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "rewards"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.",
+        "itemCount": 1000,
+        "tradable": false
       }
-    ]
+    ],
+    "category": "Gear",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Game/SpectreArmies/PlatinumSpectreArmy",
@@ -674,6 +1271,34 @@
     "description": "An army composed of cosmic-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for four conflicts.",
     "type": "Specter",
     "imageName": "cosmic-specter-regiment.png",
+    "buildPrice": 1000000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Game/SpectreArmies/PlatinumSpectreArmyBlueprint",
+        "name": "Blueprint",
+        "description": "An army composed of cosmic-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for four conflicts.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/PlatinumSpectre",
+        "name": "Cosmic Specter",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Cosmic Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 175,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/GoldSpectre",
+        "name": "Force Specter",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 75,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -683,6 +1308,48 @@
     "description": "This bait is comprised of materials that are known to attract Cuthols, a fish found only in pond hotspots during the night.",
     "type": "Fish",
     "imageName": "cuthol-bait.png",
+    "buildPrice": 2000,
+    "buildTime": 300,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Fishing/FishBaits/NightRareFishBaitBBlueprint",
+        "name": "Blueprint",
+        "description": "This bait is comprised of materials that are known to attract Cuthols, a fish found only in pond hotspots during the night.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishMeatItem",
+        "name": "Fish Meat",
+        "description": "Used as a source of food and to create bait for predatory fish.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
+        "name": "Goopolla Spleen",
+        "description": "Used in Ostron remedies to purify toxins.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
+        "name": "Maprico",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
+        "name": "Murkray Liver",
+        "description": "An ingredient used in Ostron cooking and medicines.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -692,6 +1359,34 @@
     "description": "Shields are greatly reduced while key is equipped.",
     "type": "Gear",
     "imageName": "decaying-dragon-key.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/ShieldDebuffKeyBlueprint",
+        "name": "Blueprint",
+        "description": "Shields are greatly reduced while key is equipped.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 250,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
+        "name": "Void Traces",
+        "description": "A substance used to increase the power within Relics.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -701,6 +1396,41 @@
     "description": "Sentient immunity to the Infestation is exploited with this refined phylaxis. Formulated specifically to combat Infested boils.",
     "type": "Gear",
     "imageName": "eidolon-phylaxis.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 5,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/InfestedEventIngredientBlueprint",
+        "name": "Blueprint",
+        "description": "Sentient immunity to the Infestation is exploited with this refined phylaxis. Formulated specifically to combat Infested boils.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
+        "name": "Grokdrul",
+        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 15,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
+        "name": "Nistlepod",
+        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -739,6 +1469,34 @@
     "description": "Damage is greatly reduced while key is equipped.",
     "type": "Gear",
     "imageName": "extinguished-dragon-key.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/DamageDebuffKeyBlueprint",
+        "name": "Blueprint",
+        "description": "Damage is greatly reduced while key is equipped.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 250,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
+        "name": "Void Traces",
+        "description": "A substance used to increase the power within Relics.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -758,6 +1516,34 @@
     "description": "Give unto The Void 10,000 credits.",
     "type": "Gear",
     "imageName": "faithful-void-offering.png",
+    "buildPrice": 10000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/CreditChipMediumBlueprint",
+        "name": "Blueprint",
+        "description": "Give unto The Void 10,000 credits.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -767,6 +1553,41 @@
     "description": "When activated, it disrupts a Fomorian core's Omega energy field, making it vulnerable. Also shields Tenno from Omega radiation.",
     "type": "Gear",
     "imageName": "fomorian-disruptor.png",
+    "buildPrice": 1250,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/FomorianNegatorBlueprint",
+        "name": "Blueprint",
+        "description": "When activated, it disrupts a Fomorian core's Omega energy field, making it vulnerable. Also shields Tenno from Omega radiation.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "itemCount": 300,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 3500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OmegaIsotope",
+        "name": "Omega Isotope",
+        "description": "Produced by a Fomorian’s power core, these particles only appear on or around planets where a Fomorian is present.",
+        "itemCount": 4,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -794,136 +1615,178 @@
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
     "type": "Gear",
     "imageName": "force-specter.png",
-    "category": "Gear",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 50000,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 20,
+    "buildQuantity": 3,
+    "consumeOnBuild": true,
+    "components": [
       {
-        "location": "Eris - Ranova",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 1000,
+        "tradable": false
       },
       {
-        "location": "Jupiter - Metis",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Recipes/Components/GoldSpectreBlueprint",
+        "name": "Blueprint",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 1,
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Jupiter - Metis",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Mimas",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Anthe",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Numa",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Mab",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Uranus - Caliban",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Neptune - Triton",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Pluto - Regna",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Eris - Brugia",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Eris - Ranova",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Eris - Sparga",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Sedna - Naga",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Sedna - Veles",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Europa - Eligor",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Europa - Shax",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Europa - Orias",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Lua - Zeipel",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
-        "location": "Saturn - Anthe",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 1000,
+        "tradable": false
       },
       {
-        "location": "Saturn - Numa",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.",
+        "itemCount": 1000,
+        "tradable": false
       },
       {
-        "location": "Uranus - Mab",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Uranus - Caliban",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Neptune - Triton",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Pluto - Regna",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Eris - Brugia",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Saturn - Mimas",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Eris - Sparga",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Sedna - Naga",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Sedna - Veles",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Europa - Eligor",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Europa - Shax",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Europa - Orias",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Lua - Zeipel",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Kuva - Fortress",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "rewards"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 1000,
+        "tradable": false
       }
-    ]
+    ],
+    "category": "Gear",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Game/SpectreArmies/GoldSpectreArmy",
@@ -931,6 +1794,34 @@
     "description": "An army composed of force-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for three conflicts.",
     "type": "Specter",
     "imageName": "force-specter-regiment.png",
+    "buildPrice": 750000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Game/SpectreArmies/GoldSpectreArmyBlueprint",
+        "name": "Blueprint",
+        "description": "An army composed of force-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for three conflicts.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/GoldSpectre",
+        "name": "Force Specter",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 375,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/SilverSpectre",
+        "name": "Phase Specter",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 250,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -940,6 +1831,48 @@
     "description": "Launch a bright blue flare that significantly increases Affinity Range while active.",
     "type": "Gear",
     "imageName": "fosfor-blau.png",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SynthicatorRecipes/FlareBlueBlueprint",
+        "name": "Blueprint",
+        "description": "Launch a bright blue flare that significantly increases Affinity Range while active.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
+        "name": "Goopolla Spleen",
+        "description": "Used in Ostron remedies to purify toxins.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
+        "name": "Grokdrul",
+        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishBPartItem",
+        "name": "Karkina Antenna",
+        "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
+        "name": "Maprico",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -949,6 +1882,48 @@
     "description": "Launch a bright red flare that significantly increases Affinity Range while active.",
     "type": "Gear",
     "imageName": "fosfor-rahd.png",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SynthicatorRecipes/FlareRedBlueprint",
+        "name": "Blueprint",
+        "description": "Launch a bright red flare that significantly increases Affinity Range while active.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem",
+        "name": "Charc Electroplax",
+        "description": "Harvested by the Ostron as a catalyst used in their synthetics.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
+        "name": "Maprico",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishAPartItem",
+        "name": "Sharrac Teeth",
+        "description": "These will often adorn ceremonial garb or as a reagent for synthetics.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -958,6 +1933,48 @@
     "description": "This bait is comprised of exotic materials that are known to attract the elusive Glappid, a fish found only in ocean hotspots during the night.",
     "type": "Fish",
     "imageName": "glappid-bait.png",
+    "buildPrice": 5000,
+    "buildTime": 600,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Fishing/FishBaits/NightLegendaryFishBaitBlueprint",
+        "name": "Blueprint",
+        "description": "This bait is comprised of exotic materials that are known to attract the elusive Glappid, a fish found only in ocean hotspots during the night.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
+        "name": "Cuthol Tendrils",
+        "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishMeatItem",
+        "name": "Fish Meat",
+        "description": "Used as a source of food and to create bait for predatory fish.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
+        "name": "Maprico",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
+        "name": "Norg Brain",
+        "description": "An Ostron delicacy.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -985,202 +2002,50 @@
     "description": "Instantly restores your Health to full.",
     "type": "Gear",
     "imageName": "health-restore-(large).png",
-    "category": "Gear",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
       {
-        "location": "Earth - Cervantes",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.151,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/SelfHealBlueprint",
+        "name": "Blueprint",
+        "description": "Instantly restores your Health to full.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Earth - Cervantes",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.151,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
+        "name": "Moonlight Jadeleaf",
+        "description": "This rare plant can only be found at night.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Ceres - Lex",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
+        "name": "Moonlight Threshcone",
+        "description": "This common plant can only be found at night.",
+        "itemCount": 15,
+        "tradable": false
       },
       {
-        "location": "Mercury - Elion",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem",
+        "name": "Sunlight Jadeleaf",
+        "description": "This rare plant can only be found during the day.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Earth - Mantle",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Mars - Ara",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Mars - Quirinus",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Jupiter - Ananke",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Saturn - Phoebe",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Saturn - Cassini",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Uranus - Ariel",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Uranus - Trinculo",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Neptune - Galatea",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Pluto - Hydra",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Pluto - Corb",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Venus - Venera",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Eris - Cosis",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Eris - Isos",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Sedna - Rusalka",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Europa - Abaddon",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Europa - Cryotic",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001,
-        "rotation": "rewards"
-      },
-      {
-        "location": "Europa - Cryotic",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001,
-        "rotation": "rewards"
-      },
-      {
-        "location": "Europa - Cryotic",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001,
-        "rotation": "rewards"
-      },
-      {
-        "location": "Europa - Beleth",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Void - Hepit",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Void - Ukko",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Phobos - Limtoc",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Phobos - Skyresh",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Phobos - Todd",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Lua - Copernicus",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001
-      },
-      {
-        "location": "Kuva - Fortress",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.09480000000000001,
-        "rotation": "rewards"
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem",
+        "name": "Sunlight Threshcone",
+        "description": "This common plant can only be found during the day.",
+        "itemCount": 15,
+        "tradable": false
       }
-    ]
+    ],
+    "category": "Gear",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/SelfHealSmall",
@@ -1197,6 +2062,34 @@
     "description": "Speed is greatly reduced while key is equipped.",
     "type": "Gear",
     "imageName": "hobbled-dragon-key.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/SpeedDebuffKeyBlueprint",
+        "name": "Blueprint",
+        "description": "Speed is greatly reduced while key is equipped.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 250,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
+        "name": "Void Traces",
+        "description": "A substance used to increase the power within Relics.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1206,6 +2099,34 @@
     "description": "Give unto The Void 1000 credits.",
     "type": "Gear",
     "imageName": "humble-void-offering.png",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/CreditChipSmallBlueprint",
+        "name": "Blueprint",
+        "description": "Give unto The Void 1000 credits.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1215,6 +2136,41 @@
     "description": "This refined toxin catalyst has been formulated to reinforce the Thrax Toxin and maximize damage to the Infested boil.",
     "type": "Gear",
     "imageName": "infested-catalyst.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 5,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/InfestedEventClanIngredientBlueprint",
+        "name": "Blueprint",
+        "description": "This refined toxin catalyst has been formulated to reinforce the Thrax Toxin and maximize damage to the Infested boil.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2300,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 1800,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.",
+        "itemCount": 500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -1278,6 +2234,48 @@
     "description": "This is an extremely effective antitoxin.",
     "type": "Gear",
     "imageName": "lapis-antitoxin.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/Toxins/RareAntitoxinBlueprint",
+        "name": "Blueprint",
+        "description": "This is an extremely effective antitoxin.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
+        "name": "Moonlight Dragonlily",
+        "description": "This uncommon plant can only be found at night.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
+        "name": "Moonlight Jadeleaf",
+        "description": "This rare plant can only be found at night.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem",
+        "name": "Sunlight Dragonlily",
+        "description": "This uncommon plant can only be found during the day.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem",
+        "name": "Sunlight Jadeleaf",
+        "description": "This rare plant can only be found during the day.",
+        "itemCount": 1,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1296,6 +2294,34 @@
     "description": "Dyes the waters with a compound that sticks to fish passing through it, making them easier to see from the shore.",
     "type": "Gear",
     "imageName": "luminos-dye.png",
+    "buildPrice": 5000,
+    "buildTime": 300,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/Boosters/AnglerVisionBlueprint",
+        "name": "Blueprint",
+        "description": "Dyes the waters with a compound that sticks to fish passing through it, making them easier to see from the shore.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1314,6 +2340,41 @@
     "description": "Deploys a MOA EXIMUS unit to fight for you.",
     "type": "Gear",
     "imageName": "moa-specter.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/MoaBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a MOA EXIMUS unit to fight for you.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1323,6 +2384,48 @@
     "description": "This bait is comprised of materials that are known to attract Murkrays, a fish found only in ocean hotspots during both day and night.",
     "type": "Fish",
     "imageName": "murkray-bait.png",
+    "buildPrice": 2000,
+    "buildTime": 300,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Fishing/FishBaits/BothRareFishBaitABlueprint",
+        "name": "Blueprint",
+        "description": "This bait is comprised of materials that are known to attract Murkrays, a fish found only in ocean hotspots during both day and night.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishMeatItem",
+        "name": "Fish Meat",
+        "description": "Used as a source of food and to create bait for predatory fish.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
+        "name": "Goopolla Spleen",
+        "description": "Used in Ostron remedies to purify toxins.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishBPartItem",
+        "name": "Mortus Horn",
+        "description": "The horn of a Mortus Lungfish is ground down into a powder and used by the Ostrons in herbal remedies.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem",
+        "name": "Tralok Eyes",
+        "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -1332,6 +2435,48 @@
     "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
     "type": "Gear",
     "imageName": "nightfall-apothic.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/TitaniaQuest/SpecterSummonKnaveLokiBlueprint",
+        "name": "Blueprint",
+        "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenCobraLotusPlantItem",
+        "name": "Dusklight Sarracenia",
+        "description": "This robust, carnivorous plant has adapted to conditions in polluted waters.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
+        "name": "Moonlight Dragonlily",
+        "description": "This uncommon plant can only be found at night.",
+        "itemCount": 6,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem",
+        "name": "Sunlight Threshcone",
+        "description": "This common plant can only be found during the day.",
+        "itemCount": 12,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1341,6 +2486,48 @@
     "description": "This bait is comprised of materials that are known to attract Norg, a fish found only in lake hotspots during the night.",
     "type": "Fish",
     "imageName": "norg-bait.png",
+    "buildPrice": 2000,
+    "buildTime": 300,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Fishing/FishBaits/NightRareFishBaitABlueprint",
+        "name": "Blueprint",
+        "description": "This bait is comprised of materials that are known to attract Norg, a fish found only in lake hotspots during the night.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishMeatItem",
+        "name": "Fish Meat",
+        "description": "Used as a source of food and to create bait for predatory fish.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishBPartItem",
+        "name": "Karkina Antenna",
+        "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
+        "name": "Maprico",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishAPartItem",
+        "name": "Sharrac Teeth",
+        "description": "These will often adorn ceremonial garb or as a reagent for synthetics.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -1566,6 +2753,34 @@
     "description": "Give unto The Void a generous 100,000 credits.",
     "type": "Gear",
     "imageName": "passionate-void-offering.png",
+    "buildPrice": 100000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/CreditChipLargeBlueprint",
+        "name": "Blueprint",
+        "description": "Give unto The Void a generous 100,000 credits.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1575,6 +2790,34 @@
     "description": "This bait attracts fish that are active during the day.",
     "type": "Fish",
     "imageName": "peppered-bait.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Fishing/FishBaits/GenericFishBaitBlueprint",
+        "name": "Blueprint",
+        "description": "This bait attracts fish that are active during the day.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishMeatItem",
+        "name": "Fish Meat",
+        "description": "Used as a source of food and to create bait for predatory fish.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
+        "name": "Nistlepod",
+        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "itemCount": 20,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true,
     "patchlogs": [
@@ -1594,6 +2837,34 @@
     "description": "A compound that relaxes nearby fish.",
     "type": "Gear",
     "imageName": "pharoma.png",
+    "buildPrice": 5000,
+    "buildTime": 300,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/Boosters/SoftTouchBlueprint",
+        "name": "Blueprint",
+        "description": "A compound that relaxes nearby fish.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -1613,192 +2884,234 @@
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
     "type": "Gear",
     "imageName": "phase-specter.png",
-    "category": "Gear",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 30000,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 20,
+    "buildQuantity": 5,
+    "consumeOnBuild": true,
+    "components": [
       {
-        "location": "Ceres - Nuovo",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 1000,
+        "tradable": false
       },
       {
-        "location": "Mercury - Caloris",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Recipes/Components/SilverSpectreBlueprint",
+        "name": "Blueprint",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 1,
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Mercury - Caloris",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Linea",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Pacific",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Martialis",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Metis",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Mimas",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Anthe",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Saturn - Numa",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Uranus - Mab",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Uranus - Caliban",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Neptune - Triton",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Pluto - Regna",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Ceres - Olla",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Nuovo",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Brugia",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Eris - Ranova",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Eris - Sparga",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Sedna - Jengu",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Naga",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Sedna - Veles",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Europa - Eligor",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Europa - Shax",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Europa - Orias",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Phobos - Monolith",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "C"
+          },
+          {
+            "location": "Lua - Zeipel",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
-        "location": "Earth - Pacific",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 5000,
+        "tradable": false
       },
       {
-        "location": "Mars - Martialis",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 750,
+        "tradable": false
       },
       {
-        "location": "Jupiter - Metis",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Saturn - Mimas",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Saturn - Anthe",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Saturn - Numa",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Uranus - Mab",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Uranus - Caliban",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Neptune - Triton",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Pluto - Regna",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Ceres - Olla",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Venus - Linea",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Eris - Brugia",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Eris - Ranova",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Eris - Sparga",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Sedna - Jengu",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Sedna - Naga",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Sedna - Veles",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Europa - Eligor",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Europa - Shax",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Europa - Orias",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Phobos - Monolith",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "C"
-      },
-      {
-        "location": "Lua - Zeipel",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Kuva - Fortress",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "rewards"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 5000,
+        "tradable": false
       }
-    ]
+    ],
+    "category": "Gear",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Game/SpectreArmies/SilverSpectreArmy",
@@ -1806,6 +3119,34 @@
     "description": "An army composed of phase-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for two conflicts.",
     "type": "Specter",
     "imageName": "phase-specter-regiment.png",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Game/SpectreArmies/SilverSpectreArmyBlueprint",
+        "name": "Blueprint",
+        "description": "An army composed of phase-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for two conflicts.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/SilverSpectre",
+        "name": "Phase Specter",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 625,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/BronzeSpectre",
+        "name": "Vapor Specter",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 250,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1815,46 +3156,88 @@
     "description": "Creates 50x Pherliac Pods that releases powerful pheromones to attract the Infested.",
     "type": "Gear",
     "imageName": "pherliac-pods.png",
-    "category": "Gear",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
       {
-        "location": "Juggernaut 10.00 10.00",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Recipes/Components/InfestedBaitBallBlueprint",
+        "name": "Blueprint",
+        "description": "Creates 50x Pherliac Pods that releases powerful pheromones to attract the Infested.",
+        "itemCount": 1,
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Juggernaut 10.00 10.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Juggernaut 10.00 10.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Juggernaut Behemoth 10.00 10.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Juggernaut Behemoth 10.00 10.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Jack O'Naut 10.00 10.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Jack O'Naut 10.00 10.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          }
+        ]
       },
       {
-        "location": "Juggernaut 10.00 10.00",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartC",
+        "name": "Chitinous Husk",
+        "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Juggernaut Behemoth 10.00 10.00",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartB",
+        "name": "Infected Palpators",
+        "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Juggernaut Behemoth 10.00 10.00",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartA",
+        "name": "Pulsating Tubercles",
+        "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
-        "location": "Jack O'Naut 10.00 10.00",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Jack O'Naut 10.00 10.00",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
+        "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartD",
+        "name": "Severed Bile Sac",
+        "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
+    "category": "Gear",
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Shrine of the Eidolon: Update 22.17.0 + 22.17.0.1",
@@ -1881,6 +3264,34 @@
     "description": "Creates 50x Potent Pherliac Pods that releases powerful pheromones to attract the Infested.",
     "type": "Gear",
     "imageName": "potent-pherliac-pods.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/InfestedIrradiatedBaitBallBlueprint",
+        "name": "Blueprint",
+        "description": "Creates 50x Potent Pherliac Pods that releases powerful pheromones to attract the Infested.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/InfestedBaitBall",
+        "name": "Pherliac Pods",
+        "description": "Creates 50x Pherliac Pods that releases powerful pheromones to attract the Infested.",
+        "itemCount": 1,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1890,6 +3301,41 @@
     "description": "Used to bypass security systems that protect the Razorback's holding cell.",
     "type": "Gear",
     "imageName": "razorback-cipher.png",
+    "buildPrice": 1250,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/RazorbackCipherBlueprint",
+        "name": "Blueprint",
+        "description": "Used to bypass security systems that protect the Razorback's holding cell.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/RazorbackCipherPart",
+        "name": "Cryptographic Alu",
+        "description": "Excess circuitry disposed of during the Razorback manufacturing process, these components only appear in the vicinity of high level outer-orbit Corpus facilities after a Razorback Armada has been launched.",
+        "itemCount": 4,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 1500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
@@ -1909,6 +3355,48 @@
     "description": "Coats the target in a film that refracts light, allowing undetected movement.",
     "type": "Gear",
     "imageName": "refract-stim.png",
+    "buildPrice": 10000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/NpcBuffs/CloakingBuffBlueprint",
+        "name": "Blueprint",
+        "description": "Coats the target in a film that refracts light, allowing undetected movement.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "itemCount": 1000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 1500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Eventium",
+        "name": "Synthula",
+        "description": "Distilled fuel for stims.",
+        "itemCount": 2,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1927,6 +3415,41 @@
     "description": "Deploys a ROLLER EXIMUS unit to fight for you.",
     "type": "Gear",
     "imageName": "roller-specter.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/RollerBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a ROLLER EXIMUS unit to fight for you.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -1972,6 +3495,41 @@
     "description": "Deploys a SHIELD OSPREY EXIMUS unit to fight for you.",
     "type": "Gear",
     "imageName": "shield-osprey-specter.png",
+    "buildPrice": 7500,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/ShieldDroneBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a SHIELD OSPREY EXIMUS unit to fight for you.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2291,6 +3849,34 @@
     "description": "Restores Ammo to all squad members. Ammo per pulse: 110 Rifle, 60 Pistol, 50 Shotgun, 30 Sniper every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-ammo-restore-(large).png",
+    "buildPrice": 9000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/SyndicateTeamAmmoTenPackBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Ammo to all squad members. Ammo per pulse: 110 Rifle, 60 Pistol, 50 Shotgun, 30 Sniper every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 2500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 300,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2300,6 +3886,34 @@
     "description": "Restores Ammo to all squad members. Ammo per pulse: 80 Rifle, 45 Pistol, 35 Shotgun, 20 Sniper every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-ammo-restore-(medium).png",
+    "buildPrice": 4000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Chemical/ClanTeamAmmoBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Ammo to all squad members. Ammo per pulse: 80 Rifle, 45 Pistol, 35 Shotgun, 20 Sniper every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 600,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 600,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2318,6 +3932,34 @@
     "description": "Restores Ammo to all squad members. Ammo per pulse: 30 Rifle, 15 Pistol, 12 Shotgun, 5 Sniper every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-ammo-restore-(small).png",
+    "buildPrice": 36000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 50,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/HundredTeamAmmoTotemBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Ammo to all squad members. Ammo per pulse: 30 Rifle, 15 Pistol, 12 Shotgun, 5 Sniper every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 7200,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 900,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2327,6 +3969,34 @@
     "description": "Restores Energy to all squad members. Pulses 100 Energy every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-energy-restore-(large).png",
+    "buildPrice": 9000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/SyndicateTeamEnergyTenPackBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Energy to all squad members. Pulses 100 Energy every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 3000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2336,6 +4006,34 @@
     "description": "Restores Energy to all squad members. Pulses 50 Energy every 5s for 20s.",
     "type": "Gear",
     "imageName": "squad-energy-restore-(medium).png",
+    "buildPrice": 4000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 150,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Energy/ClanTeamEnergyBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Energy to all squad members. Pulses 50 Energy every 5s for 20s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 600,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2345,6 +4043,34 @@
     "description": "Restores Energy to all squad members. Pulses 25 Energy every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-energy-restore-(small).png",
+    "buildPrice": 3600,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 50,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/HundredTeamEnergyTotemBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Energy to all squad members. Pulses 25 Energy every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 9000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 900,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2354,6 +4080,34 @@
     "description": "Restores Health to all squad members. Pulses 300 Health every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-health-restore-(large).png",
+    "buildPrice": 9000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/SyndicateTeamHealTenPackBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Health to all squad members. Pulses 300 Health every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 600,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 4000,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2363,6 +4117,34 @@
     "description": "Restores Health to all squad members. Pulses 100 Health every 5s for 20s.",
     "type": "Gear",
     "imageName": "squad-health-restore-(medium).png",
+    "buildPrice": 4000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Bio/ClanTeamHealBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Health to all squad members. Pulses 100 Health every 5s for 20s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 500,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 600,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2381,6 +4163,34 @@
     "description": "Restores Health to all squad members. Pulses 30 Health every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-health-restore-(small).png",
+    "buildPrice": 36000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 50,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/HundredTeamHealTotemBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Health to all squad members. Pulses 30 Health every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 108000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "itemCount": 1800,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2390,6 +4200,34 @@
     "description": "Restores Shields to all squad members. Pulses 300 Shield every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-shield-restore-(large).png",
+    "buildPrice": 9000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 1000,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/SyndicateTeamShieldTenPackBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Shields to all squad members. Pulses 300 Shield every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 2500,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2399,6 +4237,34 @@
     "description": "Restores Shields to all squad members. Pulses 100 Shield every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-shield-restore-(medium).png",
+    "buildPrice": 4000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "itemCount": 150,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Energy/ClanTeamShieldBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Shields to all squad members. Pulses 100 Shield every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 600,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2408,6 +4274,27 @@
     "description": "Restores Shields to all squad members. Pulses 35 Shield every 7.5s for 30s.",
     "type": "Gear",
     "imageName": "squad-shield-restore-(small).png",
+    "buildPrice": 36000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 50,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/HundredTeamShieldTotemBlueprint",
+        "name": "Blueprint",
+        "description": "Restores Shields to all squad members. Pulses 35 Shield every 7.5s for 30s.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 14400,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2444,6 +4331,48 @@
     "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
     "type": "Gear",
     "imageName": "sunrise-apothic.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/TitaniaQuest/SpecterSummonFeyarchOberonBlueprint",
+        "name": "Blueprint",
+        "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/WildGingerBPlantItem",
+        "name": "Frostleaf",
+        "description": "This resilient plant provides a natural food source in frigid areas of the Origin system.",
+        "itemCount": 8,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem",
+        "name": "Sunlight Jadeleaf",
+        "description": "This rare plant can only be found during the day.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/MossGroundCoverAPlantItem",
+        "name": "Vestan Moss",
+        "description": "One of the few known plant species able to thrive on asteroids in deep space.",
+        "itemCount": 25,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2568,6 +4497,34 @@
     "description": "This is a moderately effective antitoxin.",
     "type": "Gear",
     "imageName": "topaz-antitoxin.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/Toxins/NightUnCommonAntitoxinBlueprint",
+        "name": "Blueprint",
+        "description": "This is a moderately effective antitoxin.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
+        "name": "Moonlight Dragonlily",
+        "description": "This uncommon plant can only be found at night.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
+        "name": "Moonlight Threshcone",
+        "description": "This common plant can only be found at night.",
+        "itemCount": 2,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2577,6 +4534,48 @@
     "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
     "type": "Gear",
     "imageName": "twilight-apothic.png",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/TitaniaQuest/SpecterSummonOrphidSarynBlueprint",
+        "name": "Blueprint",
+        "description": "Creates an organic compound composed of rare plant species. Effects unknown.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenPitcherPlantItem",
+        "name": "Lunar Pitcher",
+        "description": "This carnivorous plant can be found growing in the wilderness on Lua.",
+        "itemCount": 6,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
+        "name": "Moonlight Jadeleaf",
+        "description": "This rare plant can only be found at night.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GftPlantRuksClawMaturePlantItem",
+        "name": "Ruk'S Claw",
+        "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments.",
+        "itemCount": 6,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2586,6 +4585,48 @@
     "description": "This bait attracts predatory fish that are active in either day or night.",
     "type": "Fish",
     "imageName": "twilight-bait.png",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Fishing/FishBaits/BothUncommonFishBaitBlueprint",
+        "name": "Blueprint",
+        "description": "This bait attracts predatory fish that are active in either day or night.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishMeatItem",
+        "name": "Fish Meat",
+        "description": "Used as a source of food and to create bait for predatory fish.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
+        "name": "Maprico",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
+        "name": "Nistlepod",
+        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -2595,115 +4636,143 @@
     "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
     "type": "Gear",
     "imageName": "vapor-specter.png",
-    "category": "Gear",
-    "tradable": false,
-    "drops": [
+    "buildPrice": 15000,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 20,
+    "buildQuantity": 10,
+    "consumeOnBuild": true,
+    "components": [
       {
-        "location": "Ceres - Olla",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
+        "uniqueName": "/Lotus/Types/Recipes/Components/BronzeSpectreBlueprint",
+        "name": "Blueprint",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 1,
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Mercury - Caloris",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Venus - Linea",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Earth - Pacific",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Mars - Martialis",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Jupiter - Metis",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Saturn - Mimas",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Saturn - Numa",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Ceres - Olla",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Ceres - Nuovo",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Sedna - Jengu",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          },
+          {
+            "location": "Sedna - Veles",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Europa - Eligor",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Europa - Shax",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Europa - Orias",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "A"
+          },
+          {
+            "location": "Phobos - Monolith",
+            "type": "Mission Rewards",
+            "rarity": "Common",
+            "chance": 1,
+            "rotation": "B"
+          }
+        ]
       },
       {
-        "location": "Mercury - Caloris",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.",
+        "itemCount": 5000,
+        "tradable": false
       },
       {
-        "location": "Earth - Pacific",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Mars - Martialis",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Jupiter - Metis",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Saturn - Mimas",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Saturn - Numa",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Venus - Linea",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Ceres - Nuovo",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Sedna - Jengu",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
-      },
-      {
-        "location": "Sedna - Veles",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Europa - Eligor",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Europa - Shax",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Europa - Orias",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "A"
-      },
-      {
-        "location": "Phobos - Monolith",
-        "type": "Mission Rewards",
-        "rarity": "Common",
-        "chance": 1,
-        "rotation": "B"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.",
+        "itemCount": 7500,
+        "tradable": false
       }
     ],
+    "category": "Gear",
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Specters of the Rail: Hotfix 4",
@@ -2721,6 +4790,27 @@
     "description": "An army composed of vapor-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for one conflict.",
     "type": "Specter",
     "imageName": "vapor-specter-regiment.png",
+    "buildPrice": 250000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Game/SpectreArmies/BronzeSpectreArmyBlueprint",
+        "name": "Blueprint",
+        "description": "An army composed of vapor-level Specter clones to be used in defense of the clan's Solar Rail. This Specter army will persist for one conflict.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/BronzeSpectre",
+        "name": "Vapor Specter",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
+        "itemCount": 1250,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -2730,6 +4820,48 @@
     "description": "This is an extremely effective antitoxin.",
     "type": "Gear",
     "imageName": "vermillion-antitoxin.png",
+    "buildPrice": 2000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/Toxins/SoloRareAntitoxinBlueprint",
+        "name": "Blueprint",
+        "description": "This is an extremely effective antitoxin.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
+        "name": "Moonlight Dragonlily",
+        "description": "This uncommon plant can only be found at night.",
+        "itemCount": 4,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
+        "name": "Moonlight Jadeleaf",
+        "description": "This rare plant can only be found at night.",
+        "itemCount": 4,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem",
+        "name": "Sunlight Dragonlily",
+        "description": "This uncommon plant can only be found during the day.",
+        "itemCount": 4,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem",
+        "name": "Sunlight Jadeleaf",
+        "description": "This rare plant can only be found during the day.",
+        "itemCount": 4,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },

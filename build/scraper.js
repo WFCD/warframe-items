@@ -12,11 +12,14 @@ process.on('unhandledRejection', err => {
   process.exit()
 })
 
-// Capitalizе each word. No idea why this isn't a js standard yet.
+// Helper functions for messy parsing to make code less messy.
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+const sanitize = (str) => str.replace(/\n/g, '').replace(/\\r\\r/g, '\\n')
+const get = async (url) => JSON.parse(sanitize(await request(url)))
 
-// We'll get these in the fetch function
-let resourceExports, dropChances, dropChancesChanged, patchlogsChanged, manifest
+// We'll get these later before processing items as they're required for item
+// attributes.
+let dropChances, dropChancesChanged, patchlogsChanged, manifest
 let ducats = []
 
 class Scraper {
@@ -34,6 +37,7 @@ class Scraper {
       'http://content.warframe.com/MobileExport/Manifest/ExportRelicArcane.json',
       'http://content.warframe.com/MobileExport/Manifest/ExportWarframes.json'
     ]
+    this.data = []
   }
 
   /**
@@ -41,6 +45,9 @@ class Scraper {
    */
   async fetchAll () {
     let data = {}
+
+    await this.fetchEndpoints()
+    await this.fetchAdditional()
 
     await Promise.all(this.endpoints.map(async e => {
       const type = e.split('/').slice(-1)[0].replace('Export', '').replace('.json', '')
@@ -68,13 +75,24 @@ class Scraper {
   async fetch (type) {
     console.log(`Fetching ${type}`)
     const url = this.endpoints.find(e => e.includes(type))
-    const res = await request(url)
-    const sanitized = res.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
-    const items = JSON.parse(sanitized)[`Export${type}`]
-    await this.fetchAdditional()
+    const items = (await get(url))[`Export${type}`]
 
     console.log(`Fetched data for ${type}, processing...`)
     return this.filter(items, type, new Date())
+  }
+
+  /**
+   * Fetch item data for each endpoint beforehand. We'll need them for adding
+   * certain item attributes.
+   */
+  async fetchEndpoints () {
+    const recipes = 'http://content.warframe.com/MobileExport/Manifest/ExportRecipes.json'
+
+    for (let endpoint of this.endpoints.concat(recipes)) {
+      const type = endpoint.split('/').slice(-1)[0].replace('.json', '')
+      const data = (await get(endpoint))[type]
+      this.data.push({ type, data })
+    }
   }
 
   /**
@@ -82,10 +100,8 @@ class Scraper {
    * etc
    */
   async fetchAdditional () {
-    const Manifest = await request('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')
-    manifest = JSON.parse(Manifest).Manifest
-    dropChances = JSON.parse(await request('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json'))
-    resourceExports = await request('http://content.warframe.com/MobileExport/Manifest/ExportResources.json')
+    manifest = (await get('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')).Manifest
+    dropChances = await get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json')
     const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
 
@@ -127,7 +143,7 @@ class Scraper {
       this.addType(item)
       this.sanitize(item)
       this.addImageName(item, items[i - 1])
-      this.addComponents(item)
+      this.addComponents(item, type)
       this.addCategory(item, type)
       this.addTradable(item, type)
       this.addDropRate(item)
@@ -145,8 +161,8 @@ class Scraper {
   }
 
   /**
-   * Delete item components that are separate from their parent. We're hard
-   * working to unite families here at nexus :^)
+   * Delete item components that are separate from their parent. We'll add them
+   * to the parent in `this.addComponents`.
    */
   removeComponents (items) {
     const result = []
@@ -278,49 +294,62 @@ class Scraper {
    * so we can just look for items with /Lotus/Types/Recipes/* there and match
    * them with the parents.
    */
-  addComponents (item) {
-    const sanitized = resourceExports.replace(/\n/g, '').replace(/\\r\\r/g, '\\n') // What the fuck DE
-    const resources = JSON.parse(sanitized).ExportResources
-    const keywords = ['prime', 'vandal', 'wraith']
+  addComponents (item, type) {
+    const components = []
+    const recipes = this.data.find(d => d.type === 'ExportRecipes').data
 
-    item.components = resources.filter(r => {
-      const resourceName = r.name.toLowerCase()
-      const itemName = item.name.toLowerCase()
+    // Add blueprint
+    for (let recipe of recipes) {
+      if (recipe.resultType === item.uniqueName) {
+        const uniqueName = recipe.uniqueName // spaghett
 
-      if (!r.uniqueName.includes('/Recipes')) {
-        return false
-      }
+        // Add actual components
+        for (const ingredient of recipe.ingredients) {
+          let component
 
-      // Don't mix up prime/vandal/wraith with normal variants.
-      for (let keyword of keywords) {
-        if (resourceName.includes(keyword) && !itemName.includes(keyword)) {
-          return false
+          for (let endpoint of this.data) {
+            const full = endpoint.data.find(r => r.uniqueName === ingredient.ItemType)
+            component = full ? Object.assign({}, full) : null
+            if (component) break
+          }
+          if (!component) continue
+          component.itemCount = ingredient.ItemCount
+          components.push(component)
         }
-      }
 
-      // Remove item name from resource name (this should leave us with the
-      // component name).
-      if (resourceName.startsWith(itemName)) {
-        return true
-      }
-    })
+        // Add blueprint keys to parent (includes build time, price, etc), but
+        // delete unnecessary or duplicate keys
+        delete recipe.ingredients
+        delete recipe.secretIngredients
+        delete recipe.uniqueName
+        delete recipe.resultType
+        delete recipe.codexSecret
+        recipe.buildQuantity = recipe.num // Probably hard to understand otherwise
+        recipe.consumeOnBuild = recipe.consumeOnUse
+        delete recipe.num
+        delete recipe.consumeOnUse
+        item = Object.assign(item, recipe)
 
-    // Delete components key if array is empty
-    if (!item.components.length) {
-      delete item.components
+        components.push({
+          uniqueName,
+          name: 'Blueprint',
+          description: item.description,
+          itemCount: 1
+        })
+        break
+      }
     }
 
-    // Otherwise, clean up component object as it currently holds the entire
-    // original component item.
-    else {
-      // Add Blueprint. For some reason it's not present in resources.json
-      item.components.push({ name: 'Blueprint' })
+    // Get stuff into a prettier shape
+    if (components.length) {
+      item.components = components
 
       for (let component of item.components) {
+        if (!component.name) console.log(component)
         component.name = title(component.name).replace(item.name + ' ', '')
         this.sanitize(component)
-        delete component.description
         this.addDucats(item, component)
+        this.addTradable(component, type)
       }
       item.components.sort((a, b) => a.name.localeCompare(b.name))
     }
@@ -347,7 +376,7 @@ class Scraper {
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
     const notFiltered = !untradableTypes.includes(item.type) && !item.name.match(untradableRegex)
-    const isTradable = type === 'Upgrades' || (item.name.match(tradableRegex) && notFiltered) || (tradableTypes.includes(item.type) && notFiltered)
+    const isTradable = type === 'Upgrades' || (item.uniqueName.match(tradableRegex) && notFiltered) || (tradableTypes.includes(item.type) && notFiltered)
 
     item.tradable = isTradable
   }
@@ -432,7 +461,9 @@ class Scraper {
     if (!dropChancesChanged) {
       if (item.components) {
         for (let component of item.components) {
-          const savedDrops = precompiled.find(i => i.name === item.name).components.find(c => c.name === component.name)
+          let savedDrops
+          const components = precompiled.find(i => i.name === item.name).components
+          if (components) savedDrops = components.find(c => c.name === component.name)
           if (savedDrops && savedDrops.drops) component.drops = savedDrops.drops
         }
       } else {

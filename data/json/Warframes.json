@@ -28,13 +28,25 @@
     ],
     "type": "Warframe",
     "imageName": "ash.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshBlueprint",
+        "name": "Blueprint",
+        "description": "Ash is great for players looking for a stealthier approach to combat. Lethal abilities are complemented by powers of distraction.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Ash Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Grineer Manic 33.00 33.00",
@@ -53,6 +65,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Ash Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Grineer Manic 33.00 33.00",
@@ -69,8 +84,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Ash Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Grineer Manic 33.00 33.00",
@@ -953,10 +978,19 @@
     ],
     "type": "Warframe",
     "imageName": "ash-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Distraction and subterfuge become lethal weapons with Ash Prime. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith S3 Intact",
@@ -1035,7 +1069,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Ash Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi B1 Intact",
@@ -1114,7 +1151,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Ash Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi N2 Intact",
@@ -1239,9 +1279,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Ash Prime Warframe.",
+        "itemCount": 1,
         "ducats": 65,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi N1 Intact",
@@ -2160,13 +2210,25 @@
     ],
     "type": "Warframe",
     "imageName": "atlas.png",
+    "buildPrice": 30000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerBlueprint",
+        "name": "Blueprint",
+        "description": "Titan of stone, lord of the earthly elementals.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Atlas Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Jordas Golem Assassinate",
@@ -2179,6 +2241,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Atlas Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Jordas Golem Assassinate",
@@ -2189,8 +2254,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Atlas Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Jordas Golem Assassinate",
@@ -2531,21 +2606,46 @@
     ],
     "type": "Warframe",
     "imageName": "banshee.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeBlueprint",
+        "name": "Blueprint",
+        "description": "Using sonic attacks and acoustic target detection, Banshee is well suited for stealth gameplay and is capable of filling both attack and support roles.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Banshee Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Banshee Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Banshee Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -3190,10 +3290,19 @@
     ],
     "type": "Warframe",
     "imageName": "banshee-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeBlueprint",
         "name": "Blueprint",
+        "description": "Banshee Prime assails her foes by manipulating sonic forces to deadly effect. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso T2 Intact",
@@ -3296,7 +3405,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Banshee Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo B1 Intact",
@@ -3351,7 +3463,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Banshee Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso S4 Intact",
@@ -3404,9 +3519,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Banshee Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi B1 Intact",
@@ -4125,21 +4250,46 @@
     ],
     "type": "Warframe",
     "imageName": "chroma.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaBlueprint",
+        "name": "Blueprint",
+        "description": "A master of the deadly elements, Chroma can alter his damage output by changing his energy color.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Chroma Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Chroma Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Chroma Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent",
+        "name": "Volt Neuroptics",
+        "description": "Neuroptics component of the Volt Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -4880,13 +5030,25 @@
     ],
     "type": "Warframe",
     "imageName": "ember.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberBlueprint",
+        "name": "Blueprint",
+        "description": "Ember is a nightmare for light-armored targets. Ember can super-heat the air which opens up surprising crowd-control possibilities.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Ember Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Saturn - Tethys",
@@ -4899,6 +5061,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Ember Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Saturn - Tethys",
@@ -4909,8 +5074,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Ember Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Saturn - Tethys",
@@ -5699,10 +5874,19 @@
     ],
     "type": "Warframe",
     "imageName": "ember-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Ember Prime offers the same potential for wanton destruction as Ember but provides unique mod polarities, allowing for greater customization.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi E1 Intact",
@@ -5781,7 +5965,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Ember Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso F2 Intact",
@@ -5836,7 +6023,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Ember Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso F3 Intact",
@@ -5889,9 +6079,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Ember Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi S2 Intact",
@@ -6722,13 +6922,25 @@
     ],
     "type": "Warframe",
     "imageName": "equinox.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaAnimusBlueprint",
+        "name": "Blueprint",
+        "description": "Split between day and night, Equinox manifests aggressive and defensive forms at will.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusComponent",
         "name": "Day Aspect",
+        "description": "Day Aspect of the Equinox Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Uranus - Titania",
@@ -6739,86 +6951,24 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusChassisComponent",
-        "name": "Day Chassis",
-        "drops": [
-          {
-            "location": "Uranus - Titania",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1291
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusHelmetComponent",
-        "name": "Day Neuroptics",
-        "drops": [
-          {
-            "location": "Uranus - Titania",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1291
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusSystemsComponent",
-        "name": "Day Systems",
-        "drops": [
-          {
-            "location": "Uranus - Titania",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1291
-          }
-        ]
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
+        "name": "Forma",
+        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaComponent",
         "name": "Night Aspect",
+        "description": "Night Aspect of the Equinox Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Uranus - Titania",
             "type": "Mission Rewards",
             "rarity": "Uncommon",
             "chance": 0.1128
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaChassisComponent",
-        "name": "Night Chassis",
-        "drops": [
-          {
-            "location": "Uranus - Titania",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1291
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaHelmetComponent",
-        "name": "Night Neuroptics",
-        "drops": [
-          {
-            "location": "Uranus - Titania",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1291
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaSystemsComponent",
-        "name": "Night Systems",
-        "drops": [
-          {
-            "location": "Uranus - Titania",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1291
           }
         ]
       }
@@ -7305,13 +7455,25 @@
     ],
     "type": "Warframe",
     "imageName": "excalibur.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburBlueprint",
+        "name": "Blueprint",
+        "description": "A perfect balance of mobility and offense, Excalibur is the ideal Warframe for new players.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Excalibur Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Mars - War",
@@ -7324,6 +7486,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Excalibur Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Mars - War",
@@ -7334,8 +7499,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Excalibur Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Mars - War",
@@ -9158,13 +9333,25 @@
     ],
     "type": "Warframe",
     "imageName": "frost.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostBlueprint",
+        "name": "Blueprint",
+        "description": "By channeling moisture and vapor in the surrounding environment, Frost creates formidable defenses and lethal attacks from sub zero conditions.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Frost Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Ceres - Exta",
@@ -9178,6 +9365,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Frost Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Ceres - Exta",
@@ -9189,8 +9379,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Frost Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Ceres - Exta",
@@ -10036,10 +10236,19 @@
     ],
     "type": "Warframe",
     "imageName": "frost-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Frost Prime has the same chilling abilities as Frost but provides unique mod polarities, allowing for greater customization.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso F2 Intact",
@@ -10118,7 +10327,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Frost Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith G1 Intact",
@@ -10173,7 +10385,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Frost Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi E1 Intact",
@@ -10226,9 +10441,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Frost Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith G2 Intact",
@@ -11115,13 +11340,25 @@
     ],
     "type": "Warframe",
     "imageName": "gara.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassBlueprint",
+        "name": "Blueprint",
+        "description": "The battlefield trembles before Gara's crystalline power, her ringing touch transforming opponents to targets of brittle beauty.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Gara Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Level 5 - 15 Bounty",
@@ -11182,6 +11419,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Gara Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Level 20 - 40 Bounty",
@@ -11240,8 +11480,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Gara Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Level 10 - 30 Bounty",
@@ -11494,13 +11744,25 @@
     ],
     "type": "Warframe",
     "imageName": "harrow.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PriestBlueprint",
+        "name": "Blueprint",
+        "description": "Always prepared to sacrifice. This monastic Warframe uses the Void to bolster allies’ defenses and amplify their lethality.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PriestChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Harrow Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Fissure Corrupted Enemy 3.00 3.00",
@@ -11517,8 +11779,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Kuva",
+        "name": "Kuva",
+        "description": "A mysterious red fluid coveted by the Grineer Queens.",
+        "itemCount": 2000,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PriestHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Harrow Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Kuva - Fortress",
@@ -11532,6 +11804,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PriestSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Harrow Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Saturn - Caracol",
@@ -11879,13 +12154,25 @@
     ],
     "type": "Warframe",
     "imageName": "hydroid.png",
+    "buildPrice": 30000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidBlueprint",
+        "name": "Blueprint",
+        "description": "Rising from the ocean depths, Hydroid harnesses the power of water to a devastating effect.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Hydroid Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Earth - Oro",
@@ -11904,6 +12191,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Hydroid Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Earth - Oro",
@@ -11920,8 +12210,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Hydroid Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Earth - Oro",
@@ -12492,10 +12792,19 @@
     ],
     "type": "Warframe",
     "imageName": "hydroid-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Command the ocean’s fury with this king of gold and silver. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso N5 Intact",
@@ -12526,7 +12835,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Hydroid Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso H1 Intact",
@@ -12605,7 +12917,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Hydroid Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi A3 Intact",
@@ -12658,9 +12973,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Hydroid Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi H3 Intact",
@@ -13267,21 +13592,46 @@
     ],
     "type": "Warframe",
     "imageName": "inaros.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummyBlueprint",
+        "name": "Blueprint",
+        "description": "Risen from the sands, Inaros commands the desert's fearsome power.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummyChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Inaros Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummyHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Inaros Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummySystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Inaros Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -13734,9 +14084,18 @@
     ],
     "type": "Warframe",
     "imageName": "ivara.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerBlueprint",
         "name": "Blueprint",
+        "description": "With her quiver of tactical arrows, this huntress prowls unseen and strikes without warning.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Uranus - Rosalind",
@@ -13792,6 +14151,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Ivara Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Jupiter - Amalthea",
@@ -13840,6 +14202,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Ivara Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Uranus - Rosalind",
@@ -13893,8 +14258,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Ivara Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Mercury - Suisei",
@@ -14461,9 +14836,18 @@
     ],
     "type": "Warframe",
     "imageName": "khora.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/KhoraBlueprint",
         "name": "Blueprint",
+        "description": "Tenno and beast, red in whip and claw. Khora and her Kavat companion, Venari, embody lethal versatility. Two bodies, one will.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -14477,6 +14861,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/KhoraChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Khora Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -14490,6 +14877,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/KhoraHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Khora Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -14501,8 +14891,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/KhoraSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Khora Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -14628,21 +15028,46 @@
     ],
     "type": "Warframe",
     "imageName": "limbo.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianBlueprint",
+        "name": "Blueprint",
+        "description": "Limbo manipulates the very planes of existence to divide his enemies and conquer them in the rift.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Limbo Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Limbo Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Limbo Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -15423,13 +15848,25 @@
     ],
     "type": "Warframe",
     "imageName": "loki.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKIBlueprint",
+        "name": "Blueprint",
+        "description": "Desired by advanced players, Loki offers a variety of specialized reconfiguring abilities. The creativity of Loki's powers allows players to master the battlefield through manipulation.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKIChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Loki Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Neptune - Psamathe",
@@ -15442,6 +15879,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKIHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Loki Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Neptune - Psamathe",
@@ -15452,8 +15892,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKISystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Loki Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Neptune - Psamathe",
@@ -16250,10 +16700,19 @@
     ],
     "type": "Warframe",
     "imageName": "loki-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Confuse, deceive and destroy with Loki Prime. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi S2 Intact",
@@ -16308,7 +16767,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Loki Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith G2 Intact",
@@ -16339,7 +16801,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Loki Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo E1 Intact",
@@ -16368,9 +16833,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Loki Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi L1 Intact",
@@ -17185,13 +17660,25 @@
     ],
     "type": "Warframe",
     "imageName": "mag.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagBlueprint",
+        "name": "Blueprint",
+        "description": "With full command of surrounding magnetic energy, Mag is an expert at enemy manipulation.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Mag Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Phobos - Iliad",
@@ -17204,6 +17691,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Mag Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Phobos - Iliad",
@@ -17214,8 +17704,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Mag Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Phobos - Iliad",
@@ -18372,10 +18872,19 @@
     ],
     "type": "Warframe",
     "imageName": "mag-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeBlueprint",
         "name": "Blueprint",
+        "description": "The exquisite Mag Prime offers the same abilities as Mag but with unique mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith M1 Intact",
@@ -18430,7 +18939,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Mag Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso B1 Intact",
@@ -18485,7 +18997,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Mag Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi V2 Intact",
@@ -18538,9 +19053,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Mag Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi R1 Intact",
@@ -19739,13 +20264,25 @@
     ],
     "type": "Warframe",
     "imageName": "mesa.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerBlueprint",
+        "name": "Blueprint",
+        "description": "With a steady hand and quick reflexes, Mesa is a true gunfighter.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Mesa Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Mutalist Alad V Assassinate",
@@ -19764,6 +20301,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Mesa Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Mutalist Alad V Assassinate",
@@ -19780,8 +20320,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Mesa Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Mutalist Alad V Assassinate",
@@ -20416,21 +20966,46 @@
     ],
     "type": "Warframe",
     "imageName": "mirage.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinBlueprint",
+        "name": "Blueprint",
+        "description": "A master of illusion, Mirage confounds the enemy in a spectacle of style and power.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Mirage Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Mirage Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Mirage Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -21299,10 +21874,19 @@
     ],
     "type": "Warframe",
     "imageName": "mirage-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeBlueprint",
         "name": "Blueprint",
+        "description": "Dazzle the opposition with this golden master of illusion and mayhem. Featuring altered mod polarities allow for greater customization.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo M1 Intact",
@@ -21333,7 +21917,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Mirage Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith S7 Intact",
@@ -21364,7 +21951,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Mirage Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith Z1 Intact",
@@ -21417,9 +22007,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Mirage Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso O2 Intact",
@@ -22338,13 +22938,25 @@
     ],
     "type": "Warframe",
     "imageName": "nekros.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroBlueprint",
+        "name": "Blueprint",
+        "description": "Nekros uses his dark powers to manipulate his enemies, both living and dead.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Nekros Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -22370,6 +22982,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Nekros Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -22393,8 +23008,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Nekros Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -23084,10 +23709,19 @@
     ],
     "type": "Warframe",
     "imageName": "nekros-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Death's new master. Featuring altered mod polarities allow for greater customization.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi N3 Intact",
@@ -23166,7 +23800,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Nekros Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi G1 Intact",
@@ -23341,7 +23978,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Nekros Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi N5 Intact",
@@ -23394,9 +24034,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Nekros Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith N2 Intact",
@@ -24163,21 +24813,46 @@
     ],
     "type": "Warframe",
     "imageName": "nezha.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaBlueprint",
+        "name": "Blueprint",
+        "description": "A petite and playful facade conceals this frame’s immense power.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Nezha Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Nezha Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Nezha Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -24582,13 +25257,25 @@
     ],
     "type": "Warframe",
     "imageName": "nidus.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NidusBlueprint",
+        "name": "Blueprint",
+        "description": "Command the Infestation to mutate and grow ever more destructive.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NidusChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Nidus Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Eris - Oestrus",
@@ -24600,8 +25287,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Kuva",
+        "name": "Kuva",
+        "description": "A mysterious red fluid coveted by the Grineer Queens.",
+        "itemCount": 2000,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NidusHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Nidus Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Eris - Oestrus",
@@ -24615,6 +25312,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NidusSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Nidus Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Eris - Oestrus",
@@ -24964,13 +25664,25 @@
     ],
     "type": "Warframe",
     "imageName": "nova.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaBlueprint",
+        "name": "Blueprint",
+        "description": "Nova uses electromagnetic energy to contain and control highly volatile antimatter that fuels her abilities.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Nova Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Europa - Naamah",
@@ -24983,6 +25695,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Nova Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Europa - Naamah",
@@ -24993,8 +25708,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Nova Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Europa - Naamah",
@@ -25679,10 +26404,19 @@
     ],
     "type": "Warframe",
     "imageName": "nova-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Nova Prime wreaks devastation on her enemies using volatile antimatter. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo N2 Intact",
@@ -25713,7 +26447,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Nova Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith N1 Intact",
@@ -25768,7 +26505,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Nova Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith C1 Intact",
@@ -25821,9 +26561,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Nova Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith C1 Intact",
@@ -26574,13 +27324,25 @@
     ],
     "type": "Warframe",
     "imageName": "nyx.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxBlueprint",
+        "name": "Blueprint",
+        "description": "Mind control and psychic attacks make Nyx a very dangerous foe. Her ability to reach into enemy consciousness and manipulate their behavior can turn the tide of battle.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Nyx Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Phorid Assassination",
@@ -26593,6 +27355,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Nyx Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Phorid Assassination",
@@ -26603,8 +27368,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Nyx Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Phorid Assassination",
@@ -27657,10 +28432,19 @@
     ],
     "type": "Warframe",
     "imageName": "nyx-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Infiltrate the minds of your enemies with Nyx Prime. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith S2 Intact",
@@ -27715,7 +28499,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Nyx Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo N1 Intact",
@@ -27746,7 +28533,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Nyx Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso N1 Intact",
@@ -27775,9 +28565,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Nyx Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo S2 Intact",
@@ -28848,21 +29648,46 @@
     ],
     "type": "Warframe",
     "imageName": "oberon.png",
+    "buildPrice": 30000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinBlueprint",
+        "name": "Blueprint",
+        "description": "Equally adept at healing friends or striking down the enemy. Oberon embodies the balance Tenno are sworn to uphold.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Oberon Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Oberon Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Oberon Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -29587,10 +30412,19 @@
     ],
     "type": "Warframe",
     "imageName": "oberon-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Protect the balance with this regal forest guardian. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith H2 Intact",
@@ -29669,7 +30503,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Oberon Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi H2 Intact",
@@ -29724,7 +30561,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Oberon Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso O1 Intact",
@@ -29777,9 +30617,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Oberon Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi O1 Intact",
@@ -30554,17 +31404,39 @@
     ],
     "type": "Warframe",
     "imageName": "octavia.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaBlueprint",
+        "name": "Blueprint",
+        "description": "Compose her song and then conduct the mighty Mandachord, turning bass, beat and melody into an anthem of devastation.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Octavia Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Keys/BardQuest/BardQuestSequencerItem",
+        "name": "Mandachord",
+        "description": "A rare Orokin instrument.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Octavia Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -30584,6 +31456,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Octavia Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Lua - Plato",
@@ -31069,13 +31944,25 @@
     ],
     "type": "Warframe",
     "imageName": "rhino.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoBlueprint",
+        "name": "Blueprint",
+        "description": "Rhino is the heaviest Warframe, combining offensive and defensive capabilities.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Rhino Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Venus - Fossa",
@@ -31086,8 +31973,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Rhino Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Venus - Fossa",
@@ -31100,6 +31997,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Rhino Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Venus - Fossa",
@@ -31960,10 +32860,19 @@
     ],
     "type": "Warframe",
     "imageName": "rhino-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Takes Rhino's ground-shaking abilities to the next level with altered mod polarities that offer greater customization.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi R1 Intact",
@@ -31994,7 +32903,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Rhino Prime Warframe.",
+        "itemCount": 1,
         "ducats": 65,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso M1 Intact",
@@ -32025,7 +32937,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Rhino Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith B1 Intact",
@@ -32054,9 +32969,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Rhino Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo B3 Intact",
@@ -32935,13 +33860,25 @@
     ],
     "type": "Warframe",
     "imageName": "saryn.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynBlueprint",
+        "name": "Blueprint",
+        "description": "Saryn's venomous attacks are horrifyingly effective against organic and synthetic enemies, and her ability to 'shed' her skin makes her very elusive.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Saryn Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Sedna - Merrow",
@@ -32954,6 +33891,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Saryn Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Sedna - Merrow",
@@ -32964,8 +33904,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Saryn Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Sedna - Merrow",
@@ -33698,10 +34648,19 @@
     ],
     "type": "Warframe",
     "imageName": "saryn-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeBlueprint",
         "name": "Blueprint",
+        "description": "A golden blossom conceals deadly nectar. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 65,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith S4 Intact",
@@ -33804,7 +34763,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Saryn Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso S2 Intact",
@@ -33859,7 +34821,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Saryn Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith A1 Intact",
@@ -33936,9 +34901,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Saryn Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi G1 Intact",
@@ -34833,21 +35808,46 @@
     ],
     "type": "Warframe",
     "imageName": "titania.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairyBlueprint",
+        "name": "Blueprint",
+        "description": "Take flight with this mischievous pixie.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairyChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Titania Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairyHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Titania Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairySystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Titania Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -35172,13 +36172,25 @@
     ],
     "type": "Warframe",
     "imageName": "trinity.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityBlueprint",
+        "name": "Blueprint",
+        "description": "Trinity is great for players who prefer a supportive role. Warframes with healing technology are rare making Trinity a great equalizer when the odds are stacked against the Tenno.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Trinity Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Pluto - Hades",
@@ -35191,6 +36203,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Trinity Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Pluto - Hades",
@@ -35201,8 +36216,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinitySystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Trinity Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Pluto - Hades",
@@ -35871,10 +36896,19 @@
     ],
     "type": "Warframe",
     "imageName": "trinity-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Become the bastion that defends allies using powerful healing abilities with Trinity Prime. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi S1 Intact",
@@ -35977,7 +37011,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Trinity Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi H1 Intact",
@@ -36080,7 +37117,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Trinity Prime Warframe.",
+        "itemCount": 1,
         "ducats": 25,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi C1 Intact",
@@ -36205,9 +37245,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Trinity Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi A1 Intact",
@@ -37014,13 +38064,25 @@
     ],
     "type": "Warframe",
     "imageName": "valkyr.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerBlueprint",
+        "name": "Blueprint",
+        "description": "Forged in the labs of the Zanuka project, the original Valkyr was subject to cruel experiments, leaving her scarred, angry and frighteningly adept at killing.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Valkyr Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Jupiter - Themisto",
@@ -37033,6 +38095,9 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Valkyr Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Jupiter - Themisto",
@@ -37043,8 +38108,18 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Valkyr Warframe.",
+        "itemCount": 1,
+        "tradable": false,
         "drops": [
           {
             "location": "Jupiter - Themisto",
@@ -37777,10 +38852,19 @@
     ],
     "type": "Warframe",
     "imageName": "valkyr-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeBlueprint",
         "name": "Blueprint",
+        "description": "A proud fighter emerges unscarred by time or malice. Featuring altered mod polarities allow for greater customization.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi V7 Intact",
@@ -37931,7 +39015,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Valkyr Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi V5 Intact",
@@ -37986,7 +39073,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Valkyr Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith S6 Intact",
@@ -38111,9 +39201,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 3,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Valkyr Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith V3 Intact",
@@ -38888,21 +39988,46 @@
     ],
     "type": "Warframe",
     "imageName": "vauban.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperBlueprint",
+        "name": "Blueprint",
+        "description": "The highly tactical Vauban uses his powers to create deadly traps that can zap, imprison and dimensionally crush enemies.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Vauban Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Vauban Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Vauban Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -39507,10 +40632,19 @@
     ],
     "type": "Warframe",
     "imageName": "vauban-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Transform the battlefield into a weapon with this gilded tactician. Features unique mod polarities for extended customization.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith F2 Intact",
@@ -39565,7 +40699,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Vauban Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi V1 Intact",
@@ -39668,7 +40805,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Vauban Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Meso N2 Intact",
@@ -39745,9 +40885,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
+        "name": "Nitain Extract",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Vauban Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith V2 Intact",
@@ -40402,21 +41552,46 @@
     ],
     "type": "Warframe",
     "imageName": "volt.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTBlueprint",
+        "name": "Blueprint",
+        "description": "Volt can create and harness electrical elements. This is a high-damage Warframe perfect for players who want a potent alternative to gun-play.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Volt Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Volt Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Volt Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -41269,10 +42444,19 @@
     ],
     "type": "Warframe",
     "imageName": "volt-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeBlueprint",
         "name": "Blueprint",
+        "description": "A glorious warrior from the past, Volt Prime features the same abilities as Volt but with unique mod polarities for greater customization.",
+        "itemCount": 1,
         "ducats": 25,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi N3 Intact",
@@ -41351,7 +42535,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Volt Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi V8 Intact",
@@ -41430,7 +42617,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Volt Prime Warframe.",
+        "itemCount": 1,
         "ducats": 65,
+        "tradable": true,
         "drops": [
           {
             "location": "Axi V1 Intact",
@@ -41483,9 +42673,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Volt Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith V1 Intact",
@@ -42388,21 +43588,46 @@
     ],
     "type": "Warframe",
     "imageName": "wukong.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongBlueprint",
+        "name": "Blueprint",
+        "description": "A primal warrior with the heart of a trickster.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Wukong Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Wukong Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Wukong Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -42687,21 +43912,46 @@
     ],
     "type": "Warframe",
     "imageName": "zephyr.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
-        "name": "Blueprint"
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguBlueprint",
+        "name": "Blueprint",
+        "description": "Specializing in air attacks and mobility, Zephyr dominates from above.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguChassisComponent",
-        "name": "Chassis"
+        "name": "Chassis",
+        "description": "Chassis component of the Zephyr Warframe.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguHelmetComponent",
-        "name": "Neuroptics"
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Zephyr Warframe.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 1,
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguSystemsComponent",
-        "name": "Systems"
+        "name": "Systems",
+        "description": "Systems component of the Zephyr Warframe.",
+        "itemCount": 1,
+        "tradable": false
       }
     ],
     "category": "Warframes",
@@ -43274,10 +44524,19 @@
     ],
     "type": "Warframe",
     "imageName": "zephyr-prime.png",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeBlueprint",
         "name": "Blueprint",
+        "description": "Take to the skies with this golden bird of destruction.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo Z1 Intact",
@@ -43308,7 +44567,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeChassisComponent",
         "name": "Chassis",
+        "description": "Chassis component of the Zephyr Prime Warframe.",
+        "itemCount": 1,
         "ducats": 45,
+        "tradable": true,
         "drops": [
           {
             "location": "Neo K1 Intact",
@@ -43339,7 +44601,10 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeHelmetComponent",
         "name": "Neuroptics",
+        "description": "Neuroptics component of the Zephyr Prime Warframe.",
+        "itemCount": 1,
         "ducats": 15,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith H2 Intact",
@@ -43368,9 +44633,19 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeSystemsComponent",
         "name": "Systems",
+        "description": "Systems component of the Zephyr Prime Warframe.",
+        "itemCount": 1,
         "ducats": 100,
+        "tradable": true,
         "drops": [
           {
             "location": "Lith Z1 Intact",
