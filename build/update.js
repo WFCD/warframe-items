@@ -15,7 +15,6 @@ const crypto = require('crypto')
 const imageCache = require('../data/cache/.images.json')
 const exportCache = require('../data/cache/.export.json')
 
-/* eslint no-redeclare: "off" */
 class Update {
   async scrape () {
     const items = await scraper.fetchAll()

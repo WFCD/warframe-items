@@ -56,7 +56,7 @@ allows you to add your own items before our gathered ones.
 ### Options
 | Option        | Default       | Description   |
 |:------------- |:------------- |:------------- |
-| category | `'All'` | Item category to retrieve. Parallel to file names in /data/json. Useful if you don't wanna load lots and lots of MB of data into memory.
+| category | `['All']` | Array of item categories to retrieve. Parallel to file names in /data/json. Useful if you don't wanna load lots and lots of MB of data into memory.
 
 <br>
 
