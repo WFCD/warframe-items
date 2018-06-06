@@ -4,17 +4,28 @@ class Items extends Array {
 
     // Merge provided options with defaults
     this.options = Object.assign({
-      category: 'All',
-      tradable: null
+      category: ['All']
     }, options)
 
     // Add items from options to array. Type equals the file name.
     // Tradable determines if we should use sub-folder or stay on root.
-    const tradable = this.options.tradable ? 'tradable/' : (this.options.tradable === false ? 'non-tradable/' : '')
-    const generated = require(`./data/json/${tradable}/${this.options.category}.json`)
-    for (let item of generated) {
-      this.push(item)
+    for (let category of this.options.category) {
+      const items = require(`./data/json/${category}.json`)
+
+      for (let item of items) {
+        this.push(item)
+      }
     }
+
+    // Output won't be sorted if separate categories are chosen
+    this.sort((a, b) => {
+      const res = a.name.localeCompare(b.name)
+      if (res === 0) {
+        return a.uniqueName.localeCompare(b.uniqueName)
+      } else {
+        return res
+      }
+    })
   }
 }
 

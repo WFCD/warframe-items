@@ -126,6 +126,41 @@
     "description": "Copies the dominant genes of a pet onto the template. \rThis can then be used to increase the chances that traits from the original pet will carry across to a newborn clone.",
     "type": "Pets",
     "imageName": "genetic-code-template.png",
+    "buildPrice": 10000,
+    "buildTime": 21600,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Kubrow/BlankTraitPrintBlueprint",
+        "name": "Blueprint",
+        "description": "Copies the dominant genes of a pet onto the template. \rThis can then be used to increase the chances that traits from the original pet will carry across to a newborn clone.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.",
+        "itemCount": 300,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 700,
+        "tradable": false
+      }
+    ],
     "category": "Pets",
     "tradable": false,
     "patchlogs": [
@@ -265,6 +300,41 @@
     "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
     "type": "Pets",
     "imageName": "incubator-power-core.png",
+    "buildPrice": 100000,
+    "buildTime": 28800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Kubrow/EggHatcherBlueprint",
+        "name": "Blueprint",
+        "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "itemCount": 2,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "itemCount": 4500,
+        "tradable": false
+      }
+    ],
     "category": "Pets",
     "tradable": false,
     "patchlogs": [
@@ -349,6 +419,29 @@
     "power": 100,
     "type": "Pets",
     "imageName": "sahasa-kubrow.png",
+    "buildPrice": 0,
+    "buildTime": 172800,
+    "skipBuildTimePrice": 15,
+    "alwaysAvailable": true,
+    "visibility": "RV_HIDDEN",
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Game/KubrowPet/KubrowPetRecipe",
+        "name": "Blueprint",
+        "description": "Enterprising Orokin genetic designers recognized that the Kubrow's affinity for games of fetch could be used for more serious endeavors. They soon developed a strain adept at reconnaissance and contraband recovery. Tenno often used the creatures to help resupply while in the field.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Game/KubrowPet/EggHatcher",
+        "name": "Incubator Power Core",
+        "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
+        "itemCount": 1,
+        "tradable": false
+      }
+    ],
     "category": "Pets",
     "tradable": false,
     "patchlogs": [
