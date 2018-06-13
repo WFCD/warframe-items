@@ -1,6 +1,11 @@
 pipeline:
+  greenkeeper_update_lockfile:
+    image: plugins/greenkeeper
+    pull: true
+    update: true
   build:
     image: node
+    pull: true
     commands:
       - npm install
   lint:
@@ -11,6 +16,12 @@ pipeline:
     image: node
     commands:
       - npm test
+  greenkeeper_lockfile_upload:
+    image: plugins/greenkeeper
+    upload: true
+    secrets: 
+      - source: gh_token
+        target: gk_token
   publish:
     image: node
     commands:
