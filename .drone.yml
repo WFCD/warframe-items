@@ -3,25 +3,34 @@ pipeline:
     image: plugins/greenkeeper
     pull: true
     update: true
+    when:
+      branch: greenkeeper/*
+      
   build:
     image: node
     pull: true
     commands:
       - npm install
+      
   lint:
     image: node
     commands:
       - npm run lint
+      
   test:
     image: node
     commands:
       - npm test
+      
   greenkeeper_lockfile_upload:
     image: plugins/greenkeeper
     upload: true
     secrets: 
       - source: gh_token
         target: gk_token
+    when:
+      branch: greenkeeper/*
+      
   publish:
     image: node
     commands:
