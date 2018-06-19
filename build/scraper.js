@@ -571,6 +571,7 @@ class Scraper {
    * Get patchlogs from forums and attach when changes are found for item.
    */
   addPatchlogs (item) {
+    return //DEBUG
     // This process takes a lot of cpu time, so we won't repeat it unless the
     // patchlog hash changed.
     if (!patchlogsChanged) {
