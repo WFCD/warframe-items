@@ -1,16 +1,20 @@
 pipeline:
   build:
     image: node
+    pull: true
     commands:
       - npm install
+
   lint:
     image: node
     commands:
       - npm run lint
+
   test:
     image: node
     commands:
       - npm test
+
   publish:
     image: node
     commands:
