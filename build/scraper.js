@@ -108,8 +108,8 @@ class Scraper {
     // Add ducats to an array here immediately because processing this for
     // every component is *very* slow compared to running through an array.
     $('.mw-content-text table tbody tr').each(function () {
-      const name = $(this).find('td:nth-of-type(1) a:nth-of-type(2)').text()
-      const value = $(this).find('td:nth-of-type(3) b').text()
+      const name = $(this).find('td:nth-of-type(1) a:nth-of-type(1)').text()
+      const value = $(this).find('td:nth-of-type(3)').text()
       ducats.push({ name, ducats: parseInt(value) })
     })
 
@@ -359,10 +359,12 @@ class Scraper {
    * Add ducats for prime items. We'll need to get this data from the wikia.
    */
   addDucats (item, component) {
-    for (let stub of ducats) {
-      if (`${title(item.name.replace(' Prime', ''))} ${component.name}` === stub.name) {
-        component.ducats = stub.ducats
-        return false // break loop
+    if (title(item.name).includes('Prime')) {
+      for (let stub of ducats) {
+        if (`${title(item.name.replace(' Prime', ''))} ${component.name}` === stub.name) {
+          component.ducats = stub.ducats
+          break
+        }
       }
     }
   }
