@@ -360,7 +360,7 @@ class Scraper {
    */
   addDucats (item, component) {
     for (let stub of ducats) {
-      if (`${title(item.name)} ${component.name}` === stub.name) {
+      if (`${title(item.name.replace(' Prime', ''))} ${component.name}` === stub.name) {
         component.ducats = stub.ducats
         return false // break loop
       }
