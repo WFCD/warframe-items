@@ -50,7 +50,7 @@ class Scraper {
     await this.fetchAdditional()
 
     await Promise.all(this.endpoints.map(async e => {
-      const type = e.split('/').slice(-1)[0].replace('Export', '').replace('.json', '')
+      const type = e.split('/')[e.split('/').length - 1].replace('Export', '').replace('.json', '')
       const categories = await this.fetch(type)
       data = _.mergeWith(data, categories, (a, b) => _.isArray(a) ? a.concat(b) : undefined)
     }))
@@ -89,7 +89,7 @@ class Scraper {
     const recipes = 'http://content.warframe.com/MobileExport/Manifest/ExportRecipes.json'
 
     for (let endpoint of this.endpoints.concat(recipes)) {
-      const type = endpoint.split('/').slice(-1)[0].replace('.json', '')
+      const type = endpoint.split('/')[endpoint.split('/').length - 1].replace('.json', '')
       const data = (await get(endpoint))[type]
       this.data.push({ type, data })
     }
@@ -108,8 +108,8 @@ class Scraper {
     // Add ducats to an array here immediately because processing this for
     // every component is *very* slow compared to running through an array.
     $('.mw-content-text table tbody tr').each(function () {
-      const name = $(this).find('td:nth-of-type(1) a:nth-of-type(2)').text()
-      const value = $(this).find('td:nth-of-type(3) b').text()
+      const name = $(this).find('td:nth-of-type(1) a:nth-of-type(1)').text()
+      const value = $(this).find('td:nth-of-type(3)').text()
       ducats.push({ name, ducats: parseInt(value) })
     })
 
@@ -257,7 +257,7 @@ class Scraper {
    */
   addImageName (item, previous) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation
-    const ext = imageStub.split('.').slice(-1)[0] // .png, .jpg, etc
+    const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
     item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').toLowerCase()
 
     // Some items have the same name - so add their uniqueName as an identifier
@@ -359,10 +359,12 @@ class Scraper {
    * Add ducats for prime items. We'll need to get this data from the wikia.
    */
   addDucats (item, component) {
-    for (let stub of ducats) {
-      if (`${title(item.name)} ${component.name}` === stub.name) {
-        component.ducats = stub.ducats
-        return false // break loop
+    if (title(item.name).includes('Prime')) {
+      for (let stub of ducats) {
+        if (`${title(item.name.replace(' Prime', ''))} ${component.name}` === stub.name) {
+          component.ducats = stub.ducats
+          break
+        }
       }
     }
   }
@@ -583,6 +585,7 @@ class Scraper {
       name: item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name,
       type: item.type
     }
+
     const logs = patchlogs.getItemChanges(target)
     if (logs.length) item.patchlogs = logs
   }
