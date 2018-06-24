@@ -3,15 +3,18 @@
  * immediately without fetching them. This storing process is automated by the
  * docker image.
  */
-const scraper = require('./scraper.js')
+const colors = require('colors/safe')
+const crypto = require('crypto')
 const fs = require('fs')
-const stringify = require('./stringify.js')
-const request = require('requestretry').defaults({ fullResponse: false })
 const minify = require('imagemin')
 const minifyPng = require('imagemin-pngquant')
 const minifyJpeg = require('imagemin-jpegtran')
+const request = require('requestretry').defaults({ fullResponse: false })
 const sharp = require('sharp')
-const crypto = require('crypto')
+const ProgressBar = require('progress')
+
+const stringify = require('./stringify.js')
+const scraper = require('./scraper.js')
 const imageCache = require('../data/cache/.images.json')
 const exportCache = require('../data/cache/.export.json')
 
@@ -35,6 +38,7 @@ class Update {
     fs.writeFileSync(`${__dirname}/../data/json/All.json`, stringify(all))
 
     // Save images - also adds imageName and hashes
+    // this is a very long process
     await this.saveImages(all)
   }
 
@@ -45,12 +49,17 @@ class Update {
     const Manifest = await request('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')
     const manifest = JSON.parse(Manifest).Manifest
     const manifestHash = crypto.createHash('md5').update(Manifest).digest('hex')
+    const bar = new ProgressBar(`:check Fetching  Images:    ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
+      incomplete: colors.red('-'),
+      width: 20,
+      total: items.length
+    })
 
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
     // hash, so any change to that changes the hash of the full thing.
     if (exportCache.Manifest.hash === manifestHash) {
-      console.log('No updates required for images.')
+      bar.interrupt(`${colors.green('✓')} No updates required for images.`)
       return
     } else {
       exportCache.Manifest.hash = manifestHash
@@ -59,8 +68,6 @@ class Update {
 
     // Go through each item and download/save image
     let done = 0
-    console.log(`Fetching images (${items.length})`)
-
     await new Promise(async (resolve, reject) => {
       for (let item of items) {
         const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
@@ -93,8 +100,12 @@ class Update {
           })
         }
         done++
+        bar.tick({
+          image: colors.cyan(item.name),
+          updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
+          check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
+        })
         if (done === items.length) resolve()
-        console.log(`(${done}/${items.length}): ${item.name} ${!cached || cached.hash !== hash ? '(Updated)' : ''}`)
       }
     })
 
