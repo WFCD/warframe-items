@@ -109,11 +109,9 @@ class Scraper {
    * Generate single .json data
    */
   async fetch (type) {
-    // console.log(`Fetching ${type}`)
     const url = this.endpoints.find(e => e.includes(type))
     const items = (await get(url))[`Export${type}`]
 
-    // console.log(`Fetched data for ${type}, processing...`)
     return this.filter(items, type, new Date())
   }
 
@@ -194,7 +192,6 @@ class Scraper {
         data[item.category].push(item)
       }
     }
-    // console.log(`Finished in ${new Date() - timer}ms \n`)
     return data
   }
 
