@@ -652,7 +652,7 @@ class Scraper {
     item.color = wikiaItem.color
     item.energy = wikiaItem.energy
     item.introduced = wikiaItem.introduced
-    item.masteryReq = wikiaItem.mr
+    item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
     item.sex = wikiaItem.sex
     item.sprint = wikiaItem.sprint
@@ -673,7 +673,7 @@ class Scraper {
     item.flight = wikiaItem.flight
     item.jump = wikiaItem.jump
     item.marketCost = wikiaItem.marketCost
-    item.masteryReq = wikiaItem.mr
+    item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
     item.projectile = wikiaItem.projectile
     item.secondary = wikiaItem.secondary
