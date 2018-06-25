@@ -670,19 +670,16 @@ class Scraper {
     })
     item.disposition = wikiaItem.riven_disposition
     item.flight = wikiaItem.flight
-    item.jump = wikiaItem.jump
     item.marketCost = wikiaItem.marketCost
     item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
     item.projectile = wikiaItem.projectile
     item.secondary = wikiaItem.secondary
     item.secondaryArea = wikiaItem.secondaryArea
-    item.slide = wikiaItem.slide
     item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
     item.type = wikiaItem.type
     item.vaulted = wikiaItem.vaulted
-    item.wall = wikiaItem.wall
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
   }
