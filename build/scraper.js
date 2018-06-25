@@ -650,7 +650,6 @@ class Scraper {
     item.aura = wikiaItem.auraPolarity
     item.conclave = wikiaItem.conclave
     item.color = wikiaItem.color
-    item.energy = wikiaItem.energy
     item.introduced = wikiaItem.introduced
     item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
