@@ -68,46 +68,44 @@ class Update {
 
     // Go through each item and download/save image
     let done = 0
-    await new Promise(async (resolve, reject) => {
-      for (let item of items) {
-        const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
-        const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
-        const basePath = `${__dirname}/../data/img/`
-        const filePath = `${basePath}${item.imageName}`
-        const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
-        const sizeMedium = ['Resources', 'Misc', 'Fish']
-        const image = await request({ url: imageUrl, encoding: null })
-        const hash = crypto.createHash('md5').update(image).digest('hex')
-        const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
+    await Promise.all(items.map(async (item) => {
+      const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
+      const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
+      const basePath = `${__dirname}/../data/img/`
+      const filePath = `${basePath}${item.imageName}`
+      const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
+      const sizeMedium = ['Resources', 'Misc', 'Fish']
+      const image = await request({ url: imageUrl, encoding: null })
+      const hash = crypto.createHash('md5').update(image).digest('hex')
+      const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
 
-        if (!cached || cached.hash !== hash) {
-          this.updateCache(item, hash)
+      if (!cached || cached.hash !== hash) {
+        this.updateCache(item, hash)
 
-          if (sizeBig.includes(item.category)) {
-            await sharp(image).resize(512, 342).ignoreAspectRatio().toFile(filePath)
-          } else if (sizeMedium.includes(item.category)) {
-            await sharp(image).resize(512, 352).ignoreAspectRatio().toFile(filePath)
-          } else {
-            await sharp(image).toFile(filePath)
-          }
-          await minify([filePath], basePath, {
-            plugins: [
-              minifyJpeg(),
-              minifyPng({
-                quality: '20-40'
-              })
-            ]
-          })
+        if (sizeBig.includes(item.category)) {
+          await sharp(image).resize(512, 342).ignoreAspectRatio().toFile(filePath)
+        } else if (sizeMedium.includes(item.category)) {
+          await sharp(image).resize(512, 352).ignoreAspectRatio().toFile(filePath)
+        } else {
+          await sharp(image).toFile(filePath)
         }
-        done++
-        bar.tick({
-          image: colors.cyan(item.name),
-          updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
-          check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
+        await minify([filePath], basePath, {
+          plugins: [
+            minifyJpeg(),
+            minifyPng({
+              quality: '20-40'
+            })
+          ]
         })
-        if (done === items.length) resolve()
       }
-    })
+      done++
+      bar.tick({
+        image: colors.cyan(item.name),
+        updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
+        check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
+      })
+      if (done === items.length) return 0
+    }))
 
     // Write new cache to disk
     fs.writeFileSync(`${__dirname}/../data/cache/.images.json`, JSON.stringify(imageCache, null, 1))
