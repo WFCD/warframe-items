@@ -676,6 +676,7 @@ class Scraper {
     item.projectile = wikiaItem.projectile
     item.secondary = wikiaItem.secondary
     item.secondaryArea = wikiaItem.secondaryArea
+    item.stancePolarity = wikiaItem.stancePolarity
     item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
     item.type = wikiaItem.type
