@@ -4,8 +4,29 @@ const crypto = require('crypto')
 const fs = require('fs')
 const _ = require('lodash')
 const patchlogs = require('warframe-patchlogs')
+const ProgressBar = require('progress')
+const colors = require('colors/safe')
 const precompiled = require('../data/json/All.json')
 const exportCache = require('../data/cache/.export.json')
+const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
+const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
+
+const damageTypes = [
+  'impact',
+  'slash',
+  'puncture',
+  'heat',
+  'cold',
+  'electricity',
+  'toxin',
+  'viral',
+  'corrosive',
+  'radiation',
+  'blast',
+  'magnetic',
+  'gas',
+  'void'
+]
 
 process.on('unhandledRejection', err => {
   console.log(err)
@@ -17,9 +38,15 @@ const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const sanitize = (str) => str.replace(/\n/g, '').replace(/\\r\\r/g, '\\n')
 const get = async (url) => JSON.parse(sanitize(await request(url)))
 
+// Wikia data scraping for additional information
+const scrapeWikia = async () => ({
+  weapons: await new WeaponScraper().scrape(),
+  warframes: await new WarframeScraper().scrape()
+})
+
 // We'll get these later before processing items as they're required for item
 // attributes.
-let dropChances, dropChancesChanged, patchlogsChanged, manifest
+let dropChances, dropChancesChanged, patchlogsChanged, manifest, wikiaData
 let ducats = []
 
 class Scraper {
@@ -38,6 +65,11 @@ class Scraper {
       'http://content.warframe.com/MobileExport/Manifest/ExportWarframes.json'
     ]
     this.data = []
+    this.bar = new ProgressBar(`:check Procesing Endpoints: ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining ${colors.cyan(':type')}`, {
+      incomplete: colors.red('-'),
+      width: 20,
+      total: this.endpoints.length
+    })
   }
 
   /**
@@ -53,6 +85,10 @@ class Scraper {
       const type = e.split('/')[e.split('/').length - 1].replace('Export', '').replace('.json', '')
       const categories = await this.fetch(type)
       data = _.mergeWith(data, categories, (a, b) => _.isArray(a) ? a.concat(b) : undefined)
+      this.bar.tick({
+        type,
+        check: (this.bar.curr === this.endpoints.length - 1) ? colors.green('✓') : colors.yellow('-')
+      })
     }))
 
     // Order everything alphabetically
@@ -73,11 +109,9 @@ class Scraper {
    * Generate single .json data
    */
   async fetch (type) {
-    console.log(`Fetching ${type}`)
     const url = this.endpoints.find(e => e.includes(type))
     const items = (await get(url))[`Export${type}`]
 
-    console.log(`Fetched data for ${type}, processing...`)
     return this.filter(items, type, new Date())
   }
 
@@ -102,6 +136,7 @@ class Scraper {
   async fetchAdditional () {
     manifest = (await get('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')).Manifest
     dropChances = await get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json')
+    wikiaData = await scrapeWikia()
     const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
 
@@ -148,6 +183,7 @@ class Scraper {
       this.addTradable(item, type)
       this.addDropRate(item)
       this.addPatchlogs(item)
+      this.addAdditionalWikiaData(item, type)
 
       // Add to category
       if (!data[item.category]) {
@@ -156,7 +192,6 @@ class Scraper {
         data[item.category].push(item)
       }
     }
-    console.log(`Finished in ${new Date() - timer}ms \n`)
     return data
   }
 
@@ -588,6 +623,66 @@ class Scraper {
 
     const logs = patchlogs.getItemChanges(target)
     if (logs.length) item.patchlogs = logs
+  }
+
+  /**
+   * Adds data scraped from the wiki to a particular item
+   * @param {Object} item              item to modify
+   * @param {String} type type of the item, defaults to warframe
+   */
+  addAdditionalWikiaData (item, type) {
+    if (!['weapons', 'warframes'].includes(type.toLowerCase())) return
+    const wikiaItem = wikiaData[type.toLowerCase()].find(i => i.name === item.name)
+    if (!wikiaItem) return
+    switch (type.toLowerCase()) {
+      case 'warframes':
+        this.addWarframeWikiaData(item, wikiaItem)
+        break
+      case 'weapons':
+        this.addWeaponWikiaData(item, wikiaItem)
+        break
+      default:
+        break
+    }
+  }
+
+  addWarframeWikiaData (item, wikiaItem) {
+    item.aura = wikiaItem.auraPolarity
+    item.conclave = wikiaItem.conclave
+    item.color = wikiaItem.color
+    item.introduced = wikiaItem.introduced
+    item.masteryReq = item.masteryReq || wikiaItem.mr
+    item.polarities = wikiaItem.polarities
+    item.sex = wikiaItem.sex
+    item.sprint = wikiaItem.sprint
+    item.vaulted = wikiaItem.vaulted
+    item.wikiaThumbnail = wikiaItem.thumbnail
+    item.wikiaUrl = wikiaItem.url
+  }
+
+  addWeaponWikiaData (item, wikiaItem) {
+    item.ammo = wikiaItem.ammo
+    item.channeling = wikiaItem.channeling
+    item.damage = wikiaItem.damage
+    item.damageTypes = {}
+    damageTypes.forEach(type => {
+      item.damageTypes[type] = wikiaItem[type]
+    })
+    item.disposition = wikiaItem.riven_disposition
+    item.flight = wikiaItem.flight
+    item.marketCost = wikiaItem.marketCost
+    item.masteryReq = item.masteryReq || wikiaItem.mr
+    item.polarities = wikiaItem.polarities
+    item.projectile = wikiaItem.projectile
+    item.secondary = wikiaItem.secondary
+    item.secondaryArea = wikiaItem.secondaryArea
+    item.stancePolarity = wikiaItem.stancePolarity
+    item.statusChance = wikiaItem.status_chance
+    item.tags = wikiaItem.tags
+    item.type = wikiaItem.type
+    item.vaulted = wikiaItem.vaulted
+    item.wikiaThumbnail = wikiaItem.thumbnail
+    item.wikiaUrl = wikiaItem.url
   }
 }
 
