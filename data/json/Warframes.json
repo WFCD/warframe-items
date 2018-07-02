@@ -27,7 +27,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "ash.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -39,7 +38,8 @@
         "name": "Blueprint",
         "description": "Ash is great for players looking for a stealthier approach to combat. Lethal abilities are complemented by powers of distraction.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "ninja.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshChassisComponent",
@@ -47,6 +47,7 @@
         "description": "Chassis component of the Ash Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Grineer Manic 33.00 33.00",
@@ -68,6 +69,7 @@
         "description": "Neuroptics component of the Ash Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Grineer Manic 33.00 33.00",
@@ -88,7 +90,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshSystemsComponent",
@@ -96,6 +99,7 @@
         "description": "Systems component of the Ash Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Grineer Manic 33.00 33.00",
@@ -112,6 +116,7 @@
         ]
       }
     ],
+    "imageName": "ash.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -1015,7 +1020,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "ash-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -1029,6 +1033,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "ash-prime.png",
         "drops": [
           {
             "location": "Lith S3 Intact",
@@ -1111,6 +1116,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi B1 Intact",
@@ -1193,6 +1199,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi N2 Intact",
@@ -1321,7 +1328,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeSystemsComponent",
@@ -1330,6 +1338,7 @@
         "itemCount": 1,
         "ducats": 65,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi N1 Intact",
@@ -1382,6 +1391,7 @@
         ]
       }
     ],
+    "imageName": "ash-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -2286,7 +2296,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "atlas.png",
     "buildPrice": 30000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -2298,7 +2307,8 @@
         "name": "Blueprint",
         "description": "Titan of stone, lord of the earthly elementals.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "brawler.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerChassisComponent",
@@ -2306,6 +2316,7 @@
         "description": "Chassis component of the Atlas Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Jordas Golem Assassinate",
@@ -2321,6 +2332,7 @@
         "description": "Neuroptics component of the Atlas Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Jordas Golem Assassinate",
@@ -2335,7 +2347,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerSystemsComponent",
@@ -2343,6 +2356,7 @@
         "description": "Systems component of the Atlas Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Jordas Golem Assassinate",
@@ -2353,6 +2367,7 @@
         ]
       }
     ],
+    "imageName": "atlas.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -2703,7 +2718,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "banshee.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -2715,37 +2729,43 @@
         "name": "Blueprint",
         "description": "Using sonic attacks and acoustic target detection, Banshee is well suited for stealth gameplay and is capable of filling both attack and support roles.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "banshee.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Banshee Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Banshee Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Banshee Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "banshee.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -3421,7 +3441,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "banshee-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -3435,6 +3454,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "banshee-prime.png",
         "drops": [
           {
             "location": "Axi K3 Intact",
@@ -3589,6 +3609,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Meso B2 Intact",
@@ -3671,6 +3692,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Lith V5 Intact",
@@ -3751,7 +3773,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeSystemsComponent",
@@ -3760,6 +3783,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi B1 Intact",
@@ -3860,6 +3884,7 @@
         ]
       }
     ],
+    "imageName": "banshee-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -4535,7 +4560,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "chroma.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -4547,37 +4571,43 @@
         "name": "Blueprint",
         "description": "A master of the deadly elements, Chroma can alter his damage output by changing his energy color.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "chroma.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Chroma Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Chroma Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Chroma Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent",
         "name": "Volt Neuroptics",
         "description": "Neuroptics component of the Volt Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       }
     ],
+    "imageName": "chroma.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -5368,7 +5398,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "ember.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -5380,7 +5409,8 @@
         "name": "Blueprint",
         "description": "Ember is a nightmare for light-armored targets. Ember can super-heat the air which opens up surprising crowd-control possibilities.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "ember.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberChassisComponent",
@@ -5388,6 +5418,7 @@
         "description": "Chassis component of the Ember Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Saturn - Tethys",
@@ -5403,6 +5434,7 @@
         "description": "Neuroptics component of the Ember Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Saturn - Tethys",
@@ -5417,7 +5449,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberSystemsComponent",
@@ -5425,6 +5458,7 @@
         "description": "Systems component of the Ember Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Saturn - Tethys",
@@ -5435,6 +5469,7 @@
         ]
       }
     ],
+    "imageName": "ember.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -6248,7 +6283,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "ember-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -6262,6 +6296,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "ember-prime.png",
         "drops": [
           {
             "location": "Axi E1 Intact",
@@ -6344,6 +6379,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Meso F2 Intact",
@@ -6402,6 +6438,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Meso F3 Intact",
@@ -6458,7 +6495,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeSystemsComponent",
@@ -6467,6 +6505,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi S2 Intact",
@@ -6519,6 +6558,7 @@
         ]
       }
     ],
+    "imageName": "ember-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -7333,7 +7373,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "equinox.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -7345,7 +7384,8 @@
         "name": "Blueprint",
         "description": "Split between day and night, Equinox manifests aggressive and defensive forms at will.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "yin-yang.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusComponent",
@@ -7353,6 +7393,7 @@
         "description": "Day Aspect of the Equinox Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "animus-aspect.png",
         "drops": [
           {
             "location": "Uranus - Titania",
@@ -7367,7 +7408,8 @@
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaComponent",
@@ -7375,6 +7417,7 @@
         "description": "Night Aspect of the Equinox Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "anima-aspect.png",
         "drops": [
           {
             "location": "Uranus - Titania",
@@ -7385,6 +7428,7 @@
         ]
       }
     ],
+    "imageName": "equinox.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -7918,7 +7962,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "excalibur.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -7930,7 +7973,8 @@
         "name": "Blueprint",
         "description": "A perfect balance of mobility and offense, Excalibur is the ideal Warframe for new players.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "excalibur.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburChassisComponent",
@@ -7938,6 +7982,7 @@
         "description": "Chassis component of the Excalibur Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Mars - War",
@@ -7953,6 +7998,7 @@
         "description": "Neuroptics component of the Excalibur Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Mars - War",
@@ -7967,7 +8013,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburSystemsComponent",
@@ -7975,6 +8022,7 @@
         "description": "Systems component of the Excalibur Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Mars - War",
@@ -7985,6 +8033,7 @@
         ]
       }
     ],
+    "imageName": "excalibur.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -9905,7 +9954,7 @@
     "sex": "Male",
     "sprint": 1,
     "vaulted": "N/A",
-    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/2a/ExcaliburPrimeNewLook.png/revision/latest?cb=20141124023050",
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/2a/ExcaliburPrimeNewLook.png/revision/latest?cb=20180628213418",
     "wikiaUrl": "http://warframe.wikia.com/wiki/Excalibur_Prime"
   },
   {
@@ -9979,7 +10028,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "frost.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -9991,7 +10039,8 @@
         "name": "Blueprint",
         "description": "By channeling moisture and vapor in the surrounding environment, Frost creates formidable defenses and lethal attacks from sub zero conditions.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "frost.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostChassisComponent",
@@ -9999,6 +10048,7 @@
         "description": "Chassis component of the Frost Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Ceres - Exta",
@@ -10015,6 +10065,7 @@
         "description": "Neuroptics component of the Frost Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Ceres - Exta",
@@ -10030,7 +10081,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostSystemsComponent",
@@ -10038,6 +10090,7 @@
         "description": "Systems component of the Frost Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Ceres - Exta",
@@ -10049,6 +10102,7 @@
         ]
       }
     ],
+    "imageName": "frost.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -10911,7 +10965,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "frost-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -10925,6 +10978,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "frost-prime.png",
         "drops": [
           {
             "location": "Meso F2 Intact",
@@ -11007,6 +11061,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Lith G1 Intact",
@@ -11065,6 +11120,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi E1 Intact",
@@ -11121,7 +11177,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeSystemsComponent",
@@ -11130,6 +11187,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith G2 Intact",
@@ -11182,6 +11240,7 @@
         ]
       }
     ],
+    "imageName": "frost-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -12045,7 +12104,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "gara.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -12057,7 +12115,8 @@
         "name": "Blueprint",
         "description": "The battlefield trembles before Gara's crystalline power, her ringing touch transforming opponents to targets of brittle beauty.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "glass.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassChassisComponent",
@@ -12065,6 +12124,7 @@
         "description": "Chassis component of the Gara Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Level 5 - 15 Bounty",
@@ -12128,6 +12188,7 @@
         "description": "Neuroptics component of the Gara Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Level 20 - 40 Bounty",
@@ -12190,7 +12251,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassSystemsComponent",
@@ -12198,6 +12260,7 @@
         "description": "Systems component of the Gara Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Level 10 - 30 Bounty",
@@ -12256,6 +12319,7 @@
         ]
       }
     ],
+    "imageName": "gara.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -12477,7 +12541,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "harrow.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -12489,7 +12552,8 @@
         "name": "Blueprint",
         "description": "Always prepared to sacrifice. This monastic Warframe uses the Void to bolster allies’ defenses and amplify their lethality.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "priest.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PriestChassisComponent",
@@ -12497,6 +12561,7 @@
         "description": "Chassis component of the Harrow Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Fissure Corrupted Enemy 3.00 3.00",
@@ -12517,7 +12582,8 @@
         "name": "Kuva",
         "description": "A mysterious red fluid coveted by the Grineer Queens.",
         "itemCount": 2000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "kuva.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PriestHelmetComponent",
@@ -12525,6 +12591,7 @@
         "description": "Neuroptics component of the Harrow Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Kuva - Fortress",
@@ -12541,6 +12608,7 @@
         "description": "Systems component of the Harrow Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Saturn - Caracol",
@@ -12566,6 +12634,7 @@
         ]
       }
     ],
+    "imageName": "harrow.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -12920,7 +12989,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "hydroid.png",
     "buildPrice": 30000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -12932,7 +13000,8 @@
         "name": "Blueprint",
         "description": "Rising from the ocean depths, Hydroid harnesses the power of water to a devastating effect.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "pirate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidChassisComponent",
@@ -12940,6 +13009,7 @@
         "description": "Chassis component of the Hydroid Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Earth - Oro",
@@ -12961,6 +13031,7 @@
         "description": "Neuroptics component of the Hydroid Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Earth - Oro",
@@ -12981,7 +13052,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidSystemsComponent",
@@ -12989,6 +13061,7 @@
         "description": "Systems component of the Hydroid Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Earth - Oro",
@@ -13005,6 +13078,7 @@
         ]
       }
     ],
+    "imageName": "hydroid.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -13600,7 +13674,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "hydroid-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -13614,6 +13687,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "hydroid-prime.png",
         "drops": [
           {
             "location": "Meso B2 Intact",
@@ -13672,6 +13746,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Meso H1 Intact",
@@ -13778,6 +13853,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi A3 Intact",
@@ -13834,7 +13910,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeSystemsComponent",
@@ -13843,6 +13920,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi H3 Intact",
@@ -13895,6 +13973,7 @@
         ]
       }
     ],
+    "imageName": "hydroid-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -14490,7 +14569,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "inaros.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -14502,37 +14580,43 @@
         "name": "Blueprint",
         "description": "Risen from the sands, Inaros commands the desert's fearsome power.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "sandman.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummyChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Inaros Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummyHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Inaros Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummySystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Inaros Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "inaros.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -15028,7 +15112,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "ivara.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -15041,6 +15124,7 @@
         "description": "With her quiver of tactical arrows, this huntress prowls unseen and strikes without warning.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "ranger.png",
         "drops": [
           {
             "location": "Uranus - Rosalind",
@@ -15099,6 +15183,7 @@
         "description": "Chassis component of the Ivara Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Jupiter - Amalthea",
@@ -15150,6 +15235,7 @@
         "description": "Neuroptics component of the Ivara Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Uranus - Rosalind",
@@ -15207,7 +15293,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerSystemsComponent",
@@ -15215,6 +15302,7 @@
         "description": "Systems component of the Ivara Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Mercury - Suisei",
@@ -15275,6 +15363,7 @@
         ]
       }
     ],
+    "imageName": "ivara.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -15824,7 +15913,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "khora.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -15837,6 +15925,7 @@
         "description": "Tenno and beast, red in whip and claw. Khora and her Kavat companion, Venari, embody lethal versatility. Two bodies, one will.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "khora.png",
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -15853,6 +15942,7 @@
         "description": "Chassis component of the Khora Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -15869,6 +15959,7 @@
         "description": "Neuroptics component of the Khora Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -15884,7 +15975,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/KhoraSystemsComponent",
@@ -15892,6 +15984,7 @@
         "description": "Systems component of the Khora Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Sanctuary - Sanctuary",
@@ -15903,6 +15996,7 @@
         ]
       }
     ],
+    "imageName": "khora.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -16047,7 +16141,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "limbo.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -16059,37 +16152,43 @@
         "name": "Blueprint",
         "description": "Limbo manipulates the very planes of existence to divide his enemies and conquer them in the rift.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "magician.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Limbo Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Limbo Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Limbo Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "limbo.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -16935,7 +17034,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "limbo-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -16949,6 +17047,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "limbo-prime.png",
         "drops": [
           {
             "location": "Meso Z1 Intact",
@@ -16983,6 +17082,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Neo L1 Intact",
@@ -17017,6 +17117,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi L2 Intact",
@@ -17049,7 +17150,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeSystemsComponent",
@@ -17058,6 +17160,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith B3 Intact",
@@ -17086,6 +17189,7 @@
         ]
       }
     ],
+    "imageName": "limbo-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -17931,7 +18035,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "loki.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -17943,7 +18046,8 @@
         "name": "Blueprint",
         "description": "Desired by advanced players, Loki offers a variety of specialized reconfiguring abilities. The creativity of Loki's powers allows players to master the battlefield through manipulation.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "loki.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKIChassisComponent",
@@ -17951,6 +18055,7 @@
         "description": "Chassis component of the Loki Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Neptune - Psamathe",
@@ -17966,6 +18071,7 @@
         "description": "Neuroptics component of the Loki Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Neptune - Psamathe",
@@ -17980,7 +18086,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKISystemsComponent",
@@ -17988,6 +18095,7 @@
         "description": "Systems component of the Loki Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Neptune - Psamathe",
@@ -17998,6 +18106,7 @@
         ]
       }
     ],
+    "imageName": "loki.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -18813,7 +18922,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "loki-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -18827,6 +18935,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "loki-prime.png",
         "drops": [
           {
             "location": "Axi S2 Intact",
@@ -18885,6 +18994,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Lith G2 Intact",
@@ -18919,6 +19029,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Neo E1 Intact",
@@ -18951,7 +19062,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeSystemsComponent",
@@ -18960,6 +19072,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi L1 Intact",
@@ -18988,6 +19101,7 @@
         ]
       }
     ],
+    "imageName": "loki-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -19804,7 +19918,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "mag.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -19816,7 +19929,8 @@
         "name": "Blueprint",
         "description": "With full command of surrounding magnetic energy, Mag is an expert at enemy manipulation.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "mag.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagChassisComponent",
@@ -19824,6 +19938,7 @@
         "description": "Chassis component of the Mag Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Phobos - Iliad",
@@ -19839,6 +19954,7 @@
         "description": "Neuroptics component of the Mag Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Phobos - Iliad",
@@ -19853,7 +19969,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagSystemsComponent",
@@ -19861,6 +19978,7 @@
         "description": "Systems component of the Mag Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Phobos - Iliad",
@@ -19871,6 +19989,7 @@
         ]
       }
     ],
+    "imageName": "mag.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -21071,7 +21190,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "mag-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -21085,6 +21203,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "mag-prime.png",
         "drops": [
           {
             "location": "Lith M1 Intact",
@@ -21143,6 +21262,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Meso B1 Intact",
@@ -21201,6 +21321,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi V2 Intact",
@@ -21257,7 +21378,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeSystemsComponent",
@@ -21266,6 +21388,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi R1 Intact",
@@ -21318,6 +21441,7 @@
         ]
       }
     ],
+    "imageName": "mag-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -22519,7 +22643,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "mesa.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -22531,7 +22654,8 @@
         "name": "Blueprint",
         "description": "With a steady hand and quick reflexes, Mesa is a true gunfighter.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "cowgirl.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerChassisComponent",
@@ -22539,6 +22663,7 @@
         "description": "Chassis component of the Mesa Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Mutalist Alad V Assassinate",
@@ -22560,6 +22685,7 @@
         "description": "Neuroptics component of the Mesa Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Mutalist Alad V Assassinate",
@@ -22580,7 +22706,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerSystemsComponent",
@@ -22588,6 +22715,7 @@
         "description": "Systems component of the Mesa Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Mutalist Alad V Assassinate",
@@ -22604,6 +22732,7 @@
         ]
       }
     ],
+    "imageName": "mesa.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -23268,7 +23397,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "mirage.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -23280,37 +23408,43 @@
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinBlueprint",
         "name": "Blueprint",
         "description": "A master of illusion, Mirage confounds the enemy in a spectacle of style and power.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "harlequin.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Mirage Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Mirage Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Mirage Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "mirage.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -24229,7 +24363,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "mirage-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -24243,6 +24376,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "mirage-prime.png",
         "drops": [
           {
             "location": "Neo M1 Intact",
@@ -24277,6 +24411,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Lith S7 Intact",
@@ -24335,6 +24470,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Lith Z1 Intact",
@@ -24391,7 +24527,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeSystemsComponent",
@@ -24400,6 +24537,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Meso O2 Intact",
@@ -24452,6 +24590,7 @@
         ]
       }
     ],
+    "imageName": "mirage-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -25369,7 +25508,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nekros.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -25381,7 +25519,8 @@
         "name": "Blueprint",
         "description": "Nekros uses his dark powers to manipulate his enemies, both living and dead.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "nekros.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroChassisComponent",
@@ -25389,6 +25528,7 @@
         "description": "Chassis component of the Nekros Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -25417,6 +25557,7 @@
         "description": "Neuroptics component of the Nekros Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -25444,7 +25585,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroSystemsComponent",
@@ -25452,6 +25594,7 @@
         "description": "Systems component of the Nekros Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -25475,6 +25618,7 @@
         ]
       }
     ],
+    "imageName": "nekros.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -26186,7 +26330,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nekros-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -26200,6 +26343,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "nekros-prime.png",
         "drops": [
           {
             "location": "Axi N3 Intact",
@@ -26282,6 +26426,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi G1 Intact",
@@ -26460,6 +26605,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi N5 Intact",
@@ -26516,7 +26662,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeSystemsComponent",
@@ -26525,6 +26672,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith N2 Intact",
@@ -26625,6 +26773,7 @@
         ]
       }
     ],
+    "imageName": "nekros-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -27337,7 +27486,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nezha.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -27349,37 +27497,43 @@
         "name": "Blueprint",
         "description": "A petite and playful facade conceals this frame’s immense power.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "nezha.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Nezha Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Nezha Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Nezha Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "nezha.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -27821,7 +27975,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nidus.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -27833,7 +27986,8 @@
         "name": "Blueprint",
         "description": "Command the Infestation to mutate and grow ever more destructive.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "nidus.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NidusChassisComponent",
@@ -27841,6 +27995,7 @@
         "description": "Chassis component of the Nidus Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Eris - Oestrus",
@@ -27856,7 +28011,8 @@
         "name": "Kuva",
         "description": "A mysterious red fluid coveted by the Grineer Queens.",
         "itemCount": 2000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "kuva.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NidusHelmetComponent",
@@ -27864,6 +28020,7 @@
         "description": "Neuroptics component of the Nidus Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Eris - Oestrus",
@@ -27880,6 +28037,7 @@
         "description": "Systems component of the Nidus Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Eris - Oestrus",
@@ -27891,6 +28049,7 @@
         ]
       }
     ],
+    "imageName": "nidus.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -28263,7 +28422,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nova.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -28275,7 +28433,8 @@
         "name": "Blueprint",
         "description": "Nova uses electromagnetic energy to contain and control highly volatile antimatter that fuels her abilities.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "antimatter.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaChassisComponent",
@@ -28283,6 +28442,7 @@
         "description": "Chassis component of the Nova Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Europa - Naamah",
@@ -28298,6 +28458,7 @@
         "description": "Neuroptics component of the Nova Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Europa - Naamah",
@@ -28312,7 +28473,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaSystemsComponent",
@@ -28320,6 +28482,7 @@
         "description": "Systems component of the Nova Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Europa - Naamah",
@@ -28330,6 +28493,7 @@
         ]
       }
     ],
+    "imageName": "nova.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -29057,7 +29221,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nova-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -29071,6 +29234,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "nova-prime.png",
         "drops": [
           {
             "location": "Neo N2 Intact",
@@ -29105,6 +29269,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Lith N1 Intact",
@@ -29163,6 +29328,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Lith C1 Intact",
@@ -29219,7 +29385,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeSystemsComponent",
@@ -29228,6 +29395,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith C1 Intact",
@@ -29304,6 +29472,7 @@
         ]
       }
     ],
+    "imageName": "nova-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -30032,7 +30201,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nyx.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -30044,7 +30212,8 @@
         "name": "Blueprint",
         "description": "Mind control and psychic attacks make Nyx a very dangerous foe. Her ability to reach into enemy consciousness and manipulate their behavior can turn the tide of battle.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "excalibur-female.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxChassisComponent",
@@ -30052,6 +30221,7 @@
         "description": "Chassis component of the Nyx Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Phorid Assassination",
@@ -30067,6 +30237,7 @@
         "description": "Neuroptics component of the Nyx Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Phorid Assassination",
@@ -30081,7 +30252,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxSystemsComponent",
@@ -30089,6 +30261,7 @@
         "description": "Systems component of the Nyx Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Phorid Assassination",
@@ -30099,6 +30272,7 @@
         ]
       }
     ],
+    "imageName": "nyx.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -31170,7 +31344,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "nyx-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -31184,6 +31357,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "nyx-prime.png",
         "drops": [
           {
             "location": "Lith S2 Intact",
@@ -31242,6 +31416,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Neo N1 Intact",
@@ -31276,6 +31451,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Meso N1 Intact",
@@ -31308,7 +31484,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
@@ -31317,6 +31494,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Neo S2 Intact",
@@ -31345,6 +31523,7 @@
         ]
       }
     ],
+    "imageName": "nyx-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -32417,7 +32596,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "oberon.png",
     "buildPrice": 30000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -32429,37 +32607,43 @@
         "name": "Blueprint",
         "description": "Equally adept at healing friends or striking down the enemy. Oberon embodies the balance Tenno are sworn to uphold.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "paladin.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Oberon Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Oberon Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Oberon Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "oberon.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -33216,7 +33400,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "oberon-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -33230,6 +33413,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "oberon-prime.png",
         "drops": [
           {
             "location": "Lith H2 Intact",
@@ -33336,6 +33520,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi H2 Intact",
@@ -33418,6 +33603,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Meso O1 Intact",
@@ -33474,7 +33660,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeSystemsComponent",
@@ -33483,6 +33670,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi O1 Intact",
@@ -33559,6 +33747,7 @@
         ]
       }
     ],
+    "imageName": "oberon-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -34315,7 +34504,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "octavia.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -34327,21 +34515,24 @@
         "name": "Blueprint",
         "description": "Compose her song and then conduct the mighty Mandachord, turning bass, beat and melody into an anthem of devastation.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "bard.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Octavia Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Keys/BardQuest/BardQuestSequencerItem",
         "name": "Mandachord",
         "description": "A rare Orokin instrument.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "mandochord.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaHelmetComponent",
@@ -34349,6 +34540,7 @@
         "description": "Neuroptics component of the Octavia Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Derelict - Orokin",
@@ -34371,6 +34563,7 @@
         "description": "Systems component of the Octavia Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Lua - Plato",
@@ -34382,6 +34575,7 @@
         ]
       }
     ],
+    "imageName": "octavia.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -34894,7 +35088,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "rhino.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -34906,7 +35099,8 @@
         "name": "Blueprint",
         "description": "Rhino is the heaviest Warframe, combining offensive and defensive capabilities.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "rhino-front.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoChassisComponent",
@@ -34914,6 +35108,7 @@
         "description": "Chassis component of the Rhino Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Venus - Fossa",
@@ -34928,7 +35123,8 @@
         "name": "Gallium",
         "description": "Soft metal used in microelectronics and energy weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-gallium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoHelmetComponent",
@@ -34936,6 +35132,7 @@
         "description": "Neuroptics component of the Rhino Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Venus - Fossa",
@@ -34951,6 +35148,7 @@
         "description": "Systems component of the Rhino Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Venus - Fossa",
@@ -34961,6 +35159,7 @@
         ]
       }
     ],
+    "imageName": "rhino.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -35841,7 +36040,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "rhino-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -35855,6 +36053,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "rhino-prime.png",
         "drops": [
           {
             "location": "Axi R1 Intact",
@@ -35889,6 +36088,7 @@
         "itemCount": 1,
         "ducats": 65,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Meso M1 Intact",
@@ -35923,6 +36123,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Lith B1 Intact",
@@ -35955,7 +36156,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeSystemsComponent",
@@ -35964,6 +36166,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Neo B3 Intact",
@@ -35992,6 +36195,7 @@
         ]
       }
     ],
+    "imageName": "rhino-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -36873,7 +37077,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "saryn.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -36885,7 +37088,8 @@
         "name": "Blueprint",
         "description": "Saryn's venomous attacks are horrifyingly effective against organic and synthetic enemies, and her ability to 'shed' her skin makes her very elusive.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "saryn.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynChassisComponent",
@@ -36893,6 +37097,7 @@
         "description": "Chassis component of the Saryn Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Sedna - Merrow",
@@ -36908,6 +37113,7 @@
         "description": "Neuroptics component of the Saryn Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Sedna - Merrow",
@@ -36922,7 +37128,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynSystemsComponent",
@@ -36930,6 +37137,7 @@
         "description": "Systems component of the Saryn Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Sedna - Merrow",
@@ -36940,6 +37148,7 @@
         ]
       }
     ],
+    "imageName": "saryn.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -37718,7 +37927,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "saryn-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -37732,6 +37940,7 @@
         "itemCount": 1,
         "ducats": 65,
         "tradable": true,
+        "imageName": "saryn-prime.png",
         "drops": [
           {
             "location": "Lith S4 Intact",
@@ -37838,6 +38047,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Meso S2 Intact",
@@ -37896,6 +38106,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Lith A1 Intact",
@@ -37976,7 +38187,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeSystemsComponent",
@@ -37985,6 +38197,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi G1 Intact",
@@ -38157,6 +38370,7 @@
         ]
       }
     ],
+    "imageName": "saryn-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -38936,7 +39150,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "titania.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -38948,37 +39161,43 @@
         "name": "Blueprint",
         "description": "Take flight with this mischievous pixie.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "titania.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairyChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Titania Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairyHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Titania Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairySystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Titania Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "titania.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -39351,7 +39570,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "trinity.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -39363,7 +39581,8 @@
         "name": "Blueprint",
         "description": "Trinity is great for players who prefer a supportive role. Warframes with healing technology are rare making Trinity a great equalizer when the odds are stacked against the Tenno.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "trinity.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityChassisComponent",
@@ -39371,6 +39590,7 @@
         "description": "Chassis component of the Trinity Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Pluto - Hades",
@@ -39386,6 +39606,7 @@
         "description": "Neuroptics component of the Trinity Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Pluto - Hades",
@@ -39400,7 +39621,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinitySystemsComponent",
@@ -39408,6 +39630,7 @@
         "description": "Systems component of the Trinity Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Pluto - Hades",
@@ -39418,6 +39641,7 @@
         ]
       }
     ],
+    "imageName": "trinity.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -40116,7 +40340,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "trinity-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -40130,6 +40353,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "trinity-prime.png",
         "drops": [
           {
             "location": "Axi S1 Intact",
@@ -40236,6 +40460,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi H1 Intact",
@@ -40342,6 +40567,7 @@
         "itemCount": 1,
         "ducats": 25,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi C1 Intact",
@@ -40470,7 +40696,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeSystemsComponent",
@@ -40479,6 +40706,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Axi A1 Intact",
@@ -40627,6 +40855,7 @@
         ]
       }
     ],
+    "imageName": "trinity-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -41326,7 +41555,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "valkyr.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -41338,7 +41566,8 @@
         "name": "Blueprint",
         "description": "Forged in the labs of the Zanuka project, the original Valkyr was subject to cruel experiments, leaving her scarred, angry and frighteningly adept at killing.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "berserker.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerChassisComponent",
@@ -41346,6 +41575,7 @@
         "description": "Chassis component of the Valkyr Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-chassis.png",
         "drops": [
           {
             "location": "Jupiter - Themisto",
@@ -41361,6 +41591,7 @@
         "description": "Neuroptics component of the Valkyr Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-helmet.png",
         "drops": [
           {
             "location": "Jupiter - Themisto",
@@ -41375,7 +41606,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerSystemsComponent",
@@ -41383,6 +41615,7 @@
         "description": "Systems component of the Valkyr Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-warframe-system.png",
         "drops": [
           {
             "location": "Jupiter - Themisto",
@@ -41393,6 +41626,7 @@
         ]
       }
     ],
+    "imageName": "valkyr.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -42159,7 +42393,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "valkyr-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -42173,6 +42406,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "valkyr-prime.png",
         "drops": [
           {
             "location": "Axi V7 Intact",
@@ -42351,6 +42585,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi V5 Intact",
@@ -42433,6 +42668,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Lith S6 Intact",
@@ -42585,7 +42821,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeSystemsComponent",
@@ -42594,6 +42831,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith V3 Intact",
@@ -42670,6 +42908,7 @@
         ]
       }
     ],
+    "imageName": "valkyr-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -43436,7 +43675,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "vauban.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -43448,37 +43686,43 @@
         "name": "Blueprint",
         "description": "The highly tactical Vauban uses his powers to create deadly traps that can zap, imprison and dimensionally crush enemies.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "engineer.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Vauban Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Vauban Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Vauban Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "vauban.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -44103,7 +44347,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "vauban-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -44117,6 +44360,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "vauban-prime.png",
         "drops": [
           {
             "location": "Lith F2 Intact",
@@ -44175,6 +44419,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi V1 Intact",
@@ -44281,6 +44526,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Meso N2 Intact",
@@ -44361,7 +44607,8 @@
         "name": "Nitain Extract",
         "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alertium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeSystemsComponent",
@@ -44370,6 +44617,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith V2 Intact",
@@ -44422,6 +44670,7 @@
         ]
       }
     ],
+    "imageName": "vauban-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -45047,7 +45296,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "volt.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -45059,37 +45307,43 @@
         "name": "Blueprint",
         "description": "Volt can create and harness electrical elements. This is a high-damage Warframe perfect for players who want a potent alternative to gun-play.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "volt.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Volt Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Volt Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Volt Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "volt.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -45986,7 +46240,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "volt-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -46000,6 +46253,7 @@
         "itemCount": 1,
         "ducats": 25,
         "tradable": true,
+        "imageName": "volt-prime.png",
         "drops": [
           {
             "location": "Axi N3 Intact",
@@ -46082,6 +46336,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi V8 Intact",
@@ -46164,6 +46419,7 @@
         "itemCount": 1,
         "ducats": 65,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi V1 Intact",
@@ -46220,7 +46476,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeSystemsComponent",
@@ -46229,6 +46486,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith V1 Intact",
@@ -46281,6 +46539,7 @@
         ]
       }
     ],
+    "imageName": "volt-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
@@ -47178,7 +47437,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "wukong.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -47190,37 +47448,43 @@
         "name": "Blueprint",
         "description": "A primal warrior with the heart of a trickster.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "monkey-king.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Wukong Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Wukong Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Wukong Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "wukong.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -47534,7 +47798,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "zephyr.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -47546,37 +47809,43 @@
         "name": "Blueprint",
         "description": "Specializing in air attacks and mobility, Zephyr dominates from above.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tengu.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguChassisComponent",
         "name": "Chassis",
         "description": "Chassis component of the Zephyr Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguHelmetComponent",
         "name": "Neuroptics",
         "description": "Neuroptics component of the Zephyr Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguSystemsComponent",
         "name": "Systems",
         "description": "Systems component of the Zephyr Warframe.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
       }
     ],
+    "imageName": "zephyr.png",
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
@@ -48198,7 +48467,6 @@
       }
     ],
     "type": "Warframe",
-    "imageName": "zephyr-prime.png",
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -48212,6 +48480,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "zephyr-prime.png",
         "drops": [
           {
             "location": "Meso Z1 Intact",
@@ -48270,6 +48539,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
         "drops": [
           {
             "location": "Axi O3 Intact",
@@ -48328,6 +48598,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
         "drops": [
           {
             "location": "Axi A4 Intact",
@@ -48384,7 +48655,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeSystemsComponent",
@@ -48393,6 +48665,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
         "drops": [
           {
             "location": "Lith Z1 Intact",
@@ -48421,6 +48694,7 @@
         ]
       }
     ],
+    "imageName": "zephyr-prime.png",
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [

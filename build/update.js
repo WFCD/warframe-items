@@ -12,7 +12,6 @@ const minifyJpeg = require('imagemin-jpegtran')
 const request = require('requestretry').defaults({ fullResponse: false })
 const sharp = require('sharp')
 const ProgressBar = require('progress')
-
 const stringify = require('./stringify.js')
 const scraper = require('./scraper.js')
 const imageCache = require('../data/cache/.images.json')
@@ -67,48 +66,73 @@ class Update {
     }
 
     // Go through each item and download/save image
+    const savedComponents = [] // Don't download component images twice
     let done = 0
-    await Promise.all(items.map(async (item) => {
-      const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
-      const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
-      const basePath = `${__dirname}/../data/img/`
-      const filePath = `${basePath}${item.imageName}`
-      const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
-      const sizeMedium = ['Resources', 'Misc', 'Fish']
-      const image = await request({ url: imageUrl, encoding: null })
-      const hash = crypto.createHash('md5').update(image).digest('hex')
-      const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
 
-      if (!cached || cached.hash !== hash) {
-        this.updateCache(item, hash)
-
-        if (sizeBig.includes(item.category)) {
-          await sharp(image).resize(512, 342).ignoreAspectRatio().toFile(filePath)
-        } else if (sizeMedium.includes(item.category)) {
-          await sharp(image).resize(512, 352).ignoreAspectRatio().toFile(filePath)
-        } else {
-          await sharp(image).toFile(filePath)
+    await new Promise(async resolve => {
+      for (let item of items) {
+        await this.saveImage(item, items, false, savedComponents, manifest, bar)
+        if (item.components) {
+          for (let component of item.components) {
+            await this.saveImage(component, items, true, savedComponents, manifest, bar)
+          }
         }
-        await minify([filePath], basePath, {
-          plugins: [
-            minifyJpeg(),
-            minifyPng({
-              quality: '20-40'
-            })
-          ]
-        })
+        done++
+        if (done === items.length) resolve()
       }
-      done++
-      bar.tick({
-        image: colors.cyan(item.name),
-        updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
-        check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
-      })
-      if (done === items.length) return 0
-    }))
+    })
 
     // Write new cache to disk
     fs.writeFileSync(`${__dirname}/../data/cache/.images.json`, JSON.stringify(imageCache, null, 1))
+  }
+
+  /**
+   * Download and save images for items or components.
+   */
+  async saveImage (item, items, isComponent, savedComponents, manifest, bar) {
+    const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
+    const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
+    const basePath = `${__dirname}/../data/img/`
+    const filePath = `${basePath}${item.imageName}`
+    const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
+    const sizeMedium = ['Resources', 'Misc', 'Fish']
+    const hash = manifest.find(i => i.uniqueName === item.uniqueName).fileTime
+    const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
+
+    // Don't download component images twice
+    if (isComponent) {
+      if (savedComponents.includes(item.imageName)) {
+        return
+      } else {
+        savedComponents.push(item.imageName)
+      }
+    }
+
+    if (!cached || cached.hash !== hash) {
+      const image = await request({ url: imageUrl, encoding: null })
+      this.updateCache(item, hash)
+
+      if (sizeBig.includes(item.category) || isComponent) {
+        await sharp(image).resize(512, 342).ignoreAspectRatio().toFile(filePath)
+      } else if (sizeMedium.includes(item.category)) {
+        await sharp(image).resize(512, 352).ignoreAspectRatio().toFile(filePath)
+      } else {
+        await sharp(image).toFile(filePath)
+      }
+      await minify([filePath], basePath, {
+        plugins: [
+          minifyJpeg(),
+          minifyPng({
+            quality: '20-40'
+          })
+        ]
+      })
+    }
+    bar.tick({
+      image: colors.cyan(item.name),
+      updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
+      check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
+    })
   }
 
   /**
