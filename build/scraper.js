@@ -301,10 +301,11 @@ class Scraper {
 
     if (isComponent) {
       if (item.name === 'Blueprint') {
-        item.imageName = 'blueprint.png'
+        item.imageName = 'blueprint'
+      } else {
+        item.imageName = imageStub.split('\\')[imageStub.split('\\').length - 1]
+          .split('.')[0].replace(/([a-z](?=[A-Z]))/g, '$1-').toLowerCase()
       }
-      item.imageName = imageStub.split('\\')[imageStub.split('\\').length - 1]
-        .split('.')[0].replace(/([a-z](?=[A-Z]))/g, '$1-').toLowerCase()
     } else {
       item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').toLowerCase()
     }
