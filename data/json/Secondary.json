@@ -23,8 +23,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1.33,
     "type": "Pistol",
-    "imageName": "acrid.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -36,37 +36,43 @@
         "name": "Blueprint",
         "description": "The Acrid fires an acidic-infused needle.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-acid-blow-dart-gun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
         "name": "Mutagen Mass",
         "description": "This living mass can produce weaponized toxins for weaponry.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "infested-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 6000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "acrid.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -231,8 +237,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.39,
     "type": "Dual Pistols",
-    "imageName": "afuris.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -244,7 +250,8 @@
         "name": "Blueprint",
         "description": "Furis pistols equipped in each hand. Twice the clip size and slightly faster fire rate, but accuracy and reload speed are lowered.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-akimbo-auto-pistols.png"
       },
       {
         "name": "Furis",
@@ -270,8 +277,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 2,
+        "omegaAttenuation": 1.35,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "furis.png"
       },
       {
         "name": "Furis",
@@ -297,17 +306,21 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 2,
+        "omegaAttenuation": 1.35,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "furis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       }
     ],
+    "imageName": "afuris.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -401,8 +414,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 0.85000002,
     "type": "Dual Pistols",
-    "imageName": "akbolto.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -414,7 +427,8 @@
         "name": "Blueprint",
         "description": "A Bolto equipped in each hand. Twice the clip size and slightly faster fire rate, but reload time is doubled and accuracy is lowered.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-akimbo-pistols.png"
       },
       {
         "name": "Bolto",
@@ -440,8 +454,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 7,
+        "omegaAttenuation": 1.51,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "lex.png"
       },
       {
         "name": "Bolto",
@@ -467,17 +483,21 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 7,
+        "omegaAttenuation": 1.51,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "lex.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       }
     ],
+    "imageName": "akbolto.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -578,8 +598,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 13,
+    "omegaAttenuation": 0.85000002,
     "type": "Dual Pistols",
-    "imageName": "akbolto-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -593,6 +613,7 @@
         "itemCount": 2,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Lith C2 Intact",
@@ -651,6 +672,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "akbolto-prime.png",
         "drops": [
           {
             "location": "Neo M1 Intact",
@@ -709,6 +731,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-component-prime-plug.png",
         "drops": [
           {
             "location": "Lith S7 Intact",
@@ -767,6 +790,7 @@
         "itemCount": 2,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Axi A3 Intact",
@@ -819,6 +843,7 @@
         ]
       }
     ],
+    "imageName": "akbolto-prime.png",
     "category": "Secondary",
     "tradable": true,
     "ammo": 210,
@@ -861,8 +886,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 1.2,
     "type": "Dual Shotguns",
-    "imageName": "akbronco.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -874,7 +899,8 @@
         "name": "Blueprint",
         "description": "A Bronco equipped in each hand.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "dual-broncos.png"
       },
       {
         "name": "Bronco",
@@ -900,8 +926,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 0,
+        "omegaAttenuation": 1.2,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "hand-cannon.png"
       },
       {
         "name": "Bronco",
@@ -927,17 +955,21 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 0,
+        "omegaAttenuation": 1.2,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "hand-cannon.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       }
     ],
+    "imageName": "akbronco.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -991,8 +1023,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1.2,
     "type": "Dual Shotguns",
-    "imageName": "akbronco-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -1006,6 +1038,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "prime-dual-broncos.png",
         "drops": [
           {
             "location": "Lith S2 Intact",
@@ -1201,8 +1234,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.2,
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "prime-bronco.png"
       },
       {
         "name": "Bronco Prime",
@@ -1228,8 +1263,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.2,
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "prime-bronco.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink",
@@ -1238,6 +1275,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-component-prime-plug.png",
         "drops": [
           {
             "location": "Axi S1 Intact",
@@ -1362,6 +1400,7 @@
         ]
       }
     ],
+    "imageName": "akbronco-prime.png",
     "category": "Secondary",
     "tradable": true,
     "ammo": 210,
@@ -1403,8 +1442,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 1.4299999,
     "type": "Dual Pistols",
-    "imageName": "akjagara.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -1435,15 +1474,18 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 9,
+        "omegaAttenuation": 0.85000002,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-akimbo-pistols.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TnoBladedPistolsBlueprint",
         "name": "Blueprint",
         "description": "The design of these hard-hitting dual pistols is a mix of organic and bladed elements.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tno-bladed-pistols.png"
       },
       {
         "name": "Dual Skana",
@@ -1469,17 +1511,21 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 0,
+        "omegaAttenuation": 1.48,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "dual-skana.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       }
     ],
+    "imageName": "akjagara.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -1541,6 +1587,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 3,
+    "omegaAttenuation": 1.52,
     "type": "Dual Pistols",
     "imageName": "aklato.png",
     "category": "Secondary",
@@ -1611,8 +1658,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1,
     "type": "Dual Pistols",
-    "imageName": "aklex.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -1624,7 +1671,8 @@
         "name": "Blueprint",
         "description": "Dual Lex pistols double the amount of high caliber lead you can throw at the enemy, but accuracy and reload time suffer.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "aklex.png"
       },
       {
         "name": "Lex",
@@ -1650,8 +1698,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 3,
+        "omegaAttenuation": 0.5,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "bolto.png"
       },
       {
         "name": "Lex",
@@ -1677,17 +1727,21 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 3,
+        "omegaAttenuation": 0.5,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "bolto.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       }
     ],
+    "imageName": "aklex.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -1756,8 +1810,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 15,
+    "omegaAttenuation": 1,
     "type": "Dual Pistols",
-    "imageName": "aklex-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -1771,6 +1825,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "aklex-prime.png",
         "drops": [
           {
             "location": "Axi A2 Intact",
@@ -1846,8 +1901,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 8,
+        "omegaAttenuation": 0.5,
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "prime-lex.png"
       },
       {
         "name": "Lex Prime",
@@ -1873,8 +1930,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 8,
+        "omegaAttenuation": 0.5,
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "prime-lex.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AklexPrimeLink",
@@ -1883,6 +1942,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-component-prime-plug.png",
         "drops": [
           {
             "location": "Axi A2 Intact",
@@ -1911,6 +1971,7 @@
         ]
       }
     ],
+    "imageName": "aklex-prime.png",
     "category": "Secondary",
     "tradable": true,
     "ammo": 210,
@@ -1952,8 +2013,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 12,
+    "omegaAttenuation": 1.28,
     "type": "Dual Pistols",
-    "imageName": "akmagnus.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -1965,7 +2026,8 @@
         "name": "Blueprint",
         "description": "Twice the ammo and twice the stopping power of a single Magnus.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "akmagnus.png"
       },
       {
         "name": "Magnus",
@@ -1991,8 +2053,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 10,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-magnum.png"
       },
       {
         "name": "Magnus",
@@ -2018,17 +2082,21 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 10,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-magnum.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       }
     ],
+    "imageName": "akmagnus.png",
     "category": "Secondary",
     "tradable": false,
     "damage": "76.0",
@@ -2070,8 +2138,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 1.26,
     "type": "Dual Pistols",
-    "imageName": "aksomati.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -2102,31 +2170,37 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 8,
+        "omegaAttenuation": 0.5,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-uzi.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/AksomatiBlueprint",
         "name": "Blueprint",
         "description": "The devastating power of the Soma rifle compacted into two elegant pistols.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "akimbo-soma-pistols.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
         "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
         "itemCount": 200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cryotic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       }
     ],
+    "imageName": "aksomati.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -2204,8 +2278,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 0.5,
     "type": "Dual Pistols",
-    "imageName": "akstiletto.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -2217,37 +2291,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TennoUziBlueprint",
         "name": "Blueprint",
         "description": "These diminutive rapid-fire Stiletto machine-pistols are just the right size to be akimbo style without sacrificing accuracy.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-uzi.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
         "description": "Soft metal used in microelectronics and energy weapons.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-gallium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "akstiletto.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -2345,8 +2425,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 0.5,
     "type": "Dual Pistols",
-    "imageName": "akstiletto-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -2360,6 +2440,7 @@
         "itemCount": 2,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Axi A1 Intact",
@@ -2466,6 +2547,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "akstiletto-prime.png",
         "drops": [
           {
             "location": "Lith A1 Intact",
@@ -2548,6 +2630,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-component-prime-plug.png",
         "drops": [
           {
             "location": "Axi N1 Intact",
@@ -2630,6 +2713,7 @@
         "itemCount": 2,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Axi H1 Intact",
@@ -2730,6 +2814,7 @@
         ]
       }
     ],
+    "imageName": "akstiletto-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -2808,8 +2893,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 1.24,
     "type": "Dual Pistols",
-    "imageName": "akvasto.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -2821,14 +2906,16 @@
         "name": "Blueprint",
         "description": "Vasto revolvers equipped in each hand.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "dual-vasto.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "name": "Vasto",
@@ -2854,8 +2941,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-hand-cannon.png"
       },
       {
         "name": "Vasto",
@@ -2881,10 +2970,13 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-hand-cannon.png"
       }
     ],
+    "imageName": "akvasto.png",
     "category": "Secondary",
     "tradable": false,
     "ammo": 210,
@@ -2927,8 +3019,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.52,
     "type": "Dual Pistols",
-    "imageName": "akzani.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -2940,37 +3032,43 @@
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/HarlequinPistolsBlueprint",
         "name": "Blueprint",
         "description": "The choice weapon of Mirage, these fast-firing dual pistols deliver a deadly performance.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "harlequin-pistols.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-morphic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 1000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 1500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "akzani.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -3033,8 +3131,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.4,
     "type": "Pistol",
-    "imageName": "angstrum.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -3046,37 +3144,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/CorpusHandRocketLauncherBlueprint",
         "name": "Blueprint",
         "description": "Capable of firing multiple rockets at once, the Angstrum is a handheld instrument of destruction.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-hand-rocket.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 400,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 900,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "angstrum.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -3307,8 +3411,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1,
     "type": "Pistol",
-    "imageName": "arca-scisco.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -3320,37 +3424,43 @@
         "name": "Blueprint",
         "description": "This scoped pistol analyzes strikes, learning how to damage its targets most effectively. Achieve maximum damage output after five successive hits.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "crp-scope-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
         "name": "Fieldron",
         "description": "ClanTech weaponized containment field to contain super-heated substances.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
         "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
         "itemCount": 250,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-oxium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 12500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "arca-scisco.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -3410,6 +3520,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1,
     "type": "Rifle",
     "imageName": "artax.png",
     "category": "Secondary",
@@ -3469,8 +3580,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 5,
+    "omegaAttenuation": 0.87,
     "type": "Pistol",
-    "imageName": "atomos.png",
     "buildPrice": 60000,
     "buildTime": 86400,
     "skipBuildTimePrice": 45,
@@ -3482,37 +3593,43 @@
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/GrnHeatGunBlueprint",
         "name": "Blueprint",
         "description": "This particle cannon generates a condensed beam of super-heated plasma designed to melt rock to ore, and enemies to molten slag.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grn-heat-gun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 1300,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 1500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "atomos.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -3681,6 +3798,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 6,
+    "omegaAttenuation": 1.35,
     "type": "Pistol",
     "imageName": "azima.png",
     "category": "Secondary",
@@ -3829,8 +3947,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 0.85000002,
     "type": "Crossbow",
-    "imageName": "ballistica.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -3842,37 +3960,43 @@
         "name": "Blueprint",
         "description": "The Ballistica crossbow features a unique dual firing mechanism. Choose between a four bolt volley or a deadly accurate charged shot.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-auto-crossbow.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
         "description": "Soft metal used in microelectronics and energy weapons.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-gallium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 3000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       }
     ],
+    "imageName": "ballistica.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -4068,8 +4192,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 14,
+    "omegaAttenuation": 0.85000002,
     "type": "Crossbow",
-    "imageName": "ballistica-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -4083,6 +4207,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "prime-ballistica.png",
         "drops": [
           {
             "location": "Lith B2 Intact",
@@ -4141,6 +4266,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-weapon-prime-blade.png",
         "drops": [
           {
             "location": "Axi V6 Intact",
@@ -4199,6 +4325,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Neo L1 Intact",
@@ -4257,6 +4384,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-stock.png",
         "drops": [
           {
             "location": "Axi A4 Intact",
@@ -4315,6 +4443,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-weapon-prime-blade.png",
         "drops": [
           {
             "location": "Lith T1 Intact",
@@ -4367,6 +4496,7 @@
         ]
       }
     ],
+    "imageName": "ballistica-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -4436,8 +4566,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1.51,
     "type": "Pistol",
-    "imageName": "bolto.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -4449,7 +4579,8 @@
         "name": "Blueprint",
         "description": "The Bolto fires slow, heavy bolts that are capable of impaling enemies to walls.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "lex.png"
       },
       {
         "name": "Lato",
@@ -4475,31 +4606,37 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 0,
+        "omegaAttenuation": 1.51,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       }
     ],
+    "imageName": "bolto.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -4824,8 +4961,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 6,
+    "omegaAttenuation": 0.75,
     "type": "Shotgun Sidearm",
-    "imageName": "brakk.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -4838,6 +4975,7 @@
         "description": "A weapon-crafting component.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-gun-barrel.png",
         "drops": [
           {
             "location": "Shik Tal 100.00",
@@ -4853,6 +4991,7 @@
         "description": "Simple but powerful. The semi-automatic Brakk hand cannon delivers a lot of punch in a small package.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "grineer-hand-shotgun.png",
         "drops": [
           {
             "location": "Vem Tabook 50.00 50.00",
@@ -4873,7 +5012,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkReceiver",
@@ -4881,6 +5021,7 @@
         "description": "A weapon-crafting component.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-gun-receiver.png",
         "drops": [
           {
             "location": "Leekter 100.00",
@@ -4891,6 +5032,7 @@
         ]
       }
     ],
+    "imageName": "brakk.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -5000,8 +5142,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 0,
+    "omegaAttenuation": 1.2,
     "type": "Shotgun Sidearm",
-    "imageName": "bronco.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -5013,37 +5155,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/BroncoBlueprint",
         "name": "Blueprint",
         "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited clip size.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "hand-cannon.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 700,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       }
     ],
+    "imageName": "bronco.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -5136,8 +5284,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.2,
     "type": "Shotgun Sidearm",
-    "imageName": "bronco-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -5151,6 +5299,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Axi E2 Intact",
@@ -5233,6 +5382,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "prime-bronco.png",
         "drops": [
           {
             "location": "Axi N2 Intact",
@@ -5505,7 +5655,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
@@ -5514,6 +5665,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Axi S1 Intact",
@@ -5686,6 +5838,7 @@
         ]
       }
     ],
+    "imageName": "bronco-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -5753,6 +5906,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.45,
     "type": "Pistol",
     "imageName": "burst-laser.png",
     "category": "Secondary",
@@ -5813,8 +5967,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 3,
+    "omegaAttenuation": 1.42,
     "type": "Thrown",
-    "imageName": "castanas.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -5826,37 +5980,43 @@
         "name": "Blueprint",
         "description": "The remotely triggered Castanas quietly deliver a lethal dose of electricity to unsuspecting enemies.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "taser-star.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "control-module.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "castanas.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -6133,8 +6293,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.52,
     "type": "Pistol",
-    "imageName": "cestra.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -6146,37 +6306,43 @@
         "name": "Blueprint",
         "description": "Compact and deadly, the Cestra discharges bolts of energy at an increasingly rapid rate.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-minigun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
         "description": "Soft metal used in microelectronics and energy weapons.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-gallium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 3000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       }
     ],
+    "imageName": "cestra.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -6319,8 +6485,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 1,
     "type": "Pistol",
-    "imageName": "cycron.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -6332,37 +6498,43 @@
         "name": "Blueprint",
         "description": "Forgo ammunition with the regenerating energy disc in this plasma throwing pistol.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "crp-charge-gun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 1500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 9000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
         "name": "Fieldron",
         "description": "ClanTech weaponized containment field to contain super-heated substances.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       }
     ],
+    "imageName": "cycron.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -6467,6 +6639,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.25,
     "type": "Glaive",
     "imageName": "deconstructor.png",
     "category": "Secondary",
@@ -6568,6 +6741,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 8,
+    "omegaAttenuation": 1.25,
     "type": "Glaive",
     "imageName": "deconstructor-prime.png",
     "category": "Secondary",
@@ -6628,8 +6802,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.24,
     "type": "Thrown",
-    "imageName": "despair.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -6641,7 +6815,8 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/StalkerKunaiBlueprint",
@@ -6649,6 +6824,7 @@
         "description": "Used by The Stalker, Despair throwing blades have a mono-filament edge, sharp enough to penetrate a Warframe.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "stalker-kunai.png",
         "drops": [
           {
             "location": "Shadow Stalker 50.00 50.00",
@@ -6693,23 +6869,27 @@
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-morphic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 4500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "despair.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -6828,6 +7008,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.455,
     "type": "Rifle",
     "imageName": "deth-machine-rifle.png",
     "category": "Secondary",
@@ -6880,8 +7061,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 6,
+    "omegaAttenuation": 1,
     "type": "Shotgun Sidearm",
-    "imageName": "detron.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -6894,6 +7075,7 @@
         "description": "The sleek lines of the Detron conceal its ferocious nature. The hand cannon's semi-automatic action takes down enemies with speed and efficiency.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "corpus-hand-cannon.png",
         "drops": [
           {
             "location": "Zanuka Hunter 50.00 50.00",
@@ -6914,30 +7096,35 @@
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 700,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "detron.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -7063,6 +7250,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1.39,
     "type": "Dual Pistols",
     "imageName": "dex-furis.png",
     "category": "Secondary",
@@ -7166,8 +7354,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1.35,
     "type": "Dual Pistols",
-    "imageName": "dual-cestra.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -7179,7 +7367,8 @@
         "name": "Blueprint",
         "description": "Wield two Cestras to unleash a dual torrent of high energy bolts.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "dual-corpus-minigun.png"
       },
       {
         "name": "Cestra",
@@ -7205,8 +7394,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.52,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-minigun.png"
       },
       {
         "name": "Cestra",
@@ -7232,24 +7423,29 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.52,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-minigun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
         "name": "Fieldron",
         "description": "ClanTech weaponized containment field to contain super-heated substances.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       }
     ],
+    "imageName": "dual-cestra.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -7360,8 +7556,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 11,
+    "omegaAttenuation": 1.1900001,
     "type": "Dual Pistols",
-    "imageName": "dual-toxocyst.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -7373,37 +7569,43 @@
         "name": "Blueprint",
         "description": "Brain-strikes excite this bioweapon, causing it to rapidly release toxic munitions.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "inf-vomit-gun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
         "name": "Mutagen Mass",
         "description": "This living mass can produce weaponized toxins for weaponry.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "infested-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 6500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 1100,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       }
     ],
+    "imageName": "dual-toxocyst.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -7500,8 +7702,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 1.45,
     "type": "Pistol",
-    "imageName": "embolist.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -7513,37 +7715,43 @@
         "name": "Blueprint",
         "description": "A living weapon, the infested Embolist pistol kills its victims with an acidic venomous gas.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "infested-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
         "name": "Mutagen Mass",
         "description": "This living mass can produce weaponized toxins for weaponry.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "infested-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 15000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "embolist.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -7687,8 +7895,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 14,
+    "omegaAttenuation": 0.75,
     "type": "Shotgun Sidearm",
-    "imageName": "euphona-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -7702,6 +7910,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Meso N3 Intact",
@@ -7784,6 +7993,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "euphora-prime.png",
         "drops": [
           {
             "location": "Axi B1 Intact",
@@ -7936,7 +8146,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/Prime1HShotgunReceiver",
@@ -7945,6 +8156,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Axi E2 Intact",
@@ -7973,6 +8185,7 @@
         ]
       }
     ],
+    "imageName": "euphona-prime.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -8069,8 +8282,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 1.35,
     "type": "Pistol",
-    "imageName": "furis.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -8082,37 +8295,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 300,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/FurisBlueprint",
         "name": "Blueprint",
         "description": "The Furis delivers a high damage output in a short time frame thanks to its high rate of fire.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "furis.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 750,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 400,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "furis.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -8308,8 +8527,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1.2,
     "type": "Thrown",
-    "imageName": "fusilai.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -8321,37 +8540,43 @@
         "name": "Blueprint",
         "description": "Silently lacerate enemies with Gara’s signature glass throwing knives.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "glass-kunai.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
         "name": "Nitain Extract",
         "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alertium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 1350,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 2950,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 10000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "fusilai.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -8419,8 +8644,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 0.52999997,
     "type": "Pistol",
-    "imageName": "gammacor.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -8432,37 +8657,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 2500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/ReconnasorBlueprint",
         "name": "Blueprint",
         "description": "Designed to quickly vaporize minerals for content analysis, users discovered its powerful beam was equally efficient at dispatching hostiles.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "gammacor.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 400,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 650,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       }
     ],
+    "imageName": "gammacor.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -8678,8 +8909,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 0.69,
     "type": "Thrown",
-    "imageName": "hikou.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -8691,37 +8922,43 @@
         "name": "Blueprint",
         "description": "As an alternative to Kunai, these Tenno throwing stars do less damage but they come with expanded ammo capacity and a higher rate of fire.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "throwing-star.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-morphic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 4000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "hikou.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -8865,8 +9102,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 0.69,
     "type": "Thrown",
-    "imageName": "hikou-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -8880,6 +9117,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "prime-hikou.png",
         "drops": [
           {
             "location": "Lith S1 Intact",
@@ -8936,7 +9174,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 8,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
@@ -8945,6 +9184,7 @@
         "itemCount": 2,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-component-prime-latch.png",
         "drops": [
           {
             "location": "Axi K1 Intact",
@@ -9003,6 +9243,7 @@
         "itemCount": 2,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-weapon-prime-blade.png",
         "drops": [
           {
             "location": "Lith F2 Intact",
@@ -9055,6 +9296,7 @@
         ]
       }
     ],
+    "imageName": "hikou-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -9124,8 +9366,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1,
     "type": "Pistol",
-    "imageName": "hystrix.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -9137,7 +9379,8 @@
         "name": "Blueprint",
         "description": "Fire, ice, electricity, or poison: choose an element and launch a flurry deadly quills. This versatile sidearm is Khora’s signature weapon.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "quill-dart-gun.png"
       },
       {
         "name": "Bolto",
@@ -9163,22 +9406,26 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 7,
+        "omegaAttenuation": 1.51,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "lex.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.",
         "itemCount": 15,
-        "tradable": false
+        "tradable": false,
+        "imageName": "control-module.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 9750,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "name": "Viper",
@@ -9204,10 +9451,13 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-light-pistol.png"
       }
     ],
+    "imageName": "hystrix.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -9303,8 +9553,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1,
     "type": "Pistol",
-    "imageName": "knell.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -9316,37 +9566,43 @@
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TnPriestPistolBlueprint",
         "name": "Blueprint",
         "description": "Ring the death knell. Headshots briefly turn this scoped pistol into a rapid-fire, Crit Damage fiend that uses no ammo.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "priest-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
         "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
         "itemCount": 3800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cryotic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 5200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 20000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "knell.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -9450,8 +9706,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 5,
+    "omegaAttenuation": 1.2,
     "type": "Shotgun Sidearm",
-    "imageName": "kohmak.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -9463,37 +9719,43 @@
         "name": "Blueprint",
         "description": "Like the larger Kohm, this hand-shotgun doubles its volley with each successive shot.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grn-wind-up-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/ChemComponent",
         "name": "Detonite Injector",
         "description": "Detonite injectors are the basis for explosive and incendiary weapons.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       }
     ],
+    "imageName": "kohmak.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -9587,8 +9849,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 0,
+    "omegaAttenuation": 1.53,
     "type": "Pistol",
-    "imageName": "kraken.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 45,
@@ -9600,37 +9862,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/GrnHeavyPistolBlueprint",
         "name": "Blueprint",
         "description": "The Kraken is a heavy pistol of Grineer design that fires two quick shots with a single pull of the trigger. Skilled marksmen will appreciate the value in this deadly accurate weapon.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-heavy-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 120,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 750,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "kraken.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -9758,8 +10026,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 5,
+    "omegaAttenuation": 1.1,
     "type": "Pistol",
-    "imageName": "kulstar.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -9771,14 +10039,16 @@
         "name": "Blueprint",
         "description": "Rain hell on the enemy with this handheld cluster-rocket launcher.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grn-torpedo-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
         "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
         "itemCount": 4800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cryotic.png"
       },
       {
         "name": "Kraken",
@@ -9804,24 +10074,29 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 0,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-heavy-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 3600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
         "name": "Tellurium",
         "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tellurium.png"
       }
     ],
+    "imageName": "kulstar.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -9950,8 +10225,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 1.51,
     "type": "Thrown",
-    "imageName": "kunai.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -9963,37 +10238,43 @@
         "name": "Blueprint",
         "description": "Kunai throwing daggers offer a silent alternative to the traditional side arm. Perfect for assassins.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "kunai-throwing-knives.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 3000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-morphic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 4000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 4000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "kunai.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -10185,6 +10466,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.21,
     "type": "Rifle",
     "imageName": "laser-rifle.png",
     "category": "Secondary",
@@ -10227,6 +10509,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 0,
+    "omegaAttenuation": 1.51,
     "type": "Pistol",
     "imageName": "lato.png",
     "category": "Secondary",
@@ -10420,6 +10703,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 14,
+    "omegaAttenuation": 1.51,
     "type": "Pistol",
     "imageName": "lato-prime.png",
     "category": "Secondary",
@@ -10490,8 +10774,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1.51,
     "type": "Pistol",
-    "imageName": "lato-vandal.png",
     "buildPrice": 25000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -10504,6 +10788,7 @@
         "description": "A weapon-crafting component.",
         "itemCount": 1,
         "tradable": true,
+        "imageName": "generic-gun-barrel.png",
         "drops": [
           {
             "location": "Sanctuary - Elite",
@@ -10520,6 +10805,7 @@
         "description": "A special version of the standard Lato pistol with a slower fire rate but offering higher accuracy and damage values. The Lato Vandal has been customized by the Tenno with a blue-green metallic finish and Lotus branding on the grips.",
         "itemCount": 1,
         "tradable": true,
+        "imageName": "lato-vandal.png",
         "drops": [
           {
             "location": "Sanctuary - Elite",
@@ -10536,6 +10822,7 @@
         "description": "A weapon-crafting component.",
         "itemCount": 1,
         "tradable": true,
+        "imageName": "generic-gun-receiver.png",
         "drops": [
           {
             "location": "Sanctuary - Elite",
@@ -10547,6 +10834,7 @@
         ]
       }
     ],
+    "imageName": "lato-vandal.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -10624,6 +10912,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 3,
+    "omegaAttenuation": 0.5,
     "type": "Pistol",
     "imageName": "lex.png",
     "category": "Secondary",
@@ -10791,8 +11080,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 0.5,
     "type": "Pistol",
-    "imageName": "lex-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -10806,6 +11095,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Axi A2 Intact",
@@ -11128,6 +11418,7 @@
         "itemCount": 1,
         "ducats": 25,
         "tradable": true,
+        "imageName": "prime-lex.png",
         "drops": [
           {
             "location": "Axi A2 Intact",
@@ -11304,7 +11595,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
@@ -11313,6 +11605,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Axi A2 Intact",
@@ -11533,6 +11826,7 @@
         ]
       }
     ],
+    "imageName": "lex-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -11625,8 +11919,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1.53,
     "type": "Pistol",
-    "imageName": "magnus.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 40,
@@ -11638,37 +11932,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 400,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/MagnumBlueprint",
         "name": "Blueprint",
         "description": "The versatile Magnus revolver is a lethal sidearm for any Tenno.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-magnum.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 100,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 900,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "magnus.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -11753,6 +12053,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 1,
     "type": "Shotgun Sidearm",
     "imageName": "mara-detron.png",
     "category": "Secondary",
@@ -11804,8 +12105,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 0.5,
     "type": "Pistol",
-    "imageName": "marelok.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -11817,37 +12118,43 @@
         "name": "Blueprint",
         "description": "The Marelok combines the stopping power of a rifle with the portability of a pistol.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-lever-action-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/ChemComponent",
         "name": "Detonite Injector",
         "description": "Detonite injectors are the basis for explosive and incendiary weapons.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "marelok.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -11992,6 +12299,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 0,
+    "omegaAttenuation": 1.35,
     "type": "Misc",
     "imageName": "mk1-furis.png",
     "category": "Secondary",
@@ -12021,6 +12329,7 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 0,
+    "omegaAttenuation": 1.51,
     "type": "Misc",
     "imageName": "mk1-kunai.png",
     "category": "Secondary",
@@ -12050,8 +12359,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.45,
     "type": "Pistol",
-    "imageName": "nukor.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -12063,37 +12372,43 @@
         "name": "Blueprint",
         "description": "Creates and focuses a high-frequency field of microwaves, literally cooking the target from within.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-microwave-gun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/ChemComponent",
         "name": "Detonite Injector",
         "description": "Detonite injectors are the basis for explosive and incendiary weapons.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-morphic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 5500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "nukor.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -12237,8 +12552,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 1,
     "type": "Pistol",
-    "imageName": "pandero.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -12250,37 +12565,43 @@
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TnBardPistolBlueprint",
         "name": "Blueprint",
         "description": "Octavia’s pistol hammers foes with single shots or a rapid volley of bullets.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tn-bard-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 4500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
         "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
         "itemCount": 5500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cryotic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 25000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "pandero.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -12400,8 +12721,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 0.81999999,
     "type": "Thrown",
-    "imageName": "pox.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -12413,37 +12734,43 @@
         "name": "Blueprint",
         "description": "These festering sacs of pus and gas burst violently on impact.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "inf-proximity-stars.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
         "name": "Mutagen Mass",
         "description": "This living mass can produce weaponized toxins for weaponry.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "infested-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 6500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
         "name": "Nitain Extract",
         "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alertium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       }
     ],
+    "imageName": "pox.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -12536,6 +12863,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.21,
     "type": "Rifle",
     "imageName": "prime-laser-rifle.png",
     "category": "Secondary",
@@ -12578,6 +12906,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 1.4,
     "type": "Pistol",
     "imageName": "prisma-angstrum.png",
     "category": "Secondary",
@@ -12658,6 +12987,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.45,
     "type": "Pistol",
     "imageName": "prisma-burst-laser.png",
     "category": "Secondary",
@@ -12710,8 +13040,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 12,
+    "omegaAttenuation": 1.2,
     "type": "Shotgun Sidearm",
-    "imageName": "pyrana.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -12723,37 +13053,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TennoHandShotgunBlueprint",
         "name": "Blueprint",
         "description": "Chew through the enemy with this vicious automatic hand shotgun.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "sawn-off-shotgun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "control-module.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "pyrana.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -12856,8 +13192,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 13,
+    "omegaAttenuation": 1.2,
     "type": "Shotgun Sidearm",
-    "imageName": "pyrana-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -12871,6 +13207,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Neo V7 Intact",
@@ -12905,6 +13242,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "pyrana-prime.png",
         "drops": [
           {
             "location": "Lith P1 Intact",
@@ -12937,7 +13275,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PyranaPrimeReceiver",
@@ -12946,6 +13285,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Axi K3 Intact",
@@ -12974,6 +13314,7 @@
         ]
       }
     ],
+    "imageName": "pyrana-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -13043,6 +13384,7 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 6,
+    "omegaAttenuation": 0.85000002,
     "type": "Crossbow",
     "imageName": "rakta-ballistica.png",
     "category": "Secondary",
@@ -13149,6 +13491,7 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1.42,
     "type": "Thrown",
     "imageName": "sancti-castanas.png",
     "category": "Secondary",
@@ -13217,6 +13560,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1.35,
     "type": "Dual Pistols",
     "imageName": "secura-dual-cestra.png",
     "category": "Secondary",
@@ -13295,8 +13639,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 0,
+    "omegaAttenuation": 1.5,
     "type": "Pistol",
-    "imageName": "seer.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -13309,6 +13653,7 @@
         "description": "A weapon-crafting component.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-gun-barrel.png",
         "drops": [
           {
             "location": "Mercury - Tolstoj",
@@ -13324,6 +13669,7 @@
         "description": "Captain Vor's prized Orokin-Grineer hybrid pistol has an average rate of fire, but it has high damage and superior zoom capabilities.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "captain-vor-pistol.png",
         "drops": [
           {
             "location": "Mercury - Tolstoj",
@@ -13338,7 +13684,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolReceiver",
@@ -13346,6 +13693,7 @@
         "description": "A weapon-crafting component.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "generic-gun-receiver.png",
         "drops": [
           {
             "location": "Mercury - Tolstoj",
@@ -13356,6 +13704,7 @@
         ]
       }
     ],
+    "imageName": "seer.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -13459,6 +13808,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 3,
+    "omegaAttenuation": 1.5,
     "type": "Pistol",
     "imageName": "sicarus.png",
     "category": "Secondary",
@@ -13596,8 +13946,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 14,
+    "omegaAttenuation": 1.5,
     "type": "Pistol",
-    "imageName": "sicarus-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -13611,6 +13961,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Meso F2 Intact",
@@ -13669,6 +14020,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "prime-sicarus.png",
         "drops": [
           {
             "location": "Axi E1 Intact",
@@ -13725,7 +14077,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeReceiver",
@@ -13734,6 +14087,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Axi S2 Intact",
@@ -13786,6 +14140,7 @@
         ]
       }
     ],
+    "imageName": "sicarus-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -13864,8 +14219,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 0.5,
     "type": "Pistol",
-    "imageName": "sonicor.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -13877,37 +14232,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 6500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/CrpAirPistolArrayBlueprint",
         "name": "Blueprint",
         "description": "Blasts targets with a massive wave of sonic energy. Results reported to be: 'Very Satisfying'.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "crp-air-pistol-array.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
         "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
         "itemCount": 600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-oxium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 2600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       }
     ],
+    "imageName": "sonicor.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -14073,8 +14434,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.49,
     "type": "Pistol",
-    "imageName": "spectra.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -14086,37 +14447,43 @@
         "name": "Blueprint",
         "description": "While its intended design is for deep space construction, the concentrated laser beam of the Spectra is highly effective against organic and synthetic enemies.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-modular-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 700,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
         "name": "Fieldron",
         "description": "ClanTech weaponized containment field to contain super-heated substances.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       }
     ],
+    "imageName": "spectra.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -14326,8 +14693,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 0.66000003,
     "type": "Thrown",
-    "imageName": "spira.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -14339,37 +14706,43 @@
         "name": "Blueprint",
         "description": "A flash of red ribbon is the last thing most victims of these throwing-daggers see.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "li-dagger.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 2500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
         "description": "Soft metal used in microelectronics and energy weapons.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-gallium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 800,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 4000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "spira.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -14523,8 +14896,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 0.66000003,
     "type": "Thrown",
-    "imageName": "spira-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -14538,6 +14911,7 @@
         "itemCount": 2,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-weapon-prime-blade.png",
         "drops": [
           {
             "location": "Lith S5 Intact",
@@ -14620,6 +14994,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "prime-li-dagger.png",
         "drops": [
           {
             "location": "Lith N2 Intact",
@@ -14748,7 +15123,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 8,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerHolster",
@@ -14757,6 +15133,7 @@
         "itemCount": 2,
         "ducats": 100,
         "tradable": true,
+        "imageName": "generic-component-prime-latch.png",
         "drops": [
           {
             "location": "Lith S1 Intact",
@@ -14881,6 +15258,7 @@
         ]
       }
     ],
+    "imageName": "spira-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -14977,8 +15355,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 0.52999997,
     "type": "Dual Pistols",
-    "imageName": "staticor.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -14990,37 +15368,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 6000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Weapons/ClanTech/Energy/CrpElectroMagBlueprint",
         "name": "Blueprint",
         "description": "Send a massive charge of potential energy hurling toward unfortunate targets.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "crp-electro-mag.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 9000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
         "name": "Fieldron",
         "description": "ClanTech weaponized containment field to contain super-heated substances.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "corpus-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
         "name": "Nitain Extract",
         "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alertium.png"
       }
     ],
+    "imageName": "staticor.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -15197,6 +15581,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.3150001,
     "type": "Rifle",
     "imageName": "stinger.png",
     "category": "Secondary",
@@ -15237,8 +15622,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1.25,
     "type": "Pistol",
-    "imageName": "stubba.png",
     "buildPrice": 20000,
     "buildTime": 86400,
     "skipBuildTimePrice": 35,
@@ -15251,6 +15636,7 @@
         "description": "Inflict rapid-fire bursts of pain with this Grineer submachine gun.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "grn-uzi-weapon.png",
         "drops": [
           {
             "location": "Ghoul Rictus Alpha 50.00 50.00",
@@ -15289,30 +15675,35 @@
         "name": "Coprite Alloy",
         "description": "Coprun that has been forged into a stronger metal.",
         "itemCount": 25,
-        "tradable": false
+        "tradable": false,
+        "imageName": "common-ore-balloy-a.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 4485,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
         "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
         "itemCount": 45,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grokdrul.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       }
     ],
+    "imageName": "stubba.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -15392,8 +15783,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 2,
+    "omegaAttenuation": 1.48,
     "type": "Pistol",
-    "imageName": "stug.png",
     "buildPrice": 20000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -15405,37 +15796,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/GrineerGooGunBlueprint",
         "name": "Blueprint",
         "description": "Firing a sticky, toxic, explosive compound, the Stug Gel Gun offers multiple ejection modes, delivering maximum damage in all situations.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-crossbow-goo-gun.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
         "description": "Soft metal used in microelectronics and energy weapons.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-gallium.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 3,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 3000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "stug.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -15592,6 +15989,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1,
     "type": "Shotgun",
     "imageName": "sweeper.png",
     "category": "Secondary",
@@ -15652,6 +16050,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1,
     "type": "Shotgun",
     "imageName": "sweeper-prime.png",
     "category": "Secondary",
@@ -15704,6 +16103,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 0.52999997,
     "type": "Pistol",
     "imageName": "synoid-gammacor.png",
     "category": "Secondary",
@@ -15813,8 +16213,8 @@
     "noise": "Silent",
     "sentinel": false,
     "masteryReq": 8,
+    "omegaAttenuation": 1.4400001,
     "type": "Thrown",
-    "imageName": "talons.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -15826,37 +16226,43 @@
         "name": "Blueprint",
         "description": "The claws of these tactical bombs dig into the target and detonate on command.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "u18throwingknives.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "control-module.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 1500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
         "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-oxium.png"
       }
     ],
+    "imageName": "talons.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -16020,6 +16426,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 11,
+    "omegaAttenuation": 0.85000002,
     "type": "Dual Pistols",
     "imageName": "telos-akbolto.png",
     "category": "Secondary",
@@ -16097,8 +16504,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 0.75999999,
     "type": "Dual Pistols",
-    "imageName": "twin-grakatas.png",
     "buildPrice": 30000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -16110,14 +16517,16 @@
         "name": "Blueprint",
         "description": "When one Grakata isn't enough, bring another for extra firepower.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "akgrakata.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "name": "Grakata",
@@ -16143,8 +16552,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 5,
+        "omegaAttenuation": 1.105,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-assault-rifle.png"
       },
       {
         "name": "Grakata",
@@ -16170,10 +16581,13 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 5,
+        "omegaAttenuation": 1.105,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-assault-rifle.png"
       }
     ],
+    "imageName": "twin-grakatas.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -16269,8 +16683,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 5,
+    "omegaAttenuation": 1.5,
     "type": "Dual Pistols",
-    "imageName": "twin-gremlins.png",
     "buildPrice": 25000,
     "buildTime": 86400,
     "skipBuildTimePrice": 45,
@@ -16283,6 +16697,7 @@
         "description": "Designed as a pair, these Grineer sidearms fire projectiles at a slower rate but with greater force and accuracy.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "grineer-bulbous-smg.png",
         "drops": [
           {
             "location": "Ceres - Exta",
@@ -16297,30 +16712,35 @@
         "name": "Circuits",
         "description": "Various electronic components.",
         "itemCount": 900,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-circuits.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 5,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-rubedo.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 1500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "twin-gremlins.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -16431,8 +16851,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1.1,
     "type": "Dual Shotguns",
-    "imageName": "twin-kohmak.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -16445,6 +16865,7 @@
         "description": "Doubling their volley on each successive shot, the Twin Kohmaks decimate foes in seconds.",
         "itemCount": 1,
         "tradable": false,
+        "imageName": "dual-kohmak.png",
         "drops": [
           {
             "location": "Kela De Thaym 25.00 25.00",
@@ -16477,7 +16898,8 @@
         "name": "Forma",
         "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "generic-component.png"
       },
       {
         "name": "Kohmak",
@@ -16503,8 +16925,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 5,
+        "omegaAttenuation": 1.2,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grn-wind-up-pistol.png"
       },
       {
         "name": "Kohmak",
@@ -16530,10 +16954,13 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 5,
+        "omegaAttenuation": 1.2,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grn-wind-up-pistol.png"
       }
     ],
+    "imageName": "twin-kohmak.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -16595,8 +17022,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 1,
     "type": "Dual Shotguns",
-    "imageName": "twin-rogga.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 40,
@@ -16608,37 +17035,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 2600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
         "description": "Void based radioactive resource that decays every day it is out of the void.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "argon-crystal.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/GrnQueenGuardDualPistolsBlueprint",
         "name": "Blueprint",
         "description": "These twin barrels of destruction are the signature pistols of the Kuva Guardians.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grn-queen-guard-dual-pistols.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 15000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Kuva",
         "name": "Kuva",
         "description": "A mysterious red fluid coveted by the Grineer Queens.",
         "itemCount": 1600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "kuva.png"
       }
     ],
+    "imageName": "twin-rogga.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -16717,8 +17150,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 5,
+    "omegaAttenuation": 1.41,
     "type": "Dual Pistols",
-    "imageName": "twin-vipers.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -16730,14 +17163,16 @@
         "name": "Blueprint",
         "description": "A Viper equipped in each hand.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-light-pistol-akimbo.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "name": "Viper",
@@ -16763,8 +17198,10 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-light-pistol.png"
       },
       {
         "name": "Viper",
@@ -16790,10 +17227,13 @@
         "noise": "Alarming",
         "sentinel": false,
         "masteryReq": 4,
+        "omegaAttenuation": 1.53,
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-light-pistol.png"
       }
     ],
+    "imageName": "twin-vipers.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -16880,8 +17320,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 7,
+    "omegaAttenuation": 1.41,
     "type": "Dual Pistols",
-    "imageName": "twin-vipers-wraith.png",
     "buildPrice": 25000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -16893,30 +17333,35 @@
         "name": "Barrels",
         "description": "A weapon-crafting component.",
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "generic-gun-barrel.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TwinVipersWraithBlueprint",
         "name": "Blueprint",
         "description": "The uniquely styled Twin Vipers Wraith are a powerful variation on the standard akimbo machine-pistols.",
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "wraith-twin-vipers.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithLink",
         "name": "Link",
         "description": "A weapon-crafting component.",
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "generic-component-plug.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithReceiver",
         "name": "Receivers",
         "description": "A weapon-crafting component.",
         "itemCount": 1,
-        "tradable": true
+        "tradable": true,
+        "imageName": "generic-gun-receiver.png"
       }
     ],
+    "imageName": "twin-vipers-wraith.png",
     "category": "Secondary",
     "tradable": true,
     "ammo": 440,
@@ -16958,8 +17403,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 9,
+    "omegaAttenuation": 1.51,
     "type": "Pistol",
-    "imageName": "tysis.png",
     "buildPrice": 30000,
     "buildTime": 86400,
     "skipBuildTimePrice": 40,
@@ -16971,37 +17416,43 @@
         "name": "Blueprint",
         "description": "The Tysis pistol spits out caustic darts that corrode their victims from within.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "infested-dart-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 900,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 2,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 400,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 100,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       }
     ],
+    "imageName": "tysis.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -17079,8 +17530,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.53,
     "type": "Pistol",
-    "imageName": "vasto.png",
     "buildPrice": 30000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -17092,37 +17543,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 1200,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/RevolverPistolBlueprint",
         "name": "Blueprint",
         "description": "Steady and reliable, the Vasto revolver combines speed and power for a classic gunslinger feel.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tenno-hand-cannon.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 700,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.",
         "itemCount": 4,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-neurode.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
         "itemCount": 1000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
       }
     ],
+    "imageName": "vasto.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -17242,8 +17699,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1.53,
     "type": "Pistol",
-    "imageName": "vasto-prime.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 50,
@@ -17257,6 +17714,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
         "drops": [
           {
             "location": "Axi V3 Intact",
@@ -17339,6 +17797,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
+        "imageName": "prime-vasto.png",
         "drops": [
           {
             "location": "Neo S3 Intact",
@@ -17371,7 +17830,8 @@
         "name": "Orokin Cell",
         "description": "Ancient energy cell from the Orokin era.",
         "itemCount": 10,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-cell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver",
@@ -17380,6 +17840,7 @@
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
         "drops": [
           {
             "location": "Lith A1 Intact",
@@ -17432,6 +17893,7 @@
         ]
       }
     ],
+    "imageName": "vasto-prime.png",
     "category": "Secondary",
     "tradable": true,
     "patchlogs": [
@@ -17515,6 +17977,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 0.5,
     "type": "Pistol",
     "imageName": "vaykor-marelok.png",
     "category": "Secondary",
@@ -17592,8 +18055,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.53,
     "type": "Pistol",
-    "imageName": "viper.png",
     "buildPrice": 20000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -17605,37 +18068,43 @@
         "name": "Blueprint",
         "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small clip size, the Viper has a very high fire rate and ultra-fast reload times thanks to a simplified magazine design.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "grineer-light-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.",
         "itemCount": 600,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-ferrite.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-morphic.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 900,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.",
         "itemCount": 300,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-salvage.png"
       }
     ],
+    "imageName": "viper.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
@@ -17820,6 +18289,7 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 4,
+    "omegaAttenuation": 1.53,
     "type": "Pistol",
     "imageName": "viper-wraith.png",
     "category": "Secondary",
@@ -17891,6 +18361,7 @@
     "noise": "Alarming",
     "sentinel": true,
     "masteryReq": 0,
+    "omegaAttenuation": 1.245,
     "type": "Sniper Rifle",
     "imageName": "vulklok.png",
     "category": "Secondary",
@@ -17965,8 +18436,8 @@
     "noise": "Alarming",
     "sentinel": false,
     "masteryReq": 10,
+    "omegaAttenuation": 1,
     "type": "Pistol",
-    "imageName": "zakti.png",
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 35,
@@ -17978,37 +18449,43 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.",
         "itemCount": 6500,
-        "tradable": false
+        "tradable": false,
+        "imageName": "alloy-plate.png"
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TnGuandaoPistolBlueprint",
         "name": "Blueprint",
         "description": "Fires razor-sharp darts that anchor themselves in their target before erupting in a plume of toxic gas.",
         "itemCount": 1,
-        "tradable": false
+        "tradable": false,
+        "imageName": "tn-guandao-pistol.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.",
         "itemCount": 8,
-        "tradable": false
+        "tradable": false,
+        "imageName": "control-module.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
         "itemCount": 5000,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-nanospores.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.",
         "itemCount": 350,
-        "tradable": false
+        "tradable": false,
+        "imageName": "component-plastids.png"
       }
     ],
+    "imageName": "zakti.png",
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
