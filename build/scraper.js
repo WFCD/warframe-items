@@ -300,6 +300,9 @@ class Scraper {
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
 
     if (isComponent) {
+      if (item.name === 'Blueprint') {
+        item.imageName = 'blueprint.png'
+      }
       item.imageName = imageStub.split('\\')[imageStub.split('\\').length - 1]
         .split('.')[0].replace(/([a-z](?=[A-Z]))/g, '$1-').toLowerCase()
     } else {
