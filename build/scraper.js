@@ -177,8 +177,13 @@ class Scraper {
 
       this.addType(item)
       this.sanitize(item)
-      this.addImageName(item, items[i - 1])
       this.addComponents(item, type)
+      this.addImageName(item, items[i - 1])
+      if (item.components) {
+        for (let component of item.components) {
+          this.addImageName(component, null, true)
+        }
+      }
       this.addCategory(item, type)
       this.addTradable(item, type)
       this.addDropRate(item)
@@ -290,10 +295,19 @@ class Scraper {
   /**
    * Add image name for images that will be fetched outside of this scraper.
    */
-  addImageName (item, previous) {
+  addImageName (item, previous, isComponent) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
-    item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').toLowerCase()
+
+    if (isComponent) {
+      if (item.name === 'Blueprint') {
+        item.imageName = 'blueprint.png'
+      }
+      item.imageName = imageStub.split('\\')[imageStub.split('\\').length - 1]
+        .split('.')[0].replace(/([a-z](?=[A-Z]))/g, '$1-').toLowerCase()
+    } else {
+      item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').toLowerCase()
+    }
 
     // Some items have the same name - so add their uniqueName as an identifier
     if (previous && item.name === previous.name) {
