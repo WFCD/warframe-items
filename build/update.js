@@ -101,6 +101,9 @@ class Update {
 
     // Don't download component images twice
     if (isComponent) {
+      if (item.name === 'Blueprint') {
+        return
+      }
       if (savedComponents.includes(item.imageName)) {
         return
       } else {
