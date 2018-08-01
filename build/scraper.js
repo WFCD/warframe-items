@@ -698,7 +698,17 @@ class Scraper {
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
 
-    item.disposition = Math.round(item.omegaAttenuation)
+    if (item.omegaAttenuation <= 0.75) {
+      item.disposition = 1
+    } else if (item.omegaAttenuation <= 0.895) {
+      item.disposition = 2
+    } else if (item.omegaAttenuation <= 1.105) {
+      item.disposition = 3
+    } else if (item.omegaAttenuation <= 1.3) {
+      item.disposition = 4
+    } else if (item.omegaAttenuation <= 1.6) {
+      item.disposition = 5
+    } 
   }
 }
 
