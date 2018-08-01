@@ -708,7 +708,7 @@ class Scraper {
       item.disposition = 4
     } else if (item.omegaAttenuation <= 1.6) {
       item.disposition = 5
-    } 
+    }
   }
 }
 
