@@ -1,3 +1,4 @@
+const prod = process.env.NODE_ENV === 'production'
 const request = require('requestretry').defaults({ fullResponse: false })
 const cheerio = require('cheerio')
 const crypto = require('crypto')
@@ -65,7 +66,10 @@ class Scraper {
       'http://content.warframe.com/MobileExport/Manifest/ExportWarframes.json'
     ]
     this.data = []
-    this.bar = new ProgressBar(`:check Procesing Endpoints: ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining ${colors.cyan(':type')}`, {
+    this.bar = prod ? {
+      interrupt () {},
+      tick () {}
+    } : new ProgressBar(`:check Procesing Endpoints: ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining ${colors.cyan(':type')}`, {
       incomplete: colors.red('-'),
       width: 20,
       total: this.endpoints.length

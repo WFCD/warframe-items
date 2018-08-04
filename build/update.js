@@ -3,6 +3,7 @@
  * immediately without fetching them. This storing process is automated by the
  * docker image.
  */
+const prod = process.env.NODE_ENV === 'production'
 const colors = require('colors/safe')
 const crypto = require('crypto')
 const fs = require('fs')
@@ -48,7 +49,10 @@ class Update {
     const Manifest = await request('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')
     const manifest = JSON.parse(Manifest).Manifest
     const manifestHash = crypto.createHash('md5').update(Manifest).digest('hex')
-    const bar = new ProgressBar(`:check Fetching  Images:    ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
+    const bar = prod ? {
+      interrupt () {},
+      tick () {}
+    } : new ProgressBar(`:check Fetching  Images:    ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
       incomplete: colors.red('-'),
       width: 20,
       total: items.length
