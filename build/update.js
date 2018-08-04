@@ -71,11 +71,15 @@ class Update {
 
     await new Promise(async resolve => {
       for (let item of items) {
-        await this.saveImage(item, items, false, savedComponents, manifest, bar)
-        if (item.components) {
-          for (let component of item.components) {
-            await this.saveImage(component, items, true, savedComponents, manifest, bar)
+        try {
+          await this.saveImage(item, items, false, savedComponents, manifest, bar)
+          if (item.components) {
+            for (let component of item.components) {
+              await this.saveImage(component, items, true, savedComponents, manifest, bar)
+            }
           }
+        } catch (err) {
+          console.log(`Failed to process image for ${item.name}.\n${err}`)
         }
         done++
         if (done === items.length) resolve()
