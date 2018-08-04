@@ -257,7 +257,6 @@ class Scraper {
           description: a.description
         }
       })
-      item.abilities.sort((a, b) => a.name.localeCompare(b.name))
     }
 
     // Make descriptions a string, not array
@@ -401,6 +400,7 @@ class Scraper {
         this.addDucats(item, component)
         this.addTradable(component, type)
       }
+      // This sorting is fine, since it's on an unordered list
       item.components.sort((a, b) => a.name.localeCompare(b.name))
     }
   }
@@ -683,7 +683,6 @@ class Scraper {
     damageTypes.forEach(type => {
       item.damageTypes[type] = wikiaItem[type]
     })
-    item.disposition = wikiaItem.riven_disposition
     item.flight = wikiaItem.flight
     item.marketCost = wikiaItem.marketCost
     item.masteryReq = item.masteryReq || wikiaItem.mr
@@ -698,6 +697,18 @@ class Scraper {
     item.vaulted = wikiaItem.vaulted
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
+
+    if (item.omegaAttenuation <= 0.75) {
+      item.disposition = 1
+    } else if (item.omegaAttenuation <= 0.895) {
+      item.disposition = 2
+    } else if (item.omegaAttenuation <= 1.105) {
+      item.disposition = 3
+    } else if (item.omegaAttenuation <= 1.3) {
+      item.disposition = 4
+    } else if (item.omegaAttenuation <= 1.6) {
+      item.disposition = 5
+    }
   }
 }
 
