@@ -69,6 +69,60 @@
     "tradable": false
   },
   {
+    "name": "Anspatha Brace",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Grip/SentAmpSet2GripPartA",
+    "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Grip/SentAmpSet2GripPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
+        "name": "Cetus Wisp",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "cetus-wisp.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 35,
+        "tradable": false,
+        "imageName": "fish-resource-oil.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
+        "name": "Murkray Liver",
+        "description": "An ingredient used in Ostron cooking and medicines.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "fish-resource-organ.png"
+      }
+    ],
+    "imageName": "anspatha-brace.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/SyringeComponent",
     "name": "Antiserum Injector Fragment",
     "description": "A component of the Antiserum Injector",
@@ -386,6 +440,14 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the Inventory UI not showing the Argon Crystal decay timer. "
+      },
       {
         "name": "The Sacrifice: Hotfix 23.0.5",
         "date": "2018-06-22T19:07:35Z",
@@ -1652,6 +1714,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Distilling Extractor Prime + Blueprint\nDistilling Extractor Prime + BP\nDistilling Extractor Prime + Blueprint"
+      },
+      {
         "name": "Hotfix 12.4.1",
         "date": "2014-03-06T23:56:02Z",
         "url": "https://forums.warframe.com/topic/190653-hotfix-1241/",
@@ -1706,7 +1776,17 @@
     ],
     "imageName": "distilling-extractor-prime.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Distilling Extractor Prime + Blueprint\nDistilling Extractor Prime + BP\nDistilling Extractor Prime + Blueprint"
+      }
+    ]
   },
   {
     "name": "Dokrahm",
@@ -1796,37 +1876,37 @@
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0507
+            "chance": 0.04730000000000001
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0795
+            "chance": 0.0714
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0507
+            "chance": 0.04730000000000001
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0795
+            "chance": 0.0714
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0507
+            "chance": 0.04730000000000001
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0795
+            "chance": 0.0714
           }
         ]
       },
@@ -5476,6 +5556,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Sacrifice: Update 23.2.0",
+        "date": "2018-08-02T15:02:26Z",
+        "url": "https://forums.warframe.com/topic/991847-the-sacrifice-update-2320/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0101f9fd2313734f1f72031130a1d0cd.jpg",
+        "additions": "",
+        "changes": "Weapons displayed on Hok’s Entitlement screen now show more information (Mastery Rank, Forma count, etc) to better reflect which weapon in your Inventory you’re Entitling. ",
+        "fixes": ""
+      },
+      {
         "name": "The Sacrifice: Update 23",
         "date": "2018-06-15T00:51:48Z",
         "url": "https://forums.warframe.com/topic/967249-the-sacrifice-update-23/",
@@ -6050,6 +6139,15 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Granmu Prism:",
+        "fixes": ""
+      },
       {
         "name": "The Sacrifice: Hotfix 23.0.7",
         "date": "2018-06-28T20:24:15Z",
@@ -6958,6 +7056,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Klebrik Scaffold:",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon: Hotfix 22.2.5",
         "date": "2017-11-11T02:19:26Z",
         "url": "https://forums.warframe.com/topic/877028-plains-of-eidolon-hotfix-2225/",
@@ -7189,6 +7296,15 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Kuva Siphons disappearing when you get in close proximity.\nFixed sometimes getting an incorrect Lotus transmissions when playing a Kuva Siphon mission."
+      },
       {
         "name": "The Sacrifice: Hotfix 23.0.3 - Limbo Prime",
         "date": "2018-06-19T17:58:18Z",
@@ -7916,6 +8032,26 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/Arcade",
+    "name": "Ludoplex",
+    "description": "Play the finest games in the Origin System with this device. Comes pre-installed with Frame Fighter.",
+    "type": "Extractor",
+    "imageName": "ludoplex.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Visit Simaris and acquire the Ludoplex -",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Focus/AttackLens",
     "name": "Madurai Lens",
     "description": "Channels Affinity into Focus for the Madurai Way.",
@@ -8206,6 +8342,32 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Update 23.6.0",
+        "date": "2018-08-30T16:04:42Z",
+        "url": "https://forums.warframe.com/topic/1003787-mask-of-the-revenant-update-2360/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/64179d467e89f2525b45bb65b23618b3.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed navigating the cursor over the search field in the Market blocking other inputs.  "
+      },
+      {
+        "name": "The Sacrifice: Update 23.2.0",
+        "date": "2018-08-02T15:02:26Z",
+        "url": "https://forums.warframe.com/topic/991847-the-sacrifice-update-2320/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0101f9fd2313734f1f72031130a1d0cd.jpg",
+        "additions": "",
+        "changes": "Pressing ‘Enter’ when typing in the Chat window with a game invite open will now prioritize the Chat window over the game invite. This also applies when viewing the Market while typing in Chat.",
+        "fixes": "Fixed having to move the virtual cursor on the purchase button to make a purchase on certain Market Bundles, instead of being able to press A anywhere when using a controller.\nFixed Old Man Suumbaat Decorations appearing too close in the Market diorama."
+      },
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "Fixed being unable to put items on your Wishlist in the Market when playing with a controller.",
+        "fixes": "Fixed being unable to see your Platinum total in Darvo's Market in the Relay. "
+      },
       {
         "name": "The Sacrifice: Hotfix 23.1.1",
         "date": "2018-07-19T20:31:38Z",
@@ -11922,7 +12084,18 @@
     ],
     "imageName": "pencha-scaffold.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Pencha Scaffold:",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/PersonalQuartersFeatureItem",
@@ -12060,6 +12233,79 @@
         "url": "https://forums.warframe.com/topic/867056-plains-of-eidolon-update-2210/",
         "additions": "",
         "changes": "Reduced the Resource costs for all Zaw Grips and Handles (apart from the Balla and Peye). ",
+        "fixes": ""
+      }
+    ]
+  },
+  {
+    "name": "Phahd Scaffold",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Chassis/SentAmpSet2ChassisPartA",
+    "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Chassis/SentAmpSet2ChassisPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
+        "name": "Cetus Wisp",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "cetus-wisp.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
+        "name": "Grokdrul",
+        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "itemCount": 60,
+        "tradable": false,
+        "imageName": "grokdrul.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
+        "name": "Murkray Liver",
+        "description": "An ingredient used in Ostron cooking and medicines.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-resource-organ.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
+        "name": "Pyrotic Alloy",
+        "description": "Pyrol that has been forged into a stronger metal.",
+        "itemCount": 85,
+        "tradable": false,
+        "imageName": "common-ore-aalloy-a.png"
+      }
+    ],
+    "imageName": "phahd-scaffold.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Update 23.5.0",
+        "date": "2018-08-24T21:39:09Z",
+        "url": "https://forums.warframe.com/topic/1001509-mask-of-the-revenant-update-2350/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/61cb4a6905ef705fb66fa0343591d997.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a crash when firing the Phahd Scaffold Alt Fire.\nFixed lingering FX from the Phahd Scaffold Alt Fire."
+      },
+      {
+        "name": "The Sacrifice: Hotfix 23.4.2",
+        "date": "2018-08-17T20:08:27Z",
+        "url": "https://forums.warframe.com/topic/998594-the-sacrifice-hotfix-2342/",
+        "additions": "",
+        "changes": "Fixed the Phahd Scaffold projectiles not passing through Volt’s Electric Shield.",
         "fixes": ""
       }
     ]
@@ -12514,6 +12760,60 @@
     "tradable": false
   },
   {
+    "name": "Rahn Prism",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Barrel/SentAmpSet2BarrelPartA",
+    "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Barrel/SentAmpSet2BarrelPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
+        "name": "Cetus Wisp",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "cetus-wisp.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
+        "name": "Esher Devar",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "common-gem-bcut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 60,
+        "tradable": false,
+        "imageName": "iradite.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
+        "name": "Tear Azurite",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "common-gem-acut-a.png"
+      }
+    ],
+    "imageName": "rahn-prism.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Raplak Prism",
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartA",
     "type": "Amp",
@@ -12565,7 +12865,18 @@
     ],
     "imageName": "raplak-prism.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Raplak Prism:",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstHaulingBalloonD",
@@ -12767,6 +13078,23 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed cases of enemies not spawning after destroying an Antiserum Injector console in an Infested Salvage mission."
+      },
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Umbra losing Armor in Infested Salvage missions when he shouldn't. "
+      },
       {
         "name": "Update 21: Chains of Harrow",
         "date": "2017-06-29T03:00:20Z",
