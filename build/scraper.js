@@ -518,7 +518,9 @@ class Scraper {
       if (item.components) {
         for (let component of item.components) {
           let savedDrops
-          const components = precompiled.find(i => i.name === item.name).components
+          const precompItem = precompiled.find(i => i.name === item.name);
+          if (!precompItem) return
+          const components = precompItem.components
           if (components) savedDrops = components.find(c => c.name === component.name)
           if (savedDrops && savedDrops.drops) component.drops = savedDrops.drops
         }

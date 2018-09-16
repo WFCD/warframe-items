@@ -52,7 +52,7 @@ class Update {
     const bar = prod ? {
       interrupt () {},
       tick () {}
-    } : new ProgressBar(`:check Fetching  Images:    ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
+    } : new ProgressBar(`:check Fetching Images:    ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
       incomplete: colors.red('-'),
       width: 20,
       total: items.length
