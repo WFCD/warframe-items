@@ -2,7 +2,6 @@
 [![npm](https://img.shields.io/npm/v/warframe-items.svg)](https://npmjs.org/warframe-items)
 [![build](https://ci.nexus-stats.com/api/badges/WFCD/warframe-items/status.svg)](https://ci.nexus-stats.com/WFCD/warframe-items)
 [![dependencies](https://david-dm.org/nexus-devs/warframe-items.svg)](https://david-dm.org/nexus-devs/warframe-items)
-[![Greenkeeper badge](https://badges.greenkeeper.io/WFCD/warframe-items.svg)](https://greenkeeper.io/)
 
 [![Supported by Warframe Community Developers](https://warframestat.us/wfcd.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
 
@@ -33,7 +32,7 @@ And tons more item specific data. Check out [/data/json](/data/json) to get an
 idea.
 
 You can also rest assured that this repository will be maintained for as long
-as Warframe stays alive, as it is has been built to provide all item data for [Nexus-Stats](https://github.com/nexus-devs/nexus-stats).
+as Warframe stays alive, as it is has been built to provide all item data for [NexusHub](https://github.com/nexus-devs/NexusHub).
 
 <br>
 

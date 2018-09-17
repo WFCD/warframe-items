@@ -33,9 +33,27 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseTwoClanItem",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase2clanitemname",
+    "description": "An integral building block in the construction of Tenno relays.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase2clanitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseThreeClanItem",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase3clanitemname",
+    "description": "An integral building block in the construction of Tenno relays.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase3clanitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
     "name": "Alloy Plate",
-    "description": "Carbon steel plates used to reinforce Grineer armor.",
+    "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
     "type": "Misc",
     "imageName": "alloy-plate.png",
     "category": "Misc",
@@ -69,9 +87,63 @@
     "tradable": false
   },
   {
+    "name": "Anspatha Brace",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Grip/SentAmpSet2GripPartA",
+    "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Grip/SentAmpSet2GripPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
+        "name": "Cetus Wisp",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "cetus-wisp.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 35,
+        "tradable": false,
+        "imageName": "fish-resource-oil.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
+        "name": "Murkray Liver",
+        "description": "An ingredient used in Ostron cooking and medicines.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "fish-resource-organ.png"
+      }
+    ],
+    "imageName": "anspatha-brace.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/SyringeComponent",
     "name": "Antiserum Injector Fragment",
-    "description": "A component of the Antiserum Injector",
+    "description": "A component of the Antiserum Injector.\nLocations: Infested Salvage Missions on Eris.",
     "type": "Misc",
     "imageName": "antiserum-injector-fragment.png",
     "category": "Misc",
@@ -125,7 +197,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
-        "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-oxium.png"
@@ -148,7 +220,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
     "name": "Argon Crystal",
-    "description": "Void based radioactive resource that decays every day it is out of the void.",
+    "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
     "type": "Misc",
     "imageName": "argon-crystal.png",
     "category": "Misc",
@@ -175,10 +247,10 @@
         "rotation": "C"
       },
       {
-        "location": "Void - Marduk",
+        "location": "Neptune - Halimede",
         "type": "Mission Rewards",
         "rarity": "Rare",
-        "chance": 0.0442,
+        "chance": 0.0367,
         "rotation": "C"
       },
       {
@@ -203,21 +275,7 @@
         "rotation": "C"
       },
       {
-        "location": "Neptune - Halimede",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0367,
-        "rotation": "C"
-      },
-      {
         "location": "Pluto - Charon",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0367,
-        "rotation": "C"
-      },
-      {
-        "location": "Sedna - Kelpie",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0367,
@@ -238,7 +296,7 @@
         "rotation": "C"
       },
       {
-        "location": "Void - Stribog",
+        "location": "Sedna - Kelpie",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0367,
@@ -273,20 +331,6 @@
         "rotation": "C"
       },
       {
-        "location": "Mercury - Neruda",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0067,
-        "rotation": "C"
-      },
-      {
-        "location": "Venus - Ishtar",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0067,
-        "rotation": "C"
-      },
-      {
         "location": "Mars - Gradivus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
@@ -294,7 +338,21 @@
         "rotation": "C"
       },
       {
+        "location": "Mercury - Neruda",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
         "location": "Mercury - Terminus",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
+        "location": "Venus - Ishtar",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0067,
@@ -315,25 +373,25 @@
         "rotation": "(Extra)"
       },
       {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Annihilation"
+      },
+      {
+        "location": "Saturn - Variant",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "Capture"
+      },
+      {
         "location": "Neptune - Cephalon",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0025,
         "rotation": "rewards"
-      },
-      {
-        "location": "Saturn - Variant",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0025,
-        "rotation": "Capture"
-      },
-      {
-        "location": "Saturn - Variant",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0025,
-        "rotation": "Capture"
       },
       {
         "location": "Saturn - Lunaro",
@@ -396,13 +454,21 @@
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0025,
-        "rotation": "Annihilation"
+        "rotation": "Capture"
       }
     ],
     "patchlogs": [
       {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the Inventory UI not showing the Argon Crystal decay timer. "
+      },
+      {
         "name": "The Sacrifice: Hotfix 23.0.5",
-        "date": "2018-06-22T19:07:34Z",
+        "date": "2018-06-22T19:07:35Z",
         "url": "https://forums.warframe.com/topic/972941-the-sacrifice-hotfix-2305/",
         "additions": "",
         "changes": "Orokin Cells pickups will now appear in the pop-up notification similar to Argon Crystals.",
@@ -867,7 +933,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 2000,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -934,7 +1000,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
     "name": "Circuits",
-    "description": "Various electronic components.",
+    "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
     "type": "Misc",
     "imageName": "circuits.png",
     "category": "Misc",
@@ -1036,7 +1102,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -1075,7 +1141,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
     "name": "Control Module",
-    "description": "Autonomy processor for Robotics. A Corpus design.",
+    "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
     "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
@@ -1086,7 +1152,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -1094,7 +1160,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/ControlModuleResourceBlueprint",
         "name": "Blueprint",
-        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -1102,7 +1168,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -1110,7 +1176,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 25000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -1118,7 +1184,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -1175,7 +1241,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
     "name": "Cryotic",
-    "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+    "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
     "type": "Misc",
     "imageName": "cryotic.png",
     "category": "Misc",
@@ -1318,7 +1384,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/RazorbackCipherPart",
     "name": "Cryptographic Alu",
-    "description": "Excess circuitry disposed of during the Razorback manufacturing process, these components only appear in the vicinity of high level outer-orbit Corpus facilities after a Razorback Armada has been launched.",
+    "description": "Excess circuitry disposed of during the Razorback manufacturing process, these components only appear in the vicinity of high level outer-orbit Corpus facilities after a Razorback Armada has been launched.\nThis resource can be dropped from Corpus Archwing Units.",
     "type": "Misc",
     "imageName": "cryptographic-alu.png",
     "category": "Misc",
@@ -1389,7 +1455,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -1497,7 +1563,18 @@
     "type": "Extractor",
     "imageName": "dax-portrait.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Hotfix 23.0.6",
+        "date": "2018-06-27T17:23:10Z",
+        "url": "https://forums.warframe.com/topic/975040-the-sacrifice-hotfix-2306/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/f2ec5d1fd25b735160d38c0b50924d20.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Dax Portrait not snapping properly to walls like a good portrait should."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/SteelMeridianUncommonDogTag",
@@ -1636,7 +1713,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
-        "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 150,
         "tradable": false,
         "imageName": "component-oxium.png"
@@ -1644,7 +1721,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 1000,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -1654,6 +1731,14 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Distilling Extractor Prime + Blueprint\nDistilling Extractor Prime + BP\nDistilling Extractor Prime + Blueprint"
+      },
       {
         "name": "Hotfix 12.4.1",
         "date": "2014-03-06T23:56:02Z",
@@ -1693,7 +1778,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
-        "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 300,
         "tradable": false,
         "imageName": "component-oxium.png"
@@ -1701,7 +1786,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 2000,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -1709,7 +1794,17 @@
     ],
     "imageName": "distilling-extractor-prime.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Distilling Extractor Prime + Blueprint\nDistilling Extractor Prime + BP\nDistilling Extractor Prime + Blueprint"
+      }
+    ]
   },
   {
     "name": "Dokrahm",
@@ -1799,37 +1894,37 @@
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0507
+            "chance": 0.04730000000000001
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0795
+            "chance": 0.0714
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0507
+            "chance": 0.04730000000000001
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0795
+            "chance": 0.0714
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0507
+            "chance": 0.04730000000000001
           },
           {
             "location": "Level 40 - 60 Bounty",
             "type": "Cetus Bounty Rewards",
             "rarity": "Rare",
-            "chance": 0.0795
+            "chance": 0.0714
           }
         ]
       },
@@ -2634,7 +2729,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -2658,7 +2753,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -2723,7 +2818,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
     "name": "Ferrite",
-    "description": "Alloy pellets used in Grineer manufacturing.",
+    "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
     "type": "Misc",
     "imageName": "ferrite.png",
     "category": "Misc",
@@ -3730,6 +3825,30 @@
             "chance": 0.16670000000000001
           },
           {
+            "location": "Lith B4 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith B4 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith B4 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith B4 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
             "location": "Lith C1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -4450,6 +4569,30 @@
             "chance": 0.16670000000000001
           },
           {
+            "location": "Meso N6 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Meso N6 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Meso N6 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso N6 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
             "location": "Meso O1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -5074,6 +5217,30 @@
             "chance": 0.16670000000000001
           },
           {
+            "location": "Neo R1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo R1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo R1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo R1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
             "location": "Neo S1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -5372,7 +5539,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -5380,7 +5547,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
         "name": "Neural Sensors",
-        "description": "Implanted neural-link for controlling augmentations. Grineer design.",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.\nLocation: Jupiter.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "neural-sensor.png"
@@ -5388,7 +5555,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -5396,7 +5563,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -5406,6 +5573,15 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.2.0",
+        "date": "2018-08-02T15:02:26Z",
+        "url": "https://forums.warframe.com/topic/991847-the-sacrifice-update-2320/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0101f9fd2313734f1f72031130a1d0cd.jpg",
+        "additions": "",
+        "changes": "Weapons displayed on Hok’s Entitlement screen now show more information (Mastery Rank, Forma count, etc) to better reflect which weapon in your Inventory you’re Entitling. ",
+        "fixes": ""
+      },
       {
         "name": "The Sacrifice: Update 23",
         "date": "2018-06-15T00:51:48Z",
@@ -5645,7 +5821,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
     "name": "Gallium",
-    "description": "Soft metal used in microelectronics and energy weapons.",
+    "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
     "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
@@ -5656,7 +5832,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/GalliumResourceBlueprint",
         "name": "Blueprint",
-        "description": "Soft metal used in microelectronics and energy weapons.",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -5664,7 +5840,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -5672,7 +5848,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 25000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -5680,7 +5856,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -5688,7 +5864,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -5842,7 +6018,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -5893,7 +6069,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 2000,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -5982,6 +6158,23 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Granmu Prism:",
+        "fixes": ""
+      },
+      {
+        "name": "The Sacrifice: Hotfix 23.0.7",
+        "date": "2018-06-28T20:24:15Z",
+        "url": "https://forums.warframe.com/topic/975538-the-sacrifice-hotfix-2307/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed being able to skip the Granmu Prism cooldown by switching to and from a Scanner."
+      },
+      {
         "name": "Shrine of the Eidolon: Update 22.12.0",
         "date": "2018-02-09T23:37:46Z",
         "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
@@ -6040,7 +6233,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -6072,7 +6265,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -6096,7 +6289,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -6128,7 +6321,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -6152,7 +6345,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -6176,7 +6369,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -6208,7 +6401,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -6232,7 +6425,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -6264,7 +6457,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -6288,7 +6481,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -6568,7 +6761,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 600,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -6614,7 +6807,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
         "name": "Neural Sensors",
-        "description": "Implanted neural-link for controlling augmentations. Grineer design.",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.\nLocation: Jupiter.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "neural-sensor.png"
@@ -6716,7 +6909,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -6783,7 +6976,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 2000,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -6881,6 +7074,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Klebrik Scaffold:",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon: Hotfix 22.2.5",
         "date": "2017-11-11T02:19:26Z",
         "url": "https://forums.warframe.com/topic/877028-plains-of-eidolon-hotfix-2225/",
@@ -6934,7 +7136,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 650,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -7066,7 +7268,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 500,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -7112,6 +7314,15 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Kuva Siphons disappearing when you get in close proximity.\nFixed sometimes getting an incorrect Lotus transmissions when playing a Kuva Siphon mission."
+      },
       {
         "name": "The Sacrifice: Hotfix 23.0.3 - Limbo Prime",
         "date": "2018-06-19T17:58:18Z",
@@ -7625,7 +7836,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 700,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -7692,7 +7903,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 750,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -7839,6 +8050,26 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/Arcade",
+    "name": "Ludoplex",
+    "description": "Play the finest games in the Origin System with this device. Comes pre-installed with Frame Fighter.",
+    "type": "Extractor",
+    "imageName": "ludoplex.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Visit Simaris and acquire the Ludoplex -",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Focus/AttackLens",
     "name": "Madurai Lens",
     "description": "Channels Affinity into Focus for the Madurai Way.",
@@ -7907,7 +8138,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 3,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -7917,6 +8148,14 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Hotfix 23.1.1",
+        "date": "2018-07-19T20:31:38Z",
+        "url": "https://forums.warframe.com/topic/985581-the-sacrifice-hotfix-2311/",
+        "additions": "",
+        "changes": "All Mandachord songs (other than the default song) will now appear in the Somachord, between the unlocked tracks and the locked tracks.\nMandachord tunes now duck out other music in the Market and Star Chart.",
+        "fixes": ""
+      },
       {
         "name": "Beasts of the Sanctuary: Hotfix 22.20.7",
         "date": "2018-05-30T19:03:25Z",
@@ -8121,6 +8360,40 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Update 23.6.0",
+        "date": "2018-08-30T16:04:42Z",
+        "url": "https://forums.warframe.com/topic/1003787-mask-of-the-revenant-update-2360/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/64179d467e89f2525b45bb65b23618b3.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed navigating the cursor over the search field in the Market blocking other inputs.  "
+      },
+      {
+        "name": "The Sacrifice: Update 23.2.0",
+        "date": "2018-08-02T15:02:26Z",
+        "url": "https://forums.warframe.com/topic/991847-the-sacrifice-update-2320/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0101f9fd2313734f1f72031130a1d0cd.jpg",
+        "additions": "",
+        "changes": "Pressing ‘Enter’ when typing in the Chat window with a game invite open will now prioritize the Chat window over the game invite. This also applies when viewing the Market while typing in Chat.",
+        "fixes": "Fixed having to move the virtual cursor on the purchase button to make a purchase on certain Market Bundles, instead of being able to press A anywhere when using a controller.\nFixed Old Man Suumbaat Decorations appearing too close in the Market diorama."
+      },
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "Fixed being unable to put items on your Wishlist in the Market when playing with a controller.",
+        "fixes": "Fixed being unable to see your Platinum total in Darvo's Market in the Relay. "
+      },
+      {
+        "name": "The Sacrifice: Hotfix 23.1.1",
+        "date": "2018-07-19T20:31:38Z",
+        "url": "https://forums.warframe.com/topic/985581-the-sacrifice-hotfix-2311/",
+        "additions": "",
+        "changes": "Moved the new sexy TennoGen to the top of the in-game Market when launching with Steam.\nMandachord tunes now duck out other music in the Market and Star Chart.",
+        "fixes": ""
+      },
       {
         "name": "The Sacrifice: Hotfix 23.0.4",
         "date": "2018-06-20T20:44:05Z",
@@ -9608,7 +9881,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 2000,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -10074,7 +10347,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
     "name": "Morphics",
-    "description": "An amorphous solid. Possibly Orokin technology.",
+    "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
     "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
@@ -10085,7 +10358,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/MorphicsResourceBlueprint",
         "name": "Blueprint",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -10093,7 +10366,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -10101,7 +10374,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 25000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -10109,7 +10382,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -10117,7 +10390,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -10219,7 +10492,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -10294,7 +10567,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -10404,7 +10677,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
     "name": "Nano Spores",
-    "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+    "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
     "type": "Misc",
     "imageName": "nano-spores.png",
     "category": "Misc",
@@ -10470,7 +10743,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/NavCode",
     "name": "Nav Coordinate",
-    "description": "Coordinate used to locate lost ships.",
+    "description": "Coordinate used to locate lost ships.\nCan be acquired from Storage Containers.",
     "type": "Misc",
     "imageName": "nav-coordinate.png",
     "category": "Misc",
@@ -10545,7 +10818,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
     "name": "Neural Sensors",
-    "description": "Implanted neural-link for controlling augmentations. Grineer design.",
+    "description": "Implanted neural-link for controlling augmentations. Grineer design.\nLocation: Jupiter.",
     "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
@@ -10556,7 +10829,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 50000,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -10564,7 +10837,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/NeuralSensorResourceBlueprint",
         "name": "Blueprint",
-        "description": "Implanted neural-link for controlling augmentations. Grineer design.",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.\nLocation: Jupiter.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -10572,7 +10845,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 50000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -10580,7 +10853,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 25000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -10644,7 +10917,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
     "name": "Neurodes",
-    "description": "Biotech sensor organ harvested from Infested entities.",
+    "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
     "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
@@ -10655,7 +10928,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 50000,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -10663,7 +10936,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/NeurodeResourceBlueprint",
         "name": "Blueprint",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -10671,7 +10944,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 50000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -10679,7 +10952,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 25000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -10742,7 +11015,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
     "name": "Nitain Extract",
-    "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
+    "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.\nThis resource can be acquired as a reward from Alerts.",
     "type": "Misc",
     "imageName": "nitain-extract.png",
     "category": "Misc",
@@ -10773,7 +11046,7 @@
         "chance": 0.0412
       },
       {
-        "location": "Pluto - Cypress",
+        "location": "Pluto - Charon",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.02,
@@ -10787,7 +11060,7 @@
         "rotation": "rewards"
       },
       {
-        "location": "Void - Stribog",
+        "location": "Sedna - Kelpie",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.02,
@@ -10815,21 +11088,14 @@
         "rotation": "C"
       },
       {
-        "location": "Pluto - Charon",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.02,
-        "rotation": "C"
-      },
-      {
-        "location": "Sedna - Kelpie",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.02,
-        "rotation": "C"
-      },
-      {
         "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.02,
+        "rotation": "C"
+      },
+      {
+        "location": "Pluto - Cypress",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.02,
@@ -10840,13 +11106,6 @@
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0129,
-        "rotation": "C"
-      },
-      {
-        "location": "Void - Marduk",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0101,
         "rotation": "C"
       },
       {
@@ -10991,7 +11250,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -11041,7 +11300,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OmegaIsotope",
     "name": "Omega Isotope",
-    "description": "Produced by a Fomorian’s power core, these particles only appear on or around planets where a Fomorian is present.",
+    "description": "Produced by a Fomorian’s power core, these particles only appear on or around planets where a Fomorian is present.\nLocation: Any planet with a Balor Fomorian.",
     "type": "Misc",
     "imageName": "omega-isotope.png",
     "category": "Misc",
@@ -11179,7 +11438,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
-        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "control-module.png"
@@ -11187,7 +11446,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
-        "description": "Soft metal used in microelectronics and energy weapons.",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-gallium.png"
@@ -11195,7 +11454,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -11203,7 +11462,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -11275,7 +11534,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
     "name": "Orokin Cell",
-    "description": "Ancient energy cell from the Orokin era.",
+    "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
     "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
@@ -11286,7 +11545,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 50000,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -11294,7 +11553,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/OrokinCellResourceBlueprint",
         "name": "Blueprint",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -11302,7 +11561,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 50000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -11310,7 +11569,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 25000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -11322,7 +11581,7 @@
     "patchlogs": [
       {
         "name": "The Sacrifice: Hotfix 23.0.5",
-        "date": "2018-06-22T19:07:34Z",
+        "date": "2018-06-22T19:07:35Z",
         "url": "https://forums.warframe.com/topic/972941-the-sacrifice-hotfix-2305/",
         "additions": "",
         "changes": "Orokin Cells pickups will now appear in the pop-up notification similar to Argon Crystals.",
@@ -11523,7 +11782,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -11531,7 +11790,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
         "name": "Neural Sensors",
-        "description": "Implanted neural-link for controlling augmentations. Grineer design.",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.\nLocation: Jupiter.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "neural-sensor.png"
@@ -11539,7 +11798,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -11547,7 +11806,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -11612,7 +11871,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
     "name": "Oxium",
-    "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+    "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
     "type": "Misc",
     "imageName": "oxium.png",
     "category": "Misc",
@@ -11843,7 +12102,18 @@
     ],
     "imageName": "pencha-scaffold.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Pencha Scaffold:",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/PersonalQuartersFeatureItem",
@@ -11859,7 +12129,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -11875,7 +12145,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 3000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -11883,7 +12153,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -11891,7 +12161,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
         "name": "Tellurium",
-        "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.",
+        "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.\nLocations: Archwing Missions on Uranus.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "tellurium.png"
@@ -11925,7 +12195,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 850,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -11986,6 +12256,79 @@
     ]
   },
   {
+    "name": "Phahd Scaffold",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Chassis/SentAmpSet2ChassisPartA",
+    "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Chassis/SentAmpSet2ChassisPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
+        "name": "Cetus Wisp",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "cetus-wisp.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
+        "name": "Grokdrul",
+        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "itemCount": 60,
+        "tradable": false,
+        "imageName": "grokdrul.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
+        "name": "Murkray Liver",
+        "description": "An ingredient used in Ostron cooking and medicines.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-resource-organ.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
+        "name": "Pyrotic Alloy",
+        "description": "Pyrol that has been forged into a stronger metal.",
+        "itemCount": 85,
+        "tradable": false,
+        "imageName": "common-ore-aalloy-a.png"
+      }
+    ],
+    "imageName": "phahd-scaffold.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Update 23.5.0",
+        "date": "2018-08-24T21:39:09Z",
+        "url": "https://forums.warframe.com/topic/1001509-mask-of-the-revenant-update-2350/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/61cb4a6905ef705fb66fa0343591d997.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a crash when firing the Phahd Scaffold Alt Fire.\nFixed lingering FX from the Phahd Scaffold Alt Fire."
+      },
+      {
+        "name": "The Sacrifice: Hotfix 23.4.2",
+        "date": "2018-08-17T20:08:27Z",
+        "url": "https://forums.warframe.com/topic/998594-the-sacrifice-hotfix-2342/",
+        "additions": "",
+        "changes": "Fixed the Phahd Scaffold projectiles not passing through Volt’s Electric Shield.",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "name": "Plague Akwin",
     "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleOne",
     "type": "Melee",
@@ -12021,7 +12364,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 1100,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -12083,7 +12426,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 1100,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -12129,7 +12472,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 1600,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -12137,7 +12480,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 700,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -12186,7 +12529,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 1600,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -12194,7 +12537,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 700,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -12242,7 +12585,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
     "name": "Plastids",
-    "description": "A disgusting nanite-infested tissue mass.",
+    "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
     "type": "Misc",
     "imageName": "plastids.png",
     "category": "Misc",
@@ -12271,7 +12614,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
     "name": "Polymer Bundle",
-    "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+    "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
     "type": "Misc",
     "imageName": "polymer-bundle.png",
     "category": "Misc",
@@ -12435,6 +12778,60 @@
     "tradable": false
   },
   {
+    "name": "Rahn Prism",
+    "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Barrel/SentAmpSet2BarrelPartA",
+    "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Barrel/SentAmpSet2BarrelPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
+        "name": "Cetus Wisp",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "cetus-wisp.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
+        "name": "Esher Devar",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "common-gem-bcut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 60,
+        "tradable": false,
+        "imageName": "iradite.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
+        "name": "Tear Azurite",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "common-gem-acut-a.png"
+      }
+    ],
+    "imageName": "rahn-prism.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Raplak Prism",
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartA",
     "type": "Amp",
@@ -12486,7 +12883,18 @@
     ],
     "imageName": "raplak-prism.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "Raplak Prism:",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstHaulingBalloonD",
@@ -12498,9 +12906,57 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneClanItem",
+    "name": "Relay Strut Component",
+    "description": "An integral building block in the construction of Tenno relays.",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 10800,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/RelayThermicStrutBlueprint",
+        "name": "Blueprint",
+        "description": "An integral building block in the construction of Tenno relays.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
+        "itemCount": 5000,
+        "tradable": false,
+        "imageName": "component-salvage.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseThreeEarthEssence",
+        "name": "Trembera Essence",
+        "description": "A highly purified mineral compound prized for its strength, resiliency, and resistance to heat. Widely used in the construction of Tenno relays.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "relay-essence-earth.png"
+      }
+    ],
+    "imageName": "relay-strut-component.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
     "name": "Rubedo",
-    "description": "A jagged crystalline ore. Gives off radiant energy.",
+    "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
     "type": "Misc",
     "imageName": "rubedo.png",
     "category": "Misc",
@@ -12682,12 +13138,29 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
     "name": "Salvage",
-    "description": "High value metals collected from war salvage.",
+    "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
     "type": "Misc",
     "imageName": "salvage.png",
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed cases of enemies not spawning after destroying an Antiserum Injector console in an Infested Salvage mission."
+      },
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Umbra losing Armor in Infested Salvage missions when he shouldn't. "
+      },
       {
         "name": "Update 21: Chains of Harrow",
         "date": "2017-06-29T03:00:20Z",
@@ -12861,7 +13334,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 900,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -13039,7 +13512,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -13141,7 +13614,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 850,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -13413,13 +13886,6 @@
         "rotation": "A"
       },
       {
-        "location": "Mars - Alator",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0909,
-        "rotation": "A"
-      },
-      {
         "location": "Earth - Gaia",
         "type": "Mission Rewards",
         "rarity": "Rare",
@@ -13428,6 +13894,13 @@
       },
       {
         "location": "Ceres - Cinxia",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0909,
+        "rotation": "A"
+      },
+      {
+        "location": "Mars - Alator",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0909,
@@ -13448,14 +13921,7 @@
         "rotation": "A"
       },
       {
-        "location": "Ceres - Casta",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0833,
-        "rotation": "A"
-      },
-      {
-        "location": "Mars - Spear",
+        "location": "Ceres - Egeria",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0833,
@@ -13469,7 +13935,7 @@
         "rotation": "A"
       },
       {
-        "location": "Void - Taranis",
+        "location": "Ceres - Varro",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0833,
@@ -13483,7 +13949,7 @@
         "rotation": "A"
       },
       {
-        "location": "Ceres - Varro",
+        "location": "Earth - Lith",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0833,
@@ -13504,14 +13970,14 @@
         "rotation": "A"
       },
       {
-        "location": "Earth - Lith",
+        "location": "Ceres - Casta",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0833,
         "rotation": "A"
       },
       {
-        "location": "Ceres - Egeria",
+        "location": "Mars - Spear",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0833,
@@ -13542,7 +14008,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
     "name": "Tellurium",
-    "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.",
+    "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.\nLocations: Archwing Missions on Uranus.",
     "type": "Misc",
     "imageName": "tellurium.png",
     "category": "Misc",
@@ -13810,7 +14276,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 300,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -13818,7 +14284,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 500,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -13867,7 +14333,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 500,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -13883,7 +14349,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 300,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -13960,7 +14426,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -13975,6 +14441,15 @@
       }
     ],
     "imageName": "tralok-trophy.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseThreeEarthEssence",
+    "name": "Trembera Essence",
+    "description": "A highly purified mineral compound prized for its strength, resiliency, and resistance to heat. Widely used in the construction of Tenno relays.",
+    "type": "Misc",
+    "imageName": "trembera-essence.png",
     "category": "Misc",
     "tradable": false
   },
@@ -14587,7 +15062,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 2000,
         "tradable": false,
         "imageName": "component-cryotic.png"

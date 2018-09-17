@@ -58,7 +58,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -66,7 +66,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 6000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -204,14 +204,14 @@
     "damageTypes": {
       "toxin": 35
     },
-    "disposition": 5,
     "flight": 65,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a8/Acrid2.png/revision/latest?cb=20130530193010",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Acrid"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Acrid",
+    "disposition": 5
   },
   {
     "name": "Afuris",
@@ -223,7 +223,7 @@
     "totalDamage": 20.999998,
     "damagePerSecond": 193,
     "trigger": "Auto",
-    "description": "Furis pistols equipped in each hand. Twice the clip size and slightly faster fire rate, but accuracy and reload speed are lowered.",
+    "description": "Furis pistols equipped in each hand. Twice the Magazine Capacity and slightly faster Fire Rate, but Accuracy and Reload Speed are lowered.",
     "accuracy": 20,
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
@@ -248,7 +248,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/AFurisBlueprint",
         "name": "Blueprint",
-        "description": "Furis pistols equipped in each hand. Twice the clip size and slightly faster fire rate, but accuracy and reload speed are lowered.",
+        "description": "Furis pistols equipped in each hand. Twice the Magazine Capacity and slightly faster Fire Rate, but Accuracy and Reload Speed are lowered.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -314,7 +314,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -381,14 +381,14 @@
       "slash": 3,
       "puncture": 14
     },
-    "disposition": 5,
     "marketCost": 225,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/20/Afuris.png/revision/latest?cb=20170606011035",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Afuris"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Afuris",
+    "disposition": 5
   },
   {
     "name": "Akbolto",
@@ -400,7 +400,7 @@
     "totalDamage": 48.959999,
     "damagePerSecond": 262,
     "trigger": "Semi",
-    "description": "A Bolto equipped in each hand. Twice the clip size and slightly faster fire rate, but reload time is doubled and accuracy is lowered.",
+    "description": "A Bolto equipped in each hand. Twice the Magazine Capacity and slightly faster Fire Rate, but reload time is doubled and accuracy is lowered.",
     "accuracy": 200,
     "criticalChance": 0.16,
     "criticalMultiplier": 2.4000001,
@@ -425,7 +425,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/AkBoltoBlueprint",
         "name": "Blueprint",
-        "description": "A Bolto equipped in each hand. Twice the clip size and slightly faster fire rate, but reload time is doubled and accuracy is lowered.",
+        "description": "A Bolto equipped in each hand. Twice the Magazine Capacity and slightly faster Fire Rate, but reload time is doubled and accuracy is lowered.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -491,7 +491,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -564,7 +564,6 @@
       "impact": 4,
       "puncture": 36
     },
-    "disposition": 2,
     "flight": 75,
     "marketCost": 225,
     "polarities": [ "Vazarin" ],
@@ -572,7 +571,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/0e/Akbolto.png/revision/latest?cb=20130426075511",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbolto"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbolto",
+    "disposition": 2
   },
   {
     "name": "Akbolto Prime",
@@ -853,14 +853,14 @@
       "slash": 1.3,
       "puncture": 27.5
     },
-    "disposition": 2,
     "flight": 75,
     "polarities": [ "Naramon", "Madurai", "Madurai", "Madurai" ],
     "projectile": "Projectile",
     "tags": [  ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/88/MirageAkboltoPrime.png/revision/latest?cb=20171213095347",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbolto_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbolto_Prime",
+    "disposition": 2
   },
   {
     "name": "Akbronco",
@@ -912,7 +912,7 @@
         "totalDamage": 296.79999,
         "damagePerSecond": 409,
         "trigger": "Semi",
-        "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited clip size.",
+        "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited Magazine Capacity.",
         "accuracy": 5.5555553,
         "criticalChance": 0.059999999,
         "criticalMultiplier": 2,
@@ -941,7 +941,7 @@
         "totalDamage": 296.79999,
         "damagePerSecond": 409,
         "trigger": "Semi",
-        "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited clip size.",
+        "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited Magazine Capacity.",
         "accuracy": 5.5555553,
         "criticalChance": 0.059999999,
         "criticalMultiplier": 2,
@@ -963,7 +963,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -990,14 +990,14 @@
       "slash": 28,
       "puncture": 28
     },
-    "disposition": 4,
     "marketCost": 225,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a0/Dual_Broncos.png/revision/latest?cb=20130524143655",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbronco"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbronco",
+    "disposition": 4
   },
   {
     "name": "Akbronco Prime",
@@ -1220,7 +1220,7 @@
         "totalDamage": 370.99997,
         "damagePerSecond": 501,
         "trigger": "Semi",
-        "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased clip size and damage for a lower rate of fire.",
+        "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased Magazine Capacity and damage for a lower rate of fire.",
         "accuracy": 5.5555553,
         "criticalChance": 0.059999999,
         "criticalMultiplier": 2,
@@ -1249,7 +1249,7 @@
         "totalDamage": 370.99997,
         "damagePerSecond": 501,
         "trigger": "Semi",
-        "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased clip size and damage for a lower rate of fire.",
+        "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased Magazine Capacity and damage for a lower rate of fire.",
         "accuracy": 5.5555553,
         "criticalChance": 0.059999999,
         "criticalMultiplier": 2,
@@ -1410,13 +1410,13 @@
       "slash": 35,
       "puncture": 35
     },
-    "disposition": 4,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime", "Never Vaulted" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/af/DEPrimeDualBroncos.png/revision/latest?cb=20140306030523",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbronco_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akbronco_Prime",
+    "disposition": 4
   },
   {
     "name": "Akjagara",
@@ -1460,7 +1460,7 @@
         "totalDamage": 48.959999,
         "damagePerSecond": 262,
         "trigger": "Semi",
-        "description": "A Bolto equipped in each hand. Twice the clip size and slightly faster fire rate, but reload time is doubled and accuracy is lowered.",
+        "description": "A Bolto equipped in each hand. Twice the Magazine Capacity and slightly faster Fire Rate, but reload time is doubled and accuracy is lowered.",
         "accuracy": 200,
         "criticalChance": 0.16,
         "criticalMultiplier": 2.4000001,
@@ -1519,7 +1519,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -1554,14 +1554,14 @@
       "slash": 21,
       "puncture": 4.5
     },
-    "disposition": 5,
     "marketCost": 235,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/89/TnoBladedPistols.png/revision/latest?cb=20150205211110",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akjagara"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akjagara",
+    "disposition": 5
   },
   {
     "name": "Aklato",
@@ -1573,7 +1573,7 @@
     "totalDamage": 32.400002,
     "damagePerSecond": 152,
     "trigger": "Semi",
-    "description": "A Lato equipped in each hand. Twice the clip size and fire rate, but reload time is doubled and accuracy is lowered.",
+    "description": "A Lato equipped in each hand. Twice the Magazine Capacity and Fire Rate, but Reload time is doubled and Accuracy is lowered.",
     "accuracy": 25,
     "criticalChance": 0.1,
     "criticalMultiplier": 1.8,
@@ -1626,13 +1626,13 @@
       "slash": 18,
       "puncture": 7.5
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [  ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/4/47/Aklato.png/revision/latest?cb=20170210002057",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Aklato"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Aklato",
+    "disposition": 5
   },
   {
     "name": "Aklex",
@@ -1684,7 +1684,7 @@
         "totalDamage": 156,
         "damagePerSecond": 119,
         "trigger": "Semi",
-        "description": "The Lex is a powerful, accurate pistol that has a low fire rate and clip size. Very efficient at long range.",
+        "description": "The Lex is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
         "accuracy": 200,
         "criticalChance": 0.2,
         "criticalMultiplier": 2,
@@ -1713,7 +1713,7 @@
         "totalDamage": 156,
         "damagePerSecond": 119,
         "trigger": "Semi",
-        "description": "The Lex is a powerful, accurate pistol that has a low fire rate and clip size. Very efficient at long range.",
+        "description": "The Lex is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
         "accuracy": 200,
         "criticalChance": 0.2,
         "criticalMultiplier": 2,
@@ -1735,7 +1735,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -1777,14 +1777,14 @@
       "slash": 13,
       "puncture": 104
     },
-    "disposition": 3,
     "marketCost": 190,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/85/DEAklex.png/revision/latest?cb=20140124173940",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Aklex"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Aklex",
+    "disposition": 3
   },
   {
     "name": "Aklex Prime",
@@ -1887,7 +1887,7 @@
         "totalDamage": 187.5,
         "damagePerSecond": 242,
         "trigger": "Semi",
-        "description": "The Lex Prime is a powerful, accurate pistol that has a low fire rate and clip size. Very efficient at long range.",
+        "description": "The Lex Prime is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
         "accuracy": 200,
         "criticalChance": 0.25,
         "criticalMultiplier": 2,
@@ -1916,7 +1916,7 @@
         "totalDamage": 187.5,
         "damagePerSecond": 242,
         "trigger": "Semi",
-        "description": "The Lex Prime is a powerful, accurate pistol that has a low fire rate and clip size. Very efficient at long range.",
+        "description": "The Lex Prime is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
         "accuracy": 200,
         "criticalChance": 0.25,
         "criticalMultiplier": 2,
@@ -1981,13 +1981,13 @@
       "slash": 15,
       "puncture": 120
     },
-    "disposition": 3,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime", "Baro" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/61/Aklex_Prime.png/revision/latest?cb=20170127212929",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Aklex_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Aklex_Prime",
+    "disposition": 3
   },
   {
     "name": "Akmagnus",
@@ -2090,7 +2090,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -2105,14 +2105,14 @@
       "slash": 20.9,
       "puncture": 20.9
     },
-    "disposition": 4,
     "marketCost": 220,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/11/DEAkmagnus.png/revision/latest?cb=20140204013038",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akmagnus"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akmagnus",
+    "disposition": 4
   },
   {
     "name": "Aksomati",
@@ -2186,7 +2186,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 200,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -2194,7 +2194,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -2245,14 +2245,14 @@
       "slash": 9,
       "puncture": 7.2
     },
-    "disposition": 4,
     "marketCost": 225,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/de/AkimboSomaPistols.png/revision/latest?cb=20150408223719",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Aksomati"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Aksomati",
+    "disposition": 4
   },
   {
     "name": "Akstiletto",
@@ -2289,7 +2289,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 200,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -2313,7 +2313,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
-        "description": "Soft metal used in microelectronics and energy weapons.",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-gallium.png"
@@ -2321,7 +2321,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -2392,14 +2392,14 @@
       "slash": 8.4,
       "puncture": 2.8
     },
-    "disposition": 1,
     "marketCost": 225,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/ef/TennoUzi.png/revision/latest?cb=20140206061957",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akstiletto"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akstiletto",
+    "disposition": 1
   },
   {
     "name": "Akstiletto Prime",
@@ -2861,13 +2861,13 @@
       "slash": 10.8,
       "puncture": 3.6
     },
-    "disposition": 1,
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/4/43/PrimeAkstiletto.png/revision/latest?cb=20160520210650",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akstiletto_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akstiletto_Prime",
+    "disposition": 1
   },
   {
     "name": "Akvasto",
@@ -2912,7 +2912,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -2986,14 +2986,14 @@
       "slash": 29,
       "puncture": 14.5
     },
-    "disposition": 4,
     "marketCost": 220,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/fa/Dual_vastos.png/revision/latest?cb=20130901100333",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akvasto"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akvasto",
+    "disposition": 4
   },
   {
     "name": "Akzani",
@@ -3030,7 +3030,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -3046,7 +3046,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -3054,7 +3054,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 1000,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -3062,7 +3062,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 1500,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -3098,14 +3098,14 @@
       "slash": 1.8,
       "puncture": 8.4
     },
-    "disposition": 5,
     "marketCost": 225,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/0c/Akzani.png/revision/latest?cb=20170403054851",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Akzani"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Akzani",
+    "disposition": 5
   },
   {
     "name": "Angstrum",
@@ -3142,7 +3142,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 600,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -3150,7 +3150,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -3166,7 +3166,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 400,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -3174,7 +3174,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 900,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -3358,7 +3358,6 @@
     "damageTypes": {
       "blast": 200
     },
-    "disposition": 5,
     "marketCost": 190,
     "polarities": [ "Vazarin" ],
     "projectile": "Projectile",
@@ -3381,11 +3380,12 @@
       "blast": 600,
       "damage": "600.0 blast"
     },
-    "statusChance": 52.5,
+    "statusChance": 22,
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/fe/CorpusHandRocket.png/revision/latest?cb=20170606150901",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Angstrum"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Angstrum",
+    "disposition": 5
   },
   {
     "name": "Arca Scisco",
@@ -3446,7 +3446,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
-        "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 250,
         "tradable": false,
         "imageName": "component-oxium.png"
@@ -3454,7 +3454,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 12500,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -3487,14 +3487,14 @@
       "slash": 24,
       "puncture": 36
     },
-    "disposition": 3,
     "marketCost": 200,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/0f/CrpScopePistol.png/revision/latest?cb=20170907190537",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Arca_Scisco"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Arca_Scisco",
+    "disposition": 3
   },
   {
     "name": "Artax",
@@ -3548,13 +3548,13 @@
     "damageTypes": {
       "cold": 5
     },
-    "disposition": 3,
     "polarities": [  ],
     "projectile": "Discharge",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/06/SentinelArtax.png/revision/latest?cb=20170209235027",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Artax"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Artax",
+    "disposition": 3
   },
   {
     "name": "Atomos",
@@ -3591,7 +3591,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -3607,7 +3607,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 1300,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -3615,7 +3615,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -3623,7 +3623,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 1500,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -3765,14 +3765,14 @@
     "damageTypes": {
       "heat": 29
     },
-    "disposition": 2,
     "marketCost": 200,
     "polarities": [ "Vazarin" ],
     "projectile": "Discharge",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/77/GrnHeatGun.png/revision/latest?cb=20150512233115",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Atomos"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Atomos",
+    "disposition": 2
   },
   {
     "name": "Azima",
@@ -3908,7 +3908,6 @@
       "slash": 13,
       "puncture": 5
     },
-    "disposition": 5,
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hit-Scan",
     "secondary": {
@@ -3921,7 +3920,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/4/4b/SundialPistol.png/revision/latest?cb=20171031145315",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Azima"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Azima",
+    "disposition": 5
   },
   {
     "name": "Ballistica",
@@ -3966,7 +3966,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
-        "description": "Soft metal used in microelectronics and energy weapons.",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 4,
         "tradable": false,
         "imageName": "component-gallium.png"
@@ -3974,7 +3974,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 3000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -3982,7 +3982,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 3,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -3990,7 +3990,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -4146,9 +4146,8 @@
       "slash": 10,
       "puncture": 80
     },
-    "disposition": 2,
     "marketCost": 240,
-    "polarities": [  ],
+    "polarities": [ "Vazarin" ],
     "projectile": "Projectile",
     "secondary": {
       "name": "Burst Shot",
@@ -4166,7 +4165,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/92/DEBallistica.png/revision/latest?cb=20140101053337",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Ballistica"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Ballistica",
+    "disposition": 2
   },
   {
     "name": "Ballistica Prime",
@@ -4533,14 +4533,14 @@
       "slash": 60.8,
       "puncture": 83.6
     },
-    "disposition": 2,
     "flight": 100,
     "polarities": [ "Naramon", "Madurai", "Madurai" ],
     "projectile": "Projectile",
     "tags": [  ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/db/PrimeBallistica.png/revision/latest?cb=20170829215439",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Ballistica_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Ballistica_Prime",
+    "disposition": 2
   },
   {
     "name": "Bolto",
@@ -4614,7 +4614,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -4622,7 +4622,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -4630,7 +4630,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -4640,6 +4640,14 @@
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Boltor Prime\nBoltor Prime"
+      },
       {
         "name": "Shrine of the Eidolon: Hotfix 22.17.1 - 22.17.1.1",
         "date": "2018-04-05T18:31:09Z",
@@ -4927,7 +4935,6 @@
       "impact": 4,
       "puncture": 36
     },
-    "disposition": 5,
     "flight": 75,
     "marketCost": 175,
     "polarities": [ "Vazarin" ],
@@ -4935,7 +4942,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a0/Bolto.png/revision/latest?cb=20130426074708",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Bolto"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Bolto",
+    "disposition": 5
   },
   {
     "name": "Brakk",
@@ -5010,7 +5018,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -5110,13 +5118,13 @@
       "slash": 60,
       "puncture": 50
     },
-    "disposition": 2,
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/b/b5/DEGrineerHandShotgun.png/revision/latest?cb=20140116153506",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Brakk"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Brakk",
+    "disposition": 1
   },
   {
     "name": "Bronco",
@@ -5128,7 +5136,7 @@
     "totalDamage": 296.79999,
     "damagePerSecond": 409,
     "trigger": "Semi",
-    "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited clip size.",
+    "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited Magazine Capacity.",
     "accuracy": 5.5555553,
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
@@ -5153,7 +5161,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -5161,7 +5169,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/BroncoBlueprint",
         "name": "Blueprint",
-        "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited clip size.",
+        "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited Magazine Capacity.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -5169,7 +5177,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 700,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -5177,7 +5185,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -5185,7 +5193,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -5251,14 +5259,14 @@
       "slash": 28,
       "puncture": 28
     },
-    "disposition": 5,
     "marketCost": 190,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/8e/Bronco.png/revision/latest?cb=20130426074714",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Bronco"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Bronco",
+    "disposition": 4
   },
   {
     "name": "Bronco Prime",
@@ -5270,7 +5278,7 @@
     "totalDamage": 370.99997,
     "damagePerSecond": 501,
     "trigger": "Semi",
-    "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased clip size and damage for a lower rate of fire.",
+    "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased Magazine Capacity and damage for a lower rate of fire.",
     "accuracy": 5.5555553,
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
@@ -5378,7 +5386,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/BroncoPrimeBlueprint",
         "name": "Blueprint",
-        "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased clip size and damage for a lower rate of fire.",
+        "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased Magazine Capacity and damage for a lower rate of fire.",
         "itemCount": 1,
         "ducats": 15,
         "tradable": true,
@@ -5653,7 +5661,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -5874,13 +5882,13 @@
       "slash": 35,
       "puncture": 35
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime", "Never Vaulted" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c8/PrimeBronco.png/revision/latest?cb=20130713204336",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Bronco_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Bronco_Prime",
+    "disposition": 4
   },
   {
     "name": "Burst Laser",
@@ -5935,13 +5943,13 @@
       "slash": 0.3,
       "puncture": 6
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d4/DESentinelBurstLaser.png/revision/latest?cb=20140122154227",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Burst_Laser"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Burst_Laser",
+    "disposition": 5
   },
   {
     "name": "Castanas",
@@ -5986,7 +5994,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 200,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -5994,7 +6002,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
-        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "control-module.png"
@@ -6010,7 +6018,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -6259,7 +6267,6 @@
     "damageTypes": {
       "electricity": 160
     },
-    "disposition": 5,
     "flight": 30,
     "marketCost": 175,
     "polarities": [ "Madurai", "Madurai" ],
@@ -6267,7 +6274,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/17/TaserStar.png/revision/latest?cb=20140226214533",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Castanas"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Castanas",
+    "disposition": 5
   },
   {
     "name": "Cestra",
@@ -6312,7 +6320,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
-        "description": "Soft metal used in microelectronics and energy weapons.",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 4,
         "tradable": false,
         "imageName": "component-gallium.png"
@@ -6320,7 +6328,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 3000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -6328,7 +6336,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -6336,7 +6344,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -6451,7 +6459,6 @@
       "impact": 5.2,
       "puncture": 20.8
     },
-    "disposition": 5,
     "flight": 100,
     "marketCost": 175,
     "polarities": [  ],
@@ -6459,7 +6466,8 @@
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/16/CorpusMinigun.png/revision/latest?cb=20140221191931",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Cestra"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Cestra",
+    "disposition": 5
   },
   {
     "name": "Cycron",
@@ -6504,7 +6512,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 1500,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -6512,7 +6520,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 9000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -6606,14 +6614,14 @@
       "puncture": 8,
       "radiation": 10
     },
-    "disposition": 3,
     "marketCost": 200,
     "polarities": [ "Naramon", "Naramon" ],
     "projectile": "Discharge",
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/66/Cycron.png/revision/latest?cb=20170426223716",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Cycron"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Cycron",
+    "disposition": 3
   },
   {
     "name": "Deconstructor",
@@ -6709,13 +6717,13 @@
     "damageTypes": {
       "impact": 50
     },
-    "disposition": 4,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a1/SentinelGlaiveWeapon.png/revision/latest?cb=20140422001413",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Deconstructor"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Deconstructor",
+    "disposition": 4
   },
   {
     "name": "Deconstructor Prime",
@@ -6770,13 +6778,13 @@
     "damageTypes": {
       "impact": 75
     },
-    "disposition": 4,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [  ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/9f/DeconstructorPrime.png/revision/latest?cb=20170222214714",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Deconstructor_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Deconstructor_Prime",
+    "disposition": 4
   },
   {
     "name": "Despair",
@@ -6813,7 +6821,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -6867,7 +6875,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -6875,7 +6883,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -6883,7 +6891,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 4500,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -6975,14 +6983,14 @@
       "slash": 8.7,
       "puncture": 46.4
     },
-    "disposition": 4,
     "flight": 70,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Projectile",
     "tags": [  ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/25/Despair.png/revision/latest?cb=20170304062240",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Despair"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Despair",
+    "disposition": 4
   },
   {
     "name": "Deth Machine Rifle",
@@ -7015,6 +7023,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Mask of the Revenant: Update 23.6.0",
+        "date": "2018-08-30T16:04:42Z",
+        "url": "https://forums.warframe.com/topic/1003787-mask-of-the-revenant-update-2360/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/64179d467e89f2525b45bb65b23618b3.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Tweaked Deth Machine Rifle sounds to handle high fire-rates better."
+      },
+      {
         "name": "Update 12: Zephyr Rises",
         "date": "2014-02-06T03:19:59Z",
         "url": "https://forums.warframe.com/topic/172913-update-12-zephyr-rises/",
@@ -7029,13 +7046,13 @@
       "slash": 4.3,
       "puncture": 0.3
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Hitscan",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f2/DESentinelDethMachineRifle.png/revision/latest?cb=20140122154228",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Deth_Machine_Rifle"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Deth_Machine_Rifle",
+    "disposition": 5
   },
   {
     "name": "Detron",
@@ -7094,7 +7111,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 700,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -7102,7 +7119,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -7110,7 +7127,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 500,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -7118,7 +7135,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 600,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -7217,14 +7234,14 @@
     "damageTypes": {
       "radiation": 280
     },
-    "disposition": 3,
     "flight": 150,
     "polarities": [  ],
-    "projectile": "Hit-Scan",
+    "projectile": "Projectile",
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/fd/DECorpusHandCannon.png/revision/latest?cb=20140116153506",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Detron"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Detron",
+    "disposition": 3
   },
   {
     "name": "Dex Furis",
@@ -7322,13 +7339,13 @@
       "slash": 2.4,
       "puncture": 11.2
     },
-    "disposition": 5,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/33/DexFuris.png/revision/latest?cb=20170606011218",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Dex_Furis"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Dex_Furis",
+    "disposition": 5
   },
   {
     "name": "Dual Cestra",
@@ -7522,7 +7539,6 @@
       "impact": 5.2,
       "puncture": 20.8
     },
-    "disposition": 5,
     "flight": 100,
     "marketCost": 225,
     "polarities": [ "Madurai" ],
@@ -7530,7 +7546,8 @@
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/4/4e/DualCorpusMinigun.png/revision/latest?cb=20140206061958",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Dual_Cestra"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Dual_Cestra",
+    "disposition": 5
   },
   {
     "name": "Dual Toxocyst",
@@ -7591,7 +7608,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 6500,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -7599,7 +7616,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 1100,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -7669,14 +7686,14 @@
       "slash": 7.5,
       "puncture": 60
     },
-    "disposition": 4,
     "marketCost": 175,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Infested" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/09/InfVomitGun.png/revision/latest?cb=20160304215549",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Dual_Toxocyst"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Dual_Toxocyst",
+    "disposition": 4
   },
   {
     "name": "Embolist",
@@ -7721,7 +7738,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -7745,7 +7762,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 15000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -7863,13 +7880,13 @@
     "damageTypes": {
       "toxin": 35
     },
-    "disposition": 5,
     "polarities": [ "Naramon" ],
     "projectile": "Discharge",
     "tags": [ "Infested" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/8c/InfestedPistol.png/revision/latest?cb=20140314172859",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Embolist"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Embolist",
+    "disposition": 5
   },
   {
     "name": "Euphona Prime",
@@ -8144,7 +8161,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -8241,7 +8258,6 @@
       "slash": 16.25,
       "puncture": 16.25
     },
-    "disposition": 2,
     "flight": 180,
     "polarities": [ "Madurai", "Madurai", "Madurai" ],
     "projectile": "Projectile",
@@ -8256,7 +8272,8 @@
     "tags": [ "Prime" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/23/EuphoraPrime.png/revision/latest?cb=20170301080132",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Euphona_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Euphona_Prime",
+    "disposition": 1
   },
   {
     "name": "Furis",
@@ -8293,7 +8310,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 300,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -8309,7 +8326,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 750,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -8317,7 +8334,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 4,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -8325,7 +8342,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 400,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -8494,14 +8511,14 @@
       "slash": 3,
       "puncture": 14
     },
-    "disposition": 5,
     "marketCost": 120,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/3e/Furis.png/revision/latest?cb=20170606011114",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Furis"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Furis",
+    "disposition": 5
   },
   {
     "name": "Fusilai",
@@ -8546,7 +8563,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
         "name": "Nitain Extract",
-        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.\nThis resource can be acquired as a reward from Alerts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "alertium.png"
@@ -8554,7 +8571,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 1350,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -8562,7 +8579,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 2950,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -8570,7 +8587,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 10000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -8595,7 +8612,6 @@
       "slash": 46.2,
       "puncture": 30.8
     },
-    "disposition": 4,
     "flight": "???",
     "marketCost": 190,
     "polarities": [ "Madurai" ],
@@ -8618,7 +8634,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/6d/GlassKunai.png/revision/latest?cb=20171017224243",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Fusilai"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Fusilai",
+    "disposition": 4
   },
   {
     "name": "Gammacor",
@@ -8655,7 +8672,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 2500,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -8663,7 +8680,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -8679,7 +8696,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 400,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -8687,7 +8704,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 650,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -8876,14 +8893,14 @@
     "damageTypes": {
       "magnetic": 16
     },
-    "disposition": 1,
     "marketCost": 200,
     "polarities": [ "Vazarin" ],
     "projectile": "Discharge",
     "tags": [ "Cephalon" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/24/Gammacor.png/revision/latest?cb=20141127182228",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Gammacor"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Gammacor",
+    "disposition": 1
   },
   {
     "name": "Hikou",
@@ -8895,7 +8912,7 @@
     "totalDamage": 26.624002,
     "damagePerSecond": 142,
     "trigger": "Auto",
-    "description": "As an alternative to Kunai, these Tenno throwing stars do less damage but they come with expanded ammo capacity and a higher rate of fire.",
+    "description": "As an alternative to Kunai, these Tenno throwing stars do cause less Damage but they come with expanded Ammo Capacity and a higher Fire Rate.",
     "accuracy": 100,
     "criticalChance": 0.039999999,
     "criticalMultiplier": 1.6,
@@ -8920,7 +8937,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TennoStarsBlueprint",
         "name": "Blueprint",
-        "description": "As an alternative to Kunai, these Tenno throwing stars do less damage but they come with expanded ammo capacity and a higher rate of fire.",
+        "description": "As an alternative to Kunai, these Tenno throwing stars do cause less Damage but they come with expanded Ammo Capacity and a higher Fire Rate.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -8928,7 +8945,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -8936,7 +8953,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 500,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -8944,7 +8961,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 600,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -8952,7 +8969,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 4000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -8962,6 +8979,14 @@
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Hikou Prime\nHikou Prime"
+      },
       {
         "name": "Octavia's Anthem: Update 20",
         "date": "2017-03-24T19:46:02Z",
@@ -9068,7 +9093,6 @@
       "slash": 7.8,
       "puncture": 15.6
     },
-    "disposition": 1,
     "flight": 70,
     "marketCost": 225,
     "polarities": [ "Madurai", "Madurai" ],
@@ -9076,7 +9100,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d9/Hikou.png/revision/latest?cb=20171219142910",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Hikou"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Hikou",
+    "disposition": 1
   },
   {
     "name": "Hikou Prime",
@@ -9166,13 +9191,37 @@
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo R1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo R1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo R1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo R1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
           }
         ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 8,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -9233,6 +9282,30 @@
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
+          },
+          {
+            "location": "Meso N6 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Meso N6 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Meso N6 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso N6 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
           }
         ]
       },
@@ -9245,6 +9318,30 @@
         "tradable": true,
         "imageName": "generic-weapon-prime-blade.png",
         "drops": [
+          {
+            "location": "Axi S3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi S3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi S3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi S3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
           {
             "location": "Lith F2 Intact",
             "type": "Relics",
@@ -9301,6 +9398,14 @@
     "tradable": true,
     "patchlogs": [
       {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Hikou Prime\nHikou Prime"
+      },
+      {
         "name": "The Silver Grove: Hotfix 3 (Nekros Prime!)",
         "date": "2016-08-23T17:55:58Z",
         "url": "https://forums.warframe.com/topic/691098-the-silver-grove-hotfix-3-nekros-prime%C2%A0/",
@@ -9333,14 +9438,14 @@
       "slash": 1.8,
       "puncture": 30.6
     },
-    "disposition": 1,
     "flight": 70,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Projectile",
     "tags": [ "Prime", "Vaulted" ],
     "vaulted": true,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/b/b4/PrimeHikou.png/revision/latest?cb=20140923195818",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Hikou_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Hikou_Prime",
+    "disposition": 1
   },
   {
     "name": "Hystrix",
@@ -9414,7 +9519,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
-        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 15,
         "tradable": false,
         "imageName": "control-module.png"
@@ -9422,7 +9527,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 9750,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -9437,7 +9542,7 @@
         "totalDamage": 18.275002,
         "damagePerSecond": 153,
         "trigger": "Auto",
-        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small clip size, the Viper has a very high fire rate and ultra-fast reload times thanks to a simplified magazine design.",
+        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
         "accuracy": 66.666664,
         "criticalChance": 0.15000001,
         "criticalMultiplier": 1.5,
@@ -9463,7 +9568,7 @@
     "patchlogs": [
       {
         "name": "The Sacrifice: Hotfix 23.0.5",
-        "date": "2018-06-22T19:07:34Z",
+        "date": "2018-06-22T19:07:35Z",
         "url": "https://forums.warframe.com/topic/972941-the-sacrifice-hotfix-2305/",
         "additions": "",
         "changes": "",
@@ -9509,7 +9614,6 @@
       "slash": 2.9,
       "puncture": 31
     },
-    "disposition": 3,
     "flight": "???",
     "marketCost": 225,
     "polarities": [ "Madurai" ],
@@ -9527,7 +9631,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a7/Hystrix.png/revision/latest?cb=20180417184116",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Hystrix"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Hystrix",
+    "disposition": 3
   },
   {
     "name": "Knell",
@@ -9539,7 +9644,7 @@
     "totalDamage": 165,
     "damagePerSecond": 132,
     "trigger": "Semi",
-    "description": "Ring the death knell. Headshots briefly turn this scoped pistol into a rapid-fire, Crit Damage fiend that uses no ammo.",
+    "description": "Ring the death knell. Headshots briefly turn this scoped pistol into a rapid-fire, Critical Damage fiend that uses no ammo.",
     "accuracy": 400,
     "criticalChance": 0.2,
     "criticalMultiplier": 1.5,
@@ -9564,7 +9669,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -9572,7 +9677,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TnPriestPistolBlueprint",
         "name": "Blueprint",
-        "description": "Ring the death knell. Headshots briefly turn this scoped pistol into a rapid-fire, Crit Damage fiend that uses no ammo.",
+        "description": "Ring the death knell. Headshots briefly turn this scoped pistol into a rapid-fire, Critical Damage fiend that uses no ammo.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -9580,7 +9685,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 3800,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -9588,7 +9693,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 5200,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -9596,7 +9701,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 20000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -9673,14 +9778,14 @@
       "slash": 18,
       "puncture": 69
     },
-    "disposition": 3,
     "marketCost": 190,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/8a/PriestPistol.png/revision/latest?cb=20170629034316",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Knell"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Knell",
+    "disposition": 3
   },
   {
     "name": "Kohmak",
@@ -9733,7 +9838,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -9749,7 +9854,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -9816,14 +9921,14 @@
       "slash": 18,
       "puncture": 6
     },
-    "disposition": 5,
     "marketCost": 150,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/81/GrnWindUpPistol.png/revision/latest?cb=20150320022624",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Kohmak"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Kohmak",
+    "disposition": 4
   },
   {
     "name": "Kraken",
@@ -9860,7 +9965,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 200,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -9876,7 +9981,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -9884,7 +9989,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 120,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -9892,7 +9997,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 750,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -9902,6 +10007,15 @@
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.3.0 + 23.3.0.1",
+        "date": "2018-08-09T15:46:06Z",
+        "url": "https://forums.warframe.com/topic/995084-the-sacrifice-update-2330-23301/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/a5997e71355d1daebf5f0086006610d2.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Kraken sounds not being muffled correctly during stealth effects."
+      },
       {
         "name": "Beasts of the Sanctuary: Update 22.20.0",
         "date": "2018-05-17T14:55:31Z",
@@ -9993,14 +10107,14 @@
       "slash": 6.1,
       "puncture": 6.1
     },
-    "disposition": 5,
     "marketCost": 120,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d3/Kraken.png/revision/latest?cb=20170406043414",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Kraken"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Kraken",
+    "disposition": 5
   },
   {
     "name": "Kulstar",
@@ -10045,7 +10159,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 4800,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -10082,7 +10196,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 3600,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -10090,7 +10204,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
         "name": "Tellurium",
-        "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.",
+        "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.\nLocations: Archwing Missions on Uranus.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "tellurium.png"
@@ -10181,7 +10295,6 @@
     "damageTypes": {
       "impact": 200
     },
-    "disposition": 3,
     "flight": "???",
     "marketCost": 190,
     "polarities": [ "Vazarin" ],
@@ -10199,7 +10312,8 @@
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f0/GrnTorpedoPistol.png/revision/latest?cb=20150731174942",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Kulstar"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Kulstar",
+    "disposition": 3
   },
   {
     "name": "Kunai",
@@ -10244,7 +10358,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 3000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -10252,7 +10366,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -10260,7 +10374,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 4000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -10268,7 +10382,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 4000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -10432,7 +10546,6 @@
       "slash": 6.9,
       "puncture": 34.5
     },
-    "disposition": 5,
     "flight": 70,
     "marketCost": 175,
     "polarities": [ "Madurai", "Madurai" ],
@@ -10440,7 +10553,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/35/Kunai2.png/revision/latest?cb=20170210002129",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Kunai"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Kunai",
+    "disposition": 5
   },
   {
     "name": "Laser Rifle",
@@ -10477,13 +10591,13 @@
       "slash": 0.8,
       "puncture": 6.4
     },
-    "disposition": 4,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d4/DESentinelLaserRifle.png/revision/latest?cb=20140122154228",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Laser_Rifle"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Laser_Rifle",
+    "disposition": 4
   },
   {
     "name": "Lato",
@@ -10671,13 +10785,13 @@
       "slash": 15,
       "puncture": 7.5
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Tutorial", "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/26/Lato.png/revision/latest?cb=20170210002056",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Lato"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Lato",
+    "disposition": 5
   },
   {
     "name": "Lato Prime",
@@ -10742,13 +10856,13 @@
       "slash": 33.6,
       "puncture": 9.6
     },
-    "disposition": 5,
     "polarities": [ "Madurai", "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime", "Vaulted", "Founder" ],
     "vaulted": true,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/03/LatoPrime.png/revision/latest?cb=20161029030340",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Lato_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Lato_Prime",
+    "disposition": 5
   },
   {
     "name": "Lato Vandal",
@@ -10760,7 +10874,7 @@
     "totalDamage": 62.744007,
     "damagePerSecond": 235,
     "trigger": "Semi",
-    "description": "A special version of the standard Lato pistol with a slower fire rate but offering higher accuracy and damage values. The Lato Vandal has been customized by the Tenno with a blue-green metallic finish and Lotus branding on the grips.",
+    "description": "A special version of the standard Lato pistol with a slower Fire Rate but offering higher Accuracy and Damage values. The Lato Vandal has been customized by the Tenno with a blue-green metallic finish and Lotus branding on the grips.",
     "accuracy": 500,
     "criticalChance": 0.25999999,
     "criticalMultiplier": 2.4000001,
@@ -10802,7 +10916,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/LatoVandalBlueprint",
         "name": "Blueprint",
-        "description": "A special version of the standard Lato pistol with a slower fire rate but offering higher accuracy and damage values. The Lato Vandal has been customized by the Tenno with a blue-green metallic finish and Lotus branding on the grips.",
+        "description": "A special version of the standard Lato pistol with a slower Fire Rate but offering higher Accuracy and Damage values. The Lato Vandal has been customized by the Tenno with a blue-green metallic finish and Lotus branding on the grips.",
         "itemCount": 1,
         "tradable": true,
         "imageName": "blueprint.png",
@@ -10880,13 +10994,13 @@
       "slash": 27.6,
       "puncture": 11.5
     },
-    "disposition": 5,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno", "Vandal" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/5/59/DELatoVandal.png/revision/latest?cb=20180422234655",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Lato_Vandal"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Lato_Vandal",
+    "disposition": 5
   },
   {
     "name": "Lex",
@@ -10898,7 +11012,7 @@
     "totalDamage": 156,
     "damagePerSecond": 119,
     "trigger": "Semi",
-    "description": "The Lex is a powerful, accurate pistol that has a low fire rate and clip size. Very efficient at long range.",
+    "description": "The Lex is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
     "accuracy": 200,
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
@@ -11048,13 +11162,13 @@
       "slash": 13,
       "puncture": 104
     },
-    "disposition": 1,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/6f/Lex.png/revision/latest?cb=20130426074737",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Lex"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Lex",
+    "disposition": 1
   },
   {
     "name": "Lex Prime",
@@ -11066,7 +11180,7 @@
     "totalDamage": 187.5,
     "damagePerSecond": 242,
     "trigger": "Semi",
-    "description": "The Lex Prime is a powerful, accurate pistol that has a low fire rate and clip size. Very efficient at long range.",
+    "description": "The Lex Prime is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
     "accuracy": 200,
     "criticalChance": 0.25,
     "criticalMultiplier": 2,
@@ -11414,7 +11528,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/LexPrimeBlueprint",
         "name": "Blueprint",
-        "description": "The Lex Prime is a powerful, accurate pistol that has a low fire rate and clip size. Very efficient at long range.",
+        "description": "The Lex Prime is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
         "itemCount": 1,
         "ducats": 25,
         "tradable": true,
@@ -11593,7 +11707,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -11887,13 +12001,13 @@
       "slash": 15,
       "puncture": 120
     },
-    "disposition": 1,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime", "Never Vaulted" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/9e/PrimeLex.png/revision/latest?cb=20140410055707",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Lex_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Lex_Prime",
+    "disposition": 1
   },
   {
     "name": "Magnus",
@@ -11930,7 +12044,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 400,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -11946,7 +12060,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 100,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -11954,7 +12068,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -11962,7 +12076,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 900,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -12020,14 +12134,14 @@
       "slash": 20.9,
       "puncture": 20.9
     },
-    "disposition": 5,
     "marketCost": 125,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/26/TennoMagnum.png/revision/latest?cb=20140123005414",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Magnus"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Magnus",
+    "disposition": 5
   },
   {
     "name": "Mara Detron",
@@ -12073,13 +12187,13 @@
     "damageTypes": {
       "radiation": 280
     },
-    "disposition": 3,
     "polarities": [  ],
-    "projectile": "Hit-Scan",
+    "projectile": "Projectile",
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c5/MaraDetron.png/revision/latest?cb=20141212183103",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Mara_Detron"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Mara_Detron",
+    "disposition": 3
   },
   {
     "name": "Marelok",
@@ -12140,7 +12254,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -12148,7 +12262,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -12266,14 +12380,14 @@
       "slash": 64,
       "puncture": 16
     },
-    "disposition": 1,
     "marketCost": 125,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/7e/GrineerLeverActionPistol.png/revision/latest?cb=20140227055729",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Marelok"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Marelok",
+    "disposition": 1
   },
   {
     "name": "Mk1-Furis",
@@ -12394,7 +12508,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -12402,7 +12516,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 5500,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -12519,14 +12633,14 @@
     "damageTypes": {
       "radiation": 22
     },
-    "disposition": 5,
     "marketCost": 150,
     "polarities": [  ],
     "projectile": "Discharge",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d3/GrineerMicrowaveGun.png/revision/latest?cb=20140828170520",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Nukor"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Nukor",
+    "disposition": 5
   },
   {
     "name": "Pandero",
@@ -12563,7 +12677,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -12579,7 +12693,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 4500,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -12587,7 +12701,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
-        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 5500,
         "tradable": false,
         "imageName": "component-cryotic.png"
@@ -12595,7 +12709,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 25000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -12605,6 +12719,15 @@
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Hotfix 23.0.6",
+        "date": "2018-06-27T17:23:10Z",
+        "url": "https://forums.warframe.com/topic/975040-the-sacrifice-hotfix-2306/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/f2ec5d1fd25b735160d38c0b50924d20.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Pandero Secondary Fire Codex/Arsenal description saying ‘Charged Shot’ when it is actually a ‘Burst Shot’."
+      },
       {
         "name": "Shrine of the Eidolon: Hotfix 22.15.1",
         "date": "2018-03-08T20:29:51Z",
@@ -12682,7 +12805,6 @@
       "slash": 36,
       "puncture": 18
     },
-    "disposition": 3,
     "marketCost": 190,
     "polarities": [  ],
     "projectile": "Hit-Scan",
@@ -12695,7 +12817,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/cb/TnBardPistol.png/revision/latest?cb=20170324230208",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Pandero"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Pandero",
+    "disposition": 3
   },
   {
     "name": "Pox",
@@ -12748,7 +12871,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 6500,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -12756,7 +12879,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
         "name": "Nitain Extract",
-        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.\nThis resource can be acquired as a reward from Alerts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "alertium.png"
@@ -12764,7 +12887,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -12829,7 +12952,6 @@
     "damageTypes": {
       "toxin": 50
     },
-    "disposition": 2,
     "flight": "???",
     "marketCost": 175,
     "polarities": [ "Madurai", "Madurai" ],
@@ -12837,7 +12959,8 @@
     "tags": [ "Infested" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/b/bc/InfProximityStars.png/revision/latest?cb=20160819234428",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Pox"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Pox",
+    "disposition": 2
   },
   {
     "name": "Prime Laser Rifle",
@@ -12874,13 +12997,13 @@
       "slash": 2.4,
       "puncture": 8.4
     },
-    "disposition": 4,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Prime", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/93/SentinelBurstLaserPrime.png/revision/latest?cb=20140718041009",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Prime_Laser_Rifle"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Prime_Laser_Rifle",
+    "disposition": 4
   },
   {
     "name": "Prisma Angstrum",
@@ -12935,7 +13058,6 @@
     "damageTypes": {
       "blast": 200
     },
-    "disposition": 5,
     "polarities": [ "Vazarin" ],
     "projectile": "Projectile",
     "secondary": {
@@ -12957,11 +13079,12 @@
       "blast": 600,
       "damage": "600.0 blast"
     },
-    "statusChance": 59.5,
+    "statusChance": 26,
     "tags": [ "Prisma", "Baro" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/5/5f/PrismaAngstrum.png/revision/latest?cb=20170908141430",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Prisma_Angstrum"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Prisma_Angstrum",
+    "disposition": 5
   },
   {
     "name": "Prisma Burst Laser",
@@ -13008,13 +13131,69 @@
       "slash": 0.5,
       "puncture": 8.5
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Tenno", "Sentinel", "Prisma" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/78/PrismaSentinelBurstLaser.png/revision/latest?cb=20160216223831",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Prisma_Burst_Laser"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Prisma_Burst_Laser",
+    "disposition": 5
+  },
+  {
+    "name": "Prisma Twin Gremlins",
+    "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerBulbousSMG/Prisma/PrismaTwinGremlinsWeapon",
+    "secondsPerShot": 0.11320754,
+    "damagePerShot": [ 3.58479, 15.31683, 13.687381, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 70,
+    "reloadTime": 0.89999998,
+    "totalDamage": 32.589001,
+    "damagePerSecond": 259,
+    "trigger": "Auto",
+    "description": "Fused with prisma crystals, these pristine Grineer sidearms are sure to intimidate any foe.",
+    "accuracy": 50,
+    "criticalChance": 0.23,
+    "criticalMultiplier": 1.9,
+    "procChance": 0.23000002,
+    "fireRate": 8.833334,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "Alarming",
+    "sentinel": false,
+    "masteryReq": 11,
+    "omegaAttenuation": 1.5,
+    "type": "Dual Pistols",
+    "imageName": "prisma-twin-gremlins.png",
+    "category": "Secondary",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Update 23.5.0",
+        "date": "2018-08-24T21:39:09Z",
+        "url": "https://forums.warframe.com/topic/1001509-mask-of-the-revenant-update-2350/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/61cb4a6905ef705fb66fa0343591d997.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Prisma Twin Gremlins not being tradeable. \nFixed Prisma Twin Gremlins having incorrect damage in Conclave."
+      }
+    ],
+    "ammo": 600,
+    "damage": "27.0",
+    "damageTypes": {
+      "impact": 3,
+      "slash": 11.3,
+      "puncture": 12.7
+    },
+    "flight": 65,
+    "polarities": [ "Madurai" ],
+    "projectile": "Projectile",
+    "tags": [ "Grineer" ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/3a/PrismaTwinGremlins.png/revision/latest?cb=20180825235519",
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Prisma_Twin_Gremlins",
+    "disposition": 5
   },
   {
     "name": "Pyrana",
@@ -13051,7 +13230,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 200,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -13067,7 +13246,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
-        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "control-module.png"
@@ -13083,7 +13262,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -13095,7 +13274,7 @@
     "patchlogs": [
       {
         "name": "The Sacrifice: Hotfix 23.0.5",
-        "date": "2018-06-22T19:07:34Z",
+        "date": "2018-06-22T19:07:35Z",
         "url": "https://forums.warframe.com/topic/972941-the-sacrifice-hotfix-2305/",
         "additions": "",
         "changes": "",
@@ -13159,14 +13338,14 @@
       "slash": 211.2,
       "puncture": 26.4
     },
-    "disposition": 4,
     "marketCost": 175,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/ad/SawnOffShotgun.png/revision/latest?cb=20140604224124",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Pyrana"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Pyrana",
+    "disposition": 4
   },
   {
     "name": "Pyrana Prime",
@@ -13273,7 +13452,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -13320,7 +13499,7 @@
     "patchlogs": [
       {
         "name": "The Sacrifice: Hotfix 23.0.5",
-        "date": "2018-06-22T19:07:34Z",
+        "date": "2018-06-22T19:07:35Z",
         "url": "https://forums.warframe.com/topic/972941-the-sacrifice-hotfix-2305/",
         "additions": "",
         "changes": "",
@@ -13352,13 +13531,13 @@
       "slash": 201.6,
       "puncture": 19.2
     },
-    "disposition": 4,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/e3/PyranaPrime.png/revision/latest?cb=20180619191908",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Pyrana_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Pyrana_Prime",
+    "disposition": 4
   },
   {
     "name": "Rakta Ballistica",
@@ -13446,7 +13625,6 @@
       "slash": 15,
       "puncture": 270
     },
-    "disposition": 2,
     "polarities": [ "Vazarin", "Madurai" ],
     "projectile": "Projectile",
     "secondary": {
@@ -13465,7 +13643,8 @@
     "tags": [ "Syndicate", "Red Veil" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/2a/RVBallistica.png/revision/latest?cb=20141127183101",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Rakta_Ballistica"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Rakta_Ballistica",
+    "disposition": 2
   },
   {
     "name": "Sancti Castanas",
@@ -13527,14 +13706,14 @@
     "damageTypes": {
       "electricity": 300
     },
-    "disposition": 5,
     "flight": 30,
     "polarities": [ "Madurai", "Madurai", "Vazarin" ],
     "projectile": "Projectile",
     "tags": [ "Syndicate", "New Loka" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/ca/NLCastanas.png/revision/latest?cb=20141127182955",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Sancti_Castanas"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Sancti_Castanas",
+    "disposition": 5
   },
   {
     "name": "Secura Dual Cestra",
@@ -13606,14 +13785,14 @@
       "impact": 5.6,
       "puncture": 22.4
     },
-    "disposition": 5,
     "flight": 100,
     "polarities": [ "Madurai", "Naramon" ],
     "projectile": "Projectile",
     "tags": [ "Syndicate", "Perrin Sequence" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/8f/PSDualCestra.png/revision/latest?cb=20141127182956",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Secura_Dual_Cestra"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Secura_Dual_Cestra",
+    "disposition": 5
   },
   {
     "name": "Seer",
@@ -13682,7 +13861,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -13775,14 +13954,14 @@
       "slash": 33.67,
       "puncture": 33.67
     },
-    "disposition": 5,
     "flight": 200,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/75/CaptainVorPistol.png/revision/latest?cb=20130713203008",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Seer"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Seer",
+    "disposition": 5
   },
   {
     "name": "Sicarus",
@@ -13914,13 +14093,13 @@
       "slash": 4.5,
       "puncture": 4.5
     },
-    "disposition": 5,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/5/59/Sicarus.png/revision/latest?cb=20130426074741",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Sicarus"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Sicarus",
+    "disposition": 5
   },
   {
     "name": "Sicarus Prime",
@@ -14075,7 +14254,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -14187,13 +14366,13 @@
       "slash": 15,
       "puncture": 15
     },
-    "disposition": 5,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime", "Vaulted" ],
     "vaulted": true,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d7/DESicarus_Prime.png/revision/latest?cb=20140124172933",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Sicarus_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Sicarus_Prime",
+    "disposition": 5
   },
   {
     "name": "Sonicor",
@@ -14230,7 +14409,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 6500,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -14238,7 +14417,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -14254,7 +14433,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
-        "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 600,
         "tradable": false,
         "imageName": "component-oxium.png"
@@ -14262,7 +14441,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 2600,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -14400,7 +14579,6 @@
     "damageTypes": {
       "impact": 150
     },
-    "disposition": 1,
     "flight": 80,
     "marketCost": 200,
     "polarities": [ "Vazarin" ],
@@ -14408,7 +14586,8 @@
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a8/CrpAirPistolArray.png/revision/latest?cb=20151002090143",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Sonicor"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Sonicor",
+    "disposition": 1
   },
   {
     "name": "Spectra",
@@ -14453,7 +14632,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 700,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -14461,7 +14640,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -14661,13 +14840,13 @@
       "slash": 10.4,
       "puncture": 7.6
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Discharge",
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/7a/Spectra.png/revision/latest?cb=20131006130117",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Spectra"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Spectra",
+    "disposition": 5
   },
   {
     "name": "Spira",
@@ -14712,7 +14891,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 2500,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -14720,7 +14899,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
-        "description": "Soft metal used in microelectronics and energy weapons.",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-gallium.png"
@@ -14728,7 +14907,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 800,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -14736,7 +14915,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 4000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -14862,7 +15041,6 @@
       "slash": 24.6,
       "puncture": 49.2
     },
-    "disposition": 1,
     "flight": "???",
     "marketCost": 175,
     "polarities": [ "Madurai", "Madurai" ],
@@ -14870,7 +15048,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c5/LiDagger.png/revision/latest?cb=20150924014336",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Spira"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Spira",
+    "disposition": 1
   },
   {
     "name": "Spira Prime",
@@ -15121,7 +15300,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 8,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -15322,14 +15501,14 @@
       "slash": 6,
       "puncture": 48
     },
-    "disposition": 1,
     "flight": 70,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Projectile",
     "tags": [ "Prime" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/02/PrimeLiDagger.png/revision/latest?cb=20160207121252",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Spira_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Spira_Prime",
+    "disposition": 1
   },
   {
     "name": "Staticor",
@@ -15366,7 +15545,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 6000,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -15382,7 +15561,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 9000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -15398,7 +15577,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
         "name": "Nitain Extract",
-        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.\nThis resource can be acquired as a reward from Alerts.",
         "itemCount": 3,
         "tradable": false,
         "imageName": "alertium.png"
@@ -15541,7 +15720,6 @@
     "damageTypes": {
       "radiation": 44
     },
-    "disposition": 1,
     "flight": 50,
     "marketCost": 200,
     "polarities": [ "Naramon" ],
@@ -15555,7 +15733,8 @@
     "tags": [ "Corpus" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/64/CrpElectroMag.png/revision/latest?cb=20160205013734",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Staticor"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Staticor",
+    "disposition": 1
   },
   {
     "name": "Stinger",
@@ -15590,13 +15769,13 @@
     "damageTypes": {
       "toxin": 15
     },
-    "disposition": 5,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Infested", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/12/DESentinelStinger.png/revision/latest?cb=20140122154228",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Stinger"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Stinger",
+    "disposition": 5
   },
   {
     "name": "Stubba",
@@ -15681,7 +15860,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 4485,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -15697,7 +15876,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -15709,7 +15888,7 @@
     "patchlogs": [
       {
         "name": "The Sacrifice: Hotfix 23.0.5",
-        "date": "2018-06-22T19:07:34Z",
+        "date": "2018-06-22T19:07:35Z",
         "url": "https://forums.warframe.com/topic/972941-the-sacrifice-hotfix-2305/",
         "additions": "",
         "changes": "",
@@ -15750,14 +15929,14 @@
       "slash": 15.5,
       "puncture": 3.3
     },
-    "disposition": 4,
     "marketCost": 190,
     "polarities": [  ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/17/GrnUziWeapon.png/revision/latest?cb=20171221214433",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Stubba"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Stubba",
+    "disposition": 4
   },
   {
     "name": "Stug",
@@ -15794,7 +15973,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -15810,7 +15989,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
-        "description": "Soft metal used in microelectronics and energy weapons.",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 4,
         "tradable": false,
         "imageName": "component-gallium.png"
@@ -15818,7 +15997,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 3,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -15826,7 +16005,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 3000,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -15955,7 +16134,6 @@
     "damageTypes": {
       "corrosive": 156
     },
-    "disposition": 5,
     "flight": 35,
     "marketCost": 120,
     "polarities": [ "Vazarin" ],
@@ -15963,7 +16141,8 @@
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/fc/GrineerCrossbowGooGun.png/revision/latest?cb=20140124172529",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Stug"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Stug",
+    "disposition": 5
   },
   {
     "name": "Sweeper",
@@ -16018,13 +16197,13 @@
       "slash": 4.2,
       "puncture": 2.1
     },
-    "disposition": 3,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hitscan",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/25/DESentinelSweeper.png/revision/latest?cb=20140122154229",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Sweeper"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Sweeper",
+    "disposition": 3
   },
   {
     "name": "Sweeper Prime",
@@ -16071,13 +16250,13 @@
       "slash": 6,
       "puncture": 3
     },
-    "disposition": 3,
     "polarities": [ "Madurai" ],
     "projectile": "Hitscan",
     "tags": [ "Prime", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/81/SentinelSweeperPrime.png/revision/latest?cb=20150707200907",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Sweeper_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Sweeper_Prime",
+    "disposition": 3
   },
   {
     "name": "Synoid Gammacor",
@@ -16181,13 +16360,13 @@
     "damageTypes": {
       "magnetic": 20
     },
-    "disposition": 1,
     "polarities": [ "Vazarin", "Naramon" ],
     "projectile": "Discharge",
     "tags": [ "Syndicate", "Cephalon Suda" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/3b/SynoidGammacor.png/revision/latest?cb=20141127183102",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Synoid_Gammacor"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Synoid_Gammacor",
+    "disposition": 1
   },
   {
     "name": "Talons",
@@ -16232,7 +16411,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
-        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "control-module.png"
@@ -16240,7 +16419,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 1500,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -16256,7 +16435,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
-        "description": "Oxium is a rare lighter than air alloy of Orokin origin.",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-oxium.png"
@@ -16392,7 +16571,6 @@
     "damageTypes": {
       "blast": 120
     },
-    "disposition": 5,
     "flight": 25,
     "marketCost": 175,
     "polarities": [ "Madurai", "Madurai" ],
@@ -16400,7 +16578,8 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c2/U18throwingknives.png/revision/latest?cb=20151204013310",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Talons"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Talons",
+    "disposition": 5
   },
   {
     "name": "Telos Akbolto",
@@ -16471,14 +16650,14 @@
       "impact": 4.7,
       "puncture": 42.3
     },
-    "disposition": 2,
     "flight": 75,
     "polarities": [ "Vazarin", "Naramon" ],
     "projectile": "Projectile",
     "tags": [ "Syndicate", "Arbiters of Hexis" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/ec/AHAkbolto.png/revision/latest?cb=20141127181924",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Telos_Akbolto"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Telos_Akbolto",
+    "disposition": 2
   },
   {
     "name": "Twin Grakatas",
@@ -16538,7 +16717,7 @@
         "totalDamage": 13.75,
         "damagePerSecond": 153,
         "trigger": "Auto",
-        "description": "Equipped with a huge magazine and impressive fire rate, the Grakata is the preferred weapon of Grineer Lancers.",
+        "description": "Equipped with a huge Magazine and impressive Fire Rate, the Grakata is the preferred weapon of Grineer Lancers.",
         "accuracy": 50,
         "criticalChance": 0.25,
         "criticalMultiplier": 2,
@@ -16567,7 +16746,7 @@
         "totalDamage": 13.75,
         "damagePerSecond": 153,
         "trigger": "Auto",
-        "description": "Equipped with a huge magazine and impressive fire rate, the Grakata is the preferred weapon of Grineer Lancers.",
+        "description": "Equipped with a huge Magazine and impressive Fire Rate, the Grakata is the preferred weapon of Grineer Lancers.",
         "accuracy": 50,
         "criticalChance": 0.25,
         "criticalMultiplier": 2,
@@ -16650,14 +16829,14 @@
       "slash": 5.3,
       "puncture": 6.7
     },
-    "disposition": 2,
     "marketCost": 225,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f8/Akgrakata.png/revision/latest?cb=20150731174941",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Grakatas"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Grakatas",
+    "disposition": 2
   },
   {
     "name": "Twin Gremlins",
@@ -16710,7 +16889,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
-        "description": "Various electronic components.",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 900,
         "tradable": false,
         "imageName": "component-circuits.png"
@@ -16718,7 +16897,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -16726,7 +16905,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "component-rubedo.png"
@@ -16734,7 +16913,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 1500,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -16744,6 +16923,15 @@
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Update 23.5.0",
+        "date": "2018-08-24T21:39:09Z",
+        "url": "https://forums.warframe.com/topic/1001509-mask-of-the-revenant-update-2350/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/61cb4a6905ef705fb66fa0343591d997.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Prisma Twin Gremlins not being tradeable. \nFixed Prisma Twin Gremlins having incorrect damage in Conclave."
+      },
       {
         "name": "Beasts of the Sanctuary: Update 22.20.0",
         "date": "2018-05-17T14:55:31Z",
@@ -16817,7 +17005,6 @@
       "slash": 12.33,
       "puncture": 12.33
     },
-    "disposition": 5,
     "flight": 65,
     "marketCost": 190,
     "polarities": [ "Madurai" ],
@@ -16825,7 +17012,8 @@
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/db/Gremlin.png/revision/latest?cb=20140314173236",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Gremlins"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Gremlins",
+    "disposition": 5
   },
   {
     "name": "Twin Kohmak",
@@ -16989,14 +17177,14 @@
       "slash": 18,
       "puncture": 6
     },
-    "disposition": 3,
     "marketCost": 225,
     "polarities": [ "Vazarin" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/de/DualKohmak.png/revision/latest?cb=20160502123410",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Kohmak"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Kohmak",
+    "disposition": 3
   },
   {
     "name": "Twin Rogga",
@@ -17033,7 +17221,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 2600,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -17041,7 +17229,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
         "name": "Argon Crystal",
-        "description": "Void based radioactive resource that decays every day it is out of the void.",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "argon-crystal.png"
@@ -17057,7 +17245,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 15000,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -17117,14 +17305,14 @@
       "slash": 70.5,
       "puncture": 352.5
     },
-    "disposition": 3,
     "marketCost": 190,
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/b/b0/GrnQueenGuardDualPistols.png/revision/latest?cb=20161113000420",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Rogga"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Rogga",
+    "disposition": 3
   },
   {
     "name": "Twin Vipers",
@@ -17169,7 +17357,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -17184,7 +17372,7 @@
         "totalDamage": 18.275002,
         "damagePerSecond": 153,
         "trigger": "Auto",
-        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small clip size, the Viper has a very high fire rate and ultra-fast reload times thanks to a simplified magazine design.",
+        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
         "accuracy": 66.666664,
         "criticalChance": 0.15000001,
         "criticalMultiplier": 1.5,
@@ -17213,7 +17401,7 @@
         "totalDamage": 18.275002,
         "damagePerSecond": 153,
         "trigger": "Auto",
-        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small clip size, the Viper has a very high fire rate and ultra-fast reload times thanks to a simplified magazine design.",
+        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
         "accuracy": 66.666664,
         "criticalChance": 0.15000001,
         "criticalMultiplier": 1.5,
@@ -17287,14 +17475,14 @@
       "slash": 5.1,
       "puncture": 1.7
     },
-    "disposition": 5,
     "marketCost": 225,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/ed/Viper%2C_dual.png/revision/latest?cb=20130426075530",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Vipers"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Vipers",
+    "disposition": 5
   },
   {
     "name": "Twin Vipers Wraith",
@@ -17371,13 +17559,13 @@
       "slash": 1.8,
       "puncture": 1.8
     },
-    "disposition": 5,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Wraith", "Invasion Reward", "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a0/DEWraithTwinVipers.png/revision/latest?cb=20140124174609",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Vipers_Wraith"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Twin_Vipers_Wraith",
+    "disposition": 5
   },
   {
     "name": "Tysis",
@@ -17422,7 +17610,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 900,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -17430,7 +17618,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -17438,7 +17626,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 400,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -17446,7 +17634,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 100,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -17456,6 +17644,14 @@
     "category": "Secondary",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a visual bug with the Tysis' dangles getting tangled. "
+      },
       {
         "name": "Update 21: Chains of Harrow",
         "date": "2017-06-29T03:00:20Z",
@@ -17496,7 +17692,6 @@
     "damageTypes": {
       "corrosive": 79
     },
-    "disposition": 5,
     "flight": 75,
     "marketCost": 120,
     "polarities": [  ],
@@ -17504,7 +17699,8 @@
     "tags": [ "Infested" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/aa/DETysis.png/revision/latest?cb=20140116153508",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Tysis"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Tysis",
+    "disposition": 5
   },
   {
     "name": "Vasto",
@@ -17541,7 +17737,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 1200,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -17557,7 +17753,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 700,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -17565,7 +17761,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 4,
         "tradable": false,
         "imageName": "component-neurode.png"
@@ -17573,7 +17769,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 1000,
         "tradable": false,
         "imageName": "polymer-bundle.png"
@@ -17666,14 +17862,14 @@
       "slash": 29,
       "puncture": 14.5
     },
-    "disposition": 5,
     "marketCost": 190,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/6b/Vasto.png/revision/latest?cb=20130803104340",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Vasto"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Vasto",
+    "disposition": 5
   },
   {
     "name": "Vasto Prime",
@@ -17828,7 +18024,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
         "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "component-cell.png"
@@ -17945,13 +18141,13 @@
       "slash": 46.2,
       "puncture": 9.9
     },
-    "disposition": 5,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Prime", "Vaulted" ],
     "vaulted": true,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f6/PrimeVasto.png/revision/latest?cb=20141217030947",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Vasto_Prime"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Vasto_Prime",
+    "disposition": 5
   },
   {
     "name": "Vaykor Marelok",
@@ -18023,13 +18219,13 @@
       "slash": 48,
       "puncture": 16
     },
-    "disposition": 1,
     "polarities": [ "Madurai", "Vazarin" ],
     "projectile": "Hit-Scan",
     "tags": [ "Syndicate", "Steel Meridian" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a1/SMMarelok.png/revision/latest?cb=20141127183101",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Vaykor_Marelok"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Vaykor_Marelok",
+    "disposition": 1
   },
   {
     "name": "Viper",
@@ -18041,7 +18237,7 @@
     "totalDamage": 18.275002,
     "damagePerSecond": 153,
     "trigger": "Auto",
-    "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small clip size, the Viper has a very high fire rate and ultra-fast reload times thanks to a simplified magazine design.",
+    "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
     "accuracy": 66.666664,
     "criticalChance": 0.15000001,
     "criticalMultiplier": 1.5,
@@ -18066,7 +18262,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/GrineerLightPistolBlueprint",
         "name": "Blueprint",
-        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small clip size, the Viper has a very high fire rate and ultra-fast reload times thanks to a simplified magazine design.",
+        "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -18074,7 +18270,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 600,
         "tradable": false,
         "imageName": "component-ferrite.png"
@@ -18082,7 +18278,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "component-morphic.png"
@@ -18090,7 +18286,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 900,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -18098,7 +18294,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
-        "description": "High value metals collected from war salvage.",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 300,
         "tradable": false,
         "imageName": "component-salvage.png"
@@ -18256,14 +18452,14 @@
       "slash": 5.1,
       "puncture": 1.7
     },
-    "disposition": 5,
     "marketCost": 75,
     "polarities": [ "Madurai" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/99/Viper.png/revision/latest?cb=20130426074750",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Viper"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Viper",
+    "disposition": 5
   },
   {
     "name": "Viper Wraith",
@@ -18329,13 +18525,13 @@
       "slash": 1.8,
       "puncture": 1.8
     },
-    "disposition": 5,
     "polarities": [ "Naramon" ],
     "projectile": "Hit-Scan",
     "tags": [ "Grineer", "Wraith", "Baro" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/72/ViperWraith.png/revision/latest?cb=20180121144809",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Viper_Wraith"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Viper_Wraith",
+    "disposition": 5
   },
   {
     "name": "Vulklok",
@@ -18404,13 +18600,13 @@
     "damageTypes": {
       "electricity": 85
     },
-    "disposition": 4,
     "polarities": [  ],
     "projectile": "Projectile",
     "tags": [ "Grineer", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/34/SentinelElectricRailgun.png/revision/latest?cb=20150902215133",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Vulklok"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Vulklok",
+    "disposition": 4
   },
   {
     "name": "Zakti",
@@ -18447,7 +18643,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
         "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 6500,
         "tradable": false,
         "imageName": "alloy-plate.png"
@@ -18463,7 +18659,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
-        "description": "Autonomy processor for Robotics. A Corpus design.",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 8,
         "tradable": false,
         "imageName": "control-module.png"
@@ -18471,7 +18667,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
-        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 5000,
         "tradable": false,
         "imageName": "component-nanospores.png"
@@ -18479,7 +18675,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
-        "description": "A disgusting nanite-infested tissue mass.",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 350,
         "tradable": false,
         "imageName": "component-plastids.png"
@@ -18522,7 +18718,6 @@
       "impact": 12,
       "puncture": 18
     },
-    "disposition": 3,
     "flight": 66,
     "marketCost": 190,
     "polarities": [ "Naramon", "Naramon" ],
@@ -18530,6 +18725,68 @@
     "tags": [ "Tenno" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a7/Zakti.png/revision/latest?cb=20170720170336",
-    "wikiaUrl": "http://warframe.wikia.com/wiki/Zakti"
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Zakti",
+    "disposition": 3
+  },
+  {
+    "name": "Zylok",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol",
+    "secondsPerShot": 0.66666663,
+    "damagePerShot": [ 48.384003, 18.143999, 84.672005, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 8,
+    "reloadTime": 1.2,
+    "totalDamage": 151.20001,
+    "damagePerSecond": 185,
+    "trigger": "Duplex",
+    "description": "Hammer the enemy with this light-bodied heavy hitter. Featuring a double-action trigger that fires hard and fast. ",
+    "accuracy": 200,
+    "criticalChance": 0.079999998,
+    "criticalMultiplier": 2,
+    "procChance": 0.25999999,
+    "fireRate": 1.5000001,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 0,
+    "noise": "Alarming",
+    "sentinel": false,
+    "masteryReq": 6,
+    "omegaAttenuation": 1,
+    "type": "Pistol",
+    "imageName": "zylok.png",
+    "category": "Secondary",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Hotfix 23.6.2",
+        "date": "2018-08-31T20:29:23Z",
+        "url": "https://forums.warframe.com/topic/1004345-mask-of-the-revenant-hotfix-2362/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Missed notes from last night's Hotfix for Zylok changes that were intended for its release with 23.6.0:"
+      },
+      {
+        "name": "Mask of the Revenant: Hotfix 23.6.1",
+        "date": "2018-08-30T23:04:15Z",
+        "url": "https://forums.warframe.com/topic/1003947-mask-of-the-revenant-hotfix-2361/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Temporarily removed Zylok Pistol from Conclave Arsenal so that it may receive the proper PvP treatment."
+      }
+    ],
+    "damage": "140.0",
+    "damageTypes": {
+      "impact": 44.8,
+      "slash": 78.4,
+      "puncture": 16.8
+    },
+    "polarities": [  ],
+    "projectile": "Hit-Scan",
+    "tags": [ "Tenno" ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/67/Zylok.png/revision/latest?cb=20180831004228",
+    "wikiaUrl": "http://warframe.wikia.com/wiki/Zylok",
+    "disposition": 3
   }
 ]
