@@ -66,5 +66,9 @@ in `/data/img`. You can find every item's image name stored in `item.imageName`.
 
 <br>
 
+### Image links
+
+Since there are so many images, and we can't publish them due to the size, we've set up a ~~301 redirect~~ CDN to get you images at `https://cdn.warframestat.us/img/${item.imageName}` that provides a linkable resource for you. 
+
 ## License
 [MIT](/LICENSE)
