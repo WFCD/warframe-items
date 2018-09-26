@@ -18690,6 +18690,57 @@
     "masteryReq": 12,
     "omegaAttenuation": 1.105,
     "type": "Sniper Rifle",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/RubicoPrimeBarrel",
+        "name": "Barrel",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 1,
+        "ducats": 45,
+        "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/RubicoPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "For the hunter, the apex of the sniper's art. For the hunted, a gateway to the next life.",
+        "itemCount": 1,
+        "ducats": 100,
+        "tradable": true,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/RubicoPrimeReceiver",
+        "name": "Receiver",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 1,
+        "ducats": 15,
+        "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/RubicoPrimeStock",
+        "name": "Stock",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 1,
+        "ducats": 45,
+        "tradable": true,
+        "imageName": "generic-gun-prime-stock.png"
+      }
+    ],
     "imageName": "rubico-prime.png",
     "category": "Primary",
     "tradable": true,
