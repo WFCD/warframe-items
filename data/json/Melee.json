@@ -11945,6 +11945,48 @@
     "masteryReq": 14,
     "omegaAttenuation": 1.4400001,
     "type": "Heavy Blade",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GramPrimeBlade",
+        "name": "Blade",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 1,
+        "ducats": 15,
+        "tradable": true,
+        "imageName": "generic-weapon-prime-blade.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/GramPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "Born anew, the father of swords returns.",
+        "itemCount": 1,
+        "ducats": 45,
+        "tradable": true,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GramPrimeHandle",
+        "name": "Handle",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 1,
+        "ducats": 100,
+        "tradable": true,
+        "imageName": "generic-weapon-prime-hilt.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      }
+    ],
     "imageName": "gram-prime.png",
     "category": "Melee",
     "tradable": true,
