@@ -2800,7 +2800,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/UtilityUnlocker",
     "name": "Exilus Adapter",
-    "description": "Fuses with a Warframe to create an additional Exilus Mod Slot.",
+    "description": "Fuses with a Warframe to unlock the Exilus Mod Slot.",
     "type": "Misc",
     "buildPrice": 25000,
     "buildTime": 86400,
@@ -2819,7 +2819,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/UtilityUnlockerBlueprint",
         "name": "Blueprint",
-        "description": "Fuses with a Warframe to create an additional Exilus Mod Slot.",
+        "description": "Fuses with a Warframe to unlock the Exilus Mod Slot.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -11602,7 +11602,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryUpgradeFeatureItem",
     "name": "Nutrio Incubator Upgrade Segment",
-    "description": "Upgrades the Orbiter's Incubator with the following features:\n- Stasis Recovery reduced to 30 mins\r- Stasis Recovery can be rushed with Credits\r- Reduced price of stabilizers\r- Egg incubation reduced by a day\r- Stabilizers last twice as long",
+    "description": "Upgrades the Orbiter's Incubator with the following features:\n- Stasis Recovery is immediate\r- Reduced price of stabilizers\r- Egg incubation reduced by a day\r- Stabilizers last twice as long",
     "type": "Extractor",
     "imageName": "nutrio-incubator-upgrade-segment.png",
     "category": "Misc",
@@ -15306,6 +15306,15 @@
     "description": "Reduces the time required to scan a target with the Synthesis Scanner.",
     "type": "Misc",
     "imageName": "vector-thread-widget.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/Elitium",
+    "name": "Vitus Essence",
+    "description": "Awarded by the Arbiters of Hexis to few Tenno capable of surviving Arbitration.",
+    "type": "Misc",
+    "imageName": "vitus-essence.png",
     "category": "Misc",
     "tradable": false
   },
