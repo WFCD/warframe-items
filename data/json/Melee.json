@@ -8032,6 +8032,53 @@
     "masteryReq": 8,
     "omegaAttenuation": 1,
     "type": "Glaive",
+    "buildPrice": 20000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 8500,
+        "tradable": false,
+        "imageName": "alloy-plate.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Energy/CrpGlaiveBlueprint",
+        "name": "Blueprint",
+        "description": "Carve through enemies with surgical precision using this Corpus-tech glaive.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 1650,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
+        "name": "Fieldron",
+        "description": "ClanTech weaponized containment field to contain super-heated substances.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "corpus-component.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
+        "name": "Forma",
+        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-component.png"
+      }
+    ],
     "imageName": "falcor.png",
     "category": "Melee",
     "tradable": false,
@@ -19492,6 +19539,74 @@
     "masteryReq": 10,
     "omegaAttenuation": 1,
     "type": "Heavy Blade",
+    "buildPrice": 30000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/BallasSwordBlueprint",
+        "name": "Blueprint",
+        "description": "The Sentient slayer. An offering from Ballas.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
+        "name": "Eidolon Shard",
+        "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "sentient-shard-common.png"
+      },
+      {
+        "name": "Galatine",
+        "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/GreatSword/TennoGreatSword",
+        "secondsPerShot": 1,
+        "damagePerShot": [ 3.4375, 3.4375, 130.625, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+        "magazineSize": 0,
+        "reloadTime": 0,
+        "totalDamage": 137.5,
+        "damagePerSecond": 138,
+        "trigger": "Melee",
+        "description": "With massive charged power and the ability to hit up to five foes in a single swing, the Galatine sword is the heavy artillery of Melee Weapons.",
+        "accuracy": 100,
+        "criticalChance": 0.1,
+        "criticalMultiplier": 2,
+        "procChance": 0.19999999,
+        "fireRate": 1,
+        "chargeAttack": 0,
+        "spinAttack": 250,
+        "leapAttack": 125,
+        "wallAttack": 250,
+        "slot": 5,
+        "noise": "Alarming",
+        "sentinel": false,
+        "masteryReq": 3,
+        "omegaAttenuation": 0.5,
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "tenno-great-sword.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PrimeBucks",
+        "name": "Orokin Ducats",
+        "description": "Currency exchanged for Prime components and used to purchase items from the Void Trader.",
+        "itemCount": 1000,
+        "tradable": true,
+        "imageName": "ducat.png"
+      }
+    ],
     "imageName": "paracesis.png",
     "category": "Melee",
     "tradable": false,
@@ -20136,6 +20251,53 @@
     "masteryReq": 7,
     "omegaAttenuation": 1,
     "type": "Staff",
+    "buildPrice": 30000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/ClanTech/Bio/InfStaffWeaponBlueprint",
+        "name": "Blueprint",
+        "description": "A two-pronged attack; the bone-grafted cocoon at the tip of this staff rends flesh, while the viral mass living within spreads itself into the wounds of each new victim.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
+        "name": "Forma",
+        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-component.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
+        "name": "Mutagen Mass",
+        "description": "This living mass can produce weaponized toxins for weaponry.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "infested-component.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 2250,
+        "tradable": false,
+        "imageName": "component-rubedo.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
+        "itemCount": 8750,
+        "tradable": false,
+        "imageName": "component-salvage.png"
+      }
+    ],
     "imageName": "pupacyst.png",
     "category": "Melee",
     "tradable": false,
