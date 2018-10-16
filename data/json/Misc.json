@@ -33,6 +33,33 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneWaterElement",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase1leftitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase1leftitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseTwoPigmentBright",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase2aleftitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase2aleftitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseTwoPigmentMuted",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase2arightitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase2arightitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseTwoClanItem",
     "name": "/Lotus/Language/Relayreconstruction/Relayreconphase2clanitemname",
     "description": "An integral building block in the construction of Tenno relays.",
@@ -47,6 +74,15 @@
     "description": "An integral building block in the construction of Tenno relays.",
     "type": "Misc",
     "imageName": "lotus-language-relayreconstruction-relayreconphase3clanitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseThreeAirEssence",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase3leftitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase3leftitemname.png",
     "category": "Misc",
     "tradable": false
   },
@@ -7198,35 +7234,48 @@
     "name": "Kavat Incubator Upgrade Segment",
     "description": "Allows the Incubator to breed Kavats.",
     "type": "Extractor",
+    "buildPrice": 100000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 120000,
+        "tradable": false,
+        "imageName": "alloy-plate.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "argon-crystal.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryCatbrowUpgradeFeatureBlueprint",
+        "name": "Blueprint",
+        "description": "Allows the Incubator to breed Kavats.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Game/CatbrowPet/CatbrowGeneticSignature",
+        "name": "Kavat Genetic Code",
+        "description": "Contains the genetic code sequence of a Kavat.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "kavat-gene-strain.png"
+      }
+    ],
     "imageName": "kavat-incubator-upgrade-segment.png",
     "category": "Misc",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Kuva Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Kuva Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/DayCommonFishBTrophy",
@@ -11604,6 +11653,45 @@
     "name": "Nutrio Incubator Upgrade Segment",
     "description": "Upgrades the Orbiter's Incubator with the following features:\n- Stasis Recovery is immediate\r- Reduced price of stabilizers\r- Egg incubation reduced by a day\r- Stabilizers last twice as long",
     "type": "Extractor",
+    "buildPrice": 100000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "argon-crystal.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryUpgradeFeatureBlueprint",
+        "name": "Blueprint",
+        "description": "Upgrades the Orbiter's Incubator with the following features:\n- Stasis Recovery is immediate\r- Reduced price of stabilizers\r- Egg incubation reduced by a day\r- Stabilizers last twice as long",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Game/KubrowPet/EggHatcher",
+        "name": "Incubator Power Core",
+        "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "egg-hatcher.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
+        "itemCount": 1200,
+        "tradable": false,
+        "imageName": "component-oxium.png"
+      }
+    ],
     "imageName": "nutrio-incubator-upgrade-segment.png",
     "category": "Misc",
     "tradable": false,
@@ -13008,6 +13096,15 @@
         "chance": 0.25
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneFireElement",
+    "name": "Pyrus Essence",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "pyrus-essence.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/PerrinDogTag",
