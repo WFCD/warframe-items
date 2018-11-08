@@ -299,7 +299,9 @@ class Scraper {
    * Add image name for images that will be fetched outside of this scraper.
    */
   addImageName (item, previous, isComponent) {
-    const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation
+    const image = manifest.find(i => i.uniqueName === item.uniqueName)
+    if (!image) return
+    const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
 
     if (isComponent) {
