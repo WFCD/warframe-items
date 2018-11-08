@@ -33,6 +33,33 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneWaterElement",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase1leftitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase1leftitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseTwoPigmentBright",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase2aleftitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase2aleftitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseTwoPigmentMuted",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase2arightitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase2arightitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseTwoClanItem",
     "name": "/Lotus/Language/Relayreconstruction/Relayreconphase2clanitemname",
     "description": "An integral building block in the construction of Tenno relays.",
@@ -47,6 +74,15 @@
     "description": "An integral building block in the construction of Tenno relays.",
     "type": "Misc",
     "imageName": "lotus-language-relayreconstruction-relayreconphase3clanitemname.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseThreeAirEssence",
+    "name": "/Lotus/Language/Relayreconstruction/Relayreconphase3leftitemname",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "lotus-language-relayreconstruction-relayreconphase3leftitemname.png",
     "category": "Misc",
     "tradable": false
   },
@@ -106,7 +142,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -130,7 +166,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
-        "description": "An ingredient used in Ostron cooking and medicines.",
+        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 2,
         "tradable": false,
         "imageName": "fish-resource-organ.png"
@@ -192,7 +228,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 50,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -671,7 +707,15 @@
     "type": "Misc",
     "imageName": "ayatan-ayr-sculpture.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Arbitrations",
+        "type": "Transient Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.18
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/FusionTreasures/OroFusexC",
@@ -681,6 +725,14 @@
     "imageName": "ayatan-orta-sculpture.png",
     "category": "Misc",
     "tradable": false,
+    "drops": [
+      {
+        "location": "Arbitrations",
+        "type": "Transient Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.31
+      }
+    ],
     "patchlogs": [
       {
         "name": "The Silver Grove: U3.2",
@@ -699,7 +751,15 @@
     "type": "Misc",
     "imageName": "ayatan-piv-sculpture.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Arbitrations",
+        "type": "Transient Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/FusionTreasures/OroFusexA",
@@ -709,6 +769,14 @@
     "imageName": "ayatan-sah-sculpture.png",
     "category": "Misc",
     "tradable": false,
+    "drops": [
+      {
+        "location": "Arbitrations",
+        "type": "Transient Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.18
+      }
+    ],
     "patchlogs": [
       {
         "name": "The Silver Grove: U3.2",
@@ -728,6 +796,14 @@
     "imageName": "ayatan-valana-sculpture.png",
     "category": "Misc",
     "tradable": false,
+    "drops": [
+      {
+        "location": "Arbitrations",
+        "type": "Transient Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.18
+      }
+    ],
     "patchlogs": [
       {
         "name": "Shrine of the Eidolon: Hotfix 22.17.1 - 22.17.1.1",
@@ -747,7 +823,15 @@
     "type": "Misc",
     "imageName": "ayatan-vaya-sculpture.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Arbitrations",
+        "type": "Transient Rewards",
+        "rarity": "Uncommon",
+        "chance": 0.2
+      }
+    ]
   },
   {
     "name": "Balla",
@@ -786,7 +870,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -794,7 +878,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -802,7 +886,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "common-gem-acut-a.png"
@@ -966,7 +1050,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -987,7 +1071,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem",
     "name": "Charc Electroplax",
-    "description": "Harvested by the Ostron as a catalyst used in their synthetics.",
+    "description": "Harvested by the Ostron as a catalyst used in their synthetics.\nLocation: Plains of Eidolon",
     "type": "Fish Part",
     "imageName": "charc-electroplax.png",
     "category": "Misc",
@@ -1111,7 +1195,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -1135,7 +1219,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
-        "description": "An ingredient used in Ostron cooking and medicines.",
+        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 2,
         "tradable": false,
         "imageName": "fish-resource-organ.png"
@@ -1464,7 +1548,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -1527,7 +1611,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -1543,7 +1627,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 6,
         "tradable": false,
         "imageName": "uncommon-gem-acut-a.png"
@@ -1639,7 +1723,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 40,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -1655,7 +1739,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -1663,7 +1747,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 8,
         "tradable": false,
         "imageName": "uncommon-gem-acut-a.png"
@@ -1859,7 +1943,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 7,
         "tradable": false,
         "imageName": "uncommon-gem-acut-a.png"
@@ -1867,7 +1951,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -1875,7 +1959,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -2382,7 +2466,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -2390,7 +2474,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -2398,7 +2482,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -2445,7 +2529,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -2453,7 +2537,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -2461,7 +2545,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -2469,7 +2553,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem",
         "name": "Tralok Eyes",
-        "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.",
+        "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-eyes.png"
@@ -2508,7 +2592,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -2524,7 +2608,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
         "name": "Goopolla Spleen",
-        "description": "Used in Ostron remedies to purify toxins.",
+        "description": "Used in Ostron remedies to purify toxins.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-flesh-tube.png"
@@ -2532,7 +2616,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 30,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -2587,7 +2671,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -2595,7 +2679,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -2634,7 +2718,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem",
         "name": "Charc Electroplax",
-        "description": "Harvested by the Ostron as a catalyst used in their synthetics.",
+        "description": "Harvested by the Ostron as a catalyst used in their synthetics.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-gills.png"
@@ -2642,7 +2726,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -2658,7 +2742,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 30,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -2713,7 +2797,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -2721,7 +2805,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -2752,7 +2836,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/UtilityUnlocker",
     "name": "Exilus Adapter",
-    "description": "Fuses with a Warframe to create an additional Exilus Mod Slot.",
+    "description": "Fuses with a Warframe to unlock the Exilus Mod Slot.",
     "type": "Misc",
     "buildPrice": 25000,
     "buildTime": 86400,
@@ -2771,7 +2855,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/UtilityUnlockerBlueprint",
         "name": "Blueprint",
-        "description": "Fuses with a Warframe to create an additional Exilus Mod Slot.",
+        "description": "Fuses with a Warframe to unlock the Exilus Mod Slot.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -2797,6 +2881,15 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "3 x Exilus Adapter",
+        "fixes": ""
+      },
       {
         "name": "Plains of Eidolon: Hotfix 22.8.3",
         "date": "2018-01-11T14:32:42Z",
@@ -5800,6 +5893,23 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Chimera: Hotfix 23.10.4",
+        "date": "2018-10-16T21:02:30Z",
+        "url": "https://forums.warframe.com/topic/1019115-chimera-hotfix-23104/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed ability to Forma the Paracesis for the second time when it is not at its ‘max Rank’."
+      },
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "3 x Forma\nOne important thing to clarify is that the in-game items received on the non-Milestone Days in Daily Tribute system now scale based on the amount of days you have logged on. Endo is an example well documented in the past Workshop, but this also applies to Credits, Booster Durations, Resources, Syndicate Medallions, Relics, and Forma Blueprints.",
+        "fixes": "Fixed camera being stuck inside Martian Ancient Settlement Rock Formation decoration when attempting to place it too close to the camera in the Dojo. Now moving the camera back should help free you from its rocky embrace."
+      },
+      {
         "name": "The Sacrifice: Update 23.2.0",
         "date": "2018-08-02T15:02:26Z",
         "url": "https://forums.warframe.com/topic/991847-the-sacrifice-update-2320/",
@@ -6228,7 +6338,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -6257,7 +6367,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
     "name": "Goopolla Spleen",
-    "description": "Used in Ostron remedies to purify toxins.",
+    "description": "Used in Ostron remedies to purify toxins.\nLocation: Fisher Hai-Luk in Cetus",
     "type": "Fish Part",
     "imageName": "goopolla-spleen.png",
     "category": "Misc",
@@ -6311,7 +6421,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -6357,7 +6467,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -6365,7 +6475,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-gem-acut-a.png"
@@ -6373,7 +6483,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
         "name": "Star Crimzian",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "rare-gem-acut-a.png"
@@ -6750,7 +6860,18 @@
     "type": "Extractor",
     "imageName": "incubator-segment.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "Tenno with the Nutrio Incubator Segment installed now have instant recovery from Stasis at no cost!",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartB",
@@ -6828,7 +6949,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -6836,7 +6957,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishBPartItem",
         "name": "Khut-Khut Venom Sac",
-        "description": "The poison is used by the Ostrons to cure leather and as a reagent to produce an embalming fluid.",
+        "description": "The poison is used to cure leather and as a reagent to produce an embalming fluid.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-sensor.png"
@@ -6844,7 +6965,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -6852,7 +6973,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -6891,7 +7012,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -6899,7 +7020,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -6907,7 +7028,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -6915,7 +7036,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishCPartItem",
         "name": "Yogwun Stomach",
-        "description": "Once cleaned and tanned this organ can be turned into a durable leather.",
+        "description": "Once cleaned and tanned this organ can be turned into a durable leather.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-rib-cage.png"
@@ -6963,7 +7084,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 40,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -6979,7 +7100,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -7017,7 +7138,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 15,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -7073,7 +7194,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishBPartItem",
     "name": "Karkina Antenna",
-    "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.",
+    "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.\nLocation: Fisher Hai-Luk in Cetus",
     "type": "Fish Part",
     "imageName": "karkina-antenna.png",
     "category": "Misc",
@@ -7111,7 +7232,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -7150,35 +7271,48 @@
     "name": "Kavat Incubator Upgrade Segment",
     "description": "Allows the Incubator to breed Kavats.",
     "type": "Extractor",
+    "buildPrice": 100000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 120000,
+        "tradable": false,
+        "imageName": "alloy-plate.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "argon-crystal.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryCatbrowUpgradeFeatureBlueprint",
+        "name": "Blueprint",
+        "description": "Allows the Incubator to breed Kavats.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Game/CatbrowPet/CatbrowGeneticSignature",
+        "name": "Kavat Genetic Code",
+        "description": "Contains the genetic code sequence of a Kavat.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "kavat-gene-strain.png"
+      }
+    ],
     "imageName": "kavat-incubator-upgrade-segment.png",
     "category": "Misc",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Kuva Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Kuva Hyekka Master 1.50 1.50",
-        "type": "Enemy Blueprint Tables",
-        "rarity": "Common",
-        "chance": 1
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/DayCommonFishBTrophy",
@@ -7210,7 +7344,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -7239,7 +7373,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishBPartItem",
     "name": "Khut-Khut Venom Sac",
-    "description": "The poison is used by the Ostrons to cure leather and as a reagent to produce an embalming fluid.",
+    "description": "The poison is used to cure leather and as a reagent to produce an embalming fluid.\nLocation: Fisher Hai-Luk in Cetus",
     "type": "Fish Part",
     "imageName": "khut-khut-venom-sac.png",
     "category": "Misc",
@@ -7273,7 +7407,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -7289,7 +7423,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 50,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -7354,7 +7488,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -7420,7 +7554,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "common-gem-bcut-a.png"
@@ -7436,7 +7570,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -7502,7 +7636,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -7534,12 +7668,21 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Kuva",
     "name": "Kuva",
-    "description": "A mysterious red fluid coveted by the Grineer Queens.",
+    "description": "A mysterious red fluid coveted by the Grineer Queens.\nObtained in Kuva missions.",
     "type": "Misc",
     "imageName": "kuva.png",
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "50,000 Kuva\nFixed being unable to select the Taveuni node on the Kuva Fortress if highlighting the text with the cursor while using controller.",
+        "fixes": ""
+      },
       {
         "name": "The Sacrifice: Update 23.4.0",
         "date": "2018-08-16T21:06:52Z",
@@ -8038,7 +8181,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 1,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -8046,7 +8189,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -8145,7 +8288,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -8204,6 +8347,847 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Ships/DefaultShip",
+    "name": "Liset",
+    "description": "The landing craft of choice utilised by the Tenno during their missions.",
+    "type": "Extractor",
+    "imageName": "liset.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Update 23.4.0",
+        "date": "2018-08-16T21:06:52Z",
+        "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/78536b4c8453692aebda092e06824558.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a scenario where Clients were unable to return to the Liset with their squad."
+      },
+      {
+        "name": "The Sacrifice: Update 23.2.0",
+        "date": "2018-08-02T15:02:26Z",
+        "url": "https://forums.warframe.com/topic/991847-the-sacrifice-update-2320/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0101f9fd2313734f1f72031130a1d0cd.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to colour some lines on the Spektaka Liset Skin. "
+      },
+      {
+        "name": "The Sacrifice: Hotfix 23.1.1",
+        "date": "2018-07-19T20:31:38Z",
+        "url": "https://forums.warframe.com/topic/985581-the-sacrifice-hotfix-2311/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Liset doors re-playing the open sound when entering with Operator while Warframe is already standing there."
+      },
+      {
+        "name": "The Sacrifice: Update 23.1.0: TennoGen Round 13",
+        "date": "2018-07-18T17:30:11Z",
+        "url": "https://forums.warframe.com/topic/984990-the-sacrifice-update-2310-tennogen-round-13/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/87c65a156a389ba969cc1c45050d52d7.jpg",
+        "additions": "",
+        "changes": "Protege Liset Skin by MaceMadunusus",
+        "fixes": ""
+      },
+      {
+        "name": "Beasts of the Sanctuary: Hotfix 22.20.1",
+        "date": "2018-05-17T16:36:59Z",
+        "url": "https://forums.warframe.com/topic/957126-beasts-of-the-sanctuary-hotfix-22201/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed not being able to move your Liset in the loading screen when using a Controller joystick."
+      },
+      {
+        "name": "Beasts of the Sanctuary: Update 22.19.0",
+        "date": "2018-05-02T18:30:06Z",
+        "url": "https://forums.warframe.com/topic/952702-beasts-of-the-sanctuary-update-22190/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/8c27eabbd9bc9b5af2ba5944cd490302.jpg",
+        "additions": "",
+        "changes": "Fixes towards possible motion blur on Khora’s spikes in the Liset.",
+        "fixes": ""
+      },
+      {
+        "name": "Shrine of the Eidolon: Update 22.16.0",
+        "date": "2018-03-15T20:27:52Z",
+        "url": "https://forums.warframe.com/topic/933296-shrine-of-the-eidolon-update-22160/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/DojoRework_NewsHeader.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed broken animations when viewing a Host remove a Cyst as a Client in their Liset. Your Warframe will now also not disappear (out of disgust?) as a Client while this happens. Sorry, Tenno \nFixed missing Liset and Landing Craft sounds when extracting from the following tilesets:"
+      },
+      {
+        "name": "Shrine of the Eidolon: Update 22.15.0",
+        "date": "2018-03-07T21:04:32Z",
+        "url": "https://forums.warframe.com/topic/930667-shrine-of-the-eidolon-update-22150/",
+        "imgUrl": "http://n8k6e2y6.ssl.hwcdn.net/uploads/d14f21e519b6111ca20d4d13c1610d1c.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed some escapable geometry holes in the Liset."
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.13.2",
+        "date": "2018-02-16T19:48:19Z",
+        "url": "https://forums.warframe.com/topic/922693-shrine-of-the-eidolon-hotfix-22132/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a crash that could occur in the Liset loading mission screen."
+      },
+      {
+        "name": "Shrine of the Eidolon: Update 22.13.0",
+        "date": "2018-02-15T16:35:03Z",
+        "url": "https://forums.warframe.com/topic/922109-shrine-of-the-eidolon-update-22130/",
+        "imgUrl": "http://i.imgur.com/pMAZ2A5.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Tennogen Liset Skins showing a Credit icon instead of Steam icon."
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.12.3",
+        "date": "2018-02-12T22:56:11Z",
+        "url": "https://forums.warframe.com/topic/920621-shrine-of-the-eidolon-hotfix-22123/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed excessively bright fog in your Liset.\nFixed missing Liset ‘fly in’ sounds as reported here: https://forums.warframe.com/topic/915481-liset-audio-bug/"
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.10.3",
+        "date": "2018-01-29T20:51:42Z",
+        "url": "https://forums.warframe.com/topic/913560-plains-of-eidolon-hotfix-22103/",
+        "additions": "",
+        "changes": "Optimized the ambient sounds in the Liset mission loading screen.",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.10.0",
+        "date": "2018-01-25T23:53:14Z",
+        "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
+        "imgUrl": "https://i.imgur.com/Hh3GKF6.jpg",
+        "additions": "",
+        "changes": "Replaced old damaged Liset ship in Vor’s Prize cinematic with new damaged version.",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.8",
+        "date": "2017-10-20T21:44:33Z",
+        "url": "https://forums.warframe.com/topic/863518-plains-of-eidolon-hotfix-2208/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed amp affinity gain not properly appearing in the mission progress screen or Liset mission results screen."
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "imgUrl": "https://n8k6e2y6.ssl.hwcdn.net/images/promo/plainsOfEidolon/keyArtV3.png",
+        "additions": "Added two new alternate versions of the default Liset load screens!",
+        "changes": "Updated the Liset’s appearance in the cinematic during the first mission of Vor’s Prize.",
+        "fixes": ""
+      },
+      {
+        "name": "Hydroid Prime: Update 21.6.1",
+        "date": "2017-08-31T19:21:56Z",
+        "url": "https://forums.warframe.com/topic/837704-hydroid-prime-update-2161/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where players would get stuck ascending the ramp of their Liset."
+      },
+      {
+        "name": "Chains of Harrow: Hotfix 21.4.2",
+        "date": "2017-08-11T22:11:07Z",
+        "url": "https://forums.warframe.com/topic/830166-chains-of-harrow-hotfix-2142/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed mission loading screen Liset movement not accurately reflecting the movement of other squadmates."
+      },
+      {
+        "name": "Update 21: Chains of Harrow",
+        "date": "2017-06-29T03:00:20Z",
+        "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
+        "imgUrl": "https://n8k6e2y6.ssl.hwcdn.net/images/promo/harrow/PriestSpear_1080p.jpg",
+        "additions": "",
+        "changes": "A “Cannot Use in Archwing” HUD message will now appear under the ability bar when attempting to use Liset Air Support Charges and Kinetic Syphon Traps while in Archwing missions.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia’s Anthem: Update 20.3.0",
+        "date": "2017-04-26T21:47:34Z",
+        "url": "https://forums.warframe.com/topic/790938-octavia%E2%80%99s-anthem-update-2030/",
+        "imgUrl": "http://i.imgur.com/h2DfL1j.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed improper mention of ‘Liset’ when receiving a message from the ship's systems about your Kubrow dying."
+      },
+      {
+        "name": "Octavia’s Anthem: Update 20.2.0",
+        "date": "2017-04-12T18:04:21Z",
+        "url": "https://forums.warframe.com/topic/785788-octavia%E2%80%99s-anthem-update-2020/",
+        "imgUrl": "http://i.imgur.com/ud7O2UZ.jpg",
+        "additions": "",
+        "changes": "Removed requirement to go back to the Liset between some early stages of The New Strange if playing from the Relay.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia's Anthem: Hotfix 20.0.8",
+        "date": "2017-03-30T21:56:27Z",
+        "url": "https://forums.warframe.com/topic/780730-octavias-anthem-hotfix-2008/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Liset flying through a massive rock when extracting from the Kuva Fortress."
+      },
+      {
+        "name": "Update 19.13.0",
+        "date": "2017-03-09T20:40:48Z",
+        "url": "https://forums.warframe.com/topic/771036-update-19130/",
+        "imgUrl": "http://i.imgur.com/PDgOqJ8.jpg",
+        "additions": "",
+        "changes": "Tweaked the Grineer AI behavior in Vor’s Prize to be a bit more aggressive when it comes to letting you escape in the Liset.",
+        "fixes": ""
+      },
+      {
+        "name": "The Index Preview",
+        "date": "2016-10-20T23:28:18Z",
+        "url": "https://forums.warframe.com/topic/709665-the-index-preview/",
+        "imgUrl": "http://i.imgur.com/49dlyEz.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an unresponsive screen due to Clients returning to their Liset and Hosts returning to Maroos Bazaar after completing an Ayatan Sculpture hunt mission."
+      },
+      {
+        "name": "The Silver Grove: U1.2 + U1.3",
+        "date": "2016-09-02T18:01:23Z",
+        "url": "https://forums.warframe.com/topic/695536-the-silver-grove-u12-u13/",
+        "additions": "",
+        "changes": "Lunaro gamemode will now show up in the Liset Conclave console rotation. ",
+        "fixes": ""
+      },
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "imgUrl": "http://i.imgur.com/YMVXfyw.jpg",
+        "additions": "",
+        "changes": "Improved Dojo and Liset decoration placement code.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 18.13.0: TennoGen, Passives, & Reworks",
+        "date": "2016-05-27T21:20:29Z",
+        "url": "https://forums.warframe.com/topic/652752-update-18130-tennogen-passives-reworks%C2%A0/",
+        "imgUrl": "http://i.imgur.com/1JPOZC1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed Clients losing their End of Mission rewards due to a failed server connection while the Host successfully returned to the Liset. "
+      },
+      {
+        "name": "Hotfix 18.10.6",
+        "date": "2016-05-06T21:23:23Z",
+        "url": "https://forums.warframe.com/topic/645736-hotfix-18106/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Maltzur Oculus Liset skin not applying proper energy color."
+      },
+      {
+        "name": "Update 18.10.0: Operation Rathuum!",
+        "date": "2016-04-29T17:04:18Z",
+        "url": "https://forums.warframe.com/topic/642897-update-18100-operation-rathuum/",
+        "imgUrl": "http://i.imgur.com/YiMbs9B.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "·         Fixed the TennoGen Maltzur Liset displaying incorrect energy color as per: https://forums.warframe.com/topic/629322-maltzur-liset-skin-energy-color-bug/"
+      },
+      {
+        "name": "Update 18.9.0",
+        "date": "2016-04-20T21:39:18Z",
+        "url": "https://forums.warframe.com/topic/639851-update-1890/",
+        "imgUrl": "http://i.imgur.com/mY2Txwh.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed chat buttons not repositioning when returning to the Liset."
+      },
+      {
+        "name": "Hotfix 18.8.2",
+        "date": "2016-04-13T18:53:32Z",
+        "url": "https://forums.warframe.com/topic/637581-hotfix-1882/",
+        "imgUrl": "http://i.imgur.com/LdxUao4.jpg",
+        "additions": "",
+        "changes": "•    Removed unnecessary Ordis lines prompted in your Liset.",
+        "fixes": "•    Fixed claimable Foundry items appearing as the same color as the Lisets interior."
+      },
+      {
+        "name": "Update 18.8.0",
+        "date": "2016-04-06T20:31:30Z",
+        "url": "https://forums.warframe.com/topic/635136-update-1880/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed a game freeze when logging out while in the ‘Customize Interior’ screen for the Liset."
+      },
+      {
+        "name": "Update 18.7.0",
+        "date": "2016-03-30T22:18:10Z",
+        "url": "https://forums.warframe.com/topic/632293-update-1870/",
+        "imgUrl": "http://i.imgur.com/gQALiAA.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed Lisets flying too close to each other when entering a mission.\n•    Fixed the Liset’s warp sound not playing when leaving various tilesets."
+      },
+      {
+        "name": "Hotfix 18.6.3",
+        "date": "2016-03-23T21:00:12Z",
+        "url": "https://forums.warframe.com/topic/629210-hotfix-1863/",
+        "imgUrl": "http://i.imgur.com/rGZXWve.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "A unique skin for the Liset, designed by Cobalt."
+      },
+      {
+        "name": "Update 18.6",
+        "date": "2016-03-16T20:07:20Z",
+        "url": "https://forums.warframe.com/topic/625930-update-186/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Adjusted the volume of the Liset’s audio FX."
+      },
+      {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "imgUrl": "http://i.imgur.com/6IEKyKC.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "This option is turned on by default and can be turned off in the Conclave Liset Console if you want to join matches with Rank 3+ players.\nPlayers will now see their Squad’s Landing Crafts outside of the Liset when preparing for a Mission.\nFixed the Liset not being properly colored when using the default color palette.  "
+      },
+      {
+        "name": "Hotfix 18.4.7",
+        "date": "2016-02-04T22:43:36Z",
+        "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an error in Wyrmius’ loading screen causing an oversized Liset to appear instead of a Wyrm."
+      },
+      {
+        "name": "Hotfix 18.0.4 ",
+        "date": "2015-12-08T17:59:59Z",
+        "url": "https://forums.warframe.com/topic/573817-hotfix-1804-spoilers/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Gineer Shipyards extraction cinematic displaying default Liset visuals instead of showing the player’s Landing Craft customization."
+      },
+      {
+        "name": "Hotfix 17.12.1",
+        "date": "2015-11-25T22:04:24Z",
+        "url": "https://forums.warframe.com/topic/564757-hotfix-17121/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Quilate Liset and Hellkite Liset skins not having proper lighting FX."
+      },
+      {
+        "name": "Hotfix 17.10.2 + 17.10.3",
+        "date": "2015-11-09T17:07:30Z",
+        "url": "https://forums.warframe.com/topic/558838-hotfix-17102-17103/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the visual screen shake FX becoming stuck on the screen after using the Liset’s Air Support as per: https://forums.warframe.com/index.php?/topic/547858-weird-air-support-behaviour/"
+      },
+      {
+        "name": "Update 17.10.0",
+        "date": "2015-11-04T23:21:00Z",
+        "url": "https://forums.warframe.com/topic/556384-update-17100/",
+        "additions": "",
+        "changes": "Players can now exit Relays by using a context action on the Liset they entered the Relay with.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 17.9.0",
+        "date": "2015-10-28T15:12:27Z",
+        "url": "https://forums.warframe.com/topic/552544-update-1790/",
+        "additions": "Liset",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Update 17.7",
+        "date": "2015-10-14T21:37:19Z",
+        "url": "https://forums.warframe.com/topic/545312-update-177/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Rescue Mission timers disappearing when paused by the Liset’s Air Support.\nFixed the Liset’s Air Support hack disappearing after a Host Migration.\nFixed consoles not flickering for Clients when hacked by Ordis via the Liset’s Air Support."
+      },
+      {
+        "name": "Hotfix 17.6.1",
+        "date": "2015-10-07T21:04:29Z",
+        "url": "https://forums.warframe.com/topic/540998-hotfix-1761/",
+        "additions": "",
+        "changes": "Made some audio and timing adjustments to the Liset’s landing cinematics at the start of Missions on Earth’s Forest tileset.\nAdjusted the context action button on the Liset’s Air Support.\nThe Liset’s Air Support will now also disable any nearby cameras.\nThe Liset’s Air Support will now pause any timers in Spy and rescue Missions that are active while the beacon is up.\nPanels now flicker while Ordis is in control of enemy security systems via the Liset’s Air Support.",
+        "fixes": "Fixed the Liset’s Air Support unintentionally disabling doors, making it impossible to complete missions."
+      },
+      {
+        "name": "Hotfix 17.5.5",
+        "date": "2015-10-05T22:15:15Z",
+        "url": "https://forums.warframe.com/topic/539640-hotfix-1755/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Liset’s jetstream visual FX sometimes not correctly displaying for players."
+      },
+      {
+        "name": "Update 17.5: The Jordas Precept. + Hotfix 17.5.1",
+        "date": "2015-10-02T02:05:33Z",
+        "url": "https://forums.warframe.com/topic/536207-update-175-the-jordas-precept-hotfix-1751/",
+        "additions": "Landing Craft Liset: Features the Air Support: Cipher.",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Update 17.4.5",
+        "date": "2015-09-23T22:02:55Z",
+        "url": "https://forums.warframe.com/topic/532623-update-1745/",
+        "additions": "",
+        "changes": "Liset Noggle capacity has been increased by 3x the amount.",
+        "fixes": "Fixed an error caused by players installing the Liset’s Incubator Upgrade without having the base Incubator."
+      },
+      {
+        "name": "Hotfix 17.4.3",
+        "date": "2015-09-16T20:35:30Z",
+        "url": "https://forums.warframe.com/topic/529270-hotfix-1743/",
+        "additions": "Added a ‘Max Framerate’ option in the Display settings.  This tool will allow players to set a maximum framerate across all of Warframe.  A max framerate can only be set if V-sync is disabled, but doing this will allow players to run the game at 120FPS instead of ~300FPS+ in places such as the Liset.",
+        "changes": "",
+        "fixes": "Fixed the ‘visible when holstered’ option not hiding quivers on certain bows and causing clipping issues of quivers going through the chest when in the Liset."
+      },
+      {
+        "name": "Hotfix 17.2.6",
+        "date": "2015-08-28T22:00:03Z",
+        "url": "https://forums.warframe.com/topic/519498-hotfix-1726/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed not being able to open the chat window in the Liset.\nFixed the End of Mission screen showing the wrong rank for gear when back on your Liset."
+      },
+      {
+        "name": "Update 17.2.4",
+        "date": "2015-08-26T19:41:39Z",
+        "url": "https://forums.warframe.com/topic/518275-update-1724/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the end-of-match screen in the Liset showing PvE gear even after completing PvP missions and using different gear."
+      },
+      {
+        "name": "Update 17.1.0 - 17.1.4",
+        "date": "2015-08-12T21:08:45Z",
+        "url": "https://forums.warframe.com/topic/509640-update-1710-1714/",
+        "additions": "",
+        "changes": "",
+        "fixes": "• Fixed an error that would occur when coloring the interior of the Liset as per: https://forums.warframe.com/index.php?/topic/505972-changing-liset-interior-colors-freezes-hud/\n• Fixed the first item of the Market menu under the banner showing as visible when viewed in the Liset from outside the Market menu."
+      },
+      {
+        "name": "Hotfix 17.0.2",
+        "date": "2015-07-31T22:56:16Z",
+        "url": "https://forums.warframe.com/topic/499470-hotfix-1702/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed 8 Lisets flying in the Missions intro cinematic."
+      },
+      {
+        "name": "Update 17: Echoes Of The Sentient",
+        "date": "2015-07-31T15:09:25Z",
+        "url": "https://forums.warframe.com/topic/498793-update-17-echoes-of-the-sentient/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Lisets flying through each other in the Relay docking station.\nFixed an error caused by using the right thumbstick on a controller or gamepad when customizing the Liset.\nFixed an issue where editing the pause menu can be accessed when editing the Liset’s interior colors, creating additional UI on top of the color picker.\nFixed players experiencing a loss of functionality when opening the Pause Menu immediately after opening the Conclave Menu in the Liset."
+      },
+      {
+        "name": "Update 16.11: Ash Prime + Hotfix 16.11.1",
+        "date": "2015-07-07T18:41:10Z",
+        "url": "https://forums.warframe.com/topic/486216-update-1611-ash-prime-hotfix-16111/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed weapons completed in the Liset’s foundry showing the same energy color as the Liset’s colors."
+      },
+      {
+        "name": "Update 16.10.0",
+        "date": "2015-06-25T21:50:17Z",
+        "url": "https://forums.warframe.com/topic/480637-update-16100/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Kubrow Incubator in the Liset showing the incorrect texture after a player rushes incubation."
+      },
+      {
+        "name": "Update 16.9.0",
+        "date": "2015-06-17T21:50:27Z",
+        "url": "https://forums.warframe.com/topic/476490-update-1690/",
+        "additions": "",
+        "changes": "Noggle capacity in the Liset has been increased!",
+        "fixes": "Decorate your Liset with new Prisma and Proto-Excalibur Noggle Statues!"
+      },
+      {
+        "name": "Update 16.8.0",
+        "date": "2015-06-10T22:03:09Z",
+        "url": "https://forums.warframe.com/topic/473028-update-1680/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue that would occur when viewing End of Mission results in the Liset after completing a Conclave match."
+      },
+      {
+        "name": "Update 16.6.0",
+        "date": "2015-05-27T21:08:21Z",
+        "url": "https://forums.warframe.com/topic/465618-update-1660/",
+        "additions": "",
+        "changes": "",
+        "fixes": "New Liset Skins, Alternate Helmet and Augment Mods available now!\nTenno, show your true colors with new Customizations! Give the outside of your Liset some flare with new Skins, style Vauban with a new Alternate Helmet and add power to your Warframes with new Ability Augments Mods.\nKOTARA: Cover your Liset in geometric forms inspired by nature’s order with the Kotara Liset Skin.\nPAHTA: Add an explosive plumage design to your Liset with the Pahta Liset Skin."
+      },
+      {
+        "name": "Hotfix 16.5.6",
+        "date": "2015-05-19T19:46:51Z",
+        "url": "https://forums.warframe.com/topic/461080-hotfix-1656/",
+        "additions": "",
+        "changes": "Made refinements to the custom Liset interior color details.",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 16.5.5",
+        "date": "2015-05-14T21:10:37Z",
+        "url": "https://forums.warframe.com/topic/457936-hotfix-1655/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed players being able to bypass trade cooldowns by moving quickly between the Dojo and Liset.\nFixed an issue causing bottom custom colors of the Liset not matching the top."
+      },
+      {
+        "name": "Update 16.5: Tubemen Of Regor",
+        "date": "2015-05-12T17:09:40Z",
+        "url": "https://forums.warframe.com/topic/455995-update-165-tubemen-of-regor/",
+        "additions": "Players can now disable audio communications from the Liset Scanner in the Options menu.\nCustom Interior Liset colors can now be edited under Customize Liset the Options.  This feature is still a work in progress, but Tenno can preview the customization today!",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 16.4.4 + 16.4.4.1",
+        "date": "2015-04-28T20:42:02Z",
+        "url": "https://forums.warframe.com/topic/449323-hotfix-1644-16441/",
+        "additions": "",
+        "changes": "Several Liset Radio Chatter contest winners have been included into the Liset’s audio rotation. Blazingcobalt, jprocks67 and Kalimando all now have their voices featured in game!  Keep an ear out for new transmissions coming straight from community members.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 16.3: The New Protocols",
+        "date": "2015-04-08T21:51:23Z",
+        "url": "https://forums.warframe.com/topic/437166-update-163-the-new-protocols/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Increased the amount of decorations that can be placed in the Liset to 40.\nNotifications for events shown in the Liset’s Navigation console will now update their time remaining at 24h, 12h, 1h, 30min, 15min, 5m and 0s."
+      },
+      {
+        "name": "Update 16.2",
+        "date": "2015-04-01T22:22:39Z",
+        "url": "https://forums.warframe.com/topic/432384-update-162/",
+        "additions": "",
+        "changes": "",
+        "fixes": "The ‘unstuck’ command does not currently function in the Liset, Dojo or Conclave."
+      },
+      {
+        "name": "Hotfix 16.1.3",
+        "date": "2015-03-26T22:31:46Z",
+        "url": "https://forums.warframe.com/topic/427542-hotfix-1613/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed players being unable to access the Zanuka recovery Mission from their Liset.\nFixed Kubrow not appearing correctly when in the Liset Arsenal loadout.\nFixed some instances of the Liset showing washed out textures."
+      },
+      {
+        "name": "Hotfix 16.1.1",
+        "date": "2015-03-24T23:35:27Z",
+        "url": "https://forums.warframe.com/topic/425719-hotfix-1611/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Liset transmissions relating to The New Strange quest will no longer continue to play while players are crafting parts."
+      },
+      {
+        "name": "Hotfix 16.0.4",
+        "date": "2015-03-23T22:18:24Z",
+        "url": "https://forums.warframe.com/topic/424657-hotfix-1604/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where players who once equipped mustaches will still have mustaches equipped when changing weapon skins within the Liset."
+      },
+      {
+        "name": "Hotfix 16.0.2",
+        "date": "2015-03-20T23:22:15Z",
+        "url": "https://forums.warframe.com/topic/421728-hotfix-1602/",
+        "additions": "",
+        "changes": "·         Reduced Ordis’ conversational tendencies when in the Liset.",
+        "fixes": "·         Fixed Ordis’ ‘idle’ Liset transmissions interrupting other communications."
+      },
+      {
+        "name": "Warframe: Sanctuary",
+        "date": "2015-03-20T02:21:54Z",
+        "url": "https://forums.warframe.com/topic/420448-warframe-sanctuary/",
+        "additions": "New Ordis transmissions have been added to the Liset!",
+        "changes": "",
+        "fixes": "In order to obtain this new Quest, players above Mastery Rank 5 must first visit Cephalon Simaris in his Sanctuary after completing the Stolen Dreams Quest.  From there players can acquire The New Strange and accept it from the Codex once they return to the Liset.\nCephalon Capture is our latest PvP game mode available on the Conclave Console in the Liset, and with its arrival come a slew of new changes to our existing PvP system.  The following are a list of general changes to PvP immediately available in Update: Sanctuary:\nFixed Host getting stuck on a loading screen when returning to Liset from a Mission."
+      },
+      {
+        "name": "Hotfix 15.16.2",
+        "date": "2015-03-11T22:21:44Z",
+        "url": "https://forums.warframe.com/topic/415936-hotfix-15162/",
+        "additions": "",
+        "changes": "The Rift Sigil will now fully lit up in Liset/Hub, as there is no energy",
+        "fixes": ""
+      },
+      {
+        "name": "Update 15.14.0",
+        "date": "2015-02-11T22:44:03Z",
+        "url": "https://forums.warframe.com/topic/400568-update-15140/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Have some empty space to fill on the Liset dashboard? Good news! New Noggles have arrived in the Market!\nAdd style so good it's practically toxic with the new Saryn Noggle, distract Liset guests from that mess your Kubrow made with the Ash Noggle, or give your Liset that angry Corpus boss vibe with the Alad V Noggle. The best part? You'll never have to dust them!"
+      },
+      {
+        "name": "Update 15.13",
+        "date": "2015-02-05T21:08:01Z",
+        "url": "https://forums.warframe.com/topic/396379-update-1513/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed issue that would cause Mission Results to not appear after completing a Mission and returning to your Liset."
+      },
+      {
+        "name": "Update 15.12.0",
+        "date": "2015-01-29T22:14:29Z",
+        "url": "https://forums.warframe.com/topic/393115-update-15120/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed issues that could arise when moving from terminal to terminal within the Liset’s quick menu."
+      },
+      {
+        "name": "Update 15.11",
+        "date": "2015-01-21T23:52:13Z",
+        "url": "https://forums.warframe.com/topic/388964-update-1511/",
+        "additions": "",
+        "changes": "Liset lacking flair? Is its décor the saddest in the Solar System?",
+        "fixes": ""
+      },
+      {
+        "name": "Update 15.9",
+        "date": "2015-01-08T21:39:10Z",
+        "url": "https://forums.warframe.com/topic/381637-update-159/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed squadmate Lisets not always showing the correct colors on the loading screen."
+      },
+      {
+        "name": "Update 15.8.0",
+        "date": "2014-12-19T23:27:57Z",
+        "url": "https://forums.warframe.com/topic/369665-update-1580/",
+        "additions": "",
+        "changes": "Added Liset custom energy glow effect to Archwing terminal menu.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 15.7.2 + 15.7.2.1",
+        "date": "2014-12-19T18:09:43Z",
+        "url": "https://forums.warframe.com/topic/369418-update-1572-15721/",
+        "additions": "Liset interior effects will now change color depending on player Liset energy customization.",
+        "changes": "",
+        "fixes": "Fixed incorrect player stats appearing when viewing Warframe in Liset Arsenal.\nLiset, Relay)\nFixed selecting an item in the Marketplace followed by fast-navigating to another terminal on the Liset causing the item you were previously looking at to become stuck on screen."
+      },
+      {
+        "name": "Hotfix 15.6.3 + 15.6.3.1",
+        "date": "2014-12-12T19:42:51Z",
+        "url": "https://forums.warframe.com/topic/364174-hotfix-1563-15631/",
+        "additions": "",
+        "changes": "Liset capacity for decorations has now been doubled.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 15.6.0",
+        "date": "2014-12-11T22:04:26Z",
+        "url": "https://forums.warframe.com/topic/363216-update-1560/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Each Syndicate has their own room on Tenno Relays, and are more than happy to trade their usual rewards in-person instead of through the Liset’s console.\nFixed player Liset decorations floating in midair in the docking station of the Relay Station.\nFixed Liset Foundry flashing an update for players staying on the Liset during a content Update."
+      },
+      {
+        "name": "Hotfix 15.5.6",
+        "date": "2014-12-02T23:33:26Z",
+        "url": "https://forums.warframe.com/topic/357182-hotfix-1556/",
+        "additions": "",
+        "changes": "Added controller / gamepad support for Liset customization screen.",
+        "fixes": ""
+      },
+      {
+        "name": "Mesa Update",
+        "date": "2014-11-27T17:30:05Z",
+        "url": "https://forums.warframe.com/topic/352963-mesa-update/",
+        "additions": "",
+        "changes": "New loading screen! Now you can see your new Liset customization!\nFixed ‘global’ chat channels not appearing when in the Liset.",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 15.1.3",
+        "date": "2014-11-11T16:29:12Z",
+        "url": "https://forums.warframe.com/topic/343682-hotfix-1513/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed weapons being enabled in the Liset after releasing the Grustrag Bolt (for real this time)."
+      },
+      {
+        "name": "Hotfix 15.1.2",
+        "date": "2014-11-08T00:06:22Z",
+        "url": "https://forums.warframe.com/topic/341594-hotfix-1512/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed being able to use weapons while on the Liset, specifically after removing the Grustrag Bolt."
+      },
+      {
+        "name": "Update 15.1.0+15.1.01",
+        "date": "2014-11-05T22:46:16Z",
+        "url": "https://forums.warframe.com/topic/340143-update-151015101/",
+        "additions": "",
+        "changes": "Removed the Update 14 Option on Login to choose between story/tutorial or instant Liset mode. If you haven’t logged in since before Update 14, you’ll be required to complete the tutorial.",
+        "fixes": "Fixed the Liset being semi-invisible during the first Archwing Mission end cinematic.\nFixed PBR error that caused black textures to appear on Liset and star map."
+      },
+      {
+        "name": "Hotfix 15.0.7",
+        "date": "2014-10-28T23:04:04Z",
+        "url": "https://forums.warframe.com/topic/334873-hotfix-1507/",
+        "additions": "• Improved the performance of multiple UI elements seen on the Liset.",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Warframe: Archwing",
+        "date": "2014-10-24T12:52:08Z",
+        "url": "https://forums.warframe.com/topic/328727-warframe-archwing/",
+        "additions": "",
+        "changes": "Learn all about the emerging Syndicates by accessing the “Syndicates” panel in your Liset. This panel is to the left of Navigation!\nLiset Decorations (x10)!\nBobbleheads are here! You can buy these and place them in your ship through the pause menu -> Equipment -> Decorate Liset. Placement and removal works similar to Dojo decoration placement.",
+        "fixes": "Fixed issue with looping Liset ship seen here: https://forums.warframe.com/index.php?/topic/311059-corpus-outpost-extraction-bug-liset-lands-and-lands-again-and-again/#entry3537615\nFixed issues where players can get stuck in certain areas of the Liset if slide jumping aggressively."
+      },
+      {
+        "name": "Hotfix 14.10.3",
+        "date": "2014-10-15T22:05:49Z",
+        "url": "https://forums.warframe.com/topic/324763-hotfix-14103/",
+        "additions": "",
+        "changes": "Bonus Credits will now be displayed at the end of match screen and back on the Liset for Dark Sector missions.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 14.10.0",
+        "date": "2014-10-08T22:00:00Z",
+        "url": "https://forums.warframe.com/topic/321746-update-14100/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with Alerts not being properly visible on the Solar Map after returning to the Liset from a previous mission.\nFixed an issue with players having a gray screen when returning to the Liset after a mission failure."
+      },
+      {
+        "name": "Update 14.9.0",
+        "date": "2014-10-01T21:39:21Z",
+        "url": "https://forums.warframe.com/topic/318500-update-1490/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed issue where the Liset bridge may not lower if you used the quick access menu between locations."
+      },
+      {
+        "name": "Hotfix 14.7.2",
+        "date": "2014-09-18T20:01:24Z",
+        "url": "https://forums.warframe.com/topic/312035-hotfix-1472/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Made several audio tweaks to Atterax, the Liset engine and Sprag & Ven'kra."
+      },
+      {
+        "name": "Hotfix 14.6.1",
+        "date": "2014-09-11T21:03:05Z",
+        "url": "https://forums.warframe.com/topic/308432-hotfix-1461/",
+        "additions": "",
+        "changes": "Removed Kubrow roaming in Liset until further notice.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 14.6.0",
+        "date": "2014-09-10T21:36:26Z",
+        "url": "https://forums.warframe.com/topic/307792-update-1460/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Added in a \"Please Wait\" message that will lock the player in place when installing a module on your Liset during Vor’s Prize/elsewhere.\nFixed an issue with the Liset seen in the tutorial having no proper collision."
+      },
+      {
+        "name": "Update 14.5: Operation Cryotic Front!",
+        "date": "2014-08-28T13:39:34Z",
+        "url": "https://forums.warframe.com/topic/298960-update-145-operation-cryotic-front/",
+        "additions": "",
+        "changes": "• Kubrows are now in free-roam mode on the Liset!",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 14.2.1",
+        "date": "2014-08-14T18:11:16Z",
+        "url": "https://forums.warframe.com/topic/290225-hotfix-1421/",
+        "additions": "",
+        "changes": "Fixed issue where attempting to edit a Solar Rail Schema would result in the player being returned to the Liset.",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 14.1.4",
+        "date": "2014-08-06T22:13:47Z",
+        "url": "https://forums.warframe.com/topic/284750-hotfix-1414/",
+        "additions": "",
+        "changes": "Tweaked the Kubrow/Kubrow puppy sound effects in the Liset.",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 14.1.3",
+        "date": "2014-08-01T19:09:43Z",
+        "url": "https://forums.warframe.com/topic/280774-hotfix-1413/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Tweaked the visuals and improved the performance on the Liset loading screens \nyour Liset is now pilot-able on loading screens! ."
+      },
+      {
+        "name": "Update 14.1.0: Quanta & Dendra",
+        "date": "2014-07-30T22:44:07Z",
+        "url": "https://forums.warframe.com/topic/279074-update-1410-quanta-dendra/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a number of map holes found in the Liset.\nFixed an issue with squad host no longer receiving game invites after entering a mission and then returning to their Liset."
+      },
+      {
+        "name": "Hotfix 14.0.11",
+        "date": "2014-07-29T22:08:19Z",
+        "url": "https://forums.warframe.com/topic/278042-hotfix-14011/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the Featured Item description text appearing to float in air in the Liset."
+      },
+      {
+        "name": "Hotfix 14.0.8",
+        "date": "2014-07-23T22:39:59Z",
+        "url": "https://forums.warframe.com/topic/272088-hotfix-1408/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Improved game performance on the Liset when choosing to skip the Prologue."
+      },
+      {
+        "name": "Hotfix 14.0.5",
+        "date": "2014-07-21T23:42:33Z",
+        "url": "https://forums.warframe.com/topic/269089-hotfix-1405/",
+        "additions": "",
+        "changes": "Added more latency in between Radio Chatter lines on the Liset.\nTurned down sound on Liset Floor ramp activating (some call it the in-ship slide).",
+        "fixes": "Fixed Liset Bridge ambience cutting off if you're too close to the window with camera."
+      },
+      {
+        "name": "Hotfix 14.0.1",
+        "date": "2014-07-18T22:51:17Z",
+        "url": "https://forums.warframe.com/topic/264446-hotfix-1401/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Removed the ability to \"moonwalk\" while on the Liset, while we wanted to ensure people could travel quickly around their ship, we have replaced the jarring movement with a slide.\nFixed an issue with Liset sounds not playing during loading screens."
+      },
+      {
+        "name": "Update 14: The Mad Cephalon",
+        "date": "2014-07-18T09:44:52Z",
+        "url": "https://forums.warframe.com/topic/263213-update-14-the-mad-cephalon/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Player Ships have arrived! This immersive and re-imagined space grounds players in the Solar System aboard their own personal spacecraft, the Liset!\nIntroducing: Ordis! The Liset’s Cephalon \nvoice and guide! This new character exists as the Liset’s original operating system, and is finally functional and ready to serve the Tenno after hundreds of years of abandon.\nThe Liset provides access to all major systems, menus, and components through contextual devices aboard your ship. These are unlocked via Vor’s Prize quest! If you are a veteran that chooses to bypass playing the Prologue, they will all be ready and functioning for you.\nNew Mission Results screen! This new screen shows all the details of your previous run! Its minimalistic appearance will be expanded on as feedback and experiences with Liset form."
+      }
+    ]
+  },
+  {
     "name": "Lohrin Brace",
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartC",
     "type": "Amp",
@@ -8231,7 +9215,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -8374,6 +9358,31 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to collect a Mandachord part in Octavia’s Anthem quest which halted progression."
+      },
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the Music Volume slider not affecting Mandachord songs in the Somachord. "
+      },
+      {
+        "name": "Mask of the Revenant: Hotfix 23.8.2",
+        "date": "2018-09-19T14:29:43Z",
+        "url": "https://forums.warframe.com/topic/1010324-mask-of-the-revenant-hotfix-2382/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Chat links for Rivens, Mandachord songs, Zaws, and Amps potentially being broken if profanity filter is enabled."
+      },
       {
         "name": "The Sacrifice: Hotfix 23.1.1",
         "date": "2018-07-19T20:31:38Z",
@@ -8578,6 +9587,128 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Ships/InsectShip",
+    "name": "Mantis",
+    "description": "This insect-like landing craft features Med-Tower air-support.",
+    "type": "Extractor",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Mantys/MantysStarChartComponent",
+        "name": "Avionics",
+        "description": "Avionics component of the Mantis landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-systems.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Mantys/MantysBlueprint",
+        "name": "Blueprint",
+        "description": "This insect-like landing craft features Med-Tower air-support.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Mantys/MantysPowerCoreComponent",
+        "name": "Engines",
+        "description": "Engines component of the Mantis landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-engines.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Mantys/MantysExoskeletonComponent",
+        "name": "Fuselage",
+        "description": "Fuselage component of the Mantis landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-fuselage.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      }
+    ],
+    "imageName": "mantis.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.7",
+        "date": "2017-10-19T20:48:18Z",
+        "url": "https://forums.warframe.com/topic/862704-plains-of-eidolon-hotfix-2207/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Added Swooping Falcon, Carving Mantis, Twirling Spire and Stinging Thorn to the Codex."
+      },
+      {
+        "name": "Hotfix 18.2.3",
+        "date": "2016-01-08T17:32:52Z",
+        "url": "https://forums.warframe.com/topic/591655-hotfix-1823/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Mantis Landing Craft blueprints and parts not properly dropping from rare Grineer, Corpus or Orokin loot crates."
+      },
+      {
+        "name": "Hotfix 18.0.6 + 18.0.6.1 ",
+        "date": "2015-12-09T23:35:19Z",
+        "url": "https://forums.warframe.com/topic/574983-hotfix-1806-18061-spoilers/",
+        "additions": "",
+        "changes": "The Mantis and Scimitar Blueprints have been removed from ultra-rare loot crates.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 17.10.0",
+        "date": "2015-11-04T23:21:00Z",
+        "url": "https://forums.warframe.com/topic/556384-update-17100/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue causing the Mantis to appear too close to the camera on the loading screen."
+      },
+      {
+        "name": "Update 17.9.0",
+        "date": "2015-10-28T15:12:27Z",
+        "url": "https://forums.warframe.com/topic/552544-update-1790/",
+        "additions": "Mantis",
+        "changes": "The Mantis’ Air Support now heals Sentinels.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 17.7",
+        "date": "2015-10-14T21:37:19Z",
+        "url": "https://forums.warframe.com/topic/545312-update-177/",
+        "additions": "",
+        "changes": "The Mantis’ Air Support will now display on the minimap for all players.",
+        "fixes": "Fixed the Mantis’ Air Support Life Support Capsule disappearing after a Host Migration.\nFixed the Mantis Blueprint appearing in rare loot crates."
+      },
+      {
+        "name": "Hotfix 17.6.1",
+        "date": "2015-10-07T21:04:29Z",
+        "url": "https://forums.warframe.com/topic/540998-hotfix-1761/",
+        "additions": "",
+        "changes": "Improved the quality of the Mantis’ drop off cinematic audio FX.\nAdded visual FX when using the Mantis’ Air Support.",
+        "fixes": "Fixed the Mantis Landing Craft Segment Blueprint not appearing in the Landing Craft category.\nFixed the Mantis blueprint not showing as owned and craftable if the player already owns a Mantis Landing Craft."
+      },
+      {
+        "name": "Update 17.5: The Jordas Precept. + Hotfix 17.5.1",
+        "date": "2015-10-02T02:05:33Z",
+        "url": "https://forums.warframe.com/topic/536207-update-175-the-jordas-precept-hotfix-1751/",
+        "additions": "Landing Craft Mantis:  Features the Air Support: Team Health Restore.\nBajada Mantis Skin A unique skin for the Mantis landing craft.\nGloam Mantis Skin: A unique skin for the Mantis landing craft.\nOscuro Mantis Skin: A unique skin for the Mantis landing craft.",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/RedVeilDogTag",
     "name": "Mark",
     "description": "Medallion of Red Veil syndicate. Can be traded in on relay syndicate hubs for additional standing.",
@@ -8586,6 +9717,23 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "Fixed being unable to back out of the Market after opening chat and selecting an item while using a controller. ",
+        "fixes": ""
+      },
+      {
+        "name": "Mask of the Revenant: Hotfix 23.8.2",
+        "date": "2018-09-19T14:29:43Z",
+        "url": "https://forums.warframe.com/topic/1010324-mask-of-the-revenant-hotfix-2382/",
+        "additions": "The Tenno II Color Palette is now available in the Market! ",
+        "changes": "",
+        "fixes": ""
+      },
       {
         "name": "Mask of the Revenant: Update 23.8.0 + 23.8.0.1 + 23.8.0.2",
         "date": "2018-09-12T18:41:12Z",
@@ -10087,7 +11235,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishAPartItem",
     "name": "Mawfish Bones",
-    "description": "The bones of the Mawfish are carved by the Ostron to produce onaments and tools.",
+    "description": "The bones of the Mawfish are carved by the Ostron to produce ornaments and tools.\nLocation: Fisher Hai-Luk in Cetus",
     "type": "Fish Part",
     "imageName": "mawfish-bones.png",
     "category": "Misc",
@@ -10133,7 +11281,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -10177,6 +11325,15 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "One important thing to clarify is that the in-game items received on the non-Milestone Days in Daily Tribute system now scale based on the amount of days you have logged on. Endo is an example well documented in the past Workshop, but this also applies to Credits, Booster Durations, Resources, Syndicate Medallions, Relics, and Forma Blueprints.",
+        "fixes": ""
+      },
       {
         "name": "The Sacrifice: Update 23",
         "date": "2018-06-15T00:51:48Z",
@@ -10525,7 +11682,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 1,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -10533,7 +11690,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -10549,7 +11706,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 6,
         "tradable": false,
         "imageName": "uncommon-gem-acut-a.png"
@@ -10712,7 +11869,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -10757,7 +11914,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
     "name": "Murkray Liver",
-    "description": "An ingredient used in Ostron cooking and medicines.",
+    "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
     "type": "Fish Part",
     "imageName": "murkray-liver.png",
     "category": "Misc",
@@ -10795,7 +11952,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -10832,7 +11989,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/InfestedAladCoordinate",
     "name": "Mutalist Alad V Nav Coordinate",
-    "description": "Nav coordinates of Alad V's Infestation Research Ship",
+    "description": "These coordinates can be used to track Mutalist Alad V.\nCan be acquired from Infestation Outbreaks & Orokin Derelicts.",
     "type": "Misc",
     "imageName": "mutalist-alad-v-nav-coordinate.png",
     "category": "Misc",
@@ -11501,7 +12658,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -11538,8 +12695,47 @@
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryUpgradeFeatureItem",
     "name": "Nutrio Incubator Upgrade Segment",
-    "description": "Upgrades the Orbiter's Incubator with the following features:\n- Stasis Recovery reduced to 30 mins\r- Stasis Recovery can be rushed with Credits\r- Reduced price of stabilizers\r- Egg incubation reduced by a day\r- Stabilizers last twice as long",
+    "description": "Upgrades the Orbiter's Incubator with the following features:\n- Stasis Recovery is immediate\r- Reduced price of stabilizers\r- Egg incubation reduced by a day\r- Stabilizers last twice as long",
     "type": "Extractor",
+    "buildPrice": 100000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "argon-crystal.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryUpgradeFeatureBlueprint",
+        "name": "Blueprint",
+        "description": "Upgrades the Orbiter's Incubator with the following features:\n- Stasis Recovery is immediate\r- Reduced price of stabilizers\r- Egg incubation reduced by a day\r- Stabilizers last twice as long",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Game/KubrowPet/EggHatcher",
+        "name": "Incubator Power Core",
+        "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "egg-hatcher.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
+        "itemCount": 1200,
+        "tradable": false,
+        "imageName": "component-oxium.png"
+      }
+    ],
     "imageName": "nutrio-incubator-upgrade-segment.png",
     "category": "Misc",
     "tradable": false,
@@ -11637,7 +12833,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -11645,7 +12841,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "common-gem-acut-a.png"
@@ -11966,7 +13162,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/MirageCode",
     "name": "Orokin Cipher",
-    "description": "This device is used to bypass Orokin encryptions.",
+    "description": "This device is used to bypass Orokin encryptions.\nLocation: Orokin Derelict Vaults",
     "type": "Misc",
     "imageName": "orokin-cipher.png",
     "category": "Misc",
@@ -12346,7 +13542,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -12354,7 +13550,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 60,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -12362,7 +13558,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
-        "description": "An ingredient used in Ostron cooking and medicines.",
+        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-organ.png"
@@ -12370,7 +13566,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 85,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -12511,7 +13707,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -12551,7 +13747,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -12559,7 +13755,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 60,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -12567,7 +13763,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
-        "description": "An ingredient used in Ostron cooking and medicines.",
+        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-organ.png"
@@ -12575,7 +13771,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 85,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -12648,7 +13844,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 30,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -12694,7 +13890,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -12740,7 +13936,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "common-gem-bcut-a.png"
@@ -12821,7 +14017,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -12829,7 +14025,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "common-gem-acut-a.png"
@@ -12946,6 +14142,25 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneFireElement",
+    "name": "Pyrus Essence",
+    "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
+    "type": "Misc",
+    "imageName": "pyrus-essence.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Hotfix 23.6.2",
+        "date": "2018-08-31T20:29:23Z",
+        "url": "https://forums.warframe.com/topic/1004345-mask-of-the-revenant-hotfix-2362/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed issue with context action allowing more than intended Pyrus Essence. \nFixed Pyrus Essence not dropping from Nox enemies when they are marked as Essence Carriers. "
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/PerrinDogTag",
     "name": "Quittance",
     "description": "Medallion of The Perrin Sequence syndicate. Can be traded in on relay syndicate hubs for additional standing.",
@@ -12974,7 +14189,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "common-gem-bcut-a.png"
@@ -12982,7 +14197,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -12998,7 +14213,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 35,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -13073,7 +14288,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -13081,7 +14296,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 30,
         "tradable": false,
         "imageName": "common-gem-bcut-a.png"
@@ -13097,7 +14312,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 30,
         "tradable": false,
         "imageName": "common-gem-acut-a.png"
@@ -13127,7 +14342,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -13135,7 +14350,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 30,
         "tradable": false,
         "imageName": "common-gem-bcut-a.png"
@@ -13151,7 +14366,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 30,
         "tradable": false,
         "imageName": "common-gem-acut-a.png"
@@ -13303,7 +14518,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -13311,7 +14526,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishAPartItem",
         "name": "Mawfish Bones",
-        "description": "The bones of the Mawfish are carved by the Ostron to produce onaments and tools.",
+        "description": "The bones of the Mawfish are carved by the Ostron to produce ornaments and tools.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-bones.png"
@@ -13319,7 +14534,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -13327,7 +14542,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -13377,7 +14592,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -13385,7 +14600,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -13393,7 +14608,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -13401,7 +14616,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishCPartItem",
         "name": "Yogwun Stomach",
-        "description": "Once cleaned and tanned this organ can be turned into a durable leather.",
+        "description": "Once cleaned and tanned this organ can be turned into a durable leather.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-rib-cage.png"
@@ -13420,6 +14635,15 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Chroma Prime 23.9.0 + 23.9.0.1",
+        "date": "2018-09-25T17:57:10Z",
+        "url": "https://forums.warframe.com/topic/1011982-mask-of-the-revenant-chroma-prime-2390-23901/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/2cf190206c4590728d39582b26d3fbec.jpg",
+        "additions": "",
+        "changes": "Made some micro-optimizations to the Infested Salvage code.",
+        "fixes": ""
+      },
       {
         "name": "The Sacrifice: Update 23.4.0",
         "date": "2018-08-16T21:06:52Z",
@@ -13539,6 +14763,114 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Ships/BlueSkyShip",
+    "name": "Scimitar",
+    "description": "This blade-like landing craft is armed with Carpet Bomb air-support.",
+    "type": "Extractor",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/BlueSky/BlueSkyAvionicsComponent",
+        "name": "Avionics",
+        "description": "Avionics component of the Scimitar landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-systems.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/BlueSky/BlueSkyBlueprint",
+        "name": "Blueprint",
+        "description": "This blade-like landing craft is armed with Carpet Bomb air-support.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/BlueSky/BlueSkyEnginesComponent",
+        "name": "Engines",
+        "description": "Engines component of the Scimitar landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-engines.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/BlueSky/BlueSkyFuselageComponent",
+        "name": "Fuselage",
+        "description": "SCIMITAR FUSELAGE",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-fuselage.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      }
+    ],
+    "imageName": "scimitar.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Octavia's Anthem: Update 20",
+        "date": "2017-03-24T19:46:02Z",
+        "url": "https://forums.warframe.com/topic/776642-octavias-anthem-update-20/",
+        "imgUrl": "http://i.imgur.com/h14igRz.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed selecting a new Landing Craft defaulting to the Scimitar instead of the selected one."
+      },
+      {
+        "name": "Hotfix 19.0.3",
+        "date": "2016-11-14T23:41:18Z",
+        "url": "https://forums.warframe.com/topic/718965-hotfix-1903/",
+        "additions": "",
+        "changes": "Fixed the Grineer Icon on the Kuva Scimitar skin floating.",
+        "fixes": ""
+      },
+      {
+        "name": "Specters of the Rail: Update 2",
+        "date": "2016-08-03T21:43:21Z",
+        "url": "https://forums.warframe.com/topic/682884-specters-of-the-rail-update-2/",
+        "imgUrl": "http://i.imgur.com/4kfneNf.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed texture quality issues with the recently released Baro Ki’Teer Prisma Scimitar Skin."
+      },
+      {
+        "name": "Hotfix 18.0.6 + 18.0.6.1 ",
+        "date": "2015-12-09T23:35:19Z",
+        "url": "https://forums.warframe.com/topic/574983-hotfix-1806-18061-spoilers/",
+        "additions": "",
+        "changes": "The Mantis and Scimitar Blueprints have been removed from ultra-rare loot crates.",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 18.0.1",
+        "date": "2015-12-04T03:34:51Z",
+        "url": "https://forums.warframe.com/topic/568729-hotfix-1801/",
+        "additions": "",
+        "changes": "",
+        "fixes": "• Fixed incorrect descriptions and images for the Scimitar Bundle in the Market."
+      },
+      {
+        "name": "Update 18: The Second Dream",
+        "date": "2015-12-03T23:46:40Z",
+        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
+        "additions": "New Landing Craft: ScimitarScimitar: This blade-like landing craft is armed with Barrage Air Support. Find the Scimitar in the Market today!",
+        "changes": "Sotz Scimitar Skin: Cast the Stalker’s caustic shadow across the Scimitar with this skin.",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/NewLokaDogTag",
     "name": "Seed",
     "description": "Medallion of the New Loka syndicate. Can be traded in on relay syndicate hubs for additional standing.",
@@ -13594,7 +14926,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -13602,7 +14934,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -13640,7 +14972,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
-        "description": "The talon on a condroc's wing is sharp enough to tear through bone.",
+        "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 15,
         "tradable": false,
         "imageName": "bird-of-prey-part-item.png"
@@ -13664,7 +14996,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "common-gem-acut-a.png"
@@ -13772,7 +15104,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -13826,7 +15158,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 15,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -13842,7 +15174,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 80,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -13906,7 +15238,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -13914,7 +15246,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 60,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
@@ -13955,7 +15287,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 15,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -13963,7 +15295,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 30,
         "tradable": false,
         "imageName": "common-gem-bcut-a.png"
@@ -13979,7 +15311,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
-        "description": "Polished and cut to perfection.",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-gem-acut-a.png"
@@ -14440,6 +15772,15 @@
     ],
     "patchlogs": [
       {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "For example, on Day 1 I get 1 x Tellurium, but on Day 1000 I get 6 x Tellurium!",
+        "fixes": ""
+      },
+      {
         "name": "Shrine of the Eidolon: Update 22.15.0",
         "date": "2018-03-07T21:04:32Z",
         "url": "https://forums.warframe.com/topic/930667-shrine-of-the-eidolon-update-22150/",
@@ -14655,7 +15996,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem",
     "name": "Tralok Eyes",
-    "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.",
+    "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.\nLocation: Fisher Hai-Luk in Cetus",
     "type": "Fish Part",
     "imageName": "tralok-eyes.png",
     "category": "Misc",
@@ -14693,7 +16034,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -14822,7 +16163,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -14830,7 +16171,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -14838,7 +16179,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -14885,7 +16226,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-ore-aalloy-a.png"
@@ -14893,7 +16234,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -14901,7 +16242,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -14909,7 +16250,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem",
         "name": "Tralok Eyes",
-        "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.",
+        "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-eyes.png"
@@ -14956,7 +16297,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
         "name": "Goopolla Spleen",
-        "description": "Used in Ostron remedies to purify toxins.",
+        "description": "Used in Ostron remedies to purify toxins.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-flesh-tube.png"
@@ -14964,7 +16305,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -14972,7 +16313,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 30,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -15027,7 +16368,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -15035,7 +16376,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -15074,7 +16415,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem",
         "name": "Charc Electroplax",
-        "description": "Harvested by the Ostron as a catalyst used in their synthetics.",
+        "description": "Harvested by the Ostron as a catalyst used in their synthetics.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-gills.png"
@@ -15090,7 +16431,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -15098,7 +16439,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 30,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -15153,7 +16494,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.",
+        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 2,
         "tradable": false,
         "imageName": "cetus-wisp.png"
@@ -15161,7 +16502,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
-        "description": "The sinew from the Kuaka's spinal claws can be tanned to make a resilient and flexible leather.",
+        "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "forest-rodent-spine.png"
@@ -15237,9 +16578,28 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/Elitium",
+    "name": "Vitus Essence",
+    "description": "Awarded by the Arbiters of Hexis to few Tenno capable of surviving Arbitration.",
+    "type": "Misc",
+    "imageName": "vitus-essence.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.2",
+        "date": "2018-10-12T22:07:00Z",
+        "url": "https://forums.warframe.com/topic/1016966-chimera-hotfix-23102/",
+        "additions": "",
+        "changes": "",
+        "fixes": "We have live fixed Arbitration missions rewarding the incorrect amount of Vitus Essence at End Of Mission, and inability to complete the Mastery Rank 26 test."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
     "name": "Void Traces",
-    "description": "A substance used to increase the power within Relics.",
+    "description": "A substance used to increase the power within Relics.\nCan be acquired from Void Fissures.",
     "type": "Misc",
     "imageName": "void-traces.png",
     "category": "Misc",
@@ -15315,9 +16675,143 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Ships/GyroscopeShip",
+    "name": "Xiphos",
+    "description": "Featuring Sentry Gun air-support, this stylish landing craft is an asset in any battle.",
+    "type": "Extractor",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Gyroscope/GyroscopeAvionicsComponent",
+        "name": "Avionics",
+        "description": "Avionics component of the Xiphos landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-systems.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Gyroscope/GyroscopeBlueprint",
+        "name": "Blueprint",
+        "description": "Featuring Sentry Gun air-support, this stylish landing craft is an asset in any battle.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Gyroscope/GyroscopeEnginesComponent",
+        "name": "Engines",
+        "description": "Engines component of the Xiphos landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-engines.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/Gyroscope/GyroscopeFuselageComponent",
+        "name": "Fuselage",
+        "description": "Fuselage component of the Xiphos landing craft.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-landing-craft-fuselage.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      }
+    ],
+    "imageName": "xiphos.png",
+    "category": "Misc",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed missing textures on the Xiphos Landing Craft."
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "imgUrl": "https://n8k6e2y6.ssl.hwcdn.net/images/promo/plainsOfEidolon/keyArtV3.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed issues with the Xiphos landing craft clipping through the Grineer Galleon level. "
+      },
+      {
+        "name": "The War Within: Hotfix 19.0.2",
+        "date": "2016-11-13T03:16:00Z",
+        "url": "https://forums.warframe.com/topic/717209-the-war-within-hotfix-1902/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed not being able to purchase the Xiphos Kuva Skin."
+      },
+      {
+        "name": "Specters of the Rail: U1.1",
+        "date": "2016-07-29T15:45:33Z",
+        "url": "https://forums.warframe.com/topic/680905-specters-of-the-rail-u11/",
+        "additions": "",
+        "changes": "Tweaked the Xiphos Ifrit Skin to improve flame tint color visibility. ",
+        "fixes": ""
+      },
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "imgUrl": "http://i.imgur.com/YMVXfyw.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Client Xiphos’ Sentry Guns Air Support Charges remaining in mission even if the Client has aborted. Sentry Guns will now be removed if the Client has left the mission."
+      },
+      {
+        "name": "Hotfix 18.10.4 Operation Rathuum.",
+        "date": "2016-05-02T21:29:22Z",
+        "url": "https://forums.warframe.com/topic/644355-hotfix-18104-operation-rathuum/",
+        "additions": "",
+        "changes": "Increase delays on Xiphos turret to reduce the constant start/stop behavior that can occur when it's switching targets.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 18.6",
+        "date": "2016-03-16T20:07:20Z",
+        "url": "https://forums.warframe.com/topic/625930-update-186/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Xiphos’ air support turret not properly regenerating shields after they’ve been damaged."
+      },
+      {
+        "name": "Hotfix 18.5.5 + 18.5.5.1",
+        "date": "2016-03-08T21:47:49Z",
+        "url": "https://forums.warframe.com/topic/621794-hotfix-1855-18551/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed Xiphos’ Sentry Turret not being removed when the player who casted it leaves the game.\n•    Fixed Xiphos’ Sentry Turret disappearing when a Host Migration occurred. "
+      },
+      {
+        "name": "Hotfix 18.5.1",
+        "date": "2016-03-04T23:56:14Z",
+        "url": "https://forums.warframe.com/topic/618959-hotfix-1851/",
+        "imgUrl": "http://i.imgur.com/ZtBrjRp.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Adjusted the audio FX of the Xiphos Landing Craft."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishCPartItem",
     "name": "Yogwun Stomach",
-    "description": "Once cleaned and tanned this organ can be turned into a durable leather.",
+    "description": "Once cleaned and tanned this organ can be turned into a durable leather.\nLocation: Fisher Hai-Luk in Cetus",
     "type": "Fish Part",
     "imageName": "yogwun-stomach.png",
     "category": "Misc",
@@ -15363,7 +16857,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 25,
         "tradable": false,
         "imageName": "grokdrul.png"

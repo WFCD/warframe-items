@@ -6,7 +6,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Link Augment: Reduces Armor rating by 25% on enemies targeted by Link.",
+    "description": "Link Augment: Reduces Armor Rating by 25% on enemies targeted by Link.",
     "type": "Warframe",
     "imageName": "abating-link.jpeg",
     "category": "Mods",
@@ -88,6 +88,12 @@
         "chance": 0.002211
       },
       {
+        "location": "Tusk Seeker",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
         "location": "Toxic Ancient",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -101,12 +107,6 @@
       },
       {
         "location": "Arcane Boiler",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
-        "location": "Tusk Seeker",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -141,7 +141,17 @@
     "type": "Warframe",
     "imageName": "accumulating-whipclaw.jpeg",
     "category": "Mods",
-    "tradable": true
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.3",
+        "date": "2018-10-15T21:13:13Z",
+        "url": "https://forums.warframe.com/topic/1018682-chimera-hotfix-23103/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Khora Accumulating Whipclaw Augment success sound playing even when you don't have the Augment equipped."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/Event/ProjectNightwatch/SobekNightwatchMod",
@@ -221,6 +231,45 @@
         "additions": "",
         "changes": "•    Changed the Acid Shells and Fomorian Accelerant mod to a Madurai polarity. ",
         "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarResistanceOnDamageMod",
+    "name": "Adaptation",
+    "polarity": "Vazarin",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "description": "When Damaged:\r+5% Resistance to that Damage Type for 10s. Stacks up to 90%.",
+    "type": "Warframe",
+    "imageName": "adaptation.jpeg",
+    "category": "Mods",
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.7",
+        "date": "2018-10-24T14:34:07Z",
+        "url": "https://forums.warframe.com/topic/1021711-chimera-hotfix-23107/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed script error resulting in black icons to appear in place of HUD buffs when the Adaptation Mod is equipped."
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "",
+        "changes": "",
+        "fixes": "More fixes towards the Adaptation Mod sometimes making players invincible."
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.4",
+        "date": "2018-10-16T21:02:30Z",
+        "url": "https://forums.warframe.com/topic/1019115-chimera-hotfix-23104/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Adaptation Mod sometimes making players completely invincible."
       }
     ]
   },
@@ -785,6 +834,38 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/GhostAugmentCard",
+    "name": "Ambush",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "description": "When Ghost invisibility is broken, Shade's owner is granted +30% Weapon Damage for 3s.",
+    "type": "Sentinel",
+    "imageName": "ambush.jpeg",
+    "category": "Mods",
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.7",
+        "date": "2018-10-24T14:34:07Z",
+        "url": "https://forums.warframe.com/topic/1021711-chimera-hotfix-23107/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Ambush Mod having an inaccurate description. Now it mentions that the extra damage is granted specifically to weapons."
+      },
+      {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "imgUrl": "http://i.imgur.com/6IEKyKC.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Ambush Optics (Rubico) "
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Rifle/RubicoLowZoom",
     "name": "Ambush Optics",
     "polarity": "Naramon",
@@ -935,6 +1016,14 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Ammo Case Mod not functioning for Clients after going in and out and then back in to the Plains from Cetus."
+      },
       {
         "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
         "date": "2017-12-07T22:05:21Z",
@@ -1410,7 +1499,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Mutalist Osprey Carrier",
+        "location": "Nightwatch Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -1434,7 +1523,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Nightwatch Lancer",
+        "location": "Mutalist Osprey Carrier",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -1466,13 +1555,13 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Napalm",
+        "location": "Tusk Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
       },
       {
-        "location": "Tusk Napalm",
+        "location": "Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -1675,7 +1764,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Antimatter Drop Augment: Absorbs enemy bullets within 1 meters, increasing its damage when it explodes.",
+    "description": "Antimatter Drop Augment: Absorbs enemy bullets within 1m, increasing its damage when it explodes.",
     "type": "Warframe",
     "imageName": "antimatter-absorb.jpeg",
     "category": "Mods",
@@ -1745,6 +1834,15 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "Added a progress wheel to UI to show Antitoxin Strength.\nAntitoxin console disables when strength is at 100% to avoid wasting Antitoxins.\nSlightly increased strength score of common and uncommon Antitoxins. \nFixed incorrect Affinity reward scaling for Antitoxins.\nFixed broken materials on the Antitoxin console.",
+        "fixes": ""
+      },
       {
         "name": "Recurring Dreams + Hotfix 1",
         "date": "2016-11-03T21:40:35Z",
@@ -1896,7 +1994,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "On Headshot:\r+22.5% Critical Chance when Aiming for 1.5s.",
+    "description": "On Headshot:\r+22.5% Critical Chance when Aiming for 1.5s",
     "type": "Rifle",
     "imageName": "argon-scope.jpeg",
     "category": "Mods",
@@ -3740,7 +3838,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Kill:\r+20% Critical Damage when Aiming for 1.5s.",
+    "description": "On Kill:\r+20% Critical Damage when Aiming for 1.5s",
     "type": "Rifle",
     "imageName": "bladed-rounds.jpeg",
     "category": "Mods",
@@ -3867,25 +3965,25 @@
         "chance": 0.07588
       },
       {
-        "location": "Cannon Battery",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007743
-      },
-      {
         "location": "Turret",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007743
       },
       {
-        "location": "Tusk Dargyn",
+        "location": "Cannon Battery",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007743
+      },
+      {
+        "location": "Tusk Shield Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Tusk Shield Dargyn",
+        "location": "Tusk Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -4514,7 +4612,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Headshot:\r+25% Ammo Efficiency for 0.13s.",
+    "description": "On Headshot:\r+25% Ammo Efficiency for 0.13s",
     "type": "Rifle",
     "imageName": "brain-storm.jpeg",
     "category": "Mods",
@@ -5202,7 +5300,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r-25% Shield Recharge Delay for 2.5s.,-6.2% from Health Orbs",
+    "description": "On Kill:\r-25% Shield Recharge Delay for 2.5s,-6.2% from Health Orbs",
     "type": "Secondary",
     "imageName": "calculated-victory.jpeg",
     "category": "Mods",
@@ -5226,7 +5324,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Rest & Rage Augment: Killing an affected enemy causes the effect to spread to enemies within 2 meters for 40% of the remaining duration.",
+    "description": "Rest & Rage Augment: Killing an affected enemy causes the effect to spread to enemies within 2m for 40% of the remaining duration.",
     "type": "Warframe",
     "imageName": "calm-&-frenzy.jpeg",
     "category": "Mods",
@@ -5250,7 +5348,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Discharge Augment: Converts 1.5% of damage dealt into shields split between Volt and allied Tenno.",
+    "description": "Discharge Augment: Converts 1.5% of Damage dealt into Shields split between Volt and Squadmates.",
     "type": "Warframe",
     "imageName": "capacitance.jpeg",
     "category": "Mods",
@@ -5359,7 +5457,7 @@
     "rarity": "Common",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Ability Cast:\r+10% Status Chance when Aiming for 1.5s.",
+    "description": "On Ability Cast:\r+10% Status Chance when Aiming for 1.5s",
     "type": "Rifle",
     "imageName": "catalyzer-link.jpeg",
     "category": "Mods",
@@ -5385,6 +5483,19 @@
         "rotation": "B"
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponResistSelfDamageMod",
+    "name": "Cautious Shot",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "description": "-10% Self-damage\r-5% Total Damage",
+    "type": "Rifle",
+    "imageName": "cautious-shot.jpeg",
+    "category": "Mods",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPGlaiveStanceOne",
@@ -5425,12 +5536,30 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Chaos Augment: Enemies entering the effect range will be inflicted with Chaos. Effect range lasts for 25% of the ability duration and shrinks over time.",
+    "description": "Chaos Augment: Enemies entering the Effect Range will be inflicted with Chaos. Effect Range lasts for 25% of the ability duration and shrinks over time.",
     "type": "Warframe",
     "imageName": "chaos-sphere.jpeg",
     "category": "Mods",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Nyx’s Chaos Sphere Augment being removed when another cast occurs.\nFixed Nyx’s Chaos Sphere Augment script error."
+      },
+      {
+        "name": "Mask of the Revenant: Chroma Prime 23.9.0 + 23.9.0.1",
+        "date": "2018-09-25T17:57:10Z",
+        "url": "https://forums.warframe.com/topic/1011982-mask-of-the-revenant-chroma-prime-2390-23901/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/2cf190206c4590728d39582b26d3fbec.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Nyx’s Chaos Sphere Augment not always grabbing every enemy in its radius."
+      },
       {
         "name": "Hotfix 17.5.3",
         "date": "2015-10-02T16:07:50Z",
@@ -5464,7 +5593,7 @@
     "rarity": "Uncommon",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "+10% Damage on first shot in magazine",
+    "description": "+10% Damage on first shot in Magazine",
     "type": "Rifle",
     "imageName": "charged-chamber.jpeg",
     "category": "Mods",
@@ -5783,7 +5912,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Exalted Blade's Damage Type changes depending on Energy Color and Status Chance is increased by 25%.",
+    "description": "Exalted Blade Augment: Exalted Blade's Damage Type changes depending on Excalibur's Energy Color and Status Chance is increased by 25%.",
     "type": "Warframe",
     "imageName": "chromatic-blade.jpeg",
     "category": "Mods",
@@ -5919,12 +6048,6 @@
         "rotation": "C"
       },
       {
-        "location": "Flameblade",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
         "location": "Tusk Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -5932,6 +6055,12 @@
       },
       {
         "location": "Tusk Predator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
+        "location": "Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -6570,7 +6699,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_IMPACT>Impact",
+    "description": "5% of Damage converted into <DT_IMPACT>Impact",
     "type": "Rifle",
     "imageName": "comet-rounds.jpeg",
     "category": "Mods",
@@ -6666,7 +6795,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Artemis Bow Augment: Fires a single arrow that, on headshots, has +20% critical chance and explodes in a 7 meter radius. Removes punch through.",
+    "description": "Artemis Bow Augment: Fires a single arrow that has +20% Critical Chance on Headshots and explodes in a 7m radius. Removes Punch Through.",
     "type": "Warframe",
     "imageName": "concentrated-arrow.jpeg",
     "category": "Mods",
@@ -6739,6 +6868,15 @@
     "category": "Mods",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Chroma Prime 23.9.0 + 23.9.0.1",
+        "date": "2018-09-25T17:57:10Z",
+        "url": "https://forums.warframe.com/topic/1011982-mask-of-the-revenant-chroma-prime-2390-23901/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/2cf190206c4590728d39582b26d3fbec.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed ranking up Octavia's Conductor Augment not actually increasing the speed of Resonator."
+      },
       {
         "name": "Mask of the Revenant: Update 23.8.0 + 23.8.0.1 + 23.8.0.2",
         "date": "2018-09-12T18:41:12Z",
@@ -7475,6 +7613,12 @@
         "chance": 0.002211
       },
       {
+        "location": "Rathuum Broadcaster",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
         "location": "Nemes",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -7488,12 +7632,6 @@
       },
       {
         "location": "Juggernaut Behemoth",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
-        "location": "Rathuum Broadcaster",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -7657,6 +7795,12 @@
         "chance": 0.002211
       },
       {
+        "location": "Rathuum Broadcaster",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
         "location": "Nemes",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -7670,12 +7814,6 @@
       },
       {
         "location": "Juggernaut Behemoth",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
-        "location": "Rathuum Broadcaster",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -7929,7 +8067,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_IMPACT>Impact",
+    "description": "5% of Damage converted into <DT_IMPACT>Impact",
     "type": "Melee",
     "imageName": "counterweight.jpeg",
     "category": "Mods",
@@ -8078,7 +8216,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_IMPACT>Impact",
+    "description": "5% of Damage converted into <DT_IMPACT>Impact",
     "type": "Shotgun",
     "imageName": "crash-shot.jpeg",
     "category": "Mods",
@@ -8377,7 +8515,7 @@
         "chance": 0.000201
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Tusk Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.000201
@@ -8401,7 +8539,7 @@
         "chance": 0.000201
       },
       {
-        "location": "Tusk Elite Lancer",
+        "location": "Elite Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.000201
@@ -8911,7 +9049,7 @@
         "chance": 0.0316
       },
       {
-        "location": "Ranger",
+        "location": "Quanta Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -8923,7 +9061,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Frigate",
+        "location": "Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -8953,7 +9091,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Quanta Ranger",
+        "location": "Frigate",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -9403,7 +9541,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Reckoning Augment: Health orbs become unusable by enemies for 2.5s.",
+    "description": "Reckoning Augment: Health Orbs become unusable by enemies for 2.5s.",
     "type": "Warframe",
     "imageName": "defiled-reckoning.jpeg",
     "category": "Mods",
@@ -9453,7 +9591,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Headshot:\r+2.5 Mobility for 1s.",
+    "description": "On Headshot:\r+2.5 Mobility for 1s",
     "type": "Rifle",
     "imageName": "deft-tempo.jpeg",
     "category": "Mods",
@@ -9735,13 +9873,13 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Kuva Lancer",
+        "location": "Leech Osprey",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
-        "location": "Heavy Gunner",
+        "location": "Kuva Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -9765,43 +9903,7 @@
         "chance": 0.003318
       },
       {
-        "location": "Frontier Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Frontier Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Drekar Scorpion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Leech Osprey",
+        "location": "Tusk Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -9813,13 +9915,43 @@
         "chance": 0.003318
       },
       {
-        "location": "Arid Lancer",
+        "location": "Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
-        "location": "Tusk Lancer",
+        "location": "Drekar Scorpion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Arid Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -9831,13 +9963,19 @@
         "chance": 0.003318
       },
       {
-        "location": "Drekar Lancer",
+        "location": "Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Drekar Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
       },
       {
-        "location": "Drekar Elite Lancer",
+        "location": "Drekar Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -10169,7 +10307,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Melee Channel Kill:\r+10% Movement Speed for 2.5s.",
+    "description": "On Melee Channel Kill:\r+10% Movement Speed for 2.5s",
     "type": "Melee",
     "imageName": "dispatch-overdrive.jpeg",
     "category": "Mods",
@@ -10216,7 +10354,7 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Drekar Trooper",
+        "location": "Tusk Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -10246,7 +10384,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Frontier Eviscerator",
+        "location": "Tusk Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -10258,25 +10396,25 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Arid Trooper",
+        "location": "Drekar Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
-        "location": "Tusk Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Tusk Eviscerator",
+        "location": "Frontier Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
         "location": "Drekar Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Arid Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -10396,7 +10534,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Hit:\r5% Bonus Damage on next hit for 0.5s.",
+    "description": "On Hit:\r5% Bonus Damage on next Hit for 0.5s",
     "type": "Rifle",
     "imageName": "double-tap.jpeg",
     "category": "Mods",
@@ -10890,13 +11028,13 @@
         "chance": 0.0316
       },
       {
-        "location": "Tusk Dargyn",
+        "location": "Tusk Shield Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000603
       },
       {
-        "location": "Tusk Shield Dargyn",
+        "location": "Tusk Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000603
@@ -11158,7 +11296,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Ability Cast:\r+15% Status Chance when Aiming for 1.5s.",
+    "description": "On Ability Cast:\r+15% Status Chance when Aiming for 1.5s",
     "type": "Secondary",
     "imageName": "embedded-catalyzer.jpeg",
     "category": "Mods",
@@ -11185,7 +11323,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+12.5% Reload Speed for 0.75s.",
+    "description": "On Kill:\r+12.5% Reload Speed for 0.75s",
     "type": "Rifle",
     "imageName": "emergent-aftermath.jpeg",
     "category": "Mods",
@@ -11416,7 +11554,7 @@
     "rarity": "Common",
     "baseDrain": 4,
     "fusionLimit": 3,
-    "description": "+15% Status Chance but -10% Channeling Efficiency",
+    "description": "+15% Status Chance,-10% Channeling Efficiency",
     "type": "Melee",
     "imageName": "enduring-strike.jpeg",
     "category": "Mods",
@@ -11660,12 +11798,6 @@
         "rotation": "Sabotage"
       },
       {
-        "location": "Flameblade",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.000303
-      },
-      {
         "location": "Tusk Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -11673,6 +11805,12 @@
       },
       {
         "location": "Tusk Predator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.000303
+      },
+      {
+        "location": "Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
@@ -11751,12 +11889,6 @@
         "rotation": "Sabotage"
       },
       {
-        "location": "Flameblade",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.000303
-      },
-      {
         "location": "Tusk Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -11764,6 +11896,12 @@
       },
       {
         "location": "Tusk Predator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.000303
+      },
+      {
+        "location": "Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
@@ -12032,6 +12170,29 @@
     "tradable": true
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/ItemDropOnAssist",
+    "name": "Energy Generator",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "description": "Dethcube drops an Energy Orb after assisting in 15 kills.",
+    "type": "Sentinel",
+    "imageName": "energy-generator.jpeg",
+    "category": "Mods",
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "Added an FX to the Energy Orb dropped by Deth Cube with Energy Generator equipped.",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Archwing/Suit/ArchwingSuitShieldMaxMod",
     "name": "Energy Inversion",
     "polarity": "Vazarin",
@@ -12076,13 +12237,13 @@
         "chance": 0.011616
       },
       {
-        "location": "Cannon Battery",
+        "location": "Turret",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007743
       },
       {
-        "location": "Turret",
+        "location": "Cannon Battery",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007743
@@ -12206,13 +12367,13 @@
         "chance": 0.011616
       },
       {
-        "location": "Napalm",
+        "location": "Tusk Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Tusk Napalm",
+        "location": "Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -12581,7 +12742,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Warcry Augment: While active, Warcry's duration is increased by 1.25s for each melee kill.",
+    "description": "Warcry Augment: While active, Warcry's duration is increased by 1.25s for each Melee Kill.",
     "type": "Warframe",
     "imageName": "eternal-war.jpeg",
     "category": "Mods",
@@ -12699,13 +12860,13 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Manic Bombard",
+        "location": "Drekar Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.04424
       },
       {
-        "location": "Drekar Manic Bombard",
+        "location": "Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.04424
@@ -13974,6 +14135,12 @@
         "chance": 0.0158
       },
       {
+        "location": "Hyekka Master",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Guardsman",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -13986,25 +14153,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Hyekka Master",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
         "location": "Drekar Manic",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Drekar Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Kuva Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -14016,7 +14165,19 @@
         "chance": 0.005690999999999999
       },
       {
+        "location": "Kuva Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
         "location": "Kuva Drahk Master",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -14040,7 +14201,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Butcher",
+        "location": "Drekar Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -14248,7 +14409,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Teleport Augment: Teleport will perform a finisher on the target, dealing 125% extra damage. 50% of energy cost is refunded on a kill.",
+    "description": "Teleport Augment: Teleport will perform a Finisher on the target, dealing 125% Extra Damage. 50% of Energy cost is refunded on a kill.",
     "type": "Warframe",
     "imageName": "fatal-teleport.jpeg",
     "category": "Mods",
@@ -14583,7 +14744,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Low Health:\r+7.5% Ability Strength\r+7.5% Casting Speed for 2s.",
+    "description": "On Low Health:\r+7.5% Ability Strength\r+7.5% Casting Speed for 2s",
     "type": "Warframe",
     "imageName": "final-act.jpeg",
     "category": "Mods",
@@ -14801,7 +14962,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On 4 Hits within .05s:\r+25% Damage for 0.05s.",
+    "description": "On 4 Hits within .05s:\r+25% Damage for 0.05s",
     "type": "Rifle",
     "imageName": "final-tap.jpeg",
     "category": "Mods",
@@ -15271,7 +15432,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_SLASH>Slash",
+    "description": "5% of Damage converted into <DT_SLASH>Slash",
     "type": "Shotgun",
     "imageName": "flak-shot.jpeg",
     "category": "Mods",
@@ -15297,18 +15458,6 @@
         "chance": 0.007587
       },
       {
-        "location": "Ancient Healer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Flameblade",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
         "location": "Tusk Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -15316,6 +15465,18 @@
       },
       {
         "location": "Tusk Predator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Ancient Healer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -15623,7 +15784,7 @@
         "chance": 0.000303
       },
       {
-        "location": "Frontier Butcher",
+        "location": "Tusk Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
@@ -15635,19 +15796,19 @@
         "chance": 0.000303
       },
       {
-        "location": "Drahk Master",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.000303
-      },
-      {
-        "location": "Tusk Butcher",
+        "location": "Frontier Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
       },
       {
         "location": "Arid Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.000303
+      },
+      {
+        "location": "Drahk Master",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
@@ -15902,7 +16063,7 @@
         "chance": 0.000303
       },
       {
-        "location": "Frontier Butcher",
+        "location": "Tusk Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
@@ -15914,19 +16075,19 @@
         "chance": 0.000303
       },
       {
-        "location": "Drahk Master",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.000303
-      },
-      {
-        "location": "Tusk Butcher",
+        "location": "Frontier Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
       },
       {
         "location": "Arid Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.000303
+      },
+      {
+        "location": "Drahk Master",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
@@ -16316,7 +16477,7 @@
     "rarity": "Uncommon",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "Respawn with +2.5 Energy",
+    "description": "On Respawn:,+2.5 Energy",
     "type": "Warframe",
     "imageName": "follow-through.jpeg",
     "category": "Mods",
@@ -17144,7 +17305,7 @@
         "chance": 0.0036850000000000003
       },
       {
-        "location": "Nemes",
+        "location": "Rathuum Broadcaster",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -17192,6 +17353,18 @@
         "chance": 0.002211
       },
       {
+        "location": "Mutalist Osprey Carrier",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
+        "location": "Nemes",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
         "location": "Carabus",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -17199,18 +17372,6 @@
       },
       {
         "location": "Nightwatch Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
-        "location": "Rathuum Broadcaster",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
-        "location": "Mutalist Osprey Carrier",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -17744,13 +17905,13 @@
         "chance": 0.0276
       },
       {
-        "location": "Tusk Dargyn",
+        "location": "Tusk Shield Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
       },
       {
-        "location": "Tusk Shield Dargyn",
+        "location": "Tusk Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -18173,7 +18334,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+7.5% Fire Rate for 0.75s.",
+    "description": "On Kill:\r+7.5% Fire Rate for 0.75s",
     "type": "Rifle",
     "imageName": "gorgon-frenzy.jpeg",
     "category": "Mods",
@@ -18639,6 +18800,14 @@
     ],
     "patchlogs": [
       {
+        "name": "Mask of the Revenant: Hotfix 23.8.2",
+        "date": "2018-09-19T14:29:43Z",
+        "url": "https://forums.warframe.com/topic/1010324-mask-of-the-revenant-hotfix-2382/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Operators inability to use Void Blast or Guardian Shell while sprinting when Guardian Shell is active."
+      },
+      {
         "name": "Shrine of the Eidolon: Hotfix 22.17.4",
         "date": "2018-04-13T20:03:57Z",
         "url": "https://forums.warframe.com/topic/944966-shrine-of-the-eidolon-hotfix-22174/",
@@ -18769,7 +18938,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Cast and hold to make Effigy move to your aim point. Deals 500 Damage/s to enemies in its path and roars on arrival stunning nearby enemies.",
+    "description": "Effigy Augment: Cast and hold to make Effigy move to your aim point. Deals 500 Damage/s to enemies in its path and roars on arrival stunning nearby enemies.",
     "type": "Warframe",
     "imageName": "guided-effigy.jpeg",
     "category": "Mods",
@@ -18793,7 +18962,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "On Hit:\r+5% Accuracy when Aiming for 1.5s.",
+    "description": "On Hit:\r+5% Accuracy when Aiming for 1.5s",
     "type": "Rifle",
     "imageName": "guided-ordnance.jpeg",
     "category": "Mods",
@@ -18894,13 +19063,13 @@
         "chance": 0.003384
       },
       {
-        "location": "Napalm",
+        "location": "Tusk Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
       },
       {
-        "location": "Tusk Napalm",
+        "location": "Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -19358,7 +19527,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Banish Augment: Allies banished to the rift will have 10% of their max health restored.",
+    "description": "Banish Augment: Allies banished to the rift will have 10% of their Maximum Health restored.",
     "type": "Warframe",
     "imageName": "haven.jpeg",
     "category": "Mods",
@@ -19397,6 +19566,12 @@
     "drops": [
       {
         "location": "Shield Osprey",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
+        "location": "Arbitration Shield Drone",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -19721,19 +19896,13 @@
         "chance": 0.003318
       },
       {
-        "location": "Frontier Lancer",
+        "location": "Tusk Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Frontier Hellion",
+        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -19745,37 +19914,37 @@
         "chance": 0.003318
       },
       {
-        "location": "Kuva Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Drekar Scorpion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
         "location": "Nightwatch Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
+        "location": "Kuva Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
         "location": "Arid Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Tusk Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -19793,13 +19962,19 @@
         "chance": 0.003318
       },
       {
-        "location": "Drekar Lancer",
+        "location": "Drekar Scorpion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Drekar Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
       },
       {
-        "location": "Drekar Elite Lancer",
+        "location": "Drekar Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -19951,19 +20126,13 @@
         "chance": 0.003318
       },
       {
-        "location": "Frontier Lancer",
+        "location": "Tusk Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Frontier Hellion",
+        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -19975,37 +20144,37 @@
         "chance": 0.003318
       },
       {
-        "location": "Kuva Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Drekar Scorpion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
         "location": "Nightwatch Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
+        "location": "Kuva Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
         "location": "Arid Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Tusk Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -20023,13 +20192,19 @@
         "chance": 0.003318
       },
       {
-        "location": "Drekar Lancer",
+        "location": "Drekar Scorpion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Drekar Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
       },
       {
-        "location": "Drekar Elite Lancer",
+        "location": "Drekar Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -20276,58 +20451,16 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Drekar Elite Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.000201
-      },
-      {
         "location": "Drekar Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.000201
       },
       {
-        "location": "Tusk Hellion",
+        "location": "Drekar Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Kuva Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Frontier Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Frontier Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Kuva Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
+        "chance": 0.000201
       },
       {
         "location": "Drekar Scorpion",
@@ -20336,13 +20469,7 @@
         "chance": 0.00015
       },
       {
-        "location": "Nightwatch Reaver",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Arid Lancer",
+        "location": "Kuva Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -20360,6 +20487,48 @@
         "chance": 0.00015
       },
       {
+        "location": "Kuva Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Tusk Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Frontier Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Arid Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
         "location": "Arid Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
@@ -20367,6 +20536,12 @@
       },
       {
         "location": "Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Nightwatch Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -20955,13 +21130,13 @@
         "rotation": "A"
       },
       {
-        "location": "Frigate",
+        "location": "Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000603
       },
       {
-        "location": "Ranger",
+        "location": "Quanta Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000603
@@ -20973,7 +21148,7 @@
         "chance": 0.000603
       },
       {
-        "location": "Quanta Ranger",
+        "location": "Frigate",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000603
@@ -22584,6 +22759,15 @@
     ],
     "patchlogs": [
       {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Treasure Hunter challenge not working for Clients."
+      },
+      {
         "name": "The Sacrifice: Update 23.4.0",
         "date": "2018-08-16T21:06:52Z",
         "url": "https://forums.warframe.com/topic/998116-the-sacrifice-update-2340/",
@@ -22929,7 +23113,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "+5% chance to apply <DT_SLASH>Slash Status to an enemy on Critical Hits.",
+    "description": "+5% chance to apply <DT_SLASH> on Critical",
     "type": "Primary",
     "imageName": "hunter-munitions.jpeg",
     "category": "Mods",
@@ -23464,7 +23648,7 @@
     "rarity": "Common",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "On Headshot:\r+22.5% Critical Chance when Aiming for 1.5s.",
+    "description": "On Headshot:\r+22.5% Critical Chance when Aiming for 1.5s",
     "type": "Secondary",
     "imageName": "hydraulic-crosshairs.jpeg",
     "category": "Mods",
@@ -23691,7 +23875,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Hysteria Augment: While Hysteria is active, each kill restores 5% max shields.",
+    "description": "Hysteria Augment: While Hysteria is active, each kill restores 5% Maximum Shields.",
     "type": "Warframe",
     "imageName": "hysterical-fixation.jpeg",
     "category": "Mods",
@@ -23794,7 +23978,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Ice Wave Augment: Leaves a frozen trail for 6s, that will slow down enemies that come into contact with it.",
+    "description": "Ice Wave Augment: Leaves a frozen trail for 6s that slows down enemies that come into contact with it.",
     "type": "Warframe",
     "imageName": "ice-wave-impedance.jpeg",
     "category": "Mods",
@@ -23834,7 +24018,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Avalanche Augment: Grants allies within the radius a coat of ice that absorbs 40 damage per enemy hit.",
+    "description": "Avalanche Augment: Grants allies within the radius with a coat of ice that absorbs 40 Damage per enemy hit.",
     "type": "Warframe",
     "imageName": "icy-avalanche.jpeg",
     "category": "Mods",
@@ -24146,6 +24330,15 @@
     "tradable": true,
     "patchlogs": [
       {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a progress stopper in The War Within’s \"Infiltrate the Grineer Asteroid Fortress\" mission."
+      },
+      {
         "name": "The War Within: Hotfix 19.3.2 + 19.3.2.1",
         "date": "2016-12-13T19:17:37Z",
         "url": "https://forums.warframe.com/topic/734004-the-war-within-hotfix-1932-19321/",
@@ -24171,7 +24364,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Ravenous Augment: Nidus has a 35.0% chance of generating an additional Mutation stack whenever he gains one, while standing in the Ravenous infestation.",
+    "description": "Ravenous Augment: Nidus has a 35% chance of generating an additional Mutation stack whenever he gains one, while standing in the Ravenous infestation.",
     "type": "Warframe",
     "imageName": "insatiable.jpeg",
     "category": "Mods",
@@ -24191,13 +24384,13 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Napalm",
+        "location": "Tusk Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Tusk Napalm",
+        "location": "Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -24905,7 +25098,7 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Drekar Scorpion",
+        "location": "Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -24929,42 +25122,6 @@
         "chance": 0.00015
       },
       {
-        "location": "Frontier Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Frontier Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Nightwatch Reaver",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Arid Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
         "location": "Tusk Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
@@ -24977,6 +25134,36 @@
         "chance": 0.00015
       },
       {
+        "location": "Drekar Scorpion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Frontier Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Arid Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
         "location": "Arid Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
@@ -24984,6 +25171,12 @@
       },
       {
         "location": "Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Nightwatch Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -25052,7 +25245,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Iron Jab Augment: Aiming Iron Jab at the ground launches Wukong into the air. Executing a slam attack increases range by 8m and applies 300% extra damage.",
+    "description": "Iron Jab Augment: Aiming Iron Jab at the ground launches Wukong into the air. Executing a Slam Attack increases Range by 8m and applies 300% Extra Damage.",
     "type": "Warframe",
     "imageName": "iron-vault.jpeg",
     "category": "Mods",
@@ -25085,7 +25278,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Rhino Charge Augment: Each enemy hit increases Rhino's armor rating by 12% for 4s.",
+    "description": "Rhino Charge Augment: Each enemy hit increases Rhino's Armor Rating by 12% for 4s.",
     "type": "Warframe",
     "imageName": "ironclad-charge.jpeg",
     "category": "Mods",
@@ -25247,7 +25440,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+12.5% Reload Speed for 0.75s.",
+    "description": "On Kill:\r+12.5% Reload Speed for 0.75s",
     "type": "Shotgun",
     "imageName": "kill-switch.jpeg",
     "category": "Mods",
@@ -25419,6 +25612,12 @@
         "chance": 0.002211
       },
       {
+        "location": "Tusk Seeker",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
         "location": "Seeker",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -25426,12 +25625,6 @@
       },
       {
         "location": "Kuva Seeker",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
-        "location": "Tusk Seeker",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -25517,7 +25710,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "Shots now bounce up to +1 times,and travel +5% further",
+    "description": "Shots now bounce up to 1x and travel 5% further.",
     "type": "Rifle",
     "imageName": "kinetic-ricochet.jpeg",
     "category": "Mods",
@@ -25687,7 +25880,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Headshot:\r+20% Critical Chance when Aiming for 1.5s.",
+    "description": "On Headshot:\r+20% Critical Chance when Aiming for 1.5s",
     "type": "Shotgun",
     "imageName": "laser-sight.jpeg",
     "category": "Mods",
@@ -26255,7 +26448,7 @@
         "chance": 0.3221
       },
       {
-        "location": "Drekar Trooper",
+        "location": "Kuva Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -26279,7 +26472,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Frontier Eviscerator",
+        "location": "Tusk Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -26291,31 +26484,31 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Arid Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Tusk Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Kuva Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
         "location": "Tusk Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
+        "location": "Drekar Trooper",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Frontier Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
         "location": "Drekar Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Arid Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -26899,13 +27092,13 @@
         "chance": 0.007743
       },
       {
-        "location": "Tusk Dargyn",
+        "location": "Tusk Shield Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Tusk Shield Dargyn",
+        "location": "Tusk Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -27654,7 +27847,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Manually detonate Magnetize by recasting on the target. Enemies hit have a 20% chance to become disarmed.",
+    "description": "Magnetize Augment: Manually detonate Magnetize by recasting on the target. Enemies hit have a 20% chance to become disarmed.",
     "type": "Warframe",
     "imageName": "magnetized-discharge.jpeg",
     "category": "Mods",
@@ -28169,7 +28362,7 @@
         "rotation": "rewards"
       },
       {
-        "location": "Hyena Ng",
+        "location": "Hyena Pb",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.01206
@@ -28181,19 +28374,19 @@
         "chance": 0.01206
       },
       {
-        "location": "Hyena Ln2",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.01206
-      },
-      {
         "location": "Hyena Th",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.01206
       },
       {
-        "location": "Hyena Pb",
+        "location": "Hyena Ng",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.01206
+      },
+      {
+        "location": "Hyena Ln2",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.01206
@@ -28682,7 +28875,7 @@
         "chance": 0.007743
       },
       {
-        "location": "Frontier Regulator",
+        "location": "Regulator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -28694,7 +28887,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Nemes",
+        "location": "Rathuum Broadcaster",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -28706,13 +28899,19 @@
         "chance": 0.007587
       },
       {
-        "location": "Regulator",
+        "location": "Carabus",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Carabus",
+        "location": "Frontier Regulator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Nemes",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -28730,13 +28929,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Rathuum Broadcaster",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Kuva Trooper",
+        "location": "Kuva Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -28748,31 +28941,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Eviscerator",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Kuva Eviscerator",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Frontier Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
         "location": "Frontier Eviscerator",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Arid Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -28784,13 +28953,31 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Tusk Eviscerator",
+        "location": "Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
         "location": "Drekar Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Kuva Trooper",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Arid Trooper",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Frontier Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -28806,6 +28993,12 @@
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
+      },
+      {
+        "location": "Tusk Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
       }
     ]
   },
@@ -28814,7 +29007,7 @@
     "name": "Melee Riven Mod",
     "polarity": "AP_UNIVERSAL",
     "rarity": "Common",
-    "baseDrain": 119476512,
+    "baseDrain": 120861248,
     "fusionLimit": 0,
     "upgradeEntries": [
       {
@@ -41931,7 +42124,7 @@
     "name": "Melee Riven Mod",
     "polarity": "AP_UNIVERSAL",
     "rarity": "Common",
-    "baseDrain": 119476512,
+    "baseDrain": 120861248,
     "fusionLimit": 0,
     "upgradeEntries": [
       {
@@ -55576,7 +55769,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_IMPACT>Impact",
+    "description": "5% of Damage converted into <DT_IMPACT>Impact",
     "type": "Secondary",
     "imageName": "meteor-munitions.jpeg",
     "category": "Mods",
@@ -55589,7 +55782,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Mind Control Augment: Controlled target does increased damage by 200%.",
+    "description": "Mind Control Augment: Controlled target inflicts +200% Damage.",
     "type": "Warframe",
     "imageName": "mind-freak.jpeg",
     "category": "Mods",
@@ -55722,13 +55915,13 @@
         "rotation": "A"
       },
       {
-        "location": "Cannon Battery",
+        "location": "Turret",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003384
       },
       {
-        "location": "Turret",
+        "location": "Cannon Battery",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003384
@@ -55740,13 +55933,13 @@
         "chance": 0.002256
       },
       {
-        "location": "Tusk Dargyn",
+        "location": "Tusk Shield Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
       },
       {
-        "location": "Tusk Shield Dargyn",
+        "location": "Tusk Dargyn",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -56131,7 +56324,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+3.8 Heal Rate for 2.5s.,-6.2% from Health Orbs",
+    "description": "On Kill:\r+3.8 Heal Rate for 2.5s,-6.2% from Health Orbs",
     "type": "Shotgun",
     "imageName": "momentary-pause.jpeg",
     "category": "Mods",
@@ -56243,7 +56436,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "At Less than 50 Health:\r+15% Damage taken is reflected when Blocking attacks while Channeling for 2s.",
+    "description": "At Less than 50 Health:\r+15% Damage taken is reflected when Blocking attacks while Channeling for 2s",
     "type": "Melee",
     "imageName": "mortal-conduct.jpeg",
     "category": "Mods",
@@ -56415,7 +56608,7 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Ability Cast:\r+15% Status Chance when Aiming for 1.5s.",
+    "description": "On Ability Cast:\r+15% Status Chance when Aiming for 1.5s",
     "type": "Shotgun",
     "imageName": "nano-applicator.jpeg",
     "category": "Mods",
@@ -56455,7 +56648,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "On Hit:\r+5% Accuracy when Aiming for 1.5s.",
+    "description": "On Hit:\r+5% Accuracy when Aiming for 1.5s",
     "type": "Shotgun",
     "imageName": "narrow-barrel.jpeg",
     "category": "Mods",
@@ -56717,7 +56910,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Scarab Swarm Augment: Scarab armor protects Inaros from Status Effects, consuming 6% bonus Armor for each effect resisted.",
+    "description": "Scarab Swarm Augment: Scarab Armor protects Inaros from Status Effects, consuming 6% Bonus Armor for each effect resisted.",
     "type": "Warframe",
     "imageName": "negation-swarm.jpeg",
     "category": "Mods",
@@ -57125,13 +57318,13 @@
         "chance": 0.002211
       },
       {
-        "location": "Nightwatch Lancer",
+        "location": "Mutalist Osprey Carrier",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
       },
       {
-        "location": "Mutalist Osprey Carrier",
+        "location": "Nightwatch Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -57206,13 +57399,13 @@
         "chance": 0.13266
       },
       {
-        "location": "Hyena Th",
+        "location": "Hyena Pb",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.13266
       },
       {
-        "location": "Hyena Pb",
+        "location": "Hyena Ng",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.13266
@@ -57224,7 +57417,7 @@
         "chance": 0.13266
       },
       {
-        "location": "Hyena Ng",
+        "location": "Hyena Th",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.13266
@@ -57656,25 +57849,13 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Drover Bursa",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Bailiff",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
         "location": "Ratel",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
-        "location": "Bailiff Defector",
+        "location": "Drover Bursa",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -57686,13 +57867,19 @@
         "chance": 0.003318
       },
       {
-        "location": "Kuva Drahk Master",
+        "location": "Bailiff",
         "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.001659
+        "rarity": "Uncommon",
+        "chance": 0.003318
       },
       {
-        "location": "Frontier Bailiff",
+        "location": "Bailiff Defector",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Drekar Manic",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -57704,19 +57891,19 @@
         "chance": 0.001659
       },
       {
+        "location": "Frontier Bailiff",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.001659
+      },
+      {
         "location": "Kuva Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
       },
       {
-        "location": "Bailiff",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.001659
-      },
-      {
-        "location": "Drekar Manic",
+        "location": "Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -57728,7 +57915,13 @@
         "chance": 0.001659
       },
       {
-        "location": "Butcher",
+        "location": "Kuva Drahk Master",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.001659
+      },
+      {
+        "location": "Bailiff",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -57770,7 +57963,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Petrify Augment: Petrified enemies are scanned into the codex and have a 10% chance to drop additional loot when killed.",
+    "description": "Petrify Augment: Petrified enemies are scanned into the Codex and have a 10% chance to drop additional loot when killed.",
     "type": "Warframe",
     "imageName": "ore-gaze.jpeg",
     "category": "Mods",
@@ -57808,19 +58001,13 @@
         "chance": 0.07587
       },
       {
-        "location": "Raptor",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.01897
-      },
-      {
         "location": "Raptor Ns",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.01897
       },
       {
-        "location": "Raptor Rv",
+        "location": "Raptor",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.01897
@@ -57832,19 +58019,13 @@
         "chance": 0.01897
       },
       {
-        "location": "Lynx",
+        "location": "Raptor Rv",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
-        "chance": 0.011381999999999998
+        "chance": 0.01897
       },
       {
         "location": "Ballista",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Kuva Ballista",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -57856,10 +58037,16 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Ven'Kra Tel",
+        "location": "Lynx",
         "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Kuva Ballista",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
       },
       {
         "location": "Sprag",
@@ -57868,10 +58055,10 @@
         "chance": 0.007587
       },
       {
-        "location": "Arcane Boiler",
+        "location": "Ven'Kra Tel",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
-        "chance": 0.004554
+        "chance": 0.007587
       },
       {
         "location": "Boiler",
@@ -57881,6 +58068,12 @@
       },
       {
         "location": "Toxic Ancient",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.004554
+      },
+      {
+        "location": "Arcane Boiler",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.004554
@@ -58209,13 +58402,13 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Frigate",
+        "location": "Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
-        "location": "Ranger",
+        "location": "Quanta Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -58227,7 +58420,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Quanta Ranger",
+        "location": "Frigate",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -58815,7 +59008,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Vortex Augment: Vortex's duration is increased by 50% of its max duration for each additional Vortex thrown into it.",
+    "description": "Vortex Augment: Vortex's duration is increased by 50% of its Maximum Duration for each additional Vortex thrown into it.",
     "type": "Warframe",
     "imageName": "perpetual-vortex.jpeg",
     "category": "Mods",
@@ -58846,7 +59039,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Renewal Augment: Taking fatal damage while under the effects of Renewal will instead heal you or allies to 20% health. This effect triggers only once for each ally every 90s.",
+    "description": "Renewal Augment: Taking fatal damage while under the effects of Renewal will instead Heal you or allies to 20% Health. This effect triggers only once for each ally every 90s.",
     "type": "Warframe",
     "imageName": "phoenix-renewal.jpeg",
     "category": "Mods",
@@ -59726,7 +59919,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Frontier Eviscerator",
+        "location": "Tusk Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -59738,19 +59931,13 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Arid Trooper",
+        "location": "Drekar Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
-        "location": "Tusk Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Tusk Eviscerator",
+        "location": "Frontier Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -59762,13 +59949,19 @@
         "chance": 0.005690999999999999
       },
       {
+        "location": "Arid Trooper",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
         "location": "Arid Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
-        "location": "Drekar Trooper",
+        "location": "Tusk Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -59811,7 +60004,7 @@
     "name": "Pistol Riven Mod",
     "polarity": "AP_UNIVERSAL",
     "rarity": "Common",
-    "baseDrain": 119476512,
+    "baseDrain": 120861248,
     "fusionLimit": 0,
     "upgradeEntries": [
       {
@@ -72948,7 +73141,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Hit:\r+5% Secondary Weapon Fire Rate for 0.75s.",
+    "description": "On Hit:\r+5% Secondary Weapon Fire Rate for 0.75s",
     "type": "Rifle",
     "imageName": "plan-b.jpeg",
     "category": "Mods",
@@ -73499,13 +73692,13 @@
         "chance": 0.007587
       },
       {
-        "location": "Guardsman",
+        "location": "Tusk Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Tusk Napalm",
+        "location": "Guardsman",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -73765,6 +73958,37 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Aura/AvatarAuraPowerMaxMod",
+    "name": "Power Donation",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": -4,
+    "fusionLimit": 5,
+    "description": "-5% Ability Strength\r+5% Ability Strength of Squadmates",
+    "type": "Aura",
+    "imageName": "power-donation.jpeg",
+    "category": "Mods",
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.6",
+        "date": "2018-10-18T20:38:32Z",
+        "url": "https://forums.warframe.com/topic/1019814-chimera-hotfix-23106/",
+        "additions": "",
+        "changes": "Updated terminology for the Power Donation Mod to read \"Ability Strength\" instead of \"Power Strength.\"",
+        "fixes": ""
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.3",
+        "date": "2018-10-15T21:13:13Z",
+        "url": "https://forums.warframe.com/topic/1018682-chimera-hotfix-23103/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where Power Donation could allow for true <0% Power Strength scenarios. "
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/OrokinChallenge/OrokinChallengeModPower",
     "name": "Power Drift",
     "polarity": "Zenurik",
@@ -73802,7 +74026,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Quiver Augment: Quiver fires three arrows and consumes 50 more energy.",
+    "description": "Quiver Augment: Quiver fires three arrows and consumes 50 more Energy.",
     "type": "Warframe",
     "imageName": "power-of-three.jpeg",
     "category": "Mods",
@@ -74359,14 +74583,14 @@
         "rotation": "B"
       },
       {
-        "location": "Europa - Larzac",
+        "location": "Venus - Romula",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
         "rotation": "B"
       },
       {
-        "location": "Venus - Romula",
+        "location": "Europa - Larzac",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
@@ -74386,14 +74610,14 @@
         "chance": 0.0843
       },
       {
-        "location": "Jupiter - Sinai",
+        "location": "Phobos - Opik",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
         "rotation": "B"
       },
       {
-        "location": "Phobos - Opik",
+        "location": "Jupiter - Sinai",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
@@ -74449,37 +74673,19 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Arid Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Drekar Scorpion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Drekar Elite Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Drekar Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Tusk Reaver",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -74491,7 +74697,13 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Tusk Lancer",
+        "location": "Drekar Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -74504,6 +74716,18 @@
       },
       {
         "location": "Mutalist Osprey",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Tusk Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Nightwatch Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -74527,7 +74751,7 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Nightwatch Reaver",
+        "location": "Frontier Heavy Gunner",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -74551,32 +74775,32 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Sikula",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
       },
       {
-        "location": "Arid Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Drekar Scorpion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Pluto - Sechura",
+        "location": "Eris - Akkad",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
         "rotation": "A"
       },
       {
-        "location": "Ceres - Seimeni",
+        "location": "Pluto - Sechura",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
@@ -74590,14 +74814,21 @@
         "rotation": "A"
       },
       {
-        "location": "Sedna - Sangeru",
+        "location": "Earth - Coba",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
         "rotation": "A"
       },
       {
-        "location": "Earth - Coba",
+        "location": "Ceres - Seimeni",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0101,
+        "rotation": "A"
+      },
+      {
+        "location": "Sedna - Sangeru",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
@@ -74632,19 +74863,6 @@
         "rotation": "A"
       },
       {
-        "location": "Eris - Akkad",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0101,
-        "rotation": "A"
-      },
-      {
-        "location": "Kuva Hyekka Master",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
         "location": "Hyekka Master",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -74657,31 +74875,13 @@
         "chance": 0.007587
       },
       {
-        "location": "Drekar Butcher",
+        "location": "Kuva Hyekka Master",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
-        "chance": 0.005690999999999999
+        "chance": 0.007587
       },
       {
-        "location": "Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Lobber Crawler",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Kuva Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Drahk Master",
+        "location": "Tusk Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -74693,13 +74893,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Tusk Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Bailiff",
+        "location": "Lobber Crawler",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -74711,7 +74905,19 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Frontier Bailiff",
+        "location": "Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Drekar Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Kuva Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -74723,13 +74929,31 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Europa - Abaddon",
+        "location": "Drahk Master",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Frontier Bailiff",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Bailiff",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Phobos - Todd",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Earth - Mantle",
+        "location": "Mercury - Elion",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -74747,13 +74971,26 @@
         "chance": 0.0034000000000000002
       },
       {
+        "location": "Uranus - Trinculo",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002
+      },
+      {
         "location": "Void - Ukko",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Jupiter - Ananke",
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Mars - Quirinus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -74765,36 +75002,30 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Phobos - Todd",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002
-      },
-      {
         "location": "Europa - Beleth",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Lua - Copernicus",
+        "location": "Europa - Cryotic",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Europa - Cryotic",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Earth - Mantle",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
-      },
-      {
-        "location": "Europa - Cryotic",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002,
-        "rotation": "rewards"
-      },
-      {
-        "location": "Europa - Cryotic",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002,
-        "rotation": "rewards"
       },
       {
         "location": "Europa - Cryotic",
@@ -74810,17 +75041,10 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Mercury - Elion",
+        "location": "Europa - Abaddon",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
-      },
-      {
-        "location": "Kuva - Fortress",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002,
-        "rotation": "rewards"
       },
       {
         "location": "Sedna - Rusalka",
@@ -74841,19 +75065,19 @@
         "chance": 0.0034000000000000002
       },
       {
+        "location": "Mars - Ara",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002
+      },
+      {
         "location": "Saturn - Cassini",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Mars - Quirinus",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002
-      },
-      {
-        "location": "Neptune - Galatea",
+        "location": "Lua - Copernicus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -74865,7 +75089,7 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Mars - Ara",
+        "location": "Neptune - Galatea",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -74895,7 +75119,7 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Uranus - Trinculo",
+        "location": "Jupiter - Ananke",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -75154,14 +75378,14 @@
         "rotation": "B"
       },
       {
-        "location": "Europa - Larzac",
+        "location": "Venus - Romula",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
         "rotation": "B"
       },
       {
-        "location": "Venus - Romula",
+        "location": "Europa - Larzac",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
@@ -75181,14 +75405,14 @@
         "chance": 0.0843
       },
       {
-        "location": "Jupiter - Sinai",
+        "location": "Phobos - Opik",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
         "rotation": "B"
       },
       {
-        "location": "Phobos - Opik",
+        "location": "Jupiter - Sinai",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0843,
@@ -75244,37 +75468,19 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Arid Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Drekar Scorpion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Drekar Elite Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Drekar Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Tusk Reaver",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -75286,7 +75492,13 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Tusk Lancer",
+        "location": "Drekar Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -75299,6 +75511,18 @@
       },
       {
         "location": "Mutalist Osprey",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Tusk Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Nightwatch Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -75322,7 +75546,7 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Nightwatch Reaver",
+        "location": "Frontier Heavy Gunner",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -75346,32 +75570,32 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Sikula",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
       },
       {
-        "location": "Arid Hellion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Drekar Scorpion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Pluto - Sechura",
+        "location": "Eris - Akkad",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
         "rotation": "A"
       },
       {
-        "location": "Ceres - Seimeni",
+        "location": "Pluto - Sechura",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
@@ -75385,14 +75609,21 @@
         "rotation": "A"
       },
       {
-        "location": "Sedna - Sangeru",
+        "location": "Earth - Coba",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
         "rotation": "A"
       },
       {
-        "location": "Earth - Coba",
+        "location": "Ceres - Seimeni",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0101,
+        "rotation": "A"
+      },
+      {
+        "location": "Sedna - Sangeru",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0101,
@@ -75427,19 +75658,6 @@
         "rotation": "A"
       },
       {
-        "location": "Eris - Akkad",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0101,
-        "rotation": "A"
-      },
-      {
-        "location": "Kuva Hyekka Master",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
         "location": "Hyekka Master",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -75452,31 +75670,13 @@
         "chance": 0.007587
       },
       {
-        "location": "Drekar Butcher",
+        "location": "Kuva Hyekka Master",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
-        "chance": 0.005690999999999999
+        "chance": 0.007587
       },
       {
-        "location": "Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Lobber Crawler",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Kuva Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Drahk Master",
+        "location": "Tusk Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -75488,13 +75688,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Tusk Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Bailiff",
+        "location": "Lobber Crawler",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -75506,7 +75700,19 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Frontier Bailiff",
+        "location": "Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Drekar Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Kuva Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -75518,13 +75724,31 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Europa - Abaddon",
+        "location": "Drahk Master",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Frontier Bailiff",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Bailiff",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Phobos - Todd",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Earth - Mantle",
+        "location": "Mercury - Elion",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -75542,13 +75766,26 @@
         "chance": 0.0034000000000000002
       },
       {
+        "location": "Uranus - Trinculo",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002
+      },
+      {
         "location": "Void - Ukko",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Jupiter - Ananke",
+        "location": "Kuva - Fortress",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Mars - Quirinus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -75560,36 +75797,30 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Phobos - Todd",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002
-      },
-      {
         "location": "Europa - Beleth",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Lua - Copernicus",
+        "location": "Europa - Cryotic",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Europa - Cryotic",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002,
+        "rotation": "rewards"
+      },
+      {
+        "location": "Earth - Mantle",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
-      },
-      {
-        "location": "Europa - Cryotic",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002,
-        "rotation": "rewards"
-      },
-      {
-        "location": "Europa - Cryotic",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002,
-        "rotation": "rewards"
       },
       {
         "location": "Europa - Cryotic",
@@ -75605,17 +75836,10 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Mercury - Elion",
+        "location": "Europa - Abaddon",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
-      },
-      {
-        "location": "Kuva - Fortress",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002,
-        "rotation": "rewards"
       },
       {
         "location": "Sedna - Rusalka",
@@ -75636,19 +75860,19 @@
         "chance": 0.0034000000000000002
       },
       {
+        "location": "Mars - Ara",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002
+      },
+      {
         "location": "Saturn - Cassini",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Mars - Quirinus",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002
-      },
-      {
-        "location": "Neptune - Galatea",
+        "location": "Lua - Copernicus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -75660,7 +75884,7 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Mars - Ara",
+        "location": "Neptune - Galatea",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -75690,7 +75914,7 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Uranus - Trinculo",
+        "location": "Jupiter - Ananke",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -75723,7 +75947,7 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Reload:\r+15% Fire Rate when Aiming for 1.5s.",
+    "description": "On Reload:\r+15% Fire Rate when Aiming for 1.5s",
     "type": "Secondary",
     "imageName": "pressurized-magazine.jpeg",
     "category": "Mods",
@@ -75825,7 +76049,7 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 3,
-    "description": "+25% Damage on first shot in magazine",
+    "description": "+25% Damage on first shot in Magazine",
     "type": "Rifle",
     "imageName": "primed-chamber.jpeg",
     "category": "Mods",
@@ -75885,6 +76109,58 @@
     "description": "+15% <DT_FREEZE>Cold",
     "type": "Rifle",
     "imageName": "primed-cryo-rounds.jpeg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageCorpusExpert",
+    "name": "Primed Expel Corpus",
+    "polarity": "Madurai",
+    "rarity": "Legendary",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "description": "+5% Damage to Corpus",
+    "type": "Secondary",
+    "imageName": "primed-expel-corpus.jpeg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageCorruptedExpert",
+    "name": "Primed Expel Corrupted",
+    "polarity": "Madurai",
+    "rarity": "Legendary",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "description": "+5% Damage to Corrupted",
+    "type": "Secondary",
+    "imageName": "primed-expel-corrupted.jpeg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageGrineerExpert",
+    "name": "Primed Expel Grineer",
+    "polarity": "Madurai",
+    "rarity": "Legendary",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "description": "+5% Damage to Grineer",
+    "type": "Secondary",
+    "imageName": "primed-expel-grineer.jpeg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageInfestedExpert",
+    "name": "Primed Expel Infested",
+    "polarity": "Madurai",
+    "rarity": "Legendary",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "description": "+5% Damage to Infested",
+    "type": "Secondary",
+    "imageName": "primed-expel-infested.jpeg",
     "category": "Mods",
     "tradable": true
   },
@@ -76287,7 +76563,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r-25% Shield Recharge Delay for 2.5s.,-6.2% from Health Orbs",
+    "description": "On Kill:\r-25% Shield Recharge Delay for 2.5s,-6.2% from Health Orbs",
     "type": "Shotgun",
     "imageName": "prize-kill.jpeg",
     "category": "Mods",
@@ -77132,7 +77408,7 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Nauseous Crawler",
+        "location": "Nauseous Void Shade",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -77144,19 +77420,19 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Nauseous Void Shade",
+        "location": "Nauseous Crawler",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
       },
       {
-        "location": "Elite Arid Lancer",
+        "location": "Dargyn Pilot",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Tusk Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -77180,19 +77456,19 @@
         "chance": 0.007587
       },
       {
+        "location": "Elite Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Elite Arid Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Kuva Elite Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Dargyn Pilot",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Tusk Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -77223,7 +77499,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "+5% Attack Speed but -20% Channeling Efficiency",
+    "description": "+5% Attack Speed,-20% Channeling Efficiency",
     "type": "Melee",
     "imageName": "quickening.jpeg",
     "category": "Mods",
@@ -77427,7 +77703,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Radial Blind Augment: Blinded enemies take 150% more finisher damage.",
+    "description": "Radial Blind Augment: Blinded enemies take 150% more Finisher Damage.",
     "type": "Warframe",
     "imageName": "radiant-finish.jpeg",
     "category": "Mods",
@@ -77465,13 +77741,13 @@
         "chance": 0.006
       },
       {
-        "location": "Napalm",
+        "location": "Tusk Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000603
       },
       {
-        "location": "Tusk Napalm",
+        "location": "Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000603
@@ -77977,7 +78253,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_SLASH>Slash",
+    "description": "5% of Damage converted into <DT_SLASH>Slash",
     "type": "Secondary",
     "imageName": "razor-munitions.jpeg",
     "category": "Mods",
@@ -78015,7 +78291,7 @@
         "chance": 0.003318
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Tusk Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -78039,7 +78315,7 @@
         "chance": 0.003318
       },
       {
-        "location": "Tusk Elite Lancer",
+        "location": "Elite Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -78059,7 +78335,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Razor Wing Augment: Flight Speed increased by 25% and Fire Rate increased by 25% for 2s when using abilities. Stacks up to 4 times.",
+    "description": "Razorwing Augment: Flight Speed increased by 25% and Fire Rate increased by 25% for 2s when using abilities. Stacks up to 4x.",
     "type": "Warframe",
     "imageName": "razorwing-blitz.jpeg",
     "category": "Mods",
@@ -78085,7 +78361,7 @@
         "chance": 0.37939999999999996
       },
       {
-        "location": "Raptor Ns",
+        "location": "Raptor Rv",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.01897
@@ -78097,13 +78373,13 @@
         "chance": 0.01897
       },
       {
-        "location": "Raptor Rv",
+        "location": "Raptor Mt",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.01897
       },
       {
-        "location": "Raptor Mt",
+        "location": "Raptor Ns",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.01897
@@ -78127,13 +78403,13 @@
         "chance": 0.007587
       },
       {
-        "location": "Nightwatch Lancer",
+        "location": "Mutalist Osprey Carrier",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Mutalist Osprey Carrier",
+        "location": "Nightwatch Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -78361,13 +78637,13 @@
         "chance": 0.002211
       },
       {
-        "location": "Nightwatch Lancer",
+        "location": "Mutalist Osprey Carrier",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
       },
       {
-        "location": "Mutalist Osprey Carrier",
+        "location": "Nightwatch Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -78503,12 +78779,21 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+3.8 Heal Rate for 2.5s.,-6.2% from Health Orbs",
+    "description": "On Kill:\r+3.8 Heal Rate for 2.5s,-6.2% from Health Orbs",
     "type": "Rifle",
     "imageName": "recover.jpeg",
     "category": "Mods",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "Shortened default Stasis Recovery time from 3 hours to 30 minutes. ",
+        "fixes": ""
+      },
       {
         "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
         "date": "2017-12-07T22:05:21Z",
@@ -78594,7 +78879,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+3.8 Heal Rate for 2.5s.,-6.2% from Health Orbs",
+    "description": "On Kill:\r+3.8 Heal Rate for 2.5s,-6.2% from Health Orbs",
     "type": "Secondary",
     "imageName": "recuperate.jpeg",
     "category": "Mods",
@@ -78667,19 +78952,13 @@
         "chance": 0.007587
       },
       {
+        "location": "Tusk Elite Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Ancient Disruptor",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Kuva Elite Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Shock Draga",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -78697,7 +78976,13 @@
         "chance": 0.007587
       },
       {
-        "location": "Tusk Elite Lancer",
+        "location": "Kuva Elite Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Elite Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -78715,7 +79000,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Shock Draga",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -78827,19 +79112,13 @@
         "chance": 0.007587
       },
       {
+        "location": "Tusk Elite Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Ancient Disruptor",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Kuva Elite Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Shock Draga",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -78857,7 +79136,13 @@
         "chance": 0.007587
       },
       {
-        "location": "Tusk Elite Lancer",
+        "location": "Kuva Elite Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Elite Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -78875,7 +79160,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Shock Draga",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -79683,6 +79968,12 @@
         "chance": 0.00553
       },
       {
+        "location": "Raptor Ns",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.00553
+      },
+      {
         "location": "Raptor Mt",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -79690,12 +79981,6 @@
       },
       {
         "location": "Raptor Rv",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.00553
-      },
-      {
-        "location": "Raptor Ns",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.00553
@@ -79731,6 +80016,12 @@
         "chance": 0.001659
       },
       {
+        "location": "Bailiff",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.001659
+      },
+      {
         "location": "Kuva Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -79749,19 +80040,13 @@
         "chance": 0.001659
       },
       {
-        "location": "Tusk Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.001659
-      },
-      {
         "location": "Frontier Bailiff",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
       },
       {
-        "location": "Bailiff",
+        "location": "Tusk Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -79803,7 +80088,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 3,
-    "description": "+50% Holster Rate",
+    "description": "+50% Holster Speed",
     "type": "Secondary",
     "imageName": "reflex-draw.jpeg",
     "category": "Mods",
@@ -80139,7 +80424,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Molt Augment: After casting Molt, Saryn regenerates 20 Health every second for 10s.",
+    "description": "Molt Augment: After casting Molt, Saryn regenerates 20 Health/s for 10s.",
     "type": "Warframe",
     "imageName": "regenerative-molt.jpeg",
     "category": "Mods",
@@ -80162,7 +80447,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Rhino Stomp Augment: Iron Skin health is replenished by 55 for each enemy affected.",
+    "description": "Rhino Stomp Augment: Iron Skin Health is replenished by 55 for each enemy affected.",
     "type": "Warframe",
     "imageName": "reinforcing-stomp.jpeg",
     "category": "Mods",
@@ -80206,7 +80491,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+0.5 Energy Rate for 1s.",
+    "description": "On Kill:\r+0.5 Energy Rate for 1s",
     "type": "Melee",
     "imageName": "relentless-assault.jpeg",
     "category": "Mods",
@@ -80279,13 +80564,13 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Napalm",
+        "location": "Tusk Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
       },
       {
-        "location": "Tusk Napalm",
+        "location": "Napalm",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -80429,7 +80714,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Reload:\r+17.5% Fire Rate when Aiming for 1.5s.",
+    "description": "On Reload:\r+17.5% Fire Rate when Aiming for 1.5s",
     "type": "Shotgun",
     "imageName": "repeater-clip.jpeg",
     "category": "Mods",
@@ -80500,7 +80785,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Sonar Augment: Killing an enemy by shooting the weak spot will trigger another Sonar for 50% of remaining duration.",
+    "description": "Sonar Augment: Killing an enemy by shooting their weak spot will trigger another Sonar for 50% of remaining duration.",
     "type": "Warframe",
     "imageName": "resonance.jpeg",
     "category": "Mods",
@@ -80540,7 +80825,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Sound Quake Augment: Forgoes channeling to create a shockwave that deals 10x damage at the epicenter, gradually weakening as it expands out.",
+    "description": "Sound Quake Augment: Forgoes channeling to create a shockwave that deals 10x Damage at the epicenter, gradually weakening as it expands out.",
     "type": "Warframe",
     "imageName": "resonating-quake.jpeg",
     "category": "Mods",
@@ -81083,7 +81368,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Tusk Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -81107,7 +81392,7 @@
         "chance": 0.007587
       },
       {
-        "location": "Tusk Elite Lancer",
+        "location": "Elite Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -81445,12 +81730,6 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Flameblade",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
         "location": "Tusk Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -81458,6 +81737,12 @@
       },
       {
         "location": "Tusk Predator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
+        "location": "Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -81487,7 +81772,7 @@
     "name": "Rifle Riven Mod",
     "polarity": "AP_UNIVERSAL",
     "rarity": "Common",
-    "baseDrain": 119476512,
+    "baseDrain": 120861248,
     "fusionLimit": 0,
     "upgradeEntries": [
       {
@@ -94854,6 +95139,19 @@
     "tradable": true
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarInvulnOnRollMod",
+    "name": "Rolling Guard",
+    "polarity": "Vazarin",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "description": "On Dodge:\rBecome invulnerable for 2s and remove all Status Effects. 12s cooldown.",
+    "type": "Warframe",
+    "imageName": "rolling-guard.jpeg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Archwing/Rifle/ArchwingRifleDamageAmountMod",
     "name": "Rubedo-Lined Barrel",
     "polarity": "Madurai",
@@ -94973,7 +95271,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Rumblers Augment: Atlas becomes a Rumbler with rock armor that can absorb up to 350 damage.",
+    "description": "Rumblers Augment: Atlas becomes a Rumbler with Rock Armor that can absorb up to 350 Damage.",
     "type": "Warframe",
     "imageName": "rumbled.jpeg",
     "category": "Mods",
@@ -95423,6 +95721,23 @@
     ],
     "patchlogs": [
       {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "Changed cost of Stasis Rush cost from 10 Platinum to 10,000 Credits.",
+        "fixes": ""
+      },
+      {
+        "name": "Mask of the Revenant: Hotfix 23.8.2",
+        "date": "2018-09-19T14:29:43Z",
+        "url": "https://forums.warframe.com/topic/1010324-mask-of-the-revenant-hotfix-2382/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Rushing a Dojo Decoration completion temporarily setting the Synthetic Clan XP to a lower amount."
+      },
+      {
         "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
         "date": "2017-12-07T22:05:21Z",
         "url": "https://forums.warframe.com/topic/891096-plains-of-eidolon-update-2260-hotfix-22601/",
@@ -95515,6 +95830,23 @@
     "category": "Mods",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.1",
+        "date": "2018-10-12T16:40:36Z",
+        "url": "https://forums.warframe.com/topic/1016718-chimera-hotfix-23101/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed flickering FX during certain moments in The Sacrifice quest."
+      },
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "The launch of The Sacrifice back in June 2018 was the last Mainline update to go out, and it was no doubt a hefty one. There was much for the entire DE team to comb through and we find this to be the case with all Mainlines. As we say with all Mainlines, we can’t catch everything that may fall through the cracks, meaning you may see some WIP or unintentional things that are not meant to be live.\nFixed Sentinel \"Sacrifice\" mod sometimes failing to activate if a teammate tries to revive you and then fails at the last second.\nFixed crash that would occur on the first mission on Earth during The Sacrifice Quest. \nFixed script error that could make it impossible to use Transference with Umbra during the Chase Umbra mission in The Sacrifice Quest. \nFixed death cam appearing out of the level when killed by Umbra during the “Confront Umbra” mission in The Sacrifice Quest. \nFixed Umbra running around in circles lost looking for player if the player is standing on a specific ledge during the “Confront Umbra” mission in The Sacrifice Quest. \nFixed a crash in the Sacrifice that occurred if an Operator hadn’t been upgraded.\nFixed issue where Umbra would stand still if the Operator jumped onto a certain platform during The Sacrifice Quest."
+      },
       {
         "name": "Mask of the Revenant: Hotfix 23.6.2",
         "date": "2018-08-31T20:29:23Z",
@@ -95888,6 +96220,31 @@
     ],
     "patchlogs": [
       {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Improved AI navigation in Sanctuary Onslaught and Plains of Eidolon Bounties."
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.4",
+        "date": "2018-10-16T21:02:30Z",
+        "url": "https://forums.warframe.com/topic/1019115-chimera-hotfix-23104/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Volt’s Discharge not hitting any enemies after reaching Zone 2 in an Sanctuary Onslaught mission. "
+      },
+      {
+        "name": "Mask of the Revenant: Chroma Prime 23.9.0 + 23.9.0.1",
+        "date": "2018-09-25T17:57:10Z",
+        "url": "https://forums.warframe.com/topic/1011982-mask-of-the-revenant-chroma-prime-2390-23901/",
+        "imgUrl": "https://n9e5v4d8.ssl.hwcdn.net/uploads/2cf190206c4590728d39582b26d3fbec.jpg",
+        "additions": "",
+        "changes": "Sanctuary Onslaught\nElite Sanctuary Onslaught (Radiant)",
+        "fixes": ""
+      },
+      {
         "name": "The Sacrifice: Update 23.2.0",
         "date": "2018-08-02T15:02:26Z",
         "url": "https://forums.warframe.com/topic/991847-the-sacrifice-update-2320/",
@@ -96198,7 +96555,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Silence Augment: Finisher damage is increased by 150% while Silence is active.",
+    "description": "Silence Augment: Finisher Damage is increased by 150% while Silence is active.",
     "type": "Warframe",
     "imageName": "savage-silence.jpeg",
     "category": "Mods",
@@ -96736,7 +97093,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r+12.5% Reload Speed for 1s.",
+    "description": "On Kill:\r+12.5% Reload Speed for 1s",
     "type": "Secondary",
     "imageName": "secondary-wind.jpeg",
     "category": "Mods",
@@ -97332,7 +97689,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_SLASH>Slash",
+    "description": "5% of Damage converted into <DT_SLASH>Slash",
     "type": "Rifle",
     "imageName": "serrated-rounds.jpeg",
     "category": "Mods",
@@ -98567,7 +98924,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "Converts +5% of Damage into <DT_SLASH>Slash",
+    "description": "5% of Damage converted into <DT_SLASH>Slash",
     "type": "Melee",
     "imageName": "sharpened-blade.jpeg",
     "category": "Mods",
@@ -98580,7 +98937,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "On Kill:\r+12.5% Critical Damage when Aiming for 1.5s.",
+    "description": "On Kill:\r+12.5% Critical Damage when Aiming for 1.5s",
     "type": "Secondary",
     "imageName": "sharpened-bullets.jpeg",
     "category": "Mods",
@@ -98659,6 +99016,19 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/EnergyOnHeadshotRifle",
+    "name": "Sharpshooter",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "description": "On Headshot Kill:\r+5 Energy",
+    "type": "Rifle",
+    "imageName": "sharpshooter.jpeg",
+    "category": "Mods",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponMeleeArmorShatterMod",
@@ -99163,7 +99533,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Shadows of the Dead Augment: Shadows within 50 meters each take 3% of the damage done to Nekros in his stead.",
+    "description": "Shadows of the Dead Augment: Each Shadow within 50m take 3% of the Damage done to Nekros in his stead.",
     "type": "Warframe",
     "imageName": "shield-of-shadows.jpeg",
     "category": "Mods",
@@ -99176,7 +99546,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Polarize Augment: Increases the time for the target's shields to regenerate by 4s.",
+    "description": "Polarize Augment: Increases the time for the target's Shields to regenerate by 4s.",
     "type": "Warframe",
     "imageName": "shield-overload.jpeg",
     "category": "Mods",
@@ -99267,6 +99637,12 @@
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.000303
+      },
+      {
+        "location": "Arbitration Shield Drone",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.000303
       }
     ],
     "patchlogs": [
@@ -99318,7 +99694,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Speed Augment: Enemies touched while sprinting under the effects of speed will take 75 electrical damage with guaranteed proc.",
+    "description": "Speed Augment: Enemies touched while sprinting under the effects of Speed will take 75 <DT_ELECTRICITY>Electricity Damage with guaranteed proc.",
     "type": "Warframe",
     "imageName": "shocking-speed.jpeg",
     "category": "Mods",
@@ -99748,7 +100124,7 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Frontier Eviscerator",
+        "location": "Tusk Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -99790,31 +100166,31 @@
         "chance": 0.003318
       },
       {
-        "location": "Drekar Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Arid Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Tusk Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
         "location": "Tusk Eviscerator",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
       },
       {
+        "location": "Drekar Trooper",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
         "location": "Drekar Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Arid Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -100164,7 +100540,7 @@
     "name": "Shotgun Riven Mod",
     "polarity": "AP_UNIVERSAL",
     "rarity": "Common",
-    "baseDrain": 119476512,
+    "baseDrain": 120861248,
     "fusionLimit": 0,
     "upgradeEntries": [
       {
@@ -112629,6 +113005,12 @@
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
+      },
+      {
+        "location": "Arbitration Shield Drone",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
       }
     ]
   },
@@ -112763,7 +113145,7 @@
     "rarity": "Common",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "On Kill:\r+16.5% Critical Damage when Aiming for 1.5s.",
+    "description": "On Kill:\r+16.5% Critical Damage when Aiming for 1.5s",
     "type": "Shotgun",
     "imageName": "shrapnel-shot.jpeg",
     "category": "Mods",
@@ -112957,7 +113339,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Absorb Augment: Creates a ring every 3 seconds that drags in enemies at 9 meters per second.",
+    "description": "Absorb Augment: Creates a ring every 3s that drags in enemies at 9m/s.",
     "type": "Warframe",
     "imageName": "singularity.jpeg",
     "category": "Mods",
@@ -113111,7 +113493,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Headshot:\r+25% Ammo Efficiency for 0.5s.",
+    "description": "On Headshot:\r+25% Ammo Efficiency for 0.5s",
     "type": "Secondary",
     "imageName": "skull-shots.jpeg",
     "category": "Mods",
@@ -113345,7 +113727,7 @@
         "chance": 0.007743
       },
       {
-        "location": "Arid Heavy Gunner",
+        "location": "Corrupted Warden",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -113357,7 +113739,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Corrupted Warden",
+        "location": "Arid Heavy Gunner",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -113369,6 +113751,12 @@
         "chance": 0.005690999999999999
       },
       {
+        "location": "Boiler",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.004554
+      },
+      {
         "location": "Arcane Boiler",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -113376,12 +113764,6 @@
       },
       {
         "location": "Toxic Ancient",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.004554
-      },
-      {
-        "location": "Boiler",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.004554
@@ -113557,6 +113939,12 @@
         "chance": 0.001659
       },
       {
+        "location": "Tusk Butcher",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.001659
+      },
+      {
         "location": "Drahk Master",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -113570,12 +113958,6 @@
       },
       {
         "location": "Butcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.001659
-      },
-      {
-        "location": "Tusk Butcher",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001659
@@ -114253,7 +114635,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 3,
-    "description": "+50% Holster Rate",
+    "description": "+50% Holster Speed",
     "type": "Shotgun",
     "imageName": "soft-hands.jpeg",
     "category": "Mods",
@@ -114329,7 +114711,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Soul Punch Augment: Use on a downed ally to revive him with 15% of health. Nekros's energy will be consumed.",
+    "description": "Soul Punch Augment: Use on a downed ally to revive him with 15% Health. Nekros's Energy will be consumed.",
     "type": "Warframe",
     "imageName": "soul-survivor.jpeg",
     "category": "Mods",
@@ -114483,7 +114865,7 @@
     "rarity": "Uncommon",
     "baseDrain": -2,
     "fusionLimit": 5,
-    "description": "Increases weapon draw and holstering speed.,+20% Holster Rate",
+    "description": "Increases weapon draw and holstering speed.,+20% Holster Speed",
     "type": "Aura",
     "imageName": "speed-holster.jpeg",
     "category": "Mods",
@@ -114662,13 +115044,6 @@
         "rotation": "B"
       },
       {
-        "location": "Saturn - Dione",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0556,
-        "rotation": "B"
-      },
-      {
         "location": "Jupiter - Amalthea",
         "type": "Mission Rewards",
         "rarity": "Rare",
@@ -114690,6 +115065,13 @@
         "rotation": "B"
       },
       {
+        "location": "Saturn - Dione",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0556,
+        "rotation": "B"
+      },
+      {
         "location": "Charger",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -114702,6 +115084,12 @@
         "chance": 0.002211
       },
       {
+        "location": "Juggernaut Behemoth",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.002211
+      },
+      {
         "location": "Carrion Charger",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -114709,12 +115097,6 @@
       },
       {
         "location": "Jack O'Naut",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.002211
-      },
-      {
-        "location": "Juggernaut Behemoth",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.002211
@@ -115024,6 +115406,12 @@
         "chance": 0.0101
       },
       {
+        "location": "Raptor Ns",
+        "type": "Enemy Mod Tables",
+        "rarity": "Rare",
+        "chance": 0.001005
+      },
+      {
         "location": "Raptor Mt",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
@@ -115031,12 +115419,6 @@
       },
       {
         "location": "Raptor Rv",
-        "type": "Enemy Mod Tables",
-        "rarity": "Rare",
-        "chance": 0.001005
-      },
-      {
-        "location": "Raptor Ns",
         "type": "Enemy Mod Tables",
         "rarity": "Rare",
         "chance": 0.001005
@@ -115188,7 +115570,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "On Reload:\r+12.5% Fire Rate when Aiming for 1.5s.",
+    "description": "On Reload:\r+12.5% Fire Rate when Aiming for 1.5s",
     "type": "Rifle",
     "imageName": "spring-loaded-chamber.jpeg",
     "category": "Mods",
@@ -115588,6 +115970,15 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Stalker and Zanuka unable to target players after being Enthralled by Revenant or Chaos'd by Nyx, even after Ability expires."
+      },
       {
         "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
         "date": "2018-07-24T17:56:42Z",
@@ -117406,7 +117797,7 @@
         "chance": 0.0201
       },
       {
-        "location": "Europa - Larzac",
+        "location": "Ceres - Seimeni",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0158,
@@ -117475,14 +117866,14 @@
         "rotation": "C"
       },
       {
-        "location": "Ceres - Seimeni",
+        "location": "Venus - Romula",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0158,
         "rotation": "C"
       },
       {
-        "location": "Venus - Romula",
+        "location": "Europa - Larzac",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0158,
@@ -117501,7 +117892,25 @@
         "chance": 0.000201
       },
       {
+        "location": "Drekar Scorpion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
         "location": "Frontier Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Tusk Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -117514,30 +117923,6 @@
       },
       {
         "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Drekar Scorpion",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Nightwatch Reaver",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Arid Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Legendary",
-        "chance": 0.00015
-      },
-      {
-        "location": "Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -117556,6 +117941,12 @@
       },
       {
         "location": "Hellion",
+        "type": "Enemy Mod Tables",
+        "rarity": "Legendary",
+        "chance": 0.00015
+      },
+      {
+        "location": "Nightwatch Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -117585,7 +117976,7 @@
         "chance": 0.00015
       },
       {
-        "location": "Tusk Lancer",
+        "location": "Arid Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00015
@@ -117626,7 +118017,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "+10% Holster Rate,+2.5% Slide,-2.5% Friction",
+    "description": "+10% Holster Speed,+2.5% Slide,-2.5% Friction",
     "type": "Warframe",
     "imageName": "streamlined-form.jpeg",
     "category": "Mods",
@@ -118005,6 +118396,12 @@
         "chance": 0.00553
       },
       {
+        "location": "Raptor Ns",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.00553
+      },
+      {
         "location": "Raptor Mt",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -118012,12 +118409,6 @@
       },
       {
         "location": "Raptor Rv",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.00553
-      },
-      {
-        "location": "Raptor Ns",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.00553
@@ -118150,12 +118541,6 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Neptune - Galatea",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002
-      },
-      {
         "location": "Mars - Quirinus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
@@ -118168,7 +118553,7 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Uranus - Trinculo",
+        "location": "Neptune - Galatea",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -118193,6 +118578,12 @@
         "rarity": "Legendary",
         "chance": 0.0034000000000000002,
         "rotation": "rewards"
+      },
+      {
+        "location": "Uranus - Trinculo",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002
       },
       {
         "location": "Mercury - Elion",
@@ -118580,6 +118971,12 @@
         "chance": 0.00553
       },
       {
+        "location": "Raptor Ns",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.00553
+      },
+      {
         "location": "Raptor Mt",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -118587,12 +118984,6 @@
       },
       {
         "location": "Raptor Rv",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.00553
-      },
-      {
-        "location": "Raptor Ns",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.00553
@@ -118725,12 +119116,6 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Neptune - Galatea",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0034000000000000002
-      },
-      {
         "location": "Mars - Quirinus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
@@ -118743,7 +119128,7 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Uranus - Trinculo",
+        "location": "Neptune - Galatea",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0034000000000000002
@@ -118768,6 +119153,12 @@
         "rarity": "Legendary",
         "chance": 0.0034000000000000002,
         "rotation": "rewards"
+      },
+      {
+        "location": "Uranus - Trinculo",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0034000000000000002
       },
       {
         "location": "Mercury - Elion",
@@ -118941,7 +119332,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On 2 Hits within 0.2s:\r+7.5% Fire Rate for 0.5s.",
+    "description": "On 2 Hits within 0.2s:\r+7.5% Fire Rate for 0.5s",
     "type": "Rifle",
     "imageName": "sudden-justice.jpeg",
     "category": "Mods",
@@ -119143,18 +119534,6 @@
         "chance": 0.003318
       },
       {
-        "location": "Frontier Eviscerator",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
-        "location": "Arid Trooper",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.003318
-      },
-      {
         "location": "Tusk Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -119162,6 +119541,18 @@
       },
       {
         "location": "Tusk Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Frontier Eviscerator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.003318
+      },
+      {
+        "location": "Arid Trooper",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.003318
@@ -119438,7 +119829,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Slash Dash Augment: Each enemy hit during Slash Dash further increases your melee counter by 1.",
+    "description": "Slash Dash Augment: Each enemy hit during Slash Dash further increases your Melee Counter by 1.",
     "type": "Warframe",
     "imageName": "surging-dash.jpeg",
     "category": "Mods",
@@ -119845,13 +120236,13 @@
         "chance": 0.0737
       },
       {
-        "location": "Manic Bombard",
+        "location": "Drekar Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.04424
       },
       {
-        "location": "Drekar Manic Bombard",
+        "location": "Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.04424
@@ -119973,7 +120364,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Low Health:\r+0 Mobility for 1s.",
+    "description": "On Low Health:\r+0 Mobility for 1s",
     "type": "Warframe",
     "imageName": "tactical-retreat.jpeg",
     "category": "Mods",
@@ -120505,7 +120896,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Tail Wind Augment: Each enemy hit increases Tail Wind damage by 30%. Damage resets upon landing.",
+    "description": "Tail Wind Augment: Each enemy hit increases Tail Wind Damage by 30%. Damage resets upon landing.",
     "type": "Warframe",
     "imageName": "target-fixation.jpeg",
     "category": "Mods",
@@ -120541,7 +120932,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "On Hit:\r+5% Accuracy when Aiming for 1.5s.",
+    "description": "On Hit:\r+5% Accuracy when Aiming for 1.5s",
     "type": "Secondary",
     "imageName": "targeting-subsystem.jpeg",
     "category": "Mods",
@@ -120581,7 +120972,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Tectonics Augment: Create up to 2 walls with 70% health. Walls can no longer be turned into boulders.",
+    "description": "Tectonics Augment: Create up to 2 walls with 70% Health. Walls can no longer be turned into boulders.",
     "type": "Warframe",
     "imageName": "tectonic-fracture.jpeg",
     "category": "Mods",
@@ -120620,13 +121011,13 @@
         "chance": 0.047400000000000005
       },
       {
-        "location": "Frigate",
+        "location": "Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
       },
       {
-        "location": "Ranger",
+        "location": "Quanta Ranger",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -120638,7 +121029,7 @@
         "chance": 0.005690999999999999
       },
       {
-        "location": "Quanta Ranger",
+        "location": "Frigate",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -121449,7 +121840,7 @@
         "chance": 0.000201
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Tusk Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.000201
@@ -121473,7 +121864,7 @@
         "chance": 0.000201
       },
       {
-        "location": "Tusk Elite Lancer",
+        "location": "Elite Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.000201
@@ -121692,7 +122083,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Tidal Surge Augment: Clears Status Effects and grants 3s of proc immunity for yourself and allies that come in contact with it.",
+    "description": "Tidal Surge Augment: Clears Status Effects and grants 3s of Proc Immunity for yourself and allies that come in contact with it.",
     "type": "Warframe",
     "imageName": "tidal-impunity.jpeg",
     "category": "Mods",
@@ -121718,7 +122109,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Eclipse Augment: While active, allies within 3 meters gain 25% benefit from Eclipse.",
+    "description": "Eclipse Augment: While active, allies within 3m gain 25% benefit from Eclipse.",
     "type": "Warframe",
     "imageName": "total-eclipse.jpeg",
     "category": "Mods",
@@ -122044,7 +122435,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Allies can pick up Electric Shield. 25% of damage absorbed will be added to Volt's Static Discharge.",
+    "description": "Electric Shield Augment: Allies can pick up Electric Shield. 25% of damage absorbed will be added to Volt's Static Discharge.",
     "type": "Warframe",
     "imageName": "transistor-shield.jpeg",
     "category": "Mods",
@@ -122090,6 +122481,12 @@
         "chance": 0.22763999999999995
       },
       {
+        "location": "Hyena Pb",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.22763999999999995
+      },
+      {
         "location": "Hyena Th",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
@@ -122097,12 +122494,6 @@
       },
       {
         "location": "Hyena Ng",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.22763999999999995
-      },
-      {
-        "location": "Hyena Pb",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.22763999999999995
@@ -122606,14 +122997,14 @@
         "rotation": "A"
       },
       {
-        "location": "Europa - Larzac",
+        "location": "Pluto - Sechura",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.069,
         "rotation": "A"
       },
       {
-        "location": "Pluto - Sechura",
+        "location": "Sedna - Sangeru",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.069,
@@ -122662,14 +123053,14 @@
         "rotation": "A"
       },
       {
-        "location": "Uranus - Ur",
+        "location": "Europa - Larzac",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.069,
         "rotation": "A"
       },
       {
-        "location": "Sedna - Sangeru",
+        "location": "Uranus - Ur",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.069,
@@ -122688,12 +123079,6 @@
         "chance": 0.007587
       },
       {
-        "location": "Shockwave Moa",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
         "location": "Tusk Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -122706,6 +123091,12 @@
         "chance": 0.007587
       },
       {
+        "location": "Shockwave Moa",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Kuva Flameblade",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -122713,24 +123104,6 @@
       },
       {
         "location": "Lobber Crawler",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Kuva Roller",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Tusk Roller",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Toxic Crawler",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -122749,6 +123122,24 @@
       },
       {
         "location": "Roller",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Kuva Roller",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Toxic Crawler",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Tusk Roller",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -122781,7 +123172,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On 2 Hits within .02s:\r+10% Damage for 0.05s.",
+    "description": "On 2 Hits within .02s:\r+10% Damage for 0.05s",
     "type": "Rifle",
     "imageName": "triple-tap.jpeg",
     "category": "Mods",
@@ -122912,6 +123303,7 @@
     "rarity": "Common",
     "baseDrain": 4,
     "fusionLimit": 3,
+    "description": "+10% Critical Chance,-15% Channeling Efficiency",
     "type": "Melee",
     "imageName": "true-punishment.jpeg",
     "category": "Mods",
@@ -123141,6 +123533,16 @@
         "chance": 0.004,
         "rotation": "C"
       }
+    ],
+    "patchlogs": [
+      {
+        "name": "Mask of the Revenant: Hotfix 23.9.1",
+        "date": "2018-09-27T17:23:26Z",
+        "url": "https://forums.warframe.com/topic/1012649-mask-of-the-revenant-hotfix-2391/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the True Punishment Mod missing its description."
+      }
     ]
   },
   {
@@ -123169,13 +123571,13 @@
         "chance": 0.22763999999999995
       },
       {
-        "location": "Hyena Ng",
+        "location": "Hyena Ln2",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.22763999999999995
       },
       {
-        "location": "Hyena Ln2",
+        "location": "Hyena Ng",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.22763999999999995
@@ -123223,18 +123625,6 @@
         "chance": 0.011616
       },
       {
-        "location": "Kuva Bombard",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Tusk Bombard",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
         "location": "Tusk Mortar Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
@@ -123247,7 +123637,25 @@
         "chance": 0.007587
       },
       {
+        "location": "Kuva Bombard",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Tusk Bombard",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Kuva Roller",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.005690999999999999
+      },
+      {
+        "location": "Tusk Roller",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -123260,12 +123668,6 @@
       },
       {
         "location": "Latcher",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.005690999999999999
-      },
-      {
-        "location": "Tusk Roller",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.005690999999999999
@@ -123346,7 +123748,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 3,
-    "description": "+50% Holster Rate",
+    "description": "+50% Holster Speed",
     "type": "Rifle",
     "imageName": "twitch.jpeg",
     "category": "Mods",
@@ -123464,7 +123866,7 @@
         "chance": 0.000201
       },
       {
-        "location": "Elite Frontier Lancer",
+        "location": "Tusk Elite Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.000201
@@ -123488,7 +123890,7 @@
         "chance": 0.000201
       },
       {
-        "location": "Tusk Elite Lancer",
+        "location": "Elite Frontier Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.000201
@@ -123698,7 +124100,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Energy Vampire Augment: Excess energy replenishes shields by 85%.",
+    "description": "Energy Vampire Augment: Excess Energy replenishes Shields by 85%.",
     "type": "Warframe",
     "imageName": "vampire-leech.jpeg",
     "category": "Mods",
@@ -123711,7 +124113,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
-    "description": "On Kill:\r-25% Shield Recharge Delay for 2.5s.,-6.2% from Health Orbs",
+    "description": "On Kill:\r-25% Shield Recharge Delay for 2.5s,-6.2% from Health Orbs",
     "type": "Rifle",
     "imageName": "vanquished-prey.jpeg",
     "category": "Mods",
@@ -123989,13 +124391,13 @@
         "chance": 0.0034000000000000002
       },
       {
-        "location": "Manic Bombard",
+        "location": "Drekar Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00268
       },
       {
-        "location": "Drekar Manic Bombard",
+        "location": "Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00268
@@ -124498,6 +124900,14 @@
     ],
     "patchlogs": [
       {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "",
+        "changes": "Vigorous Swap will now deactivate when an Ability weapon is active (Mesa’s Peacemaker, Valkyr’s Hysteria, etc). ",
+        "fixes": ""
+      },
+      {
         "name": "Warframe Update 22: Plains of Eidolon",
         "date": "2017-10-12T22:00:20Z",
         "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
@@ -124521,6 +124931,29 @@
         "url": "https://forums.warframe.com/topic/100482-update-97/",
         "additions": "",
         "changes": "Mod Rewards from “Arid Fear” event (Shred, Vigor, Lethal Torrent) now available in Nightmare Mode",
+        "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarHolsterDamageMod",
+    "name": "Vigorous Swap",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "description": "On Equip:\r+15% Damage for 3s\r+15% Holster Speed",
+    "type": "Warframe",
+    "imageName": "vigorous-swap.jpeg",
+    "category": "Mods",
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "",
+        "changes": "Vigorous Swap will now deactivate when an Ability weapon is active (Mesa’s Peacemaker, Valkyr’s Hysteria, etc). ",
         "fixes": ""
       }
     ]
@@ -125572,7 +126005,7 @@
         "rotation": "A"
       },
       {
-        "location": "Nightwatch Reaver",
+        "location": "Frontier Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -125590,19 +126023,13 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Frontier Lancer",
+        "location": "Tusk Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
       },
       {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Hellion",
+        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -125626,25 +126053,25 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Tusk Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Arid Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Tusk Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -125662,6 +126089,12 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Nightwatch Reaver",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Heavy Gunner",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
@@ -125674,25 +126107,19 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Regulator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Nemes",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Carabus",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Rathuum Broadcaster",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Attack Drone",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Remech Osprey",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -125704,13 +126131,19 @@
         "chance": 0.007587
       },
       {
-        "location": "Frontier Regulator",
+        "location": "Rathuum Broadcaster",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Nemes",
+        "location": "Remech Osprey",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Attack Drone",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -126304,7 +126737,7 @@
         "rotation": "A"
       },
       {
-        "location": "Nightwatch Reaver",
+        "location": "Frontier Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -126322,19 +126755,13 @@
         "chance": 0.011381999999999998
       },
       {
-        "location": "Frontier Lancer",
+        "location": "Tusk Lancer",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
       },
       {
-        "location": "Frontier Heavy Gunner",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Frontier Hellion",
+        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -126358,25 +126785,25 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Lancer",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Tusk Hellion",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Heavy Gunner",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Arid Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Tusk Lancer",
-        "type": "Enemy Mod Tables",
-        "rarity": "Common",
-        "chance": 0.011381999999999998
-      },
-      {
-        "location": "Tusk Reaver",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
         "chance": 0.011381999999999998
@@ -126394,6 +126821,12 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Nightwatch Reaver",
+        "type": "Enemy Mod Tables",
+        "rarity": "Common",
+        "chance": 0.011381999999999998
+      },
+      {
         "location": "Heavy Gunner",
         "type": "Enemy Mod Tables",
         "rarity": "Common",
@@ -126406,25 +126839,19 @@
         "chance": 0.011381999999999998
       },
       {
+        "location": "Frontier Regulator",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Nemes",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
         "location": "Carabus",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Rathuum Broadcaster",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Attack Drone",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
-        "location": "Remech Osprey",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -126436,13 +126863,19 @@
         "chance": 0.007587
       },
       {
-        "location": "Frontier Regulator",
+        "location": "Rathuum Broadcaster",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Nemes",
+        "location": "Remech Osprey",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Attack Drone",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -126759,13 +127192,13 @@
         "chance": 0.0029
       },
       {
-        "location": "Manic Bombard",
+        "location": "Drekar Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00268
       },
       {
-        "location": "Drekar Manic Bombard",
+        "location": "Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Legendary",
         "chance": 0.00268
@@ -126829,7 +127262,7 @@
     "rarity": "Rare",
     "baseDrain": 6,
     "fusionLimit": 3,
-    "description": "Thurible Augment: Allies in range take 15% less damage while channeling Thurible and grant 0.2 additional energy charge whenever damaged.",
+    "description": "Thurible Augment: Allies in range take 15% less Damage while channeling Thurible and grant 0.2 additional Energy charge whenever damaged.",
     "type": "Warframe",
     "imageName": "warding-thurible.jpeg",
     "category": "Mods",
@@ -126859,13 +127292,13 @@
     "tradable": true,
     "drops": [
       {
-        "location": "Drekar Manic Bombard",
+        "location": "Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.10116000000000001
       },
       {
-        "location": "Manic Bombard",
+        "location": "Drekar Manic Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.10116000000000001
@@ -126883,19 +127316,13 @@
         "chance": 0.025290000000000003
       },
       {
-        "location": "Kuva Bombard",
-        "type": "Enemy Mod Tables",
-        "rarity": "Uncommon",
-        "chance": 0.007587
-      },
-      {
         "location": "Tusk Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
       },
       {
-        "location": "Tusk Mortar Bombard",
+        "location": "Kuva Bombard",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.007587
@@ -126907,13 +127334,19 @@
         "chance": 0.007587
       },
       {
-        "location": "Boiler",
+        "location": "Tusk Mortar Bombard",
+        "type": "Enemy Mod Tables",
+        "rarity": "Uncommon",
+        "chance": 0.007587
+      },
+      {
+        "location": "Toxic Ancient",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.004554
       },
       {
-        "location": "Toxic Ancient",
+        "location": "Boiler",
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.004554

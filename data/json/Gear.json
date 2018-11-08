@@ -18,6 +18,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MapMarker",
+    "name": "[Ph] Map Marker",
+    "description": "[PH] Place a persistent beacon at your position",
+    "type": "Gear",
+    "imageName": "[ph]-map-marker.png",
+    "category": "Gear",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/LocationMarkerMining",
     "name": "[Ph] Mining Marker",
     "description": "[PH] Place a persistent marker with a mining icon at your position",
@@ -198,7 +207,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
         "name": "Moonlight Threshcone",
-        "description": "This common plant can only be found at night.",
+        "description": "This common plant can only be found at night.\nLocation: Earth",
         "itemCount": 4,
         "tradable": false,
         "imageName": "forest-night-common.png"
@@ -278,7 +287,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
         "name": "Fieldron",
-        "description": "ClanTech weaponized containment field to contain super-heated substances.",
+        "description": "ClanTech weaponized containment field to contain superheated substances.\nCan be acquired from Corpus Sieges & Clan Research.",
         "itemCount": 2,
         "tradable": false,
         "imageName": "corpus-component.png"
@@ -387,7 +396,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 50,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -405,6 +414,15 @@
     "category": "Gear",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where Archwing Launcher  would not play proper sounds when unequipping. "
+      },
       {
         "name": "Plains of Eidolon: Hotfix 22.0.3",
         "date": "2017-10-16T21:47:16Z",
@@ -494,7 +512,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
         "name": "Void Traces",
-        "description": "A substance used to increase the power within Relics.",
+        "description": "A substance used to increase the power within Relics.\nCan be acquired from Void Fissures.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "luminous.png"
@@ -994,7 +1012,18 @@
     ],
     "imageName": "clem-clone.png",
     "category": "Gear",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/1a5052e0e614dd7d7858b2a38fca9bf8.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Clem Clones being infinitely spawnable in the Simulacrum."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/ReviveBuff",
@@ -1243,7 +1272,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/PlatinumSpectre",
     "name": "Cosmic Specter",
-    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Cosmic Specter Regiment to assist in Solar Rail defense.",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
     "type": "Gear",
     "buildPrice": 60000,
     "buildTime": 28800,
@@ -1254,7 +1283,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/PlatinumSpectreBlueprint",
         "name": "Blueprint",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Cosmic Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png",
@@ -1397,7 +1426,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/PlatinumSpectre",
         "name": "Cosmic Specter",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Cosmic Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 175,
         "tradable": false,
         "imageName": "specter-platinum.png"
@@ -1405,7 +1434,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/GoldSpectre",
         "name": "Force Specter",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 75,
         "tradable": false,
         "imageName": "specter-gold.png"
@@ -1445,7 +1474,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
         "name": "Goopolla Spleen",
-        "description": "Used in Ostron remedies to purify toxins.",
+        "description": "Used in Ostron remedies to purify toxins.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "fish-resource-flesh-tube.png"
@@ -1453,7 +1482,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -1461,7 +1490,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
-        "description": "An ingredient used in Ostron cooking and medicines.",
+        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-organ.png"
@@ -1501,7 +1530,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
         "name": "Void Traces",
-        "description": "A substance used to increase the power within Relics.",
+        "description": "A substance used to increase the power within Relics.\nCan be acquired from Void Fissures.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "luminous.png"
@@ -1533,7 +1562,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -1549,7 +1578,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -1619,7 +1648,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
         "name": "Void Traces",
-        "description": "A substance used to increase the power within Relics.",
+        "description": "A substance used to increase the power within Relics.\nCan be acquired from Void Fissures.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "luminous.png"
@@ -1748,7 +1777,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/GoldSpectre",
     "name": "Force Specter",
-    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
     "type": "Gear",
     "buildPrice": 50000,
     "buildTime": 28800,
@@ -1767,7 +1796,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/GoldSpectreBlueprint",
         "name": "Blueprint",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png",
@@ -1951,7 +1980,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/GoldSpectre",
         "name": "Force Specter",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Force Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 375,
         "tradable": false,
         "imageName": "specter-gold.png"
@@ -1959,7 +1988,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/SilverSpectre",
         "name": "Phase Specter",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 250,
         "tradable": false,
         "imageName": "specter-silver.png"
@@ -1991,7 +2020,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
         "name": "Goopolla Spleen",
-        "description": "Used in Ostron remedies to purify toxins.",
+        "description": "Used in Ostron remedies to purify toxins.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-flesh-tube.png"
@@ -1999,7 +2028,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polyssachharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "grokdrul.png"
@@ -2007,7 +2036,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishBPartItem",
         "name": "Karkina Antenna",
-        "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.",
+        "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-antenna.png"
@@ -2015,7 +2044,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -2047,7 +2076,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem",
         "name": "Charc Electroplax",
-        "description": "Harvested by the Ostron as a catalyst used in their synthetics.",
+        "description": "Harvested by the Ostron as a catalyst used in their synthetics.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-gills.png"
@@ -2063,7 +2092,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -2084,7 +2113,7 @@
   {
     "uniqueName": "/Lotus/Types/Game/FishBait/NightLegendaryFishBaitItem",
     "name": "Glappid Bait",
-    "description": "This bait is comprised of exotic materials that are known to attract the elusive Glappid, a fish found only in ocean hotspots during the night.",
+    "description": "This bait is comprised of exotic materials that are known to attract Glappid, an elusive fish found only in ocean hotspots during the night.",
     "type": "Fish",
     "buildPrice": 5000,
     "buildTime": 600,
@@ -2095,7 +2124,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Fishing/FishBaits/NightLegendaryFishBaitBlueprint",
         "name": "Blueprint",
-        "description": "This bait is comprised of exotic materials that are known to attract the elusive Glappid, a fish found only in ocean hotspots during the night.",
+        "description": "This bait is comprised of exotic materials that are known to attract Glappid, an elusive fish found only in ocean hotspots during the night.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -2119,7 +2148,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -2177,7 +2206,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
         "name": "Moonlight Jadeleaf",
-        "description": "This rare plant can only be found at night.",
+        "description": "This rare plant can only be found at night.\nLocation: Earth",
         "itemCount": 1,
         "tradable": false,
         "imageName": "forest-night-rare.png"
@@ -2185,7 +2214,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
         "name": "Moonlight Threshcone",
-        "description": "This common plant can only be found at night.",
+        "description": "This common plant can only be found at night.\nLocation: Earth",
         "itemCount": 15,
         "tradable": false,
         "imageName": "forest-night-common.png"
@@ -2250,7 +2279,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
         "name": "Void Traces",
-        "description": "A substance used to increase the power within Relics.",
+        "description": "A substance used to increase the power within Relics.\nCan be acquired from Void Fissures.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "luminous.png"
@@ -2427,7 +2456,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
         "name": "Moonlight Dragonlily",
-        "description": "This uncommon plant can only be found at night.",
+        "description": "This uncommon plant can only be found at night.\nLocation: Earth",
         "itemCount": 1,
         "tradable": false,
         "imageName": "forest-night-uncommon.png"
@@ -2435,7 +2464,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
         "name": "Moonlight Jadeleaf",
-        "description": "This rare plant can only be found at night.",
+        "description": "This rare plant can only be found at night.\nLocation: Earth",
         "itemCount": 1,
         "tradable": false,
         "imageName": "forest-night-rare.png"
@@ -2597,7 +2626,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem",
         "name": "Goopolla Spleen",
-        "description": "Used in Ostron remedies to purify toxins.",
+        "description": "Used in Ostron remedies to purify toxins.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 10,
         "tradable": false,
         "imageName": "fish-resource-flesh-tube.png"
@@ -2613,7 +2642,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem",
         "name": "Tralok Eyes",
-        "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.",
+        "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-eyes.png"
@@ -2645,7 +2674,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenCobraLotusPlantItem",
         "name": "Dusklight Sarracenia",
-        "description": "This robust, carnivorous plant has adapted to conditions in polluted waters.",
+        "description": "This robust, carnivorous plant has adapted to conditions in polluted waters.\nLocation: Grineer Shipyard - Ceres",
         "itemCount": 2,
         "tradable": false,
         "imageName": "cobra-lotus.png"
@@ -2653,7 +2682,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
         "name": "Moonlight Dragonlily",
-        "description": "This uncommon plant can only be found at night.",
+        "description": "This uncommon plant can only be found at night.\nLocation: Earth",
         "itemCount": 6,
         "tradable": false,
         "imageName": "forest-night-uncommon.png"
@@ -2709,7 +2738,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishBPartItem",
         "name": "Karkina Antenna",
-        "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.",
+        "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-resource-antenna.png"
@@ -2717,7 +2746,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 5,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -3023,7 +3052,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 20,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -3097,7 +3126,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/SilverSpectre",
     "name": "Phase Specter",
-    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
     "type": "Gear",
     "buildPrice": 30000,
     "buildTime": 28800,
@@ -3116,7 +3145,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/SilverSpectreBlueprint",
         "name": "Blueprint",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png",
@@ -3356,7 +3385,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/SilverSpectre",
         "name": "Phase Specter",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Phase Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 625,
         "tradable": false,
         "imageName": "specter-silver.png"
@@ -3364,7 +3393,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/BronzeSpectre",
         "name": "Vapor Specter",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 250,
         "tradable": false,
         "imageName": "specter-bronze.png"
@@ -4832,7 +4861,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
         "name": "Moonlight Dragonlily",
-        "description": "This uncommon plant can only be found at night.",
+        "description": "This uncommon plant can only be found at night.\nLocation: Earth",
         "itemCount": 2,
         "tradable": false,
         "imageName": "forest-night-uncommon.png"
@@ -4840,7 +4869,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem",
         "name": "Moonlight Threshcone",
-        "description": "This common plant can only be found at night.",
+        "description": "This common plant can only be found at night.\nLocation: Earth",
         "itemCount": 2,
         "tradable": false,
         "imageName": "forest-night-common.png"
@@ -4880,7 +4909,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
         "name": "Moonlight Jadeleaf",
-        "description": "This rare plant can only be found at night.",
+        "description": "This rare plant can only be found at night.\nLocation: Earth",
         "itemCount": 2,
         "tradable": false,
         "imageName": "forest-night-rare.png"
@@ -4896,7 +4925,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GftPlantRuksClawMaturePlantItem",
         "name": "Ruk'S Claw",
-        "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments.",
+        "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments.\nLocations: Mars",
         "itemCount": 6,
         "tradable": false,
         "imageName": "gft-plant-ruks-claw-mature.png"
@@ -4944,7 +4973,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
         "name": "Maprico",
-        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.",
+        "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
         "itemCount": 1,
         "tradable": false,
         "imageName": "eidolon-fruit.png"
@@ -4952,7 +4981,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
         "name": "Nistlepod",
-        "description": "Used by the Nistlebrush to trap and kill prey.",
+        "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
         "itemCount": 10,
         "tradable": false,
         "imageName": "nistlebrush-item.png"
@@ -4965,7 +4994,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/BronzeSpectre",
     "name": "Vapor Specter",
-    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
+    "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
     "type": "Gear",
     "buildPrice": 15000,
     "buildTime": 28800,
@@ -4976,7 +5005,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Components/BronzeSpectreBlueprint",
         "name": "Blueprint",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png",
@@ -5141,7 +5170,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/BronzeSpectre",
         "name": "Vapor Specter",
-        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.\nOnce crafted this Specter may be donated to a clan and used by a Tactician to craft a Vapor Specter Regiment to assist in Solar Rail defense.",
+        "description": "A replicant cloned from a Warframe which can be deployed to assist Tenno on their missions.",
         "itemCount": 1250,
         "tradable": false,
         "imageName": "specter-bronze.png"
@@ -5173,7 +5202,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
         "name": "Moonlight Dragonlily",
-        "description": "This uncommon plant can only be found at night.",
+        "description": "This uncommon plant can only be found at night.\nLocation: Earth",
         "itemCount": 4,
         "tradable": false,
         "imageName": "forest-night-uncommon.png"
@@ -5181,7 +5210,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem",
         "name": "Moonlight Jadeleaf",
-        "description": "This rare plant can only be found at night.",
+        "description": "This rare plant can only be found at night.\nLocation: Earth",
         "itemCount": 4,
         "tradable": false,
         "imageName": "forest-night-rare.png"
