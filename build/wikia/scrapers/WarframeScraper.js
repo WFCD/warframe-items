@@ -5,7 +5,7 @@ const transformWarframe = require('../transformers/transformWarframe')
 
 class WarframeScraper extends WikiaDataScraper {
   constructor () {
-    super('http://warframe.wikia.com/wiki/Module:Warframes/data?action=edit', 'Warframe', transformWarframe)
+    super('http://warframe.fandom.com/wiki/Module:Warframes/data?action=edit', 'Warframe', transformWarframe)
   }
 }
 
