@@ -64,7 +64,7 @@ const transformWarframe = async (oldFrame, imageUrls) => {
 
     newFrame = {
       name: Name,
-      url: `http://warframe.wikia.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
+      url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       thumbnail: imageUrls[Image],
       auraPolarity: AuraPolarity,
       conclave: Conclave,
