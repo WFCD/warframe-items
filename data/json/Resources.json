@@ -88,6 +88,43 @@
     "name": "Axidrol Alloy",
     "description": "A compound formed from Axidite.",
     "type": "Gem",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBItem",
+        "name": "Axiditre",
+        "description": "A sediment that formed from sulfuric rain that became trapped under the ice.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisCommonOreBAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 500,
+        "tradable": false,
+        "imageName": "component-ferrite.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 100,
+        "tradable": false,
+        "imageName": "component-rubedo.png"
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -945,6 +982,27 @@
     "name": "Goblite Tears",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "buildPrice": 2500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisUncommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemAItem",
+        "name": "Goblite",
+        "description": "A strange crystal that grows inside the veins of extracted ore.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1015,6 +1073,27 @@
     "name": "Heart Noctrul",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisCommonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBItem",
+        "name": "Noctrul",
+        "description": "A black gemstone, with iridescent blue impurities.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1066,6 +1145,43 @@
     "name": "Hespazym Alloy",
     "description": "A compound formed from Hesperon.",
     "type": "Gem",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisRareOreAAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAItem",
+        "name": "Hesperon",
+        "description": "Clay that strengthens into extremely durable stone when brought to temperatures below zero.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 300,
+        "tradable": false,
+        "imageName": "component-plastids.png"
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1254,6 +1370,27 @@
     "name": "Marquise Thyst",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "buildPrice": 10000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 3,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisEidolonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBItem",
+        "name": "Thyst",
+        "description": "A beautiful and iridescent red shard.",
+        "itemCount": 3,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1609,6 +1746,27 @@
     "name": "Radiant Zodian",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "buildPrice": 10000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 3,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisEidolonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemAItem",
+        "name": "Zodian",
+        "description": "A blue gem that radiates astral energy.",
+        "itemCount": 3,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1635,6 +1793,27 @@
     "name": "Smooth Phasmin",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisCommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemAItem",
+        "name": "Phasmin",
+        "description": "An eerily green gem found encased in metallic shards.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1651,6 +1830,27 @@
     "name": "Star Amarast",
     "description": "Polished and cut to perfection.",
     "type": "Gem",
+    "buildPrice": 5000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 6,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemAItem",
+        "name": "Amarast",
+        "description": "A violet gem that forms from the crystallization of byproducts expelled from the Weeping Towers.",
+        "itemCount": 6,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisRareGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1785,6 +1985,43 @@
     "name": "Travocyte Alloy",
     "description": "A compound formed from Travoride.",
     "type": "Gem",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisCommonOreAAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 100,
+        "tradable": false,
+        "imageName": "component-plastids.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
+        "itemCount": 500,
+        "tradable": false,
+        "imageName": "component-salvage.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAItem",
+        "name": "Travoride",
+        "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.",
+        "itemCount": 20,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
@@ -1809,6 +2046,43 @@
     "name": "Venerdo Alloy",
     "description": "A compound formed from Venerol.",
     "type": "Gem",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisUncommonOreAAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "component-gallium.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 300,
+        "tradable": false,
+        "imageName": "component-rubedo.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreItem",
+        "name": "Venerol",
+        "description": "A precious metal forged from coolant byproducts.",
+        "itemCount": 20,
+        "tradable": false
+      }
+    ],
     "category": "Resources",
     "tradable": true
   },
