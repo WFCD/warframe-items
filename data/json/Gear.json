@@ -92,6 +92,53 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaserC",
+    "name": "Advanced Nosam Cutter",
+    "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Eidolon Gems.",
+    "type": "Gear",
+    "buildPrice": 3500,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/MiningLaserCBlueprint",
+        "name": "Blueprint",
+        "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Eidolon Gems.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 500,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
+        "name": "Fersteel Alloy",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "uncommon-ore-aalloy-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
+        "name": "Marquise Veridos",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "uncommon-gem-acut-a.png"
+      }
+    ],
+    "category": "Gear",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Restoratives/LisetAirSupport",
     "name": "Air Support Charges",
     "description": "Charges consumed by Landing Craft Air Support.",
@@ -523,6 +570,14 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/GenericContaminant",
+    "name": "Broad-Spectrum Bait",
+    "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish under all conditions, but ignored by more specialized models. Good for Eye-Eye, Scrubbers, Echowinders, Mirewinders and Longwinders.",
+    "type": "Fish",
+    "category": "Gear",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/ArmorBuffSpeedDebuff",
     "name": "Calcifin Stim",
     "description": "Hardens skin, fortifying against damage while restricting movement.",
@@ -586,6 +641,14 @@
     "imageName": "carpet-bomb.png",
     "category": "Gear",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierB",
+    "name": "Charamote Bait",
+    "description": "This bait is synthesized from complex hexophenol that is known to attract Charamotes, a Servofish found in cave hotspots.",
+    "type": "Fish",
+    "category": "Gear",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/ChargerBall",
@@ -2178,7 +2241,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBaitC",
     "name": "Grustrag Three Beacon",
-    "description": "Lures the Grustrag Three out of hiding. One-time use gear item that can only be used in locations where assassin would normally appear.",
+    "description": "Lures the Grustrag Three out of hiding. One-time use gear item that can only be used in locations where the assassins would normally appear.",
     "type": "Gear",
     "imageName": "grustrag-three-beacon.png",
     "category": "Gear",
@@ -2292,7 +2355,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/CreditChipSmall",
     "name": "Humble Void Offering",
-    "description": "Give unto The Void 1000 credits.",
+    "description": "Give unto The Void 1,000 credits.",
     "type": "Gear",
     "buildPrice": 1000,
     "buildTime": 60,
@@ -2303,7 +2366,7 @@
       {
         "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/CreditChipSmallBlueprint",
         "name": "Blueprint",
-        "description": "Give unto The Void 1000 credits.",
+        "description": "Give unto The Void 1,000 credits.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -2433,6 +2496,14 @@
         "fixes": "•    Fixed some hitching caused by deploying Kinetic Siphon Traps."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/LakeContaminantTierA",
+    "name": "Kriller Bait",
+    "description": "This bait is synthesized from Methacalcene-1 that is known to attract Krillers, a Servofish found in lakes during warm weather.",
+    "type": "Fish",
+    "category": "Gear",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/Toxins/RareAntitoxin",
@@ -2649,6 +2720,14 @@
       }
     ],
     "imageName": "murkray-bait.png",
+    "category": "Gear",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/PondContaminantTierA",
+    "name": "Narrow-Spectrum Bait",
+    "description": "This endochlor/dionium melange attracts both Tinks and Brickies, Servofish found in ponds. The Tink shows up during cool weather and the Bricky when it's warm.",
+    "type": "Fish",
     "category": "Gear",
     "tradable": true
   },
@@ -3617,6 +3696,14 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/LakeContaminantTierB",
+    "name": "Recaster Bait",
+    "description": "This bait is synthesized from beryzene that is known to attract Recasters, a Servofish found in pond hotspots during cool weather.",
+    "type": "Fish",
+    "category": "Gear",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/NpcBuffs/CloakingBuff",
     "name": "Refract Stim",
     "description": "Coats the target in a film that refracts light, allowing undetected movement.",
@@ -3728,6 +3815,14 @@
     "imageName": "roller-specter.png",
     "category": "Gear",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierA",
+    "name": "Sapcaddy Bait",
+    "description": "This bait is comprised of aromatic tetraxin that is known to attract Sapcaddies, a Servofish found in lakes during cool weather.",
+    "type": "Fish",
+    "category": "Gear",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/MacheteWomanBall",
@@ -4632,7 +4727,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBait",
     "name": "Stalker Beacon",
-    "description": "Lures the Stalker out of hiding. One-time use gear item that can only be used in locations where assassin would normally appear.",
+    "description": "Lures the Stalker out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
     "type": "Gear",
     "imageName": "stalker-beacon.png",
     "category": "Gear",
@@ -4644,6 +4739,14 @@
     "description": "Celebrate the holiday with fireworks! Light up the sky with this single use consumable item.",
     "type": "Gear",
     "imageName": "starburst.png",
+    "category": "Gear",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaserSolaris",
+    "name": "Sunpoint Plasma Drill",
+    "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision.",
+    "type": "Gear",
     "category": "Gear",
     "tradable": false
   },
@@ -4713,6 +4816,14 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierC",
+    "name": "Synathid Bait",
+    "description": "This bait is synthesized from specialized A-disulphex-A compounds that are known to attract Synathid, a legendarily rare Servofish found only in cave hotspots.",
+    "type": "Fish",
+    "category": "Gear",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/LibraryScanner",
@@ -4878,6 +4989,14 @@
     "imageName": "topaz-antitoxin.png",
     "category": "Gear",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/PondContaminantTierB",
+    "name": "Tromyzon Bait",
+    "description": "This bait is synthesized from long-chain LS-74 compounds that are known to attract Tromyzon, a Servofish found in pond hotspots during cool weather.",
+    "type": "Fish",
+    "category": "Gear",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/TitaniaQuest/SpecterSummonOrphidSaryn",
@@ -5640,7 +5759,7 @@
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBaitB",
     "name": "Zanuka Hunter Beacon",
-    "description": "Lures the Zanuka Hunter out of hiding. One-time use gear item that can only be used in locations where assassin would normally appear.",
+    "description": "Lures the Zanuka Hunter out of hiding. One-time use gear item that can only be used in locations where the assassin would normally appear.",
     "type": "Gear",
     "imageName": "zanuka-hunter-beacon.png",
     "category": "Gear",
