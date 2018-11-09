@@ -413,7 +413,7 @@
     "buildTime": 1800,
     "skipBuildTimePrice": 10,
     "alwaysAvailable": true,
-    "buildQuantity": 50,
+    "buildQuantity": 1,
     "consumeOnBuild": false,
     "components": [
       {
@@ -574,6 +574,41 @@
     "name": "Broad-Spectrum Bait",
     "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish under all conditions, but ignored by more specialized models. Good for Eye-Eye, Scrubbers, Echowinders, Mirewinders and Longwinders.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/GenericContaminantBlueprint",
+        "name": "Blueprint",
+        "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish under all conditions, but ignored by more specialized models. Good for Eye-Eye, Scrubbers, Echowinders, Mirewinders and Longwinders.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusMushroomItem",
+        "name": "Frostcap",
+        "description": "Engineered by the Orokin to convert airborne chemicals into breathable air.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -647,6 +682,48 @@
     "name": "Charamote Bait",
     "description": "This bait is synthesized from complex hexophenol that is known to attract Charamotes, a Servofish found in cave hotspots.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/CaveContaminantTierBBlueprint",
+        "name": "Blueprint",
+        "description": "This bait is synthesized from complex hexophenol that is known to attract Charamotes, a Servofish found in cave hotspots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/OrokinArtifactItem",
+        "name": "Fridger",
+        "description": "These ancient devices have been placed in subterranean caverns where they create localized pockets of intense cold.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
+        "name": "Nanoblood",
+        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
+        "name": "Venedo Case",
+        "description": "A strong, metallic case that is resistant to fluctuations in environmental temperature.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -2502,6 +2579,48 @@
     "name": "Kriller Bait",
     "description": "This bait is synthesized from Methacalcene-1 that is known to attract Krillers, a Servofish found in lakes during warm weather.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/LakeContaminantTierABlueprint",
+        "name": "Blueprint",
+        "description": "This bait is synthesized from Methacalcene-1 that is known to attract Krillers, a Servofish found in lakes during warm weather.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
+        "name": "Mem-Foil",
+        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
+        "name": "Parralel Biode",
+        "description": "Controls the electrical flow throughout the circuitry within robotic organisms. ",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -2728,6 +2847,48 @@
     "name": "Narrow-Spectrum Bait",
     "description": "This endochlor/dionium melange attracts both Tinks and Brickies, Servofish found in ponds. The Tink shows up during cool weather and the Bricky when it's warm.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/PondContaminantTierABlueprint",
+        "name": "Blueprint",
+        "description": "This endochlor/dionium melange attracts both Tinks and Brickies, Servofish found in ponds. The Tink shows up during cool weather and the Bricky when it's warm.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
+        "name": "Mem-Foil",
+        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -3700,6 +3861,48 @@
     "name": "Recaster Bait",
     "description": "This bait is synthesized from beryzene that is known to attract Recasters, a Servofish found in pond hotspots during cool weather.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/LakeContaminantTierBBlueprint",
+        "name": "Blueprint",
+        "description": "This bait is synthesized from beryzene that is known to attract Recasters, a Servofish found in pond hotspots during cool weather.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
+        "name": "Nanoblood",
+        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 10,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -3821,6 +4024,48 @@
     "name": "Sapcaddy Bait",
     "description": "This bait is comprised of aromatic tetraxin that is known to attract Sapcaddies, a Servofish found in lakes during cool weather.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/CaveContaminantTierABlueprint",
+        "name": "Blueprint",
+        "description": "This bait is comprised of aromatic tetraxin that is known to attract Sapcaddies, a Servofish found in lakes during cool weather.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/OrokinArtifactItem",
+        "name": "Fridger",
+        "description": "These ancient devices have been placed in subterranean caverns where they create localized pockets of intense cold.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coogulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
+        "name": "Mem-Foil",
+        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -4747,6 +4992,50 @@
     "name": "Sunpoint Plasma Drill",
     "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision.",
     "type": "Gear",
+    "buildPrice": 3500,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaserC",
+        "name": "Advanced Nosam Cutter",
+        "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Eidolon Gems.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/MiningLaserSolarisBlueprint",
+        "name": "Blueprint",
+        "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
+        "name": "Marquise Veridos",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "uncommon-gem-acut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 30,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": false
   },
@@ -4822,6 +5111,48 @@
     "name": "Synathid Bait",
     "description": "This bait is synthesized from specialized A-disulphex-A compounds that are known to attract Synathid, a legendarily rare Servofish found only in cave hotspots.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/CaveContaminantTierCBlueprint",
+        "name": "Blueprint",
+        "description": "This bait is synthesized from specialized A-disulphex-A compounds that are known to attract Synathid, a legendarily rare Servofish found only in cave hotspots.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
+        "name": "Mem-Foil",
+        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
+        "name": "Nanoblood",
+        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/OrokinSensorItem",
+        "name": "Orokin Monitor",
+        "description": "These Orokin devices emerge when the floating glaciers impact on the surface of Venus. Their purpose is unknown.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
+        "name": "Sagan Module",
+        "description": "A device used to reconstruct degenerated matter into Orokin bio-material.",
+        "itemCount": 5,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
@@ -4995,6 +5326,48 @@
     "name": "Tromyzon Bait",
     "description": "This bait is synthesized from long-chain LS-74 compounds that are known to attract Tromyzon, a Servofish found in pond hotspots during cool weather.",
     "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/PondContaminantTierBBlueprint",
+        "name": "Blueprint",
+        "description": "This bait is synthesized from long-chain LS-74 compounds that are known to attract Tromyzon, a Servofish found in pond hotspots during cool weather.",
+        "itemCount": 1,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source",
+        "itemCount": 5,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
+        "name": "Nanoblood",
+        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
+        "itemCount": 20,
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false
+      }
+    ],
     "category": "Gear",
     "tradable": true
   },
