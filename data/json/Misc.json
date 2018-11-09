@@ -87,6 +87,114 @@
     "tradable": false
   },
   {
+    "name": "Aegron Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadAegron",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadAegronBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-muon-battery.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-plastids.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      }
+    ],
+    "imageName": "aegron-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Alcrom Core",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineArcotek",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineArcotekBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-muon-battery.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "alcrom-core.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
     "name": "Alloy Plate",
     "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
@@ -214,6 +322,60 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Arc Twelve",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAEngine",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAEngineBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-dissipator-coil.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 45,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "arc-twelve.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/EidolonArchwingFoundryUpgradeFeatureItem",
@@ -693,6 +855,60 @@
     ]
   },
   {
+    "name": "Atheca Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadThermocor",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadThermocorBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "control-module.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
+        "name": "Entroplasma",
+        "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-entroplasma.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-rare-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      }
+    ],
+    "imageName": "atheca-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/FusionTreasures/OroFusexF",
     "name": "Ayatan Anasa Sculpture",
     "description": "This kinetic Orokin sculpture springs to life when filled with Ayatan Stars. It may also be a source of Endo.",
@@ -843,6 +1059,60 @@
     ]
   },
   {
+    "name": "Bad Baby",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisADeck",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisADeckBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
+        "name": "Parralel Biode",
+        "description": "Controls the electrical flow throughout the circuitry within robotic organisms. ",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-parallel-biode.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      }
+    ],
+    "imageName": "bad-baby.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Balla",
     "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipOne",
     "type": "Melee",
@@ -923,6 +1193,168 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Bashrack",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritICapIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritICapIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
+        "name": "Parralel Biode",
+        "description": "Controls the electrical flow throughout the circuitry within robotic organisms. ",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-parallel-biode.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "bashrack.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Beaky",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAFront",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAFrontBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-exa-brain.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-rare-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      }
+    ],
+    "imageName": "beaky.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Bellows",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCapIIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCapIIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      }
+    ],
+    "imageName": "bellows.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/BetaCorruptorResource",
@@ -1092,6 +1524,60 @@
     "description": "A small rodent of Earthly origin to keep you company aboard the Orbiter.",
     "type": "Extractor",
     "imageName": "caged-kuaka.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Catchmoon",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 1700,
+        "tradable": false,
+        "imageName": "alloy-plate.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-exa-brain.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "catchmoon.png",
     "category": "Misc",
     "tradable": false
   },
@@ -1391,6 +1877,60 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Coldfusor",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAEngine",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAEngineBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
+        "name": "Venedo Case",
+        "description": "A strong, metallic case that is resistant to fluctuations in environmental temperature.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-venedo-case.png"
+      }
+    ],
+    "imageName": "coldfusor.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
@@ -1831,6 +2371,60 @@
     ]
   },
   {
+    "name": "Deepbreath",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCapIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCapIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-exa-brain.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "deepbreath.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/SteelMeridianUncommonDogTag",
     "name": "Defender Insignia",
     "description": "Medallion of the Steel Meridian syndicate. Can be traded in on relay syndicate hubs for additional standing.",
@@ -1937,6 +2531,60 @@
         "fixes": "The drop rates on Beacons have been adjusted. Delta Beacons are now less rare, with the Kappa and Gamma Beacon drop rates being slightly reduced."
       }
     ]
+  },
+  {
+    "name": "Dink-A-Donk",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBFront",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBFrontBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-exa-brain.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-rare-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      }
+    ],
+    "imageName": "dink-a-donk.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Tennocon2018Display",
@@ -2142,6 +2790,114 @@
         "fixes": "Fixed being unable to Chat link Dokrahm, Rabvee or Sephfan Zaws."
       }
     ]
+  },
+  {
+    "name": "Drex Core",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineThricore",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineThricoreBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-muon-battery.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "drex-core.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Drimper Bracket",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegA",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "coolant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "drimper-bracket.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagVirminkUncommon",
@@ -3254,6 +4010,60 @@
     "tradable": false
   },
   {
+    "name": "Fatboys",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBJet",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBJetBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      }
+    ],
+    "imageName": "fatboys.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
     "name": "Ferrite",
     "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
@@ -3355,11 +4165,119 @@
     ]
   },
   {
+    "name": "Flatbelly",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusADeck",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusADeckBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem",
+        "name": "Neural Relay",
+        "description": "Interprets signals from other mechanical organisms.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-neural-relay.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 50,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "flatbelly.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/NewLokaRareDogTag",
     "name": "Flawless Seed",
     "description": "Medallion of the New Loka syndicate. Can be traded in on relay syndicate hubs for additional standing.",
     "type": "Medallion",
     "imageName": "flawless-seed.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Flutterfire",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIIReloadIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIIReloadIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
+        "name": "Entroplasma",
+        "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-entroplasma.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
+        "name": "Marquise Veridos",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "uncommon-gem-acut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      }
+    ],
+    "imageName": "flutterfire.png",
     "category": "Misc",
     "tradable": false
   },
@@ -6593,6 +7511,60 @@
     ]
   },
   {
+    "name": "Gaze",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
+        "itemCount": 1200,
+        "tradable": false,
+        "imageName": "component-cryotic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "gaze.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/SteelMeridianRareDogTag",
     "name": "General Insignia",
     "description": "Medallion of the Steel Meridian syndicate. Can be traded in on relay syndicate hubs for additional standing.",
@@ -6607,6 +7579,60 @@
     "description": "Medallion of the Cephalon Suda syndicate. Can be traded in on relay syndicate hubs for additional standing.",
     "type": "Medallion",
     "imageName": "genius-datum.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Gibber",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleDPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleDPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-rotor-blade.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      }
+    ],
+    "imageName": "gibber.png",
     "category": "Misc",
     "tradable": false
   },
@@ -7147,6 +8173,114 @@
     "tradable": false
   },
   {
+    "name": "Harpen Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadDarta",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadDartaBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-dissipator-coil.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      }
+    ],
+    "imageName": "harpen-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Haymaker",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleCPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleCPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem",
+        "name": "Neural Relay",
+        "description": "Interprets signals from other mechanical organisms.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-neural-relay.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "haymaker.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/LephantisShardItem",
     "name": "Hemocyte Cystolith",
     "description": "Torn from the bile duct of a fallen Hemocyte.",
@@ -7156,11 +8290,119 @@
     "tradable": false
   },
   {
+    "name": "Hextra Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadHextra",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadHextraBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-rotor-blade.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-rubedo.png"
+      }
+    ],
+    "imageName": "hextra-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/RedVeilUncommonDogTag",
     "name": "Honored Mark",
     "description": "Medallion of Red Veil syndicate. Can be traded in on relay syndicate hubs for additional standing.",
     "type": "Medallion",
     "imageName": "honored-mark.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Hothead",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBEngine",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBEngineBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-muon-battery.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 35,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      }
+    ],
+    "imageName": "hothead.png",
     "category": "Misc",
     "tradable": false
   },
@@ -7717,6 +8959,60 @@
     "tradable": false
   },
   {
+    "name": "Killstream",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIIReloadIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIIReloadIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
+        "name": "Fersteel Alloy",
+        "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "uncommon-ore-aalloy-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coogulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-lathe-coogulant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      }
+    ],
+    "imageName": "killstream.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Klebrik Scaffold",
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Chassis/SentAmpSet1ChassisPartC",
     "type": "Amp",
@@ -7907,6 +9203,60 @@
       }
     ],
     "imageName": "kriller-trophy.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Krisys Core",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineKrisys",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineKrisysBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-muon-battery.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "krisys-core.png",
     "category": "Misc",
     "tradable": false
   },
@@ -8697,6 +10047,60 @@
       }
     ],
     "imageName": "laka.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Lambeo Moa",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadLambeo",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadLambeoBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "lambeo-moa.png",
     "category": "Misc",
     "tradable": false
   },
@@ -9723,6 +11127,60 @@
       }
     ],
     "imageName": "longwinder-trophy.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Lovetap",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleBPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleBPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
+        "name": "Venedo Case",
+        "description": "A strong, metallic case that is resistant to fluctuations in environmental temperature.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-venedo-case.png"
+      }
+    ],
+    "imageName": "lovetap.png",
     "category": "Misc",
     "tradable": false
   },
@@ -12453,6 +13911,60 @@
     "tradable": false
   },
   {
+    "name": "Munit Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadMunitron",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadMunitronBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-exa-brain.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      }
+    ],
+    "imageName": "munit-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
     "name": "Muon Battery",
     "description": "A small, atomic power source",
@@ -12795,6 +14307,60 @@
         "fixes": "Fixed an issue with Nav Coordinate Icons appearing stretched in the Foundry."
       }
     ]
+  },
+  {
+    "name": "Needlenose",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBDeck",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBDeckBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-rotor-blade.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      }
+    ],
+    "imageName": "needlenose.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem",
@@ -13330,6 +14896,60 @@
         "fixes": "Fixed not being able to Chat link the \"Landing Craft Foundry Segment\" and the \"Nutrio Incubator Upgrade Segment\"."
       }
     ]
+  },
+  {
+    "name": "Oloro Moa",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadOloro",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadOloroBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "oloro-moa.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/VayHekCoordinateFragmentD",
@@ -14066,6 +15686,60 @@
     ]
   },
   {
+    "name": "Para Moa",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadPara",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadParaBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      }
+    ],
+    "imageName": "para-moa.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
     "name": "Parralel Biode",
     "description": "Controls the electrical flow throughout the circuitry within robotic organisms. ",
@@ -14388,6 +16062,60 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Phazor Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadTazron",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadTazronBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-rubedo.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
+        "name": "Venedo Case",
+        "description": "A strong, metallic case that is resistant to fluctuations in environmental temperature.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-venedo-case.png"
+      }
+    ],
+    "imageName": "phazor-gyro.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "name": "Plague Akwin",
@@ -14912,6 +16640,114 @@
     "tradable": false
   },
   {
+    "name": "Ramble",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleAPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleAPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      }
+    ],
+    "imageName": "ramble.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Ramflare",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIICapIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIICapIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
+        "name": "Sagan Module",
+        "description": "A device used to reconstruct degenerated matter into Orokin bio-material.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-sagan-module.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-rare-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
+        "name": "Star Crimzian",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "rare-gem-acut-a.png"
+      }
+    ],
+    "imageName": "ramflare.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Raplak Prism",
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Barrel/SentAmpSet1BarrelPartA",
     "type": "Amp",
@@ -14975,6 +16811,60 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Rattleguts",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-rotor-blade.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 900,
+        "tradable": false,
+        "imageName": "component-rubedo.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "rattleguts.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Venus/SolarisCoolUncommonFishATrophy",
@@ -16210,11 +18100,227 @@
     ]
   },
   {
+    "name": "Slap",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularReloadIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularReloadIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
+        "name": "Venedo Case",
+        "description": "A strong, metallic case that is resistant to fluctuations in environmental temperature.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-venedo-case.png"
+      }
+    ],
+    "imageName": "slap.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Slapneedle",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIReloadIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIReloadIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
+        "name": "Coprite Alloy",
+        "description": "Coprun that has been forged into a stronger metal.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "common-ore-balloy-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      }
+    ],
+    "imageName": "slapneedle.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/LibraryScannerRechargeUpgrade",
     "name": "Sol-Battery Widget",
     "description": "Recharges Synthesis Scanner charges.",
     "type": "Misc",
     "imageName": "sol-battery-widget.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Sparkfire",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatICapIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatICapIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-muon-battery.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-plastids.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "sparkfire.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Splat",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIICapIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem",
+        "name": "Auroxium Alloy",
+        "description": "Auron that has been forged into a stronger metal.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "rare-ore-aalloy-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIICapIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEcosynthAnalyzerItem",
+        "name": "Ecosynth Analyzer",
+        "description": "A processing unit that efficiently monitors environmental data.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-ecosynth-analyzer.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-rare-gem-acut.png"
+      }
+    ],
+    "imageName": "splat.png",
     "category": "Misc",
     "tradable": false
   },
@@ -16237,6 +18343,114 @@
     "tradable": false
   },
   {
+    "name": "Step Tens",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAJet",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAJetBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-rare-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "step-tens.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Stitch",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritICapIIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritICapIIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem",
+        "name": "Neural Relay",
+        "description": "Interprets signals from other mechanical organisms.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-neural-relay.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-plastids.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      }
+    ],
+    "imageName": "stitch.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagPobbersRare",
     "name": "Subterranean Pobber Tag",
     "description": "For saving a specimen of this subspecies.",
@@ -16251,6 +18465,60 @@
     "description": "For saving a specimen of this species.",
     "type": "Misc",
     "imageName": "sunny-pobber-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Swiftfire",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIReloadIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIReloadIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
+        "name": "Esher Devar",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "common-gem-bcut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      }
+    ],
+    "imageName": "swiftfire.png",
     "category": "Misc",
     "tradable": false
   },
@@ -16832,6 +19100,60 @@
     ]
   },
   {
+    "name": "Thunderdrum",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatICapIIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatICapIIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem",
+        "name": "Neural Relay",
+        "description": "Interprets signals from other mechanical organisms.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-neural-relay.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-rubedo.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      }
+    ],
+    "imageName": "thunderdrum.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Venus/SolarisCoolCommonFishATrophy",
     "name": "Tink Trophy",
     "description": "A trophy of a prized catch.",
@@ -17010,6 +19332,60 @@
     ]
   },
   {
+    "name": "Tombfinger",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 900,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-dissipator-coil.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "coolant.png"
+      }
+    ],
+    "imageName": "tombfinger.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem",
     "name": "Tralok Eyes",
     "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.\nLocation: Fisher Hai-Luk in Cetus",
@@ -17156,6 +19532,114 @@
       }
     ],
     "imageName": "tromyzon-trophy.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Trux Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadCryoxion",
+    "type": "Misc",
+    "buildPrice": 500000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadCryoxionBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 1000,
+        "tradable": false,
+        "imageName": "component-plastids.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      }
+    ],
+    "imageName": "trux-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Twin Kavats",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAJet",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAJetBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
+    "imageName": "twin-kavats.png",
     "category": "Misc",
     "tradable": false
   },
@@ -17765,6 +20249,60 @@
     "tradable": false
   },
   {
+    "name": "Wingnut",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAFront",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAFrontBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-exa-brain.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-rare-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      }
+    ],
+    "imageName": "wingnut.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstLanternGround",
     "name": "Xartaan Lamp",
     "description": "Turquoise glass suspended in a handmade gilded basket, filled with bioluminescence.",
@@ -18176,5 +20714,167 @@
         "chance": 0.0833
       }
     ]
+  },
+  {
+    "name": "Zip",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularReloadIIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularReloadIIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-dissipator-coil.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      }
+    ],
+    "imageName": "zip.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Zipfire",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIReloadIIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatIReloadIIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-rotor-blade.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
+        "name": "Tear Azurite",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "common-gem-acut-a.png"
+      }
+    ],
+    "imageName": "zipfire.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Zipneedle",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIReloadIIClipPart",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIReloadIIClipPartBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
+        "name": "Pyrotic Alloy",
+        "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "common-ore-aalloy-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-rotor-blade.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      }
+    ],
+    "imageName": "zipneedle.png",
+    "category": "Misc",
+    "tradable": false
   }
 ]
