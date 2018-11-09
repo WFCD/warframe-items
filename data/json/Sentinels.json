@@ -2,7 +2,7 @@
   {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit",
     "name": "Carrier",
-    "description": "With 'Striker' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.\nNote: This item requires two open slots.",
+    "description": "With 'Assault Mode' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.\nNote: This item requires two open slots.",
     "health": 200,
     "shield": 100,
     "armor": 50,
@@ -26,7 +26,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/CarrierSentinelBlueprint",
         "name": "Blueprint",
-        "description": "With 'Striker' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.\nNote: This item requires two open slots.",
+        "description": "With 'Assault Mode' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.\nNote: This item requires two open slots.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -927,7 +927,7 @@
   {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit",
     "name": "Dethcube",
-    "description": "With 'Swift Deth' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.\nNote: This item requires two open slots.",
+    "description": "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.\nNote: This item requires two open slots.",
     "health": 200,
     "shield": 100,
     "armor": 50,
@@ -951,7 +951,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/DethCubeSentinelBlueprint",
         "name": "Blueprint",
-        "description": "With 'Swift Deth' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.\nNote: This item requires two open slots.",
+        "description": "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.\nNote: This item requires two open slots.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -2394,6 +2394,67 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit",
+    "name": "Oxylus",
+    "description": "With 'Scan Lifeforms' and 'Scan Matter' as default Precepts, Oxylus was designed to assist in Search-and-Rescue operations through the harsh landscape around The Orb Vallis. Oxylus also comes with a Multron rifle.\nNote: This item requires two open slots.",
+    "health": 200,
+    "shield": 100,
+    "armor": 50,
+    "stamina": 8,
+    "power": 100,
+    "type": "Sentinel",
+    "buildPrice": 15000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 45,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/RadarSentinelBlueprint",
+        "name": "Blueprint",
+        "description": "With 'Scan Lifeforms' and 'Scan Matter' as default Precepts, Oxylus was designed to assist in Search-and-Rescue operations through the harsh landscape around The Orb Vallis. Oxylus also comes with a Multron rifle.\nNote: This item requires two open slots.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coogulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-lathe-coogulant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      }
+    ],
+    "imageName": "oxylus.png",
+    "category": "Sentinels",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit",
     "name": "Prisma Shade",
     "description": "A rare jewel of the void. How could anything so beautiful be crafted for stealth?",
@@ -2581,7 +2642,7 @@
   {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit",
     "name": "Taxon",
-    "description": "With 'Retarget' and 'Molecular Conversion' as its default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.\nNote: This item requires two open slots.",
+    "description": "With 'Assault Mode' and 'Molecular Conversion' as default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.\nNote: This item requires two open slots.",
     "health": 200,
     "shield": 100,
     "armor": 50,
@@ -2597,7 +2658,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/TnSentinelCrossBlueprint",
         "name": "Blueprint",
-        "description": "With 'Retarget' and 'Molecular Conversion' as its default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.\nNote: This item requires two open slots.",
+        "description": "With 'Assault Mode' and 'Molecular Conversion' as default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.\nNote: This item requires two open slots.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -2687,7 +2748,7 @@
   {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit",
     "name": "Wyrm",
-    "description": "With 'Warrior' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.\nNote: This item requires two open slots.",
+    "description": "With 'Assault Mode' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.\nNote: This item requires two open slots.",
     "health": 200,
     "shield": 100,
     "armor": 50,
@@ -2711,7 +2772,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/SentinelRecipes/WyrmSentinelBlueprint",
         "name": "Blueprint",
-        "description": "With 'Warrior' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.\nNote: This item requires two open slots.",
+        "description": "With 'Assault Mode' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.\nNote: This item requires two open slots.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
