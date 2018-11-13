@@ -2718,6 +2718,62 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/LakeContaminantTierB",
+    "name": "Longwinder Bait",
+    "description": "This bait is synthesized from beryzene that is known to attract Longwinders, a Servofish found in lake hotspots during warm weather.",
+    "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/LakeContaminantTierBBlueprint",
+        "name": "Blueprint",
+        "description": "This bait is synthesized from beryzene that is known to attract Longwinders, a Servofish found in lake hotspots during warm weather.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
+        "name": "Nanoblood",
+        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      }
+    ],
+    "imageName": "longwinder-bait.png",
+    "category": "Gear",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/FishingBoosts/AnglerVision",
     "name": "Luminos Dye",
     "description": "Dyes the waters with a compound that sticks to fish passing through it, making them easier to see from the shore.",
@@ -2873,7 +2929,7 @@
   {
     "uniqueName": "/Lotus/Types/Game/FishBait/Venus/PondContaminantTierA",
     "name": "Narrow-Spectrum Bait",
-    "description": "This endochlor/dionium melange attracts both Tinks and Brickies, Servofish found in ponds. The Tink shows up during cool weather and the Bricky when it's warm.",
+    "description": "This endochlor/dionium melange attracts both Recasters and Eye-Eyes, Servofish found in ponds. The Eye-Eye shows up during warm weather and Recaster shows up at Hot Spots during cool weather.",
     "type": "Fish",
     "buildPrice": 500,
     "buildTime": 60,
@@ -2884,7 +2940,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/PondContaminantTierABlueprint",
         "name": "Blueprint",
-        "description": "This endochlor/dionium melange attracts both Tinks and Brickies, Servofish found in ponds. The Tink shows up during cool weather and the Bricky when it's warm.",
+        "description": "This endochlor/dionium melange attracts both Recasters and Eye-Eyes, Servofish found in ponds. The Eye-Eye shows up during warm weather and Recaster shows up at Hot Spots during cool weather.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -3896,72 +3952,6 @@
         "imgUrl": "http://n8k6e2y6.ssl.hwcdn.net/uploads/098afb7883e26718f1dfbc26fe1de1c3.jpg",
         "additions": "",
         "changes": "Reduced the Razorback Cipher cost from 3500 Polymer Bundle to 1500 Polymer Bundle. Back in May of this year we made numerous fixes towards the Razorback Armada, and with another Armada to appear soon we took a second look at the Polymer friction involved with this non-useable Blueprint. See here for past fixes you can expect: https://forums.warframe.com/topic/797284-sharpening-our-razorbacks-a-pc-weekend-post-mortem/",
-        "fixes": ""
-      }
-    ]
-  },
-  {
-    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/LakeContaminantTierB",
-    "name": "Recaster Bait",
-    "description": "This bait is synthesized from beryzene that is known to attract Recasters, a Servofish found in pond hotspots during cool weather.",
-    "type": "Fish",
-    "buildPrice": 500,
-    "buildTime": 60,
-    "skipBuildTimePrice": 5,
-    "buildQuantity": 20,
-    "consumeOnBuild": false,
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/LakeContaminantTierBBlueprint",
-        "name": "Blueprint",
-        "description": "This bait is synthesized from beryzene that is known to attract Recasters, a Servofish found in pond hotspots during cool weather.",
-        "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
-        "name": "Nanoblood",
-        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
-        "itemCount": 20,
-        "tradable": false,
-        "imageName": "fish-part-anoscopic-sensor.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-        "name": "Scrap",
-        "description": "A sample of sprockets, gyros and wires.",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "fish-part-scrap.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-        "name": "Tepa Nodule",
-        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "venus-tree.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
-        "name": "Thermal Laser",
-        "description": "A weapon that discharges lasers over short distances.",
-        "itemCount": 5,
-        "tradable": false,
-        "imageName": "fish-part-thermal-laser.png"
-      }
-    ],
-    "imageName": "recaster-bait.png",
-    "category": "Gear",
-    "tradable": true,
-    "patchlogs": [
-      {
-        "name": "Fortuna: Hotfix 24.0.5",
-        "date": "2018-11-12T23:54:52Z",
-        "url": "https://forums.warframe.com/topic/1030252-fortuna-hotfix-2405/",
-        "additions": "",
-        "changes": "Recaster Bait is now correctly labeled as Longwinder Bait.",
         "fixes": ""
       }
     ]
