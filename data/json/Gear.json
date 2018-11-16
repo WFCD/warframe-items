@@ -573,7 +573,7 @@
   {
     "uniqueName": "/Lotus/Types/Game/FishBait/Venus/GenericContaminant",
     "name": "Broad-Spectrum Bait",
-    "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish under all conditions, but ignored by more specialized models. Good for Sapcaddies, Tinks, Eye-Eyes and Brickies.",
+    "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish under all conditions, but ignored by more specialized models. Good for Sapcaddies, Tinks and Brickies.",
     "type": "Fish",
     "buildPrice": 500,
     "buildTime": 60,
@@ -584,7 +584,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/GenericContaminantBlueprint",
         "name": "Blueprint",
-        "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish under all conditions, but ignored by more specialized models. Good for Sapcaddies, Tinks, Eye-Eyes and Brickies.",
+        "description": "A simple cocktail of short-chain polymers and contaminants. Easily detected by rudimentary Servofish under all conditions, but ignored by more specialized models. Good for Sapcaddies, Tinks and Brickies.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -2833,6 +2833,62 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierA",
+    "name": "Mirewinder Bait",
+    "description": "This bait is comprised of aromatic tetraxin that is known to attract Mirewinders, a Servofish found in cave pools.",
+    "type": "Fish",
+    "buildPrice": 500,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/CaveContaminantTierABlueprint",
+        "name": "Blueprint",
+        "description": "This bait is comprised of aromatic tetraxin that is known to attract Mirewinders, a Servofish found in cave pools.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/OrokinArtifactItem",
+        "name": "Fridger",
+        "description": "These ancient devices have been placed in subterranean caverns where they create localized pockets of intense cold.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "orokin-artifact.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coogulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-lathe-coogulant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
+        "name": "Mem-Foil",
+        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      }
+    ],
+    "imageName": "mirewinder-bait.png",
+    "category": "Gear",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/MoaBall",
     "name": "Moa Specter",
     "description": "Deploys a MOA EXIMUS unit to fight for you.",
@@ -4066,62 +4122,6 @@
     "imageName": "roller-specter.png",
     "category": "Gear",
     "tradable": false
-  },
-  {
-    "uniqueName": "/Lotus/Types/Game/FishBait/Venus/CaveContaminantTierA",
-    "name": "Sapcaddy Bait",
-    "description": "This bait is comprised of aromatic tetraxin that is known to attract Sapcaddies, a Servofish found in lakes during cool weather.",
-    "type": "Fish",
-    "buildPrice": 500,
-    "buildTime": 60,
-    "skipBuildTimePrice": 5,
-    "buildQuantity": 20,
-    "consumeOnBuild": false,
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Fishing/CaveContaminantTierABlueprint",
-        "name": "Blueprint",
-        "description": "This bait is comprised of aromatic tetraxin that is known to attract Sapcaddies, a Servofish found in lakes during cool weather.",
-        "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/OrokinArtifactItem",
-        "name": "Fridger",
-        "description": "These ancient devices have been placed in subterranean caverns where they create localized pockets of intense cold.",
-        "itemCount": 5,
-        "tradable": false,
-        "imageName": "orokin-artifact.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
-        "name": "Lathe Coogulant",
-        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.",
-        "itemCount": 5,
-        "tradable": false,
-        "imageName": "fish-part-lathe-coogulant.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
-        "name": "Mem-Foil",
-        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
-        "itemCount": 20,
-        "tradable": false,
-        "imageName": "fish-part-anoscopic-sensor.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-        "name": "Scrap",
-        "description": "A sample of sprockets, gyros and wires.",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "fish-part-scrap.png"
-      }
-    ],
-    "imageName": "sapcaddy-bait.png",
-    "category": "Gear",
-    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/MacheteWomanBall",
