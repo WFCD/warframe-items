@@ -6916,9 +6916,9 @@
     "slot": 0,
     "noise": "Alarming",
     "sentinel": true,
-    "masteryReq": 0,
+    "masteryReq": 3,
     "omegaAttenuation": 1,
-    "type": "Misc",
+    "type": "Rifle",
     "buildPrice": 50000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -6987,7 +6987,18 @@
         "changes": "Cryotra: Emits a ray of sub-zero energy.",
         "fixes": ""
       }
-    ]
+    ],
+    "damage": "10.0 cold",
+    "damageTypes": {
+      "cold": 10
+    },
+    "polarities": [  ],
+    "projectile": "Discharge",
+    "tags": [ "Corpus", "Sentinel" ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/fa/Cryotra.png/revision/latest?cb=20181110220600",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Cryotra",
+    "disposition": 3
   },
   {
     "name": "Cycron",
@@ -7567,7 +7578,7 @@
       "puncture": 0.3
     },
     "polarities": [  ],
-    "projectile": "Hitscan",
+    "projectile": "Hit-Scan",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f2/DESentinelDethMachineRifle.png/revision/latest?cb=20140122154228",
@@ -13158,10 +13169,22 @@
     "sentinel": true,
     "masteryReq": 3,
     "omegaAttenuation": 1,
-    "type": "Misc",
+    "type": "Rifle",
     "imageName": "multron.png",
     "category": "Secondary",
-    "tradable": false
+    "tradable": false,
+    "damage": "5.1",
+    "damageTypes": {
+      "impact": 1.3,
+      "puncture": 3.8
+    },
+    "polarities": [ "Madurai" ],
+    "projectile": "Projectile",
+    "tags": [ "Corpus", "Sentinel" ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/97/Multron.png/revision/latest?cb=20181110220523",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Multron",
+    "disposition": 3
   },
   {
     "name": "Nukor",
@@ -17157,7 +17180,7 @@
       "puncture": 2.1
     },
     "polarities": [ "Madurai", "Madurai" ],
-    "projectile": "Hitscan",
+    "projectile": "Hit-Scan",
     "tags": [ "Tenno", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/25/DESentinelSweeper.png/revision/latest?cb=20140122154229",
@@ -17210,7 +17233,7 @@
       "puncture": 3
     },
     "polarities": [ "Madurai" ],
-    "projectile": "Hitscan",
+    "projectile": "Hit-Scan",
     "tags": [ "Prime", "Sentinel" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/81/SentinelSweeperPrime.png/revision/latest?cb=20150707200907",
@@ -17581,7 +17604,7 @@
     "sentinel": true,
     "masteryReq": 3,
     "omegaAttenuation": 1,
-    "type": "Misc",
+    "type": "Rifle",
     "buildPrice": 50000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -17642,7 +17665,18 @@
         "changes": "Tazicor: Burst rifle that fires electrified rounds.",
         "fixes": ""
       }
-    ]
+    ],
+    "damage": "6.0 electricity",
+    "damageTypes": {
+      "electricity": 6
+    },
+    "polarities": [  ],
+    "projectile": "Discharge",
+    "tags": [ "Corpus", "Sentinel" ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/ad/Taxicor.png/revision/latest?cb=20181110220614",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Tazicor",
+    "disposition": 3
   },
   {
     "name": "Telos Akbolto",
@@ -19711,7 +19745,7 @@
     "sentinel": true,
     "masteryReq": 14,
     "omegaAttenuation": 1,
-    "type": "Misc",
+    "type": "Rifle",
     "buildPrice": 50000,
     "buildTime": 86400,
     "skipBuildTimePrice": 25,
@@ -19780,7 +19814,18 @@
         "changes": "Vulcax: Charges up a powerful blast of ultra-heated plasma.",
         "fixes": ""
       }
-    ]
+    ],
+    "damage": "35.0 heat",
+    "damageTypes": {
+      "heat": 35
+    },
+    "polarities": [  ],
+    "projectile": "Discharge",
+    "tags": [ "Corpus", "Sentinel" ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/7f/Vulcax.png/revision/latest?cb=20181110220625",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Vulcax",
+    "disposition": 3
   },
   {
     "name": "Vulklok",
