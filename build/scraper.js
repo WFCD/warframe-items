@@ -47,7 +47,7 @@ const scrapeWikia = async () => ({
 
 // We'll get these later before processing items as they're required for item
 // attributes.
-let dropChances, dropChancesChanged, patchlogsChanged, manifest, wikiaData
+let dropChances, dropChancesChanged, patchlogsChanged, manifest, wikiaData, ducatsOrPlatData
 let ducats = []
 
 class Scraper {
@@ -141,6 +141,8 @@ class Scraper {
     manifest = (await get('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')).Manifest
     dropChances = await get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json')
     wikiaData = await scrapeWikia()
+    // Fetches data from "Ducats or Plat" which contains releaseDate, vaultDate and estimatedVaultDate for all primes.
+    ducatsOrPlatData = await get('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')
     const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
 
@@ -193,6 +195,7 @@ class Scraper {
       this.addDropRate(item)
       this.addPatchlogs(item)
       this.addAdditionalWikiaData(item, type)
+      this.addDates(item)
 
       // Add to category
       if (!data[item.category]) {
@@ -202,6 +205,34 @@ class Scraper {
       }
     }
     return data
+  }
+
+  /**
+   * Adds releaseDate, vaultDate and estimatedVaultDate to all primes using
+   * data from "Ducats or Plat".
+   */
+  addDates (item) {
+    if (!ducatsOrPlatData){
+      return
+    }
+    if (item.name.endsWith('Prime')){
+      for (const dataItem of ducatsOrPlatData.data){
+        if (!dataItem.Name){
+          continue
+        }
+        if (item.name.toLowerCase() == dataItem.Name.toLowerCase()){
+          if (dataItem.ReleaseDate) {
+            item.releaseDate = dataItem.ReleaseDate
+          }
+          if (dataItem.VaultedDate) {
+            item.vaultDate = dataItem.VaultedDate
+          }
+          if (dataItem.EstimatedVaultedDate) {
+            item.estimatedVaultDate = dataItem.EstimatedVaultedDate
+          }
+        }
+      }
+    }
   }
 
   /**
