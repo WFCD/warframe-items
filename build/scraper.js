@@ -212,15 +212,15 @@ class Scraper {
    * data from "Ducats or Plat".
    */
   addDates (item) {
-    if (!ducatsOrPlatData){
+    if (!ducatsOrPlatData) {
       return
     }
-    if (item.name.endsWith('Prime')){
-      for (const dataItem of ducatsOrPlatData.data){
-        if (!dataItem.Name){
+    if (item.name.endsWith('Prime')) {
+      for (const dataItem of ducatsOrPlatData.data) {
+        if (!dataItem.Name) {
           continue
         }
-        if (item.name.toLowerCase() == dataItem.Name.toLowerCase()){
+        if (item.name.toLowerCase() === dataItem.Name.toLowerCase()) {
           if (dataItem.ReleaseDate) {
             item.releaseDate = dataItem.ReleaseDate
           }
