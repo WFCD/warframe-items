@@ -554,8 +554,36 @@ class Scraper {
           const precompItem = precompiled.find(i => i.name === item.name)
           if (!precompItem) return
           const components = precompItem.components
-          if (components) savedDrops = components.find(c => c.name === component.name)
-          if (savedDrops && savedDrops.drops) component.drops = savedDrops.drops
+          if (components) {
+            savedDrops = components.find(c => c.name === component.name)
+            if (savedDrops.drops) {
+              savedDrops.drops = savedDrops.drops.map(drop => {
+                drop.location = drop.location.replace('Derelict/', '')
+                  .replace('Assassinate (Assassination)', 'Assassinate')
+                  .replace('Defense (Defense)', 'Defense')
+                  .replace('Survival (Survival)', 'Survival')
+                  .replace('Teralyst (Special)', 'Teralyst (Capture)')
+                  .replace('Gantulyst (Special)', 'Gantulyst (Capture)')
+                  .replace('Hydrolyst (Special)', 'Hydrolyst (Capture)')
+                  .replace('The Law Of Retribution C', 'Law Of Retribution')
+                  .replace('The Jordas Verdict C', 'Jordas Verdict')
+                  .replace('The Law Of Retribution (Nightmare) C', 'Law Of Retribution (Nightmare)')
+                  .replace('Sanctuary/Elite Sanctuary Onslaught (Sanctuary Onslaught)', 'Elite Sanctuary Onslaught')
+                  .replace('Sanctuary/Sanctuary Onslaught (Sanctuary Onslaught)', 'Sanctuary Onslaught')
+                  .replace('/Lunaro Arena (Conclave)', '/Lunaro')
+                  .replace('/Lunaro Arena (Extra) (Conclave)', '/Lunaro')
+                  .replace('Variant Cephalon Capture (Conclave)', 'Variant Cephalon Capture')
+                  .replace('Variant Cephalon Capture (Extra) (Conclave)', 'Variant Cephalon Capture')
+                  .replace('Variant Team Annihilation (Extra) (Conclave)', 'Variant Team Annihilation')
+                  .replace('Variant Annihilation (Extra)', 'Variant Annihilation')
+                  .replace(' (Conclave)', '')
+                return drop
+              })
+            }
+          }
+          if (savedDrops && savedDrops.drops) {
+            component.drops = savedDrops.drops
+          }
         }
       } else {
         const savedDrops = precompiled.find(i => i.name === item.name)
