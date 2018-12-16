@@ -78,9 +78,9 @@ const transformWeapon = (oldWeapon, imageUrls) => {
       thumbnail: imageUrls[Image],
       ...MaxAmmo && { ammo: MaxAmmo },
       ...(NormalAttack && NormalAttack.ShotType) &&
-        { projectile: NormalAttack.ShotType.replace('Hit-scan', 'Hitscan') },
+        { projectile: NormalAttack.ShotType.replace(/Hit-scan/ig, 'Hitscan') },
       ...(ChargeAttack && ChargeAttack.ShotType) &&
-        { projectile: ChargeAttack.ShotType.replace('Hit-scan', 'Hitscan') },
+        { projectile: ChargeAttack.ShotType.replace(/Hit-scan/ig, 'Hitscan') },
       tags: Traits || [],
       vaulted: (Traits || []).includes('Vaulted'),
       marketCost: Cost && Cost.MarketCost,
