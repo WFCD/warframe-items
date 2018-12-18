@@ -4744,6 +4744,38 @@
     "estimatedVaultDate": "2019 01 01"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Pacifist/Pacifist",
+    "name": "Baruuk",
+    "description": "Beware the fury of the truly patient. Pushed beyond restraint, a reluctant master unleashes the storm within.",
+    "health": 75,
+    "shield": 100,
+    "armor": 150,
+    "stamina": 3,
+    "power": 200,
+    "passiveDescription": "Each projectile dodged, each enemy lulled or disarmed, erodes Baruuk’s restraint and fuels the storm within. As Baruuk’s restraint is diminished he becomes more resistant to damage.",
+    "abilities": [
+      {
+        "name": "Elude",
+        "description": "Dodge all incoming projectiles, but only while not attacking. Use again to deactivate this ability."
+      },
+      {
+        "name": "Lull",
+        "description": "A calming wave slows enemies until they fall into a slumber. Enemies woken by damage will be confused and disoriented. Short-term amnesia means all waking enemies forget anything that happened before the lull."
+      },
+      {
+        "name": "Desolate Hands",
+        "description": "Summon a bevy of orbiting daggers to seek out enemy guns, destroying them with a small explosion. Combine with Elude to double the range."
+      },
+      {
+        "name": "Serene Storm",
+        "description": "With his Restraint eroded, Baruuk commands the Desert Wind to deliver powerful radial strikes with his fists and feet. Each moment commanding the storm restores his Restraint."
+      }
+    ],
+    "type": "Warframe",
+    "category": "Warframes",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Powersuits/Dragon/Dragon",
     "name": "Chroma",
     "description": "A master of the deadly elements, Chroma can alter his damage output by changing his energy color.",
@@ -8699,15 +8731,15 @@
       },
       {
         "name": "Rest & Rage",
-        "description": "In Night Form, targets are put to sleep. In Day Form, targets become more vulnerable to damage."
+        "description": "In Night-Form, targets are put to sleep. In Day-Form, targets become more vulnerable to damage."
       },
       {
         "name": "Pacify & Provoke",
-        "description": "In Night Form, reduces damage inflicted by nearby enemies. In Day Form, increases Ability Strength of nearby allies."
+        "description": "In Night-Form, reduces damage inflicted by nearby enemies. In Day-Form, increases Ability Strength of nearby allies."
       },
       {
         "name": "Mend & Maim",
-        "description": "In Night Form, allies are healed with each nearby enemy killed. In Day Form, nearby enemies are bled and then subjected to a wave of slashing force."
+        "description": "In Night-Form, allies are healed with each nearby enemy killed. In Day-Form, nearby enemies are bled and then subjected to a wave of slashing force."
       }
     ],
     "type": "Warframe",
@@ -26028,6 +26060,46 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Mesa"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Cowgirl/MesaPrime",
+    "name": "Mesa Prime",
+    "description": "Cast a long shadow with this lethal enforcer. Featuring altered mod polarities for greater customization.",
+    "health": 135,
+    "shield": 75,
+    "armor": 85,
+    "stamina": 3,
+    "power": 125,
+    "passiveDescription": "Shoot dual-wielded sidearms faster and reload single-handed sidearms more rapidly. Gain bonus health when not using Melee Weapons.",
+    "abilities": [
+      {
+        "name": "Ballistic Battery",
+        "description": "When activated, this power stores damage caused by guns. When triggered again, that damage is channelled through the next gunshot."
+      },
+      {
+        "name": "Shooting Gallery",
+        "description": "Gives an ally extra damage while jamming the guns of nearby enemies. This power shifts between team members."
+      },
+      {
+        "name": "Shatter Shield",
+        "description": "Envelops Mesa in a barrier of energy, reflecting back incoming bullet damage."
+      },
+      {
+        "name": "Peacemaker",
+        "description": "With intense focus, Mesa draws her Regulator pistols, shooting down her foes in rapid succession."
+      }
+    ],
+    "type": "Warframe",
+    "category": "Warframes",
+    "tradable": true,
+    "conclave": false,
+    "color": 0,
+    "introduced": "24.2.2",
+    "masteryReq": 2,
+    "polarities": [ "naramon", "naramon" ],
+    "sex": "Female",
+    "sprint": 1.1,
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Mesa_Prime"
+  },
+  {
     "uniqueName": "/Lotus/Powersuits/Harlequin/Harlequin",
     "name": "Mirage",
     "description": "A master of illusion, Mirage confounds the enemy in a spectacle of style and power.",
@@ -31367,7 +31439,7 @@
         "description": "Launches a contained particle of antimatter that will detonate upon collision with increased deadliness when targeted by weapons."
       },
       {
-        "name": "Worm Hole",
+        "name": "Wormhole",
         "description": "Creates a wormhole allowing instantaneous travel."
       },
       {
@@ -32193,7 +32265,7 @@
         "description": "Launches a contained particle of antimatter that will detonate upon collision with increased deadliness when targeted by weapons."
       },
       {
-        "name": "Worm Hole",
+        "name": "Wormhole",
         "description": "Creates a wormhole allowing instantaneous travel."
       },
       {
@@ -33292,11 +33364,11 @@
     "abilities": [
       {
         "name": "Mind Control",
-        "description": "Nyx invades the psyche of a target, confusing enemies and making them fight for the Tenno cause."
+        "description": "Nyx invades the psyche of a target, confusing enemies and making them fight for the Tenno cause. Targets then fired upon by Nyx receive a damage multiplier."
       },
       {
         "name": "Psychic Bolts",
-        "description": "Nyx launches a cluster of force bolts at enemies, using telekinesis to adjust flight paths and seek nearby targets."
+        "description": "Nyx launches a cluster of force bolts at enemies, using telekinesis to adjust flight paths and seek nearby targets. Hits strip some enemy defenses."
       },
       {
         "name": "Chaos",
@@ -34489,11 +34561,11 @@
     "abilities": [
       {
         "name": "Mind Control",
-        "description": "Nyx invades the psyche of a target, confusing enemies and making them fight for the Tenno cause."
+        "description": "Nyx invades the psyche of a target, confusing enemies and making them fight for the Tenno cause. Targets then fired upon by Nyx receive a damage multiplier."
       },
       {
         "name": "Psychic Bolts",
-        "description": "Nyx launches a cluster of force bolts at enemies, using telekinesis to adjust flight paths and seek nearby targets."
+        "description": "Nyx launches a cluster of force bolts at enemies, using telekinesis to adjust flight paths and seek nearby targets. Hits strip some enemy defenses."
       },
       {
         "name": "Chaos",
@@ -35906,7 +35978,7 @@
       },
       {
         "name": "Reckoning",
-        "description": "Quickly lifts enemies into the air and then hurls them down with conviction. Enemies who succumb to this power have a chance to spawn a Health Sphere."
+        "description": "Quickly lifts enemies into the air and then hurls them down with conviction. Enemies who succumb to this power have a chance to spawn a Health Orb."
       }
     ],
     "type": "Warframe",
@@ -36737,7 +36809,7 @@
       },
       {
         "name": "Reckoning",
-        "description": "Quickly lifts enemies into the air and then hurls them down with conviction. Enemies who succumb to this power have a chance to spawn a Health Sphere."
+        "description": "Quickly lifts enemies into the air and then hurls them down with conviction. Enemies who succumb to this power have a chance to spawn a Health Orb."
       }
     ],
     "type": "Warframe",
@@ -43348,7 +43420,7 @@
     "shield": 100,
     "armor": 65,
     "stamina": 3,
-    "power": 100,
+    "power": 150,
     "passiveDescription": "Bullet-jump creates a trampoline that enhances bullet-jump maneuvers when used by allies.",
     "abilities": [
       {
@@ -43361,7 +43433,7 @@
       },
       {
         "name": "Lantern",
-        "description": "Create a swarm of razorflies that transform an enemy into an irresistible floating beacon, attracting witless comrades and finally exploding."
+        "description": "Create a swarm of razorflies that transform an enemy into an irresistable floating beacon, attracting witless comrades before exploding on command."
       },
       {
         "name": "Razorwing",
