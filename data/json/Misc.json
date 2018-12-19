@@ -1362,7 +1362,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagBolarolaUncommon",
     "name": "Black-Banded Bolarola Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "black-banded-bolarola-tag.png",
     "category": "Misc",
@@ -1525,6 +1525,52 @@
     "name": "Cantic Prism",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Barrel/CorpAmpSet1BarrelPartA",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Barrel/CorpAmpSet1BarrelPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
+        "name": "Gyromag Systems",
+        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "corpus-widget-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coagulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-lathe-coogulant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
+        "name": "Radiant Zodian",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-eidolon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
+        "name": "Vega Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "crp-arachnoid-power-core-microid.png"
+      }
+    ],
     "imageName": "cantic-prism.png",
     "category": "Misc",
     "tradable": false
@@ -1587,6 +1633,52 @@
     "name": "Certus Brace",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Grip/CorpAmpSet1GripPartC",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Grip/CorpAmpSet1GripPartCBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
+        "name": "Entroplasma",
+        "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.\nAcquired by disassembling Tromyzon servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-entroplasma.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
+        "name": "Marquise Thyst",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-eidolon-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem",
+        "name": "Repeller Systems",
+        "description": "Anti-gravity system that allows massively heavy objects to be manipulated by a single user.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "corpus-widget-c.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
+        "name": "Sola Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": true,
+        "imageName": "crp-arachnoid-power-core-wraith.png"
+      }
+    ],
     "imageName": "certus-brace.png",
     "category": "Misc",
     "tradable": false
@@ -2517,7 +2609,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagPobbersUncommon",
     "name": "Delicate Pobber Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "delicate-pobber-tag.png",
     "category": "Misc",
@@ -2617,6 +2709,52 @@
     "name": "Dissic Scaffold",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartB",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
+        "name": "Atmo Systems",
+        "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "corpus-widget-b.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartBBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
+        "name": "Calda Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "crp-arachnoid-power-core-hunger.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 50,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
+        "name": "Sagan Module",
+        "description": "A device used to reconstruct degenerated matter into Orokin bio-material.\nAcquired by disassembling Charamote servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-sagan-module.png"
+      }
+    ],
     "imageName": "dissic-scaffold.png",
     "category": "Misc",
     "tradable": false
@@ -2928,7 +3066,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagVirminkUncommon",
     "name": "Dusky-Headed Virmink Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "dusky-headed-virmink-tag.png",
     "category": "Misc",
@@ -3865,6 +4003,52 @@
     "name": "Exard Scaffold",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartA",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
+        "name": "Atmo Systems",
+        "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "corpus-widget-b.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
+        "name": "Calda Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "crp-arachnoid-power-core-hunger.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 50,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coagulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-lathe-coogulant.png"
+      }
+    ],
     "imageName": "exard-scaffold.png",
     "category": "Misc",
     "tradable": false
@@ -7860,6 +8044,52 @@
     "name": "Gauth Bracket",
     "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegD",
     "type": "Misc",
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegDBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.\nAcquired by disassembling Tink servofish.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "fish-part-dissipator-coil.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
     "imageName": "gauth-bracket.png",
     "category": "Misc",
     "tradable": false
@@ -8237,6 +8467,54 @@
         "fixes": "Fixed being able to fire the Granmu Prism faster than intended by using Void Blast cancels."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/HeavyWeaponCatalyst",
+    "name": "Gravimag",
+    "description": "Allows archwing guns to be deployed in terrestrial zones. Install this device on archwing guns to compensate for atmospheric and gravitational forces not experienced in space.",
+    "type": "Misc",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
+        "name": "Atmo Systems",
+        "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "corpus-widget-b.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/HeavyWeaponCatalystBlueprint",
+        "name": "Blueprint",
+        "description": "Allows archwing guns to be deployed in terrestrial zones. Install this device on archwing guns to compensate for atmospheric and gravitational forces not experienced in space.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
+        "name": "Gyromag Systems",
+        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "corpus-widget-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem",
+        "name": "Repeller Systems",
+        "description": "Anti-gravity system that allows massively heavy objects to be manipulated by a single user.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "corpus-widget-c.png"
+      }
+    ],
+    "imageName": "gravimag.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/FocusLensGreater",
@@ -9066,6 +9344,52 @@
     "name": "Jonsin Bracket",
     "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegC",
     "type": "Misc",
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-common-ore-balloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegCBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+        "name": "Heart Noctrul",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "solaris-common-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Muon Battery",
+        "description": "A small, atomic power source.\nAcquired by disassembling Brickie servofish.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "fish-part-muon-battery.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      }
+    ],
     "imageName": "jonsin-bracket.png",
     "category": "Misc",
     "tradable": false
@@ -9392,7 +9716,7 @@
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
-        "name": "Lathe Coogulant",
+        "name": "Lathe Coagulant",
         "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
         "itemCount": 5,
         "tradable": false,
@@ -9415,6 +9739,52 @@
     "name": "Klamora Prism",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Barrel/CorpAmpSet1BarrelPartC",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Barrel/CorpAmpSet1BarrelPartCBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
+        "name": "Entroplasma",
+        "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.\nAcquired by disassembling Tromyzon servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-entroplasma.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
+        "name": "Gyromag Systems",
+        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "corpus-widget-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
+        "name": "Radiant Zodian",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-eidolon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
+        "name": "Vega Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "crp-arachnoid-power-core-microid.png"
+      }
+    ],
     "imageName": "klamora-prism.png",
     "category": "Misc",
     "tradable": false
@@ -9818,7 +10188,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagKubrodonRare",
     "name": "Kubrodon Incarnadine Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "kubrodon-incarnadine-tag.png",
     "category": "Misc",
@@ -10533,10 +10903,10 @@
   },
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
-    "name": "Lathe Coogulant",
+    "name": "Lathe Coagulant",
     "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
     "type": "Fish Part",
-    "imageName": "lathe-coogulant.png",
+    "imageName": "lathe-coagulant.png",
     "category": "Misc",
     "tradable": false
   },
@@ -10553,6 +10923,52 @@
     "name": "Lega Prism",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Barrel/CorpAmpSet1BarrelPartB",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Barrel/CorpAmpSet1BarrelPartBBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
+        "name": "Gyromag Systems",
+        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "corpus-widget-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
+        "name": "Radiant Zodian",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-eidolon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
+        "name": "Sagan Module",
+        "description": "A device used to reconstruct degenerated matter into Orokin bio-material.\nAcquired by disassembling Charamote servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-sagan-module.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
+        "name": "Vega Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "crp-arachnoid-power-core-microid.png"
+      }
+    ],
     "imageName": "lega-prism.png",
     "category": "Misc",
     "tradable": false
@@ -14021,14 +14437,6 @@
     ]
   },
   {
-    "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
-    "name": "Mem-Foil",
-    "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
-    "type": "Fish Part",
-    "category": "Misc",
-    "tradable": false
-  },
-  {
     "name": "Mewan",
     "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/TipThree",
     "type": "Melee",
@@ -14587,14 +14995,6 @@
         "fixes": "You will receive a Blueprint from the Lotus for the Fomorian Disruptor. It will require Nano Spores, Cryotic, and Omega Isotopes to craft."
       }
     ]
-  },
-  {
-    "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
-    "name": "Nanoblood",
-    "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
-    "type": "Fish Part",
-    "category": "Misc",
-    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Focus/TacticLens",
@@ -16552,6 +16952,52 @@
     "name": "Plaga Brace",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Grip/CorpAmpSet1GripPartB",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Grip/CorpAmpSet1GripPartBBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
+        "name": "Marquise Thyst",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-eidolon-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem",
+        "name": "Repeller Systems",
+        "description": "Anti-gravity system that allows massively heavy objects to be manipulated by a single user.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "corpus-widget-c.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
+        "name": "Sagan Module",
+        "description": "A device used to reconstruct degenerated matter into Orokin bio-material.\nAcquired by disassembling Charamote servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-sagan-module.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
+        "name": "Sola Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": true,
+        "imageName": "crp-arachnoid-power-core-wraith.png"
+      }
+    ],
     "imageName": "plaga-brace.png",
     "category": "Misc",
     "tradable": false
@@ -16872,6 +17318,52 @@
     "name": "Propa Scaffold",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartC",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
+        "name": "Atmo Systems",
+        "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "corpus-widget-b.png"
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartCBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
+        "name": "Calda Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "crp-arachnoid-power-core-hunger.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
+        "name": "Entroplasma",
+        "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.\nAcquired by disassembling Tromyzon servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-entroplasma.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 50,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      }
+    ],
     "imageName": "propa-scaffold.png",
     "category": "Misc",
     "tradable": false
@@ -17381,7 +17873,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagVirminkRare",
     "name": "Red-Crested Virmink Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "red-crested-virmink-tag.png",
     "category": "Misc",
@@ -18900,7 +19392,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagPobbersRare",
     "name": "Subterranean Pobber Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "subterranean-pobber-tag.png",
     "category": "Misc",
@@ -18919,6 +19411,52 @@
     "name": "Suo Brace",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Grip/CorpAmpSet1GripPartA",
     "type": "Amp",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Grip/CorpAmpSet1GripPartABlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coagulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-lathe-coogulant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
+        "name": "Marquise Thyst",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "solaris-eidolon-gem-bcut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem",
+        "name": "Repeller Systems",
+        "description": "Anti-gravity system that allows massively heavy objects to be manipulated by a single user.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "corpus-widget-c.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
+        "name": "Sola Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+        "itemCount": 5,
+        "tradable": true,
+        "imageName": "crp-arachnoid-power-core-wraith.png"
+      }
+    ],
     "imageName": "suo-brace.png",
     "category": "Misc",
     "tradable": false
@@ -19558,7 +20096,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagBolarolaRare",
     "name": "Thorny Bolarola Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "thorny-bolarola-tag.png",
     "category": "Misc",
@@ -19659,6 +20197,52 @@
     "name": "Tian Bracket",
     "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegB",
     "type": "Misc",
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
+        "name": "Anoscopic Sensor",
+        "description": "A small camera that records visual data with extremely high definition.\nAcquired by disassembling Echowinder servofish.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "fish-part-anoscopic-sensor.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegBBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-common-ore-aalloy.png"
+      }
+    ],
     "imageName": "tian-bracket.png",
     "category": "Misc",
     "tradable": false
@@ -20221,7 +20805,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagKubrodonUncommon",
     "name": "Vallis Kubrodon Tag",
-    "description": "For saving a specimen of this subspecies.",
+    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
     "type": "Misc",
     "imageName": "vallis-kubrodon-tag.png",
     "category": "Misc",

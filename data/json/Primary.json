@@ -8345,6 +8345,53 @@
     "masteryReq": 8,
     "omegaAttenuation": 1,
     "type": "Misc",
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "argon-crystal.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/CrpShapeBlastShotgunBlueprint",
+        "name": "Blueprint",
+        "description": "Feel the kick of this Corpus shotgun as it shatters a high-yield crystal into anyone and anything standing in your way.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
+        "itemCount": 175,
+        "tradable": false,
+        "imageName": "component-oxium.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem",
+        "name": "Repeller Systems",
+        "description": "Anti-gravity system that allows massively heavy objects to be manipulated by a single user.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "corpus-widget-c.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
+        "itemCount": 8500,
+        "tradable": false,
+        "imageName": "component-salvage.png"
+      }
+    ],
     "imageName": "exergis.png",
     "category": "Primary",
     "tradable": false
@@ -19883,7 +19930,7 @@
     "disposition": 3,
     "releaseDate": "2018 09 25",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 08 11"
+    "estimatedVaultDate": "2020 06 10"
   },
   {
     "name": "Sancti Tigris",
@@ -20514,7 +20561,7 @@
         "fixes": "Simulor Gravitational Singularity Generator available now!\nSend the enemy into oblivion! The Simulor Gravitational Singularity Generator produces miniature Gravitational Singularities that can be used for scientific study or self-defense.\nAdd the Simulor to your Arsenal by visiting the Market or obtain the blueprint from Cephalon Simaris’ Sanctuary today!"
       }
     ],
-    "ammo": 60,
+    "ammo": 72,
     "damage": "50.0 magnetic",
     "damageTypes": {
       "magnetic": 50
@@ -23806,7 +23853,7 @@
     "disposition": 2,
     "releaseDate": "2017 05 30",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 04 09"
+    "estimatedVaultDate": "2019 03 13"
   },
   {
     "name": "Synapse",
@@ -24063,7 +24110,7 @@
         "fixes": "Cephalon Suda: Synoid Simulor "
       }
     ],
-    "ammo": 75,
+    "ammo": 96,
     "damage": "20.0 magnetic",
     "damageTypes": {
       "magnetic": 20
@@ -24073,7 +24120,7 @@
     "projectile": "Projectile",
     "secondary": {
       "name": "Orb Explosion",
-      "crit_chance": 5,
+      "crit_chance": 14,
       "crit_mult": 2,
       "status_chance": 0.3,
       "electricity": 75,
@@ -25069,7 +25116,7 @@
     "disposition": 4,
     "releaseDate": "2018 03 20",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 01 28"
+    "estimatedVaultDate": "2019 12 11"
   },
   {
     "name": "Tigris",
@@ -26173,7 +26220,7 @@
         "fixes": "Tonkor Grenade Launcher available now!\nHurl mayhem and destruction at the enemy with the Tonkor! Grenades from this Grineer launcher explode on impact. Use their blasts to propel yourself to new heights!"
       }
     ],
-    "ammo": 40,
+    "ammo": 30,
     "damage": "75.0",
     "damageTypes": {
       "puncture": 75
