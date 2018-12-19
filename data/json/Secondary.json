@@ -1007,7 +1007,7 @@
     "disposition": 2,
     "releaseDate": "2017 12 12",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 10 22"
+    "estimatedVaultDate": "2019 09 11"
   },
   {
     "name": "Akbronco",
@@ -1811,48 +1811,177 @@
     "masteryReq": 12,
     "omegaAttenuation": 1.4299999,
     "type": "Dual Pistols",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeBarrel",
+        "name": "Barrel",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 2,
+        "tradable": true,
+        "imageName": "generic-gun-prime-barrel.png",
+        "drops": [
+          {
+            "location": "Meso A1 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Meso A1 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Meso A1 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Meso A1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/AkjagaraPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "Precision machined mirrored pistols. Primed and ready.",
+        "itemCount": 1,
+        "tradable": true,
+        "imageName": "blueprint.png",
+        "drops": [
+          {
+            "location": "Neo S9 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo S9 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo S9 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo S9 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeLink",
+        "name": "Link",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 1,
+        "tradable": true,
+        "imageName": "generic-component-prime-plug.png",
+        "drops": [
+          {
+            "location": "Meso M2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso M2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso M2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso M2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeReceiver",
+        "name": "Receiver",
+        "description": "A prime weapon-crafting component.",
+        "itemCount": 2,
+        "tradable": true,
+        "imageName": "generic-gun-prime-receiver.png",
+        "drops": [
+          {
+            "location": "Axi L3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Axi L3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Axi L3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Axi L3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ]
+      }
+    ],
     "imageName": "akjagara-prime.png",
     "category": "Secondary",
     "tradable": true,
-    "drops": [
-      {
-        "location": "Neo S9 Intact",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.25329999999999997
-      },
-      {
-        "location": "Neo S9 Exceptional",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.23329999999999998
-      },
-      {
-        "location": "Neo S9 Flawless",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.2
-      },
-      {
-        "location": "Neo S9 Radiant",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.16670000000000001
-      }
-    ],
+    "ammo": 320,
     "damage": "36.0",
     "damageTypes": {
       "impact": 3.6,
       "slash": 28.8,
       "puncture": 3.6
     },
-    "polarities": [  ],
+    "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hitscan",
     "tags": [ "Prime" ],
     "vaulted": false,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/b/ba/AkjagaraPrime.png/revision/latest?cb=20181218224226",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Akjagara_Prime",
-    "disposition": 5
+    "disposition": 5,
+    "releaseDate": "2018 12 12",
+    "vaultDate": "n/a",
+    "estimatedVaultDate": "2020 09 09"
   },
   {
     "name": "Aklato",
@@ -5223,7 +5352,7 @@
     "disposition": 3,
     "releaseDate": "2017 08 29",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 07 16"
+    "estimatedVaultDate": "2019 06 12"
   },
   {
     "name": "Bolto",
@@ -9188,8 +9317,8 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Euphona_Prime",
     "disposition": 1,
     "releaseDate": "2017 02 28",
-    "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 01 01"
+    "vaultDate": "2018 12 12",
+    "estimatedVaultDate": "2018 12 12"
   },
   {
     "name": "Furis",
@@ -13913,7 +14042,7 @@
         "fixes": ""
       }
     ],
-    "ammo": 200,
+    "ammo": 300,
     "damage": "20.0 radiation",
     "damageTypes": {
       "puncture": 2,
@@ -14132,9 +14261,70 @@
     "masteryReq": 6,
     "omegaAttenuation": 1,
     "type": "Pistol",
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 4375,
+        "tradable": false,
+        "imageName": "alloy-plate.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
+        "itemCount": 2,
+        "tradable": false,
+        "imageName": "argon-crystal.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/CrpBlastorWeaponBlueprint",
+        "name": "Blueprint",
+        "description": "Cultivate a meaningful relationship with this deceptively simple battery-powered pistol. The Plinx rewards attention and investment from the wise.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
+        "itemCount": 575,
+        "tradable": false,
+        "imageName": "component-cryotic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
+        "name": "Gyromag Systems",
+        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "corpus-widget-a.png"
+      }
+    ],
     "imageName": "plinx.png",
     "category": "Secondary",
-    "tradable": false
+    "tradable": false,
+    "ammo": 10,
+    "damage": "20.0 heat",
+    "damageTypes": {
+      "puncture": 26,
+      "heat": 20
+    },
+    "marketCost": 200,
+    "polarities": [  ],
+    "projectile": "Hitscan",
+    "tags": [ "Corpus" ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/e5/Plinx.png/revision/latest?cb=20181218162842",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Plinx",
+    "disposition": 3
   },
   {
     "name": "Pox",
@@ -14994,7 +15184,7 @@
     "disposition": 3,
     "releaseDate": "2018 06 19",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 05 05"
+    "estimatedVaultDate": "2020 03 11"
   },
   {
     "name": "Rakta Ballistica",
@@ -17238,7 +17428,7 @@
         "fixes": "Fixed visual bug with Staticor while holding a Datamass or Energy Cell\nFixed Staticor’s “glow” offset being inconsistent"
       }
     ],
-    "ammo": 270,
+    "ammo": 288,
     "damage": "44.0 radiation",
     "damageTypes": {
       "radiation": 44
@@ -18179,7 +18369,7 @@
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
-        "name": "Lathe Coogulant",
+        "name": "Lathe Coagulant",
         "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
         "itemCount": 5,
         "tradable": false,

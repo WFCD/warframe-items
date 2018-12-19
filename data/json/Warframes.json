@@ -4741,8 +4741,8 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/8e/BansheePrimeIcon.png/revision/latest?cb=20170308023206",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Banshee_Prime",
     "releaseDate": "2017 02 28",
-    "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 01 01"
+    "vaultDate": "2018 12 12",
+    "estimatedVaultDate": "2018 12 12"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Pacifist/Pacifist",
@@ -4773,9 +4773,66 @@
       }
     ],
     "type": "Warframe",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PacifistBlueprint",
+        "name": "Blueprint",
+        "description": "Beware the fury of the truly patient. Pushed beyond restraint, a reluctant master unleashes the storm within.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PacifistChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Baruuk Warframe.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-warframe-chassis.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PacifistHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Baruuk Warframe.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-warframe-helmet.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PacifistSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Baruuk Warframe.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "generic-warframe-system.png"
+      }
+    ],
     "imageName": "baruuk.png",
     "category": "Warframes",
-    "tradable": false
+    "tradable": false,
+    "aura": "naramon",
+    "conclave": false,
+    "color": 2501421,
+    "introduced": "24.2.0",
+    "masteryReq": 0,
+    "polarities": [ "naramon", "vazarin", "vazarin" ],
+    "sex": "Male",
+    "sprint": 1.2,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/94/Baruuk.png/revision/latest?cb=20181218162933",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Baruuk"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Dragon/Dragon",
@@ -6764,7 +6821,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Chroma_Prime",
     "releaseDate": "2018 09 25",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 08 11"
+    "estimatedVaultDate": "2020 06 10"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Ember/Ember",
@@ -16861,7 +16918,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Hydroid_Prime",
     "releaseDate": "2017 08 29",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 07 16"
+    "estimatedVaultDate": "2019 06 12"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Sandman/Sandman",
@@ -20583,7 +20640,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Limbo_Prime",
     "releaseDate": "2018 06 19",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 05 05"
+    "estimatedVaultDate": "2020 03 11"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Loki/Loki",
@@ -26329,44 +26386,173 @@
       }
     ],
     "type": "Warframe",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "Cast a long shadow with this lethal enforcer. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
+        "tradable": true,
+        "imageName": "blueprint.png",
+        "drops": [
+          {
+            "location": "Neo Z2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Neo Z2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Neo Z2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Neo Z2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Mesa Prime Warframe.",
+        "itemCount": 1,
+        "tradable": true,
+        "imageName": "generic-warframe-prime-chassis.png",
+        "drops": [
+          {
+            "location": "Axi H4 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi H4 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi H4 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi H4 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Mesa Prime Warframe.",
+        "itemCount": 1,
+        "tradable": true,
+        "imageName": "generic-warframe-prime-helmet.png",
+        "drops": [
+          {
+            "location": "Lith M3 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Lith M3 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Lith M3 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Lith M3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.\nLocations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "component-cell.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Mesa Prime Warframe.",
+        "itemCount": 1,
+        "tradable": true,
+        "imageName": "generic-warframe-prime-system.png",
+        "drops": [
+          {
+            "location": "Neo M2 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Neo M2 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Neo M2 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Neo M2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          }
+        ]
+      }
+    ],
     "imageName": "mesa-prime.png",
     "category": "Warframes",
     "tradable": true,
-    "drops": [
-      {
-        "location": "Neo Z2 Radiant",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.2
-      },
-      {
-        "location": "Neo Z2 Flawless",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.17
-      },
-      {
-        "location": "Neo Z2 Exceptional",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.13
-      },
-      {
-        "location": "Neo Z2 Intact",
-        "type": "Relics",
-        "rarity": "Uncommon",
-        "chance": 0.11
-      }
-    ],
+    "aura": "madurai",
     "conclave": false,
     "color": 3353891,
     "introduced": "24.2.2",
     "masteryReq": 2,
-    "polarities": [ "naramon", "naramon" ],
+    "polarities": [ "naramon", "naramon", "vazarin", "madurai" ],
     "sex": "Female",
     "sprint": 1.1,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/81/MesaPrime.png/revision/latest?cb=20181218224145",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Mesa_Prime"
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Mesa_Prime",
+    "releaseDate": "2018 12 12",
+    "vaultDate": "n/a",
+    "estimatedVaultDate": "2020 09 09"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Harlequin/Harlequin",
@@ -28715,7 +28901,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Mirage_Prime",
     "releaseDate": "2017 12 12",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 10 22"
+    "estimatedVaultDate": "2019 09 11"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Necro/Necro",
@@ -38400,7 +38586,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Oberon_Prime",
     "releaseDate": "2017 05 30",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 04 09"
+    "estimatedVaultDate": "2019 03 13"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Bard/Bard",
@@ -54617,6 +54803,6 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Zephyr_Prime",
     "releaseDate": "2018 03 20",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 01 28"
+    "estimatedVaultDate": "2019 12 11"
   }
 ]

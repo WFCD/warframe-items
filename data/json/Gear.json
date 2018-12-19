@@ -18,15 +18,6 @@
     "tradable": false
   },
   {
-    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MapMarker",
-    "name": "[Ph] Map Marker",
-    "description": "[PH] Place a persistent beacon at your position",
-    "type": "Gear",
-    "imageName": "[ph]-map-marker.png",
-    "category": "Gear",
-    "tradable": false
-  },
-  {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/LocationMarkerMining",
     "name": "[Ph] Mining Marker",
     "description": "[PH] Place a persistent marker with a mining icon at your position",
@@ -727,13 +718,6 @@
         "itemCount": 5,
         "tradable": false,
         "imageName": "orokin-artifact.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
-        "name": "Nanoblood",
-        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
-        "itemCount": 20,
-        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
@@ -2631,13 +2615,6 @@
         "imageName": "blueprint.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
-        "name": "Mem-Foil",
-        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
-        "itemCount": 20,
-        "tradable": false
-      },
-      {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
         "name": "Parallel Biode",
         "description": "Controls the electrical flow throughout the circuitry within robotic organisms.\nAcquired by disassembling Mirewinder servofish.",
@@ -2724,6 +2701,54 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/MapMarker",
+    "name": "Loc-Pin",
+    "description": "A persistent waypoint marker for use with the world map. Coordinate your squad and track places of importance!",
+    "type": "Gear",
+    "buildPrice": 4000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/MapMarkerBlueprint",
+        "name": "Blueprint",
+        "description": "A persistent waypoint marker for use with the world map. Coordinate your squad and track places of importance!",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 200,
+        "tradable": false,
+        "imageName": "component-circuits.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 100,
+        "tradable": false,
+        "imageName": "component-plastids.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
+        "itemCount": 150,
+        "tradable": false,
+        "imageName": "polymer-bundle.png"
+      }
+    ],
+    "imageName": "loc-pin.png",
+    "category": "Gear",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/FishBait/Venus/LakeContaminantTierB",
     "name": "Longwinder Bait",
     "description": "This bait is synthesized from beryzene that is known to attract Longwinders, a Servofish found in lake hotspots during warm weather.",
@@ -2741,13 +2766,6 @@
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
-        "name": "Nanoblood",
-        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
-        "itemCount": 20,
-        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
@@ -2790,7 +2808,7 @@
   },
   {
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/FishingBoosts/AnglerVision",
-    "name": "Luminos Dye",
+    "name": "Luminous Dye",
     "description": "Dyes the waters with a compound that sticks to fish passing through it, making them easier to see from the shore.",
     "type": "Gear",
     "buildPrice": 5000,
@@ -2824,7 +2842,7 @@
         "imageName": "iradite.png"
       }
     ],
-    "imageName": "luminos-dye.png",
+    "imageName": "luminous-dye.png",
     "category": "Gear",
     "tradable": false
   },
@@ -2866,18 +2884,11 @@
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
-        "name": "Lathe Coogulant",
+        "name": "Lathe Coagulant",
         "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-part-lathe-coogulant.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
-        "name": "Mem-Foil",
-        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
-        "itemCount": 20,
-        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
@@ -3032,13 +3043,6 @@
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-part-exa-brain.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
-        "name": "Mem-Foil",
-        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
-        "itemCount": 20,
-        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
@@ -5205,20 +5209,6 @@
         "imageName": "blueprint.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishMemFoilItem",
-        "name": "Mem-Foil",
-        "description": "An electro-fibre that forms the nervous system of these robotic entities. They are used to persist and transmit data between mechanical elements.",
-        "itemCount": 20,
-        "tradable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
-        "name": "Nanoblood",
-        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
-        "itemCount": 20,
-        "tradable": false
-      },
-      {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/OrokinSensorItem",
         "name": "Orokin Monitor",
         "description": "These Orokin devices emerge when the floating glaciers impact on the surface of Venus. Their purpose is unknown.",
@@ -5438,13 +5428,6 @@
         "itemCount": 5,
         "tradable": false,
         "imageName": "fish-part-muon-battery.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishNanobloodItem",
-        "name": "Nanoblood",
-        "description": "A liquid filled with self-replicating nanites that service and maintain robotic organisms.",
-        "itemCount": 20,
-        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
