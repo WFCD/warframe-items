@@ -445,12 +445,6 @@
     "tradable": false,
     "drops": [
       {
-        "location": "Corrupted Vor 100.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 0.5
-      },
-      {
         "location": "Derelict - Orokin",
         "type": "Mission Rewards",
         "rarity": "Uncommon",
@@ -462,6 +456,13 @@
         "type": "Mission Rewards",
         "rarity": "Uncommon",
         "chance": 0.1082,
+        "rotation": "C"
+      },
+      {
+        "location": "Sedna - Phithale",
+        "type": "Mission Rewards",
+        "rarity": "Rare",
+        "chance": 0.0367,
         "rotation": "C"
       },
       {
@@ -479,14 +480,14 @@
         "rotation": "rewards"
       },
       {
-        "location": "Uranus - Portia",
+        "location": "Neptune - Thalassa",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0367,
         "rotation": "C"
       },
       {
-        "location": "Neptune - Thalassa",
+        "location": "Sedna - Kelpie",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0367,
@@ -500,13 +501,6 @@
         "rotation": "C"
       },
       {
-        "location": "Sedna - Phithale",
-        "type": "Mission Rewards",
-        "rarity": "Rare",
-        "chance": 0.0367,
-        "rotation": "C"
-      },
-      {
         "location": "Pluto - Cypress",
         "type": "Mission Rewards",
         "rarity": "Rare",
@@ -514,7 +508,7 @@
         "rotation": "C"
       },
       {
-        "location": "Sedna - Kelpie",
+        "location": "Uranus - Portia",
         "type": "Mission Rewards",
         "rarity": "Rare",
         "chance": 0.0367,
@@ -549,6 +543,13 @@
         "rotation": "C"
       },
       {
+        "location": "Venus - Ishtar",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0067,
+        "rotation": "C"
+      },
+      {
         "location": "Mars - Gradivus",
         "type": "Mission Rewards",
         "rarity": "Legendary",
@@ -570,13 +571,6 @@
         "rotation": "C"
       },
       {
-        "location": "Venus - Ishtar",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0067,
-        "rotation": "C"
-      },
-      {
         "location": "Saturn - Annihilation",
         "type": "Mission Rewards",
         "rarity": "Legendary",
@@ -588,7 +582,7 @@
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0025,
-        "rotation": "(Extra)"
+        "rotation": "rewards"
       },
       {
         "location": "Saturn - Variant",
@@ -605,18 +599,18 @@
         "rotation": "Capture"
       },
       {
-        "location": "Neptune - Cephalon",
-        "type": "Mission Rewards",
-        "rarity": "Legendary",
-        "chance": 0.0025,
-        "rotation": "rewards"
-      },
-      {
         "location": "Saturn - Lunaro",
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0025,
         "rotation": "(Extra)"
+      },
+      {
+        "location": "Neptune - Cephalon",
+        "type": "Mission Rewards",
+        "rarity": "Legendary",
+        "chance": 0.0025,
+        "rotation": "rewards"
       },
       {
         "location": "Saturn - Lunaro",
@@ -630,7 +624,7 @@
         "type": "Mission Rewards",
         "rarity": "Legendary",
         "chance": 0.0025,
-        "rotation": "rewards"
+        "rotation": "(Extra)"
       },
       {
         "location": "Saturn - Annihilation",
@@ -1811,27 +1805,7 @@
     "type": "Misc",
     "imageName": "chitinous-husk.png",
     "category": "Misc",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Juggernaut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Juggernaut Behemoth 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Jack O'Naut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
@@ -1841,44 +1815,6 @@
     "imageName": "circuits.png",
     "category": "Misc",
     "tradable": false,
-    "drops": [
-      {
-        "location": "Turret 100.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 0.6802
-      },
-      {
-        "location": "Tusk Bolkor 100.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 0.6802
-      },
-      {
-        "location": "Akkalak Turret 70.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 0.6802
-      },
-      {
-        "location": "Mordda Turret 70.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 0.6802
-      },
-      {
-        "location": "Vruush Turret 70.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 0.6802
-      },
-      {
-        "location": "Senta Turret 70.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 0.6802
-      }
-    ],
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Update 22.2.0",
@@ -9084,27 +9020,7 @@
     "type": "Misc",
     "imageName": "infected-palpators.png",
     "category": "Misc",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Juggernaut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Juggernaut Behemoth 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Jack O'Naut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/SteelMeridianDogTag",
@@ -9578,25 +9494,25 @@
         "imageName": "blueprint.png",
         "drops": [
           {
-            "location": "Hyekka Master 1.50 1.50",
+            "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 1
           },
           {
-            "location": "Hyekka Master 1.50 1.50",
+            "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 1
           },
           {
-            "location": "Kuva Hyekka Master 1.50 1.50",
+            "location": "Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 1
           },
           {
-            "location": "Kuva Hyekka Master 1.50 1.50",
+            "location": "Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 1
@@ -15069,38 +14985,6 @@
     "imageName": "nav-coordinate.png",
     "category": "Misc",
     "tradable": false,
-    "drops": [
-      {
-        "location": "Drahk 25.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.2256
-      },
-      {
-        "location": "Hyekka 25.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.2256
-      },
-      {
-        "location": "Kuva Drahk 25.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.2256
-      },
-      {
-        "location": "Kavat 25.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.2256
-      },
-      {
-        "location": "Kubrow 25.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.2256
-      }
-    ],
     "patchlogs": [
       {
         "name": "Mask of the Revenant: Update 23.8.0 + 23.8.0.1 + 23.8.0.2",
@@ -16362,26 +16246,6 @@
     "imageName": "oxium.png",
     "category": "Misc",
     "tradable": false,
-    "drops": [
-      {
-        "location": "Oxium Osprey 100.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Nemes 100.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 1
-      },
-      {
-        "location": "Carabus 100.00",
-        "type": "Misc Items",
-        "rarity": "Common",
-        "chance": 1
-      }
-    ],
     "patchlogs": [
       {
         "name": "Fortuna: Hotfix 24.0.5",
@@ -17375,27 +17239,7 @@
     "type": "Misc",
     "imageName": "pulsating-tubercles.png",
     "category": "Misc",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Juggernaut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Juggernaut Behemoth 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Jack O'Naut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneFireElement",
@@ -18339,13 +18183,13 @@
         "imageName": "generic-landing-craft-systems.png",
         "drops": [
           {
-            "location": "Zanuka Hunter 50.00 50.00",
+            "location": "Zanuka Hunter nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 0.5
           },
           {
-            "location": "Zanuka Hunter 50.00 50.00",
+            "location": "Zanuka Hunter nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 0.5
@@ -18369,37 +18213,37 @@
         "imageName": "generic-landing-craft-engines.png",
         "drops": [
           {
-            "location": "Stalker 50.00 50.00",
+            "location": "Shadow Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Rare",
             "chance": 0.0201
           },
           {
-            "location": "Stalker 50.00 50.00",
+            "location": "Shadow Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Rare",
             "chance": 0.0201
           },
           {
-            "location": "Shadow Stalker 50.00 50.00",
+            "location": "Hunhow nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Rare",
             "chance": 0.0201
           },
           {
-            "location": "Shadow Stalker 50.00 50.00",
+            "location": "Hunhow nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Rare",
             "chance": 0.0201
           },
           {
-            "location": "Hunhow 50.00 50.00",
+            "location": "Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Rare",
             "chance": 0.0201
           },
           {
-            "location": "Hunhow 50.00 50.00",
+            "location": "Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Rare",
             "chance": 0.0201
@@ -18415,13 +18259,13 @@
         "imageName": "generic-landing-craft-fuselage.png",
         "drops": [
           {
-            "location": "Vem Tabook 50.00 50.00",
+            "location": "Vem Tabook nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 0.5
           },
           {
-            "location": "Vem Tabook 50.00 50.00",
+            "location": "Vem Tabook nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 0.5
@@ -18729,27 +18573,7 @@
     "type": "Misc",
     "imageName": "severed-bile-sac.png",
     "category": "Misc",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Juggernaut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Juggernaut Behemoth 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      },
-      {
-        "location": "Jack O'Naut 100.00",
-        "type": "Misc Items",
-        "rarity": "Uncommon",
-        "chance": 0.25
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishAPartItem",
