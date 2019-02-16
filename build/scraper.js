@@ -66,6 +66,7 @@ class Scraper {
       'http://content.warframe.com/MobileExport/Manifest/ExportWarframes.json'
     ]
     this.data = []
+    this.componentManifest = []
     this.bar = prod ? {
       interrupt () {},
       tick () {}
@@ -115,7 +116,6 @@ class Scraper {
   async fetch (type) {
     const url = this.endpoints.find(e => e.includes(type))
     const items = (await get(url))[`Export${type}`]
-
     return this.filter(items, type, new Date())
   }
 
@@ -170,20 +170,35 @@ class Scraper {
     }
   }
 
+  typeCleanPrep (items, type) {
+    items.forEach(item => {
+      this.addType(item)
+      this.sanitize(item)
+      this.addComponents(item, type)
+    })
+  }
+
+  populateComponentManifest (items) {
+    items.forEach(item => {
+      (item.components || []).forEach(component => {
+        if (!this.componentManifest.includes(component.uniqueName)) this.componentManifest.push(component.uniqueName)
+      })
+    })
+  }
+
   /**
    * Add, modify, remove certain keys as I deem sensible. Complaints go to
    * management.
    */
   async filter (items, type, timer) {
     const data = {}
+
     items = this.removeComponents(items)
+    this.typeCleanPrep(items, type)
 
     for (let i = 0; i < items.length; i++) {
       let item = items[i]
 
-      this.addType(item)
-      this.sanitize(item)
-      this.addComponents(item, type)
       this.addImageName(item, items[i - 1])
       if (item.components) {
         for (let component of item.components) {
@@ -335,7 +350,7 @@ class Scraper {
     const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
 
-    if (isComponent) {
+    if (isComponent || this.componentManifest.includes(item.uniqueName)) {
       if (item.name === 'Blueprint') {
         item.imageName = 'blueprint'
       } else {
