@@ -1356,7 +1356,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagBolarolaUncommon",
     "name": "Black-Banded Bolarola Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "black-banded-bolarola-tag.png",
     "category": "Misc",
@@ -1498,6 +1498,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/KavatBust",
+    "name": "Bronze Kavat Bust",
+    "description": "A sculpture to imbue your Orbiter with the grace and beauty of the Kavat.",
+    "type": "Extractor",
+    "imageName": "bronze-kavat-bust.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstBirdCage",
     "name": "Caged Condroc",
     "description": "A bird of prey to accompany you aboard the Orbiter.",
@@ -1535,7 +1544,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
-        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "corpus-widget-a.png"
@@ -2545,7 +2554,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagPobbersUncommon",
     "name": "Delicate Pobber Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "delicate-pobber-tag.png",
     "category": "Misc",
@@ -3002,7 +3011,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagVirminkUncommon",
     "name": "Dusky-Headed Virmink Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "dusky-headed-virmink-tag.png",
     "category": "Misc",
@@ -6583,6 +6592,30 @@
             "chance": 0.16670000000000001
           },
           {
+            "location": "Meso S9 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso S9 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso S9 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso S9 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
             "location": "Meso T1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -7247,6 +7280,30 @@
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.17
+          },
+          {
+            "location": "Neo S1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo S1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo S1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo S1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
           },
           {
             "location": "Neo S1 Radiant",
@@ -8410,8 +8467,8 @@
     "description": "Allows archwing guns to be deployed in terrestrial zones. Install this device on archwing guns to compensate for atmospheric and gravitational forces not experienced in space.\rNOTE: Deployment requires gear obtained from the Profit Taker mission in Fortuna.",
     "type": "Misc",
     "buildPrice": 25000,
-    "buildTime": 259200,
-    "skipBuildTimePrice": 50,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 10,
     "buildQuantity": 1,
     "consumeOnBuild": true,
     "components": [
@@ -8434,7 +8491,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
-        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
         "itemCount": 10,
         "tradable": false,
         "imageName": "corpus-widget-a.png"
@@ -9494,18 +9551,6 @@
         "imageName": "blueprint.png",
         "drops": [
           {
-            "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 1
-          },
-          {
-            "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 1
-          },
-          {
             "location": "Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
@@ -9513,6 +9558,18 @@
           },
           {
             "location": "Hyekka Master nce: 1.50 nce: 1.50",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 1
@@ -9679,7 +9736,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
-        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "corpus-widget-a.png"
@@ -10104,7 +10161,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagKubrodonRare",
     "name": "Kubrodon Incarnadine Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "kubrodon-incarnadine-tag.png",
     "category": "Misc",
@@ -10855,7 +10912,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
-        "description": "A modular component that regulates attitude and altitude in various Corpus systems.",
+        "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
         "itemCount": 5,
         "tradable": false,
         "imageName": "corpus-widget-a.png"
@@ -17717,7 +17774,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagVirminkRare",
     "name": "Red-Crested Virmink Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "red-crested-virmink-tag.png",
     "category": "Misc",
@@ -19216,7 +19273,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagPobbersRare",
     "name": "Subterranean Pobber Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "subterranean-pobber-tag.png",
     "category": "Misc",
@@ -19920,7 +19977,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagBolarolaRare",
     "name": "Thorny Bolarola Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "thorny-bolarola-tag.png",
     "category": "Misc",
@@ -20629,7 +20686,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagKubrodonUncommon",
     "name": "Vallis Kubrodon Tag",
-    "description": "/Lotus/Language/SolarisVenus/SubSpeciesTagDesc",
+    "description": "For saving a specimen of this subspecies.",
     "type": "Misc",
     "imageName": "vallis-kubrodon-tag.png",
     "category": "Misc",
