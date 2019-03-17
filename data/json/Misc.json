@@ -1,5 +1,37 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/FormaAura",
+    "name": "[Ph] Forma Aura",
+    "description": "[PH] forma aura thing",
+    "type": "Misc",
+    "buildPrice": 100000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/FormaAuraBlueprint",
+        "name": "Blueprint",
+        "description": "[PH] forma aura thing",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
+        "name": "Forma",
+        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
+        "itemCount": 4,
+        "tradable": false,
+        "imageName": "generic-component.png"
+      }
+    ],
+    "imageName": "[ph]-forma-aura.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ClanCreator",
     "name": "/Lotus/Language/Items/Clancreator",
     "description": "/Lotus/Language/Items/ClanCreatorDesc",
@@ -943,7 +975,7 @@
         "location": "Arbitrations",
         "type": "Transient Rewards",
         "rarity": "Uncommon",
-        "chance": 0.31
+        "chance": 0.29
       }
     ],
     "patchlogs": [
@@ -2642,11 +2674,29 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/Tennocon2017Display",
+    "name": "Display - Tennocon 2017",
+    "description": "Bestowed upon those who joined together in celebration at TennoCon 2017.",
+    "type": "Extractor",
+    "imageName": "display---tennocon-2017.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Tennocon2018Display",
     "name": "Display - Tennocon 2018",
     "description": "Bestowed upon those who joined together in celebration at TennoCon 2018.",
     "type": "Extractor",
     "imageName": "display---tennocon-2018.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/Tennocon2019Display",
+    "name": "Display - Tennocon 2019",
+    "description": "Bestowed upon those who joined together in celebration at TennoCon 2019.",
+    "type": "Extractor",
+    "imageName": "display---tennocon-2019.png",
     "category": "Misc",
     "tradable": false
   },
@@ -3222,15 +3272,7 @@
         "description": "Channels a large amount of Affinity into Focus for the Madurai Way.",
         "itemCount": 1,
         "tradable": false,
-        "imageName": "blueprint.png",
-        "drops": [
-          {
-            "location": "Plains of Eidolon Incursions",
-            "type": "Transient Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0029
-          }
-        ]
+        "imageName": "blueprint.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
@@ -3270,15 +3312,7 @@
         "description": "Channels a large amount of Affinity into Focus for the Naramon Way.",
         "itemCount": 1,
         "tradable": false,
-        "imageName": "blueprint.png",
-        "drops": [
-          {
-            "location": "Plains of Eidolon Incursions",
-            "type": "Transient Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0029
-          }
-        ]
+        "imageName": "blueprint.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
@@ -3412,15 +3446,7 @@
         "description": "Channels a large amount of Affinity into Focus for the Unairu Way.",
         "itemCount": 1,
         "tradable": false,
-        "imageName": "blueprint.png",
-        "drops": [
-          {
-            "location": "Plains of Eidolon Incursions",
-            "type": "Transient Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0029
-          }
-        ]
+        "imageName": "blueprint.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
@@ -3460,15 +3486,7 @@
         "description": "Channels a large amount of Affinity into Focus for the Vazarin Way.",
         "itemCount": 1,
         "tradable": false,
-        "imageName": "blueprint.png",
-        "drops": [
-          {
-            "location": "Plains of Eidolon Incursions",
-            "type": "Transient Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0029
-          }
-        ]
+        "imageName": "blueprint.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
@@ -3508,15 +3526,7 @@
         "description": "Channels a large amount of Affinity into Focus for the Zenurik Way.",
         "itemCount": 1,
         "tradable": false,
-        "imageName": "blueprint.png",
-        "drops": [
-          {
-            "location": "Plains of Eidolon Incursions",
-            "type": "Transient Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0029
-          }
-        ]
+        "imageName": "blueprint.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
@@ -7288,30 +7298,6 @@
             "chance": 0.2
           },
           {
-            "location": "Neo S1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo S1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo S1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
-            "location": "Neo S1 Radiant",
-            "type": "Relics",
-            "rarity": "Uncommon",
-            "chance": 0.2
-          },
-          {
             "location": "Neo S3 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -8988,6 +8974,60 @@
     "tradable": false
   },
   {
+    "name": "Highbrow",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCEngine",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCEngineBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
+        "name": "Exa Brain",
+        "description": "A small, electronic brain capable of processing a billion giga-threads per second.\nAcquired by disassembling Scrubber servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-exa-brain.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.\nAcquired by disassembling any servofish.",
+        "itemCount": 35,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
+        "name": "Tepa Nodule",
+        "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "venus-tree.png"
+      }
+    ],
+    "imageName": "highbrow.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/RedVeilUncommonDogTag",
     "name": "Honored Mark",
     "description": "Medallion of Red Veil syndicate. Can be traded in on relay syndicate hubs for additional standing.",
@@ -9551,18 +9591,6 @@
         "imageName": "blueprint.png",
         "drops": [
           {
-            "location": "Hyekka Master nce: 1.50 nce: 1.50",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 1
-          },
-          {
-            "location": "Hyekka Master nce: 1.50 nce: 1.50",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 1
-          },
-          {
             "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
@@ -9570,6 +9598,18 @@
           },
           {
             "location": "Kuva Hyekka Master nce: 1.50 nce: 1.50",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Hyekka Master nce: 1.50 nce: 1.50",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Hyekka Master nce: 1.50 nce: 1.50",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 1
@@ -15347,9 +15387,18 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/NoraWolfDogTag",
+    "name": "Nightwave <Reputation_small> Standing",
+    "description": "[PH] Description",
+    "type": "Medallion",
+    "imageName": "nightwave-<reputation_small>-standing.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
     "name": "Nitain Extract",
-    "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.\nThis resource can be acquired as a reward from Alerts.",
+    "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.\nThis resource can be acquired from Nightwave offerings.",
     "type": "Misc",
     "imageName": "nitain-extract.png",
     "category": "Misc",
@@ -15524,6 +15573,15 @@
     "description": "A wobbly embodiment of grace and distinction.",
     "type": "Extractor",
     "imageName": "noggle-statue---baro-ki'teer.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/ExcaliburDexBobbleHead",
+    "name": "Noggle Statue - Excalibur Dex",
+    "description": "A small wobbly statue of Excalibur Dex.",
+    "type": "Extractor",
+    "imageName": "noggle-statue---excalibur-dex.png",
     "category": "Misc",
     "tradable": false
   },
@@ -18020,6 +18078,60 @@
     "tradable": false
   },
   {
+    "name": "Runway",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCDeck",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCDeckBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "solaris-rare-ore-aalloy.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+        "name": "Scrap",
+        "description": "A sample of sprockets, gyros and wires.\nAcquired by disassembling any servofish.",
+        "itemCount": 40,
+        "tradable": false,
+        "imageName": "fish-part-scrap.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.\nAcquired by disassembling Kriller servofish.",
+        "itemCount": 10,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "coolant.png"
+      }
+    ],
+    "imageName": "runway.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
     "name": "Sagan Module",
     "description": "A device used to reconstruct degenerated matter into Orokin bio-material.\nAcquired by disassembling Charamote servofish.",
@@ -18310,7 +18422,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/LandingCraftRecipes/BlueSky/BlueSkyFuselageComponent",
         "name": "Fuselage",
-        "description": "SCIMITAR FUSELAGE",
+        "description": "Fuselage component of the Scimitar landing craft.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "generic-landing-craft-fuselage.png",
@@ -19482,200 +19594,48 @@
     "name": "Synthula",
     "description": "Distilled fuel for stims.",
     "type": "Misc",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 1,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/StoreItems/Consumables/Restoratives/NpcBuffs/EventiumBlueprint",
+        "name": "Blueprint",
+        "description": "Distilled fuel for stims.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "component-gallium.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "component-morphic.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "component-neurode.png"
+      }
+    ],
     "imageName": "synthula.png",
     "category": "Misc",
     "tradable": false,
-    "drops": [
-      {
-        "location": "Mercury - Apollodorus",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Phobos - Flimnap",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Phobos - Shklovsky",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Mercury - Suisei",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Venus - V",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "rewards"
-      },
-      {
-        "location": "Venus - Vesper",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Phobos - Stickney",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Venus - Unda",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Phobos - Grildrig",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Earth - Cambria",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Ceres - Hapke",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Mars - Arval",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Mars - Arcadia",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1429,
-        "rotation": "A"
-      },
-      {
-        "location": "Earth - Gaia",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.11109999999999999,
-        "rotation": "A"
-      },
-      {
-        "location": "Ceres - Cinxia",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.11109999999999999,
-        "rotation": "A"
-      },
-      {
-        "location": "Mars - Alator",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.11109999999999999,
-        "rotation": "A"
-      },
-      {
-        "location": "Venus - Cytherean",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.11109999999999999,
-        "rotation": "A"
-      },
-      {
-        "location": "Mercury - Odin",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.11109999999999999,
-        "rotation": "A"
-      },
-      {
-        "location": "Ceres - Egeria",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Mercury - Lares",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Ceres - Varro",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Venus - Tessera",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Earth - Lith",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Phobos - Drunlo",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Phobos - Gulliver",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Ceres - Casta",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      },
-      {
-        "location": "Mars - Spear",
-        "type": "Mission Rewards",
-        "rarity": "Uncommon",
-        "chance": 0.1,
-        "rotation": "A"
-      }
-    ],
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -19957,6 +19917,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstRugBaro",
+    "name": "Tenno Kindred Rug",
+    "description": "Personalize your quarters with this unique rug.",
+    "type": "Extractor",
+    "imageName": "tenno-kindred-rug.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/DataFragment",
     "name": "Tethra Data Fragments",
     "description": "Intercepted encrypted fragment of Grineer communications.",
@@ -20019,6 +19988,60 @@
         "fixes": "Fixed some cases where the Thousand-Year Fish Statuette was not awarded after scanning them all. You should now see it in your Inbox/Inventory.  "
       }
     ]
+  },
+  {
+    "name": "Thugs",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCJet",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCJetBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+        "name": "Mytocardia Spore",
+        "description": "A fungal body prized for its varied uses.",
+        "itemCount": 30,
+        "tradable": false,
+        "imageName": "fungus-heart.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
+        "name": "Sagan Module",
+        "description": "A device used to reconstruct degenerated matter into Orokin bio-material.\nAcquired by disassembling Charamote servofish.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-sagan-module.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+        "name": "Smooth Phasmin",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "solaris-common-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-uncommon-ore-aalloy.png"
+      }
+    ],
+    "imageName": "thugs.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "name": "Thunderdrum",
@@ -20615,6 +20638,60 @@
       }
     ],
     "imageName": "twin-kavats.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Two-Sloops",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCFront",
+    "type": "Misc",
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCFrontBlueprint",
+        "name": "Blueprint",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "solaris-uncommon-gem-acut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+        "name": "Gorgaricus Spore",
+        "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "venus-coconut.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+        "name": "Lathe Coagulant",
+        "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "fish-part-lathe-coogulant.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
+        "name": "Thermal Laser",
+        "description": "A weapon that discharges lasers over short distances.\nAcquired by disassembling Kriller servofish.",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-part-thermal-laser.png"
+      }
+    ],
+    "imageName": "two-sloops.png",
     "category": "Misc",
     "tradable": false
   },
