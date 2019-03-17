@@ -551,12 +551,13 @@ class Scraper {
       if (item.components) {
         for (let component of item.components) {
           let savedDrops
-          const precompItem = precompiled.find(i => i.name === item.name)
+          const precompItem = precompiled.find(i => i.name === item.name)       
           if (!precompItem) return
           const components = precompItem.components
+          
           if (components) {
             savedDrops = components.find(c => c.name === component.name)
-            if (savedDrops.drops) {
+            if (savedDrops && savedDrops.drops) {
               savedDrops.drops = savedDrops.drops.map(drop => {
                 drop.location = drop.location.replace('Derelict/', '')
                   .replace('Assassinate (Assassination)', 'Assassinate')
