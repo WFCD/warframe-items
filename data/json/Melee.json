@@ -3613,7 +3613,7 @@
         "itemCount": 1,
         "ducats": 45,
         "tradable": true,
-        "imageName": "generic-weapon-hilt.png",
+        "imageName": "generic-weapon-prime-hilt.png",
         "drops": [
           {
             "location": "Neo F1 Intact",
@@ -16112,6 +16112,97 @@
     "estimatedVaultDate": "2019 09 29"
   },
   {
+    "name": "Korrudo",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnSparring/GrnSpiderSparring/GrnSpiderSparring",
+    "secondsPerShot": 1.1999999,
+    "damagePerShot": [ 34.77, 1.8299999, 24.400002, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 0,
+    "reloadTime": 0,
+    "totalDamage": 61,
+    "damagePerSecond": 51,
+    "trigger": "Melee",
+    "description": "When they go high, go low. Powerful pneumatic grips and toecaps amplify every blow. Four ways to deal twice the pain.",
+    "accuracy": 100,
+    "criticalChance": 0.31,
+    "criticalMultiplier": 2.5,
+    "procChance": 0.090000033,
+    "fireRate": 0.83333337,
+    "chargeAttack": 0,
+    "spinAttack": 244,
+    "leapAttack": 61,
+    "wallAttack": 183,
+    "slot": 5,
+    "noise": "Alarming",
+    "sentinel": false,
+    "masteryReq": 9,
+    "omegaAttenuation": 0.5,
+    "type": "Sparring",
+    "buildPrice": 30000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 30,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem",
+        "name": "Auroxium Alloy",
+        "description": "Auron that has been forged into a stronger metal.",
+        "itemCount": 25,
+        "tradable": false,
+        "imageName": "rare-ore-aalloy-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/GrnSpiderSparringBlueprint",
+        "name": "Blueprint",
+        "description": "When they go high, go low. Powerful pneumatic grips and toecaps amplify every blow. Four ways to deal twice the pain.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
+        "name": "Breath Of The Eidolon",
+        "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
+        "itemCount": 5,
+        "tradable": false,
+        "imageName": "eidolonium.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
+        "name": "Esher Devar",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 15,
+        "tradable": false,
+        "imageName": "common-gem-bcut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishAPartItem",
+        "name": "Mawfish Bones",
+        "description": "The bones of the Mawfish are carved by the Ostron to produce ornaments and tools.\nLocation: Fisher Hai-Luk in Cetus",
+        "itemCount": 20,
+        "tradable": false,
+        "imageName": "fish-resource-bones.png"
+      }
+    ],
+    "imageName": "korrudo.png",
+    "category": "Melee",
+    "tradable": false,
+    "channeling": 1.5,
+    "damage": "61.0",
+    "damageTypes": {
+      "impact": 34.8,
+      "slash": 24.4,
+      "puncture": 1.8
+    },
+    "marketCost": 150,
+    "polarities": [  ],
+    "tags": [  ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f6/Korrudo.png/revision/latest?cb=20190405175331",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Korrudo",
+    "disposition": 1
+  },
+  {
     "name": "Kreska",
     "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpVenusHatchet/CrpVenusHatchet",
     "secondsPerShot": 1.0909091,
@@ -26138,7 +26229,7 @@
     "totalDamage": 96,
     "damagePerSecond": 96,
     "trigger": "Melee",
-    "description": "Fearsome and noble, the elegant two-handed Nikana is the pride of any arsenal.",
+    "description": "Fearsome and noble, the elegant two-handed Nikana is the pride of any Arsenal. Kills build charges and seeking projectiles are unleashed with a Slide Attack to find and stun unwitting enemies. When Revenant wields this blade, Tatsu’s charge cap is increased.",
     "accuracy": 100,
     "criticalChance": 0.11,
     "criticalMultiplier": 1.9,
@@ -26179,7 +26270,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/TnTwoHandedKatanaBlueprint",
         "name": "Blueprint",
-        "description": "Fearsome and noble, the elegant two-handed Nikana is the pride of any arsenal.",
+        "description": "Fearsome and noble, the elegant two-handed Nikana is the pride of any Arsenal. Kills build charges and seeking projectiles are unleashed with a Slide Attack to find and stun unwitting enemies. When Revenant wields this blade, Tatsu’s charge cap is increased.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -26259,7 +26350,7 @@
     "totalDamage": 45,
     "damagePerSecond": 41,
     "trigger": "Melee",
-    "description": "These iron fists that rip through foes with each strike are Atlas' signature weapon.",
+    "description": "These iron fists that rip through foes are Atlas' signature weapons. When wielded by Atlas they receive a Status Chance increase.",
     "accuracy": 100,
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2,
@@ -26313,7 +26404,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/BrawlerKnucklesBlueprint",
         "name": "Blueprint",
-        "description": "These iron fists that rip through foes with each strike are Atlas' signature weapon.",
+        "description": "These iron fists that rip through foes are Atlas' signature weapons. When wielded by Atlas they receive a Status Chance increase.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
@@ -26754,7 +26845,7 @@
         "itemCount": 1,
         "ducats": 100,
         "tradable": true,
-        "imageName": "generic-weapon-hilt.png",
+        "imageName": "generic-weapon-prime-hilt.png",
         "drops": [
           {
             "location": "Axi T2 Intact",
@@ -27921,7 +28012,7 @@
     "totalDamage": 100,
     "damagePerSecond": 120,
     "trigger": "Melee",
-    "description": "Tear and maim with this agile, lightweight glass hammer. Gara’s signature Melee Weapon.",
+    "description": "Tear and maim with this agile, lightweight glass hammer. When Gara's wields her signature melee weapon, it gains additional Slam Radial Damage.",
     "accuracy": 100,
     "criticalChance": 0.18000001,
     "criticalMultiplier": 1.6,
@@ -27962,7 +28053,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/GlassHammerBlueprint",
         "name": "Blueprint",
-        "description": "Tear and maim with this agile, lightweight glass hammer. Gara’s signature Melee Weapon.",
+        "description": "Tear and maim with this agile, lightweight glass hammer. When Gara's wields her signature melee weapon, it gains additional Slam Radial Damage.",
         "itemCount": 1,
         "tradable": false,
         "imageName": "blueprint.png"
