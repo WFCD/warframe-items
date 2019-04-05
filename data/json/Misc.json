@@ -289,14 +289,6 @@
         "imageName": "blueprint.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
-        "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "cetus-wisp.png"
-      },
-      {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
         "name": "Fish Oil",
         "description": "Used to create absolvents that purify gems.",
@@ -313,12 +305,20 @@
         "imageName": "component-morphic.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
-        "name": "Murkray Liver",
-        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
+        "name": "Radian Sentirum",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 2,
         "tradable": false,
-        "imageName": "fish-resource-organ.png"
+        "imageName": "eidolon-gem-acut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
+        "name": "Seram Beetle Shell",
+        "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "fish-resource-shell.png"
       }
     ],
     "imageName": "anspatha-brace.png",
@@ -1956,7 +1956,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
-        "itemCount": 2,
+        "itemCount": 3,
         "tradable": false,
         "imageName": "fish-resource-organ.png"
       }
@@ -8649,12 +8649,12 @@
         "imageName": "eidolonium.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
-        "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
-        "itemCount": 20,
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
+        "name": "Cuthol Tendrils",
+        "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
+        "itemCount": 3,
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "imageName": "fish-resource-sac.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
@@ -9637,12 +9637,12 @@
         "imageName": "uncommon-ore-aalloy-a.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
-        "name": "Fish Scales",
-        "description": "A material used in tailoring clothes and cultivating synthetics.",
-        "itemCount": 70,
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 50,
         "tradable": false,
-        "imageName": "fish-resource-scales.png"
+        "imageName": "fish-resource-oil.png"
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
@@ -9764,7 +9764,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
         "name": "Norg Brain",
         "description": "An Ostron delicacy.",
-        "itemCount": 2,
+        "itemCount": 3,
         "tradable": false,
         "imageName": "fish-resource-brain.png"
       }
@@ -10171,7 +10171,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
         "name": "Cuthol Tendrils",
         "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
-        "itemCount": 5,
+        "itemCount": 3,
         "tradable": false,
         "imageName": "fish-resource-sac.png"
       },
@@ -10515,12 +10515,12 @@
         "imageName": "uncommon-ore-aalloy-a.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
-        "name": "Fish Scales",
-        "description": "A material used in tailoring clothes and cultivating synthetics.",
-        "itemCount": 85,
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 50,
         "tradable": false,
-        "imageName": "fish-resource-scales.png"
+        "imageName": "fish-resource-oil.png"
       }
     ],
     "imageName": "kroostra.png",
@@ -11119,12 +11119,12 @@
         "imageName": "uncommon-ore-aalloy-a.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
-        "name": "Fish Scales",
-        "description": "A material used in tailoring clothes and cultivating synthetics.",
-        "itemCount": 85,
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 50,
         "tradable": false,
-        "imageName": "fish-resource-scales.png"
+        "imageName": "fish-resource-oil.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
@@ -11202,12 +11202,12 @@
         "imageName": "component-cryotic.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
-        "name": "Fish Scales",
-        "description": "A material used in tailoring clothes and cultivating synthetics.",
-        "itemCount": 55,
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 50,
         "tradable": false,
-        "imageName": "fish-resource-scales.png"
+        "imageName": "fish-resource-oil.png"
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
@@ -12307,7 +12307,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
         "name": "Cuthol Tendrils",
         "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
-        "itemCount": 2,
+        "itemCount": 3,
         "tradable": false,
         "imageName": "fish-resource-sac.png"
       },
@@ -17122,7 +17122,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
-        "itemCount": 5,
+        "itemCount": 3,
         "tradable": false,
         "imageName": "fish-resource-organ.png"
       },
@@ -17252,12 +17252,12 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
-        "name": "Fish Scales",
-        "description": "A material used in tailoring clothes and cultivating synthetics.",
-        "itemCount": 30,
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 50,
         "tradable": false,
-        "imageName": "fish-resource-scales.png"
+        "imageName": "fish-resource-oil.png"
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
@@ -17308,14 +17308,6 @@
         "imageName": "blueprint.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
-        "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "cetus-wisp.png"
-      },
-      {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
         "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
@@ -17324,12 +17316,12 @@
         "imageName": "grokdrul.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
-        "name": "Murkray Liver",
-        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
-        "itemCount": 5,
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
+        "name": "Heart Nyth",
+        "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
+        "itemCount": 2,
         "tradable": false,
-        "imageName": "fish-resource-organ.png"
+        "imageName": "eidolon-gem-bcut-a.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
@@ -17338,6 +17330,14 @@
         "itemCount": 85,
         "tradable": false,
         "imageName": "common-ore-aalloy-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
+        "name": "Seram Beetle Shell",
+        "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "fish-resource-shell.png"
       }
     ],
     "imageName": "phahd-scaffold.png",
@@ -17991,14 +17991,6 @@
         "imageName": "blueprint.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
-        "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "cetus-wisp.png"
-      },
-      {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
@@ -18013,6 +18005,14 @@
         "itemCount": 60,
         "tradable": false,
         "imageName": "iradite.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
+        "name": "Seram Beetle Shell",
+        "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "fish-resource-shell.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
@@ -18153,14 +18153,6 @@
         "imageName": "blueprint.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
-        "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "cetus-wisp.png"
-      },
-      {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
@@ -18175,6 +18167,14 @@
         "itemCount": 60,
         "tradable": false,
         "imageName": "iradite.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
+        "name": "Murkray Liver",
+        "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "fish-resource-organ.png"
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
@@ -19133,12 +19133,12 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
-        "name": "Fish Scales",
-        "description": "A material used in tailoring clothes and cultivating synthetics.",
-        "itemCount": 30,
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
+        "name": "Fish Oil",
+        "description": "Used to create absolvents that purify gems.",
+        "itemCount": 50,
         "tradable": false,
-        "imageName": "fish-resource-scales.png"
+        "imageName": "fish-resource-oil.png"
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
@@ -19396,7 +19396,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
         "name": "Norg Brain",
         "description": "An Ostron delicacy.",
-        "itemCount": 5,
+        "itemCount": 3,
         "tradable": false,
         "imageName": "fish-resource-brain.png"
       }
@@ -19498,14 +19498,6 @@
         "imageName": "blueprint.png"
       },
       {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
-        "name": "Cetus Wisp",
-        "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
-        "itemCount": 15,
-        "tradable": false,
-        "imageName": "cetus-wisp.png"
-      },
-      {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
@@ -19528,6 +19520,14 @@
         "itemCount": 20,
         "tradable": false,
         "imageName": "uncommon-gem-acut-a.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
+        "name": "Norg Brain",
+        "description": "An Ostron delicacy.",
+        "itemCount": 3,
+        "tradable": false,
+        "imageName": "fish-resource-brain.png"
       }
     ],
     "imageName": "shwaak-prism.png",
