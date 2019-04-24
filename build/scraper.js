@@ -8,6 +8,7 @@ const patchlogs = require('warframe-patchlogs')
 const ProgressBar = require('progress')
 const colors = require('colors/safe')
 const precompiled = require('../data/json/All.json')
+const imageCache = require('../data/cache/.images.json')
 const exportCache = require('../data/cache/.export.json')
 const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
@@ -116,7 +117,7 @@ class Scraper {
   async fetch (type) {
     const url = this.endpoints.find(e => e.includes(type))
     const items = (await get(url))[`Export${type}`]
-    return this.filter(items, type, new Date())
+    return this.filter(items, type)
   }
 
   /**
@@ -190,7 +191,7 @@ class Scraper {
    * Add, modify, remove certain keys as I deem sensible. Complaints go to
    * management.
    */
-  async filter (items, type, timer) {
+  async filter (items, type) {
     const data = {}
 
     items = this.removeComponents(items)
@@ -275,7 +276,6 @@ class Scraper {
     if (item.type) item.type = title(item.type)
     if (item.trigger) item.trigger = title(item.trigger)
     if (item.noise) item.noise = title(item.noise)
-    if (item.type) item.type = title(item.type)
     if (item.rarity) item.rarity = title(item.rarity)
 
     // Remove <Archwing> from archwing names, add archwing key instead
@@ -349,8 +349,12 @@ class Scraper {
     if (!image) return
     const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
+    const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
 
-    if (isComponent || this.componentManifest.includes(item.uniqueName)) {
+    if (cached && cached.imageName) {
+      item.imageName = cached.imageName
+      return
+    } else if (isComponent || this.componentManifest.includes(item.uniqueName)) {
       if (item.name === 'Blueprint') {
         item.imageName = 'blueprint'
       } else {
@@ -358,12 +362,14 @@ class Scraper {
           .split('.')[0].replace(/([a-z](?=[A-Z]))/g, '$1-').toLowerCase()
       }
     } else {
-      item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').toLowerCase()
+      /* eslint-disable no-useless-escape */
+      item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '').toLowerCase()
     }
 
     // Some items have the same name - so add their uniqueName as an identifier
     if (previous && item.name === previous.name) {
-      item.imageName += ` - ${item.uniqueName.replace('/', '').replace(/( |\/|\*)/g, '-')}`
+      item.imageName += ` - ${item.uniqueName.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '')}`
+      /* eslint-enable no-useless-escape */
     }
     item.imageName += `.${ext}`
   }
@@ -386,7 +392,11 @@ class Scraper {
     }
     // No type assigned? Add 'Special'.
     if (!item.type) {
-      item.type = 'Misc'
+      if ((item.description || '').includes('This resource')) {
+        item.type = 'Resource'
+      } else {
+        item.type = 'Misc'
+      }
     }
   }
 
@@ -516,7 +526,7 @@ class Scraper {
         break
 
       case 'RelicArcane':
-        if (!item.type === 'Relic') item.category = 'Arcanes'
+        if (item.type !== 'Relic') item.category = 'Arcanes'
         else item.category = 'Relics'
         break
 
@@ -553,6 +563,11 @@ class Scraper {
         else if (item.type === 'Gem') item.category = 'Resources'
         else if (item.type === 'Plant') item.category = 'Resources'
         else item.category = 'Misc'
+        break
+
+      default:
+        item.category = 'Misc'
+        break
     }
   }
 
