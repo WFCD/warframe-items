@@ -52,7 +52,7 @@ class Update {
     const bar = prod ? {
       interrupt () {},
       tick () {}
-    } : new ProgressBar(`:check Fetching Images:    ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
+    } : new ProgressBar(`:check Fetching Images:     ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
       incomplete: colors.red('-'),
       width: 20,
       total: items.length
@@ -130,16 +130,20 @@ class Update {
         plugins: [
           minifyJpeg(),
           minifyPng({
-            quality: '20-40'
+            quality: [0.2, 0.4]
           })
         ]
       })
+    } else if (!cached.imageName || (cached.imageName && cached.imageName !== item.imageName)) {
+      cached.imageName = item.imageName
     }
-    bar.tick({
-      image: colors.cyan(item.name),
-      updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
-      check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
-    })
+    if (!isComponent) {
+      bar.tick({
+        image: colors.cyan(item.name),
+        updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
+        check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
+      })
+    }
   }
 
   /**
@@ -150,17 +154,38 @@ class Update {
     for (let image of imageCache) {
       if (image.uniqueName === item.uniqueName) {
         cached = image
+        if (!cached.imageName) {
+          cached.imageName = item.imageName
+        }
         break
       }
     }
 
     if (!cached) {
-      imageCache.push({
+      cached = {
         uniqueName: item.uniqueName,
-        hash
-      })
+        hash,
+        imageName: item.imageName
+      }
     } else {
       cached.hash = hash
+      if (!cached.imageName) {
+        cached.imageName = item.imageName
+      } else {
+        item.imageName = cached.imageName
+      }
+    }
+
+    let found = false
+    imageCache.forEach(image => {
+      if (image.uniqueName === cached.uniqueName) {
+        found = true
+        image = cached
+      }
+    })
+
+    if (!found) {
+      imageCache.push(cached)
     }
   }
 }
