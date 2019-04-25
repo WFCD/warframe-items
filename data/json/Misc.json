@@ -1,37 +1,5 @@
 [
   {
-    "uniqueName": "/Lotus/Types/Items/MiscItems/FormaAura",
-    "name": "[Ph]",
-    "description": "[PH]",
-    "type": "Misc",
-    "buildPrice": 100000,
-    "buildTime": 86400,
-    "skipBuildTimePrice": 10,
-    "buildQuantity": 1,
-    "consumeOnBuild": true,
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Components/FormaAuraBlueprint",
-        "name": "Blueprint",
-        "description": "[PH]",
-        "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
-        "name": "Forma",
-        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
-        "itemCount": 4,
-        "tradable": false,
-        "imageName": "generic-component.png"
-      }
-    ],
-    "imageName": "[ph].png",
-    "category": "Misc",
-    "tradable": false
-  },
-  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ClanCreator",
     "name": "/Lotus/Language/Items/Clancreator",
     "description": "/Lotus/Language/Items/ClanCreatorDesc",
@@ -933,6 +901,38 @@
       }
     ],
     "imageName": "atheca-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/FormaAura",
+    "name": "Aura Forma",
+    "description": "Modifies an Aura slot on a Warframe to be compatible with any Mod Polarity.",
+    "type": "Misc",
+    "buildPrice": 100000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/FormaAuraBlueprint",
+        "name": "Blueprint",
+        "description": "Modifies an Aura slot on a Warframe to be compatible with any Mod Polarity.",
+        "itemCount": 1,
+        "tradable": false,
+        "imageName": "blueprint.png"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
+        "name": "Forma",
+        "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on Level 30 Warframes, Companions and Weapons.",
+        "itemCount": 4,
+        "tradable": false,
+        "imageName": "generic-component.png"
+      }
+    ],
+    "imageName": "aura-forma.png",
     "category": "Misc",
     "tradable": false
   },
