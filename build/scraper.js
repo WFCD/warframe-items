@@ -402,7 +402,11 @@ class Scraper {
     }
     // No type assigned? Add 'Special'.
     if (!item.type) {
-      item.type = 'Misc'
+      if (item.description.includes('This resource')) {
+        item.type = 'Resource'
+      } else {
+        item.type = 'Misc'
+      }
     }
   }
 
