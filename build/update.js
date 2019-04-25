@@ -130,7 +130,7 @@ class Update {
         plugins: [
           minifyJpeg(),
           minifyPng({
-            quality: '20-40'
+            quality: [0.2, 0.4]
           })
         ]
       })

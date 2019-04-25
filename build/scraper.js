@@ -29,6 +29,18 @@ const damageTypes = [
   'void'
 ]
 
+// Cause it's elemental!
+const watson = {
+  DT_FIRE: 'Heat',
+  DT_POISON: 'Toxin',
+  DT_PUNCTURE: 'Puncture',
+  DT_CORROSIVE: 'Corrosive',
+  DT_EXPLOSION: 'Blast',
+  DT_ELECTRICITY: 'Electricity',
+  DT_SLASH: 'Slash',
+  DT_RADIATION: 'Radiation'
+}
+
 process.on('unhandledRejection', err => {
   console.log(err)
   process.exit()
@@ -63,7 +75,8 @@ class Scraper {
       'http://content.warframe.com/MobileExport/Manifest/ExportKeys.json',
       'http://content.warframe.com/MobileExport/Manifest/ExportGear.json',
       'http://content.warframe.com/MobileExport/Manifest/ExportRelicArcane.json',
-      'http://content.warframe.com/MobileExport/Manifest/ExportWarframes.json'
+      'http://content.warframe.com/MobileExport/Manifest/ExportWarframes.json',
+      'http://content.warframe.com/MobileExport/Manifest/ExportEnemies.json'
     ]
     this.data = []
     this.componentManifest = []
@@ -190,7 +203,7 @@ class Scraper {
    * Add, modify, remove certain keys as I deem sensible. Complaints go to
    * management.
    */
-  async filter (items, type, timer) {
+  async filter (items, type) {
     const data = {}
 
     items = this.removeComponents(items)
@@ -211,6 +224,7 @@ class Scraper {
       this.addPatchlogs(item)
       this.addAdditionalWikiaData(item, type)
       this.addDates(item)
+      this.processEnemyResistances(item, type)
 
       // Add to category
       if (!data[item.category]) {
@@ -275,8 +289,8 @@ class Scraper {
     if (item.type) item.type = title(item.type)
     if (item.trigger) item.trigger = title(item.trigger)
     if (item.noise) item.noise = title(item.noise)
-    if (item.type) item.type = title(item.type)
     if (item.rarity) item.rarity = title(item.rarity)
+    if (item.faction) item.faction = title(item.faction)
 
     // Remove <Archwing> from archwing names, add archwing key instead
     if (item.name && item.name.includes('<Archwing>')) {
@@ -335,7 +349,7 @@ class Scraper {
 
     // Remove keys that only increase output size.
     delete item.codexSecret
-    delete item.longDescription
+    if (item.type !== 'enemy') delete item.longDescription
     delete item.parentName
     delete item.relicRewards // We'll fetch the official drop data for this
     delete item.subtype
@@ -358,12 +372,14 @@ class Scraper {
           .split('.')[0].replace(/([a-z](?=[A-Z]))/g, '$1-').toLowerCase()
       }
     } else {
-      item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').toLowerCase()
+      /* eslint-disable no-useless-escape */
+      item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '').toLowerCase()
     }
 
     // Some items have the same name - so add their uniqueName as an identifier
     if (previous && item.name === previous.name) {
-      item.imageName += ` - ${item.uniqueName.replace('/', '').replace(/( |\/|\*)/g, '-')}`
+      item.imageName += ` - ${item.uniqueName.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '')}`
+      /* eslint-enable no-useless-escape */
     }
     item.imageName += `.${ext}`
   }
@@ -553,6 +569,15 @@ class Scraper {
         else if (item.type === 'Gem') item.category = 'Resources'
         else if (item.type === 'Plant') item.category = 'Resources'
         else item.category = 'Misc'
+        break
+
+      case 'Enemies':
+        item.category = item.faction
+        break
+
+      default:
+        item.category = 'Misc'
+        break
     }
   }
 
@@ -792,6 +817,57 @@ class Scraper {
     } else if (item.omegaAttenuation <= 1.6) {
       item.disposition = 5
     }
+  }
+
+  /**
+   * Process data for a given enemy
+   * @param  {Enemy} enemy Enemy object from a Warframe manifest
+   * @return {undefined}
+   */
+  processEnemyResistances (item, type) {
+    if (type.toLowerCase() !== 'enemies') return
+
+    const quantities = {
+      positive: [0.25, 0.5, 0.75],
+      negative: [-0.25, -0.5, -0.75]
+    }
+    const parseAffectors = (affectors) => {
+      return affectors.split(' ').map(element => {
+        if (element.includes('+')) {
+          // positives
+          const pSplit = (element || '').split('+')
+          return {
+            element: pSplit[0].length > 0 ? (watson[pSplit[0]] || title(pSplit[0].split('_')[1])) : 'None',
+            modifier: quantities.positive[pSplit.length - 1] || 0
+          }
+        }
+        if (element.includes('-')) {
+          // positives
+          const nSplit = (element || '').split('-')
+          return {
+            element: nSplit[0].length > 0 ? watson[nSplit[0]] || title(nSplit[0].split('_')[1]) : 'None',
+            modifier: quantities.negative[nSplit.length - 1] || 0
+          }
+        }
+        return {
+          element: 'None',
+          modifier: 0
+        }
+      })
+    }
+    const parseArmor = enemy => {
+      return enemy.resistValues.map((resist, index) => ({
+        amount: resist,
+        type: title(enemy.resistPrefix[index]),
+        affectors: parseAffectors(enemy.resistTexts[index].trim().replace(/\s\s/g, ' '))
+      }))
+    }
+
+    item.resistances = parseArmor(item)
+    item.name = title(item.name)
+    delete item.resistValues
+    delete item.resistPrefix
+    delete item.resistTexts
   }
 }
 
