@@ -1,22 +1,22 @@
 pipeline:
   build:
-    image: node
+    image: node:10
     pull: true
     commands:
       - npm install
 
   lint:
-    image: node
+    image: node:10
     commands:
       - npm run lint
 
   test:
-    image: node
+    image: node:10
     commands:
       - npm test
 
   publish:
-    image: node
+    image: node:10
     commands:
       - git fetch --tags --quiet origin
       - npx semantic-release
