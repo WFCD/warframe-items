@@ -484,7 +484,7 @@ class Scraper {
     const tradableByName = (item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered
     const isTradable = tradableByType || tradableByName
 
-    item.tradable = isTradable
+    item.tradable = isTradable || false
   }
 
   /**
