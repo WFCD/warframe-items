@@ -211,6 +211,7 @@ class Scraper {
       this.addPatchlogs(item)
       this.addAdditionalWikiaData(item, type)
       this.addDates(item)
+      this.applyOverrides(item)
 
       // Add to category
       if (!data[item.category]) {
@@ -791,6 +792,18 @@ class Scraper {
       item.disposition = 4
     } else if (item.omegaAttenuation <= 1.6) {
       item.disposition = 5
+    }
+  }
+
+  applyOverrides(item) {
+    const override = require('../config/overrides.json')[item.uniqueName]
+    if (override) {
+      console.log(item.uniqueName);
+      console.log(JSON.stringify(override))
+      item = {
+        ...item,
+        ...override
+      }
     }
   }
 }
