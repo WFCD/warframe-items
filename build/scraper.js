@@ -366,6 +366,12 @@ class Scraper {
       item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '').toLowerCase()
     }
 
+    // Relics should use the same image based on type, as they all use the same.
+    // The resulting format looks like `axi-intact`, `axi-radiant`
+    if (item.type === 'Relic') {
+      item.imageName = item.imageName.replace(/-(.*?)-/, '-') // Remove second word (type)
+    }
+
     // Some items have the same name - so add their uniqueName as an identifier
     if (previous && item.name === previous.name) {
       item.imageName += ` - ${item.uniqueName.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '')}`
