@@ -491,14 +491,16 @@ class Scraper {
    * Limit items to tradable/untradable if specified.
    */
   addTradable (item, type) {
-    const tradableTypes = ['Gem', 'Fish', 'Key', 'Focus Lens', 'Relic']
+    const tradableTypes = ['Upgrades', 'Gem', 'Fish', 'Key', 'Focus Lens', 'Relic']
     const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
     const notFiltered = !untradableTypes.includes(item.type) && !item.name.match(untradableRegex)
-    const isTradable = type === 'Upgrades' || (item.uniqueName.match(tradableRegex) && notFiltered) || (tradableTypes.includes(item.type) && notFiltered)
+    const tradableByType = tradableTypes.includes(item.type) && notFiltered
+    const tradableByName = (item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered
+    const isTradable = tradableByType || tradableByName
 
-    item.tradable = isTradable
+    item.tradable = isTradable || false
   }
 
   /**
