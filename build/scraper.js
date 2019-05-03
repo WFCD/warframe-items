@@ -795,10 +795,10 @@ class Scraper {
     }
   }
 
-  applyOverrides(item) {
+  applyOverrides (item) {
     const override = require('../config/overrides.json')[item.uniqueName]
     if (override) {
-      console.log(item.uniqueName);
+      console.log(item.uniqueName)
       console.log(JSON.stringify(override))
       item = {
         ...item,
