@@ -71,14 +71,15 @@ class Update {
 
     // Go through each item and download/save image
     const savedComponents = [] // Don't download component images twice
+    const savedRelics = [] // Don't download relics twice
     let done = 0
 
     await new Promise(async resolve => {
       for (let item of items) {
-        await this.saveImage(item, items, false, savedComponents, manifest, bar)
+        await this.saveImage(item, items, false, savedComponents, savedRelics, manifest, bar)
         if (item.components) {
           for (let component of item.components) {
-            await this.saveImage(component, items, true, savedComponents, manifest, bar)
+            await this.saveImage(component, items, true, savedComponents, savedRelics, manifest, bar)
           }
         }
         done++
@@ -93,7 +94,7 @@ class Update {
   /**
    * Download and save images for items or components.
    */
-  async saveImage (item, items, isComponent, savedComponents, manifest, bar) {
+  async saveImage (item, items, isComponent, savedComponents, savedRelics, manifest, bar) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
     const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
     const basePath = `${__dirname}/../data/img/`
@@ -112,6 +113,15 @@ class Update {
         return
       } else {
         savedComponents.push(item.imageName)
+      }
+    }
+
+    // Don't download the same relic type image twice
+    if (item.type === 'Relic') {
+      if (savedRelics.includes(item.imageName)) {
+        return
+      } else {
+        savedRelics.push(item.imageName)
       }
     }
 
