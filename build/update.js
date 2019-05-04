@@ -52,7 +52,7 @@ class Update {
     const bar = prod ? {
       interrupt () {},
       tick () {}
-    } : new ProgressBar(`:check Fetching Images:    ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
+    } : new ProgressBar(`:check Fetching Images:     ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining :image :updated`, {
       incomplete: colors.red('-'),
       width: 20,
       total: items.length
@@ -71,14 +71,15 @@ class Update {
 
     // Go through each item and download/save image
     const savedComponents = [] // Don't download component images twice
+    const savedRelics = [] // Don't download relics twice
     let done = 0
 
     await new Promise(async resolve => {
       for (let item of items) {
-        await this.saveImage(item, items, false, savedComponents, manifest, bar)
+        await this.saveImage(item, items, false, savedComponents, savedRelics, manifest, bar)
         if (item.components) {
           for (let component of item.components) {
-            await this.saveImage(component, items, true, savedComponents, manifest, bar)
+            await this.saveImage(component, items, true, savedComponents, savedRelics, manifest, bar)
           }
         }
         done++
@@ -93,7 +94,7 @@ class Update {
   /**
    * Download and save images for items or components.
    */
-  async saveImage (item, items, isComponent, savedComponents, manifest, bar) {
+  async saveImage (item, items, isComponent, savedComponents, savedRelics, manifest, bar) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
     const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
     const basePath = `${__dirname}/../data/img/`
@@ -115,6 +116,15 @@ class Update {
       }
     }
 
+    // Don't download the same relic type image twice
+    if (item.type === 'Relic') {
+      if (savedRelics.includes(item.imageName)) {
+        return
+      } else {
+        savedRelics.push(item.imageName)
+      }
+    }
+
     if (!cached || cached.hash !== hash) {
       const image = await request({ url: imageUrl, encoding: null })
       this.updateCache(item, hash)
@@ -130,16 +140,20 @@ class Update {
         plugins: [
           minifyJpeg(),
           minifyPng({
-            quality: '20-40'
+            quality: [0.2, 0.4]
           })
         ]
       })
+    } else if (!cached.imageName || (cached.imageName && cached.imageName !== item.imageName)) {
+      cached.imageName = item.imageName
     }
-    bar.tick({
-      image: colors.cyan(item.name),
-      updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
-      check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
-    })
+    if (!isComponent) {
+      bar.tick({
+        image: colors.cyan(item.name),
+        updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
+        check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
+      })
+    }
   }
 
   /**
@@ -150,17 +164,38 @@ class Update {
     for (let image of imageCache) {
       if (image.uniqueName === item.uniqueName) {
         cached = image
+        if (!cached.imageName) {
+          cached.imageName = item.imageName
+        }
         break
       }
     }
 
     if (!cached) {
-      imageCache.push({
+      cached = {
         uniqueName: item.uniqueName,
-        hash
-      })
+        hash,
+        imageName: item.imageName
+      }
     } else {
       cached.hash = hash
+      if (!cached.imageName) {
+        cached.imageName = item.imageName
+      } else {
+        item.imageName = cached.imageName
+      }
+    }
+
+    let found = false
+    imageCache.forEach(image => {
+      if (image.uniqueName === cached.uniqueName) {
+        found = true
+        image = cached
+      }
+    })
+
+    if (!found) {
+      imageCache.push(cached)
     }
   }
 }
