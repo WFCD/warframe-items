@@ -1,6 +1,6 @@
-const patchlogs = require('warframe-patchlogs')
 const Progress = require('./progress.js')
 const Scraper = require('./scraper.js')
+const previousBuild = require('../data/json/All.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = [] // Mostly about missing data
@@ -16,7 +16,9 @@ class Build {
     const data = {
       api: await Scraper.fetchApiData(),
       manifest: await Scraper.fetchImageManifest(),
-      drops: await Scraper.fetchDropRates()
+      drops: await Scraper.fetchDropRates(),
+      patchlogs: Scraper.fetchPatchlogs(),
+      wikia: await Scraper.fetchWikiaData()
     }
     const blueprints = data.api.find(c => c.category === 'Recipes').data
 
@@ -57,9 +59,10 @@ class Build {
     this.addImageName(result, data.manifest, previous)
     this.addCategory(result, category)
     this.addTradable(result)
+    this.addDucats(result, data.wikia.ducats)
     this.addDropRate(result, data.drops)
-    this.addPatchlogs(result)
-    this.addAdditionalWikiaData(result, category)
+    this.addPatchlogs(result, data.patchlogs)
+    this.addAdditionalWikiaData(result, category, data.wikia)
     this.addDates(result)
 
     return result
@@ -316,8 +319,20 @@ class Build {
     const tradableByType = tradableTypes.includes(item.type) && notFiltered
     const tradableByName = (item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered
     const isTradable = tradableByType || tradableByName
-
     item.tradable = isTradable || false
+  }
+
+  /**
+   * Add ducats for prime items. We'll need to get this data from the wikia.
+   */
+  addDucats (item, ducats) {
+    if (item.name.includes('Prime') && item.components) {
+      for (const component of item.components) {
+        component.ducats = ducats
+          .find(d => d.name.includes(`${item.name} ${component.name}`))
+          .ducats
+      }
+    }
   }
 
   /**
@@ -430,12 +445,12 @@ class Build {
   /**
    * Get patchlogs from forums and attach when changes are found for item.
    */
-  addPatchlogs (item) {
+  addPatchlogs (item, patchlogs) {
     // This process takes a lot of cpu time, so we won't repeat it unless the
     // patchlog hash changed.
-    if (!patchlogsChanged) {
-      const savedPatchlogs = precompiled.find(i => i.name === item.name)
-      if (savedPatchlogs && savedPatchlogs.patchlogs) item.patchlogs = savedPatchlogs.patchlogs
+    if (!patchlogs.changed) {
+      const previous = previousBuild.find(i => i.name === item.name)
+      if (previous && previous.patchlogs) item.patchlogs = previous.patchlogs
       return
     }
 
@@ -449,57 +464,15 @@ class Build {
   }
 
   /**
-   * Adds releaseDate, vaultDate and estimatedVaultDate to all primes using
-   * data from "Ducats or Plat".
-   */
-  addDates (item) {
-    if (!ducatsOrPlatData) {
-      return
-    }
-    if (item.name.endsWith('Prime')) {
-      for (const dataItem of ducatsOrPlatData.data) {
-        if (!dataItem.Name) {
-          continue
-        }
-        if (item.name.toLowerCase() === dataItem.Name.toLowerCase()) {
-          if (dataItem.ReleaseDate) {
-            item.releaseDate = dataItem.ReleaseDate
-          }
-          if (dataItem.VaultedDate) {
-            item.vaultDate = dataItem.VaultedDate
-          }
-          if (dataItem.EstimatedVaultedDate) {
-            item.estimatedVaultDate = dataItem.EstimatedVaultedDate
-          }
-        }
-      }
-    }
-  }
-
-  /**
-   * Add ducats for prime items. We'll need to get this data from the wikia.
-   */
-  addDucats (item, component) {
-    if (title(item.name).includes('Prime')) {
-      for (let stub of ducats) {
-        if (stub.name.includes(`${title(item.name)} ${component.name}`)) {
-          component.ducats = stub.ducats
-          break
-        }
-      }
-    }
-  }
-
-  /**
    * Adds data scraped from the wiki to a particular item
-   * @param {Object} item              item to modify
-   * @param {String} type type of the item, defaults to warframe
    */
-  addAdditionalWikiaData (item, type) {
-    if (!['weapons', 'warframes'].includes(type.toLowerCase())) return
-    const wikiaItem = wikiaData[type.toLowerCase()].find(i => i.name === item.name)
+  addAdditionalWikiaData (item, category, wikiaData) {
+    if (!['weapons', 'warframes'].includes(category.toLowerCase())) return
+
+    const wikiaItem = wikiaData[category.toLowerCase()].find(i => i.name === item.name)
     if (!wikiaItem) return
-    switch (type.toLowerCase()) {
+
+    switch (category.toLowerCase()) {
       case 'warframes':
         this.addWarframeWikiaData(item, wikiaItem)
         break
@@ -558,6 +531,34 @@ class Build {
       item.disposition = 4
     } else if (item.omegaAttenuation <= 1.6) {
       item.disposition = 5
+    }
+  }
+
+  /**
+   * Adds releaseDate, vaultDate and estimatedVaultDate to all primes using
+   * data from "Ducats or Plat".
+   */
+  addDates (item, vaultData) {
+    if (!vaultData) {
+      return
+    }
+    if (item.name.endsWith('Prime')) {
+      for (const dataItem of vaultData.data) {
+        if (!dataItem.Name) {
+          continue
+        }
+        if (item.name.toLowerCase() === dataItem.Name.toLowerCase()) {
+          if (dataItem.ReleaseDate) {
+            item.releaseDate = dataItem.ReleaseDate
+          }
+          if (dataItem.VaultedDate) {
+            item.vaultDate = dataItem.VaultedDate
+          }
+          if (dataItem.EstimatedVaultedDate) {
+            item.estimatedVaultDate = dataItem.EstimatedVaultedDate
+          }
+        }
+      }
     }
   }
 }

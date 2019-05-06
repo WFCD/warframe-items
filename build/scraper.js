@@ -61,7 +61,47 @@ class Scraper {
   /**
    * Get patchlogs from the forums
    */
-  async fetchPatchLogs () {
+  fetchPatchLogs () {
+    const patchlogs = require('warframe-patchlogs')
+    const patchlogsHash = crypto.createHash('md5').update(JSON.stringify(patchlogs.posts)).digest('hex')
+    const changed = exportCache.Patchlogs.hash !== patchlogsHash
+
+    if (changed) {
+      exportCache.Patchlogs.hash = patchlogsHash
+      fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
+    }
+
+    return {
+      patchlogs,
+      changed
+    }
+  }
+
+  /**
+   * Get additional data from wikia if it's not provided in the API
+   */
+  async fetchWikiaData () {
+    const ducats = []
+    const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
+    const $ = cheerio.load(ducatsWikia)
+
+    $('.mw-content-text table tbody tr').each(function () {
+      const name = $(this).find('td:nth-of-type(1) a:nth-of-type(2)').text()
+      const value = $(this).find('td:nth-of-type(3)').attr('data-sort-value')
+      ducats.push({ name, ducats: parseInt(value) })
+    })
+
+    return {
+      weapons: await new WeaponScraper().scrape(),
+      warframes: await new WarframeScraper().scrape(),
+      ducats
+    }
+  }
+
+  /**
+   * Get (estimated) vault dates from ducats or plat.
+   */
+  async fetchVaultData () {
     
   }
 }
