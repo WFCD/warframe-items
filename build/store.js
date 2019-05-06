@@ -144,9 +144,8 @@ class Update {
           })
         ]
       })
-    } else if (!cached.imageName || (cached.imageName && cached.imageName !== item.imageName)) {
-      cached.imageName = item.imageName
     }
+
     if (!isComponent) {
       bar.tick({
         image: colors.cyan(item.name),
