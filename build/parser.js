@@ -335,7 +335,7 @@ class Parser {
    * Add ducats for prime items. We'll need to get this data from the wikia.
    */
   addDucats (item, ducats) {
-    if (!item.name.includes('Prime') || !item.components)
+    if (!item.name.includes('Prime') || !item.components) return
 
     for (const component of item.components) {
       const wikiaItem = ducats.find(d => d.name.includes(`${item.name} ${component.name}`))
@@ -351,6 +351,7 @@ class Parser {
    * Add drop chances based on official drop tables
    */
   addDropRate (item, drops) {
+    // Take drops from previous build if the droptables didn't change
     if (!drops.changed) {
       // Get drop rates for components if available...
       if (item.components) {
@@ -394,8 +395,6 @@ class Parser {
   findDropLocations (item, dropChances) {
     let result = []
     let dropLocations = []
-
-    if (dropChances.changed)
 
     this.findDropRecursive(item, dropChances, dropLocations, '')
 
