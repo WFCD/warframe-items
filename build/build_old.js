@@ -18,7 +18,7 @@ const scraper = require('./scraper.js')
 const imageCache = require('../data/cache/.images.json')
 const exportCache = require('../data/cache/.export.json')
 
-class Update {
+class Build {
   async scrape () {
     const items = await scraper.fetchAll()
     let all = []
@@ -199,5 +199,5 @@ class Update {
   }
 }
 
-const update = new Update()
-update.scrape()
+const update = new Build()
+Build.init()
