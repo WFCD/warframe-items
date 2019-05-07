@@ -21,15 +21,16 @@ class Parser {
       if (chunk.category === 'Recipes') continue
       chunk.data = this.process(chunk.data, chunk.category, blueprints, data)
     }
-    return data
+    console.log(warnings)
+    return data.api
   }
 
   /**
    * Go through every category on the API and adapt to our schema.
    */
-  async process (items, category, blueprints, data) {
+  process (items, category, blueprints, data) {
     const result = []
-    const bar = new Progress(`Processing ${category} items`, items.length)
+    const bar = new Progress(`Parsing ${category}`, items.length)
 
     for (let i = 0; i < items.length; i++) {
       let item = items[i]
@@ -74,11 +75,18 @@ class Parser {
 
     // Look for original component entry in all categories
     for (const ingredient of blueprint.ingredients) {
-      const component = data.api.find(c => c.data.find(i => i.uniqueName === ingredient.ItemType))
+      let component
+
+      for (const category of data.api) {
+        component = category.data.find(i => i.uniqueName === ingredient.ItemType)
+        if (component) break
+      }
+
       if (!component) {
         warnings.push(`Could not find full data for component ${ingredient.ItemType}`)
         continue
       }
+
       component.itemCount = ingredient.ItemCount
       components.push(component)
     }
@@ -157,7 +165,12 @@ class Parser {
     // Use proper polarity names
     if (item.polarity) {
       const polarities = require('../config/polarities.json')
-      item.polarity = polarities.find(p => p.id === item.polarity).name
+      const polarity = polarities.find(p => p.id === item.polarity)
+      if (polarity) {
+        item.polarity = polarity.name
+      } else {
+        warnings.push(`Could not find matching polarity ${item.polarity} for ${item.name}`)
+      }
     }
 
     // Remove keys that only increase output size.
@@ -177,7 +190,7 @@ class Parser {
    * first, otherwise it would be considered a Warframe.
    */
   addType (item) {
-    const types = require('../config/types.json')
+    const types = require('../config/itemTypes.json')
     for (let type of types) {
       if (item.uniqueName.includes(`/${type.id}`)) {
         item.type = type.name
@@ -190,6 +203,7 @@ class Parser {
       if ((item.description || '').includes('This resource')) {
         item.type = 'Resource'
       } else {
+        warnings.push(`Could not determine item type for ${item.name}, assigned 'Misc' instead.`)
         item.type = 'Misc'
       }
     }
@@ -200,7 +214,9 @@ class Parser {
    */
   addImageName (item, manifest, previous) {
     const image = manifest.find(i => i.uniqueName === item.uniqueName)
-    if (!image) return
+    if (!image) {
+      warnings.push(`Could not find image in manifest for ${item.name}`)
+    }
     const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
 
@@ -319,11 +335,14 @@ class Parser {
    * Add ducats for prime items. We'll need to get this data from the wikia.
    */
   addDucats (item, ducats) {
-    if (item.name.includes('Prime') && item.components) {
-      for (const component of item.components) {
-        component.ducats = ducats
-          .find(d => d.name.includes(`${item.name} ${component.name}`))
-          .ducats
+    if (!item.name.includes('Prime') || !item.components)
+
+    for (const component of item.components) {
+      const wikiaItem = ducats.find(d => d.name.includes(`${item.name} ${component.name}`))
+      if (wikiaItem) {
+        component.ducats = wikiaItem.ducats
+      } else {
+        warnings.push(`Could not find ducats for ${item.name}`)
       }
     }
   }
@@ -535,6 +554,11 @@ class Parser {
   addVaultData (item, vaultData) {
     if (!item.name.endsWith('Prime')) return
     const target = vaultData.find(i => i.Name.toLowerCase() === item.name.toLowerCase())
+
+    if (!target) {
+      warnings.push(`Could not find vault data for ${item.name}`)
+      return
+    }
 
     if (target.ReleaseDate) {
       item.releaseDate = target.ReleaseDate

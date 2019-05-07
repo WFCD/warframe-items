@@ -7,7 +7,7 @@ const colors = require('colors/safe')
  */
 class Progress extends ProgressBar {
   constructor (string, total) {
-    super(`:check ${string}: ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining ${colors.cyan(':type')}`, {
+    super(`${string}: ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining`, {
       incomplete: colors.red('-'),
       width: 20,
       total
