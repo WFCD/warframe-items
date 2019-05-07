@@ -1,25 +1,17 @@
 const Progress = require('./progress.js')
-const Scraper = require('./scraper.js')
 const previousBuild = require('../data/json/All.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = [] // Mostly about missing data
 
 /**
- * Generate JSON output from original API data.
+ * Parse API data into a more clear or complete format.
  */
-class Build {
+class Parser {
   /**
    * Entrypoint for build process.
    */
-  async init () {
-    const data = {
-      api: await Scraper.fetchApiData(),
-      manifest: await Scraper.fetchImageManifest(),
-      drops: await Scraper.fetchDropRates(),
-      patchlogs: Scraper.fetchPatchlogs(),
-      wikia: await Scraper.fetchWikiaData()
-    }
+  async parse (data) {
     const blueprints = data.api.find(c => c.category === 'Recipes').data
 
     // Modify data from API to fit our schema. Note that we'll
@@ -29,6 +21,7 @@ class Build {
       if (chunk.category === 'Recipes') continue
       chunk.data = this.process(chunk.data, chunk.category, blueprints, data)
     }
+    return data
   }
 
   /**
@@ -63,7 +56,7 @@ class Build {
     this.addDropRate(result, data.drops)
     this.addPatchlogs(result, data.patchlogs)
     this.addAdditionalWikiaData(result, category, data.wikia)
-    this.addDates(result)
+    this.addVaultData(result, data.vaultData)
 
     return result
   }
@@ -499,6 +492,7 @@ class Build {
   }
 
   addWeaponWikiaData (item, wikiaItem) {
+    const damageTypes = require('../config/damageTypes.json')
     item.ammo = wikiaItem.ammo
     item.channeling = wikiaItem.channeling
     item.damage = wikiaItem.damage
@@ -538,29 +532,20 @@ class Build {
    * Adds releaseDate, vaultDate and estimatedVaultDate to all primes using
    * data from "Ducats or Plat".
    */
-  addDates (item, vaultData) {
-    if (!vaultData) {
-      return
+  addVaultData (item, vaultData) {
+    if (!item.name.endsWith('Prime')) return
+    const target = vaultData.find(i => i.Name.toLowerCase() === item.name.toLowerCase())
+
+    if (target.ReleaseDate) {
+      item.releaseDate = target.ReleaseDate
     }
-    if (item.name.endsWith('Prime')) {
-      for (const dataItem of vaultData.data) {
-        if (!dataItem.Name) {
-          continue
-        }
-        if (item.name.toLowerCase() === dataItem.Name.toLowerCase()) {
-          if (dataItem.ReleaseDate) {
-            item.releaseDate = dataItem.ReleaseDate
-          }
-          if (dataItem.VaultedDate) {
-            item.vaultDate = dataItem.VaultedDate
-          }
-          if (dataItem.EstimatedVaultedDate) {
-            item.estimatedVaultDate = dataItem.EstimatedVaultedDate
-          }
-        }
-      }
+    if (target.VaultedDate) {
+      item.vaultDate = target.VaultedDate
+    }
+    if (target.EstimatedVaultedDate) {
+      item.estimatedVaultDate = target.EstimatedVaultedDate
     }
   }
 }
 
-module.exports = new Build()
+module.exports = new Parser()

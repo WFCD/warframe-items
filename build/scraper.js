@@ -102,7 +102,7 @@ class Scraper {
    * Get (estimated) vault dates from ducats or plat.
    */
   async fetchVaultData () {
-    
+    return (await get('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')).data
   }
 }
 
