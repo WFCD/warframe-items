@@ -18,17 +18,17 @@ class Scraper {
    */
   async fetchApiData () {
     const endpoints = require('../config/endpoints.json')
-    const data = []
+    const result = []
     const bar = new Progress('Fetching API Endpoints', endpoints.length)
 
     for (const endpoint of endpoints) {
       const split = endpoint.split('/')
-      const category = split[split.length - 1].replace('.json')
-      const data = (await get(endpoint))[category]
-      data.push({ category, data })
+      const category = split[split.length - 1].replace('Export', '').replace('.json', '')
+      const data = (await get(endpoint))[`Export${category}`]
+      result.push({ category, data })
       bar.tick()
-    }
-    return data
+    } 
+    return result
   }
 
   /**
@@ -106,4 +106,4 @@ class Scraper {
   }
 }
 
-module.exports = Scraper
+module.exports = new Scraper()
