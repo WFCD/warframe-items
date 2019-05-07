@@ -332,7 +332,26 @@ class Parser {
    * Add drop chances based on official drop tables
    */
   addDropRate (item, drops) {
-    if (!drops.changed) return
+    if (!drops.changed) {
+      // Get drop rates for components if available...
+      if (item.components) {
+        for (let component of item.components) {
+          const previous = previousBuild.find(i => i.name === item.name)
+          if (!previous || !previous.components) return
+
+          const saved = previous.components.find(c => c.name === component.name)
+          if (saved && saved.drops) {
+            component.drops = saved.drops
+          }
+        }
+      }
+
+      // Otherwise attach to main item
+      else {
+        const saved = previousBuild.find(i => i.name === item.name)
+        if (saved && saved.drops) item.drops = saved.drops
+      }
+    }
 
     // Don't look for drop rates on item itself if it has components.
     if (item.components) {
@@ -356,6 +375,8 @@ class Parser {
   findDropLocations (item, dropChances) {
     let result = []
     let dropLocations = []
+
+    if (dropChances.changed)
 
     this.findDropRecursive(item, dropChances, dropLocations, '')
 
