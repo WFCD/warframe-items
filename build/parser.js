@@ -18,7 +18,7 @@ class Parser {
   /**
    * Entrypoint for build process.
    */
-  async parse (data) {
+  parse (data) {
     const blueprints = data.api.find(c => c.category === 'Recipes').data
 
     // Modify data from API to fit our schema. Note that we'll
@@ -28,8 +28,11 @@ class Parser {
       if (chunk.category === 'Recipes') continue
       chunk.data = this.process(chunk.data, chunk.category, blueprints, data)
     }
-    console.log(warnings)
-    return data.api
+
+    return {
+      data: data.api,
+      warnings
+    }
   }
 
   /**
