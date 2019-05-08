@@ -3,12 +3,12 @@ const previousBuild = require('../data/json/All.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
-  missingType: [],
   missingImage: [],
   missingDucats: [],
   missingComponents: [],
   missingVaultData: [],
-  polarity: []
+  polarity: [],
+  missingType: []
 }
 
 /**
@@ -45,7 +45,7 @@ class Parser {
     for (let i = 0; i < items.length; i++) {
       let item = items[i]
       item = this.addComponents(item, category, blueprints, data)
-      item = this.filter(items[i], category, data, items[i - 1])
+      item = this.quickFilter(item, category, data, items[i - 1])
       result.push(item)
       bar.tick()
     }
@@ -73,13 +73,29 @@ class Parser {
   }
 
   /**
+   * Debug method for parsing the bare minimum of data to finish
+   * the build process without errors. Useful when you don't wanna
+   * wait several minutes to test something.
+   */
+  quickFilter (original, category, data, previous) {
+    const result = _.cloneDeep(original)
+
+    this.sanitize(result)
+    this.addType(result)
+    this.addImageName(result, data.manifest, previous)
+    this.addCategory(result, category)
+
+    return result
+  }
+
+  /**
    * Move components to the parent directly. This also means that we
    * won't store the blueprint as independent item as all its data is
    * attached to the parent.
    */
   addComponents (item, category, blueprints, data) {
     const blueprint = blueprints.find(b => b.resultType === item.uniqueName)
-    if (!blueprint) return // Some items just don't have blueprints
+    if (!blueprint) return item // Some items just don't have blueprints
     const components = []
     let result = _.cloneDeep(item)
 
@@ -125,7 +141,7 @@ class Parser {
     // Sanitize component array
     for (const component of components) {
       component.isComponent = true
-      this.filter(component, category, data)
+      this.quickFilter(component, category, data)
       delete component.isComponent
     }
 
