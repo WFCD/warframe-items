@@ -21,9 +21,10 @@ class Build {
       wikia: await scraper.fetchWikiaData(),
       vaultData: await scraper.fetchVaultData()
     }
-    const data = parser.parse(raw)
-    console.log(data)
-    //const all = this.saveJson(data)
+    const parsed = parser.parse(raw)
+    console.log(parsed.data)
+    console.log(parsed.warnings)
+    this.saveJson(parsed.data)
     //await this.saveImages(all)
   }
 
@@ -31,21 +32,29 @@ class Build {
    * Generate JSON file for each category and one for
    * all combined.
    */
-  saveJson (items) {
+  saveJson (categories) {
     const all = []
+    const sort = (a, b) => {
+      if (!a.name) console.log(a)
+      const res = a.name.localeCompare(b.name)
+      if (res === 0) {
+        return a.uniqueName.localeCompare(b.uniqueName)
+      } else {
+        return res
+      }
+    }
 
-    Object.keys(items).forEach(key => {
-      all = all.concat(items[key]).sort((a, b) => {
-        const res = a.name.localeCompare(b.name)
-        if (res === 0) {
-          return a.uniqueName.localeCompare(b.uniqueName)
-        } else {
-          return res
-        }
-      })
-      fs.writeFileSync(`${__dirname}/../data/json/${key}.json`, stringify(items[key]))
-    })
-    fs.writeFileSync(`${__dirname}/../data/json/All.json`, stringify(all))
+    // Transform [{ category, data }, ...] into [data] for each category
+    // and [data].concat([data]) for all.json
+    // Note that the data must be sorted to ensure that we don't have different
+    // orders triggering a new push.
+    for (const category of categories) {
+      const filename = category.category
+      const data = category.data.sort(sort)
+      all.concat(data)
+      fs.writeFileSync(`${__dirname}/../data/json/${filename}.json`, stringify(data))
+    }
+    fs.writeFileSync(`${__dirname}/../data/json/All.json`, stringify(all.sort(sort)))
 
     return all
   }
