@@ -27,7 +27,7 @@ class Scraper {
       const data = (await get(endpoint))[`Export${category}`]
       result.push({ category, data })
       bar.tick()
-    } 
+    }
     return result
   }
 
@@ -35,13 +35,17 @@ class Scraper {
    * Get the manifest of all available images.
    */
   async fetchImageManifest () {
-    return (await get('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')).Manifest
+    const bar = new Progress('Fetching Image Manifest', 1)
+    const manifest = (await get('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')).Manifest
+    bar.tick()
+    return manifest
   }
 
   /**
    * Get official drop rates and check if they changed since last build.
    */
   async fetchDropRates () {
+    const bar = new Progress('Fetching Drop Rates', 1)
     const rates = await get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json')
     const ratesHash = crypto.createHash('md5').update(JSON.stringify(rates)).digest('hex')
     const changed = exportCache.DropChances.hash !== ratesHash
@@ -52,6 +56,7 @@ class Scraper {
       fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
     }
 
+    bar.tick()
     return {
       rates,
       changed
@@ -62,6 +67,7 @@ class Scraper {
    * Get patchlogs from the forums
    */
   fetchPatchLogs () {
+    const bar = new Progress('Fetching Patchlogs', 1)
     const patchlogs = require('warframe-patchlogs')
     const patchlogsHash = crypto.createHash('md5').update(JSON.stringify(patchlogs.posts)).digest('hex')
     const changed = exportCache.Patchlogs.hash !== patchlogsHash
@@ -71,6 +77,7 @@ class Scraper {
       fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
     }
 
+    bar.tick()
     return {
       patchlogs,
       changed
@@ -81,6 +88,7 @@ class Scraper {
    * Get additional data from wikia if it's not provided in the API
    */
   async fetchWikiaData () {
+    const bar = new Progress('Fetching Wikia Data', 1)
     const ducats = []
     const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
@@ -91,6 +99,7 @@ class Scraper {
       ducats.push({ name, ducats: parseInt(value) })
     })
 
+    bar.tick()
     return {
       weapons: await new WeaponScraper().scrape(),
       warframes: await new WarframeScraper().scrape(),
@@ -102,7 +111,11 @@ class Scraper {
    * Get (estimated) vault dates from ducats or plat.
    */
   async fetchVaultData () {
-    return (await get('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')).data
+    const bar = new Progress('Fetching Vault Data', 1)
+    const vaultData = (await get('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')).data
+
+    bar.tick()
+    return vaultData
   }
 }
 

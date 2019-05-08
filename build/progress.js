@@ -7,7 +7,8 @@ const colors = require('colors/safe')
  */
 class Progress extends ProgressBar {
   constructor (string, total) {
-    super(`${string}: ${colors.green('[')}:bar${colors.green(']')} :current/:total :etas remaining`, {
+    const timer = new Date()
+    super(`${string.padEnd(24, ' ')}: ${colors.green('[')}:bar${colors.green(']')} :current/:total (:elapseds) :etas remaining`, {
       incomplete: colors.red('-'),
       width: 20,
       total

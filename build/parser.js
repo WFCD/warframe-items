@@ -2,7 +2,14 @@ const Progress = require('./progress.js')
 const previousBuild = require('../data/json/All.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
-const warnings = [] // Mostly about missing data
+const warnings = {
+  missingType: [],
+  missingImage: [],
+  missingDucats: [],
+  missingComponents: [],
+  missingVaultData: [],
+  polarity: []
+}
 
 /**
  * Parse API data into a more clear or complete format.
@@ -83,7 +90,7 @@ class Parser {
       }
 
       if (!component) {
-        warnings.push(`Could not find full data for component ${ingredient.ItemType}`)
+        warnings.missingComponents.push(ingredient.ItemType)
         continue
       }
 
@@ -114,7 +121,9 @@ class Parser {
 
     // Sanitize component array
     for (const component of components) {
+      component.isComponent = true
       this.filter(component, category, data)
+      delete component.isComponent
     }
 
     // Sort to avoid "fake" updates due to order when data is rebuilt
@@ -169,7 +178,7 @@ class Parser {
       if (polarity) {
         item.polarity = polarity.name
       } else {
-        warnings.push(`Could not find matching polarity ${item.polarity} for ${item.name}`)
+        warnings.polarity.push(`Could not find matching polarity ${item.polarity} for ${item.name}`)
       }
     }
 
@@ -190,7 +199,9 @@ class Parser {
    * first, otherwise it would be considered a Warframe.
    */
   addType (item) {
+    if (item.isComponent) return
     const types = require('../config/itemTypes.json')
+
     for (let type of types) {
       if (item.uniqueName.includes(`/${type.id}`)) {
         item.type = type.name
@@ -203,7 +214,7 @@ class Parser {
       if ((item.description || '').includes('This resource')) {
         item.type = 'Resource'
       } else {
-        warnings.push(`Could not determine item type for ${item.name}, assigned 'Misc' instead.`)
+        if (!warnings.missingType.includes(item.name)) warnings.missingType.push(item.name)
         item.type = 'Misc'
       }
     }
@@ -215,8 +226,10 @@ class Parser {
   addImageName (item, manifest, previous) {
     const image = manifest.find(i => i.uniqueName === item.uniqueName)
     if (!image) {
-      warnings.push(`Could not find image in manifest for ${item.name}`)
+      warnings.missingImage.push(item.name)
+      return
     }
+
     const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
 
@@ -342,7 +355,7 @@ class Parser {
       if (wikiaItem) {
         component.ducats = wikiaItem.ducats
       } else {
-        warnings.push(`Could not find ducats for ${item.name}`)
+        warnings.missingDucats.push(`${item.name} ${component.name}`)
       }
     }
   }
@@ -576,7 +589,7 @@ class Parser {
     const target = vaultData.find(i => i.Name.toLowerCase() === item.name.toLowerCase())
 
     if (!target) {
-      warnings.push(`Could not find vault data for ${item.name}`)
+      warnings.missingVaultData.push(item.name)
       return
     }
 
