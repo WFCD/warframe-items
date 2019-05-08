@@ -139,6 +139,12 @@ class Parser {
    * obscure conventions.
    */
   sanitize (item) {
+    // Some items have no name, so we use the last bit of the 
+    // uniqueName instead.
+    if (!item.name) {
+      item.name = item.uniqueName.split('/').reverse()[0]
+    }
+
     // Capitalize properties which are usually all uppercase
     const props = ['name', 'type', 'trigger', 'noise', 'rarity']
     for (const prop of props) {
