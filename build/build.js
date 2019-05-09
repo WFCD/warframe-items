@@ -43,7 +43,7 @@ class Build {
    */
   applyCustomCategories (data) {
     const result = {}
-    
+
     for (const chunk of data) {
       if (chunk.category === 'Recipes') continue // Skip blueprints
 
@@ -61,7 +61,6 @@ class Build {
     return result
   }
 
-
   /**
    * Generate JSON file for each category and one for all combined.
    */
@@ -76,7 +75,7 @@ class Build {
         return res
       }
     }
-    
+
     // Category names are provided by this.applyCustomCategories
     for (const category in categories) {
       const data = categories[category].sort(sort)
@@ -118,17 +117,16 @@ class Build {
       fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
     }
 
-    const savedComponents = [] // Don't download component images twice
-    const savedRelics = [] // Don't download relics twice
+    const duplicates = [] // Don't download component images or relics twice
 
     for (const item of items) {
       // Save image for parent item
-      await this.saveImage(item, items, false, savedComponents, savedRelics, manifest, bar)
-      
+      await this.saveImage(item, items, false, duplicates, manifest, bar)
+
       // Save images for components if necessary
       if (item.components) {
         for (let component of item.components) {
-          await this.saveImage(component, items, true, savedComponents, savedRelics, manifest)
+          await this.saveImage(component, items, true, duplicates, manifest)
         }
       }
     }
@@ -140,7 +138,7 @@ class Build {
   /**
    * Download and save images for items or components.
    */
-  async saveImage (item, items, isComponent, savedComponents, savedRelics, manifest, bar) {
+  async saveImage (item, items, isComponent, duplicates, manifest, bar) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
     const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
     const basePath = `${__dirname}/../data/img/`
@@ -150,30 +148,18 @@ class Build {
     const hash = manifest.find(i => i.uniqueName === item.uniqueName).fileTime
     const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
 
-    // Don't download component images twice
-    if (isComponent) {
-      if (item.name === 'Blueprint') {
-        return
-      }
-      if (savedComponents.includes(item.imageName)) {
+    // Don't download component images or relic images twice
+    if (isComponent || item.type === 'Relic') {
+      if (duplicates.includes(item.imageName)) {
         return
       } else {
-        savedComponents.push(item.imageName)
-      }
-    }
-
-    // Don't download the same relic type image twice
-    if (item.type === 'Relic') {
-      if (savedRelics.includes(item.imageName)) {
-        return
-      } else {
-        savedRelics.push(item.imageName)
+        duplicates.push(item.imageName)
       }
     }
 
     if (!cached || cached.hash !== hash) {
       const image = await request({ url: imageUrl, encoding: null })
-      this.updateCache(item, hash)
+      this.updateCache(item, cached, hash)
 
       if (sizeBig.includes(item.category) || isComponent) {
         await sharp(image).resize(512, 342).ignoreAspectRatio().toFile(filePath)
@@ -204,9 +190,7 @@ class Build {
   /**
    * Update image cache with new hash if things changed
    */
-  updateCache (item, hash) {
-    const cached = imageCache.find(i => i.uniqueName === item.uniqueName)
-
+  updateCache (item, cached, hash) {
     if (!cached) {
       imageCache.push({
         uniqueName: item.uniqueName,
