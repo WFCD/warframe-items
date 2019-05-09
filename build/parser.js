@@ -20,17 +20,21 @@ class Parser {
    */
   parse (data) {
     const blueprints = data.api.find(c => c.category === 'Recipes').data
+    const result = []
 
     // Modify data from API to fit our schema. Note that we'll
     // skip 'Recipes' (Blueprints) as their data will be attached
     // to the parent item instead.
     for (const chunk of data.api) {
       if (chunk.category === 'Recipes') continue
-      chunk.data = this.process(chunk.data, chunk.category, blueprints, data)
+      result.push({
+        category: chunk.category,
+        data: this.process(chunk.data, chunk.category, blueprints, data)
+      })
     }
 
     return {
-      data: data.api,
+      data: result,
       warnings
     }
   }
@@ -129,23 +133,37 @@ class Parser {
       description: item.description,
       itemCount: 1
     })
+    
+    // Attach relevant keys from blueprint to parent
+    this.addBlueprintData(result, blueprint)
+    this.sanitizeComponents(components, result, item, category, blueprints, data, secondPass)
+    
+    return result
+  }
 
-    // Add blueprint keys to parent (includes build time, price, etc), but
-    // delete unnecessary or duplicate keys
-    result.buildPrice = blueprint.buildPrice
-    result.buildTime = blueprint.buildTime
-    result.skipBuildTimePrice = blueprint.skipBuildTimePrice
-    result.buildQuantity = blueprint.num
-    result.consumeOnBuild = blueprint.consumeOnUse
+  /**
+   * Attach blueprint data to the parent item where sensible.
+   */
+  addBlueprintData (item, blueprint) {
+    item.buildPrice = blueprint.buildPrice
+    item.buildTime = blueprint.buildTime
+    item.skipBuildTimePrice = blueprint.skipBuildTimePrice
+    item.buildQuantity = blueprint.num
+    item.consumeOnBuild = blueprint.consumeOnUse
+  }
 
-    // Sanitize component array. Note that the .parents key we
-    // add to the original object will also be present on the
-    // component as individual item
+  /**
+   * Sanitize components slightly differently from normal items. Note that
+   * we also add a .parents key which will give the component as standalone
+   * item a list of all its parents.
+   */
+  sanitizeComponents (components, result, item, category, blueprints, data, secondPass) {
     for (let i = 0; i < components.length; i++) {
       components[i].parent = title(item.name) // Direct parent for this pass
 
       // If a .parents key already exists from another item, add our
-      // component additionally, otherwise create one.
+      // component additionally, otherwise create one. This mutates the
+      // original component object.
       if (components[i].parents) {
         if (!components[i].parents.includes(title(item.name))) {
           components[i].parents.push(title(item.name))
@@ -157,6 +175,13 @@ class Parser {
       delete components[i].parent
       delete override.parent
       delete override.parents
+
+      // Warframe/Weapon components should not include their parent's
+      // name so it's easier to work with them. This is especially critical
+      // for parsing trade chat data.
+      if (override.uniqueName.includes('/Recipes') || item.tradable) {
+        override.name = override.name.replace(`${title(item.name)} `, '')
+      }
       components[i] = override
 
       // Add component's components one level deep
@@ -167,7 +192,6 @@ class Parser {
 
     // Sort to avoid "fake" updates due to order when data is rebuilt
     result.components = components.sort((a, b) => a.name.localeCompare(b.name))
-    return result
   }
 
   /**
@@ -556,7 +580,7 @@ class Parser {
       type: item.type
     }
 
-    const logs = patchlogs.getItemChanges(target)
+    const logs = patchlogs.patchlogs.getItemChanges(target)
     if (logs.length) item.patchlogs = logs
   }
 
