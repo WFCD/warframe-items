@@ -10,7 +10,7 @@ const sanitize = (str) => str.replace(/\n/g, '').replace(/\\r\\r/g, '\\n')
 const get = async (url) => JSON.parse(sanitize(await request(url)))
 
 /**
- * Retrieves base item data from the API and the Wikia
+ * Retrieves the base item data necessary for the parsing process
  */
 class Scraper {
   /**

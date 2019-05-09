@@ -44,8 +44,13 @@ class Parser {
 
     for (let i = 0; i < items.length; i++) {
       let item = items[i]
+
+      // Skip Warframe/Weapon Components as they'll be accessible
+      // through their parent.
+      if (item.uniqueName.includes('/Recipes')) continue
+
       item = this.addComponents(item, category, blueprints, data)
-      item = this.quickFilter(item, category, data, items[i - 1])
+      item = this.filter(item, category, data, items[i - 1])
       result.push(item)
       bar.tick()
     }
@@ -93,7 +98,7 @@ class Parser {
    * won't store the blueprint as independent item as all its data is
    * attached to the parent.
    */
-  addComponents (item, category, blueprints, data) {
+  addComponents (item, category, blueprints, data, secondPass) {
     const blueprint = blueprints.find(b => b.resultType === item.uniqueName)
     if (!blueprint) return item // Some items just don't have blueprints
     const components = []
@@ -127,22 +132,37 @@ class Parser {
 
     // Add blueprint keys to parent (includes build time, price, etc), but
     // delete unnecessary or duplicate keys
-    delete blueprint.ingredients
-    delete blueprint.secretIngredients
-    delete blueprint.resultType
-    delete blueprint.codexSecret
-    blueprint.buildQuantity = blueprint.num // Probably hard to understand otherwise
-    blueprint.consumeOnBuild = blueprint.consumeOnUse
-    delete blueprint.num
-    delete blueprint.consumeOnUse
-    delete blueprint.uniqueName
-    result = { ...result, ...blueprint }
+    result.buildPrice = blueprint.buildPrice
+    result.buildTime = blueprint.buildTime
+    result.skipBuildTimePrice = blueprint.skipBuildTimePrice
+    result.buildQuantity = blueprint.num
+    result.consumeOnBuild = blueprint.consumeOnUse
 
-    // Sanitize component array
-    for (const component of components) {
-      component.isComponent = true
-      this.quickFilter(component, category, data)
-      delete component.isComponent
+    // Sanitize component array. Note that the .parents key we
+    // add to the original object will also be present on the
+    // component as individual item
+    for (let i = 0; i < components.length; i++) {
+      components[i].parent = title(item.name) // Direct parent for this pass
+
+      // If a .parents key already exists from another item, add our
+      // component additionally, otherwise create one.
+      if (components[i].parents) {
+        if (!components[i].parents.includes(title(item.name))) {
+          components[i].parents.push(title(item.name))
+        }
+      } else {
+        components[i].parents = [title(item.name)]
+      }
+      const override = this.filter(components[i], category, data)
+      delete components[i].parent
+      delete override.parent
+      delete override.parents
+      components[i] = override
+
+      // Add component's components one level deep
+      if (!secondPass) {
+        components[i] = this.addComponents(components[i], category, blueprints, data, true)
+      }
     }
 
     // Sort to avoid "fake" updates due to order when data is rebuilt
@@ -155,7 +175,7 @@ class Parser {
    * obscure conventions.
    */
   sanitize (item) {
-    // Some items have no name, so we use the last bit of the 
+    // Some items have no name, so we use the last bit of the
     // uniqueName instead.
     if (!item.name) {
       item.name = item.uniqueName.split('/').reverse()[0]
@@ -224,7 +244,7 @@ class Parser {
    * first, otherwise it would be considered a Warframe.
    */
   addType (item) {
-    if (item.isComponent) return
+    if (item.parent) return
     const types = require('../config/itemTypes.json')
 
     for (let type of types) {
@@ -254,13 +274,21 @@ class Parser {
       warnings.missingImage.push(item.name)
       return
     }
-
+    const encode = (str) => str.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '').toLowerCase()
     const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
 
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
-    item.imageName = item.name.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '').toLowerCase()
+    item.imageName = encode(item.name)
+
+    // Components usually have the same generic images, so we should remove the
+    // parent name here. Note that there's a difference between prime/non-prime
+    // components, so we'll keep the prime in the name.
+    if (item.parent) {
+      item.imageName = item.imageName.replace(encode(item.parent) + '-', '')
+      if (item.name.includes('Prime')) item.imageName = `prime-${item.imageName}`
+    }
 
     // Relics should use the same image based on type, as they all use the same.
     // The resulting format looks like `axi-intact`, `axi-radiant`
@@ -270,8 +298,7 @@ class Parser {
 
     // Some items have the same name - so add their uniqueName as an identifier
     if (previous && item.name === previous.name) {
-      item.imageName += `-${item.uniqueName.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '')}`
-      /* eslint-enable no-useless-escape */
+      item.imageName += `-${encode(item.uniqueName)}`
     }
 
     // Add original file extension
@@ -358,7 +385,7 @@ class Parser {
    * Limit items to tradable/untradable if specified.
    */
   addTradable (item) {
-    const tradableTypes = ['Upgrades', 'Gem', 'Fish', 'Key', 'Focus Lens', 'Relic']
+    const tradableTypes = ['Upgrades', 'Fish', 'Key', 'Focus Lens', 'Relic']
     const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
