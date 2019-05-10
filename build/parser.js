@@ -133,11 +133,11 @@ class Parser {
       description: item.description,
       itemCount: 1
     })
-    
+
     // Attach relevant keys from blueprint to parent
     this.addBlueprintData(result, blueprint)
     this.sanitizeComponents(components, result, item, category, blueprints, data, secondPass)
-    
+
     return result
   }
 
@@ -184,10 +184,11 @@ class Parser {
       }
       components[i] = override
 
-      // Add component's components one level deep
-      if (!secondPass) {
-        components[i] = this.addComponents(components[i], category, blueprints, data, true)
-      }
+      // Add component's components one level deep. Disabled for now because of
+      // too much duplicate data.
+      // if (!secondPass) {
+      //  components[i] = this.addComponents(components[i], category, blueprints, data, true)
+      // }
     }
 
     // Sort to avoid "fake" updates due to order when data is rebuilt
