@@ -67,8 +67,8 @@ class Parser {
   filter (original, category, data, previous) {
     const result = _.cloneDeep(original)
 
-    this.sanitize(result)
     this.addType(result)
+    this.sanitize(result)
     this.addImageName(result, data.manifest, previous)
     this.addCategory(result, category)
     this.addTradable(result)
@@ -89,8 +89,8 @@ class Parser {
   quickFilter (original, category, data, previous) {
     const result = _.cloneDeep(original)
 
-    this.sanitize(result)
     this.addType(result)
+    this.sanitize(result)
     this.addImageName(result, data.manifest, previous)
     this.addCategory(result, category)
 
