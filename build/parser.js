@@ -487,9 +487,9 @@ class Parser {
   }
 
   findDropLocations (item, dropChances) {
+    // Prime drop locations array
     let result = []
     let dropLocations = []
-
     this.findDropRecursive(item, dropChances, dropLocations, '')
 
     if (!dropLocations.length) {
@@ -499,7 +499,7 @@ class Parser {
     // The find function returns an array of mentions with their respective paths.
     // So because I'm lazy and don't want to directly implement it into the
     // recursion, we'll gather the info "around" the found key here.
-    dropLocations.forEach(location => {
+    for (const location of dropLocations) {
       const propBlacklist = ['_id', 'ememyModDropChance', 'enemyModDropChance']
       const path = location.path.replace(/\[/g, '').replace(/\]/g, ' ').split(' ')
       const dropData = dropChances[path[0]][path[1]]
@@ -547,7 +547,7 @@ class Parser {
       }
 
       result.push(drop)
-    })
+    }
     return result
   }
 
@@ -572,6 +572,9 @@ class Parser {
    * Get patchlogs from forums and attach when changes are found for item.
    */
   addPatchlogs (item, patchlogs) {
+    // Don't add patchlogs for components
+    if (item.parent) return
+
     // This process takes a lot of cpu time, so we won't repeat it unless the
     // patchlog hash changed.
     if (!patchlogs.changed) {
