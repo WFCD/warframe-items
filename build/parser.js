@@ -335,6 +335,9 @@ class Parser {
    * output file name.
    */
   addCategory (item, category) {
+    // Don't add categories for components when the parent already has one
+    if (item.parent) return
+
     switch (category) {
       case 'Customs':
         if (item.type === 'Sigil') item.category = 'Sigils'
@@ -440,7 +443,7 @@ class Parser {
   /**
    * Add drop chances based on official drop tables
    */
-  addDropRate (item, drops) {
+  addDropRate (item, drops) {    
     // Take drops from previous build if the droptables didn't change
     if (!drops.changed) {
       // Get drop rates for components if available...
@@ -465,15 +468,15 @@ class Parser {
 
     // Don't look for drop rates on item itself if it has components.
     if (item.components) {
-      for (let component of item.components) {
+      for (const component of item.components) {
         const data = this.findDropLocations(`${item.name} ${component.name}`, drops.rates)
-        if (drops.length) component.drops = data
+        if (data.length) component.drops = data
       }
     } else {
       // Last word of relic is intact/rad, etc instead of 'Relic'
       const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name
       const data = this.findDropLocations(name, drops.rates)
-      if (drops.length) item.drops = data
+      if (data.length) item.drops = data
     }
 
     // Sort by drop rate
