@@ -300,6 +300,7 @@ class Parser {
       warnings.missingImage.push(item.name)
       return
     }
+    // eslint-disable-next-line no-useless-escape
     const encode = (str) => str.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '').toLowerCase()
     const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
