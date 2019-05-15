@@ -77,6 +77,7 @@ class Parser {
     this.addPatchlogs(result, data.patchlogs)
     this.addAdditionalWikiaData(result, category, data.wikia)
     this.addVaultData(result, data.vaultData)
+    this.applyOverrides(result)
 
     return result
   }
@@ -443,7 +444,7 @@ class Parser {
   /**
    * Add drop chances based on official drop tables
    */
-  addDropRate (item, drops) {    
+  addDropRate (item, drops) {
     // Take drops from previous build if the droptables didn't change
     if (!drops.changed) {
       // Get drop rates for components if available...
@@ -681,6 +682,16 @@ class Parser {
     }
     if (target.EstimatedVaultedDate) {
       item.estimatedVaultDate = target.EstimatedVaultedDate
+    }
+  }
+
+  applyOverrides (item) {
+    const override = require('../config/overrides.json')[item.uniqueName]
+    if (override) {
+      item = {
+        ...item,
+        ...override
+      }
     }
   }
 }
