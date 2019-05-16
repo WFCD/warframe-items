@@ -90,13 +90,13 @@ to get you started.
 ### File structure
 All relevant scripts are found in `/build/` with
 
-[build.js](/build/build.js)
+[build.js](/build/build.js)<br>
 The entrypoint for the build script. Here we also save JSON, image and cache data.
 
-[scraper.js](/build/scraper.js)
+[scraper.js](/build/scraper.js)<br>
 Fetches all external data and returns it to the parser.
 
-[parser.js](/build/parser.js)
+[parser.js](/build/parser.js)<br>
 Parses the external data to match our schema and returns it to the build script.
 
 <br>
