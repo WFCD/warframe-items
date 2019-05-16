@@ -137,7 +137,6 @@
     "uniqueName": "/Lotus/Types/Game/KubrowPet/BlankTraitPrint",
     "name": "Genetic Code Template",
     "description": "Copies the dominant genes of a pet onto the template. \rThis can then be used to increase the chances that traits from the original pet will carry across to a newborn clone.",
-    "type": "Pets",
     "buildPrice": 10000,
     "buildTime": 21600,
     "skipBuildTimePrice": 5,
@@ -149,34 +148,135 @@
         "name": "Blueprint",
         "description": "Copies the dominant genes of a pet onto the template. \rThis can then be used to increase the chances that traits from the original pet will carry across to a newborn clone.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 300,
-        "tradable": false,
-        "imageName": "circuits.png"
+        "imageName": "circuits.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 1,
+        "imageName": "control-module.png",
         "tradable": false,
-        "imageName": "control-module.png"
+        "drops": [
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 700,
-        "tradable": false,
-        "imageName": "nano-spores.png"
+        "imageName": "nano-spores.png",
+        "tradable": false
       }
     ],
+    "type": "Pets",
     "imageName": "genetic-code-template.png",
     "category": "Pets",
     "tradable": false,
@@ -361,7 +461,8 @@
     "uniqueName": "/Lotus/Types/Game/KubrowPet/EggHatcher",
     "name": "Incubator Power Core",
     "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
-    "type": "Pets",
+    "itemCount": 1,
+    "parents": [ "Sahasa Kubrow" ],
     "buildPrice": 100000,
     "buildTime": 28800,
     "skipBuildTimePrice": 10,
@@ -373,35 +474,362 @@
         "name": "Argon Crystal",
         "description": "A Void based radioactive resource that decays every day it is out of the Void.\nThis resource can be found in the Void.",
         "itemCount": 1,
+        "imageName": "argon-crystal.png",
         "tradable": false,
-        "imageName": "argon-crystal.png"
+        "drops": [
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Kelpie",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Kubrow/EggHatcherBlueprint",
         "name": "Blueprint",
         "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 2,
+        "imageName": "control-module.png",
         "tradable": false,
-        "imageName": "control-module.png"
+        "drops": [
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 4500,
-        "tradable": false,
-        "imageName": "nano-spores.png"
+        "imageName": "nano-spores.png",
+        "tradable": false
       }
     ],
-    "imageName": "egg-hatcher.png",
+    "type": "Pets",
+    "imageName": "incubator-power-core.png",
     "category": "Pets",
     "tradable": false,
     "patchlogs": [
@@ -409,6 +837,7 @@
         "name": "Update 21: Chains of Harrow",
         "date": "2017-06-29T03:00:20Z",
         "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
+        "imgUrl": "https://n8k6e2y6.ssl.hwcdn.net/images/promo/harrow/PriestSpear_1080p.jpg",
         "additions": "",
         "changes": "",
         "fixes": "Fixed Kavat and Kubrow bundles from the Market not awarding Incubator Power Cores."
@@ -420,7 +849,7 @@
     "name": "Kavat Genetic Code",
     "description": "Contains the genetic code sequence of a Kavat.",
     "type": "Pets",
-    "imageName": "kavat-gene-strain.png",
+    "imageName": "kavat-genetic-code.png",
     "category": "Pets",
     "tradable": false,
     "patchlogs": [
@@ -484,6 +913,7 @@
         "name": "Update 21: Chains of Harrow",
         "date": "2017-06-29T03:00:20Z",
         "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
+        "imgUrl": "https://n8k6e2y6.ssl.hwcdn.net/images/promo/harrow/PriestSpear_1080p.jpg",
         "additions": "Special item pickups now display on the left side with emphasis rather than on the bottom resource bumper. You'll notice items like Kubrow Eggs, Weapon Blueprints, and other special items picked up in game now have more pizazz!  ",
         "changes": "Kubrow Eggs are now shown in the Inventory screen under the 'Misc' Tab. ",
         "fixes": ""
@@ -572,12 +1002,9 @@
     "armor": 50,
     "stamina": 8,
     "power": 100,
-    "type": "Pets",
     "buildPrice": 0,
     "buildTime": 172800,
     "skipBuildTimePrice": 15,
-    "alwaysAvailable": true,
-    "visibility": "RV_HIDDEN",
     "buildQuantity": 1,
     "consumeOnBuild": false,
     "components": [
@@ -586,18 +1013,19 @@
         "name": "Blueprint",
         "description": "Enterprising Orokin genetic designers recognized that the Kubrow's affinity for games of fetch could be used for more serious endeavors. They soon developed a strain adept at reconnaissance and contraband recovery. Tenno often used the creatures to help resupply while in the field.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Game/KubrowPet/EggHatcher",
         "name": "Incubator Power Core",
         "description": "This device facilitates the growth of a Kubrow clone, from birth to puppyhood.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "egg-hatcher.png"
+        "imageName": "incubator-power-core.png",
+        "tradable": false
       }
     ],
+    "type": "Pets",
     "imageName": "sahasa-kubrow.png",
     "category": "Pets",
     "tradable": false,
@@ -681,6 +1109,7 @@
         "name": "Chains of Harrow: Update 21.1.0 + 21.1.0.1",
         "date": "2017-07-19T21:31:09Z",
         "url": "https://forums.warframe.com/topic/820014-chains-of-harrow-update-2110-21101/",
+        "imgUrl": "http://n8k6e2y6.ssl.hwcdn.net/uploads/e1de8946946ee070c854c44c5501f6fa.jpg",
         "additions": "",
         "changes": "Improved the Smeeta Kavat Mischief buff for Operators. Relevant buffs on the Warframes will always be transferred to the Operator and vice versa.",
         "fixes": ""
