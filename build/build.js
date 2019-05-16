@@ -104,19 +104,17 @@ class Build {
     const Manifest = await request('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')
     const manifest = JSON.parse(Manifest).Manifest
     const manifestHash = crypto.createHash('md5').update(Manifest).digest('hex')
-    const bar = new Progress('Fetching Images', items.length)
 
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
     // hash, so any change to that changes the hash of the full thing.
     if (exportCache.Manifest.hash === manifestHash) {
-      bar.interrupt(`${colors.green('✓')} No updates required for images.`)
       return
     } else {
       exportCache.Manifest.hash = manifestHash
       fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
     }
-
+    const bar = new Progress('Fetching Images', items.length)
     const duplicates = [] // Don't download component images or relics twice
 
     for (const item of items) {
@@ -129,6 +127,7 @@ class Build {
           await this.saveImage(component, items, true, duplicates, manifest)
         }
       }
+      bar.tick()
     }
 
     // Write new cache to disk
@@ -175,14 +174,6 @@ class Build {
             quality: [0.2, 0.4]
           })
         ]
-      })
-    }
-
-    if (bar) {
-      bar.tick({
-        image: colors.cyan(item.name),
-        updated: !cached || cached.hash !== hash ? colors.yellow('(Updated)') : '',
-        check: (bar.curr === items.length - 1) ? colors.green('✓') : colors.yellow('-')
       })
     }
   }
