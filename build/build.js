@@ -1,6 +1,5 @@
 const fs = require('fs')
 const crypto = require('crypto')
-const colors = require('colors')
 const minify = require('imagemin')
 const minifyPng = require('imagemin-pngquant')
 const minifyJpeg = require('imagemin-jpegtran')

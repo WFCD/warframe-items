@@ -433,6 +433,7 @@ class Parser {
     if (!item.name.includes('Prime') || !item.components) return
 
     for (const component of item.components) {
+      if (!component.tradable) continue
       const wikiaItem = ducats.find(d => d.name.includes(`${item.name} ${component.name}`))
       if (wikiaItem) {
         component.ducats = wikiaItem.ducats
