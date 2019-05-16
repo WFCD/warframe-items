@@ -10,6 +10,26 @@ const warnings = {
   polarity: [],
   missingType: []
 }
+// DEBUG timers
+const timers = []
+const addTimer = (name) => {
+  if (!timers.find(t => t.name === name)) {
+    timers.push({
+      name,
+      time: 0,
+      currentTimer: new Date(),
+      count: 1
+    })
+  } else {
+    const timer = timers.find(t => t.name === name)
+    timer.currentTimer = new Date()
+    timer.count++
+  }
+}
+const endTimer = (name) => {
+  const timer = timers.find(t => t.name === name)
+  timer.time += new Date() - timers.currentTimer
+}
 
 /**
  * Parse API data into a more clear or complete format.
@@ -58,6 +78,11 @@ class Parser {
       result.push(item)
       bar.tick()
     }
+
+    // DEBUG timers
+    for (const timer of timers) {
+      console.log(`Avg time for ${timer.name}: ${timer.time / timer.count}ms`)
+    }
     return result
   }
 
@@ -67,17 +92,39 @@ class Parser {
   filter (original, category, data, previous) {
     const result = _.cloneDeep(original)
 
+    addTimer('addType')
     this.addType(result)
+    endTimer('addType')
+    addTimer('sanitize')
     this.sanitize(result)
+    endTimer('sanitize')
+    addTimer('addImageName')
     this.addImageName(result, data.manifest, previous)
+    endTimer('addImageName')
+    addTimer('addCategory')
     this.addCategory(result, category)
+    endTimer('addCategory')
+    addTimer('addTradable')
     this.addTradable(result)
+    endTimer('addTradable')
+    addTimer('addDucats')
     this.addDucats(result, data.wikia.ducats)
+    endTimer('addDucats')
+    addTimer('addDropRate')
     this.addDropRate(result, data.drops)
+    endTimer('addDropRate')
+    addTimer('addPatchlogs')
     this.addPatchlogs(result, data.patchlogs)
+    endTimer('addPatchlogs')
+    addTimer('addAdditionalWikiaData')
     this.addAdditionalWikiaData(result, category, data.wikia)
+    endTimer('addAdditionalWikiaData')
+    addTimer('addVaultData')
     this.addVaultData(result, data.vaultData)
+    endTimer('addVaultData')
+    addTimer('applyOverrides')
     this.applyOverrides(result)
+    endTimer('applyOverrides')
 
     return result
   }
