@@ -118,7 +118,7 @@ class Build {
 
     for (const item of items) {
       // Save image for parent item
-      await this.saveImage(item, items, false, duplicates, manifest, bar)
+      await this.saveImage(item, items, false, duplicates, manifest)
 
       // Save images for components if necessary
       if (item.components) {
@@ -136,7 +136,7 @@ class Build {
   /**
    * Download and save images for items or components.
    */
-  async saveImage (item, items, isComponent, duplicates, manifest, bar) {
+  async saveImage (item, items, isComponent, duplicates, manifest) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
     const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
     const basePath = `${__dirname}/../data/img/`
