@@ -224,7 +224,7 @@ class Parser {
       const grades = require('../config/relicGrades.json')
       for (let grade of grades) {
         if (item.uniqueName.includes(grade.id)) {
-          item.name = item.name.replace('Relic', grade.tier)
+          item.name = item.name.replace('Relic', grade.refinement)
         }
       }
     }
