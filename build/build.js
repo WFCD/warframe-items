@@ -118,12 +118,12 @@ class Build {
 
     for (const item of items) {
       // Save image for parent item
-      await this.saveImage(item, items, false, duplicates, manifest)
+      await this.saveImage(item, false, duplicates, manifest)
 
       // Save images for components if necessary
       if (item.components) {
         for (let component of item.components) {
-          await this.saveImage(component, items, true, duplicates, manifest)
+          await this.saveImage(component, true, duplicates, manifest)
         }
       }
       bar.tick()
@@ -136,7 +136,7 @@ class Build {
   /**
    * Download and save images for items or components.
    */
-  async saveImage (item, items, isComponent, duplicates, manifest) {
+  async saveImage (item, isComponent, duplicates, manifest) {
     const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
     const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
     const basePath = `${__dirname}/../data/img/`
@@ -194,6 +194,7 @@ class Build {
       })
     } else {
       cached.hash = hash
+      cached.isComponent = isComponent
     }
   }
 }
