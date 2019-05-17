@@ -146,6 +146,9 @@ class Build {
     const hash = manifest.find(i => i.uniqueName === item.uniqueName).fileTime
     const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
 
+    // We'll use a custom blueprint image
+    if (item.name === 'Blueprint') return
+
     // Don't download component images or relic images twice
     if (isComponent || item.type === 'Relic') {
       if (duplicates.includes(item.imageName)) {
