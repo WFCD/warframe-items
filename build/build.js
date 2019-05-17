@@ -158,9 +158,11 @@ class Build {
       }
     }
 
-    if (!cached || cached.hash !== hash) {
+    // Check if the previous image was for a component because they might
+    // have different naming schemes like lex-prime
+    if (!cached || cached.hash !== hash || cached.isComponent !== isComponent) {
       const image = await request({ url: imageUrl, encoding: null })
-      this.updateCache(item, cached, hash)
+      this.updateCache(item, cached, hash, isComponent)
 
       if (sizeBig.includes(item.category) || isComponent) {
         await sharp(image).resize(512, 342).ignoreAspectRatio().toFile(filePath)
@@ -183,11 +185,12 @@ class Build {
   /**
    * Update image cache with new hash if things changed
    */
-  updateCache (item, cached, hash) {
+  updateCache (item, cached, hash, isComponent) {
     if (!cached) {
       imageCache.push({
         uniqueName: item.uniqueName,
-        hash
+        hash,
+        isComponent
       })
     } else {
       cached.hash = hash
