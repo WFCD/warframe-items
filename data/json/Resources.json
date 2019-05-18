@@ -3,10 +3,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemAItem",
     "name": "Amarast",
     "description": "A violet gem that forms from the crystallization of byproducts expelled from the Weeping Towers.",
+    "itemCount": 6,
+    "parents": [ "Star Amarast" ],
     "type": "Gem",
-    "imageName": "solaris-rare-gem-a.png",
+    "imageName": "amarast.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -23,8 +25,10 @@
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
     "name": "Atmo Systems",
     "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
+    "itemCount": 3,
+    "parents": [ "Galvacord", "Exard Scaffold", "Dissic Scaffold", "Propa Scaffold" ],
     "type": "Resource",
-    "imageName": "corpus-widget-b.png",
+    "imageName": "atmo-systems.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
@@ -42,16 +46,19 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAItem",
     "name": "Auron",
     "description": "A brilliant, dense and conductive metal.\nLocation: Plains of Eidolon",
+    "itemCount": 20,
+    "parents": [ "Auroxium Alloy" ],
     "type": "Gem",
-    "imageName": "rare-ore-a.png",
+    "imageName": "auron.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem",
     "name": "Auroxium Alloy",
     "description": "Auron that has been forged into a stronger metal.",
-    "type": "Gem",
+    "itemCount": 40,
+    "parents": [ "Tatsu", "Korrudo", "Vargeet Ruhang Ii", "Ekwana Ruhang Ii", "Vargeet Jai Ii", "Ekwana Jai Ii", "Splat" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -63,37 +70,166 @@
         "name": "Auron",
         "description": "A brilliant, dense and conductive metal.\nLocation: Plains of Eidolon",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "rare-ore-a.png"
+        "imageName": "auron.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/RareOreAAlloyABlueprint",
         "name": "Blueprint",
         "description": "Auron that has been forged into a stronger metal.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 5,
+        "imageName": "morphics.png",
         "tradable": false,
-        "imageName": "morphics.png"
+        "drops": [
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
         "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 600,
-        "tradable": false,
-        "imageName": "oxium.png"
+        "imageName": "oxium.png",
+        "tradable": false
       }
     ],
-    "imageName": "rare-ore-aalloy-a.png",
+    "type": "Gem",
+    "imageName": "auroxium-alloy.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -110,16 +246,19 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBItem",
     "name": "Axidite",
     "description": "A sediment that formed from sulfuric rain that became trapped under the ice.",
+    "itemCount": 20,
+    "parents": [ "Axidrol Alloy" ],
     "type": "Gem",
-    "imageName": "solaris-common-ore-b.png",
+    "imageName": "axidite.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
     "name": "Axidrol Alloy",
     "description": "A compound formed from Axidite.",
-    "type": "Gem",
+    "itemCount": 45,
+    "parents": [ "Alcrom Core", "Krisys Core", "Drex Core", "Para Moa", "Drimper Bracket", "Jonsin Bracket", "Fatboys", "Bad Baby", "Tombfinger", "Bellows", "Zip", "Ramble", "Gibber", "Oxylus" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -131,46 +270,49 @@
         "name": "Axidite",
         "description": "A sediment that formed from sulfuric rain that became trapped under the ice.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "solaris-common-ore-b.png"
+        "imageName": "axidite.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisCommonOreBAlloyBlueprint",
         "name": "Blueprint",
         "description": "A compound formed from Axidite.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 500,
-        "tradable": false,
-        "imageName": "ferrite.png"
+        "imageName": "ferrite.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 100,
-        "tradable": false,
-        "imageName": "rubedo.png"
+        "imageName": "rubedo.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "axidrol-alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemAItem",
     "name": "Azurite",
     "description": "A blue gem layered with impurities.\nLocation: Plains of Eidolon",
+    "itemCount": 10,
+    "parents": [ "Tear Azurite" ],
     "type": "Gem",
-    "imageName": "common-gem-a.png",
+    "imageName": "azurite.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.0.5",
@@ -186,8 +328,10 @@
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
     "name": "Calda Toroid",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+    "itemCount": 5,
+    "parents": [ "Exard Scaffold", "Dissic Scaffold", "Propa Scaffold" ],
     "type": "Resource",
-    "imageName": "crp-arachnoid-power-core-hunger.png",
+    "imageName": "calda-toroid.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
@@ -223,6 +367,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
     "name": "Cetus Wisp",
     "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
+    "itemCount": 20,
+    "parents": [ "Vargeet Ruhang Ii", "Ekwana Ruhang Ii", "Vargeet Jai Ii", "Ekwana Jai Ii", "Kwath", "Mewan", "Pencha Scaffold", "Shraksun Scaffold", "Klebrik Scaffold", "Clapkra Brace", "Juttni Brace", "Lohrin Brace" ],
     "type": "Resource",
     "imageName": "cetus-wisp.png",
     "category": "Resources",
@@ -428,8 +574,10 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
     "name": "Condroc Wing",
     "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
+    "itemCount": 15,
+    "parents": [ "Ekwana Ruhang Ii", "Ekwana Ruhang", "Ekwana Ii Ruhang", "Jai", "Jai Ii", "Ekwana Jai Ii", "Ekwana Jai", "Ekwana Ii Jai", "Sepfahn" ],
     "type": "Resource",
-    "imageName": "bird-of-prey-part-item.png",
+    "imageName": "condroc-wing.png",
     "category": "Resources",
     "tradable": false
   },
@@ -437,7 +585,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
     "name": "Coprite Alloy",
     "description": "Coprun that has been forged into a stronger metal.",
-    "type": "Gem",
+    "itemCount": 40,
+    "parents": [ "Stubba", "Vargeet Ruhang", "Ekwana Ruhang", "Vargeet Jai", "Ekwana Jai", "Laka", "Kronsh", "Sepfahn", "Plague Bokwin", "Plague Keewar", "Shraksun Scaffold", "Slapneedle" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -449,37 +598,38 @@
         "name": "Blueprint",
         "description": "Coprun that has been forged into a stronger metal.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBItem",
         "name": "Coprun",
         "description": "A soft, malleable metal.\nLocation: Plains of Eidolon",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "coprun.png"
+        "imageName": "coprun.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 400,
-        "tradable": false,
-        "imageName": "ferrite.png"
+        "imageName": "ferrite.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 50,
-        "tradable": false,
-        "imageName": "rubedo.png"
+        "imageName": "rubedo.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "coprite-alloy.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -496,10 +646,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBItem",
     "name": "Coprun",
     "description": "A soft, malleable metal.\nLocation: Plains of Eidolon",
+    "itemCount": 20,
+    "parents": [ "Coprite Alloy" ],
     "type": "Gem",
     "imageName": "coprun.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.0.5",
@@ -551,10 +703,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemAItem",
     "name": "Crimzian",
     "description": "A blood-red gem.\nLocation: Plains of Eidolon",
+    "itemCount": 6,
+    "parents": [ "Star Crimzian" ],
     "type": "Gem",
-    "imageName": "rare-gem-a.png",
+    "imageName": "crimzian.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -571,8 +725,10 @@
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidCamperItem",
     "name": "Crisma Toroid",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+    "itemCount": 2,
+    "parents": [ "<Archwing> Larkspur" ],
     "type": "Resource",
-    "imageName": "crp-arachnoid-power-core-camper.png",
+    "imageName": "crisma-toroid.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
@@ -590,8 +746,10 @@
     "uniqueName": "/Lotus/Types/Items/Research/ChemFragment",
     "name": "Detonite Ampule",
     "description": "Researching the Detonite traces within could advance our weapon technology.\nLocations: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress.",
+    "itemCount": 10,
+    "parents": [ "Detonite Injector" ],
     "type": "Resource",
-    "imageName": "grineer-fragment.png",
+    "imageName": "detonite-ampule.png",
     "category": "Resources",
     "tradable": false,
     "drops": [
@@ -619,7 +777,8 @@
     "uniqueName": "/Lotus/Types/Items/Research/ChemComponent",
     "name": "Detonite Injector",
     "description": "Detonite injectors are the basis for explosive and incendiary weapons.\nCan be acquired from Grineer Offensives & Clan Research.",
-    "type": "Resource",
+    "itemCount": 2,
+    "parents": [ "<Archwing> Knux", "Kohmak", "Nukor", "Marelok", "Sydon", "Jat Kusar", "Twin Krohkur", "Ack & Brunt", "Jat Kittag", "Kesheg", "Argonak", "Buzlok", "Javlok", "Grinlok", "Ogris", "Ignis Wraith", "Ignis" ],
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -631,42 +790,152 @@
         "name": "Blueprint",
         "description": "Detonite injectors are the basis for explosive and incendiary weapons.\nCan be acquired from Grineer Offensives & Clan Research.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 1,
+        "imageName": "control-module.png",
         "tradable": false,
-        "imageName": "control-module.png"
+        "drops": [
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/ChemFragment",
         "name": "Detonite Ampule",
         "description": "Researching the Detonite traces within could advance our weapon technology.\nLocations: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress.",
         "itemCount": 10,
+        "imageName": "detonite-ampule.png",
         "tradable": false,
-        "imageName": "grineer-fragment.png"
+        "drops": [
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 250,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 500,
-        "tradable": false,
-        "imageName": "salvage.png"
+        "imageName": "salvage.png",
+        "tradable": false
       }
     ],
+    "type": "Resource",
     "imageName": "detonite-injector.png",
     "category": "Resources",
     "tradable": false,
@@ -686,10 +955,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBItem",
     "name": "Devar",
     "description": "A cloudy crystal.\nLocation: Plains of Eidolon",
+    "itemCount": 10,
+    "parents": [ "Esher Devar" ],
     "type": "Gem",
-    "imageName": "common-gem-b.png",
+    "imageName": "devar.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Beasts of the Sanctuary: Update 22.20.0",
@@ -715,7 +986,7 @@
     "name": "Dusklight Sarracenia",
     "description": "This robust, carnivorous plant has adapted to conditions in polluted waters.\nLocation: Grineer Shipyard - Ceres",
     "type": "Plant",
-    "imageName": "cobra-lotus.png",
+    "imageName": "dusklight-sarracenia.png",
     "category": "Resources",
     "tradable": false
   },
@@ -723,7 +994,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
     "name": "Esher Devar",
     "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 10,
+    "parents": [ "Korrudo", "Tazicor", "Cryotra", "Kronsh", "Rabvee", "Plague Keewar", "Raplak Prism", "Shwaak Prism", "Rahn Prism", "Swiftfire" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -735,27 +1007,27 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBItem",
         "name": "Devar",
         "description": "A cloudy crystal.\nLocation: Plains of Eidolon",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "common-gem-b.png"
+        "imageName": "devar.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "esher-devar.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
     "name": "Exceptional Sentient Core",
     "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
-    "type": "Resource",
     "buildPrice": 5000,
     "buildTime": 600,
     "skipBuildTimePrice": 10,
@@ -767,34 +1039,35 @@
         "name": "Blueprint",
         "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
         "name": "Intact Sentient Core",
         "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "intact-sentient-core.png"
+        "imageName": "intact-sentient-core.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       }
     ],
+    "type": "Resource",
     "imageName": "exceptional-sentient-core.png",
     "category": "Resources",
     "tradable": false,
@@ -830,16 +1103,19 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAItem",
     "name": "Ferros",
     "description": "A resilient metal that is hardened by impurities within.\nLocation: Plains of Eidolon",
+    "itemCount": 20,
+    "parents": [ "Fersteel Alloy" ],
     "type": "Gem",
-    "imageName": "uncommon-ore-a.png",
+    "imageName": "ferros.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
     "name": "Fersteel Alloy",
     "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 40,
+    "parents": [ "Quartakk", "Vargeet Ii Ruhang", "Ekwana Ii Ruhang", "Vargeet Ii Jai", "Ekwana Ii Jai", "Jayap", "Kroostra", "Kwath", "Dehtat", "Cyath", "Mewan", "Rabvee", "Klebrik Scaffold", "Killstream" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -851,37 +1127,38 @@
         "name": "Blueprint",
         "description": "Ferros that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAItem",
         "name": "Ferros",
         "description": "A resilient metal that is hardened by impurities within.\nLocation: Plains of Eidolon",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "uncommon-ore-a.png"
+        "imageName": "ferros.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 400,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 200,
-        "tradable": false,
-        "imageName": "rubedo.png"
+        "imageName": "rubedo.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "fersteel-alloy.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -898,7 +1175,8 @@
     "uniqueName": "/Lotus/Types/Items/Research/EnergyComponent",
     "name": "Fieldron",
     "description": "ClanTech weaponized containment field to contain superheated substances.\nCan be acquired from Corpus Sieges & Clan Research.",
-    "type": "Resource",
+    "itemCount": 10,
+    "parents": [ "Arca Scisco", "Ocucor", "Staticor", "Cycron", "Dual Cestra", "Serro", "Falcor", "Kreska", "Ferrox", "Convectrix", "Arca Plasmor", "Quanta", "Battacor", "Glaxion", "Opticor", "Amprex", "Lenz", "Lanka", "Dera", "Prova", "Flux Rifle", "Spectra", "Supra", "Helios" ],
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -910,42 +1188,143 @@
         "name": "Blueprint",
         "description": "ClanTech weaponized containment field to contain superheated substances.\nCan be acquired from Corpus Sieges & Clan Research.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 1,
+        "imageName": "control-module.png",
         "tradable": false,
-        "imageName": "control-module.png"
+        "drops": [
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/EnergyFragment",
+        "name": "Fieldron Sample",
+        "description": "This destroyed Fieldron could further research into super-heated containment fields.\nLocations: Venus, Mars, Jupiter, Europa, Neptune, and Pluto.",
+        "itemCount": 10,
+        "imageName": "sample.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 250,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 500,
-        "tradable": false,
-        "imageName": "salvage.png"
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Research/EnergyFragment",
-        "name": "Sample",
-        "description": "This destroyed Fieldron could further research into super-heated containment fields.\nLocations: Venus, Mars, Jupiter, Europa, Neptune, and Pluto.",
-        "itemCount": 10,
-        "tradable": false,
-        "imageName": "fieldron-sample.png"
+        "imageName": "salvage.png",
+        "tradable": false
       }
     ],
+    "type": "Resource",
     "imageName": "fieldron.png",
     "category": "Resources",
     "tradable": false,
@@ -997,6 +1376,8 @@
     "uniqueName": "/Lotus/Types/Items/Research/EnergyFragment",
     "name": "Fieldron Sample",
     "description": "This destroyed Fieldron could further research into super-heated containment fields.\nLocations: Venus, Mars, Jupiter, Europa, Neptune, and Pluto.",
+    "itemCount": 10,
+    "parents": [ "Fieldron" ],
     "type": "Resource",
     "imageName": "fieldron-sample.png",
     "category": "Resources",
@@ -1063,7 +1444,7 @@
     "name": "Frostleaf",
     "description": "This resilient plant provides a natural food source in frigid areas of the Origin system.",
     "type": "Plant",
-    "imageName": "wild-ginger-b.png",
+    "imageName": "frostleaf.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
@@ -1078,13 +1459,24 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Research/DojoColors/GenericDojoColorPigment",
+    "name": "Genericdojocolorpigment",
+    "description": "",
+    "type": "Resource",
+    "imageName": "genericdojocolorpigment.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemAItem",
     "name": "Goblite",
     "description": "A strange crystal that grows inside the veins of extracted ore.",
+    "itemCount": 10,
+    "parents": [ "Goblite Tears" ],
     "type": "Gem",
-    "imageName": "solaris-uncommon-gem-a.png",
+    "imageName": "goblite.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -1101,7 +1493,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
     "name": "Goblite Tears",
     "description": "Polished and cut to perfection.",
-    "type": "Gem",
+    "itemCount": 15,
+    "parents": [ "Vulcax", "Oloro Moa", "Gauth Bracket", "Hextra Gyro", "Phazor Gyro", "Fatboys", "Two-Sloops", "Killstream", "Flutterfire", "Haymaker", "Gibber", "Oxylus" ],
     "buildPrice": 2500,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1113,26 +1506,29 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemAItem",
         "name": "Goblite",
         "description": "A strange crystal that grows inside the veins of extracted ore.",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "solaris-uncommon-gem-a.png"
+        "imageName": "goblite.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "goblite-tears.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
     "name": "Gorgaricus Spore",
     "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
+    "itemCount": 20,
+    "parents": [ "Lambeo Moa", "Hextra Gyro", "Phazor Gyro", "Wingnut", "Dink-A-Donk", "Two-Sloops", "Beaky", "Rattleguts", "Slap" ],
     "type": "Resource",
     "imageName": "gorgaricus-spore.png",
     "category": "Resources",
@@ -1161,6 +1557,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
     "name": "Grokdrul",
     "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.\nLocation: Plains of Eidolon",
+    "itemCount": 60,
+    "parents": [ "Stubba", "Quartakk", "Seekalla", "Kronsh", "Shtung", "Rabvee", "Plague Bokwin", "Pencha Scaffold", "Shraksun Scaffold", "Phahd Scaffold" ],
     "type": "Resource",
     "imageName": "grokdrul.png",
     "category": "Resources",
@@ -1215,6 +1613,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
     "name": "Gyromag Systems",
     "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
+    "itemCount": 5,
+    "parents": [ "Plinx", "Cantic Prism", "Lega Prism", "Klamora Prism" ],
     "type": "Resource",
     "imageName": "gyromag-systems.png",
     "category": "Resources",
@@ -1234,7 +1634,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
     "name": "Heart Noctrul",
     "description": "Polished and cut to perfection.",
-    "type": "Gem",
+    "itemCount": 5,
+    "parents": [ "Battacor", "Cryotra", "Krisys Core", "Lambeo Moa", "Jonsin Bracket", "Aegron Gyro", "Trux Gyro", "Munit Gyro", "Twin Kavats", "Slapneedle", "Swiftfire", "Lovetap" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1246,27 +1647,29 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBItem",
         "name": "Noctrul",
         "description": "A black gemstone, with iridescent blue impurities.",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "noctrul.png"
+        "imageName": "noctrul.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "heart-noctrul.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
     "name": "Heart Nyth",
     "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 1,
+    "parents": [ "Phahd Scaffold", "Exceptional Sentient Core" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1278,21 +1681,22 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBItem",
         "name": "Nyth",
         "description": "A rare local Gem, formed when the gas known as Breath of the Eidolon becomes trapped in molten iradite.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "nyth.png"
+        "imageName": "nyth.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "heart-nyth.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -1309,7 +1713,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
     "name": "Hespazym Alloy",
     "description": "A compound formed from Hesperon.",
-    "type": "Gem",
+    "itemCount": 30,
+    "parents": [ "Tatsu", "Needlenose", "Hothead", "Runway", "Highbrow", "Exard Scaffold", "Dissic Scaffold", "Propa Scaffold", "Stitch", "Thunderdrum" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1321,46 +1726,177 @@
         "name": "Blueprint",
         "description": "A compound formed from Hesperon.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAItem",
         "name": "Hesperon",
         "description": "Clay that strengthens into extremely durable stone when brought to temperatures below zero.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "hesperon.png"
+        "imageName": "hesperon.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.\nLocations: Mercury, Mars, Phobos, Europa, and Pluto.",
         "itemCount": 2,
+        "imageName": "morphics.png",
         "tradable": false,
-        "imageName": "morphics.png"
+        "drops": [
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 300,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "hespazym-alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAItem",
     "name": "Hesperon",
     "description": "Clay that strengthens into extremely durable stone when brought to temperatures below zero.",
+    "itemCount": 20,
+    "parents": [ "Hespazym Alloy" ],
     "type": "Gem",
     "imageName": "hesperon.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -1377,6 +1913,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
     "name": "Intact Sentient Core",
     "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
+    "itemCount": 10,
+    "parents": [ "Phantasma" ],
     "type": "Resource",
     "imageName": "intact-sentient-core.png",
     "category": "Resources",
@@ -1405,6 +1943,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
     "name": "Iradite",
     "description": "A valuable mineral found on the Plains.",
+    "itemCount": 60,
+    "parents": [ "Peye", "Ooltha", "Korb", "Plague Akwin", "Raplak Prism", "Shwaak Prism", "Rahn Prism" ],
     "type": "Resource",
     "imageName": "iradite.png",
     "category": "Resources",
@@ -1458,6 +1998,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
     "name": "Kuaka Spinal Claw",
     "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
+    "itemCount": 5,
+    "parents": [ "Ruhang", "Vargeet Ruhang", "Vargeet Ii Ruhang", "Ruhang Ii", "Vargeet Ruhang Ii", "Vargeet Jai", "Vargeet Ii Jai", "Vargeet Jai Ii" ],
     "type": "Resource",
     "imageName": "kuaka-spinal-claw.png",
     "category": "Resources",
@@ -1477,7 +2019,7 @@
     "name": "Lunar Pitcher",
     "description": "This carnivorous plant can be found growing in the wilderness on Lua.",
     "type": "Plant",
-    "imageName": "zen-pitcher.png",
+    "imageName": "lunar-pitcher.png",
     "category": "Resources",
     "tradable": false
   },
@@ -1485,6 +2027,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem",
     "name": "Maprico",
     "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.\nLocation: Plains of Eidolon",
+    "itemCount": 2,
+    "parents": [ "Vargeet Ii Ruhang", "Ekwana Ii Ruhang", "Vargeet Ii Jai", "Ekwana Ii Jai", "Jayap", "Dehtat" ],
     "type": "Resource",
     "imageName": "maprico.png",
     "category": "Resources",
@@ -1522,7 +2066,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
     "name": "Marquise Thyst",
     "description": "Polished and cut to perfection.",
-    "type": "Gem",
+    "itemCount": 5,
+    "parents": [ "Suo Brace", "Plaga Brace", "Certus Brace" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1534,27 +2079,29 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBItem",
         "name": "Thyst",
         "description": "A beautiful and iridescent red shard.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "thyst.png"
+        "imageName": "thyst.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "marquise-thyst.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
     "name": "Marquise Veridos",
     "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 10,
+    "parents": [ "Vulcax", "Dehtat", "Cyath", "Mewan", "Dokrahm", "Shwaak Prism", "Granmu Prism", "Flutterfire" ],
     "buildPrice": 2500,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1566,21 +2113,22 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemAItem",
         "name": "Veridos",
         "description": "A highly reflective, green gem.\nLocation: Plains of Eidolon",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "veridos.png"
+        "imageName": "veridos.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "marquise-veridos.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -1624,7 +2172,8 @@
     "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
     "name": "Mutagen Mass",
     "description": "This living mass can produce weaponized toxins for weaponry.\nCan be acquired from Infestation Outbreaks & Clan Research.",
-    "type": "Resource",
+    "itemCount": 6,
+    "parents": [ "Dark Split-Sword", "Dual Ichor", "Embolist", "Dual Toxocyst", "Pox", "Scoliac", "Mios", "Pupacyst", "Caustacyst", "Cerata", "Synapse", "Phage", "Paracyst", "Hema", "Mutalist Quanta", "Torid", "Acrid", "Djinn" ],
     "buildPrice": 15000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -1636,42 +2185,143 @@
         "name": "Blueprint",
         "description": "This living mass can produce weaponized toxins for weaponry.\nCan be acquired from Infestation Outbreaks & Clan Research.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
         "name": "Control Module",
         "description": "Autonomy processor for Robotics. A Corpus design.\nLocations: Europa, Neptune, and the Void.",
         "itemCount": 1,
+        "imageName": "control-module.png",
         "tradable": false,
-        "imageName": "control-module.png"
+        "drops": [
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Research/BioFragment",
         "name": "Mutagen Sample",
         "description": "These samples could advance our knowledge of biological research.\nLocations: Eris and Orokin Derelicts.",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "mutagen-sample.png"
+        "imageName": "mutagen-sample.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 250,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 500,
-        "tradable": false,
-        "imageName": "salvage.png"
+        "imageName": "salvage.png",
+        "tradable": false
       }
     ],
+    "type": "Resource",
     "imageName": "mutagen-mass.png",
     "category": "Resources",
     "tradable": false,
@@ -1691,6 +2341,8 @@
     "uniqueName": "/Lotus/Types/Items/Research/BioFragment",
     "name": "Mutagen Sample",
     "description": "These samples could advance our knowledge of biological research.\nLocations: Eris and Orokin Derelicts.",
+    "itemCount": 10,
+    "parents": [ "Mutagen Mass" ],
     "type": "Resource",
     "imageName": "mutagen-sample.png",
     "category": "Resources",
@@ -1719,6 +2371,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
     "name": "Mytocardia Spore",
     "description": "A fungal body prized for its varied uses.",
+    "itemCount": 20,
+    "parents": [ "Kreska", "Para Moa", "Drimper Bracket", "Harpen Gyro", "Munit Gyro", "Step Tens", "Fatboys", "Thugs", "Twin Kavats", "Catchmoon", "Deepbreath" ],
     "type": "Resource",
     "imageName": "mytocardia-spore.png",
     "category": "Resources",
@@ -1747,6 +2401,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
     "name": "Nistlepod",
     "description": "Used by the Nistlebrush to trap and kill prey.\nLocation: Plains of Eidolon",
+    "itemCount": 25,
+    "parents": [ "Ruhang", "Vargeet Ruhang", "Ruhang Ii", "Ekwana Ruhang", "Jai", "Vargeet Jai", "Jai Ii", "Ekwana Jai", "Laka", "Balla", "Dokrahm" ],
     "type": "Resource",
     "imageName": "nistlepod.png",
     "category": "Resources",
@@ -1767,10 +2423,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBItem",
     "name": "Noctrul",
     "description": "A black gemstone, with iridescent blue impurities.",
+    "itemCount": 10,
+    "parents": [ "Heart Noctrul" ],
     "type": "Gem",
     "imageName": "noctrul.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -1787,10 +2445,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBItem",
     "name": "Nyth",
     "description": "A rare local Gem, formed when the gas known as Breath of the Eidolon becomes trapped in molten iradite.",
+    "itemCount": 3,
+    "parents": [ "Heart Nyth" ],
     "type": "Gem",
     "imageName": "nyth.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -1816,10 +2476,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemAItem",
     "name": "Phasmin",
     "description": "An eerily green gem found encased in metallic shards.",
+    "itemCount": 10,
+    "parents": [ "Smooth Phasmin" ],
     "type": "Gem",
-    "imageName": "solaris-common-gem-a.png",
+    "imageName": "phasmin.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -1833,13 +2495,24 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/PlantItem",
+    "name": "Plantitem",
+    "description": "",
+    "type": "Plant",
+    "imageName": "plantitem.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAItem",
     "name": "Pyrol",
     "description": "A tarnished, brittle metal.\nLocation: Plains of Eidolon",
+    "itemCount": 20,
+    "parents": [ "Pyrotic Alloy" ],
     "type": "Gem",
-    "imageName": "common-ore-a.png",
+    "imageName": "pyrol.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.0.5",
@@ -1855,7 +2528,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
     "name": "Pyrotic Alloy",
     "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 40,
+    "parents": [ "Ruhang", "Ruhang Ii", "Jai", "Jai Ii", "Seekalla", "Peye", "Balla", "Ooltha", "Korb", "Shtung", "Dokrahm", "Plague Akwin", "Plague Kripath", "Pencha Scaffold", "Phahd Scaffold", "Zipneedle" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1867,37 +2541,38 @@
         "name": "Blueprint",
         "description": "Pyrol that has been forged into a stronger metal.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
         "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 200,
-        "tradable": false,
-        "imageName": "cryotic.png"
+        "imageName": "cryotic.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAItem",
         "name": "Pyrol",
         "description": "A tarnished, brittle metal.\nLocation: Plains of Eidolon",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "common-ore-a.png"
+        "imageName": "pyrol.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 50,
-        "tradable": false,
-        "imageName": "rubedo.png"
+        "imageName": "rubedo.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "pyrotic-alloy.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -1914,7 +2589,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
     "name": "Radian Sentirum",
     "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 1,
+    "parents": [ "Anspatha Brace", "Exceptional Sentient Core" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1926,27 +2602,29 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemAItem",
         "name": "Sentirum",
         "description": "A rare Eidolon Gem, created from the fossilized blood of an ancient Sentient.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentirum.png"
+        "imageName": "sentirum.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "radian-sentirum.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
     "name": "Radiant Zodian",
     "description": "Polished and cut to perfection.",
-    "type": "Gem",
+    "itemCount": 5,
+    "parents": [ "<Archwing> Larkspur", "Cantic Prism", "Lega Prism", "Klamora Prism" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1958,26 +2636,29 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemAItem",
         "name": "Zodian",
         "description": "A blue gem that radiates astral energy.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "zodian.png"
+        "imageName": "zodian.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "radiant-zodian.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem",
     "name": "Repeller Systems",
     "description": "Anti-gravity system that allows massively heavy objects to be manipulated by a single user.",
+    "itemCount": 1,
+    "parents": [ "Exergis", "Suo Brace", "Plaga Brace", "Certus Brace" ],
     "type": "Resource",
     "imageName": "repeller-systems.png",
     "category": "Resources",
@@ -2006,7 +2687,7 @@
     "name": "Ruk'S Claw",
     "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments.\nLocations: Mars",
     "type": "Plant",
-    "imageName": "gft-plant-ruks-claw-mature.png",
+    "imageName": "ruk's-claw.png",
     "category": "Resources",
     "tradable": false
   },
@@ -2014,16 +2695,19 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemAItem",
     "name": "Sentirum",
     "description": "A rare Eidolon Gem, created from the fossilized blood of an ancient Sentient.",
+    "itemCount": 3,
+    "parents": [ "Radian Sentirum" ],
     "type": "Gem",
     "imageName": "sentirum.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
     "name": "Smooth Phasmin",
     "description": "Polished and cut to perfection.",
-    "type": "Gem",
+    "itemCount": 5,
+    "parents": [ "Tazicor", "Alcrom Core", "Drex Core", "Para Moa", "Tian Bracket", "Harpen Gyro", "Thugs", "Zipneedle", "Zipfire", "Ramble" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2035,26 +2719,29 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemAItem",
         "name": "Phasmin",
         "description": "An eerily green gem found encased in metallic shards.",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "solaris-common-gem-a.png"
+        "imageName": "phasmin.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "smooth-phasmin.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
     "name": "Sola Toroid",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+    "itemCount": 5,
+    "parents": [ "Suo Brace", "Plaga Brace", "Certus Brace" ],
     "type": "Resource",
     "imageName": "sola-toroid.png",
     "category": "Resources",
@@ -2091,7 +2778,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
     "name": "Star Amarast",
     "description": "Polished and cut to perfection.",
-    "type": "Gem",
+    "itemCount": 10,
+    "parents": [ "Kreska", "Atheca Gyro", "Wingnut", "Step Tens", "Dink-A-Donk", "Beaky", "Splat", "Ramflare" ],
     "buildPrice": 5000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2103,27 +2791,29 @@
         "name": "Amarast",
         "description": "A violet gem that forms from the crystallization of byproducts expelled from the Weeping Towers.",
         "itemCount": 6,
-        "tradable": false,
-        "imageName": "solaris-rare-gem-a.png"
+        "imageName": "amarast.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisRareGemACutBlueprint",
         "name": "Blueprint",
         "description": "Polished and cut to perfection.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "star-amarast.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
     "name": "Star Crimzian",
     "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 10,
+    "parents": [ "Granmu Prism", "Ramflare" ],
     "buildPrice": 5000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2135,21 +2825,22 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemAItem",
         "name": "Crimzian",
         "description": "A blood-red gem.\nLocation: Plains of Eidolon",
         "itemCount": 6,
-        "tradable": false,
-        "imageName": "rare-gem-a.png"
+        "imageName": "crimzian.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "star-crimzian.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -2193,7 +2884,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
     "name": "Tear Azurite",
     "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
-    "type": "Gem",
+    "itemCount": 10,
+    "parents": [ "Balla", "Ooltha", "Sepfahn", "Plague Kripath", "Raplak Prism", "Rahn Prism", "Zipfire" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2205,26 +2897,29 @@
         "name": "Azurite",
         "description": "A blue gem layered with impurities.\nLocation: Plains of Eidolon",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "common-gem-a.png"
+        "imageName": "azurite.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/CommonGemACutABlueprint",
         "name": "Blueprint",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "tear-azurite.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
     "name": "Tepa Nodule",
     "description": "The irradescent nodules on these plants glow brightly in cold environments.",
+    "itemCount": 20,
+    "parents": [ "Battacor", "Tian Bracket", "Jonsin Bracket", "Gauth Bracket", "Atheca Gyro", "Arc Twelve", "Hothead", "Highbrow", "Coldfusor", "Gaze", "Zip" ],
     "type": "Resource",
     "imageName": "tepa-nodule.png",
     "category": "Resources",
@@ -2253,6 +2948,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
     "name": "Thermal Sludge",
     "description": "A by-product from the Weeping Towers terraforming processes.",
+    "itemCount": 20,
+    "parents": [ "Ocucor", "Oloro Moa", "Drimper Bracket", "Aegron Gyro", "Trux Gyro", "Flatbelly", "Needlenose", "Runway", "Bad Baby", "Tombfinger", "Bellows" ],
     "type": "Resource",
     "imageName": "thermal-sludge.png",
     "category": "Resources",
@@ -2281,10 +2978,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBItem",
     "name": "Thyst",
     "description": "A beautiful and iridescent red shard.",
+    "itemCount": 3,
+    "parents": [ "Marquise Thyst" ],
     "type": "Gem",
     "imageName": "thyst.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -2301,7 +3000,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
     "name": "Travocyte Alloy",
     "description": "A compound formed from Travoride.",
-    "type": "Gem",
+    "itemCount": 30,
+    "parents": [ "Alcrom Core", "Drex Core", "Oloro Moa", "Drimper Bracket", "Tian Bracket", "Coldfusor", "Twin Kavats", "Catchmoon", "Deepbreath", "Slap", "Lovetap", "Haymaker" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2313,46 +3013,49 @@
         "name": "Blueprint",
         "description": "A compound formed from Travoride.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 100,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 500,
-        "tradable": false,
-        "imageName": "salvage.png"
+        "imageName": "salvage.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAItem",
         "name": "Travoride",
         "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "travoride.png"
+        "imageName": "travoride.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "travocyte-alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAItem",
     "name": "Travoride",
     "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.",
+    "itemCount": 20,
+    "parents": [ "Travocyte Alloy" ],
     "type": "Gem",
     "imageName": "travoride.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -2369,6 +3072,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
     "name": "Vega Toroid",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
+    "itemCount": 5,
+    "parents": [ "Cantic Prism", "Lega Prism", "Klamora Prism" ],
     "type": "Resource",
     "imageName": "vega-toroid.png",
     "category": "Resources",
@@ -2405,7 +3110,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
     "name": "Venerdo Alloy",
     "description": "A compound formed from Venerol.",
-    "type": "Gem",
+    "itemCount": 30,
+    "parents": [ "<Archwing> Larkspur", "Ocucor", "Krisys Core", "Lambeo Moa", "Gauth Bracket", "Flatbelly", "Arc Twelve", "Step Tens", "Thugs", "Rattleguts", "Gaze", "Bashrack", "Sparkfire" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2417,46 +3123,268 @@
         "name": "Blueprint",
         "description": "A compound formed from Venerol.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
         "name": "Gallium",
         "description": "Soft metal used in microelectronics and energy weapons.\nLocations: Mars and Uranus.",
         "itemCount": 2,
+        "imageName": "gallium.png",
         "tradable": false,
-        "imageName": "gallium.png"
+        "drops": [
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Kelpie",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 300,
-        "tradable": false,
-        "imageName": "rubedo.png"
+        "imageName": "rubedo.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreItem",
         "name": "Venerol",
         "description": "A precious metal forged from coolant byproducts.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "venerol.png"
+        "imageName": "venerol.png",
+        "tradable": false
       }
     ],
+    "type": "Gem",
     "imageName": "venerdo-alloy.png",
     "category": "Resources",
-    "tradable": true
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreItem",
     "name": "Venerol",
     "description": "A precious metal forged from coolant byproducts.",
+    "itemCount": 20,
+    "parents": [ "Venerdo Alloy" ],
     "type": "Gem",
     "imageName": "venerol.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
@@ -2473,10 +3401,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemAItem",
     "name": "Veridos",
     "description": "A highly reflective, green gem.\nLocation: Plains of Eidolon",
+    "itemCount": 10,
+    "parents": [ "Marquise Veridos" ],
     "type": "Gem",
     "imageName": "veridos.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -2513,10 +3443,12 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemAItem",
     "name": "Zodian",
     "description": "A blue gem that radiates astral energy.",
+    "itemCount": 3,
+    "parents": [ "Radiant Zodian" ],
     "type": "Gem",
     "imageName": "zodian.png",
     "category": "Resources",
-    "tradable": true,
+    "tradable": false,
     "patchlogs": [
       {
         "name": "Fortuna: Update 24.0",
