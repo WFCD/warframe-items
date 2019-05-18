@@ -2,7 +2,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/ChannelKillEnergyRate",
     "name": "Exodia Brave",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -13,42 +12,162 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/ChannelKillEnergyRateBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
         "itemCount": 10,
+        "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
-        "imageName": "eidolonium.png"
+        "drops": [
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "Annihilation"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem",
         "name": "Kuaka Spinal Claw",
         "description": "The sinew from the Kuaka's spinal claws can be tanned to make resilient and flexible leather.\nLocation: Plains of Eidolon",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "kuaka-spinal-claw.png"
+        "imageName": "kuaka-spinal-claw.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "exodia-brave.png",
     "category": "Arcanes",
     "tradable": false,
@@ -66,7 +185,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeArcaneProjectileOnJump",
     "name": "Exodia Contagion",
-    "type": "Melee",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -77,42 +195,446 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/MeleeArcaneProjectileOnJumpBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 5,
+        "imageName": "neurodes.png",
         "tradable": false,
-        "imageName": "neurodes.png"
+        "drops": [
+          {
+            "location": "Eris - Naeglar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Viver",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Psoro",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Lepis",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Candiru",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Kelpie",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 800,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       }
     ],
+    "type": "Melee",
     "imageName": "exodia-contagion.png",
     "category": "Arcanes",
     "tradable": false,
@@ -166,7 +688,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeArcaneShockwaveOnJump",
     "name": "Exodia Epidemic",
-    "type": "Melee",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -177,42 +698,446 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/MeleeArcaneShockwaveOnJumpBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.\nLocations: Earth, Lua, Eris, and Orokin Derelicts.",
         "itemCount": 5,
+        "imageName": "neurodes.png",
         "tradable": false,
-        "imageName": "neurodes.png"
+        "drops": [
+          {
+            "location": "Eris - Naeglar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Viver",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Psoro",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Lepis",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Candiru",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Kelpie",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 800,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       }
     ],
+    "type": "Melee",
     "imageName": "exodia-epidemic.png",
     "category": "Arcanes",
     "tradable": false,
@@ -239,7 +1164,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/StatusTriggerRadialDamage",
     "name": "Exodia Force",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -250,42 +1174,162 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/StatusTriggerRadialDamageBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
         "itemCount": 10,
+        "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
-        "imageName": "eidolonium.png"
+        "drops": [
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "Annihilation"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishBPartItem",
         "name": "Karkina Antenna",
         "description": "Ground into a powder this substance can make fires burn hotter for a brief amount of time.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
-        "tradable": false,
-        "imageName": "karkina-antenna.png"
+        "imageName": "karkina-antenna.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "exodia-force.png",
     "category": "Arcanes",
     "tradable": false,
@@ -322,7 +1366,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/GroundSlamPull",
     "name": "Exodia Hunt",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -333,42 +1376,162 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/GroundSlamPullBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
         "itemCount": 10,
+        "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
-        "imageName": "eidolonium.png"
+        "drops": [
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "Annihilation"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishAPartItem",
         "name": "Sharrac Teeth",
         "description": "These will often adorn ceremonial garb or as a reagent for synthetics.",
         "itemCount": 5,
-        "tradable": false,
-        "imageName": "sharrac-teeth.png"
+        "imageName": "sharrac-teeth.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "exodia-hunt.png",
     "category": "Arcanes",
     "tradable": false,
@@ -387,7 +1550,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/FinisherLifesteal",
     "name": "Exodia Might",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -398,42 +1560,162 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/FinisherLifestealBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
         "itemCount": 10,
+        "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
-        "imageName": "eidolonium.png"
+        "drops": [
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "Annihilation"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem",
         "name": "Tralok Eyes",
         "description": "The Ostron boil these into a jelly which forms a strong adhesive when it dries.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 5,
-        "tradable": false,
-        "imageName": "tralok-eyes.png"
+        "imageName": "tralok-eyes.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "exodia-might.png",
     "category": "Arcanes",
     "tradable": false
@@ -441,7 +1723,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/StatusChannelingDamage",
     "name": "Exodia Triumph",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -452,42 +1733,162 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/StatusChannelingDamageBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
         "itemCount": 10,
+        "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
-        "imageName": "eidolonium.png"
+        "drops": [
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "Annihilation"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishBPartItem",
         "name": "Mortus Horn",
         "description": "The horn of a Mortus Lungfish is ground down into a powder and used by the Ostrons in herbal remedies.",
         "itemCount": 5,
-        "tradable": false,
-        "imageName": "mortus-horn.png"
+        "imageName": "mortus-horn.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "exodia-triumph.png",
     "category": "Arcanes",
     "tradable": false,
@@ -505,7 +1906,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/CritChannelingDamage",
     "name": "Exodia Valor",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -516,42 +1916,162 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Weaponsmith/CritChannelingDamageBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
         "itemCount": 10,
+        "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
-        "imageName": "eidolonium.png"
+        "drops": [
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "Annihilation"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.\nLocation: Plains of Eidolon",
         "itemCount": 10,
+        "imageName": "cetus-wisp.png",
         "tradable": false,
-        "imageName": "cetus-wisp.png"
+        "drops": [
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.29309999999999997
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2143
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1789
+          },
+          {
+            "location": "Level 20 - 40 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1753
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.11900000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09570000000000001
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09390000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.09380000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 15 - 25 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 40 - 50 Ghoul Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.08230000000000001
+          },
+          {
+            "location": "Level 30 - 50 Cetus Bounty",
+            "type": "Cetus Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0816
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
         "name": "Condroc Wing",
         "description": "The talon on a condroc's wing is sharp enough to tear through bone.\nLocation: Plains of Eidolon",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "bird-of-prey-part-item.png"
+        "imageName": "condroc-wing.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "exodia-valor.png",
     "category": "Arcanes",
     "tradable": false,
@@ -595,7 +2115,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/SpeedOnVoidDash",
     "name": "Magus Cadence",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -606,42 +2125,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/SpeedOnVoidDashBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
         "itemCount": 8100,
-        "tradable": false,
-        "imageName": "nano-spores.png"
+        "imageName": "nano-spores.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
         "name": "Norg Brain",
         "description": "An Ostron delicacy.",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "norg-brain.png"
+        "imageName": "norg-brain.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "magus-cadence.png",
     "category": "Arcanes",
     "tradable": false
@@ -649,7 +2169,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/ImmunityFallDamageOnVoidDash",
     "name": "Magus Cloud",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -660,42 +2179,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/ImmunityFallDamageOnVoidDashBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
         "name": "Cuthol Tendrils",
         "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "fish-resource-sac.png"
+        "imageName": "cuthol-tendrils.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
         "name": "Ferrite",
         "description": "Alloy pellets used in Grineer manufacturing.\nLocations: Mercury, Earth, Lua, Neptune, and the Void.",
         "itemCount": 7600,
-        "tradable": false,
-        "imageName": "ferrite.png"
+        "imageName": "ferrite.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "magus-cloud.png",
     "category": "Arcanes",
     "tradable": false
@@ -719,7 +2239,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnTransferenceIn",
     "name": "Magus Elevate",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -730,42 +2249,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/HealOnTransferenceInBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
         "name": "Oxium",
         "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.\nLocations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
         "itemCount": 230,
-        "tradable": false,
-        "imageName": "oxium.png"
+        "imageName": "oxium.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "seram-beetle-shell.png"
+        "imageName": "seram-beetle-shell.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "magus-elevate.png",
     "category": "Arcanes",
     "tradable": false,
@@ -810,7 +2330,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/ArmourOnOperatorMode",
     "name": "Magus Husk",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -821,42 +2340,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/ArmourOnOperatorModeBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
         "name": "Cryotic",
         "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.\nLocations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
         "itemCount": 710,
-        "tradable": false,
-        "imageName": "cryotic.png"
+        "imageName": "cryotic.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
         "name": "Fish Scales",
         "description": "A material used in tailoring clothes and cultivating synthetics.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "fish-scales.png"
+        "imageName": "fish-scales.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "murkray-liver.png"
+        "imageName": "murkray-liver.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "magus-husk.png",
     "category": "Arcanes",
     "tradable": false,
@@ -941,7 +2461,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnTransferenceOut",
     "name": "Magus Nourish",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -952,42 +2471,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/HealOnTransferenceOutBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
         "name": "Polymer Bundle",
         "description": "A hard, thermoplastic casing. Manufactured by Corpus.\nLocations: Mercury, Venus, and Uranus.",
         "itemCount": 8700,
-        "tradable": false,
-        "imageName": "polymer-bundle.png"
+        "imageName": "polymer-bundle.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "seram-beetle-shell.png"
+        "imageName": "seram-beetle-shell.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "magus-nourish.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1066,7 +2586,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealOnVoidDash",
     "name": "Magus Replenish",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1077,42 +2596,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/HealOnVoidDashBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
         "name": "Salvage",
         "description": "High value metals collected from war salvage.\nLocations: Mars, Jupiter, and Sedna.",
         "itemCount": 9200,
-        "tradable": false,
-        "imageName": "salvage.png"
+        "imageName": "salvage.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "seram-beetle-shell.png"
+        "imageName": "seram-beetle-shell.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "magus-replenish.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1157,7 +2677,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorArmour/HealthOnOperatorMode",
     "name": "Magus Vigor",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1169,41 +2688,42 @@
         "name": "Alloy Plate",
         "description": "Carbon steel plates used to reinforce Grineer armor.\nLocations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
         "itemCount": 6400,
-        "tradable": false,
-        "imageName": "alloy-plate.png"
+        "imageName": "alloy-plate.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/HealthOnOperatorModeBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
         "name": "Fish Scales",
         "description": "A material used in tailoring clothes and cultivating synthetics.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "fish-scales.png"
+        "imageName": "fish-scales.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "murkray-liver.png"
+        "imageName": "murkray-liver.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "magus-vigor.png",
     "category": "Arcanes",
     "tradable": false
@@ -1211,7 +2731,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Utility/EnergyEfficiencyOnHeadshot",
     "name": "Pax Bolt",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1222,42 +2741,43 @@
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Arcanes/EnergyEfficiencyOnHeadshotBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
         "name": "Entroplasma",
         "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.\nAcquired by disassembling Tromyzon servofish.",
         "itemCount": 5,
-        "tradable": false,
-        "imageName": "entroplasma.png"
+        "imageName": "entroplasma.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
         "name": "Gorgaricus Spore",
         "description": "The reproductive spore of the giant Vallis fungi is highly coveted for the complex chemical compounds it contains.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "gorgaricus-spore.png"
+        "imageName": "gorgaricus-spore.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
         "name": "Radiant Zodian",
         "description": "Polished and cut to perfection.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radiant-zodian.png"
+        "imageName": "radiant-zodian.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
         "name": "Rotoblade",
         "description": "A machine element used to propel robotic organisms through coolant.\nAcquired by disassembling Eye-Eye servofish.",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "rotoblade.png"
+        "imageName": "rotoblade.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "pax-bolt.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1283,7 +2803,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Utility/BulletToBattery",
     "name": "Pax Charge",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1294,42 +2813,43 @@
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Arcanes/BulletToBatteryBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
         "name": "Lathe Coagulant",
         "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.\nAcquired by disassembling Longwinder servofish.",
         "itemCount": 5,
-        "tradable": false,
-        "imageName": "lathe-coagulant.png"
+        "imageName": "lathe-coagulant.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
         "name": "Mytocardia Spore",
         "description": "A fungal body prized for its varied uses.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "mytocardia-spore.png"
+        "imageName": "mytocardia-spore.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
         "name": "Parallel Biode",
         "description": "Controls the electrical flow throughout the circuitry within robotic organisms.\nAcquired by disassembling Mirewinder servofish.",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "parallel-biode.png"
+        "imageName": "parallel-biode.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
         "name": "Radiant Zodian",
         "description": "Polished and cut to perfection.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radiant-zodian.png"
+        "imageName": "radiant-zodian.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "pax-charge.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1390,7 +2910,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/EyeInTheSky",
     "name": "Pax Soar",
-    "type": "Misc",
     "buildPrice": 7500,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1401,42 +2920,43 @@
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Arcanes/EyeInTheSkyBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEcosynthAnalyzerItem",
         "name": "Ecosynth Analyzer",
         "description": "A processing unit that efficiently monitors environmental data.\nAcquired by disassembling Synathid servofish.",
         "itemCount": 5,
-        "tradable": false,
-        "imageName": "fish-part-ecosynth-analyzer.png"
+        "imageName": "ecosynth-analyzer.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
         "name": "Marquise Thyst",
         "description": "Polished and cut to perfection.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "marquise-thyst.png"
+        "imageName": "marquise-thyst.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
         "name": "Tepa Nodule",
         "description": "The irradescent nodules on these plants glow brightly in cold environments.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "tepa-nodule.png"
+        "imageName": "tepa-nodule.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
         "name": "Thermal Laser",
         "description": "A weapon that discharges lasers over short distances.\nAcquired by disassembling Kriller servofish.",
         "itemCount": 10,
-        "tradable": false,
-        "imageName": "thermal-laser.png"
+        "imageName": "thermal-laser.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "pax-soar.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1471,7 +2991,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/IncreasedDamageOnStatusProc",
     "name": "Virtuos Fury",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1482,42 +3001,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/IncreasedDamageOnStatusProcBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
         "name": "Cuthol Tendrils",
         "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "fish-resource-sac.png"
+        "imageName": "cuthol-tendrils.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 4100,
-        "tradable": false,
-        "imageName": "rubedo.png"
+        "imageName": "rubedo.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "virtuos-fury.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1535,7 +3055,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/StatusChanceOnHeadshot",
     "name": "Virtuos Ghost",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1546,42 +3065,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/StatusChanceOnHeadshotBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 4800,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "seram-beetle-shell.png"
+        "imageName": "seram-beetle-shell.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "virtuos-ghost.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1599,7 +3119,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/OperatorAmmoRegenOnKill",
     "name": "Virtuos Null",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1610,42 +3129,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/OperatorAmmoRegenOnKillBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 3200,
-        "tradable": false,
-        "imageName": "circuits.png"
+        "imageName": "circuits.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
         "name": "Fish Scales",
         "description": "A material used in tailoring clothes and cultivating synthetics.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "fish-scales.png"
+        "imageName": "fish-scales.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "murkray-liver.png"
+        "imageName": "murkray-liver.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "virtuos-null.png",
     "category": "Arcanes",
     "tradable": false
@@ -1653,7 +3173,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/CriticalChanceOnHeadshot",
     "name": "Virtuos Shadow",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1664,42 +3183,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/CriticalChanceOnHeadshotBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
         "name": "Rubedo",
         "description": "A jagged crystalline ore. Gives off radiant energy.\nLocations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
         "itemCount": 5200,
-        "tradable": false,
-        "imageName": "rubedo.png"
+        "imageName": "rubedo.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "seram-beetle-shell.png"
+        "imageName": "seram-beetle-shell.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "virtuos-shadow.png",
     "category": "Arcanes",
     "tradable": false,
@@ -1725,7 +3245,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/IncreasedCriticalDamageOnCriticalStrike",
     "name": "Virtuos Strike",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1736,42 +3255,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/IncreasedCriticalDamageOnCriticalStrikeBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
         "name": "Circuits",
         "description": "Various electronic components.\nLocations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 4400,
-        "tradable": false,
-        "imageName": "circuits.png"
+        "imageName": "circuits.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem",
         "name": "Eidolon Shard",
         "description": "Shard gained from the sentients roaming the Plains of Eidolon.",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "sentient-shard-common.png"
+        "imageName": "eidolon-shard.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "heart-nyth.png"
+        "imageName": "heart-nyth.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
         "name": "Norg Brain",
         "description": "An Ostron delicacy.",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "norg-brain.png"
+        "imageName": "norg-brain.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "virtuos-strike.png",
     "category": "Arcanes",
     "tradable": false
@@ -1787,7 +3307,6 @@
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/AttackSpeedOnKill",
     "name": "Virtuos Tempo",
-    "type": "Misc",
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 10,
@@ -1798,42 +3317,43 @@
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Arcanes/Quills/AttackSpeedOnKillBlueprint",
         "name": "Blueprint",
         "itemCount": 1,
-        "tradable": false,
-        "imageName": "blueprint.png"
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
         "name": "Fish Scales",
         "description": "A material used in tailoring clothes and cultivating synthetics.",
         "itemCount": 20,
-        "tradable": false,
-        "imageName": "fish-scales.png"
+        "imageName": "fish-scales.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.\nLocation: Fisher Hai-Luk in Cetus",
         "itemCount": 2,
-        "tradable": false,
-        "imageName": "murkray-liver.png"
+        "imageName": "murkray-liver.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
         "name": "Plastids",
         "description": "A disgusting nanite-infested tissue mass.\nLocations: Phobos, Saturn, Uranus, Pluto, and Eris.",
         "itemCount": 3500,
-        "tradable": false,
-        "imageName": "plastids.png"
+        "imageName": "plastids.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.\nLocation: Old Man Suumbaat in Cetus",
         "itemCount": 3,
-        "tradable": false,
-        "imageName": "radian-sentirum.png"
+        "imageName": "radian-sentirum.png",
+        "tradable": false
       }
     ],
+    "type": "Misc",
     "imageName": "virtuos-tempo.png",
     "category": "Arcanes",
     "tradable": false
