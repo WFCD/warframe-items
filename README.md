@@ -68,7 +68,44 @@ in `/data/img`. You can find every item's image name stored in `item.imageName`.
 
 ### Image links
 
-Since there are so many images, and we can't publish them due to the size, we've set up a ~~301 redirect~~ CDN to get you images at `https://cdn.warframestat.us/img/${item.imageName}` that provides a linkable resource for you. 
+Since there are so many images, and we can't publish them on npm due to the size, we've set up a CDN to get you images at `https://cdn.warframestat.us/img/${item.imageName}` that provides a linkable resource for you.
+
+<br>
+<br>
+
+## For Developers
+We're always happy to see contributions to this project, so here's some basic setup information
+to get you started.
+
+<br>
+
+### Dependencies
+- [Node.js > 10](https://nodejs.org/en/)
+- [Lua > 5](https://www.lua.org/download.html)
+- Build Tools (`build-essentials` on linux should be enough, on windows run `npm i -g windows-build-tools`)
+- libpng-dev12 (linux only)
+
+<br>
+
+### File structure
+All relevant scripts are found in `/build/` with
+
+[build.js](/build/build.js)<br>
+The entrypoint for the build script. Here we also save JSON, image and cache data.
+
+[scraper.js](/build/scraper.js)<br>
+Fetches all external data and returns it to the parser.
+
+[parser.js](/build/parser.js)<br>
+Parses the external data to match our schema and returns it to the build script.
+
+<br>
+
+### Usage and Testing
+You can run the build script with `npm run build`.
+Once built, you can verify the data with `npm test`.
+
+<br>
 
 ## License
 [MIT](/LICENSE)
