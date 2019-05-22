@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./build/build.js",
-    "test": "mocha",
+    "test": "mocha -s 10000 --timeout 10000",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix"
   },
