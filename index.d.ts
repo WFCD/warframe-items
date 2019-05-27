@@ -1,6 +1,6 @@
 declare module 'warframe-items' {
     export default class Items extends Array<Item>{
-        constructor(options: ItemsOptions);
+        constructor(options: ItemsOptions, ...items: Item[]);
     }
 
     interface ItemsOptions {
