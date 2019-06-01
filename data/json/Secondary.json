@@ -32076,6 +32076,14 @@
         ]
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
+        "name": "Hexenon",
+        "description": "A reagent commonly used to produce highly combustible fuel.",
+        "itemCount": 250,
+        "imageName": "hexenon.png",
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
@@ -32087,7 +32095,32 @@
     "type": "Pistol",
     "imageName": "cyanex.png",
     "category": "Secondary",
-    "tradable": false
+    "tradable": false,
+    "ammo": 110,
+    "damage": "41.0 gas",
+    "damageTypes": {
+      "impact": 50,
+      "gas": 41
+    },
+    "marketCost": 175,
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "secondary": {
+      "name": "Burst Mode",
+      "speed": 10.05,
+      "crit_chance": 8,
+      "crit_mult": 1.4,
+      "status_chance": 0.3,
+      "shot_type": "Projectile",
+      "impact": 2.9,
+      "slash": 38.9,
+      "puncture": 30.2
+    },
+    "tags": [  ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/36/Cyanex.png/revision/latest?cb=20190523234907",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Cyanex",
+    "disposition": 3
   },
   {
     "name": "Cycron",
@@ -35599,7 +35632,6 @@
         "fixes": ""
       }
     ],
-    "ammo": 40,
     "damage": "10.0 radiation",
     "damageTypes": {
       "slash": 5,
@@ -35830,18 +35862,6 @@
         "tradable": false,
         "drops": [
           {
-            "location": "Stalker nce: 50.00 nce: 50.00",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Uncommon",
-            "chance": 0.1106
-          },
-          {
-            "location": "Stalker nce: 50.00 nce: 50.00",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Uncommon",
-            "chance": 0.1106
-          },
-          {
             "location": "Shadow Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Rare",
@@ -35861,6 +35881,18 @@
           },
           {
             "location": "Hunhow nce: 50.00 nce: 50.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Uncommon",
+            "chance": 0.1106
+          },
+          {
+            "location": "Stalker nce: 50.00 nce: 50.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Uncommon",
+            "chance": 0.1106
+          },
+          {
+            "location": "Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Uncommon",
             "chance": 0.1106
@@ -76881,7 +76913,19 @@
     "type": "Pistol",
     "imageName": "spectra-vandal.png",
     "category": "Secondary",
-    "tradable": true
+    "tradable": true,
+    "ammo": 400,
+    "damage": "22.0",
+    "damageTypes": {
+      "slash": 12.8,
+      "puncture": 9.2
+    },
+    "polarities": [  ],
+    "tags": [  ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/82/SpectraVandal.png/revision/latest?cb=20190523234911",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Spectra_Vandal",
+    "disposition": 5
   },
   {
     "name": "Spira",
