@@ -167,7 +167,8 @@ class Parser {
       // original component object.
       if (components[i].parents) {
         if (!components[i].parents.includes(title(item.name))) {
-          components[i].parents.push(title(item.name)).sort((a, b) => a.localeCompare(b))
+          components[i].parents.push(title(item.name))
+          components[i].parents.sort((a, b) => a.localeCompare(b))
         }
       } else {
         components[i].parents = [title(item.name)]
