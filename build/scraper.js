@@ -1,3 +1,4 @@
+const Agent = require('socks5-http-client/lib/Agent')
 const request = require('requestretry').defaults({ fullResponse: false })
 const Progress = require('./progress.js')
 const crypto = require('crypto')
@@ -7,7 +8,16 @@ const exportCache = require('../data/cache/.export.json')
 const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
 const sanitize = (str) => str.replace(/\n/g, '').replace(/\\r\\r/g, '\\n')
-const get = async (url) => JSON.parse(sanitize(await request(url)))
+const get = async (url, disableProxy) => JSON.parse(sanitize(await request({
+  url,
+  agentClass: disableProxy ? undefined : Agent,
+  agentOptions: disableProxy ? {} : {
+    socksHost: process.env.SOCKS5_HOST,
+    socksPort: process.env.SOCKS5_PORT,
+    socksUsername: process.env.SOCKS5_USER,
+    socksPassword: process.env.SOCKS5_PASS
+  }
+})))
 
 /**
  * Retrieves the base item data necessary for the parsing process
@@ -46,7 +56,7 @@ class Scraper {
    */
   async fetchDropRates () {
     const bar = new Progress('Fetching Drop Rates', 1)
-    const rates = await get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json')
+    const rates = await get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json', true)
     const ratesHash = crypto.createHash('md5').update(JSON.stringify(rates)).digest('hex')
     const changed = exportCache.DropChances.hash !== ratesHash
 
