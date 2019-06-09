@@ -38695,18 +38695,6 @@
         "tradable": false,
         "drops": [
           {
-            "location": "Stalker nce: 50.00 nce: 50.00",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 0.7587999999999999
-          },
-          {
-            "location": "Stalker nce: 50.00 nce: 50.00",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 0.7587999999999999
-          },
-          {
             "location": "Shadow Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
@@ -38726,6 +38714,18 @@
           },
           {
             "location": "Hunhow nce: 50.00 nce: 50.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 0.7587999999999999
+          },
+          {
+            "location": "Stalker nce: 50.00 nce: 50.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 0.7587999999999999
+          },
+          {
+            "location": "Stalker nce: 50.00 nce: 50.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 0.7587999999999999
@@ -39417,11 +39417,11 @@
     "name": "Ferrox",
     "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/Spears/Railgun/CorpusRailgun",
     "secondsPerShot": 1.25,
-    "damagePerShot": [ 25, 175, 49.999996, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "damagePerShot": [ 35, 245, 69.999992, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "magazineSize": 10,
     "reloadTime": 1.8,
-    "totalDamage": 250,
-    "damagePerSecond": 175,
+    "totalDamage": 350,
+    "damagePerSecond": 245,
     "trigger": "Charge",
     "description": "Discharge a rail of ionized death or throw the Ferrox like a spear and create a localized field of attraction no enemy can escape from.",
     "accuracy": 16.666666,
@@ -46891,6 +46891,14 @@
         "tradable": false
       },
       {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
+        "name": "Hexenon",
+        "description": "A reagent commonly used to produce highly combustible fuel.",
+        "itemCount": 350,
+        "imageName": "hexenon.png",
+        "tradable": false
+      },
+      {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.\nLocations: Saturn, Neptune, Eris, and Orokin Derelicts.",
@@ -46907,10 +46915,34 @@
         "tradable": false
       }
     ],
-    "type": "Misc",
+    "type": "Rifle",
     "imageName": "fulmin.png",
     "category": "Primary",
-    "tradable": false
+    "tradable": false,
+    "damage": "400.0 electricity",
+    "damageTypes": {
+      "impact": 100,
+      "electricity": 400
+    },
+    "marketCost": 265,
+    "polarities": [  ],
+    "projectile": "Hitscan",
+    "secondary": {
+      "name": "Full Auto Mode",
+      "speed": 9.33,
+      "crit_chance": 28,
+      "crit_mult": 2.4,
+      "status_chance": 0.1,
+      "shot_type": "Hit-Scan",
+      "puncture": 8,
+      "electricity": 25,
+      "damage": "25.0 electricity"
+    },
+    "tags": [  ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/34/Fulmin.png/revision/latest?cb=20190523234908",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Fulmin",
+    "disposition": 3
   },
   {
     "name": "Glaxion",
@@ -50520,10 +50552,21 @@
     "sentinel": false,
     "masteryReq": 12,
     "omegaAttenuation": 1.35,
-    "type": "Misc",
+    "type": "Rifle",
     "imageName": "glaxion-vandal.png",
     "category": "Primary",
-    "tradable": true
+    "tradable": true,
+    "ammo": 1000,
+    "damage": "29.0 cold",
+    "damageTypes": {
+      "cold": 29
+    },
+    "polarities": [  ],
+    "tags": [  ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/1a/GlaxionVandal.png/revision/latest?cb=20190523234909",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Glaxion_Vandal",
+    "disposition": 5
   },
   {
     "name": "Gorgon",
@@ -50565,6 +50608,18 @@
         "tradable": false,
         "drops": [
           {
+            "location": "Heavy Gunner nce: 1.00 nce: 1.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
+            "location": "Heavy Gunner nce: 1.00 nce: 1.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Common",
+            "chance": 1
+          },
+          {
             "location": "Frontier Heavy Gunner nce: 1.00 nce: 1.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
@@ -50608,18 +50663,6 @@
           },
           {
             "location": "Corrupted Warden nce: 1.00 nce: 1.00",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 1
-          },
-          {
-            "location": "Heavy Gunner nce: 1.00 nce: 1.00",
-            "type": "Enemy Blueprint Tables",
-            "rarity": "Common",
-            "chance": 1
-          },
-          {
-            "location": "Heavy Gunner nce: 1.00 nce: 1.00",
             "type": "Enemy Blueprint Tables",
             "rarity": "Common",
             "chance": 1
@@ -70187,12 +70230,35 @@
             "rotation": "(Extra)"
           }
         ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
+        "name": "Hexenon",
+        "description": "A reagent commonly used to produce highly combustible fuel.",
+        "itemCount": 300,
+        "imageName": "hexenon.png",
+        "tradable": false
       }
     ],
-    "type": "Misc",
+    "type": "Sniper Rifle",
     "imageName": "komorex.png",
     "category": "Primary",
-    "tradable": false
+    "tradable": false,
+    "ammo": 100,
+    "damage": "87.0",
+    "damageTypes": {
+      "impact": 8.7,
+      "slash": 41.8,
+      "puncture": 36.5
+    },
+    "marketCost": 225,
+    "polarities": [  ],
+    "projectile": "Hitscan",
+    "tags": [  ],
+    "vaulted": false,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/14/Komorex.png/revision/latest?cb=20190523234909",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Komorex",
+    "disposition": 3
   },
   {
     "name": "Lanka",
