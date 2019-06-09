@@ -1,3 +1,4 @@
+const prod = process.env.NODE_ENV === 'production'
 const Agent = require('socks5-http-client/lib/Agent')
 const request = require('requestretry').defaults({ fullResponse: false })
 const Progress = require('./progress.js')
@@ -8,7 +9,7 @@ const exportCache = require('../data/cache/.export.json')
 const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
 const sanitize = (str) => str.replace(/\n/g, '').replace(/\\r\\r/g, '\\n')
-const get = async (url, disableProxy) => JSON.parse(sanitize(await request({
+const get = async (url, disableProxy = !prod) => JSON.parse(sanitize(await request({
   url,
   agentClass: disableProxy ? undefined : Agent,
   agentOptions: disableProxy ? {} : {
