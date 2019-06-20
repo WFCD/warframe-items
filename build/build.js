@@ -208,7 +208,7 @@ class Build {
     const url = patchlogs.posts[0].url
     const readmeLocation = `${__dirname}/../README.md`
     const readmeOld = fs.readFileSync(readmeLocation, 'utf-8')
-    const readmeNew = readmeOld.replace(/\[!\[warframe update.*/, `[![warframe update](https://img.shields.io/badge/warframe_update-${version}-blue.svg?logo=${logob64})](${url})`)
+    const readmeNew = readmeOld.replace(/\[!\[warframe update.*/, `[![warframe update](https://img.shields.io/badge/warframe_update-${encodeURIComponent(version)}-blue.svg?logo=${logob64})](${url})`)
     fs.writeFileSync(readmeLocation, readmeNew)
   }
 }
