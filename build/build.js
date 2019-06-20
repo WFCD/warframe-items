@@ -203,7 +203,7 @@ class Build {
    * Update readme with newest patchlog version
    */
   updateReadme (patchlogs) {
-    const logob64 = require(`${__dirname}/../data/logo.json`);
+    const logob64 = require(`${__dirname}/../data/logo.json`)
     const version = patchlogs.posts[0].name.replace(/[^0-9.]/g, '')
     const url = patchlogs.posts[0].url
     const readmeLocation = `${__dirname}/../README.md`
