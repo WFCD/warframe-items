@@ -28,7 +28,7 @@
  * @property {boolean} ignoreEnemies If true, don't load any enemy categories
  */
 
-const defaultOptions = { category: ['All'] };
+const defaultOptions = { category: ['All'] }
 
 class Items extends Array {
   constructor (options, ...items) {

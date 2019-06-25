@@ -7,7 +7,7 @@ describe('index.js', function () {
     const items = new Items()
     assert(items.length)
   })
-  
+
   it('should ignore enemies when configured.', function () {
     const Items = require('../index.js')
     const items = new Items({ ignoreEnemies: true }).filter(i => i.category === 'Enemy')
