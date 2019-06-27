@@ -416,7 +416,9 @@ class Parser {
    * Limit items to tradable/untradable if specified.
    */
   addTradable (item) {
-    const tradableTypes = ['Upgrades', 'Fish', 'Key', 'Focus Lens', 'Relic']
+    const tradableTypes = ['Upgrades', 'Fish', 'Key', 'Focus Lens', 'Relic', 'Rifle Mod',
+      'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
+      'Melee Mod']
     const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
