@@ -43,9 +43,8 @@ class Items extends Array {
     // Add items from options to array. Type equals the file name.
     // Tradable determines if we should use sub-folder or stay on root.
     for (let category of this.options.category) {
-      // Ignores the individual enemy categories.
-      // This will need manual addenda if more enemy factions are added.
-      if (this.options.ignoreEnemies && category !== 'Enemy') continue
+      // Ignores the enemy category.
+      if (this.options.ignoreEnemies && category === 'Enemy') continue
       const items = require(`./data/json/${category}.json`)
 
       for (let item of items) {
