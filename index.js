@@ -1,18 +1,55 @@
+/**
+ * Configuration options for warframe-items
+ * @typedef {Object} Options
+ *
+ * @property {string[]} category List of allowed categories to be pulled in.
+ *                        Default ['All'].
+ *                        Allows any of:
+ *                         - All
+ *                         - Arcanes
+ *                         - Archwing
+ *                         - Corpus
+ *                         - Enemy
+ *                         - Fish
+ *                         - Gear
+ *                         - Glyphs
+ *                         - Melee
+ *                         - Misc
+ *                         - Mods
+ *                         - Pets
+ *                         - Primary
+ *                         - Quests
+ *                         - Relics
+ *                         - Resources
+ *                         - Secondary
+ *                         - Sentinels
+ *                         - Skins
+ *                         - Warframes
+ * @property {boolean} ignoreEnemies If true, don't load any enemy categories
+ */
+
+const defaultOptions = { category: ['All'] }
+
 class Items extends Array {
   constructor (options, ...items) {
     super(...items)
 
     // Merge provided options with defaults
-    this.options = Object.assign({
-      category: ['All']
-    }, options)
+    this.options = {
+      ...defaultOptions,
+      ...options
+    }
 
     // Add items from options to array. Type equals the file name.
     // Tradable determines if we should use sub-folder or stay on root.
     for (let category of this.options.category) {
+      // Ignores the enemy category.
+      if (this.options.ignoreEnemies && category === 'Enemy') continue
       const items = require(`./data/json/${category}.json`)
 
       for (let item of items) {
+        // need this because all will include enemies
+        if (this.options.ignoreEnemies && item.category === 'Enemy') continue
         this.push(item)
       }
     }
