@@ -1,5 +1,6 @@
 const Progress = require('./progress.js')
 const previousBuild = require('../data/json/All.json')
+const watson = require('../config/dt_map.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
@@ -77,6 +78,7 @@ class Parser {
     this.addPatchlogs(result, data.patchlogs)
     this.addAdditionalWikiaData(result, category, data.wikia)
     this.addVaultData(result, data.vaultData)
+    this.addResistenceData(result, category)
     this.applyOverrides(result)
 
     return result
@@ -209,7 +211,7 @@ class Parser {
     }
 
     // Capitalize properties which are usually all uppercase
-    const props = ['name', 'type', 'trigger', 'noise', 'rarity']
+    const props = ['name', 'type', 'trigger', 'noise', 'rarity', 'faction']
     for (const prop of props) {
       if (item[prop]) item[prop] = title(item[prop])
     }
@@ -256,7 +258,7 @@ class Parser {
 
     // Remove keys that only increase output size.
     delete item.codexSecret
-    delete item.longDescription
+    if (item.type !== 'enemy') delete item.longDescription
     delete item.parentName
     delete item.relicRewards // We'll fetch the official drop data for this
     delete item.subtype
@@ -285,6 +287,9 @@ class Parser {
     if (!item.type) {
       if ((item.description || '').includes('This resource')) {
         item.type = 'Resource'
+      } else if (item.faction) {
+        item.type = item.faction
+        delete item.faction
       } else {
         if (!warnings.missingType.includes(item.name)) warnings.missingType.push(item.name)
         item.type = 'Misc'
@@ -404,6 +409,10 @@ class Parser {
         else if (item.type === 'Gem') item.category = 'Resources'
         else if (item.type === 'Plant') item.category = 'Resources'
         else item.category = 'Misc'
+        break
+
+      case 'Enemies':
+        item.category = 'Enemy'
         break
 
       default:
@@ -701,6 +710,52 @@ class Parser {
         ...override
       }
     }
+  }
+
+  addResistenceData (item, category) {
+    if (category.toLowerCase() !== 'enemies') return
+
+    const quantities = {
+      positive: [0.25, 0.5, 0.75],
+      negative: [-0.25, -0.5, -0.75]
+    }
+    const parseAffectors = (affectors) => {
+      return affectors.split(' ').map(element => {
+        if (element.includes('+')) {
+          // positives
+          const pSplit = (element || '').split('+')
+          return {
+            element: pSplit[0].length > 0 ? (watson[pSplit[0]] || title(pSplit[0].split('_')[1])) : 'None',
+            modifier: quantities.positive[pSplit.length - 1] || 0
+          }
+        }
+        if (element.includes('-')) {
+          // positives
+          const nSplit = (element || '').split('-')
+          return {
+            element: nSplit[0].length > 0 ? watson[nSplit[0]] || title(nSplit[0].split('_')[1]) : 'None',
+            modifier: quantities.negative[nSplit.length - 1] || 0
+          }
+        }
+        return {
+          element: 'None',
+          modifier: 0
+        }
+      })
+    }
+    const parseArmor = enemy => {
+      return enemy.resistValues.map((resist, index) => ({
+        amount: resist,
+        type: title(enemy.resistPrefix[index]),
+        affectors: parseAffectors(enemy.resistTexts[index].trim().replace(/\s\s/g, ' '))
+      }))
+    }
+
+    item.resistances = parseArmor(item)
+    item.name = title(item.name)
+    delete item.resistValues
+    delete item.resistPrefix
+    delete item.resistTexts
   }
 }
 
