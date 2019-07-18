@@ -3,13 +3,14 @@ const Agent = require('socks5-http-client/lib/Agent')
 const request = require('requestretry').defaults({ fullResponse: false })
 const Progress = require('./progress.js')
 const crypto = require('crypto')
+const lzma = require('lzma')
 const fs = require('fs')
 const cheerio = require('cheerio')
 const exportCache = require('../data/cache/.export.json')
 const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
-const sanitize = (str) => str.replace(/\n/g, '').replace(/\\r\\r/g, '\\n')
-const get = async (url, disableProxy = !prod) => JSON.parse(sanitize(await request({
+const sanitize = (str) => str.replace(/\\r|\r?\n/g, '')
+const get = async (url, disableProxy = !prod, encoding) => request({
   url,
   agentClass: disableProxy ? undefined : Agent,
   agentOptions: disableProxy ? {} : {
@@ -17,25 +18,48 @@ const get = async (url, disableProxy = !prod) => JSON.parse(sanitize(await reque
     socksPort: process.env.SOCKS5_PORT,
     socksUsername: process.env.SOCKS5_USER,
     socksPassword: process.env.SOCKS5_PASS
-  }
-})))
+  },
+  ...encoding === false ? {
+    encoding: null
+  } : {}
+})
+const getJSON = async (url, disableProxy) => JSON.parse(sanitize(await get(url, disableProxy)))
 
 /**
  * Retrieves the base item data necessary for the parsing process
  */
 class Scraper {
   /**
+   * Get Endpoints from Warframe's origin file
+   */
+  async fetchEndpoints (manifest) {
+    const origin = 'http://content.warframe.com/PublicExport/index_en.txt.lzma'
+    const raw = await get(origin, !prod, false)
+    const decompressed = lzma.decompress(raw)
+    const manifestRegex = /(\r?\n)?ExportManifest.*/
+    let filtered
+
+    // We either don't need the manifest, or *only* the manifest
+    if (manifest) {
+      filtered = manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '')
+      return filtered
+    } else {
+      filtered = decompressed.replace(manifestRegex, '')
+      return filtered.split(/\r?\n/g)
+    }
+  }
+
+  /**
    * Fetch Warframe API data, split up by endpoint.
    */
-  async fetchApiData () {
-    const endpoints = require('../config/endpoints.json')
+  async fetchResources () {
+    const endpoints = await this.fetchEndpoints()
     const result = []
     const bar = new Progress('Fetching API Endpoints', endpoints.length)
 
     for (const endpoint of endpoints) {
-      const split = endpoint.split('/')
-      const category = split[split.length - 1].replace('Export', '').replace('.json', '')
-      const data = (await get(endpoint))[`Export${category}`]
+      const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '')
+      const data = (await getJSON(`http://content.warframe.com/PublicExport/Manifest/${endpoint}`))[`Export${category}`]
       result.push({ category, data })
       bar.tick()
     }
@@ -47,7 +71,8 @@ class Scraper {
    */
   async fetchImageManifest () {
     const bar = new Progress('Fetching Image Manifest', 1)
-    const manifest = (await get('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')).Manifest
+    const endpoint = await this.fetchEndpoints(true)
+    const manifest = (await getJSON(`http://content.warframe.com/PublicExport/Manifest/${endpoint}`)).Manifest
     bar.tick()
     return manifest
   }
@@ -57,7 +82,7 @@ class Scraper {
    */
   async fetchDropRates () {
     const bar = new Progress('Fetching Drop Rates', 1)
-    const rates = await get('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json', true)
+    const rates = await getJSON('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json', true)
     const ratesHash = crypto.createHash('md5').update(JSON.stringify(rates)).digest('hex')
     const changed = exportCache.DropChances.hash !== ratesHash
 
@@ -101,7 +126,7 @@ class Scraper {
   async fetchWikiaData () {
     const bar = new Progress('Fetching Wikia Data', 1)
     const ducats = []
-    const ducatsWikia = await request('http://warframe.wikia.com/wiki/Ducats/Prices/All')
+    const ducatsWikia = await get('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
 
     $('.mw-content-text table tbody tr').each(function () {
@@ -123,22 +148,10 @@ class Scraper {
    */
   async fetchVaultData () {
     const bar = new Progress('Fetching Vault Data', 1)
-    const vaultData = (await get('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')).data
+    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')).data
 
     bar.tick()
     return vaultData
-  }
-
-  applyOverrides (item) {
-    const override = require('../config/overrides.json')[item.uniqueName]
-    if (override) {
-      console.log(item.uniqueName)
-      console.log(JSON.stringify(override))
-      item = {
-        ...item,
-        ...override
-      }
-    }
   }
 }
 

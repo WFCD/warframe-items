@@ -52,7 +52,7 @@ class Parser {
 
       // Skip Warframe/Weapon Components as they'll be accessible
       // through their parent.
-      if (item.uniqueName.includes('/Recipes')) continue
+      if (item.uniqueName && item.uniqueName.includes('/Recipes')) continue
 
       item = this.addComponents(item, category, blueprints, data)
       item = this.filter(item, category, data, items[i - 1])
@@ -68,6 +68,7 @@ class Parser {
   filter (original, category, data, previous) {
     const result = _.cloneDeep(original)
 
+    if (result.rewardName) result.uniqueName = result.rewardName
     this.addType(result)
     this.sanitize(result)
     this.addImageName(result, data.manifest, previous)
@@ -92,6 +93,7 @@ class Parser {
   quickFilter (original, category, data, previous) {
     const result = _.cloneDeep(original)
 
+    if (result.rewardName) result.uniqueName = result.rewardName
     this.addType(result)
     this.sanitize(result)
     this.addImageName(result, data.manifest, previous)
@@ -309,7 +311,7 @@ class Parser {
     // eslint-disable-next-line no-useless-escape
     const encode = (str) => str.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]]/g, '').toLowerCase()
     const imageStub = image.textureLocation
-    const ext = imageStub.split('.')[imageStub.split('.').length - 1] // .png, .jpg, etc
+    const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/!.*/, '') // .png, .jpg, etc
 
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
