@@ -15,7 +15,7 @@ const exportCache = require('../data/cache/.export.json')
 class Build {
   async init () {
     const raw = {
-      api: await scraper.fetchApiData(),
+      api: await scraper.fetchResources(),
       manifest: await scraper.fetchImageManifest(),
       drops: await scraper.fetchDropRates(),
       patchlogs: scraper.fetchPatchLogs(),
@@ -26,7 +26,7 @@ class Build {
     const data = this.applyCustomCategories(parsed.data)
     const all = this.saveJson(data)
     this.saveWarnings(parsed.warnings)
-    await this.saveImages(all)
+    await this.saveImages(all, raw.manifest)
     await this.updateReadme(raw.patchlogs.patchlogs)
 
     // Log number of warnings at the end of the script
@@ -100,10 +100,8 @@ class Build {
   /**
    * Get all images unless hashes match with existing images
    */
-  async saveImages (items) {
-    const Manifest = await request('http://content.warframe.com/MobileExport/Manifest/ExportManifest.json')
-    const manifest = JSON.parse(Manifest).Manifest
-    const manifestHash = crypto.createHash('md5').update(Manifest).digest('hex')
+  async saveImages (items, manifest) {
+    const manifestHash = crypto.createHash('md5').update(JSON.stringify(manifest)).digest('hex')
 
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
@@ -138,8 +136,10 @@ class Build {
    * Download and save images for items or components.
    */
   async saveImage (item, isComponent, duplicates, manifest) {
-    const imageStub = manifest.find(i => i.uniqueName === item.uniqueName).textureLocation.replace(/\\/g, '/')
-    const imageUrl = `http://content.warframe.com/MobileExport${imageStub}`
+    const imageBase = manifest.find(i => i.uniqueName === item.uniqueName)
+    if (!imageBase) return
+    const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '')
+    const imageUrl = `http://content.warframe.com/PublicExport/${imageStub}`
     const basePath = `${__dirname}/../data/img/`
     const filePath = `${basePath}${item.imageName}`
     const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']

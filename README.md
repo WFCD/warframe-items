@@ -61,6 +61,29 @@ allows you to add your own items before our gathered ones.
 |:------------- |:------------- |:------------- |
 | category | `['All']` | Array of item categories to retrieve. Parallel to file names in /data/json. Useful if you don't wanna load lots and lots of MB of data into memory.
 
+| Categories | Description|
+|:--- | :---- |
+| All | All categories in one file |
+| Arcanes | Operator, Zaw, and some Warframe Arcanes |
+| Archwing | Archwings.... nuff said |
+| Enemy | NPCs |
+| Fish | Fish that you fish|
+| Gear | Things you equip in your gear wheel
+| Glyphs | Glyphs from partners, etc. | 
+| Melee | Melee weapons |
+| Misc | Uncategorized items |
+| Mods | Modifications for weapons, warframes, archwings, etc.
+| Pets | Companions, just the beasts |
+| Primary | Primary slot weapons |
+| Quests | Quests that you adventure on |
+| Relics | Things you get prime parts from |
+| Resources | For building stuff |
+| Secondary | Secondary slot weapons |
+| Sentinels | Mechanical companions |
+| Sigils | Chest & back art |
+| Skins | Henna for your frame |
+| Warframes | Warframes...|
+
 <br>
 
 ### Pre-compiled data
