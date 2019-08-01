@@ -35459,14 +35459,36 @@
     "sentinel": false,
     "masteryReq": 6,
     "omegaAttenuation": 1,
-    "buildPrice": 25000,
-    "buildTime": 86400,
-    "skipBuildTimePrice": 25,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
     "buildQuantity": 1,
     "consumeOnBuild": true,
     "components": [
       {
-        "uniqueName": "/Lotus/Types/Recipes/Weapons/CorpusHandcannonBlueprint",
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronBarrel",
+        "name": "Barrel",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "barrel.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Zanuka Hunter nce: 100.00 nce: 100.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Uncommon",
+            "chance": 0.3235
+          },
+          {
+            "location": "Zanuka Hunter nce: 100.00 nce: 100.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Uncommon",
+            "chance": 0.3235
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/DetronBlueprint",
         "name": "Blueprint",
         "description": "The sleek lines of the Detron conceal its ferocious nature. The hand cannon's semi-automatic action takes down enemies with speed and efficiency.",
         "itemCount": 1,
@@ -35488,114 +35510,29 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
-        "name": "Circuits",
-        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
-        "itemCount": 700,
-        "imageName": "circuits.png",
-        "tradable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
-        "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Orokin Derelicts.",
-        "itemCount": 5,
-        "imageName": "neurodes.png",
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 10,
+        "imageName": "orokin-cell.png",
         "tradable": false,
         "drops": [
-          {
-            "location": "Void - Marduk",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.2529,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Void - Stribog",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1888,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Eris - Naeglar",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Viver",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Psoro",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Lepis",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Candiru",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
           {
             "location": "Derelict - Orokin",
             "type": "Mission Rewards",
             "rarity": "Uncommon",
-            "chance": 0.1518,
+            "chance": 0.1936,
             "rotation": "Sabotage"
           },
           {
-            "location": "Saturn - Calypso",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Venus - Ishtar",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Mercury - Terminus",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Earth - Cervantes",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Mars - Gradivus",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
             "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
             "type": "Mission Rewards",
             "rarity": "Uncommon",
             "chance": 0.151,
@@ -35630,35 +35567,7 @@
             "rotation": "C"
           },
           {
-            "location": "Mercury - Neruda",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Sedna - Phithale",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
             "location": "Uranus - Portia",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Pluto - Cypress",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Pluto - Charon",
             "type": "Mission Rewards",
             "rarity": "Uncommon",
             "chance": 0.1258,
@@ -35686,17 +35595,31 @@
             "rotation": "C"
           },
           {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
             "location": "Level 40 - 60 Orb Vallis Bounty",
             "type": "Solaris Bounty Rewards",
             "rarity": "Uncommon",
             "chance": 0.125
-          },
-          {
-            "location": "Earth - Cervantes",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1218,
-            "rotation": "B"
           },
           {
             "location": "Lua - Plato",
@@ -35725,63 +35648,7 @@
             "chance": 0.0714
           },
           {
-            "location": "Saturn - Lunaro",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Lunaro",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
             "location": "Saturn - Annihilation",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Annihilation",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "B"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Team",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Neptune - Cephalon",
             "type": "Mission Rewards",
             "rarity": "Legendary",
             "chance": 0.0025,
@@ -35816,7 +35683,63 @@
             "rotation": "Capture"
           },
           {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
             "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
             "type": "Mission Rewards",
             "rarity": "Legendary",
             "chance": 0.0025,
@@ -35825,20 +35748,26 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
-        "name": "Polymer Bundle",
-        "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
-        "itemCount": 500,
-        "imageName": "polymer-bundle.png",
-        "tradable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
-        "name": "Salvage",
-        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
-        "itemCount": 600,
-        "imageName": "salvage.png",
-        "tradable": false
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronReceiver",
+        "name": "Receiver",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "receiver.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Zanuka Hunter nce: 100.00 nce: 100.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Uncommon",
+            "chance": 0.3235
+          },
+          {
+            "location": "Zanuka Hunter nce: 100.00 nce: 100.00",
+            "type": "Enemy Blueprint Tables",
+            "rarity": "Uncommon",
+            "chance": 0.3235
+          }
+        ]
       }
     ],
     "type": "Shotgun Sidearm",
