@@ -403,13 +403,13 @@ class Parser {
         else if (item.slot === 5) item.category = 'Melee'
         else if (item.slot === 0) item.category = 'Secondary'
         else if (item.slot === 1) item.category = 'Primary'
+        else if (item.uniqueName.includes('/MoaPetHead')) item.category = 'Pets'
         else item.category = 'Misc'
         delete item.isArchwing
         break
 
       case 'Resources':
-        if (item.type === 'Pets') item.category = 'Pets'
-        else if (item.type === 'Specter') item.category = 'Gear'
+        if (item.type === 'Specter') item.category = 'Gear'
         else if (item.type === 'Resource') item.category = 'Resources'
         else if (item.type === 'Fish') item.category = 'Fish'
         else if (item.type === 'Ship Decoration') item.category = 'Skins'
