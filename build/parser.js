@@ -1,6 +1,7 @@
 const Progress = require('./progress.js')
 const previousBuild = require('../data/json/All.json')
 const watson = require('../config/dt_map.json')
+const bpConflicts = require('../config/bpConflicts.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
@@ -11,6 +12,8 @@ const warnings = {
   polarity: [],
   missingType: []
 }
+
+const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
 /**
  * Parse API data into a more clear or complete format.
@@ -108,7 +111,7 @@ class Parser {
    * attached to the parent.
    */
   addComponents (item, category, blueprints, data, secondPass) {
-    const blueprint = blueprints.find(b => b.resultType === item.uniqueName)
+    const blueprint = blueprints.filter(filterBps).find(b => b.resultType === item.uniqueName)
     if (!blueprint) return item // Some items just don't have blueprints
     const components = []
     let result = _.cloneDeep(item)
