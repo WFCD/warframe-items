@@ -224,6 +224,11 @@ class Parser {
       item.isArchwing = true
     }
 
+    // Fix Mk1 weapons not matching wikia url
+    if (item.name && item.name.includes('Mk1')) {
+      item.name = item.name.replace('Mk1', 'MK1')
+    }
+
     // Relics don't have their grade in the name for some reason
     if (item.type === 'Relic') {
       const grades = require('../config/relicGrades.json')
@@ -677,6 +682,10 @@ class Parser {
       item.disposition = 4
     } else if (item.omegaAttenuation <= 1.6) {
       item.disposition = 5
+    }
+    // Re-apply correct names to MK1-weapons
+    if (item.name && item.name.includes('MK1')) {
+      item.name = item.name.replace('MK1', 'Mk1')
     }
   }
 
