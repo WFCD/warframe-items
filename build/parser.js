@@ -186,7 +186,7 @@ class Parser {
       // name so it's easier to work with them. This is especially critical
       // for parsing trade chat data.
       if (override.uniqueName.includes('/Recipes') || item.tradable) {
-        override.name = override.name.replace(`${title(item.name)} `, '')
+        override.name = override.name.replace(`${title(item.name).replace(/<Archwing> /, '')} `, '')
       }
       components[i] = override
 
