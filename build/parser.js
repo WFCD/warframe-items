@@ -287,7 +287,7 @@ class Parser {
     const types = require('../config/itemTypes.json')
 
     for (let type of types) {
-      if (item.uniqueName.includes(`/${type.id}`)) {
+      if (item.uniqueName.includes(type.id)) {
         item.type = type.name
         break
       }
@@ -406,6 +406,7 @@ class Parser {
         else if (item.slot === 5) item.category = 'Melee'
         else if (item.slot === 0) item.category = 'Secondary'
         else if (item.slot === 1) item.category = 'Primary'
+        else if (item.type === 'Pets') item.category = 'Pets'
         else item.category = 'Misc'
         delete item.isArchwing
         break
