@@ -1,6 +1,7 @@
 const Progress = require('./progress.js')
 const previousBuild = require('../data/json/All.json')
 const watson = require('../config/dt_map.json')
+const bpConflicts = require('../config/bpConflicts.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
@@ -11,6 +12,8 @@ const warnings = {
   polarity: [],
   missingType: []
 }
+
+const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
 /**
  * Parse API data into a more clear or complete format.
@@ -108,7 +111,7 @@ class Parser {
    * attached to the parent.
    */
   addComponents (item, category, blueprints, data, secondPass) {
-    const blueprint = blueprints.find(b => b.resultType === item.uniqueName)
+    const blueprint = blueprints.filter(filterBps).find(b => b.resultType === item.uniqueName)
     if (!blueprint) return item // Some items just don't have blueprints
     const components = []
     let result = _.cloneDeep(item)
@@ -186,7 +189,7 @@ class Parser {
       // name so it's easier to work with them. This is especially critical
       // for parsing trade chat data.
       if (override.uniqueName.includes('/Recipes') || item.tradable) {
-        override.name = override.name.replace(`${title(item.name)} `, '')
+        override.name = override.name.replace(`${title(item.name).replace(/<Archwing> /, '')} `, '')
       }
       components[i] = override
 
@@ -284,7 +287,7 @@ class Parser {
     const types = require('../config/itemTypes.json')
 
     for (let type of types) {
-      if (item.uniqueName.includes(`/${type.id}`)) {
+      if (item.uniqueName.includes(type.id)) {
         item.type = type.name
         break
       }
@@ -403,6 +406,7 @@ class Parser {
         else if (item.slot === 5) item.category = 'Melee'
         else if (item.slot === 0) item.category = 'Secondary'
         else if (item.slot === 1) item.category = 'Primary'
+        else if (item.type === 'Pets') item.category = 'Pets'
         else item.category = 'Misc'
         delete item.isArchwing
         break
