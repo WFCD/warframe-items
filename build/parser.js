@@ -55,7 +55,7 @@ class Parser {
 
       // Skip Weapon Components as they'll be accessible
       // through their parent. Warframe components are an exception
-      // since they are not items iiself, but have compononents.
+      // since they are not items itself, but have compononents.
       if (item.uniqueName && item.uniqueName.includes('/Recipes') && !item.uniqueName.includes('/WarframeRecipes')) continue
 
       item = this.addComponents(item, category, blueprints, data)
