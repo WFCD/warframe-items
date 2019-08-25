@@ -716,6 +716,9 @@ class Parser {
     if (target.EstimatedVaultedDate) {
       item.estimatedVaultDate = target.EstimatedVaultedDate
     }
+    if (target.Vaulted) {
+      item.vaulted = target.Vaulted
+    }
   }
 
   applyOverrides (item) {
