@@ -672,7 +672,6 @@ class Parser {
     item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
     item.type = wikiaItem.type
-    item.vaulted = wikiaItem.vaulted
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
 
