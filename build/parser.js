@@ -648,7 +648,6 @@ class Parser {
     item.polarities = wikiaItem.polarities
     item.sex = wikiaItem.sex
     item.sprint = wikiaItem.sprint
-    item.vaulted = wikiaItem.vaulted
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
   }
