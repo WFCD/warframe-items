@@ -648,7 +648,6 @@ class Parser {
     item.polarities = wikiaItem.polarities
     item.sex = wikiaItem.sex
     item.sprint = wikiaItem.sprint
-    item.vaulted = wikiaItem.vaulted
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
   }
@@ -673,7 +672,6 @@ class Parser {
     item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
     item.type = wikiaItem.type
-    item.vaulted = wikiaItem.vaulted
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
 
@@ -715,6 +713,9 @@ class Parser {
     }
     if (target.EstimatedVaultedDate) {
       item.estimatedVaultDate = target.EstimatedVaultedDate
+    }
+    if (target.Vaulted) {
+      item.vaulted = target.Vaulted
     }
   }
 
