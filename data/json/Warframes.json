@@ -4431,7 +4431,7 @@
       },
       {
         "name": "Mend & Maim",
-        "description": "In Night-Form, allies are healed with each nearby enemy killed. In Day-Form, nearby enemies are bled and then subjected to a wave of slashing force."
+        "description": "In Night-Form, allies' Shields are replenished with each nearby enemy killed. In Day-Form, enemies are inflicted with Bleed Status Effect. Deactivate while in Night-Form to restore Health and Shields for Equinox and allies. Deactivate while in Day-Form to cast a wave of slashing force."
       }
     ],
     "buildPrice": 25000,
@@ -8094,7 +8094,7 @@
       },
       {
         "name": "Mend & Maim",
-        "description": "In Night-Form, allies are healed with each nearby enemy killed. In Day-Form, nearby enemies are bled and then subjected to a wave of slashing force."
+        "description": "In Night-Form, allies' Shields are replenished with each nearby enemy killed. In Day-Form, enemies are inflicted with Bleed Status Effect. Deactivate while in Night-Form to restore Health and Shields for Equinox and allies. Deactivate while in Day-Form to cast a wave of slashing force."
       }
     ],
     "buildPrice": 25000,
@@ -10651,6 +10651,326 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Garuda"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Runner/Runner",
+    "name": "Gauss",
+    "description": "Never stop moving. Gauss' battery is charged by movement, powering his devastating kinetic abilities. They can't kill what they can't hit.",
+    "health": 100,
+    "shield": 150,
+    "armor": 150,
+    "stamina": 3,
+    "power": 150,
+    "masteryReq": 0,
+    "sprintSpeed": 1.4,
+    "passiveDescription": "Moving generates an electrical current that fills Gauss' battery. Shields recharge up to |SPEED|% faster while the Recharge Delay is up to |DELAY|% shorter, based on the battery level.",
+    "abilities": [
+      {
+        "name": "Mach Rush",
+        "description": "Burst into a hyper-sprint bowling over enemies and charging the battery. Crashing into solid objects generates a powerful shockwave. Hold to rush continuously."
+      },
+      {
+        "name": "Kinetic Plating",
+        "description": "Generate armor plating that converts a portion of absorbed Kinetic Damage (Physical, <DT_FIRE>Heat, <DT_FREEZE>Cold, and <DT_EXPLOSION>Blast) into Energy. Also protects Gauss from being staggered or knocked down. Damage Resistance is relative to the battery level."
+      },
+      {
+        "name": "Thermal Sunder",
+        "description": "Siphon kinetic energy from the area, charging the battery and inflicting <DT_FREEZE>Cold Status on nearby enemies. Hold reverses the process, draining the battery and inflicting <DT_FIRE>Heat Status on nearby enemies."
+      },
+      {
+        "name": "Redline",
+        "description": "Push Gauss' battery beyond the redline, supercharging his Abilities and setting Fire Rate, Attack Speed, Reload Speed, and Holster Rate into overdrive. When past the redline, bolts of arcing electricity dance periodically from Gauss, exploding en masse when the ability is deactivated."
+      }
+    ],
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GaussBlueprint",
+        "name": "Blueprint",
+        "description": "Never stop moving. Gauss' battery is charged by movement, powering his devastating kinetic abilities. They can't kill what they can't hit.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GaussChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Gauss Warframe.",
+        "itemCount": 1,
+        "imageName": "chassis.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GaussHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Gauss Warframe.",
+        "itemCount": 1,
+        "imageName": "neuroptics.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 3,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Kelpie",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GaussSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Gauss Warframe.",
+        "itemCount": 1,
+        "imageName": "systems.png",
+        "tradable": false
+      }
+    ],
+    "type": "Warframe",
+    "imageName": "gauss.png",
+    "category": "Warframes",
+    "tradable": false,
+    "aura": "naramon",
+    "color": 4009772,
+    "introduced": "25.7",
+    "polarities": [ "madurai", "vazarin" ],
+    "sex": "Male",
+    "sprint": 1.4,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/7f/AtlasNewLook.png/revision/latest?cb=20151002032553",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Gauss"
+  },
+  {
     "uniqueName": "/Lotus/Powersuits/Priest/Priest",
     "name": "Harrow",
     "description": "Always prepared to sacrifice. This monastic Warframe uses the Void to bolster allies' defenses and amplify their lethality.",
@@ -12643,7 +12963,7 @@
       },
       {
         "name": "Navigator",
-        "description": "Assume control of a projectile and guide it to the target."
+        "description": "Assume control of any projectile launched by Ivara and guide it to the target."
       },
       {
         "name": "Prowl",
@@ -19818,7 +20138,7 @@
       },
       {
         "name": "Parasitic Link",
-        "description": "Bind to a target with a parasitic link. For allies, both the host and Nidus deal increased damage. Linked enemies take the damage inflicted on Nidus."
+        "description": "Bind to a target with parasitic link. When cast on an ally, both the host and Nidus have their Ability Strength increased. Linked enemies take some of the damage inflicted on Nidus."
       },
       {
         "name": "Ravenous",
