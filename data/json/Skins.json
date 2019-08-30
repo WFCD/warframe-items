@@ -1,5 +1,14 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/ArloHealingLamp",
+    "name": "[Ph] Arlo Healing Lamp Deco",
+    "description": "[PH] Description",
+    "type": "Ship Decoration",
+    "imageName": "ph-arlo-healing-lamp-deco.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Lotus/LotusHelmet",
     "name": "/Lotus/Language/Items/Lotusdefaulthelmet",
     "description": "/Lotus/Language/Items/LotusDefaultHelmetDesc",
@@ -796,6 +805,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SapientCape",
+    "name": "Altra Syandana",
+    "description": "Found deep in the rubble at Altra, this Syandana is thought to have been worn by Gauss on the day he broke through enemy lines, decisively ending that bloody siege.",
+    "type": "Skin",
+    "imageName": "altra-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Colors/KubrowPetColorVibrantB",
     "name": "Ambulas Black",
     "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
@@ -918,6 +936,15 @@
     "description": "A syandana for your Warframe, designed by led2012.<UGC> TennoGen",
     "type": "Skin",
     "imageName": "aquiros-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/ArbitersRewardStatue",
+    "name": "Arbitration Statue",
+    "description": "Adorn your Orbiter with this decoration representing the Arbiter’s search for truth, discipline, and practice.",
+    "type": "Ship Decoration",
+    "imageName": "arbitration-statue.png",
     "category": "Skins",
     "tradable": false
   },
@@ -7023,615 +7050,6 @@
     "tradable": false
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Skins/Mag/MagHelmetAltB",
-    "name": "Arcane Gauss Helmet",
-    "description": "This helmet is worn by Mag, and adds Max Energy, with a reduction to Speed.",
-    "itemCount": 1,
-    "parents": [ "Mag Gauss Helmet" ],
-    "buildPrice": 20000,
-    "buildTime": 43200,
-    "skipBuildTimePrice": 25,
-    "buildQuantity": 1,
-    "consumeOnBuild": true,
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
-        "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
-        "itemCount": 350,
-        "imageName": "alloy-plate.png",
-        "tradable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/Helmets/V2MagAltHelmetBlueprint",
-        "name": "Blueprint",
-        "description": "This helmet is worn by Mag, and adds Max Energy, with a reduction to Speed.",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
-        "name": "Neurodes",
-        "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Orokin Derelicts.",
-        "itemCount": 2,
-        "imageName": "neurodes.png",
-        "tradable": false,
-        "drops": [
-          {
-            "location": "Void - Marduk",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.2529,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Void - Stribog",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1888,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Eris - Naeglar",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Viver",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Psoro",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Lepis",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Eris - Candiru",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1549,
-            "rotation": "C"
-          },
-          {
-            "location": "Derelict - Orokin",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1518,
-            "rotation": "Sabotage"
-          },
-          {
-            "location": "Saturn - Calypso",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Venus - Ishtar",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Mercury - Terminus",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Earth - Cervantes",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Mars - Gradivus",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Jupiter - Adrastea",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Jupiter - Carpo",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Saturn - Pallene",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Ceres - Ker",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Ceres - Thon",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Mercury - Neruda",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Sedna - Phithale",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Uranus - Portia",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Pluto - Cypress",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Pluto - Charon",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Sedna - Kelpie",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Neptune - Thalassa",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Neptune - Halimede",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Level 40 - 60 Orb Vallis Bounty",
-            "type": "Solaris Bounty Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.125
-          },
-          {
-            "location": "Earth - Cervantes",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1218,
-            "rotation": "B"
-          },
-          {
-            "location": "Lua - Plato",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1082,
-            "rotation": "C"
-          },
-          {
-            "location": "Kuva - Fortress",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1079,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Level 40 - 60 Orb Vallis Bounty",
-            "type": "Solaris Bounty Rewards",
-            "rarity": "Rare",
-            "chance": 0.0833
-          },
-          {
-            "location": "Level 40 - 60 Orb Vallis Bounty",
-            "type": "Solaris Bounty Rewards",
-            "rarity": "Rare",
-            "chance": 0.0714
-          },
-          {
-            "location": "Saturn - Lunaro",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Lunaro",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Annihilation",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Annihilation",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "B"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Team",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Neptune - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "Annihilation"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "Capture"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "Capture"
-          },
-          {
-            "location": "Saturn - Team",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
-        "name": "Orokin Cell",
-        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
-        "itemCount": 1,
-        "imageName": "orokin-cell.png",
-        "tradable": false,
-        "drops": [
-          {
-            "location": "Derelict - Orokin",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1936,
-            "rotation": "Sabotage"
-          },
-          {
-            "location": "Jupiter - Adrastea",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Saturn - Calypso",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Jupiter - Carpo",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Saturn - Pallene",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Ceres - Ker",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Ceres - Thon",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
-            "rotation": "C"
-          },
-          {
-            "location": "Uranus - Portia",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Sedna - Kelpie",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Neptune - Thalassa",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Neptune - Halimede",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Pluto - Charon",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Pluto - Cypress",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Sedna - Phithale",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1258,
-            "rotation": "C"
-          },
-          {
-            "location": "Level 40 - 60 Orb Vallis Bounty",
-            "type": "Solaris Bounty Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.125
-          },
-          {
-            "location": "Lua - Plato",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1082,
-            "rotation": "C"
-          },
-          {
-            "location": "Kuva - Fortress",
-            "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1079,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Level 40 - 60 Orb Vallis Bounty",
-            "type": "Solaris Bounty Rewards",
-            "rarity": "Rare",
-            "chance": 0.0833
-          },
-          {
-            "location": "Level 40 - 60 Orb Vallis Bounty",
-            "type": "Solaris Bounty Rewards",
-            "rarity": "Rare",
-            "chance": 0.0714
-          },
-          {
-            "location": "Saturn - Annihilation",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "Annihilation"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "Capture"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "Capture"
-          },
-          {
-            "location": "Saturn - Lunaro",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Lunaro",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Neptune - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Annihilation",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "B"
-          },
-          {
-            "location": "Saturn - Team",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Team",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          },
-          {
-            "location": "Saturn - Cephalon",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "rewards"
-          },
-          {
-            "location": "Saturn - Variant",
-            "type": "Mission Rewards",
-            "rarity": "Legendary",
-            "chance": 0.0025,
-            "rotation": "(Extra)"
-          }
-        ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
-        "name": "Salvage",
-        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
-        "itemCount": 500,
-        "imageName": "salvage.png",
-        "tradable": false
-      }
-    ],
-    "type": "Skin",
-    "imageName": "arcane-gauss-helmet.png",
-    "category": "Skins",
-    "tradable": false
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Skins/Asp/AspAltHelmet",
     "name": "Arcane Hemlock Helmet",
     "description": "This helmet is worn by Saryn, and increases Movement Speed, with a reduction to Health.",
@@ -8846,6 +8264,615 @@
     ],
     "type": "Skin",
     "imageName": "arcane-locust-helmet.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Mag/MagHelmetAltB",
+    "name": "Arcane Mag Gauss Helmet",
+    "description": "This helmet is worn by Mag, and adds Max Energy, with a reduction to Speed.",
+    "itemCount": 1,
+    "parents": [ "Mag Gauss Helmet" ],
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 350,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Helmets/V2MagAltHelmetBlueprint",
+        "name": "Blueprint",
+        "description": "This helmet is worn by Mag, and adds Max Energy, with a reduction to Speed.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Orokin Derelicts.",
+        "itemCount": 2,
+        "imageName": "neurodes.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Void - Marduk",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2529,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Void - Stribog",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1888,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Eris - Naeglar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Viver",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Psoro",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Lepis",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Candiru",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Kelpie",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 1,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Kelpie",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 500,
+        "imageName": "salvage.png",
+        "tradable": false
+      }
+    ],
+    "type": "Skin",
+    "imageName": "arcane-mag-gauss-helmet.png",
     "category": "Skins",
     "tradable": false
   },
@@ -19895,6 +19922,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeScarfF",
+    "name": "Capella Prime Syandana",
+    "description": "This graceful cape is the signature Syandana of Banshee Prime.",
+    "type": "Skin",
+    "imageName": "capella-prime-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Tails/CapsuleTail",
     "name": "Capsule Sentinel Tail",
     "description": "A stylish tail attachment for your sentinel pet.",
@@ -21755,6 +21791,15 @@
     "description": "An emblem awarded to all those who helped destroy the Grineer toxin during the Cicero Crisis.",
     "type": "Skin",
     "imageName": "cicero-crisis-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeScarfV",
+    "name": "Citadella Prime Syandana",
+    "description": "Evoking fortress designs of the ancient past, this is Vauban Prime's signature Syandana.",
+    "type": "Skin",
+    "imageName": "citadella-prime-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -24524,6 +24569,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropMandolin",
+    "name": "Dax'S Shawzin",
+    "description": "This antique Orokin string instrument once belonged to a great Dax. The ancient ballad, 'Smiles from Juran,' is one of the few known examples of music composed for this instrument. Play this instrument by equipping and using the included Shawzin Emote. ",
+    "type": "Ship Decoration",
+    "imageName": "dax's-shawzin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/StoreItems/SuitCustomizations/ColourPickerDaybreakItemA",
     "name": "Daybreak",
     "description": "Rise up with these additional color options for Warframe customization.",
@@ -27172,6 +27226,24 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/PrimeSetTwo/PrimeSetTwoLegArmor",
+    "name": "Edo Prime Knee Plates",
+    "description": "This golden decorative armor honors master warriors long since forgotten.",
+    "type": "Skin",
+    "imageName": "edo-prime-knee-plates.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/PrimeSetTwo/PrimeSetTwoArmArmor",
+    "name": "Edo Prime Shoulder Plates",
+    "description": "This golden decorative armor honors master warriors long since forgotten.",
+    "type": "Skin",
+    "imageName": "edo-prime-shoulder-plates.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Effects/FootstepsEidolon",
     "name": "Eidolon Ephemera",
     "description": "Move as the Eidolons and burn the ground coldly with footsteps of shimmering Void energy.",
@@ -29617,6 +29689,33 @@
     "description": "Show the enemy how much you care with the adorable Eros Arrow skin. Works with all bows.",
     "type": "Skin",
     "imageName": "eros-arrow-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/HarrowDeluxe/HarrowDeluxeCArmor",
+    "name": "Etheria Chest Plate",
+    "description": "As melancholy and beautiful as the glow of a distant sun, Etheria Armor is the suitable accoutrement for a traveler between worlds who is resident of none. A signature set of armor for Harrow Reliquary.",
+    "type": "Skin",
+    "imageName": "etheria-chest-plate.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/HarrowDeluxe/HarrowDeluxeLArmor",
+    "name": "Etheria Leg Plates",
+    "description": "As melancholy and beautiful as the glow of a distant sun, Etheria Armor is the suitable accoutrement for a traveler between worlds who is resident of none. A signature set of armor for Harrow Reliquary.",
+    "type": "Skin",
+    "imageName": "etheria-leg-plates.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/HarrowDeluxe/HarrowDeluxeAArmor",
+    "name": "Etheria Shoulder Plates",
+    "description": "As melancholy and beautiful as the glow of a distant sun, Etheria Armor is the suitable accoutrement for a traveler between worlds who is resident of none. A signature set of armor for Harrow Reliquary.",
+    "type": "Skin",
+    "imageName": "etheria-shoulder-plates.png",
     "category": "Skins",
     "tradable": false
   },
@@ -33950,6 +34049,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Runner/RunnerAltHelmet",
+    "name": "Gauss Mag Helmet",
+    "description": "The signature helmet of Gauss.",
+    "type": "Skin",
+    "imageName": "gauss-mag-helmet.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstArtisanBulbs",
     "name": "Gilded Illumination",
     "description": "Illumination, crafted by Ostron glassworkers, fashioned and gilded to aesthetic perfection.",
@@ -35252,6 +35360,24 @@
     "description": "A helmet for the Harrow Warframe, designed by led2012.<UGC> TennoGen",
     "type": "Skin",
     "imageName": "harrow-hieropha-helmet.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Priest/HarrowDeluxeHelmet",
+    "name": "Harrow Reliquary Helmet",
+    "description": "Harrow Reliquary's signature helmet.",
+    "type": "Skin",
+    "imageName": "harrow-reliquary-helmet.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Priest/HarrowDeluxeSuit",
+    "name": "Harrow Reliquary Skin",
+    "description": "Harrow's twilight heart pulses within the sacred casket of a body reinvented. A shattered being bound by void and will.",
+    "type": "Skin",
+    "imageName": "harrow-reliquary-skin.png",
     "category": "Skins",
     "tradable": false
   },
@@ -40595,6 +40721,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Kubrows/Armor/PrimeKubrowArmorA",
+    "name": "Kavasa Prime Kubrow Armor",
+    "description": "Decorative Prime armor for a Kubrow.",
+    "type": "Skin",
+    "imageName": "kavasa-prime-kubrow-armor.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Kubrows/Collars/PrimeKubrowCollarA",
     "name": "Kavasa Prime Kubrow Collar",
     "description": "Records the genetic memory and DNA sequence of a Kubrow, allowing it to be reconstructed in the Incubator.",
@@ -45558,10 +45693,10 @@
     "components": [
       {
         "uniqueName": "/Lotus/Upgrades/Skins/Mag/MagHelmetAltB",
-        "name": "Arcane Gauss Helmet",
+        "name": "Arcane Mag Gauss Helmet",
         "description": "This helmet is worn by Mag, and adds Max Energy, with a reduction to Speed.",
         "itemCount": 1,
-        "imageName": "arcane-gauss-helmet.png",
+        "imageName": "arcane-mag-gauss-helmet.png",
         "tradable": false
       },
       {
@@ -48274,6 +48409,15 @@
     ],
     "type": "Ship Decoration",
     "imageName": "mirewinder-trophy.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeScarf",
+    "name": "Misa Prime Syandana",
+    "description": "Discovered in the vaults of a drifting derelict, this Syandana was worn by Temple Guardians before the fall of the Orokin Empire",
+    "type": "Skin",
+    "imageName": "misa-prime-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -53039,6 +53183,15 @@
     ],
     "type": "Ship Decoration",
     "imageName": "norg-trophy.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/NoruPrimeScarf",
+    "name": "Noru Prime Syandana",
+    "description": "A relic from another time, this syandana is a highly ornamental and prized garment.",
+    "type": "Skin",
+    "imageName": "noru-prime-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -60155,6 +60308,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeFlameScarf",
+    "name": "Pyra Prime Syandana",
+    "description": "A ceremonial version of the Pyra that drapes the entire back in a cape of flames.",
+    "type": "Skin",
+    "imageName": "pyra-prime-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/FireMeleeDangle",
     "name": "Pyra Sugatra",
     "description": "During the height of the Old War, Tenno raiders used these flaming sugatras to intimidate and distract enemies.",
@@ -60578,6 +60740,15 @@
     "description": "An ornate skin forged by the Tekelu School of weaponsmiths.",
     "type": "Skin",
     "imageName": "redeemer-tekelu-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Weapons/LongGuns/HarrowDeluxeSpearGun",
+    "name": "Renuntio Speargun Skin",
+    "description": "Renounce heresy with this signature speargun skin for Harrow Reliquary.",
+    "type": "Skin",
+    "imageName": "renuntio-speargun-skin.png",
     "category": "Skins",
     "tradable": false
   },
@@ -63525,15 +63696,6 @@
     "tradable": false
   },
   {
-    "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropMandolin",
-    "name": "Shawzin",
-    "description": "This antique Orokin string instrument once belonged to a great Dax. The ancient ballad, 'Smiles from Juran,' is one of the few known examples of music composed for this instrument.",
-    "type": "Ship Decoration",
-    "imageName": "shawzin.png",
-    "category": "Skins",
-    "tradable": false
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Skins/Effects/FootstepsElectrical",
     "name": "Shocking Step Ephemera",
     "description": "Your Warframe leaves crackling footprints in its wake.",
@@ -65842,6 +66004,42 @@
     "description": "Wukong Samadhi's signature syandana.",
     "type": "Skin",
     "imageName": "subhuti-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeOberonCape",
+    "name": "Sukira Prime Syandana",
+    "description": "This long, powerful ribbon symbolizes the Tenno path toward balance.",
+    "type": "Skin",
+    "imageName": "sukira-prime-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Masks/OrokinMask",
+    "name": "Summus Prime Sentinel Mask",
+    "description": "A mask attachment for your sentinel pet.",
+    "type": "Skin",
+    "imageName": "summus-prime-sentinel-mask.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Tails/OrokinTail",
+    "name": "Summus Prime Sentinel Tail",
+    "description": "A stylish tail attachment for your sentinel pet.",
+    "type": "Skin",
+    "imageName": "summus-prime-sentinel-tail.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Wings/OrokinWings",
+    "name": "Summus Prime Sentinel Wings",
+    "description": "A pair of wings for your sentinel pet.",
+    "type": "Skin",
+    "imageName": "summus-prime-sentinel-wings.png",
     "category": "Skins",
     "tradable": false
   },
@@ -69526,11 +69724,47 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Masks/PrimeSentinelMask",
+    "name": "Unda Prime Sentinel Mask",
+    "description": "A mask attachment for your sentinel pet.",
+    "type": "Skin",
+    "imageName": "unda-prime-sentinel-mask.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Tails/PrimeSentinelTail",
+    "name": "Unda Prime Sentinel Tail",
+    "description": "A stylish tail attachment for your sentinel pet.",
+    "type": "Skin",
+    "imageName": "unda-prime-sentinel-tail.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Wings/PrimeSentinelWings",
+    "name": "Unda Prime Sentinel Wings",
+    "description": "A pair of wings for your sentinel pet.",
+    "type": "Skin",
+    "imageName": "unda-prime-sentinel-wings.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Patterns/FeralKubrowPattern",
     "name": "Underbrush Kubrow Pattern",
     "description": "First silence, then the snapping of a twig, then death.",
     "type": "Misc",
     "imageName": "underbrush-kubrow-pattern.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/UruPrimeScarf",
+    "name": "Uru Prime Syandana",
+    "description": "Let these massive segments of interlinked gold and silver ripple down a Warframe’s back.",
+    "type": "Skin",
+    "imageName": "uru-prime-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -73094,6 +73328,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOldLocker",
+    "name": "Vintage Corpus Locker",
+    "description": "This exquisitely designed decoration adds luxury and class to any Orbiter.",
+    "type": "Ship Decoration",
+    "imageName": "vintage-corpus-locker.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Camo/ViperCamo",
     "name": "Viper Desert-Camo Skin",
     "description": "Desert camouflage skin for the Viper.",
@@ -75061,6 +75304,15 @@
     "description": "A Kuva themed skin for your landing craft",
     "type": "Skin",
     "imageName": "xiphos-kuva-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/YamakoPrimeScarf",
+    "name": "Yamako Prime Syandana",
+    "description": "An ancient and golden syandana, worn only by those chosen to lead the Orokin High Court.",
+    "type": "Skin",
+    "imageName": "yamako-prime-syandana.png",
     "category": "Skins",
     "tradable": false
   },
