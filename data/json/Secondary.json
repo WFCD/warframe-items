@@ -16048,8 +16048,8 @@
     "secondary": {
       "name": "3-Rocket Barrage Explosion",
       "pellet": {
-        "name": "Rocket",
-        "count": 3
+        "count": 3,
+        "name": "Rocket"
       },
       "blast": 750,
       "damage": "750.0 blast"
@@ -49155,6 +49155,14 @@
       "crit_chance": 2,
       "crit_mult": 2,
       "status_chance": 0.3,
+      "pellet": {
+        "count": 10
+      },
+      "falloff": {
+        "start": 6,
+        "end": 12,
+        "reduction": 0.9886
+      },
       "impact": 44,
       "slash": 660,
       "puncture": 176
@@ -49848,8 +49856,8 @@
       "shot_type": "Projectile",
       "shot_speed": null,
       "pellet": {
-        "name": "Shuriken",
-        "count": 3
+        "count": 3,
+        "name": "Shuriken"
       },
       "slash": 138.6,
       "puncture": 92.4
@@ -67285,8 +67293,8 @@
     "secondary": {
       "name": "3-Rocket Barrage Explosion",
       "pellet": {
-        "name": "Rocket",
-        "count": 3
+        "count": 3,
+        "name": "Rocket"
       },
       "blast": 750,
       "damage": "750.0 blast"
