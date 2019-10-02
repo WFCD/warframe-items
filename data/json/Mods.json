@@ -599,7 +599,7 @@
     "rarity": "Rare",
     "baseDrain": -2,
     "fusionLimit": 5,
-    "description": "Reduces damage by 4% when Airborne.,+1 Aim Glide/Latch Time",
+    "description": "Reduces damage by 4% when Airborne.,+1s Aim Glide/Wall Latch Duration",
     "type": "Aura",
     "imageName": "aerodynamic.jpg",
     "category": "Mods",
@@ -1726,6 +1726,329 @@
         "chance": 0.0125
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusArchgunRandomModRare",
+    "name": "Archgun Riven Mod",
+    "polarity": "Universal",
+    "rarity": "Common",
+    "baseDrain": 64,
+    "fusionLimit": 0,
+    "upgradeEntries": [
+      {
+        "tag": "WeaponArmorPiercingDamageMod",
+        "prefixTag": "insi",
+        "suffixTag": "cak",
+        "upgradeValues": [
+          {
+            "value": 0.0099999998,
+            "locTag": "|val|% <DT_PUNCTURE>Puncture"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponCritChanceMod",
+        "prefixTag": "crita",
+        "suffixTag": "cron",
+        "upgradeValues": [
+          {
+            "value": 0.0111,
+            "locTag": "|val|% Critical Chance"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponCritDamageMod",
+        "prefixTag": "acri",
+        "suffixTag": "tis",
+        "upgradeValues": [
+          {
+            "value": 0.0088999998,
+            "locTag": "|val|% Critical Damage"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponElectricityDamageMod",
+        "prefixTag": "vexi",
+        "suffixTag": "tio",
+        "upgradeValues": [
+          {
+            "value": 0.0133,
+            "locTag": "|val|% <DT_ELECTRICITY>Electricity"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponFireDamageMod",
+        "prefixTag": "igni",
+        "suffixTag": "pha",
+        "upgradeValues": [
+          {
+            "value": 0.0133,
+            "locTag": "|val|% <DT_FIRE>Heat"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponFireRateMod",
+        "prefixTag": "croni",
+        "suffixTag": "dra",
+        "upgradeValues": [
+          {
+            "value": 0.00667,
+            "locTag": "|val|% Fire Rate (x2 for Bows)"
+          },
+          {
+            "value": 0.00667
+          }
+        ]
+      },
+      {
+        "tag": "WeaponFreezeDamageMod",
+        "prefixTag": "geli",
+        "suffixTag": "do",
+        "upgradeValues": [
+          {
+            "value": 0.0133,
+            "locTag": "|val|% <DT_FREEZE>Cold"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponImpactDamageMod",
+        "prefixTag": "magna",
+        "suffixTag": "ton",
+        "upgradeValues": [
+          {
+            "value": 0.0099999998,
+            "locTag": "|val|% <DT_IMPACT>Impact"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponProcTimeMod",
+        "prefixTag": "deci",
+        "suffixTag": "des",
+        "upgradeValues": [
+          {
+            "value": 0.01111,
+            "locTag": "|val|% Status Duration"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponSlashDamageMod",
+        "prefixTag": "sci",
+        "suffixTag": "sus",
+        "upgradeValues": [
+          {
+            "value": 0.0099999998,
+            "locTag": "|val|% <DT_SLASH>Slash"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponStunChanceMod",
+        "prefixTag": "hexa",
+        "suffixTag": "dex",
+        "upgradeValues": [
+          {
+            "value": 0.0066999998,
+            "locTag": "|val|% Status Chance"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponToxinDamageMod",
+        "prefixTag": "toxi",
+        "suffixTag": "tox",
+        "upgradeValues": [
+          {
+            "value": 0.0133,
+            "locTag": "|val|% <DT_POISON>Toxin"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponAmmoMaxMod",
+        "prefixTag": "ampi",
+        "suffixTag": "bin",
+        "upgradeValues": [
+          {
+            "value": 0.0111,
+            "locTag": "|val|% Ammo Maximum"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponClipMaxMod",
+        "prefixTag": "arma",
+        "suffixTag": "tin",
+        "upgradeValues": [
+          {
+            "value": 0.0066999998,
+            "locTag": "|val|% Magazine Capacity"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponDamageAmountMod",
+        "prefixTag": "visi",
+        "suffixTag": "ata",
+        "upgradeValues": [
+          {
+            "value": 0.0111,
+            "locTag": "|val|% Damage"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponFireIterationsMod",
+        "prefixTag": "sati",
+        "suffixTag": "can",
+        "upgradeValues": [
+          {
+            "value": 0.0066999998,
+            "locTag": "|val|% Multishot"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponPunctureDepthMod",
+        "prefixTag": "lexi",
+        "suffixTag": "nok",
+        "upgradeValues": [
+          {
+            "value": 0.029999999,
+            "locTag": "|val| Punch Through"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponRecoilReductionMod",
+        "prefixTag": "zeti",
+        "suffixTag": "mag",
+        "upgradeValues": [
+          {
+            "value": -0.0099999998,
+            "locTag": "|val|% Weapon Recoil"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponReloadSpeedMod",
+        "prefixTag": "feva",
+        "suffixTag": "tak",
+        "upgradeValues": [
+          {
+            "value": 0.0111,
+            "locTag": "|val|% Reload Speed"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponFactionDamageCorpus",
+        "prefixTag": "manti",
+        "suffixTag": "tron",
+        "upgradeValues": [
+          {
+            "value": 0.0049999999,
+            "locTag": "|val|% Damage to Corpus"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponFactionDamageGrineer",
+        "prefixTag": "argi",
+        "suffixTag": "con",
+        "upgradeValues": [
+          {
+            "value": 0.0049999999,
+            "locTag": "|val|% Damage to Grineer"
+          }
+        ]
+      },
+      {
+        "tag": "WeaponZoomFovMod",
+        "prefixTag": "hera",
+        "suffixTag": "lis",
+        "upgradeValues": [
+          {
+            "value": 0.006666,
+            "locTag": "|val|% Zoom"
+          }
+        ]
+      }
+    ],
+    "availableChallenges": [
+      {
+        "fullName": "/Lotus/Types/Challenges/RandomizedKill",
+        "description": "Kill |COUNT| Enemies",
+        "complications": [
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDamageTaken",
+            "description": "without taking damage"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
+            "description": "without dying or becoming downed"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
+            "description": "without getting afflicted by a Status Effect"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnAllyDowned",
+            "description": "without an ally becoming downed"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey",
+            "description": "with an Extinguished Dragon Key equipped"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey",
+            "description": "with a Bleeding Dragon Key equipped"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey",
+            "description": "with a Decaying Dragon Key equipped"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey",
+            "description": "with a Hobbled Dragon Key equipped"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores",
+            "description": "without using health consumables"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnGearShieldRestores",
+            "description": "without using shield consumables"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnGearAmmoRestores",
+            "description": "without using ammo consumables"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores",
+            "description": "without using energy consumables"
+          },
+          {
+            "fullName": "/Lotus/Types/Challenges/Complications/ResetOnNewDay",
+            "description": "in one day"
+          }
+        ]
+      }
+    ],
+    "type": "Misc",
+    "imageName": "archgun-riven-mod.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPPolearmStanceOne",
@@ -3263,7 +3586,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "+3% to Bullet Jump,+3% Aim Glide and Wall Latch,+10% <DT_IMPACT>Impact on Bullet Jump",
+    "description": "+3% to Bullet Jump,+3% Aim Glide/Wall Latch Duration,+10% <DT_IMPACT>Impact on Bullet Jump",
     "type": "Warframe Mod",
     "imageName": "battering-maneuver.jpg",
     "category": "Mods",
@@ -13389,7 +13712,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 10,
-    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide and Wall Latch,+25% <DT_FIRE>Heat on Bullet Jump",
+    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide/Wall Latch Duration,+25% <DT_FIRE>Heat on Bullet Jump",
     "type": "Warframe Mod",
     "imageName": "firewalker.jpg",
     "category": "Mods",
@@ -20482,7 +20805,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 10,
-    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide and Wall Latch,+25% <DT_FREEZE>Cold on Bullet Jump",
+    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide/Wall Latch Duration,+25% <DT_FREEZE>Cold on Bullet Jump",
     "type": "Warframe Mod",
     "imageName": "ice-spring.jpg",
     "category": "Mods",
@@ -33861,7 +34184,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 10,
-    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide and Wall Latch,+25% <DT_ELECTRICITY>Electricity on Bullet Jump",
+    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide/Wall Latch Duration,+25% <DT_ELECTRICITY>Electricity on Bullet Jump",
     "type": "Warframe Mod",
     "imageName": "lightning-dash.jpg",
     "category": "Mods",
@@ -48072,7 +48395,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
-    "description": "+5% to Bullet Jump,+5% Aim Glide and Wall Latch",
+    "description": "+5% to Bullet Jump,+5% Aim Glide/Wall Latch Duration",
     "type": "Warframe Mod",
     "imageName": "mobilize.jpg",
     "category": "Mods",
@@ -51380,7 +51703,7 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 5,
-    "description": "+15% Aim Glide and Wall Latch",
+    "description": "+15% Aim Glide/Wall Latch Duration",
     "type": "Warframe Mod",
     "imageName": "patagium.jpg",
     "category": "Mods",
@@ -51886,7 +52209,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "+3% to Bullet Jump,+3% Aim Glide and Wall Latch,+10% <DT_PUNCTURE>Puncture on Bullet Jump",
+    "description": "+3% to Bullet Jump,+3% Aim Glide/Wall Latch Duration,+10% <DT_PUNCTURE>Puncture on Bullet Jump",
     "type": "Warframe Mod",
     "imageName": "piercing-step.jpg",
     "category": "Mods",
@@ -52517,6 +52840,26 @@
         "type": "Enemy Mod Tables",
         "rarity": "Uncommon",
         "chance": 0.25
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusPistolRandomModRare",
+    "name": "Pistol Riven Mod",
+    "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 8,
+    "type": "Secondary",
+    "imageName": "pistol-riven-mod.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Pistol Riven Mod Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.0761
       }
     ]
   },
@@ -63507,26 +63850,6 @@
     ]
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusPistolRandomModRare",
-    "name": "Pistol Riven Mod",
-    "polarity": "Universal",
-    "rarity": "Rare",
-    "baseDrain": 0,
-    "fusionLimit": 8,
-    "type": "Secondary",
-    "imageName": "pistol-riven-mod.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Pistol Riven Mod Rare",
-        "type": "Sortie Rewards",
-        "rarity": "Rare",
-        "chance": 0.0761
-      }
-    ]
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Mods/Aura/PlayerPistolAmmoAuraMod",
     "name": "Pistol Scavenger",
     "polarity": "Naramon",
@@ -70269,7 +70592,7 @@
     "rarity": "Uncommon",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "+3% to Bullet Jump,+3% Aim Glide and Wall Latch,+10% <DT_SLASH>Slash on Bullet Jump",
+    "description": "+3% to Bullet Jump,+3% Aim Glide/Wall Latch Duration,+10% <DT_SLASH>Slash on Bullet Jump",
     "type": "Warframe Mod",
     "imageName": "rending-turn.jpg",
     "category": "Mods",
@@ -86246,26 +86569,6 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare",
     "name": "Shotgun Riven Mod",
     "polarity": "Universal",
-    "rarity": "Rare",
-    "baseDrain": 0,
-    "fusionLimit": 8,
-    "type": "Primary",
-    "imageName": "shotgun-riven-mod.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Shotgun Riven Mod Rare",
-        "type": "Sortie Rewards",
-        "rarity": "Rare",
-        "chance": 0.013600000000000001
-      }
-    ]
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare",
-    "name": "Shotgun Riven Mod",
-    "polarity": "Universal",
     "rarity": "Common",
     "baseDrain": 64,
     "fusionLimit": 0,
@@ -96549,6 +96852,26 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare",
+    "name": "Shotgun Riven Mod",
+    "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 8,
+    "type": "Primary",
+    "imageName": "shotgun-riven-mod.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Shotgun Riven Mod Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.013600000000000001
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/WeaponStunChanceMod",
     "name": "Shotgun Savvy",
     "polarity": "Vazarin",
@@ -99922,7 +100245,7 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "description": "+3 Enemy Radar,+2% Aim Glide/Latch Time",
+    "description": "+3 Enemy Radar,+2% Aim Glide/Wall Latch Duration",
     "type": "Warframe",
     "imageName": "stealth-drift.jpg",
     "category": "Mods",
@@ -105023,7 +105346,7 @@
     "rarity": "Rare",
     "baseDrain": 2,
     "fusionLimit": 10,
-    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide and Wall Latch,+25% <DT_POISON>Toxin on Bullet Jump",
+    "description": "+2.2% to Bullet Jump,+2.2% Aim Glide/Wall Latch Duration,+25% <DT_POISON>Toxin on Bullet Jump",
     "type": "Warframe Mod",
     "imageName": "toxic-flight.jpg",
     "category": "Mods",
