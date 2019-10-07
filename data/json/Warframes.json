@@ -1357,6 +1357,438 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Atlas"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Brawler/AtlasPrime",
+    "name": "Atlas Prime",
+    "description": "In bygone ages, mountains were said to house warriors. In this age, the mountain has become the warrior.",
+    "health": 175,
+    "shield": 150,
+    "armor": 475,
+    "stamina": 3,
+    "power": 175,
+    "masteryReq": 0,
+    "sprintSpeed": 1,
+    "passiveDescription": "Becomes immune to Knockdown effects while on the ground.",
+    "abilities": [
+      {
+        "name": "Landslide",
+        "description": "Bash enemies with an explosive sliding punch, and repeat for a devastating combo. Petrified enemies take extra damage, and drop Rubble when destroyed. Rubble can heal Atlas and bolster his armor."
+      },
+      {
+        "name": "Tectonics",
+        "description": "Summon a rock-wall, activate again to send the rocks crashing toward the enemy."
+      },
+      {
+        "name": "Petrify",
+        "description": "Atlas' hardened gaze will fossilize foes, heal Rumblers, and create Petrified Bulwarks. When shattered, petrified enemies drop healing Rubble for Atlas."
+      },
+      {
+        "name": "Rumblers",
+        "description": "Summon two elemental stone brawlers to the melee. Summoning petrifies enemies in close proximity to Atlas. When finished, Rumblers collapse into a pile of healing Rubble."
+      }
+    ],
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "In bygone ages, mountains were said to house warriors. In this age, the mountain has become the warrior.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": true,
+        "ducats": 15,
+        "drops": [
+          {
+            "location": "Lith D1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith D1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith D1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith D1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Atlas Prime Warframe.",
+        "itemCount": 1,
+        "imageName": "prime-chassis.png",
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Meso E3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso E3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso E3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso E3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ],
+        "ducats": 45
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Atlas Prime Warframe.",
+        "itemCount": 1,
+        "imageName": "prime-neuroptics.png",
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Axi A6 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Axi A6 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Axi A6 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Axi A6 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          }
+        ],
+        "ducats": 100
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 5,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Atlas Prime Warframe.",
+        "itemCount": 1,
+        "imageName": "prime-systems.png",
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Neo A3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Neo A3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Neo A3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Neo A3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ],
+        "ducats": 45
+      }
+    ],
+    "type": "Warframe",
+    "imageName": "atlas-prime.png",
+    "category": "Warframes",
+    "tradable": true,
+    "aura": "madurai",
+    "conclave": true,
+    "color": 1840657,
+    "introduced": "25.8",
+    "polarities": [ "naramon", "vazarin", "madurai", "madurai" ],
+    "sex": "Male",
+    "sprint": 1,
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/5/50/AtlasPrime.png/revision/latest?cb=20191002055416",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Atlas_Prime",
+    "releaseDate": "2019 10 01",
+    "vaultDate": "n/a",
+    "estimatedVaultDate": "2021 07 06"
+  },
+  {
     "uniqueName": "/Lotus/Powersuits/Banshee/Banshee",
     "name": "Banshee",
     "description": "Using sonic attacks and acoustic target detection, Banshee is well suited for stealth gameplay and is capable of filling both attack and support roles.",
@@ -2928,6 +3360,30 @@
         "ducats": 15,
         "drops": [
           {
+            "location": "Axi A6 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi A6 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi A6 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi A6 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
             "location": "Axi D1 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -3053,6 +3509,30 @@
           },
           {
             "location": "Axi R2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso D4 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso D4 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso D4 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso D4 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
@@ -3504,7 +3984,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Chroma_Prime",
     "releaseDate": "2018 09 25",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 07 21"
+    "estimatedVaultDate": "2020 07 03"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Ember/Ember",
@@ -8281,6 +8761,30 @@
             "chance": 0.2
           },
           {
+            "location": "Axi T3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Axi T3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Axi T3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Axi T3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
             "location": "Meso A2 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -8334,6 +8838,30 @@
           },
           {
             "location": "Axi P1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Lith L2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Lith L2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Lith L2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Lith L2 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
@@ -8417,6 +8945,30 @@
           },
           {
             "location": "Meso M3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo A3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Neo A3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Neo A3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Neo A3 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
@@ -8693,6 +9245,30 @@
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.1
+          },
+          {
+            "location": "Meso E3 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Meso E3 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Meso E3 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Meso E3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
           }
         ],
         "ducats": 100
@@ -8703,6 +9279,7 @@
     "category": "Warframes",
     "tradable": true,
     "aura": "naramon",
+    "conclave": true,
     "color": 0,
     "introduced": "24.5.8",
     "polarities": [ "vazarin", "vazarin", "madurai", "madurai" ],
@@ -8711,7 +9288,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Equinox_Prime",
     "releaseDate": "2019 03 27",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2021 01 27"
+    "estimatedVaultDate": "2021 01 03"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Excalibur/Excalibur",
@@ -10849,8 +11426,8 @@
           {
             "location": "Sedna - Kelpie",
             "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1,
+            "rarity": "Rare",
+            "chance": 0.08,
             "rotation": "C"
           }
         ]
@@ -10866,8 +11443,8 @@
           {
             "location": "Sedna - Kelpie",
             "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1,
+            "rarity": "Rare",
+            "chance": 0.08,
             "rotation": "C"
           }
         ]
@@ -11121,8 +11698,8 @@
           {
             "location": "Sedna - Kelpie",
             "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.1,
+            "rarity": "Rare",
+            "chance": 0.08,
             "rotation": "C"
           }
         ]
@@ -11133,6 +11710,7 @@
     "category": "Warframes",
     "tradable": false,
     "aura": "naramon",
+    "conclave": false,
     "color": 5662072,
     "introduced": "25.7",
     "polarities": [ "madurai", "vazarin" ],
@@ -14575,6 +15153,30 @@
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.1
+          },
+          {
+            "location": "Lith L2 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Lith L2 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Lith L2 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Lith L2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
           }
         ],
         "ducats": 100
@@ -14826,6 +15428,30 @@
         "tradable": true,
         "drops": [
           {
+            "location": "Axi T3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi T3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi T3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi T3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
             "location": "Lith B3 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -14964,7 +15590,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Limbo_Prime",
     "releaseDate": "2018 06 19",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 04 17"
+    "estimatedVaultDate": "2020 04 02"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Loki/Loki",
@@ -17243,6 +17869,30 @@
         "ducats": 45,
         "drops": [
           {
+            "location": "Lith D1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Lith D1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Lith D1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Lith D1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
             "location": "Neo Z2 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -17344,6 +17994,30 @@
           },
           {
             "location": "Axi M1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo A3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo A3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo A3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo A3 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
@@ -17723,7 +18397,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Mesa_Prime",
     "releaseDate": "2018 12 12",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 10 24"
+    "estimatedVaultDate": "2020 10 03"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Harlequin/Harlequin",
@@ -18859,8 +19533,9 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/ff/MiragePrime.png/revision/latest?cb=20171220211538",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Mirage_Prime",
     "releaseDate": "2017 12 12",
-    "vaultDate": "n/a",
-    "estimatedVaultDate": "2019 10 10"
+    "vaultDate": "2019 10 01",
+    "estimatedVaultDate": "2019 10 01",
+    "vaulted": true
   },
   {
     "uniqueName": "/Lotus/Powersuits/Necro/Necro",
@@ -31418,7 +32093,7 @@
     "category": "Warframes",
     "tradable": false,
     "aura": "madurai",
-    "conclave": true,
+    "conclave": false,
     "color": 3817802,
     "introduced": "17.12",
     "polarities": [ "naramon", "vazarin" ],
@@ -31495,6 +32170,30 @@
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.1
+          },
+          {
+            "location": "Meso W1 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Meso W1 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Meso W1 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Meso W1 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
           }
         ]
       },
@@ -31506,6 +32205,30 @@
         "imageName": "prime-chassis.png",
         "tradable": true,
         "drops": [
+          {
+            "location": "Lith K3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Lith K3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Lith K3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Lith K3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
           {
             "location": "Neo S12 Intact",
             "type": "Relics",
@@ -31561,6 +32284,30 @@
           },
           {
             "location": "Axi G2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo T2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Neo T2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo T2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo T2 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
@@ -31815,6 +32562,30 @@
         "tradable": true,
         "drops": [
           {
+            "location": "Axi R3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Axi R3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Axi R3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Axi R3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
             "location": "Meso K2 Intact",
             "type": "Relics",
             "rarity": "Uncommon",
@@ -31847,6 +32618,7 @@
     "category": "Warframes",
     "tradable": true,
     "aura": "madurai",
+    "conclave": false,
     "color": 0,
     "introduced": "25.3.0",
     "polarities": [ "naramon", "vazarin", "madurai" ],
@@ -31855,7 +32627,7 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Wukong_Prime",
     "releaseDate": "2019 07 07",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2021 05 02"
+    "estimatedVaultDate": "2021 04 05"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Tengu/Tengu",
@@ -32294,6 +33066,30 @@
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.1
+          },
+          {
+            "location": "Neo Z4 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Neo Z4 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Neo Z4 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Neo Z4 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
           }
         ]
       },
@@ -32373,6 +33169,30 @@
           },
           {
             "location": "Meso A2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Meso W1 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Meso W1 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Meso W1 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Meso W1 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.2
@@ -32480,6 +33300,30 @@
           },
           {
             "location": "Axi O4 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Axi R3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          },
+          {
+            "location": "Axi R3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Axi R3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Axi R3 Radiant",
             "type": "Relics",
             "rarity": "Uncommon",
             "chance": 0.16670000000000001
@@ -32944,6 +33788,6 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Zephyr_Prime",
     "releaseDate": "2018 03 20",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 01 13"
+    "estimatedVaultDate": "2020 01 01"
   }
 ]
