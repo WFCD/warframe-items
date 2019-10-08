@@ -448,7 +448,7 @@ class Parser {
     const tradableByType = tradableTypes.includes(item.type) && notFiltered
     const tradableByName = (item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered
     const tradableByProp = (item.isAugment) && notFiltered
-    const isTradable = tradableByType || tradableByName
+    const isTradable = tradableByType || tradableByName || tradableByProp
     item.tradable = isTradable || false
   }
 
