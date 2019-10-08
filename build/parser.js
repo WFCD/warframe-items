@@ -394,6 +394,7 @@ class Parser {
 
       case 'Upgrades':
         item.category = 'Mods'
+        if (item.uniqueName.includes('AugmentCard')) item.isAugment = true
         break
 
       case 'Warframes':
@@ -439,13 +440,14 @@ class Parser {
   addTradable (item) {
     const tradableTypes = ['Upgrades', 'Fish', 'Key', 'Focus Lens', 'Relic', 'Rifle Mod',
       'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
-      'Melee Mod', 'Augment']
+      'Melee Mod']
     const untradableTypes = ['Skin', 'Medallion', 'Extractor', 'Pets', 'Ship Decoration']
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra)/i
     const notFiltered = !untradableTypes.includes(item.type) && !item.name.match(untradableRegex)
     const tradableByType = tradableTypes.includes(item.type) && notFiltered
     const tradableByName = (item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered
+    const tradableByProp = (item.isAugment) && notFiltered
     const isTradable = tradableByType || tradableByName
     item.tradable = isTradable || false
   }
