@@ -27,7 +27,7 @@ class Build {
     const all = this.saveJson(data)
     this.saveWarnings(parsed.warnings)
     await this.saveImages(all, raw.manifest)
-    await this.updateReadme(raw.patchlogs.patchlogs)
+    this.updateReadme(raw.patchlogs.patchlogs)
 
     // Log number of warnings at the end of the script
     let warningNum = 0
@@ -204,11 +204,11 @@ class Build {
    */
   updateReadme (patchlogs) {
     const logob64 = require(`${__dirname}/../data/logo.json`)
-    const version = patchlogs.posts[0].name.replace(/[^0-9.]/g, '')
+    const version = patchlogs.posts[0].name.replace(/ \+ /g, '--').replace(/[^0-9\-.]/g, '').trim()
     const url = patchlogs.posts[0].url
     const readmeLocation = `${__dirname}/../README.md`
     const readmeOld = fs.readFileSync(readmeLocation, 'utf-8')
-    const readmeNew = readmeOld.replace(/\[!\[warframe update.*/, `[![warframe update](https://img.shields.io/badge/warframe_update-${encodeURIComponent(version)}-blue.svg?logo=${encodeURIComponent(logob64)})](${url})`)
+    const readmeNew = readmeOld.replace(/\[!\[warframe update.*/, `[![warframe update](https://img.shields.io/badge/warframe_update-${version}-blue.svg?logo=${encodeURIComponent(logob64)})](${url})`)
     fs.writeFileSync(readmeLocation, readmeNew)
   }
 }
