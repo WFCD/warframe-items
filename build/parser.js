@@ -153,7 +153,7 @@ class Parser {
     // Attach relevant keys from blueprint to parent
     this.addBlueprintData(result, blueprint)
     this.sanitizeComponents(components, result, item, category, blueprints, data, secondPass)
-    _.each(components, this.applyOverrides);
+    _.each(components, this.applyOverrides)
     return result
   }
 
