@@ -508,24 +508,16 @@ class Parser {
 
     // Sort by drop rate
     if (item.drops) {
-      item.drops.sort((a, b) => this.compareLocationRotationRarity(a, b));
+      item.drops.sort((a, b) => this.comparator(a, b));
     }
   }
 
-  // Compares drop locations for items lexicographically by location + rotation + rarity
-  compareLocationRotationRarity(dropA, dropB) {
+  // Compares drop locations for items lexicographically by chance + location + rotation + rarity
+  comparator(dropA, dropB) {
     // Build a key for comparison
-    const keyA = `${dropA.location}:${dropA.rotation}:${dropA.rarity}`.toUpperCase();
-    const keyB = `${dropB.location}:${dropB.rotation}:${dropB.rarity}`.toUpperCase();
-
-    // Do the compare
-    let cmp = 0;
-    if (keyA > keyB) {
-      cmp = 1;
-    } else if (keyA < keyB) {
-      cmp = -1;
-    }
-    return cmp;
+    const keyA = `${dropA.chance}:${dropA.location}:${dropA.rotation}:${dropA.rarity}`.toUpperCase();
+    const keyB = `${dropB.chance}:${dropB.location}:${dropB.rotation}:${dropB.rarity}`.toUpperCase();
+    return keyA.localeCompare(keyB);
   }
 
   findDropLocations (item, dropChances) {
