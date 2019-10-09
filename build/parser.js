@@ -115,7 +115,7 @@ class Parser {
   addComponents (item, category, blueprints, data, secondPass) {
     const blueprint = blueprints.filter(filterBps).find(b => b.resultType === item.uniqueName)
     if (!blueprint) return item // Some items just don't have blueprints
-    const components = []
+    let components = []
     let result = _.cloneDeep(item)
 
     // Look for original component entry in all categories
@@ -147,7 +147,7 @@ class Parser {
     // Attach relevant keys from blueprint to parent
     this.addBlueprintData(result, blueprint)
     this.sanitizeComponents(components, result, item, category, blueprints, data, secondPass)
-
+    _.each(components, this.applyOverrides)
     return result
   }
 
