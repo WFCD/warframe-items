@@ -2,12 +2,6 @@ const Progress = require('./progress.js')
 const previousBuild = require('../data/json/All.json')
 const watson = require('../config/dt_map.json')
 const bpConflicts = require('../config/bpConflicts.json')
-const overridesJson = require('../config/overrides.json')
-const gradesJson = require('../config/relicGrades.json')
-const polaritiesJson = require('../config/polarities.json')
-const typesJson = require('../config/itemTypes.json')
-const dropLocationsJson = require('../config/dropLocations.json')
-const damageTypesJson = require('../config/damageTypes.json')
 const _ = require('lodash')
 const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
@@ -242,7 +236,8 @@ class Parser {
 
     // Relics don't have their grade in the name for some reason
     if (item.type === 'Relic') {
-      for (let grade of gradesJson) {
+      const grades = require('../config/relicGrades.json')
+      for (let grade of grades) {
         if (item.uniqueName.includes(grade.id)) {
           item.name = item.name.replace('Relic', grade.refinement)
         }
@@ -264,7 +259,8 @@ class Parser {
 
     // Use proper polarity names
     if (item.polarity) {
-      const polarity = polaritiesJson.find(p => p.id === item.polarity)
+      const polarities = require('../config/polarities.json')
+      const polarity = polarities.find(p => p.id === item.polarity)
       if (polarity) {
         item.polarity = polarity.name
       } else {
@@ -290,8 +286,9 @@ class Parser {
    */
   addType (item) {
     if (item.parent) return
+    const types = require('../config/itemTypes.json')
 
-    for (let type of typesJson) {
+    for (let type of types) {
       if (item.uniqueName.includes(type.id)) {
         item.type = type.name
         break
@@ -573,8 +570,9 @@ class Parser {
       drop.location = drop.location.trim()
 
       // Replace drop location with correct ingame names
-      for (const dropLoc of dropLocationsJson) {
-        drop.location.replace(dropLoc.id, dropLoc.name)
+      const overrides = require('../config/dropLocations.json')
+      for (const override of overrides) {
+        drop.location.replace(override.id, override.name)
       }
 
       result.push(drop)
@@ -658,11 +656,12 @@ class Parser {
   }
 
   addWeaponWikiaData (item, wikiaItem) {
+    const damageTypes = require('../config/damageTypes.json')
     item.ammo = wikiaItem.ammo
     item.channeling = wikiaItem.channeling
     item.damage = wikiaItem.damage
     item.damageTypes = {}
-    damageTypesJson.forEach(type => {
+    damageTypes.forEach(type => {
       item.damageTypes[type] = wikiaItem[type]
     })
     item.flight = wikiaItem.flight
@@ -724,7 +723,7 @@ class Parser {
   }
 
   applyOverrides (item) {
-    const override = overridesJson[item.uniqueName]
+    const override = require('../config/overrides.json')[item.uniqueName]
     if (override) {
       Object.keys(override).forEach(key => {
         item[key] = override[key]
