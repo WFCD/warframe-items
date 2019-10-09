@@ -48,7 +48,7 @@ class Parser {
    */
   process (items, category, blueprints, data) {
     const result = []
-    
+
     const bar = new Progress(`Parsing ${category}`, items.length)
 
     for (let i = 0; i < items.length; i++) {
@@ -725,7 +725,9 @@ class Parser {
   applyOverrides (item) {
     const override = require('../config/overrides.json')[item.uniqueName]
     if (override) {
-      Object.keys(override).forEach(key => item[key] = override[key])
+      Object.keys(override).forEach(key => {
+        item[key] = override[key]
+      })
     }
   }
 
