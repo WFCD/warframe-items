@@ -1,11 +1,3 @@
----
-name: Bug Fix PR
-about: Use this template for submitting a pull request for a bug fix
-title: ':bug: Fix'
-labels: 'Type: Bug'
-reviewers: kaptard, tobitenno
----
-
 ### What did you fix? (provide a description or issue closes statement)
 closed \#12312312
 
