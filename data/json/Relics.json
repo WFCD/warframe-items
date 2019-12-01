@@ -77285,6 +77285,53 @@
     "uniqueName": "/Lotus/Types/Keys/DerelictEmissaryBossKey",
     "name": "Orokin Derelict Emissary Assassinate",
     "description": "An Assassination mission on board an Orokin Derelict ship",
+    "buildPrice": 7500,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Keys/DerelictEmissaryBossKeyBlueprint",
+        "name": "Blueprint",
+        "description": "An Assassination mission on board an Orokin Derelict ship",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 100,
+        "imageName": "circuits.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+        "itemCount": 4000,
+        "imageName": "nano-spores.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/NavCode",
+        "name": "Nav Coordinate",
+        "description": "Coordinate used to locate lost ships.Can be acquired from Storage Containers.",
+        "itemCount": 10,
+        "imageName": "nav-coordinate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 1000,
+        "imageName": "salvage.png",
+        "tradable": false
+      }
+    ],
     "type": "Key",
     "imageName": "orokin-derelict-emissary-assassinate.png",
     "category": "Relics",
