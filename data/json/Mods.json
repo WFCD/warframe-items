@@ -2708,8 +2708,8 @@
     "name": "Archgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 512,
-    "fusionLimit": 0,
+    "baseDrain": 1108836578,
+    "fusionLimit": 32758,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -31135,8 +31135,8 @@
     "name": "Kitgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 512,
-    "fusionLimit": 0,
+    "baseDrain": 1108836578,
+    "fusionLimit": 32758,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -45993,8 +45993,8 @@
     "name": "Melee Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 512,
-    "fusionLimit": 0,
+    "baseDrain": 1108836578,
+    "fusionLimit": 32758,
     "upgradeEntries": [
       {
         "tag": "WeaponMeleeDamageMod",
@@ -46251,7 +46251,7 @@
         "upgradeValues": [
           {
             "value": -0.01165,
-            "locTag": "|val|% chance to gain Combo Count"
+            "locTag": "|val|% Chance to Gain Combo Count"
           }
         ]
       },
@@ -63259,8 +63259,8 @@
     "name": "Pistol Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 512,
-    "fusionLimit": 0,
+    "baseDrain": 1108836578,
+    "fusionLimit": 32758,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -77813,6 +77813,45 @@
     "tradable": true
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageCorpusExpert",
+    "name": "Primed Smite Corpus",
+    "polarity": "Madurai",
+    "rarity": "Legendary",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "description": "+5% Damage to Corpus",
+    "type": "Melee Mod",
+    "imageName": "primed-smite-corpus.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageGrineerExpert",
+    "name": "Primed Smite Grineer",
+    "polarity": "Madurai",
+    "rarity": "Legendary",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "description": "+5% Damage to Grineer",
+    "type": "Melee Mod",
+    "imageName": "primed-smite-grineer.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageInfestedExpert",
+    "name": "Primed Smite Infested",
+    "polarity": "Madurai",
+    "rarity": "Legendary",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "description": "+5% Damage to Infested",
+    "type": "Melee Mod",
+    "imageName": "primed-smite-infested.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Warframe/Expert/AvatarKnockdownResistanceModExpert",
     "name": "Primed Sure Footed",
     "polarity": "Vazarin",
@@ -84269,9 +84308,29 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare",
     "name": "Rifle Riven Mod",
     "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 8,
+    "type": "Primary",
+    "imageName": "rifle-riven-mod.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Rifle Riven Mod Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.0679
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare",
+    "name": "Rifle Riven Mod",
+    "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 512,
-    "fusionLimit": 0,
+    "baseDrain": 1108836578,
+    "fusionLimit": 32758,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -95255,26 +95314,6 @@
     ]
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare",
-    "name": "Rifle Riven Mod",
-    "polarity": "Universal",
-    "rarity": "Rare",
-    "baseDrain": 0,
-    "fusionLimit": 8,
-    "type": "Primary",
-    "imageName": "rifle-riven-mod.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Rifle Riven Mod Rare",
-        "type": "Sortie Rewards",
-        "rarity": "Rare",
-        "chance": 0.0679
-      }
-    ]
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Mods/Aura/PlayerRifleAmmoAuraMod",
     "name": "Rifle Scavenger",
     "polarity": "Naramon",
@@ -101968,9 +102007,29 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare",
     "name": "Shotgun Riven Mod",
     "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 8,
+    "type": "Primary",
+    "imageName": "shotgun-riven-mod.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Shotgun Riven Mod Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.013600000000000001
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare",
+    "name": "Shotgun Riven Mod",
+    "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 512,
-    "fusionLimit": 0,
+    "baseDrain": 1108836578,
+    "fusionLimit": 32758,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -112238,26 +112297,6 @@
       }
     ],
     "type": "Misc",
-    "imageName": "shotgun-riven-mod.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Shotgun Riven Mod Rare",
-        "type": "Sortie Rewards",
-        "rarity": "Rare",
-        "chance": 0.013600000000000001
-      }
-    ]
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare",
-    "name": "Shotgun Riven Mod",
-    "polarity": "Universal",
-    "rarity": "Rare",
-    "baseDrain": 0,
-    "fusionLimit": 8,
-    "type": "Primary",
     "imageName": "shotgun-riven-mod.jpg",
     "category": "Mods",
     "tradable": false,
@@ -129354,8 +129393,8 @@
     "name": "Zaw Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 512,
-    "fusionLimit": 0,
+    "baseDrain": 1108836578,
+    "fusionLimit": 32758,
     "upgradeEntries": [
       {
         "tag": "WeaponMeleeDamageMod",
@@ -129612,7 +129651,7 @@
         "upgradeValues": [
           {
             "value": -0.01165,
-            "locTag": "|val|% chance to gain Combo Count"
+            "locTag": "|val|% Chance to Gain Combo Count"
           }
         ]
       },
