@@ -20089,6 +20089,417 @@
     "disposition": 3
   },
   {
+    "name": "Baza Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeBaza/PrimeBazaGun",
+    "secondsPerShot": 0.059999995,
+    "damagePerShot": [ 5.7600002, 6.7199998, 3.5200005, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "magazineSize": 60,
+    "reloadTime": 1.1,
+    "totalDamage": 16,
+    "damagePerSecond": 204,
+    "trigger": "Auto",
+    "description": "This rapid-fire classic is the Orokin-engineered definition of silent, pinpoint lethality.",
+    "accuracy": 80,
+    "criticalChance": 0.28,
+    "criticalMultiplier": 3,
+    "procChance": 0.13999999,
+    "fireRate": 16.666668,
+    "chargeAttack": 0,
+    "spinAttack": 0,
+    "leapAttack": 0,
+    "wallAttack": 0,
+    "slot": 1,
+    "noise": "Silent",
+    "sentinel": false,
+    "masteryReq": 10,
+    "omegaAttenuation": 1,
+    "channelingDamageMultiplier": 0.5,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BazaPrimeBarrel",
+        "name": "Barrel",
+        "description": "A prime weapon-crafting component.",
+        "primeSellingPrice": 45,
+        "itemCount": 1,
+        "imageName": "prime-barrel.png",
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Lith W2 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.11
+          },
+          {
+            "location": "Lith W2 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.13
+          },
+          {
+            "location": "Lith W2 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.17
+          },
+          {
+            "location": "Lith W2 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/BazaPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "This rapid-fire classic is the Orokin-engineered definition of silent, pinpoint lethality.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": true
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 10,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BazaPrimeReceiver",
+        "name": "Receiver",
+        "description": "A prime weapon-crafting component.",
+        "primeSellingPrice": 15,
+        "itemCount": 1,
+        "imageName": "prime-receiver.png",
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Neo R3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.16670000000000001
+          },
+          {
+            "location": "Neo R3 Flawless",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.2
+          },
+          {
+            "location": "Neo R3 Exceptional",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.23329999999999998
+          },
+          {
+            "location": "Neo R3 Intact",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.25329999999999997
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BazaPrimeStock",
+        "name": "Stock",
+        "description": "A prime weapon-crafting component.",
+        "primeSellingPrice": 100,
+        "itemCount": 1,
+        "imageName": "prime-stock.png",
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Axi B3 Intact",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.02
+          },
+          {
+            "location": "Axi B3 Exceptional",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.04
+          },
+          {
+            "location": "Axi B3 Flawless",
+            "type": "Relics",
+            "rarity": "Rare",
+            "chance": 0.06
+          },
+          {
+            "location": "Axi B3 Radiant",
+            "type": "Relics",
+            "rarity": "Uncommon",
+            "chance": 0.1
+          }
+        ]
+      }
+    ],
+    "type": "Rifle",
+    "imageName": "baza-prime.png",
+    "category": "Primary",
+    "tradable": true,
+    "ammo": 800,
+    "damage": "16.0",
+    "damageTypes": {
+      "impact": 5.8,
+      "slash": 3.5,
+      "puncture": 6.7
+    },
+    "polarities": [ "Madurai" ],
+    "projectile": "Hitscan",
+    "tags": [ "Prime" ],
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/10/BazaPrime.png/revision/latest?cb=20191217235625",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Baza_Prime",
+    "disposition": 3,
+    "releaseDate": "2019 12 17",
+    "vaultDate": "n/a",
+    "estimatedVaultDate": "2021 09 21"
+  },
+  {
     "name": "Boar",
     "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/FullAutoShotgun",
     "secondsPerShot": 0.23999998,
