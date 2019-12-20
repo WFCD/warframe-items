@@ -802,7 +802,6 @@
         "tradable": false
       }
     ],
-    "type": "Shotgun",
     "imageName": "corvas.png",
     "category": "Archwing",
     "tradable": false,
@@ -840,16 +839,15 @@
         "fixes": ""
       }
     ],
-    "damage": "420.0",
+    "damage": "100.0 heat",
     "damageTypes": {
-      "impact": 336,
-      "slash": 42,
-      "puncture": 42
+      "impact": 50,
+      "heat": 100
     },
     "marketCost": 210,
     "polarities": [ "Naramon" ],
-    "projectile": "Hitscan",
-    "statusChance": 10,
+    "projectile": "Projectile",
+    "statusChance": 20,
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/21/ArchLaunchGrenade.png/revision/latest?cb=20141024143734",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Corvas",
@@ -1168,15 +1166,15 @@
         "fixes": "Fixed Archwing weapons (Cyngas) swapping to melee on empty fire."
       }
     ],
-    "damage": "200.0",
+    "damage": "47.9",
     "damageTypes": {
-      "impact": 66,
-      "slash": 68,
-      "puncture": 66
+      "impact": 15.8,
+      "slash": 16.3,
+      "puncture": 15.8
     },
     "marketCost": 225,
     "polarities": [  ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/2f/ArchBurstGun.png/revision/latest?cb=20160710175146",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Cyngas",
@@ -1360,15 +1358,15 @@
         "fixes": "Fixed Dual Decurion blueprint appearing in Clan Tech, removed blueprint from Clan Tech Research. This is a Market blueprint for you to craft once you obtain the parts!"
       }
     ],
-    "damage": "60.0",
+    "damage": "42.0",
     "damageTypes": {
-      "impact": 27,
-      "slash": 16.5,
-      "puncture": 16.5
+      "impact": 18.9,
+      "slash": 11.5,
+      "puncture": 11.6
     },
     "marketCost": 225,
     "polarities": [  ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/5/5f/ArchHeavyPistols.png/revision/latest?cb=20141127181924",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Dual_Decurion",
@@ -2116,11 +2114,11 @@
         "fixes": "Start your Research for the Itzal and Fluctus in the Clan Dojo, and purchase the blueprint for the Centaur from the Marketplace today!"
       }
     ],
-    "damage": "200.0",
+    "damage": "120.0",
     "damageTypes": {
-      "impact": 40,
-      "slash": 140,
-      "puncture": 20
+      "impact": 24,
+      "slash": 84,
+      "puncture": 12
     },
     "marketCost": 210,
     "polarities": [ "Naramon" ],
@@ -6811,11 +6809,11 @@
         "fixes": ""
       }
     ],
-    "damage": "175.0",
+    "damage": "58.0",
     "damageTypes": {
-      "impact": 17.5,
-      "slash": 17.5,
-      "puncture": 140
+      "impact": 5.8,
+      "slash": 5.8,
+      "puncture": 46.4
     },
     "marketCost": 250,
     "polarities": [ "Madurai" ],
@@ -7168,14 +7166,14 @@
         "fixes": "Fixed Imperator Syandana appearing on Banshee’s waist."
       }
     ],
-    "damage": "40.0",
+    "damage": "22.0",
     "damageTypes": {
-      "impact": 16,
-      "slash": 10,
-      "puncture": 14
+      "impact": 8.8,
+      "slash": 5.5,
+      "puncture": 7.7
     },
     "polarities": [ "Madurai" ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/4/4a/ArchwingMachinegun.png/revision/latest?cb=20141024143733",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Imperator",
@@ -7542,14 +7540,14 @@
         "fixes": "15 BATTLE POINTS: Imperator Vandal"
       }
     ],
-    "damage": "40.0",
+    "damage": "22.0",
     "damageTypes": {
-      "impact": 16,
-      "slash": 10,
-      "puncture": 14
+      "impact": 8.8,
+      "slash": 5.5,
+      "puncture": 7.7
     },
     "polarities": [ "Madurai" ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "tags": [ "Tenno", "Vandal" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/ed/ImperatorVandal.png/revision/latest?cb=20141214174720",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Imperator_Vandal",
@@ -13151,13 +13149,19 @@
         "fixes": ""
       }
     ],
-    "damage": "80.0 radiation",
+    "damage": "30.0 radiation",
     "damageTypes": {
-      "impact": 10,
-      "radiation": 80
+      "impact": 2,
+      "radiation": 30
     },
     "marketCost": 125,
     "polarities": [  ],
+    "secondaryArea": {
+      "name": "Explosion",
+      "radius": 800,
+      "blast": 400,
+      "damage": "400.0 blast"
+    },
     "statusChance": 34,
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c4/Larkspur.png/revision/latest?cb=20190309000707",
@@ -14922,15 +14926,15 @@
         "fixes": ""
       }
     ],
-    "damage": "45.0",
+    "damage": "35.1",
     "damageTypes": {
-      "impact": 11.25,
-      "slash": 4.5,
-      "puncture": 29.25
+      "impact": 8.8,
+      "slash": 3.5,
+      "puncture": 22.8
     },
     "marketCost": 220,
     "polarities": [ "Madurai" ],
-    "projectile": "Hitscan",
+    "projectile": "Projecile",
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/35/ArchLongRifle.png/revision/latest?cb=20151002090140",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Phaedra",
@@ -15464,9 +15468,9 @@
         "fixes": ""
       }
     ],
-    "damage": "200.0 magnetic",
+    "damage": "290.0 magnetic",
     "damageTypes": {
-      "magnetic": 200
+      "magnetic": 290
     },
     "marketCost": 200,
     "polarities": [  ],
