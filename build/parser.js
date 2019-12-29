@@ -666,6 +666,7 @@ class Parser {
     const damageTypes = require('../config/damageTypes.json')
     item.ammo = wikiaItem.ammo
     item.channeling = wikiaItem.channeling
+    item.chargeTime = wikiaItem.chargeTime
     item.damage = wikiaItem.damage
     item.damageTypes = {}
     damageTypes.forEach(type => {

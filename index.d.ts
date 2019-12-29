@@ -128,6 +128,7 @@ declare module 'warframe-items' {
         masteryReq?: number;
         omegaAttenuation?: number;
         ammo?: number;
+        chargeTime?: number;
         damage?: number | string;
         damageTypes?: DamageTypes;
         flight?: number;
