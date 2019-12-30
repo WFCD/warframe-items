@@ -38368,15 +38368,6 @@
     "marketCost": 240,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hitscan",
-    "secondary": {
-      "name": "Air Burst Projectile",
-      "crit_chance": 4,
-      "crit_mult": 1.6,
-      "status_chance": 0.3,
-      "shot_type": "Projectile",
-      "shot_speed": null,
-      "impact": 100
-    },
     "secondaryArea": {
       "name": "Air Burst Explosion",
       "status_chance": 28,
@@ -43328,6 +43319,7 @@
       }
     ],
     "ammo": 72,
+    "chargeTime": 1,
     "damage": 700,
     "damageTypes": {
       "impact": 210,
@@ -53863,6 +53855,7 @@
       }
     ],
     "ammo": 540,
+    "chargeTime": 0.5,
     "damage": 350,
     "damageTypes": {
       "impact": 35,
@@ -53873,17 +53866,11 @@
     "polarities": [ "Madurai", "Vazarin" ],
     "projectile": "Hitscan",
     "secondary": {
-      "name": "Throw Spear",
-      "speed": 1,
-      "crit_chance": 4,
+      "name": "Attraction Field",
+      "speed": 0.5,
+      "crit_chance": 0,
       "crit_mult": 2,
-      "status_chance": 0.3,
-      "charge_time": 0.5,
-      "shot_type": "Projectile",
-      "shot_speed": null,
-      "impact": 455,
-      "slash": 122.5,
-      "puncture": 72.5
+      "status_chance": 0.5
     },
     "statusChance": 10,
     "tags": [ "Corpus" ],
@@ -81782,9 +81769,10 @@
       }
     ],
     "ammo": 300,
-    "damage": 230,
+    "chargeTime": 0.3,
+    "damage": 160,
     "damageTypes": {
-      "heat": 230
+      "heat": 160
     },
     "marketCost": 240,
     "polarities": [ "Madurai", "Madurai" ],
@@ -81805,7 +81793,7 @@
     "secondaryArea": {
       "name": "Spear Explosion",
       "status_chance": 25,
-      "radius": 700,
+      "radius": 500,
       "heat": 300,
       "damage": "300.0 heat"
     },
@@ -94577,6 +94565,7 @@
       }
     ],
     "ammo": 6,
+    "chargeTime": 1.2,
     "damage": 50,
     "damageTypes": {
       "impact": 50
@@ -94963,6 +94952,49 @@
     "imageName": "mk1-braton.png",
     "category": "Primary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "MK1-Braton: 1.2->1.35",
+        "fixes": ""
+      },
+      {
+        "name": "Fortuna: Update 24.0",
+        "date": "2018-11-08T20:46:20Z",
+        "url": "https://forums.warframe.com/topic/1025679-fortuna-update-240/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Arbitration boon selecting the MK1-Braton. "
+      },
+      {
+        "name": "The Glast Gambit: Hotfix 19.10.1+19.10.1.1",
+        "date": "2017-02-14T14:20:17Z",
+        "url": "https://forums.warframe.com/topic/762596-the-glast-gambit-hotfix-19101191011/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the MK1-Braton not showing its clip after reload."
+      },
+      {
+        "name": "Update 17.3.0",
+        "date": "2015-09-02T20:56:46Z",
+        "url": "https://forums.warframe.com/topic/521781-update-1730/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue causing MK1-Bratons to appear in player equipment profiles."
+      },
+      {
+        "name": "Hotfix 17.2.6",
+        "date": "2015-08-28T22:00:03Z",
+        "url": "https://forums.warframe.com/topic/519498-hotfix-1726/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where two MK1-Bratons appear in player equipment profiles."
+      }
+    ],
     "ammo": 540,
     "damage": "18.0",
     "damageTypes": {
@@ -95007,6 +95039,17 @@
     "imageName": "mk1-paris.png",
     "category": "Primary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "MK1-Paris: 1.3->1.4",
+        "fixes": ""
+      }
+    ],
     "ammo": 72,
     "damage": "115.0",
     "damageTypes": {
@@ -95053,6 +95096,25 @@
     "imageName": "mk1-strun.png",
     "category": "Primary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "MK1-Strun: 1.35->1.45",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 18.4.7",
+        "date": "2016-02-04T22:43:36Z",
+        "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
+        "additions": "",
+        "changes": "Increased the damage of the MK1-Strun in Conclave.",
+        "fixes": ""
+      }
+    ],
     "ammo": 120,
     "damage": "180.0",
     "damageTypes": {
@@ -105265,6 +105327,7 @@
       }
     ],
     "ammo": 20,
+    "chargeTime": 0.3,
     "damage": 100,
     "damageTypes": {
       "blast": 100
@@ -110243,6 +110306,7 @@
       }
     ],
     "ammo": 200,
+    "chargeTime": 2,
     "damage": 1000,
     "damageTypes": {
       "impact": 100,
@@ -110318,6 +110382,7 @@
       }
     ],
     "ammo": 200,
+    "chargeTime": 0.6,
     "damage": 400,
     "damageTypes": {
       "impact": 40,
@@ -123175,6 +123240,16 @@
     "marketCost": 180,
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hitscan",
+    "secondaryArea": {
+      "name": "Cluster Bombs",
+      "status_chance": 37,
+      "pellet": {
+        "name": "Bomblet",
+        "count": 5
+      },
+      "impact": 75
+    },
+    "statusChance": 37,
     "tags": [ "Sentient" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d6/RevenantShotgun.png/revision/latest?cb=20180825053839",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Phantasma",
@@ -128208,12 +128283,20 @@
     "marketCost": 150,
     "polarities": [ "Vazarin" ],
     "projectile": "Discharge",
-    "secondaryArea": {
+    "secondary": {
       "name": "Cube (Shot by player)",
-      "status_chance": 26,
       "speed": 4,
+      "crit_chance": 5,
+      "crit_mult": 1.5,
+      "status_chance": 0.3,
       "blast": 600,
       "damage": "600.0 blast"
+    },
+    "secondaryArea": {
+      "name": "Cube Explosion",
+      "radius": 50,
+      "blast": 150,
+      "damage": "150.0 blast"
     },
     "tags": [ "Corpus" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/75/CrpShockRifle.png/revision/latest?cb=20140731223522",
@@ -128300,12 +128383,20 @@
     },
     "polarities": [ "Madurai" ],
     "projectile": "Discharge",
-    "secondaryArea": {
+    "secondary": {
       "name": "Cube (Shot by player)",
-      "status_chance": 26,
       "speed": 4,
+      "crit_chance": 5,
+      "crit_mult": 1.5,
+      "status_chance": 0.3,
       "blast": 600,
       "damage": "600.0 blast"
+    },
+    "secondaryArea": {
+      "name": "Cube Explosion",
+      "radius": 50,
+      "blast": 150,
+      "damage": "150.0 blast"
     },
     "tags": [ "Corpus", "Vandal" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/91/QuantaVandal.png/revision/latest?cb=20150519212443",
@@ -130845,17 +130936,17 @@
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hitscan",
     "secondary": {
-      "name": "Throw Spear",
-      "speed": 1,
-      "crit_chance": 4,
-      "crit_mult": 2,
-      "status_chance": 0.3,
-      "charge_time": 0.5,
-      "impact": 455,
-      "slash": 122.5,
-      "puncture": 72.5,
+      "name": "Spear Explosion",
       "corrosive": 50,
       "damage": "50.0 corrosive"
+    },
+    "secondaryArea": {
+      "name": "Throw Spear",
+      "status_chance": 30,
+      "speed": 1,
+      "impact": 105,
+      "slash": 22.5,
+      "puncture": 22.5
     },
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c8/PriestSpearGun.png/revision/latest?cb=20170629034316",
@@ -131962,8 +132053,8 @@
       "crit_chance": 12,
       "crit_mult": 2,
       "status_chance": 0.3,
-      "electricity": 75,
-      "damage": "75.0 electricity"
+      "magnetic": 75,
+      "damage": "75.0 magnetic"
     },
     "tags": [ "Cephalon" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/9a/CephPrimary.png/revision/latest?cb=20150625220225",
@@ -150848,9 +150939,9 @@
       }
     ],
     "ammo": 96,
-    "damage": "20.0 magnetic",
+    "damage": "50.0 magnetic",
     "damageTypes": {
-      "magnetic": 20
+      "magnetic": 50
     },
     "flight": "???",
     "polarities": [ "Madurai", "Vazarin", "Naramon" ],
@@ -150860,8 +150951,8 @@
       "crit_chance": 14,
       "crit_mult": 2,
       "status_chance": 0.3,
-      "electricity": 75,
-      "damage": "75.0 electricity"
+      "magnetic": 75,
+      "damage": "75.0 magnetic"
     },
     "tags": [ "Syndicate", "Cephalon Suda", "Cephalon" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/09/SyndicateCSSimulor.png/revision/latest?cb=20150902215134",
