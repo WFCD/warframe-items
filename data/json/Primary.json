@@ -38368,15 +38368,6 @@
     "marketCost": 240,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hitscan",
-    "secondary": {
-      "name": "Air Burst Projectile",
-      "crit_chance": 4,
-      "crit_mult": 1.6,
-      "status_chance": 0.3,
-      "shot_type": "Projectile",
-      "shot_speed": null,
-      "impact": 100
-    },
     "secondaryArea": {
       "name": "Air Burst Explosion",
       "status_chance": 28,
@@ -43328,6 +43319,7 @@
       }
     ],
     "ammo": 72,
+    "chargeTime": 1,
     "damage": 700,
     "damageTypes": {
       "impact": 210,
@@ -53863,6 +53855,7 @@
       }
     ],
     "ammo": 540,
+    "chargeTime": 0.5,
     "damage": 350,
     "damageTypes": {
       "impact": 35,
@@ -53873,17 +53866,11 @@
     "polarities": [ "Madurai", "Vazarin" ],
     "projectile": "Hitscan",
     "secondary": {
-      "name": "Throw Spear",
-      "speed": 1,
-      "crit_chance": 4,
+      "name": "Attraction Field",
+      "speed": 0.5,
+      "crit_chance": 0,
       "crit_mult": 2,
-      "status_chance": 0.3,
-      "charge_time": 0.5,
-      "shot_type": "Projectile",
-      "shot_speed": null,
-      "impact": 455,
-      "slash": 122.5,
-      "puncture": 72.5
+      "status_chance": 0.5
     },
     "statusChance": 10,
     "tags": [ "Corpus" ],
@@ -81782,9 +81769,10 @@
       }
     ],
     "ammo": 300,
-    "damage": 230,
+    "chargeTime": 0.3,
+    "damage": 160,
     "damageTypes": {
-      "heat": 230
+      "heat": 160
     },
     "marketCost": 240,
     "polarities": [ "Madurai", "Madurai" ],
@@ -81805,7 +81793,7 @@
     "secondaryArea": {
       "name": "Spear Explosion",
       "status_chance": 25,
-      "radius": 700,
+      "radius": 500,
       "heat": 300,
       "damage": "300.0 heat"
     },
@@ -94577,6 +94565,7 @@
       }
     ],
     "ammo": 6,
+    "chargeTime": 1.2,
     "damage": 50,
     "damageTypes": {
       "impact": 50
@@ -105265,6 +105254,7 @@
       }
     ],
     "ammo": 20,
+    "chargeTime": 0.3,
     "damage": 100,
     "damageTypes": {
       "blast": 100
@@ -110243,6 +110233,7 @@
       }
     ],
     "ammo": 200,
+    "chargeTime": 2,
     "damage": 1000,
     "damageTypes": {
       "impact": 100,
@@ -110318,6 +110309,7 @@
       }
     ],
     "ammo": 200,
+    "chargeTime": 0.6,
     "damage": 400,
     "damageTypes": {
       "impact": 40,
@@ -123175,6 +123167,16 @@
     "marketCost": 180,
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hitscan",
+    "secondaryArea": {
+      "name": "Cluster Bombs",
+      "status_chance": 37,
+      "pellet": {
+        "name": "Bomblet",
+        "count": 5
+      },
+      "impact": 75
+    },
+    "statusChance": 37,
     "tags": [ "Sentient" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d6/RevenantShotgun.png/revision/latest?cb=20180825053839",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Phantasma",
@@ -128208,12 +128210,20 @@
     "marketCost": 150,
     "polarities": [ "Vazarin" ],
     "projectile": "Discharge",
-    "secondaryArea": {
+    "secondary": {
       "name": "Cube (Shot by player)",
-      "status_chance": 26,
       "speed": 4,
+      "crit_chance": 5,
+      "crit_mult": 1.5,
+      "status_chance": 0.3,
       "blast": 600,
       "damage": "600.0 blast"
+    },
+    "secondaryArea": {
+      "name": "Cube Explosion",
+      "radius": 50,
+      "blast": 150,
+      "damage": "150.0 blast"
     },
     "tags": [ "Corpus" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/75/CrpShockRifle.png/revision/latest?cb=20140731223522",
@@ -128300,12 +128310,20 @@
     },
     "polarities": [ "Madurai" ],
     "projectile": "Discharge",
-    "secondaryArea": {
+    "secondary": {
       "name": "Cube (Shot by player)",
-      "status_chance": 26,
       "speed": 4,
+      "crit_chance": 5,
+      "crit_mult": 1.5,
+      "status_chance": 0.3,
       "blast": 600,
       "damage": "600.0 blast"
+    },
+    "secondaryArea": {
+      "name": "Cube Explosion",
+      "radius": 50,
+      "blast": 150,
+      "damage": "150.0 blast"
     },
     "tags": [ "Corpus", "Vandal" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/91/QuantaVandal.png/revision/latest?cb=20150519212443",
@@ -130845,17 +130863,17 @@
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Hitscan",
     "secondary": {
-      "name": "Throw Spear",
-      "speed": 1,
-      "crit_chance": 4,
-      "crit_mult": 2,
-      "status_chance": 0.3,
-      "charge_time": 0.5,
-      "impact": 455,
-      "slash": 122.5,
-      "puncture": 72.5,
+      "name": "Spear Explosion",
       "corrosive": 50,
       "damage": "50.0 corrosive"
+    },
+    "secondaryArea": {
+      "name": "Throw Spear",
+      "status_chance": 30,
+      "speed": 1,
+      "impact": 105,
+      "slash": 22.5,
+      "puncture": 22.5
     },
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c8/PriestSpearGun.png/revision/latest?cb=20170629034316",
@@ -131962,8 +131980,8 @@
       "crit_chance": 12,
       "crit_mult": 2,
       "status_chance": 0.3,
-      "electricity": 75,
-      "damage": "75.0 electricity"
+      "magnetic": 75,
+      "damage": "75.0 magnetic"
     },
     "tags": [ "Cephalon" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/9a/CephPrimary.png/revision/latest?cb=20150625220225",
@@ -150848,9 +150866,9 @@
       }
     ],
     "ammo": 96,
-    "damage": "20.0 magnetic",
+    "damage": "50.0 magnetic",
     "damageTypes": {
-      "magnetic": 20
+      "magnetic": 50
     },
     "flight": "???",
     "polarities": [ "Madurai", "Vazarin", "Naramon" ],
@@ -150860,8 +150878,8 @@
       "crit_chance": 14,
       "crit_mult": 2,
       "status_chance": 0.3,
-      "electricity": 75,
-      "damage": "75.0 electricity"
+      "magnetic": 75,
+      "damage": "75.0 magnetic"
     },
     "tags": [ "Syndicate", "Cephalon Suda", "Cephalon" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/09/SyndicateCSSimulor.png/revision/latest?cb=20150902215134",

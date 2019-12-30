@@ -19117,6 +19117,7 @@
       }
     ],
     "ammo": 18,
+    "chargeTime": 0.5,
     "damage": 200,
     "damageTypes": {
       "blast": 200
@@ -25123,6 +25124,7 @@
         "fixes": ""
       }
     ],
+    "chargeTime": 1,
     "damage": 100,
     "damageTypes": {
       "impact": 10,
@@ -39062,9 +39064,24 @@
       }
     ],
     "ammo": 210,
-    "damageTypes": {},
+    "damage": "50.0",
+    "damageTypes": {
+      "impact": 50
+    },
     "marketCost": 175,
     "polarities": [  ],
+    "projectile": "Projectile",
+    "secondary": {
+      "name": "Burst Mode",
+      "speed": 10.05,
+      "crit_chance": 8,
+      "crit_mult": 1.4,
+      "status_chance": 0.3,
+      "shot_type": "Projectile",
+      "impact": 2.9,
+      "slash": 38.9,
+      "puncture": 30.2
+    },
     "tags": [  ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/36/Cyanex.png/revision/latest?cb=20190523234907",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Cyanex",
@@ -81776,6 +81793,7 @@
       }
     ],
     "ammo": 18,
+    "chargeTime": 0.2,
     "damage": 200,
     "damageTypes": {
       "blast": 200
@@ -88190,6 +88208,7 @@
       }
     ],
     "ammo": 210,
+    "chargeTime": 1,
     "damage": 300,
     "damageTypes": {
       "impact": 15,
@@ -97845,9 +97864,9 @@
         "fixes": ""
       }
     ],
-    "damage": "156.0 corrosive",
+    "damage": "4.0 corrosive",
     "damageTypes": {
-      "corrosive": 156
+      "corrosive": 4
     },
     "flight": 35,
     "marketCost": 120,
@@ -115851,6 +115870,7 @@
         "fixes": ""
       }
     ],
+    "chargeTime": 1,
     "damage": 35,
     "damageTypes": {
       "heat": 35
