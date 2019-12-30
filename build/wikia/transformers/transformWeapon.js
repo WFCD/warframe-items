@@ -138,7 +138,7 @@ const transformWeapon = (oldWeapon, imageUrls) => {
         }
       })
     } else if (ChargeAttack && ChargeAttack.Damage) {
-      newWeapon.chargeTime = Number(Number(ChargeAttack.ChargeTime));
+      newWeapon.chargeTime = Number(Number(ChargeAttack.ChargeTime))
       damageTypes.forEach((damageType) => {
         newWeapon[damageType.toLowerCase()] = ChargeAttack.Damage[damageType] ? Number(ChargeAttack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1')) : undefined
       })
