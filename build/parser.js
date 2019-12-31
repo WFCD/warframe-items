@@ -665,6 +665,7 @@ class Parser {
   addWeaponWikiaData (item, wikiaItem) {
     const damageTypes = require('../config/damageTypes.json')
     item.ammo = wikiaItem.ammo
+    item.areaAttack = wikiaItem.areaAttack
     item.channeling = wikiaItem.channeling
     item.chargeTime = wikiaItem.chargeTime
     item.damage = wikiaItem.damage
