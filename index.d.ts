@@ -86,6 +86,7 @@ declare module 'warframe-items' {
         sex?: Sex;
         sprint?: number;
         passiveDescription?: string;
+        areaAttack?: AreaAttack;
         secondary?: Secondary;
         secondaryArea?: SecondaryArea;
         statusChance?: number;
@@ -171,6 +172,19 @@ declare module 'warframe-items' {
         blast?: number;
         corrosive?: number;
         radiation?: number;
+    }
+
+    interface AreaAttack {
+        name: string;
+        status_chance?: number;
+        radius?: number;
+        blast?: number;
+        heat?: number;
+        radiation?: number;
+        damage: string;
+        pellet?: Pellet;
+        duration?: number;
+        speed?: number;
     }
 
     interface SecondaryArea {
