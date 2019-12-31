@@ -508,6 +508,11 @@
       }
     ],
     "ammo": 96,
+    "areaAttack": {
+      "name": "Rocket Explosion",
+      "slash": 8.8,
+      "puncture": 35.2
+    },
     "damage": "35.0",
     "damageTypes": {
       "impact": 35
@@ -10491,6 +10496,14 @@
       }
     ],
     "ammo": 112,
+    "areaAttack": {
+      "name": "Glass Explosion",
+      "crit_chance": 17,
+      "crit_mult": 1.9,
+      "status_chance": 0.3,
+      "slash": 78,
+      "puncture": 42
+    },
     "damage": "70.0",
     "damageTypes": {
       "impact": 70
@@ -38359,6 +38372,15 @@
       }
     ],
     "ammo": 132,
+    "areaAttack": {
+      "name": "Air Burst Projectile",
+      "crit_chance": 4,
+      "crit_mult": 1.6,
+      "status_chance": 0.3,
+      "shot_type": "Projectile",
+      "shot_speed": null,
+      "impact": 100
+    },
     "damage": "540.0",
     "damageTypes": {
       "impact": 151.2,
@@ -53855,6 +53877,19 @@
       }
     ],
     "ammo": 540,
+    "areaAttack": {
+      "name": "Throw Spear",
+      "speed": 1,
+      "crit_chance": 4,
+      "crit_mult": 2,
+      "status_chance": 0.3,
+      "charge_time": 0.5,
+      "shot_type": "Projectile",
+      "shot_speed": null,
+      "impact": 455,
+      "slash": 122.5,
+      "puncture": 72.5
+    },
     "chargeTime": 0.5,
     "damage": 350,
     "damageTypes": {
@@ -81769,6 +81804,14 @@
       }
     ],
     "ammo": 300,
+    "areaAttack": {
+      "name": "Projectile Explosion",
+      "crit_chance": 20,
+      "crit_mult": 2,
+      "status_chance": 0.3,
+      "heat": 120,
+      "damage": "120.0 heat"
+    },
     "chargeTime": 0.3,
     "damage": 160,
     "damageTypes": {
@@ -87521,6 +87564,11 @@
       }
     ],
     "ammo": 40,
+    "areaAttack": {
+      "speed": 1.5,
+      "viral": 66,
+      "damage": "66.0 viral"
+    },
     "damage": "87.0",
     "damageTypes": {
       "impact": 8.7,
@@ -87614,6 +87662,11 @@
         "fixes": "Fixed Valence Transfer not applying to the Kuva Shildeg and Kuva Ayanga."
       }
     ],
+    "areaAttack": {
+      "name": "Explosion",
+      "blast": 100,
+      "damage": "100.0 blast"
+    },
     "damage": "30.0",
     "damageTypes": {
       "impact": 30
@@ -87670,6 +87723,13 @@
     "category": "Primary",
     "tradable": false,
     "ammo": 55,
+    "areaAttack": {
+      "name": "Explosion",
+      "slash": 36,
+      "puncture": 50,
+      "blast": 20,
+      "damage": "20.0 blast"
+    },
     "damage": "260.0",
     "damageTypes": {
       "impact": 260
@@ -87946,6 +88006,13 @@
       }
     ],
     "ammo": 20,
+    "areaAttack": {
+      "name": "Rocket Explosion",
+      "slash": 275,
+      "puncture": 159,
+      "blast": 253,
+      "damage": "253.0 blast"
+    },
     "damage": "27.0",
     "damageTypes": {
       "impact": 18.9,
@@ -88084,6 +88151,13 @@
     "category": "Primary",
     "tradable": false,
     "ammo": 60,
+    "areaAttack": {
+      "name": "Grenade Explosion",
+      "slash": 270,
+      "puncture": 176,
+      "blast": 228,
+      "damage": "228.0 blast"
+    },
     "damage": "59.0",
     "damageTypes": {
       "puncture": 59
@@ -94565,6 +94639,11 @@
       }
     ],
     "ammo": 6,
+    "areaAttack": {
+      "name": "Initial Burst",
+      "cold": 10,
+      "damage": "10.0 cold"
+    },
     "chargeTime": 1.2,
     "damage": 50,
     "damageTypes": {
@@ -95239,6 +95318,11 @@
       }
     ],
     "ammo": 72,
+    "areaAttack": {
+      "name": "Toxin Cloud",
+      "toxin": 50,
+      "damage": "50.0 toxin"
+    },
     "damage": "205.0",
     "damageTypes": {
       "impact": 184.5,
@@ -99824,6 +99908,14 @@
       }
     ],
     "ammo": 540,
+    "areaAttack": {
+      "name": "Infested Orb",
+      "status_chance": 1,
+      "shot_type": "Projectile",
+      "shot_speed": null,
+      "radiation": 20,
+      "damage": "20.0 radiation"
+    },
     "damage": "25.0",
     "damageTypes": {
       "impact": 2.5,
@@ -105254,6 +105346,15 @@
       }
     ],
     "ammo": 20,
+    "areaAttack": {
+      "name": "Rocket Explosion",
+      "speed": 1.5,
+      "crit_chance": 5,
+      "crit_mult": 2,
+      "status_chance": 0.3,
+      "blast": 600,
+      "damage": "600.0 blast"
+    },
     "chargeTime": 0.3,
     "damage": 100,
     "damageTypes": {
@@ -110233,6 +110334,10 @@
       }
     ],
     "ammo": 200,
+    "areaAttack": {
+      "magnetic": 400,
+      "damage": "400.0 magnetic"
+    },
     "chargeTime": 2,
     "damage": 1000,
     "damageTypes": {
@@ -110309,6 +110414,10 @@
       }
     ],
     "ammo": 200,
+    "areaAttack": {
+      "magnetic": 200,
+      "damage": "200.0 magnetic"
+    },
     "chargeTime": 0.6,
     "damage": 400,
     "damageTypes": {
@@ -123159,6 +123268,11 @@
       }
     ],
     "ammo": 275,
+    "areaAttack": {
+      "name": "Bomb Explosion",
+      "radiation": 73,
+      "damage": "73.0 radiation"
+    },
     "damage": "50.0 radiation",
     "damageTypes": {
       "impact": 25,
@@ -128203,6 +128317,17 @@
       }
     ],
     "ammo": 540,
+    "areaAttack": {
+      "name": "Cube (Hits enemy)",
+      "speed": 4,
+      "crit_chance": 5,
+      "crit_mult": 1.5,
+      "status_chance": 0.3,
+      "shot_type": "Projectile",
+      "shot_speed": null,
+      "electricity": 100,
+      "damage": "100.0 electricity"
+    },
     "damage": "20.0 electricity",
     "damageTypes": {
       "electricity": 20
@@ -128304,6 +128429,17 @@
       }
     ],
     "ammo": 560,
+    "areaAttack": {
+      "name": "Cube (Hits enemy)",
+      "speed": 4,
+      "crit_chance": 5,
+      "crit_mult": 1.5,
+      "status_chance": 0.3,
+      "shot_type": "Projectile",
+      "shot_speed": null,
+      "electricity": 100,
+      "damage": "100.0 electricity"
+    },
     "damage": "26.0 electricity",
     "damageTypes": {
       "electricity": 26
@@ -130855,6 +130991,14 @@
       }
     ],
     "ammo": 200,
+    "areaAttack": {
+      "name": "Explosion",
+      "crit_chance": 2,
+      "crit_mult": 1.5,
+      "status_chance": 0.3,
+      "corrosive": 55,
+      "damage": "55.0 corrosive"
+    },
     "damage": "70.0 corrosive",
     "damageTypes": {
       "corrosive": 70
@@ -131967,6 +132111,11 @@
       }
     ],
     "ammo": 72,
+    "areaAttack": {
+      "name": "Orb Merge",
+      "magnetic": 27,
+      "damage": "27.0 magnetic"
+    },
     "damage": "50.0 magnetic",
     "damageTypes": {
       "magnetic": 50
@@ -150866,6 +151015,11 @@
       }
     ],
     "ammo": 96,
+    "areaAttack": {
+      "name": "Orb Merge",
+      "magnetic": 28,
+      "damage": "28.0 magnetic"
+    },
     "damage": "50.0 magnetic",
     "damageTypes": {
       "magnetic": 50
@@ -161387,6 +161541,17 @@
       }
     ],
     "ammo": 540,
+    "areaAttack": {
+      "name": "Auto",
+      "speed": 8.33,
+      "crit_chance": 16,
+      "crit_mult": 2.8,
+      "status_chance": 0.3,
+      "shot_type": "Hit-Scan",
+      "impact": 13.8,
+      "slash": 13.8,
+      "puncture": 18.4
+    },
     "damage": "46.0",
     "damageTypes": {
       "impact": 13.8,
@@ -163312,6 +163477,11 @@
       }
     ],
     "ammo": 30,
+    "areaAttack": {
+      "name": "Grenade Explosion",
+      "blast": 650,
+      "damage": "650.0 blast"
+    },
     "damage": "75.0",
     "damageTypes": {
       "puncture": 75
@@ -167997,6 +168167,13 @@
       }
     ],
     "ammo": 60,
+    "areaAttack": {
+      "name": "Poison Cloud",
+      "crit_chance": 15,
+      "crit_mult": 2,
+      "toxin": 400,
+      "damage": "400.0 toxin"
+    },
     "damage": "100.0 toxin",
     "damageTypes": {
       "toxin": 100
@@ -174928,6 +175105,13 @@
       }
     ],
     "ammo": 84,
+    "areaAttack": {
+      "name": "Cannon Mode Explosion",
+      "crit_chance": 17,
+      "status_chance": 0.3,
+      "blast": 175,
+      "damage": "175.0 blast"
+    },
     "damage": "25.0",
     "damageTypes": {
       "impact": 25
@@ -176177,6 +176361,15 @@
       }
     ],
     "ammo": 540,
+    "areaAttack": {
+      "name": "Arrow Explosion",
+      "crit_chance": 26,
+      "crit_mult": 2,
+      "status_chance": 0.3,
+      "impact": 11.2,
+      "slash": 24.8,
+      "puncture": 4
+    },
     "damage": "50.0",
     "damageTypes": {
       "impact": 10,
