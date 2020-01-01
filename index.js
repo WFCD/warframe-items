@@ -8,6 +8,8 @@
  *                         - All
  *                         - Arcanes
  *                         - Archwing
+ *                         - Arch-Gun
+ *                         - Arch-Melee
  *                         - Corpus
  *                         - Enemy
  *                         - Fish
