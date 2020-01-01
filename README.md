@@ -66,6 +66,8 @@ allows you to add your own items before our gathered ones.
 | All | All categories in one file |
 | Arcanes | Operator, Zaw, and some Warframe Arcanes |
 | Archwing | Archwings.... nuff said |
+| Arch-Gun | Archwing Guns |
+| Arch-Melee | Archwing Melee weapons |
 | Enemy | NPCs |
 | Fish | Fish that you fish|
 | Gear | Things you equip in your gear wheel
