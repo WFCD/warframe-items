@@ -3,7 +3,7 @@ const previousBuild = require('../data/json/All.json')
 const watson = require('../config/dt_map.json')
 const bpConflicts = require('../config/bpConflicts.json')
 const _ = require('lodash')
-const title = (str) => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+const title = (str = '') => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
   missingImage: [],
   missingDucats: [],
@@ -36,6 +36,11 @@ class Parser {
         data: this.process(chunk.data, chunk.category, blueprints, data)
       })
     }
+
+    Object.keys(warnings).forEach(key => {
+      warnings[key].sort()
+      warnings[key] = Array.from(new Set(warnings[key].filter(thing => thing.length)))
+    })
 
     return {
       data: result,
@@ -303,7 +308,7 @@ class Parser {
         item.type = item.faction
         delete item.faction
       } else {
-        if (!warnings.missingType.includes(item.name)) warnings.missingType.push(item.name)
+        if (!warnings.missingType.includes(item.name)) warnings.missingType.push(title(item.name))
         item.type = 'Misc'
       }
     }
@@ -405,7 +410,11 @@ class Parser {
         break
 
       case 'Weapons':
-        if (item.isArchwing) item.category = 'Archwing'
+        if (item.isArchwing) {
+          if (typeof item.slot === 'undefined') item.category = 'Archwing'
+          else if (item.slot === 1) item.category = 'Arch-Gun'
+          else if (item.slot === 5) item.category = 'Arch-Melee'
+        }
         else if (item.slot === 5) item.category = 'Melee'
         else if (item.slot === 0) item.category = 'Secondary'
         else if (item.slot === 1) item.category = 'Primary'
