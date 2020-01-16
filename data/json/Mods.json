@@ -150,14 +150,6 @@
     "tradable": true,
     "patchlogs": [
       {
-        "name": "Fortuna: Hotfix 24.0.8",
-        "date": "2018-11-15T22:34:29Z",
-        "url": "https://forums.warframe.com/topic/1032170-fortuna-hotfix-2408/",
-        "additions": "",
-        "changes": "Tweaked Khora’s Accumulating Whipclaw Augment sounds.",
-        "fixes": ""
-      },
-      {
         "name": "Chimera: Hotfix 23.10.3",
         "date": "2018-10-15T21:13:13Z",
         "url": "https://forums.warframe.com/topic/1018682-chimera-hotfix-23103/",
@@ -2421,6 +2413,14 @@
         "additions": "",
         "changes": "Reduced the amount of Blast damage blocked by Anti-Flak Plating mod",
         "fixes": ""
+      },
+      {
+        "name": "Hotfix 18.5.5 + 18.5.5.1",
+        "date": "2016-03-08T21:47:49Z",
+        "url": "https://forums.warframe.com/topic/621794-hotfix-1855-18551/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed Anti-Flak Plating Conclave Mod not being purchasable from Teshin."
       },
       {
         "name": "Hotfix 18.5.5 + 18.5.5.1",
@@ -5333,14 +5333,6 @@
         "additions": "",
         "changes": "Increased Kubrow's base damage 150% and base Critical Damage multiplier from 1.6x to 3x so that for a Kubrow fitted with Rank 10 Maul Mod and Rank 10 Bite Mod the average damage would be almost exactly the same as before.",
         "fixes": ""
-      },
-      {
-        "name": "Hotfix 14.0.7 + 14.0.7.1",
-        "date": "2014-07-23T00:49:37Z",
-        "url": "https://forums.warframe.com/topic/270543-hotfix-1407-14071/",
-        "additions": "",
-        "changes": "",
-        "fixes": "The Kubrow Bite mod has been added to feral Kubrow drop tables, it was not intended to only be available through transmutation, it’s meant to be a drop."
       }
     ]
   },
@@ -5436,6 +5428,14 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Fortuna: Hotfix 24.2.15",
+        "date": "2019-02-15T15:25:12Z",
+        "url": "https://forums.warframe.com/topic/1061972-fortuna-hotfix-24215/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Trail Blazer K-Drive Mod not functioning."
+      },
       {
         "name": "Fortuna: Hotfix 24.2.15",
         "date": "2019-02-15T15:25:12Z",
@@ -23166,6 +23166,14 @@
         "fixes": "Fixed Growing Power buff not removing itself properly when casting Limbo’s Cataclysm, resulting in an indefinite stacking of Strength."
       },
       {
+        "name": "Wukong Prime: Hotfix 25.3.2 + 25.3.2.1",
+        "date": "2019-07-12T15:14:26Z",
+        "url": "https://forums.warframe.com/topic/1110370-wukong-prime-hotfix-2532-25321/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Growing Power buff not removing itself properly when casting Limbo’s Cataclysm, resulting in an indefinite stacking of Strength."
+      },
+      {
         "name": "The Sacrifice: Hotfix 23.0.4",
         "date": "2018-06-20T20:44:05Z",
         "url": "https://forums.warframe.com/topic/971991-the-sacrifice-hotfix-2304/",
@@ -23275,14 +23283,6 @@
         "fixes": "Fixed a progression stopper in the Sands of Inaros Quest where the Tomb Guardians were invincible. "
       },
       {
-        "name": "Plains of Eidolon Remaster: Hotfix 24.7.3",
-        "date": "2019-04-22T19:31:27Z",
-        "url": "https://forums.warframe.com/topic/1087205-plains-of-eidolon-remaster-hotfix-2473/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed dying as Operator while using Guardian Shell causing players to be unable to Transfer back to Operator."
-      },
-      {
         "name": "Buried Debts: Hotfix 24.5.1",
         "date": "2019-03-15T21:08:17Z",
         "url": "https://forums.warframe.com/topic/1071547-buried-debts-hotfix-2451/",
@@ -23313,6 +23313,14 @@
         "url": "https://forums.warframe.com/topic/944966-shrine-of-the-eidolon-hotfix-22174/",
         "additions": "",
         "changes": "Kuva Guardians will now play their disarming animation properly, instead of having their Twin Rogga’s magically pop into their hands.",
+        "fixes": ""
+      },
+      {
+        "name": "Shrine of the Eidolon: Update 22.17.0 + 22.17.0.1",
+        "date": "2018-03-28T18:49:46Z",
+        "url": "https://forums.warframe.com/topic/939097-shrine-of-the-eidolon-update-22170-221701/",
+        "additions": "",
+        "changes": "Guardian Health type is now in line with the rest of Grineer.\nAdded a pulsing red glow around Kuva Guardians for a few seconds to depict when they are vulnerable (similar to the Teralyst).",
         "fixes": ""
       },
       {
@@ -27850,14 +27858,6 @@
         "fixes": "Fixed an issue with the Kubrow Quest ‘Howl of the Kubrow’ being incompletable."
       },
       {
-        "name": "Hotfix 14.0.7 + 14.0.7.1",
-        "date": "2014-07-23T00:49:37Z",
-        "url": "https://forums.warframe.com/topic/270543-hotfix-1407-14071/",
-        "additions": "",
-        "changes": "",
-        "fixes": "The Kubrow Hunt and Howl abilities will no longer trigger when enemies are not alerted."
-      },
-      {
         "name": "Hotfix 14.0.2",
         "date": "2014-07-19T22:39:23Z",
         "url": "https://forums.warframe.com/topic/266200-hotfix-1402/",
@@ -28160,14 +28160,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Kubrow Mod ‘Hunt’ now scales with damage Mods, but has had it's base damage reduced to compensate."
-      },
-      {
-        "name": "Hotfix 14.0.7 + 14.0.7.1",
-        "date": "2014-07-23T00:49:37Z",
-        "url": "https://forums.warframe.com/topic/270543-hotfix-1407-14071/",
-        "additions": "",
-        "changes": "",
-        "fixes": "The Kubrow Hunt and Howl abilities will no longer trigger when enemies are not alerted."
       },
       {
         "name": "Update 13.3.0: Pack Hunters",
@@ -42798,14 +42790,6 @@
     "isAugment": true,
     "tradable": true,
     "patchlogs": [
-      {
-        "name": "Plains of Eidolon: Update 22.11.0",
-        "date": "2018-01-31T21:41:13Z",
-        "url": "https://forums.warframe.com/topic/914315-plains-of-eidolon-update-22110/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Nidus’ Larva Burst Augment not activating when using \"Use Selected Power\" input."
-      },
       {
         "name": "Plains of Eidolon: Hotfix 22.10.2",
         "date": "2018-01-26T19:02:16Z",
@@ -58501,6 +58485,14 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Shrine of the Eidolon: Update 22.17.0 + 22.17.0.1",
+        "date": "2018-03-28T18:49:46Z",
+        "url": "https://forums.warframe.com/topic/939097-shrine-of-the-eidolon-update-22170-221701/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Kavats equipped with Mischief appearing headless after a Host migration occured."
+      },
       {
         "name": "Shrine of the Eidolon: Update 22.17.0 + 22.17.0.1",
         "date": "2018-03-28T18:49:46Z",
@@ -79897,6 +79889,14 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed the Quick Escape K-Drive Mod resulting in players taking massive damage upon crashing."
+      },
+      {
+        "name": "Fortuna: Hotfix 24.2.15",
+        "date": "2019-02-15T15:25:12Z",
+        "url": "https://forums.warframe.com/topic/1061972-fortuna-hotfix-24215/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Quick Escape K-Drive Mod resulting in players taking massive damage upon crashing."
       }
     ]
   },
@@ -80013,6 +80013,14 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Wukong Prime: Hotfix 25.3.2 + 25.3.2.1",
+        "date": "2019-07-12T15:14:26Z",
+        "url": "https://forums.warframe.com/topic/1110370-wukong-prime-hotfix-2532-25321/",
+        "additions": "",
+        "changes": "Wukong’s Celestial Twin no longer utilizes Quick Thinking to fix the Twin living indefinitely. ",
+        "fixes": ""
+      },
       {
         "name": "Wukong Prime: Hotfix 25.3.2 + 25.3.2.1",
         "date": "2019-07-12T15:14:26Z",
@@ -97147,6 +97155,14 @@
         "fixes": "Fixed extra beam Range (Ruinous Extension) negatively affecting the secondary beam lock Range of the Ocucor."
       },
       {
+        "name": "Wukong Prime: Hotfix 25.3.2 + 25.3.2.1",
+        "date": "2019-07-12T15:14:26Z",
+        "url": "https://forums.warframe.com/topic/1110370-wukong-prime-hotfix-2532-25321/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed extra beam Range (Ruinous Extension) negatively affecting the secondary beam lock Range of the Ocucor."
+      },
+      {
         "name": "Fortuna: Hotfix 24.2.10",
         "date": "2019-01-23T20:08:15Z",
         "url": "https://forums.warframe.com/topic/1056534-fortuna-hotfix-24210/",
@@ -97915,6 +97931,14 @@
         "additions": "",
         "changes": "Matchmaking for The Sacrifice quest is now disabled once the helmet has been interacted with, to avoid having matchmaking permanently disabled if leaving the quest on the first stage.",
         "fixes": ""
+      },
+      {
+        "name": "Wukong Prime: Hotfix 25.3.2 + 25.3.2.1",
+        "date": "2019-07-12T15:14:26Z",
+        "url": "https://forums.warframe.com/topic/1110370-wukong-prime-hotfix-2532-25321/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed progression stopper during the 'Kill the 5 Mimics' stage of the 4th mission of The Sacrifice as reported here:"
       },
       {
         "name": "Wukong Prime: Hotfix 25.3.2 + 25.3.2.1",
@@ -99195,14 +99219,6 @@
         "additions": "",
         "changes": "Fixed 'Scavenge' causing permanent freezing when multiple Kubrow's tried to interact with the same locker. If there are multiple Kubrows in a mission, no more than one can target the same locker.",
         "fixes": ""
-      },
-      {
-        "name": "Hotfix 14.0.7 + 14.0.7.1",
-        "date": "2014-07-23T00:49:37Z",
-        "url": "https://forums.warframe.com/topic/270543-hotfix-1407-14071/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Reduced the delays on Kubrow's Scavenge ability."
       },
       {
         "name": "Hotfix 13.6.1",
@@ -115326,6 +115342,14 @@
         "fixes": "Fixed persisting muffled sound when casting Ash’s Smoke Shadow Augment as reported here: https://forums.warframe.com/topic/935041-smoke-screen-persisting-muffled-sound/"
       },
       {
+        "name": "Shrine of the Eidolon: Update 22.17.0 + 22.17.0.1",
+        "date": "2018-03-28T18:49:46Z",
+        "url": "https://forums.warframe.com/topic/939097-shrine-of-the-eidolon-update-22170-221701/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed persisting muffled sound when casting Ash’s Smoke Shadow Augment as reported here: https://forums.warframe.com/topic/935041-smoke-screen-persisting-muffled-sound/"
+      },
+      {
         "name": "Update 18.3",
         "date": "2016-01-13T22:55:58Z",
         "url": "https://forums.warframe.com/topic/594267-update-183/",
@@ -117410,14 +117434,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed a script error if Stalker's target disconnects after his initial Transmission fires up."
-      },
-      {
-        "name": "Plains of Eidolon Remaster: Hotfix 24.7.3",
-        "date": "2019-04-22T19:31:27Z",
-        "url": "https://forums.warframe.com/topic/1087205-plains-of-eidolon-remaster-hotfix-2473/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Further fixes towards Assassin type enemies (Wolf of Saturn Six, Stalker, Syndicate, etc) choosing to appear as you’re extracting."
       },
       {
         "name": "Plains of Eidolon Remaster: Update 24.7.0 + 24.7.0.1",
@@ -125133,6 +125149,14 @@
     "category": "Mods",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Fortuna: Hotfix 24.2.15",
+        "date": "2019-02-15T15:25:12Z",
+        "url": "https://forums.warframe.com/topic/1061972-fortuna-hotfix-24215/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Trail Blazer K-Drive Mod not functioning."
+      },
       {
         "name": "Fortuna: Hotfix 24.2.15",
         "date": "2019-02-15T15:25:12Z",
