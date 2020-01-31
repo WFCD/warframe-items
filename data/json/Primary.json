@@ -53904,17 +53904,11 @@
     ],
     "ammo": 540,
     "areaAttack": {
-      "name": "Throw Spear",
-      "speed": 1,
-      "crit_chance": 4,
-      "crit_mult": 2,
-      "status_chance": 0.3,
-      "charge_time": 0.5,
-      "shot_type": "Projectile",
-      "shot_speed": null,
-      "impact": 455,
-      "slash": 122.5,
-      "puncture": 72.5
+      "name": "Area Attacks",
+      "crit_chance": 32,
+      "crit_mult": 2.8,
+      "status_chance": 0.1,
+      "impact": 100
     },
     "chargeTime": 0.5,
     "damage": 350,
@@ -53932,6 +53926,14 @@
       "crit_chance": 0,
       "crit_mult": 2,
       "status_chance": 0.5
+    },
+    "secondaryArea": {
+      "name": "Spear Throw",
+      "status_chance": 33,
+      "speed": 1,
+      "impact": 455,
+      "slash": 122.5,
+      "puncture": 72.5
     },
     "statusChance": 10,
     "tags": [ "Corpus" ],
