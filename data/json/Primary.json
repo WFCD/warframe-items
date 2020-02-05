@@ -87956,15 +87956,36 @@
     "imageName": "kuva-hind.png",
     "category": "Primary",
     "tradable": false,
-    "ammo": 1,
+    "ammo": 540,
+    "areaAttack": {
+      "name": "Auto",
+      "speed": 10,
+      "crit_chance": 21,
+      "crit_mult": 1.9,
+      "status_chance": 0.3,
+      "impact": 5.9,
+      "slash": 17.7,
+      "puncture": 5.9
+    },
     "damage": "30.0",
     "damageTypes": {
       "impact": 7.5,
-      "slash": 7.5,
-      "puncture": 15
+      "slash": 15,
+      "puncture": 7.5
     },
     "polarities": [  ],
     "projectile": "Hitscan",
+    "secondary": {
+      "name": "Semi",
+      "speed": 2.5,
+      "crit_chance": 37,
+      "crit_mult": 2.9,
+      "status_chance": 0.2,
+      "shot_type": "Hit-Scan",
+      "impact": 17.9,
+      "slash": 17.9,
+      "puncture": 53.6
+    },
     "tags": [  ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f1/KuvaHind.png/revision/latest?cb=20200205044256",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Kuva_Hind",
