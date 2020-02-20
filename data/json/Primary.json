@@ -15723,16 +15723,8 @@
       }
     ],
     "ammo": 720,
-    "damage": "42.0 magnetic",
-    "damageTypes": {
-      "puncture": 24,
-      "magnetic": 42
-    },
-    "flight": 115,
-    "marketCost": 175,
-    "polarities": [  ],
-    "projectile": "Projectile",
-    "secondary": {
+    "areaAttack": {
+      "name": "Secondary Fire",
       "speed": 1,
       "crit_chance": 34,
       "crit_mult": 3,
@@ -15742,8 +15734,19 @@
       "radiation": 208,
       "damage": "208.0 radiation"
     },
+    "damage": "42.0 magnetic",
+    "damageTypes": {
+      "puncture": 24,
+      "magnetic": 42
+    },
+    "flight": 115,
+    "marketCost": 175,
+    "polarities": [  ],
+    "projectile": "Projectile",
     "secondaryArea": {
+      "name": "Beam AoE",
       "status_chance": 8,
+      "radius": 600,
       "radiation": 68,
       "damage": "68.0 radiation"
     },
