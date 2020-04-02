@@ -146,7 +146,8 @@ class Parser {
       uniqueName: blueprint.uniqueName,
       name: 'Blueprint',
       description: item.description,
-      itemCount: 1
+      itemCount: 1,
+      primeSellingPrice: blueprint.primeSellingPrice,
     })
 
     // Attach relevant keys from blueprint to parent
@@ -467,9 +468,10 @@ class Parser {
    */
   addDucats (item, ducats) {
     if (!item.name.includes('Prime') || !item.components) return
-
     for (const component of item.components) {
-      if (!component.tradable) continue
+      if (component.primeSellingPrice) component.ducats = component.primeSellingPrice
+
+      if (!component.tradable || component.ducats) continue
       const wikiaItem = ducats.find(d => d.name.includes(`${item.name} ${component.name}`))
       if (wikiaItem) {
         component.ducats = wikiaItem.ducats
