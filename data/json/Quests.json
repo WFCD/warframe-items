@@ -242,6 +242,217 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Keys/DojoKey",
+    "name": "Clan Key",
+    "description": "Unlocks access to your Clan's Dojo",
+    "buildPrice": 1500,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Keys/DojoKeyBlueprint",
+        "name": "Blueprint",
+        "description": "Unlocks access to your Clan's Dojo",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 500,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 1,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
+        "itemCount": 500,
+        "imageName": "polymer-bundle.png",
+        "tradable": false
+      }
+    ],
+    "type": "Key",
+    "imageName": "clan-key.png",
+    "category": "Quests",
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "The Jovian Concord: Update 25.1.0",
+        "date": "2019-06-05T18:36:15Z",
+        "url": "https://forums.warframe.com/topic/1100452-the-jovian-concord-update-2510/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/7e35d85fa4c0cdbad0d77de0f9c3435d.jpg",
+        "additions": "",
+        "changes": "Upon selecting to craft a Clan Key, the Foundry will automatically now show the ‘Clan Key’ crafting screen instead of making you search for it.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia's Anthem: Update 20",
+        "date": "2017-03-24T19:46:02Z",
+        "url": "https://forums.warframe.com/topic/776642-octavias-anthem-update-20/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Clan Key Blueprints remaining in the Foundry after leaving a Clan."
+      },
+      {
+        "name": "Specters of the Rail: Hotfix 12",
+        "date": "2016-07-20T20:28:28Z",
+        "url": "https://forums.warframe.com/topic/677187-specters-of-the-rail-hotfix-12/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed node displaying as \"Clan Key\" instead of actual Clan name when selecting Dojo from the Star Chart. This also fixes the Clan screen/nodes/UI components overlapping on top of the Clan Management screen. "
+      },
+      {
+        "name": "Hotfix 8.0.2 : Comin In' Hot!",
+        "date": "2013-05-24T00:49:49Z",
+        "url": "https://forums.warframe.com/topic/49393-hotfix-802-comin-in-hot/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Can no longer sell Clan Key Blueprint"
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Keys/NewWarIntroQuest/NewWarIntroKeyChain",
     "name": "Erra",
     "description": "",
@@ -1674,23 +1885,6 @@
     "category": "Quests",
     "tradable": true,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "More fixes towards broken Dry Docks when some players have different progression into the Rising Tide quest.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.11 - 27.0.11.3",
-        "date": "2020-01-16T18:22:26Z",
-        "url": "https://forums.warframe.com/topic/1162207-empyrean-ivara-prime-27011-270113/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0eb964807a745fb09beee66a192e3913.JPG",
-        "additions": "",
-        "changes": "Fixed a case of loading a Railjack mission forever due to some players having different progression into the Rising Tide quest.",
-        "fixes": ""
-      },
       {
         "name": "Empyrean: Update 27",
         "date": "2019-12-13T02:34:29Z",

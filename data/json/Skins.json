@@ -27,6 +27,33 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropGrineerCutter",
+    "name": "/Lotus/Language/Shipdecorations/Lisetpropgrineercuttername",
+    "description": "/Lotus/Language/ShipDecorations/LisetPropGrineerCutterDesc",
+    "type": "Ship Decoration",
+    "imageName": "lotus-language-shipdecorations-lisetpropgrineercuttername.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropGrineerFlak",
+    "name": "/Lotus/Language/Shipdecorations/Lisetpropgrineerflakname",
+    "description": "/Lotus/Language/ShipDecorations/LisetPropGrineerFlakDesc",
+    "type": "Ship Decoration",
+    "imageName": "lotus-language-shipdecorations-lisetpropgrineerflakname.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropGrineerTaktis",
+    "name": "/Lotus/Language/Shipdecorations/Lisetpropgrineertaktisname",
+    "description": "/Lotus/Language/ShipDecorations/LisetPropGrineerTaktisDesc",
+    "type": "Ship Decoration",
+    "imageName": "lotus-language-shipdecorations-lisetpropgrineertaktisname.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeScarfG",
     "name": "Abbera Prime Syandana",
     "description": "Mirage Prime’s signature syandana.",
@@ -34,6 +61,42 @@
     "imageName": "abbera-prime-syandana.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/HalloweenErosionCape",
+    "name": "Abrasys Day Of The Dead Syandana",
+    "description": "A morbidly festive syandana.",
+    "type": "Skin",
+    "imageName": "abrasys-day-of-the-dead-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/ErosionCape",
+    "name": "Abrasys Syandana",
+    "description": "Evokes stone scarred but not destroyed by the sea's tireless onslaught.",
+    "type": "Skin",
+    "imageName": "abrasys-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Fortuna: Hotfix 24.2.7 + 24.2.7.1",
+        "date": "2019-01-09T18:37:18Z",
+        "url": "https://forums.warframe.com/topic/1052727-fortuna-hotfix-2427-24271/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Garuda's arm cloth clipping through the Abrasys Syandana."
+      },
+      {
+        "name": "Fortuna: Hotfix 24.0.2",
+        "date": "2018-11-09T22:23:12Z",
+        "url": "https://forums.warframe.com/topic/1027194-fortuna-hotfix-2402/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Abrasys Syandana clipping through Garuda's arm cloth."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Armor/PrimeSetThree/PrimeSetThreeC",
@@ -863,6 +926,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Deluxe/NovaDeluxeIISniperSkin",
+    "name": "Alamos Sniper Skin",
+    "description": "The signature sniper rifle skin of Nova Atomica.",
+    "type": "Skin",
+    "imageName": "alamos-sniper-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SapientCape",
     "name": "Altra Syandana",
     "description": "Found deep in the rubble at Altra, this Syandana is thought to have been worn by Gauss on the day he broke through enemy lines, decisively ending that bloody siege.",
@@ -1041,6 +1113,15 @@
     "description": "Ivara Prime's signature Syandana.",
     "type": "Skin",
     "imageName": "apavada-prime-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/KazInfestedScarf",
+    "name": "Apoxys Syandana",
+    "description": "This malignant growth hangs elegantly on the shoulders of any Tenno.",
+    "type": "Skin",
+    "imageName": "apoxys-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -17244,6 +17325,332 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/EnergyScarfVoidSkin",
+    "name": "Asa Phased Syandana",
+    "description": "The Void's corrupting energy has scarred this syandana, leaving it permanently out of phase with conventional space.",
+    "type": "Skin",
+    "imageName": "asa-phased-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/EnergyScarf",
+    "name": "Asa Syandana",
+    "description": "A traditional Tenno garment, this Syandana is woven from ancient, Orokin synthetic thread.",
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 1000,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Syandanas/AsaSyandanaBlueprint",
+        "name": "Blueprint",
+        "description": "A traditional Tenno garment, this Syandana is woven from ancient, Orokin synthetic thread.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 4,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
+        "name": "Neural Sensors",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.Location: Jupiter",
+        "itemCount": 2,
+        "imageName": "neural-sensors.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.Locations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
+        "itemCount": 1000,
+        "imageName": "oxium.png",
+        "tradable": false
+      }
+    ],
+    "type": "Skin",
+    "imageName": "asa-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Fortuna: Hotfix 24.2.7 + 24.2.7.1",
+        "date": "2019-01-09T18:37:18Z",
+        "url": "https://forums.warframe.com/topic/1052727-fortuna-hotfix-2427-24271/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an offset issue with the Phased Asa Syandana to make it match the same offsets as the regular Asa Syandana."
+      },
+      {
+        "name": "Update 18.13.0: TennoGen, Passives, & Reworks",
+        "date": "2016-05-27T21:20:29Z",
+        "url": "https://forums.warframe.com/topic/652752-update-18130-tennogen-passives-reworks%C2%A0/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Asa Syandana flickering when looking at it from certain angles."
+      },
+      {
+        "name": "Hotfix 18.12.2",
+        "date": "2016-05-20T16:40:16Z",
+        "url": "https://forums.warframe.com/topic/650205-hotfix-18122/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Phased Asa Syandana flickering when looking at it from certain angles."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Clan/NightmareSevantiHaloBadgeItem",
     "name": "Aseron Sekhara",
     "description": "Created as a meditation on the ever expanding ribbon of energy that runs through the universe.",
@@ -17488,6 +17895,33 @@
     "imageName": "ash-tsukuyomi-skin.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SyndicateRVScarf",
+    "name": "Asita Rakta Syandana",
+    "description": "This Asita Rakta Syandana ignites a jet of flames that burns brighter with each stealth takedown.",
+    "type": "Skin",
+    "imageName": "asita-rakta-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Shrine of the Eidolon: Update 22.12.0",
+        "date": "2018-02-09T23:37:46Z",
+        "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Asita Rakta Syandana clipping into Loki Primes back when equipped."
+      },
+      {
+        "name": "Update 18.13.0: TennoGen, Passives, & Reworks",
+        "date": "2016-05-27T21:20:29Z",
+        "url": "https://forums.warframe.com/topic/652752-update-18130-tennogen-passives-reworks%C2%A0/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Asita Rakta Syandana placing incorrectly on Saryn’s Orphid Skin. "
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/YinYang/EquinoxDeluxeSwordShieldSkin",
@@ -19952,14 +20386,6 @@
     "tradable": false,
     "patchlogs": [
       {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed enemies being immune to Vauban’s Bastille if they were ragdolled out of it previously."
-      },
-      {
         "name": "Rising Tide: Update 26.1",
         "date": "2019-11-22T21:38:34Z",
         "url": "https://forums.warframe.com/topic/1144842-rising-tide-update-261/",
@@ -20221,6 +20647,15 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/EmberDeluxeSyandana",
+    "name": "Bennu Syandana",
+    "description": "The signature syandana of Ember Vermillion.",
+    "type": "Skin",
+    "imageName": "bennu-syandana.png",
+    "category": "Skins",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Effects/FootstepsHeat",
@@ -20650,6 +21085,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TennoAngleCapeScarf",
+    "name": "Bombyx Syandana",
+    "description": "Envelope a Warframe in this silky nature inspired Syandana.",
+    "type": "Skin",
+    "imageName": "bombyx-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenBraton",
     "name": "Braton Day Of The Dead Skin",
     "description": "A morbidly festive skin for the Braton.",
@@ -20769,6 +21213,42 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnLargeCapeTwitch",
+    "name": "Broca Prominence Syandana",
+    "description": "Draw attention with the bold geometric patterns in this exclusive Broca Syandana.",
+    "type": "Skin",
+    "imageName": "broca-prominence-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnLargeCape",
+    "name": "Broca Syandana",
+    "description": "This flowing Tenno cape is supported by an intricately sculpted brooch.",
+    "type": "Skin",
+    "imageName": "broca-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Hotfix 22.2.5",
+        "date": "2017-11-11T02:19:26Z",
+        "url": "https://forums.warframe.com/topic/877028-plains-of-eidolon-hotfix-2225/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Broca Syandana clipping through Gara’s legs."
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Broca Syandana being bent while equipped on Nyx."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Colors/KubrowPetColorXmasVibrantA",
     "name": "Brokk Brown",
     "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
@@ -20847,17 +21327,7 @@
     "type": "Skin",
     "imageName": "caballero-railjack-skin.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.4",
-        "date": "2019-12-17T18:58:02Z",
-        "url": "https://forums.warframe.com/topic/1154021-empyrean-ivara-prime-2704/",
-        "additions": "",
-        "changes": "Fixed the Dry Dock platform used to enter the Railjack clipping into it if the Caballero Railjack Skin is equipped.",
-        "fixes": ""
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstBirdCage",
@@ -20967,6 +21437,60 @@
         "additions": "",
         "changes": "",
         "fixes": "•    Fixed the Cateno Prime Sugatra attaching incorrectly on various melee weapons."
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnVoltDeluxeSyandana",
+    "name": "Cathode Syandana",
+    "description": "Volt Proto’s signature syandana.",
+    "type": "Skin",
+    "imageName": "cathode-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
+        "date": "2017-12-07T22:05:21Z",
+        "url": "https://forums.warframe.com/topic/891096-plains-of-eidolon-update-2260-hotfix-22601/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Cathode Syandana clipping on multiple Warframes."
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.5.0 + 22.5.0.1",
+        "date": "2017-11-30T16:52:51Z",
+        "url": "https://forums.warframe.com/topic/887725-plains-of-eidolon-update-2250-22501/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Charge up Volt with this collection of items that includes the Volt Proto Skin, Diode Hammer Skin, and Cathode Syandana."
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/ConclaveCape",
+    "name": "Celestia Syandana",
+    "description": "Displays Daily and Weekly Conclave Challenge and Mission progress, with a beam of light for each completed challenge or mission.",
+    "type": "Skin",
+    "imageName": "celestia-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Prime Vault Hotfix 23.1.2!",
+        "date": "2018-07-24T17:56:42Z",
+        "url": "https://forums.warframe.com/topic/987805-the-sacrifice-prime-vault-hotfix-2312/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Celestia Syandana not having energy when previewed. "
+      },
+      {
+        "name": "Update 18.6",
+        "date": "2016-03-16T20:07:20Z",
+        "url": "https://forums.warframe.com/topic/625930-update-186/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Celestia Syandana’s energy trail visual FX incorrectly displaying during melee channeling."
       }
     ]
   },
@@ -21246,6 +21770,42 @@
     ],
     "type": "Skin",
     "imageName": "ceno-pauldrons.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/CenturionCape",
+    "name": "Centuria Syandana",
+    "description": "Take command with this imposing cloak.",
+    "type": "Skin",
+    "imageName": "centuria-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 21: Chains of Harrow",
+        "date": "2017-06-29T03:00:20Z",
+        "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed various clipping issues with the Centuria Syandana. \nFixed Centuria Syandana clipping issues for various Warframes."
+      },
+      {
+        "name": "Octavia's Anthem: Hotfix 20.2.2",
+        "date": "2017-04-13T19:58:41Z",
+        "url": "https://forums.warframe.com/topic/786250-octavias-anthem-hotfix-2022/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed various clipping issues with the Centuria Syandana. "
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SummerSolsticeCenturionCape",
+    "name": "Centuria Towsun Syandana",
+    "description": "A Centuria Syandana that has been adorned with a sizzling design.",
+    "type": "Skin",
+    "imageName": "centuria-towsun-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -22867,6 +23427,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Archwing/TitaniaPrimeArchwingSkin",
+    "name": "Cicada Prime Skin",
+    "description": "Titania Prime's signature Archwing skin.",
+    "type": "Archwing",
+    "imageName": "cicada-prime-skin.png",
+    "category": "Skins",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Clan/JungleEventBadgeItem",
     "name": "Cicero Crisis Emblem",
     "description": "An emblem awarded to all those who helped destroy the Grineer toxin during the Cicero Crisis.",
@@ -23958,6 +24527,25 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/MesaDeluxeSyandana",
+    "name": "Constella Syandana",
+    "description": "Venture into uncharted territory with Mesa Presidio’s signature Syandana.",
+    "type": "Skin",
+    "imageName": "constella-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Shrine of the Eidolon: Update 22.12.0",
+        "date": "2018-02-09T23:37:46Z",
+        "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Constella Syandana's jagged collision on some Warframes."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropMandolinGrineer",
     "name": "Corbu Shawzin",
     "description": "Shape intricate melodies with this geometric shawzin.",
@@ -24275,40 +24863,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Prime Vault 27.1.1",
-        "date": "2020-02-11T18:58:48Z",
-        "url": "https://forums.warframe.com/topic/1167915-empyrean-prime-vault-2711/",
-        "additions": "",
-        "changes": "Fixed cases of default Corpus enemies spawning in a Kuva Lich controlled Jupiter Gas City Spy, Sabotage, or Rescue mission once the Objective has been reached. ",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed cases of invulnerable Corpus Turrets.\nFixed a rock clipping into a vent on the Corpus outpost."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed lightmaps on pressure plates in old Corpus ship Sabotage core."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.7",
-        "date": "2019-12-19T22:17:20Z",
-        "url": "https://forums.warframe.com/topic/1155166-empyrean-ivara-prime-2707/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed misplaced meshes in the Corpus Ship Exterminate tileset."
-      },
       {
         "name": "Empyrean: Update 27",
         "date": "2019-12-13T02:34:29Z",
@@ -28351,6 +28905,33 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/NovaDeluxeScarf",
+    "name": "Danavi Syandana",
+    "description": "Nova Asuri’s signature syandana.",
+    "type": "Skin",
+    "imageName": "danavi-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Glast Gambit: Update 19.6.0 + 19.6.0.1",
+        "date": "2017-01-11T23:47:27Z",
+        "url": "https://forums.warframe.com/topic/748631-the-glast-gambit-update-1960-19601/",
+        "additions": "",
+        "changes": "Tweaked Nova Asuri Collection description to clarify that the arm/hands FX is not part of the Danavi Syandana, but on cast of Nova’s powers. ",
+        "fixes": ""
+      },
+      {
+        "name": "Update 19: The War Within",
+        "date": "2016-11-12T04:02:28Z",
+        "url": "https://forums.warframe.com/topic/715768-update-19-the-war-within/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the Danavi Syandana clipping into numerous Warframes when equipped. "
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenDarkDagger",
     "name": "Dark Dagger Day Of The Dead Skin",
     "description": "A morbidly festive skin for the Dark Dagger.",
@@ -29490,6 +30071,33 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/DexScarf",
+    "name": "Dex Nouchali Syandana",
+    "description": "A gift from the Lotus to commemorate the fourth anniversary of the first Tenno waking from Cryo stasis.",
+    "type": "Skin",
+    "imageName": "dex-nouchali-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Octavia’s Anthem: Update 20.2.0",
+        "date": "2017-04-12T18:04:21Z",
+        "url": "https://forums.warframe.com/topic/785788-octavia%E2%80%99s-anthem-update-2020/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Dex Nouchali Syandana clipping on Rhino and Chroma."
+      },
+      {
+        "name": "Octavia's Anthem: Hotfix 20.0.9",
+        "date": "2017-04-03T21:18:36Z",
+        "url": "https://forums.warframe.com/topic/782477-octavias-anthem-hotfix-2009/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed clipping issues with the Dex Nouchali Syandana on the Frost Harka Skin."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Fairy/TitaniaDeluxeArchwingPistolsSkin",
     "name": "Dex Pixia Hawkmoth Skin",
     "description": "Flash and dart with this regal skin for the Dex Pixia.",
@@ -29888,56 +30496,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "Added tips to the \"Configure Railjack\" screen in the Dojo. Simply hover over the \"i\" icon in the bottom right corner to learn more about each category! ",
-        "fixes": "Fixed Mission Time carrying over from time spent in Dojos or Relays."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.11 - 27.0.11.3",
-        "date": "2020-01-16T18:22:26Z",
-        "url": "https://forums.warframe.com/topic/1162207-empyrean-ivara-prime-27011-270113/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0eb964807a745fb09beee66a192e3913.JPG",
-        "additions": "",
-        "changes": "Fixed Clients being stuck in a permanent streaming tunnel if they were in Dojo and Host in Liset.\nFixed being in Operator mode in the Dry Dock and then starting a Railjack mission resulting in your Operator being in it’s non-combat Dojo state.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.10",
-        "date": "2020-01-10T21:04:19Z",
-        "url": "https://forums.warframe.com/topic/1160887-empyrean-ivara-prime-27010/",
-        "additions": "",
-        "changes": "Fixes towards Ram Sleds occurring during a transition to the Dojo after completing a Railjack mission.\nFixed incorrect minimap overlay when failing a Railjack mission and returning to the Dojo.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "Fixed Clients being permanently dead in Railjacks if they return to a Dojo in the ‘Revive’ screen. ",
-        "fixes": "Fixed FX issues with the Simaris Ship / Dojo Decoration no properly adjusting when moving around. "
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.6.1",
-        "date": "2019-12-18T22:54:11Z",
-        "url": "https://forums.warframe.com/topic/1154608-empyrean-ivara-prime-27061/",
-        "additions": "",
-        "changes": "You can now trade Avionics in your Dojo or Maroo’s Bazaar!\nCould not find an Open Squad. Please try again, or launch a new session from your personal Railjack stationed in a Dojo's Dry Dock.",
-        "fixes": "Fixed a script error when clicking an unnecessary Replicate button on Researched Dojo Pigments."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.4",
-        "date": "2019-12-17T18:58:02Z",
-        "url": "https://forums.warframe.com/topic/1154021-empyrean-ivara-prime-2704/",
-        "additions": "",
-        "changes": "Fixed a soft lock when attempting to Repair Wreckage in someone else's Dojo.",
-        "fixes": ""
-      },
       {
         "name": "Empyrean: Hotfix 27.0.2",
         "date": "2019-12-13T22:20:57Z",
@@ -32032,6 +32590,26 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/LisetScarf",
+    "name": "Domus Syandana",
+    "description": "Take to the stars with this sleek Syandana. Strapping in feels just like home.",
+    "type": "Skin",
+    "imageName": "domus-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Saint of Altra: Update 25.7.0",
+        "date": "2019-08-29T21:35:56Z",
+        "url": "https://forums.warframe.com/topic/1123841-saint-of-altra-update-2570/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/b7051b1cd27e521570bda7f30b2dc0da.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Domus Syandana not connecting properly to Khora’s back."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenDragonNikana",
     "name": "Dragon Nikana Day Of The Dead Skin",
     "description": "A morbidly festive skin for the Dragon Nikana.",
@@ -32329,6 +32907,15 @@
     "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
     "type": "Misc",
     "imageName": "earth-brown.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/ScarletSpearPlanetDeco",
+    "name": "Earth Console",
+    "description": "A planet Earth projection for the Orbiter.",
+    "type": "Ship Decoration",
+    "imageName": "earth-console.png",
     "category": "Skins",
     "tradable": false
   },
@@ -36229,23 +36816,6 @@
     "tradable": false,
     "patchlogs": [
       {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "Fixed Lich ‘Ruse’ clones displaying the default Excalibur Helmet on their shoulder instead of the same Warframe Helmet as their owner. ",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed your Kuva Lich having the default Excalibur Helmet on their shoulder if you killed the Kuva Larvling as a Client. "
-      },
-      {
         "name": "Hotfix 17.3.1",
         "date": "2015-09-04T15:59:08Z",
         "url": "https://forums.warframe.com/topic/522855-hotfix-1731/",
@@ -36272,23 +36842,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "Fixed Lich ‘Ruse’ clones displaying the default Excalibur Helmet on their shoulder instead of the same Warframe Helmet as their owner. ",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed your Kuva Lich having the default Excalibur Helmet on their shoulder if you killed the Kuva Larvling as a Client. "
-      },
       {
         "name": "Hotfix 17.3.1",
         "date": "2015-09-04T15:59:08Z",
@@ -37172,17 +37725,7 @@
     "type": "Skin",
     "imageName": "excalibur-zato-skin.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.5",
-        "date": "2019-12-17T23:01:35Z",
-        "url": "https://forums.warframe.com/topic/1154134-empyrean-ivara-prime-2705/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixes towards Syandana’s clipping through Excalibur Zato Skins body."
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Sony/RenownGenericPack",
@@ -37657,15 +38200,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed magnetic proc sound playing repeatedly on Shock Eximus Auras."
-      },
       {
         "name": "Rising Tide: Update 26.1",
         "date": "2019-11-22T21:38:34Z",
@@ -38718,56 +39252,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Prime Vault 27.1.2",
-        "date": "2020-02-18T20:34:22Z",
-        "url": "https://forums.warframe.com/topic/1169441-empyrean-prime-vault-2712/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed seeing ‘[HC] Vidar Fire Suppress’ when using the Tactical Intrinsic Ability Fire Suppression when your Railjack  has both fire and electrical damage."
-      },
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "Melee Heavy Attacks are no longer able to be triggered by holding 'E', they again live exclusively on Alt-Fire.\nThe loss of Melee Combo Counter feedback due to spamming Melee drove the vast amounts of requests for Melee Heavy Attack to not be holding ‘E’. A toggle for Melee Heavy Attacks is not in the cards, thus Melee Heavy Attacks are now essentially brought back to its original mechanic of having to use Alt-Fire. ",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "Minor Breaches, Fires, and Electrical traps now restore Railjack Health once again when a Catastrophic Failure breach is active!",
-        "fixes": "Fixed the Quellor Alt Fire being silent when it’s meant to be Alarming (as indicated in the Arsenal). "
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.10",
-        "date": "2020-01-10T21:04:19Z",
-        "url": "https://forums.warframe.com/topic/1160887-empyrean-ivara-prime-27010/",
-        "additions": "",
-        "changes": "Repairing a minor Railjack Breach/Fire/Electrical when a Catastrophic Failure breach is active will no longer give Health back to the Railjack.\nFixed hazard markers (Fire, Electricity, Fast Travel) inside the Railjack appearing in the wrong locations when viewed in the Tactical Menu while on the Pilot seat or side Turrets.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed an issue where Chroma’s Elemental Ward in the ‘Fire’ mode would subtract health if Operators strayed too far from Warframes. "
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.4",
-        "date": "2019-12-17T18:58:02Z",
-        "url": "https://forums.warframe.com/topic/1154021-empyrean-ivara-prime-2704/",
-        "additions": "",
-        "changes": "15% of max Health for Fire and Electricity Traps",
-        "fixes": ""
-      },
       {
         "name": "Empyrean: Hotfix 27.0.2",
         "date": "2019-12-13T22:20:57Z",
@@ -40075,6 +40559,15 @@
     "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
     "type": "Misc",
     "imageName": "forest-grey.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TennoFeathersCapeScarf",
+    "name": "Foxglove Syandana",
+    "description": "Envelope a Warframe in this silky nature inspired Syandana.",
+    "type": "Skin",
+    "imageName": "foxglove-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -43536,6 +44029,24 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TitaniaPrimeShortSyandana",
+    "name": "Gigelor Prime Syandana",
+    "description": "A miniature twist on Titania Prime's signature syandana.",
+    "type": "Skin",
+    "imageName": "gigelor-prime-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TitaniaPrimeSyandana",
+    "name": "Gigelorum Prime Syandana",
+    "description": "Titania Prime's signature syandana.",
+    "type": "Skin",
+    "imageName": "gigelorum-prime-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstArtisanBulbs",
     "name": "Gilded Illumination",
     "description": "Illumination, crafted by Ostron glassworkers, fashioned and gilded to aesthetic perfection.",
@@ -44871,64 +45382,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed being able to revive in the ceiling in part of the Grineer Fortress.\nFixed animation issues with the Grineer Flameblade causing its second and third attacks in its attack combo to miss its target.\nFixed ability to escape the Grineer Settlement tileset level bounds via Nezha’s Blazing Chakram.\nFixed missing door frames in the Grineer Settlement Sabotage Tileset.\nFixed missing minimap in part of the Grineer Shipyard.\nFixed a teleport volume in part of the Grineer Sealab that was larger than it should be.\nFixed a hole in part of the Grineer Sealab."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Grineer Dregs having broken firing mechanics."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.10",
-        "date": "2020-01-10T21:04:19Z",
-        "url": "https://forums.warframe.com/topic/1160887-empyrean-ivara-prime-27010/",
-        "additions": "",
-        "changes": "Upgraded art quality for certain Grineer Installations in Railjack missions.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "Fixed the ‘Hijacked’ Grineer Crewship spawning inside geometry. \nFixed an issue where players entering Grineer Ramsleds could travel unknown places. \nRemoved a crate from extraction zone in Grineer Shipyard so it will stop taunting solo players who couldn’t get it.",
-        "fixes": "Fixed overlapping environmental issues in Grineer Galleons. \nFixed a crate that was spawning within walls on the Grineer Shipyard.\nFixed a minimap that was missing from a section of the Grineer Shipyard."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.7",
-        "date": "2019-12-19T22:17:20Z",
-        "url": "https://forums.warframe.com/topic/1155166-empyrean-ivara-prime-2707/",
-        "additions": "",
-        "changes": "Fixed an unhackable console in a Grineer Galleon Railjack base",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.5",
-        "date": "2019-12-17T23:01:35Z",
-        "url": "https://forums.warframe.com/topic/1154134-empyrean-ivara-prime-2705/",
-        "additions": "",
-        "changes": "Fixed an exploit where Turret encounters would infinitely respawn despite not being intended to (nor Grineer having the means to generate infinite turrets, yet).",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.4",
-        "date": "2019-12-17T18:58:02Z",
-        "url": "https://forums.warframe.com/topic/1154021-empyrean-ivara-prime-2704/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when being pulled by a Grineer Scorpion.\nFixed an issue with Grineer Ghouls causing a script error."
-      },
       {
         "name": "Empyrean: Hotfix 27.0.3",
         "date": "2019-12-16T15:44:21Z",
@@ -48540,6 +48993,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/GrineerTurbinesScarf",
+    "name": "Harkonar Cloak",
+    "description": "A syandana of Grineer design. Matches the Harkonar Armor Set.",
+    "type": "Skin",
+    "imageName": "harkonar-cloak.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Armor/GrineerTurbines/WraithTurbinesArmArmor",
     "name": "Harkonar Wraith Arm Armor",
     "description": "A blood-red variant of this symbolic Grineer armor.",
@@ -49830,6 +50292,33 @@
     "imageName": "heavy-blade-tengoken-skin.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/HornSkullScarfDefault",
+    "name": "Hecate Syandana",
+    "description": "Used for festive ceremonies, this Syandana was often worn during social gatherings.",
+    "type": "Skin",
+    "imageName": "hecate-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 15.0.7",
+        "date": "2014-10-28T23:04:04Z",
+        "url": "https://forums.warframe.com/topic/334873-hotfix-1507/",
+        "additions": "• Improved the collision of the Hecate Syandana on the Rhino warframe.",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Update 14.5: Operation Cryotic Front!",
+        "date": "2014-08-28T13:39:34Z",
+        "url": "https://forums.warframe.com/topic/298960-update-145-operation-cryotic-front/",
+        "additions": "Hecate Syandana!",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Deluxe/NyxDeluxeShotgunSkin",
@@ -52171,14 +52660,6 @@
     "tradable": false,
     "patchlogs": [
       {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed some distortion FX on the Ice Planet's heat generators and improved their performance by removing a bunch of scripts to animate them. "
-      },
-      {
         "name": "Rising Tide: Update 26.1",
         "date": "2019-11-22T21:38:34Z",
         "url": "https://forums.warframe.com/topic/1144842-rising-tide-update-261/",
@@ -52958,6 +53439,74 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/HalloweenFireFlyScarf",
+    "name": "Igaro Day Of The Dead Syandana",
+    "description": "An Igaro Syandana adorned with a morbidly festive design.",
+    "type": "Skin",
+    "imageName": "igaro-day-of-the-dead-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/FireFlyScarf",
+    "name": "Igaro Syandana",
+    "description": "This wing-like syandana invokes the beauty and agility of the Ceresean Butterfly Sparrow.",
+    "type": "Skin",
+    "imageName": "igaro-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Hotfix 22.3.5",
+        "date": "2017-11-20T23:06:42Z",
+        "url": "https://forums.warframe.com/topic/882798-plains-of-eidolon-hotfix-2235/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Day of The Dead Igaro Syandana and Synoid Syandana not attaching properly when the Mesa Devil Ranger Skin is equipped."
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Igaro Syandana positioning on all Warframes. "
+      },
+      {
+        "name": "Oberon Prime: Update 20.7.0",
+        "date": "2017-06-07T19:08:59Z",
+        "url": "https://forums.warframe.com/topic/804548-oberon-prime-update-2070/",
+        "additions": "",
+        "changes": "Adjusted the Igaro Syandana positioning on Hydroid to bring it closer to the body.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia’s Anthem: Update 20.6.0 + 20.6.0.1",
+        "date": "2017-05-24T20:42:16Z",
+        "url": "https://forums.warframe.com/topic/800141-octavia%E2%80%99s-anthem-update-2060-20601/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Igaro Syandana clipping into Volt’s legs."
+      },
+      {
+        "name": "Update 17.9.0",
+        "date": "2015-10-28T15:12:27Z",
+        "url": "https://forums.warframe.com/topic/552544-update-1790/",
+        "additions": "Igaro Syandana",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Update 17.5: The Jordas Precept. + Hotfix 17.5.1",
+        "date": "2015-10-02T02:05:33Z",
+        "url": "https://forums.warframe.com/topic/536207-update-175-the-jordas-precept-hotfix-1751/",
+        "additions": "Igaro Syandana: This wing-like syandana invokes the beauty and agility of the Ceresean Butterfly Sparrow.",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/SummerSolstice/SummerIgnisSkin",
     "name": "Ignis Towsun Skin",
     "description": "Weather the heat with this sizzling skin for the Ignis.",
@@ -52987,6 +53536,33 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/InfestedFinsScarf",
+    "name": "Iliac Syandana",
+    "description": "An infested syandana made from living tissue. Matches the Iliac Armor Set.",
+    "type": "Skin",
+    "imageName": "iliac-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Sacrifice: Hotfix 23.0.5",
+        "date": "2018-06-22T19:07:35Z",
+        "url": "https://forums.warframe.com/topic/972941-the-sacrifice-hotfix-2305/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Iliac Syandana not playing nicely with Umbra’s scarf.  "
+      },
+      {
+        "name": "Update 19: The War Within",
+        "date": "2016-11-12T04:02:28Z",
+        "url": "https://forums.warframe.com/topic/715768-update-19-the-war-within/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the Iliac Syandana not inheriting the molted effect when equipped on Saryn."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Emotes/ArbitrationEmote",
     "name": "Illumina Judicium",
     "description": "Let Arbitration begin.",
@@ -53013,6 +53589,50 @@
     "imageName": "imperator-day-of-the-dead-skin.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/HolidayTurtleNeckScarf",
+    "name": "Imperator Festive Syandana",
+    "description": "A festive variation of the Imperator Syandana.",
+    "type": "Skin",
+    "imageName": "imperator-festive-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TurtleNeckScarf",
+    "name": "Imperator Syandana",
+    "description": "Before the fall, the Imperator Syandana was bestowed upon only the highest-ranking Orokin commanders.",
+    "type": "Skin",
+    "imageName": "imperator-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 18.6.2",
+        "date": "2016-03-22T17:37:40Z",
+        "url": "https://forums.warframe.com/topic/628628-hotfix-1862/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Imperator Syandana sitting high on the neck of many Warframes."
+      },
+      {
+        "name": "Hotfix 13.0.6+13.0.7+13.0.7.1",
+        "date": "2014-04-17T17:11:44Z",
+        "url": "https://forums.warframe.com/topic/217108-hotfix-1306130713071/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Improved the positioning of the Imperator Syandana to fit better on Oberon's back."
+      },
+      {
+        "name": "Hotfix 12.5.1",
+        "date": "2014-03-20T03:28:32Z",
+        "url": "https://forums.warframe.com/topic/198348-hotfix-1251/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Imperator Syandana appearing on Banshee’s waist."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeChromaCape",
@@ -54238,15 +54858,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "Prime Smite Infested and the Zylok are now tradeable. ",
-        "fixes": ""
-      },
       {
         "name": "Empyrean: Update 27",
         "date": "2019-12-13T02:34:29Z",
@@ -55961,17 +56572,7 @@
     "type": "Skin",
     "imageName": "ivara-kuvael-huntress-helmet.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.6.1",
-        "date": "2019-12-18T22:54:11Z",
-        "url": "https://forums.warframe.com/topic/1154608-empyrean-ivara-prime-27061/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the Ivara Kuvael Huntress Helmet floating away from Ivara Prime’s body."
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Archer/SWKuvaelSkin",
@@ -56619,6 +57220,43 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SolsticeU17TnoCapeScarf",
+    "name": "Izvara Solstice Syandana",
+    "description": "An Izvara Syandana that has been adorned with a festive design.",
+    "type": "Skin",
+    "imageName": "izvara-solstice-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Characters/Tenno/Accessory/Scarves/U17TnoCape/U17TnoCapeItem",
+    "name": "Izvara Syandana",
+    "description": "The exclusive garment of Tenno chosen to protect the Orokin Council of Executors.",
+    "type": "Misc",
+    "imageName": "izvara-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 19: The War Within",
+        "date": "2016-11-12T04:02:28Z",
+        "url": "https://forums.warframe.com/topic/715768-update-19-the-war-within/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed incorrect positioning of the Izvara Syandana on Saryn Prime."
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnLargeCapeXbox",
+    "name": "Jade Broca Syandana",
+    "description": "A next-generation syandana.",
+    "type": "Skin",
+    "imageName": "jade-broca-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/JadePatikaMeleeDangle",
     "name": "Jade Patika Sugatra",
     "description": "A cross of jade-green arcs elegantly across this Tenno styled sugatra.",
@@ -56719,15 +57357,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the Jotunheim Oculus being too faded during gameplay. "
-      },
       {
         "name": "TennoGen & Nightwave Episode 5: Hotfix 25.7.8",
         "date": "2019-09-26T21:00:27Z",
@@ -57259,6 +57888,15 @@
         "fixes": "including Volt Prime, Odonata Prime, Edo Prime Armor and the Kazeru Prime Sugatra. Plus, stock up on discounted Platinum and get Exclusive Gear available only through Prime Access!\nModify your Warframe with the Edo Prime Armor and Kazeru Prime Sugatra. Add Exclusive Volt Prime Avatars to your online presence! Speed up your in-game progress with 90-Day Affinity and Credit Boosters."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/QuillCape",
+    "name": "Kerata Syandana",
+    "description": "Flowing lines meet sharpened spikes in Khora’s signature syandana.",
+    "type": "Skin",
+    "imageName": "kerata-syandana.png",
+    "category": "Skins",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/InfShellSugatraMeleeDangle",
@@ -58199,6 +58837,24 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/KazBaroCape",
+    "name": "Ki'Teer Diax Syandana",
+    "description": "Define style with this crystalline cape.",
+    "type": "Skin",
+    "imageName": "ki'teer-diax-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/BaroCape2Scarf",
+    "name": "Ki'Teer Razza Syandana",
+    "description": "Exude style and poise with this refined accessory.",
+    "type": "Skin",
+    "imageName": "ki'teer-razza-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Clan/BaroQuantumBadgeItem",
     "name": "Ki'Teer Sekhara",
     "description": "Stand apart from the crowd with this Ki'Teer original.",
@@ -58214,6 +58870,34 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed Ki'Teer Sekhara so it appears properly when equipped. "
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SolsticeBaroCape",
+    "name": "Ki'Teer Solstice Syandana",
+    "description": "A Ki'Teer Syandana that has been adorned with a festive design.",
+    "type": "Skin",
+    "imageName": "ki'teer-solstice-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/BaroCape",
+    "name": "Ki'Teer Syandana",
+    "description": "Walk the cutting edge of fashion with this exclusive Ki'Teer original.",
+    "type": "Skin",
+    "imageName": "ki'teer-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 18.10.4 Operation Rathuum.",
+        "date": "2016-05-02T21:29:22Z",
+        "url": "https://forums.warframe.com/topic/644355-hotfix-18104-operation-rathuum/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Ki'Teer Syandana placing incorrectly on Equinox as per: https://forums.warframe.com/topic/637842-equinox-and-kiteer-syandana/"
       }
     ]
   },
@@ -58955,6 +59639,25 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/GrnQueenScarf",
+    "name": "Kuva Braid",
+    "description": "Symbolizing the corrupting power of the Grineer Queens.",
+    "type": "Skin",
+    "imageName": "kuva-braid.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chains of Harrow: Hotfix 21.0.8 + 21.0.8.1",
+        "date": "2017-07-13T20:50:40Z",
+        "url": "https://forums.warframe.com/topic/817221-chains-of-harrow-hotfix-2108-21081/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Kuva Braids randomly summoning Guardian Eximis. "
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Armor/GrineerQueenArmour/GrineerQueenArmourC",
     "name": "Kuva Chest Plate",
     "description": "A decorative breastplate for your Warframe.",
@@ -58972,6 +59675,15 @@
         "fixes": "Fixed Kuva Chest Plate clipping on Saryn, Mirage, Valkyr, Trinity and their Prime variants."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/GrnHoodedCape",
+    "name": "Kuva Cloak",
+    "description": "Once worn by an elegant Elder Queen, before time and disease left her body mangled and disfigured.",
+    "type": "Skin",
+    "imageName": "kuva-cloak.png",
+    "category": "Skins",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/GrnQueensMeleeDangle",
@@ -59027,6 +59739,78 @@
     "imageName": "kuva-shoulder-plate.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/HalloweenKyropteraScarf",
+    "name": "Kyroptera Day Of The Dead Syandana",
+    "description": "A morbidly festive syandana.",
+    "type": "Skin",
+    "imageName": "kyroptera-day-of-the-dead-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/BrassAndGoldScarf",
+    "name": "Kyroptera Ormolu Syandana",
+    "description": "Custom edition of the Kyroptera Syandana forged by Tenno artisans.",
+    "type": "Skin",
+    "imageName": "kyroptera-ormolu-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/April2015Scarf",
+    "name": "Kyroptera Syandana",
+    "description": "A Tenno Syandana evocative of winged night creatures.",
+    "type": "Skin",
+    "imageName": "kyroptera-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chains of Harrow: Update 21.2.0 + 21.2.0.1",
+        "date": "2017-07-26T21:16:57Z",
+        "url": "https://forums.warframe.com/topic/823165-chains-of-harrow-update-2120-21201/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixes towards the Kyroptera Syandana not sitting correctly on Warframes. "
+      },
+      {
+        "name": "Hotfix 16.8.3",
+        "date": "2015-06-12T19:25:15Z",
+        "url": "https://forums.warframe.com/topic/474057-hotfix-1683/",
+        "additions": "",
+        "changes": "Adjustments have been made to the Kyroptera Syandana that should allow for better flip-flop physics.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 16.8.0",
+        "date": "2015-06-10T22:03:09Z",
+        "url": "https://forums.warframe.com/topic/473028-update-1680/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Tenno, give your Warframe honorable style with the new Kyroptera Syandana! Complement the look with the Ormolu Weapon Skin Bundle, including a Skin for the Kyroptera. Add power to your Warframe with new Ability Augment Mods!\nOrmolu Skins for your Daikyu, Akbolto, Bolto and Tipedo Weapons as well as the Ormolu Kyroptera Syandana will add an honorable brass and gold finish."
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/GrnStrapsScarf",
+    "name": "Laddak Cloak",
+    "description": "Fashioned with spare field components this cloak is an example of rarely seen creativity within the Grineer ranks.",
+    "type": "Skin",
+    "imageName": "laddak-cloak.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The War Within: Update 19.4 + 19.4.1",
+        "date": "2016-12-16T17:50:13Z",
+        "url": "https://forums.warframe.com/topic/735406-the-war-within-update-194-1941/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Set your enemies in flames with the Javlok. Complete this loadout by adding the Laddak Cloak and Boloket Sugatra. Customize your Warframe with a new round of community-created TennoGen items on the Steam Workshop!"
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Dazzle/LankaDazzleCamo",
@@ -59571,18 +60355,7 @@
     "type": "Skin",
     "imageName": "limbo-limina-skin.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "Restored the original default Energy colors of the Limbo Limina Skin and Nekros Irkalla Skin to match its original artist intentions.",
-        "fixes": ""
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Magician/MagicianAltBHelmet",
@@ -60415,6 +61188,25 @@
     "imageName": "liset-zikha-skin.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnSundialCape",
+    "name": "Lodestar Syandana",
+    "description": "Stay on the true path with this compass inspired Syandana.",
+    "type": "Skin",
+    "imageName": "lodestar-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "additions": "",
+        "changes": "The Lodestar Syandana and the Lodestar Armor Set ",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Loki/UnlockLokiAgile",
@@ -62953,6 +63745,25 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/NefSyandanaScarf",
+    "name": "Lucra Syandana",
+    "description": "Flaunt wealth and prosperity with a constant stream of financial data.",
+    "type": "Skin",
+    "imageName": "lucra-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Octavia’s Anthem: Hotfix 20.3.1",
+        "date": "2017-04-27T20:46:08Z",
+        "url": "https://forums.warframe.com/topic/791287-octavia%E2%80%99s-anthem-hotfix-2031/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Lucra Syandana displaying low quality Corpus text."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Arcade",
     "name": "Ludoplex",
     "description": "Play the finest games in the Origin System with this device. Comes pre-installed with Frame Fighter.",
@@ -63356,6 +64167,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/GrnVhCape",
+    "name": "Maggor Syandana",
+    "description": "Victory over the Grineer, draped across your shoulders.",
+    "type": "Skin",
+    "imageName": "maggor-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Armor/GrineerVHArmour/SummerSolsticeMaggorC",
     "name": "Maggor Towsun Chest Armor",
     "description": "A set of Maggor Armor that has been adorned with a sizzling design.",
@@ -63518,14 +64338,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.6.1",
-        "date": "2019-12-18T22:54:11Z",
-        "url": "https://forums.warframe.com/topic/1154608-empyrean-ivara-prime-27061/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the Massif Prime Syandana getting stuck on Ivara Prime’s skirt cloth."
-      },
       {
         "name": "Update 26: The Old Blood",
         "date": "2019-10-31T20:07:22Z",
@@ -66442,6 +67254,42 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/InfTentacleScarf",
+    "name": "Mucusk Syandana",
+    "description": "A crown of bone spawns a mass of writhing, meaty, Infested tentacles.",
+    "type": "Skin",
+    "imageName": "mucusk-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Update 22.9.0",
+        "date": "2018-01-17T18:31:13Z",
+        "url": "https://forums.warframe.com/topic/908909-plains-of-eidolon-update-2290/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Clients disconnecting on loading screen when entering a Captura Scene if the Host is Nidus and has the Mucusk Syandana equipped."
+      },
+      {
+        "name": "Octavia's Anthem: Hotfix 20.0.7",
+        "date": "2017-03-30T19:04:41Z",
+        "url": "https://forums.warframe.com/topic/780658-octavias-anthem-hotfix-2007/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Mucusk Syandana not sitting properly on Nyx and any of her Skins."
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/ScarletSpearAsteroidsDeco",
+    "name": "Murex Console",
+    "description": "A Sentient Murex projection for the Orbiter.",
+    "type": "Ship Decoration",
+    "imageName": "murex-console.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/BothRareFishATrophy",
     "name": "Murkray Trophy",
     "description": "A trophy of a prized catch.",
@@ -66743,6 +67591,25 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PriestScarf",
+    "name": "Nave Syandana",
+    "description": "Harrow’s signature syandana.",
+    "type": "Skin",
+    "imageName": "nave-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Nave Syandana clipping through Titania’s wings."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/ScrollingPrimeMeleeDangle",
     "name": "Naviga Prime Sugatra",
     "description": "With a form that echos the sails of ancient sea ships, this sugatra creates a commanding silhouette on any weapon.",
@@ -66871,15 +67738,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "Restored the original default Energy colors of the Limbo Limina Skin and Nekros Irkalla Skin to match its original artist intentions.",
-        "fixes": ""
-      },
       {
         "name": "The Jovian Concord: Hotfix 25.0.2 + 25.0.2.1",
         "date": "2019-05-23T20:41:54Z",
@@ -67713,6 +68571,25 @@
     "imageName": "nekros-shroud-helmet.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Characters/Tenno/Accessory/Scarves/U17TnoCape/LotusCapeItem",
+    "name": "Nelumbo Syandana",
+    "description": "Worn to honor The Lotus.",
+    "type": "Misc",
+    "imageName": "nelumbo-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
+        "date": "2017-12-07T22:05:21Z",
+        "url": "https://forums.warframe.com/topic/891096-plains-of-eidolon-update-2260-hotfix-22601/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Nelumbo Syandana floating on the Ember Vermillion Skin. "
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Patterns/KubrowPetPatternPrimeTraderA",
@@ -68872,18 +69749,7 @@
     "type": "Skin",
     "imageName": "nidus-helmet.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "Fixed Nidus Helmet Armor not appearing grayscale on Kuva Liches.",
-        "fixes": ""
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Infestation/NidusAltHelmet",
@@ -71559,6 +72425,33 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/NidusDeluxeScarf",
+    "name": "Nosos Syandana",
+    "description": "The signature Syandana of Nidus Phryke.",
+    "type": "Skin",
+    "imageName": "nosos-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Chimera: Update 23.10",
+        "date": "2018-10-12T13:56:43Z",
+        "url": "https://forums.warframe.com/topic/1016610-chimera-update-2310/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Nosos Syandana clipping when equipped on the Banshee Soprana Skin."
+      },
+      {
+        "name": "The Sacrifice: Hotfix 23.1.3",
+        "date": "2018-07-26T21:04:04Z",
+        "url": "https://forums.warframe.com/topic/988847-the-sacrifice-hotfix-2313/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Everything you need to become the ultimate terror. Includes the unholy Nidus Phryke Skin, Deimos Claw Skin, Nosos Syandana, Helminth Charger Metus Skin and Metus Kubrow Armor."
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/AntiMatter/UnlockAntiMatterAgile",
     "name": "Nova Agile Animation Set",
     "description": "This item lets you use NOVA's agile animation set with any Warframe of your choosing.",
@@ -71585,6 +72478,24 @@
         "fixes": "Fixed the Nova Asuri Skin arm effect not matching your Energy color. "
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/AntiMatter/NovaDeluxeIIHelmet",
+    "name": "Nova Atomica Helmet",
+    "description": "Nova Atomica's signature helmet.",
+    "type": "Skin",
+    "imageName": "nova-atomica-helmet.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/AntiMatter/NovaDeluxeIISuit",
+    "name": "Nova Atomica Skin",
+    "description": "A crucible of reactive energy harnessed within a streamlined facade.",
+    "type": "Skin",
+    "imageName": "nova-atomica-skin.png",
+    "category": "Skins",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/AntiMatter/SWCorpraHelmet",
@@ -75632,6 +76543,25 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/CrpAladScarf",
+    "name": "Opulas Robe",
+    "description": "An opulent display of privilege for the Corpus elite becomes a trophy for the Tenno who fight them.",
+    "type": "Skin",
+    "imageName": "opulas-robe.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 17.5: The Jordas Precept. + Hotfix 17.5.1",
+        "date": "2015-10-02T02:05:33Z",
+        "url": "https://forums.warframe.com/topic/536207-update-175-the-jordas-precept-hotfix-1751/",
+        "additions": "Opulas Robe: An opulent display of privilege for the Corpus elite becomes a trophy for the Tenno who fight them.",
+        "changes": "",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Clan/ConservationBadgeItem",
     "name": "Orb Vallis Conservation Emblem",
     "description": "A symbol of your dedication to the safety and security of all creatures on the Orb Vallis.",
@@ -75957,23 +76887,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "Optimized collision on Orokin Derelict Tentacles to better match current player movement skills. ",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.4",
-        "date": "2019-12-17T18:58:02Z",
-        "url": "https://forums.warframe.com/topic/1154021-empyrean-ivara-prime-2704/",
-        "additions": "",
-        "changes": "The Orokin-engineered definition of silent lethality.",
-        "fixes": ""
-      },
       {
         "name": "Rising Tide: Hotfix 26.1.2",
         "date": "2019-11-25T21:20:27Z",
@@ -77965,6 +78878,44 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/StalkerCapeItem",
+    "name": "Pakal Syandana",
+    "description": "Formed from the bones of Sentient fighters and given to the Stalker by Hunhow.",
+    "type": "Skin",
+    "imageName": "pakal-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 18: The Second Dream",
+        "date": "2015-12-03T23:46:40Z",
+        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
+        "additions": "",
+        "changes": "Pakal Syandana: Formed from the bones of Sentient fighters and given to the Stalker by Hunhow.",
+        "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/RhinoDeluxeScarf",
+    "name": "Palatine Syandana",
+    "description": "A Syandana fit for a knight.",
+    "type": "Skin",
+    "imageName": "palatine-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 17.12.0",
+        "date": "2015-11-25T17:32:33Z",
+        "url": "https://forums.warframe.com/topic/564564-update-17120/",
+        "additions": "",
+        "changes": "Palatine Syandana:  A Syandana fit for a knight.",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Weapons/Pistols/CeramicPistolSkin",
     "name": "Pandero Ceramica Skin",
     "description": "A bold red and white glaze glisten across the surface of this hardened ceramic Pandero skin.",
@@ -78100,6 +79051,15 @@
     "description": "Pay homage to the constellations with this brilliant Paris skin.",
     "type": "Skin",
     "imageName": "paris-nocturne-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnSparrowCape",
+    "name": "Parotia Syandana",
+    "description": "Put on a striking display with this fanciful syandana.",
+    "type": "Skin",
+    "imageName": "parotia-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -79760,6 +80720,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/VTHornSkullScarf",
+    "name": "Prisma Hecate Syandana",
+    "description": "This Hecate Syandana has been threaded with filaments of prisma crystals.",
+    "type": "Skin",
+    "imageName": "prisma-hecate-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Wings/PrismaJetWings",
     "name": "Prisma Jet Sentinel Wings",
     "description": "An ordinary Sentinel becomes extraordinary with striking prisma accessories.",
@@ -79779,11 +80748,29 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/PrismaLotusEmblem",
+    "name": "Prisma Lotus Emblem",
+    "description": "From Baro Ki'Teer comes this stylish reimagining of the Lotus' signature symbol.",
+    "type": "Skin",
+    "imageName": "prisma-lotus-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrismaRazorScarf",
     "name": "Prisma Uru Syandana",
     "description": "Shimmering prisma crystals give this syandana a mesmerizing sheen.",
     "type": "Skin",
     "imageName": "prisma-uru-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/VTDinoSpikeScarf",
+    "name": "Prisma Yamako Syandana",
+    "description": "Forged by Orokin era artisans, this exquisite syandana is finished by bathing its prisma crystal in pure Void energy.",
+    "type": "Skin",
+    "imageName": "prisma-yamako-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -80734,6 +81721,75 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/FlameScarf",
+    "name": "Pyra Syandana",
+    "description": "During the Orokin Era, only the most fierce warriors were permitted to wear this flaming Syandana.",
+    "type": "Skin",
+    "imageName": "pyra-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Saint of Altra: Update 25.7.0",
+        "date": "2019-08-29T21:35:56Z",
+        "url": "https://forums.warframe.com/topic/1123841-saint-of-altra-update-2570/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/b7051b1cd27e521570bda7f30b2dc0da.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed issues with Ayla, Misa Prime and Pyra Syandana offsets on Banshee Prime. "
+      },
+      {
+        "name": "The Jovian Concord: Hotfix 25.2.3",
+        "date": "2019-06-25T18:04:46Z",
+        "url": "https://forums.warframe.com/topic/1105676-the-jovian-concord-hotfix-2523/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/f1b2074d42ab2913ea8c08aeda068d6e.jpg",
+        "additions": "",
+        "changes": "1 Pyra Syandana ",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
+        "date": "2017-12-07T22:05:21Z",
+        "url": "https://forums.warframe.com/topic/891096-plains-of-eidolon-update-2260-hotfix-22601/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed accent colour not applying on the Pyra Syandana. "
+      },
+      {
+        "name": "Hotfix 18.0.7 ",
+        "date": "2015-12-11T15:33:06Z",
+        "url": "https://forums.warframe.com/topic/576214-hotfix-1807-spoilers/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed visual flickering on the Pyra Syandana."
+      },
+      {
+        "name": "Hotfix 17.5.4",
+        "date": "2015-10-02T22:13:17Z",
+        "url": "https://forums.warframe.com/topic/537213-hotfix-1754/",
+        "additions": "",
+        "changes": "Removed 'the floppy bacon' behaviour of the Prime Pyra Syandana and improved physics on the Yamako Prime Scarf to be more 'metal' than 'cloth'.  ",
+        "fixes": ""
+      },
+      {
+        "name": "Update 14.5: Operation Cryotic Front!",
+        "date": "2014-08-28T13:39:34Z",
+        "url": "https://forums.warframe.com/topic/298960-update-145-operation-cryotic-front/",
+        "additions": "",
+        "changes": "",
+        "fixes": "• Fixed issues with the Pyra Syandana falling in front of the Warframe when viewed from the back."
+      },
+      {
+        "name": "13.9.0 + 13.9.0.1: The Venka",
+        "date": "2014-06-25T23:56:59Z",
+        "url": "https://forums.warframe.com/topic/252764-1390-13901-the-venka/",
+        "additions": "",
+        "changes": "",
+        "fixes": "New Pyra Syandana! A flaming remnant of the Orokin Elite!"
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/CrpMBundleSyandana",
     "name": "Quaro Syandana",
     "description": "Extol the virtues of Profit with this Corpus-styled Syandana.",
@@ -80773,6 +81829,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/NovaIIDeluxeSyandana",
+    "name": "Radia Syandana",
+    "description": "The signature syandana of Nova Atomica.",
+    "type": "Skin",
+    "imageName": "radia-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SWRaijiScarf",
     "name": "Raiji Syandana",
     "description": "A syandana for your Warframe, designed by led2012.<UGC> TennoGen",
@@ -80799,6 +81864,49 @@
     "imageName": "rakta-red.png",
     "category": "Skins",
     "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/HornSkullScarf",
+    "name": "Rakta Syandana",
+    "description": "The Rakta Syandana is awarded by the Red Veil for exemplary valor. This honor is rarely given to outsiders.",
+    "type": "Skin",
+    "imageName": "rakta-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Shrine of the Eidolon: Update 22.12.0",
+        "date": "2018-02-09T23:37:46Z",
+        "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Asita Rakta Syandana clipping into Loki Primes back when equipped."
+      },
+      {
+        "name": "Update 18.13.0: TennoGen, Passives, & Reworks",
+        "date": "2016-05-27T21:20:29Z",
+        "url": "https://forums.warframe.com/topic/652752-update-18130-tennogen-passives-reworks%C2%A0/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Asita Rakta Syandana placing incorrectly on Saryn’s Orphid Skin. "
+      },
+      {
+        "name": "Hotfix 14.7.2",
+        "date": "2014-09-18T20:01:24Z",
+        "url": "https://forums.warframe.com/topic/312035-hotfix-1472/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Energy colour is now customizable on the Rakta Syandana."
+      },
+      {
+        "name": "Hotfix 13.2.2+13.2.2.1",
+        "date": "2014-05-02T21:10:03Z",
+        "url": "https://forums.warframe.com/topic/225898-hotfix-132213221/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Improved the physics on the Rakta Syandana to alleviate issues and concerns about the appearance."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/SteamWorkshop/Melee/Rapier/SWFeritaRapierSkin",
@@ -80834,6 +81942,25 @@
         "url": "https://forums.warframe.com/topic/1035982-fortuna-update-2410-tennogen-round-14/",
         "additions": "",
         "changes": "Dagger Crubbak Skin by Lubox and ScharkieRapier Ferita Skin by HitsuSan and ReilTonfa Hades Skin by malayu, Scharkie, and JadieGreatsword Ion Skin by Yatus and IgnusDeiGreatsword Karv’r Skin by Faven and ScharkieRapier Ni'Duhl Skin by FavenOpticor Mithra Skin by lukinu_uSword Tengushen Skin by BeastBuster",
+        "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/GrnTubeScarf",
+    "name": "Rath Kittag Cloak",
+    "description": "A prototype destined for one of Tyl Regor’s experiments, this syandana has been repurposed for Tenno Agents.",
+    "type": "Skin",
+    "imageName": "rath-kittag-cloak.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 17.1.0 - 17.1.4",
+        "date": "2015-08-12T21:08:45Z",
+        "url": "https://forums.warframe.com/topic/509640-update-1710-1714/",
+        "additions": "",
+        "changes": "Give your Warframe and Weapons a bold new look with the Rath Kittag Cloak and Nightwatch Camouflage Bundle!",
         "fixes": ""
       }
     ]
@@ -82343,6 +83470,24 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TennoLeafDotCapeScarf",
+    "name": "Samia Syandana",
+    "description": "Envelope a Warframe in this silky nature inspired Syandana.",
+    "type": "Skin",
+    "imageName": "samia-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SyndicateNLScarf",
+    "name": "Sancti Syandana",
+    "description": "The Sancti Syandana pulses every time the Tenno uses an ability and continues to strengthen with each ability used.",
+    "type": "Skin",
+    "imageName": "sancti-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Kubrows/Armor/WukongPrimeKubrowArmor",
     "name": "Sanzang Prime Kubrow Armor",
     "description": "Ancient Orokin armor for the most faithful and favored Kubrow wardens.",
@@ -82906,6 +84051,96 @@
         "fixes": "Fixed the Scapulis Syandana Energy color persisting as default. "
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/InarosDlxCape",
+    "name": "Scarab Syandana",
+    "description": "The signature syandana of Inaros Ramses.",
+    "type": "Skin",
+    "imageName": "scarab-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearGroundIEmblem",
+    "name": "Scarlet Spear Condrix I Emblem",
+    "description": "Earned through ground assaults against the Sentient Condrix during Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-condrix-i-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearGroundIIEmblem",
+    "name": "Scarlet Spear Condrix Ii Emblem",
+    "description": "Earned through ground assaults against the Sentient Condrix during Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-condrix-ii-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearGroundIIIEmblem",
+    "name": "Scarlet Spear Condrix Iii Emblem",
+    "description": "Earned through ground assaults against the Sentient Condrix during Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-condrix-iii-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearSpaceIEmblem",
+    "name": "Scarlet Spear Murex I Emblem",
+    "description": "Earned through Railjack raids against the Sentient Murex during Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-murex-i-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearSpaceIIEmblem",
+    "name": "Scarlet Spear Murex Ii Emblem",
+    "description": "Earned through Railjack raids against the Sentient Murex during Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-murex-ii-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearSpaceIIIEmblem",
+    "name": "Scarlet Spear Murex Iii Emblem",
+    "description": "Earned through Railjack raids against the Sentient Murex during Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-murex-iii-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearOperationIEmblem",
+    "name": "Scarlet Spear Operations I Emblem",
+    "description": "Awarded for exemplary performance in Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-operations-i-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearOperationIIEmblem",
+    "name": "Scarlet Spear Operations Ii Emblem",
+    "description": "Awarded for exemplary performance in Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-operations-ii-emblem.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Clan/ScarletSpear/ScarletSpearOperationIIIEmblem",
+    "name": "Scarlet Spear Operations Iii Emblem",
+    "description": "Awarded for exemplary performance in Operation Scarlet Spear.",
+    "type": "Skin",
+    "imageName": "scarlet-spear-operations-iii-emblem.png",
+    "category": "Skins",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SWSciathinScarf",
@@ -84115,6 +85350,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SyndicatePSScarf",
+    "name": "Secura Syandana",
+    "description": "This Secura Syandana pulses every time a Tenno picks up credits and glows brighter as their wealth increases.",
+    "type": "Skin",
+    "imageName": "secura-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Colors/KubrowPetColorMidA",
     "name": "Sedna Grey",
     "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
@@ -84792,17 +86036,7 @@
     "type": "Skin",
     "imageName": "sigma-series-sugatra.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Sigma Series Sugatra not being positioned correctly on Glaives."
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnRailjackSyandana",
@@ -85676,6 +86910,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SolsticeCenturionCape",
+    "name": "Solstice Centuria Syandana",
+    "description": "A Centuria Syandana that has been adorned with a festive design.",
+    "type": "Skin",
+    "imageName": "solstice-centuria-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Clan/HolidayDeathMatchBadgeItem",
     "name": "Solstice Conclave Emblem",
     "description": "A festive Conclave emblem.",
@@ -85736,6 +86979,15 @@
     "description": "A festive fur pattern for a Kubrow",
     "type": "Skin",
     "imageName": "solstice-kubrow-fur-pattern.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SolsticeGrnBannerScarf",
+    "name": "Solstice Vanquished Banner",
+    "description": "A Vanquished Banner that has been adorned with a festive design.",
+    "type": "Skin",
+    "imageName": "solstice-vanquished-banner.png",
     "category": "Skins",
     "tradable": false
   },
@@ -86770,6 +88022,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TwitchPrimeScarf",
+    "name": "Spektaka Prime Syandana",
+    "description": "See and be seen with this captivating Syandana.",
+    "type": "Skin",
+    "imageName": "spektaka-prime-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenSpira",
     "name": "Spira Day Of The Dead Skin",
     "description": "A morbidly festive skin for the Spira.",
@@ -86787,15 +88048,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.11 - 27.0.11.3",
-        "date": "2020-01-16T18:22:26Z",
-        "url": "https://forums.warframe.com/topic/1162207-empyrean-ivara-prime-27011-270113/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0eb964807a745fb09beee66a192e3913.JPG",
-        "additions": "",
-        "changes": "Fixed overzealous particle sizes on the Naberus, Corposant Prime, and Spore Ephemeras when in Archwing.",
-        "fixes": ""
-      },
       {
         "name": "TennoGen & Nightwave Episode 5: Hotfix 25.7.7",
         "date": "2019-09-26T16:10:33Z",
@@ -87195,24 +88447,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Kuva Lich Changes 27.1.0 + 27.1.0.1",
-        "date": "2020-02-04T18:58:30Z",
-        "url": "https://forums.warframe.com/topic/1166021-empyrean-kuva-lich-changes-2710-27101/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c97de10263a02e8ec156020cd1a4387b.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Baruuk’s Reactive Storm Augment resetting the Status Chance back to non-Augmented values after a direct punch to someone."
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.11 - 27.0.11.3",
-        "date": "2020-01-16T18:22:26Z",
-        "url": "https://forums.warframe.com/topic/1162207-empyrean-ivara-prime-27011-270113/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/0eb964807a745fb09beee66a192e3913.JPG",
-        "additions": "",
-        "changes": "Increased the Range of Winged Cyclone, Winged Force, Winged Steel, and Winged Storm to 1000m.",
-        "fixes": ""
-      },
       {
         "name": "Rising Tide: Hotfix 26.1.2",
         "date": "2019-11-25T21:20:27Z",
@@ -88092,6 +89326,33 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SyndicateCSScarf",
+    "name": "Synoid Syandana",
+    "description": "The Synoid Syandana glows more brightly with every scan performed.",
+    "type": "Skin",
+    "imageName": "synoid-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Plains of Eidolon: Hotfix 22.3.5",
+        "date": "2017-11-20T23:06:42Z",
+        "url": "https://forums.warframe.com/topic/882798-plains-of-eidolon-hotfix-2235/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Day of The Dead Igaro Syandana and Synoid Syandana not attaching properly when the Mesa Devil Ranger Skin is equipped."
+      },
+      {
+        "name": "Update 18.11.0 & 18.11.1",
+        "date": "2016-05-11T20:30:34Z",
+        "url": "https://forums.warframe.com/topic/647209-update-18110-18111/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Synoid Syandana clipping through the backs of certain Warframes. "
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Patterns/WukongPrimeKubrowPattern",
     "name": "Tang Prime Kubrow Fur Pattern",
     "description": "The product of untold generations of selective breeding, coupled with multifold iterations of Orokin bioengineering, created this: the Tang breed of Kubrow. Faithful guardians of the most revered.",
@@ -88831,6 +90092,25 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SyndicateAHScarf",
+    "name": "Telos Syandana",
+    "description": "With every enemy struck down the Telos Syandana glows stronger.",
+    "type": "Skin",
+    "imageName": "telos-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 15.13.3",
+        "date": "2015-02-06T16:44:41Z",
+        "url": "https://forums.warframe.com/topic/397107-hotfix-15133/",
+        "additions": "",
+        "changes": "Updated the Telos Syandana to accept custom tints.",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOstBlubberPileB",
     "name": "Temple Flesh",
     "description": "A small sample of sacred Temple flesh, iconic export of Cetus.",
@@ -89129,39 +90409,6 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
-      {
-        "name": "Empyrean: Prime Vault 27.1.1",
-        "date": "2020-02-11T18:58:48Z",
-        "url": "https://forums.warframe.com/topic/1167915-empyrean-prime-vault-2711/",
-        "additions": "",
-        "changes": "Fixed Ally Kuva Liches having the Enthrall ability and Enthralling Tenno factions like Defense Consoles, Sentinels, etc.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed incorrect textures on Ivara Prime using the Astrea TennoGen. \nFixed an issue with some TennoCon Glyphs appearing the same. "
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.8",
-        "date": "2019-12-20T20:51:36Z",
-        "url": "https://forums.warframe.com/topic/1155657-empyrean-ivara-prime-2708/",
-        "additions": "",
-        "changes": "happy holidays, Tenno!",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Ivara Prime 27.0.6.1",
-        "date": "2019-12-18T22:54:11Z",
-        "url": "https://forums.warframe.com/topic/1154608-empyrean-ivara-prime-27061/",
-        "additions": "",
-        "changes": "Fixed Crewships being spawned as Tenno Faction, which resulted in numerous issues such as not attacking you, Fighters attacking it instead, and Railjack Turrets not doing any damage to it. This also fixes a fatal crash related to this bug.",
-        "fixes": ""
-      },
       {
         "name": "Empyrean: Update 27",
         "date": "2019-12-13T02:34:29Z",
@@ -91270,6 +92517,24 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TennoConScarf",
+    "name": "Tennocon 2016 Syandana",
+    "description": "Bestowed upon those who joined together in celebration at TennoCon 2016.",
+    "type": "Skin",
+    "imageName": "tennocon-2016-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TennoCon2017Scarf",
+    "name": "Tennocon 2017 Syandana",
+    "description": "Bestowed upon those who joined together in celebration at TennoCon 2017.",
+    "type": "Skin",
+    "imageName": "tennocon-2017-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Armor/TennoCon2018Armor/TennoCon2018ArmorC",
     "name": "Tennocon 2018 Chest Plate",
     "description": "Bestowed upon those who joined together in celebration at TennoCon 2018.",
@@ -91540,6 +92805,25 @@
     "imageName": "thiazi-syandana.png",
     "category": "Skins",
     "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/InfScarfRibCage",
+    "name": "Thorac Syandana",
+    "description": "A sinuous spine of Infested anatomy.",
+    "type": "Skin",
+    "imageName": "thorac-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Octavia's Anthem: Update 20",
+        "date": "2017-03-24T19:46:02Z",
+        "url": "https://forums.warframe.com/topic/776642-octavias-anthem-update-20/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the Thorac Syandana not aligning properly when viewed in the Arsenal."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Tails/InfestedTail",
@@ -92723,6 +94007,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Fairy/TitaniaPrimeHelmet",
+    "name": "Titania Prime Helmet",
+    "description": "The standard issue helmet for the Titania Prime Warframe.",
+    "type": "Skin",
+    "imageName": "titania-prime-helmet.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Fairy/SolsticeFairySkin",
     "name": "Titania Solstice Skin",
     "description": "A festive skin for the Titania Warframe.",
@@ -93804,6 +95097,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Characters/Tenno/Accessory/Scarves/U17IntermScarf/U17IntermScarfItem",
+    "name": "Udyat Syandana",
+    "description": "A flowing ribbon of silken fabric, crowned with a star.",
+    "type": "Misc",
+    "imageName": "udyat-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Masks/PrimeSentinelMask",
     "name": "Unda Prime Sentinel Mask",
     "description": "A mask attachment for your sentinel pet.",
@@ -93898,6 +95200,467 @@
         "additions": "",
         "changes": "Akjagara Dual Pistols and Uru Sugatra available now!\nExpressing the martial finesse and skill of its master, the Uru Sugatra complements the Uru Syandana used in the Tenno Absolution Ceremony.",
         "fixes": ""
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/RazorScarf",
+    "name": "Uru Syandana",
+    "description": "The Syandana is a traditional Tenno garment. This variation was often worn during the Tenno Absolution Ceremony.",
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.This resource can be found in the Void.",
+        "itemCount": 1,
+        "imageName": "argon-crystal.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Void - Stribog",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Void - Marduk",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0442,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1106
+          },
+          {
+            "location": "Hallowed Flame Endurance Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Syandanas/UruSyandanaBlueprint",
+        "name": "Blueprint",
+        "description": "The Syandana is a traditional Tenno garment. This variation was often worn during the Tenno Absolution Ceremony.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.Locations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
+        "itemCount": 1000,
+        "imageName": "cryotic.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 5000,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
+        "name": "Neural Sensors",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.Location: Jupiter",
+        "itemCount": 2,
+        "imageName": "neural-sensors.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      }
+    ],
+    "type": "Skin",
+    "imageName": "uru-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 15.13",
+        "date": "2015-02-05T21:08:01Z",
+        "url": "https://forums.warframe.com/topic/396379-update-1513/",
+        "additions": "",
+        "changes": "Expressing the martial finesse and skill of its master, the Uru Sugatra complements the Uru Syandana used in the Tenno Absolution Ceremony.",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 15.12.2",
+        "date": "2015-01-30T19:12:24Z",
+        "url": "https://forums.warframe.com/topic/393586-hotfix-15122/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed clipping issues with Uru Syandana"
+      },
+      {
+        "name": "Hotfix 10.0.4",
+        "date": "2013-09-17T20:46:56Z",
+        "url": "https://forums.warframe.com/topic/108751-hotfix-1004/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fix for Play Now button being accessible when it shouldn’t.-Fix for Uru Syandana not being color customizable. "
       }
     ]
   },
@@ -95978,6 +97741,50 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Characters/Tenno/Accessory/Scarves/GrnBannerScarf/GrnBannerScarfItem",
+    "name": "Vanquished Banner",
+    "description": "Add insult to injury by mocking the Grineer with their own banner.",
+    "type": "Misc",
+    "imageName": "vanquished-banner.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 21: Chains of Harrow",
+        "date": "2017-06-29T03:00:20Z",
+        "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Yamako and Vanquished Banner syandanas clipping into Oberon Prime’s cloth pieces."
+      },
+      {
+        "name": "Update 17.9.0",
+        "date": "2015-10-28T15:12:27Z",
+        "url": "https://forums.warframe.com/topic/552544-update-1790/",
+        "additions": "Vanquished Banner",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Update 17.4.0",
+        "date": "2015-09-09T23:18:22Z",
+        "url": "https://forums.warframe.com/topic/525957-update-1740/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Vanquished Banner Syandana using incorrect energy color as per: https://forums.warframe.com/index.php?/topic/524036-rath-kittag-wrong-energy-color/"
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/HalloweenGrnBannerScarf",
+    "name": "Vanquished Banner Day Of The Dead",
+    "description": "A Vanquished Banner that has been adorned with a morbidly festive design.",
+    "type": "Skin",
+    "imageName": "vanquished-banner-day-of-the-dead.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/MagDeluxeScarf",
     "name": "Vasa Syandana",
     "description": "Mag Pneuma’s signature syandana.",
@@ -96633,6 +98440,49 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SyndicateSMScarf",
+    "name": "Vaykor Syandana",
+    "description": "The Vaykor Syandana flares up whenever the Tenno takes damage.",
+    "type": "Skin",
+    "imageName": "vaykor-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Jovian Concord: Hotfix 25.0.3",
+        "date": "2019-05-24T22:08:21Z",
+        "url": "https://forums.warframe.com/topic/1096333-the-jovian-concord-hotfix-2503/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Vaykor Syandana Energy color persisting as default."
+      },
+      {
+        "name": "The Glast Gambit: Hotfix 19.6.1",
+        "date": "2017-01-13T16:41:08Z",
+        "url": "https://forums.warframe.com/topic/749385-the-glast-gambit-hotfix-1961/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Vaykor Syandana FX appearing laggy."
+      },
+      {
+        "name": "Hotfix 15.12.2",
+        "date": "2015-01-30T19:12:24Z",
+        "url": "https://forums.warframe.com/topic/393586-hotfix-15122/",
+        "additions": "",
+        "changes": "Removed Channeling visual effect on the Asita Rakta, Sancti, Synoid and Vaykor Syandana.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 15.12.0",
+        "date": "2015-01-29T22:14:29Z",
+        "url": "https://forums.warframe.com/topic/393115-update-15120/",
+        "additions": "",
+        "changes": "The Telos, Synoid, Sancti, Secura, Asita Rakta and Vaykor Syandanas glow with increased intensity as different accomplishments are achieved in missions",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Colors/KubrowPetColorPrimeTraderMundaneA",
     "name": "Vaykor White",
     "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
@@ -96666,17 +98516,7 @@
     "type": "Skin",
     "imageName": "vengeful-charge-ephemera.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
-        "date": "2020-01-23T15:36:07Z",
-        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the Vengeful Charge Ephemera providing constant light source for Mirage's Eclipse, resulting in a cosmetic granting the light buff to remain 99% of the time."
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Effects/Kuva/KuvaIceEphemera",
@@ -96712,17 +98552,7 @@
     "type": "Skin",
     "imageName": "vengeful-shockwave-ephemera.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.10",
-        "date": "2020-01-10T21:04:19Z",
-        "url": "https://forums.warframe.com/topic/1160887-empyrean-ivara-prime-27010/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed incorrect Energy color for the Vengeful Shockwave Ephemera."
-      }
-    ]
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Effects/Kuva/KuvaToxinEphemera",
@@ -97687,6 +99517,25 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnOctaviaDeluxeCape",
+    "name": "Verismo Syandana",
+    "description": "Make a breathtaking entrance with the syncopated design of the Verismo Syandana.",
+    "type": "Skin",
+    "imageName": "verismo-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Shrine of the Eidolon: Update 22.16.0",
+        "date": "2018-03-15T20:27:52Z",
+        "url": "https://forums.warframe.com/topic/933296-shrine-of-the-eidolon-update-22160/",
+        "additions": "",
+        "changes": "Updated the Verismo Syandana and Boltor Bravura Skin material to appear more metallic (for improved reflections and highlighting) to better match the Octavia Maestra Skin. \nTweaked the glow FX on the Verismo Syandana. ",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenArchSword",
     "name": "Veritux Day Of The Dead Skin",
     "description": "A morbidly festive skin for the Veritux.",
@@ -97744,6 +99593,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/CrpModularScarf",
+    "name": "Vexillus Cloak",
+    "description": "March through the battlefield with this Corpus cloak.",
+    "type": "Skin",
+    "imageName": "vexillus-cloak.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOldLocker",
     "name": "Vintage Corpus Locker",
     "description": "Decorate the Orbiter with this miniature replica of an old model Corpus locker.",
@@ -97778,6 +99636,15 @@
     "description": "This Viper has been adorned with a fine layer of Rubedo plating.",
     "type": "Skin",
     "imageName": "viper-rubedo-plated-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/PrimeTwitchScarf",
+    "name": "Vistapa Prime Syandana",
+    "description": "Twin bands symbolize the balance all Tenno are sworn to uphold.",
+    "type": "Skin",
+    "imageName": "vistapa-prime-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -100117,6 +101984,66 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/RubedoDinoSpikeScarf",
+    "name": "Yamako Rubedo Plated Syandana",
+    "description": "This syandana has been adorned with a fine layer of Rubedo plating.",
+    "type": "Skin",
+    "imageName": "yamako-rubedo-plated-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/DinoSpikeScarf",
+    "name": "Yamako Syandana",
+    "description": "Once worn exclusively by Orokin Judiciary, the Yamako Syandana is a symbol of wisdom and authority.",
+    "type": "Skin",
+    "imageName": "yamako-syandana.png",
+    "category": "Skins",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 15.16 + Tactical Alert!",
+        "date": "2015-02-25T22:12:36Z",
+        "url": "https://forums.warframe.com/topic/408193-update-1516-tactical-alert/",
+        "additions": "",
+        "changes": "Visual improvements have been made to the Yamako Syandana.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 15.12.0",
+        "date": "2015-01-29T22:14:29Z",
+        "url": "https://forums.warframe.com/topic/393115-update-15120/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a twist in the Yamako Syandana that made the adornment look unusual."
+      },
+      {
+        "name": "Hotfix 15.11.2",
+        "date": "2015-01-23T19:52:31Z",
+        "url": "https://forums.warframe.com/topic/390009-hotfix-15112/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Improved movement physics on the Yamako Syandana."
+      },
+      {
+        "name": "Update 15.11",
+        "date": "2015-01-21T23:52:13Z",
+        "url": "https://forums.warframe.com/topic/388964-update-1511/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Improved Yamako Syandana’s collision for female Warframes using the Noble Stance."
+      },
+      {
+        "name": "13.4.0: Serro + Psa!",
+        "date": "2014-05-21T22:18:51Z",
+        "url": "https://forums.warframe.com/topic/234889-1340-serro-psa/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Tenno Customization: Yamako Syandana!"
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipDecos/DayCommonFishCTrophy",
     "name": "Yogwun Trophy",
     "description": "A trophy of a prized catch.",
@@ -100169,6 +102096,619 @@
     ],
     "type": "Ship Decoration",
     "imageName": "yogwun-trophy.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Scarves/ArmScarf",
+    "name": "Yomo Syandana",
+    "description": "A traditional garment, popular with high ranking Tenno.",
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 3500,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Syandanas/YomoSyandanaBlueprint",
+        "name": "Blueprint",
+        "description": "A traditional garment, popular with high ranking Tenno.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Orokin Derelicts.",
+        "itemCount": 2,
+        "imageName": "neurodes.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Eris - Candiru",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Lepis",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Naeglar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Psoro",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Viver",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Void - Stribog",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1888,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Void - Marduk",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2529,
+            "rotation": "rewards"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 1,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 5000,
+        "imageName": "salvage.png",
+        "tradable": false
+      }
+    ],
+    "type": "Skin",
+    "imageName": "yomo-syandana.png",
     "category": "Skins",
     "tradable": false
   },
@@ -102147,23 +104687,21 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Weapons/Pistols/TnSubmachinegunDualPistolSkin",
+    "name": "Zundi Dual Pistol Skin",
+    "description": "As no Zundi weapons survive from the Old War this formidable pistol skin was created to honor them. Stout, distinctive and intimidating it is a reminder of times past.",
+    "type": "Skin",
+    "imageName": "zundi-dual-pistol-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Weapons/Pistols/TnSubmachinegunPistolSkin",
     "name": "Zundi Pistol Skin",
     "description": "As no Zundi weapons survive from the Old War this formidable pistol skin was created to honor them. Stout, distinctive and intimidating it is a reminder of times past.",
     "type": "Skin",
     "imageName": "zundi-pistol-skin.png",
     "category": "Skins",
-    "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Ivara Prime 27.0.9",
-        "date": "2020-01-09T16:43:11Z",
-        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
-        "additions": "",
-        "changes": "Optimized muzzle flash FX on the Zundi Pistol Skin",
-        "fixes": ""
-      }
-    ]
+    "tradable": false
   }
 ]
