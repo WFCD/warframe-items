@@ -15,6 +15,8 @@ const warnings = {
 
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
+const primeExcludeRegex = /(Noggle|Extractor|V Prime|M Prime|Excalibur|Lato|Skana)/g
+
 /**
  * Parse API data into a more clear or complete format.
  */
@@ -147,7 +149,7 @@ class Parser {
       name: 'Blueprint',
       description: item.description,
       itemCount: 1,
-      primeSellingPrice: blueprint.primeSellingPrice,
+      primeSellingPrice: blueprint.primeSellingPrice
     })
 
     // Attach relevant keys from blueprint to parent
@@ -441,6 +443,7 @@ class Parser {
 
       default:
         item.category = 'Misc'
+        if (item.type === 'Node') item.category = 'Node'
         break
     }
   }
@@ -724,7 +727,7 @@ class Parser {
     const target = vaultData.find(i => i.Name.toLowerCase() === item.name.toLowerCase())
 
     if (!target) {
-      warnings.missingVaultData.push(item.name)
+      if (!primeExcludeRegex.test(item.name)) warnings.missingVaultData.push(item.name)
       return
     }
 
