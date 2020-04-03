@@ -74,7 +74,8 @@ allows you to add your own items before our gathered ones.
 | Glyphs | Glyphs from partners, etc. | 
 | Melee | Melee weapons |
 | Misc | Uncategorized items |
-| Mods | Modifications for weapons, warframes, archwings, etc.
+| Mods | Modifications for weapons, warframes, archwings, etc. |
+| Node | Mission nodes |
 | Pets | Companions, just the beasts |
 | Primary | Primary slot weapons |
 | Quests | Quests that you adventure on |
