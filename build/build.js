@@ -166,9 +166,10 @@ class Build {
       this.updateCache(item, cached, hash, isComponent)
 
       if (sizeBig.includes(item.category) || isComponent) {
-        await sharp(image).resize(512, 342).ignoreAspectRatio().toFile(filePath)
+        
+        await sharp(image).resize({ fit: 'fill', height: 342, width: 512}).toFile(filePath)
       } else if (sizeMedium.includes(item.category)) {
-        await sharp(image).resize(512, 352).ignoreAspectRatio().toFile(filePath)
+        await sharp(image).resize({ fit: 'fill', height: 342, width: 512}).toFile(filePath)
       } else {
         await sharp(image).toFile(filePath)
       }
