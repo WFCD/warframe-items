@@ -700,7 +700,7 @@ class Parser {
     item.stancePolarity = wikiaItem.stancePolarity
     item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
-    item.type = item.type || wikiaItem.type
+    item.type = item.type && item.type !== 'Misc' ? item.type : wikiaItem.type
 
     if (warnings.missingType.includes(title(item.name)))
     { warnings.missingType.splice(warnings.missingType.indexOf(title(item.name)), 1) }
