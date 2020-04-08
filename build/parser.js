@@ -15,7 +15,7 @@ const warnings = {
 
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
-const primeExcludeRegex = /(Noggle|Extractor|V Prime|M Prime|Excalibur|Lato|Skana)/g
+const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z]{1,1} Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
 
 /**
  * Parse API data into a more clear or complete format.
@@ -110,6 +110,8 @@ class Parser {
     this.sanitize(result)
     this.addImageName(result, data.manifest, previous)
     this.addCategory(result, category)
+
+    this.addVaultData(result, data.vaultData)
 
     return result
   }
@@ -299,19 +301,19 @@ class Parser {
     for (let type of types) {
       if (item.uniqueName.includes(type.id)) {
         item.type = type.name
+        if (item.type !== type.name) console.error(`${item.name} didn't update types`)
         break
       }
     }
 
     // No type assigned? Add 'Misc'.
     if (!item.type) {
-      if ((item.description || '').includes('This resource')) {
-        item.type = 'Resource'
-      } else if (item.faction) {
+      if ((item.description || '').includes('This resource')) item.type = 'Resource'
+      else if (item.faction) {
         item.type = item.faction
         delete item.faction
       } else {
-        if (!warnings.missingType.includes(item.name)) warnings.missingType.push(title(item.name))
+        if (!warnings.missingType.includes(title(item.name))) warnings.missingType.push(title(item.name))
         item.type = 'Misc'
       }
     }
@@ -323,7 +325,7 @@ class Parser {
   addImageName (item, manifest, previous) {
     const image = manifest.find(i => i.uniqueName === item.uniqueName)
     if (!image) {
-      warnings.missingImage.push(item.name)
+      if (!item.systemName) warnings.missingImage.push(item.name)
       return
     }
     // eslint-disable-next-line no-useless-escape
@@ -443,7 +445,8 @@ class Parser {
 
       default:
         item.category = 'Misc'
-        if (item.type === 'Node') item.category = 'Node'
+        if (item.systemName) item.category = 'Node'
+        else if (item.type === 'Conservation Tag') item.category = 'Resources'
         break
     }
   }
@@ -493,7 +496,7 @@ class Parser {
       // Get drop rates for components if available...
       if (item.components) {
         for (let component of item.components) {
-          const previous = previousBuild.find(i => i.name === item.name)
+          const previous = previousBuild.find(i => i.name === item.name && item.category !== 'Node')
           if (!previous || !previous.components) return
 
           const saved = previous.components.find(c => c.name === component.name)
@@ -697,7 +700,11 @@ class Parser {
     item.stancePolarity = wikiaItem.stancePolarity
     item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
-    item.type = wikiaItem.type
+    item.type = item.type && item.type !== 'Misc' ? item.type : wikiaItem.type
+
+    if (warnings.missingType.includes(title(item.name)))
+    { warnings.missingType.splice(warnings.missingType.indexOf(title(item.name)), 1) }
+
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
 
@@ -727,7 +734,10 @@ class Parser {
     const target = vaultData.find(i => i.Name.toLowerCase() === item.name.toLowerCase())
 
     if (!target) {
-      if (!primeExcludeRegex.test(item.name)) warnings.missingVaultData.push(item.name)
+      const isManuallyExcluded = primeExcludeRegex.test(item.name)
+      const isSkin = item.category === 'Skins'
+      const isSentinelWeapon = item.type === 'Sentinel' && ['Primary', 'Secondary', 'Melee'].includes(item.category)
+      if (!(isManuallyExcluded || isSkin || isSentinelWeapon)) warnings.missingVaultData.push(item.name)
       return
     }
 
