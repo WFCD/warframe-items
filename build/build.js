@@ -11,6 +11,7 @@ const scraper = require('./scraper.js')
 const parser = require('./parser.js')
 const imageCache = require('../data/cache/.images.json')
 const exportCache = require('../data/cache/.export.json')
+const allowedCustomCategories = ['SentinelWeapons']
 
 class Build {
   async init () {
@@ -50,6 +51,15 @@ class Build {
       for (let i = 0; i < chunk.data.length; i++) {
         const item = chunk.data[i]
 
+        // write an additional file for the desired custom categories
+        if (item.productCategory && allowedCustomCategories.includes(item.productCategory)) {
+          if (result[item.productCategory]) {
+            result[item.productCategory].push(item)
+          } else {
+            result[item.productCategory] = [item]
+          }
+        }
+
         if (result[item.category]) {
           result[item.category].push(item)
         } else {
@@ -79,7 +89,8 @@ class Build {
     // Category names are provided by this.applyCustomCategories
     for (const category in categories) {
       const data = categories[category].sort(sort)
-      all = all.concat(data)
+      // don't add the generated custom category data to all separately, since it's duplicate data
+      if (!allowedCustomCategories.includes(category)) all = all.concat(data)
       fs.writeFileSync(`${__dirname}/../data/json/${category}.json`, stringify(data))
     }
 
