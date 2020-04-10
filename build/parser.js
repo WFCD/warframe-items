@@ -700,10 +700,11 @@ class Parser {
     item.stancePolarity = wikiaItem.stancePolarity
     item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
-    item.type = item.type && item.type !== 'Misc' ? item.type : wikiaItem.type
+    item.type = title(wikiaItem.type) !== 'Misc' ? title(wikiaItem.type) : item.type
 
-    if (warnings.missingType.includes(title(item.name)))
-    { warnings.missingType.splice(warnings.missingType.indexOf(title(item.name)), 1) }
+    if (warnings.missingType.includes(title(item.name)) && title(item.type) !== 'Misc') {
+      warnings.missingType.splice(warnings.missingType.indexOf(title(item.name)), 1)
+    }
 
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
