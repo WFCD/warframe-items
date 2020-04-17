@@ -12,13 +12,14 @@ const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
 const sanitize = (str) => str.replace(/\\r|\r?\n/g, '')
 const get = async (url, disableProxy = !prod, encoding) => request({
   url,
-  agentClass: disableProxy ? undefined : Agent,
-  agentOptions: disableProxy ? {} : {
-    socksHost: process.env.SOCKS5_HOST,
-    socksPort: process.env.SOCKS5_PORT,
-    socksUsername: process.env.SOCKS5_USER,
-    socksPassword: process.env.SOCKS5_PASS
-  },
+  // Old proxy options. Kept in case this would be required for local builds.
+  // agentClass: disableProxy ? undefined : Agent,
+  // agentOptions: disableProxy ? {} : {
+  //  socksHost: process.env.SOCKS5_HOST,
+  //  socksPort: process.env.SOCKS5_PORT,
+  //  socksUsername: process.env.SOCKS5_USER,
+  //  socksPassword: process.env.SOCKS5_PASS
+  //},
   ...encoding === false ? {
     encoding: null
   } : {}
