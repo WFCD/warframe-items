@@ -1,5 +1,5 @@
 const prod = process.env.NODE_ENV === 'production'
-const Agent = require('socks5-http-client/lib/Agent')
+// const Agent = require('socks5-http-client/lib/Agent')
 const request = require('requestretry').defaults({ fullResponse: false })
 const Progress = require('./progress.js')
 const crypto = require('crypto')
@@ -19,7 +19,7 @@ const get = async (url, disableProxy = !prod, encoding) => request({
   //  socksPort: process.env.SOCKS5_PORT,
   //  socksUsername: process.env.SOCKS5_USER,
   //  socksPassword: process.env.SOCKS5_PASS
-  //},
+  // },
   ...encoding === false ? {
     encoding: null
   } : {}
