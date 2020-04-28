@@ -661,6 +661,9 @@ class Parser {
       case 'weapons':
         this.addWeaponWikiaData(item, wikiaItem)
         break
+      case 'mods':
+        this.addModWikiaData(item, wikiaItem)
+        break
       default:
         break
     }
@@ -724,6 +727,15 @@ class Parser {
     if (item.name && item.name.includes('MK1')) {
       item.name = item.name.replace('MK1', 'Mk1')
     }
+  }
+  
+  /**
+   * Add additional data for mods from the wiki
+   */
+  addModWikiaData (item, wikiaItem) {
+    item.wikiaThumbnail = wikiaItem.thumbnail
+    item.wikiaUrl = wikiaItem.url
+    item.transmutable = wikiaItem.transmutable
   }
 
   /**
