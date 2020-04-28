@@ -3,7 +3,14 @@
 const getColors = require('get-image-colors')
 const imageDownloader = require('image-downloader')
 
-const POLARITIES = require('../../../config/wikiPolarities')
+const POLARITIES = {
+  Bar: 'naramon',
+  V: 'madurai',
+  D: 'vazarin',
+  U: 'umbra',
+  Ability: 'zenurik',
+  R: 'unairu'
+}
 
 const transformPolarities = ({ Polarities, AuraPolarity }, targetWeapon) => {
   const outputFrame = { ...targetWeapon }
