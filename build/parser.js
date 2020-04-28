@@ -728,7 +728,7 @@ class Parser {
       item.name = item.name.replace('MK1', 'Mk1')
     }
   }
-  
+
   /**
    * Add additional data for mods from the wiki
    */

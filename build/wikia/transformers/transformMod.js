@@ -1,8 +1,5 @@
 'use strict'
 
-const getColors = require('get-image-colors')
-const imageDownloader = require('image-downloader')
-
 const transformMod = async (oldMod, imageUrls) => {
   let newMod
   if (!oldMod || !oldMod.Name) {
@@ -13,14 +10,14 @@ const transformMod = async (oldMod, imageUrls) => {
     const {
       Image,
       Name,
-      Transmutable,
+      Transmutable
     } = oldMod
 
     newMod = {
       name: Name,
       url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       thumbnail: imageUrls[Image],
-      transmutable: Transmutable,
+      transmutable: Transmutable
     }
   } catch (error) {
     console.error(`Error parsing ${oldMod.Name}`)
