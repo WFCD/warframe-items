@@ -649,9 +649,10 @@ class Parser {
    * Adds data scraped from the wiki to a particular item
    */
   addAdditionalWikiaData (item, category, wikiaData) {
-    if (!['weapons', 'warframes'].includes(category.toLowerCase())) return
+    if (!['weapons', 'warframes', 'mods', 'upgrades'].includes(category.toLowerCase())) return
 
-    const wikiaItem = wikiaData[category.toLowerCase()].find(i => i.name === item.name)
+    const wikiaItem = wikiaData[category === 'Upgrades' ? 'mods' : category.toLowerCase()]
+      .find(i => i.name === item.name)
     if (!wikiaItem) return
 
     switch (category.toLowerCase()) {
@@ -661,7 +662,7 @@ class Parser {
       case 'weapons':
         this.addWeaponWikiaData(item, wikiaItem)
         break
-      case 'mods':
+      case 'upgrades':
         this.addModWikiaData(item, wikiaItem)
         break
       default:
