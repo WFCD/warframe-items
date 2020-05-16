@@ -7,6 +7,7 @@ const lzma = require('lzma')
 const fs = require('fs')
 const cheerio = require('cheerio')
 const exportCache = require('../data/cache/.export.json')
+const ModScraper = require('./wikia/scrapers/ModScraper')
 const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
 const sanitize = (str) => str.replace(/\\r|\r?\n/g, '')
@@ -140,6 +141,7 @@ class Scraper {
     return {
       weapons: await new WeaponScraper().scrape(),
       warframes: await new WarframeScraper().scrape(),
+      mods: await new ModScraper().scrape(),
       ducats
     }
   }
