@@ -10,7 +10,7 @@ class Progress extends ProgressBar {
     super(`${string.padEnd(24, ' ')}: ${colors.green('[')}:bar${colors.green(']')} :current/:total (:elapseds) :etas remaining`, {
       incomplete: colors.red('-'),
       width: 20,
-      total
+      total: total
     })
   }
 }
