@@ -31,6 +31,34 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Infestation/InfestPassiveAugmentCard",
+    "name": "Abundant Mutation",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "NIDUS",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Passive Augment: Nidus gains an additional 50 max stacks of Mutation. Undying has a 30s cooldown." ]
+      },
+      {
+        "stats": [ "Passive Augment: Nidus gains an additional 100 max stacks of Mutation. Undying has a 30s cooldown." ]
+      },
+      {
+        "stats": [ "Passive Augment: Nidus gains an additional 150 max stacks of Mutation. Undying has a 30s cooldown." ]
+      },
+      {
+        "stats": [ "Passive Augment: Nidus gains an additional 200 max stacks of Mutation. Undying has a 30s cooldown." ]
+      }
+    ],
+    "imageName": "abundant-mutation.jpg",
+    "category": "Mods",
+    "isAugment": true,
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/DualStat/AcceleratedBlastMod",
     "name": "Accelerated Blast",
     "polarity": "Madurai",
@@ -18155,6 +18183,7 @@
     "rarity": "Rare",
     "baseDrain": 10,
     "fusionLimit": 3,
+    "isUtility": true,
     "compatName": "SUPRA",
     "type": "Rifle",
     "levelStats": [
@@ -21962,6 +21991,33 @@
     ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/6c/EnhancedVitalityMod.png/revision/latest?cb=20200511204954",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Enhanced_Vitality"
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Berserker/LastStandAugmentTwoCard",
+    "name": "Enraged",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "VALKYR",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Hysteria Augment: Damage increased by 125%, Critical Chance increased by 125%. Hysteria lasts for 15s, and receives a matching cooldown." ]
+      },
+      {
+        "stats": [ "Hysteria Augment: Damage increased by 150%, Critical Chance increased by 150%. Hysteria lasts for 15s, and receives a matching cooldown." ]
+      },
+      {
+        "stats": [ "Hysteria Augment: Damage increased by 175%, Critical Chance increased by 175%. Hysteria lasts for 15s, and receives a matching cooldown." ]
+      },
+      {
+        "stats": [ "Hysteria Augment: Damage increased by 200%, Critical Chance increased by 200%. Hysteria lasts for 15s, and receives a matching cooldown." ]
+      }
+    ],
+    "imageName": "enraged.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Syndicate/SupraMod",
@@ -76447,6 +76503,27 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusPistolRandomModRare",
     "name": "Pistol Riven Mod",
     "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 8,
+    "compatName": "PISTOL",
+    "type": "Secondary",
+    "imageName": "pistol-riven-mod.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Pistol Riven Mod Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.0761
+      }
+    ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusPistolRandomModRare",
+    "name": "Pistol Riven Mod",
+    "polarity": "Universal",
     "rarity": "Common",
     "baseDrain": 3,
     "fusionLimit": 0,
@@ -87417,27 +87494,6 @@
         ]
       }
     ],
-    "type": "Secondary",
-    "imageName": "pistol-riven-mod.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Pistol Riven Mod Rare",
-        "type": "Sortie Rewards",
-        "rarity": "Rare",
-        "chance": 0.0761
-      }
-    ]
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusPistolRandomModRare",
-    "name": "Pistol Riven Mod",
-    "polarity": "Universal",
-    "rarity": "Rare",
-    "baseDrain": 0,
-    "fusionLimit": 8,
-    "compatName": "PISTOL",
     "type": "Secondary",
     "imageName": "pistol-riven-mod.jpg",
     "category": "Mods",
@@ -100636,6 +100692,34 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Retrieve"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Saryn/PoisonAugmentTwoCard",
+    "name": "Revealing Spores",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "isUtility": true,
+    "compatName": "SARYN",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Spores Augment: Infected enemies within 10m will show up on the Minimap." ]
+      },
+      {
+        "stats": [ "Spores Augment: Infected enemies within 20m will show up on the Minimap." ]
+      },
+      {
+        "stats": [ "Spores Augment: Infected enemies within 30m will show up on the Minimap." ]
+      },
+      {
+        "stats": [ "Spores Augment: Infected enemies within 40m will show up on the Minimap." ]
+      }
+    ],
+    "imageName": "revealing-spores.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/Revenge",
     "name": "Revenge",
     "polarity": "Penjaga",
@@ -101233,27 +101317,6 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/3f/RifleAptitudeModU145.png/revision/latest?cb=20200310171339",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Rifle_Aptitude",
     "transmutable": true
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare",
-    "name": "Rifle Riven Mod",
-    "polarity": "Universal",
-    "rarity": "Rare",
-    "baseDrain": 0,
-    "fusionLimit": 8,
-    "compatName": "RIFLE",
-    "type": "Rifle",
-    "imageName": "rifle-riven-mod.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Rifle Riven Mod Rare",
-        "type": "Sortie Rewards",
-        "rarity": "Rare",
-        "chance": 0.0679
-      }
-    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare",
@@ -112246,6 +112309,27 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare",
+    "name": "Rifle Riven Mod",
+    "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 8,
+    "compatName": "RIFLE",
+    "type": "Rifle",
+    "imageName": "rifle-riven-mod.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Rifle Riven Mod Rare",
+        "type": "Sortie Rewards",
+        "rarity": "Rare",
+        "chance": 0.0679
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Aura/PlayerRifleAmmoAuraMod",
     "name": "Rifle Scavenger",
     "polarity": "Naramon",
@@ -112987,6 +113071,34 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/14/RollingGuard.png/revision/latest?cb=20181012233852",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Rolling_Guard",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Brawler/BrawlerPassiveAugmentCard",
+    "name": "Rubble Heap",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "ATLAS",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Passive Augment: When above 1400 Rubble, Landslide costs no Energy, deals 1.25x Damage, and travels 1.25x faster." ]
+      },
+      {
+        "stats": [ "Passive Augment: When above 1400 Rubble, Landslide costs no Energy, deals 1.5x Damage, and travels 1.5x faster." ]
+      },
+      {
+        "stats": [ "Passive Augment: When above 1400 Rubble, Landslide costs no Energy, deals 1.75x Damage, and travels 1.75x faster." ]
+      },
+      {
+        "stats": [ "Passive Augment: When above 1400 Rubble, Landslide costs no Energy, deals 2x Damage, and travels 2x faster." ]
+      }
+    ],
+    "imageName": "rubble-heap.jpg",
+    "category": "Mods",
+    "isAugment": true,
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Archwing/Rifle/ArchwingRifleDamageAmountMod",
