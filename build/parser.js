@@ -420,6 +420,12 @@ class Parser {
           else if (item.slot === 1) item.category = 'Arch-Gun'
           else if (item.slot === 5) item.category = 'Arch-Melee'
         }
+        else if (item.type.includes('Pet') || item.type.includes('Moa')) item.category = 'Pets'
+        else if (item.type.includes('K-Drive')) item.category = 'Misc'
+        else if (item.type.includes('Zaw')) {
+          item.category = 'Melee'
+          item.slot = 5
+        }
         else if (item.slot === 5) item.category = 'Melee'
         else if (item.slot === 0) item.category = 'Secondary'
         else if (item.slot === 1) item.category = 'Primary'
@@ -441,6 +447,10 @@ class Parser {
 
       case 'Enemies':
         item.category = 'Enemy'
+        break
+
+      case 'Pets':
+        item.category = 'Pet'
         break
 
       default:
