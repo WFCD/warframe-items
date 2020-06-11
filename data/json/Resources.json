@@ -1,5 +1,14 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/HeistKeycardItem",
+    "name": "[Ph] Heist Keycard",
+    "description": "[PH] Generic Keycard Description",
+    "type": "Resource",
+    "imageName": "ph-heist-keycard.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneWaterElement",
     "name": "/Lotus/Language/Relayreconstruction/Relayreconphase1leftitemname",
     "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
@@ -14,6 +23,24 @@
     "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
     "type": "Resource",
     "imageName": "lotus-language-relayreconstruction-relayreconphase3leftitemname.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GofPlantAPlantItem",
+    "name": "/Lotus/Language/Scans/Gofplantaplantname",
+    "description": "/Lotus/Language/Scans/GofPlantAPlantDesc",
+    "type": "Plant",
+    "imageName": "lotus-language-scans-gofplantaplantname.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GofPlantEPlantItem",
+    "name": "/Lotus/Language/Scans/Gofplanteplantname",
+    "description": "/Lotus/Language/Scans/GofPlantEPlantDesc",
+    "type": "Plant",
+    "imageName": "lotus-language-scans-gofplanteplantname.png",
     "category": "Resources",
     "tradable": false
   },
@@ -37,6 +64,15 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Events/AmbulasDataFragment",
+    "name": "Animo Nav Beacon",
+    "description": "Used to locate the Ambulas production facility.This resource is dropped from Ambulas Units.",
+    "type": "Resource",
+    "imageName": "animo-nav-beacon.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/AsteriteRailjackItem",
@@ -108,6 +144,145 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/AucruxRailjackItem",
     "name": "Aucrux Capacitors",
     "description": "Once installed, these delicate power systems fuse with a Corpus Obelisk’s engines. Unused capacitors are therefore, highly prized.",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/AucruxBlueprint",
+        "name": "Blueprint",
+        "description": "Once installed, these delicate power systems fuse with a Corpus Obelisk’s engines. Unused capacitors are therefore, highly prized.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "description": "Autonomy processor for Robotics. A Corpus design.Locations: Europa, Neptune, and the Void.",
+        "itemCount": 350,
+        "imageName": "control-module.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/EnergyFragment",
+        "name": "Fieldron Sample",
+        "description": "This destroyed Fieldron could further research into super-heated containment fields.Locations: Venus, Mars, Jupiter, Europa, Neptune, and Pluto.",
+        "itemCount": 300,
+        "imageName": "fieldron-sample.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 5500,
+        "imageName": "salvage.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "aucrux-capacitors.png",
     "category": "Resources",
@@ -407,6 +582,366 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/BracoidRailjackItem",
     "name": "Bracoid",
     "description": "A rare bacterial entity that increases the spread of Infestation found on Infested Ships.",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/BracoidBlueprint",
+        "name": "Blueprint",
+        "description": "A rare bacterial entity that increases the spread of Infestation found on Infested Ships.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/BioFragment",
+        "name": "Mutagen Sample",
+        "description": "These samples could advance our knowledge of biological research.Locations: Eris and Orokin Derelicts.",
+        "itemCount": 20,
+        "imageName": "mutagen-sample.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+        "itemCount": 13000,
+        "imageName": "nano-spores.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Orokin Derelicts.",
+        "itemCount": 75,
+        "imageName": "neurodes.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518,
+            "rotation": "Sabotage"
+          },
+          {
+            "location": "Eris - Candiru",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Lepis",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Naeglar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Psoro",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Eris - Viver",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Void - Stribog",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1888,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Void - Marduk",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2529,
+            "rotation": "rewards"
+          }
+        ]
+      }
+    ],
     "type": "Resource",
     "imageName": "bracoid.png",
     "category": "Resources",
@@ -428,7 +963,7 @@
     "name": "Calda Toroid",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
     "itemCount": 5,
-    "parents": [ "Haztech Cuirass", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Outrider Cuirass", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Rat Cuirass" ],
+    "parents": [ "Haztech Apparel", "Haztech Cuirass", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Outrider Cuirass", "Smelter Apparel", "Smelter Cuirass", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Rat Cuirass" ],
     "type": "Resource",
     "imageName": "calda-toroid.png",
     "category": "Resources",
@@ -456,6 +991,47 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/CarbidesRailjackItem",
     "name": "Carbides",
     "description": "Resilient components used to reinforce the plated sheets of metal strapped to Grineer Ships.Location: Ceres",
+    "itemCount": 2000,
+    "parents": [ "Protea Telema Helmet" ],
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 26000,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/CarbidesBlueprint",
+        "name": "Blueprint",
+        "description": "Resilient components used to reinforce the plated sheets of metal strapped to Grineer Ships.Location: Ceres",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 8500,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
+        "itemCount": 4000,
+        "imageName": "polymer-bundle.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "carbides.png",
     "category": "Resources",
@@ -494,7 +1070,7 @@
     "name": "Cetus Wisp",
     "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.Location: Plains of Eidolon",
     "itemCount": 15,
-    "parents": [ "Zauba Cuirass", "Zauba Greaves", "Zauba Mask", "Zauba Pauldrons" ],
+    "parents": [ "Zauba Apparel", "Zauba Cuirass", "Zauba Greaves", "Zauba Mask", "Zauba Pauldrons" ],
     "type": "Resource",
     "imageName": "cetus-wisp.png",
     "category": "Resources",
@@ -696,6 +1272,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem",
     "name": "Condroc Wing",
     "description": "The talon on a condroc's wing is sharp enough to tear through bone.Location: Plains of Eidolon",
+    "itemCount": 5,
+    "parents": [ "Naberus Ephemera" ],
     "type": "Resource",
     "imageName": "condroc-wing.png",
     "category": "Resources",
@@ -705,11 +1283,59 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/CopernicsRailjackItem",
     "name": "Copernics",
     "description": "A cell of encapsulated Void energy.Location: Orb Vallis mining",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/CopernicsBlueprint",
+        "name": "Blueprint",
+        "description": "A cell of encapsulated Void energy.Location: Orb Vallis mining",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.Locations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
+        "itemCount": 800,
+        "imageName": "cryotic.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 8500,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 13000,
+        "imageName": "rubedo.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "copernics.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "Removed Copernics from Mining Nodes on the Orb Vallis and added to Eximus enemies in the Lua tileset.",
+        "fixes": ""
+      },
       {
         "name": "Empyrean: Ivara Prime 27.0.5",
         "date": "2019-12-17T23:01:35Z",
@@ -881,6 +1507,45 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/CubicsRailjackItem",
     "name": "Cubic Diodes",
     "description": "Vital components used in the creation of Corpus photon-networks.Location: Europa",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/CubicsBlueprint",
+        "name": "Blueprint",
+        "description": "Vital components used in the creation of Corpus photon-networks.Location: Europa",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 5500,
+        "imageName": "circuits.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 8500,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 9500,
+        "imageName": "salvage.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "cubic-diodes.png",
     "category": "Resources",
@@ -910,7 +1575,7 @@
     "name": "Detonite Ampule",
     "description": "Researching the Detonite traces within could advance our weapon technology.Locations: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress.",
     "itemCount": 10,
-    "parents": [ "Detonite Injector" ],
+    "parents": [ "Detonite Injector", "Gallos Rods", "Komms" ],
     "type": "Resource",
     "imageName": "detonite-ampule.png",
     "category": "Resources",
@@ -1272,7 +1937,7 @@
     "name": "Fersteel Alloy",
     "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
     "itemCount": 40,
-    "parents": [ "Advanced Nosam Cutter", "Ceno Cuirass", "Vahd Cuirass", "Zauba Cuirass" ],
+    "parents": [ "Advanced Nosam Cutter", "Ceno Apparel", "Ceno Cuirass", "Vahd Apparel", "Vahd Cuirass", "Zauba Apparel", "Zauba Cuirass" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1532,7 +2197,7 @@
     "name": "Fieldron Sample",
     "description": "This destroyed Fieldron could further research into super-heated containment fields.Locations: Venus, Mars, Jupiter, Europa, Neptune, and Pluto.",
     "itemCount": 10,
-    "parents": [ "Fieldron" ],
+    "parents": [ "Aucrux Capacitors", "Fieldron", "Isos" ],
     "type": "Resource",
     "imageName": "fieldron-sample.png",
     "category": "Resources",
@@ -1579,6 +2244,411 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/FresnelsRailjackItem",
     "name": "Fresnels",
     "description": "A rare Orokin material used to create a tear in space and allow safe passage through the Void.",
+    "itemCount": 4,
+    "parents": [ "Protea Mavv Helmet" ],
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/FresnelsBlueprint",
+        "name": "Blueprint",
+        "description": "A rare Orokin material used to create a tear in space and allow safe passage through the Void.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.Locations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
+        "itemCount": 200,
+        "imageName": "cryotic.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 40,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 50,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      }
+    ],
     "type": "Resource",
     "imageName": "fresnels.png",
     "category": "Resources",
@@ -1646,6 +2716,54 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/GallosRailjackItem",
     "name": "Gallos Rods",
     "description": "Antimatter fuel cell that powers the Grineer Ships.",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 18500,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/GallosBlueprint",
+        "name": "Blueprint",
+        "description": "Antimatter fuel cell that powers the Grineer Ships.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/ChemFragment",
+        "name": "Detonite Ampule",
+        "description": "Researching the Detonite traces within could advance our weapon technology.Locations: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress.",
+        "itemCount": 750,
+        "imageName": "detonite-ampule.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
+        "itemCount": 1500,
+        "imageName": "polymer-bundle.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "gallos-rods.png",
     "category": "Resources",
@@ -1668,6 +2786,15 @@
     "description": "",
     "type": "Resource",
     "imageName": "genericdojocolorpigment.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/OroPorcelainBushAPlantItem",
+    "name": "Ghost Brush Extract",
+    "description": "Extracted from a Ghost Brush.",
+    "type": "Plant",
+    "imageName": "ghost-brush-extract.png",
     "category": "Resources",
     "tradable": false
   },
@@ -1887,7 +3014,7 @@
     "name": "Heart Nyth",
     "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
     "itemCount": 1,
-    "parents": [ "Exceptional Sentient Core", "Vahd Cuirass", "Vahd Greaves", "Vahd Mask", "Vahd Pauldrons" ],
+    "parents": [ "Exceptional Sentient Core", "Vahd Apparel", "Vahd Cuirass", "Vahd Greaves", "Vahd Mask", "Vahd Pauldrons" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1931,7 +3058,7 @@
     "name": "Hespazym Alloy",
     "description": "A compound formed from Hesperon.",
     "itemCount": 30,
-    "parents": [ "Haztech Greaves", "Haztech Mask", "Kubrodon Ventkid Greaves", "Kubrodon Ventkid Mask", "Outrider Greaves", "Outrider Mask", "Vent Pobber Ventkid Greaves", "Vent Pobber Ventkid Mask", "Vent Rat Greaves", "Vent Rat Mask" ],
+    "parents": [ "Haztech Greaves", "Haztech Mask", "Kubrodon Ventkid Greaves", "Kubrodon Ventkid Mask", "Outrider Greaves", "Outrider Mask", "Smelter Greaves", "Smelter Mask", "Vent Pobber Ventkid Greaves", "Vent Pobber Ventkid Mask", "Vent Rat Greaves", "Vent Rat Mask" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2209,6 +3336,45 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/IsosRailjackItem",
     "name": "Isos",
     "description": "A self-replicating fluid comprised of nanoproxies capable of independently repairing worn and damaged systems.",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/IsosBlueprint",
+        "name": "Blueprint",
+        "description": "A self-replicating fluid comprised of nanoproxies capable of independently repairing worn and damaged systems.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 3000,
+        "imageName": "circuits.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/EnergyFragment",
+        "name": "Fieldron Sample",
+        "description": "This destroyed Fieldron could further research into super-heated containment fields.Locations: Venus, Mars, Jupiter, Europa, Neptune, and Pluto.",
+        "itemCount": 500,
+        "imageName": "fieldron-sample.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 7500,
+        "imageName": "salvage.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "isos.png",
     "category": "Resources",
@@ -2229,6 +3395,173 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/KesslersRailjackItem",
     "name": "Kesslers",
     "description": "Orokin devices used for navigating the solar winds.",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/KesslersBlueprint",
+        "name": "Blueprint",
+        "description": "Orokin devices used for navigating the solar winds.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.Locations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
+        "itemCount": 400,
+        "imageName": "cryotic.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 65,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 4500,
+        "imageName": "rubedo.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "kesslers.png",
     "category": "Resources",
@@ -2249,6 +3582,163 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/KommsRailjackItem",
     "name": "Komms",
     "description": "A component used in secure Grineer communication networks.",
+    "itemCount": 4,
+    "parents": [ "Protea Telema Helmet" ],
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 9000,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/KommsBlueprint",
+        "name": "Blueprint",
+        "description": "A component used in secure Grineer communication networks.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/ChemFragment",
+        "name": "Detonite Ampule",
+        "description": "Researching the Detonite traces within could advance our weapon technology.Locations: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress.",
+        "itemCount": 350,
+        "imageName": "detonite-ampule.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Earth - Cervantes",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1218,
+            "rotation": "B"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
+        "name": "Neural Sensors",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.Location: Jupiter",
+        "itemCount": 100,
+        "imageName": "neural-sensors.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      }
+    ],
     "type": "Resource",
     "imageName": "komms.png",
     "category": "Resources",
@@ -2310,7 +3800,7 @@
     "name": "Maprico",
     "description": "This hardy fruit is thick-skinned to withstand harsh conditions, concealing a mouthful of sweet pulp within.Location: Plains of Eidolon",
     "itemCount": 1,
-    "parents": [ "Cuthol Bait", "Fosfor Blau", "Fosfor Rahd", "Glappid Bait", "Norg Bait", "Twilight Bait" ],
+    "parents": [ "Cuthol Bait", "Fosfor Blau", "Fosfor Rahd", "Glappid Bait", "Norg Bait", "Twilight Bait", "Vasca Curative" ],
     "type": "Resource",
     "imageName": "maprico.png",
     "category": "Resources",
@@ -2347,7 +3837,7 @@
     "name": "Marquise Thyst",
     "description": "Polished and cut to perfection.",
     "itemCount": 3,
-    "parents": [ "Haztech Cuirass", "Haztech Mask", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Mask", "Outrider Cuirass", "Outrider Mask", "Pax Soar", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Mask", "Vent Rat Cuirass", "Vent Rat Mask" ],
+    "parents": [ "Haztech Apparel", "Haztech Cuirass", "Haztech Mask", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Mask", "Outrider Cuirass", "Outrider Mask", "Pax Soar", "Smelter Apparel", "Smelter Cuirass", "Smelter Mask", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Mask", "Vent Rat Cuirass", "Vent Rat Mask" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2424,8 +3914,8 @@
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem",
     "name": "Moonlight Dragonlily",
     "description": "This uncommon plant can only be found at night.Location: Earth",
-    "itemCount": 2,
-    "parents": [ "Lapis Antitoxin", "Nightfall Apothic", "Topaz Antitoxin", "Vermillion Antitoxin" ],
+    "itemCount": 10,
+    "parents": [ "Lapis Antitoxin", "Nightfall Apothic", "The Silver Grove", "Topaz Antitoxin", "Vermillion Antitoxin" ],
     "type": "Plant",
     "imageName": "moonlight-dragonlily.png",
     "category": "Resources",
@@ -2624,7 +4114,7 @@
     "name": "Mutagen Sample",
     "description": "These samples could advance our knowledge of biological research.Locations: Eris and Orokin Derelicts.",
     "itemCount": 10,
-    "parents": [ "Mutagen Mass" ],
+    "parents": [ "Bracoid", "Mutagen Mass", "Trachons" ],
     "type": "Resource",
     "imageName": "mutagen-sample.png",
     "category": "Resources",
@@ -2682,7 +4172,7 @@
     "name": "Nistlepod",
     "description": "Used by the Nistlebrush to trap and kill prey.Location: Plains of Eidolon",
     "itemCount": 10,
-    "parents": [ "Eidolon Phylaxis", "Peppered Bait", "Twilight Bait" ],
+    "parents": [ "Eidolon Phylaxis", "Peppered Bait", "Twilight Bait", "Vasca Curative" ],
     "type": "Resource",
     "imageName": "nistlepod.png",
     "category": "Resources",
@@ -2811,11 +4301,59 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/PustrelsRailjackItem",
     "name": "Pustrels",
     "description": "A parasitic growth often found growing in mineral deposits.Location: Plains of Eidolon mining",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/PustrelsBlueprint",
+        "name": "Blueprint",
+        "description": "A parasitic growth often found growing in mineral deposits.Location: Plains of Eidolon mining",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 8500,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+        "itemCount": 52000,
+        "imageName": "nano-spores.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 2500,
+        "imageName": "plastids.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "pustrels.png",
     "category": "Resources",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "Removed Pustrels from Mining Nodes in the Plains of Eidolon and added to Eximus enemies in the Infested Ship tileset.",
+        "fixes": ""
+      },
       {
         "name": "Empyrean: Ivara Prime 27.0.5",
         "date": "2019-12-17T23:01:35Z",
@@ -2931,7 +4469,7 @@
     "name": "Radian Sentirum",
     "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
     "itemCount": 1,
-    "parents": [ "Ceno Cuirass", "Ceno Greaves", "Ceno Helmet", "Ceno Pauldrons", "Eidolon Ephemera", "Exceptional Sentient Core" ],
+    "parents": [ "Ceno Apparel", "Ceno Cuirass", "Ceno Greaves", "Ceno Helmet", "Ceno Pauldrons", "Eidolon Ephemera", "Exceptional Sentient Core" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2965,7 +4503,7 @@
     "name": "Radiant Zodian",
     "description": "Polished and cut to perfection.",
     "itemCount": 3,
-    "parents": [ "Haztech Mask", "Haztech Pauldrons", "Kubrodon Ventkid Mask", "Kubrodon Ventkid Pauldrons", "Outrider Mask", "Outrider Pauldrons", "Pax Bolt", "Pax Charge", "Vent Pobber Ventkid Mask", "Vent Pobber Ventkid Pauldrons", "Vent Rat Mask", "Vent Rat Pauldrons" ],
+    "parents": [ "Haztech Mask", "Haztech Pauldrons", "Kubrodon Ventkid Mask", "Kubrodon Ventkid Pauldrons", "Outrider Mask", "Outrider Pauldrons", "Pax Bolt", "Pax Charge", "Smelter Mask", "Smelter Pauldrons", "Vent Pobber Ventkid Mask", "Vent Pobber Ventkid Pauldrons", "Vent Rat Mask", "Vent Rat Pauldrons" ],
     "buildPrice": 10000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2998,26 +4536,18 @@
     "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneClanItem",
     "name": "Relay Strut Component",
     "description": "An integral building block in the construction of Tenno relays.",
-    "buildPrice": 5000,
-    "buildTime": 10800,
-    "skipBuildTimePrice": 10,
+    "buildPrice": 0,
+    "buildTime": 21600,
+    "skipBuildTimePrice": 0,
     "buildQuantity": 1,
     "consumeOnBuild": false,
     "components": [
       {
-        "uniqueName": "/Lotus/Types/Recipes/Components/RelayThermicStrutBlueprint",
-        "name": "Blueprint",
-        "description": "An integral building block in the construction of Tenno relays.",
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.This resource can be found in the Void.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
-        "name": "Morphics",
-        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
-        "itemCount": 2,
-        "imageName": "morphics.png",
+        "imageName": "argon-crystal.png",
         "tradable": false,
         "drops": [
           {
@@ -3121,32 +4651,184 @@
           {
             "location": "Mars - Gradivus",
             "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
+            "rarity": "Legendary",
+            "chance": 0.0067,
             "rotation": "C"
           },
           {
             "location": "Mercury - Neruda",
             "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
+            "rarity": "Legendary",
+            "chance": 0.0067,
             "rotation": "C"
           },
           {
             "location": "Mercury - Terminus",
             "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
+            "rarity": "Legendary",
+            "chance": 0.0067,
             "rotation": "C"
           },
           {
             "location": "Venus - Ishtar",
             "type": "Mission Rewards",
-            "rarity": "Uncommon",
-            "chance": 0.151,
+            "rarity": "Legendary",
+            "chance": 0.0067,
             "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Void - Stribog",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Void - Marduk",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0442,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1106
+          },
+          {
+            "location": "Hallowed Flame Endurance Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
           }
         ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneClanItemBlueprint",
+        "name": "Blueprint",
+        "description": "An integral building block in the construction of Tenno relays.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
@@ -3154,14 +4836,6 @@
         "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
         "itemCount": 5000,
         "imageName": "salvage.png",
-        "tradable": false
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseThreeEarthEssence",
-        "name": "Trembera Essence",
-        "description": "A highly purified mineral compound prized for its strength, resiliency, and resistance to heat. Widely used in the construction of Tenno relays.",
-        "itemCount": 15,
-        "imageName": "trembera-essence.png",
         "tradable": false
       }
     ],
@@ -3198,6 +4872,25 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientSecretItem",
+    "name": "Riven Transmuter",
+    "description": "Combine multiple Rivens to create a new, different Riven.",
+    "type": "Resource",
+    "imageName": "riven-transmuter.png",
+    "category": "Resources",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Shrine of the Eidolon: Update 22.12.0",
+        "date": "2018-02-09T23:37:46Z",
+        "url": "https://forums.warframe.com/topic/918482-shrine-of-the-eidolon-update-22120/",
+        "additions": "",
+        "changes": "If you’re worthy, you’ll receive a guaranteed Riven Transmuter from the Hydrolyst (if captured). These consumable items can Transmute four Riven Mods into a brand-new Riven. Combining four Rivens of the same type (i.e Rifle, Melee, Shotgun, etc.) will result in a transmuted Riven of that type.",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GftPlantRuksClawMaturePlantItem",
     "name": "Ruk'S Claw",
     "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments.Locations: Mars",
@@ -3216,6 +4909,15 @@
     "parents": [ "Radian Sentirum" ],
     "type": "Gem",
     "imageName": "sentirum.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/IresPlantItem",
+    "name": "Skateweed Extract",
+    "description": "Extracted from Skateweed.",
+    "type": "Plant",
+    "imageName": "skateweed-extract.png",
     "category": "Resources",
     "tradable": false
   },
@@ -3256,7 +4958,7 @@
     "name": "Sola Toroid",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
     "itemCount": 5,
-    "parents": [ "Haztech Greaves", "Kubrodon Ventkid Greaves", "Outrider Greaves", "Vent Pobber Ventkid Greaves", "Vent Rat Greaves" ],
+    "parents": [ "Haztech Greaves", "Kubrodon Ventkid Greaves", "Outrider Greaves", "Smelter Greaves", "Vent Pobber Ventkid Greaves", "Vent Rat Greaves" ],
     "type": "Resource",
     "imageName": "sola-toroid.png",
     "category": "Resources",
@@ -3366,8 +5068,8 @@
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem",
     "name": "Sunlight Dragonlily",
     "description": "This uncommon plant can only be found during the day.",
-    "itemCount": 2,
-    "parents": [ "Citrine Antitoxin", "Lapis Antitoxin", "Vermillion Antitoxin" ],
+    "itemCount": 10,
+    "parents": [ "Citrine Antitoxin", "Lapis Antitoxin", "The Silver Grove", "Vermillion Antitoxin" ],
     "type": "Plant",
     "imageName": "sunlight-dragonlily.png",
     "category": "Resources",
@@ -3508,6 +5210,8 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem",
     "name": "Titanium",
     "description": "This highly malleable metal was exploited in great quantities by the Orokin and can now only be found within space rock.",
+    "itemCount": 800,
+    "parents": [ "Protea Mavv Helmet" ],
     "type": "Resource",
     "imageName": "titanium.png",
     "category": "Resources",
@@ -3545,6 +5249,45 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/TrachonsRailjackItem",
     "name": "Trachons",
     "description": "An organ found on Infested Ships believed to facilitate communication within the Infested Hivemind.",
+    "buildPrice": 1000,
+    "buildTime": 120,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/RailjackResourceRecipes/TrachonsBlueprint",
+        "name": "Blueprint",
+        "description": "An organ found on Infested Ships believed to facilitate communication within the Infested Hivemind.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/BioFragment",
+        "name": "Mutagen Sample",
+        "description": "These samples could advance our knowledge of biological research.Locations: Eris and Orokin Derelicts.",
+        "itemCount": 45,
+        "imageName": "mutagen-sample.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+        "itemCount": 26000,
+        "imageName": "nano-spores.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 1500,
+        "imageName": "plastids.png",
+        "tradable": false
+      }
+    ],
     "type": "Resource",
     "imageName": "trachons.png",
     "category": "Resources",
@@ -3636,8 +5379,6 @@
     "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseThreeEarthEssence",
     "name": "Trembera Essence",
     "description": "A highly purified mineral compound prized for its strength, resiliency, and resistance to heat. Widely used in the construction of Tenno relays.",
-    "itemCount": 15,
-    "parents": [ "Relay Strut Component" ],
     "type": "Resource",
     "imageName": "trembera-essence.png",
     "category": "Resources",
@@ -3658,7 +5399,7 @@
     "name": "Vega Toroid",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.",
     "itemCount": 5,
-    "parents": [ "Haztech Pauldrons", "Kubrodon Ventkid Pauldrons", "Outrider Pauldrons", "Vent Pobber Ventkid Pauldrons", "Vent Rat Pauldrons" ],
+    "parents": [ "Haztech Pauldrons", "Kubrodon Ventkid Pauldrons", "Outrider Pauldrons", "Smelter Pauldrons", "Vent Pobber Ventkid Pauldrons", "Vent Rat Pauldrons" ],
     "type": "Resource",
     "imageName": "vega-toroid.png",
     "category": "Resources",
@@ -3695,7 +5436,7 @@
     "name": "Venerdo Alloy",
     "description": "A compound formed from Venerol.",
     "itemCount": 40,
-    "parents": [ "Haztech Cuirass", "Haztech Pauldrons", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Pauldrons", "Outrider Cuirass", "Outrider Pauldrons", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Pauldrons", "Vent Rat Cuirass", "Vent Rat Pauldrons" ],
+    "parents": [ "Haztech Apparel", "Haztech Cuirass", "Haztech Pauldrons", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Pauldrons", "Outrider Cuirass", "Outrider Pauldrons", "Smelter Apparel", "Smelter Cuirass", "Smelter Pauldrons", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Pauldrons", "Vent Rat Cuirass", "Vent Rat Pauldrons" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
