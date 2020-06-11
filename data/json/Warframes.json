@@ -361,6 +361,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Ash Shroud’s arm blades not animating during his Bladestorm ability.\nFixed the TennoCon 2020 Syandana clipping with Mirage and Ash Shroud Skin lower body."
+      },
+      {
         "name": "Nightwave Series 3: Glassmaker: Hotfix 27.5.1",
         "date": "2020-05-12T17:52:32Z",
         "url": "https://forums.warframe.com/topic/1192506-nightwave-series-3-glassmaker-hotfix-2751/",
@@ -2069,6 +2078,15 @@
     "tradable": true,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Ash Shroud’s arm blades not animating during his Bladestorm ability.\nFixed the TennoCon 2020 Syandana clipping with Mirage and Ash Shroud Skin lower body."
+      },
+      {
         "name": "Nightwave Series 3: Glassmaker: Hotfix 27.5.1",
         "date": "2020-05-12T17:52:32Z",
         "url": "https://forums.warframe.com/topic/1192506-nightwave-series-3-glassmaker-hotfix-2751/",
@@ -3381,6 +3399,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Atlas and Zephyr not playing their full body animation when equipping an Arch-Gun."
+      },
+      {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Hotfix 27.4.4",
         "date": "2020-05-07T19:20:27Z",
         "url": "https://forums.warframe.com/topic/1191283-warframe-revised-railjack-revisited-part-1-hotfix-2744/",
@@ -4437,6 +4464,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Atlas and Zephyr not playing their full body animation when equipping an Arch-Gun."
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Hotfix 27.4.4",
         "date": "2020-05-07T19:20:27Z",
@@ -7502,6 +7538,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1.2,
     "passiveDescription": "Each projectile dodged, each enemy lulled or disarmed, erodes Baruuk's restraint and fuels the storm within. As Baruuk's restraint is diminished he becomes up to |PERCENT|% more resistant to damage.",
+    "exalted": [ "/Lotus/Powersuits/Pacifist/PacifistFist" ],
     "abilities": [
       {
         "name": "Elude",
@@ -20315,6 +20352,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1,
     "passiveDescription": "Excalibur deals |DAMAGE|% increased damage and attacks |SPEED|% faster when wielding swords.",
+    "exalted": [ "/Lotus/Powersuits/Excalibur/DoomSword" ],
     "abilities": [
       {
         "name": "Slash Dash",
@@ -21831,6 +21869,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1,
     "passiveDescription": "Excalibur Prime deals |DAMAGE|% increased damage and attacks |SPEED|% faster when wielding swords.",
+    "exalted": [ "/Lotus/Powersuits/Excalibur/DoomSwordPrime" ],
     "abilities": [
       {
         "name": "Slash Dash",
@@ -23041,6 +23080,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1,
     "passiveDescription": "Umbra exhibits sentience in combat without Transference control. Attacks |SPEED|% faster and deals |DAMAGE|% more damage while wielding swords.",
+    "exalted": [ "/Lotus/Powersuits/Excalibur/DoomSwordUmbra" ],
     "abilities": [
       {
         "name": "Slash Dash",
@@ -23060,6 +23100,289 @@
       }
     ],
     "productCategory": "Suits",
+    "buildPrice": 10000,
+    "buildTime": 10,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 1600,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburUmbraBlueprint",
+        "name": "Blueprint",
+        "description": "From the shadow of the long night emerges a new Excalibur.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Kuva",
+        "name": "Kuva",
+        "description": "A mysterious red fluid coveted by the Grineer Queens.Obtained in Kuva missions.",
+        "itemCount": 60,
+        "imageName": "kuva.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+        "itemCount": 1200,
+        "imageName": "nano-spores.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 1,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      }
+    ],
     "type": "Warframe",
     "imageName": "excalibur-umbra.png",
     "category": "Warframes",
@@ -26939,6 +27262,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1,
     "passiveDescription": "As Garuda nears death, her damage increases up to an additional |DAMAGE|%.Slashes with her talons if no melee weapon is equipped.",
+    "exalted": [ "/Lotus/Powersuits/Garuda/GarudaClaws" ],
     "abilities": [
       {
         "name": "Dread Mirror",
@@ -27178,6 +27502,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "Slight reduction to Elemental FX on Garuda’s Talons.",
+        "fixes": ""
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Hotfix 27.4.3",
         "date": "2020-05-05T20:52:26Z",
@@ -29076,6 +29409,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1,
     "passiveDescription": "Become invulnerable for a brief moment after shields are depleted. This ability is restored when shields fully recharge.",
+    "exalted": [ "/Lotus/Powersuits/IronFrame/BlastWeapon" ],
     "abilities": [
       {
         "name": "Balefire",
@@ -29425,6 +29759,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Hildryn's Balefire deactivate animation superseding her Aegis Storm deactivate animation. "
+      },
       {
         "name": "Nightwave Series 3: Glassmaker: Hotfix 27.5.4",
         "date": "2020-05-20T17:29:12Z",
@@ -33124,6 +33467,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1.15,
     "passiveDescription": "Senses nearby enemies within |RADIUS|m.",
+    "exalted": [ "/Lotus/Powersuits/Ranger/ExaltedBow" ],
     "abilities": [
       {
         "name": "Quiver",
@@ -34494,6 +34838,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1.2,
     "passiveDescription": "Senses nearby enemies within |RADIUS|m.",
+    "exalted": [ "/Lotus/Powersuits/Ranger/PrimeExaltedBow" ],
     "abilities": [
       {
         "name": "Quiver",
@@ -36191,6 +36536,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error when previewing Khora in the Arsenal."
+      },
+      {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
         "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
@@ -36809,6 +37163,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Mutalist Osprey Carrier’s ignoring Limbo’s Cataclysm bubble. "
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
@@ -38572,6 +38935,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Mutalist Osprey Carrier’s ignoring Limbo’s Cataclysm bubble. "
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
@@ -42624,6 +42996,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": " UI Cursor Magnetism:  Adjust the level of “magnetism” (“stickiness”) there is between the cursor and interactive elements in the UI. ",
+        "fixes": ""
+      },
+      {
         "name": "Prime Vault: Hotfix 27.5.6 + 27.5.6.1",
         "date": "2020-05-26T18:14:09Z",
         "url": "https://forums.warframe.com/topic/1196415-prime-vault-hotfix-2756-27561/",
@@ -44756,6 +45137,15 @@
     "tradable": true,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": " UI Cursor Magnetism:  Adjust the level of “magnetism” (“stickiness”) there is between the cursor and interactive elements in the UI. ",
+        "fixes": ""
+      },
+      {
         "name": "Prime Vault: Hotfix 27.5.6 + 27.5.6.1",
         "date": "2020-05-26T18:14:09Z",
         "url": "https://forums.warframe.com/topic/1196415-prime-vault-hotfix-2756-27561/",
@@ -46280,6 +46670,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1.1,
     "passiveDescription": "Shoot dual-wielded sidearms |SPEED|% faster and reload single-handed sidearms |RELOAD|% more rapidly. Gain |HEALTH| Bonus Health when not using Melee Weapons.",
+    "exalted": [ "/Lotus/Powersuits/Cowgirl/SlingerPistols" ],
     "abilities": [
       {
         "name": "Ballistic Battery",
@@ -47506,6 +47897,7 @@
     "masteryReq": 2,
     "sprintSpeed": 1.1,
     "passiveDescription": "Shoot dual-wielded sidearms |SPEED|% faster and reload single-handed sidearms |RELOAD|% more rapidly. Gain |HEALTH| Bonus Health when not using Melee Weapons.",
+    "exalted": [ "/Lotus/Powersuits/Cowgirl/PrimeSlingerPistols" ],
     "abilities": [
       {
         "name": "Ballistic Battery",
@@ -49437,6 +49829,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the TennoCon 2020 Syandana clipping with Mirage and Ash Shroud Skin lower body."
+      },
+      {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
         "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
@@ -51320,6 +51721,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the TennoCon 2020 Syandana clipping with Mirage and Ash Shroud Skin lower body."
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
@@ -60023,6 +60433,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixes towards Defense missions breaking due to an inability to terminate enemies that have been changed to Ally status (Nyx Mind Control, Revenant Enthrall, etc), thus inability to complete the Defense Wave."
+      },
+      {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
         "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
@@ -61863,6 +62282,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixes towards Defense missions breaking due to an inability to terminate enemies that have been changed to Ally status (Nyx Mind Control, Revenant Enthrall, etc), thus inability to complete the Defense Wave."
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
@@ -66237,6 +66665,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Mandachord not displaying notes correctly during Octavia's Anthem Quest."
+      },
+      {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
         "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
@@ -66901,6 +67338,336 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Octavia"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Odalisk/Odalisk",
+    "name": "Protea",
+    "description": "Ready for any eventuality the versatile Protea uses her many gadgets to overcome the odds.",
+    "health": 100,
+    "shield": 150,
+    "armor": 125,
+    "stamina": 3,
+    "power": 150,
+    "masteryReq": 0,
+    "sprintSpeed": 1,
+    "passiveDescription": "Every |CASTS|th Power Cast is granted +|STRENGTH|% Power Strength.",
+    "abilities": [
+      {
+        "name": "Grenade Fan",
+        "description": "Throw out 3 grenades in an arc.(TAP) SHRAPNEL VORTEXCreates a slashing, staggering swirl of shrapnel.(HOLD) SHIELD SATELLITESProtea reconfigures 3 Grenades to work as overcharging shield generators, protecting her, her allies and companions. When Shields break a Satellite is destroyed to extend the period of invulnerability."
+      },
+      {
+        "name": "Blaze Artillery",
+        "description": "Deploys an artillery unit to blast plasma charges at enemies it faces. Each enemy hit increases the power of subsequent plasma attacks."
+      },
+      {
+        "name": "Dispensary",
+        "description": "Deploys a device that generates 3 pickups after a short delay: empowered health orb, universal ammo pack and energy orb."
+      },
+      {
+        "name": "Temporal Anchor",
+        "description": "Drops a Temporal Anchor which, after a short duration, Protea rewinds to triggering a temporal implosion. Implosion damage increases based on damage dealt between anchor drop and rewind. Everything lost or expended in that time is returned.Dying while Anchor is active rewinds Protea to the anchor, saving her. Protea is knocked down and the anchor vanishes."
+      }
+    ],
+    "productCategory": "Suits",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ProteaBlueprint",
+        "name": "Blueprint",
+        "description": "Ready for any eventuality the versatile Protea uses her many gadgets to overcome the odds.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ProteaChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Protea Warframe.",
+        "itemCount": 1,
+        "imageName": "chassis.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ProteaHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Protea Warframe.",
+        "itemCount": 1,
+        "imageName": "neuroptics.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 3,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ProteaSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Protea Warframe.",
+        "itemCount": 1,
+        "imageName": "systems.png",
+        "tradable": false
+      }
+    ],
+    "type": "Warframe",
+    "imageName": "protea.png",
+    "category": "Warframes",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "The Deadlock Protocol sheds new light on the industrious origins of the Corpus, introduces the time-bending Warframe, Protea and includes a remastered Corpus fleet full of innovative threats and escalating security measures.\n*Players who purchase the Protea Warframe before playing the Quest will receive a Riven as an additional reward.\nProtea is the first Warframe to have a Universal Aura Polarity to accompany her set of utility skills!\n*Drusus is seeking out myths and legends about Protea and will update the Leverian when he is ready.\n*Earn the Protea In Action Glyph during a limited time 72 hour weekend Alert on PC, starting Friday, June 12th @ 2 PM ET. Console will also run this Alert when The Deadlock Protocol Quest is live on their respective Platforms!\n*Protea’s Alternate Helmets will be added to the Nightwave Cred Offerings once The Deadlock Protocol is live on all Platforms.",
+        "fixes": ""
+      }
+    ]
+  },
+  {
     "uniqueName": "/Lotus/Powersuits/Revenant/Revenant",
     "name": "Revenant",
     "description": "Rise from the broken remains of the Eidolon to seduce an army of zealous thralls.",
@@ -67369,6 +68136,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixes towards Defense missions breaking due to an inability to terminate enemies that have been changed to Ally status (Nyx Mind Control, Revenant Enthrall, etc), thus inability to complete the Defense Wave."
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
@@ -73774,6 +74550,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1,
     "passiveDescription": "Titania generates Health for herself and nearby allies every time she casts an Ability.",
+    "exalted": [ "/Lotus/Powersuits/Fairy/FlightPistols", "/Lotus/Powersuits/Fairy/FlightSword" ],
     "abilities": [
       {
         "name": "Spellbind",
@@ -74081,6 +74858,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Shield Lancers flailing wildly when affected by Titania’s Lantern. \nFixed Archwing Blink FX (including Titania’s Razorwing) not using chosen Energy colors. As reported here: https://forums.warframe.com/topic/1194097-blink-should-abide-by-energy-colour/"
+      },
       {
         "name": "Nightwave Series 3: Glassmaker: Hotfix 27.5.3",
         "date": "2020-05-15T18:04:23Z",
@@ -74822,6 +75608,7 @@
     "masteryReq": 2,
     "sprintSpeed": 1,
     "passiveDescription": "Titania generates Health for herself and nearby allies every time she casts an Ability.",
+    "exalted": [ "/Lotus/Powersuits/Fairy/PrimeFlightPistols", "/Lotus/Powersuits/Fairy/PrimeFlightSword" ],
     "abilities": [
       {
         "name": "Spellbind",
@@ -75241,6 +76028,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Shield Lancers flailing wildly when affected by Titania’s Lantern. \nFixed Archwing Blink FX (including Titania’s Razorwing) not using chosen Energy colors. As reported here: https://forums.warframe.com/topic/1194097-blink-should-abide-by-energy-colour/"
+      },
       {
         "name": "Nightwave Series 3: Glassmaker: Hotfix 27.5.3",
         "date": "2020-05-15T18:04:23Z",
@@ -78786,6 +79582,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1.1,
     "passiveDescription": "Recover |PERCENT|% faster from being knocked down.",
+    "exalted": [ "/Lotus/Powersuits/Berserker/BerserkerMelee" ],
     "abilities": [
       {
         "name": "Rip Line",
@@ -79117,6 +79914,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to gain Energy from Energy Restores after using Valkyr’s Hysteria."
+      },
       {
         "name": "Prime Vault: Hotfix 27.5.6 + 27.5.6.1",
         "date": "2020-05-26T18:14:09Z",
@@ -80002,6 +80808,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1.1,
     "passiveDescription": "Recover |PERCENT|% faster from being knocked down.",
+    "exalted": [ "/Lotus/Powersuits/Berserker/BerserkerMeleePrime" ],
     "abilities": [
       {
         "name": "Rip Line",
@@ -80925,6 +81732,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to gain Energy from Energy Restores after using Valkyr’s Hysteria."
+      },
       {
         "name": "Prime Vault: Hotfix 27.5.6 + 27.5.6.1",
         "date": "2020-05-26T18:14:09Z",
@@ -87611,6 +88427,15 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Kunshu Syandana clipping through Wisp’s Delusion Skin scarf."
+      },
+      {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
         "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
@@ -87993,6 +88818,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1,
     "passiveDescription": "After taking fatal damage Wukong automatically uses one of his mastered survival techniques. These techniques can only be invoked three times per mission.",
+    "exalted": [ "/Lotus/Powersuits/MonkeyKing/MonkeyKingStaff" ],
     "abilities": [
       {
         "name": "Celestial Twin",
@@ -88300,6 +89126,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Wukong’s Celestial Twin suffering from very long Knockdowns. As reported here: https://forums.warframe.com/topic/1195276-wukongs-celestial-twin-takes-too-much-time-to-get-up-from-a-knock-down/"
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
@@ -88845,6 +89680,7 @@
     "masteryReq": 5,
     "sprintSpeed": 1.05,
     "passiveDescription": "After taking fatal damage Wukong automatically uses one of his mastered survival techniques. These techniques can only be invoked three times per mission.",
+    "exalted": [ "/Lotus/Powersuits/MonkeyKing/WukongPrimeStaff" ],
     "abilities": [
       {
         "name": "Celestial Twin",
@@ -89528,6 +90364,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Wukong’s Celestial Twin suffering from very long Knockdowns. As reported here: https://forums.warframe.com/topic/1195276-wukongs-celestial-twin-takes-too-much-time-to-get-up-from-a-knock-down/"
+      },
       {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
@@ -90382,6 +91227,15 @@
     "category": "Warframes",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Atlas and Zephyr not playing their full body animation when equipping an Arch-Gun."
+      },
       {
         "name": "Nightwave Series 3: Glassmaker: Hotfix 27.5.4",
         "date": "2020-05-20T17:29:12Z",
@@ -91924,6 +92778,15 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "Update 28: The Deadlock Protocol",
+        "date": "2020-06-11T17:29:48Z",
+        "url": "https://forums.warframe.com/topic/1199557-update-28-the-deadlock-protocol/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/cd0447b7cbfdce50c9b7e4c00249f3d1.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Atlas and Zephyr not playing their full body animation when equipping an Arch-Gun."
+      },
       {
         "name": "Nightwave Series 3: Glassmaker: Hotfix 27.5.4",
         "date": "2020-05-20T17:29:12Z",
