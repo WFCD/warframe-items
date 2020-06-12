@@ -154529,10 +154529,28 @@
         ]
       }
     ],
-    "type": "Melee",
+    "type": "Glaive",
     "imageName": "xoris.png",
     "category": "Melee",
-    "tradable": false
+    "tradable": false,
+    "channeling": 1.5,
+    "damage": "120.0",
+    "damageTypes": {
+      "impact": 24,
+      "slash": 55.2,
+      "puncture": 40.8
+    },
+    "polarities": [  ],
+    "secondaryArea": {
+      "name": "Charged Throw Explosion",
+      "status_chance": 20,
+      "radius": 900,
+      "electricity": 480,
+      "damage": "480.0 electricity"
+    },
+    "tags": [ "Corpus" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Xoris",
+    "disposition": 1
   },
   {
     "name": "Zenistar",
