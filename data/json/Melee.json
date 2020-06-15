@@ -153985,6 +153985,19 @@
         "fixes": "Fixed Protea’s Temporal Anchor path getting reset after throwing the Xoris."
       }
     ],
+    "areaAttack": {
+      "name": "Throw Explosion",
+      "crit_chance": 20,
+      "crit_mult": 2.4,
+      "status_chance": 0.2,
+      "falloff": {
+        "start": 0,
+        "end": 8,
+        "reduction": 0.7
+      },
+      "electricity": 480,
+      "damage": "480.0 electricity"
+    },
     "channeling": 1.5,
     "damage": "120.0",
     "damageTypes": {
@@ -153996,9 +154009,9 @@
     "secondaryArea": {
       "name": "Charged Throw Explosion",
       "status_chance": 20,
-      "radius": 800,
-      "electricity": 480,
-      "damage": "480.0 electricity"
+      "radius": 900,
+      "electricity": 500,
+      "damage": "500.0 electricity"
     },
     "stancePolarity": "Naramon",
     "tags": [ "Corpus" ],
