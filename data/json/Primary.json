@@ -16513,7 +16513,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/CopernicsRailjackItem",
         "name": "Copernics",
-        "description": "A cell of encapsulated Void energy.Location: Orb Vallis mining",
+        "description": "A cell of encapsulated Void energy.Location: Lua",
         "itemCount": 1500,
         "imageName": "copernics.png",
         "tradable": false
@@ -16537,7 +16537,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/PustrelsRailjackItem",
         "name": "Pustrels",
-        "description": "A parasitic growth often found growing in mineral deposits.Location: Plains of Eidolon mining",
+        "description": "A parasitic growth often found growing in mineral deposits.Location: Eris",
         "itemCount": 800,
         "imageName": "pustrels.png",
         "tradable": false
@@ -16572,14 +16572,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed the Basmu's healing pulse receiving exponential copies of equipped Mods with each pulse when under the effect of some conditional buffs, which led to unintended amounts of damage."
-      },
-      {
-        "name": "Scarlet Spear: TennoGen 27.3.9",
-        "date": "2020-04-07T13:42:45Z",
-        "url": "https://forums.warframe.com/topic/1182949-scarlet-spear-tennogen-2739/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed becoming invincible when interrupting the Basmu reload and Transferring to the Operator and using Unairu Void Spines.\nAnother fix towards all future Basmu damage dealing lifesteal to enemies if the ‘heal on reload’ is interrupted as a Client."
       },
       {
         "name": "Operation: Scarlet Spear: TennoGen 27.3.8 + 27.3.8.1 + 27.3.8.2",
@@ -41521,14 +41513,6 @@
         "fixes": "Fixed holding the Corinth Prime incorrectly if the Solstice Skin is equipped on it."
       },
       {
-        "name": "Scarlet Spear: TennoGen 27.3.9",
-        "date": "2020-04-07T13:42:45Z",
-        "url": "https://forums.warframe.com/topic/1182949-scarlet-spear-tennogen-2739/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Corinth Prime Alt Fire not being affected by Multishot Mods."
-      },
-      {
         "name": "Operation: Scarlet Spear: TennoGen 27.3.8 + 27.3.8.1 + 27.3.8.2",
         "date": "2020-04-02T16:33:08Z",
         "url": "https://forums.warframe.com/topic/1181462-operation-scarlet-spear-tennogen-2738-27381-27382/",
@@ -42122,14 +42106,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed holding the Corinth Prime incorrectly if the Solstice Skin is equipped on it."
-      },
-      {
-        "name": "Scarlet Spear: TennoGen 27.3.9",
-        "date": "2020-04-07T13:42:45Z",
-        "url": "https://forums.warframe.com/topic/1182949-scarlet-spear-tennogen-2739/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Corinth Prime Alt Fire not being affected by Multishot Mods."
       },
       {
         "name": "Operation: Scarlet Spear: TennoGen 27.3.8 + 27.3.8.1 + 27.3.8.2",
@@ -77770,6 +77746,53 @@
     "reloadTime": 2,
     "sentinel": true,
     "multishot": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/SwarmerWeaponBlueprint",
+        "name": "Blueprint",
+        "description": "Launches a swarm of micro-missiles.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem",
+        "name": "Recaster Neural Relay",
+        "description": "Interprets signals from other mechanical organisms.Acquired by disassembling Recaster Servofish.",
+        "itemCount": 10,
+        "imageName": "recaster-neural-relay.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "imageName": "star-amarast.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
+        "name": "Star Crimzian",
+        "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 10,
+        "imageName": "star-crimzian.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEcosynthAnalyzerItem",
+        "name": "Synathid Ecosynth Analyzer",
+        "description": "A processing unit that efficiently monitors environmental data.Acquired by disassembling Synathid Servofish.",
+        "itemCount": 1,
+        "imageName": "synathid-ecosynth-analyzer.png",
+        "tradable": false
+      }
+    ],
     "type": "Rifle",
     "imageName": "helstrum.png",
     "category": "Primary",
@@ -103642,6 +103665,49 @@
     "imageName": "mk1-braton.png",
     "category": "Primary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "MK1-Braton: 1.2->1.35",
+        "fixes": ""
+      },
+      {
+        "name": "Fortuna: Update 24.0",
+        "date": "2018-11-08T20:46:20Z",
+        "url": "https://forums.warframe.com/topic/1025679-fortuna-update-240/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Arbitration boon selecting the MK1-Braton. "
+      },
+      {
+        "name": "The Glast Gambit: Hotfix 19.10.1+19.10.1.1",
+        "date": "2017-02-14T14:20:17Z",
+        "url": "https://forums.warframe.com/topic/762596-the-glast-gambit-hotfix-19101191011/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the MK1-Braton not showing its clip after reload."
+      },
+      {
+        "name": "Update 17.3.0",
+        "date": "2015-09-02T20:56:46Z",
+        "url": "https://forums.warframe.com/topic/521781-update-1730/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue causing MK1-Bratons to appear in player equipment profiles."
+      },
+      {
+        "name": "Hotfix 17.2.6",
+        "date": "2015-08-28T22:00:03Z",
+        "url": "https://forums.warframe.com/topic/519498-hotfix-1726/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where two MK1-Bratons appear in player equipment profiles."
+      }
+    ],
     "ammo": 540,
     "damage": "18.0",
     "damageTypes": {
@@ -103680,6 +103746,17 @@
     "imageName": "mk1-paris.png",
     "category": "Primary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "MK1-Paris: 1.3->1.4",
+        "fixes": ""
+      }
+    ],
     "ammo": 72,
     "damage": "115.0",
     "damageTypes": {
@@ -103720,6 +103797,25 @@
     "imageName": "mk1-strun.png",
     "category": "Primary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "MK1-Strun: 1.35->1.45",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 18.4.7",
+        "date": "2016-02-04T22:43:36Z",
+        "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
+        "additions": "",
+        "changes": "Increased the damage of the MK1-Strun in Conclave.",
+        "fixes": ""
+      }
+    ],
     "ammo": 120,
     "damage": "180.0",
     "damageTypes": {
@@ -146312,6 +146408,22 @@
     "consumeOnBuild": true,
     "components": [
       {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpRubanRifleBarrel",
+        "name": "Barrel",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "barrel.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Nightmare Granum Void",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2963
+          }
+        ]
+      },
+      {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/CrpRubanRifleBlueprint",
         "name": "Blueprint",
         "description": "Nail them to the wall! The Stahlta automatic rifle propels hardened steel rods at high speed, while a charged fire mode fuses a number of volatile rods together for a large radioactive explosion.",
@@ -146332,12 +146444,54 @@
             "chance": 0.5
           }
         ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpRubanRifleReceiver",
+        "name": "Receiver",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "receiver.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Granum Void",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.22219999999999998
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpRubanRifleStock",
+        "name": "Stock",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "stock.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Extended Granum Void",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.2963
+          }
+        ]
       }
     ],
     "type": "Rifle",
     "imageName": "stahlta.png",
     "category": "Primary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to Chat link Stahlta, Stropha and Velox parts."
+      }
+    ],
     "areaAttack": {
       "name": "Charged Shot Explosion",
       "speed": 0.667,
@@ -190486,6 +190640,14 @@
     "category": "Primary",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Zenith Granum Crown: 900 Solaris Standing",
+        "fixes": ""
+      },
       {
         "name": "Update 28: The Deadlock Protocol",
         "date": "2020-06-11T17:29:48Z",

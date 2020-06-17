@@ -7466,7 +7466,17 @@
     "type": "Misc",
     "imageName": "brash.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Charge time decreased from 0.8secs to 0.5secs with Brash Grip.\nRange increased from 18m to 30m with Brash Grip.",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
@@ -7690,6 +7700,14 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Damage reduction lowered from -38 to -24 when used with Catchmoon Chamber.\nDamage reduction lowered from -19 to -12 when used with Catchmoon Chamber.",
+        "fixes": ""
+      },
       {
         "name": "Update 26: The Old Blood",
         "date": "2019-10-31T20:07:22Z",
@@ -60149,7 +60167,7 @@
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Eggs/KubrowEgg",
     "name": "Kubrow Egg",
     "description": "This egg is used to transplant the genetic code of a Kubrow onto a Kubrow clone.",
-    "primeSellingPrice": 601,
+    "primeSellingPrice": 593,
     "type": "Pet Resource",
     "imageName": "kubrow-egg.png",
     "category": "Misc",
@@ -60377,14 +60395,6 @@
         "additions": "",
         "changes": "Fixed various script errors related to stabbing a Kuva Lich.",
         "fixes": ""
-      },
-      {
-        "name": "Scarlet Spear: TennoGen 27.3.9",
-        "date": "2020-04-07T13:42:45Z",
-        "url": "https://forums.warframe.com/topic/1182949-scarlet-spear-tennogen-2739/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed inability to use context actions after stabbing a Kuva Lich."
       },
       {
         "name": "Operation: Scarlet Spear: TennoGen 27.3.8 + 27.3.8.1 + 27.3.8.2",
@@ -61332,14 +61342,6 @@
         "additions": "",
         "changes": "Fixed various script errors related to stabbing a Kuva Lich.",
         "fixes": ""
-      },
-      {
-        "name": "Scarlet Spear: TennoGen 27.3.9",
-        "date": "2020-04-07T13:42:45Z",
-        "url": "https://forums.warframe.com/topic/1182949-scarlet-spear-tennogen-2739/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed inability to use context actions after stabbing a Kuva Lich."
       },
       {
         "name": "Operation: Scarlet Spear: TennoGen 27.3.8 + 27.3.8.1 + 27.3.8.2",
@@ -62591,6 +62593,71 @@
     "tradable": false
   },
   {
+    "name": "Lehan Core",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MeleeMoaPetEngine",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineMeleeBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Eye-Eye Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.Acquired by disassembling Eye-Eye Servofish.",
+        "itemCount": 10,
+        "imageName": "eye-eye-rotoblade.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 10,
+        "imageName": "hespazym-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "imageName": "star-amarast.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 25,
+        "imageName": "venerdo-alloy.png",
+        "tradable": false
+      }
+    ],
+    "type": "Melee",
+    "imageName": "lehan-core.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/BossNavCode",
     "name": "Lephantis Nav Coordinate",
     "description": "Coordinate used to locate the Lephantis.",
@@ -62624,7 +62691,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/DefaultShip",
     "name": "Liset",
     "description": "The landing craft of choice utilised by the Tenno during their missions.",
-    "primeSellingPrice": 601,
+    "primeSellingPrice": 593,
     "type": "Orbiter",
     "imageName": "liset.png",
     "category": "Misc",
@@ -64798,7 +64865,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/InsectShip",
     "name": "Mantis",
     "description": "This insect-like landing craft features Med-Tower air-support.",
-    "primeSellingPrice": 601,
+    "primeSellingPrice": 593,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -73697,6 +73764,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Damage reduction lowered from -6 to -2 when used with Rattleguts Chamber.\nDamage reduction lowered from -3 to -1 when used with Rattleguts Chamber.",
+        "fixes": ""
+      },
+      {
         "name": "Empyrean: Update 27",
         "date": "2019-12-13T02:34:29Z",
         "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
@@ -74656,7 +74731,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/BlueSkyShip",
     "name": "Scimitar",
     "description": "This blade-like landing craft is armed with Carpet Bomb air-support.",
-    "primeSellingPrice": 601,
+    "primeSellingPrice": 593,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -75079,6 +75154,14 @@
     "category": "Misc",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Fixed a script error related to Scrapping Railjack Wreckage.",
+        "fixes": ""
+      },
       {
         "name": "Update 28: The Deadlock Protocol",
         "date": "2020-06-11T17:29:48Z",
@@ -75635,7 +75718,17 @@
     "type": "Misc",
     "imageName": "shrewd.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Range increased from 15m to 26m with Shrewd Grip.",
+        "fixes": ""
+      }
+    ]
   },
   {
     "name": "Shtung",
@@ -81465,7 +81558,17 @@
     "type": "Misc",
     "imageName": "steadyslam.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Charge time increased from 0.8secs to 1.1secs with Steadyslam Grip.\nRange increased from 12m to 20 with Steadyslam Grip.",
+        "fixes": ""
+      }
+    ]
   },
   {
     "name": "Step Tens",
@@ -83214,6 +83317,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Damage reduction lowered from -28 to -20 when used with Tombfinger Chamber.\nDamage reduction lowered from -14 to -10 when used with Tombfinger Chamber.",
+        "fixes": ""
+      },
+      {
         "name": "The Deadlock Protocol: Hotfix 28.0.3",
         "date": "2020-06-12T20:10:06Z",
         "url": "https://forums.warframe.com/topic/1200099-the-deadlock-protocol-hotfix-2803/",
@@ -83302,7 +83413,17 @@
     "type": "Misc",
     "imageName": "tremor.png",
     "category": "Misc",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "The Deadlock Protocol: Hotfix 28.0.5",
+        "date": "2020-06-17T18:01:28Z",
+        "url": "https://forums.warframe.com/topic/1201526-the-deadlock-protocol-hotfix-2805/",
+        "additions": "",
+        "changes": "Charge time increased from 0.8secs to 1.4secs with Tremor Grip.\nRange increased from 9m to 16 with Tremor Grip.",
+        "fixes": ""
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
@@ -83455,6 +83576,71 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Tyli Gyro",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MeleeMoaPetPayload",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadMeleeBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
+        "name": "Mirewinder Parallel Biode",
+        "description": "Controls the electrical flow throughout the circuitry within robotic organisms.Acquired by disassembling Mirewinder Servofish.",
+        "itemCount": 10,
+        "imageName": "mirewinder-parallel-biode.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.Locations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
+        "itemCount": 1200,
+        "imageName": "oxium.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
+        "name": "Star Amarast",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 5,
+        "imageName": "star-amarast.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 20,
+        "imageName": "thermal-sludge.png",
+        "tradable": false
+      }
+    ],
+    "type": "Melee",
+    "imageName": "tyli-gyro.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/FormaUmbra",
@@ -84799,7 +84985,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/GyroscopeShip",
     "name": "Xiphos",
     "description": "Featuring Sentry Gun air-support, this stylish landing craft is an asset in any battle.",
-    "primeSellingPrice": 601,
+    "primeSellingPrice": 593,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
