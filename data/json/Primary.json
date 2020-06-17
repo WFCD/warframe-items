@@ -16777,19 +16777,6 @@
       }
     ],
     "ammo": 720,
-    "areaAttack": {
-      "name": "Beam AoE",
-      "crit_chance": 34,
-      "crit_mult": 3,
-      "status_chance": 0.1,
-      "falloff": {
-        "start": 0,
-        "end": 3.4,
-        "reduction": 0.4
-      },
-      "radiation": 208,
-      "damage": "208.0 radiation"
-    },
     "damage": "42.0 magnetic",
     "damageTypes": {
       "puncture": 24,
@@ -16801,12 +16788,19 @@
     "projectile": "Projectile",
     "secondary": {
       "name": "Secondary Fire",
-      "speed": 1,
+      "speed": 5,
       "crit_chance": 34,
       "crit_mult": 3,
       "status_chance": 0.1,
       "charge_time": 0.4,
       "shot_type": "Hit-Scan",
+      "radiation": 208,
+      "damage": "208.0 radiation"
+    },
+    "secondaryArea": {
+      "name": "Beam AoE",
+      "status_chance": 50,
+      "radius": 340,
       "radiation": 208,
       "damage": "208.0 radiation"
     },
