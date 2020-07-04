@@ -95783,14 +95783,28 @@
     },
     "polarities": [ "Madurai" ],
     "projectile": "Projectile",
+    "secondary": {
+      "name": "Cluster Bomb Explosion",
+      "pellet": {
+        "count": 3,
+        "name": "Bomblet"
+      },
+      "falloff": {
+        "start": 0,
+        "end": 3.5,
+        "reduction": 0.5
+      },
+      "blast": 171,
+      "damage": "171.0 blast"
+    },
     "secondaryArea": {
-      "name": "Cluster Bombs",
+      "name": "Cluster Bomb Contact",
+      "status_chance": 21,
       "pellet": {
         "name": "Bomblet",
         "count": 3
       },
-      "blast": 1122,
-      "damage": "1122.0 blast"
+      "impact": 147
     },
     "statusChance": 21,
     "tags": [ "Grineer", "Kuva Lich", "Self Interrupt" ],
