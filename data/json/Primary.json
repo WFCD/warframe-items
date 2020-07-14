@@ -22504,7 +22504,7 @@
     "disposition": 3,
     "releaseDate": "2019 12 17",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2021 07 14"
+    "estimatedVaultDate": "2021 04 24"
   },
   {
     "name": "Boar",
@@ -42197,7 +42197,7 @@
     "disposition": 3,
     "releaseDate": "2020 03 31",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2021 10 04"
+    "estimatedVaultDate": "2021 07 04"
   },
   {
     "name": "Cryotra",
@@ -103735,49 +103735,6 @@
     "imageName": "mk1-braton.png",
     "category": "Primary",
     "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Update 27",
-        "date": "2019-12-13T02:34:29Z",
-        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
-        "additions": "",
-        "changes": "MK1-Braton: 1.2->1.35",
-        "fixes": ""
-      },
-      {
-        "name": "Fortuna: Update 24.0",
-        "date": "2018-11-08T20:46:20Z",
-        "url": "https://forums.warframe.com/topic/1025679-fortuna-update-240/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Arbitration boon selecting the MK1-Braton. "
-      },
-      {
-        "name": "The Glast Gambit: Hotfix 19.10.1+19.10.1.1",
-        "date": "2017-02-14T14:20:17Z",
-        "url": "https://forums.warframe.com/topic/762596-the-glast-gambit-hotfix-19101191011/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the MK1-Braton not showing its clip after reload."
-      },
-      {
-        "name": "Update 17.3.0",
-        "date": "2015-09-02T20:56:46Z",
-        "url": "https://forums.warframe.com/topic/521781-update-1730/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed an issue causing MK1-Bratons to appear in player equipment profiles."
-      },
-      {
-        "name": "Hotfix 17.2.6",
-        "date": "2015-08-28T22:00:03Z",
-        "url": "https://forums.warframe.com/topic/519498-hotfix-1726/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed an issue where two MK1-Bratons appear in player equipment profiles."
-      }
-    ],
     "ammo": 540,
     "damage": "18.0",
     "damageTypes": {
@@ -103816,17 +103773,6 @@
     "imageName": "mk1-paris.png",
     "category": "Primary",
     "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Update 27",
-        "date": "2019-12-13T02:34:29Z",
-        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
-        "additions": "",
-        "changes": "MK1-Paris: 1.3->1.4",
-        "fixes": ""
-      }
-    ],
     "ammo": 72,
     "damage": "115.0",
     "damageTypes": {
@@ -103867,25 +103813,6 @@
     "imageName": "mk1-strun.png",
     "category": "Primary",
     "tradable": false,
-    "patchlogs": [
-      {
-        "name": "Empyrean: Update 27",
-        "date": "2019-12-13T02:34:29Z",
-        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
-        "additions": "",
-        "changes": "MK1-Strun: 1.35->1.45",
-        "fixes": ""
-      },
-      {
-        "name": "Hotfix 18.4.7",
-        "date": "2016-02-04T22:43:36Z",
-        "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
-        "additions": "",
-        "changes": "Increased the damage of the MK1-Strun in Conclave.",
-        "fixes": ""
-      }
-    ],
     "ammo": 120,
     "damage": "180.0",
     "damageTypes": {
@@ -121439,7 +121366,7 @@
         "ducats": 45
       }
     ],
-    "type": "Misc",
+    "type": "Rifle",
     "imageName": "panthera-prime.png",
     "category": "Primary",
     "tradable": true,
@@ -121452,7 +121379,39 @@
         "changes": "Invoke the wrath of the desert sand with Inaros Prime! Inaros Prime leaves their ancient resting place to arrive with the brutal Panthera Prime, elegant Karyst Prime and much more.",
         "fixes": ""
       }
-    ]
+    ],
+    "areaAttack": {
+      "name": "Radial",
+      "falloff": {
+        "start": 0,
+        "end": 1.6,
+        "reduction": 0.2
+      },
+      "slash": 20
+    },
+    "damage": "100.0",
+    "damageTypes": {
+      "impact": 20,
+      "slash": 70,
+      "puncture": 10
+    },
+    "flight": 40,
+    "polarities": [ "Madurai", "Naramon" ],
+    "projectile": "Projectile",
+    "secondary": {
+      "speed": 2,
+      "crit_chance": 26,
+      "crit_mult": 2,
+      "status_chance": 0.4,
+      "shot_type": "Continuous",
+      "slash": 100
+    },
+    "tags": [ "Prime" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Panthera_Prime",
+    "disposition": 1,
+    "releaseDate": "2020 07 14",
+    "vaultDate": "n/a",
+    "estimatedVaultDate": "2021 11 23"
   },
   {
     "name": "Paracyst",
@@ -148275,7 +148234,7 @@
     "disposition": 3,
     "releaseDate": "2019 03 27",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2020 11 10"
+    "estimatedVaultDate": "2020 09 23"
   },
   {
     "name": "Strun",
@@ -192383,6 +192342,6 @@
     "disposition": 4,
     "releaseDate": "2019 07 07",
     "vaultDate": "n/a",
-    "estimatedVaultDate": "2021 01 31"
+    "estimatedVaultDate": "2020 12 03"
   }
 ]
