@@ -8221,6 +8221,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "Chroma Prime, Gram Prime, and Rubico Prime have entered the Vault!",
+        "fixes": ""
+      },
+      {
         "name": "The Deadlock Protocol: Hotfix 28.0.6 + 28.0.6.1",
         "date": "2020-06-24T18:00:22Z",
         "url": "https://forums.warframe.com/topic/1203007-the-deadlock-protocol-hotfix-2806-28061/",
@@ -9966,6 +9974,14 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "Chroma Prime, Gram Prime, and Rubico Prime have entered the Vault!",
+        "fixes": ""
+      },
       {
         "name": "The Deadlock Protocol: Hotfix 28.0.6 + 28.0.6.1",
         "date": "2020-06-24T18:00:22Z",
@@ -32716,6 +32732,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "The Steel Path: Inaros Prime 28.2.0:\nInvoke the wrath of the desert sand with Inaros Prime! Inaros Prime leaves their ancient resting place to arrive with the brutal Panthera Prime, elegant Karyst Prime and much more.",
+        "fixes": ""
+      },
+      {
         "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
         "date": "2020-05-01T13:21:46Z",
         "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
@@ -33323,6 +33347,941 @@
     "sprint": 1,
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/3/3a/InarosNewLook.png/revision/latest?cb=20160308025219",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Inaros"
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Sandman/InarosPrime",
+    "name": "Inaros Prime",
+    "description": "Rise, eternal, to cast the fear of Inaros into them. Featuring altered mod polarities for greater customization.",
+    "health": 575,
+    "shield": 0,
+    "armor": 225,
+    "stamina": 3,
+    "power": 125,
+    "masteryReq": 0,
+    "sprintSpeed": 1.05,
+    "passiveDescription": "While bleeding-out, Inaros becomes entombed in a protective Sarcophagus. He can revive himself by draining the life-force from nearby enemies and allies.",
+    "abilities": [
+      {
+        "name": "Desiccation",
+        "description": "Blast enemies with a wave of cursed sand that blinds them and steals their health."
+      },
+      {
+        "name": "Devour",
+        "description": "Hold power to trap target in quicksand and draw them in for devouring; this steals health and ultimately creates a friendly Sand Shadow."
+      },
+      {
+        "name": "Sandstorm",
+        "description": "Become a whirling spiral of sand that sends enemies flying and devours those trapped in quicksand."
+      },
+      {
+        "name": "Scarab Swarm",
+        "description": "Charge to transform Health into hardened Scarab Armor. Discharge to blast enemies with a scarab swarm. Survivors have their Health drained and bestowed on allies."
+      }
+    ],
+    "productCategory": "Suits",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "Rise, eternal, to cast the fear of Inaros into them. Featuring altered mod polarities for greater customization.",
+        "itemCount": 1,
+        "primeSellingPrice": 45,
+        "imageName": "blueprint.png",
+        "tradable": true,
+        "ducats": 45
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Inaros Prime Warframe.",
+        "primeSellingPrice": 45,
+        "itemCount": 1,
+        "imageName": "prime-chassis.png",
+        "tradable": true,
+        "ducats": 45
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Inaros Prime Warframe.",
+        "primeSellingPrice": 100,
+        "itemCount": 1,
+        "imageName": "prime-neuroptics.png",
+        "tradable": true,
+        "ducats": 100
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 5,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Inaros Prime Warframe.",
+        "primeSellingPrice": 15,
+        "itemCount": 1,
+        "imageName": "prime-systems.png",
+        "tradable": true,
+        "ducats": 15
+      }
+    ],
+    "type": "Warframe",
+    "imageName": "inaros-prime.png",
+    "category": "Warframes",
+    "tradable": true,
+    "patchlogs": [
+      {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "The Steel Path: Inaros Prime 28.2.0:\nInvoke the wrath of the desert sand with Inaros Prime! Inaros Prime leaves their ancient resting place to arrive with the brutal Panthera Prime, elegant Karyst Prime and much more.",
+        "fixes": ""
+      },
+      {
+        "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
+        "date": "2020-05-01T13:21:46Z",
+        "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/e969430fdbe58fef45f62420e448ee81.jpg",
+        "additions": "",
+        "changes": "Inaros ",
+        "fixes": ""
+      },
+      {
+        "name": "Scarlet Spear: 27.3.13",
+        "date": "2020-04-14T19:52:12Z",
+        "url": "https://forums.warframe.com/topic/1185141-scarlet-spear-27313/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Companions trying to attack enemies that are in Inaros’ Devour trap, which we don’t want cause we wish to snack on said enemy."
+      },
+      {
+        "name": "Scarlet Spear: TennoGen 27.3.9",
+        "date": "2020-04-07T13:42:45Z",
+        "url": "https://forums.warframe.com/topic/1182949-scarlet-spear-tennogen-2739/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error when attempting the Sands of Inaros quest."
+      },
+      {
+        "name": "Warframe Revised: Update 27.2.0",
+        "date": "2020-03-05T15:32:32Z",
+        "url": "https://forums.warframe.com/topic/1172454-warframe-revised-update-2720/",
+        "additions": "",
+        "changes": "Inaros: 200 to 225",
+        "fixes": ""
+      },
+      {
+        "name": "Empyrean: Ivara Prime 27.0.12 + 27.0.12.1",
+        "date": "2020-01-23T15:36:07Z",
+        "url": "https://forums.warframe.com/topic/1163746-empyrean-ivara-prime-27012-270121/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros getting stuck in his Devour animation if Devour is cast on an enemy that dies at the exact same time."
+      },
+      {
+        "name": "Empyrean: Ivara Prime 27.0.9",
+        "date": "2020-01-09T16:43:11Z",
+        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error in Inaros’ Sandstorm. "
+      },
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error from Inaros’ Undying Passive."
+      },
+      {
+        "name": "Rising Tide: Update 26.1",
+        "date": "2019-11-22T21:38:34Z",
+        "url": "https://forums.warframe.com/topic/1144842-rising-tide-update-261/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c574b26b5ca178fd837d190ba486aae1.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros no longer using his Sarcophagus if he dies at any point after using Archwing."
+      },
+      {
+        "name": "The Old Blood: Hotfix 26.0.3",
+        "date": "2019-11-01T20:41:07Z",
+        "url": "https://forums.warframe.com/topic/1137487-the-old-blood-hotfix-2603/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros’ Negation Swarm Augment Mod not preventing any Status Effects from applying to the player after using the Arsenal in the Simulacrum."
+      },
+      {
+        "name": "Wukong Prime: Hotfix 25.3.2 + 25.3.2.1",
+        "date": "2019-07-12T15:14:26Z",
+        "url": "https://forums.warframe.com/topic/1110370-wukong-prime-hotfix-2532-25321/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to complete the Sands of Inaros quest due to Denial Bursas not spawning as reported here:  \nFixed some script abuse when Inaros' Desiccation continued to tick after Inaros was killed."
+      },
+      {
+        "name": "The Jovian Concord: Update 25.1.0",
+        "date": "2019-06-05T18:36:15Z",
+        "url": "https://forums.warframe.com/topic/1100452-the-jovian-concord-update-2510/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/7e35d85fa4c0cdbad0d77de0f9c3435d.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Zanuka being unable to capture Hildryn, Wisp, Revenant, Chroma, Frost, Excalibur, Inaros, Nova, Vauban, Volt, Wukong, Ash, Hydroid, Mag, Trinity, Titania and Valkyr."
+      },
+      {
+        "name": "The Jovian Concord: Hotfix 25.0.4",
+        "date": "2019-05-28T18:32:28Z",
+        "url": "https://forums.warframe.com/topic/1098019-the-jovian-concord-hotfix-2504/",
+        "additions": "",
+        "changes": "Fixed Inaros’ Devour FX persisting on the Ropalolyst if cast by a Spectrolyst. ",
+        "fixes": ""
+      },
+      {
+        "name": "The Jovian Concord: Hotfix 25.0.3",
+        "date": "2019-05-24T22:08:21Z",
+        "url": "https://forums.warframe.com/topic/1096333-the-jovian-concord-hotfix-2503/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a progression stopper in the Sands of Inaros Quest where the Tomb Guardians were invincible. "
+      },
+      {
+        "name": "The Jovian Concord: Update 25",
+        "date": "2019-05-22T21:31:25Z",
+        "url": "https://forums.warframe.com/topic/1094942-the-jovian-concord-update-25/",
+        "additions": "Added Ability videos in the Ability UI for Inaros, Ivara, Nidus, Titania, and Wukong!",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon Remaster: Hotfix 24.7.3",
+        "date": "2019-04-22T19:31:27Z",
+        "url": "https://forums.warframe.com/topic/1087205-plains-of-eidolon-remaster-hotfix-2473/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed having no Shields in Archwing if Inaros or Nidus are equipped."
+      },
+      {
+        "name": "Plains of Eidolon Remaster: Update 24.7.0 + 24.7.0.1",
+        "date": "2019-04-10T20:22:12Z",
+        "url": "https://forums.warframe.com/topic/1082779-plains-of-eidolon-remaster-update-2470-24701/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/f3de3122862fc9db26dacebd27d054ff.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros & Nidus being given Shields from ally Shield Ospreys."
+      },
+      {
+        "name": "Buried Debts: Hotfix 24.5.2",
+        "date": "2019-03-18T22:43:12Z",
+        "url": "https://forums.warframe.com/topic/1072987-buried-debts-hotfix-2452/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Further fixes towards a progression stopper in the Sand of Inaros quest where the enemy Inaros would be invulnerable. "
+      },
+      {
+        "name": "Buried Debts: Hotfix 24.5.1",
+        "date": "2019-03-15T21:08:17Z",
+        "url": "https://forums.warframe.com/topic/1071547-buried-debts-hotfix-2451/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a progression stopper in the Sands of Inaros quest from an inability to defeat the Tomb Guardians. "
+      },
+      {
+        "name": "Fortuna: Hotfix 24.2.10",
+        "date": "2019-01-23T20:08:15Z",
+        "url": "https://forums.warframe.com/topic/1056534-fortuna-hotfix-24210/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros’ Devour not working for enemy / allied Inaros AI (Specters)."
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros’ Sandstorm radius stat showing diameter."
+      },
+      {
+        "name": "Mask of the Revenant: Update 23.8.0 + 23.8.0.1 + 23.8.0.2",
+        "date": "2018-09-12T18:41:12Z",
+        "url": "https://forums.warframe.com/topic/1008095-mask-of-the-revenant-update-2380-23801-23802/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a progression stopper in the Sands of Inaros quest as a result of the first phase of the boss fight being skipped and Inaros becoming invulnerable. Also fixed the Tomb Protector in Sands of Inaros attacking while invisible and having floating weapons instead of being entombed while you fight the Golems."
+      },
+      {
+        "name": "The Sacrifice: Update 23",
+        "date": "2018-06-15T00:51:48Z",
+        "url": "https://forums.warframe.com/topic/967249-the-sacrifice-update-23/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros' Desiccation GPU particles not applying chosen Energy color\nFixed being unable to purchase multiple Sands of Inaros Quest Blueprints from Baro."
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.17.1 - 22.17.1.1",
+        "date": "2018-04-05T18:31:09Z",
+        "url": "https://forums.warframe.com/topic/942090-shrine-of-the-eidolon-hotfix-22171-221711/",
+        "additions": "",
+        "changes": "Tweaked Inaros’ Ramses Skin material by adjusting the shaders so the colors don’t appear as muted.",
+        "fixes": ""
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.16.1",
+        "date": "2018-03-16T00:39:24Z",
+        "url": "https://forums.warframe.com/topic/933453-shrine-of-the-eidolon-hotfix-22161/",
+        "additions": "",
+        "changes": "",
+        "fixes": " Fixed Inaros specter getting stuck in casting 2."
+      },
+      {
+        "name": "Shrine of the Eidolon: Update 22.16.0",
+        "date": "2018-03-15T20:27:52Z",
+        "url": "https://forums.warframe.com/topic/933296-shrine-of-the-eidolon-update-22160/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Ancient Healer damage reduction Aura negatively affecting the consume rate of Inaros’ Devour."
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.13.3",
+        "date": "2018-02-21T20:18:33Z",
+        "url": "https://forums.warframe.com/topic/924885-shrine-of-the-eidolon-hotfix-22133/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Client Inaros’ able to become invincible by casting Devour on a target next to them and going straight into the devouring phase."
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.12.2",
+        "date": "2018-02-10T04:01:14Z",
+        "url": "https://forums.warframe.com/topic/918715-shrine-of-the-eidolon-hotfix-22122/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed hearing a static-like noise after casting Inaros’ Desiccation."
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.11.0",
+        "date": "2018-01-31T21:41:13Z",
+        "url": "https://forums.warframe.com/topic/914315-plains-of-eidolon-update-22110/",
+        "additions": "Added Inaros Canopic Glyphs.",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.6.0 + Hotfix 22.6.0.1",
+        "date": "2017-12-07T22:05:21Z",
+        "url": "https://forums.warframe.com/topic/891096-plains-of-eidolon-update-2260-hotfix-22601/",
+        "additions": "",
+        "changes": "Fixed objective waypoint not disappearing after successfully taking the Vessel from the tomb in the last mission of the Sands of Inaros Quest.",
+        "fixes": ""
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed some mesh flickering issues on the beams in the Sands of Inaros tomb. \nFixed a crash that would occur when someone other than Inaros finishes Devouring an enemy."
+      },
+      {
+        "name": "Hydroid Prime: Update 21.6.0",
+        "date": "2017-08-29T17:55:46Z",
+        "url": "https://forums.warframe.com/topic/836927-hydroid-prime-update-2160/",
+        "additions": "",
+        "changes": "Inaros and Nidus can now use No Current Leap Mod in Conclave",
+        "fixes": ""
+      },
+      {
+        "name": "Chains of Harrow: Update 21.4.0",
+        "date": "2017-08-10T17:26:21Z",
+        "url": "https://forums.warframe.com/topic/829596-chains-of-harrow-update-2140/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros’ passive breaking when having to revive."
+      },
+      {
+        "name": "Chains of Harrow: Update 21.2.0 + 21.2.0.1",
+        "date": "2017-07-26T21:16:57Z",
+        "url": "https://forums.warframe.com/topic/823165-chains-of-harrow-update-2120-21201/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Sands of Inaros quest tomb drawings rendering over top of the fog."
+      },
+      {
+        "name": "Chains of Harrow: Update 21.1.0 + 21.1.0.1",
+        "date": "2017-07-19T21:31:09Z",
+        "url": "https://forums.warframe.com/topic/820014-chains-of-harrow-update-2110-21101/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a crash upon reviving as Inaros."
+      },
+      {
+        "name": "Chains of Harrow: Hotfix 21.0.7",
+        "date": "2017-07-13T16:02:08Z",
+        "url": "https://forums.warframe.com/topic/817066-chains-of-harrow-hotfix-2107/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Sands of Inaros quest description having the wrong tomb location text. \nFixed a script error when casting Inaros’ Sandstorm.\nFixed a script error when casting Inaros’ Scarab Swarm.\nFixed a script error when casting Inaros’ Devour in Conclave."
+      },
+      {
+        "name": "Chains of Harrow: Hotfix 21.0.5",
+        "date": "2017-07-06T20:47:36Z",
+        "url": "https://forums.warframe.com/topic/813821-chains-of-harrow-hotfix-2105/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed transmissions in certain quests being stuck on repeat (eg: Sands of Inaros)."
+      },
+      {
+        "name": "Octavia’s Anthem: Hotfix 20.6.1",
+        "date": "2017-05-25T22:08:56Z",
+        "url": "https://forums.warframe.com/topic/800441-octavia%E2%80%99s-anthem-hotfix-2061/",
+        "additions": "",
+        "changes": "Eximus units can now be summoned as Inaros’ Sand Shadows. ",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia’s Anthem: Update 20.5.0",
+        "date": "2017-05-17T19:16:26Z",
+        "url": "https://forums.warframe.com/topic/797978-octavia%E2%80%99s-anthem-update-2050/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Clients UI stopping before 100% when charging Inaros’ Scarab Armor.\nFixed a case where Clients would incorrectly think they received a proc they were supposed to be immune to with Inaros’ Negation Swarm Mod IF they were shot twice on the same frame, by the same source, and the 2nd shot tried to apply a proc that the 1st shot didn't."
+      },
+      {
+        "name": "Octavia’s Anthem: Update 20.4.0",
+        "date": "2017-05-04T13:58:50Z",
+        "url": "https://forums.warframe.com/topic/793570-octavia%E2%80%99s-anthem-update-2040/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Ratel’s being immune to Inaros’ Devour. "
+      },
+      {
+        "name": "Octavia’s Anthem: Hotfix 20.2.3",
+        "date": "2017-04-19T22:08:42Z",
+        "url": "https://forums.warframe.com/topic/788574-octavia%E2%80%99s-anthem-hotfix-2023/",
+        "additions": "",
+        "changes": "Friendly Archwing markers, Atlas, Rhino, Valkyr’s custom HUD and Inaros’ resurrect HUD are now affected by the HUD scaling sliders in the Interface options.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia's Anthem: Update 20",
+        "date": "2017-03-24T19:46:02Z",
+        "url": "https://forums.warframe.com/topic/776642-octavias-anthem-update-20/",
+        "additions": "",
+        "changes": "Inaros' Sandstorm damage, speed and range increased in Conclave.",
+        "fixes": "Fixed an issue with Inaros’ Scarab Swarm not properly persisting over host migrations."
+      },
+      {
+        "name": "Hotfix 19.13.1",
+        "date": "2017-03-10T20:03:48Z",
+        "url": "https://forums.warframe.com/topic/771478-hotfix-19131/",
+        "additions": "",
+        "changes": "Enemies that have been targeted for Inaros' Devour are now invulnerable to everything but you while they are being pulled in.",
+        "fixes": "Fixed Inaros’ Devour drag FX not appearing for Clients."
+      },
+      {
+        "name": "Update 19.13.0",
+        "date": "2017-03-09T20:40:48Z",
+        "url": "https://forums.warframe.com/topic/771036-update-19130/",
+        "additions": "",
+        "changes": "Oberon’s Beastmaster Passive no longer works on hostile Kavats in the Sands of Inaros quest. Sadly these Kavats must hate you and they must die.",
+        "fixes": ""
+      },
+      {
+        "name": "The Pacifism Defect: Hotfix 19.12.2",
+        "date": "2017-03-06T22:01:18Z",
+        "url": "https://forums.warframe.com/topic/770075-the-pacifism-defect-hotfix-19122/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Quest info in Navigation and Sand of Inaros Vessel not properly updating when you cleared your active Quest through the Codex."
+      },
+      {
+        "name": "The Glast Gambit: Hotfix 19.11.4",
+        "date": "2017-02-22T15:44:39Z",
+        "url": "https://forums.warframe.com/topic/765827-the-glast-gambit-hotfix-19114/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Inaros Devour"
+      },
+      {
+        "name": "The Glast Gambit: Hotfix 19.10.1+19.10.1.1",
+        "date": "2017-02-14T14:20:17Z",
+        "url": "https://forums.warframe.com/topic/762596-the-glast-gambit-hotfix-19101191011/",
+        "additions": "",
+        "changes": "Inaros' Devour",
+        "fixes": ""
+      },
+      {
+        "name": "The Glast Gambit: Hotfix 19.9.1",
+        "date": "2017-02-02T22:32:29Z",
+        "url": "https://forums.warframe.com/topic/757913-the-glast-gambit-hotfix-1991/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros getting stuck Devouring a Target until they die if using the \"Use Selected Power\" key."
+      },
+      {
+        "name": "The War Within: Update 19.2.0",
+        "date": "2016-12-01T21:22:08Z",
+        "url": "https://forums.warframe.com/topic/728401-the-war-within-update-1920/",
+        "additions": "",
+        "changes": "Inaros’ Scarab Swarm",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 19.0.3",
+        "date": "2016-11-14T23:41:18Z",
+        "url": "https://forums.warframe.com/topic/718965-hotfix-1903/",
+        "additions": "",
+        "changes": "Fixed a number of crashes and game freezes related to using your Operator as MIrage and Inaros.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 19: The War Within",
+        "date": "2016-11-12T04:02:28Z",
+        "url": "https://forums.warframe.com/topic/715768-update-19-the-war-within/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros’ Swarm not playing the activate animation while moving.\nFixed Inaros’ Sandstorm causing enemy loot to fly off and get stuck on the ceiling. "
+      },
+      {
+        "name": "Recurring Dreams: Hotfix 3",
+        "date": "2016-11-07T19:24:15Z",
+        "url": "https://forums.warframe.com/topic/714548-recurring-dreams-hotfix-3/",
+        "additions": "",
+        "changes": "Inaros can no longer use the Conclave Mod Low Current Leap.",
+        "fixes": ""
+      },
+      {
+        "name": "The Index Preview: Hotfix #2",
+        "date": "2016-10-21T15:49:40Z",
+        "url": "https://forums.warframe.com/topic/709888-the-index-preview-hotfix-2/",
+        "additions": "",
+        "changes": "Excluded Reactant and Index Point pickups from Simulor, Inaros' Sandstorm, Zephyr Tornado, and Vauban's Vortex. This also fixes the exception lists for the Simulor; it wasn't supposed to be moving  gameplay objects (eg Datamass, Excavation Power Cells, Raptor Cells, etc) but it generally wasn't of a problem because the objects were heavy enough (properly excluding them should run faster too!). As more and more gameplay components rely on pickups, we've addressed this issue as it is commonly discussed by you all.",
+        "fixes": ""
+      },
+      {
+        "name": "The Index Preview",
+        "date": "2016-10-20T23:28:18Z",
+        "url": "https://forums.warframe.com/topic/709665-the-index-preview/",
+        "additions": "",
+        "changes": "Conclave Arsenal now has Ability descriptions specific to Conclave for the following Frames: Ash, Banshee, Hydroid, Inaros, Ivara, Loki, Mag, Mesa, Nekros, Nezha, Nova, Nyx, Rhino, Saryn, Titania, Valkyr, Vauban and Volt.",
+        "fixes": ""
+      },
+      {
+        "name": "The Silver Grove: U1.4",
+        "date": "2016-09-09T15:49:51Z",
+        "url": "https://forums.warframe.com/topic/697770-the-silver-grove-u14/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Inaros not being teleported to the correct position when you open up the Arsenal."
+      },
+      {
+        "name": "The Silver Grove: U1.1",
+        "date": "2016-08-31T20:46:07Z",
+        "url": "https://forums.warframe.com/topic/694841-the-silver-grove-u11/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Inaros Elemental Sandstorm Mod not being in alphabetical order in the Syndicate offerings list."
+      },
+      {
+        "name": "The Silver Grove",
+        "date": "2016-08-19T17:32:55Z",
+        "url": "https://forums.warframe.com/topic/688644-the-silver-grove/",
+        "additions": "",
+        "changes": "Inaros’ Devour now also decreases Dodge speed of target in Conclave",
+        "fixes": "Fixed various clipping issues with Inaros. "
+      },
+      {
+        "name": "Specters of the Rail: Update 2",
+        "date": "2016-08-03T21:43:21Z",
+        "url": "https://forums.warframe.com/topic/682884-specters-of-the-rail-update-2/",
+        "additions": "",
+        "changes": "Increased Kela De Thaym’s resistance to health drain to give her a fighting chance against abilities like Trinity’s Energy Vampire, Mag’s Polarize, and Inaros’ Desiccation. ",
+        "fixes": ""
+      },
+      {
+        "name": "Specters of the Rail: Hotfix 12",
+        "date": "2016-07-20T20:28:28Z",
+        "url": "https://forums.warframe.com/topic/677187-specters-of-the-rail-hotfix-12/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Sands of Inaros quest countdown timer displaying the incorrect location."
+      },
+      {
+        "name": "Specters of the Rail: Hotfix 1",
+        "date": "2016-07-08T21:33:56Z",
+        "url": "https://forums.warframe.com/topic/668573-specters-of-the-rail-hotfix-1/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with Inaros players entering into pre-death and becoming unable to revive during Specter encounters."
+      },
+      {
+        "name": "Update: Specters of the Rail",
+        "date": "2016-07-08T14:12:48Z",
+        "url": "https://forums.warframe.com/topic/668132-update-specters-of-the-rail/",
+        "additions": "",
+        "changes": "",
+        "fixes": "*Sands of Inaros Blueprint is still obtained from Baro Ki Teer.\nFixed an issue where players could not access the Sands of Inaros’ Codex entry after completing the quest.\nFixed an issue with Inaros’ Devouring allies affected by Radiation Damage and permanently locking Inaros in the animation for the duration of the mission."
+      },
+      {
+        "name": "Update 18.13.0: TennoGen, Passives, & Reworks",
+        "date": "2016-05-27T21:20:29Z",
+        "url": "https://forums.warframe.com/topic/652752-update-18130-tennogen-passives-reworks%C2%A0/",
+        "additions": "",
+        "changes": "•    Enemies that are being Devoured by Inaros can no longer be hurt/killed by another player, only the user Devouring the enemy can cause damage to it at that time.",
+        "fixes": "•    Fixed incorrect text in The Inaros Bundle description.\n•    Fixed Inaros’ Scarab Swarm healing objectives. (Defense Pods, etc.)"
+      },
+      {
+        "name": "Update 18.12.0: Vauban Prime & 18.12.1",
+        "date": "2016-05-17T18:00:00Z",
+        "url": "https://forums.warframe.com/topic/649037-update-18120-vauban-prime-18121/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Sands of Inaros bundle diorama appearing blurry. "
+      },
+      {
+        "name": "Update 18.10.0: Operation Rathuum!",
+        "date": "2016-04-29T17:04:18Z",
+        "url": "https://forums.warframe.com/topic/642897-update-18100-operation-rathuum/",
+        "additions": "",
+        "changes": "",
+        "fixes": "·         The Hieroglyphics that Baro mentions in the Sands of Inaros quest have been added. I guess they do exist!"
+      },
+      {
+        "name": "Update 18.9.0",
+        "date": "2016-04-20T21:39:18Z",
+        "url": "https://forums.warframe.com/topic/639851-update-1890/",
+        "additions": "",
+        "changes": "•    Fixed Inaros’ Sandstorm staying active after death until the player respawns in Conclave.",
+        "fixes": "•    Fixed Clients not seeing the laser eye FX on enemies in the final stage of the Sands of Inaros quest."
+      },
+      {
+        "name": "Hotfix 18.8.2",
+        "date": "2016-04-13T18:53:32Z",
+        "url": "https://forums.warframe.com/topic/637581-hotfix-1882/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed Sentinel kills not counting toward the Sacred Vessel progress in the Sands of Inaros quest.\n•    Fixed Inaros appearing transparent after reviving.\n•    Fixed Inaros’ diorama missing his cloth attachments."
+      },
+      {
+        "name": "Update 18.8.0",
+        "date": "2016-04-06T20:31:30Z",
+        "url": "https://forums.warframe.com/topic/635136-update-1880/",
+        "additions": "",
+        "changes": "•    Fixed Inaros’ Sandstorm lingering even after death in Conclave.\n•    Improved the FX on Inaros’ abilities.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 18.7.0",
+        "date": "2016-03-30T22:18:10Z",
+        "url": "https://forums.warframe.com/topic/632293-update-1870/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed the Sands of Inaros’ Sacred Vessel diorama becoming stuck on screen, preventing progress in the Quest."
+      },
+      {
+        "name": "Hotfix 18.6.3",
+        "date": "2016-03-23T21:00:12Z",
+        "url": "https://forums.warframe.com/topic/629210-hotfix-1863/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Players can now review the Sacred Vessel more closely in their Landing Craft when playing the Sands of Inaros Quest.\nFixed Inaros’ Sandstorm visual FX covering too large an area when ranged Mods are equipped.\nFixed an issue that prevented players from completing the Second Dream’s shield-draining puzzle with Inaros.\nFixed an error causing Inaros to get stuck when devouring friendly targets affected by the Radiation proc.\nFixed Inaros’ Scarab Swarm being usable on corpses.\nFixed an issue in the Sands of Inaros Quest that could cause menus to freeze after seeing the in-Mission Sacred Vessel diorama.  \nFixed Inaros’ Scarab Swarm not having consistent targeting when moving the camera while aiming.\nFixed several overlapping textures and holes in Inaros’ tomb in the Sands of Inaros Quest Mission.\nFixed Inaros’s Sandstorm visual FX lingering after death in Conclave."
+      },
+      {
+        "name": "Hotfix 18.6.2",
+        "date": "2016-03-22T17:37:40Z",
+        "url": "https://forums.warframe.com/topic/628628-hotfix-1862/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Trinity’s Energy Vampire will no longer affect Inaros when in Sandstorm.\nFixed weapons with alt fire being usable during Inaros’ Sandstorm.\nFixed Inaros’ Scarab Swarm not healing Sentinels.\nFixed Inaros’ Devour not being able to consume enemies below his position.\nFixed Inaros’ Scarab Armor buff persisting through death.\nFixed Inaros starting at 0 shields when using an Archwing."
+      },
+      {
+        "name": "Update 18.6",
+        "date": "2016-03-16T20:07:20Z",
+        "url": "https://forums.warframe.com/topic/625930-update-186/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Inaros’ Dessicate and Banshee’s Sonic Boom range has been increased and now hit in a 40 degree FOV.\nBaro Ki’Teer will now have a unique greeting when interacting with Inaros.\nFixed some visual fx causing the torches in the Sands of Inaros Quest to appear pixelated.\nFixed not receiving an Inbox message after completing the Sands of Inaros Quest.\nFixed an issue allowing players to cast other abilities during Inaros’ Devour after entering the pause menu during Devour’s cast."
+      },
+      {
+        "name": "Hotfix 18.5.5 + 18.5.5.1",
+        "date": "2016-03-08T21:47:49Z",
+        "url": "https://forums.warframe.com/topic/621794-hotfix-1855-18551/",
+        "additions": "",
+        "changes": "",
+        "fixes": "•    Fixed not being able to view the Sands of Inaros Quest diorama in your Codex after completing the Quest."
+      },
+      {
+        "name": "Hotfix 18.5.4",
+        "date": "2016-03-07T22:52:10Z",
+        "url": "https://forums.warframe.com/topic/621181-hotfix-1854/",
+        "additions": "",
+        "changes": "•    The Provoked Mod now affects Inaros's bleed out damage.",
+        "fixes": ""
+      },
+      {
+        "name": "Hotfix 18.5.1",
+        "date": "2016-03-04T23:56:14Z",
+        "url": "https://forums.warframe.com/topic/618959-hotfix-1851/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Sands of Inaros Changes and Fixes\nLowered damage of the Inaros Golem’s laser eyes.\nImproved the targeting of the Inaros Golem.\nSlightly adjusted the quality of all VO within the Sands of Inaros Quest.\nMade various audio adjustments to the Sands of Inaros’ Quest levels.\nFixed an issue causing unique golem enemies in the Sands of Inaros Quest to get stuck.\nFixed an issue that would enable players to kill the final boss of the Quest when playing as Inaros in a pre-death state.\nAdjusted Inaros’ sarcophagus audio FX.\nImproved the quality of Inaros’ sarcophagus’ animations.\nFixed players being unable to trade Inaros’ Blueprint.\nFixed Inaros’ Idle Animation Icons not displaying properly.\nFixed Inaros’ Scarab Swarm not taking on the proper energy color for audio FX."
+      },
+      {
+        "name": "Update 18.5: Sands of Inaros",
+        "date": "2016-03-04T18:20:53Z",
+        "url": "https://forums.warframe.com/topic/618642-update-185-sands-of-inaros-%C2%A0/",
+        "additions": "",
+        "changes": "",
+        "fixes": "New Warframe: Inaros\nInaros \n Risen from the sands, Inaros commands the desert's fearsome power.\nDEVOUR  marks your target, trapping it in quicksand. Charging the ability will draw them towards Inaros for devouring.  Alternatively, Inaros or his allies can activate the target, transferring a percentage of its health and shields. If the target dies by the hands of Inaros, a sand shadow will spawn to assist him.\nSANDSTORM transforms Inaros into a whirling spiral of sand, gathering nearby pickups and throwing enemies away. Enemies previously marked for devour within its radius will drained of shields and health.\nNew Quest: Sands of Inaros\nA uniquely-styled alternate helmet for Inaros.\nWith Inaros, the sands of old have been swept away from U18 Warframe leaving behind a newer, more vibrant U18.5 Warframe. In many respects, 18.5 is a remastered, more HD version of Warframe with months of technical graphical improvements and artistic relighting of many parts of the game (and more to come in subsequent updates). On top of these changes are across the board rendering performance improvements we hope you'll enjoy, keep in mind that your particular hardware may benefit more and benefit less depending on your GPU, resolution and preferred graphics settings."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Powersuits/Ranger/Ranger",
@@ -36421,6 +37380,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "The Pulchranopsis Syandana has been added to the Khora Urushu Collection to accompany her new signature look.\nWe will be running a script to give the Pulchranopsis Syandana to those who have already purchased the Khora Urushu Collection. Will update this thread when the script runs/completes!\nAdjusted the positioning of the cloth dangles on the Khora Urushu Helmet to better match the original design.\nKhora’s Whipclaw whip will now use the Khora Urushu whip design.",
+        "fixes": ""
+      },
+      {
         "name": "The Steel Path: Hotfix 28.1.1",
         "date": "2020-07-09T19:48:17Z",
         "url": "https://forums.warframe.com/topic/1205966-the-steel-path-hotfix-2811/",
@@ -37113,15 +38080,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed an issue where an Eidolon Wail could hit players in Limbo’s Rift after a Host migration."
-      },
-      {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error with Limbo's Rift Torrent Augment that could occur if Rift Surge was cast after a Railjack warp."
       },
       {
         "name": "Scarlet Spear: 27.3.11",
@@ -38901,15 +39859,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed an issue where an Eidolon Wail could hit players in Limbo’s Rift after a Host migration."
-      },
-      {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error with Limbo's Rift Torrent Augment that could occur if Rift Surge was cast after a Railjack warp."
       },
       {
         "name": "Scarlet Spear: 27.3.11",
@@ -42937,6 +43886,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed many Junction Specters having Health/Shield/Armour overrides, which gave them dramatically lower Health (eg: This changes Mag Specter's base Health from 75->1800). They should now match the listed values in the Codex."
+      },
+      {
         "name": "The Steel Path: Update 28.1.0",
         "date": "2020-07-08T20:09:20Z",
         "url": "https://forums.warframe.com/topic/1205630-the-steel-path-update-2810/",
@@ -42993,15 +43950,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed a script error with Magus Lockdown. "
-      },
-      {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when a Host migration occurred when using Magus Lockdown."
       },
       {
         "name": "Scarlet Spear: TennoGen 27.3.10",
@@ -43818,6 +44766,14 @@
         "additions": "",
         "changes": "",
         "fixes": "Mag Changes & Fixes\nImproved the FX of Mag’s Polarize.\nFixed Mag’s Crush FX not playing properly for Clients. \nFixed Mag’s Magnetize bubble being invisible when inside it.\nFixed Mag dealing self-damage with Magnetize.\nLanka projectiles will now only increase the combo counter once per enemy hit when shot into Mag’s Magnetize. This also fixes firing the Lanka in Mag’s Magnetize bubble resulting in a massive unintended Sniper combo increase.\nFixed multiple Bastille’s appearing when casted by Vauban in Mag’s Polarize.\nFixed Mag’s Magnetize bubble lingering permanently when Vauban’s Vortex/Bastille is thrown inside it. This also fixes intensified FX in this situation that caused performance issues. \nFixed overlapping text of Mags abilities in the Tutorial UI."
+      },
+      {
+        "name": "Hotfix 18.13.1",
+        "date": "2016-05-28T02:45:03Z",
+        "url": "https://forums.warframe.com/topic/652966-hotfix-18131/",
+        "additions": "",
+        "changes": "Temporarily removed Mag's Vacuum Passive sound until we can refine.",
+        "fixes": ""
       },
       {
         "name": "Hotfix 18.13.1",
@@ -45102,6 +46058,14 @@
     "tradable": true,
     "patchlogs": [
       {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed many Junction Specters having Health/Shield/Armour overrides, which gave them dramatically lower Health (eg: This changes Mag Specter's base Health from 75->1800). They should now match the listed values in the Codex."
+      },
+      {
         "name": "The Steel Path: Update 28.1.0",
         "date": "2020-07-08T20:09:20Z",
         "url": "https://forums.warframe.com/topic/1205630-the-steel-path-update-2810/",
@@ -45158,15 +46122,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed a script error with Magus Lockdown. "
-      },
-      {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when a Host migration occurred when using Magus Lockdown."
       },
       {
         "name": "Scarlet Spear: TennoGen 27.3.10",
@@ -45983,6 +46938,14 @@
         "additions": "",
         "changes": "",
         "fixes": "Mag Changes & Fixes\nImproved the FX of Mag’s Polarize.\nFixed Mag’s Crush FX not playing properly for Clients. \nFixed Mag’s Magnetize bubble being invisible when inside it.\nFixed Mag dealing self-damage with Magnetize.\nLanka projectiles will now only increase the combo counter once per enemy hit when shot into Mag’s Magnetize. This also fixes firing the Lanka in Mag’s Magnetize bubble resulting in a massive unintended Sniper combo increase.\nFixed multiple Bastille’s appearing when casted by Vauban in Mag’s Polarize.\nFixed Mag’s Magnetize bubble lingering permanently when Vauban’s Vortex/Bastille is thrown inside it. This also fixes intensified FX in this situation that caused performance issues. \nFixed overlapping text of Mags abilities in the Tutorial UI."
+      },
+      {
+        "name": "Hotfix 18.13.1",
+        "date": "2016-05-28T02:45:03Z",
+        "url": "https://forums.warframe.com/topic/652966-hotfix-18131/",
+        "additions": "",
+        "changes": "Temporarily removed Mag's Vacuum Passive sound until we can refine.",
+        "fixes": ""
       },
       {
         "name": "Hotfix 18.13.1",
@@ -47616,6 +48579,14 @@
         "fixes": "Multishot Secondary Mods are now properly inherited with Mesa’s Peacemaker. For added clarity, only non-weapon specific Secondary Mods scale with Peacemaker. We are still reviewing this for results to see if it needs scaling back in terms of sheer damage output. Please note that Regulators base damage was reduced in 18.13.1 to compensate for Multishot inheriting damage potential."
       },
       {
+        "name": "Hotfix 18.13.1",
+        "date": "2016-05-28T02:45:03Z",
+        "url": "https://forums.warframe.com/topic/652966-hotfix-18131/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Multishot Secondary Mods are now properly inherited with Mesa’s Peacemaker. For added clarity, only non-weapon specific Secondary Mods scale with Peacemaker. We are still reviewing this for results to see if it needs scaling back in terms of sheer damage output. Please note that Regulators base damage was reduced in 18.13.1 to compensate for Multishot inheriting damage potential."
+      },
+      {
         "name": "Update 18.9.0",
         "date": "2016-04-20T21:39:18Z",
         "url": "https://forums.warframe.com/topic/639851-update-1890/",
@@ -49191,6 +50162,14 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixes Mesa’s Peacemaker effects sticking around permanently in rare situations. "
+      },
+      {
+        "name": "Hotfix 18.13.1",
+        "date": "2016-05-28T02:45:03Z",
+        "url": "https://forums.warframe.com/topic/652966-hotfix-18131/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Multishot Secondary Mods are now properly inherited with Mesa’s Peacemaker. For added clarity, only non-weapon specific Secondary Mods scale with Peacemaker. We are still reviewing this for results to see if it needs scaling back in terms of sheer damage output. Please note that Regulators base damage was reduced in 18.13.1 to compensate for Multishot inheriting damage potential."
       },
       {
         "name": "Hotfix 18.13.1",
@@ -75170,15 +76149,6 @@
         "fixes": "Fixed a script error when casting Titania’s Tribute ability."
       },
       {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "Titania Primes Razorwing Energy wings will now be hidden when aiming to avoid blocking your sight.",
-        "fixes": "Fixed Motus Impact not extending the Melee range of Titania’s Diwata."
-      },
-      {
         "name": "Scarlet Spear: 27.3.11",
         "date": "2020-04-09T19:32:11Z",
         "url": "https://forums.warframe.com/topic/1183684-scarlet-spear-27311/",
@@ -76370,15 +77340,6 @@
         "additions": "",
         "changes": "",
         "fixes": "Fixed a script error when casting Titania’s Tribute ability."
-      },
-      {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "Titania Primes Razorwing Energy wings will now be hidden when aiming to avoid blocking your sight.",
-        "fixes": "Fixed Motus Impact not extending the Melee range of Titania’s Diwata."
       },
       {
         "name": "Scarlet Spear: 27.3.11",
@@ -80671,6 +81632,14 @@
         "fixes": "Fixed Valkyr’s Warcry not having any effect when cast."
       },
       {
+        "name": "Hotfix 18.13.1",
+        "date": "2016-05-28T02:45:03Z",
+        "url": "https://forums.warframe.com/topic/652966-hotfix-18131/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Valkyr’s Warcry not having any effect when cast."
+      },
+      {
         "name": "Update 18.13.0: TennoGen, Passives, & Reworks",
         "date": "2016-05-27T21:20:29Z",
         "url": "https://forums.warframe.com/topic/652752-update-18130-tennogen-passives-reworks%C2%A0/",
@@ -82487,6 +83456,14 @@
         "additions": "",
         "changes": "",
         "fixes": "Valkyr Changes:"
+      },
+      {
+        "name": "Hotfix 18.13.1",
+        "date": "2016-05-28T02:45:03Z",
+        "url": "https://forums.warframe.com/topic/652966-hotfix-18131/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Valkyr’s Warcry not having any effect when cast."
       },
       {
         "name": "Hotfix 18.13.1",
@@ -85753,15 +86730,6 @@
         "fixes": "Fixed Volt's Shield causing Exodia Contagion's projectile to never explode."
       },
       {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when casting Volt’s Discharge ability right when another player was joining-in-progress."
-      },
-      {
         "name": "Operation: Scarlet Spear: Hotfix 27.3.4",
         "date": "2020-03-26T19:51:39Z",
         "url": "https://forums.warframe.com/topic/1179144-operation-scarlet-spear-hotfix-2734/",
@@ -87431,15 +88399,6 @@
         "additions": "",
         "changes": "Volt ",
         "fixes": "Fixed Volt's Shield causing Exodia Contagion's projectile to never explode."
-      },
-      {
-        "name": "Scarlet Spear: 27.3.14",
-        "date": "2020-04-15T18:01:47Z",
-        "url": "https://forums.warframe.com/topic/1185406-scarlet-spear-27314/",
-        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/96b0708e90ef7b63f8ab593115b09bd4.jpg",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when casting Volt’s Discharge ability right when another player was joining-in-progress."
       },
       {
         "name": "Operation: Scarlet Spear: Hotfix 27.3.4",
@@ -89492,6 +90451,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed hearing Client Wukong Iron Staff FX sounds when the Wukong is far enough that you shouldn't hear it."
+      },
+      {
         "name": "The Steel Path: Update 28.1.0",
         "date": "2020-07-08T20:09:20Z",
         "url": "https://forums.warframe.com/topic/1205630-the-steel-path-update-2810/",
@@ -90745,6 +91712,14 @@
     "category": "Warframes",
     "tradable": true,
     "patchlogs": [
+      {
+        "name": "The Steel Path: Inaros Prime 28.2.0",
+        "date": "2020-07-14T18:01:09Z",
+        "url": "https://forums.warframe.com/topic/1207002-the-steel-path-inaros-prime-2820/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed hearing Client Wukong Iron Staff FX sounds when the Wukong is far enough that you shouldn't hear it."
+      },
       {
         "name": "The Steel Path: Update 28.1.0",
         "date": "2020-07-08T20:09:20Z",
