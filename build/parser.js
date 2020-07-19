@@ -331,7 +331,7 @@ class Parser {
     // eslint-disable-next-line no-useless-escape
     const encode = (str) => str.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]\?\!]/g, '').toLowerCase()
     const imageStub = image.textureLocation
-    const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '') // .png, .jpg, etc
+    const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '').replace(/!.*$/, '') // .png, .jpg, etc
 
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
