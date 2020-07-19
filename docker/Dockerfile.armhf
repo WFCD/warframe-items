@@ -3,7 +3,7 @@ FROM resin/raspberry-pi-alpine-node
 # Build deps
 RUN apk add --update --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
     vips-dev fftw-dev libc6-compat \
-  && apk add --update --no-cache git openssh make gcc g++ python curl libpng-dev bash iproute2 \
+  && apk add --update --no-cache git openssh make gcc g++ python curl libpng-dev bash iproute2 lua \
   && npm install node-gyp -g
 
 # Clone repo
