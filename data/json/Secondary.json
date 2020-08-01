@@ -25909,6 +25909,53 @@
     "disposition": 3
   },
   {
+    "name": "Athodai",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon",
+    "damagePerShot": [ 0, 22, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 70,
+    "description": "Reverse-engineered from propulsion tech this hand-cannon packs a kick. Headshots trigger Overdrive, locking off secondary functions while maximizing your fire rate and ammo efficiency for a short time.",
+    "criticalChance": 0.31999999,
+    "criticalMultiplier": 2,
+    "procChance": 0.079999983,
+    "fireRate": 5.0000005,
+    "masteryReq": 10,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 50,
+    "omegaAttenuation": 1,
+    "noise": "Alarming",
+    "trigger": "Auto",
+    "magazineSize": 24,
+    "reloadTime": 2,
+    "multishot": 1,
+    "type": "Pistol",
+    "imageName": "athodai.png",
+    "category": "Secondary",
+    "tradable": false,
+    "damage": "48.0 heat",
+    "damageTypes": {
+      "puncture": 22,
+      "heat": 48
+    },
+    "flight": "???",
+    "polarities": [  ],
+    "projectile": "?",
+    "secondary": {
+      "name": "Charge",
+      "speed": 12,
+      "crit_chance": 18,
+      "crit_mult": 2,
+      "status_chance": 0.2,
+      "shot_type": "?",
+      "heat": 88,
+      "damage": "88.0 heat"
+    },
+    "tags": [ "Tenno" ],
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/4/4f/Athodai.png/revision/latest?cb=20200720170231",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Athodai",
+    "disposition": 3
+  },
+  {
     "name": "Atomos",
     "uniqueName": "/Lotus/Weapons/Grineer/Pistols/HeatGun/GrnHeatGun",
     "damagePerShot": [ 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -26423,6 +26470,181 @@
     "magazineSize": 75,
     "reloadTime": 1.4,
     "multishot": 1,
+    "buildPrice": 30000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/SundialPistolBlueprint",
+        "name": "Blueprint",
+        "description": "This intricate automatic pistol is able to fire its magazine which then spins in the air for a short time, firing lasers at nearby enemies.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 450,
+        "imageName": "circuits.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 4,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
+        "itemCount": 500,
+        "imageName": "polymer-bundle.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 2750,
+        "imageName": "salvage.png",
+        "tradable": false
+      }
+    ],
     "type": "Pistol",
     "imageName": "azima.png",
     "category": "Secondary",
@@ -82579,6 +82801,33 @@
     "imageName": "mk1-furis.png",
     "category": "Secondary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/c3c80f99d062c0d0f1950fe82d5a60f5.jpg",
+        "additions": "",
+        "changes": "MK1-Furis: 1.35->1.4",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.10.0",
+        "date": "2018-01-25T23:53:14Z",
+        "url": "https://forums.warframe.com/topic/911802-plains-of-eidolon-update-22100/",
+        "additions": "",
+        "changes": "Removed the Mastery Rank 2 requirement from the MK1-Furis.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 16.4",
+        "date": "2015-04-23T21:03:45Z",
+        "url": "https://forums.warframe.com/topic/445957-update-164/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed MK1-Furis showing a price of 120 Platinum in the Market."
+      }
+    ],
     "ammo": 210,
     "damage": "13.0",
     "damageTypes": {
@@ -82617,6 +82866,16 @@
     "imageName": "mk1-kunai.png",
     "category": "Secondary",
     "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Hotfix 18.4.7",
+        "date": "2016-02-04T22:43:36Z",
+        "url": "https://forums.warframe.com/topic/605204-hotfix-1847/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the MK1-Kunai alerting enemies instead of being Silent."
+      }
+    ],
     "ammo": 210,
     "damage": "40.0",
     "damageTypes": {
