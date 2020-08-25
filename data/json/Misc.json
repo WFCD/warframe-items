@@ -1,5 +1,23 @@
 [
   {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
+    "name": "[Ph] Deimos Fish F",
+    "description": "[PH] Description",
+    "type": "Fish Part",
+    "imageName": "ph-deimos-fish-f.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
+    "name": "[Ph] Deimos Fish G",
+    "description": "[PH] Description",
+    "type": "Fish Part",
+    "imageName": "ph-deimos-fish-g.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Trapping/EidolonTrappingItemA",
     "name": "[Ph] Eidolon Trapping A",
     "description": "[PH] Description",
@@ -240,6 +258,73 @@
     "excludeFromCodex": true,
     "type": "Misc",
     "imageName": "additional-mod-config-slot-for-this-item.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Adra Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
+        "name": "Ferment Bladder",
+        "description": "Many Deimos fish secrete reagents in a pouchlike organ, creating volatile gases that enable limited periods of levitation. ",
+        "itemCount": 20,
+        "imageName": "ferment-bladder.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
+        "name": "Sporulate Sac",
+        "description": "These pressurized repositories of Infested spores require careful extraction or explosive rupture and local contamination may occur.",
+        "itemCount": 12,
+        "imageName": "sporulate-sac.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "adra-mutagen.png",
     "category": "Misc",
     "tradable": false
   },
@@ -1200,6 +1285,73 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Arioli Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+        "name": "Spinal Core Section",
+        "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.",
+        "itemCount": 8,
+        "imageName": "spinal-core-section.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
+        "name": "Tubercular Gill System",
+        "description": "Adaptive membranes allow many Deimos fish to move freely between fluid and gaseous environments.",
+        "itemCount": 20,
+        "imageName": "tubercular-gill-system.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "arioli-mutagen.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "name": "Artemis Bow",
@@ -7937,11 +8089,31 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+    "name": "Benign Infested Tumor",
+    "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+    "type": "Fish Part",
+    "imageName": "benign-infested-tumor.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/BetaCorruptorResource",
     "name": "Beta Corruptor",
     "description": "Inert on its own this corruptor is highly effective if mixed with its Alpha counterpart. Properly mixed, these will destabilize Fomorian Reactors much faster than their Stable counterparts. This volatile item cannot be simultaneously equipped with Alpha Corruptors. Recommended for Tenno operating as a team.",
     "type": "Misc",
     "imageName": "beta-corruptor.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
+    "name": "Biotic Filter",
+    "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.",
+    "itemCount": 6,
+    "parents": [ "Voidrig Engine", "Voidrig Weapon Pod" ],
+    "type": "Fish Part",
+    "imageName": "biotic-filter.png",
     "category": "Misc",
     "tradable": false
   },
@@ -8141,6 +8313,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMaggotCommon",
+    "name": "Burrowing Cryptilex Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "burrowing-cryptilex-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Cantic Prism",
     "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Barrel/CorpAmpSet1BarrelPartA",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -8322,6 +8503,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMaggotRare",
+    "name": "Caustic Cryptilex Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "caustic-cryptilex-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/PickUps/Nightwave/CephalonFissureTimePointItem",
     "name": "Cephalite Resonance",
     "description": "Cephalite Resonance used to enter the Glassmaker's Weave",
@@ -8493,10 +8683,77 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem",
     "name": "Charc Electroplax",
     "description": "Harvested by the Ostron as a catalyst used in their synthetics.Location: Plains of Eidolon",
-    "itemCount": 5,
-    "parents": [ "Fosfor Rahd" ],
+    "itemCount": 45,
+    "parents": [ "Fosfor Rahd", "Voidrig Weapon Pod" ],
     "type": "Fish Part",
     "imageName": "charc-electroplax.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Chiten Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
+        "name": "Biotic Filter",
+        "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.",
+        "itemCount": 12,
+        "imageName": "biotic-filter.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
+        "name": "Ferment Bladder",
+        "description": "Many Deimos fish secrete reagents in a pouchlike organ, creating volatile gases that enable limited periods of levitation. ",
+        "itemCount": 20,
+        "imageName": "ferment-bladder.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "chiten-mutagen.png",
     "category": "Misc",
     "tradable": false
   },
@@ -8981,6 +9238,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMergooCommon",
+    "name": "Common Avichaea Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "common-avichaea-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Eidolon/AnimalTagCondrocCommon",
     "name": "Common Condroc Tag",
     "description": "For saving a specimen of this species.",
@@ -9212,6 +9478,43 @@
         "chance": 0.16670000000000001
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
+    "name": "Cranial Foremount",
+    "description": "Beneath the membranous protein layers can be found a secondary 'skull'; flexible, tough and highly conductive.",
+    "type": "Fish Part",
+    "imageName": "cranial-foremount.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Crescent Vulpaphyla",
+    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterUncommonRewardItem",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "type": "Misc",
+    "imageName": "crescent-vulpaphyla.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedCritterUncommon",
+    "name": "Crescent Vulpaphyla Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "crescent-vulpaphyla-tag.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileSyndicateSteelMeridian",
@@ -9593,6 +9896,16 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/EntratiFragmentCommonC",
+    "name": "Daughter Token",
+    "description": "A token of Daughter's gratitude.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "daughter-token.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeckTwelve",
     "name": "Deck 12 Scene",
     "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
@@ -9779,6 +10092,96 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosBreakthrough",
+    "name": "Deimos Breakthrough Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-breakthrough-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosLandscape",
+    "name": "Deimos Cambion Drift Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-cambion-drift-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosCatacombs",
+    "name": "Deimos Catacombs Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-catacombs-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosTomb",
+    "name": "Deimos Chamber Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-chamber-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosDownfall",
+    "name": "Deimos Downfall Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-downfall-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosHub",
+    "name": "Deimos Necralisk Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-necralisk-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosTunnels",
+    "name": "Deimos Tunnels Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-tunnels-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosObsession",
+    "name": "Deimos Underground Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-underground-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileDeimosBouncy",
+    "name": "Deimos Vault Scene",
+    "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "deimos-vault-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagPobbersUncommon",
     "name": "Delicate Pobber Tag",
     "description": "For saving a specimen of this subspecies.",
@@ -9813,6 +10216,15 @@
         "fixes": "The drop rates on Beacons have been adjusted. Delta Beacons are now less rare, with the Kappa and Gamma Beacon drop rates being slightly reduced."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem",
+    "name": "Dendrite Blastoma",
+    "description": "Elements of other lifeforms are detectable in Infested body parts, such as this apparently parasitic clump of land-dwelling animal tissue.",
+    "type": "Fish Part",
+    "imageName": "dendrite-blastoma.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "name": "Desert Wind",
@@ -9906,6 +10318,73 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/14/Desert_Wind.png/revision/latest?cb=20190708213131",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Desert_Wind",
     "disposition": 3
+  },
+  {
+    "name": "Desus Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem",
+        "name": "Dendrite Blastoma",
+        "description": "Elements of other lifeforms are detectable in Infested body parts, such as this apparently parasitic clump of land-dwelling animal tissue.",
+        "itemCount": 15,
+        "imageName": "dendrite-blastoma.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "desus-antigen.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Trapping/VenusTrappingItemD",
@@ -12589,6 +13068,73 @@
     "tradable": false
   },
   {
+    "name": "Elasmun Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
+        "name": "Pustulent Cognitive Nodule",
+        "description": "The Infestation provokes the growth of multiple, seemingly redundant brain-like clusters, whose function may be linked to hivemind activity. ",
+        "itemCount": 15,
+        "imageName": "pustulent-cognitive-nodule.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "elasmun-antigen.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleLarge",
     "description": "Consumed in the fusion process to power up existing Mods.",
     "fusionPoints": 1500,
@@ -12615,6 +13161,73 @@
     "type": "Misc",
     "name": "Elitealertfusionbundlesmall",
     "imageName": "elitealertfusionbundlesmall.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Elsa Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
+        "name": "Biotic Filter",
+        "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.",
+        "itemCount": 12,
+        "imageName": "biotic-filter.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
+        "name": "Ferment Bladder",
+        "description": "Many Deimos fish secrete reagents in a pouchlike organ, creating volatile gases that enable limited periods of levitation. ",
+        "itemCount": 20,
+        "imageName": "ferment-bladder.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "elsa-mutagen.png",
     "category": "Misc",
     "tradable": false
   },
@@ -12655,6 +13268,16 @@
     "excludeFromCodex": true,
     "type": "Conservation Tag",
     "imageName": "emperor-condroc-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/EntratiFragmentBase",
+    "name": "Entratifragmentbase",
+    "description": "",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "entratifragmentbase.png",
     "category": "Misc",
     "tradable": false
   },
@@ -24596,6 +25219,16 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+    "name": "Fass Residue",
+    "description": "PROCESSED FASS RESIDUE",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "fass-residue.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Fatboys",
     "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBJet",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -24657,6 +25290,25 @@
     ],
     "type": "K-Drive Component",
     "imageName": "fatboys.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/EntratiFragmentUncommonA",
+    "name": "Father Token",
+    "description": "A symbol of Father's trust and confidence.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "father-token.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
+    "name": "Ferment Bladder",
+    "description": "Many Deimos fish secrete reagents in a pouchlike organ, creating volatile gases that enable limited periods of levitation. ",
+    "type": "Fish Part",
+    "imageName": "ferment-bladder.png",
     "category": "Misc",
     "tradable": false
   },
@@ -31810,7 +32462,7 @@
     "name": "Gallium",
     "description": "Soft metal used in microelectronics and energy weapons.Locations: Mars and Uranus.",
     "itemCount": 1,
-    "parents": [ "Chroma Amaru Helmet", "Cosmic Specter", "Fragor Brokk Skin", "Nova Slipstream Helmet", "Razorback Cipher", "Scindo Manticore Skin", "Synthula", "Venerdo Alloy", "Wukong Macak Helmet" ],
+    "parents": [ "Chroma Amaru Helmet", "Cosmic Specter", "Fragor Brokk Skin", "Nova Slipstream Helmet", "Razorback Cipher", "Scindo Manticore Skin", "Synthula", "Thaumic Distillate", "Venerdo Alloy", "Wukong Macak Helmet" ],
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 2,
@@ -32512,6 +33164,16 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/EntratiFragmentRareA",
+    "name": "Grandmother Token",
+    "description": "A rare sign of Grandmother's favor.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "grandmother-token.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "name": "Granmu Prism",
@@ -60778,6 +61440,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedKdriveUncommon",
+    "name": "Green Velocipod Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "green-velocipod-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileGrineerForestIntermediateA",
     "name": "Grineer Forest Factory Scene",
     "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
@@ -61014,8 +61685,8 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
     "name": "Hexenon",
     "description": "A reagent commonly used to produce highly combustible fuel.",
-    "itemCount": 500,
-    "parents": [ "Bishamo Helmet" ],
+    "itemCount": 250,
+    "parents": [ "Bishamo Helmet", "Cortege Stock" ],
     "type": "Misc",
     "imageName": "hexenon.png",
     "category": "Misc",
@@ -61239,6 +61910,73 @@
     "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
     "type": "Misc",
     "imageName": "hydroid's-relay-scene.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Ibexan Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
+        "name": "Saturated Muscle Mass",
+        "description": "Environmental contamination is co-responsible for mutations, alongside Infested cellular alteration.",
+        "itemCount": 15,
+        "imageName": "saturated-muscle-mass.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "ibexan-antigen.png",
     "category": "Misc",
     "tradable": false
   },
@@ -61755,6 +62493,73 @@
     "description": "Medallion of the Cephalon Suda syndicate. Can be traded in on relay syndicate hubs for additional standing.",
     "type": "Medallion",
     "imageName": "intriguing-datum.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Iranon Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem",
+        "name": "Dendrite Blastoma",
+        "description": "Elements of other lifeforms are detectable in Infested body parts, such as this apparently parasitic clump of land-dwelling animal tissue.",
+        "itemCount": 15,
+        "imageName": "dendrite-blastoma.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "iranon-antigen.png",
     "category": "Misc",
     "tradable": false
   },
@@ -63823,7 +64628,7 @@
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Eggs/KubrowEgg",
     "name": "Kubrow Egg",
     "description": "This egg is used to transplant the genetic code of a Kubrow onto a Kubrow clone.",
-    "primeSellingPrice": 257,
+    "primeSellingPrice": 513,
     "type": "Pet Resource",
     "imageName": "kubrow-egg.png",
     "category": "Misc",
@@ -66951,6 +67756,73 @@
     "tradable": false
   },
   {
+    "name": "Leptosam Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
+        "name": "Ferment Bladder",
+        "description": "Many Deimos fish secrete reagents in a pouchlike organ, creating volatile gases that enable limited periods of levitation. ",
+        "itemCount": 20,
+        "imageName": "ferment-bladder.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
+        "name": "Sporulate Sac",
+        "description": "These pressurized repositories of Infested spores require careful extraction or explosive rupture and local contamination may occur.",
+        "itemCount": 12,
+        "imageName": "sporulate-sac.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "leptosam-mutagen.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/LibraryScannerUpgrade",
     "name": "Libraryscannerupgrade",
     "description": "",
@@ -67072,7 +67944,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/DefaultShip",
     "name": "Liset",
     "description": "The landing craft of choice utilised by the Tenno during their missions.",
-    "primeSellingPrice": 257,
+    "primeSellingPrice": 513,
     "type": "Orbiter",
     "imageName": "liset.png",
     "category": "Misc",
@@ -69406,7 +70278,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/InsectShip",
     "name": "Mantis",
     "description": "This insect-like landing craft features Med-Tower air-support.",
-    "primeSellingPrice": 257,
+    "primeSellingPrice": 513,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -72162,6 +73034,34 @@
     ]
   },
   {
+    "name": "Medjay Predasite",
+    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorRareRewardItem",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "type": "Misc",
+    "imageName": "medjay-predasite.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedPredatorRare",
+    "name": "Medjay Predasite Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "medjay-predasite-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjection",
     "name": "Meso Relic",
     "description": "An artifact containing Orokin secrets. It can only be opened through the power of the Void.",
@@ -72428,6 +73328,73 @@
     "tradable": false
   },
   {
+    "name": "Monachod Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenD",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenDBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
+        "name": "Cranial Foremount",
+        "description": "Beneath the membranous protein layers can be found a secondary 'skull'; flexible, tough and highly conductive.",
+        "itemCount": 4,
+        "imageName": "cranial-foremount.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
+        "name": "Tubercular Gill System",
+        "description": "Adaptive membranes allow many Deimos fish to move freely between fluid and gaseous environments.",
+        "itemCount": 20,
+        "imageName": "tubercular-gill-system.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "monachod-mutagen.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
     "name": "Morphics",
     "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
@@ -72585,6 +73552,16 @@
     "omegaAttenuation": 1,
     "type": "Amp",
     "imageName": "mote-scaffold.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/EntratiFragmentUncommonB",
+    "name": "Mother Token",
+    "description": "A mark of Mother's esteem.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "mother-token.png",
     "category": "Misc",
     "tradable": false
   },
@@ -72752,7 +73729,7 @@
     "name": "Nano Spores",
     "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
     "itemCount": 25000,
-    "parents": [ "Ancient Healer Specter", "Charger Specter", "Clem Clone", "Clotra Stim", "Control Module", "Corrupted Bombard Specter", "Corrupted Lancer Specter", "Cosmic Specter", "Fomorian Disruptor", "Gallium", "Genetic Code Template", "Incubator Power Core", "Infested Catalyst", "Ivara Loxley Helmet", "Mesa Longhorn Helmet", "Moa Specter", "Morphics", "Mutalist Alad V Assassinate", "Nezha Circa Helmet", "Nezha Jinza Helmet", "Patient Zero", "Phase Specter", "Refract Stim", "Roller Specter", "Sands Of Inaros", "Shield Osprey Specter", "Squad Ammo Restore (Large)", "Squad Ammo Restore (Small)", "Squad Energy Restore (Large)", "Squad Energy Restore (Small)", "Squad Health Restore (Large)", "Squad Health Restore (Medium)", "Squad Health Restore (Small)", "Squad Shield Restore (Small)", "Titan Extractor Prime", "Umbra Forma", "Zephyr Cierzo Helmet", "Zephyr Tengu Helmet" ],
+    "parents": [ "Ancient Healer Specter", "Charger Specter", "Clem Clone", "Clotra Stim", "Control Module", "Corrupted Bombard Specter", "Corrupted Lancer Specter", "Cosmic Specter", "Fomorian Disruptor", "Gallium", "Genetic Code Template", "Incubator Power Core", "Infested Catalyst", "Ivara Loxley Helmet", "Mesa Longhorn Helmet", "Moa Specter", "Morphics", "Mutalist Alad V Assassinate", "Nezha Circa Helmet", "Nezha Jinza Helmet", "Patient Zero", "Phase Specter", "Refract Stim", "Roller Specter", "Sands Of Inaros", "Shield Osprey Specter", "Squad Ammo Restore (Large)", "Squad Ammo Restore (Small)", "Squad Energy Restore (Large)", "Squad Energy Restore (Small)", "Squad Health Restore (Large)", "Squad Health Restore (Medium)", "Squad Health Restore (Small)", "Squad Shield Restore (Small)", "Tempered Bapholite", "Titan Extractor Prime", "Umbra Forma", "Zephyr Cierzo Helmet", "Zephyr Tengu Helmet" ],
     "type": "Misc",
     "imageName": "nano-spores.png",
     "category": "Misc",
@@ -73240,7 +74217,7 @@
     "name": "Nightwave",
     "description": "A landing craft model that pays homage to the forever-wandering home of pirate DJ Nora Night. Stay deadly, Dreamers. Nightwave's air support releases powerful sound waves, destroying weaker enemies while stunning more powerful ones.",
     "excludeFromCodex": true,
-    "primeSellingPrice": 257,
+    "primeSellingPrice": 513,
     "type": "Orbiter",
     "imageName": "nightwave.png",
     "category": "Misc",
@@ -76714,6 +77691,16 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/EntratiFragmentCommonA",
+    "name": "Otak Token",
+    "description": "Otak is grateful for your aid. This helps him to remember it.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "otak-token.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
     "name": "Oxium",
     "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.Locations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
@@ -76877,6 +77864,34 @@
         "fixes": "Fixed Oxium collected during Defense missions not counting towards Operation Oxium Epsionage progress if the mission failed after reaching a checkpoint.\nFixed Oxium description appearing as a file-path in the foundry."
       }
     ]
+  },
+  {
+    "name": "Panzer Vulpaphyla",
+    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterRareRewardItem",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "type": "Misc",
+    "imageName": "panzer-vulpaphyla.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedCritterRare",
+    "name": "Panzer Vulpaphyla Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "panzer-vulpaphyla-tag.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/PerrinRareDogTag",
@@ -77248,6 +78263,101 @@
     ]
   },
   {
+    "name": "Pharaoh Predasite",
+    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorUncommonRewardItem",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "type": "Misc",
+    "imageName": "pharaoh-predasite.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedPredatorUncommon",
+    "name": "Pharaoh Predasite Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "pharaoh-predasite-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Phijar Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenD",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenDBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
+        "name": "Cranial Foremount",
+        "description": "Beneath the membranous protein layers can be found a secondary 'skull'; flexible, tough and highly conductive.",
+        "itemCount": 4,
+        "imageName": "cranial-foremount.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
+        "name": "Tubercular Gill System",
+        "description": "Adaptive membranes allow many Deimos fish to move freely between fluid and gaseous environments.",
+        "itemCount": 20,
+        "imageName": "tubercular-gill-system.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "phijar-mutagen.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/PhobosNavigationFeatureItem",
     "name": "Phobos Nav Segment",
     "description": "",
@@ -77329,6 +78439,73 @@
     ],
     "type": "Amp",
     "imageName": "plaga-brace.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Plagen Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
+        "name": "Saturated Muscle Mass",
+        "description": "Environmental contamination is co-responsible for mutations, alongside Infested cellular alteration.",
+        "itemCount": 15,
+        "imageName": "saturated-muscle-mass.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "plagen-antigen.png",
     "category": "Misc",
     "tradable": false
   },
@@ -77726,7 +78903,7 @@
     "name": "Plastids",
     "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
     "itemCount": 300,
-    "parents": [ "Adrenal Stim", "Air Support Charges", "Calcifin Stim", "Cosmic Specter", "Fersteel Alloy", "Force Specter", "Hespazym Alloy", "Hydroid Ketos Helmet", "Inaros Anubis Helmet", "Inaros Canopic Helmet", "Infested Catalyst", "Ivara Zirastra Helmet", "Limbo Aristeas Helmet", "Limbo Magrite Helmet", "Loc-Pin", "Loki Enigma Helmet", "Mirage Harlequin Helmet", "Mirage Trivelin Helmet", "Nova Slipstream Helmet", "Patient Zero", "The Silver Grove", "Travocyte Alloy", "Wukong Dasheng Helmet", "Zephyr Tengu Helmet" ],
+    "parents": [ "Adramal Alloy", "Adrenal Stim", "Air Support Charges", "Calcifin Stim", "Cosmic Specter", "Fersteel Alloy", "Force Specter", "Hespazym Alloy", "Hydroid Ketos Helmet", "Inaros Anubis Helmet", "Inaros Canopic Helmet", "Infested Catalyst", "Ivara Zirastra Helmet", "Limbo Aristeas Helmet", "Limbo Magrite Helmet", "Loc-Pin", "Loki Enigma Helmet", "Mirage Harlequin Helmet", "Mirage Trivelin Helmet", "Nova Slipstream Helmet", "Patient Zero", "The Silver Grove", "Travocyte Alloy", "Wukong Dasheng Helmet", "Zephyr Tengu Helmet" ],
     "type": "Misc",
     "imageName": "plastids.png",
     "category": "Misc",
@@ -77832,6 +79009,73 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Poxi Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenD",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenDBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishDPartItem",
+        "name": "Waxen Sebum Deposit",
+        "description": "Remnants of creatures' original bodily fluids persist post-Infestation, often crystalized or congealed into entirely new compounds.",
+        "itemCount": 15,
+        "imageName": "waxen-sebum-deposit.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "poxi-antigen.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Beacon",
@@ -77964,6 +79208,24 @@
     "type": "Misc",
     "name": "Purgatorygoldtokenfusionbundle",
     "imageName": "purgatorygoldtokenfusionbundle.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedKdriveCommon",
+    "name": "Purple Velocipod Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "purple-velocipod-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
+    "name": "Pustulent Cognitive Nodule",
+    "description": "The Infestation provokes the growth of multiple, seemingly redundant brain-like clusters, whose function may be linked to hivemind activity. ",
+    "type": "Fish Part",
+    "imageName": "pustulent-cognitive-nodule.png",
     "category": "Misc",
     "tradable": false
   },
@@ -79032,7 +80294,7 @@
     "name": "Rubedo",
     "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
     "itemCount": 300,
-    "parents": [ "Atterax Desert-Camo Skin", "Axidrol Alloy", "Burston Solstice Skin", "Coprite Alloy", "Corinth Solstice Skin", "Diriga Desert-Camo Skin", "Fersteel Alloy", "Fragor Brokk Skin", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Ignis Solstice Skin", "Ivara Loxley Helmet", "Karak Desert-Camo Skin", "Marelok Desert-Camo Skin", "Mesa Ovis Helmet", "Pyrana Synoid Skin", "Pyrotic Alloy", "Rubico Synoid Skin", "Scindo Solstice Skin", "Tonkor Desert-Camo Skin", "Venerdo Alloy", "Zephyr Cierzo Helmet" ],
+    "parents": [ "Atterax Desert-Camo Skin", "Axidrol Alloy", "Burston Solstice Skin", "Coprite Alloy", "Corinth Solstice Skin", "Devolved Namalon", "Diriga Desert-Camo Skin", "Fersteel Alloy", "Fragor Brokk Skin", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Ignis Solstice Skin", "Ivara Loxley Helmet", "Karak Desert-Camo Skin", "Marelok Desert-Camo Skin", "Mesa Ovis Helmet", "Pyrana Synoid Skin", "Pyrotic Alloy", "Rubico Synoid Skin", "Scindo Solstice Skin", "Tonkor Desert-Camo Skin", "Venerdo Alloy", "Zephyr Cierzo Helmet" ],
     "type": "Misc",
     "imageName": "rubedo.png",
     "category": "Misc",
@@ -80452,6 +81714,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
+    "name": "Saturated Muscle Mass",
+    "description": "Environmental contamination is co-responsible for mutations, alongside Infested cellular alteration.",
+    "type": "Fish Part",
+    "imageName": "saturated-muscle-mass.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/SaturnNavigationFeatureItem",
     "name": "Saturn Nav Segment",
     "description": "",
@@ -80503,7 +81774,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/BlueSkyShip",
     "name": "Scimitar",
     "description": "This blade-like landing craft is armed with Carpet Bomb air-support.",
-    "primeSellingPrice": 257,
+    "primeSellingPrice": 513,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -81325,6 +82596,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMaggotUncommon",
+    "name": "Septic Cryptilex Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "septic-cryptilex-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
     "name": "Seram Beetle Shell",
     "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
@@ -81344,6 +82624,16 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/SeriglassShard",
+    "name": "Seriglass Shard",
+    "description": "Once part of an intricate Entrati apparatus, now shattered and bearing a sharp edge.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "seriglass-shard.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartD",
@@ -81992,6 +83282,34 @@
     "tradable": false
   },
   {
+    "name": "Sly Vulpaphyla",
+    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterCommonRewardItem",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "type": "Misc",
+    "imageName": "sly-vulpaphyla.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedCritterCommon",
+    "name": "Sly Vulpaphyla Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "sly-vulpaphyla-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/LibraryScannerRechargeUpgrade",
     "name": "Sol-Battery Widget",
     "description": "Recharges Synthesis Scanner charges.",
@@ -82018,6 +83336,16 @@
     "parents": [ "Lua Lens" ],
     "type": "Misc",
     "imageName": "somatic-fibers.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/EntratiFragmentCommonB",
+    "name": "Son Token",
+    "description": "A mark of Son's respect for services rendered.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "son-token.png",
     "category": "Misc",
     "tradable": false
   },
@@ -82083,6 +83411,17 @@
     ],
     "type": "Kitgun Component",
     "imageName": "sparkfire.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+    "name": "Spinal Core Section",
+    "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.",
+    "itemCount": 20,
+    "parents": [ "Cortege Barrel", "Voidrig Capsule" ],
+    "type": "Fish Part",
+    "imageName": "spinal-core-section.png",
     "category": "Misc",
     "tradable": false
   },
@@ -82168,6 +83507,24 @@
     "excludeFromCodex": true,
     "type": "Conservation Tag",
     "imageName": "splendid-mergoo-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
+    "name": "Sporulate Sac",
+    "description": "These pressurized repositories of Infested spores require careful extraction or explosive rupture and local contamination may occur.",
+    "type": "Fish Part",
+    "imageName": "sporulate-sac.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMergooUncommon",
+    "name": "Sporule Avichaea Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "sporule-avichaea-tag.png",
     "category": "Misc",
     "tradable": false
   },
@@ -89240,6 +90597,73 @@
     "tradable": false
   },
   {
+    "name": "Tethron Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenD",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenDBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishDPartItem",
+        "name": "Waxen Sebum Deposit",
+        "description": "Remnants of creatures' original bodily fluids persist post-Infestation, often crystalized or congealed into entirely new compounds.",
+        "itemCount": 15,
+        "imageName": "waxen-sebum-deposit.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "tethron-antigen.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/DangerRoom/DangerRoomTileArena",
     "name": "The Ballroom Simulacrum",
     "description": "A new arena for the Simulacrum. Who will you invite to dance?",
@@ -89450,6 +90874,8 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
     "name": "Tink Dissipator Coil",
     "description": "Discharges excess heat and energy through the casing.Acquired by disassembling Tink Servofish.",
+    "itemCount": 15,
+    "parents": [ "Cortege Receiver" ],
     "type": "Fish Part",
     "imageName": "tink-dissipator-coil.png",
     "category": "Misc",
@@ -89835,6 +91261,15 @@
     "parents": [ "Haztech Greaves", "Kubrodon Ventkid Greaves", "Outrider Greaves", "Pax Bolt", "Smelter Greaves", "Vent Pobber Ventkid Greaves", "Vent Rat Greaves" ],
     "type": "Fish Part",
     "imageName": "tromyzon-entroplasma.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
+    "name": "Tubercular Gill System",
+    "description": "Adaptive membranes allow many Deimos fish to move freely between fluid and gaseous environments.",
+    "type": "Fish Part",
+    "imageName": "tubercular-gill-system.png",
     "category": "Misc",
     "tradable": false
   },
@@ -96548,6 +97983,82 @@
     "tradable": false
   },
   {
+    "name": "Virox Antigen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.",
+        "itemCount": 30,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 10,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
+        "name": "Pustulent Cognitive Nodule",
+        "description": "The Infestation provokes the growth of multiple, seemingly redundant brain-like clusters, whose function may be linked to hivemind activity. ",
+        "itemCount": 15,
+        "imageName": "pustulent-cognitive-nodule.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "virox-antigen.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMergooRare",
+    "name": "Viscid Avichaea Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "viscid-avichaea-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Elitium",
     "name": "Vitus Essence",
     "description": "Awarded by the Arbiters of Hexis to few Tenno capable of surviving Arbitration.",
@@ -96600,6 +98111,34 @@
         "fixes": "We have live fixed Arbitration missions rewarding the incorrect amount of Vitus Essence at End Of Mission, and inability to complete the Mastery Rank 26 test."
       }
     ]
+  },
+  {
+    "name": "Vizier Predasite",
+    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorCommonRewardItem",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "type": "Misc",
+    "imageName": "vizier-predasite.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedPredatorCommon",
+    "name": "Vizier Predasite Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "vizier-predasite-tag.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
@@ -96693,6 +98232,24 @@
         "fixes": "Void Traces: Raw Void energy that drops in the process of uniting Relics and Fissures. Can be used to Refine Void Relics to yield more rare rewards in your Orbiter.\nEXCEPTIONAL = 25 Void Traces\nFLAWLESS = 50 Void Traces\nRADIANT = 100 Void Traces"
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishDPartItem",
+    "name": "Waxen Sebum Deposit",
+    "description": "Remnants of creatures' original bodily fluids persist post-Infestation, often crystalized or congealed into entirely new compounds.",
+    "type": "Fish Part",
+    "imageName": "waxen-sebum-deposit.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedKdriveRare",
+    "name": "White Velocipod Tag",
+    "description": "For saving a specimen of this species.",
+    "type": "Conservation Tag",
+    "imageName": "white-velocipod-tag.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagVirminkCommon",
@@ -96801,7 +98358,7 @@
     "uniqueName": "/Lotus/Types/Items/Ships/GyroscopeShip",
     "name": "Xiphos",
     "description": "Featuring Sentry Gun air-support, this stylish landing craft is an asset in any battle.",
-    "primeSellingPrice": 257,
+    "primeSellingPrice": 513,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -97370,6 +98927,73 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Zarim Mutagen",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/InfestedWyrmBlood",
+        "name": "Fass Residue",
+        "description": "PROCESSED FASS RESIDUE",
+        "excludeFromCodex": true,
+        "itemCount": 6,
+        "imageName": "fass-residue.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+        "name": "Spinal Core Section",
+        "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.",
+        "itemCount": 8,
+        "imageName": "spinal-core-section.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
+        "name": "Tubercular Gill System",
+        "description": "Adaptive membranes allow many Deimos fish to move freely between fluid and gaseous environments.",
+        "itemCount": 20,
+        "imageName": "tubercular-gill-system.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "zarim-mutagen.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/AntiSerumInjector",
