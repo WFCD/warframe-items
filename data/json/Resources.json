@@ -10,6 +10,16 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Obelisk/EntratiObeliskItem",
+    "name": "[Ph] Obelisk Residue",
+    "description": "[PH] Description",
+    "excludeFromCodex": true,
+    "type": "Resource",
+    "imageName": "ph-obelisk-residue.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/RelayRebuild/PhaseOneWaterElement",
     "name": "/Lotus/Language/Relayreconstruction/Relayreconphase1leftitemname",
     "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
@@ -44,6 +54,77 @@
     "excludeFromCodex": true,
     "type": "Plant",
     "imageName": "lotus-language-scans-gofplanteplantname.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+    "name": "Adramal Alloy",
+    "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+    "itemCount": 80,
+    "parents": [ "Cortege Barrel", "Voidrig Casing" ],
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAItem",
+        "name": "Adramalium",
+        "description": "Sinewy and metallic, possessed of great elastic strength.",
+        "excludeFromCodex": true,
+        "itemCount": 20,
+        "imageName": "adramalium.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosCommonOreAAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/OrbStoneItem",
+        "name": "Lucent Teroglobe",
+        "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.",
+        "itemCount": 15,
+        "imageName": "lucent-teroglobe.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 600,
+        "imageName": "plastids.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAItem",
+        "name": "Travoride",
+        "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.",
+        "itemCount": 20,
+        "imageName": "travoride.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "adramal-alloy.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAItem",
+    "name": "Adramalium",
+    "description": "Sinewy and metallic, possessed of great elastic strength.",
+    "excludeFromCodex": true,
+    "itemCount": 20,
+    "parents": [ "Adramal Alloy" ],
+    "type": "Gem",
+    "imageName": "adramalium.png",
     "category": "Resources",
     "tradable": false
   },
@@ -583,6 +664,16 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBItem",
+    "name": "Bapholite",
+    "description": "Malleable, owing to ingrown veins of Infestation protein.",
+    "excludeFromCodex": true,
+    "type": "Gem",
+    "imageName": "bapholite.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/BracoidRailjackItem",
     "name": "Bracoid",
     "description": "A rare bacterial entity that increases the spread of Infestation found on Infested Ships.",
@@ -979,6 +1070,40 @@
         "fixes": "Bracoid"
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBCutItem",
+    "name": "Cabochon Embolos",
+    "description": "Convex and smooth, worked as a lens or for ornament.",
+    "itemCount": 10,
+    "parents": [ "Cortege Stock" ],
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 3,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosEidolonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Convex and smooth, worked as a lens or for ornament.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBItem",
+        "name": "Embolos",
+        "description": "This rare gem forms in a clotted mass within the Infestation.",
+        "itemCount": 3,
+        "imageName": "embolos.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "cabochon-embolos.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
@@ -1486,6 +1611,174 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunBarrelItem",
+    "name": "Cortege Barrel",
+    "description": "A Necramech weapon-crafting component.",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 80,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechArchGunBarrelBlueprint",
+        "name": "Blueprint",
+        "description": "A Necramech weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponBarrelItem",
+        "name": "Damaged Necramech Weapon Barrel",
+        "description": "The damaged barrel of a heavy-duty Necramech weapon.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-barrel.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
+        "name": "Fersteel Alloy",
+        "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 20,
+        "imageName": "fersteel-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+        "name": "Spinal Core Section",
+        "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.",
+        "itemCount": 20,
+        "imageName": "spinal-core-section.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "cortege-barrel.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunReceiverItem",
+    "name": "Cortege Receiver",
+    "description": "A Necramech weapon-crafting component.",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechArchGunReceiverBlueprint",
+        "name": "Blueprint",
+        "description": "A Necramech weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponReceiverItem",
+        "name": "Damaged Necramech Weapon Receiver",
+        "description": "A broken frame that can be used in the construction of a Necramech weapon.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-receiver.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
+        "name": "Devolved Namalon",
+        "description": "Retrieved from its Infested state, restored to worth and utility.",
+        "itemCount": 80,
+        "imageName": "devolved-namalon.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Tink Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.Acquired by disassembling Tink Servofish.",
+        "itemCount": 15,
+        "imageName": "tink-dissipator-coil.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem",
+        "name": "Trapezium Xenorhast",
+        "description": "Facets gleam with the un-light of the Void.",
+        "itemCount": 10,
+        "imageName": "trapezium-xenorhast.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "cortege-receiver.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunStockItem",
+    "name": "Cortege Stock",
+    "description": "A Necramech weapon-crafting component.",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechArchGunStockBlueprint",
+        "name": "Blueprint",
+        "description": "A Necramech weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBCutItem",
+        "name": "Cabochon Embolos",
+        "description": "Convex and smooth, worked as a lens or for ornament.",
+        "itemCount": 10,
+        "imageName": "cabochon-embolos.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponStockItem",
+        "name": "Damaged Necramech Weapon Stock",
+        "description": "The fractured back portion of a large Necramech weapon.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-stock.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
+        "name": "Hexenon",
+        "description": "A reagent commonly used to produce highly combustible fuel.",
+        "itemCount": 250,
+        "imageName": "hexenon.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 80,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "cortege-stock.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemAItem",
     "name": "Crimzian",
     "description": "A blood-red gem.Location: Plains of Eidolon",
@@ -1591,6 +1884,80 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBItem",
+    "name": "Dagonic",
+    "description": "Rivulets of Exocrine fluid, hardened over passing centuries.",
+    "itemCount": 10,
+    "parents": [ "Purged Dagonic" ],
+    "type": "Gem",
+    "imageName": "dagonic.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartChassisItem",
+    "name": "Damaged Necramech Casing",
+    "description": "The damaged remains of a Necramech supporting frame.",
+    "type": "Resource",
+    "imageName": "damaged-necramech-casing.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartEngineItem",
+    "name": "Damaged Necramech Engine",
+    "description": "An engine designed for use in a Necramech. Unfortunately, it’s damaged.",
+    "type": "Resource",
+    "imageName": "damaged-necramech-engine.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem",
+    "name": "Damaged Necramech Pod",
+    "description": "A modular component for a Necramech. It’s damaged and in need of repair.",
+    "type": "Resource",
+    "imageName": "damaged-necramech-pod.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponBarrelItem",
+    "name": "Damaged Necramech Weapon Barrel",
+    "description": "The damaged barrel of a heavy-duty Necramech weapon.",
+    "type": "Resource",
+    "imageName": "damaged-necramech-weapon-barrel.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartWeaponPodItem",
+    "name": "Damaged Necramech Weapon Pod",
+    "description": "A broken weapon system intended for a Necramech.",
+    "type": "Resource",
+    "imageName": "damaged-necramech-weapon-pod.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponReceiverItem",
+    "name": "Damaged Necramech Weapon Receiver",
+    "description": "A broken frame that can be used in the construction of a Necramech weapon.",
+    "type": "Resource",
+    "imageName": "damaged-necramech-weapon-receiver.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponStockItem",
+    "name": "Damaged Necramech Weapon Stock",
+    "description": "The fractured back portion of a large Necramech weapon.",
+    "type": "Resource",
+    "imageName": "damaged-necramech-weapon-stock.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Research/ChemFragment",
@@ -1827,6 +2194,65 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
+    "name": "Devolved Namalon",
+    "description": "Retrieved from its Infested state, restored to worth and utility.",
+    "itemCount": 80,
+    "parents": [ "Cortege Receiver" ],
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosUncommonOreAAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "Retrieved from its Infested state, restored to worth and utility.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAItem",
+        "name": "Ferros",
+        "description": "A resilient metal that is hardened by impurities within.Location: Plains of Eidolon",
+        "itemCount": 20,
+        "imageName": "ferros.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/OrbStoneItem",
+        "name": "Lucent Teroglobe",
+        "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.",
+        "itemCount": 15,
+        "imageName": "lucent-teroglobe.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAItem",
+        "name": "Namalon",
+        "description": "Infested mineral deposits mimicking the form of living organs.",
+        "excludeFromCodex": true,
+        "itemCount": 20,
+        "imageName": "namalon.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 160,
+        "imageName": "rubedo.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "devolved-namalon.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenCobraLotusPlantItem",
     "name": "Dusklight Sarracenia",
     "description": "This robust, carnivorous plant has adapted to conditions in polluted waters.Location: Grineer Shipyard - Ceres",
@@ -1834,6 +2260,17 @@
     "parents": [ "Nightfall Apothic" ],
     "type": "Plant",
     "imageName": "dusklight-sarracenia.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBItem",
+    "name": "Embolos",
+    "description": "This rare gem forms in a clotted mass within the Infestation.",
+    "itemCount": 3,
+    "parents": [ "Cabochon Embolos" ],
+    "type": "Gem",
+    "imageName": "embolos.png",
     "category": "Resources",
     "tradable": false
   },
@@ -1944,11 +2381,43 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemACutItem",
+    "name": "Faceted Tiametrite",
+    "description": "Refined purity freed from the Infested mass.",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosCommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Refined purity freed from the Infested mass.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemAItem",
+        "name": "Tiametrite",
+        "description": "Infested neurotransmitters condensed under pressure.",
+        "itemCount": 10,
+        "imageName": "tiametrite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "faceted-tiametrite.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAItem",
     "name": "Ferros",
     "description": "A resilient metal that is hardened by impurities within.Location: Plains of Eidolon",
     "itemCount": 20,
-    "parents": [ "Fersteel Alloy" ],
+    "parents": [ "Devolved Namalon", "Fersteel Alloy" ],
     "type": "Gem",
     "imageName": "ferros.png",
     "category": "Resources",
@@ -1958,8 +2427,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
     "name": "Fersteel Alloy",
     "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
-    "itemCount": 40,
-    "parents": [ "Advanced Nosam Cutter", "Ceno Apparel", "Ceno Cuirass", "Vahd Apparel", "Vahd Cuirass", "Zauba Apparel", "Zauba Cuirass" ],
+    "itemCount": 20,
+    "parents": [ "Advanced Nosam Cutter", "Ceno Apparel", "Ceno Cuirass", "Cortege Barrel", "Vahd Apparel", "Vahd Cuirass", "Zauba Apparel", "Zauba Cuirass" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2821,6 +3290,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+    "name": "Ganglion",
+    "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+    "type": "Resource",
+    "imageName": "ganglion.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Research/DojoColors/GenericDojoColorPigment",
     "name": "Genericdojocolorpigment",
     "description": "",
@@ -3093,6 +3571,17 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonGemAItem",
+    "name": "Heciphron",
+    "description": "Aggregates in the neo-lymph systems of Infested masses.",
+    "itemCount": 10,
+    "parents": [ "Purified Heciphron" ],
+    "type": "Gem",
+    "imageName": "heciphron.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
@@ -3377,6 +3866,8 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/IsosRailjackItem",
     "name": "Isos",
     "description": "A self-replicating fluid comprised of nanoproxies capable of independently repairing worn and damaged systems.",
+    "itemCount": 75,
+    "parents": [ "Voidrig Engine" ],
     "buildPrice": 1000,
     "buildTime": 120,
     "skipBuildTimePrice": 5,
@@ -3815,6 +4306,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/OrbStoneItem",
+    "name": "Lucent Teroglobe",
+    "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.",
+    "type": "Resource",
+    "imageName": "lucent-teroglobe.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenPitcherPlantItem",
     "name": "Lunar Pitcher",
     "description": "This carnivorous plant can be found growing in the wilderness on Lua.",
@@ -3911,8 +4411,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
     "name": "Marquise Veridos",
     "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-    "itemCount": 2,
-    "parents": [ "Advanced Nosam Cutter", "Sunpoint Plasma Drill" ],
+    "itemCount": 20,
+    "parents": [ "Advanced Nosam Cutter", "Sunpoint Plasma Drill", "Voidrig Capsule" ],
     "buildPrice": 2500,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -4209,6 +4709,29 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAItem",
+    "name": "Namalon",
+    "description": "Infested mineral deposits mimicking the form of living organs.",
+    "excludeFromCodex": true,
+    "itemCount": 20,
+    "parents": [ "Devolved Namalon" ],
+    "type": "Gem",
+    "imageName": "namalon.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemAItem",
+    "name": "Necrathene",
+    "description": "Impacted within Infested husks, preserved for millennia.",
+    "itemCount": 6,
+    "parents": [ "Stellated Necrathene" ],
+    "type": "Gem",
+    "imageName": "necrathene.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
     "name": "Nistlepod",
     "description": "Used by the Nistlebrush to trap and kill prey.Location: Plains of Eidolon",
@@ -4300,11 +4823,41 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Necraloids/NecraloidStandingRareItem",
+    "name": "Orokin Animus Matrix",
+    "description": "A cognition matrix that enables mechs to be adaptable and efficient in the field.",
+    "excludeFromCodex": true,
+    "type": "Resource",
+    "imageName": "orokin-animus-matrix.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Necraloids/NecraloidStandingUncommonItem",
+    "name": "Orokin Ballistics Matrix",
+    "description": "A mech matrix that assists with the machine’s weapon accuracy and control.",
+    "excludeFromCodex": true,
+    "type": "Resource",
+    "imageName": "orokin-ballistics-matrix.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/OrokinSensorItem",
     "name": "Orokin Monitor",
     "description": "These Orokin devices emerge when the floating glaciers impact on the surface of Venus. Their purpose is unknown.",
     "type": "Resource",
     "imageName": "orokin-monitor.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Necraloids/NecraloidStandingCommonItem",
+    "name": "Orokin Orientation Matrix",
+    "description": "A spatial orientation matrix to aid with a mechs’ guidance, balance and movement.",
+    "excludeFromCodex": true,
+    "type": "Resource",
+    "imageName": "orokin-orientation-matrix.png",
     "category": "Resources",
     "tradable": false
   },
@@ -4335,6 +4888,70 @@
     "description": "",
     "type": "Plant",
     "imageName": "plantitem.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBCutItem",
+    "name": "Purged Dagonic",
+    "description": "Crystalline symmetry, a far cry from its corrupt origin.",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosCommonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Crystalline symmetry, a far cry from its corrupt origin.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBItem",
+        "name": "Dagonic",
+        "description": "Rivulets of Exocrine fluid, hardened over passing centuries.",
+        "itemCount": 10,
+        "imageName": "dagonic.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "purged-dagonic.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonGemACutItem",
+    "name": "Purified Heciphron",
+    "description": "Extracted from the Infestation and cut into a prestigious gem.",
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 10,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosUncommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Extracted from the Infestation and cut into a prestigious gem.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonGemAItem",
+        "name": "Heciphron",
+        "description": "Aggregates in the neo-lymph systems of Infested masses.",
+        "itemCount": 10,
+        "imageName": "heciphron.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "purified-heciphron.png",
     "category": "Resources",
     "tradable": false
   },
@@ -4414,11 +5031,20 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+    "name": "Pustulite",
+    "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+    "type": "Resource",
+    "imageName": "pustulite.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAItem",
     "name": "Pyrol",
     "description": "A tarnished, brittle metal.Location: Plains of Eidolon",
     "itemCount": 20,
-    "parents": [ "Pyrotic Alloy" ],
+    "parents": [ "Pyrotic Alloy", "Tempered Bapholite" ],
     "type": "Gem",
     "imageName": "pyrol.png",
     "category": "Resources",
@@ -4816,6 +5442,17 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+    "name": "Scintillant",
+    "description": "Engaged in a constant, unwearying collection of data, these simple entities never return to their task once removed from it.",
+    "itemCount": 2,
+    "parents": [ "Voidrig Capsule" ],
+    "type": "Resource",
+    "imageName": "scintillant.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemAItem",
     "name": "Sentirum",
     "description": "A rare Eidolon Gem, created from the fossilized blood of an ancient Sentient.",
@@ -4980,6 +5617,40 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem",
+    "name": "Stellated Necrathene",
+    "description": "A prismatic refinement of raw Necrathene, highly sought after.",
+    "itemCount": 16,
+    "parents": [ "Voidrig Casing" ],
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 6,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosRareGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "A prismatic refinement of raw Necrathene, highly sought after.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemAItem",
+        "name": "Necrathene",
+        "description": "Impacted within Infested husks, preserved for millennia.",
+        "itemCount": 6,
+        "imageName": "necrathene.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "stellated-necrathene.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem",
     "name": "Sunlight Dragonlily",
     "description": "This uncommon plant can only be found during the day.",
@@ -5045,6 +5716,65 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+    "name": "Tempered Bapholite",
+    "description": "Fused with its inert Infested tendrils into a durable alloy.",
+    "itemCount": 80,
+    "parents": [ "Cortege Stock", "Voidrig Engine" ],
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAItem",
+        "name": "Adramalium",
+        "description": "Sinewy and metallic, possessed of great elastic strength.",
+        "excludeFromCodex": true,
+        "itemCount": 20,
+        "imageName": "adramalium.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosCommonOreBAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/OrbStoneItem",
+        "name": "Lucent Teroglobe",
+        "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.",
+        "itemCount": 15,
+        "imageName": "lucent-teroglobe.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+        "itemCount": 1600,
+        "imageName": "nano-spores.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAItem",
+        "name": "Pyrol",
+        "description": "A tarnished, brittle metal.Location: Plains of Eidolon",
+        "itemCount": 20,
+        "imageName": "pyrol.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "tempered-bapholite.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
     "name": "Tepa Nodule",
     "description": "The irradescent nodules on these plants glow brightly in cold environments.",
@@ -5072,6 +5802,310 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
+    "name": "Thaumic Distillate",
+    "description": "Thaumica reduced to its most durable, workable elements.",
+    "itemCount": 80,
+    "parents": [ "Voidrig Weapon Pod" ],
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 20,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosRareOreAAlloyBlueprint",
+        "name": "Blueprint",
+        "description": "Thaumica reduced to its most durable, workable elements.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.Locations: Mars and Uranus.",
+        "itemCount": 4,
+        "imageName": "gallium.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/OrbStoneItem",
+        "name": "Lucent Teroglobe",
+        "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.",
+        "itemCount": 15,
+        "imageName": "lucent-teroglobe.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAItem",
+        "name": "Thaumica",
+        "description": "Can be molded by the Infestation but remains resistant to it.",
+        "excludeFromCodex": true,
+        "itemCount": 20,
+        "imageName": "thaumica.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreItem",
+        "name": "Venerol",
+        "description": "A precious metal forged from coolant byproducts.",
+        "itemCount": 20,
+        "imageName": "venerol.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "thaumic-distillate.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAItem",
+    "name": "Thaumica",
+    "description": "Can be molded by the Infestation but remains resistant to it.",
+    "excludeFromCodex": true,
+    "itemCount": 20,
+    "parents": [ "Thaumic Distillate" ],
+    "type": "Gem",
+    "imageName": "thaumica.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
@@ -5120,6 +6154,17 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemAItem",
+    "name": "Tiametrite",
+    "description": "Infested neurotransmitters condensed under pressure.",
+    "itemCount": 10,
+    "parents": [ "Faceted Tiametrite" ],
+    "type": "Gem",
+    "imageName": "tiametrite.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem",
@@ -5220,6 +6265,40 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem",
+    "name": "Trapezium Xenorhast",
+    "description": "Facets gleam with the un-light of the Void.",
+    "itemCount": 10,
+    "parents": [ "Cortege Receiver" ],
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 3,
+    "consumeOnBuild": false,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosEidolonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Facets gleam with the un-light of the Void.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemAItem",
+        "name": "Xenorhast",
+        "description": "A nodule of primordial matter, encysted within Infested flesh.",
+        "itemCount": 3,
+        "imageName": "xenorhast.png",
+        "tradable": false
+      }
+    ],
+    "type": "Gem",
+    "imageName": "trapezium-xenorhast.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
     "name": "Travocyte Alloy",
     "description": "A compound formed from Travoride.",
@@ -5274,7 +6353,7 @@
     "name": "Travoride",
     "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.",
     "itemCount": 20,
-    "parents": [ "Travocyte Alloy" ],
+    "parents": [ "Adramal Alloy", "Travocyte Alloy" ],
     "type": "Gem",
     "imageName": "travoride.png",
     "category": "Resources",
@@ -5353,7 +6432,7 @@
     "name": "Venerdo Alloy",
     "description": "A compound formed from Venerol.",
     "itemCount": 40,
-    "parents": [ "Haztech Apparel", "Haztech Cuirass", "Haztech Pauldrons", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Pauldrons", "Outrider Cuirass", "Outrider Pauldrons", "Smelter Apparel", "Smelter Cuirass", "Smelter Pauldrons", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Pauldrons", "Vent Rat Cuirass", "Vent Rat Pauldrons" ],
+    "parents": [ "Haztech Apparel", "Haztech Cuirass", "Haztech Pauldrons", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Pauldrons", "Outrider Cuirass", "Outrider Pauldrons", "Smelter Apparel", "Smelter Cuirass", "Smelter Pauldrons", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Pauldrons", "Vent Rat Cuirass", "Vent Rat Pauldrons", "Voidrig Casing" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -5636,7 +6715,7 @@
     "name": "Venerol",
     "description": "A precious metal forged from coolant byproducts.",
     "itemCount": 20,
-    "parents": [ "Venerdo Alloy" ],
+    "parents": [ "Thaumic Distillate", "Venerdo Alloy" ],
     "type": "Gem",
     "imageName": "venerol.png",
     "category": "Resources",
@@ -5693,6 +6772,241 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartSystemsItem",
+    "name": "Voidrig Capsule",
+    "description": "Capsule component for the VOIDRIG Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/NecromechPartSystemsBlueprint",
+        "name": "Blueprint",
+        "description": "Capsule component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem",
+        "name": "Damaged Necramech Pod",
+        "description": "A modular component for a Necramech. It’s damaged and in need of repair.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-pod.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
+        "name": "Marquise Veridos",
+        "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 20,
+        "imageName": "marquise-veridos.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+        "name": "Scintillant",
+        "description": "Engaged in a constant, unwearying collection of data, these simple entities never return to their task once removed from it.",
+        "itemCount": 2,
+        "imageName": "scintillant.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+        "name": "Spinal Core Section",
+        "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.",
+        "itemCount": 30,
+        "imageName": "spinal-core-section.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "voidrig-capsule.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartChassisItem",
+    "name": "Voidrig Casing",
+    "description": "Casing component for the VOIDRIG Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 120,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/NecromechPartChassisBlueprint",
+        "name": "Blueprint",
+        "description": "Casing component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartChassisItem",
+        "name": "Damaged Necramech Casing",
+        "description": "The damaged remains of a Necramech supporting frame.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-casing.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem",
+        "name": "Stellated Necrathene",
+        "description": "A prismatic refinement of raw Necrathene, highly sought after.",
+        "itemCount": 16,
+        "imageName": "stellated-necrathene.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 40,
+        "imageName": "venerdo-alloy.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "voidrig-casing.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartEngineItem",
+    "name": "Voidrig Engine",
+    "description": "Engine component for the VOIDRIG Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
+        "name": "Biotic Filter",
+        "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.",
+        "itemCount": 2,
+        "imageName": "biotic-filter.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/NecromechPartEngineBlueprint",
+        "name": "Blueprint",
+        "description": "Engine component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartEngineItem",
+        "name": "Damaged Necramech Engine",
+        "description": "An engine designed for use in a Necramech. Unfortunately, it’s damaged.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-engine.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/IsosRailjackItem",
+        "name": "Isos",
+        "description": "A self-replicating fluid comprised of nanoproxies capable of independently repairing worn and damaged systems.",
+        "itemCount": 75,
+        "imageName": "isos.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 100,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "voidrig-engine.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartWeaponPodItem",
+    "name": "Voidrig Weapon Pod",
+    "description": "Weapon Pod component for the VOIDRIG Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
+        "name": "Biotic Filter",
+        "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.",
+        "itemCount": 6,
+        "imageName": "biotic-filter.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/NecromechPartWeaponPodBlueprint",
+        "name": "Blueprint",
+        "description": "Weapon Pod component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem",
+        "name": "Charc Electroplax",
+        "description": "Harvested by the Ostron as a catalyst used in their synthetics.Location: Plains of Eidolon",
+        "itemCount": 45,
+        "imageName": "charc-electroplax.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartWeaponPodItem",
+        "name": "Damaged Necramech Weapon Pod",
+        "description": "A broken weapon system intended for a Necramech.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-pod.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
+        "name": "Thaumic Distillate",
+        "description": "Thaumica reduced to its most durable, workable elements.",
+        "itemCount": 80,
+        "imageName": "thaumic-distillate.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "voidrig-weapon-pod.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemAItem",
+    "name": "Xenorhast",
+    "description": "A nodule of primordial matter, encysted within Infested flesh.",
+    "itemCount": 3,
+    "parents": [ "Trapezium Xenorhast" ],
+    "type": "Gem",
+    "imageName": "xenorhast.png",
+    "category": "Resources",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemAItem",

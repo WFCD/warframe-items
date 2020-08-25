@@ -35492,7 +35492,7 @@
     "abilities": [
       {
         "name": "Quiver",
-        "description": "Cycle through and shoot one of four tactical arrows: Cloak, Dashwire, Noise and Sleep. In the Conclave, use the Null-Shield and Slow Arrows."
+        "description": "Cycle through and shoot one of four tactical arrows: Cloak, Dashwire, Noise and Sleep."
       },
       {
         "name": "Navigator",
@@ -36898,7 +36898,7 @@
     "abilities": [
       {
         "name": "Quiver",
-        "description": "Cycle through and shoot one of four tactical arrows: Cloak, Dashwire, Noise and Sleep. In the Conclave, use the Null-Shield and Slow Arrows."
+        "description": "Cycle through and shoot one of four tactical arrows: Cloak, Dashwire, Noise and Sleep."
       },
       {
         "name": "Navigator",
@@ -45041,7 +45041,7 @@
       },
       {
         "name": "Magnetize",
-        "description": "Creates a magnetic field around a target, ensnaring nearby enemies and dealing damage over time. The field reacts to bullets and shards created from Polarize to increase the damage."
+        "description": "(TAP) Encloses a target in a magnetic field, ensnaring nearby enemies and dealing damage over time. Bullets and shards created from Polarize increase this damage.(HOLD) Creates a magnetic field around Mag, absorbing ranged attacks and dealing damage back in a destructive cone."
       },
       {
         "name": "Polarize",
@@ -46961,7 +46961,7 @@
       },
       {
         "name": "Magnetize",
-        "description": "Creates a magnetic field around a target, ensnaring nearby enemies and dealing damage over time. The field reacts to bullets and shards created from Polarize to increase the damage."
+        "description": "(TAP) Encloses a target in a magnetic field, ensnaring nearby enemies and dealing damage over time. Bullets and shards created from Polarize increase this damage.(HOLD) Creates a magnetic field around Mag, absorbing ranged attacks and dealing damage back in a destructive cone."
       },
       {
         "name": "Polarize",
@@ -94786,6 +94786,351 @@
     "releaseDate": "2019 07 07",
     "vaultDate": "n/a",
     "estimatedVaultDate": "2020 12 03"
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/BrokenFrame/BrokenFrame",
+    "name": "Xaku",
+    "description": "Neither he nor she, Xaku is a composite... a Warframe assembly made of others lost in the early Entrati Void expeditions. Xaku has mastered this power of the Void to terrify and bewilder their adversaries.",
+    "health": 97,
+    "shield": 89,
+    "armor": 137,
+    "stamina": 3,
+    "power": 153,
+    "masteryReq": 0,
+    "sprintSpeed": 1.02,
+    "passiveDescription": "|CHANCE|% chance for incoming weapon damage to pass through completely.",
+    "abilities": [
+      {
+        "name": "Xata'S Whisper",
+        "description": "Wield Void damage for all attacks from equipped weapons when activated."
+      },
+      {
+        "name": "Grasp Of Lohk",
+        "description": "Void Tendrils steal weapons from nearby enemies to use as your own floating, auto-targeting armament."
+      },
+      {
+        "name": "The Lost",
+        "description": "Cycle through and cast one of the three abilities originating from the Warframes that make up Xaku: Accuse, Gaze, and Deny."
+      },
+      {
+        "name": "The Vast Untime",
+        "description": "Temporarily shed the outer pieces of Xaku in a destructive blast, then stalk the battlefield in a new, swifter skeletal form. Enemies damaged by the body shrapnel are rendered weaker to Void damage."
+      }
+    ],
+    "productCategory": "Suits",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameBlueprint",
+        "name": "Blueprint",
+        "description": "Neither he nor she, Xaku is a composite... a Warframe assembly made of others lost in the early Entrati Void expeditions. Xaku has mastered this power of the Void to terrify and bewilder their adversaries.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Xaku Warframe.",
+        "itemCount": 1,
+        "imageName": "chassis.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Xaku Warframe.",
+        "itemCount": 1,
+        "imageName": "neuroptics.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+        "itemCount": 3,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Level 100 - 100 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0714
+          },
+          {
+            "location": "Level 100 - 100 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.0833
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1079,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 100 - 100 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Level 40 - 60 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.125
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1258,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.151,
+            "rotation": "C"
+          },
+          {
+            "location": "Derelict - Orokin",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "Sabotage"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Xaku Warframe.",
+        "itemCount": 1,
+        "imageName": "systems.png",
+        "tradable": false
+      }
+    ],
+    "type": "Warframe",
+    "imageName": "xaku.png",
+    "category": "Warframes",
+    "tradable": false,
+    "aura": "vazarin",
+    "conclave": false,
+    "color": 0,
+    "introduced": "29",
+    "polarities": [ "vazarin", "naramon" ],
+    "sex": "",
+    "sprint": 1.02,
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Xaku"
   },
   {
     "uniqueName": "/Lotus/Powersuits/Tengu/Tengu",
