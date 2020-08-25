@@ -43910,10 +43910,34 @@
         "tradable": false
       }
     ],
-    "type": "Arch-Gun",
+    "type": "",
     "imageName": "cortege.png",
     "category": "Primary",
-    "tradable": false
+    "tradable": false,
+    "ammo": 540,
+    "damage": "90.0 heat",
+    "damageTypes": {
+      "heat": 90
+    },
+    "polarities": [  ],
+    "projectile": "Discharge",
+    "secondary": {
+      "name": "Active",
+      "speed": 0.25,
+      "crit_chance": 30,
+      "crit_mult": 2.4,
+      "status_chance": 0.2,
+      "impact": 10
+    },
+    "secondaryArea": {
+      "name": "Radial Attack",
+      "radius": 400,
+      "blast": 1000,
+      "damage": "1000.0 blast"
+    },
+    "tags": [ "Entrati" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Cortege",
+    "disposition": 1
   },
   {
     "name": "Corvas",
@@ -198228,10 +198252,45 @@
         "tradable": false
       }
     ],
-    "type": "Misc",
+    "type": "Rifle",
     "imageName": "trumna.png",
     "category": "Primary",
-    "tradable": false
+    "tradable": false,
+    "ammo": 540,
+    "areaAttack": {
+      "name": "Radial Attack",
+      "falloff": {
+        "start": 0,
+        "end": 1.6,
+        "reduction": 0.15
+      },
+      "heat": 50,
+      "damage": "50.0 heat"
+    },
+    "damage": "53.0 heat",
+    "damageTypes": {
+      "impact": 29,
+      "heat": 53
+    },
+    "polarities": [  ],
+    "projectile": "Hitscan",
+    "secondary": {
+      "name": "Semi",
+      "speed": 1.33,
+      "crit_chance": 38,
+      "crit_mult": 2.4,
+      "status_chance": 0.5,
+      "impact": 100
+    },
+    "secondaryArea": {
+      "name": "Radial Attack",
+      "radius": 600,
+      "heat": 1000,
+      "damage": "1000.0 heat"
+    },
+    "tags": [ "Entrati" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Trumna",
+    "disposition": 1
   },
   {
     "name": "Vaykor Hek",
