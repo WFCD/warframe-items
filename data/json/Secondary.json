@@ -97221,6 +97221,71 @@
     "disposition": 5
   },
   {
+    "name": "Sepulcrum",
+    "uniqueName": "/Lotus/Weapons/Thanotech/ThanoPistol/ThanotechPistol",
+    "damagePerShot": [ 9.6000004, 26.880001, 11.52, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 94,
+    "description": "An ancient weapon designed by the Entrati. Primary fire siphons life essence from the target to fuel a devastating alt fire. This large, weighty double-barreled pistol delivers twin projectiles that pack a punch, exploding on impact. Alt fire puts the weapon in lock-on mode. Aim to lock onto multiple targets, then fire to unleash homing projectiles.",
+    "criticalChance": 0.30000001,
+    "criticalMultiplier": 2.2,
+    "procChance": 0.13999999,
+    "fireRate": 3.6666665,
+    "masteryReq": 14,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 22.222221,
+    "omegaAttenuation": 0.5,
+    "noise": "Alarming",
+    "trigger": "Burst",
+    "magazineSize": 90,
+    "reloadTime": 4,
+    "multishot": 1,
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ThanotechPistolBarrel",
+        "name": "Barrel",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "barrel.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/ThanotechPistolBlueprint",
+        "name": "Blueprint",
+        "description": "An ancient weapon designed by the Entrati. Primary fire siphons life essence from the target to fuel a devastating alt fire. This large, weighty double-barreled pistol delivers twin projectiles that pack a punch, exploding on impact. Alt fire puts the weapon in lock-on mode. Aim to lock onto multiple targets, then fire to unleash homing projectiles.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ThanotechPistolReceiver",
+        "name": "Receiver",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "receiver.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/SeriglassShard",
+        "name": "Seriglass Shard",
+        "description": "Once part of an intricate Entrati apparatus, now shattered and bearing a sharp edge.",
+        "excludeFromCodex": true,
+        "itemCount": 1,
+        "imageName": "seriglass-shard.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "sepulcrum.png",
+    "category": "Secondary",
+    "tradable": false
+  },
+  {
     "name": "Sicarus",
     "uniqueName": "/Lotus/Weapons/Tenno/Pistol/BurstPistol",
     "damagePerShot": [ 21, 4.5, 4.499999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -127266,5 +127331,61 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/67/Zylok.png/revision/latest?cb=20180831004228",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Zylok",
     "disposition": 4
+  },
+  {
+    "name": "Zymos",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfUzi/InfUziWeapon",
+    "damagePerShot": [ 9.1999998, 13.8, 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 84,
+    "description": "Infect your foes with this spore-scattering pistol. Head shots burrow in and explode, releasing spore clouds that seek out nearby enemies.",
+    "criticalChance": 0.050000001,
+    "criticalMultiplier": 2.3,
+    "procChance": 0.30000001,
+    "fireRate": 1.3333334,
+    "masteryReq": 11,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 9.7560978,
+    "omegaAttenuation": 0.5,
+    "noise": "Alarming",
+    "trigger": "Semi",
+    "magazineSize": 9,
+    "reloadTime": 3.2,
+    "multishot": 1,
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfUziWeaponBarrel",
+        "name": "Barrel",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "barrel.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/InfUziBlueprint",
+        "name": "Blueprint",
+        "description": "Infect your foes with this spore-scattering pistol. Head shots burrow in and explode, releasing spore clouds that seek out nearby enemies.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfUziWeaponReceiver",
+        "name": "Receiver",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "receiver.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "zymos.png",
+    "category": "Secondary",
+    "tradable": false
   }
 ]

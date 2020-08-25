@@ -369,6 +369,33 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorSpitAcidPrecept",
+    "name": "Acidic Spittle",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "VIZIER PREDASITE",
+    "type": "Kubrow",
+    "levelStats": [
+      {
+        "stats": [ "Every 8s spit acidic tar at an enemy within 7.5m, blinding them for 3s and dealing 30 <DT_CORROSIVE>Corrosive Damage." ]
+      },
+      {
+        "stats": [ "Every 7s spit acidic tar at an enemy within 15m, blinding them for 6s and dealing 60 <DT_CORROSIVE>Corrosive Damage." ]
+      },
+      {
+        "stats": [ "Every 6s spit acidic tar at an enemy within 22.5m, blinding them for 9s and dealing 90 <DT_CORROSIVE>Corrosive Damage." ]
+      },
+      {
+        "stats": [ "Every 5s spit acidic tar at an enemy within 30m, blinding them for 12s and dealing 120 <DT_CORROSIVE>Corrosive Damage." ]
+      }
+    ],
+    "imageName": "acidic-spittle.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarResistanceOnDamageMod",
     "name": "Adaptation",
     "polarity": "Vazarin",
@@ -3871,6 +3898,33 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/1a/AmmoStockModU145.png/revision/latest?cb=20171007135211",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Ammo_Stock",
     "transmutable": true
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorBuffSporesPrecept",
+    "name": "Anabolic Pollination",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "PHARAOH PREDASITE",
+    "type": "Kubrow",
+    "levelStats": [
+      {
+        "stats": [ "Release a cloud of spores that persists for 6s increasing <DT_POISON>Toxin Damage by +25%." ]
+      },
+      {
+        "stats": [ "Release a cloud of spores that persists for 6s increasing <DT_POISON>Toxin Damage by +50%." ]
+      },
+      {
+        "stats": [ "Release a cloud of spores that persists for 6s increasing <DT_POISON>Toxin Damage by +75%." ]
+      },
+      {
+        "stats": [ "Release a cloud of spores that persists for 6s increasing <DT_POISON>Toxin Damage by +100%." ]
+      }
+    ],
+    "imageName": "anabolic-pollination.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Powersuits/Tengu/TenguDisablePassiveMod",
@@ -10436,6 +10490,33 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Hoverboard/HBGrindSlamMod",
+    "name": "Bomb The Landin'",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "K-Drive",
+    "type": "K-Drive Mod",
+    "levelStats": [
+      {
+        "stats": [ "Tap and Hold Grind in the air to execute a 5m Slam Shockwave." ]
+      },
+      {
+        "stats": [ "Tap and Hold Grind in the air to execute a 10m Slam Shockwave." ]
+      },
+      {
+        "stats": [ "Tap and Hold Grind in the air to execute a 15m Slam Shockwave." ]
+      },
+      {
+        "stats": [ "Tap and Hold Grind in the air to execute a 20m Slam Shockwave." ]
+      }
+    ],
+    "imageName": "bomb-the-landin'.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Pistol/WeaponEventPunctureDamageMod",
     "name": "Bore",
     "polarity": "Naramon",
@@ -11681,6 +11762,108 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/cf/Capacitance2.png/revision/latest?cb=20180328111334",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Capacitance",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Ashen/AshenCarapaceMod",
+    "name": "Carnis Carapace",
+    "polarity": "Vazarin",
+    "rarity": "Uncommon",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "WARFRAME",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "+10% Armor", "+15% Health" ]
+      },
+      {
+        "stats": [ "+20% Armor", "+30% Health" ]
+      },
+      {
+        "stats": [ "+30% Armor", "+45% Health" ]
+      },
+      {
+        "stats": [ "+40% Armor", "+60% Health" ]
+      },
+      {
+        "stats": [ "+50% Armor", "+75% Health" ]
+      },
+      {
+        "stats": [ "+60% Armor", "+90% Health" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod",
+    "imageName": "carnis-carapace.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Ashen/AshenMandibleMod",
+    "name": "Carnis Mandible",
+    "polarity": "Naramon",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "MELEE",
+    "type": "Melee",
+    "levelStats": [
+      {
+        "stats": [ "+15% <DT_SLASH>Slash", "+10% Status Chance" ]
+      },
+      {
+        "stats": [ "+30% <DT_SLASH>Slash", "+20% Status Chance" ]
+      },
+      {
+        "stats": [ "+45% <DT_SLASH>Slash", "+30% Status Chance" ]
+      },
+      {
+        "stats": [ "+60% <DT_SLASH>Slash", "+40% Status Chance" ]
+      },
+      {
+        "stats": [ "+75% <DT_SLASH>Slash", "+50% Status Chance" ]
+      },
+      {
+        "stats": [ "+90% <DT_SLASH>Slash", "+60% Status Chance" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod",
+    "imageName": "carnis-mandible.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Ashen/AshenStingerMod",
+    "name": "Carnis Stinger",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "PISTOL",
+    "type": "Secondary",
+    "levelStats": [
+      {
+        "stats": [ "+15% <DT_SLASH>Slash", "+10% Status Chance" ]
+      },
+      {
+        "stats": [ "+30% <DT_SLASH>Slash", "+20% Status Chance" ]
+      },
+      {
+        "stats": [ "+45% <DT_SLASH>Slash", "+30% Status Chance" ]
+      },
+      {
+        "stats": [ "+60% <DT_SLASH>Slash", "+40% Status Chance" ]
+      },
+      {
+        "stats": [ "+75% <DT_SLASH>Slash", "+50% Status Chance" ]
+      },
+      {
+        "stats": [ "+90% <DT_SLASH>Slash", "+60% Status Chance" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod",
+    "imageName": "carnis-stinger.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualSwordCmbThreeMeleeTree",
@@ -18327,6 +18510,33 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowGoreTossPrecept",
+    "name": "Crescent Charge",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "CRESCENT VULPAPHYLA",
+    "type": "Kavat",
+    "levelStats": [
+      {
+        "stats": [ "Charge an enemy within 10m dealing 50 <DT_PUNCTURE>Puncture Damage and lifting them for 2s. While lifted, damage against them is amplified by 25%." ]
+      },
+      {
+        "stats": [ "Charge an enemy within 10m dealing 100 <DT_PUNCTURE>Puncture Damage and lifting them for 4s. While lifted, damage against them is amplified by 50%." ]
+      },
+      {
+        "stats": [ "Charge an enemy within 10m dealing 150 <DT_PUNCTURE>Puncture Damage and lifting them for 6s. While lifted, damage against them is amplified by 75%." ]
+      },
+      {
+        "stats": [ "Charge an enemy within 10m dealing 200 <DT_PUNCTURE>Puncture Damage and lifting them for 8s. While lifted, damage against them is amplified by 100%." ]
+      }
+    ],
+    "imageName": "crescent-charge.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/CrimsonDervishMeleeTree",
     "name": "Crimson Dervish",
     "polarity": "Madurai",
@@ -24067,6 +24277,33 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorSpitParasitePrecept",
+    "name": "Endoparasitic Vector",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "PHARAOH PREDASITE",
+    "type": "Kubrow",
+    "levelStats": [
+      {
+        "stats": [ "Transmit an endoparasite to an enemy within 7.5m. Tentacles spawn from it, clinging to enemies within 2m slowing them as they move further from the parasite, and dealing 5 <DT_VIRAL>Viral Damage/sec over 2s." ]
+      },
+      {
+        "stats": [ "Transmit an endoparasite to an enemy within 15m. Tentacles spawn from it, clinging to enemies within 3m slowing them as they move further from the parasite, and dealing 10 <DT_VIRAL>Viral Damage/sec over 3s." ]
+      },
+      {
+        "stats": [ "Transmit an endoparasite to an enemy within 22.5m. Tentacles spawn from it, clinging to enemies within 4m slowing them as they move further from the parasite, and dealing 15 <DT_VIRAL>Viral Damage/sec over 4s." ]
+      },
+      {
+        "stats": [ "Transmit an endoparasite to an enemy within 30m. Tentacles spawn from it, clinging to enemies within 5m slowing them as they move further from the parasite, and dealing 20 <DT_VIRAL>Viral Damage/sec over 5s." ]
+      }
+    ],
+    "imageName": "endoparasitic-vector.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/OrokinChallenge/OrokinChallengeModEndurance",
     "name": "Endurance Drift",
     "polarity": "Zenurik",
@@ -27228,7 +27465,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalSixMod",
     "name": "Fass",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
@@ -44782,6 +45019,33 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorHealingSporesPrecept",
+    "name": "Iatric Mycelium",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "VIZIER PREDASITE",
+    "type": "Kubrow",
+    "levelStats": [
+      {
+        "stats": [ "Release a trail of spores every 20s that heal the companion and its allies for 75 health over 5s." ]
+      },
+      {
+        "stats": [ "Release a trail of spores every 16s that heal the companion and its allies for 150 health over 5s." ]
+      },
+      {
+        "stats": [ "Release a trail of spores every 12s that heal the companion and its allies for 225 health over 5s." ]
+      },
+      {
+        "stats": [ "Release a trail of spores every 8s that heal the companion and its allies for 300 health over 5s." ]
+      }
+    ],
+    "imageName": "iatric-mycelium.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Warframe/IceParkourTwoMod",
     "name": "Ice Spring",
     "polarity": "Vazarin",
@@ -46398,6 +46662,33 @@
     ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/93/InfectedClipModU145.png/revision/latest?cb=20171007151029",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Infected_Clip"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorInfectiousBitePrecept",
+    "name": "Infectious Bite",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "MEDJAY PREDASITE",
+    "type": "Kubrow",
+    "levelStats": [
+      {
+        "stats": [ "A Finisher Attack that deals +50% Finisher Damage and infects the target with a Virus that grows 1 volatile pustules that react to damage." ]
+      },
+      {
+        "stats": [ "A Finisher Attack that deals +100% Finisher Damage and infects the target with a Virus that grows 2 volatile pustules that react to damage." ]
+      },
+      {
+        "stats": [ "A Finisher Attack that deals +150% Finisher Damage and infects the target with a Virus that grows 3 volatile pustules that react to damage." ]
+      },
+      {
+        "stats": [ "A Finisher Attack that deals +200% Finisher Damage and infects the target with a Virus that grows 4 volatile pustules that react to damage." ]
+      }
+    ],
+    "imageName": "infectious-bite.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Archwing/Melee/ArchwingEventToxinStatusMeleeMod",
@@ -48229,7 +48520,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalThreeMod",
     "name": "Jahu",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
@@ -48350,6 +48641,156 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeBarbsMod",
+    "name": "Jugulus Barbs",
+    "polarity": "Naramon",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "MELEE",
+    "type": "Melee",
+    "levelStats": [
+      {
+        "stats": [ "+15% <DT_PUNCTURE>Puncture", "+10% Status Chance" ]
+      },
+      {
+        "stats": [ "+30% <DT_PUNCTURE>Puncture", "+20% Status Chance" ]
+      },
+      {
+        "stats": [ "+45% <DT_PUNCTURE>Puncture", "+30% Status Chance" ]
+      },
+      {
+        "stats": [ "+60% <DT_PUNCTURE>Puncture", "+40% Status Chance" ]
+      },
+      {
+        "stats": [ "+75% <DT_PUNCTURE>Puncture", "+50% Status Chance" ]
+      },
+      {
+        "stats": [ "+90% <DT_PUNCTURE>Puncture", "+60% Status Chance" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSetMod",
+    "imageName": "jugulus-barbs.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeCarapaceMod",
+    "name": "Jugulus Carapace",
+    "polarity": "Vazarin",
+    "rarity": "Uncommon",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "WARFRAME",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "+10% Armor", "+15% Health" ]
+      },
+      {
+        "stats": [ "+20% Armor", "+30% Health" ]
+      },
+      {
+        "stats": [ "+30% Armor", "+45% Health" ]
+      },
+      {
+        "stats": [ "+40% Armor", "+60% Health" ]
+      },
+      {
+        "stats": [ "+50% Armor", "+75% Health" ]
+      },
+      {
+        "stats": [ "+60% Armor", "+90% Health" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSetMod",
+    "imageName": "jugulus-carapace.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSpinesMod",
+    "name": "Jugulus Spines",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "PISTOL",
+    "type": "Secondary",
+    "levelStats": [
+      {
+        "stats": [ "+15% <DT_PUNCTURE>Puncture", "+10% Status Chance" ]
+      },
+      {
+        "stats": [ "+30% <DT_PUNCTURE>Puncture", "+20% Status Chance" ]
+      },
+      {
+        "stats": [ "+45% <DT_PUNCTURE>Puncture", "+30% Status Chance" ]
+      },
+      {
+        "stats": [ "+60% <DT_PUNCTURE>Puncture", "+40% Status Chance" ]
+      },
+      {
+        "stats": [ "+75% <DT_PUNCTURE>Puncture", "+50% Status Chance" ]
+      },
+      {
+        "stats": [ "+90% <DT_PUNCTURE>Puncture", "+60% Status Chance" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSetMod",
+    "imageName": "jugulus-spines.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Hoverboard/HBEnergyTricksMod",
+    "name": "Juice",
+    "polarity": "Vazarin",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "compatName": "K-Drive",
+    "type": "K-Drive Mod",
+    "levelStats": [
+      {
+        "stats": [ "Executing tricks charges Energy: 5 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 10 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 15 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 20 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 25 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 30 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 35 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 40 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 45 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 50 Energy per 100 Trick Points." ]
+      },
+      {
+        "stats": [ "Executing tricks charges Energy: 55 Energy per 100 Trick Points." ]
+      }
+    ],
+    "imageName": "juice.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Syndicate/DualCleaversMod",
     "name": "Justice Blades",
     "polarity": "Naramon",
@@ -48421,7 +48862,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalEightMod",
     "name": "Khra",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
@@ -61579,7 +62020,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalOneMod",
     "name": "Lohk",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
@@ -81383,6 +81824,366 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Nebula_Bore"
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityDurationMod",
+    "name": "Necramech Continuity",
+    "polarity": "Madurai",
+    "rarity": "Uncommon",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+5% Ability Duration" ]
+      },
+      {
+        "stats": [ "+10% Ability Duration" ]
+      },
+      {
+        "stats": [ "+15% Ability Duration" ]
+      },
+      {
+        "stats": [ "+20% Ability Duration" ]
+      },
+      {
+        "stats": [ "+25% Ability Duration" ]
+      },
+      {
+        "stats": [ "+30% Ability Duration" ]
+      }
+    ],
+    "imageName": "necramech-continuity.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechShieldMaxMod",
+    "name": "Necramech Deflection",
+    "polarity": "Vazarin",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+20% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+40% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+60% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+80% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+100% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+120% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+140% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+160% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+180% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+200% Shield Capacity" ]
+      },
+      {
+        "stats": [ "+220% Shield Capacity" ]
+      }
+    ],
+    "imageName": "necramech-deflection.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityStrengthMod",
+    "name": "Necramech Intensify",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+5% Ability Strength" ]
+      },
+      {
+        "stats": [ "+10% Ability Strength" ]
+      },
+      {
+        "stats": [ "+15% Ability Strength" ]
+      },
+      {
+        "stats": [ "+20% Ability Strength" ]
+      },
+      {
+        "stats": [ "+25% Ability Strength" ]
+      },
+      {
+        "stats": [ "+30% Ability Strength" ]
+      }
+    ],
+    "imageName": "necramech-intensify.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechMeleeDamageMod",
+    "name": "Necramech Pressure Point",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+10% Melee Damage" ]
+      },
+      {
+        "stats": [ "+20% Melee Damage" ]
+      },
+      {
+        "stats": [ "+30% Melee Damage" ]
+      },
+      {
+        "stats": [ "+40% Melee Damage" ]
+      },
+      {
+        "stats": [ "+50% Melee Damage" ]
+      },
+      {
+        "stats": [ "+60% Melee Damage" ]
+      }
+    ],
+    "imageName": "necramech-pressure-point.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechMeleeRangeMod",
+    "name": "Necramech Reach",
+    "polarity": "Madurai",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 3,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+0.17 Melee Range" ]
+      },
+      {
+        "stats": [ "+0.33 Melee Range" ]
+      },
+      {
+        "stats": [ "+0.5 Melee Range" ]
+      },
+      {
+        "stats": [ "+0.67 Melee Range" ]
+      }
+    ],
+    "imageName": "necramech-reach.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechBoostRechargeMod",
+    "name": "Necramech Refuel",
+    "polarity": "Vazarin",
+    "rarity": "Common",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+5% Engine Replenish" ]
+      },
+      {
+        "stats": [ "+10% Engine Replenish" ]
+      },
+      {
+        "stats": [ "+15% Engine Replenish" ]
+      },
+      {
+        "stats": [ "+20% Engine Replenish" ]
+      }
+    ],
+    "imageName": "necramech-refuel.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechSlamDamageMod",
+    "name": "Necramech Seismic Wave",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+7.5% Melee Slam Damage" ]
+      },
+      {
+        "stats": [ "+15% Melee Slam Damage" ]
+      },
+      {
+        "stats": [ "+22.5% Melee Slam Damage" ]
+      },
+      {
+        "stats": [ "+30% Melee Slam Damage" ]
+      },
+      {
+        "stats": [ "+37.5% Melee Slam Damage" ]
+      },
+      {
+        "stats": [ "+45% Melee Slam Damage" ]
+      }
+    ],
+    "imageName": "necramech-seismic-wave.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechSlideSpeedMod",
+    "name": "Necramech Slipstream",
+    "polarity": "Naramon",
+    "rarity": "Common",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+10% Slide" ]
+      },
+      {
+        "stats": [ "+20% Slide" ]
+      },
+      {
+        "stats": [ "+30% Slide" ]
+      },
+      {
+        "stats": [ "+40% Slide" ]
+      },
+      {
+        "stats": [ "+50% Slide" ]
+      },
+      {
+        "stats": [ "+60% Slide" ]
+      }
+    ],
+    "imageName": "necramech-slipstream.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechArmourMaxMod",
+    "name": "Necramech Steel Fiber",
+    "polarity": "Vazarin",
+    "rarity": "Uncommon",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+15% Armor" ]
+      },
+      {
+        "stats": [ "+30% Armor" ]
+      },
+      {
+        "stats": [ "+45% Armor" ]
+      },
+      {
+        "stats": [ "+60% Armor" ]
+      },
+      {
+        "stats": [ "+75% Armor" ]
+      },
+      {
+        "stats": [ "+90% Armor" ]
+      }
+    ],
+    "imageName": "necramech-steel-fiber.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechBoostMaxMod",
+    "name": "Necramech Thrusters",
+    "polarity": "Vazarin",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+25% Engine Max" ]
+      },
+      {
+        "stats": [ "+50% Engine Max" ]
+      },
+      {
+        "stats": [ "+75% Engine Max" ]
+      },
+      {
+        "stats": [ "+100% Engine Max" ]
+      }
+    ],
+    "imageName": "necramech-thrusters.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechHealthMaxMod",
+    "name": "Necramech Vitality",
+    "polarity": "Vazarin",
+    "rarity": "Common",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+20% Health" ]
+      },
+      {
+        "stats": [ "+40% Health" ]
+      },
+      {
+        "stats": [ "+60% Health" ]
+      },
+      {
+        "stats": [ "+80% Health" ]
+      },
+      {
+        "stats": [ "+100% Health" ]
+      },
+      {
+        "stats": [ "+120% Health" ]
+      }
+    ],
+    "imageName": "necramech-vitality.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/ProcAbsorb",
     "name": "Negate",
     "polarity": "Penjaga",
@@ -81479,7 +82280,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalSevenMod",
     "name": "Netra",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
@@ -85430,6 +86231,33 @@
     ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/ec/ParallaxScopeMod.png/revision/latest?cb=20190204071048",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Parallax_Scope"
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorFinisherSporesPrecept",
+    "name": "Paralytic Spores",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "MEDJAY PREDASITE",
+    "type": "Kubrow",
+    "levelStats": [
+      {
+        "stats": [ "Charge an enemy within 30m dealing 40 damage and releasing spores that stun enemies within 4m for 3s, leaving them open to Finisher Attacks." ]
+      },
+      {
+        "stats": [ "Charge an enemy within 30m dealing 80 damage and releasing spores that stun enemies within 8m for 3s, leaving them open to Finisher Attacks." ]
+      },
+      {
+        "stats": [ "Charge an enemy within 30m dealing 120 damage and releasing spores that stun enemies within 12m for 3s, leaving them open to Finisher Attacks." ]
+      },
+      {
+        "stats": [ "Charge an enemy within 30m dealing 160 damage and releasing spores that stun enemies within 16m for 3s, leaving them open to Finisher Attacks." ]
+      }
+    ],
+    "imageName": "paralytic-spores.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarParryMeleeMod",
@@ -106592,6 +107420,39 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/95/Primed_Vigor.png/revision/latest?cb=20171106185459",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Primed_Vigor",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Hoverboard/HBEliteTricksterMod",
+    "name": "Primo Flair",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "K-Drive",
+    "type": "K-Drive Mod",
+    "levelStats": [
+      {
+        "stats": [ "Increase Maximum Trick Combo to 3500" ]
+      },
+      {
+        "stats": [ "Increase Maximum Trick Combo to 4000" ]
+      },
+      {
+        "stats": [ "Increase Maximum Trick Combo to 4500" ]
+      },
+      {
+        "stats": [ "Increase Maximum Trick Combo to 5000" ]
+      },
+      {
+        "stats": [ "Increase Maximum Trick Combo to 5500" ]
+      },
+      {
+        "stats": [ "Increase Maximum Trick Combo to 6000" ]
+      }
+    ],
+    "imageName": "primo-flair.jpg",
+    "category": "Mods",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Powersuits/Harlequin/PrismPvPAugmentCard",
@@ -139207,7 +140068,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalFiveMod",
     "name": "Ris",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
@@ -143008,6 +143869,108 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c5/SawtoothClipModU145.png/revision/latest?cb=20171007154259",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Sawtooth_Clip",
     "transmutable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Femur/FemurCarapaceMod",
+    "name": "Saxum Carapace",
+    "polarity": "Vazarin",
+    "rarity": "Uncommon",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "WARFRAME",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "+10% Armor", "+15% Health" ]
+      },
+      {
+        "stats": [ "+20% Armor", "+30% Health" ]
+      },
+      {
+        "stats": [ "+30% Armor", "+45% Health" ]
+      },
+      {
+        "stats": [ "+40% Armor", "+60% Health" ]
+      },
+      {
+        "stats": [ "+50% Armor", "+75% Health" ]
+      },
+      {
+        "stats": [ "+60% Armor", "+90% Health" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod",
+    "imageName": "saxum-carapace.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Femur/FemurSpittleMod",
+    "name": "Saxum Spittle",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "PISTOL",
+    "type": "Secondary",
+    "levelStats": [
+      {
+        "stats": [ "+15% <DT_IMPACT>Impact", "+10% Status Chance" ]
+      },
+      {
+        "stats": [ "+30% <DT_IMPACT>Impact", "+20% Status Chance" ]
+      },
+      {
+        "stats": [ "+45% <DT_IMPACT>Impact", "+30% Status Chance" ]
+      },
+      {
+        "stats": [ "+60% <DT_IMPACT>Impact", "+40% Status Chance" ]
+      },
+      {
+        "stats": [ "+75% <DT_IMPACT>Impact", "+50% Status Chance" ]
+      },
+      {
+        "stats": [ "+90% <DT_IMPACT>Impact", "+60% Status Chance" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod",
+    "imageName": "saxum-spittle.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Sets/Femur/FemurThoraxMod",
+    "name": "Saxum Thorax",
+    "polarity": "Naramon",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "MELEE",
+    "type": "Melee",
+    "levelStats": [
+      {
+        "stats": [ "+15% <DT_IMPACT>Impact", "+10% Status Chance" ]
+      },
+      {
+        "stats": [ "+30% <DT_IMPACT>Impact", "+20% Status Chance" ]
+      },
+      {
+        "stats": [ "+45% <DT_IMPACT>Impact", "+30% Status Chance" ]
+      },
+      {
+        "stats": [ "+60% <DT_IMPACT>Impact", "+40% Status Chance" ]
+      },
+      {
+        "stats": [ "+75% <DT_IMPACT>Impact", "+50% Status Chance" ]
+      },
+      {
+        "stats": [ "+90% <DT_IMPACT>Impact", "+60% Status Chance" ]
+      }
+    ],
+    "modSet": "/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod",
+    "imageName": "saxum-thorax.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/LocateResources",
@@ -191231,6 +192194,54 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Hoverboard/HBEnergyInjectionMod",
+    "name": "Vapor Trail",
+    "polarity": "Naramon",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "compatName": "K-Drive",
+    "type": "K-Drive Mod",
+    "levelStats": [
+      {
+        "stats": [ "Add 1 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 2 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 3 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 4 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 5 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 6 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 7 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 8 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 9 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 10 Boost Speed. Consumes 10 Energy/s" ]
+      },
+      {
+        "stats": [ "Add 10 Boost Speed. Consumes 10 Energy/s" ]
+      }
+    ],
+    "imageName": "vapor-trail.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/Vaporize",
     "name": "Vaporize",
     "polarity": "Penjaga",
@@ -192836,6 +193847,33 @@
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d8/VilePrecisionModU145.png/revision/latest?cb=20191101055437",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Vile_Precision",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedKavatViralQuillsPrecept",
+    "name": "Viral Quills",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "PANZER VULPAPHYLA",
+    "type": "Kavat",
+    "levelStats": [
+      {
+        "stats": [ "Launches 3 quills at enemies within 20m from an organ under its chin, dealing 15 <DT_VIRAL>Viral Damage each and a 40% chance to proc the Viral status effect. If the target is affected by a Viral Proc, it also adds a Spore. 10s cooldown." ]
+      },
+      {
+        "stats": [ "Launches 4 quills at enemies within 20m from an organ under its chin, dealing 30 <DT_VIRAL>Viral Damage each and a 40% chance to proc the Viral status effect. If the target is affected by a Viral Proc, it also adds a Spore. 8s cooldown." ]
+      },
+      {
+        "stats": [ "Launches 5 quills at enemies within 20m from an organ under its chin, dealing 45 <DT_VIRAL>Viral Damage each and a 40% chance to proc the Viral status effect. If the target is affected by a Viral Proc, it also adds a Spore. 6s cooldown." ]
+      },
+      {
+        "stats": [ "Launches 6 quills at enemies within 20m from an organ under its chin, dealing 60 <DT_VIRAL>Viral Damage each and a 40% chance to proc the Viral status effect. If the target is affected by a Viral Proc, it also adds a Spore. 4s cooldown." ]
+      }
+    ],
+    "imageName": "viral-quills.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/PoisonEventMeleeMod",
@@ -195629,7 +196667,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalFourMod",
     "name": "Vome",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
@@ -196583,7 +197621,7 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Immortal/ImmortalTwoMod",
     "name": "Xata",
     "polarity": "Universal",
-    "rarity": "Common",
+    "rarity": "Rare",
     "baseDrain": 0,
     "fusionLimit": 3,
     "compatName": "PARAZON",
