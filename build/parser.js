@@ -488,8 +488,7 @@ class Parser {
       if (component.primeSellingPrice) component.ducats = component.primeSellingPrice
 
       if (!component.tradable) continue
-      const composite = `${item.name} ${component.name}`;
-      const wikiaItem = ducats.find(d => d.name.includes(composite))
+      const wikiaItem = ducats.find(d => d.name.includes(`${item.name} ${component.name}`))
 
       if (wikiaItem && wikiaItem.ducats) component.ducats = wikiaItem.ducats
       else if (!component.ducats) warnings.missingDucats.push(`${item.name} ${component.name}`)
