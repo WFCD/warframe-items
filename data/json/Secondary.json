@@ -97202,10 +97202,47 @@
         "tradable": false
       }
     ],
-    "type": "Misc",
+    "type": "Pistol",
     "imageName": "sepulcrum.png",
     "category": "Secondary",
-    "tradable": false
+    "tradable": false,
+    "ammo": 180,
+    "areaAttack": {
+      "name": "Radial Attack",
+      "falloff": {
+        "start": 0,
+        "end": 1.6,
+        "reduction": 0.2
+      },
+      "heat": 46,
+      "damage": "46.0 heat"
+    },
+    "damage": "48.0",
+    "damageTypes": {
+      "impact": 9.6,
+      "slash": 11.5,
+      "puncture": 26.9
+    },
+    "marketCost": 225,
+    "polarities": [  ],
+    "projectile": "Hitscan",
+    "secondary": {
+      "name": "Burst",
+      "speed": 1,
+      "impact": 19.2,
+      "slash": 23,
+      "puncture": 53.8
+    },
+    "secondaryArea": {
+      "name": "Radial Attack",
+      "radius": 300,
+      "heat": 480,
+      "damage": "480.0 heat"
+    },
+    "tags": [ "Entrati" ],
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f4/Sepulcrum.png/revision/latest?cb=20200825215404",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Sepulcrum",
+    "disposition": 1
   },
   {
     "name": "Sicarus",
