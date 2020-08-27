@@ -114858,10 +114858,40 @@
     "magazineSize": 300,
     "reloadTime": 5.5,
     "multishot": 1,
-    "type": "Arch-Gun",
+    "type": "",
     "imageName": "mausolon.png",
     "category": "Primary",
-    "tradable": false
+    "tradable": false,
+    "areaAttack": {
+      "name": "Radial Attack",
+      "falloff": {
+        "start": 0,
+        "end": 9.6,
+        "reduction": 0.6
+      },
+      "heat": 48,
+      "damage": "48.0 heat"
+    },
+    "damage": "50.0 heat",
+    "damageTypes": {
+      "impact": 24,
+      "puncture": 46,
+      "heat": 50
+    },
+    "polarities": [ "Madurai" ],
+    "projectile": "Hitscan",
+    "secondary": {
+      "name": "Active",
+      "speed": 0.25,
+      "crit_chance": 30,
+      "crit_mult": 2.4,
+      "status_chance": 0.2,
+      "heat": 10,
+      "damage": "10.0 heat"
+    },
+    "tags": [ "Entrati" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Mausolon",
+    "disposition": 1
   },
   {
     "name": "Miter",
