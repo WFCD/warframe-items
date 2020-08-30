@@ -47240,26 +47240,27 @@
     "imageName": "cortege.png",
     "category": "Primary",
     "tradable": false,
+    "areaAttack": {
+      "name": "Radial Attack",
+      "pellet": {
+        "name": "Grenade",
+        "count": 3
+      },
+      "falloff": {
+        "start": 0,
+        "end": 4,
+        "reduction": 0.3
+      },
+      "blast": 3000,
+      "damage": "3000.0 blast"
+    },
     "damage": "90.0 heat",
     "damageTypes": {
       "heat": 90
     },
     "polarities": [  ],
     "projectile": "Discharge",
-    "secondary": {
-      "name": "Grenade Impact",
-      "speed": 0.25,
-      "crit_chance": 30,
-      "crit_mult": 2.4,
-      "status_chance": 0.2,
-      "impact": 30
-    },
-    "secondaryArea": {
-      "name": "Radial Attack",
-      "radius": 400,
-      "blast": 3000,
-      "damage": "3000.0 blast"
-    },
+    "statusChance": 16.7,
     "tags": [ "Entrati" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/4/4e/Cortege.png/revision/latest?cb=20200825211514",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Cortege",
