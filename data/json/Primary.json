@@ -120273,11 +120273,11 @@
     "category": "Primary",
     "tradable": false,
     "areaAttack": {
-      "name": "Radial Attack",
+      "name": "Auto Radial Attack",
       "falloff": {
         "start": 0,
-        "end": 9.6,
-        "reduction": 0.6
+        "end": 1.8,
+        "reduction": 0.1
       },
       "heat": 48,
       "damage": "48.0 heat"
@@ -120289,16 +120289,28 @@
       "heat": 50
     },
     "polarities": [ "Madurai" ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "secondary": {
       "name": "Active",
       "speed": 0.25,
       "crit_chance": 30,
       "crit_mult": 2.4,
       "status_chance": 0.2,
+      "falloff": {
+        "start": 0,
+        "end": 8,
+        "reduction": 0.4
+      },
       "heat": 10,
       "damage": "10.0 heat"
     },
+    "secondaryArea": {
+      "name": "Active Radial Attack",
+      "radius": 800,
+      "blast": 2200,
+      "damage": "2200.0 blast"
+    },
+    "statusChance": 16.7,
     "tags": [ "Entrati" ],
     "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/0d/Mausolon.png/revision/latest?cb=20200829173059",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Mausolon",
