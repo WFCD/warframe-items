@@ -47145,6 +47145,7 @@
     "masteryReq": 0,
     "sprintSpeed": 1.05,
     "passiveDescription": "The ferocious kavat, Venari, fights by Khora's side and provides her with a |SPEED|% speed boost while active. If killed, Venari will reappear after |RESPAWN|s.",
+    "exalted": [ "/Lotus/Powersuits/Khora/Kavat/KhoraKavatPowerSuit" ],
     "abilities": [
       {
         "name": "Whipclaw",
@@ -108251,6 +108252,90 @@
     "vaultDate": "2018 03 20",
     "estimatedVaultDate": "2018 03 20",
     "vaulted": true
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/EntratiMech/NechroTech",
+    "name": "Voidrig Necramech",
+    "description": "Nothing fancy but gets the job done and then some. With its electrified armor, this rough and ready mech can make the battlefield treacherous for the enemy with an arsenal of explosives.",
+    "health": 1500,
+    "shield": 500,
+    "armor": 400,
+    "stamina": 200,
+    "power": 150,
+    "masteryReq": 0,
+    "excludeFromCodex": true,
+    "sprintSpeed": 1,
+    "exalted": [ "/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/ExaltedArtilleryWeapon" ],
+    "abilities": [
+      {
+        "name": "Necraweb",
+        "description": "Hurl a canister of graviton fluids to create a wide mire that will significantly slow enemies traveling across it. Alternatively, the canister can be shot in mid-air to create a fiery conflagration."
+      },
+      {
+        "name": "Storm Shroud",
+        "description": "Swathe the Necramech in a powerful electrical field that greatly enhances survivability in close combat. Enemies that strike the shroud will suffer for their impudence."
+      },
+      {
+        "name": "Gravemines",
+        "description": "Launch a pattern of charged mines all around you. Each mine detonates in a violent blast when touched, damaging enemies in a three-meter radius."
+      },
+      {
+        "name": "Guard Mode",
+        "description": "Take a stationary stance to deploy maximum firepower and gain increased structural integrity for a time."
+      }
+    ],
+    "productCategory": "MechSuits",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/NecromechBlueprint",
+        "name": "Blueprint",
+        "description": "Nothing fancy but gets the job done and then some. With its electrified armor, this rough and ready mech can make the battlefield treacherous for the enemy with an arsenal of explosives.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartSystemsItem",
+        "name": "Voidrig Capsule",
+        "description": "Capsule component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "voidrig-capsule.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartChassisItem",
+        "name": "Voidrig Casing",
+        "description": "Casing component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "voidrig-casing.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartEngineItem",
+        "name": "Voidrig Engine",
+        "description": "Engine component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "voidrig-engine.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartWeaponPodItem",
+        "name": "Voidrig Weapon Pod",
+        "description": "Weapon Pod component for the VOIDRIG Necramech.",
+        "itemCount": 1,
+        "imageName": "voidrig-weapon-pod.png",
+        "tradable": false
+      }
+    ],
+    "type": "Warframe",
+    "imageName": "voidrig-necramech.png",
+    "category": "Warframes",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Powersuits/Volt/Volt",
