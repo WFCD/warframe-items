@@ -242,6 +242,17 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/AlchemyRoomFeatureItem",
+    "name": "/Lotus/Language/Shipfeatureitems/Shipfeaturealchemyroom",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "lotus-language-shipfeatureitems-shipfeaturealchemyroom.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/CustomizationSlotUnlocker",
     "name": "Additional Appearance Config Slot For This Item",
     "description": "Unlocks an additional appearance config slot for this item, up to a maximum of 3 extra slots.",
@@ -396,6 +407,17 @@
     "type": "Misc",
     "name": "Alertrewardfusionbundle",
     "imageName": "alertrewardfusionbundle.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/AlertsFeatureItem",
+    "name": "Alerts Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "alerts-segment.png",
     "category": "Misc",
     "tradable": false
   },
@@ -1490,6 +1512,61 @@
     ],
     "type": "Misc",
     "imageName": "arioli-mutagen.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Arquebex",
+    "uniqueName": "/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/ExaltedArtilleryWeapon",
+    "damagePerShot": [ 10, 0, 0, 3000, 0, 0, 0, 9000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 12010,
+    "description": "[PH] Description",
+    "criticalChance": 0.5,
+    "criticalMultiplier": 3,
+    "procChance": 0.5,
+    "fireRate": 3.3333335,
+    "masteryReq": 0,
+    "productCategory": "SpecialItems",
+    "slot": 7,
+    "accuracy": 16.666666,
+    "omegaAttenuation": 0.5,
+    "noise": "Alarming",
+    "trigger": "Auto",
+    "reloadTime": 3,
+    "multishot": 1,
+    "type": "Exalted Weapon",
+    "imageName": "arquebex.png",
+    "category": "Misc",
+    "tradable": false,
+    "areaAttack": {
+      "name": "Radial Attack",
+      "falloff": {
+        "start": 0,
+        "end": 6,
+        "reduction": 0
+      },
+      "heat": 3000,
+      "blast": 9000,
+      "damage": "9000.0 blast"
+    },
+    "damage": "10.0",
+    "damageTypes": {
+      "impact": 10
+    },
+    "polarities": [ "Madurai" ],
+    "projectile": "Projectile",
+    "tags": [ "Entrati" ],
+    "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/e/e4/Arquebex.png/revision/latest?cb=20200902105030",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Arquebex",
+    "disposition": 1
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/ArsenalFeatureItem",
+    "name": "Arsenal Segment",
+    "description": "Install this segment in order to enable the Arsenal within your orbiter.",
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "arsenal-segment.png",
     "category": "Misc",
     "tradable": false
   },
@@ -7569,6 +7646,17 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/FoundryConcurrentBuildFormaFeatureItem",
+    "name": "Auxiliary Forma Crucible",
+    "description": "A foundry upgrade that allows two Forma to be crafted at the same time.",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "auxiliary-forma-crucible.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjection",
     "name": "Axi Relic",
     "description": "An artifact containing Orokin secrets. It can only be opened through the power of the Void.",
@@ -9114,6 +9202,17 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/ClanFeatureItem",
+    "name": "Clan Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "clan-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Clapkra Brace",
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set1/Grip/SentAmpSet1GripPartA",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -9582,6 +9681,17 @@
     "type": "Misc",
     "name": "Commonfusionbundle",
     "imageName": "commonfusionbundle.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/SocialMenuFeatureItem",
+    "name": "Comms Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "comms-segment.png",
     "category": "Misc",
     "tradable": false
   },
@@ -14496,6 +14606,43 @@
     "excludeFromCodex": true,
     "type": "Conservation Tag",
     "imageName": "emperor-condroc-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackHoodFeatureItem",
+    "name": "Engine Cowling",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackHoodFeatureItemBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "engine-cowling.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/DamagedRailjackHoodFeatureItem",
+    "name": "Engine Cowling Repairs",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "engine-cowling-repairs.png",
     "category": "Misc",
     "tradable": false
   },
@@ -34858,6 +35005,17 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/FoundryFeatureItem",
+    "name": "Foundry Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "foundry-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagSawgawRare",
     "name": "Frogmouthed Sawgaw Tag",
     "description": "For saving a specimen of this subspecies.",
@@ -34874,6 +35032,43 @@
     "excludeFromCodex": true,
     "type": "Conservation Tag",
     "imageName": "fuming-dax-stover-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackHullFeatureItem",
+    "name": "Fuselage",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackHullFeatureItemBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "fuselage.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/DamagedRailjackHullFeatureItem",
+    "name": "Fuselage Repairs",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "fuselage-repairs.png",
     "category": "Misc",
     "tradable": false
   },
@@ -66005,6 +66200,64 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/InfestedFoundryItem",
+    "name": "Helminth Segment",
+    "description": "Empower the Helminth in your Orbiter and unlock the transfer of new abilities to your Warframes.",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 20,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/InfestedFoundryBlueprint",
+        "name": "Blueprint",
+        "description": "Empower the Helminth in your Orbiter and unlock the transfer of new abilities to your Warframes.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedKdriveCommon",
+        "name": "Purple Velocipod Tag",
+        "description": "For saving a specimen of this species.",
+        "itemCount": 5,
+        "imageName": "purple-velocipod-tag.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
+        "name": "Saturated Muscle Mass",
+        "description": "Environmental contamination is co-responsible for mutations, alongside Infested cellular alteration.Guaranteed to drop from these sources:OSTIMYRKYMAEROS",
+        "itemCount": 5,
+        "imageName": "saturated-muscle-mass.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "helminth-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/LephantisShardItem",
     "name": "Hemocyte Cystolith",
     "description": "Torn from the bile duct of a fallen Hemocyte.",
@@ -66851,6 +67104,16 @@
         "fixes": "Fixed Kavat and Kubrow bundles from the Market not awarding Incubator Power Cores."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryFeatureItem",
+    "name": "Incubator Segment",
+    "description": "Install this segment to enable the pet incubator within your Orbiter.",
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "incubator-segment.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartB",
@@ -69402,7 +69665,8 @@
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Eggs/KubrowEgg",
     "name": "Kubrow Egg",
     "description": "This egg is used to transplant the genetic code of a Kubrow onto a Kubrow clone.",
-    "primeSellingPrice": 513,
+    "primeSellingPrice": 257,
+    "showInInventory": false,
     "type": "Pet Resource",
     "imageName": "kubrow-egg.png",
     "category": "Misc",
@@ -72997,7 +73261,8 @@
     "uniqueName": "/Lotus/Types/Items/Ships/DefaultShip",
     "name": "Liset",
     "description": "The landing craft of choice utilised by the Tenno during their missions.",
-    "primeSellingPrice": 513,
+    "primeSellingPrice": 257,
+    "showInInventory": false,
     "type": "Orbiter",
     "imageName": "liset.png",
     "category": "Misc",
@@ -75515,7 +75780,8 @@
     "uniqueName": "/Lotus/Types/Items/Ships/InsectShip",
     "name": "Mantis",
     "description": "This insect-like landing craft features Med-Tower air-support.",
-    "primeSellingPrice": 513,
+    "primeSellingPrice": 257,
+    "showInInventory": false,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -78149,6 +78415,28 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/MarketTierOneFeatureItem",
+    "name": "Market Tier 1 Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "market-tier-1-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/MarketTierTwoFeatureItem",
+    "name": "Market Tier 2 Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "market-tier-2-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/FusionBundles/MarketTier1FusionBundle",
     "description": "Consumed in the fusion process to power up existing Mods.",
     "fusionPoints": 100,
@@ -78921,6 +79209,26 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/ModsFusionFeatureItem",
+    "name": "Mod Fusion Segment",
+    "description": "Install this segment to enable the Mod Fusion function within the MODS terminal of your Orbiter.",
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "mod-fusion-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/ModsTransmuteFeatureItem",
+    "name": "Mod Transmute Segment",
+    "description": "/Lotus/Language/ShipFeatureItems/ModsTransmuteFeatureItemDesc",
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "mod-transmute-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "rewardName": "/Lotus/Types/StoreItems/Boosters/ModDropChanceBoosterStoreItem",
     "rarity": "Common",
     "tier": 0,
@@ -78929,6 +79237,17 @@
     "uniqueName": "/Lotus/Types/StoreItems/Boosters/ModDropChanceBoosterStoreItem",
     "type": "Misc",
     "name": "Moddropchanceboosterstoreitem",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/ModsFeatureItem",
+    "name": "Mods Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "mods-segment.png",
     "category": "Misc",
     "tradable": false
   },
@@ -79231,6 +79550,17 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/MuseumDogTag",
+    "name": "Museumdonation",
+    "description": "MuseumDonation",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Medallion",
+    "imageName": "museumdonation.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/InfestedAladCoordinate",
@@ -79981,7 +80311,8 @@
     "name": "Nightwave",
     "description": "A landing craft model that pays homage to the forever-wandering home of pirate DJ Nora Night. Stay deadly, Dreamers. Nightwave's air support releases powerful sound waves, destroying weaker enemies while stunning more powerful ones.",
     "excludeFromCodex": true,
-    "primeSellingPrice": 513,
+    "primeSellingPrice": 257,
+    "showInInventory": false,
     "type": "Orbiter",
     "imageName": "nightwave.png",
     "category": "Misc",
@@ -84926,6 +85257,719 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/PersonalQuartersFeatureItem",
+    "name": "Personal Quarters Segment",
+    "description": "",
+    "showInInventory": false,
+    "buildPrice": 100000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.This resource can be found in the Void.",
+        "itemCount": 1,
+        "imageName": "argon-crystal.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "B"
+          },
+          {
+            "location": "Saturn - Annihilation",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Cephalon",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Lunaro",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Team",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "(Extra)"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Annihilation"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "Capture"
+          },
+          {
+            "location": "Saturn - Variant",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0025,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.01,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Void - Stribog",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Void - Marduk",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0442,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1106
+          },
+          {
+            "location": "Hallowed Flame Endurance Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1265
+          },
+          {
+            "location": "Hallowed Flame Mission Caches",
+            "type": "Transient Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1518
+          },
+          {
+            "location": "Deimos - Formido",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1936,
+            "rotation": "C"
+          },
+          {
+            "location": "Corrupted Vor",
+            "type": "Resource By Avatar",
+            "rarity": "Common",
+            "chance": 0.5
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/PersonalQuartersFeatureBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 3000,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 800,
+        "imageName": "rubedo.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
+        "name": "Tellurium",
+        "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.Locations: Archwing Missions on Uranus.",
+        "itemCount": 2,
+        "imageName": "tellurium.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Exo Butcher",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Elite Lancer",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Eviscerator",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Gokstad Officer",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Gokstad Pilot",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Raider Carver",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Raider Eviscerator",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Raider",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Exo Supressor",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Butcher",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Elite Lancer",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Eviscerator",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Gokstad Officer",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Gokstad Pilot",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Raider Carver",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Raider Eviscerator",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Raider",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Gyre Supressor",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Butcher",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Elite Lancer",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Eviscerator",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Gokstad Officer",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Gokstad Pilot",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Raider Carver",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Raider Eviscerator",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Raider",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Roller Sentry",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Kosma Supressor",
+            "type": "Resource By Avatar",
+            "rarity": "Rare",
+            "chance": 0.0018
+          },
+          {
+            "location": "Mars - Gradivus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Neruda",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Mercury - Terminus",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Venus - Ishtar",
+            "type": "Mission Rewards",
+            "rarity": "Legendary",
+            "chance": 0.0067,
+            "rotation": "C"
+          },
+          {
+            "location": "Kuva - Fortress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "rewards"
+          },
+          {
+            "location": "Neptune - Halimede",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Neptune - Thalassa",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Charon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Pluto - Cypress",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Phithale",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Sedna - Rusalka",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Portia",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.0367,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Ker",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004,
+            "rotation": "C"
+          },
+          {
+            "location": "Ceres - Thon",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Adrastea",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004,
+            "rotation": "C"
+          },
+          {
+            "location": "Jupiter - Carpo",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004
+          },
+          {
+            "location": "Saturn - Calypso",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004,
+            "rotation": "C"
+          },
+          {
+            "location": "Saturn - Pallene",
+            "type": "Mission Rewards",
+            "rarity": "Rare",
+            "chance": 0.044000000000000004,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.049400000000000006
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.049400000000000006
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Rare",
+            "chance": 0.049400000000000006
+          },
+          {
+            "location": "Lua - Plato",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1082,
+            "rotation": "C"
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1379
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1379
+          },
+          {
+            "location": "Level 30 - 50 Orb Vallis Bounty",
+            "type": "Solaris Bounty Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1379
+          },
+          {
+            "location": "Uranus - Desdemona",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Prospero",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          },
+          {
+            "location": "Uranus - Setebos",
+            "type": "Mission Rewards",
+            "rarity": "Uncommon",
+            "chance": 0.1549,
+            "rotation": "C"
+          }
+        ]
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "personal-quarters-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Peye",
     "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Handle/HandleOne",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -85987,6 +87031,43 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackNacelleLeftFeatureItem",
+    "name": "Port Nacelle",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackNacelleLeftFeatureItemBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "port-nacelle.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/DamagedRailjackNacelleLeftFeatureItem",
+    "name": "Port Nacelle Repairs",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "port-nacelle-repairs.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Poxi Antigen",
     "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenD",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -86158,6 +87239,43 @@
         "fixes": "Fixed misaligned Certus Brace and Propa Scaffold when building an Amp."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackHoodBraceFeatureItem",
+    "name": "Propulsion Systems",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackHoodBraceFeatureItemBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "propulsion-systems.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/DamagedRailjackHoodBraceFeatureItem",
+    "name": "Propulsion Systems Repairs",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "propulsion-systems-repairs.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartA",
@@ -86520,6 +87638,16 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/RailjackCephalonShipFeatureItem",
+    "name": "Railjack Cephalon",
+    "description": "A Railjack Command Cephalon. Responsible for ships systems, mission completion and crew preservation.",
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "railjack-cephalon.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "name": "Ramble",
@@ -87177,6 +88305,17 @@
     "tags": [ "Tenno" ],
     "wikiaUrl": "http://warframe.fandom.com/wiki/Regulators_Prime",
     "disposition": 3
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/RailjackKeyShipFeatureItem",
+    "name": "Reliquary Key",
+    "description": "Resembling a Void Key, this object appears to be a perfect match for the empty slot in the Railjack's reliquary.",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "reliquary-key.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Game/Projections/T5VoidProjectionImmortal",
@@ -89077,7 +90216,8 @@
     "uniqueName": "/Lotus/Types/Items/Ships/BlueSkyShip",
     "name": "Scimitar",
     "description": "This blade-like landing craft is armed with Carpet Bomb air-support.",
-    "primeSellingPrice": 513,
+    "primeSellingPrice": 257,
+    "showInInventory": false,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
@@ -90443,6 +91583,17 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/ShipFeatureItem",
+    "name": "Shipfeatureitem",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "shipfeatureitem.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "name": "Shraksun Scaffold",
@@ -97042,6 +98193,54 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/SolarChartFeatureItem",
+    "name": "Star Chart Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "star-chart-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackNacelleRightFeatureItem",
+    "name": "Starboard Nacelle",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackNacelleRightFeatureItemBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "starboard-nacelle.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/DamagedRailjackNacelleRightFeatureItem",
+    "name": "Starboard Nacelle Repairs",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "starboard-nacelle-repairs.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Steadyslam",
     "uniqueName": "/Lotus/Weapons/SolarisUnited/Primary/SUModularPrimarySet1/Handles/SUModularPrimaryHandleCPart",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -98373,6 +99572,43 @@
         "fixes": "The operation is over but Synthula is here to stay! This new Resource can be found in the same spots and can be used to make Stims for you and your clanmates. Stims can be used on any NPCs in need of your aid "
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackTailFeatureItem",
+    "name": "Tail Section",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackTailFeatureItemBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "tail-section.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/DamagedRailjackTailFeatureItem",
+    "name": "Tail Section Repairs",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "tail-section-repairs.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
@@ -107074,6 +108310,17 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/VoidProjectionFeatureItem",
+    "name": "Void Relic Segment",
+    "description": "",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "type": "Ship Segment",
+    "imageName": "void-relic-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop",
     "name": "Void Traces",
     "description": "A substance used to increase the power within Relics.Can be acquired from Void Fissures.",
@@ -107291,7 +108538,8 @@
     "uniqueName": "/Lotus/Types/Items/Ships/GyroscopeShip",
     "name": "Xiphos",
     "description": "Featuring Sentry Gun air-support, this stylish landing craft is an asset in any battle.",
-    "primeSellingPrice": 513,
+    "primeSellingPrice": 257,
+    "showInInventory": false,
     "buildPrice": 25000,
     "buildTime": 259200,
     "skipBuildTimePrice": 50,
