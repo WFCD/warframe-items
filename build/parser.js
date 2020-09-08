@@ -464,7 +464,7 @@ class Parser {
   /**
    * Limit items to tradable/untradable if specified.
    */
-    addTradable (item) {
+  addTradable (item) {
     const tradableTypes = ['Arcane', 'Fish', 'Focus Lens', 'Relic', 'Rifle Mod',
       'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
       'Melee Mod']
@@ -479,7 +479,6 @@ class Parser {
     const isTradable = tradableByType || tradableByName || tradableByProp
     item.tradable = isTradable || false
   }
-
 
   /**
    * Add ducats for prime items. We'll need to get this data from the wikia.
