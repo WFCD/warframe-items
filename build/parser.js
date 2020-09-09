@@ -465,14 +465,17 @@ class Parser {
    * Limit items to tradable/untradable if specified.
    */
   addTradable (item) {
-    const tradableTypes = ['Arcane', 'Fish', 'Focus Lens', 'Relic', 'Rifle Mod',
+    const tradableTypes = ['Upgrades', 'Arcane', 'Fish', 'Focus Lens', 'Relic', 'Rifle Mod',
       'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
       'Melee Mod']
     const untradableTypes = ['Skin', 'Medallion', 'Key', 'Extractor', 'Pets', 'Ship Decoration',
       'Glyph', 'Sigil', 'Fur Color', 'Syandana', 'Fur Pattern', 'Color Palette', 'Node', 'Exalted Weapon']
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))/i
-    const notFiltered = !untradableTypes.includes(item.type) && !item.name.match(untradableRegex) && !item.uniqueName.match(untradableRegex) && (item.hasOwnProperty('productCategory') ? !item.productCategory.match(/(SpecialItems)/) : true)
+    const notFiltered = !untradableTypes.includes(item.type) &&
+      !item.name.match(untradableRegex) &&
+      !item.uniqueName.match(untradableRegex) &&
+      (item.hasOwnProperty('productCategory') ? !item.productCategory.match(/(SpecialItems)/) : true)
     const tradableByType = tradableTypes.includes(item.type) && notFiltered
     const tradableByName = (item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered
     const tradableByProp = (item.isAugment) && notFiltered
