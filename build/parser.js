@@ -479,7 +479,7 @@ class Parser {
     const isTradable = tradableByType || tradableByName || tradableByProp
     item.tradable = isTradable || false
   }
-  
+
   /**
    * Add ducats for prime items. We'll need to get this data from the wikia.
    */
