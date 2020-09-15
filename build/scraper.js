@@ -84,7 +84,7 @@ class Scraper {
    */
   async fetchDropRates () {
     const bar = new Progress('Fetching Drop Rates', 1)
-    const rates = await getJSON('https://raw.githubusercontent.com/WFCD/warframe-drop-data/gh-pages/data/all.json', true)
+    const rates = await getJSON('https://drops.warframestat.us/data/all.slim.json', true)
     const ratesHash = crypto.createHash('md5').update(JSON.stringify(rates)).digest('hex')
     const changed = exportCache.DropChances.hash !== ratesHash
 
