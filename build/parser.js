@@ -17,6 +17,8 @@ const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
 const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z]{1,1} Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
 
+const dedupe = (arr) => Array.from(new Set(arr))
+
 /**
  * Parse API data into a more clear or complete format.
  */
@@ -528,14 +530,12 @@ class Parser {
     // Don't look for drop rates on item itself if it has components.
     if (item.components) {
       for (const component of item.components) {
-        // const data = drops.rates.filter(drop => drop.item === `${item.name} ${component.name}`)
         const data = this.findDropLocations(`${item.name} ${component.name}`, drops.rates)
         if (data.length) component.drops = data
       }
-    } else {
+    } else if (item.name !== 'Blueprint') {
       // Last word of relic is intact/rad, etc instead of 'Relic'
       const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name
-      // const data = drops.rates.filter(drop => drop.item === name)
       const data = this.findDropLocations(name, drops.rates)
       if (data.length) item.drops = data
     }
@@ -549,16 +549,19 @@ class Parser {
     return keyA.localeCompare(keyB)
   }
 
+  dropMap (drop) {
+    return {
+      location: drop.place.replace('<b>', '').replace('</b>', ''),
+      type: drop.item,
+      chance: Number(drop.chance * 0.01).toFixed(5),
+      rarity: drop.rarity
+    }
+  }
+
   findDropLocations (item, dropChances) {
-    const data = dropChances.filter(drop => drop.item === item)
-      .map(drop => {
-        return {
-          location: drop.place.replace('<b>', '').replace('</b>', ''),
-          type: drop.item,
-          chance: Number(drop.chance * 0.01).toFixed(5),
-          rarity: drop.rarity
-        }
-      })
+    const data = dedupe(dropChances
+      .filter(drop => drop.item === item || drop.item.startsWith(item))
+      .map(this.dropMap))
     data.sort(this.comparator)
     return data
   }
