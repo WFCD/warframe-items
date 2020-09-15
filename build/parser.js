@@ -17,6 +17,8 @@ const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
 const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z]{1,1} Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
 
+const dedupe = (arr) => Array.from(new Set(arr))
+
 /**
  * Parse API data into a more clear or complete format.
  */
@@ -531,15 +533,11 @@ class Parser {
         const data = this.findDropLocations(`${item.name} ${component.name}`, drops.rates)
         if (data.length) component.drops = data
       }
-    } else {
+    } else if (item.name !== 'Blueprint') {
       // Last word of relic is intact/rad, etc instead of 'Relic'
       const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name
       const data = this.findDropLocations(name, drops.rates)
       if (data.length) item.drops = data
-    }
-
-    if (item.drops) {
-      item.drops.sort(this.comparator)
     }
   }
 
@@ -551,86 +549,21 @@ class Parser {
     return keyA.localeCompare(keyB)
   }
 
-  findDropLocations (item, dropChances) {
-    // Prime drop locations array
-    let result = []
-    let dropLocations = []
-    this.findDropRecursive(item, dropChances, dropLocations, '')
-
-    if (!dropLocations.length) {
-      return []
+  dropMap (drop) {
+    return {
+      location: drop.place.replace('<b>', '').replace('</b>', ''),
+      type: drop.item,
+      chance: Number(drop.chance * 0.01).toFixed(5),
+      rarity: drop.rarity
     }
-
-    // The find function returns an array of mentions with their respective paths.
-    // So because I'm lazy and don't want to directly implement it into the
-    // recursion, we'll gather the info "around" the found key here.
-    for (const location of dropLocations) {
-      const propBlacklist = ['_id', 'ememyModDropChance', 'enemyModDropChance']
-      const path = location.path.replace(/\[/g, '').replace(/\]/g, ' ').split(' ')
-      const dropData = dropChances[path[0]][path[1]]
-      const drop = {
-        location: '',
-        type: path[0].replace(/([a-z](?=[A-Z]))/g, '$1 '), // Regex transforms camelCase to normal words
-        rarity: location.drop.rarity,
-        chance: location.drop.chance * 0.01
-      }
-      // Capitalize drop type
-      drop.type = drop.type[0].toUpperCase() + drop.type.slice(1)
-
-      // If enemy mod drop chance is present, multiply drop chance with that
-      // value, so the drop chance is accurate for each kill, not for each drop.
-      if (dropData && dropData.ememyModDropChance) {
-        drop.chance = drop.chance * (dropData.ememyModDropChance * 0.01)
-      }
-
-      // First few Properties of the first object form the drop location name
-      for (let prop in dropData) {
-        if (typeof dropData[prop] === 'string' && !propBlacklist.includes(prop)) {
-          drop.location += dropData[prop] + ' '
-        }
-      }
-
-      // Add some fixes for Mission rewards. Their results are more nested
-      // than other drop locations. Path looks like:
-      // [missionRewards][Void][Belenus][rewards][C][12][itemName]
-      if (drop.type === 'Mission Rewards') {
-        drop.location = `${path[1]} - ${path[2]}`
-
-        // Has rotations
-        if (path[4].match(/[a-z]/i)) {
-          drop.rotation = path[4]
-        }
-      }
-
-      // Remove trailing spaces
-      drop.location = drop.location.trim()
-
-      // Replace drop location with correct ingame names
-      const overrides = require('../config/dropLocations.json')
-      for (const override of overrides) {
-        drop.location.replace(override.id, override.name)
-      }
-
-      result.push(drop)
-    }
-    return result
   }
 
-  findDropRecursive (target, child, dropLocations, path) {
-    if (typeof child === 'object') {
-      for (let prop in child) {
-        const nextPath = `${path}[${prop}]`
-        const found = this.findDropRecursive(target, child[prop], dropLocations, nextPath)
-        if (found && !child.enemies) {
-          dropLocations.push({ path: nextPath, drop: child })
-        }
-      }
-    }
-
-    // String ? check if it's the component we want
-    else if (typeof child === 'string') {
-      return child === target || child === target + ' Blueprint' ? child : null
-    }
+  findDropLocations (item, dropChances) {
+    const data = dedupe(dropChances
+      .filter(drop => drop.item === item || drop.item.startsWith(item))
+      .map(this.dropMap))
+    data.sort(this.comparator)
+    return data
   }
 
   /**
