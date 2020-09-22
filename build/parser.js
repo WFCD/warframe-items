@@ -515,6 +515,10 @@ class Parser {
 
           const saved = previous.components.find(c => c.name === component.name)
           if (saved && saved.drops) {
+            // chances were written as strings, caused by previous bad data
+            saved.drops.forEach(drop => {
+              drop.chance = Number.parseFloat(drop.chance)
+            })
             component.drops = saved.drops
           }
         }
@@ -553,7 +557,7 @@ class Parser {
     return {
       location: drop.place.replace('<b>', '').replace('</b>', ''),
       type: drop.item,
-      chance: Number(drop.chance * 0.01).toFixed(5),
+      chance: Number.parseFloat(Number(drop.chance * 0.01).toFixed(5)),
       rarity: drop.rarity
     }
   }
