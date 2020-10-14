@@ -97,6 +97,45 @@ declare module 'warframe-items' {
         repairRate?: number;
         capacityMultiplier?: number[];
         specialities?: string[];
+        showInInventory?: boolean;
+        systemIndex?: number;
+        systemName?: string;
+        nodeType?: number;
+        missionIndex?: number;
+        factionIndex?: number;
+        minEnemyLevel?: number;
+        maxEnemyLevel?: number;
+        compatName?: string;
+        isAugment?: boolean;
+        transmutable?: boolean;
+        productCategory?: ProductCategory;
+        multishot?: number;
+        blockingAngle?: number;
+        comboDuration?: number;
+        followThrough?: number;
+        range?: number;
+        slamAttack?: number;
+        slamRadialDamage?: number;
+        slamRadius?: number;
+        slideAttack?: number;
+        heavyAttackDamage?: number;
+        heavySlamAttack?: number;
+        heavySlamRadialDamage?: number;
+        heavySlamRadius?: number;
+        windUp?: number;
+        isUtility?: boolean;
+        modSet?: string;
+        rewardName?: string;
+        tier?: number;
+        probability?: number;
+        isExilus?: boolean;
+        fusionPoints?: number;
+        chargeTime?: number;
+        exalted?: string[];
+        primeOmegaAttenuation?: number;
+        primeSellingPrice?: number;
+        maxLevelCap?: number;
+        modSetValues?: number[];
     }
 
     interface Component {
@@ -151,6 +190,8 @@ declare module 'warframe-items' {
         estimatedVaultDate?: string;
         vaultDate?: string;
         releaseDate?: string;
+        excludeFromCodex?: boolean;
+        levelStats?: LevelStat[];
     }
 
     interface Secondary {
@@ -215,6 +256,10 @@ declare module 'warframe-items' {
         value: string;
     }
 
+    interface LevelStat {
+        stats: string[];
+    }
+
     interface Complication {
         fullName: string;
         description: string;
@@ -269,6 +314,21 @@ declare module 'warframe-items' {
     interface UpgradeValue {
         value: number;
         locTag?: string;
+    }
+
+    enum ProductCategory {
+        KubrowPets = "KubrowPets",
+        LongGuns = "LongGuns",
+        MechSuits = "MechSuits",
+        Melee = "Melee",
+        Pistols = "Pistols",
+        SentinelWeapons = "SentinelWeapons",
+        Sentinels = "Sentinels",
+        SpaceGuns = "SpaceGuns",
+        SpaceMelee = "SpaceMelee",
+        SpaceSuits = "SpaceSuits",
+        SpecialItems = "SpecialItems",
+        Suits = "Suits",
     }
 
     type Aura =
