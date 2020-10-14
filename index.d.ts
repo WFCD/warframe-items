@@ -136,6 +136,8 @@ declare module 'warframe-items' {
         primeSellingPrice?: number;
         maxLevelCap?: number;
         modSetValues?: number[];
+        excludeFromCodex?: boolean;
+        levelStats?: LevelStat[];
     }
 
     interface Component {
@@ -190,8 +192,6 @@ declare module 'warframe-items' {
         estimatedVaultDate?: string;
         vaultDate?: string;
         releaseDate?: string;
-        excludeFromCodex?: boolean;
-        levelStats?: LevelStat[];
     }
 
     interface Secondary {
