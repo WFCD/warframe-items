@@ -108,7 +108,7 @@ declare module 'warframe-items' {
         compatName?: string;
         isAugment?: boolean;
         transmutable?: boolean;
-        productCategory?: ProductCategory;
+        productCategory?: string;
         multishot?: number;
         blockingAngle?: number;
         comboDuration?: number;
@@ -314,21 +314,6 @@ declare module 'warframe-items' {
     interface UpgradeValue {
         value: number;
         locTag?: string;
-    }
-
-    enum ProductCategory {
-        KubrowPets = "KubrowPets",
-        LongGuns = "LongGuns",
-        MechSuits = "MechSuits",
-        Melee = "Melee",
-        Pistols = "Pistols",
-        SentinelWeapons = "SentinelWeapons",
-        Sentinels = "Sentinels",
-        SpaceGuns = "SpaceGuns",
-        SpaceMelee = "SpaceMelee",
-        SpaceSuits = "SpaceSuits",
-        SpecialItems = "SpecialItems",
-        Suits = "Suits",
     }
 
     type Aura =
