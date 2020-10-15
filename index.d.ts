@@ -97,6 +97,47 @@ declare module 'warframe-items' {
         repairRate?: number;
         capacityMultiplier?: number[];
         specialities?: string[];
+        showInInventory?: boolean;
+        systemIndex?: number;
+        systemName?: string;
+        nodeType?: number;
+        missionIndex?: number;
+        factionIndex?: number;
+        minEnemyLevel?: number;
+        maxEnemyLevel?: number;
+        compatName?: string;
+        isAugment?: boolean;
+        transmutable?: boolean;
+        productCategory?: string;
+        multishot?: number;
+        blockingAngle?: number;
+        comboDuration?: number;
+        followThrough?: number;
+        range?: number;
+        slamAttack?: number;
+        slamRadialDamage?: number;
+        slamRadius?: number;
+        slideAttack?: number;
+        heavyAttackDamage?: number;
+        heavySlamAttack?: number;
+        heavySlamRadialDamage?: number;
+        heavySlamRadius?: number;
+        windUp?: number;
+        isUtility?: boolean;
+        modSet?: string;
+        rewardName?: string;
+        tier?: number;
+        probability?: number;
+        isExilus?: boolean;
+        fusionPoints?: number;
+        chargeTime?: number;
+        exalted?: string[];
+        primeOmegaAttenuation?: number;
+        primeSellingPrice?: number;
+        maxLevelCap?: number;
+        modSetValues?: number[];
+        excludeFromCodex?: boolean;
+        levelStats?: LevelStat[];
     }
 
     interface Component {
@@ -151,6 +192,23 @@ declare module 'warframe-items' {
         estimatedVaultDate?: string;
         vaultDate?: string;
         releaseDate?: string;
+        excludeFromCodex?: boolean;
+        productCategory?: ProductCategory;
+        multishot?: number;
+        primeSellingPrice?: number;
+        blockingAngle?: number;
+        comboDuration?: number;
+        followThrough?: number;
+        range?: number;
+        slamAttack?: number;
+        slamRadialDamage?: number;
+        slamRadius?: number;
+        slideAttack?: number;
+        heavyAttackDamage?: number;
+        heavySlamAttack?: number;
+        heavySlamRadialDamage?: number;
+        heavySlamRadius?: number;
+        windUp?: number;
     }
 
     interface Secondary {
@@ -213,6 +271,10 @@ declare module 'warframe-items' {
 
     interface Colour {
         value: string;
+    }
+
+    interface LevelStat {
+        stats: string[];
     }
 
     interface Complication {
