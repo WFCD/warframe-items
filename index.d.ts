@@ -192,6 +192,23 @@ declare module 'warframe-items' {
         estimatedVaultDate?: string;
         vaultDate?: string;
         releaseDate?: string;
+        excludeFromCodex?: boolean;
+        productCategory?: ProductCategory;
+        multishot?: number;
+        primeSellingPrice?: number;
+        blockingAngle?: number;
+        comboDuration?: number;
+        followThrough?: number;
+        range?: number;
+        slamAttack?: number;
+        slamRadialDamage?: number;
+        slamRadius?: number;
+        slideAttack?: number;
+        heavyAttackDamage?: number;
+        heavySlamAttack?: number;
+        heavySlamRadialDamage?: number;
+        heavySlamRadius?: number;
+        windUp?: number;
     }
 
     interface Secondary {
