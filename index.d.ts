@@ -108,7 +108,7 @@ declare module 'warframe-items' {
         compatName?: string;
         isAugment?: boolean;
         transmutable?: boolean;
-        productCategory?: string;
+        productCategory?: ProductCategory;
         multishot?: number;
         blockingAngle?: number;
         comboDuration?: number;
@@ -332,6 +332,20 @@ declare module 'warframe-items' {
         value: number;
         locTag?: string;
     }
+
+    type ProductCategory =
+        'KubrowPets' |
+        'LongGuns' |
+        'MechSuits' |
+        'Melee' |
+        'Pistols' |
+        'SentinelWeapons' |
+        'Sentinels' |
+        'SpaceGuns' |
+        'SpaceMelee' |
+        'SpaceSuits' |
+        'SpecialItems' |
+        'Suits'
 
     type Aura =
         'madurai' |
