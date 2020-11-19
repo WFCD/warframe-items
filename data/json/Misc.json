@@ -1,23 +1,5 @@
 [
   {
-    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
-    "name": "[Ph] Deimos Fish F",
-    "description": "[PH] Description",
-    "type": "Fish Part",
-    "imageName": "ph-deimos-fish-f.png",
-    "category": "Misc",
-    "tradable": false
-  },
-  {
-    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
-    "name": "[Ph] Deimos Fish G",
-    "description": "[PH] Description",
-    "type": "Fish Part",
-    "imageName": "ph-deimos-fish-g.png",
-    "category": "Misc",
-    "tradable": false
-  },
-  {
     "uniqueName": "/Lotus/Types/Items/Trapping/EidolonTrappingItemA",
     "name": "[Ph] Eidolon Trapping A",
     "description": "[PH] Description",
@@ -357,6 +339,16 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedNexiferaCommon",
+    "name": "Amethyst Nexifera Tag",
+    "description": "For saving a specimen of this species.",
+    "excludeFromCodex": true,
+    "type": "Conservation Tag",
+    "imageName": "amethyst-nexifera-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/SentientFragmentLootItem",
     "name": "Anomaly Shard",
     "description": "A shard ripped from a Sentient Anomaly in the Veil Proxima. Little Duck is known to trade these for other exotic goods somewhere in Fortuna.",
@@ -678,6 +670,16 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/Vignettes/Warframes/ArchwingAFItem",
+    "name": "Archwing Articula",
+    "description": "[PH] A posable, scale model of your favorite Archwing!",
+    "excludeFromCodex": true,
+    "type": "Archwing",
+    "imageName": "archwing-articula.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/EidolonArchwingFoundryUpgradeFeatureItem",
     "name": "Archwing Launcher Segment",
     "description": "Adds the Archwing Launcher to the foundry",
@@ -895,11 +897,168 @@
     ]
   },
   {
+    "name": "Arcroid",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfSmallClip/InfModularClipSmallCritStatPart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfSmallClip/InfModularClipSmallCritStatBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 20,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBCutItem",
+        "name": "Purged Dagonic",
+        "description": "Crystalline symmetry, a far cry from its corrupt origin.",
+        "itemCount": 20,
+        "imageName": "purged-dagonic.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+        "name": "Scintillant",
+        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.",
+        "itemCount": 3,
+        "imageName": "scintillant.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
+        "name": "Tubercular Gill System",
+        "description": "Adaptive membranes allow many Deimos fish to move freely between fluid and gaseous environments.Guaranteed to drop from these sources:OSTIMYRAQUAPULMOVITREOSPINAMYXOSTOMATADUROID",
+        "itemCount": 15,
+        "imageName": "tubercular-gill-system.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "arcroid.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
     "name": "Argon Crystal",
     "description": "A Void based radioactive resource that decays every day it is out of the Void.This resource can be found in the Void.",
     "itemCount": 1,
-    "parents": [ "Bishamo Cuirass", "Hidden Messages", "Hydroid Ketos Helmet", "Incubator Power Core", "Loki Enigma Helmet", "Nova Slipstream Helmet", "Potent Pherliac Pods", "The Jordas Precept", "The Limbo Theorem", "Uru Syandana" ],
+    "parents": [ "Bishamo Cuirass", "Hidden Messages", "Hydroid Ketos Helmet", "Incubator Power Core", "Loki Enigma Helmet", "Nova Slipstream Helmet", "Potent Pherliac Pods", "The Jordas Precept", "The Limbo Theorem", "Uru Syandana", "Xaku Kintsu Helmet" ],
     "type": "Misc",
     "imageName": "argon-crystal.png",
     "category": "Misc",
@@ -7699,6 +7858,15 @@
     "tradable": true
   },
   {
+    "uniqueName": "/Lotus/Types/Items/FusionTreasures/OroFusexEntrati",
+    "name": "Ayatan Kitha Sculpture",
+    "description": "Struck to commemorate the Entrati family’s power and prestige, as well as safeguarding their memories of one another. Many things changed in the years that followed, and that which had once shone brightly grew dark and dim. But even a single Ayatan Star may make all the difference.",
+    "type": "Ayatan Sculpture",
+    "imageName": "ayatan-kitha-sculpture.png",
+    "category": "Misc",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/FusionTreasures/OroFusexC",
     "name": "Ayatan Orta Sculpture",
     "description": "This kinetic Orokin sculpture springs to life when filled with Ayatan Stars. It may also be a source of Endo.",
@@ -8324,8 +8492,8 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
     "name": "Biotic Filter",
     "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.Guaranteed to drop from these sources:AQUAPULMODUROID",
-    "itemCount": 6,
-    "parents": [ "Voidrig Engine", "Voidrig Weapon Pod" ],
+    "itemCount": 20,
+    "parents": [ "Bonewidow Capsule", "Voidrig Engine", "Voidrig Weapon Pod" ],
     "type": "Fish Part",
     "imageName": "biotic-filter.png",
     "category": "Misc",
@@ -8976,7 +9144,7 @@
     "name": "Circuits",
     "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
     "itemCount": 300,
-    "parents": [ "Advanced Nosam Cutter", "Archwing Launcher", "Clotra Stim", "Cosmic Specter", "Dual Zoren Dagger-Axe Skin", "Exergis Shock-Camo Skin", "Faithful Void Offering", "Falcor Shock-Camo Skin", "Force Specter", "Genetic Code Template", "Humble Void Offering", "Loc-Pin", "Passionate Void Offering", "Plinx Shock-Camo Skin", "Refract Stim", "Scindo Dagger-Axe Skin", "Shocking Step Ephemera", "Squad Health Restore (Large)", "Sunpoint Plasma Drill" ],
+    "parents": [ "Advanced Nosam Cutter", "Archwing Launcher", "Clotra Stim", "Cosmic Specter", "Dual Zoren Dagger-Axe Skin", "Exergis Shock-Camo Skin", "Faithful Void Offering", "Falcor Shock-Camo Skin", "Focused Nosam Cutter", "Force Specter", "Genetic Code Template", "Humble Void Offering", "Loc-Pin", "Nosam Cutter", "Passionate Void Offering", "Plinx Shock-Camo Skin", "Refract Stim", "Scindo Dagger-Axe Skin", "Shocking Step Ephemera", "Squad Health Restore (Large)", "Sunpoint Plasma Drill" ],
     "type": "Misc",
     "imageName": "circuits.png",
     "category": "Misc",
@@ -9709,6 +9877,8 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
     "name": "Cranial Foremount",
     "description": "Beneath the membranous protein layers can be found a secondary 'skull'; flexible, tough and highly conductive.Source:MYXOSTOMATA",
+    "itemCount": 2,
+    "parents": [ "Bonewidow Engine" ],
     "type": "Fish Part",
     "imageName": "cranial-foremount.png",
     "category": "Misc",
@@ -27326,7 +27496,7 @@
     "name": "Ferrite",
     "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
     "itemCount": 10000,
-    "parents": [ "Air Support Charges", "Ancient Healer Specter", "Atterax Desert-Camo Skin", "Axidrol Alloy", "Bishamo Pauldrons", "Bleeding Dragon Key", "Burston Solstice Skin", "Charger Specter", "Cipher", "Clan Key", "Clem Clone", "Control Module", "Coprite Alloy", "Corinth Solstice Skin", "Corrupted Bombard Specter", "Corrupted Lancer Specter", "Decaying Dragon Key", "Diriga Desert-Camo Skin", "Dual Zoren Dagger-Axe Skin", "Ember Immortal Skin", "Excalibur Immortal Skin", "Excalibur Mordred Helmet", "Exergis Shock-Camo Skin", "Extinguished Dragon Key", "Falcor Shock-Camo Skin", "Frost Immortal Skin", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Hobbled Dragon Key", "Ignis Solstice Skin", "Infested Catalyst", "Karak Desert-Camo Skin", "Limbo Magrite Helmet", "Luminous Dye", "Marelok Desert-Camo Skin", "Moa Specter", "Mutalist Alad V Assassinate", "Plinx Shock-Camo Skin", "Pyrana Synoid Skin", "Roller Specter", "Rubico Synoid Skin", "Scindo Solstice Skin", "Shield Osprey Specter", "Squad Ammo Restore (Medium)", "Squad Energy Restore (Medium)", "Squad Health Restore (Medium)", "Squad Shield Restore (Large)", "Squad Shield Restore (Medium)", "Titan Extractor", "Tonkor Desert-Camo Skin", "Uru Syandana", "Vapor Specter", "Vauban Armistice Helmet" ],
+    "parents": [ "Air Support Charges", "Ancient Healer Specter", "Atterax Desert-Camo Skin", "Axidrol Alloy", "Bishamo Pauldrons", "Bleeding Dragon Key", "Burston Solstice Skin", "Charger Specter", "Cipher", "Clan Key", "Clem Clone", "Control Module", "Coprite Alloy", "Corinth Solstice Skin", "Corrupted Bombard Specter", "Corrupted Lancer Specter", "Decaying Dragon Key", "Diriga Desert-Camo Skin", "Dual Zoren Dagger-Axe Skin", "Ember Immortal Skin", "Excalibur Immortal Skin", "Excalibur Mordred Helmet", "Exergis Shock-Camo Skin", "Extinguished Dragon Key", "Falcor Shock-Camo Skin", "Frost Immortal Skin", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Hobbled Dragon Key", "Ignis Solstice Skin", "Infested Catalyst", "Karak Desert-Camo Skin", "Lanzo Fishing Spear", "Lenz Solstice Skin", "Limbo Magrite Helmet", "Luminous Dye", "Marelok Desert-Camo Skin", "Moa Specter", "Mutalist Alad V Assassinate", "Nosam Cutter", "Plinx Shock-Camo Skin", "Pyrana Synoid Skin", "Roller Specter", "Rubico Synoid Skin", "Scindo Solstice Skin", "Shield Osprey Specter", "Shockprod Fishing Spear", "Squad Ammo Restore (Medium)", "Squad Energy Restore (Medium)", "Squad Health Restore (Medium)", "Squad Shield Restore (Large)", "Squad Shield Restore (Medium)", "Stunna Fishing Spear", "Tatsu Solstice Skin", "Titan Extractor", "Tonkor Desert-Camo Skin", "Tulok Fishing Spear", "Uru Syandana", "Vapor Specter", "Vauban Armistice Helmet", "Xaku Kintsu Helmet" ],
     "type": "Misc",
     "imageName": "ferrite.png",
     "category": "Misc",
@@ -27374,6 +27544,72 @@
     "excludeFromCodex": true,
     "type": "Extractor",
     "imageName": "festive-interior-decorations.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Feverspine",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBDeck",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 40,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.Guaranteed to drop from all fish on Deimos.",
+        "itemCount": 50,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBDeckBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 25,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
+        "name": "Parasitic Tethermaw",
+        "description": "Used to latch on to other life forms for feeding purposes, and to inject them with anticoagulants and sporelets.Source:LOBOTRISCID",
+        "itemCount": 15,
+        "imageName": "parasitic-tethermaw.png",
+        "tradable": false
+      }
+    ],
+    "type": "K-Drive Component",
+    "imageName": "feverspine.png",
     "category": "Misc",
     "tradable": false
   },
@@ -66812,6 +67048,72 @@
     "tradable": false
   },
   {
+    "name": "Gristlebuck",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBEngine",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBEngineBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
+        "name": "Ocular Stem-Root",
+        "description": "The organs that once served as eyes, prior to Infestation, are still replete with useful components.Source:FLAGELLOCANTH",
+        "itemCount": 10,
+        "imageName": "ocular-stem-root.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
+        "name": "Pustulent Cognitive Nodule",
+        "description": "The Infestation provokes the growth of multiple, seemingly redundant brain-like clusters, whose function may be linked to hivemind activity. Guaranteed to drop from these sources:AQUAPULMOCRYPTOSUCTUS",
+        "itemCount": 10,
+        "imageName": "pustulent-cognitive-nodule.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 20,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 40,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      }
+    ],
+    "type": "K-Drive Component",
+    "imageName": "gristlebuck.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileHarrowRedVeilTemple",
     "name": "Harrow'S Temple Scene",
     "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
@@ -66957,7 +67259,7 @@
     "name": "Hexenon",
     "description": "A reagent commonly used to produce highly combustible fuel.",
     "itemCount": 250,
-    "parents": [ "Bishamo Helmet", "Cortege Stock" ],
+    "parents": [ "Bishamo Helmet", "Cortege Stock", "Morgha Stock" ],
     "type": "Misc",
     "imageName": "hexenon.png",
     "category": "Misc",
@@ -67258,6 +67560,16 @@
     ],
     "type": "K-Drive Component",
     "imageName": "hothead.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedZongroRare",
+    "name": "Howler Undazoa Tag",
+    "description": "For saving a specimen of this species.",
+    "excludeFromCodex": true,
+    "type": "Conservation Tag",
+    "imageName": "howler-undazoa-tag.png",
     "category": "Misc",
     "tradable": false
   },
@@ -70369,7 +70681,6 @@
     "uniqueName": "/Lotus/Types/Game/KubrowPet/Eggs/KubrowEgg",
     "name": "Kubrow Egg",
     "description": "This egg is used to transplant the genetic code of a Kubrow onto a Kubrow clone.",
-    "primeSellingPrice": 1,
     "showInInventory": false,
     "type": "Pet Resource",
     "imageName": "kubrow-egg.png",
@@ -73939,7 +74250,6 @@
     "uniqueName": "/Lotus/Types/Items/Ships/DefaultShip",
     "name": "Liset",
     "description": "The landing craft of choice utilised by the Tenno during their missions.",
-    "primeSellingPrice": 524,
     "showInInventory": false,
     "type": "Orbiter",
     "imageName": "liset.png",
@@ -75887,6 +76197,320 @@
     ]
   },
   {
+    "name": "Macro Arcroid",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfClipBig/InfModularClipBigPart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfClipBig/InfModularClipBigBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemACutItem",
+        "name": "Faceted Tiametrite",
+        "description": "Refined purity freed from the Infested mass.",
+        "itemCount": 20,
+        "imageName": "faceted-tiametrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 20,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+        "name": "Scintillant",
+        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.",
+        "itemCount": 3,
+        "imageName": "scintillant.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
+        "name": "Tubercular Gill System",
+        "description": "Adaptive membranes allow many Deimos fish to move freely between fluid and gaseous environments.Guaranteed to drop from these sources:OSTIMYRAQUAPULMOVITREOSPINAMYXOSTOMATADUROID",
+        "itemCount": 15,
+        "imageName": "tubercular-gill-system.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "macro-arcroid.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Macro Thymoid",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfClipBig/InfModularClipBigCritStatPart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfClipBig/InfModularClipBigCritStatBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
+        "name": "Ferment Bladder",
+        "description": "Many Deimos fish secrete reagents in a pouchlike organ, creating volatile gases that enable limited periods of levitation. Guaranteed to drop from these sources:OSTIMYRAQUAPULMOVITREOSPINACRYPTOSUCTUSBARBISTEOKYMAEROSAMNIOPHYSIGLUTINOX",
+        "itemCount": 15,
+        "imageName": "ferment-bladder.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBCutItem",
+        "name": "Purged Dagonic",
+        "description": "Crystalline symmetry, a far cry from its corrupt origin.",
+        "itemCount": 20,
+        "imageName": "purged-dagonic.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 20,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+        "name": "Scintillant",
+        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.",
+        "itemCount": 3,
+        "imageName": "scintillant.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          }
+        ]
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "macro-thymoid.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Focus/AttackLens",
     "name": "Madurai Lens",
     "description": "Converts 1.25% of excess Affinity into Focus for the Madurai Way.",
@@ -76491,7 +77115,6 @@
     "uniqueName": "/Lotus/Types/Items/Ships/InsectShip",
     "name": "Mantis",
     "description": "This insect-like landing craft features Med-Tower air-support.",
-    "primeSellingPrice": 524,
     "showInInventory": false,
     "buildPrice": 25000,
     "buildTime": 259200,
@@ -79904,7 +80527,7 @@
     "name": "Morphics",
     "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
     "itemCount": 1,
-    "parents": [ "Air Support Charges", "Asa Syandana", "Atterax Desert-Camo Skin", "Auroxium Alloy", "Bishamo Pauldrons", "Blazing Step Ephemera", "Burston Solstice Skin", "Clan Key", "Corinth Solstice Skin", "Diriga Desert-Camo Skin", "Dual Zoren Dagger-Axe Skin", "Excalibur Mordred Helmet", "Exergis Shock-Camo Skin", "Falcor Shock-Camo Skin", "Forma", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Hespazym Alloy", "Hydroid Ketos Helmet", "Ignis Solstice Skin", "Karak Desert-Camo Skin", "Marelok Desert-Camo Skin", "Nightfall Apothic", "Plinx Shock-Camo Skin", "Pyrana Synoid Skin", "Rubico Synoid Skin", "Scindo Dagger-Axe Skin", "Scindo Solstice Skin", "Sunrise Apothic", "Synthula", "Tonkor Desert-Camo Skin", "Twilight Apothic" ],
+    "parents": [ "Air Support Charges", "Asa Syandana", "Atterax Desert-Camo Skin", "Auroxium Alloy", "Bishamo Pauldrons", "Blazing Step Ephemera", "Burston Solstice Skin", "Clan Key", "Corinth Solstice Skin", "Diriga Desert-Camo Skin", "Dual Zoren Dagger-Axe Skin", "Excalibur Mordred Helmet", "Exergis Shock-Camo Skin", "Falcor Shock-Camo Skin", "Forma", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Hespazym Alloy", "Hydroid Ketos Helmet", "Ignis Solstice Skin", "Karak Desert-Camo Skin", "Lenz Solstice Skin", "Marelok Desert-Camo Skin", "Nightfall Apothic", "Plinx Shock-Camo Skin", "Pyrana Synoid Skin", "Rubico Synoid Skin", "Scindo Dagger-Axe Skin", "Scindo Solstice Skin", "Sunrise Apothic", "Synthula", "Tatsu Solstice Skin", "Tonkor Desert-Camo Skin", "Twilight Apothic" ],
     "buildPrice": 15000,
     "buildTime": 3600,
     "skipBuildTimePrice": 2,
@@ -80909,7 +81532,6 @@
     "name": "Nightwave",
     "description": "A landing craft model that pays homage to the forever-wandering home of pirate DJ Nora Night. Stay deadly, Dreamers. Nightwave's air support releases powerful sound waves, destroying weaker enemies while stunning more powerful ones.",
     "excludeFromCodex": true,
-    "primeSellingPrice": 524,
     "showInInventory": false,
     "type": "Orbiter",
     "imageName": "nightwave.png",
@@ -81592,6 +82214,72 @@
     ]
   },
   {
+    "name": "Nodulite",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBFront",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBFrontBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 30,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
+        "name": "Ocular Stem-Root",
+        "description": "The organs that once served as eyes, prior to Infestation, are still replete with useful components.Source:FLAGELLOCANTH",
+        "itemCount": 5,
+        "imageName": "ocular-stem-root.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
+        "name": "Sporulate Sac",
+        "description": "These pressurized repositories of Infested spores require careful extraction or explosive rupture and local contamination may occur.Source:GLUTINOX",
+        "itemCount": 10,
+        "imageName": "sporulate-sac.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem",
+        "name": "Stellated Necrathene",
+        "description": "A prismatic refinement of raw Necrathene, highly sought after.",
+        "itemCount": 5,
+        "imageName": "stellated-necrathene.png",
+        "tradable": false
+      }
+    ],
+    "type": "K-Drive Component",
+    "imageName": "nodulite.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/NoraDogTag",
     "name": "Noradogtag",
     "description": "",
@@ -82091,6 +82779,15 @@
         "fixes": "Fixed not being able to Chat link the \"Landing Craft Foundry Segment\" and the \"Nutrio Incubator Upgrade Segment\"."
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
+    "name": "Ocular Stem-Root",
+    "description": "The organs that once served as eyes, prior to Infestation, are still replete with useful components.Source:FLAGELLOCANTH",
+    "type": "Fish Part",
+    "imageName": "ocular-stem-root.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/MiscItems/VayHekCoordinateFragmentD",
@@ -85330,6 +86027,71 @@
     ]
   },
   {
+    "name": "Palmaris",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Handles/InfPrimaryHandle/InfModularPrimaryHandlePart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 20,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.Guaranteed to drop from all fish on Deimos.",
+        "itemCount": 20,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Handles/InfPrimaryHandle/InfModularPrimaryHandleBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem",
+        "name": "Dendrite Blastoma",
+        "description": "Elements of other lifeforms are detectable in Infested body parts, such as this apparently parasitic clump of land-dwelling animal tissue.Guaranteed to drop from these sources:VITREOSPINABARBISTEO",
+        "itemCount": 10,
+        "imageName": "dendrite-blastoma.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBCutItem",
+        "name": "Purged Dagonic",
+        "description": "Crystalline symmetry, a far cry from its corrupt origin.",
+        "itemCount": 5,
+        "imageName": "purged-dagonic.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "palmaris.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Panzer Vulpaphyla",
     "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterRareRewardItem",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -85354,6 +86116,15 @@
     "description": "For saving a specimen of this species.",
     "type": "Conservation Tag",
     "imageName": "panzer-vulpaphyla-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
+    "name": "Parasitic Tethermaw",
+    "description": "Used to latch on to other life forms for feeding purposes, and to inject them with anticoagulants and sporelets.Source:LOBOTRISCID",
+    "type": "Fish Part",
+    "imageName": "parasitic-tethermaw.png",
     "category": "Misc",
     "tradable": false
   },
@@ -88897,7 +89668,7 @@
     "name": "Rubedo",
     "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
     "itemCount": 300,
-    "parents": [ "Atterax Desert-Camo Skin", "Axidrol Alloy", "Burston Solstice Skin", "Coprite Alloy", "Corinth Solstice Skin", "Devolved Namalon", "Diriga Desert-Camo Skin", "Fersteel Alloy", "Fragor Brokk Skin", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Ignis Solstice Skin", "Ivara Loxley Helmet", "Karak Desert-Camo Skin", "Marelok Desert-Camo Skin", "Mesa Ovis Helmet", "Pyrana Synoid Skin", "Pyrotic Alloy", "Rubico Synoid Skin", "Scindo Solstice Skin", "Tonkor Desert-Camo Skin", "Venerdo Alloy", "Zephyr Cierzo Helmet" ],
+    "parents": [ "Atterax Desert-Camo Skin", "Axidrol Alloy", "Burston Solstice Skin", "Coprite Alloy", "Corinth Solstice Skin", "Devolved Namalon", "Diriga Desert-Camo Skin", "Fersteel Alloy", "Fragor Brokk Skin", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Ignis Solstice Skin", "Ivara Loxley Helmet", "Karak Desert-Camo Skin", "Lenz Solstice Skin", "Marelok Desert-Camo Skin", "Mesa Ovis Helmet", "Pyrana Synoid Skin", "Pyrotic Alloy", "Rubico Synoid Skin", "Scindo Solstice Skin", "Tatsu Solstice Skin", "Tonkor Desert-Camo Skin", "Venerdo Alloy", "Zephyr Cierzo Helmet" ],
     "type": "Misc",
     "imageName": "rubedo.png",
     "category": "Misc",
@@ -89517,7 +90288,7 @@
     "name": "Salvage",
     "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
     "itemCount": 25000,
-    "parents": [ "Air Support Charges", "Akvasto Forest-Camo Skin", "Ancient Healer Specter", "Antiserum Injector", "Arcane Aura Helmet", "Arcane Aurora Helmet", "Arcane Avalon Helmet", "Arcane Backdraft Helmet", "Arcane Chlora Helmet", "Arcane Chorus Helmet", "Arcane Coil Helmet", "Arcane Esprit Helmet", "Arcane Essence Helmet", "Arcane Flux Helmet", "Arcane Gambit Helmet", "Arcane Hemlock Helmet", "Arcane Locust Helmet", "Arcane Mag Gauss Helmet", "Arcane Menticide Helmet", "Arcane Meridian Helmet", "Arcane Pendragon Helmet", "Arcane Phoenix Helmet", "Arcane Pulse Helmet", "Arcane Reverb Helmet", "Arcane Scorpion Helmet", "Arcane Squall Helmet", "Arcane Storm Helmet", "Arcane Swindle Helmet", "Arcane Thrak Helmet", "Arcane Vanguard Helmet", "Arcane Vespa Helmet", "Atlas Shikoro Helmet", "Atlas Tartarus Helmet", "Atterax Desert-Camo Skin", "Baruuk Meroe Helmet", "Bishamo Greaves", "Burston Solstice Skin", "Charger Specter", "Cipher", "Clem Clone", "Control Module", "Corinth Solstice Skin", "Corrupted Bombard Specter", "Corrupted Lancer Specter", "Daedalus Chest Plate", "Daedalus Shoulder Plates", "Daedalus Spurs", "Daman Sugatra", "Detron Shock-Camo Skin", "Diriga Desert-Camo Skin", "Edo Chest Plate", "Edo Shin Plates", "Edo Shoulder Plates", "Eos Chest Plate", "Eos Shoulder Plates", "Eos Spurs", "Exergis Shock-Camo Skin", "Falcor Shock-Camo Skin", "Fragor Brokk Skin", "Galatine Solstice Skin", "Gallium", "Gara Virago Helmet", "Gauss Mag Helmet", "Grendel Glutt Helmet", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Harrow Suffragan Helmet", "Hek Desert-Camo Skin", "Hildryn Asuron Helmet", "Hydroid Triton Helmet", "Ignis Solstice Skin", "Karak Desert-Camo Skin", "Khora Delphi Helmet", "Marelok Desert-Camo Skin", "Mirage Trivelin Helmet", "Moa Specter", "Morphics", "Nekros Raknis Helmet", "Nekros Shroud Helmet", "Neural Sensors", "Neurodes", "Nidus Myxini Helmet", "Nidus Prion Helmet", "Nova Quantum Helmet", "Oberon Markhor Helmet", "Oberon Oryx Helmet", "Octavia Cadenza Helmet", "Orokin Cell", "Pazza Sugatra", "Penta Shock-Camo Skin", "Phase Specter", "Plinx Shock-Camo Skin", "Protea Mavv Helmet", "Prova Shock-Camo Skin", "Pyrana Synoid Skin", "Roller Specter", "Rubico Synoid Skin", "Scindo Forest-Camo Skin", "Scindo Manticore Skin", "Scindo Solstice Skin", "Shield Osprey Specter", "Soma Forest-Camo Skin", "Squad Ammo Restore (Medium)", "Tantu Sugatra", "Titania Aurai Helmet", "Titania Mab Helmet", "Tonkor Desert-Camo Skin", "Travocyte Alloy", "Valkyr Bastet Helmet", "Valkyr Kara Helmet", "Vapor Specter", "Wisp Gaoth Helmet", "Yomo Syandana" ],
+    "parents": [ "Air Support Charges", "Akvasto Forest-Camo Skin", "Ancient Healer Specter", "Antiserum Injector", "Arcane Aura Helmet", "Arcane Aurora Helmet", "Arcane Avalon Helmet", "Arcane Backdraft Helmet", "Arcane Chlora Helmet", "Arcane Chorus Helmet", "Arcane Coil Helmet", "Arcane Esprit Helmet", "Arcane Essence Helmet", "Arcane Flux Helmet", "Arcane Gambit Helmet", "Arcane Hemlock Helmet", "Arcane Locust Helmet", "Arcane Mag Gauss Helmet", "Arcane Menticide Helmet", "Arcane Meridian Helmet", "Arcane Pendragon Helmet", "Arcane Phoenix Helmet", "Arcane Pulse Helmet", "Arcane Reverb Helmet", "Arcane Scorpion Helmet", "Arcane Squall Helmet", "Arcane Storm Helmet", "Arcane Swindle Helmet", "Arcane Thrak Helmet", "Arcane Vanguard Helmet", "Arcane Vespa Helmet", "Atlas Shikoro Helmet", "Atlas Tartarus Helmet", "Atterax Desert-Camo Skin", "Baruuk Meroe Helmet", "Bishamo Greaves", "Burston Solstice Skin", "Charger Specter", "Cipher", "Clem Clone", "Control Module", "Corinth Solstice Skin", "Corrupted Bombard Specter", "Corrupted Lancer Specter", "Daedalus Chest Plate", "Daedalus Shoulder Plates", "Daedalus Spurs", "Daman Sugatra", "Detron Shock-Camo Skin", "Diriga Desert-Camo Skin", "Edo Chest Plate", "Edo Shin Plates", "Edo Shoulder Plates", "Eos Chest Plate", "Eos Shoulder Plates", "Eos Spurs", "Exergis Shock-Camo Skin", "Falcor Shock-Camo Skin", "Fragor Brokk Skin", "Galatine Solstice Skin", "Gallium", "Gara Virago Helmet", "Gauss Mag Helmet", "Grendel Glutt Helmet", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Harrow Suffragan Helmet", "Hek Desert-Camo Skin", "Hildryn Asuron Helmet", "Hydroid Triton Helmet", "Ignis Solstice Skin", "Karak Desert-Camo Skin", "Khora Delphi Helmet", "Lenz Solstice Skin", "Marelok Desert-Camo Skin", "Mirage Trivelin Helmet", "Moa Specter", "Morphics", "Nekros Raknis Helmet", "Nekros Shroud Helmet", "Neural Sensors", "Neurodes", "Nidus Myxini Helmet", "Nidus Prion Helmet", "Nova Quantum Helmet", "Oberon Markhor Helmet", "Oberon Oryx Helmet", "Octavia Cadenza Helmet", "Orokin Cell", "Pazza Sugatra", "Penta Shock-Camo Skin", "Phase Specter", "Plinx Shock-Camo Skin", "Protea Mavv Helmet", "Prova Shock-Camo Skin", "Pyrana Synoid Skin", "Roller Specter", "Rubico Synoid Skin", "Scindo Forest-Camo Skin", "Scindo Manticore Skin", "Scindo Solstice Skin", "Shield Osprey Specter", "Soma Forest-Camo Skin", "Squad Ammo Restore (Medium)", "Tantu Sugatra", "Tatsu Solstice Skin", "Titania Aurai Helmet", "Titania Mab Helmet", "Tonkor Desert-Camo Skin", "Travocyte Alloy", "Valkyr Bastet Helmet", "Valkyr Kara Helmet", "Vapor Specter", "Wisp Gaoth Helmet", "Yomo Syandana" ],
     "type": "Misc",
     "imageName": "salvage.png",
     "category": "Misc",
@@ -90634,10 +91405,19 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedNexiferaRare",
+    "name": "Scarlet Nexifera Tag",
+    "description": "For saving a specimen of this species.",
+    "excludeFromCodex": true,
+    "type": "Conservation Tag",
+    "imageName": "scarlet-nexifera-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Ships/BlueSkyShip",
     "name": "Scimitar",
     "description": "This blade-like landing craft is armed with Carpet Bomb air-support.",
-    "primeSellingPrice": 524,
     "showInInventory": false,
     "buildPrice": 25000,
     "buildTime": 259200,
@@ -92887,7 +93667,7 @@
     "name": "Spinal Core Section",
     "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
     "itemCount": 20,
-    "parents": [ "Cortege Barrel", "Voidrig Capsule" ],
+    "parents": [ "Bonewidow Weapon Pod", "Cortege Barrel", "Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing", "Morgha Barrel", "Voidrig Capsule" ],
     "type": "Fish Part",
     "imageName": "spinal-core-section.png",
     "category": "Misc",
@@ -92983,6 +93763,71 @@
     "excludeFromCodex": true,
     "type": "Conservation Tag",
     "imageName": "splendid-mergoo-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Sporelacer",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggPart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 0.5,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 20,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.Guaranteed to drop from all fish on Deimos.",
+        "itemCount": 25,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
+        "name": "Sporulate Sac",
+        "description": "These pressurized repositories of Infested spores require careful extraction or explosive rupture and local contamination may occur.Source:GLUTINOX",
+        "itemCount": 10,
+        "imageName": "sporulate-sac.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "sporelacer.png",
     "category": "Misc",
     "tradable": false
   },
@@ -98839,6 +99684,72 @@
     ]
   },
   {
+    "name": "Steeba",
+    "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBJet",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "excludeFromCodex": true,
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBJetBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 10,
+        "imageName": "goblite-tears.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
+        "name": "Parasitic Tethermaw",
+        "description": "Used to latch on to other life forms for feeding purposes, and to inject them with anticoagulants and sporelets.Source:LOBOTRISCID",
+        "itemCount": 25,
+        "imageName": "parasitic-tethermaw.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 35,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
+        "name": "Saturated Muscle Mass",
+        "description": "Environmental contamination is co-responsible for mutations, alongside Infested cellular alteration.Guaranteed to drop from these sources:OSTIMYRKYMAEROS",
+        "itemCount": 20,
+        "imageName": "saturated-muscle-mass.png",
+        "tradable": false
+      }
+    ],
+    "type": "K-Drive Component",
+    "imageName": "steeba.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/SteelEssence",
     "name": "Steel Essence",
     "description": "Tokens of Teshin's Esteem earned from Eximus Enemies on The Steel Path. Can be exchanged for items that prove your warrior capabilities.",
@@ -100772,11 +101683,168 @@
     ]
   },
   {
+    "name": "Thymoid",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfSmallClip/InfModularClipSmallPart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Clips/InfSmallClip/InfModularClipSmallBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemACutItem",
+        "name": "Faceted Tiametrite",
+        "description": "Refined purity freed from the Infested mass.",
+        "itemCount": 20,
+        "imageName": "faceted-tiametrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
+        "name": "Ferment Bladder",
+        "description": "Many Deimos fish secrete reagents in a pouchlike organ, creating volatile gases that enable limited periods of levitation. Guaranteed to drop from these sources:OSTIMYRAQUAPULMOVITREOSPINACRYPTOSUCTUSBARBISTEOKYMAEROSAMNIOPHYSIGLUTINOX",
+        "itemCount": 15,
+        "imageName": "ferment-bladder.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 20,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+        "name": "Scintillant",
+        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.",
+        "itemCount": 3,
+        "imageName": "scintillant.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          }
+        ]
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "thymoid.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
     "name": "Tink Dissipator Coil",
     "description": "Discharges excess heat and energy through the casing.Acquired by disassembling Tink Servofish.",
     "itemCount": 15,
-    "parents": [ "Cortege Receiver" ],
+    "parents": [ "Cortege Receiver", "Morgha Receiver" ],
     "type": "Fish Part",
     "imageName": "tink-dissipator-coil.png",
     "category": "Misc",
@@ -101507,6 +102575,81 @@
     ],
     "type": "Melee",
     "imageName": "tyli-gyro.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Ulnaris",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Handles/InfSecondaryHandle/InfModularSecondaryHandlePart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.Guaranteed to drop from all fish on Deimos.",
+        "itemCount": 20,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Handles/InfSecondaryHandle/InfModularSecondaryHandleBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemACutItem",
+        "name": "Faceted Tiametrite",
+        "description": "Refined purity freed from the Infested mass.",
+        "itemCount": 5,
+        "imageName": "faceted-tiametrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+        "name": "Spinal Core Section",
+        "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
+        "itemCount": 10,
+        "imageName": "spinal-core-section.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 20,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "ulnaris.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedZongroCommon",
+    "name": "Umber Undazoa Tag",
+    "description": "For saving a specimen of this species.",
+    "excludeFromCodex": true,
+    "type": "Conservation Tag",
+    "imageName": "umber-undazoa-tag.png",
     "category": "Misc",
     "tradable": false
   },
@@ -107494,6 +108637,16 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedZongroUncommon",
+    "name": "Vaporous Undazoa Tag",
+    "description": "For saving a specimen of this species.",
+    "excludeFromCodex": true,
+    "type": "Conservation Tag",
+    "imageName": "vaporous-undazoa-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Vargeet Ii Jai",
     "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Balance/BalanceSpeedICritII",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -108795,6 +109948,81 @@
     "tradable": false
   },
   {
+    "name": "Vermisplicer",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamPart",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 0.5,
+    "buildPrice": 5000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
+        "name": "Benign Infested Tumor",
+        "description": "The Infestation infects all fish on Deimos, even those that do not show any external mutations.Guaranteed to drop from all fish on Deimos.",
+        "itemCount": 25,
+        "imageName": "benign-infested-tumor.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem",
+        "name": "Dendrite Blastoma",
+        "description": "Elements of other lifeforms are detectable in Infested body parts, such as this apparently parasitic clump of land-dwelling animal tissue.Guaranteed to drop from these sources:VITREOSPINABARBISTEO",
+        "itemCount": 10,
+        "imageName": "dendrite-blastoma.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
+        "name": "Ganglion",
+        "description": "A fallen clump of entangled nerve fibers, redundant organs, and thin sensory membranes.",
+        "itemCount": 15,
+        "imageName": "ganglion.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 20,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "vermisplicer.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedNexiferaUncommon",
+    "name": "Viridian Nexifera Tag",
+    "description": "For saving a specimen of this species.",
+    "excludeFromCodex": true,
+    "type": "Conservation Tag",
+    "imageName": "viridian-nexifera-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMergooRare",
     "name": "Viscid Avichaea Tag",
     "description": "For saving a specimen of this species.",
@@ -109122,7 +110350,6 @@
     "uniqueName": "/Lotus/Types/Items/Ships/GyroscopeShip",
     "name": "Xiphos",
     "description": "Featuring Sentry Gun air-support, this stylish landing craft is an asset in any battle.",
-    "primeSellingPrice": 524,
     "showInInventory": false,
     "buildPrice": 25000,
     "buildTime": 259200,

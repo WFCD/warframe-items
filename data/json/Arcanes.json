@@ -1,5 +1,35 @@
 [
   {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Deimos/FirePuddleOnKill",
+    "name": "[Hc] Fire Puddle Death",
+    "excludeFromCodex": true,
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "On Kill:10% chance for |BONUS| to Melee Weapons for 3s" ]
+      },
+      {
+        "stats": [ "On Kill:20% chance for |BONUS| to Melee Weapons for 6s" ]
+      },
+      {
+        "stats": [ "On Kill:30% chance for |BONUS| to Melee Weapons for 9s" ]
+      },
+      {
+        "stats": [ "On Kill:40% chance for |BONUS| to Melee Weapons for 12s|val|% Melee Damage" ]
+      },
+      {
+        "stats": [ "On Kill:50% chance for |BONUS| to Melee Weapons for 15s|val|% Melee Damage" ]
+      },
+      {
+        "stats": [ "On Kill:60% chance for |BONUS| to Melee Weapons for 18s|val|% Melee Damage" ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "hc-fire-puddle-death.png",
+    "category": "Arcanes",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Utility/RegenerateOnHeadshot",
     "name": "[Ph] Regenerate On Headshot",
     "excludeFromCodex": true,
@@ -7046,22 +7076,22 @@
     "rarity": "Rare",
     "levelStats": [
       {
-        "stats": [ "On Health Pickup:10% chance to Heal nearby allies" ]
+        "stats": [ "On Health Pickup:10% chance to restore 50 Health to allies within 10m" ]
       },
       {
-        "stats": [ "On Health Pickup:20% chance to Heal nearby allies" ]
+        "stats": [ "On Health Pickup:20% chance to restore 100 Health to allies within 12m" ]
       },
       {
-        "stats": [ "On Health Pickup:30% chance to Heal nearby allies" ]
+        "stats": [ "On Health Pickup:30% chance to restore 200 Health to allies within 15m" ]
       },
       {
-        "stats": [ "On Health Pickup:40% chance to Heal nearby allies+1 Arcane Revive" ]
+        "stats": [ "On Health Pickup:40% chance to restore 300 Health to allies within 18m" ]
       },
       {
-        "stats": [ "On Health Pickup:50% chance to Heal nearby allies+1 Arcane Revive" ]
+        "stats": [ "On Health Pickup:50% chance to restore 400 Health to allies within 20m" ]
       },
       {
-        "stats": [ "On Health Pickup:60% chance to Heal nearby allies+1 Arcane Revive" ]
+        "stats": [ "On Health Pickup:60% chance to restore 500 Health to allies within 25m" ]
       }
     ],
     "type": "Arcane",
@@ -9437,6 +9467,185 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Utility/BurningCystOnKill",
+    "name": "Residual Boils",
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "On Kitgun Kill:5% chance to spawn volatile hives for 3s that explode when enemies approach for 20 <DT_FIRE>Heat Damage in 2.5m. Standing in the area applies <DT_FIRE>Heat Damage type to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:10% chance to spawn volatile hives for 6s that explode when enemies approach for 40 <DT_FIRE>Heat Damage in 5m. Standing in the area applies <DT_FIRE>Heat Damage type to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:15% chance to spawn volatile hives for 9s that explode when enemies approach for 60 <DT_FIRE>Heat Damage in 7.5m. Standing in the area applies <DT_FIRE>Heat Damage type to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:20% chance to spawn volatile hives for 12s that explode when enemies approach for 80 <DT_FIRE>Heat Damage in 10m. Standing in the area applies <DT_FIRE>Heat Damage type to Theorem Arcanes." ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "residual-boils.png",
+    "category": "Arcanes",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Utility/IceMistOnKill",
+    "name": "Residual Malodor",
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "On Kitgun Kill:5% chance to create a frigid mist for 3s, dealing 10 <DT_COLD>Cold Damage/s. Standing in the area applies <DT_COLD>Cold Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:10% chance to create a frigid mist for 6s, dealing 20 <DT_COLD>Cold Damage/s. Standing in the area applies <DT_COLD>Cold Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:15% chance to create a frigid mist for 9s, dealing 30 <DT_COLD>Cold Damage/s. Standing in the area applies <DT_COLD>Cold Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:20% chance to create a frigid mist for 12s, dealing 40 <DT_COLD>Cold Damage/s. Standing in the area applies <DT_COLD>Cold Damage to Theorem Arcanes." ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "residual-malodor.png",
+    "category": "Arcanes",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Utility/LightningStrikeOnKill",
+    "name": "Residual Shock",
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "On Kitgun Kill:5% chance to spawn an electrified spike for 3s, dealing 50 <DT_ELECTRICITY>Electricity Damage to enemies within 2.5m. Standing in the area applies <DT_ELECTRICITY>Electricity Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:10% chance to spawn an electrified spike for 6s, dealing 100 <DT_ELECTRICITY>Electricity Damage to enemies within 5m. Standing in the area applies <DT_ELECTRICITY>Electricity Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:15% chance to spawn an electrified spike for 9s, dealing 150 <DT_ELECTRICITY>Electricity Damage to enemies within 7.5m. Standing in the area applies <DT_ELECTRICITY>Electricity Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:20% chance to spawn an electrified spike for 12s, dealing 200 <DT_ELECTRICITY>Electricity Damage to enemies within 10m. Standing in the area applies <DT_ELECTRICITY>Electricity Damage to Theorem Arcanes." ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "residual-shock.png",
+    "category": "Arcanes",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Utility/ToxicBloodOnKill",
+    "name": "Residual Viremia",
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "On Kitgun Kill:5% chance to create pool of toxic blood for 3s, dealing 10 <DT_POISON>Toxin Damage/s. Standing in the area applies the <DT_POISON>Toxin Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:10% chance to create pool of toxic blood for 6s, dealing 20 <DT_POISON>Toxin Damage/s. Standing in the area applies the <DT_POISON>Toxin Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:15% chance to create pool of toxic blood for 9s, dealing 30 <DT_POISON>Toxin Damage/s. Standing in the area applies the <DT_POISON>Toxin Damage to Theorem Arcanes." ]
+      },
+      {
+        "stats": [ "On Kitgun Kill:20% chance to create pool of toxic blood for 12s, dealing 40 <DT_POISON>Toxin Damage/s. Standing in the area applies the <DT_POISON>Toxin Damage to Theorem Arcanes." ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "residual-viremia.png",
+    "category": "Arcanes",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/OrbsOnResidualContact",
+    "name": "Theorem Contagion",
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 25 damage increasing their vulnerability to the globe's damage type by 25% for 1s. Globes will persist for 5s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 50 damage increasing their vulnerability to the globe's damage type by 50% for 2s. Globes will persist for 10s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 75 damage increasing their vulnerability to the globe's damage type by 75% for 6s. Globes will persist for 15s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 100 damage increasing their vulnerability to the globe's damage type by 100% for 4s. Globes will persist for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 125 damage increasing their vulnerability to the globe's damage type by 150% for 5s. Globes will persist for 25s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane creates a globe that orbits the player every 2s. The globes will strike the nearest enemy within 15m dealing 150 damage increasing their vulnerability to the globe's damage type by 200% for 6s. Globes will persist for 30s upon leaving the zone." ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "theorem-contagion.png",
+    "category": "Arcanes",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/WeaponDamageOnResidualContact",
+    "name": "Theorem Demulcent",
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases weapon damage by 2%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases weapon damage by 4%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases weapon damage by 6%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases weapon damage by 8%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases weapon damage by 10%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases weapon damage by 12%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "theorem-demulcent.png",
+    "category": "Arcanes",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/CompanionDamageOnResidualContact",
+    "name": "Theorem Infection",
+    "rarity": "Rare",
+    "levelStats": [
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 15m by 4%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 30m by 8%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 45m by 12%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 60m by 16%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 75m by 20%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      },
+      {
+        "stats": [ "Standing in a zone created by a Residual Arcane increases damage of companions and summoned allies within 90m by 24%/s stacking up to 15x. Effect persists for 20s upon leaving the zone." ]
+      }
+    ],
+    "type": "Arcane",
+    "imageName": "theorem-infection.png",
+    "category": "Arcanes",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Upgrades/CosmeticEnhancers/OperatorAmps/VoidToHeatDamage",

@@ -98,7 +98,7 @@
     "name": "Adramal Alloy",
     "description": "Purged of spores and contaminants, this alloy is highly versatile.",
     "itemCount": 80,
-    "parents": [ "Cortege Barrel", "Voidrig Casing" ],
+    "parents": [ "Bonewidow Engine", "Cortege Barrel", "Morgha Barrel", "Voidrig Casing" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -158,7 +158,7 @@
     "description": "Sinewy and metallic, possessed of great elastic strength.",
     "excludeFromCodex": true,
     "itemCount": 20,
-    "parents": [ "Adramal Alloy" ],
+    "parents": [ "Adramal Alloy", "Xaku Kintsu Helmet" ],
     "type": "Gem",
     "imageName": "adramalium.png",
     "category": "Resources",
@@ -972,6 +972,368 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartSystemsItem",
+    "name": "Bonewidow Capsule",
+    "description": "Capsule component for the BONEWIDOW Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
+        "name": "Biotic Filter",
+        "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.Guaranteed to drop from these sources:AQUAPULMODUROID",
+        "itemCount": 20,
+        "imageName": "biotic-filter.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechPartSystemsBlueprint",
+        "name": "Blueprint",
+        "description": "Capsule component for the BONEWIDOW Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem",
+        "name": "Damaged Necramech Pod",
+        "description": "A modular component for a Necramech. It’s damaged and in need of repair.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-pod.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Necramech",
+            "type": "Damaged Necramech Pod",
+            "chance": 0.0338,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+        "name": "Scintillant",
+        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.",
+        "itemCount": 4,
+        "imageName": "scintillant.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
+        "name": "Star Crimzian",
+        "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 6,
+        "imageName": "star-crimzian.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "bonewidow-capsule.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartChassisItem",
+    "name": "Bonewidow Casing",
+    "description": "Casing component for the BONEWIDOW Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechPartChassisBlueprint",
+        "name": "Blueprint",
+        "description": "Casing component for the BONEWIDOW Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartChassisItem",
+        "name": "Damaged Necramech Casing",
+        "description": "The damaged remains of a Necramech supporting frame.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-casing.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Necramech",
+            "type": "Damaged Necramech Casing",
+            "chance": 0.1162,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+        "name": "Goblite Tears",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 15,
+        "imageName": "goblite-tears.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 100,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
+        "name": "Thaumic Distillate",
+        "description": "Thaumica reduced to its most durable, workable elements.",
+        "itemCount": 20,
+        "imageName": "thaumic-distillate.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "bonewidow-casing.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartEngineItem",
+    "name": "Bonewidow Engine",
+    "description": "Engine component for the BONEWIDOW Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 120,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechPartEngineBlueprint",
+        "name": "Blueprint",
+        "description": "Engine component for the BONEWIDOW Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
+        "name": "Cranial Foremount",
+        "description": "Beneath the membranous protein layers can be found a secondary 'skull'; flexible, tough and highly conductive.Source:MYXOSTOMATA",
+        "itemCount": 2,
+        "imageName": "cranial-foremount.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartEngineItem",
+        "name": "Damaged Necramech Engine",
+        "description": "An engine designed for use in a Necramech. Unfortunately, it’s damaged.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-engine.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Necramech",
+            "type": "Damaged Necramech Engine",
+            "chance": 0.0338,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem",
+        "name": "Titanium",
+        "description": "This highly malleable metal was exploited in great quantities by the Orokin and can now only be found within space rock.",
+        "itemCount": 750,
+        "imageName": "titanium.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Gyrix",
+            "type": "Titanium",
+            "chance": 0.1162,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ionyx",
+            "type": "Titanium",
+            "chance": 0.1162,
+            "rarity": "Uncommon"
+          }
+        ]
+      }
+    ],
+    "type": "Resource",
+    "imageName": "bonewidow-engine.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartWeaponPodItem",
+    "name": "Bonewidow Weapon Pod",
+    "description": "Weapon Pod component for the BONEWIDOW Necramech.",
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechPartWeaponPodBlueprint",
+        "name": "Blueprint",
+        "description": "Weapon Pod component for the BONEWIDOW Necramech.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartWeaponPodItem",
+        "name": "Damaged Necramech Weapon Pod",
+        "description": "A broken weapon system intended for a Necramech.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-pod.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Necramech",
+            "type": "Damaged Necramech Weapon Pod",
+            "chance": 0.1162,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
+        "name": "Devolved Namalon",
+        "description": "Retrieved from its Infested state, restored to worth and utility.",
+        "itemCount": 80,
+        "imageName": "devolved-namalon.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+        "name": "Spinal Core Section",
+        "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
+        "itemCount": 6,
+        "imageName": "spinal-core-section.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/SolarisCoolCommonFishAItem",
+        "name": "Tink",
+        "description": "Repairs robotics that have broken down in the aqua systems. It can be found in ponds around Venus.",
+        "itemCount": 45,
+        "imageName": "tink.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "bonewidow-weapon-pod.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/BracoidRailjackItem",
     "name": "Bracoid",
     "description": "A rare bacterial entity that increases the spread of Infestation found on Infested Ships.",
@@ -1379,7 +1741,7 @@
     "name": "Cabochon Embolos",
     "description": "Convex and smooth, worked as a lens or for ornament.",
     "itemCount": 10,
-    "parents": [ "Cortege Stock" ],
+    "parents": [ "Cortege Stock", "Morgha Stock" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -1985,8 +2347,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
     "name": "Coprite Alloy",
     "description": "Coprun that has been forged into a stronger metal.",
-    "itemCount": 200,
-    "parents": [ "Ceno Pauldrons", "Vahd Pauldrons", "Zauba Pauldrons" ],
+    "itemCount": 100,
+    "parents": [ "Ceno Pauldrons", "Peram Fishing Spear", "Vahd Pauldrons", "Zauba Pauldrons" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -2678,6 +3040,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem",
     "name": "Damaged Necramech Pod",
     "description": "A modular component for a Necramech. It’s damaged and in need of repair.",
+    "itemCount": 1,
+    "parents": [ "Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing" ],
     "type": "Resource",
     "imageName": "damaged-necramech-pod.png",
     "category": "Resources",
@@ -3012,7 +3376,7 @@
     "name": "Devolved Namalon",
     "description": "Retrieved from its Infested state, restored to worth and utility.",
     "itemCount": 80,
-    "parents": [ "Cortege Receiver" ],
+    "parents": [ "Bonewidow Weapon Pod", "Cortege Receiver", "Morgha Receiver" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -3214,6 +3578,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
     "name": "Esher Devar",
     "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
+    "itemCount": 1,
+    "parents": [ "Focused Nosam Cutter" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -3439,6 +3805,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemACutItem",
     "name": "Faceted Tiametrite",
     "description": "Refined purity freed from the Infested mass.",
+    "itemCount": 1,
+    "parents": [ "Xaku Kintsu Helmet" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -3533,7 +3901,7 @@
     "name": "Fersteel Alloy",
     "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
     "itemCount": 20,
-    "parents": [ "Advanced Nosam Cutter", "Ceno Apparel", "Ceno Cuirass", "Cortege Barrel", "Vahd Apparel", "Vahd Cuirass", "Zauba Apparel", "Zauba Cuirass" ],
+    "parents": [ "Advanced Nosam Cutter", "Ceno Apparel", "Ceno Cuirass", "Cortege Barrel", "Morgha Barrel", "Peram Fishing Spear", "Vahd Apparel", "Vahd Cuirass", "Zauba Apparel", "Zauba Cuirass" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -4844,6 +5212,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
     "name": "Goblite Tears",
     "description": "Polished and cut to perfection.",
+    "itemCount": 15,
+    "parents": [ "Bonewidow Casing" ],
     "buildPrice": 2500,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -5006,8 +5376,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
     "name": "Grokdrul",
     "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.Location: Plains of Eidolon",
-    "itemCount": 20,
-    "parents": [ "Archwing Launcher", "Eidolon Phylaxis", "Fosfor Blau" ],
+    "itemCount": 55,
+    "parents": [ "Archwing Launcher", "Eidolon Phylaxis", "Fosfor Blau", "Lanzo Fishing Spear", "Peram Fishing Spear", "Shockprod Fishing Spear", "Stunna Fishing Spear", "Tulok Fishing Spear" ],
     "type": "Resource",
     "imageName": "grokdrul.png",
     "category": "Resources",
@@ -6285,7 +6655,7 @@
     "name": "Marquise Veridos",
     "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
     "itemCount": 20,
-    "parents": [ "Advanced Nosam Cutter", "Sunpoint Plasma Drill", "Voidrig Capsule" ],
+    "parents": [ "Advanced Nosam Cutter", "Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing", "Sunpoint Plasma Drill", "Voidrig Capsule" ],
     "buildPrice": 2500,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -6402,6 +6772,321 @@
     "parents": [ "Amethyst Antitoxin", "Health Restore (Large)", "Topaz Antitoxin" ],
     "type": "Plant",
     "imageName": "moonlight-threshcone.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherBarrelItem",
+    "name": "Morgha Barrel",
+    "description": "A Necramech weapon-crafting component.",
+    "excludeFromCodex": true,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 80,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechGrenadeLauncherBarrelBlueprint",
+        "name": "Blueprint",
+        "description": "A Necramech weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponBarrelItem",
+        "name": "Damaged Necramech Weapon Barrel",
+        "description": "The damaged barrel of a heavy-duty Necramech weapon.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-barrel.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Bounty Completion), Rotation A",
+            "type": "Damaged Necramech Weapon Barrel",
+            "chance": 0.05,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
+        "name": "Fersteel Alloy",
+        "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 20,
+        "imageName": "fersteel-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
+        "name": "Spinal Core Section",
+        "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
+        "itemCount": 20,
+        "imageName": "spinal-core-section.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "morgha-barrel.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherReceiverItem",
+    "name": "Morgha Receiver",
+    "description": "A Necramech weapon-crafting component.",
+    "excludeFromCodex": true,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechGrenadeLauncherReceiverBlueprint",
+        "name": "Blueprint",
+        "description": "A Necramech weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponReceiverItem",
+        "name": "Damaged Necramech Weapon Receiver",
+        "description": "A broken frame that can be used in the construction of a Necramech weapon.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-receiver.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Bounty Completion), Rotation A",
+            "type": "Damaged Necramech Weapon Receiver",
+            "chance": 0.05,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
+        "name": "Devolved Namalon",
+        "description": "Retrieved from its Infested state, restored to worth and utility.",
+        "itemCount": 80,
+        "imageName": "devolved-namalon.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
+        "name": "Tink Dissipator Coil",
+        "description": "Discharges excess heat and energy through the casing.Acquired by disassembling Tink Servofish.",
+        "itemCount": 15,
+        "imageName": "tink-dissipator-coil.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem",
+        "name": "Trapezium Xenorhast",
+        "description": "Facets gleam with the un-light of the Void.",
+        "itemCount": 10,
+        "imageName": "trapezium-xenorhast.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Bounty Completion), Rotation A",
+            "type": "Trapezium Xenorhast",
+            "chance": 0.0625,
+            "rarity": "Rare"
+          }
+        ]
+      }
+    ],
+    "type": "Resource",
+    "imageName": "morgha-receiver.png",
+    "category": "Resources",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherStockItem",
+    "name": "Morgha Stock",
+    "description": "A Necramech weapon-crafting component.",
+    "excludeFromCodex": true,
+    "buildPrice": 1000,
+    "buildTime": 60,
+    "skipBuildTimePrice": 5,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechGrenadeLauncherStockBlueprint",
+        "name": "Blueprint",
+        "description": "A Necramech weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBCutItem",
+        "name": "Cabochon Embolos",
+        "description": "Convex and smooth, worked as a lens or for ornament.",
+        "itemCount": 10,
+        "imageName": "cabochon-embolos.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Bounty Completion), Rotation A",
+            "type": "Cabochon Embolos",
+            "chance": 0.0625,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponStockItem",
+        "name": "Damaged Necramech Weapon Stock",
+        "description": "The fractured back portion of a large Necramech weapon.",
+        "itemCount": 1,
+        "imageName": "damaged-necramech-weapon-stock.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Bounty Completion), Rotation A",
+            "type": "Damaged Necramech Weapon Stock",
+            "chance": 0.05,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
+        "name": "Hexenon",
+        "description": "A reagent commonly used to produce highly combustible fuel.",
+        "itemCount": 250,
+        "imageName": "hexenon.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Amalgam Arca Heqet",
+            "type": "Hexenon",
+            "chance": 0.0503,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Arca Kucumatz",
+            "type": "Hexenon",
+            "chance": 0.0503,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Cinder Machinist",
+            "type": "Hexenon",
+            "chance": 0.0503,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Phase Moa",
+            "type": "Hexenon",
+            "chance": 0.0503,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Swarm Satyr",
+            "type": "Hexenon",
+            "chance": 0.0503,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Alkonost",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Heqet",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Kucumatz",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Machinist",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Moa",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Osprey",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Amalgam Satyr",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Demolyst Heqet",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Demolyst Machinist",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Demolyst Moa",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Demolyst Osprey",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          },
+          {
+            "location": "Demolyst Satyr",
+            "type": "Hexenon",
+            "chance": 0.0719,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 80,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      }
+    ],
+    "type": "Resource",
+    "imageName": "morgha-stock.png",
     "category": "Resources",
     "tradable": false
   },
@@ -6652,8 +7337,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem",
     "name": "Nistlepod",
     "description": "Used by the Nistlebrush to trap and kill prey.Location: Plains of Eidolon",
-    "itemCount": 10,
-    "parents": [ "Eidolon Phylaxis", "Peppered Bait", "Twilight Bait", "Vasca Curative" ],
+    "itemCount": 70,
+    "parents": [ "Eidolon Phylaxis", "Lanzo Fishing Spear", "Peppered Bait", "Peram Fishing Spear", "Shockprod Fishing Spear", "Stunna Fishing Spear", "Tulok Fishing Spear", "Twilight Bait", "Vasca Curative" ],
     "type": "Resource",
     "imageName": "nistlepod.png",
     "category": "Resources",
@@ -7069,8 +7754,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
     "name": "Pyrotic Alloy",
     "description": "Pyrol that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
-    "itemCount": 300,
-    "parents": [ "Ceno Greaves", "Vahd Greaves", "Zauba Greaves" ],
+    "itemCount": 40,
+    "parents": [ "Ceno Greaves", "Focused Nosam Cutter", "Shockprod Fishing Spear", "Stunna Fishing Spear", "Tulok Fishing Spear", "Vahd Greaves", "Zauba Greaves" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -7566,8 +8251,8 @@
     "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
     "name": "Scintillant",
     "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.",
-    "itemCount": 2,
-    "parents": [ "Voidrig Capsule" ],
+    "itemCount": 4,
+    "parents": [ "Bonewidow Capsule", "Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing", "Voidrig Capsule" ],
     "type": "Resource",
     "imageName": "scintillant.png",
     "category": "Resources",
@@ -7849,6 +8534,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
     "name": "Star Crimzian",
     "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
+    "itemCount": 6,
+    "parents": [ "Bonewidow Capsule" ],
     "buildPrice": 5000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -7978,6 +8665,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
     "name": "Tear Azurite",
     "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
+    "itemCount": 1,
+    "parents": [ "Focused Nosam Cutter" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -8031,7 +8720,7 @@
     "name": "Tempered Bapholite",
     "description": "Fused with its inert Infested tendrils into a durable alloy.",
     "itemCount": 80,
-    "parents": [ "Cortege Stock", "Voidrig Engine" ],
+    "parents": [ "Bonewidow Casing", "Cortege Stock", "Morgha Stock", "Voidrig Engine" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -8138,8 +8827,8 @@
     "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
     "name": "Thaumic Distillate",
     "description": "Thaumica reduced to its most durable, workable elements.",
-    "itemCount": 80,
-    "parents": [ "Voidrig Weapon Pod" ],
+    "itemCount": 20,
+    "parents": [ "Bonewidow Casing", "Voidrig Weapon Pod" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
@@ -8484,8 +9173,8 @@
     "uniqueName": "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem",
     "name": "Titanium",
     "description": "This highly malleable metal was exploited in great quantities by the Orokin and can now only be found within space rock.",
-    "itemCount": 800,
-    "parents": [ "Protea Mavv Helmet" ],
+    "itemCount": 750,
+    "parents": [ "Bonewidow Engine", "Protea Mavv Helmet" ],
     "type": "Resource",
     "imageName": "titanium.png",
     "category": "Resources",
@@ -8617,7 +9306,7 @@
     "name": "Trapezium Xenorhast",
     "description": "Facets gleam with the un-light of the Void.",
     "itemCount": 10,
-    "parents": [ "Cortege Receiver" ],
+    "parents": [ "Cortege Receiver", "Morgha Receiver" ],
     "buildPrice": 1000,
     "buildTime": 60,
     "skipBuildTimePrice": 5,
