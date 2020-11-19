@@ -7793,6 +7793,101 @@
     "disposition": 4
   },
   {
+    "name": "Arum Spinosa",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/InfWarfan/InfWarfanWeapon",
+    "damagePerShot": [ 35.639999, 59.400002, 201.96001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 297,
+    "description": "Slash through enemies with two leaves of the exceedingly rare Arum Spinosa plant. Heavy Attack to whip a flurry of toxic spines at ranged attackers.",
+    "criticalChance": 0.090000004,
+    "criticalMultiplier": 1.9,
+    "procChance": 0.37,
+    "fireRate": 1.0833334,
+    "masteryReq": 11,
+    "productCategory": "Melee",
+    "slot": 5,
+    "omegaAttenuation": 0.5,
+    "blockingAngle": 55,
+    "comboDuration": 5,
+    "followThrough": 0.69999999,
+    "range": 1.7,
+    "slamAttack": 594,
+    "slamRadialDamage": 297,
+    "slamRadius": 5,
+    "slideAttack": 297,
+    "heavyAttackDamage": 1188,
+    "heavySlamAttack": 297,
+    "heavySlamRadialDamage": 297,
+    "heavySlamRadius": 6,
+    "windUp": 0.5,
+    "buildPrice": 20000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/InfWarFanBlueprint",
+        "name": "Blueprint",
+        "description": "Slash through enemies with two leaves of the exceedingly rare Arum Spinosa plant. Heavy Attack to whip a flurry of toxic spines at ranged attackers.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBCutItem",
+        "name": "Cabochon Embolos",
+        "description": "Convex and smooth, worked as a lens or for ornament.",
+        "itemCount": 1,
+        "imageName": "cabochon-embolos.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Bounty Completion), Rotation A",
+            "type": "Cabochon Embolos",
+            "chance": 0.0625,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfWarFanGuard",
+        "name": "Guard",
+        "description": "A weapon-crafting component.",
+        "itemCount": 2,
+        "imageName": "guard.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfWarFanRivet",
+        "name": "Rivet",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "rivet.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem",
+        "name": "Trapezium Xenorhast",
+        "description": "Facets gleam with the un-light of the Void.",
+        "itemCount": 1,
+        "imageName": "trapezium-xenorhast.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Bounty Completion), Rotation A",
+            "type": "Trapezium Xenorhast",
+            "chance": 0.0625,
+            "rarity": "Rare"
+          }
+        ]
+      }
+    ],
+    "type": "Melee",
+    "imageName": "arum-spinosa.png",
+    "category": "Melee",
+    "tradable": false
+  },
+  {
     "name": "Atterax",
     "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerWhip/GrineerWhip",
     "damagePerShot": [ 6.4500003, 6.4500003, 116.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -25775,7 +25870,7 @@
     "slamRadialDamage": 183,
     "slamRadius": 5,
     "slideAttack": 366,
-    "heavyAttackDamage": 732,
+    "heavyAttackDamage": 183,
     "heavySlamAttack": 732,
     "heavySlamRadialDamage": 732,
     "heavySlamRadius": 6,
@@ -53472,7 +53567,7 @@
     "slamRadialDamage": 230,
     "slamRadius": 5,
     "slideAttack": 460,
-    "heavyAttackDamage": 920,
+    "heavyAttackDamage": 230,
     "heavySlamAttack": 920,
     "heavySlamRadialDamage": 920,
     "heavySlamRadius": 6,
@@ -64728,7 +64823,7 @@
     "slamRadialDamage": 105,
     "slamRadius": 5,
     "slideAttack": 210,
-    "heavyAttackDamage": 420,
+    "heavyAttackDamage": 105,
     "heavySlamAttack": 420,
     "heavySlamRadialDamage": 420,
     "heavySlamRadius": 6,
@@ -65699,7 +65794,7 @@
     "slamRadialDamage": 164,
     "slamRadius": 5,
     "slideAttack": 328,
-    "heavyAttackDamage": 656,
+    "heavyAttackDamage": 164,
     "heavySlamAttack": 656,
     "heavySlamRadialDamage": 656,
     "heavySlamRadius": 6,
@@ -69468,7 +69563,7 @@
     "comboDuration": 5,
     "followThrough": 0.69999999,
     "range": 1.7,
-    "slamAttack": 480,
+    "slamAttack": 320,
     "slamRadialDamage": 160,
     "slamRadius": 5,
     "slideAttack": 160,
@@ -70080,7 +70175,7 @@
     "slamRadialDamage": 149,
     "slamRadius": 5,
     "slideAttack": 298,
-    "heavyAttackDamage": 596,
+    "heavyAttackDamage": 149,
     "heavySlamAttack": 596,
     "heavySlamRadialDamage": 596,
     "heavySlamRadius": 6,
@@ -85580,7 +85675,7 @@
     "slamRadialDamage": 84,
     "slamRadius": 5,
     "slideAttack": 168,
-    "heavyAttackDamage": 336,
+    "heavyAttackDamage": 84,
     "heavySlamAttack": 336,
     "heavySlamRadialDamage": 336,
     "heavySlamRadius": 6,
@@ -112621,7 +112716,7 @@
     "slamRadialDamage": 195,
     "slamRadius": 5,
     "slideAttack": 390,
-    "heavyAttackDamage": 780,
+    "heavyAttackDamage": 195,
     "heavySlamAttack": 780,
     "heavySlamRadialDamage": 780,
     "heavySlamRadius": 6,
@@ -115741,7 +115836,7 @@
     "slamRadialDamage": 262,
     "slamRadius": 5,
     "slideAttack": 524,
-    "heavyAttackDamage": 1048,
+    "heavyAttackDamage": 262,
     "heavySlamAttack": 1048,
     "heavySlamRadialDamage": 1048,
     "heavySlamRadius": 6,
@@ -123167,6 +123262,327 @@
     "disposition": 5
   },
   {
+    "name": "Pulmonars",
+    "uniqueName": "/Lotus/Weapons/Infested/Melee/Nunchaku/InfNunchuck/InfNunchuck",
+    "damagePerShot": [ 193.00002, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 97, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 290,
+    "description": "Pummel and infect with these two pulsating hunks of flesh connected by a ligament. Take-hold of the malignant evolution of an ancient martial weapon.",
+    "criticalChance": 0.19,
+    "criticalMultiplier": 2.3,
+    "procChance": 0.33000004,
+    "fireRate": 0.91666669,
+    "masteryReq": 11,
+    "productCategory": "Melee",
+    "slot": 5,
+    "omegaAttenuation": 0.5,
+    "blockingAngle": 55,
+    "comboDuration": 9,
+    "followThrough": 0.5,
+    "range": 2.507992,
+    "slamAttack": 580,
+    "slamRadialDamage": 290,
+    "slamRadius": 7,
+    "slideAttack": 580,
+    "heavyAttackDamage": 1450,
+    "heavySlamAttack": 1160,
+    "heavySlamRadialDamage": 1160,
+    "heavySlamRadius": 9,
+    "windUp": 0.5,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.This resource can be found in the Void.",
+        "itemCount": 2,
+        "imageName": "argon-crystal.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Stribog (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0367,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Marduk (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.0442,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.1106,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Hallowed Flame Endurance Caches, Rotation B",
+            "type": "Argon Crystal",
+            "chance": 0.1265,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.1518,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "type": "Argon Crystal",
+            "chance": 0.1936,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Corrupted Vor",
+            "type": "Argon Crystal",
+            "chance": 0.5,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/InfNunchuckBlueprint",
+        "name": "Blueprint",
+        "description": "Pummel and infect with these two pulsating hunks of flesh connected by a ligament. Take-hold of the malignant evolution of an ancient martial weapon.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
+        "name": "Devolved Namalon",
+        "description": "Retrieved from its Infested state, restored to worth and utility.",
+        "itemCount": 60,
+        "imageName": "devolved-namalon.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+        "itemCount": 24000,
+        "imageName": "nano-spores.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
+        "name": "Parasitic Tethermaw",
+        "description": "Used to latch on to other life forms for feeding purposes, and to inject them with anticoagulants and sporelets.Source:LOBOTRISCID",
+        "itemCount": 24,
+        "imageName": "parasitic-tethermaw.png",
+        "tradable": false
+      }
+    ],
+    "type": "Melee",
+    "imageName": "pulmonars.png",
+    "category": "Melee",
+    "tradable": false
+  },
+  {
     "name": "Pupacyst",
     "uniqueName": "/Lotus/Weapons/Infested/Melee/Staff/InfStaff/InfStaff",
     "damagePerShot": [ 139, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 145, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -128526,7 +128942,7 @@
     "comboDuration": 5,
     "followThrough": 0.69999999,
     "range": 1.7,
-    "slamAttack": 690,
+    "slamAttack": 460,
     "slamRadialDamage": 230,
     "slamRadius": 5,
     "slideAttack": 230,
@@ -183073,7 +183489,7 @@
     "slamRadialDamage": 120,
     "slamRadius": 6,
     "slideAttack": 240,
-    "heavyAttackDamage": 480,
+    "heavyAttackDamage": 120,
     "heavySlamAttack": 480,
     "heavySlamRadialDamage": 480,
     "heavySlamRadius": 8,
