@@ -1440,7 +1440,6 @@
     "fusionLimit": 3,
     "compatName": " ELYTRON",
     "type": "Archwing Mod",
-    "description": "Core Vent Augment: <DT_EXPLOSION>Blast Damage ignites exhaust fumes for |DURATION|s. Enemies passing through the flames take |DAMAGE| <DT_FIRE>Heat Damage.",
     "levelStats": [
       {
         "stats": [ "Core Vent Augment: <DT_EXPLOSION>Blast Damage ignites exhaust fumes for 6s. Enemies passing through the flames take 200 <DT_FIRE>Heat Damage." ]
@@ -1599,7 +1598,6 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "excludeFromCodex": true,
     "isUtility": true,
     "compatName": "WARFRAME",
     "type": "Warframe",
@@ -4769,8 +4767,9 @@
     "name": "Archgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -9378,6 +9377,34 @@
     ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/6d/BleedingWillowModU145.png/revision/latest?cb=20171007144258",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Bleeding_Willow"
+  },
+  {
+    "uniqueName": "/Lotus/Powersuits/Garuda/GarudaUnstoppableAugmentCard",
+    "name": "Blending Talons",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "GARUDA",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Seeking Talons Augment - Tap to perform a 6m AoE around Garuda. Garuda's Talons gain 25% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status." ]
+      },
+      {
+        "stats": [ "Seeking Talons Augment - Tap to perform a 7m AoE around Garuda. Garuda's Talons gain 50% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status." ]
+      },
+      {
+        "stats": [ "Seeking Talons Augment - Tap to perform a 8m AoE around Garuda. Garuda's Talons gain 75% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status." ]
+      },
+      {
+        "stats": [ "Seeking Talons Augment - Tap to perform a 9m AoE around Garuda. Garuda's Talons gain 100% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status." ]
+      }
+    ],
+    "imageName": "blending-talons.jpg",
+    "category": "Mods",
+    "isAugment": true,
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbThreeMeleeTree",
@@ -15022,7 +15049,6 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "excludeFromCodex": true,
     "isUtility": true,
     "compatName": "WARFRAME",
     "type": "Warframe",
@@ -15291,42 +15317,6 @@
     ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/9/9d/CombatDisciplineMod.png/revision/latest?cb=20190918201433",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Combat_Discipline",
-    "transmutable": false
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponGlaiveOnKillBuffSecondary",
-    "name": "Combo Fury",
-    "polarity": "Naramon",
-    "rarity": "Rare",
-    "baseDrain": 4,
-    "fusionLimit": 5,
-    "compatName": "THROWN MELEE",
-    "type": "Melee Mod",
-    "levelStats": [
-      {
-        "stats": [ "On Melee Kill:+16.7% Reload Speed+16.7% Magazine Capacity for 12s on Secondary Weapon" ]
-      },
-      {
-        "stats": [ "On Melee Kill:+33.3% Reload Speed+33.3% Magazine Capacity for 12s on Secondary Weapon" ]
-      },
-      {
-        "stats": [ "On Melee Kill:+50% Reload Speed+50% Magazine Capacity for 12s on Secondary Weapon" ]
-      },
-      {
-        "stats": [ "On Melee Kill:+66.6% Reload Speed+66.6% Magazine Capacity for 12s on Secondary Weapon" ]
-      },
-      {
-        "stats": [ "On Melee Kill:+83.3% Reload Speed+83.3% Magazine Capacity for 12s on Secondary Weapon" ]
-      },
-      {
-        "stats": [ "On Melee Kill:+100% Reload Speed+100% Magazine Capacity for 12s on Secondary Weapon" ]
-      }
-    ],
-    "imageName": "combo-fury.jpg",
-    "category": "Mods",
-    "tradable": true,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/1e/ComboFuryMod.png/revision/latest?cb=20201009034259",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Combo_Fury",
     "transmutable": false
   },
   {
@@ -19113,6 +19103,34 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Critical_Focus"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Wisp/WispHarnessAugmentCard",
+    "name": "Critical Surge",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "WISP",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Breach Surge Augment - Teleporting to a Reservoir costs 50% Energy and grants 2.5% Critical Chance to Sniper Rifles per meter traveled for 9s. Maximum of 350% Critical Chance." ]
+      },
+      {
+        "stats": [ "Breach Surge Augment - Teleporting to a Reservoir costs 50% Energy and grants 5% Critical Chance to Sniper Rifles per meter traveled for 9s. Maximum of 350% Critical Chance." ]
+      },
+      {
+        "stats": [ "Breach Surge Augment - Teleporting to a Reservoir costs 50% Energy and grants 7.5% Critical Chance to Sniper Rifles per meter traveled for 9s. Maximum of 350% Critical Chance." ]
+      },
+      {
+        "stats": [ "Breach Surge Augment - Teleporting to a Reservoir costs 50% Energy and grants 10% Critical Chance to Sniper Rifles per meter traveled for 9s. Maximum of 350% Critical Chance." ]
+      }
+    ],
+    "imageName": "critical-surge.jpg",
+    "category": "Mods",
+    "isAugment": true,
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualSwordCmbTwoMeleeTree",
     "name": "Crossing Snakes",
     "polarity": "Naramon",
@@ -19968,7 +19986,6 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "excludeFromCodex": true,
     "isUtility": true,
     "compatName": "WARFRAME",
     "type": "Warframe",
@@ -24523,7 +24540,6 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "excludeFromCodex": true,
     "isUtility": true,
     "compatName": "WARFRAME",
     "type": "Warframe",
@@ -26693,6 +26709,77 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Expel_Corpus"
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/WeaponPistolFactionDamageCorpus",
+    "name": "Expel Corpus",
+    "polarity": "Madurai",
+    "rarity": "Uncommon",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "PISTOL",
+    "type": "Secondary Mod",
+    "levelStats": [
+      {
+        "stats": [ "+5% Damage to Corpus" ]
+      },
+      {
+        "stats": [ "+10% Damage to Corpus" ]
+      },
+      {
+        "stats": [ "+15% Damage to Corpus" ]
+      },
+      {
+        "stats": [ "+20% Damage to Corpus" ]
+      },
+      {
+        "stats": [ "+25% Damage to Corpus" ]
+      },
+      {
+        "stats": [ "+30% Damage to Corpus" ]
+      }
+    ],
+    "imageName": "expel-corpus.jpg",
+    "category": "Mods",
+    "tradable": true,
+    "drops": [
+      {
+        "location": "Demolisher Anti Moa",
+        "type": "Expel Corpus",
+        "chance": 0.0375,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Demolisher Bursa",
+        "type": "Expel Corpus",
+        "chance": 0.0375,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Demolisher Hyena",
+        "type": "Expel Corpus",
+        "chance": 0.0375,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Demolisher Machinist",
+        "type": "Expel Corpus",
+        "chance": 0.0375,
+        "rarity": "Uncommon"
+      }
+    ],
+    "patchlogs": [
+      {
+        "name": "Update 11.3.0",
+        "date": "2013-12-12T03:08:07Z",
+        "url": "https://forums.warframe.com/topic/146580-update-1130/",
+        "additions": "",
+        "changes": "Conclave values added for Bane of Corpus, Bane of Grineer, Band of Infested, Expel Corpus, Expel Grineer, Expel Infested, Smite Corpus, Smite Grineer, Smite Infested",
+        "fixes": ""
+      }
+    ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/a8/ExpelCorpusModU145.png/revision/latest?cb=20171007150359",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Expel_Corpus"
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Pistol/WeaponPistolFactionDamageCorrupted",
     "name": "Expel Corrupted",
     "polarity": "Madurai",
@@ -27365,16 +27452,16 @@
     "type": "Arch-Melee",
     "levelStats": [
       {
-        "stats": [ "+25 Range" ]
+        "stats": [ "+25 Attraction Range (In Space)", "+0.8 Melee Range" ]
       },
       {
-        "stats": [ "+50 Range" ]
+        "stats": [ "+50 Attraction Range (In Space)", "+1.5 Melee Range" ]
       },
       {
-        "stats": [ "+75 Range" ]
+        "stats": [ "+75 Attraction Range (In Space)", "+2.3 Melee Range" ]
       },
       {
-        "stats": [ "+100 Range" ]
+        "stats": [ "+100 Attraction Range (In Space)", "+3 Melee Range" ]
       }
     ],
     "imageName": "extend.jpg",
@@ -49650,8 +49737,9 @@
     "name": "Kitgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -62768,6 +62856,34 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Runner/RunnerRushAugmentCard",
+    "name": "Mach Crash",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "GAUSS",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Mach Rush Augment - Impact shockwave leaves behind a vacuum that sucks in enemies within 5m." ]
+      },
+      {
+        "stats": [ "Mach Rush Augment - Impact shockwave leaves behind a vacuum that sucks in enemies within 6m." ]
+      },
+      {
+        "stats": [ "Mach Rush Augment - Impact shockwave leaves behind a vacuum that sucks in enemies within 7m." ]
+      },
+      {
+        "stats": [ "Mach Rush Augment - Impact shockwave leaves behind a vacuum that sucks in enemies within 8m." ]
+      }
+    ],
+    "imageName": "mach-crash.jpg",
+    "category": "Mods",
+    "isAugment": true,
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Hoverboard/HBFallVelocityMod",
     "name": "Mad Stack",
     "polarity": "Madurai",
@@ -65001,6 +65117,33 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowVampireShieldPrecept",
+    "name": "Martyr Symbiosis",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "VULPAPHYLA",
+    "type": "Creature Mod",
+    "levelStats": [
+      {
+        "stats": [ "Drains and stores 5 Health from corpses within 10m up to 5% of their Master's Health. Sacrifices itself to heal their master if they fall below 10% Health." ]
+      },
+      {
+        "stats": [ "Drains and stores 10 Health from corpses within 15m up to 10% of their Master's Health. Sacrifices itself to heal their master if they fall below 10% Health." ]
+      },
+      {
+        "stats": [ "Drains and stores 15 Health from corpses within 20m up to 15% of their Master's Health. Sacrifices itself to heal their master if they fall below 10% Health." ]
+      },
+      {
+        "stats": [ "Drains and stores 20 Health from corpses within 25m up to 20% of their Master's Health. Sacrifices itself to heal their master if they fall below 10% Health." ]
+      }
+    ],
+    "imageName": "martyr-symbiosis.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/DataSpike/Cipher/OnHackLockersMod",
     "name": "Master Key",
     "polarity": "Universal",
@@ -66923,8 +67066,9 @@
     "name": "Melee Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponMeleeDamageMod",
@@ -81856,6 +82000,43 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechSlideDamageMod",
+    "name": "Necramech Blitz",
+    "polarity": "Madurai",
+    "rarity": "Common",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+20% Slide Attack Damage" ]
+      },
+      {
+        "stats": [ "+40% Slide Attack Damage" ]
+      },
+      {
+        "stats": [ "+60% Slide Attack Damage" ]
+      },
+      {
+        "stats": [ "+80% Slide Attack Damage" ]
+      }
+    ],
+    "imageName": "necramech-blitz.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Necramech (Level 41 - 50)",
+        "type": "Necramech Blitz",
+        "chance": 0.0253,
+        "rarity": "Uncommon"
+      }
+    ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Blitz",
+    "transmutable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityDurationMod",
     "name": "Necramech Continuity",
     "polarity": "Madurai",
@@ -81900,81 +82081,75 @@
     "transmutable": false
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityStrengthMod",
-    "name": "Necramech Intensify",
-    "polarity": "Madurai",
-    "rarity": "Rare",
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechHoverEfficiencyMod",
+    "name": "Necramech Drift",
+    "polarity": "Vazarin",
+    "rarity": "Uncommon",
     "baseDrain": 6,
     "fusionLimit": 5,
     "compatName": "NECRAMECH",
     "type": "---",
     "levelStats": [
       {
-        "stats": [ "+5% Ability Strength" ]
+        "stats": [ "+25% Hover Efficiency" ]
       },
       {
-        "stats": [ "+10% Ability Strength" ]
+        "stats": [ "+50% Hover Efficiency" ]
       },
       {
-        "stats": [ "+15% Ability Strength" ]
+        "stats": [ "+75% Hover Efficiency" ]
       },
       {
-        "stats": [ "+20% Ability Strength" ]
+        "stats": [ "+100% Hover Efficiency" ]
       },
       {
-        "stats": [ "+25% Ability Strength" ]
+        "stats": [ "+125% Hover Efficiency" ]
       },
       {
-        "stats": [ "+30% Ability Strength" ]
+        "stats": [ "+150% Hover Efficiency" ]
       }
     ],
-    "imageName": "necramech-intensify.jpg",
+    "imageName": "necramech-drift.jpg",
     "category": "Mods",
-    "tradable": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e5/NecramechIntensifyMod.png/revision/latest?cb=20200829065529",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Intensify",
-    "transmutable": false
+    "tradable": false
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityStrengthMod",
-    "name": "Necramech Intensify",
-    "polarity": "Madurai",
-    "rarity": "Rare",
-    "baseDrain": 6,
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechBoostEfficiencyMod",
+    "name": "Necramech Efficiency",
+    "polarity": "Vazarin",
+    "rarity": "Uncommon",
+    "baseDrain": 4,
     "fusionLimit": 5,
     "compatName": "NECRAMECH",
     "type": "---",
     "levelStats": [
       {
-        "stats": [ "+5% Ability Strength" ]
+        "stats": [ "+10% Engine Efficiency" ]
       },
       {
-        "stats": [ "+10% Ability Strength" ]
+        "stats": [ "+20% Engine Efficiency" ]
       },
       {
-        "stats": [ "+15% Ability Strength" ]
+        "stats": [ "+30% Engine Efficiency" ]
       },
       {
-        "stats": [ "+20% Ability Strength" ]
+        "stats": [ "+40% Engine Efficiency" ]
       },
       {
-        "stats": [ "+25% Ability Strength" ]
+        "stats": [ "+50% Engine Efficiency" ]
       },
       {
-        "stats": [ "+30% Ability Strength" ]
+        "stats": [ "+60% Engine Efficiency" ]
       }
     ],
-    "imageName": "necramech-intensify.jpg",
+    "imageName": "necramech-efficiency.jpg",
     "category": "Mods",
-    "tradable": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e5/NecramechIntensifyMod.png/revision/latest?cb=20200829065529",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Intensify",
-    "transmutable": false
+    "tradable": false
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechMeleeDamageMod",
-    "name": "Necramech Pressure Point",
-    "polarity": "Madurai",
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechPowerMaxMod",
+    "name": "Necramech Flow",
+    "polarity": "Naramon",
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
@@ -81982,29 +82157,171 @@
     "type": "---",
     "levelStats": [
       {
-        "stats": [ "+10% Melee Damage" ]
+        "stats": [ "+25% Energy Max" ]
       },
       {
-        "stats": [ "+20% Melee Damage" ]
+        "stats": [ "+50% Energy Max" ]
       },
       {
-        "stats": [ "+30% Melee Damage" ]
+        "stats": [ "+75% Energy Max" ]
       },
       {
-        "stats": [ "+40% Melee Damage" ]
+        "stats": [ "+100% Energy Max" ]
       },
       {
-        "stats": [ "+50% Melee Damage" ]
+        "stats": [ "+125% Energy Max" ]
       },
       {
-        "stats": [ "+60% Melee Damage" ]
+        "stats": [ "+150% Energy Max" ]
       }
     ],
-    "imageName": "necramech-pressure-point.jpg",
+    "imageName": "necramech-flow.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechSlideEfficiencyMod",
+    "name": "Necramech Friction",
+    "polarity": "Vazarin",
+    "rarity": "Uncommon",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+10% Slide Efficiency" ]
+      },
+      {
+        "stats": [ "+20% Slide Efficiency" ]
+      },
+      {
+        "stats": [ "+30% Slide Efficiency" ]
+      },
+      {
+        "stats": [ "+40% Slide Efficiency" ]
+      },
+      {
+        "stats": [ "+50% Slide Efficiency" ]
+      },
+      {
+        "stats": [ "+60% Slide Efficiency" ]
+      }
+    ],
+    "imageName": "necramech-friction.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechMeleeSpeedMod",
+    "name": "Necramech Fury",
+    "polarity": "Madurai",
+    "rarity": "Common",
+    "baseDrain": 4,
+    "fusionLimit": 3,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+10% Melee Attack Speed" ]
+      },
+      {
+        "stats": [ "+20% Melee Attack Speed" ]
+      },
+      {
+        "stats": [ "+30% Melee Attack Speed" ]
+      },
+      {
+        "stats": [ "+40% Melee Attack Speed" ]
+      }
+    ],
+    "imageName": "necramech-fury.jpg",
     "category": "Mods",
     "tradable": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/6e/NecramechPressurePointMod.png/revision/latest?cb=20200829065539",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Pressure_Point",
+    "drops": [
+      {
+        "location": "Necramech (Level 51 - 100)",
+        "type": "Necramech Fury",
+        "chance": 0.0759,
+        "rarity": "Common"
+      }
+    ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/ae/NecramechFuryMod.png/revision/latest?cb=20200828152631",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Fury",
+    "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechJumpHeightMod",
+    "name": "Necramech Hydraulics",
+    "polarity": "Naramon",
+    "rarity": "Uncommon",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+30% Jump Height" ]
+      },
+      {
+        "stats": [ "+60% Jump Height" ]
+      },
+      {
+        "stats": [ "+90% Jump Height" ]
+      },
+      {
+        "stats": [ "+120% Jump Height" ]
+      }
+    ],
+    "imageName": "necramech-hydraulics.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Necramech (Level 51 - 100)",
+        "type": "Necramech Hydraulics",
+        "chance": 0.0111,
+        "rarity": "Uncommon"
+      }
+    ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/1e/NecramechHydraulicsMod.png/revision/latest?cb=20200912131429",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Hydraulics",
+    "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityStrengthMod",
+    "name": "Necramech Intensify",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+5% Ability Strength" ]
+      },
+      {
+        "stats": [ "+10% Ability Strength" ]
+      },
+      {
+        "stats": [ "+15% Ability Strength" ]
+      },
+      {
+        "stats": [ "+20% Ability Strength" ]
+      },
+      {
+        "stats": [ "+25% Ability Strength" ]
+      },
+      {
+        "stats": [ "+30% Ability Strength" ]
+      }
+    ],
+    "imageName": "necramech-intensify.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e5/NecramechIntensifyMod.png/revision/latest?cb=20200829065529",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Intensify",
     "transmutable": false
   },
   {
@@ -82171,36 +82488,6 @@
     "transmutable": false
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechBoostRechargeMod",
-    "name": "Necramech Refuel",
-    "polarity": "Vazarin",
-    "rarity": "Common",
-    "baseDrain": 6,
-    "fusionLimit": 3,
-    "compatName": "NECRAMECH",
-    "type": "---",
-    "levelStats": [
-      {
-        "stats": [ "+5% Engine Replenish" ]
-      },
-      {
-        "stats": [ "+10% Engine Replenish" ]
-      },
-      {
-        "stats": [ "+15% Engine Replenish" ]
-      },
-      {
-        "stats": [ "+20% Engine Replenish" ]
-      }
-    ],
-    "imageName": "necramech-refuel.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/04/NecramechRefuelMod.png/revision/latest?cb=20200829065538",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Refuel",
-    "transmutable": false
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechSlamDamageMod",
     "name": "Necramech Seismic Wave",
     "polarity": "Madurai",
@@ -82333,6 +82620,94 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityEfficiencyMod",
+    "name": "Necramech Streamline",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+5% Ability Efficiency" ]
+      },
+      {
+        "stats": [ "+10% Ability Efficiency" ]
+      },
+      {
+        "stats": [ "+15% Ability Efficiency" ]
+      },
+      {
+        "stats": [ "+20% Ability Efficiency" ]
+      },
+      {
+        "stats": [ "+25% Ability Efficiency" ]
+      },
+      {
+        "stats": [ "+30% Ability Efficiency" ]
+      }
+    ],
+    "imageName": "necramech-streamline.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Necramech (Level 51 - 100)",
+        "type": "Necramech Streamline",
+        "chance": 0.002,
+        "rarity": "Rare"
+      }
+    ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/ea/NecramechStreamlineMod.png/revision/latest?cb=20200902084630",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Streamline",
+    "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechAbilityRangeMod",
+    "name": "Necramech Stretch",
+    "polarity": "Naramon",
+    "rarity": "Uncommon",
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "NECRAMECH",
+    "type": "---",
+    "levelStats": [
+      {
+        "stats": [ "+7.5% Ability Range" ]
+      },
+      {
+        "stats": [ "+15% Ability Range" ]
+      },
+      {
+        "stats": [ "+22.5% Ability Range" ]
+      },
+      {
+        "stats": [ "+30% Ability Range" ]
+      },
+      {
+        "stats": [ "+37.5% Ability Range" ]
+      },
+      {
+        "stats": [ "+45% Ability Range" ]
+      }
+    ],
+    "imageName": "necramech-stretch.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "drops": [
+      {
+        "location": "Necramech (Level 51 - 100)",
+        "type": "Necramech Stretch",
+        "chance": 0.0111,
+        "rarity": "Uncommon"
+      }
+    ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/1a/NecramechStretchMod.png/revision/latest?cb=20200912132304",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Stretch",
+    "transmutable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechBoostMaxMod",
     "name": "Necramech Thrusters",
     "polarity": "Vazarin",
@@ -82368,42 +82743,6 @@
     ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/3f/NecramechThrustersMod.png/revision/latest?cb=20200829065535",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Thrusters",
-    "transmutable": false
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Necromech/NecromechHealthMaxMod",
-    "name": "Necramech Vitality",
-    "polarity": "Vazarin",
-    "rarity": "Common",
-    "baseDrain": 6,
-    "fusionLimit": 5,
-    "compatName": "NECRAMECH",
-    "type": "---",
-    "levelStats": [
-      {
-        "stats": [ "+20% Health" ]
-      },
-      {
-        "stats": [ "+40% Health" ]
-      },
-      {
-        "stats": [ "+60% Health" ]
-      },
-      {
-        "stats": [ "+80% Health" ]
-      },
-      {
-        "stats": [ "+100% Health" ]
-      },
-      {
-        "stats": [ "+120% Health" ]
-      }
-    ],
-    "imageName": "necramech-vitality.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/48/NecramechVitalityMod.png/revision/latest?cb=20200829065531",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Necramech_Vitality",
     "transmutable": false
   },
   {
@@ -89651,8 +89990,9 @@
     "name": "Pistol Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -102535,7 +102875,6 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "excludeFromCodex": true,
     "isUtility": true,
     "compatName": "WARFRAME",
     "type": "Warframe",
@@ -102651,16 +102990,16 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "+0.1 Punch Through" ]
+        "stats": [ "+0.3 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +16.7% Throw Damage" ]
       },
       {
-        "stats": [ "+0.2 Punch Through" ]
+        "stats": [ "+0.7 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +33.3% Throw Damage" ]
       },
       {
-        "stats": [ "+0.3 Punch Through" ]
+        "stats": [ "+1 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +50% Throw Damage" ]
       },
       {
-        "stats": [ "+0.4 Punch Through" ]
+        "stats": [ "+1.3 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +66.7% Throw Damage" ]
       }
     ],
     "imageName": "power-throw.jpg",
@@ -102818,22 +103157,22 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "+0.1 Punch Through" ]
+        "stats": [ "+0.3 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +16.7% Throw Damage" ]
       },
       {
-        "stats": [ "+0.2 Punch Through" ]
+        "stats": [ "+0.7 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +33.3% Throw Damage" ]
       },
       {
-        "stats": [ "+0.3 Punch Through" ]
+        "stats": [ "+1 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +50% Throw Damage" ]
       },
       {
-        "stats": [ "+0.4 Punch Through" ]
+        "stats": [ "+1.3 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +66.7% Throw Damage" ]
       },
       {
-        "stats": [ "+0.5 Punch Through" ]
+        "stats": [ "+1.7 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +83.3% Throw Damage" ]
       },
       {
-        "stats": [ "+0.6 Punch Through" ]
+        "stats": [ "+2 Punch Through", "On Consecutive throw (Max stacks 3):[PH] +100% Throw Damage" ]
       }
     ],
     "imageName": "power-throw.jpg",
@@ -117438,9 +117777,10 @@
     "name": "Rifle Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -128428,8 +128768,9 @@
     "name": "Rifle Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -149911,9 +150252,10 @@
     "name": "Shotgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -160198,8 +160540,9 @@
     "name": "Shotgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -174701,7 +175044,6 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "excludeFromCodex": true,
     "isUtility": true,
     "compatName": "WARFRAME",
     "type": "Warframe",
@@ -178245,7 +178587,6 @@
     "rarity": "Rare",
     "baseDrain": 4,
     "fusionLimit": 5,
-    "excludeFromCodex": true,
     "isUtility": true,
     "compatName": "WARFRAME",
     "type": "Warframe",
@@ -186917,6 +187258,34 @@
     "tradable": true
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Revenant/RevenantMarkAugmentCard",
+    "name": "Thrall Pact",
+    "polarity": "Zenurik",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "compatName": "REVENANT",
+    "type": "Warframe",
+    "levelStats": [
+      {
+        "stats": [ "Enthrall Augment - Gain +10% Primary Weapon Damage for each active Thrall." ]
+      },
+      {
+        "stats": [ "Enthrall Augment - Gain +15% Primary Weapon Damage for each active Thrall." ]
+      },
+      {
+        "stats": [ "Enthrall Augment - Gain +20% Primary Weapon Damage for each active Thrall." ]
+      },
+      {
+        "stats": [ "Enthrall Augment - Gain +25% Primary Weapon Damage for each active Thrall." ]
+      }
+    ],
+    "imageName": "thrall-pact.jpg",
+    "category": "Mods",
+    "isAugment": true,
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Hoverboard/HBTrickExplosionMod",
     "name": "Thrash Landing",
     "polarity": "Madurai",
@@ -190825,9 +191194,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateDamage",
@@ -190850,9 +191220,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateFireRate",
@@ -190875,9 +191246,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateDamage",
@@ -190901,9 +191273,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateDamage",
@@ -190927,9 +191300,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateDamage",
@@ -190953,9 +191327,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateDamage",
@@ -190979,9 +191354,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateDamage",
@@ -191005,9 +191381,10 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
     "excludeFromCodex": true,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "InnateElectricityDamage",
@@ -195552,6 +195929,87 @@
     "transmutable": true
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedPredatorMaggotSummonerPrecept",
+    "name": "Volatile Parasite",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 3,
+    "compatName": "PREDASITE",
+    "type": "Creature Mod",
+    "levelStats": [
+      {
+        "stats": [ "In combat, spits up a maggot every 30s. The maggot latches onto the nearest enemy and provokes other enemies within 10m to attack them. It then explodes dealing <DT_VIRAL>100 Viral Damage within 2.5m." ]
+      },
+      {
+        "stats": [ "In combat, spits up a maggot every 25s. The maggot latches onto the nearest enemy and provokes other enemies within 20m to attack them. It then explodes dealing <DT_VIRAL>200 Viral Damage within 5m." ]
+      },
+      {
+        "stats": [ "In combat, spits up a maggot every 20s. The maggot latches onto the nearest enemy and provokes other enemies within 30m to attack them. It then explodes dealing <DT_VIRAL>300 Viral Damage within 7.5m." ]
+      },
+      {
+        "stats": [ "In combat, spits up a maggot every 15s. The maggot latches onto the nearest enemy and provokes other enemies within 40m to attack them. It then explodes dealing <DT_VIRAL>400 Viral Damage within 10m." ]
+      }
+    ],
+    "imageName": "volatile-parasite.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponGlaiveExplodingReflectionDecreaseMod",
+    "name": "Volatile Quick Return",
+    "polarity": "Naramon",
+    "rarity": "Uncommon",
+    "baseDrain": 2,
+    "fusionLimit": 3,
+    "compatName": "THROWN MELEE",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [ "-1 Bounce", "+25% Blast Radius", "+25% Chance to explode on Bounce (Disables Punch Through)" ]
+      },
+      {
+        "stats": [ "-2 Bounce", "+50% Blast Radius", "+50% Chance to explode on Bounce (Disables Punch Through)" ]
+      },
+      {
+        "stats": [ "-3 Bounce", "+75% Blast Radius", "+75% Chance to explode on Bounce (Disables Punch Through)" ]
+      },
+      {
+        "stats": [ "-4 Bounce", "+100% Blast Radius", "+100% Chance to explode on Bounce (Disables Punch Through)" ]
+      }
+    ],
+    "imageName": "volatile-quick-return.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponGlaiveExplodingReflectionIncreaseMod",
+    "name": "Volatile Rebound",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 10,
+    "fusionLimit": 3,
+    "compatName": "THROWN MELEE",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [ "+25% Chance to explode on Bounce (Disables Punch Through)" ]
+      },
+      {
+        "stats": [ "+50% Chance to explode on Bounce (Disables Punch Through)" ]
+      },
+      {
+        "stats": [ "+75% Chance to explode on Bounce (Disables Punch Through)" ]
+      },
+      {
+        "stats": [ "+100% Chance to explode on Bounce (Disables Punch Through)" ]
+      }
+    ],
+    "imageName": "volatile-rebound.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/FireEventMeleeMod",
     "name": "Volcanic Edge",
     "polarity": "Madurai",
@@ -196782,8 +197240,9 @@
     "name": "Zaw Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 8768000,
+    "baseDrain": 3,
     "fusionLimit": 0,
+    "isUtility": true,
     "upgradeEntries": [
       {
         "tag": "WeaponMeleeDamageMod",

@@ -51455,6 +51455,177 @@
     "disposition": 5
   },
   {
+    "name": "Catabolyst",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfBeamPistol/InfBeamPistol",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 53,
+    "description": "Splatter enemies with a short-range stream of corrosive bile and then toss the ammo bladder as a grenade when reloading. The emptier the pistol’s ammo bladder, the more potent its damage. A fully empty bladder packs the biggest punch.",
+    "criticalChance": 0.11,
+    "criticalMultiplier": 2.9000001,
+    "procChance": 0.43000001,
+    "fireRate": 12.000001,
+    "masteryReq": 11,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 6.25,
+    "omegaAttenuation": 0.5,
+    "noise": "Alarming",
+    "magazineSize": 31,
+    "reloadTime": 1.7,
+    "multishot": 1,
+    "buildPrice": 30000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 35,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/InfBeamPistolBlueprint",
+        "name": "Blueprint",
+        "description": "Splatter enemies with a short-range stream of corrosive bile and then toss the ammo bladder as a grenade when reloading. The emptier the pistol’s ammo bladder, the more potent its damage. A fully empty bladder packs the biggest punch.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Research/BioComponent",
+        "name": "Mutagen Mass",
+        "description": "This living mass can produce weaponized toxins for weaponry.Can be acquired from Infestation Outbreaks & Clan Research.",
+        "itemCount": 7,
+        "imageName": "mutagen-mass.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Hallowed Flame Endurance Caches, Rotation B",
+            "type": "Mutagen Mass",
+            "chance": 0.1106,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
+        "name": "Ocular Stem-Root",
+        "description": "The organs that once served as eyes, prior to Infestation, are still replete with useful components.Source:FLAGELLOCANTH",
+        "itemCount": 4,
+        "imageName": "ocular-stem-root.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+        "name": "Scintillant",
+        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.",
+        "itemCount": 5,
+        "imageName": "scintillant.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0201,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 5 - 15 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.0897,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation B",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation C",
+            "type": "Scintillant",
+            "chance": 0.1842,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem",
+        "name": "Stellated Necrathene",
+        "description": "A prismatic refinement of raw Necrathene, highly sought after.",
+        "itemCount": 10,
+        "imageName": "stellated-necrathene.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "catabolyst.png",
+    "category": "Secondary",
+    "tradable": false
+  },
+  {
     "name": "Cestra",
     "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
     "damagePerShot": [ 5.2000003, 20.800001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -117774,7 +117945,7 @@
     "uniqueName": "/Lotus/Weapons/Thanotech/ThanoPistol/ThanotechPistol",
     "damagePerShot": [ 9.6000004, 26.880001, 11.52, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "totalDamage": 94,
-    "description": "An ancient weapon designed by the Entrati. Primary fire siphons life essence from the target to fuel a devastating alt fire. This large, weighty double-barreled pistol delivers twin projectiles that pack a punch, exploding on impact. Alt fire puts the weapon in lock-on mode. Aim to lock onto multiple targets, then fire to unleash homing projectiles.",
+    "description": "An ancient weapon designed by the Entrati. Primary fire siphons life essence from the target to fuel a devastating secondary fire. This large, weighty double-barreled pistol delivers twin projectiles that pack a punch, exploding on impact. Secondary fire puts the weapon in lock-on mode. Aim to lock onto multiple targets, then fire to unleash homing projectiles.",
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2.2,
     "procChance": 0.13999999,
@@ -117806,7 +117977,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/ThanotechPistolBlueprint",
         "name": "Blueprint",
-        "description": "An ancient weapon designed by the Entrati. Primary fire siphons life essence from the target to fuel a devastating alt fire. This large, weighty double-barreled pistol delivers twin projectiles that pack a punch, exploding on impact. Alt fire puts the weapon in lock-on mode. Aim to lock onto multiple targets, then fire to unleash homing projectiles.",
+        "description": "An ancient weapon designed by the Entrati. Primary fire siphons life essence from the target to fuel a devastating secondary fire. This large, weighty double-barreled pistol delivers twin projectiles that pack a punch, exploding on impact. Secondary fire puts the weapon in lock-on mode. Aim to lock onto multiple targets, then fire to unleash homing projectiles.",
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false
