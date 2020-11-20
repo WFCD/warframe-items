@@ -113489,17 +113489,17 @@
       }
     ],
     "areaAttack": {
-      "name": "Throw Area",
+      "name": "Throw Explosion",
       "crit_chance": 20,
       "crit_mult": 2.2,
       "status_chance": 0.2,
       "falloff": {
         "start": 0,
-        "end": 4.8,
-        "reduction": 0.5
+        "end": 4,
+        "reduction": 0
       },
-      "cold": 585,
-      "damage": "585.0 cold"
+      "cold": 1770,
+      "damage": "1770.0 cold"
     },
     "channeling": 1.5,
     "damage": "195.0",
@@ -113511,11 +113511,11 @@
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Thrown",
     "secondaryArea": {
-      "name": "Charged Throw Area",
+      "name": "Charged Throw Explosion",
       "status_chance": 22,
-      "radius": 480,
-      "cold": 585,
-      "damage": "585.0 cold"
+      "radius": 400,
+      "cold": 1170,
+      "damage": "1170.0 cold"
     },
     "stancePolarity": "Naramon",
     "tags": [  ],
