@@ -51623,7 +51623,41 @@
     "type": "Pistol",
     "imageName": "catabolyst.png",
     "category": "Secondary",
-    "tradable": false
+    "tradable": false,
+    "ammo": 540,
+    "areaAttack": {
+      "name": "Partial Reload Explosion",
+      "falloff": {
+        "start": 0,
+        "end": 5,
+        "reduction": 0.5
+      },
+      "corrosive": 203,
+      "damage": "203.0 corrosive"
+    },
+    "damage": "53.0 corrosive",
+    "damageTypes": {
+      "corrosive": 53
+    },
+    "flight": "???",
+    "marketCost": 190,
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "secondary": {
+      "name": "Reload From Empty Impact",
+      "crit_chance": 31,
+      "crit_mult": 2.9,
+      "status_chance": 0.6,
+      "impact": 11
+    },
+    "secondaryArea": {
+      "name": "Reload From Empty Explosion",
+      "corrosive": 1997,
+      "damage": "1997.0 corrosive"
+    },
+    "tags": [ "Infested" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Catabolyst",
+    "disposition": 1
   },
   {
     "name": "Cestra",
