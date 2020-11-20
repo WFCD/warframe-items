@@ -33893,10 +33893,38 @@
         "tradable": false
       }
     ],
-    "type": "Misc",
+    "type": "Arm Cannon",
     "imageName": "bubonico.png",
     "category": "Primary",
-    "tradable": false
+    "tradable": false,
+    "damage": "7.0 toxin",
+    "damageTypes": {
+      "impact": 2,
+      "slash": 19,
+      "puncture": 13,
+      "toxin": 7
+    },
+    "marketCost": 265,
+    "polarities": [  ],
+    "projectile": "Hitscan",
+    "secondary": {
+      "name": "Burst",
+      "speed": 3.37,
+      "crit_chance": 3,
+      "crit_mult": 3.5,
+      "status_chance": 0.6,
+      "shot_type": "Projectile",
+      "impact": 9
+    },
+    "secondaryArea": {
+      "name": "Radial Attack",
+      "radius": 700,
+      "viral": 143,
+      "damage": "143.0 viral"
+    },
+    "tags": [ "Infested" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Bubonico",
+    "disposition": 1
   },
   {
     "name": "Burst Laser",
