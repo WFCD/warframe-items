@@ -125969,10 +125969,44 @@
         "tradable": false
       }
     ],
-    "type": "Arch-Gun",
+    "type": "",
     "imageName": "morgha.png",
     "category": "Primary",
-    "tradable": false
+    "tradable": false,
+    "areaAttack": {
+      "name": "Radial Attack",
+      "falloff": {
+        "start": 0,
+        "end": 3,
+        "reduction": 0.3
+      },
+      "blast": 164,
+      "damage": "164.0 blast"
+    },
+    "damage": "32.0",
+    "damageTypes": {
+      "impact": 32
+    },
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "secondary": {
+      "name": "Charged Attack",
+      "impact": 100
+    },
+    "secondaryArea": {
+      "name": "Charged Area Attack",
+      "status_chance": 50,
+      "radius": 2000,
+      "speed": 0.833,
+      "impact": 600,
+      "slash": 1000,
+      "puncture": 800,
+      "blast": 1200,
+      "damage": "1200.0 blast"
+    },
+    "tags": [ "Entrati" ],
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Morgha",
+    "disposition": 1
   },
   {
     "name": "Multron",
