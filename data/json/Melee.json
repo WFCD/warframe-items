@@ -65757,17 +65757,17 @@
       }
     ],
     "areaAttack": {
-      "name": "Throw Area",
+      "name": "Throw Explosion",
       "crit_chance": 14,
       "crit_mult": 2.1,
       "status_chance": 0.1,
       "falloff": {
         "start": 0,
         "end": 4.8,
-        "reduction": 0.5
+        "reduction": 0
       },
-      "blast": 315,
-      "damage": "315.0 blast"
+      "blast": 630,
+      "damage": "630.0 blast"
     },
     "channeling": 1.5,
     "damage": "105.0",
@@ -65780,11 +65780,11 @@
     "polarities": [ "Madurai", "Naramon" ],
     "projectile": "Thrown",
     "secondaryArea": {
-      "name": "Charged Throw Area",
+      "name": "Charged Throw Explosion",
       "status_chance": 16,
       "radius": 480,
-      "blast": 378,
-      "damage": "378.0 blast"
+      "blast": 756,
+      "damage": "756.0 blast"
     },
     "stancePolarity": "Naramon",
     "tags": [ "Tenno" ],
