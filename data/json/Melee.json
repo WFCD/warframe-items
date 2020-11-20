@@ -58842,14 +58842,14 @@
       }
     ],
     "areaAttack": {
-      "name": "Throw Area",
+      "name": "Throw Explosion",
       "crit_chance": 14,
       "crit_mult": 1.8,
       "status_chance": 0.4,
       "falloff": {
         "start": 0,
         "end": 6,
-        "reduction": 0.5
+        "reduction": 0
       },
       "electricity": 690,
       "damage": "690.0 electricity"
@@ -58866,11 +58866,11 @@
     "polarities": [  ],
     "projectile": "Thrown",
     "secondaryArea": {
-      "name": "Charged Throw Area",
+      "name": "Charged Throw Explosion",
       "status_chance": 38,
       "radius": 600,
-      "electricity": 690,
-      "damage": "690.0 electricity"
+      "electricity": 1380,
+      "damage": "1380.0 electricity"
     },
     "stancePolarity": "Naramon",
     "tags": [ "Corpus" ],
