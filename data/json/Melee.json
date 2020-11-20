@@ -70707,17 +70707,17 @@
       }
     ],
     "areaAttack": {
-      "name": "Throw Area",
+      "name": "Throw Explosion",
       "crit_chance": 19,
       "crit_mult": 2.1,
       "status_chance": 0.3,
       "falloff": {
         "start": 0,
         "end": 4.9,
-        "reduction": 0.5
+        "reduction": 0
       },
-      "blast": 447,
-      "damage": "447.0 blast"
+      "blast": 894,
+      "damage": "894.0 blast"
     },
     "channeling": 1.5,
     "damage": "149.0",
@@ -70730,11 +70730,11 @@
     "polarities": [ "Madurai", "Naramon" ],
     "projectile": "Thrown",
     "secondaryArea": {
-      "name": "Charged Throw Area",
+      "name": "Charged Throw Explosion",
       "status_chance": 33,
       "radius": 490,
-      "blast": 447,
-      "damage": "447.0 blast"
+      "blast": 894,
+      "damage": "894.0 blast"
     },
     "stancePolarity": "Naramon",
     "tags": [ "Grineer" ],
