@@ -171124,24 +171124,22 @@
     "polarities": [ "Naramon", "Madurai" ],
     "projectile": "Projectile",
     "secondary": {
-      "name": "Spear Explosion Quick Shot",
+      "name": "Spear Throw Charged",
+      "speed": 1,
       "crit_chance": 4,
       "crit_mult": 2,
       "status_chance": 0.3,
-      "falloff": {
-        "start": 0,
-        "end": 7,
-        "reduction": 0.6
-      },
-      "corrosive": 55,
-      "damage": "55.0 corrosive"
-    },
-    "secondaryArea": {
-      "name": "Spear Throw Quick Shot",
-      "status_chance": 30,
+      "charge_time": 0.5,
       "impact": 105,
       "slash": 22.5,
       "puncture": 22.5
+    },
+    "secondaryArea": {
+      "name": "Spear Explosion Charged",
+      "status_chance": 30,
+      "radius": 700,
+      "corrosive": 55,
+      "damage": "55.0 corrosive"
     },
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/c8/PriestSpearGun.png/revision/latest?cb=20170629034316",
