@@ -51629,10 +51629,9 @@
     "damageTypes": {
       "corrosive": 53
     },
-    "flight": "???",
     "marketCost": 190,
     "polarities": [ "Madurai" ],
-    "projectile": "Projectile",
+    "projectile": "Discharge",
     "secondary": {
       "name": "Reload From Empty Impact",
       "crit_chance": 31,
@@ -116940,12 +116939,14 @@
       "electricity": 11
     },
     "polarities": [  ],
+    "projectile": "Hitscan",
     "secondary": {
       "name": "Burst",
       "speed": 10,
       "crit_chance": 27,
       "crit_mult": 2.5,
       "status_chance": 0.2,
+      "shot_type": "Hit-Scan",
       "impact": 9,
       "slash": 7,
       "puncture": 2,
@@ -125368,6 +125369,7 @@
       "puncture": 9.2
     },
     "polarities": [  ],
+    "projectile": "Discharge",
     "tags": [ "Corpus", "Vandal" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/82/SpectraVandal.png/revision/latest?cb=20190523234911",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Spectra_Vandal",
@@ -127556,14 +127558,6 @@
       }
     ],
     "ammo": 288,
-    "areaAttack": {
-      "name": "Fully Charged Projectile",
-      "charge_time": 1,
-      "shot_type": "Projectile",
-      "shot_speed": 50,
-      "radiation": 44,
-      "damage": "44.0 radiation"
-    },
     "damage": "44.0 radiation",
     "damageTypes": {
       "radiation": 44
