@@ -1,6 +1,5 @@
 name: Pull Request Checks
-on:
-  pull_request:
+on: pull_request
 
 jobs:
   lint:
@@ -17,9 +16,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Dependencies
-      run:
-        - npm install
-        - npm run lint
+      run: npm install
+    - run: npm run lint
 
   test:
     name: Test
