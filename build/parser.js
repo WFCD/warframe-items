@@ -2,6 +2,7 @@ const Progress = require('./progress.js')
 const previousBuild = require('../data/json/All.json')
 const watson = require('../config/dt_map.json')
 const bpConflicts = require('../config/bpConflicts.json')
+const variants = require('../config/variants')
 const _ = require('lodash')
 const title = (str = '') => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
@@ -16,6 +17,7 @@ const warnings = {
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
 const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z]{1,1} Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
+const prefixed = (name) => new RegExp(`(?:${variants.prefixes.join('|')})${name}(?:${variants.suffixes.join('|')})`)
 
 const dedupe = (arr) => Array.from(new Set(arr))
 
@@ -570,7 +572,9 @@ class Parser {
 
   findDropLocations (item, dropChances) {
     const data = dedupe(dropChances
-      .filter(drop => drop.item === item || drop.item.startsWith(item))
+      .filter(drop => drop.item === item ||
+        (drop.item.startsWith(item) && !(prefixed(item).test(drop.item)))
+      )
       .map(this.dropMap))
     data.sort(this.comparator)
     return data
