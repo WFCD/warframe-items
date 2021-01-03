@@ -21,7 +21,7 @@ describe('index.js', function () {
     const primes = items.filter(i => i.name.includes('Prime'))
     assert(primes.length < items.length)
   })
-  
+
   describe('drops should not include variant drops', () => {
     it('should not have drops for hikou', () => {
       const Items = require('../index.js')
@@ -31,7 +31,7 @@ describe('index.js', function () {
       const { drops } = hikouMatches[0]
       assert(typeof drops === 'undefined')
     })
-    
+
     it('should only have non-prime drops for Gorgon', () => {
       const Items = require('../index.js')
       const items = new Items({ category: ['Primary'] })
@@ -39,15 +39,15 @@ describe('index.js', function () {
       assert(matches.length === 1)
       const { drops } = matches[0]
       assert(typeof drops === 'undefined')
-      
-      const bp = matches[0].components.filter(component => component.name === 'Blueprint')[0];
+
+      const bp = matches[0].components.filter(component => component.name === 'Blueprint')[0]
       assert(typeof bp !== 'undefined')
       assert(bp.drops.length !== 0)
-      
+
       const primeBpDrops = bp.drops.filter(n => n.type.includes('Prime'))
       assert(primeBpDrops.length === 0)
     })
-    
+
     it('should have variant drops when requested', () => {
       const Items = require('../index.js')
       const items = new Items({ category: ['Primary'] })
@@ -55,11 +55,11 @@ describe('index.js', function () {
       assert(matches.length === 1)
       const { drops } = matches[0]
       assert(typeof drops === 'undefined')
-      
-      const bp = matches[0].components.filter(component => component.name === 'Blueprint')[0];
+
+      const bp = matches[0].components.filter(component => component.name === 'Blueprint')[0]
       assert(typeof bp !== 'undefined')
       assert(bp.drops.length !== 0)
-      
+
       const variantDrops = bp.drops.filter(n => n.type.includes('Wraith'))
       assert(variantDrops.length === 1)
     })
