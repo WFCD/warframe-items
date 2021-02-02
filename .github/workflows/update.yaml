@@ -1,5 +1,7 @@
 name: Update
 on:
+  repository_dispatch:
+    type: "trigger"
   schedule:
     - cron: "55 * * * *"
 
@@ -23,4 +25,4 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         skip_dirty_check: false
-        commit_message: 'fix(items): new items for ${{ date +%d-%b-%Y}}'
+        commit_message: 'fix(items): new items'
