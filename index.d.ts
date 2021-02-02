@@ -245,13 +245,13 @@ declare module 'warframe-items' {
         speed?: number;
         falloff?: Falloff;
     }
-    
+
     interface Falloff {
             start: number;
             end: number;
             reduction: number;
     }
-    
+
     interface SecondaryArea {
         name: string;
         status_chance?: number;
