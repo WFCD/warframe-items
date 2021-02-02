@@ -243,6 +243,11 @@ declare module 'warframe-items' {
         pellet?: Pellet;
         duration?: number;
         speed?: number;
+        falloff?: {
+            start: number;
+            end: number;
+            reduction: number;
+        };
     }
 
     interface SecondaryArea {
