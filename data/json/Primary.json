@@ -211626,10 +211626,16 @@
     "ammo": 60,
     "areaAttack": {
       "name": "Poison Cloud",
+      "speed": 1,
       "crit_chance": 15,
       "crit_mult": 2,
-      "toxin": 400,
-      "damage": "400.0 toxin"
+      "falloff": {
+        "start": 0,
+        "end": 3,
+        "reduction": 1
+      },
+      "toxin": 40,
+      "damage": "40.0 toxin"
     },
     "damage": "100.0 toxin",
     "damageTypes": {
