@@ -9,7 +9,7 @@ RUN apk add --update --repository http://dl-3.alpinelinux.org/alpine/edge/testin
 # Clone repo
 RUN mkdir -p /app/warframe-items \
   && cd app \
-  && git clone https://github.com/WFCD/warframe-items \
+  && git clone --depth 1 --single-branch --branch=development https://github.com/WFCD/warframe-items \
   && cd warframe-items \
   && npm install
 
