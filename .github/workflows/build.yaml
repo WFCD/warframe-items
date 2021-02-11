@@ -1,5 +1,7 @@
 name: Build
-on: pull_request
+on:
+  schedule:
+    - cron: "55 * * * *"
 
 jobs:
   lint:
@@ -17,4 +19,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
+    - run: npm update
     - run: npm run build
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        skip_dirty_check: false
+        commit_message: 'fix(items): new items'
