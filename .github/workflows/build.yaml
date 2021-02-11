@@ -22,6 +22,8 @@ jobs:
     - run: npm update
     - run: npm run build
     - uses: stefanzweifel/git-auto-commit-action@v4
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         skip_dirty_check: false
         commit_message: 'fix(items): new items'
