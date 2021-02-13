@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm update
+    - run: npm i -S warframe-patchlogs@latest
     - run: npm run build
     - uses: stefanzweifel/git-auto-commit-action@v4
       env:
@@ -27,6 +27,6 @@ jobs:
       with:
         skip_dirty_check: false
         commit_message: 'fix(items): new items'
-        commit_user_name: TobiTenno
-        commit_user_email: tobiah@pm.me
-        commit_author: TobiTenno <tobiah@pm.me>
+        commit_user_name: wfcd-bot-boi
+        commit_user_email: actions@github.com
+        commit_author: wfcd-bot-boi <actions@github.com>
