@@ -185631,20 +185631,6 @@
       }
     ],
     "ammo": 300,
-    "areaAttack": {
-      "name": "Charged Shot Explosion",
-      "speed": 0.667,
-      "crit_chance": 40,
-      "crit_mult": 3,
-      "status_chance": 0.3,
-      "falloff": {
-        "start": 0,
-        "end": 7.2,
-        "reduction": 0.7
-      },
-      "radiation": 1200,
-      "damage": "1200.0 radiation"
-    },
     "damage": "52.0",
     "damageTypes": {
       "impact": 7.3,
@@ -185655,7 +185641,14 @@
     "marketCost": 225,
     "polarities": [ "Madurai" ],
     "projectile": "Projectile",
-    "statusChance": 32,
+    "secondaryArea": {
+      "name": "Charged Shot Explosion",
+      "status_chance": 32,
+      "radius": 720,
+      "speed": 0.667,
+      "radiation": 1200,
+      "damage": "1200.0 radiation"
+    },
     "tags": [ "Corpus" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/34/Stahlta.png/revision/latest?cb=20200612002131",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Stahlta",
