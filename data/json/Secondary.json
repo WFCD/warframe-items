@@ -125466,11 +125466,11 @@
         "fixes": ""
       }
     ],
-    "ammo": 210,
+    "ammo": 504,
     "damage": "11.0 electricity",
     "damageTypes": {
-      "impact": 7,
-      "slash": 9,
+      "impact": 9,
+      "slash": 7,
       "puncture": 2,
       "electricity": 11
     },
@@ -126636,12 +126636,16 @@
     "secondary": {
       "name": "Burst",
       "speed": 1,
+      "crit_chance": 38,
+      "crit_mult": 3,
+      "status_chance": 0.3,
       "impact": 19.2,
       "slash": 23,
       "puncture": 53.8
     },
     "secondaryArea": {
       "name": "Burst Radial Attack",
+      "status_chance": 26,
       "radius": 300,
       "heat": 480,
       "damage": "480.0 heat"
