@@ -37,7 +37,7 @@ const mapColors = async (oldFrame, imageUrl) => {
     const colors = await getColors(image, 'image/png')
     return typeof colors !== 'undefined' ? colors[0].hex().replace('#', '0x') : 0xff0000
   } catch (e) {
-    console.error(e)
+    if (process.env.DEBUG) console.error(e)
     return 0
   }
 }
