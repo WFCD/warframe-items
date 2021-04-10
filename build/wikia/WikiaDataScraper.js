@@ -17,20 +17,19 @@ const getLuaData = async (url) => {
   }
 }
 
-const convertLuaDataToJson = async (luaWeapondata, luaDataName) => {
-  const scriptlines = luaWeapondata.split('\n')
+const convertLuaDataToJson = async (luaData, luaDataName) => {
+  const objReturn = `return ${luaDataName}Data`
+  const hasObjReturn = luaData.includes(objReturn)
 
-  // Remove return statement
-  const modifiedScript = scriptlines
-    .slice(0, scriptlines.length - 2)
-    .join('\n')
+  const modifiedScript = hasObjReturn
+    ? luaData.replace(objReturn, '')
+    : luaData.replace('return {', `local ${luaDataName}Data = {`)
 
   // Add JSON conversion
-  const luaToJsonScript = `
-    JSON = (loadfile "build/wikia/JSON.lua")()\n
-    ${modifiedScript}\n
-    print(JSON:encode(${luaDataName}Data))
-  `
+  const luaToJsonScript = `JSON = (loadfile "build/wikia/JSON.lua")()
+${modifiedScript}
+print(JSON:encode(${luaDataName}Data))
+`
 
   // Run updated JSON lua script
   if (!await fs.exists('./tmp')) {
@@ -71,7 +70,7 @@ const getImageUrls = async (things) => {
   }
 
   const urlRequests = titleBatches.map(titleBatch =>
-    axios.get('http://warframe.wikia.com/api.php', {
+    axios.get('http://warframe.fandom.com/api.php', {
       params: {
         action: 'query',
         titles: titleBatch.join('|'),
@@ -95,6 +94,7 @@ const getImageUrls = async (things) => {
       })
       return urls
     })
+      .catch(console.error)
 
     return fetchedImageUrls
   } catch (err) {
