@@ -12176,7 +12176,7 @@
     "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
     "damagePerShot": [ 40, 5, 4.9999981, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "totalDamage": 50,
-    "description": "Used together, these Orokin pistols feed off each other, inflicting greater damage with an enhanced chance for inducing elemental effects on targets.",
+    "description": "Used together, these Orokin pistols feed off each other, inflicting greater damage with an enhanced status chance for inducing elemental effects on targets.",
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
     "procChance": 0.12857145,
@@ -12200,7 +12200,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/AkbroncoPrimeBlueprint",
         "name": "Blueprint",
-        "description": "Used together, these Orokin pistols feed off each other, inflicting greater damage with an enhanced chance for inducing elemental effects on targets.",
+        "description": "Used together, these Orokin pistols feed off each other, inflicting greater damage with an enhanced status chance for inducing elemental effects on targets.",
         "itemCount": 1,
         "primeSellingPrice": 15,
         "imageName": "blueprint.png",
@@ -42181,13 +42181,31 @@
         "tradable": false,
         "drops": [
           {
-            "location": "Venus/Falling Glory (Defense), Rotation B",
+            "location": "Venus/Beacon Shield Ring (Caches), Rotation B",
             "type": "Athodai Barrel",
             "chance": 0.0645,
             "rarity": "Rare"
           },
           {
-            "location": "Venus/Vesper Strait (Orphix), Rotation B",
+            "location": "Venus/Bifrost Echo (Caches), Rotation B",
+            "type": "Athodai Barrel",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Falling Glory (Caches), Rotation B",
+            "type": "Athodai Barrel",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orvin-Haarc (Caches), Rotation B",
+            "type": "Athodai Barrel",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Vesper Strait (Caches), Rotation B",
             "type": "Athodai Barrel",
             "chance": 0.0645,
             "rarity": "Rare"
@@ -42203,13 +42221,31 @@
         "tradable": false,
         "drops": [
           {
-            "location": "Venus/Falling Glory (Defense), Rotation B",
+            "location": "Venus/Beacon Shield Ring (Caches), Rotation B",
             "type": "Athodai Blueprint",
             "chance": 0.0645,
             "rarity": "Rare"
           },
           {
-            "location": "Venus/Vesper Strait (Orphix), Rotation B",
+            "location": "Venus/Bifrost Echo (Caches), Rotation B",
+            "type": "Athodai Blueprint",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Falling Glory (Caches), Rotation B",
+            "type": "Athodai Blueprint",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orvin-Haarc (Caches), Rotation B",
+            "type": "Athodai Blueprint",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Vesper Strait (Caches), Rotation B",
             "type": "Athodai Blueprint",
             "chance": 0.0645,
             "rarity": "Rare"
@@ -42829,13 +42865,31 @@
         "tradable": false,
         "drops": [
           {
-            "location": "Venus/Falling Glory (Defense), Rotation B",
+            "location": "Venus/Beacon Shield Ring (Caches), Rotation B",
             "type": "Athodai Receiver",
             "chance": 0.0645,
             "rarity": "Rare"
           },
           {
-            "location": "Venus/Vesper Strait (Orphix), Rotation B",
+            "location": "Venus/Bifrost Echo (Caches), Rotation B",
+            "type": "Athodai Receiver",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Falling Glory (Caches), Rotation B",
+            "type": "Athodai Receiver",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orvin-Haarc (Caches), Rotation B",
+            "type": "Athodai Receiver",
+            "chance": 0.0645,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Vesper Strait (Caches), Rotation B",
             "type": "Athodai Receiver",
             "chance": 0.0645,
             "rarity": "Rare"
@@ -129154,6 +129208,7 @@
     "ammo": 180,
     "areaAttack": {
       "name": "Semi Radial Attack",
+      "speed": 3.67,
       "falloff": {
         "start": 0,
         "end": 1.6,
@@ -129184,6 +129239,7 @@
       "name": "Burst Radial Attack",
       "status_chance": 26,
       "radius": 300,
+      "speed": 1,
       "heat": 480,
       "damage": "480.0 heat"
     },
@@ -137070,7 +137126,33 @@
         "description": "The barrel component of the Spectra Vandal.",
         "itemCount": 1,
         "imageName": "barrel.png",
-        "tradable": true
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Veil/Flexa (Caches), Rotation B",
+            "type": "Spectra Vandal Barrel",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/H-2 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Barrel",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/Nsu Grid (Caches), Rotation B",
+            "type": "Spectra Vandal Barrel",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/R-9 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Barrel",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/SpectraVandalBlueprint",
@@ -137078,7 +137160,33 @@
         "description": "A special-order Corpus cutting tool for master crafters only. Features distinctive azurite plating and a focusing crystal of precision clarity and cut.",
         "itemCount": 1,
         "imageName": "blueprint.png",
-        "tradable": true
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Veil/Flexa (Caches), Rotation B",
+            "type": "Spectra Vandal Blueprint",
+            "chance": 0.087,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/H-2 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Blueprint",
+            "chance": 0.087,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/Nsu Grid (Caches), Rotation B",
+            "type": "Spectra Vandal Blueprint",
+            "chance": 0.087,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/R-9 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Blueprint",
+            "chance": 0.087,
+            "rarity": "Rare"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalChassis",
@@ -137086,7 +137194,33 @@
         "description": "The chassis component of the Spectra Vandal.",
         "itemCount": 1,
         "imageName": "chassis.png",
-        "tradable": true
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Veil/Flexa (Caches), Rotation B",
+            "type": "Spectra Vandal Chassis",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/H-2 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Chassis",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/Nsu Grid (Caches), Rotation B",
+            "type": "Spectra Vandal Chassis",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/R-9 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Chassis",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalHandle",
@@ -137094,7 +137228,33 @@
         "description": "The handle component of the Spectra Vandal.",
         "itemCount": 1,
         "imageName": "handle.png",
-        "tradable": true
+        "tradable": true,
+        "drops": [
+          {
+            "location": "Veil/Flexa (Caches), Rotation B",
+            "type": "Spectra Vandal Handle",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/H-2 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Handle",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/Nsu Grid (Caches), Rotation B",
+            "type": "Spectra Vandal Handle",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Veil/R-9 Cloud (Caches), Rotation B",
+            "type": "Spectra Vandal Handle",
+            "chance": 0.0652,
+            "rarity": "Rare"
+          }
+        ]
       }
     ],
     "type": "Pistol",
