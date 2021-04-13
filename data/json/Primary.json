@@ -142548,6 +142548,244 @@
     "disposition": 1
   },
   {
+    "name": "Mausolon",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+    "damagePerShot": [ 24, 46, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 120,
+    "description": "An ancient weapon designed by the Entrati for use by their Necramechs. Primary fire siphons life essence from the target to fuel a devastating secondary fire. Punishing automatic primary fire and a secondary mode that charges up to unleash a destructive beam of energy with a large explosion at point of impact.",
+    "criticalChance": 0.30000001,
+    "criticalMultiplier": 2.2,
+    "procChance": 0.25999999,
+    "fireRate": 8.333334,
+    "masteryReq": 14,
+    "productCategory": "SpaceGuns",
+    "slot": 1,
+    "accuracy": 80,
+    "omegaAttenuation": 0.5,
+    "noise": "Alarming",
+    "trigger": "Auto",
+    "magazineSize": 300,
+    "reloadTime": 5.5,
+    "multishot": 1,
+    "type": "",
+    "imageName": "mausolon.png",
+    "category": "Primary",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Orphix Venom: Hotfix 29.6.4",
+        "date": "2021-01-06T16:33:32Z",
+        "url": "https://forums.warframe.com/topic/1244110-orphix-venom-hotfix-2964/",
+        "additions": "",
+        "changes": "A mistake in that script caused players to receive extra copies of the Mausolon gun (which comes with Crafting/Claiming a Necramech in the Foundry), but without increasing your number of Archwing Weapon inventory Slots to hold them. This caused players who had already filled up their Inventory Slots to receive an error message that said \"Invalid slots: Contact support\" when trying to build a new Necramech or Archwing weapon. Selling the excess Mausolons you received would only temporarily suppress this error because as soon as you built another Arch-gun, you would again own more Arch-guns than you owned Inventory Slots.",
+        "fixes": ""
+      },
+      {
+        "name": "Orphix Venom: Hotfix 29.6.1",
+        "date": "2020-12-18T23:49:08Z",
+        "url": "https://forums.warframe.com/topic/1241287-orphix-venom-hotfix-2961/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where some accounts got bonus duplicate Mausolons. Feel free to sell or use these if you were one of these players! "
+      },
+      {
+        "name": "Update 29.5: Deimos Arcana",
+        "date": "2020-11-19T23:39:27Z",
+        "url": "https://forums.warframe.com/topic/1236257-update-295-deimos-arcana/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Mausolon primary fire AoE not causing self-tagger."
+      },
+      {
+        "name": "Heart of Deimos: Hotfix: 29.2.4: NIGHTS OF NABERUS!",
+        "date": "2020-10-15T18:43:58Z",
+        "url": "https://forums.warframe.com/topic/1231382-heart-of-deimos-hotfix-2924-nights-of-naberus/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Force Feedback issues when firing the Mausolon. "
+      },
+      {
+        "name": "Heart of Deimos: Hotfix 29.0.2",
+        "date": "2020-08-26T19:56:10Z",
+        "url": "https://forums.warframe.com/topic/1217239-heart-of-deimos-hotfix-2902/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to Chat link the Mausolon. "
+      },
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "*As outlined in a recent Dev Workshop, all new weapons in the update are starting with a minimum Riven disposition of 0.5. This includes the new Archgun weapons, Mausolon and Cortege. Archgun Riven dispositions have not been rebalanced in the past, but they will be included in our quarterly changes going forward, starting with the next Prime Access!"
+      }
+    ],
+    "areaAttack": {
+      "name": "Auto Radial Attack",
+      "falloff": {
+        "start": 0,
+        "end": 1.8,
+        "reduction": 0.1
+      },
+      "heat": 48,
+      "damage": "48.0 heat"
+    },
+    "damage": "50.0 heat",
+    "damageTypes": {
+      "impact": 24,
+      "puncture": 46,
+      "heat": 50
+    },
+    "polarities": [ "Madurai" ],
+    "projectile": "Hitscan",
+    "secondary": {
+      "name": "Charged Shot Explosion",
+      "speed": 0.5,
+      "crit_chance": 50,
+      "crit_mult": 3.5,
+      "status_chance": 0.5,
+      "falloff": {
+        "start": 0,
+        "end": 8,
+        "reduction": 0.4
+      },
+      "heat": 3000,
+      "damage": "3000.0 heat"
+    },
+    "secondaryArea": {
+      "name": "Charged Shot Projectile",
+      "status_chance": 50,
+      "impact": 100,
+      "puncture": 400,
+      "heat": 500,
+      "damage": "500.0 heat"
+    },
+    "tags": [ "Entrati" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/0d/Mausolon.png/revision/latest?cb=20200829173059",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Mausolon",
+    "disposition": 1
+  },
+  {
+    "name": "Mausolon",
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+    "damagePerShot": [ 24, 46, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 120,
+    "description": "An ancient weapon designed by the Entrati for use by their Necramechs. Primary fire siphons life essence from the target to fuel a devastating secondary fire. Punishing automatic primary fire and a secondary mode that charges up to unleash a destructive beam of energy with a large explosion at point of impact.",
+    "criticalChance": 0.30000001,
+    "criticalMultiplier": 2.2,
+    "procChance": 0.25999999,
+    "fireRate": 8.333334,
+    "masteryReq": 14,
+    "productCategory": "SpaceGuns",
+    "slot": 1,
+    "accuracy": 80,
+    "omegaAttenuation": 0.5,
+    "noise": "Alarming",
+    "trigger": "Auto",
+    "magazineSize": 300,
+    "reloadTime": 5.5,
+    "multishot": 1,
+    "type": "",
+    "imageName": "mausolon.png",
+    "category": "Primary",
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Orphix Venom: Hotfix 29.6.4",
+        "date": "2021-01-06T16:33:32Z",
+        "url": "https://forums.warframe.com/topic/1244110-orphix-venom-hotfix-2964/",
+        "additions": "",
+        "changes": "A mistake in that script caused players to receive extra copies of the Mausolon gun (which comes with Crafting/Claiming a Necramech in the Foundry), but without increasing your number of Archwing Weapon inventory Slots to hold them. This caused players who had already filled up their Inventory Slots to receive an error message that said \"Invalid slots: Contact support\" when trying to build a new Necramech or Archwing weapon. Selling the excess Mausolons you received would only temporarily suppress this error because as soon as you built another Arch-gun, you would again own more Arch-guns than you owned Inventory Slots.",
+        "fixes": ""
+      },
+      {
+        "name": "Orphix Venom: Hotfix 29.6.1",
+        "date": "2020-12-18T23:49:08Z",
+        "url": "https://forums.warframe.com/topic/1241287-orphix-venom-hotfix-2961/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where some accounts got bonus duplicate Mausolons. Feel free to sell or use these if you were one of these players! "
+      },
+      {
+        "name": "Update 29.5: Deimos Arcana",
+        "date": "2020-11-19T23:39:27Z",
+        "url": "https://forums.warframe.com/topic/1236257-update-295-deimos-arcana/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Mausolon primary fire AoE not causing self-tagger."
+      },
+      {
+        "name": "Heart of Deimos: Hotfix: 29.2.4: NIGHTS OF NABERUS!",
+        "date": "2020-10-15T18:43:58Z",
+        "url": "https://forums.warframe.com/topic/1231382-heart-of-deimos-hotfix-2924-nights-of-naberus/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Force Feedback issues when firing the Mausolon. "
+      },
+      {
+        "name": "Heart of Deimos: Hotfix 29.0.2",
+        "date": "2020-08-26T19:56:10Z",
+        "url": "https://forums.warframe.com/topic/1217239-heart-of-deimos-hotfix-2902/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to Chat link the Mausolon. "
+      },
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "*As outlined in a recent Dev Workshop, all new weapons in the update are starting with a minimum Riven disposition of 0.5. This includes the new Archgun weapons, Mausolon and Cortege. Archgun Riven dispositions have not been rebalanced in the past, but they will be included in our quarterly changes going forward, starting with the next Prime Access!"
+      }
+    ],
+    "areaAttack": {
+      "name": "Auto Radial Attack",
+      "falloff": {
+        "start": 0,
+        "end": 1.8,
+        "reduction": 0.1
+      },
+      "heat": 48,
+      "damage": "48.0 heat"
+    },
+    "damage": "50.0 heat",
+    "damageTypes": {
+      "impact": 24,
+      "puncture": 46,
+      "heat": 50
+    },
+    "polarities": [ "Madurai" ],
+    "projectile": "Hitscan",
+    "secondary": {
+      "name": "Charged Shot Explosion",
+      "speed": 0.5,
+      "crit_chance": 50,
+      "crit_mult": 3.5,
+      "status_chance": 0.5,
+      "falloff": {
+        "start": 0,
+        "end": 8,
+        "reduction": 0.4
+      },
+      "heat": 3000,
+      "damage": "3000.0 heat"
+    },
+    "secondaryArea": {
+      "name": "Charged Shot Projectile",
+      "status_chance": 50,
+      "impact": 100,
+      "puncture": 400,
+      "heat": 500,
+      "damage": "500.0 heat"
+    },
+    "tags": [ "Entrati" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/0d/Mausolon.png/revision/latest?cb=20200829173059",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Mausolon",
+    "disposition": 1
+  },
+  {
     "name": "Miter",
     "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerSawbladeGun/SawBladeGun",
     "damagePerShot": [ 12.5, 12.5, 225, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
