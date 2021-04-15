@@ -1,21 +1,23 @@
 const assert = require('assert')
 
-describe('index.js', function () {
+const dedupe = require('../build/dedupe')
+
+describe('index.js', () => {
   // Smoke test
-  it('should contain items when initializing.', function () {
+  it('should contain items when initializing.', () => {
     const Items = require('../index.js')
     const items = new Items()
     assert(items.length)
   })
 
-  it('should ignore enemies when configured.', function () {
+  it('should ignore enemies when configured.', () => {
     const Items = require('../index.js')
     const items = new Items({ ignoreEnemies: true }).filter(i => i.category === 'Enemy')
     assert(!items.length)
   })
 
   // Custom filter override in index.js
-  it('should not return more or equal the number of objects after .filter(), when custom categories are specified.', function () {
+  it('should not return more or equal the number of objects after .filter(), when custom categories are specified.', () => {
     const Items = require('../index.js')
     const items = new Items({ category: ['Primary'] })
     const primes = items.filter(i => i.name.includes('Prime'))
@@ -62,6 +64,18 @@ describe('index.js', function () {
 
       const variantDrops = bp.drops.filter(n => n.type.includes('Wraith'))
       assert(variantDrops.length === 1)
+    })
+
+    it('should only have 1 result for Mausolon', () => {
+      const Items = require('../index.js')
+      const items = new Items({ category: ['Primary'] })
+      const matches = items.filter(i => i.name === 'Mausolon').map(i => {
+        delete i.patchlogs
+        return i
+      })
+      const dd = dedupe(matches)
+      assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match')
+      assert.strictEqual(matches.length, 1, 'There can be only One')
     })
   })
 })
