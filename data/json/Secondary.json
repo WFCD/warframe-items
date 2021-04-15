@@ -88697,6 +88697,19 @@
       }
     ],
     "ammo": 60,
+    "areaAttack": {
+      "name": "Uncharged AoE",
+      "speed": 1.5,
+      "crit_chance": 5,
+      "crit_mult": 1.2,
+      "falloff": {
+        "start": 0,
+        "end": 8,
+        "reduction": 0.8
+      },
+      "blast": 1,
+      "damage": "1.0 blast"
+    },
     "damage": "1.0 blast",
     "damageTypes": {
       "blast": 1
