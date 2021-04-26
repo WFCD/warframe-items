@@ -194163,12 +194163,12 @@
         "end": 5,
         "reduction": 0.6
       },
-      "magnetic": 100,
-      "damage": "100.0 magnetic"
+      "magnetic": 200,
+      "damage": "200.0 magnetic"
     },
-    "damage": "50.0 magnetic",
+    "damage": "100.0 magnetic",
     "damageTypes": {
-      "magnetic": 50
+      "magnetic": 100
     },
     "flight": "???",
     "marketCost": 210,
@@ -219418,6 +219418,27 @@
     ],
     "ammo": 96,
     "areaAttack": {
+      "name": "Singularity",
+      "speed": 4,
+      "crit_chance": 0,
+      "crit_mult": 0,
+      "status_chance": 0,
+      "falloff": {
+        "start": 0,
+        "end": 5,
+        "reduction": 0
+      },
+      "magnetic": 50,
+      "damage": "50.0 magnetic"
+    },
+    "damage": "125.0 magnetic",
+    "damageTypes": {
+      "magnetic": 125
+    },
+    "flight": "???",
+    "polarities": [ "Madurai", "Vazarin", "Naramon" ],
+    "projectile": "Projectile",
+    "secondary": {
       "name": "Orb Explosion",
       "crit_chance": 14,
       "crit_mult": 2,
@@ -219425,18 +219446,11 @@
       "falloff": {
         "start": 0,
         "end": 5,
-        "reduction": 0.6
+        "reduction": 1
       },
       "magnetic": 240,
       "damage": "240.0 magnetic"
     },
-    "damage": "80.0 magnetic",
-    "damageTypes": {
-      "magnetic": 80
-    },
-    "flight": "???",
-    "polarities": [ "Madurai", "Vazarin", "Naramon" ],
-    "projectile": "Projectile",
     "tags": [ "Syndicate", "Cephalon Suda", "Cephalon" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/09/SyndicateCSSimulor.png/revision/latest?cb=20150902215134",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Synoid_Simulor",
