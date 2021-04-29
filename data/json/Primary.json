@@ -61478,15 +61478,6 @@
       }
     ],
     "ammo": 132,
-    "areaAttack": {
-      "name": "Air Burst Projectile",
-      "crit_chance": 4,
-      "crit_mult": 1.6,
-      "status_chance": 0.3,
-      "shot_type": "Projectile",
-      "shot_speed": null,
-      "impact": 100
-    },
     "damage": "540.0",
     "damageTypes": {
       "impact": 151.2,
@@ -61496,6 +61487,15 @@
     "marketCost": 240,
     "polarities": [ "Madurai", "Madurai" ],
     "projectile": "Hitscan",
+    "secondary": {
+      "name": "Air Burst Projectile",
+      "crit_chance": 4,
+      "crit_mult": 1.6,
+      "status_chance": 0.3,
+      "shot_type": "Projectile",
+      "shot_speed": null,
+      "impact": 100
+    },
     "secondaryArea": {
       "name": "Air Burst Explosion",
       "status_chance": 28,
@@ -62734,30 +62734,24 @@
         "fixes": "*Find the Cortege Blueprint as well as its Components from the Necraloid Syndicate.\n*As outlined in a recent Dev Workshop, all new weapons in the update are starting with a minimum Riven disposition of 0.5. This includes the new Archgun weapons, Mausolon and Cortege. Archgun Riven dispositions have not been rebalanced in the past, but they will be included in our quarterly changes going forward, starting with the next Prime Access!"
       }
     ],
-    "areaAttack": {
-      "name": "Radial Attack",
-      "speed": 0.25,
-      "crit_chance": 30,
-      "crit_mult": 2.4,
-      "status_chance": 0.2,
-      "pellet": {
-        "name": "Grenade",
-        "count": 3
-      },
-      "falloff": {
-        "start": 0,
-        "end": 4,
-        "reduction": 0.3
-      },
-      "blast": 3000,
-      "damage": "3000.0 blast"
-    },
     "damage": "90.0 heat",
     "damageTypes": {
       "heat": 90
     },
     "polarities": [  ],
     "projectile": "Discharge",
+    "secondaryArea": {
+      "name": "Radial Attack",
+      "status_chance": 16.7,
+      "radius": 400,
+      "speed": 0.25,
+      "pellet": {
+        "name": "Grenade",
+        "count": 3
+      },
+      "blast": 3000,
+      "damage": "3000.0 blast"
+    },
     "statusChance": 16.7,
     "tags": [ "Entrati" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/4e/Cortege.png/revision/latest?cb=20200825211514",
@@ -136354,27 +136348,24 @@
     "polarities": [ "Madurai" ],
     "projectile": "Projectile",
     "secondary": {
-      "name": "Cluster Bomb Explosion",
+      "name": "Cluster Bomb Contact",
+      "crit_chance": 35,
+      "crit_mult": 2.1,
+      "status_chance": 0.2,
       "pellet": {
         "count": 3,
         "name": "Bomblet"
       },
-      "falloff": {
-        "start": 0,
-        "end": 3.5,
-        "reduction": 0.5
-      },
-      "blast": 171,
-      "damage": "171.0 blast"
+      "impact": 147
     },
     "secondaryArea": {
-      "name": "Cluster Bomb Contact",
-      "status_chance": 21,
+      "name": "Cluster Bomb Explosion",
       "pellet": {
         "name": "Bomblet",
         "count": 3
       },
-      "impact": 147
+      "blast": 171,
+      "damage": "171.0 blast"
     },
     "statusChance": 21,
     "tags": [ "Grineer", "Kuva Lich" ],
@@ -153586,16 +153577,6 @@
       }
     ],
     "ammo": 540,
-    "areaAttack": {
-      "name": "Infested Orb",
-      "crit_chance": 0,
-      "crit_mult": 0,
-      "status_chance": 1,
-      "shot_type": "Projectile",
-      "shot_speed": null,
-      "radiation": 20,
-      "damage": "20.0 radiation"
-    },
     "damage": "25.0",
     "damageTypes": {
       "impact": 2.5,
@@ -153607,16 +153588,25 @@
     "polarities": [ "Vazarin" ],
     "projectile": "Projectile",
     "secondary": {
-      "name": "Orb Explosion",
-      "speed": 10,
-      "crit_chance": 5,
-      "crit_mult": 1.5,
-      "status_chance": 0,
+      "name": "Infested Orb",
+      "crit_chance": 0,
+      "crit_mult": 0,
+      "status_chance": 1,
+      "shot_type": "Projectile",
+      "shot_speed": null,
       "falloff": {
         "start": 0,
-        "end": 4.4,
-        "reduction": 0.5
+        "end": 2,
+        "reduction": 0
       },
+      "radiation": 20,
+      "damage": "20.0 radiation"
+    },
+    "secondaryArea": {
+      "name": "Orb Explosion",
+      "status_chance": 0,
+      "radius": 440,
+      "speed": 10,
       "toxin": 100,
       "damage": "100.0 toxin"
     },
@@ -185727,16 +185717,6 @@
       }
     ],
     "ammo": 275,
-    "areaAttack": {
-      "name": "Bomb Explosion",
-      "falloff": {
-        "start": 0,
-        "end": 4.8,
-        "reduction": 0.5
-      },
-      "radiation": 73,
-      "damage": "73.0 radiation"
-    },
     "damage": "60.0 radiation",
     "damageTypes": {
       "impact": 30,
@@ -185744,17 +185724,24 @@
     },
     "marketCost": 180,
     "polarities": [ "Naramon", "Madurai" ],
-    "projectile": "Projectile",
-    "secondaryArea": {
+    "projectile": "Hitscan",
+    "secondary": {
       "name": "Cluster Bombs",
-      "status_chance": 37,
+      "crit_chance": 3,
+      "crit_mult": 1.5,
+      "status_chance": 0.4,
       "pellet": {
-        "name": "Bomblet",
-        "count": 5
+        "count": 5,
+        "name": "Bomblet"
       },
       "impact": 75
     },
-    "statusChance": 37,
+    "secondaryArea": {
+      "name": "Bomb Explosion",
+      "radius": 480,
+      "radiation": 73,
+      "damage": "73.0 radiation"
+    },
     "tags": [ "Sentient" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/d/d6/RevenantShotgun.png/revision/latest?cb=20180825053839",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Phantasma",
@@ -197993,7 +197980,15 @@
       }
     ],
     "ammo": 72,
-    "areaAttack": {
+    "damage": "100.0 magnetic",
+    "damageTypes": {
+      "magnetic": 100
+    },
+    "flight": "???",
+    "marketCost": 210,
+    "polarities": [ "Vazarin", "Naramon" ],
+    "projectile": "Projectile",
+    "secondary": {
       "name": "Orb Explosion",
       "crit_chance": 12,
       "crit_mult": 2,
@@ -198006,14 +198001,6 @@
       "magnetic": 200,
       "damage": "200.0 magnetic"
     },
-    "damage": "100.0 magnetic",
-    "damageTypes": {
-      "magnetic": 100
-    },
-    "flight": "???",
-    "marketCost": 210,
-    "polarities": [ "Vazarin", "Naramon" ],
-    "projectile": "Projectile",
     "tags": [ "Cephalon" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/9/9a/CephPrimary.png/revision/latest?cb=20150625220225",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Simulor",
@@ -223689,20 +223676,6 @@
       }
     ],
     "ammo": 96,
-    "areaAttack": {
-      "name": "Singularity",
-      "speed": 4,
-      "crit_chance": 0,
-      "crit_mult": 0,
-      "status_chance": 0,
-      "falloff": {
-        "start": 0,
-        "end": 5,
-        "reduction": 0
-      },
-      "magnetic": 50,
-      "damage": "50.0 magnetic"
-    },
     "damage": "125.0 magnetic",
     "damageTypes": {
       "magnetic": 125
@@ -223722,6 +223695,15 @@
       },
       "magnetic": 240,
       "damage": "240.0 magnetic"
+    },
+    "secondaryArea": {
+      "name": "Singularity",
+      "status_chance": 0,
+      "duration": 2000,
+      "radius": 500,
+      "speed": 4,
+      "magnetic": 50,
+      "damage": "50.0 magnetic"
     },
     "tags": [ "Syndicate", "Cephalon Suda", "Cephalon" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/09/SyndicateCSSimulor.png/revision/latest?cb=20150902215134",
