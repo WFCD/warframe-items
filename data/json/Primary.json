@@ -62740,6 +62740,18 @@
     },
     "polarities": [  ],
     "projectile": "Discharge",
+    "secondary": {
+      "name": "Grenade Impact",
+      "speed": 0.25,
+      "crit_chance": 30,
+      "crit_mult": 2.4,
+      "status_chance": 0.2,
+      "pellet": {
+        "count": 3,
+        "name": "Grenade"
+      },
+      "impact": 30
+    },
     "secondaryArea": {
       "name": "Radial Attack",
       "status_chance": 16.7,
@@ -62752,7 +62764,6 @@
       "blast": 3000,
       "damage": "3000.0 blast"
     },
-    "statusChance": 16.7,
     "tags": [ "Entrati" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/4e/Cortege.png/revision/latest?cb=20200825211514",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Cortege",
@@ -143498,21 +143509,6 @@
         "fixes": ""
       }
     ],
-    "areaAttack": {
-      "name": "Explosion",
-      "speed": 1,
-      "crit_chance": 26,
-      "crit_mult": 2.2,
-      "status_chance": 0.3,
-      "falloff": {
-        "start": 0,
-        "end": 9.6,
-        "reduction": 0.6
-      },
-      "radiation": 400,
-      "blast": 400,
-      "damage": "400.0 radiation"
-    },
     "damage": "80.0 radiation",
     "damageTypes": {
       "impact": 10,
@@ -143520,8 +143516,15 @@
     },
     "marketCost": 125,
     "polarities": [  ],
-    "projectile": "Projectile",
-    "statusChance": 34,
+    "secondaryArea": {
+      "name": "Explosion",
+      "status_chance": 34,
+      "radius": 960,
+      "speed": 1,
+      "radiation": 400,
+      "blast": 400,
+      "damage": "400.0 radiation"
+    },
     "tags": [ "Tenno" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/c4/Larkspur.png/revision/latest?cb=20190309000707",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Larkspur",
@@ -145697,26 +145700,24 @@
     "polarities": [ "Madurai" ],
     "projectile": "Hitscan",
     "secondary": {
-      "name": "Charged Shot Explosion",
-      "speed": 0.5,
+      "name": "Charged Shot Projectile",
       "crit_chance": 50,
       "crit_mult": 3.5,
       "status_chance": 0.5,
-      "falloff": {
-        "start": 0,
-        "end": 8,
-        "reduction": 0.4
-      },
-      "heat": 3000,
-      "damage": "3000.0 heat"
-    },
-    "secondaryArea": {
-      "name": "Charged Shot Projectile",
-      "status_chance": 50,
+      "charge_time": 0.8,
+      "shot_type": "Projectile",
+      "shot_speed": null,
       "impact": 100,
       "puncture": 400,
       "heat": 500,
       "damage": "500.0 heat"
+    },
+    "secondaryArea": {
+      "name": "Charged Shot Explosion",
+      "status_chance": 50,
+      "speed": 0.5,
+      "heat": 3000,
+      "damage": "3000.0 heat"
     },
     "tags": [ "Entrati" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/0d/Mausolon.png/revision/latest?cb=20200829173059",
@@ -146304,27 +146305,23 @@
     "polarities": [ "Madurai" ],
     "projectile": "Projectile",
     "secondary": {
-      "name": "Charged Shot Explosion",
+      "name": "Charged Shot",
       "speed": 0.833,
       "crit_chance": 40,
       "crit_mult": 3,
       "status_chance": 0.5,
-      "falloff": {
-        "start": 0,
-        "end": 20,
-        "reduction": 0.6
-      },
+      "impact": 100
+    },
+    "secondaryArea": {
+      "name": "Charged Shot Explosion",
+      "status_chance": 50,
+      "radius": 2000,
+      "speed": 0.833,
       "impact": 600,
       "slash": 1000,
       "puncture": 800,
       "blast": 1200,
       "damage": "1200.0 blast"
-    },
-    "secondaryArea": {
-      "name": "Charged Shot",
-      "status_chance": 50,
-      "speed": 0.833,
-      "impact": 100
     },
     "tags": [ "Entrati" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e1/Morgha.png/revision/latest?cb=20201120225855",
