@@ -611,6 +611,7 @@ class Parser {
     if (!['weapons', 'warframes', 'mods', 'upgrades'].includes(category.toLowerCase())) return
 
     const wikiaItem = wikiaData[category === 'Upgrades' ? 'mods' : category.toLowerCase()]
+      .filter(i => i)
       .find(i => i.name === item.name)
     if (!wikiaItem) return
 
