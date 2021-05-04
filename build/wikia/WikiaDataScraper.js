@@ -145,6 +145,7 @@ class WikiaDataScraper {
 
       await Promise.all(await keys.map(async thingName => {
         const thingToTransform = jsonData[`${this.luaObjectName}s`][thingName]
+        if (thingToTransform && !thingToTransform.Name) thingToTransform.Name = thingName
         const transformedThing = await this.transformFunction(thingToTransform, imageUrls)
         things.push(transformedThing)
       }))
