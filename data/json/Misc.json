@@ -12217,7 +12217,7 @@
         "tradable": false
       }
     ],
-    "type": "Amp",
+    "type": "",
     "imageName": "dissic-scaffold.png",
     "category": "Misc",
     "tradable": false,
@@ -12238,7 +12238,36 @@
         "changes": "Dissic Scaffold: 60%",
         "fixes": ""
       }
-    ]
+    ],
+    "areaAttack": {
+      "name": "Explosion",
+      "crit_chance": 0,
+      "crit_mult": 0,
+      "status_chance": 0.2,
+      "falloff": {
+        "start": 0,
+        "end": 12,
+        "reduction": 0.6
+      },
+      "void": 6600,
+      "damage": "6600.0 void"
+    },
+    "damage": "15.0",
+    "damageTypes": {
+      "impact": 15
+    },
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "secondaryArea": {
+      "name": "Explosive Fragments",
+      "status_chance": 20,
+      "void": 300,
+      "damage": "300.0 void"
+    },
+    "tags": [ "Sentient" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e1/DissicScaffold.png/revision/latest?cb=20210321020927",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Dissic_Scaffold",
+    "disposition": 3
   },
   {
     "uniqueName": "/Lotus/Types/Ship/BasicUcResourceDrone",
@@ -16622,7 +16651,7 @@
         ]
       }
     ],
-    "type": "Amp",
+    "type": "",
     "imageName": "exard-scaffold.png",
     "category": "Misc",
     "tradable": false,
@@ -16667,7 +16696,30 @@
         "changes": "Changed the hit effect sound to the Corpus Exard Scaffold.",
         "fixes": ""
       }
-    ]
+    ],
+    "areaAttack": {
+      "name": "Explosion",
+      "crit_chance": 0,
+      "crit_mult": 0,
+      "status_chance": 0.3,
+      "falloff": {
+        "start": 0,
+        "end": 1,
+        "reduction": 0.3
+      },
+      "void": 2600,
+      "damage": "2600.0 void"
+    },
+    "damage": "200.0",
+    "damageTypes": {
+      "impact": 200
+    },
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "tags": [ "Sentient" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/37/ExardScaffold.png/revision/latest?cb=20210321020842",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Exard_Scaffold",
+    "disposition": 3
   },
   {
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardUncommonItem",
@@ -95731,6 +95783,11 @@
       "crit_chance": 24,
       "crit_mult": 2.1,
       "status_chance": 0,
+      "falloff": {
+        "start": 0,
+        "end": 5,
+        "reduction": 0.3
+      },
       "void": 1100,
       "damage": "1100.0 void"
     },
@@ -96644,7 +96701,7 @@
         ]
       }
     ],
-    "type": "Amp",
+    "type": "",
     "imageName": "propa-scaffold.png",
     "category": "Misc",
     "tradable": false,
@@ -96674,7 +96731,28 @@
         "changes": "",
         "fixes": "Fixed misaligned Certus Brace and Propa Scaffold when building an Amp."
       }
-    ]
+    ],
+    "areaAttack": {
+      "name": "Explosion",
+      "crit_chance": 15,
+      "crit_mult": 1.5,
+      "status_chance": 0,
+      "falloff": {
+        "start": 0,
+        "end": 14,
+        "reduction": 0.7
+      },
+      "void": 9000,
+      "damage": "9000.0 void"
+    },
+    "damage": "0.0",
+    "damageTypes": {},
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "tags": [ "Sentient" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/7/77/PropaScaffold.png/revision/latest?cb=20210321021003",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Propa_Scaffold",
+    "disposition": 3
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/Railjack/RailjackHoodBraceFeatureItem",
@@ -102578,6 +102656,11 @@
       "crit_chance": 10,
       "crit_mult": 1.5,
       "status_chance": 0.1,
+      "falloff": {
+        "start": 0,
+        "end": 7,
+        "reduction": 0.4
+      },
       "void": 4500,
       "damage": "4500.0 void"
     },
