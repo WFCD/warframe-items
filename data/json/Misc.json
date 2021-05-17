@@ -39804,7 +39804,7 @@
       "name": "Explosion",
       "crit_chance": 16,
       "crit_mult": 1.5,
-      "status_chance": 0.2,
+      "status_chance": 0,
       "falloff": {
         "start": 0,
         "end": 3.5,
@@ -39818,7 +39818,7 @@
       "void": 1000
     },
     "polarities": [  ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "tags": [ "Sentient" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/2d/SentAmpSet1BarrelC.png/revision/latest?cb=20210322130744",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Granmu_Prism",
@@ -77786,7 +77786,7 @@
         "tradable": false
       }
     ],
-    "type": "Amp",
+    "type": "",
     "imageName": "klebrik-scaffold.png",
     "category": "Misc",
     "tradable": false,
@@ -77807,7 +77807,17 @@
         "changes": "",
         "fixes": "Fixed the Operator Amp Energy Regeneration rate being much faster for Clients when using an Amp that has the Klebrik Scaffold."
       }
-    ]
+    ],
+    "damage": "320.0 void",
+    "damageTypes": {
+      "void": 320
+    },
+    "polarities": [  ],
+    "projectile": "Discharge",
+    "tags": [ "Sentient" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/32/SentAmpSet1ChassisC.png/revision/latest?cb=20210322130813",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Klebrik_Scaffold",
+    "disposition": 3
   },
   {
     "name": "Korb",
@@ -94687,7 +94697,7 @@
         "tradable": false
       }
     ],
-    "type": "Amp",
+    "type": "",
     "imageName": "pencha-scaffold.png",
     "category": "Misc",
     "tradable": false,
@@ -94700,7 +94710,25 @@
         "changes": "Pencha Scaffold:",
         "fixes": ""
       }
-    ]
+    ],
+    "areaAttack": {
+      "name": "Area of Effect",
+      "crit_chance": 4,
+      "crit_mult": 1.1,
+      "status_chance": 0.1,
+      "void": 4500,
+      "damage": "4500.0 void"
+    },
+    "damage": "4500.0 void",
+    "damageTypes": {
+      "void": 4500
+    },
+    "polarities": [  ],
+    "projectile": "Hitscan",
+    "tags": [ "Sentient" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/21/SentAmpSet1ChassisA.png/revision/latest?cb=20210322130750",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Pencha_Scaffold",
+    "disposition": 3
   },
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/PersonalQuartersFeatureItem",
@@ -95668,7 +95696,7 @@
         ]
       }
     ],
-    "type": "Amp",
+    "type": "",
     "imageName": "phahd-scaffold.png",
     "category": "Misc",
     "tradable": false,
@@ -95697,7 +95725,25 @@
         "changes": "Fixed the Phahd Scaffold projectiles not passing through Volt’s Electric Shield.",
         "fixes": ""
       }
-    ]
+    ],
+    "areaAttack": {
+      "name": "Explosion",
+      "crit_chance": 24,
+      "crit_mult": 2.1,
+      "status_chance": 0,
+      "void": 1100,
+      "damage": "1100.0 void"
+    },
+    "damage": "3000.0 void",
+    "damageTypes": {
+      "void": 3000
+    },
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "tags": [ "Sentient" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/05/SentAmpSet2ChassisA.png/revision/latest?cb=20210322130928",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Phahd_Scaffold",
+    "disposition": 3
   },
   {
     "name": "Pharaoh Predasite",
@@ -97056,7 +97102,7 @@
       "void": 1000
     },
     "polarities": [  ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "tags": [ "Sentient" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/29/SentAmpSet2BarrelA.png/revision/latest?cb=20210322130747",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Rahn_Prism",
@@ -102497,7 +102543,7 @@
         ]
       }
     ],
-    "type": "Amp",
+    "type": "",
     "imageName": "shraksun-scaffold.png",
     "category": "Misc",
     "tradable": false,
@@ -102526,7 +102572,25 @@
         "changes": "",
         "fixes": "Fixed amps built using Shwaak Prism and Shraksun Scaffold not passing through Volt’s Electric Shield."
       }
-    ]
+    ],
+    "areaAttack": {
+      "name": "Explosion",
+      "crit_chance": 10,
+      "crit_mult": 1.5,
+      "status_chance": 0.1,
+      "void": 4500,
+      "damage": "4500.0 void"
+    },
+    "damage": "3000.0 void",
+    "damageTypes": {
+      "void": 3000
+    },
+    "polarities": [  ],
+    "projectile": "Projectile",
+    "tags": [ "Sentient" ],
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/a0/SentAmpSet1ChassisB.png/revision/latest?cb=20210322130753",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Shraksun_Scaffold",
+    "disposition": 3
   },
   {
     "name": "Shrewd",
@@ -102837,7 +102901,7 @@
       "void": 3500
     },
     "polarities": [  ],
-    "projectile": "Hitscan",
+    "projectile": "Projectile",
     "tags": [ "Sentient" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/4f/SentAmpSet1BarrelB.png/revision/latest?cb=20210322130741",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Shwaak_Prism",
