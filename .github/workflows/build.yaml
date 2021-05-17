@@ -4,7 +4,7 @@ on:
     - cron: "55 * * * *"
 
 jobs:
-  lint:
+  build:
     name: Build
     runs-on: ubuntu-latest
     strategy:
