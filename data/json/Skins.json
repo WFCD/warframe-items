@@ -60,16 +60,6 @@
     "tradable": false
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Skins/Clan/CorpusLichEmblemItem",
-    "name": "[Ph] Corpus Lich Emblem",
-    "excludeFromCodex": true,
-    "description": "/Lotus/Language/Cosmetics/CorpusLichEmblemDesc",
-    "type": "Skin",
-    "imageName": "ph-corpus-lich-emblem.png",
-    "category": "Skins",
-    "tradable": false
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Skins/Clan/DarkSectorEventEmblemItem",
     "name": "[Ph] Dark Sector Event Emblem",
     "excludeFromCodex": true,
@@ -31328,6 +31318,15 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/GaraPrimeCatbrowPetColorTertiary",
+    "name": "Aros Brown",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "type": "Fur Color",
+    "imageName": "aros-brown.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/TnBrokenFrameSyandana",
     "name": "Artifex Syandana",
     "description": "This techno-organic syandana fits over the shoulder, giving your Warframe a unique, spiked silhouette.",
@@ -36615,19 +36614,19 @@
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Pacifist/SWBaruukZamariuHelmet",
-    "name": "Baruuk Zaimariu Helmet",
+    "name": "Baruuk Zamariu Helmet",
     "description": "A helmet for the Baruuk Warframe, designed by daemonstar and led2012.<UGC> TennoGen",
     "type": "Skin",
-    "imageName": "baruuk-zaimariu-helmet.png",
+    "imageName": "baruuk-zamariu-helmet.png",
     "category": "Skins",
     "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Pacifist/SWBaruukZamariuSkin",
-    "name": "Baruuk Zaimariu Skin",
+    "name": "Baruuk Zamariu Skin",
     "description": "A unique skin for the Baruuk Warframe, designed by daemonstar and led2012.<UGC> TennoGen",
     "type": "Skin",
-    "imageName": "baruuk-zaimariu-skin.png",
+    "imageName": "baruuk-zamariu-skin.png",
     "category": "Skins",
     "tradable": false
   },
@@ -44685,6 +44684,24 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Skins/Catbrows/Armor/CatbrowArmorGaraPrime",
+    "name": "Castellan Prime Armor",
+    "description": "Gird your Kavat in sculpted glass armor fit for the very noblest of beasts.",
+    "type": "Skin",
+    "imageName": "castellan-prime-armor.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Effects/EphemeraGaraPrime",
+    "name": "Catena Prime Ephemera",
+    "description": "Levitating crystals weave a web of luminous connections. Gara Prime’s signature ephemera.",
+    "type": "Skin",
+    "imageName": "catena-prime-ephemera.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/CatenoPrimeMeleeDangle",
     "name": "Cateno Prime Sugatra",
     "description": "An Orokin relic of the highest distinction.",
@@ -50928,6 +50945,14 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Made updates to the machine sounds and radius in the Corpus POI airlocks.  \nFixed the Corpus Troop Spawn Racks in the POIs malfunctioning & ejecting you into space if you get caught underneath it as it's coming down. \nFixed sound FX popping on trams in the Corpus POIs. \nFixed Corpus Railjack Capital Ship airlock not actually teleporting Clients into the Capital Ship.\nFixes towards transparency issues with a sign in the Corpus Railjack ship.\nFixed some Corpus Railjack Codex dioramas having flashing lights.\nFixed AFK detection not working on players that were using moving parts in the Corpus Ship Defense missions. \nFixed music getting desynced (mostly between drums and melody) in the Corpus Ship tileset. \nFixed misaligned Pillar (was allowing visibility through the level to outside) in the Corpus Ice Planet tileset. \nFixed collision issues on certain doorframes in the Corpus Ship tileset.\nFixed several Corpus enemy types not attacking or repositioning at certain ranges in Railjack missions.\nFixed script error with the Corpus Optio abilities."
+      },
       {
         "name": "Call of the Tempestarii: TennoGen: Update 30.2.0",
         "date": "2021-05-12T19:38:18Z",
@@ -62244,6 +62269,14 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed being unable to leave the Railjack or fast travel when returning from a Railjack mission to a Relay. This also fixes the pause menu showing Dojo options instead of Relay. \nFixed using the Dojo Arsenal during Railjack mission countdown creating duplicate companions. \nUpdated Zephyr’s Tornado FX to the latest from her rework at the Clan Dojo Backdrops Research console.\nChanged the “None” Dojo Backdrop to a default option instead of a Recipe that must be researched.\nFixed a large amount of spot-loading when returning to the Dojo from a mission.\nFixed crash after selecting and placing Personal Decorations in the Dojo. \nFixed script error when traveling between Dojo and Relays. \nFixed Challenges (Achievements, Nightwave) involving mission completion gaining progress when returning to town from an Open Zone mission, or when returning to the Dojo from a Railjack mission. "
+      },
       {
         "name": "Call of the Tempestarii: Hotfix 30.0.6",
         "date": "2021-04-20T19:37:13Z",
@@ -78493,6 +78526,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Eximus units will now drop from the drop tables twice: Once from the base enemy type table and once from the Eximus table. "
+      },
+      {
         "name": "Call of the Tempestarii: Update 30",
         "date": "2021-04-13T18:04:02Z",
         "url": "https://forums.warframe.com/topic/1258560-call-of-the-tempestarii-update-30/",
@@ -79097,6 +79138,14 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed enemies not spawning in Volatile missions (after mission complete) when you had previously run an Exterminate or Sentient Anomaly mission and travelled directly to the next Volatile mission. "
+      },
       {
         "name": "Call of the Tempestarii: TennoGen: Update 30.2.0",
         "date": "2021-05-12T19:38:18Z",
@@ -84983,6 +85032,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed arm cannon type (Epitaph, Gammacor, Atomos) reticle area being blocked by a part of Zephyr Harrier's shoulder element."
+      },
+      {
         "name": "Call of the Tempestarii: Hotfix 30.0.7",
         "date": "2021-04-22T17:58:13Z",
         "url": "https://forums.warframe.com/topic/1260721-call-of-the-tempestarii-hotfix-3007/",
@@ -85318,6 +85375,25 @@
     "excludeFromCodex": true,
     "type": "Skin",
     "imageName": "gara-noble-animation-set.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Glass/GaraPrimeHelmet",
+    "name": "Gara Prime Helmet",
+    "description": "The standard issue helmet for the Gara Prime Warframe.",
+    "type": "Skin",
+    "imageName": "gara-prime-helmet.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Glass/GaraPrimeSkin",
+    "name": "Gara Prime Skin",
+    "excludeFromCodex": true,
+    "description": "The standard issue skin for the Gara Prime Warframe.",
+    "type": "Skin",
+    "imageName": "gara-prime-skin.png",
     "category": "Skins",
     "tradable": false
   },
@@ -91729,6 +91805,14 @@
       }
     ],
     "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed quest tileset appearing in regular Grineer Sealab Defense missions.\nFixed lighting issues in the Grineer Shipyard tileset causing a large straight line above the horizon. \nFixed missing lighting on the extraction cinematic causing the Landing Craft to appear completely black in the Grineer Sealab tileset. \nFixed a purple overlay appearing in the Grineer Shipyard Hijack tileset textures (ex. Ludi, Ceres). \nFixed being able to go out of bounds in the Grineer Sealab tileset during the Second Dream quest.\nFixed Mobile Defense Terminals facing the wall at an angle in the Grineer Shipyards tileset."
+      },
       {
         "name": "Call of the Tempestarii: TennoGen: Update 30.2.0",
         "date": "2021-05-12T19:38:18Z",
@@ -103505,6 +103589,14 @@
     ],
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed misaligned Pillar (was allowing visibility through the level to outside) in the Corpus Ice Planet tileset. "
+      },
+      {
         "name": "Call of the Tempestarii: TennoGen: Hotfix 30.1.1",
         "date": "2021-05-05T21:12:25Z",
         "url": "https://forums.warframe.com/topic/1262687-call-of-the-tempestarii-tennogen-hotfix-3011/",
@@ -106709,6 +106801,14 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed doors appearing too bright in the Infested Ship tileset. "
+      },
       {
         "name": "Call of the Tempestarii: TennoGen: Update 30.2.0",
         "date": "2021-05-12T19:38:18Z",
@@ -126055,7 +126155,17 @@
     "type": "Skin",
     "imageName": "mag-mask.png",
     "category": "Skins",
-    "tradable": false
+    "tradable": false,
+    "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Cosmetic Masks from Cetus for Operators (eg. Mag Mask) appear enlarged when switching to Operator in open zone hubs (eg. Necralisk)."
+      }
+    ]
   },
   {
     "uniqueName": "/Lotus/Upgrades/Skins/Mag/MagNobleAnims",
@@ -126361,6 +126471,15 @@
     "excludeFromCodex": true,
     "type": "Ship Decoration",
     "imageName": "mahd-luxxum-ornament.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/GaraPrimeCatbrowPetColorAccents",
+    "name": "Maipal Yellow",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "type": "Fur Color",
+    "imageName": "maipal-yellow.png",
     "category": "Skins",
     "tradable": false
   },
@@ -134093,6 +134212,15 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/GaraPrimeCatbrowPetColorBase",
+    "name": "Naru Blue",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "type": "Fur Color",
+    "imageName": "naru-blue.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Skins/Scarves/SWNaruScarf",
     "name": "Naru Syandana",
     "description": "A syandana for your Warframe, designed by Malaya and Jadie.<UGC> TennoGen",
@@ -140132,6 +140260,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Challenges (Achievements, Nightwave) involving mission completion gaining progress when returning to town from an Open Zone mission, or when returning to the Dojo from a Railjack mission. "
+      },
+      {
         "name": "Call of the Tempestarii: TennoGen: Update 30.2.0",
         "date": "2021-05-12T19:38:18Z",
         "url": "https://forums.warframe.com/topic/1263575-call-of-the-tempestarii-tennogen-update-3020/",
@@ -142324,6 +142460,14 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Changed the “None” Dojo Backdrop to a default option instead of a Recipe that must be researched.\nWe made this change because “None” is every room’s default when first constructed. We want this option always available instead of requiring more research on the part of Clans who wish to return a room to how it first appeared.\nThis change will deduct 1K Affinity from Clans that completed the research, but it will not affect the tiers of Clans who upgraded to a higher tier using this 1K Affinity. We will be running a script to refund Clans who spent Credits on “None” Backdrop research."
+      },
       {
         "name": "Call of the Tempestarii: Hotfix 30.0.6",
         "date": "2021-04-20T19:37:13Z",
@@ -150512,6 +150656,14 @@
     ],
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "The glorious original Orokin casting of Gara’s signature glass hammer. Deceptively light and swift, while remaining lethally effective.\nFixed blinding lights in the Orokin Derelict tileset in areas where water is present."
+      },
+      {
         "name": "Call of the Tempestarii: Update 30",
         "date": "2021-04-13T18:04:02Z",
         "url": "https://forums.warframe.com/topic/1258560-call-of-the-tempestarii-update-30/",
@@ -153869,6 +154021,15 @@
     "description": "Put on a striking display with this fanciful syandana.",
     "type": "Skin",
     "imageName": "parotia-syandana.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/GaraPrimeCatbrowPetColorSecondary",
+    "name": "Paskan Crimson",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "type": "Fur Color",
+    "imageName": "paskan-crimson.png",
     "category": "Skins",
     "tradable": false
   },
@@ -165719,6 +165880,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an explosive barrel in Rotuma, Kuva Fortress ignoring the room lighting and shining bright like a diamond."
+      },
+      {
         "name": "Call of the Tempestarii: TennoGen: Hotfix 30.1.1",
         "date": "2021-05-05T21:12:25Z",
         "url": "https://forums.warframe.com/topic/1262687-call-of-the-tempestarii-tennogen-hotfix-3011/",
@@ -166301,6 +166470,15 @@
     "description": "A very special Floof commemorating your participation in Tactical Alert: Dog Days. FOR SQUISHY HONOR!",
     "type": "Ship Decoration",
     "imageName": "rucksack-roller-floof.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Catbrows/GaraPrimeCatbrowFur",
+    "name": "Sabella Prime Fur Pattern",
+    "description": "Imbue your Kavat with the unmistakable marks of ancient Orokin lineage.",
+    "type": "Skin",
+    "imageName": "sabella-prime-fur-pattern.png",
     "category": "Skins",
     "tradable": false
   },
@@ -175787,6 +175965,14 @@
     ],
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "PLUS! As an added Gara QoL change, her glass armor no longer disappears during Splinter Storm!\nYou have requested many times (many, many, times) to have a UI toggle that will give you control over whether Gara's glass armor parts will \"shatter\" while using Splinter Storm. You want to use this power all the time, but it makes your warframe look so much less... shiny when you do.\nFixed Host and Client getting trapped in an infinite loading tunnel after aborting to Dry Dock from Void Storm mission. "
+      },
+      {
         "name": "Call of the Tempestarii: TennoGen: Update 30.2.0",
         "date": "2021-05-12T19:38:18Z",
         "url": "https://forums.warframe.com/topic/1263575-call-of-the-tempestarii-tennogen-update-3020/",
@@ -179151,6 +179337,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "In addition to giving more room for Tenno to get to that final rank with their Syndicates, this will ultimately help reduce the time new players spend ranking up with their chosen Syndicates. Previously, if you were Mastery Rank 10, you would have a daily Standing cap of 16,000. Now, with the changes we’ve made, your daily Standing cap for MR 10 is 21,000.\nAdded ‘Recruit Tenno’ option \nFixed the position of the Jotunheim Music TennoGen Syandana sitting too low on the Warframe’s back. \nFixed the Khora Fiera TennoGen Helmet dangles getting tangled during quick movement."
+      },
+      {
         "name": "Call of the Tempestarii: TennoGen: Hotfix 30.2.2",
         "date": "2021-05-13T21:44:39Z",
         "url": "https://forums.warframe.com/topic/1263763-call-of-the-tempestarii-tennogen-hotfix-3022/",
@@ -182076,6 +182270,14 @@
     "tradable": false,
     "patchlogs": [
       {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Added a \"To be continued...\" label to The New War in Codex if the third entry cinematic has been viewed. The third cinematic entry has also officially been titled “The Maker”."
+      },
+      {
         "name": "Nightwave: Intermission III: Update 29.7.0",
         "date": "2021-02-01T18:57:32Z",
         "url": "https://forums.warframe.com/topic/1247625-nightwave-intermission-iii-update-2970/",
@@ -182675,6 +182877,16 @@
     "description": "Gild the Tiberon with this intricate bronze skin.",
     "type": "Skin",
     "imageName": "tiberon-elixis-skin.png",
+    "category": "Skins",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Skins/Sony/PS5TiberonSkin",
+    "name": "Tiberon Obsidian Skin",
+    "excludeFromCodex": true,
+    "description": "A next-generation look for the Tiberon Rifle.",
+    "type": "Skin",
+    "imageName": "tiberon-obsidian-skin.png",
     "category": "Skins",
     "tradable": false
   },
@@ -197467,6 +197679,14 @@
     "category": "Skins",
     "tradable": false,
     "patchlogs": [
+      {
+        "name": "Gara Prime: Update 30.3.0",
+        "date": "2021-05-25T17:56:49Z",
+        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Vitus Illumina Decoration becoming completely invisible at Low graphics."
+      },
       {
         "name": "Plains of Eidolon Remaster: Update 24.8.0",
         "date": "2019-04-24T20:20:15Z",
