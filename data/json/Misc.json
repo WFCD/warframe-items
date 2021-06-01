@@ -1556,7 +1556,6 @@
         "fixes": "Fixed applying Forma to the Necramech Arquebex not showing the Polarity right away until you relog."
       }
     ],
-    "ammo": "Infinite",
     "areaAttack": {
       "name": "Radial Attack",
       "falloff": {
@@ -1867,7 +1866,6 @@
         "fixes": ""
       }
     ],
-    "ammo": "Infinite",
     "damage": "1680.0",
     "damageTypes": {
       "impact": 235.2,
@@ -9292,7 +9290,6 @@
         "fixes": "Fixed both Charged Damage and Quick Shot Damage of Hildryn’s Balefire Charger Damage displaying the same value in the Arsenal."
       }
     ],
-    "ammo": "Infinite",
     "damage": "500.0 electricity",
     "damageTypes": {
       "electricity": 500
@@ -12287,7 +12284,6 @@
         "fixes": ""
       }
     ],
-    "ammo": "Infinite",
     "damage": "160.0",
     "damageTypes": {
       "impact": 16,
@@ -99791,23 +99787,11 @@
         "fixes": "Fixed misaligned Certus Brace and Propa Scaffold when building an Amp."
       }
     ],
-    "areaAttack": {
-      "name": "Explosion",
-      "crit_chance": 15,
-      "crit_mult": 1.5,
-      "status_chance": 0,
-      "falloff": {
-        "start": 0,
-        "end": 14,
-        "reduction": 0.7
-      },
-      "void": 9000,
-      "damage": "9000.0 void"
+    "damage": "9000.0 void",
+    "damageTypes": {
+      "void": 9000
     },
-    "damage": "0.0",
-    "damageTypes": {},
     "polarities": [  ],
-    "projectile": "Projectile",
     "tags": [ "Sentient" ],
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/7/77/PropaScaffold.png/revision/latest?cb=20210321021003",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Propa_Scaffold",
@@ -101773,7 +101757,6 @@
         "fixes": "Fixed an issue with Grineer Regulators spawning in Settlement Interception missions which could cause potential progression stoppers."
       }
     ],
-    "ammo": "Infinite",
     "damage": "50.0",
     "damageTypes": {
       "impact": 25,
