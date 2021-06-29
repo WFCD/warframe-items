@@ -1,61 +1,69 @@
-name: Bug Report
-description: Create a report to help us improve
-title: "[Bug] It's a bug!"
-labels:
-  - 'Type: Bug'
-  - help wanted
-  - 'Scope: Out of Scope'
-  - 'Severity4: Inconvenient'
-body:
- - type: input
-   id: description
-   attributes:
-    label: Describe the bug
-    description: A clear and concise description of what the bug is.
-    placeholder: Excalibur Prime is missing his face!
-   validations:
-    required: true
- - type: markdown
-   attributes:
-    value: '**Versions:**'
- - type: input
-   id: nodejs
-   attributes:
-    label: NodeJS Version
-    placeholder: e.g. v8.16.0
-   validations:
-    required: true
- - type: input
-   id: npm
-   attributes:
-    label: npm Version
-    placeholder: e.g. v6.11.0
-   validations:
-    required: true
- - type: input
-   id: version
-   attributes:
-    label: warframe-items Version
-    placeholder: e.g. v1.576.0
-   validations:
-    required: true
-- type: dropdown
+--- 
+body: 
+  - 
+    attributes: 
+      description: "A clear and concise description of what the bug is."
+      label: "Describe the bug"
+      placeholder: "Excalibur Prime is missing his face!"
+    id: description
+    type: input
+    validations: 
+      required: true
+  - 
+    attributes: 
+      value: "**Versions:**"
+    type: markdown
+  - 
+    attributes: 
+      label: "NodeJS Version"
+      placeholder: "e.g. v8.16.0"
+    id: nodejs
+    type: input
+    validations: 
+      required: true
+  - 
+    attributes: 
+      label: "npm Version"
+      placeholder: "e.g. v6.11.0"
+    id: npm
+    type: input
+    validations: 
+      required: true
+  - 
+    attributes: 
+      label: "warframe-items Version"
+      placeholder: "e.g. v1.576.0"
+    id: version
+    type: input
+    validations: 
+      required: true
+  - 
+    attributes: 
+      description: "What version of our software are you running?"
+      label: "Access Method"
+      options: 
+        - "npm Package (Default)"
+        - "github download"
+        - "warframestat.us API"
     id: access-method
-    attributes:
-      label: Access Method
-      description: What version of our software are you running?
-      options:
-        - npm Package (Default)
-        - github download
-        - warframestat.us API
-    validations:
+    type: dropdown
+    validations: 
       required: true
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see! Feel free to add screenshots
+  - 
+    attributes: 
+      description: "Also tell us, what did you expect to happen?"
+      label: "What happened?"
+      placeholder: "Tell us what you see! Feel free to add screenshots"
       value: "A bug happened!"
-    validations:
+    id: what-happened
+    type: textarea
+    validations: 
       required: true
+description: "Create a report to help us improve"
+labels: 
+  - "Type: Bug"
+  - "help wanted"
+  - "Scope: Out of Scope"
+  - "Severity4: Inconvenient"
+name: "Bug Report"
+title: "[Bug] It's a bug!"
