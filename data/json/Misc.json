@@ -89,6 +89,184 @@
     "tradable": false
   },
   {
+    "name": "Adlet Core",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
+        "name": "Coprite Alloy",
+        "description": "Coprun that has been forged into a stronger metal.",
+        "itemCount": 40,
+        "imageName": "coprite-alloy.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Tusk Thumper",
+            "type": "Coprite Alloy",
+            "chance": 0.1668,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tusk Thumper Bull",
+            "type": "Coprite Alloy",
+            "chance": 0.2502,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tusk Thumper Doma",
+            "type": "Coprite Alloy",
+            "chance": 0.3336,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 1500,
+        "imageName": "rubedo.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Kosma Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0022,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kosma Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0022,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0025,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0025,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Eviscerator",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0028,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Supressor",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0028,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hellion Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Kuva Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Command Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Shield Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Locust Drone",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0221,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Caelus (Interception), Rotation A",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0251,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+        "name": "Spectral Debris",
+        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
+        "excludeFromCodex": true,
+        "itemCount": 5,
+        "imageName": "spectral-debris.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+        "name": "Venerdo Alloy",
+        "description": "A compound formed from Venerol.",
+        "itemCount": 25,
+        "imageName": "venerdo-alloy.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "adlet-core.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "rewardName": "/Lotus/Types/StoreItems/Boosters/AffinityBoosterStoreItem",
     "rarity": "Common",
     "tier": 0,
@@ -9524,6 +9702,272 @@
     "tradable": false
   },
   {
+    "name": "Bhaira Hound",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+        "name": "Eye-Eye Rotoblade",
+        "description": "A machine element used to propel robotic organisms through coolant.Acquired by disassembling Eye-Eye Servofish.",
+        "itemCount": 10,
+        "imageName": "eye-eye-rotoblade.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.Locations: Mars and Uranus.",
+        "itemCount": 5,
+        "imageName": "gallium.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1079,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
+        "name": "Marquise Thyst",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 2,
+        "imageName": "marquise-thyst.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+        "name": "Spectral Debris",
+        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
+        "excludeFromCodex": true,
+        "itemCount": 5,
+        "imageName": "spectral-debris.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "bhaira-hound.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
     "name": "Biotic Filter",
     "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.Guaranteed to drop from these sources:AQUAPULMODUROID",
@@ -9965,6 +10409,111 @@
     "description": "For saving a specimen of this species.",
     "type": "Conservation Tag",
     "imageName": "caustic-cryptilex-tag.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Cela Bracket",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Brickie Muon Battery",
+        "description": "A small, atomic power source.Acquired by disassembling Brickie Servofish.",
+        "itemCount": 15,
+        "imageName": "brickie-muon-battery.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
+        "name": "Iradite",
+        "description": "A valuable mineral found on the Plains.",
+        "itemCount": 25,
+        "imageName": "iradite.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Tusk Thumper",
+            "type": "Iradite",
+            "chance": 0.1668,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tusk Thumper Bull",
+            "type": "Iradite",
+            "chance": 0.2502,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tusk Thumper Doma",
+            "type": "Iradite",
+            "chance": 0.3336,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Iradite Formation",
+            "type": "Iradite",
+            "chance": 1,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
+        "name": "Sola Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Sola Toroids from enemies located at the Temple of Profit in the Orb Vallis and from Kyta Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
+        "itemCount": 5,
+        "imageName": "sola-toroid.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Orb Vallis - Temple of Profit Enemies",
+            "type": "Sola Toroid",
+            "chance": 0.02,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Kyta Raknoid",
+            "type": "Sola Toroid",
+            "chance": 0.2,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 35,
+        "imageName": "travocyte-alloy.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "cela-bracket.png",
     "category": "Misc",
     "tradable": false
   },
@@ -11017,6 +11566,16 @@
         "rarity": "Uncommon"
       }
     ]
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/GranumBucks",
+    "name": "Corrupted Holokey",
+    "description": "A corrupted decryption key dating back to the founding of the city of Corposium. Millions of these Holokeys were lost to the Void when Parvos Granum's flagship was bombed. Strongly desired by Ergo Glast.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "corrupted-holokey.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
@@ -13046,6 +13605,272 @@
         "fixes": "Fixed being unable to Chat link Dokrahm, Rabvee or Sephfan Zaws."
       }
     ]
+  },
+  {
+    "name": "Dorma Hound",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.Locations: Mars and Uranus.",
+        "itemCount": 5,
+        "imageName": "gallium.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1079,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
+        "name": "Mirewinder Parallel Biode",
+        "description": "Controls the electrical flow throughout the circuitry within robotic organisms.Acquired by disassembling Mirewinder Servofish.",
+        "itemCount": 10,
+        "imageName": "mirewinder-parallel-biode.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
+        "name": "Radian Sentirum",
+        "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 2,
+        "imageName": "radian-sentirum.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+        "name": "Spectral Debris",
+        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
+        "excludeFromCodex": true,
+        "itemCount": 5,
+        "imageName": "spectral-debris.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "dorma-hound.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagVirminkUncommon",
@@ -24023,12 +24848,110 @@
         ]
       },
       {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
-        "name": "Exceptional Sentient Core",
-        "description": "An integral part of Vomvalysts and Teralysts, the exact function of this... device? Organ? is uncertain.",
+        "uniqueName": "/Lotus/Types/Items/MiscItems/WeaponUtilityUnlocker",
+        "name": "Exilus Weapon Adapter",
+        "description": "Fuses with a Primary or Secondary weapon to unlock the Exilus Mod Slot.",
         "itemCount": 1,
-        "imageName": "exceptional-sentient-core.png",
-        "tradable": false
+        "imageName": "exilus-weapon-adapter.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Requiem I Relic",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem II Relic",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem III Relic",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem IV Relic",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem I Relic (Exceptional)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.04,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem II Relic (Exceptional)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.04,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem III Relic (Exceptional)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.04,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem IV Relic (Exceptional)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.04,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem I Relic (Flawless)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.06,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem II Relic (Flawless)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.06,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem III Relic (Flawless)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.06,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem IV Relic (Flawless)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.06,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Requiem I Relic (Radiant)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.1,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Requiem II Relic (Radiant)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.1,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Requiem III Relic (Radiant)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.1,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Requiem IV Relic (Radiant)",
+            "type": "Exilus Weapon Adapter Blueprint",
+            "chance": 0.1,
+            "rarity": "Uncommon"
+          }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Forma",
@@ -39934,6 +40857,253 @@
     ]
   },
   {
+    "name": "Frak Stabilizer",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 600,
+        "imageName": "circuits.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 2500,
+        "imageName": "ferrite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
+        "name": "Hespazym Alloy",
+        "description": "A compound formed from Hesperon.",
+        "itemCount": 20,
+        "imageName": "hespazym-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
+        "name": "Nitain Extract",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
+        "itemCount": 3,
+        "imageName": "nitain-extract.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Wolf Of Saturn Six",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Wolf Of Saturn Six",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Zealoid Prelate",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hallowed Flame Endurance Caches, Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Marduk (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Stribog (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0412,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0412,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0595,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0595,
+            "rarity": "Rare"
+          }
+        ]
+      }
+    ],
+    "type": "Misc",
+    "imageName": "frak-stabilizer.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagSawgawRare",
     "name": "Frogmouthed Sawgaw Tag",
     "description": "For saving a specimen of this subspecies.",
@@ -40147,6 +41317,164 @@
     ]
   },
   {
+    "name": "Garmr Core",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 40,
+        "imageName": "axidrol-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
+        "name": "Devolved Namalon",
+        "description": "Retrieved from its Infested state, restored to worth and utility.",
+        "itemCount": 25,
+        "imageName": "devolved-namalon.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 1500,
+        "imageName": "rubedo.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Kosma Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0022,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kosma Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0022,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0025,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0025,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Eviscerator",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0028,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Supressor",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0028,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hellion Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Kuva Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Command Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Shield Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Locust Drone",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0221,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Caelus (Interception), Rotation A",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0251,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+        "name": "Spectral Debris",
+        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
+        "excludeFromCodex": true,
+        "itemCount": 5,
+        "imageName": "spectral-debris.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "garmr-core.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Garuda'S Talons",
     "uniqueName": "/Lotus/Powersuits/Garuda/GarudaClaws",
     "damagePerShot": [ 19.84, 54.560001, 173.59999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -40162,7 +41490,7 @@
     "omegaAttenuation": 1,
     "blockingAngle": 60,
     "comboDuration": 5,
-    "followThrough": 0.80000001,
+    "followThrough": 0.64999998,
     "range": 2.2,
     "slamAttack": 744,
     "slamRadialDamage": 248,
@@ -77212,6 +78540,330 @@
     "tradable": false
   },
   {
+    "name": "Hec Hound",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "description": "Soft metal used in microelectronics and energy weapons.Locations: Mars and Uranus.",
+        "itemCount": 5,
+        "imageName": "gallium.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Gallium",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1079,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Gallium",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
+        "name": "Sapcaddy Venedo Case",
+        "description": "A strong, metallic case that is resistant to fluctuations in environmental temperature.Acquired by disassembling Sapcaddy Servofish.",
+        "itemCount": 10,
+        "imageName": "sapcaddy-venedo-case.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+        "name": "Spectral Debris",
+        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
+        "excludeFromCodex": true,
+        "itemCount": 5,
+        "imageName": "spectral-debris.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem",
+        "name": "Trapezium Xenorhast",
+        "description": "Facets gleam with the un-light of the Void.",
+        "itemCount": 2,
+        "imageName": "trapezium-xenorhast.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "hec-hound.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/InfestedFoundryUpgradeFeatureItem",
+    "name": "Helminth Invigoration Segment",
+    "description": "Allows The Helminth to inject a Warframe with an Invigoration. Invigorations temporarily increase a Warframe's capabilities.",
+    "excludeFromCodex": true,
+    "showInInventory": false,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/InfestedFoundryUpgradeBlueprint",
+        "name": "Blueprint",
+        "description": "Allows The Helminth to inject a Warframe with an Invigoration. Invigorations temporarily increase a Warframe's capabilities.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
+        "name": "Pustulent Cognitive Nodule",
+        "description": "The Infestation provokes the growth of multiple, seemingly redundant brain-like clusters, whose function may be linked to hivemind activity. Guaranteed to drop from these sources:AQUAPULMOCRYPTOSUCTUS",
+        "itemCount": 10,
+        "imageName": "pustulent-cognitive-nodule.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
+        "name": "Pustulite",
+        "description": "Half-formed, incomplete spore bearers, little more than twitching flesh with claws to latch on with.",
+        "itemCount": 15,
+        "imageName": "pustulite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
+        "name": "Tempered Bapholite",
+        "description": "Fused with its inert Infested tendrils into a durable alloy.",
+        "itemCount": 20,
+        "imageName": "tempered-bapholite.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedPredatorCommon",
+        "name": "Vizier Predasite Tag",
+        "description": "For saving a specimen of this species.",
+        "itemCount": 5,
+        "imageName": "vizier-predasite-tag.png",
+        "tradable": false
+      }
+    ],
+    "type": "Ship Segment",
+    "imageName": "helminth-invigoration-segment.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/InfestedFoundryItem",
     "name": "Helminth Segment",
     "description": "Empower the Helminth in your Orbiter and unlock the transfer of new abilities to your Warframes.",
@@ -77532,6 +79184,253 @@
         "fixes": ""
       }
     ]
+  },
+  {
+    "name": "Hinta Stabilizer",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 2500,
+        "imageName": "alloy-plate.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem",
+        "name": "Auroxium Alloy",
+        "description": "Auron that has been forged into a stronger metal.",
+        "itemCount": 20,
+        "imageName": "auroxium-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 600,
+        "imageName": "circuits.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
+        "name": "Nitain Extract",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
+        "itemCount": 3,
+        "imageName": "nitain-extract.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Wolf Of Saturn Six",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Wolf Of Saturn Six",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Zealoid Prelate",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hallowed Flame Endurance Caches, Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Marduk (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Stribog (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0412,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0412,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0595,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0595,
+            "rarity": "Rare"
+          }
+        ]
+      }
+    ],
+    "type": "Misc",
+    "imageName": "hinta-stabilizer.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/RedVeilUncommonDogTag",
@@ -78212,6 +80111,16 @@
     "excludeFromCodex": true,
     "type": "Misc",
     "imageName": "intermission-iii-cred.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/NoraIntermissionFourCreds",
+    "name": "Intermission Iv Cred",
+    "description": "Used to purchase Nightwave's Cred Offerings. Nightwave Creds from past Series can be kept as souvenirs or sold for <CREDITS>Credits.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "intermission-iv-cred.png",
     "category": "Misc",
     "tradable": false
   },
@@ -84712,6 +86621,16 @@
     "description": "",
     "type": "Misc",
     "imageName": "libraryscannerupgrade.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Game/Nemesis/KuvaLich/CapturedGrineerLichToken",
+    "name": "Lich Token",
+    "description": "A token symbolizing a converted Kuva Lich. Can be traded to other players for control of said Lich.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "lich-token.png",
     "category": "Misc",
     "tradable": false
   },
@@ -93448,7 +95367,7 @@
   {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryUpgradeFeatureItem",
     "name": "Nutrio Incubator Upgrade Segment",
-    "description": "Upgrades the Orbiter's Incubator with the following features:- Regress Genetic-Aging of mature companions- Egg incubation reduced by a day",
+    "description": "Upgrades the Orbiter's Incubator with the following features:- Regress genetic aging of mature companions- Egg incubation reduced by a day",
     "buildPrice": 100000,
     "buildTime": 43200,
     "skipBuildTimePrice": 25,
@@ -93708,7 +95627,7 @@
       {
         "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/GeneticFoundryUpgradeFeatureBlueprint",
         "name": "Blueprint",
-        "description": "Upgrades the Orbiter's Incubator with the following features:- Regress Genetic-Aging of mature companions- Egg incubation reduced by a day",
+        "description": "Upgrades the Orbiter's Incubator with the following features:- Regress genetic aging of mature companions- Egg incubation reduced by a day",
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false
@@ -99304,6 +101223,883 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/WeaponPrimaryArcaneUnlocker",
+    "name": "Primary Arcane Adapter",
+    "description": "Fuses with a Primary weapon to unlock the Arcane Slot.",
+    "excludeFromCodex": true,
+    "buildPrice": 75000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/WeaponPrimaryArcaneUnlockerBlueprint",
+        "name": "Blueprint",
+        "description": "Fuses with a Primary weapon to unlock the Arcane Slot.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 10,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
+        "name": "Neural Sensors",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.Location: Jupiter",
+        "itemCount": 10,
+        "imageName": "neural-sensors.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Raptor Mt",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Raptor Ns",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Raptor Rv",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Raptor",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "type": "Neural Sensors",
+            "chance": 0.1936,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Raptor",
+            "type": "Neural Sensors",
+            "chance": 0.5,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Deimos.",
+        "itemCount": 10,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Brachiolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Cinder Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Phase Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Swarm Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Alkonost",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Culveri Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Polaris Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mimic",
+            "type": "Orokin Cell",
+            "chance": 0.0065,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aerolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ambulas",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hunhow",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ortholyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Shadow Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Summulyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Symbilyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Artificer",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Captain Vor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Cinderthresh Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Commander",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "General Sargas Ruk",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ln2",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ng",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pack",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pb",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Th",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Icemire Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "J3 Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jackal",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kela De Thaym",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lephantis",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lt Lech Kril",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mutalist Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Phorid",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Rabbleback Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "The Sergeant",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Vay Hek Terra Frame",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1079,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.1265,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1936,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Corrupted Vor",
+            "type": "Orokin Cell",
+            "chance": 0.5,
+            "rarity": "Common"
+          }
+        ]
+      }
+    ],
+    "type": "Misc",
+    "imageName": "primary-arcane-adapter.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Ship/VoidTraderResourceDrone",
     "name": "Prisma Niroda Extractor",
     "description": "Featuring unrivaled Orokin engineering, this advanced model was designed for peak volume extraction in the harshest of conditions.",
@@ -99875,6 +102671,164 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/29/SentAmpSet2BarrelA.png/revision/latest?cb=20210322130747",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Rahn_Prism",
     "disposition": 3
+  },
+  {
+    "name": "Raiju Core",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
+        "name": "Adramal Alloy",
+        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
+        "itemCount": 40,
+        "imageName": "adramal-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
+        "name": "Fersteel Alloy",
+        "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 25,
+        "imageName": "fersteel-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 1500,
+        "imageName": "rubedo.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Kosma Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0022,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kosma Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0022,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0025,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0025,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Gokstad Officer",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Gokstad Pilot",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Eviscerator",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0028,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Exo Supressor",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0028,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hellion Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Kuva Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Command Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Tusk Shield Dargyn",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0138,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Locust Drone",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0221,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Caelus (Interception), Rotation A",
+            "type": "Rubedo-Lined Barrel",
+            "chance": 0.0251,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+        "name": "Spectral Debris",
+        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
+        "excludeFromCodex": true,
+        "itemCount": 5,
+        "imageName": "spectral-debris.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "raiju-core.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Game/CrewShip/Ships/RailJack",
@@ -104610,6 +107564,883 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/WeaponSecondaryArcaneUnlocker",
+    "name": "Secondary Arcane Adapter",
+    "description": "Fuses with a Secondary weapon to unlock the Arcane Slot.",
+    "excludeFromCodex": true,
+    "buildPrice": 75000,
+    "buildTime": 3600,
+    "skipBuildTimePrice": 10,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/WeaponSecondaryArcaneUnlockerBlueprint",
+        "name": "Blueprint",
+        "description": "Fuses with a Secondary weapon to unlock the Arcane Slot.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 10,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Morphics",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Morphics",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
+        "name": "Neural Sensors",
+        "description": "Implanted neural-link for controlling augmentations. Grineer design.Location: Jupiter",
+        "itemCount": 10,
+        "imageName": "neural-sensors.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Neural Sensors",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Raptor Mt",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Raptor Ns",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Raptor Rv",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Raptor",
+            "type": "Neural Sensors",
+            "chance": 0.05,
+            "rarity": "Common"
+          },
+          {
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "type": "Neural Sensors",
+            "chance": 0.1936,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Raptor",
+            "type": "Neural Sensors",
+            "chance": 0.5,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Deimos.",
+        "itemCount": 10,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Brachiolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Cinder Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Phase Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Swarm Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Alkonost",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Culveri Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Polaris Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mimic",
+            "type": "Orokin Cell",
+            "chance": 0.0065,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aerolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ambulas",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hunhow",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ortholyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Shadow Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Summulyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Symbilyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Artificer",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Captain Vor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Cinderthresh Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Commander",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "General Sargas Ruk",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ln2",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ng",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pack",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pb",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Th",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Icemire Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "J3 Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jackal",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kela De Thaym",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lephantis",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lt Lech Kril",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mutalist Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Phorid",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Rabbleback Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "The Sergeant",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Vay Hek Terra Frame",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1079,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.1265,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1936,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Corrupted Vor",
+            "type": "Orokin Cell",
+            "chance": 0.5,
+            "rarity": "Common"
+          }
+        ]
+      }
+    ],
+    "type": "Misc",
+    "imageName": "secondary-arcane-adapter.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/SednaNavigationFeatureItem",
     "name": "Sedna Nav Segment",
     "description": "",
@@ -105816,6 +109647,16 @@
     ]
   },
   {
+    "uniqueName": "/Lotus/Types/Game/Nemesis/KuvaLich/CapturedCorpusLichToken",
+    "name": "Sister Of Parvos Token",
+    "description": "A token symbolizing a converted Sister of Parvos. Can be traded to other players for control of said Sister of Parvos.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "sister-of-parvos-token.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "name": "Slap",
     "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularReloadIClipPart",
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -106153,6 +109994,16 @@
     ],
     "type": "Kitgun Component",
     "imageName": "sparkfire.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+    "name": "Spectral Debris",
+    "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "spectral-debris.png",
     "category": "Misc",
     "tradable": false
   },
@@ -123268,6 +127119,93 @@
     ]
   },
   {
+    "name": "Urga Bracket",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsB",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsBBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Brickie Muon Battery",
+        "description": "A small, atomic power source.Acquired by disassembling Brickie Servofish.",
+        "itemCount": 15,
+        "imageName": "brickie-muon-battery.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
+        "name": "Calda Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Calda Toroids from enemies located at the Enrichment Labs in the Orb Vallis and from Scyto Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
+        "itemCount": 5,
+        "imageName": "calda-toroid.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Orb Vallis - Enrichment Labs Enemies",
+            "type": "Calda Toroid",
+            "chance": 0.02,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Scyto Raknoid",
+            "type": "Calda Toroid",
+            "chance": 0.2,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
+        "name": "Pyrotic Alloy",
+        "description": "Pyrol that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 25,
+        "imageName": "pyrotic-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+        "name": "Thermal Sludge",
+        "description": "A by-product from the Weeping Towers terraforming processes.",
+        "itemCount": 25,
+        "imageName": "thermal-sludge.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Thermal Sludge Cannister",
+            "type": "Thermal Sludge",
+            "chance": 1,
+            "rarity": "Common"
+          }
+        ]
+      }
+    ],
+    "type": "Misc",
+    "imageName": "urga-bracket.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "rewardName": "/Lotus/StoreItems/Types/Items/MiscItems/UtilityUnlocker",
     "rarity": "Common",
     "tier": 0,
@@ -124662,6 +128600,16 @@
     "tradable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Items/MiscItems/RivenIdentifier",
+    "name": "Veiled Riven Cipher",
+    "description": "Identify a Veiled Riven",
+    "excludeFromCodex": true,
+    "type": "Misc",
+    "imageName": "veiled-riven-cipher.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileVentKids",
     "name": "Ventkids Clubhouse Scene",
     "description": "Unlocks this scene for use in Captura Mode, accessed through the Warframe Appearance tab in the Arsenal.",
@@ -125013,6 +128961,253 @@
         "fixes": "Void Traces: Raw Void energy that drops in the process of uniting Relics and Fissures. Can be used to Refine Void Relics to yield more rare rewards in your Orbiter.\nEXCEPTIONAL = 25 Void Traces\nFLAWLESS = 50 Void Traces\nRADIANT = 100 Void Traces"
       }
     ]
+  },
+  {
+    "name": "Wanz Stabilizer",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailA",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailABlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 600,
+        "imageName": "circuits.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
+        "name": "Nitain Extract",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
+        "itemCount": 3,
+        "imageName": "nitain-extract.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Wolf Of Saturn Six",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Wolf Of Saturn Six",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Zealoid Prelate",
+            "type": "Nitain Extract",
+            "chance": 0.0013,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0067,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.01,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hallowed Flame Endurance Caches, Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Marduk (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0101,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Void/Stribog (Caches), Rotation C",
+            "type": "Nitain Extract",
+            "chance": 0.02,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0412,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0412,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0595,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "type": "Nitain Extract",
+            "chance": 0.0595,
+            "rarity": "Rare"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 2500,
+        "imageName": "salvage.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
+        "name": "Thaumic Distillate",
+        "description": "Thaumica reduced to its most durable, workable elements.",
+        "itemCount": 20,
+        "imageName": "thaumic-distillate.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "wanz-stabilizer.png",
+    "category": "Misc",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishDPartItem",
@@ -126434,6 +130629,85 @@
     ],
     "type": "Kitgun Component",
     "imageName": "zipneedle.png",
+    "category": "Misc",
+    "tradable": false
+  },
+  {
+    "name": "Zubb Bracket",
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsC",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 0,
+    "description": "",
+    "criticalChance": 0,
+    "criticalMultiplier": 0,
+    "procChance": 0,
+    "fireRate": 0,
+    "masteryReq": 0,
+    "productCategory": "Pistols",
+    "omegaAttenuation": 1,
+    "buildPrice": 50000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+        "name": "Axidrol Alloy",
+        "description": "A compound formed from Axidite.",
+        "itemCount": 25,
+        "imageName": "axidrol-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsCBlueprint",
+        "name": "Blueprint",
+        "description": "",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
+        "name": "Brickie Muon Battery",
+        "description": "A small, atomic power source.Acquired by disassembling Brickie Servofish.",
+        "itemCount": 15,
+        "imageName": "brickie-muon-battery.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+        "name": "Travocyte Alloy",
+        "description": "A compound formed from Travoride.",
+        "itemCount": 25,
+        "imageName": "travocyte-alloy.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
+        "name": "Vega Toroid",
+        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Vega Toroids from enemies located at the Spaceport in the Orb Vallis and from Mite Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
+        "itemCount": 5,
+        "imageName": "vega-toroid.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Mite Raknoid",
+            "type": "Vega Toroid",
+            "chance": 0.01,
+            "rarity": "Common"
+          },
+          {
+            "location": "Orb Vallis - Spaceport Enemies",
+            "type": "Vega Toroid",
+            "chance": 0.02,
+            "rarity": "Uncommon"
+          }
+        ]
+      }
+    ],
+    "type": "Misc",
+    "imageName": "zubb-bracket.png",
     "category": "Misc",
     "tradable": false
   }

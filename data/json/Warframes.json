@@ -129795,6 +129795,695 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Xaku"
   },
   {
+    "uniqueName": "/Lotus/Powersuits/Yareli/Yareli",
+    "name": "Yareli",
+    "description": "Always on the move, the vivacious Yareli commands the ocean's fury. The original waverider.",
+    "health": 100,
+    "shield": 150,
+    "armor": 65,
+    "stamina": 3,
+    "power": 200,
+    "masteryReq": 0,
+    "sprintSpeed": 1,
+    "passiveDescription": "Yareli gains +|CHANCE|% Critical Chance for Secondary weapons when she has been moving for at least |TIME|s.",
+    "abilities": [
+      {
+        "name": "Sea Snares",
+        "description": "Form three water globules that seek out enemies and expand on contact, simultaneously damaging and immobilizing their victims."
+      },
+      {
+        "name": "Merulina",
+        "description": "Summon Merulina, a rideable creature of the waves, and the inspiration for K-Driving. Merulina protects Yareli by absorbing a large portion of incoming damage."
+      },
+      {
+        "name": "Aquablades",
+        "description": "Tear through foes with a trio of orbiting aquatic blades."
+      },
+      {
+        "name": "Riptide",
+        "description": "Drag enemies into a crushing maelstrom and then blow them away in a watery burst. Each enemy trapped in the vortex increases the burst's damage."
+      }
+    ],
+    "productCategory": "Suits",
+    "buildPrice": 25000,
+    "buildTime": 259200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/YareliBlueprint",
+        "name": "Blueprint",
+        "description": "Always on the move, the vivacious Yareli commands the ocean's fury. The original waverider.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/YareliChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Yareli Warframe.",
+        "excludeFromCodex": true,
+        "itemCount": 1,
+        "imageName": "chassis.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/YareliHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Yareli Warframe.",
+        "excludeFromCodex": true,
+        "itemCount": 1,
+        "imageName": "neuroptics.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Deimos.",
+        "itemCount": 3,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Brachiolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Cinder Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Phase Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Swarm Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Alkonost",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Culveri Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Polaris Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mimic",
+            "type": "Orokin Cell",
+            "chance": 0.0065,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aerolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ambulas",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hunhow",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ortholyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Shadow Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Summulyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Symbilyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Artificer",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Captain Vor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Cinderthresh Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Commander",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "General Sargas Ruk",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ln2",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ng",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pack",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pb",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Th",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Icemire Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "J3 Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jackal",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kela De Thaym",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lephantis",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lt Lech Kril",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mutalist Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Phorid",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Rabbleback Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "The Sergeant",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Vay Hek Terra Frame",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1079,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.1265,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1936,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Corrupted Vor",
+            "type": "Orokin Cell",
+            "chance": 0.5,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/YareliSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Yareli Warframe.",
+        "excludeFromCodex": true,
+        "itemCount": 1,
+        "imageName": "systems.png",
+        "tradable": false
+      }
+    ],
+    "type": "Warframe",
+    "imageName": "yareli.png",
+    "category": "Warframes",
+    "tradable": false,
+    "conclave": false,
+    "color": 13419952,
+    "polarities": [  ],
+    "sex": "Female",
+    "sprint": 1,
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/b/b4/YareliWIP.png/revision/latest?cb=20210618172739",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Yareli"
+  },
+  {
     "uniqueName": "/Lotus/Powersuits/Tengu/Tengu",
     "name": "Zephyr",
     "description": "Specializing in air attacks and mobility, Zephyr dominates from above.",

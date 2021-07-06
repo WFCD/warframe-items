@@ -1006,6 +1006,39 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetPhotonStrikePrecept",
+    "name": "Aerial Prospectus",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Launches a beacon at an enemy within 12m that calls down an Orbital Strike dealing 200 <DT_EXPLOSION>Blast Damage in a 2m radius." ]
+      },
+      {
+        "stats": [ "Launches a beacon at an enemy within 15m that calls down an Orbital Strike dealing 400 <DT_EXPLOSION>Blast Damage in a 3m radius." ]
+      },
+      {
+        "stats": [ "Launches a beacon at an enemy within 18m that calls down an Orbital Strike dealing 600 <DT_EXPLOSION>Blast Damage in a 4m radius." ]
+      },
+      {
+        "stats": [ "Launches a beacon at an enemy within 21m that calls down an Orbital Strike dealing 800 <DT_EXPLOSION>Blast Damage in a 5m radius." ]
+      },
+      {
+        "stats": [ "Launches a beacon at an enemy within 24m that calls down an Orbital Strike dealing 1000 <DT_EXPLOSION>Blast Damage in a 6m radius." ]
+      },
+      {
+        "stats": [ "Launches a beacon at an enemy within 27m that calls down an Orbital Strike dealing 1200 <DT_EXPLOSION>Blast Damage in a 7m radius." ]
+      }
+    ],
+    "imageName": "aerial-prospectus.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Sets/Hawk/HawkModB",
     "name": "Aero Agility",
     "polarity": "Naramon",
@@ -1262,16 +1295,16 @@
     "type": "Warframe",
     "levelStats": [
       {
-        "stats": [ "+25% Reduced Gravity during Aim Glide" ]
+        "stats": [ "-25% Gravity while Aim Gliding" ]
       },
       {
-        "stats": [ "+50% Reduced Gravity during Aim Glide" ]
+        "stats": [ "-50% Gravity while Aim Gliding" ]
       },
       {
-        "stats": [ "+75% Reduced Gravity during Aim Glide" ]
+        "stats": [ "-75% Gravity while Aim Gliding" ]
       },
       {
-        "stats": [ "+100% Reduced Gravity during Aim Glide" ]
+        "stats": [ "-100% Gravity while Aim Gliding" ]
       }
     ],
     "modSet": "/Lotus/Upgrades/Mods/Sets/Hawk/HawkSetMod",
@@ -1864,22 +1897,22 @@
     "type": "Secondary",
     "levelStats": [
       {
-        "stats": [ "-10% Zoom during Aim Glide" ]
+        "stats": [ "-10% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-20% Zoom during Aim Glide" ]
+        "stats": [ "-20% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-30% Zoom during Aim Glide" ]
+        "stats": [ "-30% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-40% Zoom during Aim Glide" ]
+        "stats": [ "-40% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-50% Zoom during Aim Glide" ]
+        "stats": [ "-50% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-60% Zoom during Aim Glide" ]
+        "stats": [ "-60% Zoom while Aim Gliding" ]
       }
     ],
     "imageName": "air-recon.jpg",
@@ -2944,10 +2977,10 @@
         "stats": [ "+50% Ammo Maximum" ]
       },
       {
-        "stats": [ "+66.6% Ammo Maximum" ]
+        "stats": [ "+66.7% Ammo Maximum" ]
       },
       {
-        "stats": [ "+83.3% Ammo Maximum" ]
+        "stats": [ "+83.4% Ammo Maximum" ]
       },
       {
         "stats": [ "+100% Ammo Maximum" ]
@@ -6039,8 +6072,8 @@
     "name": "Archgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -9328,7 +9361,7 @@
         "stats": [ "Reduces damage by 100% when Airborne." ]
       },
       {
-        "stats": [ "Reduces damage by 110% when Airborne." ]
+        "stats": [ "Reduces damage by 100% when Airborne." ]
       }
     ],
     "imageName": "aviator.jpg",
@@ -11311,7 +11344,7 @@
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Melee/Beginner/WeaponCritFireRateBonusModBeginner",
-    "name": "Berserker",
+    "name": "Berserker Fury",
     "polarity": "Madurai",
     "rarity": "Rare",
     "baseDrain": 4,
@@ -11320,88 +11353,25 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "+5% Attack Speed (Max: 75%) for 4s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+5.8% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+10% Attack Speed (Max: 75%) for 8s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+11.7% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+15% Attack Speed (Max: 75%) for 12s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+17.5% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+20% Attack Speed (Max: 75%) for 16s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+23.3% Attack Speed for 10s. Stacks up to 2x." ]
       }
     ],
-    "imageName": "berserker.jpg",
+    "imageName": "berserker-fury.jpg",
     "category": "Mods",
-    "tradable": true,
-    "drops": [
-      {
-        "location": "Corrupted Ancient",
-        "type": "Berserker",
-        "chance": 0.0003,
-        "rarity": "Rare"
-      },
-      {
-        "location": "Chroma",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Infested Mesa",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Tenno Specter",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      }
-    ],
-    "patchlogs": [
-      {
-        "name": "Chains of Harrow: Hotfix 21.0.4",
-        "date": "2017-07-05T17:02:16Z",
-        "url": "https://forums.warframe.com/topic/813247-chains-of-harrow-hotfix-2104/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the Berserker Mod not applying to Excalibur’s Exalted Blade and its waves."
-      },
-      {
-        "name": "The Silver Grove",
-        "date": "2016-08-19T17:32:55Z",
-        "url": "https://forums.warframe.com/topic/688644-the-silver-grove/",
-        "additions": "",
-        "changes": "Added melee magnetism to Valkyr’s Berserker and Wukong’s Primal Fury in Conclave",
-        "fixes": ""
-      },
-      {
-        "name": "Update 15.13",
-        "date": "2015-02-05T21:08:01Z",
-        "url": "https://forums.warframe.com/topic/396379-update-1513/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a HUD issue showing the Berserker Mod as 1% less than it should be."
-      },
-      {
-        "name": "Update 11: Valkyr Unleashed",
-        "date": "2013-11-21T00:23:32Z",
-        "url": "https://forums.warframe.com/topic/132825-update-11-valkyr-unleashed/",
-        "additions": "New Warframe: “Valkyr” Female Berserker Class, Cosmetic Bastet Helmet & Cosmetic Restraints!https://www.youtube.com/watch?v=K-jH6mP37_k",
-        "changes": "",
-        "fixes": ""
-      }
-    ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/c0/BerserkerModU145.png/revision/latest?cb=20180314192828",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Berserker",
-    "transmutable": true
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponCritFireRateBonusModExpert",
-    "name": "Berserker",
+    "name": "Berserker Fury",
     "polarity": "Madurai",
     "rarity": "Rare",
     "baseDrain": 4,
@@ -11410,109 +11380,46 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "+5% Attack Speed (Max: 75%) for 4s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+5.8% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+10% Attack Speed (Max: 75%) for 8s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+11.7% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+15% Attack Speed (Max: 75%) for 12s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+17.5% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+20% Attack Speed (Max: 75%) for 16s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+23.3% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+25% Attack Speed (Max: 75%) for 20s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+29.2% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+30% Attack Speed (Max: 75%) for 24s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+35% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+35% Attack Speed (Max: 75%) for 28s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+40.8% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+40% Attack Speed (Max: 75%) for 32s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+46.7% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+45% Attack Speed (Max: 75%) for 36s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+52.5% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+50% Attack Speed (Max: 75%) for 40s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+58.3% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+55% Attack Speed (Max: 75%) for 44s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+64.2% Attack Speed for 10s. Stacks up to 2x." ]
       }
     ],
-    "imageName": "berserker.jpg",
+    "imageName": "berserker-fury.jpg",
     "category": "Mods",
-    "tradable": true,
-    "drops": [
-      {
-        "location": "Corrupted Ancient",
-        "type": "Berserker",
-        "chance": 0.0003,
-        "rarity": "Rare"
-      },
-      {
-        "location": "Chroma",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Infested Mesa",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Tenno Specter",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      }
-    ],
-    "patchlogs": [
-      {
-        "name": "Chains of Harrow: Hotfix 21.0.4",
-        "date": "2017-07-05T17:02:16Z",
-        "url": "https://forums.warframe.com/topic/813247-chains-of-harrow-hotfix-2104/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the Berserker Mod not applying to Excalibur’s Exalted Blade and its waves."
-      },
-      {
-        "name": "The Silver Grove",
-        "date": "2016-08-19T17:32:55Z",
-        "url": "https://forums.warframe.com/topic/688644-the-silver-grove/",
-        "additions": "",
-        "changes": "Added melee magnetism to Valkyr’s Berserker and Wukong’s Primal Fury in Conclave",
-        "fixes": ""
-      },
-      {
-        "name": "Update 15.13",
-        "date": "2015-02-05T21:08:01Z",
-        "url": "https://forums.warframe.com/topic/396379-update-1513/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a HUD issue showing the Berserker Mod as 1% less than it should be."
-      },
-      {
-        "name": "Update 11: Valkyr Unleashed",
-        "date": "2013-11-21T00:23:32Z",
-        "url": "https://forums.warframe.com/topic/132825-update-11-valkyr-unleashed/",
-        "additions": "New Warframe: “Valkyr” Female Berserker Class, Cosmetic Bastet Helmet & Cosmetic Restraints!https://www.youtube.com/watch?v=K-jH6mP37_k",
-        "changes": "",
-        "fixes": ""
-      }
-    ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/c0/BerserkerModU145.png/revision/latest?cb=20180314192828",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Berserker",
-    "transmutable": true
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponCritFireRateBonusMod",
-    "name": "Berserker",
+    "name": "Berserker Fury",
     "polarity": "Madurai",
     "rarity": "Rare",
     "baseDrain": 4,
@@ -11521,90 +11428,27 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "+5% Attack Speed (Max: 75%) for 4s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+5.8% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+10% Attack Speed (Max: 75%) for 8s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+11.7% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+15% Attack Speed (Max: 75%) for 12s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+17.5% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+20% Attack Speed (Max: 75%) for 16s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+23.3% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+25% Attack Speed (Max: 75%) for 20s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+29.2% Attack Speed for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+30% Attack Speed (Max: 75%) for 24s on Critical Hit" ]
+        "stats": [ "On Melee Kill:+35% Attack Speed for 10s. Stacks up to 2x." ]
       }
     ],
-    "imageName": "berserker.jpg",
+    "imageName": "berserker-fury.jpg",
     "category": "Mods",
-    "tradable": true,
-    "drops": [
-      {
-        "location": "Corrupted Ancient",
-        "type": "Berserker",
-        "chance": 0.0003,
-        "rarity": "Rare"
-      },
-      {
-        "location": "Chroma",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Infested Mesa",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Tenno Specter",
-        "type": "Berserker",
-        "chance": 0.006,
-        "rarity": "Uncommon"
-      }
-    ],
-    "patchlogs": [
-      {
-        "name": "Chains of Harrow: Hotfix 21.0.4",
-        "date": "2017-07-05T17:02:16Z",
-        "url": "https://forums.warframe.com/topic/813247-chains-of-harrow-hotfix-2104/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed the Berserker Mod not applying to Excalibur’s Exalted Blade and its waves."
-      },
-      {
-        "name": "The Silver Grove",
-        "date": "2016-08-19T17:32:55Z",
-        "url": "https://forums.warframe.com/topic/688644-the-silver-grove/",
-        "additions": "",
-        "changes": "Added melee magnetism to Valkyr’s Berserker and Wukong’s Primal Fury in Conclave",
-        "fixes": ""
-      },
-      {
-        "name": "Update 15.13",
-        "date": "2015-02-05T21:08:01Z",
-        "url": "https://forums.warframe.com/topic/396379-update-1513/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a HUD issue showing the Berserker Mod as 1% less than it should be."
-      },
-      {
-        "name": "Update 11: Valkyr Unleashed",
-        "date": "2013-11-21T00:23:32Z",
-        "url": "https://forums.warframe.com/topic/132825-update-11-valkyr-unleashed/",
-        "additions": "New Warframe: “Valkyr” Female Berserker Class, Cosmetic Bastet Helmet & Cosmetic Restraints!https://www.youtube.com/watch?v=K-jH6mP37_k",
-        "changes": "",
-        "fixes": ""
-      }
-    ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/c0/BerserkerModU145.png/revision/latest?cb=20180314192828",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Berserker",
-    "transmutable": true
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Event/ParisHealOnStatusMod",
@@ -12915,37 +12759,37 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "+5.5% Critical Chance stacks with Combo Multiplier" ]
+        "stats": [ "+3.6% Critical Chance stacks with Combo Multiplier" ]
+      },
+      {
+        "stats": [ "+7.3% Critical Chance stacks with Combo Multiplier" ]
       },
       {
         "stats": [ "+10.9% Critical Chance stacks with Combo Multiplier" ]
       },
       {
-        "stats": [ "+16.4% Critical Chance stacks with Combo Multiplier" ]
+        "stats": [ "+14.6% Critical Chance stacks with Combo Multiplier" ]
+      },
+      {
+        "stats": [ "+18.2% Critical Chance stacks with Combo Multiplier" ]
       },
       {
         "stats": [ "+21.8% Critical Chance stacks with Combo Multiplier" ]
       },
       {
-        "stats": [ "+27.3% Critical Chance stacks with Combo Multiplier" ]
+        "stats": [ "+25.5% Critical Chance stacks with Combo Multiplier" ]
       },
       {
-        "stats": [ "+32.7% Critical Chance stacks with Combo Multiplier" ]
+        "stats": [ "+29.1% Critical Chance stacks with Combo Multiplier" ]
       },
       {
-        "stats": [ "+38.2% Critical Chance stacks with Combo Multiplier" ]
+        "stats": [ "+32.8% Critical Chance stacks with Combo Multiplier" ]
       },
       {
-        "stats": [ "+43.6% Critical Chance stacks with Combo Multiplier" ]
+        "stats": [ "+36.4% Critical Chance stacks with Combo Multiplier" ]
       },
       {
-        "stats": [ "+49.1% Critical Chance stacks with Combo Multiplier" ]
-      },
-      {
-        "stats": [ "+54.5% Critical Chance stacks with Combo Multiplier" ]
-      },
-      {
-        "stats": [ "+60% Critical Chance stacks with Combo Multiplier" ]
+        "stats": [ "+40% Critical Chance stacks with Combo Multiplier" ]
       }
     ],
     "imageName": "blood-rush.jpg",
@@ -14021,22 +13865,22 @@
     "type": "Shotgun",
     "levelStats": [
       {
-        "stats": [ "-10% Zoom during Aim Glide" ]
+        "stats": [ "-10% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-20% Zoom during Aim Glide" ]
+        "stats": [ "-20% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-30% Zoom during Aim Glide" ]
+        "stats": [ "-30% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-40% Zoom during Aim Glide" ]
+        "stats": [ "-40% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-50% Zoom during Aim Glide" ]
+        "stats": [ "-50% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-60% Zoom during Aim Glide" ]
+        "stats": [ "-60% Zoom while Aim Gliding" ]
       }
     ],
     "imageName": "broad-eye.jpg",
@@ -15470,37 +15314,37 @@
     "type": "Rifle",
     "levelStats": [
       {
-        "stats": [ "+8.2% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+9.1% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+16.4% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+18.2% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+24.5% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+27.3% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+32.7% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+36.4% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+40.9% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+45.5% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+49.1% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+54.5% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+57.3% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+63.6% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+65.4% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
-      },
-      {
-        "stats": [ "+73.6% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+72.7% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
         "stats": [ "+81.8% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       },
       {
-        "stats": [ "+90% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+        "stats": [ "+90.9% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
+      },
+      {
+        "stats": [ "+100% chance to reduce the Stagger effect from self-imposed Radial Attacks" ]
       }
     ],
     "imageName": "cautious-shot.jpg",
@@ -20570,22 +20414,22 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "+20% Melee Damage per Status Type affecting the target." ]
+        "stats": [ "+13.3% Melee Damage per Status Type affecting the target" ]
       },
       {
-        "stats": [ "+40% Melee Damage per Status Type affecting the target." ]
+        "stats": [ "+26.7% Melee Damage per Status Type affecting the target" ]
       },
       {
-        "stats": [ "+60% Melee Damage per Status Type affecting the target." ]
+        "stats": [ "+40% Melee Damage per Status Type affecting the target" ]
       },
       {
-        "stats": [ "+80% Melee Damage per Status Type affecting the target." ]
+        "stats": [ "+53.3% Melee Damage per Status Type affecting the target" ]
       },
       {
-        "stats": [ "+100% Melee Damage per Status Type affecting the target." ]
+        "stats": [ "+66.7% Melee Damage per Status Type affecting the target" ]
       },
       {
-        "stats": [ "+120% Melee Damage per Status Type affecting the target." ]
+        "stats": [ "+80% Melee Damage per Status Type affecting the target" ]
       }
     ],
     "imageName": "condition-overload.jpg",
@@ -20686,6 +20530,39 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/43/ConditionOverloadMod.png/revision/latest?cb=20191101052227",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Condition_Overload",
     "transmutable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Archwing/Melee/ArchwingWeaponElectricityDamageMod",
+    "name": "Conductive Blade",
+    "polarity": "Naramon",
+    "rarity": "Uncommon",
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "ARCHMELEE",
+    "type": "Arch-Melee",
+    "levelStats": [
+      {
+        "stats": [ "+20% <DT_ELECTRICITY>Electricity" ]
+      },
+      {
+        "stats": [ "+40% <DT_ELECTRICITY>Electricity" ]
+      },
+      {
+        "stats": [ "+60% <DT_ELECTRICITY>Electricity" ]
+      },
+      {
+        "stats": [ "+80% <DT_ELECTRICITY>Electricity" ]
+      },
+      {
+        "stats": [ "+100% <DT_ELECTRICITY>Electricity" ]
+      },
+      {
+        "stats": [ "+120% <DT_ELECTRICITY>Electricity" ]
+      }
+    ],
+    "imageName": "conductive-blade.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Powersuits/Bard/BardCharmAugmentCard",
@@ -23088,6 +22965,34 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/WeaponRecoilReductionMod",
+    "name": "Counterbalance",
+    "polarity": "Naramon",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 3,
+    "isUtility": true,
+    "compatName": "SHOTGUN",
+    "type": "Shotgun Mod",
+    "levelStats": [
+      {
+        "stats": [ "-15% Weapon Recoil" ]
+      },
+      {
+        "stats": [ "-30% Weapon Recoil" ]
+      },
+      {
+        "stats": [ "-45% Weapon Recoil" ]
+      },
+      {
+        "stats": [ "-60% Weapon Recoil" ]
+      }
+    ],
+    "imageName": "counterbalance.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Melee/DamageBiasImpactMeleeMod",
     "name": "Counterweight",
     "polarity": "Madurai",
@@ -23386,22 +23291,22 @@
     "type": "Secondary Mod",
     "levelStats": [
       {
-        "stats": [ "+31.2% Critical Chance", "-6% Fire Rate" ]
+        "stats": [ "+33.3% Critical Chance", "-3.3% Fire Rate" ]
       },
       {
-        "stats": [ "+62.3% Critical Chance", "-12% Fire Rate" ]
+        "stats": [ "+66.7% Critical Chance", "-6.7% Fire Rate" ]
       },
       {
-        "stats": [ "+93.5% Critical Chance", "-18% Fire Rate" ]
+        "stats": [ "+100% Critical Chance", "-10% Fire Rate" ]
       },
       {
-        "stats": [ "+124.7% Critical Chance", "-24% Fire Rate" ]
+        "stats": [ "+133.3% Critical Chance", "-13.3% Fire Rate" ]
       },
       {
-        "stats": [ "+155.8% Critical Chance", "-30% Fire Rate" ]
+        "stats": [ "+166.7% Critical Chance", "-16.7% Fire Rate" ]
       },
       {
-        "stats": [ "+187% Critical Chance", "-36% Fire Rate" ]
+        "stats": [ "+200% Critical Chance", "-20% Fire Rate" ]
       }
     ],
     "imageName": "creeping-bullseye.jpg",
@@ -23638,22 +23543,22 @@
     "type": "Shotgun Mod",
     "levelStats": [
       {
-        "stats": [ "+8% Critical Chance", "-5% Fire Rate" ]
+        "stats": [ "+33.3% Critical Chance", "-3.3% Fire Rate" ]
       },
       {
-        "stats": [ "+16% Critical Chance", "-10% Fire Rate" ]
+        "stats": [ "+66.7% Critical Chance", "-6.7% Fire Rate" ]
       },
       {
-        "stats": [ "+24% Critical Chance", "-15% Fire Rate" ]
+        "stats": [ "+100% Critical Chance", "-10% Fire Rate" ]
       },
       {
-        "stats": [ "+32% Critical Chance", "-20% Fire Rate" ]
+        "stats": [ "+133.3% Critical Chance", "-13.3% Fire Rate" ]
       },
       {
-        "stats": [ "+40% Critical Chance", "-25% Fire Rate" ]
+        "stats": [ "+166.7% Critical Chance", "-16.6% Fire Rate" ]
       },
       {
-        "stats": [ "+48% Critical Chance", "-30% Fire Rate" ]
+        "stats": [ "+200% Critical Chance", "-20% Fire Rate" ]
       }
     ],
     "imageName": "critical-deceleration.jpg",
@@ -23700,22 +23605,22 @@
     "type": "Rifle",
     "levelStats": [
       {
-        "stats": [ "+31.2% Critical Chance", "-6% Fire Rate (x2 for Bows)" ]
+        "stats": [ "+33.3% Critical Chance", "-3.3% Fire Rate (x2 for Bows)" ]
       },
       {
-        "stats": [ "+62.3% Critical Chance", "-12% Fire Rate (x2 for Bows)" ]
+        "stats": [ "+66.7% Critical Chance", "-6.7% Fire Rate (x2 for Bows)" ]
       },
       {
-        "stats": [ "+93.5% Critical Chance", "-18% Fire Rate (x2 for Bows)" ]
+        "stats": [ "+100% Critical Chance", "-10% Fire Rate (x2 for Bows)" ]
       },
       {
-        "stats": [ "+124.7% Critical Chance", "-24% Fire Rate (x2 for Bows)" ]
+        "stats": [ "+133.3% Critical Chance", "-13.3% Fire Rate (x2 for Bows)" ]
       },
       {
-        "stats": [ "+155.8% Critical Chance", "-30% Fire Rate (x2 for Bows)" ]
+        "stats": [ "+166.7% Critical Chance", "-16.6% Fire Rate (x2 for Bows)" ]
       },
       {
-        "stats": [ "+187% Critical Chance", "-36% Fire Rate (x2 for Bows)" ]
+        "stats": [ "+200% Critical Chance", "-20% Fire Rate (x2 for Bows)" ]
       }
     ],
     "imageName": "critical-delay.jpg",
@@ -28377,6 +28282,39 @@
     "transmutable": true
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetClonePrecept",
+    "name": "Diversified Denial",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Fabricates 3 Specters that fight for 5s that each deal 35% of the Hounds damage." ]
+      },
+      {
+        "stats": [ "Fabricates 3 Specters that fight for 10s that each deal 45% of the Hounds damage." ]
+      },
+      {
+        "stats": [ "Fabricates 3 Specters that fight for 15s that each deal 55% of the Hounds damage." ]
+      },
+      {
+        "stats": [ "Fabricates 3 Specters that fight for 20s that each deal 65% of the Hounds damage." ]
+      },
+      {
+        "stats": [ "Fabricates 3 Specters that fight for 25s that each deal 75% of the Hounds damage." ]
+      },
+      {
+        "stats": [ "Fabricates 3 Specters that fight for 30s that each deal 85% of the Hounds damage." ]
+      }
+    ],
+    "imageName": "diversified-denial.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDualSwordStanceOne",
     "name": "Dividing Blades",
     "polarity": "Naramon",
@@ -29329,24 +29267,25 @@
     "fusionLimit": 5,
     "compatName": "CONVECTRIX",
     "type": "Shotgun Mod",
+    "description": "Only consume ammo when dealing damage.",
     "levelStats": [
       {
-        "stats": [ "Only consume ammo when dealing damage.", "+25% Status Chance" ]
+        "stats": [ "+25% Status Chance" ]
       },
       {
-        "stats": [ "Only consume ammo when dealing damage.", "+50% Status Chance" ]
+        "stats": [ "+50% Status Chance" ]
       },
       {
-        "stats": [ "Only consume ammo when dealing damage.", "+75% Status Chance" ]
+        "stats": [ "+75% Status Chance" ]
       },
       {
-        "stats": [ "Only consume ammo when dealing damage.", "+100% Status Chance" ]
+        "stats": [ "+100% Status Chance" ]
       },
       {
-        "stats": [ "Only consume ammo when dealing damage.", "+125% Status Chance" ]
+        "stats": [ "+125% Status Chance" ]
       },
       {
-        "stats": [ "Only consume ammo when dealing damage.", "+150% Status Chance" ]
+        "stats": [ "+150% Status Chance" ]
       }
     ],
     "imageName": "efficient-beams.jpg",
@@ -31526,7 +31465,7 @@
     "type": "Warframe Mod",
     "levelStats": [
       {
-        "stats": [ "Energy orbs grant 9% more Ability Strength to your next cast." ]
+        "stats": [ "Energy orbs grant 10% more Ability Strength to your next cast." ]
       },
       {
         "stats": [ "Energy orbs grant 18% more Ability Strength to your next cast." ]
@@ -32725,6 +32664,39 @@
     "transmutable": true
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetAntiMeleePrecept",
+    "name": "Equilibrium Audit",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Unleashes a series of shockwaves that knockdown enemies within 5m and deal 50 damage." ]
+      },
+      {
+        "stats": [ "Unleashes a series of shockwaves that knockdown enemies within 7m and deal 100 damage." ]
+      },
+      {
+        "stats": [ "Unleashes a series of shockwaves that knockdown enemies within 9m and deal 150 damage." ]
+      },
+      {
+        "stats": [ "Unleashes a series of shockwaves that knockdown enemies within 11m and deal 200 damage." ]
+      },
+      {
+        "stats": [ "Unleashes a series of shockwaves that knockdown enemies within 13m and deal 250 damage." ]
+      },
+      {
+        "stats": [ "Unleashes a series of shockwaves that knockdown enemies within 15m and deal 300 damage." ]
+      }
+    ],
+    "imageName": "equilibrium-audit.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Syndicate/EmbolistMod",
     "name": "Eroding Blight",
     "polarity": "Vazarin",
@@ -32852,6 +32824,39 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/4f/EternalWar2.png/revision/latest?cb=20180329130754",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Eternal_War",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetEvasionPrecept",
+    "name": "Evasive Denial",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Teleports a safe distance away and engages a displacement field gaining 25% chance to dodge enemy fire for 3s." ]
+      },
+      {
+        "stats": [ "Teleports a safe distance away and engages a displacement field gaining 35% chance to dodge enemy fire for 4s." ]
+      },
+      {
+        "stats": [ "Teleports a safe distance away and engages a displacement field gaining 45% chance to dodge enemy fire for 5s." ]
+      },
+      {
+        "stats": [ "Teleports a safe distance away and engages a displacement field gaining 55% chance to dodge enemy fire for 6s." ]
+      },
+      {
+        "stats": [ "Teleports a safe distance away and engages a displacement field gaining 65% chance to dodge enemy fire for 7s." ]
+      },
+      {
+        "stats": [ "Teleports a safe distance away and engages a displacement field gaining 75% chance to dodge enemy fire for 8s." ]
+      }
+    ],
+    "imageName": "evasive-denial.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Powersuits/Dragon/DragonLuckAugmentCard",
@@ -38032,6 +38037,24 @@
     "isExilus": true
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/DataSpike/Cipher/DamageReductionOnHackMod",
+    "name": "Firewall",
+    "polarity": "Universal",
+    "rarity": "Uncommon",
+    "baseDrain": 0,
+    "fusionLimit": 0,
+    "compatName": "PARAZON",
+    "type": "Parazon",
+    "levelStats": [
+      {
+        "stats": [ "Reduces damage by 75% while hacking" ]
+      }
+    ],
+    "imageName": "firewall.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Hoverboard/HBFireWorksMod",
     "name": "Fizzbang Flourish",
     "polarity": "Vazarin",
@@ -38471,7 +38494,7 @@
         "stats": [ "+100% <DT_FIRE>Heat Resistance" ]
       },
       {
-        "stats": [ "+110% <DT_FIRE>Heat Resistance" ]
+        "stats": [ "+100% <DT_FIRE>Heat Resistance" ]
       }
     ],
     "imageName": "flame-repellent.jpg",
@@ -40020,6 +40043,39 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/09/FocusedDefenseMod.png/revision/latest?cb=20191101051939",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Focused_Defense",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetMegaLaserPrecept",
+    "name": "Focused Prospectus",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Fires a beam of energy that deals 150 <DT_FIRE>Heat Damage over 2s." ]
+      },
+      {
+        "stats": [ "Fires a beam of energy that deals 300 <DT_FIRE>Heat Damage over 2.5s." ]
+      },
+      {
+        "stats": [ "Fires a beam of energy that deals 450 <DT_FIRE>Heat Damage over 3s." ]
+      },
+      {
+        "stats": [ "Fires a beam of energy that deals 600 <DT_FIRE>Heat Damage over 3.5s." ]
+      },
+      {
+        "stats": [ "Fires a beam of energy that deals 750 <DT_FIRE>Heat Damage over 4s." ]
+      },
+      {
+        "stats": [ "Fires a beam of energy that deals 900 <DT_FIRE>Heat Damage over 4.5s." ]
+      }
+    ],
+    "imageName": "focused-prospectus.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Warframe/EnergyOnKill",
@@ -42924,120 +42980,437 @@
     "transmutable": false
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Archwing/Melee/ArchwingWeaponElectricityDamageMod",
-    "name": "Galvanized Blade",
-    "polarity": "Naramon",
-    "rarity": "Uncommon",
-    "baseDrain": 6,
-    "fusionLimit": 5,
-    "compatName": "ARCHMELEE",
-    "type": "Arch-Melee",
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/WeaponProjectileSpeedSPMod",
+    "name": "Galvanized Acceleration",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "isUtility": true,
+    "compatName": "SHOTGUN",
+    "type": "Shotgun Mod",
     "levelStats": [
       {
-        "stats": [ "+20% <DT_ELECTRICITY>Electricity" ]
+        "stats": [ "+2.7% Projectile Speed/Beam Length", "On Kill:+2.7% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+40% <DT_ELECTRICITY>Electricity" ]
+        "stats": [ "+5.5% Projectile Speed/Beam Length", "On Kill:+5.5% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+60% <DT_ELECTRICITY>Electricity" ]
+        "stats": [ "+8.2% Projectile Speed/Beam Length", "On Kill:+8.2% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+80% <DT_ELECTRICITY>Electricity" ]
+        "stats": [ "+10.9% Projectile Speed/Beam Length", "On Kill:+10.9% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+100% <DT_ELECTRICITY>Electricity" ]
+        "stats": [ "+13.6% Projectile Speed/Beam Length", "On Kill:+13.6% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
       },
       {
-        "stats": [ "+120% <DT_ELECTRICITY>Electricity" ]
+        "stats": [ "+16.4% Projectile Speed/Beam Length", "On Kill:+16.4% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+19.1% Projectile Speed/Beam Length", "On Kill:+19.1% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+21.8% Projectile Speed/Beam Length", "On Kill:+21.8% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+24.5% Projectile Speed/Beam Length", "On Kill:+24.5% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+27.3% Projectile Speed/Beam Length", "On Kill:+27.3% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+30% Projectile Speed/Beam Length", "On Kill:+30% Projectile Speed/Beam Length for 10s. Stacks up to 2x." ]
       }
     ],
-    "imageName": "galvanized-blade.jpg",
+    "imageName": "galvanized-acceleration.jpg",
     "category": "Mods",
-    "tradable": false,
-    "drops": [
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponStatusChanceSPMod",
+    "name": "Galvanized Aptitude",
+    "polarity": "Vazarin",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "compatName": "RIFLE",
+    "type": "Rifle",
+    "levelStats": [
       {
-        "location": "Shield Dargyn",
-        "type": "Galvanized Blade",
-        "chance": 0.0017,
-        "rarity": "Rare"
+        "stats": [ "+7.3% Status Chance", "On Kill:+3.6% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Gyre Raider Carver",
-        "type": "Galvanized Blade",
-        "chance": 0.0028,
-        "rarity": "Rare"
+        "stats": [ "+14.5% Status Chance", "On Kill:+7.3% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Gyre Raider Eviscerator",
-        "type": "Galvanized Blade",
-        "chance": 0.0028,
-        "rarity": "Rare"
+        "stats": [ "+21.8% Status Chance", "On Kill:+10.9% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Gyre Raider",
-        "type": "Galvanized Blade",
-        "chance": 0.0028,
-        "rarity": "Rare"
+        "stats": [ "+29.1% Status Chance", "On Kill:+14.5% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Exo Raider Carver",
-        "type": "Galvanized Blade",
-        "chance": 0.0037,
-        "rarity": "Rare"
+        "stats": [ "+36.4% Status Chance", "On Kill:+18.2% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Exo Raider Eviscerator",
-        "type": "Galvanized Blade",
-        "chance": 0.0037,
-        "rarity": "Rare"
+        "stats": [ "+43.6% Status Chance", "On Kill:+21.8% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Exo Raider",
-        "type": "Galvanized Blade",
-        "chance": 0.0037,
-        "rarity": "Rare"
+        "stats": [ "+50.9% Status Chance", "On Kill:+25.5% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Kosma Raider Carver",
-        "type": "Galvanized Blade",
-        "chance": 0.0037,
-        "rarity": "Rare"
+        "stats": [ "+58.2% Status Chance", "On Kill:+29.1% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Kosma Raider Eviscerator",
-        "type": "Galvanized Blade",
-        "chance": 0.0037,
-        "rarity": "Rare"
+        "stats": [ "+65.5% Status Chance", "On Kill:+32.7% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Kosma Raider",
-        "type": "Galvanized Blade",
-        "chance": 0.0037,
-        "rarity": "Rare"
+        "stats": [ "+72.7% Status Chance", "On Kill:+36.4% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       },
       {
-        "location": "Saturn/Pandora (Pursuit)",
-        "type": "Galvanized Blade",
-        "chance": 0.0506,
-        "rarity": "Rare"
-      },
-      {
-        "location": "Phobos/Kepler (Rush), Rotation A",
-        "type": "Galvanized Blade",
-        "chance": 0.1667,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Jupiter/Galilea (Sabotage)",
-        "type": "Galvanized Blade",
-        "chance": 0.2581,
-        "rarity": "Uncommon"
+        "stats": [ "+80% Status Chance", "On Kill:+40% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
       }
     ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/7/7a/GalvanizedBlade.png/revision/latest?cb=20171007150615",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Galvanized_Blade",
-    "transmutable": false
+    "imageName": "galvanized-aptitude.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponFireIterationsSPMod",
+    "name": "Galvanized Chamber",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 10,
+    "compatName": "RIFLE",
+    "type": "Rifle",
+    "levelStats": [
+      {
+        "stats": [ "+7.3% Multishot", "On Kill:+2.7% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+14.5% Multishot", "On Kill:+5.5% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+21.8% Multishot", "On Kill:+8.2% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+29.1% Multishot", "On Kill:+10.9% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+36.4% Multishot", "On Kill:+13.6% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+43.6% Multishot", "On Kill:+16.4% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+50.9% Multishot", "On Kill:+19.1% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+58.2% Multishot", "On Kill:+21.8% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+65.5% Multishot", "On Kill:+24.5% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+72.7% Multishot", "On Kill:+27.3% Multishot for 20s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "+80% Multishot", "On Kill:+30% Multishot for 20s. Stacks up to 5x." ]
+      }
+    ],
+    "imageName": "galvanized-chamber.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Event/CritChanceWhileAimingPistolSPMod",
+    "name": "Galvanized Crosshairs",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "compatName": "PISTOL",
+    "type": "Secondary Mod",
+    "levelStats": [
+      {
+        "stats": [ "On Headshot:+10.9% Critical Chance when Aiming for 12sOn Headshot Kill:+3.6% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+21.8% Critical Chance when Aiming for 12sOn Headshot Kill:+7.3% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+32.7% Critical Chance when Aiming for 12sOn Headshot Kill:+10.9% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+43.6% Critical Chance when Aiming for 12sOn Headshot Kill:+14.5% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+54.5% Critical Chance when Aiming for 12sOn Headshot Kill:+18.2% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+65.5% Critical Chance when Aiming for 12sOn Headshot Kill:+21.8% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+76.4% Critical Chance when Aiming for 12sOn Headshot Kill:+25.5% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+87.3% Critical Chance when Aiming for 12sOn Headshot Kill:+29.1% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+98.2% Critical Chance when Aiming for 12sOn Headshot Kill:+32.7% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+109.1% Critical Chance when Aiming for 12sOn Headshot Kill:+36.4% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+120% Critical Chance when Aiming for 12sOn Headshot Kill:+40% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      }
+    ],
+    "imageName": "galvanized-crosshairs.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/WeaponFireIterationsSPMod",
+    "name": "Galvanized Diffusion",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "compatName": "PISTOL",
+    "type": "Secondary Mod",
+    "levelStats": [
+      {
+        "stats": [ "+10% Multishot", "On Kill:+2.7% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+20% Multishot", "On Kill:+5.5% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+30% Multishot", "On Kill:+8.2% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+40% Multishot", "On Kill:+10.9% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+50% Multishot", "On Kill:+13.6% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+60% Multishot", "On Kill:+16.4% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+70% Multishot", "On Kill:+19.1% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+80% Multishot", "On Kill:+21.8% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+90% Multishot", "On Kill:+24.5% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+100% Multishot", "On Kill:+27.3% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+110% Multishot", "On Kill:+30% Multishot for 20s. Stacks up to 4x." ]
+      }
+    ],
+    "imageName": "galvanized-diffusion.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/WeaponFireIterationsSPMod",
+    "name": "Galvanized Hell",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 10,
+    "compatName": "SHOTGUN",
+    "type": "Shotgun Mod",
+    "levelStats": [
+      {
+        "stats": [ "+10% Multishot", "On Kill:+2.7% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+20% Multishot", "On Kill:+5.5% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+30% Multishot", "On Kill:+8.2% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+40% Multishot", "On Kill:+10.9% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+50% Multishot", "On Kill:+13.6% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+60% Multishot", "On Kill:+16.4% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+70% Multishot", "On Kill:+19.1% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+80% Multishot", "On Kill:+21.8% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+90% Multishot", "On Kill:+24.5% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+100% Multishot", "On Kill:+27.3% Multishot for 20s. Stacks up to 4x." ]
+      },
+      {
+        "stats": [ "+110% Multishot", "On Kill:+30% Multishot for 20s. Stacks up to 4x." ]
+      }
+    ],
+    "imageName": "galvanized-hell.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/WeaponStatusChanceSPMod",
+    "name": "Galvanized Savvy",
+    "polarity": "Vazarin",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "compatName": "SHOTGUN",
+    "type": "Shotgun Mod",
+    "levelStats": [
+      {
+        "stats": [ "+7.3% Status Chance", "On Kill:+3.6% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+14.5% Status Chance", "On Kill:+7.3% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+21.8% Status Chance", "On Kill:+10.9% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+29.1% Status Chance", "On Kill:+14.5% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+36.4% Status Chance", "On Kill:+18.2% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+43.6% Status Chance", "On Kill:+21.8% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+50.9% Status Chance", "On Kill:+25.5% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+58.2% Status Chance", "On Kill:+29.1% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+65.5% Status Chance", "On Kill:+32.7% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+72.7% Status Chance", "On Kill:+36.4% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      },
+      {
+        "stats": [ "+80% Status Chance", "On Kill:+40% Damage per Status Type affecting the target for 20s. Stacks up to 2x." ]
+      }
+    ],
+    "imageName": "galvanized-savvy.jpg",
+    "category": "Mods",
+    "tradable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Event/CritChanceWhileAimingRifleSPMod",
+    "name": "Galvanized Scope",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "compatName": "RIFLE",
+    "type": "Rifle",
+    "levelStats": [
+      {
+        "stats": [ "On Headshot:+10.9% Critical Chance when Aiming for 12sOn Headshot Kill:+3.6% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+21.8% Critical Chance when Aiming for 12sOn Headshot Kill:+7.3% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+32.7% Critical Chance when Aiming for 12sOn Headshot Kill:+10.9% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+43.6% Critical Chance when Aiming for 12sOn Headshot Kill:+14.5% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+54.6% Critical Chance when Aiming for 12sOn Headshot Kill:+18.2% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+65.5% Critical Chance when Aiming for 12sOn Headshot Kill:+21.8% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+76.4% Critical Chance when Aiming for 12sOn Headshot Kill:+25.5% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+87.3% Critical Chance when Aiming for 12sOn Headshot Kill:+29.1% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+98.2% Critical Chance when Aiming for 12sOn Headshot Kill:+32.7% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+109.1% Critical Chance when Aiming for 12sOn Headshot Kill:+36.4% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      },
+      {
+        "stats": [ "On Headshot:+120% Critical Chance when Aiming for 12sOn Headshot Kill:+40% Critical Chance when Aiming for 12s. Stacks up to 5x." ]
+      }
+    ],
+    "imageName": "galvanized-scope.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/WeaponStatusChanceSPMod",
+    "name": "Galvanized Shot",
+    "polarity": "Vazarin",
+    "rarity": "Rare",
+    "baseDrain": 2,
+    "fusionLimit": 10,
+    "compatName": "PISTOL",
+    "type": "Secondary Mod",
+    "levelStats": [
+      {
+        "stats": [ "+7.3% Status Chance", "On Kill:+3.6% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+14.5% Status Chance", "On Kill:+7.3% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+21.8% Status Chance", "On Kill:+10.9% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+29.1% Status Chance", "On Kill:+14.5% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+36.4% Status Chance", "On Kill:+18.2% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+43.6% Status Chance", "On Kill:+21.8% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+50.9% Status Chance", "On Kill:+25.5% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+58.2% Status Chance", "On Kill:+29.1% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+65.5% Status Chance", "On Kill:+32.7% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+72.7% Status Chance", "On Kill:+36.4% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      },
+      {
+        "stats": [ "+80% Status Chance", "On Kill:+40% Damage per Status Type affecting the target for 14s. Stacks up to 3x." ]
+      }
+    ],
+    "imageName": "galvanized-shot.jpg",
+    "category": "Mods",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbOneMeleeTree",
@@ -46816,6 +47189,24 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/DataSpike/Assassin/OnExecutionReviveCompanionMod",
+    "name": "Hard Reset",
+    "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 0,
+    "compatName": "PARAZON",
+    "type": "Parazon",
+    "levelStats": [
+      {
+        "stats": [ "Execute 3 Mercy Kills within 40 seconds to revive a fallen Sentinel or Companion" ]
+      }
+    ],
+    "imageName": "hard-reset.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Event/ProjectNightwatch/VulkarNightwatchMod",
     "name": "Harkonar Scope",
     "polarity": "Naramon",
@@ -47583,37 +47974,37 @@
     "type": "Melee Mod",
     "levelStats": [
       {
-        "stats": [ "Restores 1 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 1 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 2 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 2 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 3 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 3 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 4 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 4 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 5 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 5 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 6 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 6 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 7 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 7 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 8 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 8 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 9 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 9 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 10 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 10 Health per Status Type affecting the target" ]
       },
       {
-        "stats": [ "Restores 11 Health per Status Type affecting the target." ]
+        "stats": [ "Restores 11 Health per Status Type affecting the target" ]
       }
     ],
     "imageName": "healing-return.jpg",
@@ -54029,207 +54420,6 @@
     "tradable": true
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Expert/WeaponNoiseReductionModExpert",
-    "name": "Hush",
-    "polarity": "Naramon",
-    "rarity": "Common",
-    "baseDrain": 2,
-    "fusionLimit": 10,
-    "isUtility": true,
-    "compatName": "RIFLE",
-    "type": "Rifle",
-    "levelStats": [
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 25%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 50%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 75%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 100%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 125%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 150%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 175%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 200%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 225%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 250%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 275%." ]
-      }
-    ],
-    "imageName": "hush.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Orokin Drone",
-        "type": "Hush",
-        "chance": 0.0076,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Orokin Spectator",
-        "type": "Hush",
-        "chance": 0.0076,
-        "rarity": "Uncommon"
-      }
-    ],
-    "patchlogs": [
-      {
-        "name": "Update 26: The Old Blood",
-        "date": "2019-10-31T20:07:22Z",
-        "url": "https://forums.warframe.com/topic/1136784-update-26-the-old-blood/",
-        "additions": "",
-        "changes": "Hush",
-        "fixes": ""
-      },
-      {
-        "name": "Update 21: Chains of Harrow",
-        "date": "2017-06-29T03:00:20Z",
-        "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Hush Mod not working for charging sounds (ex. alt fire on the Paracyst). "
-      },
-      {
-        "name": "Update 18.8.0",
-        "date": "2016-04-06T20:31:30Z",
-        "url": "https://forums.warframe.com/topic/635136-update-1880/",
-        "additions": "",
-        "changes": "",
-        "fixes": "•    Fixed Hush and Hushed Invisibility not applying to the Ignis."
-      },
-      {
-        "name": "Update 18: The Second Dream",
-        "date": "2015-12-03T23:46:40Z",
-        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
-        "additions": "",
-        "changes": "Hush and Suppress mods are no longer usable in PvP.",
-        "fixes": ""
-      },
-      {
-        "name": "Update 10.2.0",
-        "date": "2013-09-27T19:52:28Z",
-        "url": "https://forums.warframe.com/topic/113787-update-1020/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Hush and Suppress mods now lower the sound of weapons when equipped.\nFixed Suppress/Hush mod to actually reduce sound effect volume of the weapon it’s attached to."
-      }
-    ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/82/HushModU145.png/revision/latest?cb=20191101055707",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Hush",
-    "transmutable": true
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Intermediate/WeaponNoiseReductionModIntermediate",
-    "name": "Hush",
-    "polarity": "Naramon",
-    "rarity": "Common",
-    "baseDrain": 2,
-    "fusionLimit": 5,
-    "isUtility": true,
-    "compatName": "RIFLE",
-    "type": "Rifle",
-    "levelStats": [
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 25%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 50%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 75%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 100%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 125%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 150%." ]
-      }
-    ],
-    "imageName": "hush.jpg",
-    "category": "Mods",
-    "tradable": false,
-    "drops": [
-      {
-        "location": "Orokin Drone",
-        "type": "Hush",
-        "chance": 0.0076,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Orokin Spectator",
-        "type": "Hush",
-        "chance": 0.0076,
-        "rarity": "Uncommon"
-      }
-    ],
-    "patchlogs": [
-      {
-        "name": "Update 26: The Old Blood",
-        "date": "2019-10-31T20:07:22Z",
-        "url": "https://forums.warframe.com/topic/1136784-update-26-the-old-blood/",
-        "additions": "",
-        "changes": "Hush",
-        "fixes": ""
-      },
-      {
-        "name": "Update 21: Chains of Harrow",
-        "date": "2017-06-29T03:00:20Z",
-        "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Hush Mod not working for charging sounds (ex. alt fire on the Paracyst). "
-      },
-      {
-        "name": "Update 18.8.0",
-        "date": "2016-04-06T20:31:30Z",
-        "url": "https://forums.warframe.com/topic/635136-update-1880/",
-        "additions": "",
-        "changes": "",
-        "fixes": "•    Fixed Hush and Hushed Invisibility not applying to the Ignis."
-      },
-      {
-        "name": "Update 18: The Second Dream",
-        "date": "2015-12-03T23:46:40Z",
-        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
-        "additions": "",
-        "changes": "Hush and Suppress mods are no longer usable in PvP.",
-        "fixes": ""
-      },
-      {
-        "name": "Update 10.2.0",
-        "date": "2013-09-27T19:52:28Z",
-        "url": "https://forums.warframe.com/topic/113787-update-1020/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Hush and Suppress mods now lower the sound of weapons when equipped.\nFixed Suppress/Hush mod to actually reduce sound effect volume of the weapon it’s attached to."
-      }
-    ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/82/HushModU145.png/revision/latest?cb=20191101055707",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Hush",
-    "transmutable": true
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponNoiseReductionMod",
     "name": "Hush",
     "polarity": "Naramon",
@@ -58318,7 +58508,7 @@
         "stats": [ "+100% <DT_FREEZE>Cold Resistance" ]
       },
       {
-        "stats": [ "+110% <DT_FREEZE>Cold Resistance" ]
+        "stats": [ "+100% <DT_FREEZE>Cold Resistance" ]
       }
     ],
     "imageName": "insulation.jpg",
@@ -61734,8 +61924,8 @@
     "name": "Kitgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -72720,8 +72910,8 @@
     "name": "Kitgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -84845,7 +85035,7 @@
         "stats": [ "+100% <DT_ELECTRICITY>Electricity Resistance" ]
       },
       {
-        "stats": [ "+110% <DT_ELECTRICITY>Electricity Resistance" ]
+        "stats": [ "+100% <DT_ELECTRICITY>Electricity Resistance" ]
       }
     ],
     "imageName": "lightning-rod.jpg",
@@ -88044,6 +88234,24 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/DataSpike/Assassin/OnExecutionTerrifyMod",
+    "name": "Malicious Code",
+    "polarity": "Universal",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 0,
+    "compatName": "PARAZON",
+    "type": "Parazon",
+    "levelStats": [
+      {
+        "stats": [ "50% chance for enemies within 15m to cower in fear for 8 seconds" ]
+      }
+    ],
+    "imageName": "malicious-code.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/ClawCmbOneMeleeTree",
     "name": "Malicious Raptor",
     "polarity": "Madurai",
@@ -88241,13 +88449,13 @@
     "type": "Melee",
     "levelStats": [
       {
-        "stats": [ "+5% Attack Speed", "-12.5% Energy Rate" ]
+        "stats": [ "+5% Attack Speed", "-87.5% Energy Rate" ]
       },
       {
-        "stats": [ "+10% Attack Speed", "-25% Energy Rate" ]
+        "stats": [ "+10% Attack Speed", "-75% Energy Rate" ]
       },
       {
-        "stats": [ "+15% Attack Speed", "-37.5% Energy Rate" ]
+        "stats": [ "+15% Attack Speed", "-62.5% Energy Rate" ]
       },
       {
         "stats": [ "+20% Attack Speed", "-50% Energy Rate" ]
@@ -88317,6 +88525,55 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/5/5f/MartialFury.png/revision/latest?cb=20171007152944",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Martial_Fury",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/WeaponDamageOnMeleeKillAmountMod",
+    "name": "Martial Point Blank",
+    "polarity": "Madurai",
+    "rarity": "Rare",
+    "baseDrain": 6,
+    "fusionLimit": 10,
+    "excludeFromCodex": true,
+    "compatName": "SHOTGUN",
+    "type": "Shotgun Mod",
+    "levelStats": [
+      {
+        "stats": [ "+13.6% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+27.3% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+40.9% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+54.6% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+68.2% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+81.8% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+95.5% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+109.1% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+122.8% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+136.4% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      },
+      {
+        "stats": [ "+150% Damage", "/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionNoChanceWithDurationAnd10Stacks" ]
+      }
+    ],
+    "imageName": "martial-point-blank.jpg",
+    "category": "Mods",
+    "tradable": true
   },
   {
     "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePrecepts/InfestedCatbrowVampireShieldPrecept",
@@ -92234,8 +92491,8 @@
     "name": "Melee Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "upgradeEntries": [
       {
         "tag": "WeaponMeleeDamageMod",
@@ -108223,16 +108480,16 @@
     "type": "---",
     "levelStats": [
       {
-        "stats": [ "Reduces damage by 10% when Airborne." ]
+        "stats": [ "Reduces damage by 90% when Airborne." ]
       },
       {
-        "stats": [ "Reduces damage by 20% when Airborne." ]
+        "stats": [ "Reduces damage by 80% when Airborne." ]
       },
       {
-        "stats": [ "Reduces damage by 30% when Airborne." ]
+        "stats": [ "Reduces damage by 70% when Airborne." ]
       },
       {
-        "stats": [ "Reduces damage by 40% when Airborne." ]
+        "stats": [ "Reduces damage by 60% when Airborne." ]
       }
     ],
     "imageName": "necramech-aviator.jpg",
@@ -114407,6 +114664,39 @@
     "transmutable": true
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetStealEximusPrecept",
+    "name": "Null Audit",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Negates the aura and abilities on an Eximus enemy and transfers the aura to the Hound for 10s." ]
+      },
+      {
+        "stats": [ "Negates the aura and abilities on an Eximus enemy and transfers the aura to the Hound for 20s." ]
+      },
+      {
+        "stats": [ "Negates the aura and abilities on an Eximus enemy and transfers the aura to the Hound for 30s." ]
+      },
+      {
+        "stats": [ "Negates the aura and abilities on an Eximus enemy and transfers the aura to the Hound for 40s." ]
+      },
+      {
+        "stats": [ "Negates the aura and abilities on an Eximus enemy and transfers the aura to the Hound for 50s." ]
+      },
+      {
+        "stats": [ "Negates the aura and abilities on an Eximus enemy and transfers the aura to the Hound for 60s." ]
+      }
+    ],
+    "imageName": "null-audit.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/HealBot",
     "name": "Odomedic",
     "polarity": "Penjaga",
@@ -115566,22 +115856,22 @@
     "type": "Rifle",
     "levelStats": [
       {
-        "stats": [ "-10% Zoom during Aim Glide" ]
+        "stats": [ "-10% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-20% Zoom during Aim Glide" ]
+        "stats": [ "-20% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-30% Zoom during Aim Glide" ]
+        "stats": [ "-30% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-40% Zoom during Aim Glide" ]
+        "stats": [ "-40% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-50% Zoom during Aim Glide" ]
+        "stats": [ "-50% Zoom while Aim Gliding" ]
       },
       {
-        "stats": [ "-60% Zoom during Aim Glide" ]
+        "stats": [ "-60% Zoom while Aim Gliding" ]
       }
     ],
     "imageName": "overview.jpg",
@@ -120689,8 +120979,8 @@
     "name": "Pistol Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -134140,6 +134430,24 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/8e/PowerDonation.png/revision/latest?cb=20181018222436",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Power_Donation",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/DataSpike/Assassin/OnExecutionDrainPowerMod",
+    "name": "Power Drain",
+    "polarity": "Universal",
+    "rarity": "Uncommon",
+    "baseDrain": 0,
+    "fusionLimit": 0,
+    "compatName": "PARAZON",
+    "type": "Parazon",
+    "levelStats": [
+      {
+        "stats": [ "100% chance for next ability cast to gain +50% Ability Strength" ]
+      }
+    ],
+    "imageName": "power-drain.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/OrokinChallenge/OrokinChallengeModPower",
@@ -151603,6 +151911,39 @@
     "transmutable": true
   },
   {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetMagneticRepulsePrecept",
+    "name": "Reflex Denial",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Generates a shield that reflects 15% Damage taken in pulses over 5s as <DT_MAGNETIC>Magnetic Damage in a 2m radius." ]
+      },
+      {
+        "stats": [ "Generates a shield that reflects 30% Damage taken in pulses over 6s as <DT_MAGNETIC>Magnetic Damage in a 4m radius." ]
+      },
+      {
+        "stats": [ "Generates a shield that reflects 45% Damage taken in pulses over 7s as <DT_MAGNETIC>Magnetic Damage in a 6m radius." ]
+      },
+      {
+        "stats": [ "Generates a shield that reflects 60% Damage taken in pulses over 8s as <DT_MAGNETIC>Magnetic Damage in a 8m radius." ]
+      },
+      {
+        "stats": [ "Generates a shield that reflects 75% Damage taken in pulses over 9s as <DT_MAGNETIC>Magnetic Damage in a 10m radius." ]
+      },
+      {
+        "stats": [ "Generates a shield that reflects 90% Damage taken in pulses over 10s as <DT_MAGNETIC>Magnetic Damage in a 12m radius." ]
+      }
+    ],
+    "imageName": "reflex-denial.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Pistol/HolsterSpeedBonusMod",
     "name": "Reflex Draw",
     "polarity": "Naramon",
@@ -152761,6 +153102,39 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/2e/RepellingBastille4.png/revision/latest?cb=20191101055727",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Repelling_Bastille",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetDisarmPulsePrecept",
+    "name": "Repo Audit",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Emits a magnetic pulse that disarms enemies within 5m." ]
+      },
+      {
+        "stats": [ "Emits a magnetic pulse that disarms enemies within 10m." ]
+      },
+      {
+        "stats": [ "Emits a magnetic pulse that disarms enemies within 15m." ]
+      },
+      {
+        "stats": [ "Emits a magnetic pulse that disarms enemies within 20m." ]
+      },
+      {
+        "stats": [ "Emits a magnetic pulse that disarms enemies within 25m." ]
+      },
+      {
+        "stats": [ "Emits a magnetic pulse that disarms enemies within 30m." ]
+      }
+    ],
+    "imageName": "repo-audit.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarDamageResistanceStun",
@@ -155522,8 +155896,8 @@
     "name": "Rifle Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -167474,20 +167848,21 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
+    "isUtility": true,
     "compatName": "PISTOL",
     "type": "Secondary Mod",
     "levelStats": [
       {
-        "stats": [ "+2 Range" ]
+        "stats": [ "+2 Beam Length" ]
       },
       {
-        "stats": [ "+4 Range" ]
+        "stats": [ "+4 Beam Length" ]
       },
       {
-        "stats": [ "+6 Range" ]
+        "stats": [ "+6 Beam Length" ]
       },
       {
-        "stats": [ "+8 Range" ]
+        "stats": [ "+8 Beam Length" ]
       }
     ],
     "imageName": "ruinous-extension.jpg",
@@ -174293,16 +174668,16 @@
     "type": "Secondary",
     "levelStats": [
       {
-        "stats": [ "+5 Range", "+0.3 'Sequence'" ]
+        "stats": [ "+5 Beam Length", "+0.3 'Sequence'" ]
       },
       {
-        "stats": [ "+10 Range", "+0.5 'Sequence'" ]
+        "stats": [ "+10 Beam Length", "+0.5 'Sequence'" ]
       },
       {
-        "stats": [ "+15 Range", "+0.8 'Sequence'" ]
+        "stats": [ "+15 Beam Length", "+0.8 'Sequence'" ]
       },
       {
-        "stats": [ "+20 Range", "+1 'Sequence'" ]
+        "stats": [ "+20 Beam Length", "+1 'Sequence'" ]
       }
     ],
     "imageName": "sequence-burn.jpg",
@@ -180410,8 +180785,8 @@
     "name": "Shotgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -190713,8 +191088,8 @@
     "name": "Shotgun Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "upgradeEntries": [
       {
         "tag": "WeaponArmorPiercingDamageMod",
@@ -203835,20 +204210,21 @@
     "rarity": "Uncommon",
     "baseDrain": 2,
     "fusionLimit": 3,
+    "isUtility": true,
     "compatName": "PRIMARY",
     "type": "Rifle",
     "levelStats": [
       {
-        "stats": [ "+3 Range" ]
+        "stats": [ "+3 Beam Length" ]
       },
       {
-        "stats": [ "+6 Range" ]
+        "stats": [ "+6 Beam Length" ]
       },
       {
-        "stats": [ "+9 Range" ]
+        "stats": [ "+9 Beam Length" ]
       },
       {
-        "stats": [ "+12 Range" ]
+        "stats": [ "+12 Beam Length" ]
       }
     ],
     "imageName": "sinister-reach.jpg",
@@ -218453,223 +218829,6 @@
     "transmutable": true
   },
   {
-    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Expert/WeaponNoiseReductionModExpert",
-    "name": "Suppress",
-    "polarity": "Naramon",
-    "rarity": "Common",
-    "baseDrain": 2,
-    "fusionLimit": 10,
-    "isUtility": true,
-    "compatName": "PISTOL",
-    "type": "Secondary Mod",
-    "levelStats": [
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 25%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 50%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 75%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 100%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 125%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 150%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 175%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 200%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 225%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 250%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 275%." ]
-      }
-    ],
-    "imageName": "suppress.jpg",
-    "category": "Mods",
-    "tradable": true,
-    "drops": [
-      {
-        "location": "Corrupted Crewman",
-        "type": "Suppress",
-        "chance": 0.0097,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Exploiter Orb",
-        "type": "Suppress",
-        "chance": 0.3872,
-        "rarity": "Common"
-      }
-    ],
-    "patchlogs": [
-      {
-        "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
-        "date": "2020-05-01T13:21:46Z",
-        "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
-        "additions": "",
-        "changes": "Changed the Fire Suppression Tactical Avionic to always fix only one Hazard, and upgrading the rank reduces the cooldown.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Prime Vault 27.1.2",
-        "date": "2020-02-18T20:34:22Z",
-        "url": "https://forums.warframe.com/topic/1169441-empyrean-prime-vault-2712/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed seeing ‘[HC] Vidar Fire Suppress’ when using the Tactical Intrinsic Ability Fire Suppression when your Railjack  has both fire and electrical damage."
-      },
-      {
-        "name": "Update 26: The Old Blood",
-        "date": "2019-10-31T20:07:22Z",
-        "url": "https://forums.warframe.com/topic/1136784-update-26-the-old-blood/",
-        "additions": "",
-        "changes": "Suppress",
-        "fixes": ""
-      },
-      {
-        "name": "The Glast Gambit: Hotfix 19.11.2",
-        "date": "2017-02-17T20:40:41Z",
-        "url": "https://forums.warframe.com/topic/763931-the-glast-gambit-hotfix-19112/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a seam/texture issue on the Vauban Suppressor Skin. "
-      },
-      {
-        "name": "Update 18: The Second Dream",
-        "date": "2015-12-03T23:46:40Z",
-        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
-        "additions": "",
-        "changes": "Hush and Suppress mods are no longer usable in PvP.",
-        "fixes": ""
-      },
-      {
-        "name": "Update 10.2.0",
-        "date": "2013-09-27T19:52:28Z",
-        "url": "https://forums.warframe.com/topic/113787-update-1020/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Hush and Suppress mods now lower the sound of weapons when equipped.\nFixed Suppress/Hush mod to actually reduce sound effect volume of the weapon it’s attached to."
-      }
-    ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/32/SuppressModU145.png/revision/latest?cb=20191101055710",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Suppress",
-    "transmutable": true
-  },
-  {
-    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Intermediate/WeaponNoiseReductionModIntermediate",
-    "name": "Suppress",
-    "polarity": "Naramon",
-    "rarity": "Common",
-    "baseDrain": 2,
-    "fusionLimit": 5,
-    "isUtility": true,
-    "compatName": "PISTOL",
-    "type": "Secondary Mod",
-    "levelStats": [
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 25%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 50%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 75%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 100%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 125%." ]
-      },
-      {
-        "stats": [ "Reduces the chance an enemy will hear gunfire by 150%." ]
-      }
-    ],
-    "imageName": "suppress.jpg",
-    "category": "Mods",
-    "tradable": true,
-    "drops": [
-      {
-        "location": "Corrupted Crewman",
-        "type": "Suppress",
-        "chance": 0.0097,
-        "rarity": "Uncommon"
-      },
-      {
-        "location": "Exploiter Orb",
-        "type": "Suppress",
-        "chance": 0.3872,
-        "rarity": "Common"
-      }
-    ],
-    "patchlogs": [
-      {
-        "name": "Warframe Revised: Railjack Revisited (Part 1): Update 27.4",
-        "date": "2020-05-01T13:21:46Z",
-        "url": "https://forums.warframe.com/topic/1189247-warframe-revised-railjack-revisited-part-1-update-274/",
-        "additions": "",
-        "changes": "Changed the Fire Suppression Tactical Avionic to always fix only one Hazard, and upgrading the rank reduces the cooldown.",
-        "fixes": ""
-      },
-      {
-        "name": "Empyrean: Prime Vault 27.1.2",
-        "date": "2020-02-18T20:34:22Z",
-        "url": "https://forums.warframe.com/topic/1169441-empyrean-prime-vault-2712/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed seeing ‘[HC] Vidar Fire Suppress’ when using the Tactical Intrinsic Ability Fire Suppression when your Railjack  has both fire and electrical damage."
-      },
-      {
-        "name": "Update 26: The Old Blood",
-        "date": "2019-10-31T20:07:22Z",
-        "url": "https://forums.warframe.com/topic/1136784-update-26-the-old-blood/",
-        "additions": "",
-        "changes": "Suppress",
-        "fixes": ""
-      },
-      {
-        "name": "The Glast Gambit: Hotfix 19.11.2",
-        "date": "2017-02-17T20:40:41Z",
-        "url": "https://forums.warframe.com/topic/763931-the-glast-gambit-hotfix-19112/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a seam/texture issue on the Vauban Suppressor Skin. "
-      },
-      {
-        "name": "Update 18: The Second Dream",
-        "date": "2015-12-03T23:46:40Z",
-        "url": "https://forums.warframe.com/topic/568455-update-18-the-second-dream/",
-        "additions": "",
-        "changes": "Hush and Suppress mods are no longer usable in PvP.",
-        "fixes": ""
-      },
-      {
-        "name": "Update 10.2.0",
-        "date": "2013-09-27T19:52:28Z",
-        "url": "https://forums.warframe.com/topic/113787-update-1020/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Hush and Suppress mods now lower the sound of weapons when equipped.\nFixed Suppress/Hush mod to actually reduce sound effect volume of the weapon it’s attached to."
-      }
-    ],
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/32/SuppressModU145.png/revision/latest?cb=20191101055710",
-    "wikiaUrl": "http://warframe.fandom.com/wiki/Suppress",
-    "transmutable": true
-  },
-  {
     "uniqueName": "/Lotus/Upgrades/Mods/Pistol/WeaponNoiseReductionMod",
     "name": "Suppress",
     "polarity": "Naramon",
@@ -219499,6 +219658,24 @@
     "transmutable": false
   },
   {
+    "uniqueName": "/Lotus/Upgrades/Mods/DataSpike/Assassin/SwiftExecuteMod",
+    "name": "Swift Mercy",
+    "polarity": "Universal",
+    "rarity": "Common",
+    "baseDrain": 0,
+    "fusionLimit": 0,
+    "compatName": "PARAZON",
+    "type": "Parazon",
+    "levelStats": [
+      {
+        "stats": [ "Speed of Mercy Kills increased by 50%" ]
+      }
+    ],
+    "imageName": "swift-mercy.jpg",
+    "category": "Mods",
+    "tradable": false
+  },
+  {
     "uniqueName": "/Lotus/Upgrades/Mods/Aura/WarframeAuraWickedStrikesMod",
     "name": "Swift Momentum",
     "polarity": "Madurai",
@@ -219882,6 +220059,39 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/ae/SwordAlone.png/revision/latest?cb=20171007154949",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Sword_Alone",
     "transmutable": false
+  },
+  {
+    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetPrecepts/ZanukaPetTeslaShotPrecept",
+    "name": "Synergized Prospectus",
+    "polarity": "Penjaga",
+    "rarity": "Rare",
+    "baseDrain": 0,
+    "fusionLimit": 5,
+    "compatName": "HOUND",
+    "type": "Sentinel",
+    "levelStats": [
+      {
+        "stats": [ "Fires a spark that seeks out the nearest enemy in 30m, dealing 50 <DT_ELECTRICITY>Electricity Damage in a 1m radius. The spark ricochets up to 2x, seeking out the nearest enemy in 5m." ]
+      },
+      {
+        "stats": [ "Fires a spark that seeks out the nearest enemy in 30m, dealing 100 <DT_ELECTRICITY>Electricity Damage in a 2m radius. The spark ricochets up to 3x, seeking out the nearest enemy in 10m." ]
+      },
+      {
+        "stats": [ "Fires a spark that seeks out the nearest enemy in 30m, dealing 150 <DT_ELECTRICITY>Electricity Damage in a 4m radius. The spark ricochets up to 4x, seeking out the nearest enemy in 15m." ]
+      },
+      {
+        "stats": [ "Fires a spark that seeks out the nearest enemy in 30m, dealing 200 <DT_ELECTRICITY>Electricity Damage in a 6m radius. The spark ricochets up to 5x, seeking out the nearest enemy in 20m." ]
+      },
+      {
+        "stats": [ "Fires a spark that seeks out the nearest enemy in 30m, dealing 250 <DT_ELECTRICITY>Electricity Damage in a 8m radius. The spark ricochets up to 6x, seeking out the nearest enemy in 25m." ]
+      },
+      {
+        "stats": [ "Fires a spark that seeks out the nearest enemy in 30m, dealing 300 <DT_ELECTRICITY>Electricity Damage in a 10m radius. The spark ricochets up to 7x, seeking out the nearest enemy in 30m." ]
+      }
+    ],
+    "imageName": "synergized-prospectus.jpg",
+    "category": "Mods",
+    "tradable": false
   },
   {
     "uniqueName": "/Lotus/Upgrades/Mods/Sets/Synth/PistolSynthChargeMod",
@@ -228848,8 +229058,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -228873,8 +229083,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -228898,8 +229108,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -228924,8 +229134,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -228950,8 +229160,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -228976,8 +229186,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -229002,8 +229212,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -229028,8 +229238,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -229054,8 +229264,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -229080,8 +229290,8 @@
     "name": "Unfused Artifact",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "excludeFromCodex": true,
     "upgradeEntries": [
       {
@@ -237017,8 +237227,8 @@
     "name": "Zaw Riven Mod",
     "polarity": "Universal",
     "rarity": "Common",
-    "baseDrain": 128,
-    "fusionLimit": 0,
+    "baseDrain": -593559552,
+    "fusionLimit": 510,
     "upgradeEntries": [
       {
         "tag": "WeaponMeleeDamageMod",

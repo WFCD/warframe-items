@@ -16350,7 +16350,7 @@
         "omegaAttenuation": 1.48,
         "blockingAngle": 60,
         "comboDuration": 5,
-        "followThrough": 0.5,
+        "followThrough": 0.44999999,
         "range": 2.5,
         "slamAttack": 240,
         "slamRadialDamage": 120,
@@ -104205,6 +104205,666 @@
     "disposition": 5
   },
   {
+    "name": "Kompressa",
+    "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnYareliPistol/TnYareliPistolWeapon",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 2,
+    "description": "Launch a volley of virulent, hyper-pressurized, water globules that envelope targets and explode with torrential force. Yareli's signature pistol.",
+    "criticalChance": 0.059999999,
+    "criticalMultiplier": 1.8,
+    "procChance": 0.30000001,
+    "fireRate": 3.3333335,
+    "masteryReq": 8,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 3.7735848,
+    "omegaAttenuation": 0.5,
+    "noise": "Alarming",
+    "trigger": "Auto",
+    "magazineSize": 12,
+    "reloadTime": 1.8,
+    "multishot": 4,
+    "buildPrice": 20000,
+    "buildTime": 86400,
+    "skipBuildTimePrice": 25,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnYareliPistolBarrel",
+        "name": "Barrel",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "barrel.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/TnYareliPistolBlueprint",
+        "name": "Blueprint",
+        "description": "Launch a volley of virulent, hyper-pressurized, water globules that envelope targets and explode with torrential force. Yareli's signature pistol.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Deimos.",
+        "itemCount": 3,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.0025,
+            "rarity": "Legendary"
+          },
+          {
+            "location": "Brachiolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0026,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Arca Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Cinder Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Phase Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Swarm Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0027,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Alkonost",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Kucumatz",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Amalgam Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Culveri Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aurax Polaris Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Heqet",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Machinist",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Moa",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Osprey",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Demolyst Satyr",
+            "type": "Orokin Cell",
+            "chance": 0.0038,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mimic",
+            "type": "Orokin Cell",
+            "chance": 0.0065,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Aerolyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ambulas",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Battalyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Decaying Conculyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hunhow",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Ortholyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Shadow Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Stalker",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Summulyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Symbilyst",
+            "type": "Orokin Cell",
+            "chance": 0.0129,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Artificer",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Captain Vor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Cinderthresh Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Commander",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Councilor Vay Hek",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "General Sargas Ruk",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Gyre Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ln2",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Ng",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pack",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Pb",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Hyena Th",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Icemire Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "J3 Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jackal",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Jordas Golem",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kela De Thaym",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lephantis",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Lt Lech Kril",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Mutalist Alad V",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Phorid",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Rabbleback Hyena",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "The Sergeant",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Tyl Regor",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Vay Hek Terra Frame",
+            "type": "Orokin Cell",
+            "chance": 0.0258,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0714,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.0833,
+            "rarity": "Rare"
+          },
+          {
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1079,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Lua/Plato (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1082,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.125,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1258,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "type": "Orokin Cell",
+            "chance": 0.1265,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.151,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "type": "Orokin Cell",
+            "chance": 0.1936,
+            "rarity": "Uncommon"
+          },
+          {
+            "location": "Corrupted Vor",
+            "type": "Orokin Cell",
+            "chance": 0.5,
+            "rarity": "Common"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnYareliPistolReceiver",
+        "name": "Receiver",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "receiver.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "kompressa.png",
+    "category": "Secondary",
+    "tradable": false
+  },
+  {
     "name": "Kraken",
     "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol",
     "damagePerShot": [ 36.75, 6.125, 6.125, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -154432,6 +155092,170 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/ec/AHAkbolto.png/revision/latest?cb=20141127181924",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Telos_Akbolto",
     "disposition": 4
+  },
+  {
+    "name": "Tenet Cycron",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBECycron/CrpBECycron",
+    "damagePerShot": [ 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 22,
+    "description": "This reengineered Cycron features a refracting energy disc that can split off the main target, hitting up to 2 additional nearby targets.",
+    "criticalChance": 0.2,
+    "criticalMultiplier": 1.8,
+    "procChance": 0.39999998,
+    "fireRate": 12.000001,
+    "masteryReq": 14,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 100,
+    "omegaAttenuation": 0.5,
+    "maxLevelCap": 40,
+    "noise": "Alarming",
+    "trigger": "Held",
+    "magazineSize": 40,
+    "reloadTime": 2,
+    "multishot": 1,
+    "buildPrice": 0,
+    "buildTime": 60,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpBECycronBlueprint",
+        "name": "Blueprint",
+        "description": "This reengineered Cycron features a refracting energy disc that can split off the main target, hitting up to 2 additional nearby targets.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "tenet-cycron.png",
+    "category": "Secondary",
+    "tradable": false
+  },
+  {
+    "name": "Tenet Detron",
+    "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEDetron/CrpBEDetron",
+    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 26,
+    "description": "Parvos Granum's engineers have made this already ferocious hand cannon even more deadly with the addition of an alternate fire mode that empties an entire clip in one devastating burst.",
+    "criticalChance": 0.18000001,
+    "criticalMultiplier": 2,
+    "procChance": 0.10000002,
+    "fireRate": 3.3333335,
+    "masteryReq": 16,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 20,
+    "omegaAttenuation": 0.5,
+    "maxLevelCap": 40,
+    "noise": "Alarming",
+    "trigger": "Semi",
+    "magazineSize": 6,
+    "reloadTime": 1,
+    "multishot": 10,
+    "buildPrice": 0,
+    "buildTime": 60,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpBEDetronBlueprint",
+        "name": "Blueprint",
+        "description": "Parvos Granum's engineers have made this already ferocious hand cannon even more deadly with the addition of an alternate fire mode that empties an entire clip in one devastating burst.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Misc",
+    "imageName": "tenet-detron.png",
+    "category": "Secondary",
+    "tradable": false
+  },
+  {
+    "name": "Tenet Diplos",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpBriefcaseAkimbo/CrpBriefcaseAkimboPistol",
+    "damagePerShot": [ 11.2, 8.96, 7.8399992, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 28,
+    "description": "Itemize and execute with this pair of auto-lock-on, homing-projectile pistols. Shoot from-hip for a more conventional pistol experience. The patented Granum Attaché System reloads the pistols when holstered.",
+    "criticalChance": 0.36000001,
+    "criticalMultiplier": 2.2,
+    "procChance": 0.13999999,
+    "fireRate": 9.666667,
+    "masteryReq": 16,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 100,
+    "omegaAttenuation": 0.5,
+    "maxLevelCap": 40,
+    "noise": "Alarming",
+    "trigger": "Auto",
+    "magazineSize": 88,
+    "reloadTime": 2.8,
+    "multishot": 1,
+    "buildPrice": 0,
+    "buildTime": 60,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpBriefcaseAkimboPistolBlueprint",
+        "name": "Blueprint",
+        "description": "Itemize and execute with this pair of auto-lock-on, homing-projectile pistols. Shoot from-hip for a more conventional pistol experience. The patented Granum Attaché System reloads the pistols when holstered.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "tenet-diplos.png",
+    "category": "Secondary",
+    "tradable": false
+  },
+  {
+    "name": "Tenet Spirex",
+    "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpIgniterPistol/CrpIgniterPistol",
+    "damagePerShot": [ 40, 20, 0, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "totalDamage": 200,
+    "description": "Dominate rivals with this pistol’s lightning fast rail-slugs. Head-shots speed up reload.",
+    "criticalChance": 0.25999999,
+    "criticalMultiplier": 2.4000001,
+    "procChance": 0.39999998,
+    "fireRate": 2.3333335,
+    "masteryReq": 14,
+    "productCategory": "Pistols",
+    "slot": 0,
+    "accuracy": 12.5,
+    "omegaAttenuation": 0.5,
+    "maxLevelCap": 40,
+    "noise": "Alarming",
+    "trigger": "Semi",
+    "magazineSize": 8,
+    "reloadTime": 2.4000001,
+    "multishot": 1,
+    "buildPrice": 0,
+    "buildTime": 60,
+    "skipBuildTimePrice": 0,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpIgniterPistolBlueprint",
+        "name": "Blueprint",
+        "description": "Dominate rivals with this pistol’s lightning fast rail-slugs. Head-shots speed up reload.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      }
+    ],
+    "type": "Pistol",
+    "imageName": "tenet-spirex.png",
+    "category": "Secondary",
+    "tradable": false
   },
   {
     "name": "Twin Grakatas",
