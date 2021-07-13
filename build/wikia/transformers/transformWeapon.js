@@ -61,7 +61,8 @@ const transformWeapon = (oldWeapon, imageUrls) => {
       SecondaryAttack,
       SecondaryAreaAttack,
       Traits,
-      AreaAttack
+      AreaAttack,
+      Introduced
     } = oldWeapon
 
     const { Name } = oldWeapon
@@ -76,7 +77,7 @@ const transformWeapon = (oldWeapon, imageUrls) => {
       ...(ChargeAttack && ChargeAttack.StatusChance) &&
         { status_chance: Number((Number(ChargeAttack.StatusChance) * 100).toFixed(2)) },
       polarities: Polarities,
-      thumbnail: imageUrls[Image],
+      thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
       ...MaxAmmo && { ammo: MaxAmmo },
       ...(NormalAttack && NormalAttack.ShotType) &&
         { projectile: NormalAttack.ShotType.replace(/Hit-scan/ig, 'Hitscan') },
@@ -84,6 +85,7 @@ const transformWeapon = (oldWeapon, imageUrls) => {
         { projectile: ChargeAttack.ShotType.replace(/Hit-scan/ig, 'Hitscan') },
       tags: Traits || [],
       vaulted: (Traits || []).includes('Vaulted'),
+      introduced: Introduced,
       marketCost: Cost && Cost.MarketCost,
       bpCost: Cost && Cost.BPCost,
       pellet: {

@@ -672,6 +672,7 @@ class Parser {
 
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
+    this.introduced = wikiaItem.introduced
 
     if (item.omegaAttenuation <= 0.75) {
       item.disposition = 1
