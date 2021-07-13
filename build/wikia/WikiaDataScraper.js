@@ -141,14 +141,13 @@ class WikiaDataScraper {
     let things = []
 
     try {
-      const keys = Object.keys(jsonData[`${this.luaObjectName}s`])
-
-      await Promise.all(await keys.map(async thingName => {
+      for (const thingName of Object.keys(jsonData[`${this.luaObjectName}s`])) {
         const thingToTransform = jsonData[`${this.luaObjectName}s`][thingName]
         if (thingToTransform && !thingToTransform.Name) thingToTransform.Name = thingName
         const transformedThing = await this.transformFunction(thingToTransform, imageUrls)
         things.push(transformedThing)
-      }))
+      }
+
       things.sort(nameCompare)
     } catch (e) {
       console.error(e.stack)
