@@ -49,5 +49,17 @@
     "sharp": "^0.25.2",
     "socks5-http-client": "^1.0.4",
     "warframe-patchlogs": "^1.578.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ],
+    "globals": {
+      "describe": "readonly",
+      "it": "readonly"
+    },
+    "rules": {
+      "brace-style": 0
+    }
   }
 }
