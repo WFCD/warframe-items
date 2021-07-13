@@ -2,7 +2,8 @@ const Progress = require('./progress.js')
 const previousBuild = require('../data/json/All.json')
 const watson = require('../config/dt_map.json')
 const bpConflicts = require('../config/bpConflicts.json')
-const variants = require('../config/variants')
+const { prefixes, suffixes } = require('../config/variants')
+const dedupe = require('./dedupe')
 const _ = require('lodash')
 const title = (str = '') => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
 const warnings = {
@@ -17,9 +18,24 @@ const warnings = {
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
 
 const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z]{1,1} Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
-const prefixed = (name) => new RegExp(`(?:${variants.prefixes.join('|')})${name}(?:${variants.suffixes.join('|')})`)
+const prefixed = (name) => new RegExp(`((?:(?:${prefixes.join('|')})\\s?${name}.*)|(?:${name}\\s?(?:${suffixes.join('|')})\\s?.*))+`, 'i')
 
-const dedupe = (arr) => Array.from(new Set(arr))
+// Compares drop locations for items lexicographically by chance + location + rotation + rarity
+const dropComparator = (dropA, dropB) => {
+  // Build a key for comparison
+  const keyA = `${dropA.chance}:${dropA.location}:${dropA.rotation}:${dropA.rarity}`.toUpperCase()
+  const keyB = `${dropB.chance}:${dropB.location}:${dropB.rotation}:${dropB.rarity}`.toUpperCase()
+  return keyA.localeCompare(keyB)
+}
+
+const dropMap = (drop) => {
+  return {
+    location: drop.place.replace('<b>', '').replace('</b>', ''),
+    type: drop.item,
+    chance: Number.parseFloat(Number(drop.chance * 0.01).toFixed(5)),
+    rarity: drop.rarity
+  }
+}
 
 /**
  * Parse API data into a more clear or complete format.
@@ -542,8 +558,12 @@ class Parser {
     // Don't look for drop rates on item itself if it has components.
     if (item.components) {
       for (const component of item.components) {
-        const data = this.findDropLocations(`${item.name} ${component.name}`, drops.rates)
-        if (data.length) component.drops = data
+        const data = (component.uniqueName.includes('/Weapons/') &&
+            !component.uniqueName.includes('/WeaponParts/') &&
+            component.name !== 'Blueprint')
+          ? this.findDropLocations(component.name, drops.rates, true)
+          : this.findDropLocations(`${item.name} ${component.name}`, drops.rates, true)
+        component.drops = data.length ? data : []
       }
     } else if (item.name !== 'Blueprint') {
       // Last word of relic is intact/rad, etc instead of 'Relic'
@@ -553,30 +573,19 @@ class Parser {
     }
   }
 
-  // Compares drop locations for items lexicographically by chance + location + rotation + rarity
-  comparator (dropA, dropB) {
-    // Build a key for comparison
-    const keyA = `${dropA.chance}:${dropA.location}:${dropA.rotation}:${dropA.rarity}`.toUpperCase()
-    const keyB = `${dropB.chance}:${dropB.location}:${dropB.rotation}:${dropB.rarity}`.toUpperCase()
-    return keyA.localeCompare(keyB)
-  }
+  findDropLocations (item, dropChances, isComponent) {
+    const variant = prefixed(item)
+    const semiWrapped = new RegExp(`(?:^|\\s)+${item}(?:\\s|$)+`, 'i')
 
-  dropMap (drop) {
-    return {
-      location: drop.place.replace('<b>', '').replace('</b>', ''),
-      type: drop.item,
-      chance: Number.parseFloat(Number(drop.chance * 0.01).toFixed(5)),
-      rarity: drop.rarity
-    }
-  }
-
-  findDropLocations (item, dropChances) {
     const data = dedupe(dropChances
-      .filter(drop => drop.item === item ||
-        (drop.item.startsWith(item) && !(prefixed(item).test(drop.item)))
-      )
-      .map(this.dropMap))
-    data.sort(this.comparator)
+      .filter(drop => {
+        return drop.item === item || (
+          (drop.item.startsWith(item) || drop.item.endsWith(item)) &&
+          (semiWrapped.test(drop.item) && !variant.test(drop.item))
+        )
+      })
+      .map(dropMap))
+    data.sort(dropComparator)
     return data
   }
 
