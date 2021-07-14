@@ -25,12 +25,11 @@ class Build {
     }
     const parsed = parser.parse(raw)
     const data = this.applyCustomCategories(parsed.data)
-    // const all =
-    this.saveJson(data)
+    const all = this.saveJson(data)
     this.saveWarnings(parsed.warnings)
-    // await this.saveImages(all, raw.manifest)
+    await this.saveImages(all, raw.manifest)
     this.updateReadme(raw.patchlogs.patchlogs)
-
+    
     // Log number of warnings at the end of the script
     let warningNum = 0
     for (const warning of Object.keys(parsed.warnings)) {

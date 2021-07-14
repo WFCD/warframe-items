@@ -10,6 +10,7 @@ const exportCache = require('../data/cache/.export.json')
 const ModScraper = require('./wikia/scrapers/ModScraper')
 const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
+const VersionScraper = require('./wikia/scrapers/VersionScraper')
 const sanitize = (str) => str.replace(/\\r|\r?\n/g, '')
 const get = async (url, disableProxy = !prod, encoding) => request({
   url,
@@ -126,7 +127,7 @@ class Scraper {
    * Get additional data from wikia if it's not provided in the API
    */
   async fetchWikiaData () {
-    const bar = new Progress('Fetching Wikia Data', 1)
+    const bar = new Progress('Fetching Wikia Data', 5)
     const ducats = []
     const ducatsWikia = await get('http://warframe.wikia.com/wiki/Ducats/Prices/All')
     const $ = cheerio.load(ducatsWikia)
@@ -136,12 +137,22 @@ class Scraper {
       const value = $(this).find('td:nth-of-type(3)').attr('data-sort-value')
       ducats.push({ name, ducats: parseInt(value) })
     })
-
     bar.tick()
+    
+    const weapons = await new WeaponScraper().scrape()
+    bar.tick()
+    const warframes = await new WarframeScraper().scrape()
+    bar.tick()
+    const mods = await new ModScraper().scrape()
+    bar.tick()
+    const versions = await new VersionScraper().scrape()
+    bar.tick()
+
     return {
-      weapons: await new WeaponScraper().scrape(),
-      warframes: await new WarframeScraper().scrape(),
-      mods: await new ModScraper().scrape(),
+      weapons,
+      warframes,
+      mods,
+      versions,
       ducats
     }
   }

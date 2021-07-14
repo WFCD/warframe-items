@@ -10,14 +10,16 @@ const transformMod = async (oldMod, imageUrls) => {
     const {
       Image,
       Name,
-      Transmutable
+      Transmutable,
+      Introduced,
     } = oldMod
 
     newMod = {
       name: Name,
       url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       thumbnail: imageUrls[Image],
-      transmutable: Transmutable
+      transmutable: Transmutable,
+      introduced: Introduced,
     }
   } catch (error) {
     console.error(`Error parsing ${oldMod.Name}`)

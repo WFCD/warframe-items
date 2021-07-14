@@ -58,7 +58,7 @@ const transformWarframe = async (oldFrame, imageUrls) => {
       Sprint,
       Introduced,
       Sex,
-      Vaulted
+      Vaulted,
     } = oldFrame
     const { Name } = oldFrame
 
@@ -74,7 +74,7 @@ const transformWarframe = async (oldFrame, imageUrls) => {
       introduced: Introduced,
       sex: Sex,
       color: parseInt(await mapColors(oldFrame, imageUrls[Image]), 16),
-      vaulted: Vaulted || undefined
+      vaulted: Vaulted || undefined,
     }
     newFrame = transformPolarities(oldFrame, newFrame)
   } catch (error) {
