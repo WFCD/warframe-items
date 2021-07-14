@@ -128,6 +128,7 @@ class WikiaDataScraper {
 
   async scrape () {
     const luaData = await getLuaData(this.url)
+    if (this.luaObjectName === 'Versions') console.log(luaData)
     const jsonData = await convertLuaDataToJson(luaData, this.luaObjectName)
     if (jsonData.length === 0) {
       throw new Error('No json data')
@@ -152,6 +153,7 @@ class WikiaDataScraper {
     } catch (e) {
       console.error(e.stack)
     }
+    if (!things.length) console.error(`scraped no ${this.luaObjectName}`)
     return things
   }
 }
