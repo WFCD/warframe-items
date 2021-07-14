@@ -138,6 +138,7 @@ declare module 'warframe-items' {
         modSetValues?: number[];
         excludeFromCodex?: boolean;
         levelStats?: LevelStat[];
+        introduced?: Update;
     }
 
     interface Component {
@@ -326,6 +327,14 @@ declare module 'warframe-items' {
     interface Pellet {
         name: string;
         count: number;
+    }
+    
+    interface Update {
+        name: string;
+        url: string;
+        aliases: string[];
+        parent: string;
+        date: string;
     }
 
     interface UpgradeEntry {
