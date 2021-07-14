@@ -1,15 +1,5 @@
 [
   {
-    "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
-    "name": "Amesha",
-    "description": "Transform into a winged guardian.",
-    "health": 400,
-    "shield": 200,
-    "armor": 200,
-    "stamina": 150,
-    "power": 200,
-    "masteryReq": 0,
-    "sprintSpeed": 1.1,
     "abilities": [
       {
         "name": "Watchful Swarm",
@@ -28,12 +18,11 @@
         "description": "All damage taken is transformed into Energy, while abilities gain enhanced Range, Duration and Power. Affects the Warframe and nearby allies."
       }
     ],
-    "productCategory": "SpaceSuits",
+    "armor": 200,
     "buildPrice": 25000,
-    "buildTime": 43200,
-    "skipBuildTimePrice": 50,
     "buildQuantity": 1,
-    "consumeOnBuild": true,
+    "buildTime": 43200,
+    "category": "Archwing",
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingBlueprint",
@@ -41,7 +30,8 @@
         "description": "Transform into a winged guardian.",
         "itemCount": 1,
         "imageName": "blueprint.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent",
@@ -49,7 +39,8 @@
         "description": "Harness component of the Amesha Archwing.",
         "itemCount": 1,
         "imageName": "amesha-harness.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
@@ -58,188 +49,7 @@
         "itemCount": 4,
         "imageName": "nitain-extract.png",
         "tradable": false,
-        "drops": [
-          {
-            "location": "Wolf Of Saturn Six",
-            "type": "Nitain Extract",
-            "chance": 0.0013,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Wolf Of Saturn Six",
-            "type": "Nitain Extract",
-            "chance": 0.0013,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Zealoid Prelate",
-            "type": "Nitain Extract",
-            "chance": 0.0013,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Mars/Gradivus (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0067,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Mercury/Neruda (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0067,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Mercury/Terminus (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0067,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Venus/Ishtar (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0067,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Ceres/Ker (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.01,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Ceres/Thon (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.01,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Jupiter/Adrastea (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.01,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Jupiter/Carpo (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.01,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Saturn/Calypso (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.01,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Saturn/Pallene (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.01,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hallowed Flame Endurance Caches, Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0101,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hallowed Flame Mission Caches, Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0101,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Void/Marduk (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0101,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Lua/Plato (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Neptune/Halimede (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Neptune/Thalassa (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Pluto/Charon (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Pluto/Cypress (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Sedna/Phithale (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Sedna/Rusalka (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Uranus/Portia (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Void/Stribog (Caches), Rotation C",
-            "type": "Nitain Extract",
-            "chance": 0.02,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "type": "Nitain Extract",
-            "chance": 0.0412,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "type": "Nitain Extract",
-            "chance": 0.0412,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "type": "Nitain Extract",
-            "chance": 0.0595,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "type": "Nitain Extract",
-            "chance": 0.0595,
-            "rarity": "Rare"
-          }
-        ]
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent",
@@ -247,7 +57,8 @@
         "description": "Systems component of the Amesha Archwing.",
         "itemCount": 1,
         "imageName": "amesha-systems.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent",
@@ -255,13 +66,16 @@
         "description": "Wings component of the Amesha Archwing.",
         "itemCount": 1,
         "imageName": "amesha-wings.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       }
     ],
-    "type": "Archwing",
+    "consumeOnBuild": true,
+    "description": "Transform into a winged guardian.",
+    "health": 400,
     "imageName": "amesha.png",
-    "category": "Archwing",
-    "tradable": false,
+    "masteryReq": 0,
+    "name": "Amesha",
     "patchlogs": [
       {
         "name": "Operation: Scarlet Spear: 27.3.0",
@@ -288,19 +102,18 @@
         "changes": "",
         "fixes": "Fixed Amesha’s Watchful Swarm not ending if you exit Archwing modeas per: https://forums.warframe.com/topic/704078-ameshas-watchful-swarm-animation-doesnt-end-when-you-resurface-in-uranus/ "
       }
-    ]
+    ],
+    "power": 200,
+    "productCategory": "SpaceSuits",
+    "shield": 200,
+    "skipBuildTimePrice": 50,
+    "sprintSpeed": 1.1,
+    "stamina": 150,
+    "tradable": false,
+    "type": "Archwing",
+    "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack"
   },
   {
-    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
-    "name": "Elytron",
-    "description": "This heavy duty Archwing was designed for one purpose, destruction.",
-    "health": 450,
-    "shield": 450,
-    "armor": 150,
-    "stamina": 150,
-    "power": 125,
-    "masteryReq": 0,
-    "sprintSpeed": 0.89999998,
     "abilities": [
       {
         "name": "Bloomer",
@@ -319,12 +132,11 @@
         "description": "Launches a plodding missile capable of unleashing a massive explosion."
       }
     ],
-    "productCategory": "SpaceSuits",
+    "armor": 150,
     "buildPrice": 25000,
-    "buildTime": 129600,
-    "skipBuildTimePrice": 50,
     "buildQuantity": 1,
-    "consumeOnBuild": true,
+    "buildTime": 129600,
+    "category": "Archwing",
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingBlueprint",
@@ -332,7 +144,8 @@
         "description": "This heavy duty Archwing was designed for one purpose, destruction.",
         "itemCount": 1,
         "imageName": "blueprint.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
@@ -341,92 +154,7 @@
         "itemCount": 5,
         "imageName": "control-module.png",
         "tradable": false,
-        "drops": [
-          {
-            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Lunaro (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Lunaro (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          }
-        ]
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent",
@@ -434,7 +162,8 @@
         "description": "Harness component of the Elytron Archwing.",
         "itemCount": 1,
         "imageName": "elytron-harness.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent",
@@ -442,7 +171,8 @@
         "description": "Systems component of the Elytron Archwing.",
         "itemCount": 1,
         "imageName": "elytron-systems.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent",
@@ -450,13 +180,16 @@
         "description": "Wings component of the Elytron Archwing.",
         "itemCount": 1,
         "imageName": "elytron-wings.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       }
     ],
-    "type": "Archwing",
+    "consumeOnBuild": true,
+    "description": "This heavy duty Archwing was designed for one purpose, destruction.",
+    "health": 450,
     "imageName": "elytron.png",
-    "category": "Archwing",
-    "tradable": false,
+    "masteryReq": 0,
+    "name": "Elytron",
     "patchlogs": [
       {
         "name": "Warframe Revised: Update 27.2.0",
@@ -562,19 +295,18 @@
         "changes": "Archwing has arrived!  Players Mastery Rank 2 or greater can quest to assemble the Archwing technology allowing for space combat sans spacecraft.  Two unique game modes, new enemies, weapons and Mods are all available.  Choose from the offensive Elytron Archwing or well-rounded Odonata and bring the fight straight to the enemy, Tenno!\nElytron. An Archwing that includes 4 unique abilities that offer incredible firepower to destroy your enemies!  ",
         "fixes": ""
       }
-    ]
+    ],
+    "power": 125,
+    "productCategory": "SpaceSuits",
+    "shield": 450,
+    "skipBuildTimePrice": 50,
+    "sprintSpeed": 0.89999998,
+    "stamina": 150,
+    "tradable": false,
+    "type": "Archwing",
+    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack"
   },
   {
-    "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
-    "name": "Itzal",
-    "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
-    "health": 200,
-    "shield": 200,
-    "armor": 50,
-    "stamina": 500,
-    "power": 200,
-    "masteryReq": 0,
-    "sprintSpeed": 1.2,
     "abilities": [
       {
         "name": "Arch Line",
@@ -593,12 +325,11 @@
         "description": "Deploys drones that fight alongside the Warframe, each detonating in a destructive blast when killed."
       }
     ],
-    "productCategory": "SpaceSuits",
+    "armor": 50,
     "buildPrice": 25000,
-    "buildTime": 129600,
-    "skipBuildTimePrice": 50,
     "buildQuantity": 1,
-    "consumeOnBuild": true,
+    "buildTime": 129600,
+    "category": "Archwing",
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingBlueprint",
@@ -606,7 +337,8 @@
         "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
         "itemCount": 1,
         "imageName": "blueprint.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
@@ -615,92 +347,7 @@
         "itemCount": 2,
         "imageName": "control-module.png",
         "tradable": false,
-        "drops": [
-          {
-            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Lunaro (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Lunaro (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "type": "Control Module",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          }
-        ]
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingChassisComponent",
@@ -708,7 +355,8 @@
         "description": "Harness component of the Itzal Archwing.",
         "itemCount": 1,
         "imageName": "itzal-harness.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingSystemsComponent",
@@ -716,7 +364,8 @@
         "description": "Systems component of the Itzal Archwing.",
         "itemCount": 1,
         "imageName": "itzal-systems.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingWingsComponent",
@@ -724,13 +373,16 @@
         "description": "Wings component of the Itzal Archwing.",
         "itemCount": 1,
         "imageName": "itzal-wings.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       }
     ],
-    "type": "Archwing",
+    "consumeOnBuild": true,
+    "description": "Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.",
+    "health": 200,
     "imageName": "itzal.png",
-    "category": "Archwing",
-    "tradable": false,
+    "masteryReq": 0,
+    "name": "Itzal",
     "patchlogs": [
       {
         "name": "Update 30.5: Sisters of Parvos",
@@ -1007,19 +659,18 @@
         "changes": "",
         "fixes": "ITZAL ARCHWING: Designed for quick clandestine attacks, the Itzal Archwing excels at striking from the darkness of space.\nBlink: The Itzal Archwing teleports a short distance, dropping all enemy target locks.\nStart your Research for the Itzal and Fluctus in the Clan Dojo, and purchase the blueprint for the Centaur from the Marketplace today!"
       }
-    ]
+    ],
+    "power": 200,
+    "productCategory": "SpaceSuits",
+    "shield": 200,
+    "skipBuildTimePrice": 50,
+    "sprintSpeed": 1.2,
+    "stamina": 500,
+    "tradable": false,
+    "type": "Archwing",
+    "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack"
   },
   {
-    "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
-    "name": "Odonata",
-    "description": "The systems built into this Archwing balance offensive capabilities with defensive countermeasures.",
-    "health": 300,
-    "shield": 300,
-    "armor": 100,
-    "stamina": 200,
-    "power": 100,
-    "masteryReq": 0,
-    "sprintSpeed": 1,
     "abilities": [
       {
         "name": "Energy Shell",
@@ -1038,12 +689,11 @@
         "description": "The Warframe emits a massive pulse of energy, stunning nearby enemies and sending them flying."
       }
     ],
-    "productCategory": "SpaceSuits",
+    "armor": 100,
     "buildPrice": 7000,
-    "buildTime": 600,
-    "skipBuildTimePrice": 5,
     "buildQuantity": 1,
-    "consumeOnBuild": true,
+    "buildTime": 600,
+    "category": "Archwing",
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingBlueprint",
@@ -1051,7 +701,8 @@
         "description": "The systems built into this Archwing balance offensive capabilities with defensive countermeasures.",
         "itemCount": 1,
         "imageName": "blueprint.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
@@ -1059,7 +710,8 @@
         "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
         "itemCount": 300,
         "imageName": "circuits.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingChassisComponent",
@@ -1067,7 +719,8 @@
         "description": "Harness component of the Odonata Archwing.",
         "itemCount": 1,
         "imageName": "odonata-harness.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingSystemsComponent",
@@ -1075,7 +728,8 @@
         "description": "Systems component of the Odonata Archwing.",
         "itemCount": 1,
         "imageName": "odonata-systems.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingWingsComponent",
@@ -1083,13 +737,16 @@
         "description": "Wings component of the Odonata Archwing.",
         "itemCount": 1,
         "imageName": "odonata-wings.png",
-        "tradable": false
+        "tradable": false,
+        "drops": [  ]
       }
     ],
-    "type": "Archwing",
+    "consumeOnBuild": true,
+    "description": "The systems built into this Archwing balance offensive capabilities with defensive countermeasures.",
+    "health": 300,
     "imageName": "odonata.png",
-    "category": "Archwing",
-    "tradable": false,
+    "masteryReq": 0,
+    "name": "Odonata",
     "patchlogs": [
       {
         "name": "Warframe Revised: Update 27.2.0",
@@ -1195,19 +852,18 @@
         "changes": "Archwing has arrived!  Players Mastery Rank 2 or greater can quest to assemble the Archwing technology allowing for space combat sans spacecraft.  Two unique game modes, new enemies, weapons and Mods are all available.  Choose from the offensive Elytron Archwing or well-rounded Odonata and bring the fight straight to the enemy, Tenno!\nOdonata. An Archwing that includes 4 unique abilities that equally protect and devastate your enemies!",
         "fixes": ""
       }
-    ]
+    ],
+    "power": 100,
+    "productCategory": "SpaceSuits",
+    "shield": 300,
+    "skipBuildTimePrice": 5,
+    "sprintSpeed": 1,
+    "stamina": 200,
+    "tradable": false,
+    "type": "Archwing",
+    "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack"
   },
   {
-    "uniqueName": "/Lotus/Powersuits/Archwing/PrimeJetPack/PrimeJetPack",
-    "name": "Odonata Prime",
-    "description": "This enhanced version of the first Archwing prototype takes the design to its theoretical limits.",
-    "health": 400,
-    "shield": 400,
-    "armor": 100,
-    "stamina": 200,
-    "power": 100,
-    "masteryReq": 0,
-    "sprintSpeed": 1.05,
     "abilities": [
       {
         "name": "Energy Shell",
@@ -1226,12 +882,11 @@
         "description": "The Warframe emits a massive pulse of energy, stunning nearby enemies and sending them flying."
       }
     ],
-    "productCategory": "SpaceSuits",
+    "armor": 100,
     "buildPrice": 25000,
-    "buildTime": 129600,
-    "skipBuildTimePrice": 50,
     "buildQuantity": 1,
-    "consumeOnBuild": true,
+    "buildTime": 129600,
+    "category": "Archwing",
     "components": [
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingBlueprint",
@@ -1244,124 +899,124 @@
         "ducats": 45,
         "drops": [
           {
+            "chance": 0.11,
             "location": "Axi L4 Relic",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.11,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.11,
             "location": "Axi V8 Relic",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.11,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.11,
             "location": "Lith F1 Relic",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.11,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.11,
             "location": "Meso C2 Relic",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.11,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.11,
             "location": "Meso S1 Relic",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.11,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.13,
             "location": "Axi L4 Relic (Exceptional)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.13,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.13,
             "location": "Axi V8 Relic (Exceptional)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.13,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.13,
             "location": "Lith F1 Relic (Exceptional)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.13,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.13,
             "location": "Meso C2 Relic (Exceptional)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.13,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.13,
             "location": "Meso S1 Relic (Exceptional)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.13,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.17,
             "location": "Axi L4 Relic (Flawless)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.17,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.17,
             "location": "Axi V8 Relic (Flawless)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.17,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.17,
             "location": "Lith F1 Relic (Flawless)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.17,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.17,
             "location": "Meso C2 Relic (Flawless)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.17,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.17,
             "location": "Meso S1 Relic (Flawless)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.17,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Axi L4 Relic (Radiant)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Axi V8 Relic (Radiant)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Lith F1 Relic (Radiant)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Meso C2 Relic (Radiant)",
-            "type": "Odonata Prime Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           },
           {
-            "location": "Meso S1 Relic (Radiant)",
-            "type": "Odonata Prime Blueprint",
             "chance": 0.2,
-            "rarity": "Uncommon"
+            "location": "Meso S1 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Blueprint"
           }
         ]
       },
@@ -1375,148 +1030,148 @@
         "tradable": true,
         "drops": [
           {
+            "chance": 0.1667,
             "location": "Axi K1 Relic (Radiant)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Axi T1 Relic (Radiant)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Axi V4 Relic (Radiant)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Lith K1 Relic (Radiant)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Neo O1 Relic (Radiant)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Neo V8 Relic (Radiant)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Axi K1 Relic (Flawless)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Axi T1 Relic (Flawless)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Axi V4 Relic (Flawless)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Lith K1 Relic (Flawless)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Neo O1 Relic (Flawless)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Neo V8 Relic (Flawless)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Axi K1 Relic (Exceptional)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Axi T1 Relic (Exceptional)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Axi V4 Relic (Exceptional)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Lith K1 Relic (Exceptional)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Neo O1 Relic (Exceptional)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Neo V8 Relic (Exceptional)",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Axi K1 Relic",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Axi T1 Relic",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Axi V4 Relic",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Lith K1 Relic",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Neo O1 Relic",
-            "type": "Odonata Prime Harness Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           },
           {
-            "location": "Neo V8 Relic",
-            "type": "Odonata Prime Harness Blueprint",
             "chance": 0.2533,
-            "rarity": "Uncommon"
+            "location": "Neo V8 Relic",
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Harness Blueprint"
           }
         ],
         "ducats": 15
@@ -1528,602 +1183,7 @@
         "itemCount": 1,
         "imageName": "orokin-cell.png",
         "tradable": false,
-        "drops": [
-          {
-            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Annihilation (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Annihilation (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Lunaro (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Lunaro (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.0025,
-            "rarity": "Legendary"
-          },
-          {
-            "location": "Brachiolyst",
-            "type": "Orokin Cell",
-            "chance": 0.0026,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Arca Heqet",
-            "type": "Orokin Cell",
-            "chance": 0.0027,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Arca Kucumatz",
-            "type": "Orokin Cell",
-            "chance": 0.0027,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Cinder Machinist",
-            "type": "Orokin Cell",
-            "chance": 0.0027,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Phase Moa",
-            "type": "Orokin Cell",
-            "chance": 0.0027,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Swarm Satyr",
-            "type": "Orokin Cell",
-            "chance": 0.0027,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Alkonost",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Heqet",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Kucumatz",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Machinist",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Moa",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Osprey",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Amalgam Satyr",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Aurax Culveri Moa",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Aurax Polaris Moa",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Demolyst Heqet",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Demolyst Machinist",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Demolyst Moa",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Demolyst Osprey",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Demolyst Satyr",
-            "type": "Orokin Cell",
-            "chance": 0.0038,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Mimic",
-            "type": "Orokin Cell",
-            "chance": 0.0065,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Aerolyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Ambulas",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Battalyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Conculyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Decaying Battalyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Decaying Conculyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hunhow",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Ortholyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Shadow Stalker",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Stalker",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Summulyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Symbilyst",
-            "type": "Orokin Cell",
-            "chance": 0.0129,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Alad V",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Artificer",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Captain Vor",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Cinderthresh Hyena",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Commander",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Councilor Vay Hek",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Councilor Vay Hek",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "General Sargas Ruk",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Gyre Hyena",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hyena Ln2",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hyena Ng",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hyena Pack",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hyena Pb",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Hyena Th",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Icemire Hyena",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "J3 Jordas Golem",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Jackal",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Jordas Golem",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Kela De Thaym",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Lephantis",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Lt Lech Kril",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Mutalist Alad V",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Phorid",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Rabbleback Hyena",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "The Sergeant",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Tyl Regor",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Tyl Regor",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Vay Hek Terra Frame",
-            "type": "Orokin Cell",
-            "chance": 0.0258,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.0714,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.0714,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.0833,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.0833,
-            "rarity": "Rare"
-          },
-          {
-            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1079,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Lua/Plato (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1082,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.125,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.125,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Neptune/Halimede (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1258,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Neptune/Thalassa (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1258,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Pluto/Charon (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1258,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Pluto/Cypress (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1258,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Sedna/Phithale (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1258,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Sedna/Rusalka (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1258,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Uranus/Portia (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1258,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Hallowed Flame Mission Caches, Rotation B",
-            "type": "Orokin Cell",
-            "chance": 0.1265,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Ceres/Ker (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.151,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Ceres/Thon (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.151,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Jupiter/Adrastea (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.151,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Jupiter/Carpo (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.151,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Saturn/Calypso (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.151,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Saturn/Pallene (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.151,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Deimos/Formido (Caches), Rotation C",
-            "type": "Orokin Cell",
-            "chance": 0.1936,
-            "rarity": "Uncommon"
-          },
-          {
-            "location": "Corrupted Vor",
-            "type": "Orokin Cell",
-            "chance": 0.5,
-            "rarity": "Common"
-          }
-        ]
+        "drops": [  ]
       },
       {
         "uniqueName": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingSystemsComponent",
@@ -2135,124 +1195,124 @@
         "tradable": true,
         "drops": [
           {
+            "chance": 0.1667,
             "location": "Axi V1 Relic (Radiant)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Axi V8 Relic (Radiant)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Lith F2 Relic (Radiant)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Meso O3 Relic (Radiant)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.1667,
             "location": "Neo N3 Relic (Radiant)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.1667,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Axi V1 Relic (Flawless)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Axi V8 Relic (Flawless)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Lith F2 Relic (Flawless)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Meso O3 Relic (Flawless)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2,
             "location": "Neo N3 Relic (Flawless)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Axi V1 Relic (Exceptional)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Axi V8 Relic (Exceptional)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Lith F2 Relic (Exceptional)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Meso O3 Relic (Exceptional)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2333,
             "location": "Neo N3 Relic (Exceptional)",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2333,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Axi V1 Relic",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Axi V8 Relic",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Lith F2 Relic",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
+            "chance": 0.2533,
             "location": "Meso O3 Relic",
-            "type": "Odonata Prime Systems Blueprint",
-            "chance": 0.2533,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           },
           {
-            "location": "Neo N3 Relic",
-            "type": "Odonata Prime Systems Blueprint",
             "chance": 0.2533,
-            "rarity": "Uncommon"
+            "location": "Neo N3 Relic",
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Systems Blueprint"
           }
         ],
         "ducats": 15
@@ -2267,109 +1327,112 @@
         "tradable": true,
         "drops": [
           {
+            "chance": 0.02,
             "location": "Lith O2 Relic",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.02,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.02,
             "location": "Meso O3 Relic",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.02,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.02,
             "location": "Neo O1 Relic",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.02,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.04,
             "location": "Lith O2 Relic (Exceptional)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.04,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.04,
             "location": "Meso O3 Relic (Exceptional)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.04,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.04,
             "location": "Neo O1 Relic (Exceptional)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.04,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.06,
             "location": "Lith O2 Relic (Flawless)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.06,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.06,
             "location": "Meso O3 Relic (Flawless)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.06,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.06,
             "location": "Neo O1 Relic (Flawless)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.06,
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.1,
             "location": "Lith O2 Relic (Radiant)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.1,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.1,
             "location": "Meso O3 Relic (Radiant)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.1,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
+            "chance": 0.1,
             "location": "Neo O1 Relic (Radiant)",
-            "type": "Odonata Prime Wings Blueprint",
-            "chance": 0.1,
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
-            "location": "Axi N1 Relic",
-            "type": "Odonata Prime Wings Blueprint",
             "chance": 0.11,
-            "rarity": "Uncommon"
+            "location": "Axi N1 Relic",
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
-            "location": "Axi N1 Relic (Exceptional)",
-            "type": "Odonata Prime Wings Blueprint",
             "chance": 0.13,
-            "rarity": "Uncommon"
+            "location": "Axi N1 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
-            "location": "Axi N1 Relic (Flawless)",
-            "type": "Odonata Prime Wings Blueprint",
             "chance": 0.17,
-            "rarity": "Uncommon"
+            "location": "Axi N1 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Wings Blueprint"
           },
           {
-            "location": "Axi N1 Relic (Radiant)",
-            "type": "Odonata Prime Wings Blueprint",
             "chance": 0.2,
-            "rarity": "Uncommon"
+            "location": "Axi N1 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Odonata Prime Wings Blueprint"
           }
         ],
         "ducats": 65
       }
     ],
-    "type": "Archwing",
+    "consumeOnBuild": true,
+    "description": "This enhanced version of the first Archwing prototype takes the design to its theoretical limits.",
+    "estimatedVaultDate": "2017 02 28",
+    "health": 400,
     "imageName": "odonata-prime.png",
-    "category": "Archwing",
-    "tradable": true,
+    "masteryReq": 0,
+    "name": "Odonata Prime",
     "patchlogs": [
       {
         "name": "Hotfix 16.1.1",
@@ -2388,9 +1451,17 @@
         "fixes": "including Volt Prime, Odonata Prime, Edo Prime Armor and the Kazeru Prime Sugatra. Plus, stock up on discounted Platinum and get Exclusive Gear available only through Prime Access!\nTake flight with Odonata Prime."
       }
     ],
+    "power": 100,
+    "productCategory": "SpaceSuits",
     "releaseDate": "2015 03 24",
+    "shield": 400,
+    "skipBuildTimePrice": 50,
+    "sprintSpeed": 1.05,
+    "stamina": 200,
+    "tradable": true,
+    "type": "Archwing",
+    "uniqueName": "/Lotus/Powersuits/Archwing/PrimeJetPack/PrimeJetPack",
     "vaultDate": "2017 02 28",
-    "estimatedVaultDate": "2017 02 28",
     "vaulted": true
   }
 ]
