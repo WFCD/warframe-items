@@ -1,12 +1,7 @@
 'use strict'
 
-const WikiaDataScraper = require('../WikiaDataScraper')
-const transformWarframe = require('../transformers/transformWarframe')
-
-class WarframeScraper extends WikiaDataScraper {
+module.exports = class WarframeScraper extends require('../WikiaDataScraper') {
   constructor () {
-    super('http://warframe.fandom.com/wiki/Module:Warframes/data?action=edit', 'Warframe', transformWarframe)
+    super('https://warframe.fandom.com/wiki/Module:Warframes/data?action=edit', 'Warframe', require('../transformers/transformWarframe'))
   }
 }
-
-module.exports = WarframeScraper
