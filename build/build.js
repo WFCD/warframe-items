@@ -29,7 +29,7 @@ class Build {
     this.saveWarnings(parsed.warnings)
     await this.saveImages(all, raw.manifest)
     this.updateReadme(raw.patchlogs.patchlogs)
-    
+
     // Log number of warnings at the end of the script
     let warningNum = 0
     for (const warning of Object.keys(parsed.warnings)) {

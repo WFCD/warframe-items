@@ -637,7 +637,7 @@ class Parser {
       default:
         break
     }
-    
+
     item.introduced = wikiaData.versions.find(v => v.aliases.includes(wikiaItem.introduced) || v.name === wikiaItem.introduced)
     if (item.introduced) item.releaseDate = item.introduced.date
   }

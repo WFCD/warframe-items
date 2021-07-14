@@ -2,7 +2,7 @@
 
 module.exports = async (oldVersion) => {
   let newVersion
-  
+
   if (!oldVersion || !oldVersion.Name) {
     return undefined
   }
@@ -21,7 +21,7 @@ module.exports = async (oldVersion) => {
       url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Link.replace(/\s/g, '_'))}`,
       aliases: Aliases,
       parent: Parent,
-      date: Date,
+      date: Date
     }
   } catch (error) {
     console.error(`Error parsing ${oldVersion.Name}`)

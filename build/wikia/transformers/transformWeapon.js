@@ -62,7 +62,7 @@ const transformWeapon = (oldWeapon, imageUrls) => {
       SecondaryAreaAttack,
       Traits,
       AreaAttack,
-      Introduced,
+      Introduced
     } = oldWeapon
 
     const { Name } = oldWeapon
