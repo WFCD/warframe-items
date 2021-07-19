@@ -82,7 +82,6 @@ declare module 'warframe-items' {
         aura?: Aura;
         conclave?: boolean;
         color?: number;
-        introduced?: string;
         sex?: Sex;
         sprint?: number;
         passiveDescription?: string;
