@@ -24,10 +24,10 @@ const POLARITIES = {
 const transformPolarities = ({ Polarities, StancePolarity }, targetWeapon) => {
   const outputWeapon = { ...targetWeapon }
   if (StancePolarity) {
-    outputWeapon.stancePolarity = POLARITIES[StancePolarity]
+    outputWeapon.stancePolarity = POLARITIES[StancePolarity] || StancePolarity
   }
   if (Polarities) {
-    outputWeapon.polarities = Polarities.map(polarity => POLARITIES[polarity])
+    outputWeapon.polarities = Polarities.map(polarity => POLARITIES[polarity] || polarity)
   } else {
     outputWeapon.polarities = []
   }
