@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "scripts": {
     "build": "node ./build/build.js",
-    "test": "mocha -s 10000 --timeout 10000",
+    "test": "mocha",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix"
   },
@@ -60,6 +60,16 @@
     },
     "rules": {
       "brace-style": 0
+    },
+    "parserOptions": {
+      "ecmaVersion": 9
+    },
+    "env": {
+      "es6": true
     }
+  },
+  "mocha": {
+    "slow": 10000,
+    "timeout": 10000
   }
 }
