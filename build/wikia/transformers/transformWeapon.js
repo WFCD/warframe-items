@@ -109,12 +109,12 @@ const parseAttack = (Attack) => {
 
 const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialProc, SlamRadius }) => {
   return {
-    damage: SlamAttack,
+    damage: Number(SlamAttack || 0).toFixed(2),
     radial: {
-      damage: SlamRadialDmg,
-      element: SlamRadialElement,
-      proc: SlamRadialProc,
-      radius: SlamRadius
+      damage: Number(SlamRadialDmg || 0).toFixed(2),
+      element: String(SlamRadialElement),
+      proc: String(SlamRadialProc),
+      radius: Number(SlamRadius)
     }
   }
 }

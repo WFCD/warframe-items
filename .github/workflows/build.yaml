@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
     - uses: leafo/gh-actions-lua@v8.0.0
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -28,5 +30,5 @@ jobs:
         skip_dirty_check: false
         commit_message: 'fix(items): new items'
         commit_user_name: wfcd-bot-boi
-        commit_user_email: actions@github.com
-        commit_author: wfcd-bot-boi <actions@github.com>
+        commit_user_email: botboi@warframestat.us
+        commit_author: wfcd-bot-boi <botboi@warframestat.us>

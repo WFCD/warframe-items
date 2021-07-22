@@ -209,6 +209,7 @@ declare module 'warframe-items' {
         heavySlamRadialDamage?: number;
         heavySlamRadius?: number;
         windUp?: number;
+        attacks: (Attack|SlamAttack)[];
     }
 
     interface Secondary {
@@ -231,6 +232,35 @@ declare module 'warframe-items' {
         corrosive?: number;
         radiation?: number;
     }
+    
+    interface Attack {
+        name: string;
+        duration?: number;
+        radius?: number;
+        speed?: number;
+        pellet?: Pellet;
+        crit_chance?: number;
+        crit_mult?: number;
+        status_chance?: number;
+        charge_time?: number;
+        shot_type?: string;
+        shot_speed?: number;
+        flight?: number | string;
+        falloff?: Falloff;
+        damage: DamageTypes;
+    }
+    
+    interface SlamAttack {
+        damage: number;
+        radial: RadialDamage;
+    }
+    
+    interface RadialDamage {
+        damage: number;
+        element: Element;
+        proc: Element;
+        radius: number;
+    }
 
     interface AreaAttack {
         name: string;
@@ -247,9 +277,9 @@ declare module 'warframe-items' {
     }
 
     interface Falloff {
-            start: number;
-            end: number;
-            reduction: number;
+        start: number;
+        end: number;
+        reduction: number;
     }
 
     interface SecondaryArea {
@@ -564,4 +594,18 @@ declare module 'warframe-items' {
         'Warframe' |
         'Whip' |
         '---'
+        
+    type Element = 
+        'Impact' |
+        'Puncture' |
+        'Slash' |
+        'Toxin' |
+        'Electricity' |
+        'Blast' |
+        'Radiation' |
+        'Magnetic' |
+        'Corrosive' |
+        'Heat' |
+        'Cold' |
+        'Viral';
 }
