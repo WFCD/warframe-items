@@ -209,7 +209,7 @@ declare module 'warframe-items' {
         heavySlamRadialDamage?: number;
         heavySlamRadius?: number;
         windUp?: number;
-        attacks: (Attack|SlamAttack)[];
+        attacks?: Attack[];
     }
 
     interface Secondary {
@@ -252,6 +252,7 @@ declare module 'warframe-items' {
         jump?: string;
         wall?: string;
         channeling?: number;
+        slam?: SlamAttack;
     }
     
     interface SlamAttack {
@@ -337,6 +338,8 @@ declare module 'warframe-items' {
         heat?: number;
         cold?: number;
         viral?: number;
+        gas?: number;
+        void?: number
     }
 
     interface Drop {
@@ -599,17 +602,5 @@ declare module 'warframe-items' {
         'Whip' |
         '---'
         
-    type Element = 
-        'Impact' |
-        'Puncture' |
-        'Slash' |
-        'Toxin' |
-        'Electricity' |
-        'Blast' |
-        'Radiation' |
-        'Magnetic' |
-        'Corrosive' |
-        'Heat' |
-        'Cold' |
-        'Viral';
+    type Element = Capitalize<keyof DamageTypes>;
 }

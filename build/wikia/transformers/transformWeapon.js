@@ -97,12 +97,6 @@ const parseAttack = (Attack) => {
         ? Number(Attack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1'))
         : undefined
     })
-    Object.keys(ELEMENTS).forEach((element) => {
-      if (Attack.Damage[element]) {
-        attack.damage[element.toLowerCase()] =
-          `${Attack.Damage[element].toFixed(2).replace(/(\.[\d]+)0/, '$1')} ${ELEMENTS[element]}`
-      }
-    })
   }
   return attack
 }
@@ -193,7 +187,6 @@ const transformWeapon = (oldWeapon, imageUrls) => {
       Attack8 && parseAttack(Attack8),
       Attack9 && parseAttack(Attack9),
       Attack10 && parseAttack(Attack10),
-      SlamAttack && parseSlam(oldWeapon),
       SecondaryAreaAttack && parseAttack(SecondaryAreaAttack),
       SecondaryAttack && parseAttack(SecondaryAttack),
       ChargeAttack && parseAttack(ChargeAttack),
@@ -206,7 +199,8 @@ const transformWeapon = (oldWeapon, imageUrls) => {
         slide: SlideAttack && `${SlideAttack}${SlideElement ? ELEMENTS[SlideElement] : ''}`,
         jump: JumpAttack && `${JumpAttack}${JumpElement ? ELEMENTS[JumpElement] : ''}`,
         wall: WallAttack && `${WallAttack}${WallElement ? ELEMENTS[WallElement] : ''}`,
-        channeling: (SlideAttack && JumpAttack && WallAttack) && Number(ChannelMult || 1.5)
+        channeling: (SlideAttack && JumpAttack && WallAttack) && Number(ChannelMult || 1.5),
+        slam: SlamAttack && parseSlam(oldWeapon)
       }
     }
 
