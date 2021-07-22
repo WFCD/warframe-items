@@ -248,6 +248,10 @@ declare module 'warframe-items' {
         flight?: number | string;
         falloff?: Falloff;
         damage: DamageTypes;
+        slide?: string;
+        jump?: string;
+        wall?: string;
+        channeling?: number;
     }
     
     interface SlamAttack {

@@ -198,7 +198,7 @@ const transformWeapon = (oldWeapon, imageUrls) => {
       SecondaryAttack && parseAttack(SecondaryAttack),
       ChargeAttack && parseAttack(ChargeAttack),
       AreaAttack && parseAttack(AreaAttack)
-    ]
+    ].filter(a => a)
 
     if (newWeapon.attacks[0]) {
       newWeapon.attacks[0] = {
@@ -206,7 +206,7 @@ const transformWeapon = (oldWeapon, imageUrls) => {
         slide: SlideAttack && `${SlideAttack}${SlideElement ? ELEMENTS[SlideElement] : ''}`,
         jump: JumpAttack && `${JumpAttack}${JumpElement ? ELEMENTS[JumpElement] : ''}`,
         wall: WallAttack && `${WallAttack}${WallElement ? ELEMENTS[WallElement] : ''}`,
-        channeling: (SlideAttack && JumpAttack && WallAttack) && (ChannelMult || 1.5)
+        channeling: (SlideAttack && JumpAttack && WallAttack) && Number(ChannelMult || 1.5)
       }
     }
 
