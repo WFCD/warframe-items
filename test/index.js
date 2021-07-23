@@ -68,7 +68,7 @@ describe('index.js', () => {
 
     it('should only have 1 result for Mausolon', () => {
       const Items = require('../index.js')
-      const items = new Items({ category: ['Primary'] })
+      const items = new Items({ category: ['Arch-Gun'] })
       const matches = items.filter(i => i.name === 'Mausolon').map(i => {
         delete i.patchlogs
         return i
