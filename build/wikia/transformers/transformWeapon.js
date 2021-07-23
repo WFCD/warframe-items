@@ -21,6 +21,23 @@ const POLARITIES = {
   R: 'Unairu'
 }
 
+const damageTypes = [
+  'Impact',
+  'Slash',
+  'Puncture',
+  'Heat',
+  'Cold',
+  'Electricity',
+  'Toxin',
+  'Viral',
+  'Corrosive',
+  'Radiation',
+  'Blast',
+  'Magnetic',
+  'Gas',
+  'Void'
+]
+
 const transformPolarities = ({ Polarities, StancePolarity }, targetWeapon) => {
   const outputWeapon = { ...targetWeapon }
   if (StancePolarity) {
@@ -32,6 +49,68 @@ const transformPolarities = ({ Polarities, StancePolarity }, targetWeapon) => {
     outputWeapon.polarities = []
   }
   return outputWeapon
+}
+
+const parseAttack = (Attack) => {
+  const attack = {
+    name: Attack.AttackName,
+    duration: Attack && Attack.Duration &&
+      Number((Number(Attack.Duration) * 100).toFixed(2)),
+    radius: Attack && Attack.Radius &&
+      Number((Number(Attack.Radius) * 100).toFixed(2)),
+    speed: Attack && Attack.FireRate,
+    pellet: Attack.PelletName && {
+      name: Attack.PelletName,
+      count: Attack.PelletCount
+    },
+    crit_chance: Attack.CritChance &&
+      Number((Number(Attack.CritChance) * 100).toFixed(2)),
+    crit_mult: Attack.CritMultiplier &&
+      Number(Number(Attack.CritMultiplier).toFixed(1)),
+    status_chance: Attack && Attack.StatusChance &&
+      Number((Number(Attack.StatusChance) * 100).toFixed(2)),
+    charge_time: Attack.ChargeTime &&
+      Number(Number(Attack.ChargeTime).toFixed(1)),
+    shot_type: Attack.ShotType,
+    shot_speed: Attack.ShotSpeed &&
+      Number(Number(Attack.ShotSpeed).toFixed(1)),
+    ...Attack.ShotSpeed && {
+      flight: Number(Attack.ShotSpeed) || '???'
+    },
+    ...Attack.Falloff && {
+      falloff: {
+        start: Attack.Falloff.StartRange &&
+          Number(Attack.Falloff.StartRange),
+        end: Attack.Falloff.EndRange &&
+          Number(Attack.Falloff.EndRange),
+        reduction: Attack.Falloff.Reduction &&
+          Number(Attack.Falloff.Reduction)
+      }
+    },
+    damage: {}
+  }
+
+  // Convert damage numbers and names
+  if (Attack.Damage) {
+    damageTypes.forEach((damageType) => {
+      attack.damage[damageType.toLowerCase()] = Attack.Damage[damageType]
+        ? Number(Attack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1'))
+        : undefined
+    })
+  }
+  return attack
+}
+
+const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialProc, SlamRadius }) => {
+  return {
+    damage: Number(SlamAttack || 0).toFixed(2),
+    radial: {
+      damage: Number(SlamRadialDmg || 0).toFixed(2),
+      element: String(SlamRadialElement),
+      proc: String(SlamRadialProc),
+      radius: Number(SlamRadius)
+    }
+  }
 }
 
 const transformWeapon = (oldWeapon, imageUrls) => {
@@ -62,246 +141,66 @@ const transformWeapon = (oldWeapon, imageUrls) => {
       SecondaryAreaAttack,
       Traits,
       AreaAttack,
-      Introduced
+      Introduced,
+      Name,
+      SlamAttack,
+      Attack1,
+      Attack2,
+      Attack3,
+      Attack4,
+      Attack5,
+      Attack6,
+      Attack7,
+      Attack8,
+      Attack9,
+      Attack10
     } = oldWeapon
-
-    const { Name } = oldWeapon
 
     newWeapon = {
       regex: `^${Name.toLowerCase().replace(/\s/g, '\\s')}$`,
       name: Name,
       url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       mr: Mastery || 0,
-      type: Class,
+      type: Class || Type,
       riven_disposition: Disposition,
       ...(ChargeAttack && ChargeAttack.StatusChance) &&
         { status_chance: Number((Number(ChargeAttack.StatusChance) * 100).toFixed(2)) },
       polarities: Polarities,
       thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
       ...MaxAmmo && { ammo: MaxAmmo },
-      ...(NormalAttack && NormalAttack.ShotType) &&
-        { projectile: NormalAttack.ShotType.replace(/Hit-scan/ig, 'Hitscan') },
-      ...(ChargeAttack && ChargeAttack.ShotType) &&
-        { projectile: ChargeAttack.ShotType.replace(/Hit-scan/ig, 'Hitscan') },
       tags: Traits || [],
       vaulted: (Traits || []).includes('Vaulted'),
       introduced: Introduced,
       marketCost: Cost && Cost.MarketCost,
-      bpCost: Cost && Cost.BPCost,
-      pellet: {
-        name: NormalAttack && NormalAttack.PelletName && String(NormalAttack.PelletName),
-        count: NormalAttack && ((NormalAttack.PelletCount && Number(NormalAttack.PelletCount)) ||
-          (NormalAttack.AttackName === 'Single Pellet' && 1))
-      },
-      ...(NormalAttack && NormalAttack.Falloff) && {
-        falloff: {
-          start: NormalAttack.Falloff.StartRange && Number(NormalAttack.Falloff.StartRange),
-          end: NormalAttack.Falloff.EndRange && Number(NormalAttack.Falloff.EndRange),
-          reduction: NormalAttack.Falloff.Reduction && Number(NormalAttack.Falloff.Reduction)
-        }
-      }
+      bpCost: Cost && Cost.BPCost
     }
 
-    if (NormalAttack) {
-      newWeapon.damage = Object.keys(NormalAttack.Damage).reduce(
-        (sum, damageType) => NormalAttack.Damage[damageType] + sum,
-        0
-      ).toFixed(2).replace(/(\.[\d]+)0/, '$1')
-    } else if (ChargeAttack) {
-      newWeapon.damage = Number(Object.keys(ChargeAttack.Damage).reduce(
-        (sum, damageType) => ChargeAttack.Damage[damageType] + sum,
-        0
-      ).toFixed(2).replace(/(\.[\d]+)0/, '$1'))
-    }
+    newWeapon.attacks = [
+      NormalAttack && parseAttack(NormalAttack),
+      Attack1 && parseAttack(Attack1),
+      Attack2 && parseAttack(Attack2),
+      Attack3 && parseAttack(Attack3),
+      Attack4 && parseAttack(Attack4),
+      Attack5 && parseAttack(Attack5),
+      Attack6 && parseAttack(Attack6),
+      Attack7 && parseAttack(Attack7),
+      Attack8 && parseAttack(Attack8),
+      Attack9 && parseAttack(Attack9),
+      Attack10 && parseAttack(Attack10),
+      SecondaryAreaAttack && parseAttack(SecondaryAreaAttack),
+      SecondaryAttack && parseAttack(SecondaryAttack),
+      ChargeAttack && parseAttack(ChargeAttack),
+      AreaAttack && parseAttack(AreaAttack)
+    ].filter(a => a)
 
-    const damageTypes = [
-      'Impact',
-      'Slash',
-      'Puncture',
-      'Heat',
-      'Cold',
-      'Electricity',
-      'Toxin',
-      'Viral',
-      'Corrosive',
-      'Radiation',
-      'Blast',
-      'Magnetic',
-      'Gas',
-      'Void'
-    ]
-    if (NormalAttack && NormalAttack.Damage) {
-      damageTypes.forEach((damageType) => {
-        newWeapon[damageType.toLowerCase()] = NormalAttack.Damage[damageType] ? Number(NormalAttack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1')) : undefined
-      })
-      Object.keys(ELEMENTS).forEach((element) => {
-        if (NormalAttack.Damage[element]) {
-          newWeapon.damage = `${NormalAttack.Damage[element].toFixed(2).replace(/(\.[\d]+)0/, '$1')} ${ELEMENTS[element]}`
-        }
-      })
-    } else if (ChargeAttack && ChargeAttack.Damage) {
-      newWeapon.chargeTime = Number(Number(ChargeAttack.ChargeTime))
-      damageTypes.forEach((damageType) => {
-        newWeapon[damageType.toLowerCase()] = ChargeAttack.Damage[damageType] ? Number(ChargeAttack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1')) : undefined
-      })
-    }
-
-    if (SecondaryAreaAttack) {
-      newWeapon.secondaryArea = {
-        name: SecondaryAreaAttack.AttackName,
-        status_chance: SecondaryAreaAttack && SecondaryAreaAttack.StatusChance &&
-          Number((Number(SecondaryAreaAttack.StatusChance) * 100).toFixed(2)),
-        duration: SecondaryAreaAttack && SecondaryAreaAttack.Duration &&
-          Number((Number(SecondaryAreaAttack.Duration) * 100).toFixed(2)),
-        radius: SecondaryAreaAttack && SecondaryAreaAttack.Radius &&
-          Number((Number(SecondaryAreaAttack.Radius) * 100).toFixed(2)),
-        speed: SecondaryAreaAttack && SecondaryAreaAttack.FireRate
-      }
-
-      if (SecondaryAreaAttack.PelletName) {
-        newWeapon.secondaryArea.pellet = {
-          name: SecondaryAreaAttack.PelletName,
-          count: SecondaryAreaAttack.PelletCount
-        }
-      }
-
-      // Convert damage numbers and names
-      if (SecondaryAreaAttack.Damage) {
-        damageTypes.forEach((damageType) => {
-          newWeapon.secondaryArea[damageType.toLowerCase()] = SecondaryAreaAttack.Damage[damageType] ? Number(SecondaryAreaAttack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1')) : undefined
-        })
-        Object.keys(ELEMENTS).forEach((element) => {
-          if (SecondaryAreaAttack.Damage[element]) {
-            newWeapon.secondaryArea.damage = `${SecondaryAreaAttack.Damage[element].toFixed(2).replace(/(\.[\d]+)0/, '$1')} ${ELEMENTS[element]}`
-          }
-        })
-      }
-    }
-
-    if (SecondaryAttack) {
-      newWeapon.secondary = {
-        name: SecondaryAttack.AttackName,
-        speed: SecondaryAttack.FireRate,
-        crit_chance: SecondaryAttack.CritChance &&
-          Number((Number(SecondaryAttack.CritChance) * 100).toFixed(2)),
-        crit_mult: SecondaryAttack.CritMultiplier &&
-          Number(Number(SecondaryAttack.CritMultiplier).toFixed(1)),
-        status_chance: SecondaryAttack && SecondaryAttack.StatusChance &&
-          Number(Number(SecondaryAttack.StatusChance).toFixed(1)),
-        charge_time: SecondaryAttack.ChargeTime &&
-          Number(Number(SecondaryAttack.ChargeTime).toFixed(1)),
-        shot_type: SecondaryAttack.ShotType,
-        shot_speed: SecondaryAttack.ShotSpeed &&
-          Number(Number(SecondaryAttack.ShotSpeed).toFixed(1)),
-        ...(SecondaryAttack.PelletCount || SecondaryAttack.PelletName) && {
-          pellet: {
-            count: SecondaryAttack.PelletCount && Number(SecondaryAttack.PelletCount),
-            name: SecondaryAttack.PelletName
-          }
-        },
-        ...ChargeAttack && (ChargeAttack.PelletCount || ChargeAttack.PelletName) && {
-          pellet: {
-            name: ChargeAttack.PelletName && String(ChargeAttack.PelletName),
-            count: ChargeAttack.PelletCount && Number(ChargeAttack.PelletCount)
-          }
-        },
-        ...SecondaryAttack.Falloff && {
-          falloff: {
-            start: SecondaryAttack.Falloff.StartRange &&
-              Number(SecondaryAttack.Falloff.StartRange),
-            end: SecondaryAttack.Falloff.EndRange &&
-              Number(SecondaryAttack.Falloff.EndRange),
-            reduction: SecondaryAttack.Falloff.Reduction &&
-              Number(SecondaryAttack.Falloff.Reduction)
-          }
-        },
-        ...ChargeAttack && ChargeAttack.Falloff && {
-          falloff: {
-            start: ChargeAttack.Falloff.StartRange &&
-              Number(ChargeAttack.Falloff.StartRange),
-            end: ChargeAttack.Falloff.EndRange &&
-              Number(ChargeAttack.Falloff.EndRange),
-            reduction: ChargeAttack.Falloff.Reduction &&
-              Number(ChargeAttack.Falloff.Reduction)
-          }
-        }
-      }
-
-      // Convert damage numbers and names
-      if (SecondaryAttack.Damage) {
-        damageTypes.forEach((damageType) => {
-          newWeapon.secondary[damageType.toLowerCase()] = SecondaryAttack.Damage[damageType] ? Number(SecondaryAttack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1')) : undefined
-        })
-        Object.keys(ELEMENTS).forEach((element) => {
-          if (SecondaryAttack.Damage[element]) {
-            newWeapon.secondary.damage = `${SecondaryAttack.Damage[element].toFixed(2).replace(/(\.[\d]+)0/, '$1')} ${ELEMENTS[element]}`
-          }
-        })
-      }
-    }
-
-    if (AreaAttack) {
-      newWeapon.areaAttack = {
-        name: AreaAttack.AttackName,
-        speed: AreaAttack.FireRate,
-        crit_chance: AreaAttack.CritChance &&
-          Number((Number(AreaAttack.CritChance) * 100).toFixed(2)),
-        crit_mult: AreaAttack.CritMultiplier &&
-          Number(Number(AreaAttack.CritMultiplier).toFixed(1)),
-        status_chance: AreaAttack && AreaAttack.StatusChance &&
-          Number(Number(AreaAttack.StatusChance).toFixed(1)),
-        charge_time: AreaAttack.ChargeTime &&
-          Number(Number(AreaAttack.ChargeTime).toFixed(1)),
-        shot_type: AreaAttack.ShotType,
-        shot_speed: AreaAttack.ShotSpeed &&
-          Number(Number(AreaAttack.ShotSpeed).toFixed(1)),
-        ...(AreaAttack.PelletCount || AreaAttack.PelletName) && {
-          pellet: {
-            name: AreaAttack.PelletName && String(AreaAttack.PelletName),
-            count: AreaAttack.PelletCount && Number(AreaAttack.PelletCount)
-          }
-        },
-        ...AreaAttack.Falloff && {
-          falloff: {
-            start: AreaAttack.Falloff.StartRange &&
-              Number(AreaAttack.Falloff.StartRange),
-            end: AreaAttack.Falloff.EndRange &&
-              Number(AreaAttack.Falloff.EndRange),
-            reduction: AreaAttack.Falloff.Reduction &&
-              Number(AreaAttack.Falloff.Reduction)
-          }
-        }
-      }
-
-      // Convert damage numbers and names
-      if (AreaAttack.Damage) {
-        damageTypes.forEach((damageType) => {
-          newWeapon.areaAttack[damageType.toLowerCase()] = AreaAttack.Damage[damageType]
-            ? Number(AreaAttack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1'))
-            : undefined
-        })
-        Object.keys(ELEMENTS).forEach((element) => {
-          if (AreaAttack.Damage[element]) {
-            newWeapon.areaAttack.damage = `${AreaAttack.Damage[element].toFixed(2).replace(/(\.[\d]+)0/, '$1')} ${ELEMENTS[element]}`
-          }
-        })
-      }
-    }
-
-    if ((Type === 'Primary' || Type === 'Secondary') && NormalAttack) {
-      newWeapon = {
-        ...newWeapon,
-        ...NormalAttack.ShotSpeed && {
-          flight: Number(NormalAttack.ShotSpeed) || '???'
-        }
-      }
-    } else if (Type === 'Melee') {
-      newWeapon = {
-        ...newWeapon,
-        slide: `${SlideAttack}${SlideElement ? ELEMENTS[SlideElement] : ''}`,
-        jump: `${JumpAttack}${JumpElement ? ELEMENTS[JumpElement] : ''}`,
-        wall: `${WallAttack}${WallElement ? ELEMENTS[WallElement] : ''}`,
-        channeling: ChannelMult || 1.5
+    if (newWeapon.attacks[0]) {
+      newWeapon.attacks[0] = {
+        ...newWeapon.attacks[0],
+        slide: SlideAttack && `${SlideAttack}${SlideElement ? ELEMENTS[SlideElement] : ''}`,
+        jump: JumpAttack && `${JumpAttack}${JumpElement ? ELEMENTS[JumpElement] : ''}`,
+        wall: WallAttack && `${WallAttack}${WallElement ? ELEMENTS[WallElement] : ''}`,
+        channeling: (SlideAttack && JumpAttack && WallAttack) && Number(ChannelMult || 1.5),
+        slam: SlamAttack && parseSlam(oldWeapon)
       }
     }
 

@@ -656,25 +656,12 @@ class Parser {
   }
 
   addWeaponWikiaData (item, wikiaItem) {
-    const damageTypes = require('../config/damageTypes.json')
+    item.attacks = wikiaItem.attacks
     item.ammo = wikiaItem.ammo
-    item.areaAttack = wikiaItem.areaAttack
-    item.channeling = wikiaItem.channeling
-    item.chargeTime = wikiaItem.chargeTime
     item.damage = wikiaItem.damage
-    item.damageTypes = {}
-    damageTypes.forEach(type => {
-      item.damageTypes[type] = wikiaItem[type]
-    })
-    item.flight = wikiaItem.flight
     item.marketCost = wikiaItem.marketCost
     item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
-    item.projectile = wikiaItem.projectile
-    item.secondary = wikiaItem.secondary
-    item.secondaryArea = wikiaItem.secondaryArea
-    item.stancePolarity = wikiaItem.stancePolarity
-    item.statusChance = wikiaItem.status_chance
     item.tags = wikiaItem.tags
     item.type = title(wikiaItem.type) !== 'Misc' ? title(wikiaItem.type) : item.type
 
