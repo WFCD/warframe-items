@@ -254,7 +254,7 @@ class Parser {
     }
 
     // Remove <Archwing> from archwing names, add archwing key instead
-    if (item.name && item.name.includes('<Archwing>')) {
+    if (item.name && (item.name.includes('<Archwing>') || item.uniqueName.includes('Tenno/Archwing'))) {
       item.name = item.name.replace(/<Archwing> /, '')
       item.isArchwing = true
     }
