@@ -2,6 +2,20 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.67,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "shot_speed": 65,
+        "flight": 65,
+        "damage": {
+          "toxin": 35
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -57,7 +71,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Acrid fires an acidic-infused needle.",
     "disposition": 5,
     "fireRate": 6.666667,
@@ -232,6 +245,20 @@
   {
     "accuracy": 15.384615,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 12.5,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 12,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 3,
+          "slash": 3,
+          "puncture": 14
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -269,8 +296,21 @@
         "itemCount": 1,
         "imageName": "furis.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 10,
+            "crit_chance": 5,
+            "crit_mult": 2,
+            "status_chance": 12,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 3,
+              "slash": 3,
+              "puncture": 14
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 120,
         "polarities": [ "Naramon" ],
         "tags": [ "Tenno" ],
@@ -311,8 +351,21 @@
         "itemCount": 1,
         "imageName": "furis.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 10,
+            "crit_chance": 5,
+            "crit_mult": 2,
+            "status_chance": 12,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 3,
+              "slash": 3,
+              "puncture": 14
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 120,
         "polarities": [ "Naramon" ],
         "tags": [ "Tenno" ],
@@ -344,7 +397,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 3, 14, 2.9999995, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Furis pistols equipped in each hand. Twice the Magazine Capacity and slightly faster Fire Rate, but Accuracy and Reload Speed are lowered.",
     "disposition": 5,
     "fireRate": 12.500001,
@@ -440,6 +492,38 @@
   {
     "accuracy": 26.666666,
     "ammo": 20,
+    "attacks": [
+      {
+        "name": "Rocket Impact",
+        "speed": 4.25,
+        "crit_chance": 6,
+        "crit_mult": 1.8,
+        "status_chance": 28,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 68
+        }
+      },
+      {
+        "name": "Rocket Detonation",
+        "radius": 720,
+        "speed": 4.25,
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 28,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 7.2,
+          "reduction": 0.7
+        },
+        "damage": {
+          "blast": 419
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -520,7 +604,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 68, 0, 0, 0, 0, 0, 0, 419, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Bombard legions of enemies with target seeking rockets. These dual launchers reload faster while sprinting, even more so in Gauss’ hands. Rockets arm after reaching a safe distance.",
     "disposition": 3,
     "fireRate": 4.2483659,
@@ -634,6 +717,21 @@
   {
     "accuracy": 26.666666,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 16,
+        "crit_mult": 2.4,
+        "status_chance": 2.2,
+        "shot_type": "Projectile",
+        "shot_speed": 75,
+        "flight": 75,
+        "damage": {
+          "impact": 4,
+          "puncture": 36
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -671,8 +769,22 @@
         "itemCount": 1,
         "imageName": "bolto.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 6.83,
+            "crit_chance": 16,
+            "crit_mult": 2.4,
+            "status_chance": 2.2,
+            "shot_type": "Projectile",
+            "shot_speed": 75,
+            "flight": 75,
+            "damage": {
+              "impact": 4,
+              "puncture": 36
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 175,
         "polarities": [ "Vazarin" ],
         "tags": [ "Tenno" ],
@@ -713,8 +825,22 @@
         "itemCount": 1,
         "imageName": "bolto.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 6.83,
+            "crit_chance": 16,
+            "crit_mult": 2.4,
+            "status_chance": 2.2,
+            "shot_type": "Projectile",
+            "shot_speed": 75,
+            "flight": 75,
+            "damage": {
+              "impact": 4,
+              "puncture": 36
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 175,
         "polarities": [ "Vazarin" ],
         "tags": [ "Tenno" ],
@@ -746,7 +872,6 @@
     "criticalChance": 0.16,
     "criticalMultiplier": 2.4000001,
     "damagePerShot": [ 4, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A Bolto equipped in each hand. Twice the Magazine Capacity and slightly faster Fire Rate, but reload time is doubled and accuracy is lowered.",
     "disposition": 4,
     "fireRate": 10.000001,
@@ -860,6 +985,22 @@
   {
     "accuracy": 26.666666,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 7,
+        "crit_chance": 36,
+        "crit_mult": 2.8,
+        "status_chance": 14,
+        "shot_type": "Projectile",
+        "shot_speed": 75,
+        "flight": 75,
+        "damage": {
+          "impact": 3.2,
+          "slash": 1.3,
+          "puncture": 27.5
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -1494,7 +1635,6 @@
     "criticalChance": 0.36000001,
     "criticalMultiplier": 2.8,
     "damagePerShot": [ 3.2, 27.52, 1.2799988, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Gilded rails adorn these two vicious bolt launching pistols.",
     "disposition": 4,
     "estimatedVaultDate": "2019 10 01",
@@ -1552,6 +1692,25 @@
   {
     "accuracy": 3.7037036,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 8.33,
+        "crit_chance": 6,
+        "crit_mult": 2,
+        "status_chance": 3.14,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 7,
+          "end": 14,
+          "reduction": 0.75
+        },
+        "damage": {
+          "impact": 32,
+          "slash": 4,
+          "puncture": 4
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -1589,8 +1748,26 @@
         "itemCount": 1,
         "imageName": "bronco.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 5,
+            "crit_chance": 6,
+            "crit_mult": 2,
+            "status_chance": 9.43,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 7,
+              "end": 14,
+              "reduction": 0.75
+            },
+            "damage": {
+              "impact": 32,
+              "slash": 4,
+              "puncture": 4
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 190,
         "polarities": [  ],
         "tags": [ "Tenno" ],
@@ -1631,8 +1808,26 @@
         "itemCount": 1,
         "imageName": "bronco.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 5,
+            "crit_chance": 6,
+            "crit_mult": 2,
+            "status_chance": 9.43,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 7,
+              "end": 14,
+              "reduction": 0.75
+            },
+            "damage": {
+              "impact": 32,
+              "slash": 4,
+              "puncture": 4
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 190,
         "polarities": [  ],
         "tags": [ "Tenno" ],
@@ -1664,7 +1859,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 32, 4, 3.9999986, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A Bronco equipped in each hand.",
     "disposition": 5,
     "fireRate": 8.333334,
@@ -1736,6 +1930,25 @@
   {
     "accuracy": 3.7037036,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 4.33,
+        "crit_chance": 6,
+        "crit_mult": 2,
+        "status_chance": 12.86,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 9,
+          "end": 18,
+          "reduction": 0.75
+        },
+        "damage": {
+          "impact": 40,
+          "slash": 5,
+          "puncture": 5
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -3218,8 +3431,26 @@
             "type": "Bronco Prime Receiver"
           }
         ],
+        "attacks": [
+          {
+            "speed": 4.17,
+            "crit_chance": 6,
+            "crit_mult": 2,
+            "status_chance": 12.86,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 9,
+              "end": 18,
+              "reduction": 0.74
+            },
+            "damage": {
+              "impact": 40,
+              "slash": 5,
+              "puncture": 5
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [  ],
         "tags": [ "Prime", "Never Vaulted" ],
         "type": "Shotgun Sidearm",
@@ -4390,8 +4621,26 @@
             "type": "Bronco Prime Receiver"
           }
         ],
+        "attacks": [
+          {
+            "speed": 4.17,
+            "crit_chance": 6,
+            "crit_mult": 2,
+            "status_chance": 12.86,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 9,
+              "end": 18,
+              "reduction": 0.74
+            },
+            "damage": {
+              "impact": 40,
+              "slash": 5,
+              "puncture": 5
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [  ],
         "tags": [ "Prime", "Never Vaulted" ],
         "type": "Shotgun Sidearm",
@@ -4690,7 +4939,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 40, 5, 4.9999981, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Used together, these Orokin pistols feed off each other, inflicting greater damage with an enhanced status chance for inducing elemental effects on targets.",
     "disposition": 4,
     "estimatedVaultDate": "never",
@@ -4755,6 +5003,20 @@
   {
     "accuracy": 15.384615,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 16.67,
+        "crit_chance": 6,
+        "crit_mult": 2,
+        "status_chance": 28,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 4.5,
+          "slash": 21,
+          "puncture": 4.5
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -4783,8 +5045,22 @@
         "itemCount": 1,
         "imageName": "akbolto.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 10,
+            "crit_chance": 16,
+            "crit_mult": 2.4,
+            "status_chance": 2.2,
+            "shot_type": "Projectile",
+            "shot_speed": 75,
+            "flight": 75,
+            "damage": {
+              "impact": 4,
+              "puncture": 36
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 225,
         "polarities": [ "Vazarin" ],
         "tags": [ "Tenno" ],
@@ -4841,11 +5117,31 @@
         "itemCount": 1,
         "imageName": "dual-skana.png",
         "tradable": false,
-        "channeling": 1.5,
-        "damageTypes": {},
+        "attacks": [
+          {
+            "speed": 0.833,
+            "crit_chance": 5,
+            "crit_mult": 1.5,
+            "status_chance": 16,
+            "damage": {
+              "impact": 18,
+              "slash": 84,
+              "puncture": 18
+            },
+            "slide": "240",
+            "slam": {
+              "damage": "240.00",
+              "radial": {
+                "damage": "120.00",
+                "element": "undefined",
+                "proc": "undefined",
+                "radius": 8
+              }
+            }
+          }
+        ],
         "marketCost": 130,
         "polarities": [  ],
-        "stancePolarity": "Naramon",
         "tags": [ "Tenno" ],
         "type": "Dual Swords",
         "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/f/f8/DualSkana.png/revision/latest?cb=20160221143832",
@@ -4875,7 +5171,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 4.5, 4.5, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The design of these hard-hitting dual pistols is a mix of organic and bladed elements.",
     "disposition": 3,
     "fireRate": 16.666668,
@@ -4979,6 +5274,20 @@
   {
     "accuracy": 33.333332,
     "ammo": 320,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 18,
+        "crit_mult": 2.2,
+        "status_chance": 32,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 3.6,
+          "slash": 28.8,
+          "puncture": 3.6
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -5526,7 +5835,6 @@
     "criticalChance": 0.18000001,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 3.6000001, 3.6000001, 28.800001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Precision machined mirrored pistols. Primed and ready.",
     "disposition": 3,
     "estimatedVaultDate": "2020 07 14",
@@ -5608,11 +5916,24 @@
   {
     "accuracy": 11.111111,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 7.5,
+        "crit_chance": 10,
+        "crit_mult": 1.8,
+        "status_chance": 6,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 4.5,
+          "slash": 18,
+          "puncture": 7.5
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.1,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 4.5, 7.5, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A Lato equipped in each hand. Twice the Magazine Capacity and Fire Rate, but Reload time is doubled and Accuracy is lowered.",
     "disposition": 5,
     "fireRate": 7.5000005,
@@ -5674,6 +5995,20 @@
   {
     "accuracy": 9.7560978,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 1.58,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 13,
+          "slash": 13,
+          "puncture": 104
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -5712,8 +6047,21 @@
         "imageName": "lex.png",
         "tradable": false,
         "drops": [  ],
+        "attacks": [
+          {
+            "speed": 1.08,
+            "crit_chance": 20,
+            "crit_mult": 2,
+            "status_chance": 10,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 13,
+              "slash": 13,
+              "puncture": 104
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [ "Madurai" ],
         "tags": [ "Tenno" ],
         "type": "Pistol",
@@ -5753,8 +6101,21 @@
         "imageName": "lex.png",
         "tradable": false,
         "drops": [  ],
+        "attacks": [
+          {
+            "speed": 1.08,
+            "crit_chance": 20,
+            "crit_mult": 2,
+            "status_chance": 10,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 13,
+              "slash": 13,
+              "puncture": 104
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [ "Madurai" ],
         "tags": [ "Tenno" ],
         "type": "Pistol",
@@ -5784,7 +6145,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
     "damagePerShot": [ 13, 104, 12.999995, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Dual Lex pistols double the amount of high caliber lead you can throw at the enemy, but accuracy and reload time suffer.",
     "disposition": 3,
     "fireRate": 1.5833334,
@@ -5856,6 +6216,20 @@
   {
     "accuracy": 9.7560978,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 2.67,
+        "crit_chance": 25,
+        "crit_mult": 2,
+        "status_chance": 25,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 15,
+          "slash": 15,
+          "puncture": 120
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -7266,8 +7640,21 @@
             "type": "Lex Prime Barrel"
           }
         ],
+        "attacks": [
+          {
+            "speed": 2.08,
+            "crit_chance": 25,
+            "crit_mult": 2,
+            "status_chance": 25,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 15,
+              "slash": 15,
+              "puncture": 120
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [ "Madurai" ],
         "tags": [ "Prime", "Never Vaulted" ],
         "type": "Pistol",
@@ -8630,8 +9017,21 @@
             "type": "Lex Prime Barrel"
           }
         ],
+        "attacks": [
+          {
+            "speed": 2.08,
+            "crit_chance": 25,
+            "crit_mult": 2,
+            "status_chance": 25,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 15,
+              "slash": 15,
+              "puncture": 120
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [ "Madurai" ],
         "tags": [ "Prime", "Never Vaulted" ],
         "type": "Pistol",
@@ -8690,7 +9090,6 @@
     "criticalChance": 0.25,
     "criticalMultiplier": 2,
     "damagePerShot": [ 15, 120, 14.999994, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Savage the enemy with a Lex Prime in each hand.",
     "disposition": 2,
     "estimatedVaultDate": "never",
@@ -8730,6 +9129,20 @@
   {
     "accuracy": 11.111111,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.17,
+        "crit_chance": 22,
+        "crit_mult": 2,
+        "status_chance": 22,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 34.2,
+          "slash": 20.9,
+          "puncture": 20.9
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -8767,8 +9180,21 @@
         "itemCount": 1,
         "imageName": "magnus.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 5.83,
+            "crit_chance": 22,
+            "crit_mult": 2,
+            "status_chance": 22,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 34.2,
+              "slash": 20.9,
+              "puncture": 20.9
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 125,
         "polarities": [ "Madurai" ],
         "tags": [ "Tenno" ],
@@ -8809,8 +9235,21 @@
         "itemCount": 1,
         "imageName": "magnus.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 5.83,
+            "crit_chance": 22,
+            "crit_mult": 2,
+            "status_chance": 22,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 34.2,
+              "slash": 20.9,
+              "puncture": 20.9
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 125,
         "polarities": [ "Madurai" ],
         "tags": [ "Tenno" ],
@@ -8842,7 +9281,6 @@
     "criticalChance": 0.22,
     "criticalMultiplier": 2,
     "damagePerShot": [ 34.200001, 20.9, 20.899998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Twice the ammo and twice the stopping power of a single Magnus.",
     "disposition": 5,
     "fireRate": 6.166667,
@@ -8891,6 +9329,21 @@
   {
     "accuracy": 15.384615,
     "ammo": 420,
+    "attacks": [
+      {
+        "name": "Fully Spooled",
+        "speed": 12.5,
+        "crit_chance": 24,
+        "crit_mult": 3,
+        "status_chance": 8,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 1.8,
+          "slash": 9,
+          "puncture": 7.2
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -8919,8 +9372,21 @@
         "itemCount": 1,
         "imageName": "akstiletto.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 10,
+            "crit_chance": 18,
+            "crit_mult": 1.8,
+            "status_chance": 18,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 16.8,
+              "slash": 8.4,
+              "puncture": 2.8
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 225,
         "polarities": [ "Naramon" ],
         "tags": [ "Tenno" ],
@@ -8970,7 +9436,6 @@
     "criticalChance": 0.23999999,
     "criticalMultiplier": 3,
     "damagePerShot": [ 1.8000001, 7.2000003, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The devastating power of the Soma rifle compacted into two elegant pistols.",
     "disposition": 4,
     "fireRate": 12.500001,
@@ -9066,6 +9531,21 @@
   {
     "accuracy": 12.5,
     "ammo": 880,
+    "attacks": [
+      {
+        "name": "Fully Spooled",
+        "speed": 13.33,
+        "crit_chance": 24,
+        "crit_mult": 3,
+        "status_chance": 18,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 2,
+          "slash": 10,
+          "puncture": 8
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -9580,7 +10060,6 @@
     "criticalChance": 0.23999999,
     "criticalMultiplier": 3,
     "damagePerShot": [ 2, 8, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The elegant Aksomati precisely refined to this, their ultimate manifestation.",
     "disposition": 3,
     "estimatedVaultDate": "2021 08 24",
@@ -9637,6 +10116,20 @@
   {
     "accuracy": 23.529411,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 18,
+        "crit_mult": 1.8,
+        "status_chance": 18,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 16.8,
+          "slash": 8.4,
+          "puncture": 2.8
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -9692,7 +10185,6 @@
     "criticalChance": 0.18000001,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 16.800001, 2.8, 8.3999987, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "These diminutive rapid-fire Stiletto machine-pistols are just the right size to be akimbo style without sacrificing accuracy.",
     "disposition": 3,
     "fireRate": 10.000001,
@@ -9797,6 +10289,20 @@
   {
     "accuracy": 23.529411,
     "ammo": 400,
+    "attacks": [
+      {
+        "speed": 7.08,
+        "crit_chance": 15,
+        "crit_mult": 2,
+        "status_chance": 30,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 21.6,
+          "slash": 10.8,
+          "puncture": 3.6
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -10287,7 +10793,6 @@
     "criticalChance": 0.15000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 21.6, 3.6000001, 10.799998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Stylish, discreet and accurate, perfect for the Tenno of distinction.",
     "disposition": 1,
     "estimatedVaultDate": "2018 03 20",
@@ -10369,6 +10874,20 @@
   {
     "accuracy": 11.111111,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 8.67,
+        "crit_chance": 16,
+        "crit_mult": 1.8,
+        "status_chance": 12,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 14.5,
+          "slash": 29,
+          "puncture": 14.5
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -10415,8 +10934,21 @@
         "itemCount": 1,
         "imageName": "vasto.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 5,
+            "crit_chance": 20,
+            "crit_mult": 1.8,
+            "status_chance": 8,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 14.5,
+              "slash": 29,
+              "puncture": 14.5
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 190,
         "polarities": [ "Madurai" ],
         "tags": [ "Tenno" ],
@@ -10457,8 +10989,21 @@
         "itemCount": 1,
         "imageName": "vasto.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 5,
+            "crit_chance": 20,
+            "crit_mult": 1.8,
+            "status_chance": 8,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 14.5,
+              "slash": 29,
+              "puncture": 14.5
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 190,
         "polarities": [ "Madurai" ],
         "tags": [ "Tenno" ],
@@ -10481,7 +11026,6 @@
     "criticalChance": 0.16,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 14.5, 14.5, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Vasto revolvers equipped in each hand.",
     "disposition": 4,
     "fireRate": 8.666667,
@@ -10546,6 +11090,20 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.33,
+        "crit_chance": 22,
+        "crit_mult": 2.4,
+        "status_chance": 22,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 9.9,
+          "slash": 46.2,
+          "puncture": 9.9
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -10936,8 +11494,21 @@
             "type": "Vasto Prime Barrel"
           }
         ],
+        "attacks": [
+          {
+            "speed": 5.42,
+            "crit_chance": 22,
+            "crit_mult": 2.4,
+            "status_chance": 22,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 9.9,
+              "slash": 46.2,
+              "puncture": 9.9
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [ "Madurai", "Madurai" ],
         "tags": [ "Prime", "Vaulted" ],
         "type": "Pistol",
@@ -11269,8 +11840,21 @@
             "type": "Vasto Prime Barrel"
           }
         ],
+        "attacks": [
+          {
+            "speed": 5.42,
+            "crit_chance": 22,
+            "crit_mult": 2.4,
+            "status_chance": 22,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 9.9,
+              "slash": 46.2,
+              "puncture": 9.9
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [ "Madurai", "Madurai" ],
         "tags": [ "Prime", "Vaulted" ],
         "type": "Pistol",
@@ -11294,7 +11878,6 @@
     "criticalChance": 0.22,
     "criticalMultiplier": 2.4000001,
     "damagePerShot": [ 9.9000006, 9.9000006, 46.200001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Orokin craftsmanship married with superior firepower. Dual Vastos, primed and ready to strike.",
     "disposition": 4,
     "estimatedVaultDate": "never",
@@ -11344,6 +11927,20 @@
   {
     "accuracy": 16.666666,
     "ammo": 400,
+    "attacks": [
+      {
+        "speed": 20,
+        "crit_chance": 14,
+        "crit_mult": 2,
+        "status_chance": 14,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 1.8,
+          "slash": 1.8,
+          "puncture": 8.4
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -11399,7 +11996,6 @@
     "criticalChance": 0.14,
     "criticalMultiplier": 2,
     "damagePerShot": [ 1.8000001, 8.3999996, 1.7999997, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The choice weapon of Mirage, these fast-firing dual pistols deliver a deadly performance.",
     "disposition": 5,
     "fireRate": 20.000002,
@@ -11455,6 +12051,38 @@
   {
     "accuracy": 26.666666,
     "ammo": 18,
+    "attacks": [
+      {
+        "name": "Single Rocket Impact",
+        "crit_chance": 16,
+        "crit_mult": 2,
+        "status_chance": 22,
+        "charge_time": 0.5,
+        "shot_type": "Projectile",
+        "shot_speed": 150,
+        "flight": 150,
+        "damage": {
+          "blast": 200
+        }
+      },
+      {
+        "name": "Single Rocket Explosion",
+        "radius": 360,
+        "crit_chance": 16,
+        "crit_mult": 2,
+        "status_chance": 22,
+        "charge_time": 0.5,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.6,
+          "reduction": 0.4
+        },
+        "damage": {
+          "blast": 250
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -11510,7 +12138,6 @@
     "criticalChance": 0.16,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 450, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Capable of firing multiple rockets at once, the Angstrum is a handheld instrument of destruction.",
     "disposition": 5,
     "fireRate": 2,
@@ -11726,6 +12353,19 @@
   {
     "accuracy": 32,
     "ammo": 288,
+    "attacks": [
+      {
+        "speed": 4.667,
+        "crit_chance": 18,
+        "crit_mult": 1.6,
+        "status_chance": 26,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "slash": 24,
+          "puncture": 36
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -11781,7 +12421,6 @@
     "criticalChance": 0.18000001,
     "criticalMultiplier": 1.6,
     "damagePerShot": [ 0, 36, 23.999998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This scoped pistol analyzes strikes, learning how to damage its targets most effectively. Achieve maximum damage output after five successive hits.",
     "disposition": 3,
     "fireRate": 4.666667,
@@ -11853,6 +12492,31 @@
   {
     "accuracy": 50,
     "ammo": 48,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 5,
+        "crit_chance": 32,
+        "crit_mult": 2,
+        "status_chance": 8,
+        "shot_type": "Hit-scan",
+        "damage": {
+          "puncture": 22,
+          "heat": 48
+        }
+      },
+      {
+        "name": "Alt-Fire",
+        "speed": 12,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 24,
+        "shot_type": "Discharge",
+        "damage": {
+          "heat": 88
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -12010,7 +12674,6 @@
     "criticalChance": 0.31999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 22, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Reverse-engineered from propulsion tech this hand-cannon packs a kick. Headshots kills trigger Overdrive, locking off secondary functions while maximizing your fire rate and ammo efficiency for a short time.",
     "disposition": 3,
     "fireRate": 5.0000005,
@@ -12097,6 +12760,18 @@
   {
     "accuracy": 12.5,
     "ammo": 350,
+    "attacks": [
+      {
+        "speed": 8,
+        "crit_chance": 15,
+        "crit_mult": 1.7,
+        "status_chance": 21,
+        "shot_type": "Discharge",
+        "damage": {
+          "heat": 29
+        }
+      }
+    ],
     "buildPrice": 60000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -12152,7 +12827,6 @@
     "criticalChance": 0.15000001,
     "criticalMultiplier": 1.7,
     "damagePerShot": [ 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This particle cannon generates a condensed beam of super-heated plasma designed to melt rock to ore, and enemies to molten slag.",
     "disposition": 3,
     "fireRate": 8,
@@ -12352,6 +13026,28 @@
   {
     "accuracy": 22.222221,
     "ammo": 525,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 16,
+        "crit_mult": 2,
+        "status_chance": 16,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 2,
+          "slash": 13,
+          "puncture": 5
+        }
+      },
+      {
+        "name": "Launch Turret",
+        "crit_chance": 16,
+        "status_chance": 16,
+        "damage": {
+          "blast": 75
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -12407,7 +13103,6 @@
     "criticalChance": 0.16,
     "criticalMultiplier": 2,
     "damagePerShot": [ 2, 5, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This intricate automatic pistol is able to fire its magazine which then spins in the air for a short time, firing lasers at nearby enemies.",
     "disposition": 4,
     "fireRate": 10.000001,
@@ -12550,6 +13245,39 @@
   {
     "accuracy": 4,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Charged Shot",
+        "speed": 3.33,
+        "crit_chance": 15,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "charge_time": 1,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 10,
+          "slash": 10,
+          "puncture": 80
+        }
+      },
+      {
+        "name": "Burst Shot",
+        "speed": 11.43,
+        "crit_chance": 3.75,
+        "crit_mult": 1.5,
+        "status_chance": 7.5,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 2.5,
+          "slash": 2.5,
+          "puncture": 20
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -12605,7 +13333,6 @@
     "criticalChance": 0.025,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 10, 80, 9.9999962, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Ballistica crossbow features a unique dual firing mechanism. Choose between a four bolt volley or a deadly accurate charged shot.",
     "disposition": 4,
     "fireRate": 3.3333335,
@@ -12839,6 +13566,38 @@
   {
     "accuracy": 4,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Normal Shot",
+        "speed": 3.33,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 15,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 2,
+          "slash": 16,
+          "puncture": 22
+        }
+      },
+      {
+        "name": "Charged Shot",
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 15,
+        "charge_time": 0.8,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 3.8,
+          "slash": 30.4,
+          "puncture": 41.8
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -13437,7 +14196,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
     "damagePerShot": [ 3.8, 41.799999, 30.399998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The beauty of this luxuriously gilded crossbow cannot obscure its lethal purpose.",
     "disposition": 4,
     "estimatedVaultDate": "2019 07 07",
@@ -13519,6 +14277,21 @@
   {
     "accuracy": 26.666666,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.83,
+        "crit_chance": 16,
+        "crit_mult": 2.4,
+        "status_chance": 2.2,
+        "shot_type": "Projectile",
+        "shot_speed": 75,
+        "flight": 75,
+        "damage": {
+          "impact": 4,
+          "puncture": 36
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -13557,8 +14330,21 @@
         "imageName": "lato.png",
         "tradable": false,
         "drops": [  ],
+        "attacks": [
+          {
+            "speed": 6.67,
+            "crit_chance": 10,
+            "crit_mult": 1.8,
+            "status_chance": 6,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 7.5,
+              "slash": 15,
+              "puncture": 7.5
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "polarities": [  ],
         "tags": [ "Tutorial", "Tenno" ],
         "type": "Pistol",
@@ -13606,7 +14392,6 @@
     "criticalChance": 0.16,
     "criticalMultiplier": 2.4000001,
     "damagePerShot": [ 4, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Bolto fires slow, heavy bolts that are capable of impaling enemies to walls.",
     "disposition": 5,
     "fireRate": 6.8333335,
@@ -13960,6 +14745,25 @@
   {
     "accuracy": 7.6923075,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5,
+        "crit_chance": 17,
+        "crit_mult": 2,
+        "status_chance": 5.1,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 11,
+          "end": 22,
+          "reduction": 0.6
+        },
+        "damage": {
+          "impact": 9,
+          "slash": 6,
+          "puncture": 5
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -14027,7 +14831,6 @@
     "criticalChance": 0.17,
     "criticalMultiplier": 2,
     "damagePerShot": [ 9, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Simple but powerful. The semi-automatic Brakk hand cannon delivers a lot of punch in a small package.",
     "disposition": 4,
     "fireRate": 5.0000005,
@@ -14138,6 +14941,25 @@
   {
     "accuracy": 3.7037036,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5,
+        "crit_chance": 6,
+        "crit_mult": 2,
+        "status_chance": 9.43,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 7,
+          "end": 14,
+          "reduction": 0.75
+        },
+        "damage": {
+          "impact": 32,
+          "slash": 4,
+          "puncture": 4
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -14193,7 +15015,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 32, 4, 3.9999986, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Bronco is a small-scale shotgun that can be wielded with one hand. Only effective at close range, it has a limited Magazine Capacity.",
     "disposition": 5,
     "fireRate": 5.0000005,
@@ -14297,6 +15118,25 @@
   {
     "accuracy": 3.7037036,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 4.17,
+        "crit_chance": 6,
+        "crit_mult": 2,
+        "status_chance": 12.86,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 9,
+          "end": 18,
+          "reduction": 0.74
+        },
+        "damage": {
+          "impact": 40,
+          "slash": 5,
+          "puncture": 5
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -15480,7 +16320,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 40, 5, 4.9999981, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Infused with rare Orokin alloys, the Bronco Prime is a highly efficient weapon, trading an increased Magazine Capacity and damage for a lower rate of fire.",
     "disposition": 5,
     "estimatedVaultDate": "never",
@@ -15553,6 +16392,26 @@
   {
     "accuracy": 100,
     "ammo": 18,
+    "attacks": [
+      {
+        "radius": 360,
+        "speed": 3.33,
+        "crit_chance": 8,
+        "crit_mult": 1.5,
+        "status_chance": 22,
+        "shot_type": "Projectile",
+        "shot_speed": 30,
+        "flight": 30,
+        "falloff": {
+          "start": 0,
+          "end": 3.6,
+          "reduction": 0.4
+        },
+        "damage": {
+          "electricity": 160
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -15608,7 +16467,6 @@
     "criticalChance": 0.079999998,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 160, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The remotely triggered Castanas quietly deliver a lethal dose of electricity to unsuspecting enemies.",
     "disposition": 5,
     "fireRate": 3.3333335,
@@ -15896,6 +16754,74 @@
   {
     "accuracy": 6.25,
     "ammo": 155,
+    "attacks": [
+      {
+        "name": "Primary",
+        "speed": 12,
+        "crit_chance": 11,
+        "crit_mult": 2.9,
+        "status_chance": 43,
+        "shot_type": "Discharge",
+        "falloff": {
+          "start": 9,
+          "end": 19,
+          "reduction": 0.2
+        },
+        "damage": {
+          "corrosive": 53
+        }
+      },
+      {
+        "name": "Partial Reload Impact",
+        "crit_chance": 11,
+        "crit_mult": 2.9,
+        "status_chance": 43,
+        "damage": {
+          "impact": 11
+        }
+      },
+      {
+        "name": "Partial Reload Explosion",
+        "radius": 500,
+        "crit_chance": 11,
+        "crit_mult": 2.9,
+        "status_chance": 43,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 5,
+          "reduction": 0.5
+        },
+        "damage": {
+          "corrosive": 203
+        }
+      },
+      {
+        "name": "Reload From Empty Impact",
+        "crit_chance": 31,
+        "crit_mult": 2.9,
+        "status_chance": 59,
+        "damage": {
+          "impact": 11
+        }
+      },
+      {
+        "name": "Reload From Empty Explosion",
+        "radius": 700,
+        "crit_chance": 31,
+        "crit_mult": 2.9,
+        "status_chance": 59,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 7,
+          "reduction": 0.5
+        },
+        "damage": {
+          "corrosive": 1997
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -15951,7 +16877,6 @@
     "criticalChance": 0.11,
     "criticalMultiplier": 2.9000001,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Splatter enemies with a short-range stream of corrosive bile and then toss the ammo bladder as a grenade when reloading. The emptier the pistol’s ammo bladder, the more potent its damage. A fully empty bladder packs the biggest punch.",
     "disposition": 3,
     "fireRate": 12.000001,
@@ -16015,6 +16940,21 @@
   {
     "accuracy": 33.333332,
     "ammo": 420,
+    "attacks": [
+      {
+        "speed": 8.33,
+        "crit_chance": 6,
+        "crit_mult": 1.6,
+        "status_chance": 20,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 5.2,
+          "puncture": 20.8
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -16070,7 +17010,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 1.6,
     "damagePerShot": [ 5.2000003, 20.800001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Compact and deadly, the Cestra discharges bolts of energy at an increasingly rapid rate.",
     "disposition": 5,
     "fireRate": 8.333334,
@@ -16240,6 +17179,53 @@
   {
     "accuracy": 1.8181819,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Projectile Impact",
+        "speed": 4.67,
+        "crit_chance": 8,
+        "crit_mult": 1.4,
+        "status_chance": 32,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 50
+        }
+      },
+      {
+        "name": "Projectile Explosion",
+        "radius": 70,
+        "speed": 4.67,
+        "crit_chance": 8,
+        "crit_mult": 1.4,
+        "status_chance": 32,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 0.7,
+          "reduction": 0.2
+        },
+        "damage": {
+          "gas": 41
+        }
+      },
+      {
+        "name": "Burst Mode",
+        "speed": 10.05,
+        "crit_chance": 8,
+        "crit_mult": 1.4,
+        "status_chance": 32,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 2.9,
+          "slash": 38.9,
+          "puncture": 30.2
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -16295,7 +17281,6 @@
     "criticalChance": 0.079999998,
     "criticalMultiplier": 1.4,
     "damagePerShot": [ 50, 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Sentient tech merges with Corpus design to deliver this lethal sidearm. Fully automatic, it fires ricocheting, homing projectiles that release small clouds of Gas on impact. Alt-fire to release the entire magazine without homing as a single burst.",
     "disposition": 2,
     "fireRate": 4.666667,
@@ -16384,6 +17369,20 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 12,
+        "crit_mult": 1.8,
+        "status_chance": 30,
+        "shot_type": "Discharge",
+        "damage": {
+          "slash": 5,
+          "puncture": 8,
+          "radiation": 10
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -16439,7 +17438,6 @@
     "criticalChance": 0.12,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 0, 8, 5, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Forgo ammunition with the regenerating energy disc in this plasma throwing pistol.",
     "disposition": 4,
     "fireRate": 12.000001,
@@ -16551,6 +17549,22 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 16,
+        "crit_mult": 1.6,
+        "status_chance": 16,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 2.9,
+          "slash": 8.7,
+          "puncture": 46.4
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -16625,7 +17639,6 @@
     "criticalChance": 0.16,
     "criticalMultiplier": 1.6,
     "damagePerShot": [ 2.9000001, 46.400002, 8.6999989, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Used by The Stalker, Despair throwing blades have a mono-filament edge, sharp enough to penetrate a Warframe.",
     "disposition": 4,
     "fireRate": 3.3333335,
@@ -16752,6 +17765,25 @@
   {
     "accuracy": 7.1428571,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 4,
+        "crit_mult": 1.5,
+        "status_chance": 12.86,
+        "shot_type": "Projectile",
+        "shot_speed": 150,
+        "flight": 150,
+        "falloff": {
+          "start": 13,
+          "end": 22,
+          "reduction": 0.6231
+        },
+        "damage": {
+          "radiation": 40
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -16819,7 +17851,6 @@
     "criticalChance": 0.039999999,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The sleek lines of the Detron conceal its ferocious nature. The hand cannon's semi-automatic action takes down enemies with speed and efficiency.",
     "disposition": 4,
     "fireRate": 3.3333335,
@@ -16987,11 +18018,24 @@
   {
     "accuracy": 15.384615,
     "ammo": 400,
+    "attacks": [
+      {
+        "speed": 20,
+        "crit_chance": 14,
+        "crit_mult": 2,
+        "status_chance": 28,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 2.4,
+          "slash": 2.4,
+          "puncture": 11.2
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.14,
     "criticalMultiplier": 2,
     "damagePerShot": [ 2.4000001, 11.2, 2.3999996, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A gift from the Lotus to commemorate the anniversary of the first Tenno waking from Cryo stasis.",
     "disposition": 5,
     "fireRate": 20.000002,
@@ -17085,6 +18129,21 @@
   {
     "accuracy": 20,
     "ammo": 480,
+    "attacks": [
+      {
+        "speed": 18.75,
+        "crit_chance": 6,
+        "crit_mult": 1.6,
+        "status_chance": 20,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 5.2,
+          "puncture": 20.8
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -17122,8 +18181,22 @@
         "itemCount": 1,
         "imageName": "cestra.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 8.33,
+            "crit_chance": 6,
+            "crit_mult": 1.6,
+            "status_chance": 20,
+            "shot_type": "Projectile",
+            "shot_speed": 100,
+            "flight": 100,
+            "damage": {
+              "impact": 5.2,
+              "puncture": 20.8
+            }
+          }
+        ],
         "ammo": 420,
-        "damageTypes": {},
         "marketCost": 175,
         "polarities": [  ],
         "tags": [ "Corpus" ],
@@ -17164,8 +18237,22 @@
         "itemCount": 1,
         "imageName": "cestra.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 8.33,
+            "crit_chance": 6,
+            "crit_mult": 1.6,
+            "status_chance": 20,
+            "shot_type": "Projectile",
+            "shot_speed": 100,
+            "flight": 100,
+            "damage": {
+              "impact": 5.2,
+              "puncture": 20.8
+            }
+          }
+        ],
         "ammo": 420,
-        "damageTypes": {},
         "marketCost": 175,
         "polarities": [  ],
         "tags": [ "Corpus" ],
@@ -17206,7 +18293,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 1.6,
     "damagePerShot": [ 5.2000003, 20.800001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Wield two Cestras to unleash a dual torrent of high energy bolts.",
     "disposition": 5,
     "fireRate": 18.750002,
@@ -17326,6 +18412,20 @@
   {
     "accuracy": 16,
     "ammo": 72,
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 37,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 7.5,
+          "slash": 7.5,
+          "puncture": 60
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -17381,7 +18481,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 7.5, 60, 7.4999971, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Brain-strikes excite this bioweapon, causing it to rapidly release toxic munitions.",
     "disposition": 5,
     "fireRate": 1,
@@ -17477,6 +18576,18 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 8,
+        "crit_chance": 3,
+        "crit_mult": 1.5,
+        "status_chance": 41,
+        "shot_type": "Discharge",
+        "damage": {
+          "toxin": 35
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -17532,7 +18643,6 @@
     "criticalChance": 0.029999999,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A living weapon, the infested Embolist pistol kills its victims with an acidic venomous gas.",
     "disposition": 5,
     "fireRate": 8,
@@ -17667,6 +18777,55 @@
   {
     "accuracy": 80,
     "ammo": 60,
+    "attacks": [
+      {
+        "name": "Charged Shot",
+        "crit_chance": 48,
+        "crit_mult": 2.6,
+        "status_chance": 4,
+        "charge_time": 0.4,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 120,
+          "slash": 135,
+          "puncture": 45
+        }
+      },
+      {
+        "name": "Uncharged Direct Hit",
+        "speed": 1.5,
+        "crit_chance": 2,
+        "crit_mult": 1.2,
+        "status_chance": 50,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 40,
+          "slash": 30,
+          "puncture": 30
+        }
+      },
+      {
+        "name": "Uncharged AoE",
+        "radius": 800,
+        "speed": 1.5,
+        "crit_chance": 2,
+        "crit_mult": 1.2,
+        "status_chance": 50,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 8,
+          "reduction": 0.8
+        },
+        "damage": {
+          "blast": 20
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -17770,7 +18929,6 @@
     "criticalChance": 0.02,
     "criticalMultiplier": 1.2,
     "damagePerShot": [ 120, 45, 135, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Sevagoth's wrist-mounted sidearm fires a chilling slow-moving slab, guaranteed to slow enemies for easier marksmanship. Charge the shot to fire a punishing high-velocity, high critical chance slab that punches through barriers. Deals additional headshot damage in Sevagoth's hands.",
     "disposition": 1,
     "fireRate": 1.5000001,
@@ -17858,6 +19016,39 @@
   {
     "accuracy": 100,
     "ammo": 40,
+    "attacks": [
+      {
+        "name": "Slug",
+        "speed": 1.5,
+        "crit_chance": 30,
+        "crit_mult": 2.5,
+        "status_chance": 2,
+        "shot_type": "Projectile",
+        "shot_speed": 180,
+        "flight": 180,
+        "damage": {
+          "impact": 292.5,
+          "slash": 16.25,
+          "puncture": 16.25
+        }
+      },
+      {
+        "name": "Buckshot",
+        "crit_chance": 2,
+        "crit_mult": 2,
+        "status_chance": 9,
+        "falloff": {
+          "start": 6,
+          "end": 12,
+          "reduction": 0.9886
+        },
+        "damage": {
+          "impact": 4.4,
+          "slash": 66,
+          "puncture": 17.6
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -18273,7 +19464,6 @@
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2.5,
     "damagePerShot": [ 292.5, 16.25, 16.250004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Banshee Prime’s signature shotgun is an instrument of devastation that fires both focused and broad shots.",
     "disposition": 2,
     "estimatedVaultDate": "2018 12 12",
@@ -18396,6 +19586,20 @@
   {
     "accuracy": 22.222221,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 12,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 3,
+          "slash": 3,
+          "puncture": 14
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -18451,7 +19655,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 3, 14, 2.9999995, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Furis delivers a high damage output in a short time frame thanks to its high rate of fire.",
     "disposition": 5,
     "fireRate": 10.000001,
@@ -18651,6 +19854,36 @@
   {
     "accuracy": 100,
     "ammo": 72,
+    "attacks": [
+      {
+        "name": "Full Auto Mode",
+        "speed": 2.83,
+        "crit_chance": 23,
+        "crit_mult": 1.7,
+        "status_chance": 29,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "slash": 46.2,
+          "puncture": 30.8
+        }
+      },
+      {
+        "name": "Semi-Auto Mode",
+        "speed": 1.5,
+        "crit_chance": 3,
+        "crit_mult": 1.5,
+        "status_chance": 12.3,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "slash": 46.2,
+          "puncture": 30.8
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -18706,7 +19939,6 @@
     "criticalChance": 0.23,
     "criticalMultiplier": 1.7,
     "damagePerShot": [ 0, 30.800001, 46.200001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Silently lacerate enemies with Gara's signature glass throwing knives. Increased Projectile Speed when wielded by Gara.",
     "disposition": 5,
     "fireRate": 2.8333335,
@@ -18762,6 +19994,18 @@
   {
     "accuracy": 100,
     "ammo": 240,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 8,
+        "crit_mult": 1.8,
+        "status_chance": 20,
+        "shot_type": "Discharge",
+        "damage": {
+          "magnetic": 16
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -18817,7 +20061,6 @@
     "criticalChance": 0.079999998,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Designed to quickly vaporize minerals for content analysis, users discovered its powerful beam was equally efficient at dispatching hostiles.",
     "disposition": 4,
     "fireRate": 12.000001,
@@ -19090,6 +20333,22 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.67,
+        "crit_chance": 4,
+        "crit_mult": 1.6,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 2.6,
+          "slash": 7.8,
+          "puncture": 15.6
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -19145,7 +20404,6 @@
     "criticalChance": 0.039999999,
     "criticalMultiplier": 1.6,
     "damagePerShot": [ 2.6000001, 15.6, 7.7999988, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "As an alternative to Kunai, these Tenno throwing stars do cause less Damage but they come with expanded Ammo Capacity and a higher Fire Rate.",
     "disposition": 4,
     "fireRate": 6.666667,
@@ -19321,6 +20579,22 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5.83,
+        "crit_chance": 6,
+        "crit_mult": 1.8,
+        "status_chance": 28,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 3.6,
+          "slash": 1.8,
+          "puncture": 30.6
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -19664,7 +20938,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 3.6000001, 30.6, 1.7999983, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "As deadly as any bullet without the associated noise or commotion.",
     "disposition": 4,
     "estimatedVaultDate": "2016 08 23",
@@ -19762,6 +21035,38 @@
   {
     "accuracy": 14.285714,
     "ammo": 320,
+    "attacks": [
+      {
+        "name": "Poison / Ice Quill",
+        "speed": 7,
+        "crit_chance": 24,
+        "crit_mult": 2.2,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 2.2,
+          "slash": 2.9,
+          "puncture": 31
+        }
+      },
+      {
+        "name": "Fire / Electric Quill",
+        "speed": 7,
+        "crit_chance": 24,
+        "crit_mult": 2.2,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 2.4,
+          "slash": 3.2,
+          "puncture": 34.4
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -19799,8 +21104,22 @@
         "itemCount": 1,
         "imageName": "bolto.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 6.83,
+            "crit_chance": 16,
+            "crit_mult": 2.4,
+            "status_chance": 2.2,
+            "shot_type": "Projectile",
+            "shot_speed": 75,
+            "flight": 75,
+            "damage": {
+              "impact": 4,
+              "puncture": 36
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 175,
         "polarities": [ "Vazarin" ],
         "tags": [ "Tenno" ],
@@ -19873,8 +21192,21 @@
             "type": "Coiling Viper"
           }
         ],
+        "attacks": [
+          {
+            "speed": 14.38,
+            "crit_chance": 15,
+            "crit_mult": 1.5,
+            "status_chance": 11,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 10.2,
+              "slash": 5.1,
+              "puncture": 1.7
+            }
+          }
+        ],
         "ammo": 420,
-        "damageTypes": {},
         "marketCost": 75,
         "polarities": [ "Madurai" ],
         "tags": [ "Grineer" ],
@@ -19896,7 +21228,6 @@
     "criticalChance": 0.23999999,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 2.1599998, 30.960001, 2.8799994, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Heat, cold, electricity, or toxin: choose an element and launch a flurry of deadly quills. This versatile sidearm is Khora’s signature weapon.",
     "disposition": 4,
     "fireRate": 7.0000005,
@@ -20009,6 +21340,20 @@
   {
     "accuracy": 32,
     "ammo": 10,
+    "attacks": [
+      {
+        "speed": 4,
+        "crit_chance": 20,
+        "crit_mult": 1.5,
+        "status_chance": 5,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 63,
+          "slash": 18,
+          "puncture": 69
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -20064,7 +21409,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 62.999996, 69, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Ring the death knell. Headshots briefly turn this scoped pistol into a rapid-fire, Critical Damage fiend that uses no ammo. When used by Harrow, Knell has a 2-round mag.",
     "disposition": 4,
     "fireRate": 4,
@@ -20194,6 +21538,44 @@
   {
     "accuracy": 8,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Single Pellet",
+        "speed": 1,
+        "crit_chance": 11,
+        "crit_mult": 2,
+        "status_chance": 69,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 12,
+          "end": 24,
+          "reduction": 0.8333
+        },
+        "damage": {
+          "impact": 6,
+          "slash": 18,
+          "puncture": 6
+        }
+      },
+      {
+        "name": "Fully Spooled",
+        "speed": 5,
+        "crit_chance": 11,
+        "crit_mult": 2,
+        "status_chance": 13.8,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 12,
+          "end": 24,
+          "reduction": 0.8333
+        },
+        "damage": {
+          "impact": 6,
+          "slash": 18,
+          "puncture": 6
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -20256,7 +21638,6 @@
     "criticalChance": 0.11,
     "criticalMultiplier": 2,
     "damagePerShot": [ 6, 6, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Like the larger Kohm, this hand-shotgun doubles its volley with each successive shot.",
     "disposition": 5,
     "fireRate": 5.0000005,
@@ -20360,6 +21741,35 @@
   {
     "accuracy": 3.7735848,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 6,
+        "crit_mult": 1.8,
+        "status_chance": 30,
+        "shot_type": "Projectile",
+        "damage": {
+          "viral": 2
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 240,
+        "speed": 3.33,
+        "crit_chance": 6,
+        "crit_mult": 1.8,
+        "status_chance": 30,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 2.4,
+          "reduction": 0.2
+        },
+        "damage": {
+          "viral": 42
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -20406,7 +21816,6 @@
     "criticalChance": 0.059999999,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Launch a volley of virulent, hyper-pressurized, water globules that envelope targets and explode with torrential force. Yareli's signature pistol.",
     "disposition": 1,
     "fireRate": 3.3333335,
@@ -20477,6 +21886,20 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 4.42,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 13,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 36.8,
+          "slash": 6.1,
+          "puncture": 6.1
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -20532,7 +21955,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 36.75, 6.125, 6.125, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Kraken is a heavy pistol of Grineer design that fires two quick shots with a single pull of the trigger. Skilled marksmen will appreciate the value in this deadly accurate weapon.",
     "disposition": 5,
     "fireRate": 4.4155846,
@@ -20678,6 +22100,45 @@
   {
     "accuracy": 26.666666,
     "ammo": 15,
+    "attacks": [
+      {
+        "name": "Rocket Impact",
+        "speed": 2,
+        "crit_chance": 17,
+        "crit_mult": 2.3,
+        "status_chance": 19,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 200
+        }
+      },
+      {
+        "name": "Rocket Explosion",
+        "radius": 390,
+        "shot_type": "AoE",
+        "shot_speed": null,
+        "flight": "???",
+        "falloff": {
+          "start": 0,
+          "end": 3.9,
+          "reduction": 0.4
+        },
+        "damage": {
+          "blast": 300
+        }
+      },
+      {
+        "name": "Cluster Bombs",
+        "crit_chance": 17,
+        "crit_mult": 2.3,
+        "status_chance": 19,
+        "damage": {
+          "blast": 75
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -20732,8 +22193,21 @@
             "type": "Cyclone Kraken"
           }
         ],
+        "attacks": [
+          {
+            "speed": 4.42,
+            "crit_chance": 5,
+            "crit_mult": 2,
+            "status_chance": 13,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 36.8,
+              "slash": 6.1,
+              "puncture": 6.1
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 120,
         "polarities": [  ],
         "tags": [ "Grineer" ],
@@ -20773,7 +22247,6 @@
     "criticalChance": 0.17,
     "criticalMultiplier": 2.3,
     "damagePerShot": [ 200, 0, 0, 0, 0, 0, 0, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Rain hell on the enemy with this handheld cluster-rocket launcher.",
     "disposition": 4,
     "fireRate": 2,
@@ -20901,6 +22374,22 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 8,
+        "crit_mult": 1.6,
+        "status_chance": 8,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 4.6,
+          "slash": 6.9,
+          "puncture": 34.5
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -20956,7 +22445,6 @@
     "criticalChance": 0.079999998,
     "criticalMultiplier": 1.6,
     "damagePerShot": [ 4.5999999, 34.5, 6.8999987, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Kunai throwing daggers offer a silent alternative to the traditional side arm. Perfect for assassins.",
     "disposition": 5,
     "fireRate": 3.3333335,
@@ -21157,6 +22645,25 @@
   {
     "accuracy": 7.6923075,
     "ammo": 221,
+    "attacks": [
+      {
+        "speed": 5.83,
+        "crit_chance": 29,
+        "crit_mult": 2,
+        "status_chance": 11.1,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 10,
+          "end": 20,
+          "reduction": 0.96
+        },
+        "damage": {
+          "impact": 5.85,
+          "slash": 3.9,
+          "puncture": 3.25
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -21176,7 +22683,6 @@
     "criticalChance": 0.28999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 5.8499999, 3.25, 3.9000001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This Lich-variant semi-automatic hand cannon delivers a lot of punch in a small package. Higher fire rate, magazine capacity and reload speed. ",
     "disposition": 3,
     "fireRate": 5.8333335,
@@ -21214,6 +22720,28 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.77,
+        "crit_chance": 21,
+        "crit_mult": 2.3,
+        "status_chance": 29,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 32.25,
+          "slash": 5.38,
+          "puncture": 5.38
+        }
+      },
+      {
+        "speed": 16.28,
+        "damage": {
+          "impact": 32.25,
+          "slash": 5.38,
+          "puncture": 5.38
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -21233,7 +22761,6 @@
     "criticalChance": 0.20999999,
     "criticalMultiplier": 2.3,
     "damagePerShot": [ 32.25, 5.375, 5.375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A custom variant that fires three quick shots with a single pull of the trigger, or can alt-fire burst the remainder of its magazine. Higher Fire Rate, Magazine Capacity and Reload Speed.",
     "disposition": 3,
     "fireRate": 6.7729087,
@@ -21271,6 +22798,18 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 7,
+        "crit_mult": 5,
+        "status_chance": 50,
+        "shot_type": "Discharge",
+        "damage": {
+          "radiation": 21
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -21290,7 +22829,6 @@
     "criticalChance": 0.07,
     "criticalMultiplier": 5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A highly-optimized Nukor that allows for the weapon’s microwave field to hit up to two additional targets.",
     "disposition": 1,
     "fireRate": 10.000001,
@@ -21362,6 +22900,40 @@
   {
     "accuracy": 16,
     "ammo": 27,
+    "attacks": [
+      {
+        "name": "Projectile Impact",
+        "speed": 2.5,
+        "crit_chance": 21,
+        "crit_mult": 1.9,
+        "status_chance": 33,
+        "shot_type": "Projectile",
+        "shot_speed": 200,
+        "flight": 200,
+        "damage": {
+          "impact": 26.2,
+          "slash": 36.7,
+          "puncture": 68.1
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 230,
+        "speed": 2.5,
+        "crit_chance": 21,
+        "crit_mult": 1.9,
+        "status_chance": 33,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 2.3,
+          "reduction": 0.3
+        },
+        "damage": {
+          "corrosive": 69
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -21381,7 +22953,6 @@
     "criticalChance": 0.20999999,
     "criticalMultiplier": 1.9,
     "damagePerShot": [ 26.200001, 68.119995, 36.680004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This variant pistol has higher fire rate and magazine capacity. Superior zoom capabilities plus projectiles have a small Corrosive burst.",
     "disposition": 3,
     "fireRate": 2.5000002,
@@ -21445,6 +23016,20 @@
   {
     "accuracy": 36.363636,
     "ammo": 684,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 23,
+        "crit_mult": 1.9,
+        "status_chance": 31,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 11.6,
+          "slash": 12.7,
+          "puncture": 2.7
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -21464,7 +23049,6 @@
     "criticalChance": 0.23,
     "criticalMultiplier": 1.9,
     "damagePerShot": [ 11.610001, 2.7, 12.69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Double-fist rapid-fire bursts of pain with these dual-wield variants of the Grineer submachine gun. Higher Fire Rate and Magazine Capacity.",
     "disposition": 3,
     "fireRate": 10.000001,
@@ -21502,11 +23086,24 @@
   {
     "accuracy": 18.181818,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.67,
+        "crit_chance": 10,
+        "crit_mult": 1.8,
+        "status_chance": 6,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 7.5,
+          "slash": 15,
+          "puncture": 7.5
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.1,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 7.5, 7.5, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Lato is a highly accurate pistol used by the Tenno everywhere.",
     "disposition": 5,
     "drops": [
@@ -21725,11 +23322,24 @@
   {
     "accuracy": 18.181818,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 6.67,
+        "crit_chance": 30,
+        "crit_mult": 2,
+        "status_chance": 20,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 4.8,
+          "slash": 33.6,
+          "puncture": 9.6
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 4.8000002, 9.6000004, 33.599998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Lato is a highly accurate pistol used by the Tenno everywhere. Prime model offers slightly increased damage.",
     "disposition": 5,
     "fireRate": 6.666667,
@@ -21791,6 +23401,20 @@
   {
     "accuracy": 22.988506,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5,
+        "crit_chance": 26,
+        "crit_mult": 2.4,
+        "status_chance": 10,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 6.9,
+          "slash": 27.6,
+          "puncture": 11.5
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -21849,7 +23473,6 @@
     "criticalChance": 0.25999999,
     "criticalMultiplier": 2.4000001,
     "damagePerShot": [ 6.9000001, 11.5, 27.6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A special version of the standard Lato pistol with a slower Fire Rate but offering higher Accuracy and Damage values. The Lato Vandal has been customized by the Tenno with a blue-green metallic finish and Lotus branding on the grips.",
     "disposition": 5,
     "fireRate": 5.0000005,
@@ -21929,11 +23552,24 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 1.08,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 13,
+          "slash": 13,
+          "puncture": 104
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
     "damagePerShot": [ 13, 104, 12.999995, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Lex is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
     "disposition": 4,
     "drops": [
@@ -23479,6 +25115,20 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 2.08,
+        "crit_chance": 25,
+        "crit_mult": 2,
+        "status_chance": 25,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 15,
+          "slash": 15,
+          "puncture": 120
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -24854,7 +26504,6 @@
     "criticalChance": 0.25,
     "criticalMultiplier": 2,
     "damagePerShot": [ 15, 120, 14.999994, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Lex Prime is a powerful, accurate pistol that has a low Fire Rate and Magazine Capacity. Very efficient at long range.",
     "disposition": 4,
     "estimatedVaultDate": "never",
@@ -25001,6 +26650,20 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5.83,
+        "crit_chance": 22,
+        "crit_mult": 2,
+        "status_chance": 22,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 34.2,
+          "slash": 20.9,
+          "puncture": 20.9
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -25056,7 +26719,6 @@
     "criticalChance": 0.22,
     "criticalMultiplier": 2,
     "damagePerShot": [ 34.200001, 20.9, 20.899998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The versatile Magnus revolver is a lethal sidearm for any Tenno.",
     "disposition": 5,
     "fireRate": 5.8333335,
@@ -25161,11 +26823,29 @@
   {
     "accuracy": 13.333333,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 8,
+        "crit_mult": 1.5,
+        "status_chance": 13.71,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "falloff": {
+          "start": 16,
+          "end": 30,
+          "reduction": 0.625
+        },
+        "damage": {
+          "radiation": 40
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.079999998,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "For Orokin-era smugglers, this fearsome handheld shotgun was a favored tool for 'dispute resolution'.",
     "disposition": 3,
     "fireRate": 3.3333335,
@@ -25236,6 +26916,20 @@
   {
     "accuracy": 10,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 2,
+        "crit_chance": 15,
+        "crit_mult": 1.5,
+        "status_chance": 30,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 80,
+          "slash": 64,
+          "puncture": 16
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -25291,7 +26985,6 @@
     "criticalChance": 0.15000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 80, 16, 63.999996, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Marelok combines the stopping power of a rifle with the portability of a pistol.",
     "disposition": 4,
     "fireRate": 2,
@@ -25435,11 +27128,24 @@
   {
     "accuracy": 22.222221,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 8.33,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 1,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 1.95,
+          "slash": 1.95,
+          "puncture": 9.1
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 1.95, 9.0999994, 1.9499997, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The MK1-Furis are the standard issue automatic pistol for all Tenno.",
     "disposition": 5,
     "fireRate": 8.333334,
@@ -25475,11 +27181,26 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 2.5,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 4,
+          "slash": 6,
+          "puncture": 30
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 4, 30, 5.999999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The MK1-Kunai is the standard issue throwing knives for all Tenno.",
     "disposition": 5,
     "fireRate": 3.3333335,
@@ -25515,6 +27236,18 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 3,
+        "crit_mult": 4,
+        "status_chance": 29,
+        "shot_type": "Discharge",
+        "damage": {
+          "radiation": 22
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -25570,7 +27303,6 @@
     "criticalChance": 0.029999999,
     "criticalMultiplier": 4,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Creates and focuses a high-frequency field of microwaves, literally cooking the target from within.",
     "disposition": 5,
     "fireRate": 10.000001,
@@ -25738,6 +27470,19 @@
   {
     "accuracy": 100,
     "ammo": 300,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 16,
+        "crit_mult": 1.8,
+        "status_chance": 24,
+        "shot_type": "Discharge",
+        "damage": {
+          "puncture": 1,
+          "radiation": 10
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -25793,7 +27538,6 @@
     "criticalChance": 0.16,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 0, 1, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A weapon that reaches for its next victim even as it kills. With each takedown, this pistol spawns an energy tendril that reaches for a nearby target.",
     "disposition": 4,
     "fireRate": 12.000001,
@@ -25881,6 +27625,28 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3,
+        "crit_chance": 30,
+        "crit_mult": 2.8,
+        "status_chance": 10,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 18,
+          "slash": 36,
+          "puncture": 18
+        }
+      },
+      {
+        "speed": 7.69,
+        "damage": {
+          "impact": 18,
+          "slash": 36,
+          "puncture": 18
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -25936,7 +27702,6 @@
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2.8,
     "damagePerShot": [ 18, 18, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Octavia's pistol hammers foes with single shots or a rapid volley of bullets. When wielded by Octavia, alt-fire Headshot Kills increase Reload Speed.",
     "disposition": 3,
     "fireRate": 3.0000002,
@@ -26064,6 +27829,31 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3,
+        "crit_chance": 30,
+        "crit_mult": 2.8,
+        "status_chance": 24,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 26,
+          "slash": 52,
+          "puncture": 26
+        }
+      },
+      {
+        "speed": 7.69,
+        "crit_chance": 30,
+        "crit_mult": 2.8,
+        "status_chance": 24,
+        "damage": {
+          "impact": 26,
+          "slash": 52,
+          "puncture": 26
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -26191,7 +27981,6 @@
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2.8,
     "damagePerShot": [ 26, 26, 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Pound the beat for a dance of death with Octavia's signature prime pistol.",
     "disposition": 1,
     "estimatedVaultDate": "2022 11 17",
@@ -26240,6 +28029,19 @@
   {
     "accuracy": 50,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 32,
+        "crit_mult": 3,
+        "status_chance": 4,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "puncture": 26,
+          "heat": 20
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -26295,7 +28097,6 @@
     "criticalChance": 0.31999999,
     "criticalMultiplier": 3,
     "damagePerShot": [ 0, 26, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Cultivate a meaningful relationship with this deceptively simple battery-powered pistol. The Plinx rewards attention and investment from the wise.",
     "disposition": 4,
     "fireRate": 3.3333335,
@@ -26376,6 +28177,35 @@
   {
     "accuracy": 100,
     "ammo": 20,
+    "attacks": [
+      {
+        "name": "Spore Impact",
+        "speed": 2.08,
+        "crit_chance": 1,
+        "crit_mult": 2,
+        "status_chance": 35,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "toxin": 50
+        }
+      },
+      {
+        "name": "Poison Cloud",
+        "duration": 500,
+        "radius": 360,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.6,
+          "reduction": 0
+        },
+        "damage": {
+          "toxin": 20
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -26431,7 +28261,6 @@
     "criticalChance": 0.0099999998,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "These festering sacs of pus and gas burst violently on impact.",
     "disposition": 4,
     "fireRate": 2.0833335,
@@ -26584,11 +28413,42 @@
   {
     "accuracy": 26.666666,
     "ammo": 18,
+    "attacks": [
+      {
+        "name": "Single Rocket Impact",
+        "crit_chance": 18,
+        "crit_mult": 2.2,
+        "status_chance": 26,
+        "charge_time": 0.2,
+        "shot_type": "Projectile",
+        "shot_speed": 150,
+        "flight": 150,
+        "damage": {
+          "blast": 200
+        }
+      },
+      {
+        "name": "Single Rocket Explosion",
+        "radius": 360,
+        "crit_chance": 18,
+        "crit_mult": 2.2,
+        "status_chance": 26,
+        "charge_time": 0.2,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.6,
+          "reduction": 0.4
+        },
+        "damage": {
+          "blast": 250
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.18000001,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 450, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Imbued with the finest Prisma crystal, this refined Angstrum features boosted charge and reload speeds.",
     "disposition": 4,
     "fireRate": 2,
@@ -26650,11 +28510,26 @@
   {
     "accuracy": 36.363636,
     "ammo": 600,
+    "attacks": [
+      {
+        "speed": 8.83,
+        "crit_chance": 23,
+        "crit_mult": 1.9,
+        "status_chance": 23,
+        "shot_type": "Projectile",
+        "shot_speed": 65,
+        "flight": 65,
+        "damage": {
+          "impact": 3,
+          "slash": 11.3,
+          "puncture": 12.7
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.23,
     "criticalMultiplier": 1.9,
     "damagePerShot": [ 2.97, 12.69, 11.34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Fused with prisma crystals, these pristine Grineer sidearms are sure to intimidate any foe.",
     "disposition": 4,
     "fireRate": 8.833334,
@@ -26708,6 +28583,25 @@
   {
     "accuracy": 5,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 4.17,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 2.5,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 15,
+          "end": 30,
+          "reduction": 0.7273
+        },
+        "damage": {
+          "impact": 2.2,
+          "slash": 17.6,
+          "puncture": 2.2
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -26763,7 +28657,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
     "damagePerShot": [ 2.2, 2.2, 17.6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Chew through the enemy with this vicious automatic hand shotgun.",
     "disposition": 3,
     "fireRate": 4.166667,
@@ -26883,6 +28776,25 @@
   {
     "accuracy": 6.060606,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 4,
+        "crit_chance": 24,
+        "crit_mult": 2.2,
+        "status_chance": 3.6,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 18,
+          "end": 36,
+          "reduction": 0.75
+        },
+        "damage": {
+          "impact": 1.92,
+          "slash": 20.16,
+          "puncture": 1.92
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -27370,7 +29282,6 @@
     "criticalChance": 0.23999999,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 1.92, 1.92, 20.16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Three kills in rapid succession to summon a second ethereal Pyrana for twice the deadly punch.",
     "disposition": 1,
     "estimatedVaultDate": "2020 03 31",
@@ -27460,6 +29371,36 @@
   {
     "accuracy": 40,
     "ammo": 504,
+    "attacks": [
+      {
+        "name": "Auto",
+        "speed": 15,
+        "crit_chance": 13,
+        "crit_mult": 1.5,
+        "status_chance": 27,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 9,
+          "slash": 7,
+          "puncture": 2,
+          "electricity": 11
+        }
+      },
+      {
+        "name": "Burst",
+        "speed": 10,
+        "crit_chance": 27,
+        "crit_mult": 2.5,
+        "status_chance": 19,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 9,
+          "slash": 7,
+          "puncture": 2,
+          "electricity": 11
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -27515,7 +29456,6 @@
     "criticalChance": 0.13,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 9, 2, 7, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A compact four-barreled design packing a self-charging capacitor that discharges upon every reload from empty. Features auto hip-fire and aimed fire is semi-auto, four-shot instant burst.",
     "disposition": 4,
     "fireRate": 15.000001,
@@ -27622,11 +29562,43 @@
   {
     "accuracy": 4,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Burst Shot",
+        "speed": 11.43,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 7.5,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 18.75,
+          "slash": 18.75,
+          "puncture": 37.5
+        }
+      },
+      {
+        "name": "Charged Shot",
+        "speed": 3.33,
+        "crit_chance": 20,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "charge_time": 1,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 15,
+          "slash": 15,
+          "puncture": 270
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 15, 270, 15.000004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This modified ballistica is the weapon of choice used by Red Veil Assassins to take out high-priority marks.",
     "disposition": 4,
     "fireRate": 3.3333335,
@@ -27720,11 +29692,30 @@
   {
     "accuracy": 100,
     "ammo": 18,
+    "attacks": [
+      {
+        "radius": 360,
+        "speed": 3.33,
+        "crit_chance": 24,
+        "crit_mult": 2,
+        "status_chance": 34,
+        "shot_type": "Projectile",
+        "shot_speed": 30,
+        "flight": 30,
+        "falloff": {
+          "start": 0,
+          "end": 3.6,
+          "reduction": 0.4
+        },
+        "damage": {
+          "electricity": 300
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.23999999,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This remotely detonated electrical trap is used by devotees of New Loka to protect their temples and shrines.",
     "disposition": 5,
     "fireRate": 3.3333335,
@@ -27794,11 +29785,25 @@
   {
     "accuracy": 20,
     "ammo": 480,
+    "attacks": [
+      {
+        "speed": 12.5,
+        "crit_chance": 16,
+        "crit_mult": 1.6,
+        "status_chance": 28,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": {
+          "impact": 5.6,
+          "puncture": 22.4
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.16,
     "criticalMultiplier": 1.6,
     "damagePerShot": [ 5.5999999, 22.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The favored side-arms of Perrin Sequence executives, these pistols have been modified to improve efficiency and killing potential.",
     "disposition": 4,
     "fireRate": 12.500001,
@@ -27868,6 +29873,22 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 2,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 13,
+        "shot_type": "Projectile",
+        "shot_speed": 200,
+        "flight": 200,
+        "damage": {
+          "impact": 33.67,
+          "slash": 33.67,
+          "puncture": 33.67
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -27935,7 +29956,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 33.666668, 33.666668, 33.666664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Captain Vor's prized Orokin-Grineer hybrid pistol has an average rate of fire, but it has high damage and superior zoom capabilities.",
     "disposition": 5,
     "fireRate": 2,
@@ -28062,6 +30082,71 @@
   {
     "accuracy": 22.222221,
     "ammo": 180,
+    "attacks": [
+      {
+        "name": "Primary-Fire",
+        "speed": 3.67,
+        "crit_chance": 30,
+        "crit_mult": 2.2,
+        "status_chance": 14,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 9.6,
+          "slash": 11.5,
+          "puncture": 26.9
+        }
+      },
+      {
+        "name": "Radial Attack",
+        "radius": 160,
+        "speed": 3.67,
+        "crit_chance": 30,
+        "crit_mult": 2.2,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 1.6,
+          "reduction": 0.2
+        },
+        "damage": {
+          "heat": 46
+        }
+      },
+      {
+        "name": "Lock-On Mode",
+        "speed": 1,
+        "crit_chance": 38,
+        "crit_mult": 3,
+        "status_chance": 26,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 19.2,
+          "slash": 23,
+          "puncture": 53.8
+        }
+      },
+      {
+        "name": "Lock-On Radial Attack",
+        "radius": 300,
+        "speed": 1,
+        "crit_chance": 38,
+        "crit_mult": 3,
+        "status_chance": 26,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3,
+          "reduction": 0.2
+        },
+        "damage": {
+          "heat": 480
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -28109,7 +30194,6 @@
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 9.6000004, 26.880001, 11.52, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "An ancient weapon designed by the Entrati. Primary fire siphons life essence from the target to fuel a devastating secondary fire. This large, weighty double-barreled pistol delivers twin projectiles that pack a punch, exploding on impact. Secondary fire puts the weapon in lock-on mode. Aim to lock onto multiple targets, then fire to unleash homing projectiles.",
     "disposition": 3,
     "fireRate": 3.6666665,
@@ -28180,11 +30264,24 @@
   {
     "accuracy": 20,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 7.39,
+        "crit_chance": 16,
+        "crit_mult": 2,
+        "status_chance": 6,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 21,
+          "slash": 4.5,
+          "puncture": 4.5
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.16,
     "criticalMultiplier": 2,
     "damagePerShot": [ 21, 4.5, 4.499999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Sicarus fires 3-round bursts, which provides a balance between the lethality of auto-pistols and the accuracy of semi-automatic pistols.",
     "disposition": 4,
     "drops": [
@@ -28488,6 +30585,20 @@
   {
     "accuracy": 25,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 9.38,
+        "crit_chance": 25,
+        "crit_mult": 2,
+        "status_chance": 20,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 20,
+          "slash": 15,
+          "puncture": 15
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -28687,7 +30798,6 @@
     "criticalChance": 0.25,
     "criticalMultiplier": 2,
     "damagePerShot": [ 20, 15.000001, 14.999998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Sicarus Prime is an ornamental firearm that fires rounds in rapid bursts, providing a balance between the lethality of auto-pistols and the accuracy of semi-automatic pistols.",
     "disposition": 3,
     "estimatedVaultDate": "2015 10 06",
@@ -28793,6 +30903,38 @@
   {
     "accuracy": 100,
     "ammo": 150,
+    "attacks": [
+      {
+        "name": "Projectile Impact",
+        "speed": 1.25,
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 0,
+        "shot_type": "Projectile",
+        "shot_speed": 80,
+        "flight": 80,
+        "falloff": {
+          "start": 0,
+          "end": 20,
+          "reduction": 0.8333
+        },
+        "damage": {
+          "impact": 150
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 500,
+        "speed": 1.25,
+        "crit_chance": 10,
+        "crit_mult": 2,
+        "status_chance": 25,
+        "shot_type": "AoE",
+        "damage": {
+          "impact": 50
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -28848,7 +30990,6 @@
     "criticalChance": 0.1,
     "criticalMultiplier": 2,
     "damagePerShot": [ 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Blasts targets with a massive wave of sonic energy. Results reported to be: 'Very Satisfying'.",
     "disposition": 4,
     "fireRate": 1.2500001,
@@ -29042,6 +31183,19 @@
   {
     "accuracy": 100,
     "ammo": 360,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 14,
+        "crit_mult": 2,
+        "status_chance": 22,
+        "shot_type": "Discharge",
+        "damage": {
+          "slash": 10.4,
+          "puncture": 7.6
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -29097,7 +31251,6 @@
     "criticalChance": 0.14,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 7.5599999, 10.440001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "While its intended design is for deep space construction, the concentrated laser beam of the Spectra is highly effective against organic and synthetic enemies.",
     "disposition": 5,
     "fireRate": 12.000001,
@@ -29377,6 +31530,19 @@
   {
     "accuracy": 100,
     "ammo": 400,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 28,
+        "shot_type": "Discharge",
+        "damage": {
+          "slash": 12.8,
+          "puncture": 9.2
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -29523,7 +31689,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 9.2399998, 12.760001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A special-order Corpus cutting tool for master crafters only. Features distinctive azurite plating and a focusing crystal of precision clarity and cut.",
     "disposition": 5,
     "fireRate": 12.000001,
@@ -29578,6 +31743,22 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 2.5,
+        "crit_chance": 30,
+        "crit_mult": 2,
+        "status_chance": 8,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 8.2,
+          "slash": 24.6,
+          "puncture": 49.2
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -29633,7 +31814,6 @@
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 8.1999998, 49.200001, 24.599997, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A flash of red ribbon is the last thing most victims of these throwing-daggers see.",
     "disposition": 4,
     "fireRate": 2.5000002,
@@ -29891,6 +32071,22 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 30,
+        "crit_mult": 3,
+        "status_chance": 14,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 6,
+          "slash": 6,
+          "puncture": 48
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -30426,7 +32622,6 @@
     "criticalChance": 0.30000001,
     "criticalMultiplier": 3,
     "damagePerShot": [ 6, 48, 5.9999981, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "These rare, braided throwing daggers were a favorite tool of high ranking Orokin assassins.",
     "disposition": 4,
     "estimatedVaultDate": "2017 12 12",
@@ -30532,6 +32727,64 @@
   {
     "accuracy": 16.666666,
     "ammo": 288,
+    "attacks": [
+      {
+        "name": "Uncharged Projectile",
+        "speed": 3.5,
+        "crit_chance": 14,
+        "crit_mult": 2.2,
+        "status_chance": 28,
+        "shot_type": "Projectile",
+        "shot_speed": 50,
+        "flight": 50,
+        "damage": {
+          "radiation": 44
+        }
+      },
+      {
+        "name": "Fully Charged Projectile",
+        "crit_chance": 14,
+        "crit_mult": 2.2,
+        "status_chance": 28,
+        "charge_time": 1,
+        "shot_type": "Projectile",
+        "shot_speed": 50,
+        "flight": 50,
+        "damage": {
+          "radiation": 44
+        }
+      },
+      {
+        "name": "Fully Charged Explosion",
+        "radius": 960,
+        "crit_chance": 14,
+        "crit_mult": 2.2,
+        "status_chance": 28,
+        "charge_time": 1,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 9.6,
+          "reduction": 0.9
+        },
+        "damage": {
+          "radiation": 106
+        }
+      },
+      {
+        "name": "Uncharged Explosion",
+        "radius": 240,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 2.4,
+          "reduction": 0.3
+        },
+        "damage": {
+          "radiation": 88
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -30587,7 +32840,6 @@
     "criticalChance": 0.14,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 150, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Send a massive charge of potential energy hurling toward unfortunate targets.",
     "disposition": 1,
     "fireRate": 3.5000002,
@@ -30828,6 +33080,20 @@
   {
     "accuracy": 16,
     "ammo": 399,
+    "attacks": [
+      {
+        "speed": 6.33,
+        "crit_chance": 23,
+        "crit_mult": 1.9,
+        "status_chance": 13,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 14.2,
+          "slash": 15.5,
+          "puncture": 3.3
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -30908,7 +33174,6 @@
     "criticalChance": 0.23,
     "criticalMultiplier": 1.9,
     "damagePerShot": [ 14.190001, 3.3, 15.509999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Inflict rapid-fire bursts of pain with this Grineer submachine gun.",
     "disposition": 5,
     "fireRate": 6.3333335,
@@ -30996,6 +33261,38 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Blob Impact",
+        "speed": 4,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 0,
+        "shot_type": "Projectile",
+        "shot_speed": 35,
+        "flight": 35,
+        "damage": {
+          "corrosive": 4
+        }
+      },
+      {
+        "name": "Blob Explosion",
+        "radius": 30,
+        "speed": 4,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 0.3,
+          "reduction": 0.3
+        },
+        "damage": {
+          "corrosive": 75
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -31051,7 +33348,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 79, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Firing a sticky, toxic, explosive compound, the Stug Gel Gun offers multiple ejection modes, delivering maximum damage in all situations.",
     "disposition": 5,
     "fireRate": 4,
@@ -31243,11 +33539,22 @@
   {
     "accuracy": 100,
     "ammo": 400,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 28,
+        "shot_type": "Discharge",
+        "damage": {
+          "magnetic": 20
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Deployed by the Cephalon Suda, once a data-analyzing instrument the Gammacor main focus is defense.",
     "disposition": 3,
     "fireRate": 12.000001,
@@ -31365,6 +33672,26 @@
   {
     "accuracy": 100,
     "ammo": 12,
+    "attacks": [
+      {
+        "radius": 400,
+        "speed": 3.33,
+        "crit_chance": 22,
+        "crit_mult": 2,
+        "status_chance": 26,
+        "shot_type": "Projectile",
+        "shot_speed": 50,
+        "flight": 50,
+        "falloff": {
+          "start": 0,
+          "end": 4,
+          "reduction": 0.5
+        },
+        "damage": {
+          "blast": 120
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -31420,7 +33747,6 @@
     "criticalChance": 0.22,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The claws of these tactical bombs dig into the target and detonate on command.",
     "disposition": 5,
     "fireRate": 3.3333335,
@@ -31794,11 +34120,25 @@
   {
     "accuracy": 26.666666,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 13,
+        "crit_mult": 2,
+        "status_chance": 29,
+        "shot_type": "Projectile",
+        "shot_speed": 75,
+        "flight": 75,
+        "damage": {
+          "impact": 4.7,
+          "puncture": 42.3
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.13,
     "criticalMultiplier": 2,
     "damagePerShot": [ 4.7000003, 42.299999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "For the Arbiters of Hexis these pistols are more than simple weapons, they are symbols of truth and discipline.",
     "disposition": 4,
     "fireRate": 10.000001,
@@ -31876,6 +34216,18 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 20,
+        "crit_mult": 1.8,
+        "status_chance": 40,
+        "shot_type": "Discharge",
+        "damage": {
+          "heat": 22
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -31895,7 +34247,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This reengineered Cycron features a refracting energy disc that can split off the main target, hitting up to 2 additional nearby targets.",
     "disposition": 1,
     "fireRate": 12.000001,
@@ -31933,6 +34284,25 @@
   {
     "accuracy": 20,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "falloff": {
+          "start": 13,
+          "end": 22,
+          "reduction": 0.308
+        },
+        "damage": {
+          "radiation": 26
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -31952,7 +34322,6 @@
     "criticalChance": 0.18000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Parvos Granum's engineers have made this already ferocious hand cannon even more deadly with the addition of an alternate fire mode that empties an entire clip in one devastating burst.",
     "disposition": 1,
     "fireRate": 3.3333335,
@@ -31990,6 +34359,22 @@
   {
     "accuracy": 100,
     "ammo": 460,
+    "attacks": [
+      {
+        "speed": 9.67,
+        "crit_chance": 36,
+        "crit_mult": 2.2,
+        "status_chance": 14,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 11.2,
+          "slash": 7.8,
+          "puncture": 9
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -32009,7 +34394,6 @@
     "criticalChance": 0.36000001,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 11.2, 8.96, 7.8399992, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Itemize and execute with this pair of auto-lock-on, homing-projectile pistols. Shoot from-hip for a more conventional pistol experience. The patented Granum Attaché System reloads the pistols when holstered.",
     "disposition": 1,
     "fireRate": 9.666667,
@@ -32057,6 +34441,35 @@
   {
     "accuracy": 12.5,
     "ammo": 80,
+    "attacks": [
+      {
+        "speed": 2.33,
+        "crit_chance": 26,
+        "crit_mult": 2.4,
+        "status_chance": 40,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 40,
+          "puncture": 20,
+          "heat": 60
+        }
+      },
+      {
+        "name": "Rocket Explosion",
+        "radius": 200,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 2,
+          "reduction": 0.2
+        },
+        "damage": {
+          "heat": 80
+        }
+      }
+    ],
     "buildPrice": 0,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -32076,7 +34489,6 @@
     "criticalChance": 0.25999999,
     "criticalMultiplier": 2.4000001,
     "damagePerShot": [ 40, 20, 0, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Dominate rivals with this pistol’s lightning fast rail-slugs. Head-shots speed up reload.",
     "disposition": 1,
     "fireRate": 2.3333335,
@@ -32114,6 +34526,20 @@
   {
     "accuracy": 28.571428,
     "ammo": 1200,
+    "attacks": [
+      {
+        "speed": 20,
+        "crit_chance": 25,
+        "crit_mult": 2.7,
+        "status_chance": 16.5,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 4,
+          "slash": 2.67,
+          "puncture": 3.33
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -32160,8 +34586,21 @@
         "itemCount": 1,
         "imageName": "grakata.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 20,
+            "crit_chance": 25,
+            "crit_mult": 2,
+            "status_chance": 20,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 4.4,
+              "slash": 2.9,
+              "puncture": 3.7
+            }
+          }
+        ],
         "ammo": 750,
-        "damageTypes": {},
         "marketCost": 125,
         "polarities": [  ],
         "tags": [ "Grineer" ],
@@ -32202,8 +34641,21 @@
         "itemCount": 1,
         "imageName": "grakata.png",
         "tradable": false,
+        "attacks": [
+          {
+            "speed": 20,
+            "crit_chance": 25,
+            "crit_mult": 2,
+            "status_chance": 20,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 4.4,
+              "slash": 2.9,
+              "puncture": 3.7
+            }
+          }
+        ],
         "ammo": 750,
-        "damageTypes": {},
         "marketCost": 125,
         "polarities": [  ],
         "tags": [ "Grineer" ],
@@ -32226,7 +34678,6 @@
     "criticalChance": 0.25,
     "criticalMultiplier": 2.7,
     "damagePerShot": [ 4, 3.3333299, 2.6666701, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "When one Grakata isn't enough, bring another for extra firepower.",
     "disposition": 4,
     "fireRate": 20.000002,
@@ -32322,6 +34773,22 @@
   {
     "accuracy": 16.666666,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5,
+        "crit_chance": 15,
+        "crit_mult": 1.5,
+        "status_chance": 15,
+        "shot_type": "Projectile",
+        "shot_speed": 65,
+        "flight": 65,
+        "damage": {
+          "impact": 12.33,
+          "slash": 12.33,
+          "puncture": 12.33
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -32384,7 +34851,6 @@
     "criticalChance": 0.15000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 12.333334, 12.333334, 12.333333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Designed as a pair, these Grineer sidearms fire projectiles at a slower rate but with greater force and accuracy.",
     "disposition": 4,
     "fireRate": 5.0000005,
@@ -32504,6 +34970,44 @@
   {
     "accuracy": 5.7142859,
     "ammo": 240,
+    "attacks": [
+      {
+        "name": "Single Pellet",
+        "speed": 1.334,
+        "crit_chance": 11,
+        "crit_mult": 2,
+        "status_chance": 69,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 12,
+          "end": 24,
+          "reduction": 0.8333
+        },
+        "damage": {
+          "impact": 6,
+          "slash": 18,
+          "puncture": 6
+        }
+      },
+      {
+        "name": "Fully Spooled",
+        "speed": 6.67,
+        "crit_chance": 11,
+        "crit_mult": 2,
+        "status_chance": 13.8,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 12,
+          "end": 24,
+          "reduction": 0.8333
+        },
+        "damage": {
+          "impact": 6,
+          "slash": 18,
+          "puncture": 6
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -32557,8 +35061,45 @@
         "itemCount": 1,
         "imageName": "kohmak.png",
         "tradable": false,
+        "attacks": [
+          {
+            "name": "Single Pellet",
+            "speed": 1,
+            "crit_chance": 11,
+            "crit_mult": 2,
+            "status_chance": 69,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 12,
+              "end": 24,
+              "reduction": 0.8333
+            },
+            "damage": {
+              "impact": 6,
+              "slash": 18,
+              "puncture": 6
+            }
+          },
+          {
+            "name": "Fully Spooled",
+            "speed": 5,
+            "crit_chance": 11,
+            "crit_mult": 2,
+            "status_chance": 13.8,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 12,
+              "end": 24,
+              "reduction": 0.8333
+            },
+            "damage": {
+              "impact": 6,
+              "slash": 18,
+              "puncture": 6
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 150,
         "polarities": [ "Vazarin" ],
         "tags": [ "Grineer" ],
@@ -32599,8 +35140,45 @@
         "itemCount": 1,
         "imageName": "kohmak.png",
         "tradable": false,
+        "attacks": [
+          {
+            "name": "Single Pellet",
+            "speed": 1,
+            "crit_chance": 11,
+            "crit_mult": 2,
+            "status_chance": 69,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 12,
+              "end": 24,
+              "reduction": 0.8333
+            },
+            "damage": {
+              "impact": 6,
+              "slash": 18,
+              "puncture": 6
+            }
+          },
+          {
+            "name": "Fully Spooled",
+            "speed": 5,
+            "crit_chance": 11,
+            "crit_mult": 2,
+            "status_chance": 13.8,
+            "shot_type": "Hit-Scan",
+            "falloff": {
+              "start": 12,
+              "end": 24,
+              "reduction": 0.8333
+            },
+            "damage": {
+              "impact": 6,
+              "slash": 18,
+              "puncture": 6
+            }
+          }
+        ],
         "ammo": 210,
-        "damageTypes": {},
         "marketCost": 150,
         "polarities": [ "Vazarin" ],
         "tags": [ "Grineer" ],
@@ -32623,7 +35201,6 @@
     "criticalChance": 0.11,
     "criticalMultiplier": 2,
     "damagePerShot": [ 6, 6, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Doubling their volley on each successive shot, the Twin Kohmaks decimate foes in seconds.",
     "disposition": 4,
     "fireRate": 6.666667,
@@ -32687,6 +35264,25 @@
   {
     "accuracy": 8,
     "ammo": 120,
+    "attacks": [
+      {
+        "speed": 2.5,
+        "crit_chance": 10,
+        "crit_mult": 2,
+        "status_chance": 6.6,
+        "shot_type": "Hit-Scan",
+        "falloff": {
+          "start": 10,
+          "end": 20,
+          "reduction": 0.7872
+        },
+        "damage": {
+          "impact": 18.8,
+          "slash": 4.7,
+          "puncture": 23.5
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -32742,7 +35338,6 @@
     "criticalChance": 0.1,
     "criticalMultiplier": 2,
     "damagePerShot": [ 18.800001, 23.5, 4.7000012, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "These twin barrels of destruction are the signature pistols of the Kuva Guardians.",
     "disposition": 4,
     "fireRate": 2.5000002,
@@ -32822,6 +35417,20 @@
   {
     "accuracy": 15.384615,
     "ammo": 420,
+    "attacks": [
+      {
+        "speed": 25,
+        "crit_chance": 15,
+        "crit_mult": 1.5,
+        "status_chance": 11,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 10.2,
+          "slash": 5.1,
+          "puncture": 1.7
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -32882,8 +35491,21 @@
             "type": "Coiling Viper"
           }
         ],
+        "attacks": [
+          {
+            "speed": 14.38,
+            "crit_chance": 15,
+            "crit_mult": 1.5,
+            "status_chance": 11,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 10.2,
+              "slash": 5.1,
+              "puncture": 1.7
+            }
+          }
+        ],
         "ammo": 420,
-        "damageTypes": {},
         "marketCost": 75,
         "polarities": [ "Madurai" ],
         "tags": [ "Grineer" ],
@@ -32937,8 +35559,21 @@
             "type": "Coiling Viper"
           }
         ],
+        "attacks": [
+          {
+            "speed": 14.38,
+            "crit_chance": 15,
+            "crit_mult": 1.5,
+            "status_chance": 11,
+            "shot_type": "Hit-Scan",
+            "damage": {
+              "impact": 10.2,
+              "slash": 5.1,
+              "puncture": 1.7
+            }
+          }
+        ],
         "ammo": 420,
-        "damageTypes": {},
         "marketCost": 75,
         "polarities": [ "Madurai" ],
         "tags": [ "Grineer" ],
@@ -32960,7 +35595,6 @@
     "criticalChance": 0.15000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 10.200001, 1.7, 5.0999994, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A Viper equipped in each hand.",
     "disposition": 5,
     "fireRate": 25.000002,
@@ -33048,6 +35682,20 @@
   {
     "accuracy": 11.111111,
     "ammo": 440,
+    "attacks": [
+      {
+        "speed": 25,
+        "crit_chance": 19,
+        "crit_mult": 2,
+        "status_chance": 9,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 14.4,
+          "slash": 1.8,
+          "puncture": 1.8
+        }
+      }
+    ],
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -33094,7 +35742,6 @@
     "criticalChance": 0.19,
     "criticalMultiplier": 2,
     "damagePerShot": [ 14.400001, 1.8000001, 1.7999994, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The uniquely styled Twin Vipers Wraith are a powerful variation on the standard akimbo machine-pistols.",
     "disposition": 5,
     "fireRate": 25.000002,
@@ -33131,6 +35778,23 @@
   {
     "accuracy": 100,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 2.5,
+        "crit_chance": 3,
+        "crit_mult": 1.5,
+        "status_chance": 50,
+        "shot_type": "Projectile",
+        "shot_speed": 75,
+        "flight": 75,
+        "damage": {
+          "impact": 9,
+          "slash": 17,
+          "puncture": 23,
+          "corrosive": 81
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -33186,7 +35850,6 @@
     "criticalChance": 0.029999999,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 9, 23, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The Tysis pistol spits out caustic darts that corrode their victims from within.",
     "disposition": 5,
     "fireRate": 2.5000002,
@@ -33291,6 +35954,20 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5,
+        "crit_chance": 20,
+        "crit_mult": 1.8,
+        "status_chance": 8,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 14.5,
+          "slash": 29,
+          "puncture": 14.5
+        }
+      }
+    ],
     "buildPrice": 30000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -33346,7 +36023,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 14.5, 14.5, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Steady and reliable, the Vasto revolver combines speed and power for a classic gunslinger feel.",
     "disposition": 5,
     "fireRate": 5.0000005,
@@ -33483,6 +36159,20 @@
   {
     "accuracy": 16,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 5.42,
+        "crit_chance": 22,
+        "crit_mult": 2.4,
+        "status_chance": 22,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 9.9,
+          "slash": 46.2,
+          "puncture": 9.9
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -33826,7 +36516,6 @@
     "criticalChance": 0.22,
     "criticalMultiplier": 2.4000001,
     "damagePerShot": [ 9.9000006, 9.9000006, 46.200001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "This elegant rapid-fire revolver is the embodiment of superior Orokin craftsmanship.",
     "disposition": 5,
     "estimatedVaultDate": "2016 11 22",
@@ -33916,11 +36605,24 @@
   {
     "accuracy": 10,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 2,
+        "crit_chance": 20,
+        "crit_mult": 1.5,
+        "status_chance": 35,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 96,
+          "slash": 48,
+          "puncture": 16
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.2,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 96, 16, 47.999992, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Taken from defeated Grineer commanders and rebuilt to improve combat efficiency and reliability.",
     "disposition": 3,
     "fireRate": 2,
@@ -33998,6 +36700,21 @@
   {
     "accuracy": 25,
     "ammo": 434,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 15,
+        "crit_chance": 14,
+        "crit_mult": 1.8,
+        "status_chance": 22,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 4.3,
+          "slash": 11.5,
+          "puncture": 8.2
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -34058,7 +36775,6 @@
     "criticalChance": 0.14,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 4.3200002, 8.1599998, 11.52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "With a high fire rate, ammo efficiency and rapid reload when emptied, this unusual sidearm can hand out carnage all day long. Ammo efficiency is further increased when Protea uses this, her signature weapon.",
     "disposition": 4,
     "fireRate": 15.000001,
@@ -34114,6 +36830,20 @@
   {
     "accuracy": 15.384615,
     "ammo": 420,
+    "attacks": [
+      {
+        "speed": 14.38,
+        "crit_chance": 15,
+        "crit_mult": 1.5,
+        "status_chance": 11,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 10.2,
+          "slash": 5.1,
+          "puncture": 1.7
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -34169,7 +36899,6 @@
     "criticalChance": 0.15000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 10.200001, 1.7, 5.0999994, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
     "disposition": 5,
     "fireRate": 14.383334,
@@ -34363,11 +37092,24 @@
   {
     "accuracy": 28.571428,
     "ammo": 420,
+    "attacks": [
+      {
+        "speed": 14.38,
+        "crit_chance": 19,
+        "crit_mult": 2,
+        "status_chance": 9,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 14.4,
+          "slash": 1.8,
+          "puncture": 1.8
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.19,
     "criticalMultiplier": 2,
     "damagePerShot": [ 14.400001, 1.8000001, 1.7999994, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "The uniquely styled Viper Wraith is a powerful variation on the standard machine-pistol.",
     "disposition": 5,
     "fireRate": 14.383334,
@@ -34429,6 +37171,39 @@
   {
     "accuracy": 26.666666,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Dart Impact",
+        "speed": 5,
+        "crit_chance": 2,
+        "crit_mult": 1.5,
+        "status_chance": 20,
+        "shot_type": "Projectile",
+        "shot_speed": 66,
+        "flight": 66,
+        "damage": {
+          "impact": 12,
+          "puncture": 18
+        }
+      },
+      {
+        "name": "Gas Cloud",
+        "radius": 350,
+        "speed": 5,
+        "crit_chance": 2,
+        "crit_mult": 1.5,
+        "status_chance": 20,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.5,
+          "reduction": 0
+        },
+        "damage": {
+          "gas": 80
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -34484,7 +37259,6 @@
     "criticalChance": 0.02,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 12, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Fires razor-sharp darts that anchor themselves in their target before erupting in a plume of toxic gas.",
     "disposition": 4,
     "fireRate": 5.0000005,
@@ -34572,6 +37346,39 @@
   {
     "accuracy": 26.666666,
     "ammo": 210,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 5,
+        "crit_chance": 8,
+        "crit_mult": 1.8,
+        "status_chance": 42,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 12,
+          "puncture": 18
+        }
+      },
+      {
+        "name": "Gas Cloud",
+        "radius": 380,
+        "speed": 5,
+        "crit_chance": 8,
+        "crit_mult": 1.8,
+        "status_chance": 42,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.8,
+          "reduction": 0
+        },
+        "damage": {
+          "gas": 100
+        }
+      }
+    ],
     "buildPrice": 15000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -34819,7 +37626,6 @@
     "criticalChance": 0.079999998,
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 12, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A thousand pains, before their end.",
     "disposition": 3,
     "estimatedVaultDate": "2022 08 19",
@@ -34876,11 +37682,24 @@
   {
     "accuracy": 23.529411,
     "ammo": 210,
+    "attacks": [
+      {
+        "speed": 1.8,
+        "crit_chance": 8,
+        "crit_mult": 2,
+        "status_chance": 26,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 44.8,
+          "slash": 78.4,
+          "puncture": 16.8
+        }
+      }
+    ],
     "category": "Secondary",
     "criticalChance": 0.079999998,
     "criticalMultiplier": 2,
     "damagePerShot": [ 44.799999, 16.799999, 78.400002, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Hammer the enemy with this light-bodied heavy hitter. Featuring a double-action trigger that fires hard and fast. ",
     "disposition": 4,
     "fireRate": 1.5000001,
@@ -34959,6 +37778,78 @@
   {
     "accuracy": 9.7560978,
     "ammo": 51,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 1.33,
+        "crit_chance": 5,
+        "crit_mult": 2.3,
+        "status_chance": 30,
+        "shot_type": "Projectile",
+        "shot_speed": 79,
+        "flight": 79,
+        "damage": {
+          "impact": 9.2,
+          "puncture": 13.8
+        }
+      },
+      {
+        "name": "Headshot Explosion",
+        "radius": 330,
+        "speed": 1.33,
+        "crit_chance": 5,
+        "crit_mult": 2.3,
+        "status_chance": 30,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.3,
+          "reduction": 0.3
+        },
+        "damage": {
+          "toxin": 953
+        }
+      },
+      {
+        "name": "Spore Contact",
+        "status_chance": 0,
+        "shot_type": "Projectile",
+        "damage": {
+          "slash": 11.5,
+          "puncture": 11.5
+        }
+      },
+      {
+        "name": "Radial Attack",
+        "radius": 330,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.3,
+          "reduction": 0.3
+        },
+        "damage": {
+          "toxin": 61
+        }
+      },
+      {
+        "name": "Spore Explosion",
+        "radius": 330,
+        "speed": 1.33,
+        "crit_chance": 5,
+        "crit_mult": 2.3,
+        "status_chance": 30,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.3,
+          "reduction": 0.3
+        },
+        "damage": {
+          "toxin": 333
+        }
+      }
+    ],
     "buildPrice": 20000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -34996,7 +37887,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2.3,
     "damagePerShot": [ 9.1999998, 13.8, 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Infect your foes with this spore-scattering pistol. Head shots burrow in and explode, releasing spore clouds that seek out nearby enemies.",
     "disposition": 3,
     "fireRate": 1.3333334,

@@ -29,36 +29,6 @@
   },
   {
     "category": "Misc",
-    "description": "/Lotus/Language/Items/RelayReconstructionItemADesc",
-    "excludeFromCodex": true,
-    "imageName": "lotus-language-items-relayreconstructionitemaname.png",
-    "name": "/Lotus/Language/Items/Relayreconstructionitemaname",
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Events/RelayReconstructionItemA"
-  },
-  {
-    "category": "Misc",
-    "description": "/Lotus/Language/Items/RelayReconstructionItemBDesc",
-    "excludeFromCodex": true,
-    "imageName": "lotus-language-items-relayreconstructionitembname.png",
-    "name": "/Lotus/Language/Items/Relayreconstructionitembname",
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Events/RelayReconstructionItemB"
-  },
-  {
-    "category": "Misc",
-    "description": "/Lotus/Language/Items/RelayReconstructionItemCDesc",
-    "excludeFromCodex": true,
-    "imageName": "lotus-language-items-relayreconstructionitemcname.png",
-    "name": "/Lotus/Language/Items/Relayreconstructionitemcname",
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Events/RelayReconstructionItemC"
-  },
-  {
-    "category": "Misc",
     "description": "",
     "excludeFromCodex": true,
     "imageName": "lotus-language-shipfeatureitems-shipfeaturealchemyroom.png",
@@ -87,77 +57,6 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/ModSlotUnlocker"
-  },
-  {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyABlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
-        "name": "Coprite Alloy",
-        "description": "Coprun that has been forged into a stronger metal.",
-        "itemCount": 40,
-        "imageName": "coprite-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
-        "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
-        "itemCount": 1500,
-        "imageName": "rubedo.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-        "name": "Spectral Debris",
-        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
-        "excludeFromCodex": true,
-        "itemCount": 5,
-        "imageName": "spectral-debris.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-        "name": "Venerdo Alloy",
-        "description": "A compound formed from Venerol.",
-        "itemCount": 25,
-        "imageName": "venerdo-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "adlet-core.png",
-    "masteryReq": 0,
-    "name": "Adlet Core",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyA"
   },
   {
     "category": "Misc",
@@ -1134,11 +1033,42 @@
   {
     "accuracy": 16.666666,
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 3.33,
+        "crit_chance": 50,
+        "crit_mult": 3,
+        "status_chance": 50,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 10
+        }
+      },
+      {
+        "name": "Radial Attack",
+        "radius": 600,
+        "speed": 3.33,
+        "crit_chance": 50,
+        "crit_mult": 3,
+        "status_chance": 50,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 6
+        },
+        "damage": {
+          "heat": 3000,
+          "blast": 9000
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0.5,
     "criticalMultiplier": 3,
     "damagePerShot": [ 10, 0, 0, 3000, 0, 0, 0, 9000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "[PH] Description",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -1268,11 +1198,42 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 25,
+        "crit_mult": 2,
+        "status_chance": 20,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 33.6,
+          "slash": 14.4,
+          "puncture": 192
+        }
+      },
+      {
+        "name": "Charged Shot",
+        "speed": 1,
+        "crit_chance": 25,
+        "crit_mult": 2,
+        "status_chance": 20,
+        "charge_time": 1,
+        "shot_type": "Projectile",
+        "shot_speed": 85,
+        "flight": 85,
+        "damage": {
+          "impact": 33.6,
+          "slash": 14.4,
+          "puncture": 192
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0.25,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Summon a mighty bow and unleash a volley of devastating arrows.",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -2323,11 +2284,36 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 0.833,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "shot_speed": 20,
+        "flight": 20,
+        "damage": {
+          "electricity": 500
+        }
+      },
+      {
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "charge_time": 2,
+        "shot_type": "Projectile",
+        "shot_speed": 20,
+        "flight": 20,
+        "damage": {
+          "electricity": 1000
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Charges up and releases bolts of Balefire.",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -2371,11 +2357,24 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Balefire_Charger"
   },
   {
+    "attacks": [
+      {
+        "name": "Balla Strike (Gilded)",
+        "speed": 1,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 11.2,
+          "slash": 78.4,
+          "puncture": 134.4
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "drops": [
@@ -2430,6 +2429,20 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Balla"
   },
   {
+    "attacks": [
+      {
+        "name": "Balla Strike (Gilded)",
+        "speed": 1,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 11.2,
+          "slash": 78.4,
+          "puncture": 134.4
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -2572,7 +2585,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -3216,6 +3228,19 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 4.88,
+        "crit_chance": 17,
+        "crit_mult": 1.5,
+        "status_chance": 5,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "void": 1460
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -3271,7 +3296,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -3300,6 +3324,22 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Cantic_Prism"
   },
   {
+    "ammo": 70,
+    "attacks": [
+      {
+        "speed": 0,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "Projectile",
+        "falloff": {
+          "start": 8,
+          "end": 16,
+          "reduction": 0.9375
+        },
+        "damage": {}
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -3356,8 +3396,16 @@
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "",
+    "disposition": 1,
     "fireRate": 0,
     "imageName": "catchmoon.png",
+    "introduced": {
+      "name": "Update 24.0",
+      "url": "http://warframe.fandom.com/wiki/Update_24%23Update_24.0",
+      "aliases": [ "24", "24.0", "Fortuna" ],
+      "parent": "24.0",
+      "date": "2018-11-08"
+    },
     "masteryReq": 0,
     "name": "Catchmoon",
     "omegaAttenuation": 0.5,
@@ -3435,14 +3483,19 @@
         "fixes": ""
       }
     ],
+    "polarities": [  ],
     "primeOmegaAttenuation": 1.05,
     "procChance": 0,
     "productCategory": "Pistols",
+    "releaseDate": "2018-11-08",
     "skipBuildTimePrice": 25,
+    "tags": [  ],
     "totalDamage": 0,
     "tradable": false,
-    "type": "Kitgun Component",
-    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart"
+    "type": "Kitgun",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/7/7d/KitgunChamberCatchmoon.png/revision/latest?cb=20181110154407",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Catchmoon"
   },
   {
     "category": "Misc",
@@ -3452,76 +3505,6 @@
     "tradable": false,
     "type": "Conservation Tag",
     "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMaggotRare"
-  },
-  {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsABlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-        "name": "Brickie Muon Battery",
-        "description": "A small, atomic power source.Acquired by disassembling Brickie Servofish.",
-        "itemCount": 15,
-        "imageName": "brickie-muon-battery.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
-        "name": "Iradite",
-        "description": "A valuable mineral found on the Plains.",
-        "itemCount": 25,
-        "imageName": "iradite.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
-        "name": "Sola Toroid",
-        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Sola Toroids from enemies located at the Temple of Profit in the Orb Vallis and from Kyta Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
-        "imageName": "sola-toroid.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-        "name": "Travocyte Alloy",
-        "description": "A compound formed from Travoride.",
-        "itemCount": 35,
-        "imageName": "travocyte-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "cela-bracket.png",
-    "masteryReq": 0,
-    "name": "Cela Bracket",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsA"
   },
   {
     "category": "Misc",
@@ -4597,35 +4580,6 @@
   },
   {
     "category": "Misc",
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "excludeFromCodex": true,
-    "fireRate": 0,
-    "imageName": "crescent-vulpaphyla.png",
-    "masteryReq": 0,
-    "name": "Crescent Vulpaphyla",
-    "omegaAttenuation": 1,
-    "patchlogs": [
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.6",
-        "date": "2020-09-01T22:43:56Z",
-        "url": "https://forums.warframe.com/topic/1220813-heart-of-deimos-hotfix-2906/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when a Crescent Vulpaphyla used Crescent Charge on a target that died."
-      }
-    ],
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterUncommonRewardItem"
-  },
-  {
-    "category": "Misc",
     "description": "For saving a specimen of this species.",
     "imageName": "crescent-vulpaphyla-tag.png",
     "name": "Crescent Vulpaphyla Tag",
@@ -5023,11 +4977,24 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem"
   },
   {
+    "attacks": [
+      {
+        "name": "Cyath Strike (Gilded)",
+        "speed": 0.92,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 46,
+          "slash": 172.5,
+          "puncture": 11.5
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "drops": [
@@ -5074,6 +5041,20 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Cyath"
   },
   {
+    "attacks": [
+      {
+        "name": "Cyath Strike (Gilded)",
+        "speed": 0.92,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 46,
+          "slash": 172.5,
+          "puncture": 11.5
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -5324,7 +5305,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -5519,11 +5499,24 @@
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/SteelMeridianUncommonDogTag"
   },
   {
+    "attacks": [
+      {
+        "name": "Dehtat Strike (Gilded)",
+        "speed": 0.92,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 22.4,
+          "slash": 89.6,
+          "puncture": 112
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 4,
     "drops": [
@@ -5560,6 +5553,20 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Dehtat"
   },
   {
+    "attacks": [
+      {
+        "name": "Dehtat Strike (Gilded)",
+        "speed": 0.92,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 22.4,
+          "slash": 89.6,
+          "puncture": 112
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -5696,7 +5703,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 4,
     "fireRate": 0,
@@ -5923,14 +5929,33 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem"
   },
   {
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 50,
+        "crit_mult": 2,
+        "status_chance": 15,
+        "damage": {
+          "impact": 250
+        },
+        "slide": "750",
+        "slam": {
+          "damage": "750.00",
+          "radial": {
+            "damage": "250.00",
+            "element": "Blast",
+            "proc": "Ragdoll",
+            "radius": 8
+          }
+        }
+      }
+    ],
     "blockingAngle": 60,
     "category": "Misc",
-    "channeling": 1.5,
     "comboDuration": 5,
     "criticalChance": 0.5,
     "criticalMultiplier": 2,
     "damagePerShot": [ 83.324997, 83.333244, 83.341751, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Baruuk channels the desert wind to turn his fists and feet into an exalted weapon.",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -6024,11 +6049,24 @@
   {
     "accuracy": 22.988506,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 5.83,
+        "crit_chance": 10,
+        "crit_mult": 2,
+        "status_chance": 25,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 16,
+          "slash": 128,
+          "puncture": 16
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0.1,
     "criticalMultiplier": 2,
     "damagePerShot": [ 5, 5, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -6305,6 +6343,46 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Direct Hit",
+        "speed": 1,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 20,
+        "shot_type": "Projectile",
+        "damage": {
+          "impact": 15
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 1200,
+        "speed": 1,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 20,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 12,
+          "reduction": 0.6
+        },
+        "damage": {
+          "void": 6600
+        }
+      },
+      {
+        "name": "Explosive Fragments",
+        "speed": 1,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 20,
+        "damage": {
+          "void": 300
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -6360,7 +6438,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -6535,14 +6612,35 @@
     "uniqueName": "/Lotus/Types/Ship/AdvancedUcResourceDrone"
   },
   {
+    "attacks": [
+      {
+        "speed": 1.08,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "damage": {
+          "impact": 30,
+          "slash": 20,
+          "puncture": 150
+        },
+        "slide": "429",
+        "slam": {
+          "damage": "200.00",
+          "radial": {
+            "damage": "200.00",
+            "element": "undefined",
+            "proc": "undefined",
+            "radius": 8
+          }
+        }
+      }
+    ],
     "blockingAngle": 90,
     "category": "Misc",
-    "channeling": 1.5,
     "comboDuration": 5,
     "criticalChance": 0.2,
     "criticalMultiplier": 2,
     "damagePerShot": [ 7.5000005, 37.5, 5.000001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -6789,6 +6887,20 @@
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/DogTag"
   },
   {
+    "attacks": [
+      {
+        "name": "Dokrahm Strike (Gilded)",
+        "speed": 1,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 46.4,
+          "slash": 154.5,
+          "puncture": 108.1
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -6844,7 +6956,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 1,
     "fireRate": 0,
@@ -8124,14 +8235,37 @@
     "uniqueName": "/Lotus/Upgrades/Mods/FusionBundles/EvergreenLoginRewardFusionBundle"
   },
   {
+    "attacks": [
+      {
+        "speed": 0.833,
+        "crit_chance": 15,
+        "crit_mult": 2,
+        "status_chance": 15,
+        "shot_speed": 15,
+        "flight": 15,
+        "damage": {
+          "impact": 37.5,
+          "slash": 175,
+          "puncture": 37.5
+        },
+        "slide": "536",
+        "slam": {
+          "damage": "750.00",
+          "radial": {
+            "damage": "250.00",
+            "element": "Impact",
+            "proc": "Ragdoll",
+            "radius": 7
+          }
+        }
+      }
+    ],
     "blockingAngle": 60,
     "category": "Misc",
-    "channeling": 1.5,
     "comboDuration": 5,
     "criticalChance": 0.15000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 5.25, 5.25, 24.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Summon a sword of pure light and immense power.",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -8940,14 +9074,37 @@
     "windUp": 0.60000002
   },
   {
+    "attacks": [
+      {
+        "speed": 0.833,
+        "crit_chance": 15,
+        "crit_mult": 2,
+        "status_chance": 15,
+        "shot_speed": 15,
+        "flight": 15,
+        "damage": {
+          "impact": 37.5,
+          "slash": 175,
+          "puncture": 37.5
+        },
+        "slide": "536",
+        "slam": {
+          "damage": "750.00",
+          "radial": {
+            "damage": "250.00",
+            "element": "Impact",
+            "proc": "Ragdoll",
+            "radius": 7
+          }
+        }
+      }
+    ],
     "blockingAngle": 60,
     "category": "Misc",
-    "channeling": 1.5,
     "comboDuration": 5,
     "criticalChance": 0.15000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 5.25, 5.25, 24.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Summon a sword of pure light and immense power.",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -8989,6 +9146,36 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Direct Hit",
+        "speed": 8.26,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 28,
+        "shot_type": "Projectile",
+        "damage": {
+          "impact": 200
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 100,
+        "speed": 8.26,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 28,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 1,
+          "reduction": 0.3
+        },
+        "damage": {
+          "void": 2600
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -9044,7 +9231,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -18725,76 +18911,6 @@
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/FoundryFeatureItem"
   },
   {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailCBlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
-        "name": "Circuits",
-        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
-        "itemCount": 600,
-        "imageName": "circuits.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
-        "name": "Ferrite",
-        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
-        "itemCount": 2500,
-        "imageName": "ferrite.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
-        "name": "Hespazym Alloy",
-        "description": "A compound formed from Hesperon.",
-        "itemCount": 20,
-        "imageName": "hespazym-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
-        "name": "Nitain Extract",
-        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
-        "itemCount": 3,
-        "imageName": "nitain-extract.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "frak-stabilizer.png",
-    "masteryReq": 0,
-    "name": "Frak Stabilizer",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailC"
-  },
-  {
     "category": "Misc",
     "description": "For saving a specimen of this subspecies.",
     "excludeFromCodex": true,
@@ -19051,77 +19167,6 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/VayHekCoordinateFragmentB"
   },
   {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-        "name": "Axidrol Alloy",
-        "description": "A compound formed from Axidite.",
-        "itemCount": 40,
-        "imageName": "axidrol-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyBBlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
-        "name": "Devolved Namalon",
-        "description": "Retrieved from its Infested state, restored to worth and utility.",
-        "itemCount": 25,
-        "imageName": "devolved-namalon.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
-        "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
-        "itemCount": 1500,
-        "imageName": "rubedo.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-        "name": "Spectral Debris",
-        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
-        "excludeFromCodex": true,
-        "itemCount": 5,
-        "imageName": "spectral-debris.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "garmr-core.png",
-    "masteryReq": 0,
-    "name": "Garmr Core",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyB"
-  },
-  {
     "blockingAngle": 60,
     "category": "Misc",
     "comboDuration": 5,
@@ -19272,6 +19317,17 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileGasCityConStraightEOpen"
   },
   {
+    "ammo": 400,
+    "attacks": [
+      {
+        "speed": 0,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "Discharge",
+        "damage": {}
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -19567,8 +19623,16 @@
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "",
+    "disposition": 3,
     "fireRate": 0,
     "imageName": "gaze.png",
+    "introduced": {
+      "name": "Update 24.0",
+      "url": "http://warframe.fandom.com/wiki/Update_24%23Update_24.0",
+      "aliases": [ "24", "24.0", "Fortuna" ],
+      "parent": "24.0",
+      "date": "2018-11-08"
+    },
     "masteryReq": 0,
     "name": "Gaze",
     "omegaAttenuation": 0.89999998,
@@ -19687,14 +19751,19 @@
         "fixes": "Fixed Clients having no recoil on their secondary weapon after they transferred to their Operator and used Madurai’s Phoenix Gaze."
       }
     ],
+    "polarities": [  ],
     "primeOmegaAttenuation": 1,
     "procChance": 0,
     "productCategory": "Pistols",
+    "releaseDate": "2018-11-08",
     "skipBuildTimePrice": 25,
+    "tags": [  ],
     "totalDamage": 0,
     "tradable": false,
-    "type": "Kitgun Component",
-    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPart"
+    "type": "Kitgun",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPart",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/d/d1/KitgunChamberGaze.png/revision/latest?cb=20181110154438",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Gaze"
   },
   {
     "category": "Misc",
@@ -19921,6 +19990,35 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Direct Hit",
+        "speed": 2.07,
+        "crit_chance": 16,
+        "crit_mult": 1.5,
+        "status_chance": 2,
+        "shot_type": "Projectile",
+        "damage": {
+          "void": 1000
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 350,
+        "crit_chance": 16,
+        "crit_mult": 1.5,
+        "status_chance": 2,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.5,
+          "reduction": 0.3
+        },
+        "damage": {
+          "void": 1400
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -19976,7 +20074,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -21277,76 +21374,6 @@
     "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCEngine"
   },
   {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
-        "name": "Alloy Plate",
-        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
-        "itemCount": 2500,
-        "imageName": "alloy-plate.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem",
-        "name": "Auroxium Alloy",
-        "description": "Auron that has been forged into a stronger metal.",
-        "itemCount": 20,
-        "imageName": "auroxium-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailBBlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
-        "name": "Circuits",
-        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
-        "itemCount": 600,
-        "imageName": "circuits.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
-        "name": "Nitain Extract",
-        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
-        "itemCount": 3,
-        "imageName": "nitain-extract.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "hinta-stabilizer.png",
-    "masteryReq": 0,
-    "name": "Hinta Stabilizer",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailB"
-  },
-  {
     "category": "Misc",
     "description": "Medallion of Red Veil syndicate. Can be traded in on relay syndicate hubs for additional standing.",
     "imageName": "honored-mark.png",
@@ -21723,14 +21750,34 @@
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/CephalonUncommonDogTag"
   },
   {
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 25,
+        "crit_mult": 2,
+        "status_chance": 30,
+        "damage": {
+          "impact": 170,
+          "slash": 80
+        },
+        "slide": "250",
+        "slam": {
+          "damage": "750.00",
+          "radial": {
+            "damage": "250.00",
+            "element": "Impact",
+            "proc": "Ragdoll",
+            "radius": 7
+          }
+        }
+      }
+    ],
     "blockingAngle": 65,
     "category": "Misc",
-    "channeling": 1.5,
     "comboDuration": 5,
     "criticalChance": 0.25,
     "criticalMultiplier": 2,
     "damagePerShot": [ 204, 0, 96, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A unique staff wielded by the Wukong Warframe.",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -22018,13 +22065,35 @@
     "windUp": 0.5
   },
   {
+    "attacks": [
+      {
+        "speed": 0.833,
+        "crit_chance": 45,
+        "crit_mult": 3,
+        "status_chance": 15,
+        "damage": {
+          "impact": 45,
+          "slash": 210,
+          "puncture": 45
+        },
+        "slide": "600",
+        "slam": {
+          "damage": "600.00",
+          "radial": {
+            "damage": "300.00",
+            "element": "undefined",
+            "proc": "undefined",
+            "radius": 10
+          }
+        }
+      }
+    ],
     "blockingAngle": 90,
     "category": "Misc",
     "comboDuration": 5,
     "criticalChance": 0.44999999,
     "criticalMultiplier": 3,
     "damagePerShot": [ 70.5, 70.5, 329, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "[PH] Description",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -22947,6 +23016,19 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 12,
+        "crit_chance": 23,
+        "crit_mult": 1.9,
+        "status_chance": 5,
+        "shot_type": "Discharge",
+        "damage": {
+          "void": 600
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -23002,7 +23084,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -23058,6 +23139,19 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 12,
+        "crit_chance": 6,
+        "crit_mult": 1.1,
+        "status_chance": 4,
+        "shot_type": "Discharge",
+        "damage": {
+          "void": 320
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -23113,7 +23207,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -23259,11 +23352,23 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem"
   },
   {
+    "attacks": [
+      {
+        "name": "Kronsh Strike (Gilded)",
+        "speed": 0.85,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 163.8,
+          "puncture": 70.2
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 4,
     "drops": [
@@ -23318,6 +23423,19 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Kronsh"
   },
   {
+    "attacks": [
+      {
+        "name": "Kronsh Strike (Gilded)",
+        "speed": 0.85,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 163.8,
+          "puncture": 70.2
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -23484,7 +23602,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 4,
     "fireRate": 0,
@@ -27339,6 +27456,19 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 7.5,
+        "crit_chance": 4,
+        "crit_mult": 1.1,
+        "status_chance": 17,
+        "shot_type": "Discharge",
+        "damage": {
+          "void": 600
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -27394,7 +27524,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -27531,16 +27660,6 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/LibraryScannerUpgrade"
-  },
-  {
-    "category": "Misc",
-    "description": "A token symbolizing a converted Kuva Lich. Can be traded to other players for control of said Lich.",
-    "excludeFromCodex": true,
-    "imageName": "lich-token.png",
-    "name": "Lich Token",
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Game/Nemesis/KuvaLich/CapturedGrineerLichToken"
   },
   {
     "buildPrice": 6500,
@@ -28822,8 +28941,8 @@
     "rarity": "Common",
     "rewardName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusModularMeleeRandomModRare",
     "tier": 0,
-    "tradable": false,
-    "type": "Melee",
+    "tradable": true,
+    "type": "Melee Mod",
     "uniqueName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusModularMeleeRandomModRare"
   },
   {
@@ -28834,8 +28953,8 @@
     "rarity": "Common",
     "rewardName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusModularPistolRandomModRare",
     "tier": 0,
-    "tradable": false,
-    "type": "Secondary",
+    "tradable": true,
+    "type": "Secondary Mod",
     "uniqueName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusModularPistolRandomModRare"
   },
   {
@@ -28846,8 +28965,8 @@
     "rarity": "Common",
     "rewardName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusPistolRandomModRare",
     "tier": 0,
-    "tradable": false,
-    "type": "Secondary",
+    "tradable": true,
+    "type": "Secondary Mod",
     "uniqueName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusPistolRandomModRare"
   },
   {
@@ -28858,8 +28977,8 @@
     "rarity": "Common",
     "rewardName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusRifleRandomModRare",
     "tier": 0,
-    "tradable": false,
-    "type": "Rifle",
+    "tradable": true,
+    "type": "Rifle Mod",
     "uniqueName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusRifleRandomModRare"
   },
   {
@@ -28870,8 +28989,8 @@
     "rarity": "Common",
     "rewardName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusShotgunRandomModRare",
     "tier": 0,
-    "tradable": false,
-    "type": "Shotgun",
+    "tradable": true,
+    "type": "Shotgun Mod",
     "uniqueName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/LotusShotgunRandomModRare"
   },
   {
@@ -32839,35 +32958,6 @@
   },
   {
     "category": "Misc",
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "excludeFromCodex": true,
-    "fireRate": 0,
-    "imageName": "medjay-predasite.png",
-    "masteryReq": 0,
-    "name": "Medjay Predasite",
-    "omegaAttenuation": 1,
-    "patchlogs": [
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.6",
-        "date": "2020-09-01T22:43:56Z",
-        "url": "https://forums.warframe.com/topic/1220813-heart-of-deimos-hotfix-2906/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error that could occur if a wild Medjay Predasite was charging towards you while using Paralytic Spores and died, which could cause other enemies to not be vulnerable to finishers."
-      }
-    ],
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorRareRewardItem"
-  },
-  {
-    "category": "Misc",
     "description": "For saving a specimen of this species.",
     "imageName": "medjay-predasite-tag.png",
     "name": "Medjay Predasite Tag",
@@ -32904,11 +32994,24 @@
     "uniqueName": "/Lotus/Types/Game/Projections/T2VoidProjection"
   },
   {
+    "attacks": [
+      {
+        "name": "Mewan Strike (Gilded)",
+        "speed": 0.85,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 56,
+          "slash": 89.6,
+          "puncture": 78.4
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "drops": [
@@ -32955,6 +33058,20 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Mewan"
   },
   {
+    "attacks": [
+      {
+        "name": "Mewan Strike (Gilded)",
+        "speed": 0.85,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 56,
+          "slash": 89.6,
+          "puncture": 78.4
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -33277,7 +33394,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -35666,11 +35782,24 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/PhotoboothTileOnkosCave"
   },
   {
+    "attacks": [
+      {
+        "name": "Ooltha Strike (Gilded)",
+        "speed": 0.92,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 22.4,
+          "slash": 112,
+          "puncture": 89.6
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 4,
     "drops": [
@@ -35725,6 +35854,20 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Ooltha"
   },
   {
+    "attacks": [
+      {
+        "name": "Ooltha Strike (Gilded)",
+        "speed": 0.92,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 22.4,
+          "slash": 112,
+          "puncture": 89.6
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -35873,7 +36016,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 4,
     "fireRate": 0,
@@ -37012,43 +37154,6 @@
   },
   {
     "category": "Misc",
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "excludeFromCodex": true,
-    "fireRate": 0,
-    "imageName": "panzer-vulpaphyla.png",
-    "masteryReq": 0,
-    "name": "Panzer Vulpaphyla",
-    "omegaAttenuation": 1,
-    "patchlogs": [
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.6",
-        "date": "2020-09-01T22:43:56Z",
-        "url": "https://forums.warframe.com/topic/1220813-heart-of-deimos-hotfix-2906/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error where Panzer Vulpaphyla died before the Viral Quills projectiles landed."
-      },
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.3",
-        "date": "2020-08-26T22:57:57Z",
-        "url": "https://forums.warframe.com/topic/1217375-heart-of-deimos-hotfix-2903/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when a Panzer Vulpaphyla attempted to attack but ran out of targets."
-      }
-    ],
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterRareRewardItem"
-  },
-  {
-    "category": "Misc",
     "description": "For saving a specimen of this species.",
     "imageName": "panzer-vulpaphyla-tag.png",
     "name": "Panzer Vulpaphyla Tag",
@@ -37076,6 +37181,30 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Direct Hit",
+        "speed": 2,
+        "crit_chance": 4,
+        "crit_mult": 1.1,
+        "status_chance": 8,
+        "charge_time": 0.8,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "void": 4500
+        }
+      },
+      {
+        "name": "Area of Effect",
+        "radius": 100,
+        "crit_chance": 4,
+        "crit_mult": 1.1,
+        "status_chance": 8,
+        "damage": {
+          "void": 4500
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -37131,7 +37260,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -37330,6 +37458,35 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Direct Hit",
+        "speed": 1.67,
+        "crit_chance": 24,
+        "crit_mult": 2.1,
+        "status_chance": 2,
+        "shot_type": "Projectile",
+        "damage": {
+          "void": 3000
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 500,
+        "crit_chance": 24,
+        "crit_mult": 2.1,
+        "status_chance": 2,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 5,
+          "reduction": 0.3
+        },
+        "damage": {
+          "void": 1100
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -37385,7 +37542,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -37438,25 +37594,6 @@
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Chassis/SentAmpSet2ChassisPartA",
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/05/SentAmpSet2ChassisA.png/revision/latest?cb=20210322130928",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Phahd_Scaffold"
-  },
-  {
-    "category": "Misc",
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "excludeFromCodex": true,
-    "fireRate": 0,
-    "imageName": "pharaoh-predasite.png",
-    "masteryReq": 0,
-    "name": "Pharaoh Predasite",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorUncommonRewardItem"
   },
   {
     "category": "Misc",
@@ -37725,6 +37862,21 @@
     "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMeleeInfested/Handles/InfestedHandleTwo"
   },
   {
+    "attacks": [
+      {
+        "name": "Plague Keewar Strike (Gilded)",
+        "speed": 0.88,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 22,
+        "damage": {
+          "impact": 88,
+          "slash": 91,
+          "puncture": 57,
+          "viral": 70
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -37780,7 +37932,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 1,
     "fireRate": 0,
@@ -37827,11 +37978,25 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Plague_Keewar"
   },
   {
+    "attacks": [
+      {
+        "name": "Plague Keewar Strike (Gilded)",
+        "speed": 0.88,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 22,
+        "damage": {
+          "impact": 88,
+          "slash": 91,
+          "puncture": 57,
+          "viral": 70
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -37878,6 +38043,21 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Plague_Keewar"
   },
   {
+    "attacks": [
+      {
+        "name": "Plague Kripath Strike (Gilded)",
+        "speed": 0.95,
+        "crit_chance": 22,
+        "crit_mult": 2.2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 30,
+          "slash": 49,
+          "puncture": 70,
+          "viral": 64
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -37933,7 +38113,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 1,
     "fireRate": 0,
@@ -37980,11 +38159,25 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Plague_Kripath"
   },
   {
+    "attacks": [
+      {
+        "name": "Plague Kripath Strike (Gilded)",
+        "speed": 0.95,
+        "crit_chance": 22,
+        "crit_mult": 2.2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 30,
+          "slash": 49,
+          "puncture": 70,
+          "viral": 64
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -38358,8 +38551,8 @@
     "rarity": "Common",
     "rewardName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/PlayerMeleeWeaponRandomModRare",
     "tier": 0,
-    "tradable": false,
-    "type": "Melee",
+    "tradable": true,
+    "type": "Melee Mod",
     "uniqueName": "/Lotus/StoreItems/Upgrades/Mods/Randomized/PlayerMeleeWeaponRandomModRare"
   },
   {
@@ -38910,6 +39103,25 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Explosion",
+        "radius": 1400,
+        "speed": 2,
+        "crit_chance": 15,
+        "crit_mult": 1.5,
+        "status_chance": 0,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 14,
+          "reduction": 0.7
+        },
+        "damage": {
+          "void": 9000
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -38965,7 +39177,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -39165,6 +39376,20 @@
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/PerrinDogTag"
   },
   {
+    "attacks": [
+      {
+        "name": "Rabvee Strike (Gilded)",
+        "speed": 0.85,
+        "crit_chance": 18,
+        "crit_mult": 2,
+        "status_chance": 18,
+        "damage": {
+          "impact": 140.4,
+          "slash": 81.9,
+          "puncture": 11.7
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -39220,7 +39445,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 4,
     "fireRate": 0,
@@ -39309,6 +39533,19 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 5.67,
+        "crit_chance": 20,
+        "crit_mult": 1.5,
+        "status_chance": 0,
+        "shot_type": "Projectile",
+        "damage": {
+          "void": 1000
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -39364,7 +39601,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -39409,77 +39645,6 @@
     "uniqueName": "/Lotus/Weapons/Sentients/OperatorAmplifiers/Set2/Barrel/SentAmpSet2BarrelPartA",
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/29/SentAmpSet2BarrelA.png/revision/latest?cb=20210322130747",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Rahn_Prism"
-  },
-  {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
-        "name": "Adramal Alloy",
-        "description": "Purged of spores and contaminants, this alloy is highly versatile.",
-        "itemCount": 40,
-        "imageName": "adramal-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyCBlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
-        "name": "Fersteel Alloy",
-        "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 25,
-        "imageName": "fersteel-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
-        "name": "Rubedo",
-        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
-        "itemCount": 1500,
-        "imageName": "rubedo.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-        "name": "Spectral Debris",
-        "description": "Discharged specter particles form an inert dust that can be collected and re-energized for various robotic projects.",
-        "excludeFromCodex": true,
-        "itemCount": 5,
-        "imageName": "spectral-debris.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "raiju-core.png",
-    "masteryReq": 0,
-    "name": "Raiju Core",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyC"
   },
   {
     "category": "Misc",
@@ -40574,6 +40739,19 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 2,
+        "crit_chance": 28,
+        "crit_mult": 2.1,
+        "status_chance": 0,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "void": 3000
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -40629,7 +40807,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -40700,6 +40877,17 @@
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/KelaEventDogTag"
   },
   {
+    "ammo": 700,
+    "attacks": [
+      {
+        "speed": 0,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "Hit-Scan",
+        "damage": {}
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -40756,8 +40944,16 @@
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "",
+    "disposition": 1,
     "fireRate": 0,
     "imageName": "rattleguts.png",
+    "introduced": {
+      "name": "Update 24.0",
+      "url": "http://warframe.fandom.com/wiki/Update_24%23Update_24.0",
+      "aliases": [ "24", "24.0", "Fortuna" ],
+      "parent": "24.0",
+      "date": "2018-11-08"
+    },
     "masteryReq": 0,
     "name": "Rattleguts",
     "omegaAttenuation": 0.75,
@@ -40787,14 +40983,19 @@
         "fixes": ""
       }
     ],
+    "polarities": [  ],
     "primeOmegaAttenuation": 1,
     "procChance": 0,
     "productCategory": "Pistols",
+    "releaseDate": "2018-11-08",
     "skipBuildTimePrice": 25,
+    "tags": [  ],
     "totalDamage": 0,
     "tradable": false,
-    "type": "Kitgun Component",
-    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPart"
+    "type": "Kitgun",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPart",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/35/KitgunChamberRattleguts.png/revision/latest?cb=20181110154514",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Rattleguts"
   },
   {
     "category": "Misc",
@@ -40817,11 +41018,24 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 14.8,
+        "crit_chance": 25,
+        "crit_mult": 3,
+        "status_chance": 10,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 25,
+          "slash": 12.5,
+          "puncture": 12.5
+        }
+      }
+    ],
     "category": "Misc",
     "criticalChance": 0.25,
     "criticalMultiplier": 3,
     "damagePerShot": [ 25, 12.5, 12.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -44237,6 +44451,20 @@
     "uniqueName": "/Lotus/Types/Items/Solaris/AnimalTagStoverCommon"
   },
   {
+    "attacks": [
+      {
+        "name": "Sepfahn Strike (Gilded)",
+        "speed": 0.92,
+        "crit_chance": 20,
+        "crit_mult": 2,
+        "status_chance": 20,
+        "damage": {
+          "impact": 22.6,
+          "slash": 146.9,
+          "puncture": 56.5
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -44292,7 +44520,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 1,
     "fireRate": 0,
@@ -44408,16 +44635,6 @@
   },
   {
     "category": "Misc",
-    "description": "Once part of an intricate Entrati apparatus, now shattered and bearing a sharp edge.",
-    "excludeFromCodex": true,
-    "imageName": "seriglass-shard.png",
-    "name": "Seriglass Shard",
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Deimos/SeriglassShard"
-  },
-  {
-    "category": "Misc",
     "description": "A grizzly trophy extracted from the corpse of a Juggernaut.",
     "drops": [
       {
@@ -44466,14 +44683,35 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartD"
   },
   {
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 38,
+        "crit_mult": 2.6,
+        "status_chance": 24,
+        "damage": {
+          "impact": 72,
+          "slash": 120,
+          "puncture": 48
+        },
+        "slide": "480",
+        "slam": {
+          "damage": "720.00",
+          "radial": {
+            "damage": "96.00",
+            "element": "undefined",
+            "proc": "undefined",
+            "radius": 8
+          }
+        }
+      }
+    ],
     "blockingAngle": 60,
     "category": "Misc",
-    "channeling": 1.5,
     "comboDuration": 5,
     "criticalChance": 0.38,
     "criticalMultiplier": 2.5999999,
     "damagePerShot": [ 72, 48, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "[PH] Description",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -44585,6 +44823,35 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Direct Hit",
+        "speed": 1.33,
+        "crit_chance": 10,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "damage": {
+          "void": 3000
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 700,
+        "crit_chance": 10,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 7,
+          "reduction": 0.4
+        },
+        "damage": {
+          "void": 4500
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -44640,7 +44907,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -44856,6 +45122,24 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 1.33,
+        "crit_chance": 0,
+        "crit_mult": 1.1,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "falloff": {
+          "start": 16,
+          "end": 25,
+          "reduction": 0.54
+        },
+        "damage": {
+          "void": 3500
+        }
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -44911,7 +45195,6 @@
     "criticalChance": 0,
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "",
     "disposition": 3,
     "fireRate": 0,
@@ -44994,16 +45277,6 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/DangerRoomKey"
-  },
-  {
-    "category": "Misc",
-    "description": "A token symbolizing a converted Sister of Parvos. Can be traded to other players for control of said Sister of Parvos.",
-    "excludeFromCodex": true,
-    "imageName": "sister-of-parvos-token.png",
-    "name": "Sister Of Parvos Token",
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Game/Nemesis/KuvaLich/CapturedCorpusLichToken"
   },
   {
     "buildPrice": 5000,
@@ -45144,67 +45417,6 @@
     "tradable": false,
     "type": "Kitgun Component",
     "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIReloadIClipPart"
-  },
-  {
-    "category": "Misc",
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "excludeFromCodex": true,
-    "fireRate": 0,
-    "imageName": "sly-vulpaphyla.png",
-    "masteryReq": 0,
-    "name": "Sly Vulpaphyla",
-    "omegaAttenuation": 1,
-    "patchlogs": [
-      {
-        "name": "Gara Prime: Update 30.3.0",
-        "date": "2021-05-25T17:56:49Z",
-        "url": "https://forums.warframe.com/topic/1265162-gara-prime-update-3030/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Sly Vulpaphyla not being affected by Ivara’s Prowl invisibility while downed and after being revived. \nFixed the Tek Enhance mod not increasing the Duration of the Sly Vulpaphyla’s Survival Instinct Precept. "
-      },
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.8 + 29.0.8.1",
-        "date": "2020-09-10T18:28:19Z",
-        "url": "https://forums.warframe.com/topic/1224002-heart-of-deimos-hotfix-2908-29081/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed many cases where the Sly Vulpaphyla wouldn't respect cooldowns, would fail to trigger, or would result in Client FX not getting cleaned up. \nPotential fix towards a script error caused by Sly Vulpaphyla Survival Instinct triggering."
-      },
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.7",
-        "date": "2020-09-03T19:29:45Z",
-        "url": "https://forums.warframe.com/topic/1221646-heart-of-deimos-hotfix-2907/",
-        "additions": "",
-        "changes": "Fixed the Sly Vulpaphyla’s Survival Instinct FX causing a performance dip due to its visual distortion. As reported here!",
-        "fixes": ""
-      },
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.6",
-        "date": "2020-09-01T22:43:56Z",
-        "url": "https://forums.warframe.com/topic/1220813-heart-of-deimos-hotfix-2906/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed Sly Vulpaphyla's Survival Instinct not showing FX for Clients."
-      },
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.3",
-        "date": "2020-08-26T22:57:57Z",
-        "url": "https://forums.warframe.com/topic/1217375-heart-of-deimos-hotfix-2903/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed a script error when a Sly Vulpaphyla deactivates a Precept."
-      }
-    ],
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterCommonRewardItem"
   },
   {
     "category": "Misc",
@@ -45479,6 +45691,48 @@
     "uniqueName": "/Lotus/Types/Items/Eidolon/AnimalTagMergooRare"
   },
   {
+    "ammo": 130,
+    "attacks": [
+      {
+        "speed": 0,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "Projectile",
+        "falloff": {
+          "start": 13,
+          "end": 26,
+          "reduction": 0
+        },
+        "damage": {}
+      },
+      {
+        "name": "Explosion",
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 4.7,
+          "reduction": 0.5
+        },
+        "damage": {}
+      },
+      {
+        "name": "Bomblet Explosion",
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 2.1,
+          "reduction": 0.2
+        },
+        "damage": {}
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -45535,8 +45789,16 @@
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "",
+    "disposition": 1,
     "fireRate": 0,
     "imageName": "sporelacer.png",
+    "introduced": {
+      "name": "Update 29.5",
+      "url": "http://warframe.fandom.com/wiki/Update_29%23Update_29.5",
+      "aliases": [ "29.5", "29.5.0" ],
+      "parent": "29.5",
+      "date": "2020-11-19"
+    },
     "masteryReq": 0,
     "name": "Sporelacer",
     "omegaAttenuation": 0.55000001,
@@ -45550,14 +45812,19 @@
         "fixes": "Fixed inability to Chat Link Kitgun weapons made with the new Infested chambers Vermisplicer and Sporelacer."
       }
     ],
+    "polarities": [  ],
     "primeOmegaAttenuation": 1,
     "procChance": 0,
     "productCategory": "Pistols",
+    "releaseDate": "2020-11-19",
     "skipBuildTimePrice": 25,
+    "tags": [  ],
     "totalDamage": 0,
     "tradable": false,
-    "type": "Pistol",
-    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggPart"
+    "type": "Kitgun",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggPart",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/cf/KitgunChamberSporelacer.png/revision/latest?cb=20201120224837",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Sporelacer"
   },
   {
     "category": "Misc",
@@ -47456,6 +47723,30 @@
     "uniqueName": "/Lotus/Types/Ship/AdvancedResourceDrone"
   },
   {
+    "ammo": 540,
+    "attacks": [
+      {
+        "speed": 0,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "Projectile",
+        "damage": {}
+      },
+      {
+        "name": "Explosion",
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 1.9,
+          "reduction": 0.3
+        },
+        "damage": {}
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -47512,8 +47803,16 @@
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "",
+    "disposition": 1,
     "fireRate": 0,
     "imageName": "tombfinger.png",
+    "introduced": {
+      "name": "Update 24.0",
+      "url": "http://warframe.fandom.com/wiki/Update_24%23Update_24.0",
+      "aliases": [ "24", "24.0", "Fortuna" ],
+      "parent": "24.0",
+      "date": "2018-11-08"
+    },
     "masteryReq": 0,
     "name": "Tombfinger",
     "omegaAttenuation": 0.64999998,
@@ -47592,14 +47891,19 @@
         "fixes": ""
       }
     ],
+    "polarities": [  ],
     "primeOmegaAttenuation": 0.85000002,
     "procChance": 0,
     "productCategory": "Pistols",
+    "releaseDate": "2018-11-08",
     "skipBuildTimePrice": 25,
+    "tags": [  ],
     "totalDamage": 0,
     "tradable": false,
-    "type": "Kitgun Component",
-    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPart"
+    "type": "Kitgun",
+    "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPart",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/6b/KitgunChamberTombfinger.png/revision/latest?cb=20181110154549",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Tombfinger"
   },
   {
     "category": "Misc",
@@ -48475,76 +48779,6 @@
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/UranusNavigationFeatureItem"
   },
   {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsBBlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-        "name": "Brickie Muon Battery",
-        "description": "A small, atomic power source.Acquired by disassembling Brickie Servofish.",
-        "itemCount": 15,
-        "imageName": "brickie-muon-battery.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
-        "name": "Calda Toroid",
-        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Calda Toroids from enemies located at the Enrichment Labs in the Orb Vallis and from Scyto Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
-        "imageName": "calda-toroid.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
-        "name": "Pyrotic Alloy",
-        "description": "Pyrol that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 25,
-        "imageName": "pyrotic-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-        "name": "Thermal Sludge",
-        "description": "A by-product from the Weeping Towers terraforming processes.",
-        "itemCount": 25,
-        "imageName": "thermal-sludge.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "urga-bracket.png",
-    "masteryReq": 0,
-    "name": "Urga Bracket",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsB"
-  },
-  {
     "category": "Misc",
     "itemCount": 1,
     "name": "Utilityunlocker",
@@ -48600,14 +48834,35 @@
     "windUp": 0.5
   },
   {
+    "attacks": [
+      {
+        "speed": 1.5,
+        "crit_chance": 50,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "damage": {
+          "impact": 83.3,
+          "slash": 83.3,
+          "puncture": 83.3
+        },
+        "slide": "750",
+        "slam": {
+          "damage": "750.00",
+          "radial": {
+            "damage": "250.00",
+            "element": "undefined",
+            "proc": "Ragdoll",
+            "radius": 6
+          }
+        }
+      }
+    ],
     "blockingAngle": 60,
     "category": "Misc",
-    "channeling": 1.5,
     "comboDuration": 5,
     "criticalChance": 0.5,
     "criticalMultiplier": 2,
     "damagePerShot": [ 99.989998, 99.999893, 100.01009, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "These talons emerge when Valkyr unleashes her Hysteria.",
     "disposition": 3,
     "excludeFromCodex": true,
@@ -49298,6 +49553,17 @@
     "uniqueName": "/Lotus/Types/Items/ShipFeatureItems/VenusNavigationFeatureItem"
   },
   {
+    "ammo": 226,
+    "attacks": [
+      {
+        "speed": 0,
+        "crit_chance": 0,
+        "crit_mult": 0,
+        "status_chance": 0,
+        "shot_type": "Discharge",
+        "damage": {}
+      }
+    ],
     "buildPrice": 5000,
     "buildQuantity": 1,
     "buildTime": 3600,
@@ -49354,8 +49620,16 @@
     "criticalMultiplier": 0,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "",
+    "disposition": 3,
     "fireRate": 0,
     "imageName": "vermisplicer.png",
+    "introduced": {
+      "name": "Update 29.5",
+      "url": "http://warframe.fandom.com/wiki/Update_29%23Update_29.5",
+      "aliases": [ "29.5", "29.5.0" ],
+      "parent": "29.5",
+      "date": "2020-11-19"
+    },
     "masteryReq": 0,
     "name": "Vermisplicer",
     "omegaAttenuation": 1,
@@ -49393,14 +49667,19 @@
         "fixes": ""
       }
     ],
+    "polarities": [  ],
     "primeOmegaAttenuation": 0.85000002,
     "procChance": 0,
     "productCategory": "Pistols",
+    "releaseDate": "2020-11-19",
     "skipBuildTimePrice": 25,
+    "tags": [  ],
     "totalDamage": 0,
     "tradable": false,
-    "type": "Pistol",
-    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamPart"
+    "type": "Kitgun",
+    "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamPart",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/f/fa/KitgunChamberVermisplicer.png/revision/latest?cb=20201120224842",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Vermisplicer"
   },
   {
     "category": "Misc",
@@ -49507,35 +49786,6 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/Elitium"
-  },
-  {
-    "category": "Misc",
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "excludeFromCodex": true,
-    "fireRate": 0,
-    "imageName": "vizier-predasite.png",
-    "masteryReq": 0,
-    "name": "Vizier Predasite",
-    "omegaAttenuation": 1,
-    "patchlogs": [
-      {
-        "name": "Heart of Deimos: Hotfix 29.0.4",
-        "date": "2020-08-27T23:04:50Z",
-        "url": "https://forums.warframe.com/topic/1218017-heart-of-deimos-hotfix-2904/",
-        "additions": "",
-        "changes": "",
-        "fixes": "Fixed script error when Vizier Predasite dies when attempting to heal."
-      }
-    ],
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorCommonRewardItem"
   },
   {
     "category": "Misc",
@@ -49687,76 +49937,6 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/VoidTearDrop"
-  },
-  {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailABlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
-        "name": "Circuits",
-        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
-        "itemCount": 600,
-        "imageName": "circuits.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
-        "name": "Nitain Extract",
-        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
-        "itemCount": 3,
-        "imageName": "nitain-extract.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
-        "name": "Salvage",
-        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
-        "itemCount": 2500,
-        "imageName": "salvage.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
-        "name": "Thaumic Distillate",
-        "description": "Thaumica reduced to its most durable, workable elements.",
-        "itemCount": 20,
-        "imageName": "thaumic-distillate.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "wanz-stabilizer.png",
-    "masteryReq": 0,
-    "name": "Wanz Stabilizer",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailA"
   },
   {
     "category": "Misc",
@@ -50618,75 +50798,5 @@
     "tradable": false,
     "type": "Kitgun Component",
     "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCritIReloadIIClipPart"
-  },
-  {
-    "buildPrice": 50000,
-    "buildQuantity": 1,
-    "buildTime": 86400,
-    "category": "Misc",
-    "components": [
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-        "name": "Axidrol Alloy",
-        "description": "A compound formed from Axidite.",
-        "itemCount": 25,
-        "imageName": "axidrol-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsCBlueprint",
-        "name": "Blueprint",
-        "description": "",
-        "itemCount": 1,
-        "imageName": "blueprint.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-        "name": "Brickie Muon Battery",
-        "description": "A small, atomic power source.Acquired by disassembling Brickie Servofish.",
-        "itemCount": 15,
-        "imageName": "brickie-muon-battery.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-        "name": "Travocyte Alloy",
-        "description": "A compound formed from Travoride.",
-        "itemCount": 25,
-        "imageName": "travocyte-alloy.png",
-        "tradable": false,
-        "drops": [  ]
-      },
-      {
-        "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
-        "name": "Vega Toroid",
-        "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Vega Toroids from enemies located at the Spaceport in the Orb Vallis and from Mite Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
-        "imageName": "vega-toroid.png",
-        "tradable": false,
-        "drops": [  ]
-      }
-    ],
-    "consumeOnBuild": true,
-    "criticalChance": 0,
-    "criticalMultiplier": 0,
-    "damagePerShot": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "description": "",
-    "fireRate": 0,
-    "imageName": "zubb-bracket.png",
-    "masteryReq": 0,
-    "name": "Zubb Bracket",
-    "omegaAttenuation": 1,
-    "procChance": 0,
-    "productCategory": "Pistols",
-    "skipBuildTimePrice": 25,
-    "totalDamage": 0,
-    "tradable": false,
-    "type": "Misc",
-    "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsC"
   }
 ]

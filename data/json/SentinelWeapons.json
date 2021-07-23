@@ -1,11 +1,22 @@
 [
   {
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 10,
+        "crit_mult": 3,
+        "status_chance": 15,
+        "damage": {
+          "slash": 76,
+          "puncture": 76
+        }
+      }
+    ],
     "blockingAngle": 90,
     "category": "Primary",
     "criticalChance": 0.1,
     "criticalMultiplier": 3,
     "damagePerShot": [ 0, 76, 76, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Hound melee attacks eviscerate with Puncture and Slash damage.",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -38,11 +49,22 @@
   {
     "accuracy": 12.5,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 2,
+        "crit_mult": 1.5,
+        "status_chance": 3,
+        "shot_type": "Discharge",
+        "damage": {
+          "cold": 5
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.02,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Freeze targets in their tracks with this sentinel mounted ice-beam.",
     "disposition": 3,
     "fireRate": 1,
@@ -104,12 +126,23 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Artax"
   },
   {
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 10,
+        "crit_mult": 3,
+        "status_chance": 15,
+        "damage": {
+          "impact": 76,
+          "puncture": 76
+        }
+      }
+    ],
     "blockingAngle": 90,
     "category": "Primary",
     "criticalChance": 0.1,
     "criticalMultiplier": 3,
     "damagePerShot": [ 76, 76, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Hound melee attacks pierce hard with Impact and Puncture damage.",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -142,11 +175,26 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1.607,
+        "crit_chance": 2.5,
+        "crit_mult": 1.3,
+        "status_chance": 2,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 0.7,
+          "slash": 0.3,
+          "puncture": 6
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.025,
     "criticalMultiplier": 1.25,
     "damagePerShot": [ 0.69999999, 5.9500003, 0.34999967, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Fires a small burst of lasers.",
     "disposition": 5,
     "fireRate": 1.6071428,
@@ -217,6 +265,18 @@
   {
     "accuracy": 12.5,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 35,
+        "shot_type": "Discharge",
+        "damage": {
+          "cold": 10
+        }
+      }
+    ],
     "buildPrice": 50000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -272,7 +332,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Emits a ray of sub-zero energy.",
     "disposition": 3,
     "fireRate": 1,
@@ -343,11 +402,49 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "First Attack",
+        "speed": 1.3,
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 25,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 50
+        }
+      },
+      {
+        "name": "Second Attack",
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 25,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "puncture": 50
+        }
+      },
+      {
+        "name": "Third Attack",
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 25,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "slash": 50
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0,
     "criticalMultiplier": 1,
     "damagePerShot": [ 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Causes the Helios Sentinel to attack enemy targets using pieces of itself.",
     "disposition": 4,
     "fireRate": 1.3333334,
@@ -469,11 +566,49 @@
   },
   {
     "ammo": null,
+    "attacks": [
+      {
+        "name": "First Attack",
+        "speed": 1.33,
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 25,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 75
+        }
+      },
+      {
+        "name": "Second Attack",
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 25,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "puncture": 75
+        }
+      },
+      {
+        "name": "Third Attack",
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 25,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "slash": 75
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0,
     "criticalMultiplier": 1,
     "damagePerShot": [ 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Allows the Helios Prime to violently disassemble and turn itself into a deadly projectile.",
     "disposition": 4,
     "fireRate": 1.3333334,
@@ -540,11 +675,24 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 8.3,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 1,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 0.5,
+          "slash": 4.25,
+          "puncture": 0.25
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0.5, 0.25, 4.25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Standard issue weaponry signature to Dethcube.",
     "disposition": 5,
     "fireRate": 8.333334,
@@ -615,11 +763,24 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 10,
+        "crit_mult": 2,
+        "status_chance": 4,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 0.7,
+          "slash": 5.95,
+          "puncture": 0.35
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.1,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0.69999999, 0.34999999, 5.9500003, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Signature default weapon of Dethcube Prime.",
     "disposition": 5,
     "fireRate": 10.000001,
@@ -656,6 +817,31 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 0.91,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 30,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 5,
+          "puncture": 4.5
+        }
+      },
+      {
+        "name": "Explosion",
+        "radius": 300,
+        "shot_type": "AoE",
+        "damage": {
+          "impact": 3,
+          "heat": 3.5
+        }
+      }
+    ],
     "buildPrice": 50000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -711,7 +897,6 @@
     "criticalChance": 0.050000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 7.0333328, 4.0499997, 0, 2.9166665, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Launches a swarm of micro-missiles.",
     "disposition": 3,
     "fireRate": 0.90909088,
@@ -772,12 +957,23 @@
     "wikiaUrl": "http://warframe.fandom.com/wiki/Helstrum"
   },
   {
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 10,
+        "crit_mult": 3,
+        "status_chance": 15,
+        "damage": {
+          "impact": 76,
+          "slash": 76
+        }
+      }
+    ],
     "blockingAngle": 90,
     "category": "Primary",
     "criticalChance": 0.1,
     "criticalMultiplier": 3,
     "damagePerShot": [ 76, 0, 76, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Hound melee attacks devastate with Impact and Slash damage.",
     "disposition": 1,
     "excludeFromCodex": true,
@@ -810,11 +1006,26 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1.67,
+        "crit_chance": 2.5,
+        "crit_mult": 1.3,
+        "status_chance": 2,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 0.8,
+          "slash": 0.8,
+          "puncture": 6.4
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.025,
     "criticalMultiplier": 1.25,
     "damagePerShot": [ 0.80000001, 6.4000001, 0.79999971, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A laser rifle developed by reverse-engineering Corpus technology.",
     "disposition": 4,
     "fireRate": 1.6666667,
@@ -851,11 +1062,25 @@
   {
     "accuracy": 18.181818,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 3.33,
+        "crit_chance": 12.5,
+        "crit_mult": 1.8,
+        "status_chance": 5,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 1.25,
+          "puncture": 3.75
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.125,
     "criticalMultiplier": 1.75,
     "damagePerShot": [ 1.25, 3.75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Fires a burst of armor-piercing rounds.",
     "disposition": 3,
     "fireRate": 3.3333335,
@@ -892,11 +1117,26 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 15,
+        "crit_mult": 1.5,
+        "status_chance": 5,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 1.2,
+          "slash": 2.4,
+          "puncture": 8.4
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.15000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 1.2, 8.3999996, 2.3999999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "A Prime Laser Rifle.",
     "disposition": 4,
     "fireRate": 10.000001,
@@ -933,11 +1173,26 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1.607,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 1,
+          "slash": 0.5,
+          "puncture": 8.5
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 1, 8.5, 0.49999952, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Fires a small burst of lasers.",
     "disposition": 5,
     "fireRate": 1.6071428,
@@ -1000,11 +1255,24 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 3.3,
+        "crit_chance": 2.5,
+        "crit_mult": 1.5,
+        "status_chance": 5,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "toxin": 15
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.025,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Standard issue weapon for Djinn Sentinel. Fires poisonous projectiles.",
     "disposition": 5,
     "drops": [
@@ -1101,11 +1369,24 @@
   {
     "accuracy": 3.3333333,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 2.33,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 5.95,
+          "slash": 0.7,
+          "puncture": 0.35
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 5.9500003, 0.34999999, 0.69999975, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Standard issue weapon for Carrier Sentinel. Fires shotgun rounds.",
     "disposition": 3,
     "fireRate": 1,
@@ -1168,11 +1449,24 @@
   {
     "accuracy": 3.3333333,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 5,
+        "crit_mult": 2,
+        "status_chance": 2.5,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "impact": 8.5,
+          "slash": 1,
+          "puncture": 0.5
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.050000001,
     "criticalMultiplier": 2,
     "damagePerShot": [ 8.5, 0.5, 0.99999964, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Standard issue weapon for Carrier Prime Sentinel. Fires shotgun rounds.",
     "disposition": 3,
     "fireRate": 1,
@@ -1219,6 +1513,18 @@
   {
     "accuracy": 25,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 8.33,
+        "crit_chance": 2,
+        "crit_mult": 1.5,
+        "status_chance": 15,
+        "shot_type": "Discharge",
+        "damage": {
+          "electricity": 6
+        }
+      }
+    ],
     "buildPrice": 50000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -1274,7 +1580,6 @@
     "criticalChance": 0.02,
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Burst rifle that fires electrified rounds.",
     "disposition": 3,
     "fireRate": 8.333334,
@@ -1330,11 +1635,22 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 12,
+        "crit_chance": 8,
+        "crit_mult": 2,
+        "status_chance": 34,
+        "shot_type": "Discharge",
+        "damage": {
+          "cold": 26
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.079999998,
     "criticalMultiplier": 2,
     "damagePerShot": [ 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Designed as the perfect mate for Nautilus, this Sentinel weapon projects an icy beam at nearby targets.",
     "disposition": 4,
     "fireRate": 12.000001,
@@ -1389,6 +1705,20 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "name": "Charged Attack",
+        "speed": 1,
+        "crit_chance": 20,
+        "crit_mult": 2.5,
+        "status_chance": 10,
+        "charge_time": 1,
+        "shot_type": "Discharge",
+        "damage": {
+          "heat": 35
+        }
+      }
+    ],
     "buildPrice": 50000,
     "buildQuantity": 1,
     "buildTime": 86400,
@@ -1444,7 +1774,6 @@
     "criticalChance": 0.2,
     "criticalMultiplier": 2.5,
     "damagePerShot": [ 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Charges up a powerful blast of ultra-heated plasma.",
     "disposition": 3,
     "fireRate": 1,
@@ -1508,11 +1837,24 @@
   {
     "accuracy": 100,
     "ammo": null,
+    "attacks": [
+      {
+        "speed": 0.15,
+        "crit_chance": 35,
+        "crit_mult": 2.5,
+        "status_chance": 25,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "electricity": 85
+        }
+      }
+    ],
     "category": "Primary",
     "criticalChance": 0.34999999,
     "criticalMultiplier": 2.5,
     "damagePerShot": [ 0, 0, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    "damageTypes": {},
     "description": "Standard issue sniper rifle for Diriga.",
     "disposition": 4,
     "fireRate": 0.15000001,
