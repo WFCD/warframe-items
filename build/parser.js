@@ -496,11 +496,10 @@ class Parser {
       !item.name.match(untradableRegex) &&
       !item.uniqueName.match(untradableRegex) &&
       (item.hasOwnProperty('productCategory') ? !item.productCategory.match(/(SpecialItems)/) : true)
-    const tradableByType = tradableTypes.includes(item.type) && notFiltered
-    const tradableByName = (item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered
-    const tradableByProp = (item.isAugment) && notFiltered
-    const isTradable = tradableByType || tradableByName || tradableByProp
-    item.tradable = isTradable || false
+    const tradableByType = !!(tradableTypes.includes(item.type) && notFiltered)
+    const tradableByName = !!((item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered)
+    const tradableByProp = !!((item.isAugment) && notFiltered)
+    item.tradable = tradableByType || tradableByName || tradableByProp
   }
 
   /**
