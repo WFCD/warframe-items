@@ -139,7 +139,7 @@ class WikiaDataScraper {
     }
     const imageUrls = await getImageUrls(jsonData[`${this.luaObjectName}s`])
 
-    let things = []
+    const things = []
 
     try {
       for (const thingName of Object.keys(jsonData[`${this.luaObjectName}s`])) {

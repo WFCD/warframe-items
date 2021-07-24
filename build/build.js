@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const crypto = require('crypto')
 const minify = require('imagemin')
 const minifyPng = require('imagemin-pngquant')
@@ -91,12 +92,12 @@ class Build {
       const data = categories[category].sort(sort)
       // don't add the generated custom category data to all separately, since it's duplicate data
       if (!allowedCustomCategories.includes(category)) all = all.concat(data)
-      fs.writeFileSync(`${__dirname}/../data/json/${category}.json`, stringify(data))
+      fs.writeFileSync(path.join(__dirname, `../data/json/${category}.json`), stringify(data))
     }
 
     // All.json (all items in one file)
     all.sort(sort)
-    fs.writeFileSync(`${__dirname}/../data/json/All.json`, stringify(all))
+    fs.writeFileSync(path.join(__dirname, '../data/json/All.json'), stringify(all))
 
     return all
   }
@@ -105,7 +106,7 @@ class Build {
    * Store warnings during parse process to disk
    */
   saveWarnings (warnings) {
-    fs.writeFileSync(`${__dirname}/../data/warnings.json`, stringify(warnings))
+    fs.writeFileSync(path.join(__dirname, '../data/warnings.json'), stringify(warnings))
   }
 
   /**
@@ -121,7 +122,7 @@ class Build {
       return
     } else {
       exportCache.Manifest.hash = manifestHash
-      fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
+      fs.writeFileSync(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, null, 1))
     }
     const bar = new Progress('Fetching Images', items.length)
     const duplicates = [] // Don't download component images or relics twice
@@ -132,7 +133,7 @@ class Build {
 
       // Save images for components if necessary
       if (item.components) {
-        for (let component of item.components) {
+        for (const component of item.components) {
           await this.saveImage(component, true, duplicates, manifest)
         }
       }
@@ -140,7 +141,7 @@ class Build {
     }
 
     // Write new cache to disk
-    fs.writeFileSync(`${__dirname}/../data/cache/.images.json`, JSON.stringify(imageCache, null, 1))
+    fs.writeFileSync(path.join(__dirname, '../data/cache/.images.json'), JSON.stringify(imageCache, null, 1))
   }
 
   /**
@@ -151,8 +152,8 @@ class Build {
     if (!imageBase) return
     const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '')
     const imageUrl = `http://content.warframe.com/PublicExport/${imageStub}`
-    const basePath = `${__dirname}/../data/img/`
-    const filePath = `${basePath}${item.imageName}`
+    const basePath = path.join(__dirname, '../data/img/')
+    const filePath = path.join(basePath, item.imageName)
     const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
     const sizeMedium = ['Resources', 'Misc', 'Fish']
     const hash = manifest.find(i => i.uniqueName === item.uniqueName).fileTime
@@ -214,10 +215,10 @@ class Build {
    * Update readme with newest patchlog version
    */
   updateReadme (patchlogs) {
-    const logob64 = require(`${__dirname}/../data/logo.json`)
+    const logob64 = require(path.join(__dirname, '../data/logo.json'))
     const version = patchlogs.posts[0].name.replace(/ \+ /g, '--').replace(/[^0-9\-.]/g, '').trim()
     const url = patchlogs.posts[0].url
-    const readmeLocation = `${__dirname}/../README.md`
+    const readmeLocation = path.join(__dirname, '../README.md')
     const readmeOld = fs.readFileSync(readmeLocation, 'utf-8')
     const readmeNew = readmeOld.replace(/\[!\[warframe update.*/, `[![warframe update](https://img.shields.io/badge/warframe_update-${version}-blue.svg?logo=${encodeURIComponent(logob64)})](${url})`)
     fs.writeFileSync(readmeLocation, readmeNew)

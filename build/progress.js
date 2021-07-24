@@ -19,7 +19,9 @@ class Progress extends ProgressBar {
  * Use dummy object in prod because pm2 won't render
  * the progress bar properly.
  */
-module.exports = prod ? class Empty {
-  interrupt () {}
-  tick () {}
-} : Progress
+module.exports = prod
+  ? class Empty {
+    interrupt () {}
+    tick () {}
+  }
+  : Progress

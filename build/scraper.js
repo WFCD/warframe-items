@@ -5,6 +5,7 @@ const Progress = require('./progress.js')
 const crypto = require('crypto')
 const lzma = require('lzma')
 const fs = require('fs')
+const path = require('path')
 const cheerio = require('cheerio')
 const exportCache = require('../data/cache/.export.json')
 const ModScraper = require('./wikia/scrapers/ModScraper')
@@ -22,9 +23,7 @@ const get = async (url, disableProxy = !prod, encoding) => request({
   //  socksUsername: process.env.SOCKS5_USER,
   //  socksPassword: process.env.SOCKS5_PASS
   // },
-  ...encoding === false ? {
-    encoding: null
-  } : {}
+  ...encoding === false ? { encoding: null } : {}
 })
 const getJSON = async (url, disableProxy) => JSON.parse(sanitize(await get(url, disableProxy)))
 
@@ -92,7 +91,7 @@ class Scraper {
     // Update checksum
     if (changed) {
       exportCache.DropChances.hash = ratesHash
-      fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
+      fs.writeFileSync(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, null, 1))
     }
 
     bar.tick()
@@ -113,7 +112,7 @@ class Scraper {
 
     if (changed) {
       exportCache.Patchlogs.hash = patchlogsHash
-      fs.writeFileSync(`${__dirname}/../data/cache/.export.json`, JSON.stringify(exportCache, null, 1))
+      fs.writeFileSync(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, null, 1))
     }
 
     bar.tick()

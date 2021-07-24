@@ -46,12 +46,12 @@ class Items extends Array {
 
     // Add items from options to array. Type equals the file name.
     // Tradable determines if we should use sub-folder or stay on root.
-    for (let category of this.options.category) {
+    for (const category of this.options.category) {
       // Ignores the enemy category.
       if (this.options.ignoreEnemies && category === 'Enemy') continue
       const items = require(`./data/json/${category}.json`)
 
-      for (let item of items) {
+      for (const item of items) {
         // need this because all will include enemies
         if (this.options.ignoreEnemies && item.category === 'Enemy') continue
         this.push(item)
