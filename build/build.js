@@ -4,7 +4,7 @@ const crypto = require('crypto')
 const minify = require('imagemin')
 const minifyPng = require('imagemin-pngquant')
 const minifyJpeg = require('imagemin-jpegtran')
-const request = require('requestretry').defaults({ fullResponse: false })
+const fetch = require('node-fetch')
 const sharp = require('sharp')
 const Progress = require('./progress.js')
 const stringify = require('./stringify.js')
@@ -13,6 +13,14 @@ const parser = require('./parser.js')
 const imageCache = require('../data/cache/.images.json')
 const exportCache = require('../data/cache/.export.json')
 const allowedCustomCategories = ['SentinelWeapons']
+
+const get = async (url, binary = true) => {
+  const res = await fetch(url)
+  if (binary) {
+    return res.buffer().toString()
+  }
+  return res.text()
+}
 
 class Build {
   async init () {
@@ -174,7 +182,7 @@ class Build {
     // Check if the previous image was for a component because they might
     // have different naming schemes like lex-prime
     if (!cached || cached.hash !== hash || cached.isComponent !== isComponent) {
-      const image = await request({ url: imageUrl, encoding: null })
+      const image = await get(imageUrl)
       this.updateCache(item, cached, hash, isComponent)
 
       if (sizeBig.includes(item.category) || isComponent) {
@@ -184,7 +192,8 @@ class Build {
       } else {
         await sharp(image).toFile(filePath)
       }
-      await minify([filePath], basePath, {
+      await minify([filePath], {
+        destination: basePath,
         plugins: [
           minifyJpeg(),
           minifyPng({

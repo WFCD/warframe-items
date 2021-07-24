@@ -1,6 +1,6 @@
 const prod = process.env.NODE_ENV === 'production'
 // const Agent = require('socks5-http-client/lib/Agent')
-const request = require('requestretry').defaults({ fullResponse: false })
+const fetch = require('node-fetch')
 const Progress = require('./progress.js')
 const crypto = require('crypto')
 const lzma = require('lzma')
@@ -13,19 +13,19 @@ const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
 const VersionScraper = require('./wikia/scrapers/VersionScraper')
 const sanitize = (str) => str.replace(/\\r|\r?\n/g, '')
-const get = async (url, disableProxy = !prod, encoding) => request({
-  url,
-  // Old proxy options. Kept in case this would be required for local builds.
-  // agentClass: disableProxy ? undefined : Agent,
-  // agentOptions: disableProxy ? {} : {
-  //  socksHost: process.env.SOCKS5_HOST,
-  //  socksPort: process.env.SOCKS5_PORT,
-  //  socksUsername: process.env.SOCKS5_USER,
-  //  socksPassword: process.env.SOCKS5_PASS
-  // },
-  ...encoding === false ? { encoding: null } : {}
-})
-const getJSON = async (url, disableProxy) => JSON.parse(sanitize(await get(url, disableProxy)))
+// const agent = new Agent({
+//  socksHost: process.env.SOCKS5_HOST,
+//  socksPort: process.env.SOCKS5_PORT,
+//  socksUsername: process.env.SOCKS5_USER,
+//  socksPassword: process.env.SOCKS5_PASS
+// })
+const get = async (url, disableProxy = !prod, compress = false) => {
+  const res = await fetch(url, {
+    /* agent: disableProxy ? null : agent */
+  })
+  return compress === false ? Uint8Array.from(await res.buffer()) : res.text()
+}
+const getJSON = async (url, disableProxy) => JSON.parse(sanitize(await get(url, disableProxy, true)))
 
 /**
  * Retrieves the base item data necessary for the parsing process
@@ -36,7 +36,7 @@ class Scraper {
    */
   async fetchEndpoints (manifest) {
     const origin = 'http://content.warframe.com/PublicExport/index_en.txt.lzma'
-    const raw = await get(origin, !prod, false)
+    const raw = await get(origin, !prod)
     const decompressed = lzma.decompress(raw)
     const manifestRegex = /(\r?\n)?ExportManifest.*/
     let filtered
