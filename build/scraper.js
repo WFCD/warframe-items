@@ -35,7 +35,7 @@ class Scraper {
    * Get Endpoints from Warframe's origin file
    */
   async fetchEndpoints (manifest) {
-    const origin = 'http://content.warframe.com/PublicExport/index_en.txt.lzma'
+    const origin = 'https://content.warframe.com/PublicExport/index_en.txt.lzma'
     const raw = await get(origin, !prod)
     const decompressed = lzma.decompress(raw)
     const manifestRegex = /(\r?\n)?ExportManifest.*/
@@ -61,7 +61,7 @@ class Scraper {
 
     for (const endpoint of endpoints) {
       const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '')
-      const data = (await getJSON(`http://content.warframe.com/PublicExport/Manifest/${endpoint}`))[`Export${category}`]
+      const data = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`))[`Export${category}`]
       result.push({ category, data })
       bar.tick()
     }
@@ -74,7 +74,7 @@ class Scraper {
   async fetchImageManifest () {
     const bar = new Progress('Fetching Image Manifest', 1)
     const endpoint = await this.fetchEndpoints(true)
-    const manifest = (await getJSON(`http://content.warframe.com/PublicExport/Manifest/${endpoint}`)).Manifest
+    const manifest = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`)).Manifest
     bar.tick()
     return manifest
   }
