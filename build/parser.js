@@ -144,8 +144,8 @@ class Parser {
   addComponents (item, category, blueprints, data, secondPass) {
     const blueprint = blueprints.filter(filterBps).find(b => b.resultType === item.uniqueName)
     if (!blueprint) return item // Some items just don't have blueprints
-    let components = []
-    let result = _.cloneDeep(item)
+    const components = []
+    const result = _.cloneDeep(item)
 
     // Look for original component entry in all categories
     for (const ingredient of blueprint.ingredients) {
@@ -267,7 +267,7 @@ class Parser {
     // Relics don't have their grade in the name for some reason
     if (item.type === 'Relic') {
       const grades = require('../config/relicGrades.json')
-      for (let grade of grades) {
+      for (const grade of grades) {
         if (item.uniqueName.includes(grade.id)) {
           item.name = item.name.replace('Relic', grade.refinement)
         }
@@ -318,7 +318,7 @@ class Parser {
     if (item.parent) return
     const types = require('../config/itemTypes.json')
 
-    for (let type of types) {
+    for (const type of types) {
       if (item.uniqueName.includes(type.id)) {
         item.type = type.name
         if (item.type !== type.name) console.error(`${item.name} didn't update types`)
@@ -495,7 +495,7 @@ class Parser {
     const notFiltered = !untradableTypes.includes(item.type) &&
       !item.name.match(untradableRegex) &&
       !item.uniqueName.match(untradableRegex) &&
-      (item.hasOwnProperty('productCategory') ? !item.productCategory.match(/(SpecialItems)/) : true)
+      (item.productCategory ? !item.productCategory.match(/(SpecialItems)/) : true)
     const tradableByType = !!(tradableTypes.includes(item.type) && notFiltered)
     const tradableByName = !!((item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered)
     const tradableByProp = !!((item.isAugment) && notFiltered)
@@ -526,7 +526,7 @@ class Parser {
     if (!drops.changed) {
       // Get drop rates for components if available...
       if (item.components) {
-        for (let component of item.components) {
+        for (const component of item.components) {
           const previous = previousBuild.find(i => i.name === item.name && item.category !== 'Node')
           if (!previous || !previous.components) return
 
