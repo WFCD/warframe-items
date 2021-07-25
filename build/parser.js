@@ -661,6 +661,7 @@ class Parser {
     item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
     item.tags = wikiaItem.tags
+    item.stancePolarity = wikiaItem.stancePolarity
     item.type = title(wikiaItem.type) !== 'Misc' ? title(wikiaItem.type) : item.type
 
     if (warnings.missingType.includes(title(item.name)) && title(item.type) !== 'Misc') {
