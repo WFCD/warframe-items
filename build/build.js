@@ -4,7 +4,7 @@ const crypto = require('crypto')
 const minify = require('imagemin')
 const minifyPng = require('imagemin-pngquant')
 const minifyJpeg = require('imagemin-jpegtran')
-const request = require('requestretry').defaults({ fullResponse: false })
+const fetch = require('node-fetch')
 const sharp = require('sharp')
 const Progress = require('./progress.js')
 const stringify = require('./stringify.js')
@@ -13,6 +13,11 @@ const parser = require('./parser.js')
 const imageCache = require('../data/cache/.images.json')
 const exportCache = require('../data/cache/.export.json')
 const allowedCustomCategories = ['SentinelWeapons']
+
+const get = async (url, binary = true) => {
+  const res = await fetch(url)
+  return binary ? res.buffer() : res.text()
+}
 
 class Build {
   async init () {
@@ -114,23 +119,16 @@ class Build {
    */
   async saveImages (items, manifest) {
     const manifestHash = crypto.createHash('md5').update(JSON.stringify(manifest)).digest('hex')
-
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
     // hash, so any change to that changes the hash of the full thing.
-    if (exportCache.Manifest.hash === manifestHash) {
-      return
-    } else {
-      exportCache.Manifest.hash = manifestHash
-      fs.writeFileSync(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, null, 1))
-    }
+    if (exportCache.Manifest.hash === manifestHash) return
     const bar = new Progress('Fetching Images', items.length)
     const duplicates = [] // Don't download component images or relics twice
 
     for (const item of items) {
       // Save image for parent item
       await this.saveImage(item, false, duplicates, manifest)
-
       // Save images for components if necessary
       if (item.components) {
         for (const component of item.components) {
@@ -139,6 +137,10 @@ class Build {
       }
       bar.tick()
     }
+
+    // write the manifests after images have all succeeded
+    exportCache.Manifest.hash = manifestHash
+    fs.writeFileSync(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, null, 1))
 
     // Write new cache to disk
     fs.writeFileSync(path.join(__dirname, '../data/cache/.images.json'), JSON.stringify(imageCache, null, 1))
@@ -151,7 +153,7 @@ class Build {
     const imageBase = manifest.find(i => i.uniqueName === item.uniqueName)
     if (!imageBase) return
     const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '')
-    const imageUrl = `http://content.warframe.com/PublicExport/${imageStub}`
+    const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`
     const basePath = path.join(__dirname, '../data/img/')
     const filePath = path.join(basePath, item.imageName)
     const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
@@ -174,7 +176,7 @@ class Build {
     // Check if the previous image was for a component because they might
     // have different naming schemes like lex-prime
     if (!cached || cached.hash !== hash || cached.isComponent !== isComponent) {
-      const image = await request({ url: imageUrl, encoding: null })
+      const image = await get(imageUrl)
       this.updateCache(item, cached, hash, isComponent)
 
       if (sizeBig.includes(item.category) || isComponent) {
@@ -184,7 +186,8 @@ class Build {
       } else {
         await sharp(image).toFile(filePath)
       }
-      await minify([filePath], basePath, {
+      await minify([filePath], {
+        destination: basePath,
         plugins: [
           minifyJpeg(),
           minifyPng({

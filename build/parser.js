@@ -16,7 +16,6 @@ const warnings = {
 }
 
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
-
 const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z]{1,1} Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
 const prefixed = (name) => new RegExp(`((?:(?:${prefixes.join('|')})\\s?${name}.*)|(?:${name}\\s?(?:${suffixes.join('|')})\\s?.*))+`, 'i')
 
