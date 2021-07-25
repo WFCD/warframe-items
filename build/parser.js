@@ -344,7 +344,7 @@ class Parser {
   addImageName (item, manifest, previous) {
     const image = manifest.find(i => i.uniqueName === item.uniqueName)
     if (!image) {
-      if (!item.systemName) warnings.missingImage.push(item.name)
+      if (!['Node'].includes(item.type)) warnings.missingImage.push(item.name)
       return
     }
     // eslint-disable-next-line no-useless-escape
@@ -513,7 +513,7 @@ class Parser {
       const wikiaItem = ducats.find(d => d.name.includes(`${item.name} ${component.name}`))
 
       if (wikiaItem && wikiaItem.ducats) component.ducats = wikiaItem.ducats
-      else if (!component.ducats) warnings.missingDucats.push(`${item.name} ${component.name}`)
+      else if (!component.ducats && !(item.name.includes('Prime') && component.name.includes('Prime'))) warnings.missingDucats.push(`${item.name} ${component.name}`)
     }
   }
 
@@ -708,8 +708,10 @@ class Parser {
     if (!target) {
       const isManuallyExcluded = primeExcludeRegex.test(item.name)
       const isSkin = item.category === 'Skins'
-      const isSentinelWeapon = item.type === 'Sentinel' && ['Primary', 'Secondary', 'Melee'].includes(item.category)
-      if (!(isManuallyExcluded || isSkin || isSentinelWeapon)) warnings.missingVaultData.push(item.name)
+      const isSentinelWeapon = (item.type === 'Sentinel' && ['Primary', 'Secondary', 'Melee'].includes(item.category)) ||
+        item.productCategory === 'SentinelWeapons'
+      const isExaltedWeapon = ['SpecialItems'].includes(item.productCategory)
+      if (!(isManuallyExcluded || isSkin || isSentinelWeapon || isExaltedWeapon)) warnings.missingVaultData.push(item.name)
       return
     }
 
