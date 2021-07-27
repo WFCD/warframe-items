@@ -45645,6 +45645,8 @@
         "crit_mult": 0,
         "status_chance": 0,
         "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "falloff": {
           "start": 13,
           "end": 26,
@@ -45654,6 +45656,7 @@
       },
       {
         "name": "Explosion",
+        "radius": 470,
         "crit_chance": 0,
         "crit_mult": 0,
         "status_chance": 0,
@@ -45667,6 +45670,7 @@
       },
       {
         "name": "Bomblet Explosion",
+        "radius": 210,
         "crit_chance": 0,
         "crit_mult": 0,
         "status_chance": 0,
@@ -45674,7 +45678,7 @@
         "falloff": {
           "start": 0,
           "end": 2.1,
-          "reduction": 0.2
+          "reduction": 0.8
         },
         "damage": {}
       }
@@ -45764,7 +45768,7 @@
     "productCategory": "Pistols",
     "releaseDate": "2020-11-19",
     "skipBuildTimePrice": 25,
-    "tags": [  ],
+    "tags": [ "Infested" ],
     "totalDamage": 0,
     "tradable": false,
     "type": "Pistol",
