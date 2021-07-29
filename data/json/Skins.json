@@ -27344,6 +27344,14 @@
     "name": "Eximus",
     "patchlogs": [
       {
+        "name": "Sisters of Parvos: Hotfix 30.5.5",
+        "date": "2021-07-29T17:08:32Z",
+        "url": "https://forums.warframe.com/topic/1274960-sisters-of-parvos-hotfix-3055/",
+        "additions": "",
+        "changes": "Hound Null Audit Precept now triggers more reliably. Previously it would only trigger if the current target was an Eximus, it will now target a nearby Eximus in range even if they aren't the current target.",
+        "fixes": ""
+      },
+      {
         "name": "Update 30.5: Sisters of Parvos",
         "date": "2021-07-06T15:02:09Z",
         "url": "https://forums.warframe.com/topic/1269749-update-305-sisters-of-parvos/",
@@ -31550,6 +31558,14 @@
     "imageName": "follow.png",
     "name": "Follow",
     "patchlogs": [
+      {
+        "name": "Sisters of Parvos: Hotfix 30.5.5",
+        "date": "2021-07-29T17:08:32Z",
+        "url": "https://forums.warframe.com/topic/1274960-sisters-of-parvos-hotfix-3055/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a crash occurring when interacting with a dead Specter ‘Follow’ Context Action after a Host migration occured during a Sister Railjack showdown."
+      },
       {
         "name": "Sisters of Parvos: Hotfix 30.5.4",
         "date": "2021-07-17T12:58:58Z",
@@ -41564,10 +41580,1337 @@
     "uniqueName": "/Lotus/Upgrades/Skins/Priest/UnlockPriestAgile"
   },
   {
+    "buildPrice": 20000,
+    "buildQuantity": 1,
+    "buildTime": 43200,
     "category": "Skins",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 3500,
+        "imageName": "alloy-plate.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Alloy Plate"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mars/Gradivus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Neruda (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Terminus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Venus/Ishtar (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Helmets/PriestAlt2HelmetBlueprint",
+        "name": "Blueprint",
+        "description": "An alternate helmet for Harrow, minister of the Void's veiled verses.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Deimos.",
+        "itemCount": 2,
+        "imageName": "neurodes.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0025,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Kuva Larvling",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Saturn Six Fugitive",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Zealot Baptizer",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Zealot Herald",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Zealot Proselytizer",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0442,
+            "location": "Deimos/Formido (Caches), Rotation B",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1079,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1218,
+            "location": "Earth/Cervantes (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Earth/Cervantes (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Deimos/Formido (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Candiru (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Candiru (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Lepis (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Lepis (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Naeglar (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Naeglar (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Psoro (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Psoro (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Viver (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Viver (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1888,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.25,
+            "location": "Leekter",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.25,
+            "location": "Shik Tal",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.2529,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.5,
+            "location": "Vem Tabook",
+            "rarity": "Common",
+            "type": "Neurodes"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Deimos.",
+        "itemCount": 1,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0025,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0026,
+            "location": "Brachiolyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Arca Heqet",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Arca Kucumatz",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Cinder Machinist",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Phase Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Swarm Satyr",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Alkonost",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Heqet",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Kucumatz",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Machinist",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Osprey",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Satyr",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Aurax Culveri Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Aurax Polaris Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Heqet",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Machinist",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Osprey",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Satyr",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0065,
+            "location": "Mimic",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Aerolyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Ambulas",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Battalyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Conculyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Decaying Battalyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Decaying Conculyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Hunhow",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Ortholyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Shadow Stalker",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Stalker",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Summulyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Symbilyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Alad V",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Artificer",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Captain Vor",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Cinderthresh Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Commander",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Councilor Vay Hek",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "General Sargas Ruk",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Gyre Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Ln2",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Ng",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Pack",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Pb",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Th",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Icemire Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "J3 Jordas Golem",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Jackal",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Jordas Golem",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Kela De Thaym",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Lephantis",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Lt Lech Kril",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Mutalist Alad V",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Phorid",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Rabbleback Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "The Sergeant",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Tyl Regor",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Vay Hek Terra Frame",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0376,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0382,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0442,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0909,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1079,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Endurance Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1936,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.5,
+            "location": "Corrupted Vor",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 5000,
+        "imageName": "salvage.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          }
+        ]
+      }
+    ],
+    "consumeOnBuild": true,
     "description": "An alternate helmet for Harrow, minister of the Void's veiled verses.",
     "imageName": "harrow-crucis-helmet.png",
     "name": "Harrow Crucis Helmet",
+    "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Priest/PriestAlt2Helmet"
@@ -66206,6 +67549,16 @@
   },
   {
     "category": "Skins",
+    "description": "A small wobbly statue of Yareli and Merulina.",
+    "excludeFromCodex": true,
+    "imageName": "noggle-statue---yareli-and-merulina.png",
+    "name": "Noggle Statue - Yareli And Merulina",
+    "tradable": false,
+    "type": "Ship Decoration",
+    "uniqueName": "/Lotus/Types/Items/ShipDecos/YareliMerulinaBobbleHead"
+  },
+  {
+    "category": "Skins",
     "description": "A small wobbly statue of Zephyr.",
     "imageName": "noggle-statue---zephyr.png",
     "name": "Noggle Statue - Zephyr",
@@ -72815,6 +74168,14 @@
     "imageName": "parazon.png",
     "name": "Parazon",
     "patchlogs": [
+      {
+        "name": "Sisters of Parvos: Hotfix 30.5.5",
+        "date": "2021-07-29T17:08:32Z",
+        "url": "https://forums.warframe.com/topic/1274960-sisters-of-parvos-hotfix-3055/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed outdated loading screen tips related to Parazon Mercy eligibility. "
+      },
       {
         "name": "Sisters of Parvos: Hotfix 30.5.3",
         "date": "2021-07-09T15:07:34Z",
@@ -83586,6 +84947,14 @@
     "name": "Smoke",
     "patchlogs": [
       {
+        "name": "Sisters of Parvos: Hotfix 30.5.5",
+        "date": "2021-07-29T17:08:32Z",
+        "url": "https://forums.warframe.com/topic/1274960-sisters-of-parvos-hotfix-3055/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Ash Smoke Shadow Augment"
+      },
+      {
         "name": "Gara Prime: Hotfix 30.3.5",
         "date": "2021-06-10T19:47:41Z",
         "url": "https://forums.warframe.com/topic/1267287-gara-prime-hotfix-3035/",
@@ -92785,6 +94154,14 @@
     "name": "Transmission",
     "patchlogs": [
       {
+        "name": "Sisters of Parvos: Hotfix 30.5.5",
+        "date": "2021-07-29T17:08:32Z",
+        "url": "https://forums.warframe.com/topic/1274960-sisters-of-parvos-hotfix-3055/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a game hang/crash that could occur on player Transmissions."
+      },
+      {
         "name": "Sisters of Parvos: Hotfix 30.5.3",
         "date": "2021-07-09T15:07:34Z",
         "url": "https://forums.warframe.com/topic/1270868-sisters-of-parvos-hotfix-3053%C2%A0%C2%A0/",
@@ -100955,6 +102332,16 @@
   },
   {
     "category": "Skins",
+    "description": "Sweet frequencies ripple through this Nightwave themed ephemera.",
+    "excludeFromCodex": true,
+    "imageName": "waveform-ephemera.png",
+    "name": "Waveform Ephemera",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Effects/NightwaveIntermissionEphemera"
+  },
+  {
+    "category": "Skins",
     "description": "An exceedingly rare Graphica chronicling the first known adventure of the Warframe Yareli.",
     "imageName": "waverider-#1.png",
     "name": "Waverider #1",
@@ -102795,7 +104182,1333 @@
     "uniqueName": "/Lotus/Upgrades/Skins/Yareli/YareliNobleAnims"
   },
   {
+    "buildPrice": 20000,
+    "buildQuantity": 1,
+    "buildTime": 43200,
     "category": "Skins",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 350,
+        "imageName": "alloy-plate.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Alloy Plate"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mars/Gradivus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Neruda (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Terminus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Venus/Ishtar (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Helmets/YareliAltHelmetBlueprint",
+        "name": "Blueprint",
+        "description": "Emerge from the depths with this alternative helmet for Yareli.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+        "name": "Neurodes",
+        "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Deimos.",
+        "itemCount": 2,
+        "imageName": "neurodes.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0025,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Kuva Larvling",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Saturn Six Fugitive",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Zealot Baptizer",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Zealot Herald",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.025,
+            "location": "Zealot Proselytizer",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0442,
+            "location": "Deimos/Formido (Caches), Rotation B",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.055,
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1079,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1218,
+            "location": "Earth/Cervantes (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Earth/Cervantes (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.151,
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Deimos/Formido (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Candiru (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Candiru (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Lepis (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Lepis (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Naeglar (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Naeglar (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Psoro (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Psoro (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Viver (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Viver (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Neurodes"
+          },
+          {
+            "chance": 0.1888,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.25,
+            "location": "Leekter",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.25,
+            "location": "Shik Tal",
+            "rarity": "Common",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.2529,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Neurodes"
+          },
+          {
+            "chance": 0.5,
+            "location": "Vem Tabook",
+            "rarity": "Common",
+            "type": "Neurodes"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Deimos.",
+        "itemCount": 1,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0025,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0026,
+            "location": "Brachiolyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Arca Heqet",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Arca Kucumatz",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Cinder Machinist",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Phase Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0027,
+            "location": "Amalgam Swarm Satyr",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Alkonost",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Heqet",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Kucumatz",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Machinist",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Osprey",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Amalgam Satyr",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Aurax Culveri Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Aurax Polaris Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Heqet",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Machinist",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Moa",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Osprey",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0038,
+            "location": "Demolyst Satyr",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0065,
+            "location": "Mimic",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Aerolyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Ambulas",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Battalyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Conculyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Decaying Battalyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Decaying Conculyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Hunhow",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Ortholyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Shadow Stalker",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Stalker",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Summulyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Symbilyst",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Alad V",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Artificer",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Captain Vor",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Cinderthresh Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Commander",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Councilor Vay Hek",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "General Sargas Ruk",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Gyre Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Ln2",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Ng",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Pack",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Pb",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Hyena Th",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Icemire Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "J3 Jordas Golem",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Jackal",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Jordas Golem",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Kela De Thaym",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Lephantis",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Lt Lech Kril",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Mutalist Alad V",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Phorid",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Rabbleback Hyena",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "The Sergeant",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Tyl Regor",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0258,
+            "location": "Vay Hek Terra Frame",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0376,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0382,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0442,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0909,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1079,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Endurance Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1936,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.5,
+            "location": "Corrupted Vor",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          }
+        ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 500,
+        "imageName": "salvage.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          }
+        ]
+      }
+    ],
+    "consumeOnBuild": true,
     "description": "Emerge from the depths with this alternative helmet for Yareli.",
     "imageName": "yareli-physalia-helmet.png",
     "name": "Yareli Physalia Helmet",
@@ -102809,6 +105522,7 @@
         "fixes": ""
       }
     ],
+    "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Yareli/YareliAltHelmet"
