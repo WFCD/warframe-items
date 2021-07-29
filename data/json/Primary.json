@@ -1790,6 +1790,8 @@
       {
         "name": "Radial Attack",
         "radius": 170,
+        "crit_chance": 15,
+        "crit_mult": 2,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -22973,6 +22975,9 @@
       {
         "name": "3.5x Zoom Mode",
         "speed": 1.5,
+        "crit_chance": 16,
+        "crit_mult": 2.1,
+        "status_chance": 35,
         "damage": {
           "impact": 17.4,
           "slash": 83.6,
@@ -22980,8 +22985,12 @@
         }
       },
       {
+        "name": "3.5x Zoom Radial Attack",
         "radius": 350,
         "speed": 1.5,
+        "crit_chance": 16,
+        "crit_mult": 2.1,
+        "status_chance": 35,
         "falloff": {
           "start": 0,
           "end": 3.5,
@@ -23521,6 +23530,9 @@
       {
         "name": "Explosion",
         "radius": 290,
+        "crit_chance": 50,
+        "crit_mult": 2.3,
+        "status_chance": 27,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -29108,11 +29120,12 @@
         }
       },
       {
+        "name": "Alt Fire",
         "speed": 2,
         "crit_chance": 26,
         "crit_mult": 2,
         "status_chance": 38,
-        "shot_type": "Continuous",
+        "shot_type": "Discharge",
         "damage": {
           "slash": 100
         }
@@ -29120,6 +29133,9 @@
       {
         "name": "Radial Attack",
         "radius": 160,
+        "crit_chance": 26,
+        "crit_mult": 2,
+        "status_chance": 38,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -36770,6 +36786,10 @@
       {
         "name": "Radial Attack",
         "radius": 660,
+        "speed": 2.5,
+        "crit_chance": 25,
+        "crit_mult": 2.1,
+        "status_chance": 23,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
