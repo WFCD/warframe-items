@@ -486,7 +486,7 @@ class Parser {
   addTradable (item) {
     const tradableTypes = ['Upgrades', 'Arcane', 'Fish', 'Focus Lens', 'Relic', 'Rifle Mod',
       'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
-      'Melee Mod']
+      'Melee Mod', 'Arch-Melee Mod']
     const untradableTypes = ['Skin', 'Medallion', 'Key', 'Extractor', 'Pets', 'Ship Decoration',
       'Glyph', 'Sigil', 'Fur Color', 'Syandana', 'Fur Pattern', 'Color Palette', 'Node', 'Exalted Weapon']
     const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma)/i
