@@ -49660,21 +49660,35 @@
         }
       },
       {
-        "name": "Recall Explosion",
-        "radius": 500,
-        "shot_type": "AoE",
-        "damage": {
-          "blast": 777
-        }
-      },
-      {
+        "name": "Throw",
+        "speed": 0.833,
         "crit_chance": 17,
         "crit_mult": 1.9,
         "status_chance": 33,
+        "charge_time": 1.2,
+        "shot_type": "Thrown",
         "damage": {
           "impact": 396.3,
           "slash": 357.3,
           "puncture": 23.4
+        }
+      },
+      {
+        "name": "Recall Explosion",
+        "radius": 500,
+        "speed": 0.833,
+        "crit_chance": 17,
+        "crit_mult": 1.9,
+        "status_chance": 33,
+        "charge_time": 1.2,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 5,
+          "reduction": 0
+        },
+        "damage": {
+          "blast": 777
         }
       }
     ],
@@ -50089,7 +50103,8 @@
         }
       },
       {
-        "name": "Attacks while disc deployed",
+        "name": "Attacks While Disc Deployed",
+        "speed": 0.833,
         "crit_chance": 10,
         "crit_mult": 2,
         "status_chance": 15,
@@ -50108,7 +50123,14 @@
       {
         "name": "Disc Explosion",
         "radius": 400,
+        "crit_chance": 0,
+        "crit_mult": 1,
         "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 4,
+          "reduction": 0
+        },
         "damage": {
           "heat": 350
         }
@@ -50117,7 +50139,14 @@
         "name": "Disc Aura",
         "radius": 400,
         "speed": 1.2,
+        "crit_chance": 0,
+        "crit_mult": 1,
         "status_chance": 50,
+        "falloff": {
+          "start": 0,
+          "end": 4,
+          "reduction": 0
+        },
         "damage": {
           "heat": 50
         }
