@@ -1160,16 +1160,37 @@
         }
       },
       {
-        "name": "Toxic Spine",
-        "speed": 1.08,
+        "name": "1st Heavy Attack Toxic Spines",
+        "speed": 2,
         "crit_chance": 9,
         "crit_mult": 1.9,
         "status_chance": 20,
+        "charge_time": 0.5,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "damage": {
-          "impact": 7,
-          "slash": 23.1,
-          "puncture": 11.2,
-          "toxin": 28.7
+          "impact": 17.5,
+          "slash": 57.75,
+          "puncture": 28,
+          "toxin": 71.75
+        }
+      },
+      {
+        "name": "2nd Heavy Attack Toxic Spines",
+        "speed": 2,
+        "crit_chance": 9,
+        "crit_mult": 1.9,
+        "status_chance": 20,
+        "charge_time": 0.5,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 35,
+          "slash": 115.5,
+          "puncture": 56,
+          "toxin": 143.5
         }
       }
     ],
@@ -34178,14 +34199,33 @@
         }
       },
       {
-        "name": "Ethereal Dagger",
-        "speed": 0.833,
+        "name": "1st Heavy Ethereal Daggers",
+        "speed": 2,
         "crit_chance": 30,
         "crit_mult": 2,
         "status_chance": 12,
+        "charge_time": 0.5,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "damage": {
-          "slash": 45.6,
-          "puncture": 30.4
+          "slash": 114,
+          "puncture": 76
+        }
+      },
+      {
+        "name": "2nd Heavy Ethereal Daggers",
+        "speed": 2,
+        "crit_chance": 30,
+        "crit_mult": 2,
+        "status_chance": 12,
+        "charge_time": 0.5,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "slash": 228,
+          "puncture": 152
         }
       }
     ],
@@ -41603,6 +41643,10 @@
         "crit_chance": 24,
         "crit_mult": 2,
         "status_chance": 28,
+        "charge_time": 1,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "falloff": {
           "start": 10,
           "end": 20,
@@ -41808,6 +41852,10 @@
         "crit_chance": 24,
         "crit_mult": 1.6,
         "status_chance": 38,
+        "charge_time": 1,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "damage": {
           "impact": 1360,
           "slash": 1360,
