@@ -6450,10 +6450,15 @@
         "status_chance": 10,
         "charge_time": 1,
         "shot_type": "Projectile",
-        "shot_speed": null,
-        "flight": "???",
+        "shot_speed": 10,
+        "flight": 10,
+        "falloff": {
+          "start": 0,
+          "end": 35,
+          "reduction": 1
+        },
         "damage": {
-          "corrosive": 103
+          "corrosive": 192
         }
       },
       {
@@ -6463,10 +6468,9 @@
         "crit_mult": 1,
         "status_chance": 0,
         "charge_time": 1,
-        "shot_speed": null,
-        "flight": "???",
+        "shot_type": "AoE",
         "damage": {
-          "corrosive": 103
+          "corrosive": 5
         }
       }
     ],
