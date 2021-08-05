@@ -12055,6 +12055,7 @@
     "attacks": [
       {
         "name": "Single Rocket Impact",
+        "speed": 2,
         "crit_chance": 16,
         "crit_mult": 2,
         "status_chance": 22,
@@ -12069,6 +12070,7 @@
       {
         "name": "Single Rocket Explosion",
         "radius": 360,
+        "speed": 2,
         "crit_chance": 16,
         "crit_mult": 2,
         "status_chance": 22,
@@ -13050,6 +13052,7 @@
       },
       {
         "name": "Launch Turret",
+        "speed": 10,
         "crit_chance": 16,
         "crit_mult": 2,
         "status_chance": 16,
@@ -13594,6 +13597,7 @@
       },
       {
         "name": "Charged Shot",
+        "speed": 3.33,
         "crit_chance": 20,
         "crit_mult": 2,
         "status_chance": 15,
@@ -16783,9 +16787,13 @@
       },
       {
         "name": "Partial Reload Impact",
+        "speed": 12,
         "crit_chance": 11,
         "crit_mult": 2.9,
         "status_chance": 43,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "damage": {
           "impact": 11
         }
@@ -16793,6 +16801,7 @@
       {
         "name": "Partial Reload Explosion",
         "radius": 500,
+        "speed": 12,
         "crit_chance": 11,
         "crit_mult": 2.9,
         "status_chance": 43,
@@ -16808,9 +16817,13 @@
       },
       {
         "name": "Reload From Empty Impact",
+        "speed": 12,
         "crit_chance": 31,
         "crit_mult": 2.9,
         "status_chance": 59,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "damage": {
           "impact": 11
         }
@@ -16818,6 +16831,7 @@
       {
         "name": "Reload From Empty Explosion",
         "radius": 700,
+        "speed": 12,
         "crit_chance": 31,
         "crit_mult": 2.9,
         "status_chance": 59,
