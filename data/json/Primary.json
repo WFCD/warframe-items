@@ -26033,6 +26033,7 @@
         "crit_chance": 50,
         "crit_mult": 2,
         "status_chance": 5,
+        "charge_time": 1.2,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -34023,6 +34024,7 @@
         "crit_chance": 7,
         "crit_mult": 1.9,
         "status_chance": 43,
+        "charge_time": 0.7,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -43641,7 +43643,7 @@
         }
       },
       {
-        "name": "Secondary",
+        "name": "Grenade Impact",
         "speed": 1.33,
         "crit_chance": 28,
         "crit_mult": 2.2,
@@ -43656,6 +43658,10 @@
       {
         "name": "Grenade Explosion",
         "radius": 800,
+        "speed": 1.33,
+        "crit_chance": 28,
+        "crit_mult": 2.2,
+        "status_chance": 30,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -49802,6 +49808,7 @@
       {
         "name": "Arrow Explosion",
         "radius": 260,
+        "speed": 5.5,
         "crit_chance": 26,
         "crit_mult": 2,
         "status_chance": 30,

@@ -44571,6 +44571,7 @@
       {
         "name": "Glass Explosion",
         "radius": 600,
+        "speed": 0.833,
         "crit_chance": 23,
         "crit_mult": 2.3,
         "status_chance": 33,
@@ -50220,6 +50221,11 @@
       },
       {
         "name": "Disc Impact",
+        "speed": 0.909,
+        "crit_chance": 10,
+        "crit_mult": 2,
+        "status_chance": 15,
+        "charge_time": 1.1,
         "damage": {
           "impact": 75
         }
@@ -50227,8 +50233,11 @@
       {
         "name": "Disc Explosion",
         "radius": 400,
+        "speed": 0.909,
         "crit_chance": 0,
         "crit_mult": 1,
+        "status_chance": 15,
+        "charge_time": 1.1,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
