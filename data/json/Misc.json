@@ -2286,6 +2286,7 @@
     "ammo": null,
     "attacks": [
       {
+        "name": "Uncharged Shot",
         "speed": 0.833,
         "crit_chance": 5,
         "crit_mult": 1.5,
@@ -2298,6 +2299,25 @@
         }
       },
       {
+        "name": "Uncharged AoE",
+        "radius": 300,
+        "speed": 0.833,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3,
+          "reduction": 0
+        },
+        "damage": {
+          "electricity": 500
+        }
+      },
+      {
+        "name": "Charged Shot",
+        "speed": 0.833,
         "crit_chance": 5,
         "crit_mult": 1.5,
         "status_chance": 10,
@@ -2305,6 +2325,24 @@
         "shot_type": "Projectile",
         "shot_speed": 20,
         "flight": 20,
+        "damage": {
+          "electricity": 1000
+        }
+      },
+      {
+        "name": "Charged Shot AoE",
+        "radius": 300,
+        "speed": 0.833,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 10,
+        "charge_time": 2,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3,
+          "reduction": 0
+        },
         "damage": {
           "electricity": 1000
         }

@@ -28232,6 +28232,7 @@
       {
         "name": "Poison Cloud",
         "radius": 360,
+        "speed": 1,
         "crit_chance": 0,
         "crit_mult": 1,
         "status_chance": 35,
@@ -32785,6 +32786,23 @@
         }
       },
       {
+        "name": "Uncharged Explosion",
+        "radius": 240,
+        "speed": 3.5,
+        "crit_chance": 14,
+        "crit_mult": 2.2,
+        "status_chance": 28,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 2.4,
+          "reduction": 0.3
+        },
+        "damage": {
+          "radiation": 88
+        }
+      },
+      {
         "name": "Fully Charged Projectile",
         "speed": 3.5,
         "crit_chance": 14,
@@ -32814,23 +32832,6 @@
         },
         "damage": {
           "radiation": 106
-        }
-      },
-      {
-        "name": "Uncharged Explosion",
-        "radius": 240,
-        "speed": 3.5,
-        "crit_chance": 14,
-        "crit_mult": 2.2,
-        "status_chance": 28,
-        "shot_type": "AoE",
-        "falloff": {
-          "start": 0,
-          "end": 2.4,
-          "reduction": 0.3
-        },
-        "damage": {
-          "radiation": 88
         }
       }
     ],
@@ -34508,6 +34509,10 @@
       {
         "name": "Rocket Explosion",
         "radius": 200,
+        "speed": 2.33,
+        "crit_chance": 26,
+        "crit_mult": 2.4,
+        "status_chance": 40,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -37843,6 +37848,22 @@
         }
       },
       {
+        "name": "Radial Attack",
+        "radius": 330,
+        "crit_chance": 5,
+        "crit_mult": 2.3,
+        "status_chance": 30,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3.3,
+          "reduction": 0.3
+        },
+        "damage": {
+          "toxin": 61
+        }
+      },
+      {
         "name": "Headshot Explosion",
         "radius": 330,
         "speed": 1.33,
@@ -37860,8 +37881,11 @@
         }
       },
       {
-        "name": "Spore Contact",
-        "status_chance": 0,
+        "name": "Homing Spore Contact",
+        "speed": 1.33,
+        "crit_chance": 5,
+        "crit_mult": 2.3,
+        "status_chance": 30,
         "shot_type": "Projectile",
         "damage": {
           "slash": 11.5,
@@ -37869,20 +37893,7 @@
         }
       },
       {
-        "name": "Radial Attack",
-        "radius": 330,
-        "shot_type": "AoE",
-        "falloff": {
-          "start": 0,
-          "end": 3.3,
-          "reduction": 0.3
-        },
-        "damage": {
-          "toxin": 61
-        }
-      },
-      {
-        "name": "Spore Explosion",
+        "name": "Homing Spore Explosion",
         "radius": 330,
         "speed": 1.33,
         "crit_chance": 5,
