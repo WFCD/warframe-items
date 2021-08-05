@@ -20021,6 +20021,7 @@
       {
         "name": "Explosion",
         "radius": 350,
+        "speed": 2.07,
         "crit_chance": 16,
         "crit_mult": 1.5,
         "status_chance": 2,
@@ -37201,9 +37202,16 @@
       {
         "name": "Area of Effect",
         "radius": 100,
+        "speed": 2,
         "crit_chance": 4,
         "crit_mult": 1.1,
         "status_chance": 8,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 1,
+          "reduction": 0
+        },
         "damage": {
           "void": 4500
         }
@@ -37477,6 +37485,7 @@
       {
         "name": "Explosion",
         "radius": 500,
+        "speed": 1.67,
         "crit_chance": 24,
         "crit_mult": 2.1,
         "status_chance": 2,
@@ -44890,6 +44899,7 @@
       {
         "name": "Explosion",
         "radius": 700,
+        "speed": 1.33,
         "crit_chance": 10,
         "crit_mult": 1.5,
         "status_chance": 10,

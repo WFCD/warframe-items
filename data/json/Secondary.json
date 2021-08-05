@@ -18804,6 +18804,7 @@
     "attacks": [
       {
         "name": "Charged Shot",
+        "speed": 1.5,
         "crit_chance": 48,
         "crit_mult": 2.6,
         "status_chance": 4,
@@ -19058,9 +19059,11 @@
       },
       {
         "name": "Buckshot",
+        "speed": 1.5,
         "crit_chance": 2,
         "crit_mult": 2,
         "status_chance": 9,
+        "shot_type": "Hit-Scan",
         "falloff": {
           "start": 6,
           "end": 12,
@@ -22141,9 +22144,11 @@
       {
         "name": "Rocket Explosion",
         "radius": 390,
+        "speed": 2,
+        "crit_chance": 17,
+        "crit_mult": 2.3,
+        "status_chance": 19,
         "shot_type": "AoE",
-        "shot_speed": null,
-        "flight": "???",
         "falloff": {
           "start": 0,
           "end": 3.9,
@@ -22155,6 +22160,7 @@
       },
       {
         "name": "Cluster Bombs",
+        "speed": 2,
         "crit_chance": 17,
         "crit_mult": 2.3,
         "status_chance": 19,
@@ -22759,6 +22765,10 @@
       },
       {
         "speed": 16.28,
+        "crit_chance": 21,
+        "crit_mult": 2.3,
+        "status_chance": 29,
+        "shot_type": "Hit-Scan",
         "damage": {
           "impact": 32.25,
           "slash": 5.38,
@@ -27664,6 +27674,10 @@
       },
       {
         "speed": 7.69,
+        "crit_chance": 30,
+        "crit_mult": 2.8,
+        "status_chance": 10,
+        "shot_type": "Hit-Scan",
         "damage": {
           "impact": 18,
           "slash": 36,
@@ -28218,6 +28232,9 @@
       {
         "name": "Poison Cloud",
         "radius": 360,
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 35,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -28439,6 +28456,7 @@
     "attacks": [
       {
         "name": "Single Rocket Impact",
+        "speed": 2,
         "crit_chance": 18,
         "crit_mult": 2.2,
         "status_chance": 26,
@@ -28453,6 +28471,7 @@
       {
         "name": "Single Rocket Explosion",
         "radius": 360,
+        "speed": 2,
         "crit_chance": 18,
         "crit_mult": 2.2,
         "status_chance": 26,
@@ -30127,6 +30146,7 @@
         "speed": 3.67,
         "crit_chance": 30,
         "crit_mult": 2.2,
+        "status_chance": 14,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -32766,6 +32786,7 @@
       },
       {
         "name": "Fully Charged Projectile",
+        "speed": 3.5,
         "crit_chance": 14,
         "crit_mult": 2.2,
         "status_chance": 28,
@@ -32780,6 +32801,7 @@
       {
         "name": "Fully Charged Explosion",
         "radius": 960,
+        "speed": 3.5,
         "crit_chance": 14,
         "crit_mult": 2.2,
         "status_chance": 28,
@@ -32797,6 +32819,10 @@
       {
         "name": "Uncharged Explosion",
         "radius": 240,
+        "speed": 3.5,
+        "crit_chance": 14,
+        "crit_mult": 2.2,
+        "status_chance": 28,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,

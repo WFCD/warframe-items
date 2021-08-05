@@ -15975,6 +15975,7 @@
       },
       {
         "name": "Second Attack",
+        "speed": 1.3,
         "crit_chance": 0,
         "crit_mult": 1,
         "status_chance": 25,
@@ -15987,6 +15988,7 @@
       },
       {
         "name": "Third Attack",
+        "speed": 1.3,
         "crit_chance": 0,
         "crit_mult": 1,
         "status_chance": 25,
@@ -16139,6 +16141,7 @@
       },
       {
         "name": "Second Attack",
+        "speed": 1.3,
         "crit_chance": 0,
         "crit_mult": 1,
         "status_chance": 25,
@@ -16151,6 +16154,7 @@
       },
       {
         "name": "Third Attack",
+        "speed": 1.3,
         "crit_chance": 0,
         "crit_mult": 1,
         "status_chance": 25,
@@ -16888,11 +16892,14 @@
       },
       {
         "name": "Charged Shot",
+        "speed": 3.33,
+        "crit_chance": 7.5,
+        "crit_mult": 2,
         "status_chance": 6.9,
         "charge_time": 0.5,
         "shot_type": "Projectile",
-        "shot_speed": 100,
-        "flight": 100,
+        "shot_speed": null,
+        "flight": "???",
         "damage": {
           "impact": 7,
           "slash": 56,
@@ -17606,9 +17613,11 @@
       {
         "name": "Area Attacks",
         "radius": 360,
+        "speed": 1.33,
         "crit_chance": 32,
         "crit_mult": 2.8,
         "status_chance": 10,
+        "shot_type": "AoE",
         "falloff": {
           "start": 0,
           "end": 3.6,
@@ -17640,6 +17649,7 @@
         "crit_chance": 4,
         "crit_mult": 2,
         "status_chance": 50,
+        "shot_type": "AoE",
         "damage": {
           "electricity": 150
         }
@@ -20732,6 +20742,10 @@
       {
         "name": "Explosion",
         "radius": 300,
+        "speed": 0.91,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 30,
         "shot_type": "AoE",
         "damage": {
           "impact": 3,
@@ -21839,6 +21853,7 @@
       {
         "name": "Projectile Explosion",
         "radius": 240,
+        "speed": 3.33,
         "crit_chance": 20,
         "crit_mult": 2,
         "status_chance": 25,
@@ -21871,6 +21886,7 @@
       {
         "name": "Spear Explosion",
         "radius": 600,
+        "speed": 1,
         "crit_chance": 20,
         "crit_mult": 2,
         "status_chance": 25,
@@ -23359,6 +23375,7 @@
       },
       {
         "name": "Cluster Bomb Contact",
+        "speed": 1,
         "crit_chance": 35,
         "crit_mult": 2.1,
         "status_chance": 21,
@@ -23369,6 +23386,7 @@
       },
       {
         "name": "Cluster Bomb Explosion",
+        "speed": 1,
         "crit_chance": 35,
         "crit_mult": 2.1,
         "status_chance": 21,
@@ -23547,6 +23565,7 @@
       {
         "name": "Explosion",
         "radius": 290,
+        "speed": 1.17,
         "crit_chance": 50,
         "crit_mult": 2.3,
         "status_chance": 27,
@@ -23637,6 +23656,7 @@
       },
       {
         "name": "Charged Shot",
+        "speed": 3.33,
         "crit_chance": 21,
         "crit_mult": 2.5,
         "status_chance": 9,
@@ -24569,6 +24589,7 @@
       {
         "name": "Cannon Mode Explosion",
         "radius": 700,
+        "speed": 2.17,
         "crit_chance": 25,
         "crit_mult": 2.5,
         "status_chance": 31,
@@ -24584,12 +24605,11 @@
       },
       {
         "name": "Cannon Mode Cluster Bombs",
+        "speed": 2.17,
         "crit_chance": 25,
         "crit_mult": 2.5,
         "status_chance": 31,
-        "shot_type": "Projectile",
-        "shot_speed": null,
-        "flight": "???",
+        "shot_type": "AoE",
         "damage": {
           "blast": 50
         }
@@ -26009,6 +26029,11 @@
       {
         "name": "Initial Burst",
         "radius": 720,
+        "speed": 1,
+        "crit_chance": 50,
+        "crit_mult": 2,
+        "status_chance": 5,
+        "shot_type": "AoE",
         "falloff": {
           "start": 0,
           "end": 7.2,
@@ -26021,6 +26046,7 @@
       {
         "name": "Bubble Collapse",
         "radius": 720,
+        "speed": 1,
         "crit_chance": 50,
         "crit_mult": 2,
         "status_chance": 5,
@@ -26303,6 +26329,7 @@
       },
       {
         "name": "Charged Shot",
+        "speed": 2.5,
         "crit_chance": 10,
         "crit_mult": 2,
         "status_chance": 50,
@@ -26936,6 +26963,12 @@
       },
       {
         "name": "Toxin Cloud",
+        "radius": 300,
+        "speed": 1,
+        "crit_chance": 0,
+        "crit_mult": 1,
+        "status_chance": 0,
+        "shot_type": "AoE",
         "damage": {
           "toxin": 55
         }
@@ -27201,6 +27234,7 @@
       {
         "name": "Infested Orb",
         "radius": 200,
+        "speed": 10,
         "crit_chance": 0,
         "crit_mult": 0,
         "status_chance": 100,
@@ -28078,11 +28112,13 @@
         }
       },
       {
+        "name": "Charged Shot AoE",
         "radius": 600,
         "speed": 1,
         "crit_chance": 20,
         "crit_mult": 2.5,
         "status_chance": 20,
+        "shot_type": "AoE",
         "falloff": {
           "start": 0,
           "end": 6,
@@ -28094,6 +28130,11 @@
       },
       {
         "name": "Quick Shot",
+        "speed": 1,
+        "crit_chance": 20,
+        "crit_mult": 2.5,
+        "status_chance": 20,
+        "shot_type": "Hit-Scan",
         "damage": {
           "impact": 50,
           "slash": 25,
@@ -28101,8 +28142,13 @@
         }
       },
       {
-        "name": "Quick Shot Area",
+        "name": "Quick Shot AoE",
         "radius": 600,
+        "speed": 1,
+        "crit_chance": 20,
+        "crit_mult": 2.5,
+        "status_chance": 20,
+        "shot_type": "AoE",
         "falloff": {
           "start": 0,
           "end": 6,
@@ -28555,6 +28601,7 @@
         }
       },
       {
+        "name": "Charged Shot AoE",
         "radius": 460,
         "speed": 2,
         "crit_chance": 24,
@@ -28571,6 +28618,11 @@
       },
       {
         "name": "Quick Shot",
+        "speed": 2,
+        "crit_chance": 24,
+        "crit_mult": 2.6,
+        "status_chance": 30,
+        "shot_type": "Hit-Scan",
         "damage": {
           "impact": 20,
           "slash": 40,
@@ -28578,8 +28630,13 @@
         }
       },
       {
-        "name": "Quick Shot Area",
+        "name": "Quick Shot AoE",
         "radius": 460,
+        "speed": 2,
+        "crit_chance": 24,
+        "crit_mult": 2.6,
+        "status_chance": 30,
+        "shot_type": "AoE",
         "falloff": {
           "start": 0,
           "end": 4.6,
@@ -28845,6 +28902,7 @@
           },
           {
             "name": "Charged Shot",
+            "speed": 2.5,
             "crit_chance": 10,
             "crit_mult": 2,
             "status_chance": 50,
@@ -29151,6 +29209,7 @@
       {
         "name": "Radial Attack",
         "radius": 160,
+        "speed": 2,
         "crit_chance": 26,
         "crit_mult": 2,
         "status_chance": 38,
@@ -33249,16 +33308,7 @@
         }
       },
       {
-        "name": "Cluster Bombs",
-        "crit_chance": 3,
-        "crit_mult": 1.5,
-        "status_chance": 37,
-        "damage": {
-          "impact": 15
-        }
-      },
-      {
-        "name": "Plasma Bomb",
+        "name": "Plasma Bomb Impact",
         "speed": 2,
         "crit_chance": 3,
         "crit_mult": 1.5,
@@ -33272,8 +33322,12 @@
         }
       },
       {
-        "name": "Bomb Explosion",
+        "name": "Plasma Bomb Explosion",
         "radius": 480,
+        "speed": 2,
+        "crit_chance": 3,
+        "crit_mult": 1.5,
+        "status_chance": 37,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -33282,6 +33336,19 @@
         },
         "damage": {
           "radiation": 73
+        }
+      },
+      {
+        "name": "Cluster Bombs",
+        "speed": 2,
+        "crit_chance": 3,
+        "crit_mult": 1.5,
+        "status_chance": 37,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 15
         }
       }
     ],
@@ -34038,6 +34105,12 @@
           },
           {
             "name": "Toxin Cloud",
+            "radius": 300,
+            "speed": 1,
+            "crit_chance": 0,
+            "crit_mult": 1,
+            "status_chance": 0,
+            "shot_type": "AoE",
             "damage": {
               "toxin": 55
             }
@@ -34161,7 +34234,7 @@
         }
       },
       {
-        "name": "Cube (Shot by player)",
+        "name": "Cube (shot by player)",
         "radius": 600,
         "speed": 4,
         "crit_chance": 5,
@@ -34172,7 +34245,7 @@
         }
       },
       {
-        "name": "Cube (Hits enemy)",
+        "name": "Cube (direct hit)",
         "speed": 4,
         "crit_chance": 5,
         "crit_mult": 1.5,
@@ -34187,6 +34260,7 @@
       {
         "name": "Cube Explosion",
         "radius": 50,
+        "speed": 4,
         "crit_chance": 5,
         "crit_mult": 1.5,
         "status_chance": 26,
@@ -34593,7 +34667,7 @@
         }
       },
       {
-        "name": "Cube (Shot by player)",
+        "name": "Cube (shot by player)",
         "radius": 600,
         "speed": 4,
         "crit_chance": 5,
@@ -34604,7 +34678,7 @@
         }
       },
       {
-        "name": "Cube (Hits enemy)",
+        "name": "Cube (direct hit)",
         "speed": 4,
         "crit_chance": 5,
         "crit_mult": 1.5,
@@ -34619,6 +34693,7 @@
       {
         "name": "Cube Explosion",
         "radius": 50,
+        "speed": 4,
         "crit_chance": 5,
         "crit_mult": 1.5,
         "status_chance": 26,
@@ -36402,6 +36477,7 @@
       {
         "name": "Explosion",
         "radius": 170,
+        "speed": 2.67,
         "crit_chance": 2,
         "crit_mult": 1.5,
         "status_chance": 30,
@@ -36431,6 +36507,7 @@
       {
         "name": "Spear Explosion",
         "radius": 700,
+        "speed": 1,
         "crit_chance": 4,
         "crit_mult": 2,
         "status_chance": 30,
@@ -49041,11 +49118,14 @@
           },
           {
             "name": "Charged Shot",
+            "speed": 3.33,
+            "crit_chance": 7.5,
+            "crit_mult": 2,
             "status_chance": 6.9,
             "charge_time": 0.5,
             "shot_type": "Projectile",
-            "shot_speed": 100,
-            "flight": 100,
+            "shot_speed": null,
+            "flight": "???",
             "damage": {
               "impact": 7,
               "slash": 56,
