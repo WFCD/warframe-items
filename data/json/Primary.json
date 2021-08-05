@@ -289,6 +289,7 @@
       },
       {
         "name": "Charge",
+        "speed": 1,
         "crit_chance": 16,
         "crit_mult": 2.8,
         "status_chance": 32,
@@ -301,6 +302,7 @@
       {
         "name": "Charged Explosion",
         "radius": 600,
+        "speed": 1,
         "crit_chance": 16,
         "crit_mult": 2.8,
         "status_chance": 32,
@@ -1195,6 +1197,7 @@
       {
         "name": "Glass Explosion",
         "radius": 240,
+        "speed": 4.33,
         "crit_chance": 17,
         "crit_mult": 1.9,
         "status_chance": 33,
@@ -1358,6 +1361,7 @@
       {
         "name": "Glass Explosion",
         "radius": 240,
+        "speed": 4.33,
         "crit_chance": 21,
         "crit_mult": 1.9,
         "status_chance": 37,
@@ -1790,8 +1794,10 @@
       {
         "name": "Radial Attack",
         "radius": 170,
+        "speed": 12,
         "crit_chance": 15,
         "crit_mult": 2,
+        "status_chance": 29,
         "shot_type": "AoE",
         "falloff": {
           "start": 0,
@@ -2050,6 +2056,7 @@
       {
         "name": "Beam AoE",
         "radius": 340,
+        "speed": 5,
         "crit_chance": 20,
         "crit_mult": 2,
         "status_chance": 50,
@@ -12514,9 +12521,13 @@
       },
       {
         "name": "Secondary-Fire",
+        "speed": 1,
         "crit_chance": 2,
         "crit_mult": 1.4,
         "status_chance": 50,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
         "damage": {
           "slash": 20
         }
@@ -12524,6 +12535,7 @@
       {
         "name": "Radial Attack",
         "radius": 600,
+        "speed": 1,
         "crit_chance": 2,
         "crit_mult": 1.4,
         "status_chance": 50,
@@ -14554,6 +14566,7 @@
       },
       {
         "name": "Air Burst Projectile",
+        "speed": 1.17,
         "crit_chance": 4,
         "crit_mult": 1.6,
         "status_chance": 28,
@@ -14567,6 +14580,7 @@
       {
         "name": "Air Burst Explosion",
         "radius": 940,
+        "speed": 1.17,
         "crit_chance": 4,
         "crit_mult": 1.6,
         "status_chance": 28,
@@ -14914,6 +14928,7 @@
       {
         "name": "Air Burst Explosion",
         "radius": 980,
+        "speed": 0.667,
         "crit_chance": 4,
         "crit_mult": 1.6,
         "status_chance": 50,
@@ -23327,6 +23342,7 @@
       {
         "name": "Radial Attack",
         "radius": 830,
+        "speed": 1,
         "crit_chance": 35,
         "crit_mult": 2.1,
         "status_chance": 21,
@@ -24724,6 +24740,7 @@
       },
       {
         "name": "Charged Shot",
+        "speed": 1,
         "crit_chance": 25,
         "crit_mult": 2,
         "status_chance": 25,
