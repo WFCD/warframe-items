@@ -2456,13 +2456,43 @@
   },
   {
     "accuracy": 16,
+    "ammo": null,
+    "attacks": [
+      {
+        "speed": 10,
+        "crit_chance": 30,
+        "crit_mult": 2.2,
+        "status_chance": 24,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "falloff": {
+          "start": 1500,
+          "end": 3000,
+          "reduction": 0.5
+        },
+        "damage": {
+          "impact": 49.5,
+          "slash": 30.2,
+          "puncture": 30.3
+        }
+      }
+    ],
     "category": "Arch-Gun",
     "criticalChance": 0.30000001,
     "criticalMultiplier": 2.2,
     "damagePerShot": [ 49.5, 30.25, 30.249998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "Colder than space and less forgiving, Prisma crystals bring elite efficiency to the already sleek Dual Decurion. Requiring the lightest of touches to reload, these twin archguns prove that heavy weaponry can still possess elegance.",
+    "disposition": 3,
     "fireRate": 10.000001,
     "imageName": "prisma-dual-decurions.png",
+    "introduced": {
+      "name": "Hotfix 29.5.8",
+      "url": "http://warframe.fandom.com/wiki/Update_29%23Hotfix_29.5.8",
+      "aliases": [ "29.5.8" ],
+      "parent": "29.5",
+      "date": "2020-12-11"
+    },
     "magazineSize": 32,
     "masteryReq": 1,
     "multishot": 1,
@@ -2495,15 +2525,20 @@
         "fixes": "Fixed issues with Baro’s new Prisma Dual Decurions having [PH], missing icons, and the wrong texture when used as a Heavy Weapon. \nFixed the Prisma Dual Decurions not having the intended 2 V polarities by default."
       }
     ],
+    "polarities": [ "Madurai", "Madurai" ],
     "procChance": 0.24000001,
     "productCategory": "SpaceGuns",
+    "releaseDate": "2020-12-11",
     "reloadTime": 0.88999999,
     "slot": 1,
+    "tags": [ "Prisma", "Baro" ],
     "totalDamage": 110,
     "tradable": true,
     "trigger": "Auto",
     "type": "Arch-Gun",
-    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/Prisma/PrismaArchHeavyPistols"
+    "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/Prisma/PrismaArchHeavyPistols",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/b/bb/PrismaDualDecurion.png/revision/latest?cb=20201218230225",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Prisma_Dual_Decurions"
   },
   {
     "accuracy": 28.571428,
