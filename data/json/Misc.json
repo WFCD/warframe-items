@@ -1200,6 +1200,7 @@
     "ammo": null,
     "attacks": [
       {
+        "name": "Base Uncharged Shot",
         "speed": 1,
         "crit_chance": 25,
         "crit_mult": 2,
@@ -1214,7 +1215,7 @@
         }
       },
       {
-        "name": "Charged Shot",
+        "name": "Base Charged Shot",
         "speed": 1,
         "crit_chance": 25,
         "crit_mult": 2,
@@ -1227,6 +1228,39 @@
           "impact": 33.6,
           "slash": 14.4,
           "puncture": 192
+        }
+      },
+      {
+        "name": "Concentrated Arrow Shot",
+        "speed": 1,
+        "crit_chance": 25,
+        "crit_mult": 2,
+        "status_chance": 20,
+        "shot_type": "Projectile",
+        "shot_speed": 70,
+        "flight": 70,
+        "damage": {
+          "impact": 33.6,
+          "slash": 14.4,
+          "puncture": 192
+        }
+      },
+      {
+        "name": "Concentrated Arrow Headshot Explosion",
+        "radius": 700,
+        "speed": 1,
+        "crit_chance": 75,
+        "crit_mult": 2,
+        "status_chance": 0,
+        "charge_time": 1,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 7,
+          "reduction": 0
+        },
+        "damage": {
+          "blast": 500
         }
       }
     ],
