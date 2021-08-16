@@ -21156,7 +21156,27 @@
     "ammo": 40,
     "attacks": [
       {
-        "name": "Normal",
+        "name": "Unzoomed",
+        "speed": 6,
+        "crit_chance": 16,
+        "crit_mult": 2.1,
+        "status_chance": 35,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "falloff": {
+          "start": 400,
+          "end": 600,
+          "reduction": 0.5
+        },
+        "damage": {
+          "impact": 8.7,
+          "slash": 41.76,
+          "puncture": 36.54
+        }
+      },
+      {
+        "name": "2x Zoom",
         "speed": 6,
         "crit_chance": 16,
         "crit_mult": 2.1,
