@@ -22769,12 +22769,30 @@
         }
       },
       {
-        "name": "Cannon Mode Cluster Bombs",
+        "name": "Cannon Mode Cluster Bomb Contact",
+        "speed": 2.17,
+        "crit_chance": 25,
+        "crit_mult": 2.5,
+        "status_chance": 31,
+        "shot_type": "Projectile",
+        "shot_speed": null,
+        "flight": "???",
+        "damage": {
+          "impact": 15
+        }
+      },
+      {
+        "name": "Cannon Mode Cluster Bomb Explosion",
         "speed": 2.17,
         "crit_chance": 25,
         "crit_mult": 2.5,
         "status_chance": 31,
         "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 3,
+          "reduction": 0.3
+        },
         "damage": {
           "blast": 50
         }
@@ -47536,11 +47554,6 @@
         "shot_type": "Projectile",
         "shot_speed": null,
         "flight": "???",
-        "falloff": {
-          "start": 20,
-          "end": 40,
-          "reduction": 0.99
-        },
         "damage": {
           "impact": 24,
           "slash": 16,
