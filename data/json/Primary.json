@@ -300,7 +300,7 @@
         }
       },
       {
-        "name": "Charged Explosion",
+        "name": "Charged AoE",
         "speed": 1,
         "crit_chance": 16,
         "crit_mult": 2.8,
@@ -16289,6 +16289,18 @@
     "ammo": null,
     "attacks": [
       {
+        "name": "Full Auto Mode",
+        "speed": 9.33,
+        "crit_chance": 28,
+        "crit_mult": 2.4,
+        "status_chance": 10,
+        "shot_type": "Hit-Scan",
+        "damage": {
+          "puncture": 8,
+          "electricity": 25
+        }
+      },
+      {
         "name": "Semi-Auto Mode",
         "speed": 2.17,
         "crit_chance": 30,
@@ -16305,18 +16317,6 @@
         "damage": {
           "impact": 100,
           "electricity": 400
-        }
-      },
-      {
-        "name": "Full Auto Mode",
-        "speed": 9.33,
-        "crit_chance": 28,
-        "crit_mult": 2.4,
-        "status_chance": 10,
-        "shot_type": "Hit-Scan",
-        "damage": {
-          "puncture": 8,
-          "electricity": 25
         }
       }
     ],
@@ -19168,6 +19168,18 @@
     "ammo": 540,
     "attacks": [
       {
+        "name": "Semi-Auto Mode",
+        "speed": 2.5,
+        "crit_chance": 15,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "damage": {
+          "impact": 12,
+          "slash": 36,
+          "puncture": 12
+        }
+      },
+      {
         "name": "Burst Mode",
         "speed": 6.25,
         "crit_chance": 7,
@@ -19178,18 +19190,6 @@
           "impact": 7.5,
           "slash": 15,
           "puncture": 7.5
-        }
-      },
-      {
-        "name": "Semi-Auto Mode",
-        "speed": 2.5,
-        "crit_chance": 15,
-        "crit_mult": 2,
-        "status_chance": 10,
-        "damage": {
-          "impact": 12,
-          "slash": 36,
-          "puncture": 12
         }
       }
     ],
@@ -22099,16 +22099,15 @@
     "ammo": 540,
     "attacks": [
       {
-        "name": "Burst",
-        "speed": 9.09,
-        "crit_chance": 25,
-        "crit_mult": 2.1,
+        "name": "Auto",
+        "speed": 10,
+        "crit_chance": 21,
+        "crit_mult": 1.9,
         "status_chance": 33,
-        "shot_type": "Hit-Scan",
         "damage": {
-          "impact": 7.5,
-          "slash": 15,
-          "puncture": 7.5
+          "impact": 6,
+          "slash": 18,
+          "puncture": 6
         }
       },
       {
@@ -22125,15 +22124,16 @@
         }
       },
       {
-        "name": "Auto",
-        "speed": 10,
-        "crit_chance": 21,
-        "crit_mult": 1.9,
+        "name": "Burst",
+        "speed": 9.09,
+        "crit_chance": 25,
+        "crit_mult": 2.1,
         "status_chance": 33,
+        "shot_type": "Hit-Scan",
         "damage": {
-          "impact": 6,
-          "slash": 18,
-          "puncture": 6
+          "impact": 7.5,
+          "slash": 15,
+          "puncture": 7.5
         }
       }
     ],
@@ -38050,7 +38050,7 @@
         }
       },
       {
-        "name": "Alt-Fire Explosion",
+        "name": "Alt-Fire AoE",
         "speed": 0.667,
         "crit_chance": 40,
         "crit_mult": 3,
@@ -41972,7 +41972,7 @@
         }
       },
       {
-        "name": "Grenade Explosion",
+        "name": "Grenade AoE",
         "speed": 1.33,
         "crit_chance": 28,
         "crit_mult": 2.2,
@@ -43057,11 +43057,11 @@
     "ammo": 540,
     "attacks": [
       {
-        "name": "Burst",
-        "speed": 7.38,
-        "crit_chance": 28,
-        "crit_mult": 3,
-        "status_chance": 20,
+        "name": "Auto",
+        "speed": 8.33,
+        "crit_chance": 16,
+        "crit_mult": 2.8,
+        "status_chance": 32,
         "shot_type": "Hit-Scan",
         "damage": {
           "impact": 13.8,
@@ -43083,11 +43083,11 @@
         }
       },
       {
-        "name": "Auto",
-        "speed": 8.33,
-        "crit_chance": 16,
-        "crit_mult": 2.8,
-        "status_chance": 32,
+        "name": "Burst",
+        "speed": 7.38,
+        "crit_chance": 28,
+        "crit_mult": 3,
+        "status_chance": 20,
         "shot_type": "Hit-Scan",
         "damage": {
           "impact": 13.8,
@@ -45440,7 +45440,7 @@
         }
       },
       {
-        "name": "Auto Radial Attack",
+        "name": "Auto AoE",
         "speed": 4.67,
         "crit_chance": 24,
         "crit_mult": 2.2,
@@ -45466,7 +45466,7 @@
         }
       },
       {
-        "name": "Grenade Explosion on Bounce",
+        "name": "Grenade Bounce AoE",
         "speed": 1.33,
         "crit_chance": 38,
         "crit_mult": 2.4,
