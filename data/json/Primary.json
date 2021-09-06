@@ -19168,18 +19168,6 @@
     "ammo": 540,
     "attacks": [
       {
-        "name": "Semi-Auto Mode",
-        "speed": 2.5,
-        "crit_chance": 15,
-        "crit_mult": 2,
-        "status_chance": 10,
-        "damage": {
-          "impact": 12,
-          "slash": 36,
-          "puncture": 12
-        }
-      },
-      {
         "name": "Burst Mode",
         "speed": 6.25,
         "crit_chance": 7,
@@ -19190,6 +19178,18 @@
           "impact": 7.5,
           "slash": 15,
           "puncture": 7.5
+        }
+      },
+      {
+        "name": "Semi-Auto Mode",
+        "speed": 2.5,
+        "crit_chance": 15,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "damage": {
+          "impact": 12,
+          "slash": 36,
+          "puncture": 12
         }
       }
     ],
@@ -22104,6 +22104,7 @@
         "crit_chance": 21,
         "crit_mult": 1.9,
         "status_chance": 33,
+        "shot_type": "Hit-Scan",
         "damage": {
           "impact": 6,
           "slash": 18,
