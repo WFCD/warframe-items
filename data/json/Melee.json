@@ -607,7 +607,7 @@
     "marketCost": 125,
     "masteryReq": 2,
     "name": "Ankyros",
-    "omegaAttenuation": 1.45,
+    "omegaAttenuation": 1.5,
     "patchlogs": [
       {
         "name": "Nightwave: Prime Vault: Hotfix 30.6.1",
@@ -931,7 +931,7 @@
     },
     "masteryReq": 8,
     "name": "Ankyros Prime",
-    "omegaAttenuation": 1.45,
+    "omegaAttenuation": 1.5,
     "patchlogs": [
       {
         "name": "Nightwave: Prime Vault: Hotfix 30.6.1",
@@ -1487,7 +1487,7 @@
     },
     "masteryReq": 11,
     "name": "Arum Spinosa",
-    "omegaAttenuation": 1.05,
+    "omegaAttenuation": 1.1,
     "patchlogs": [
       {
         "name": "Orphix Venom: Hotfix 29.6.2",
@@ -1643,7 +1643,7 @@
     "marketCost": 175,
     "masteryReq": 5,
     "name": "Atterax",
-    "omegaAttenuation": 1.05,
+    "omegaAttenuation": 1.1,
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -5511,7 +5511,7 @@
         "productCategory": "LongGuns",
         "slot": 1,
         "accuracy": 25,
-        "omegaAttenuation": 1.25,
+        "omegaAttenuation": 1.3,
         "noise": "Alarming",
         "trigger": "Auto",
         "magazineSize": 60,
@@ -16356,7 +16356,7 @@
     },
     "masteryReq": 13,
     "name": "Galatine Prime",
-    "omegaAttenuation": 0.80000001,
+    "omegaAttenuation": 0.85000002,
     "patchlogs": [
       {
         "name": "The Silver Grove: Hotfix 3 (Nekros Prime!)",
@@ -16473,7 +16473,7 @@
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 12, 38, 64, 0, 0, 96, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "Shock and maim with this heavyweight retractable whip.",
-    "disposition": 4,
+    "disposition": 5,
     "fireRate": 0.75000006,
     "followThrough": 0.5,
     "heavyAttackDamage": 945,
@@ -16491,7 +16491,7 @@
     "marketCost": 175,
     "masteryReq": 6,
     "name": "Galvacord",
-    "omegaAttenuation": 1.3,
+    "omegaAttenuation": 1.35,
     "polarities": [  ],
     "procChance": 0.30000001,
     "productCategory": "Melee",
@@ -16634,6 +16634,121 @@
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/2b/DjinnMachete.png/revision/latest?cb=20180206084638",
     "wikiaUrl": "http://warframe.fandom.com/wiki/Gazal_Machete",
     "windUp": 0.69999999
+  },
+  {
+    "attacks": [
+      {
+        "speed": 1,
+        "crit_chance": 15,
+        "crit_mult": 1.9,
+        "status_chance": 27,
+        "damage": {
+          "impact": 37.43,
+          "slash": 114.26,
+          "puncture": 45.31
+        },
+        "slide": "394",
+        "slam": {
+          "damage": "591.00",
+          "radial": {
+            "damage": "197.00",
+            "element": "undefined",
+            "proc": "undefined",
+            "radius": 7
+          }
+        }
+      }
+    ],
+    "blockingAngle": 90,
+    "buildPrice": 30000,
+    "buildQuantity": 1,
+    "buildTime": 86400,
+    "category": "Melee",
+    "comboDuration": 5,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GrnGhoulSawBlade",
+        "name": "Blade",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "blade.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/GrnGhoulSawBlueprint",
+        "name": "Blueprint",
+        "description": "The cruelest of weapons built for the crudest of Grineer soldiers. Rips through metal like flesh, and through flesh like day-old pudding.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GrnGhoulSawChassis",
+        "name": "Chassis",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "chassis.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GrnGhoulSawEngine",
+        "name": "Engine",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "engine.png",
+        "tradable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GrnGhoulSawHandle",
+        "name": "Grip",
+        "description": "A weapon-crafting component.",
+        "itemCount": 1,
+        "imageName": "grip.png",
+        "tradable": false
+      }
+    ],
+    "consumeOnBuild": true,
+    "criticalChance": 0.15000001,
+    "criticalMultiplier": 1.9,
+    "damagePerShot": [ 37.43, 45.310001, 114.25999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "description": "The cruelest of weapons built for the crudest of Grineer soldiers. Rips through metal like flesh, and through flesh like day-old pudding.",
+    "disposition": 1,
+    "fireRate": 1,
+    "followThrough": 1,
+    "heavyAttackDamage": 1182,
+    "heavySlamAttack": 197,
+    "heavySlamRadialDamage": 197,
+    "heavySlamRadius": 9,
+    "imageName": "ghoulsaw.png",
+    "introduced": {
+      "name": "Update 30.7",
+      "url": "http://warframe.fandom.com/wiki/Update_30%23Update_30.7",
+      "aliases": [ "30.7" ],
+      "parent": "30.7",
+      "date": "2021-09-08"
+    },
+    "masteryReq": 7,
+    "name": "Ghoulsaw",
+    "omegaAttenuation": 0.5,
+    "polarities": [  ],
+    "procChance": 0.26999998,
+    "productCategory": "Melee",
+    "range": 2.1530571,
+    "releaseDate": "2021-09-08",
+    "skipBuildTimePrice": 25,
+    "slamAttack": 591,
+    "slamRadialDamage": 197,
+    "slamRadius": 7,
+    "slideAttack": 394,
+    "slot": 5,
+    "stancePolarity": "Naramon",
+    "tags": [ "Grineer" ],
+    "totalDamage": 197,
+    "tradable": false,
+    "type": "Assault Saw",
+    "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnGhoulSaw/GrnGhoulSawPlayer",
+    "wikiaUrl": "http://warframe.fandom.com/wiki/Ghoulsaw",
+    "windUp": 1
   },
   {
     "attacks": [
@@ -17955,7 +18070,7 @@
     "criticalMultiplier": 2,
     "damagePerShot": [ 24.6, 24.6, 114.8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "The Glaive Prime is a deadly and beautiful weapon from the Orokin era. The blades are as effective in close quarters as they are when thrown at distant enemies.",
-    "disposition": 3,
+    "disposition": 2,
     "estimatedVaultDate": "2015 10 06",
     "fireRate": 1.2500001,
     "followThrough": 0.69999999,
@@ -17973,7 +18088,7 @@
     },
     "masteryReq": 10,
     "name": "Glaive Prime",
-    "omegaAttenuation": 0.89999998,
+    "omegaAttenuation": 0.80000001,
     "patchlogs": [
       {
         "name": "Update 30.5: Sisters of Parvos",
@@ -20187,7 +20302,7 @@
     "criticalMultiplier": 2.3,
     "damagePerShot": [ 22.5, 180, 22.499992, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "A different take on the throwing mace, the Halikar Wraith features unique styling.",
-    "disposition": 1,
+    "disposition": 2,
     "fireRate": 1.1666667,
     "followThrough": 0.69999999,
     "heavyAttackDamage": 225,
@@ -20204,7 +20319,7 @@
     },
     "masteryReq": 13,
     "name": "Halikar Wraith",
-    "omegaAttenuation": 0.75,
+    "omegaAttenuation": 0.85000002,
     "patchlogs": [
       {
         "name": "Update 30.5: Sisters of Parvos",
@@ -24216,7 +24331,7 @@
     "criticalMultiplier": 2,
     "damagePerShot": [ 29.999998, 14.999999, 45, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "This unsophisticated Corpus survival tool does what it was designed for: hacking and splitting whatever it strikes.",
-    "disposition": 4,
+    "disposition": 5,
     "fireRate": 0.91666669,
     "followThrough": 0.69999999,
     "heavyAttackDamage": 1140,
@@ -24234,7 +24349,7 @@
     "marketCost": 175,
     "masteryReq": 6,
     "name": "Kreska",
-    "omegaAttenuation": 1.3,
+    "omegaAttenuation": 1.35,
     "patchlogs": [
       {
         "name": "The Old Blood: Hotfix 26.0.3",
@@ -25303,7 +25418,7 @@
     },
     "masteryReq": 13,
     "name": "Kronen Prime",
-    "omegaAttenuation": 0.64999998,
+    "omegaAttenuation": 0.60000002,
     "patchlogs": [
       {
         "name": "Call of the Tempestarii: Prime Vault: Hotfix 30.0.8 + 30.0.8.1",
@@ -26867,7 +26982,7 @@
     "marketCost": 175,
     "masteryReq": 8,
     "name": "Mios",
-    "omegaAttenuation": 1.25,
+    "omegaAttenuation": 1.3,
     "patchlogs": [
       {
         "name": "The Sacrifice: Update 23.2.0",
@@ -27833,7 +27948,7 @@
     },
     "masteryReq": 11,
     "name": "Nami Skyla Prime",
-    "omegaAttenuation": 1,
+    "omegaAttenuation": 0.94999999,
     "patchlogs": [
       {
         "name": "Hydroid Prime: Update 21.6.1",
@@ -30226,7 +30341,7 @@
     "marketCost": 200,
     "masteryReq": 8,
     "name": "Ohma",
-    "omegaAttenuation": 1.15,
+    "omegaAttenuation": 1.2,
     "patchlogs": [
       {
         "name": "The Glast Gambit: Update 19.8.0",
@@ -31559,7 +31674,7 @@
     },
     "masteryReq": 12,
     "name": "Orthos Prime",
-    "omegaAttenuation": 0.64999998,
+    "omegaAttenuation": 0.69999999,
     "patchlogs": [
       {
         "name": "Update 18.4.0",
@@ -34053,7 +34168,7 @@
     "marketCost": 180,
     "masteryReq": 11,
     "name": "Pulmonars",
-    "omegaAttenuation": 1.05,
+    "omegaAttenuation": 1.1,
     "patchlogs": [
       {
         "name": "Deimos: Arcana: Hotfix 29.5.1",
@@ -36047,7 +36162,7 @@
         "masteryReq": 2,
         "productCategory": "Melee",
         "slot": 5,
-        "omegaAttenuation": 1.45,
+        "omegaAttenuation": 1.5,
         "blockingAngle": 50,
         "comboDuration": 5,
         "followThrough": 0.89999998,
@@ -37621,7 +37736,7 @@
     "criticalMultiplier": 1.5,
     "damagePerShot": [ 0, 30, 66, 0, 0, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "Whip the enemy out of their ill-gotten gains; double credit drops on kills.",
-    "disposition": 3,
+    "disposition": 4,
     "fireRate": 1.2500001,
     "followThrough": 0.5,
     "heavyAttackDamage": 792,
@@ -37638,7 +37753,7 @@
     },
     "masteryReq": 8,
     "name": "Secura Lecta",
-    "omegaAttenuation": 1.1,
+    "omegaAttenuation": 1.15,
     "patchlogs": [
       {
         "name": "Chains of Harrow: Hotfix 21.0.4",
@@ -40716,7 +40831,7 @@
     "marketCost": 275,
     "masteryReq": 7,
     "name": "Tatsu",
-    "omegaAttenuation": 0.94999999,
+    "omegaAttenuation": 1,
     "patchlogs": [
       {
         "name": "Update 29.5: Deimos Arcana",
@@ -40868,7 +40983,7 @@
         "masteryReq": 2,
         "productCategory": "Melee",
         "slot": 5,
-        "omegaAttenuation": 1.45,
+        "omegaAttenuation": 1.5,
         "blockingAngle": 50,
         "comboDuration": 5,
         "followThrough": 0.89999998,
@@ -41775,7 +41890,7 @@
     "masteryReq": 14,
     "maxLevelCap": 40,
     "name": "Tenet Agendus",
-    "omegaAttenuation": 0.5,
+    "omegaAttenuation": 0.55000001,
     "patchlogs": [
       {
         "name": "Nightwave: Prime Vault: Hotfix 30.6.1",
@@ -41886,7 +42001,7 @@
     "masteryReq": 16,
     "maxLevelCap": 40,
     "name": "Tenet Exec",
-    "omegaAttenuation": 0.5,
+    "omegaAttenuation": 0.60000002,
     "polarities": [  ],
     "procChance": 0.22000003,
     "productCategory": "Melee",
@@ -41989,7 +42104,7 @@
     "masteryReq": 14,
     "maxLevelCap": 40,
     "name": "Tenet Grigori",
-    "omegaAttenuation": 0.5,
+    "omegaAttenuation": 0.64999998,
     "patchlogs": [
       {
         "name": "Nightwave: Prime Vault: Hotfix 30.6.1",
@@ -42093,7 +42208,7 @@
     "masteryReq": 14,
     "maxLevelCap": 40,
     "name": "Tenet Livia",
-    "omegaAttenuation": 0.5,
+    "omegaAttenuation": 0.60000002,
     "polarities": [  ],
     "procChance": 0.27999997,
     "productCategory": "Melee",
@@ -43101,7 +43216,7 @@
         "productCategory": "Pistols",
         "slot": 0,
         "accuracy": 12.5,
-        "omegaAttenuation": 0.89999998,
+        "omegaAttenuation": 0.94999999,
         "noise": "Alarming",
         "trigger": "Held",
         "magazineSize": 70,
@@ -43623,7 +43738,7 @@
     "marketCost": 175,
     "masteryReq": 9,
     "name": "Vastilok",
-    "omegaAttenuation": 0.5,
+    "omegaAttenuation": 0.69999999,
     "patchlogs": [
       {
         "name": "Sisters of Parvos: Hotfix 30.5.5",
@@ -43849,7 +43964,7 @@
     "marketCost": 175,
     "masteryReq": 4,
     "name": "Venka",
-    "omegaAttenuation": 1.05,
+    "omegaAttenuation": 1.1,
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -44694,7 +44809,7 @@
     "criticalMultiplier": 2.3,
     "damagePerShot": [ 99.900002, 99.900002, 133.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "The sword the fabled Orokin executioner Nihil used to glass the condemned. Swing while Aim Gliding to glass enemies. A Ground Slam will smash nearby glassed foes, while sending forward a narrow shockwave to shatter distant ones. A Heavy Slam sends forth a wider shockwave with greater force.",
-    "disposition": 2,
+    "disposition": 3,
     "fireRate": 0.83333337,
     "followThrough": 0.60000002,
     "heavyAttackDamage": 1998,
@@ -44711,7 +44826,7 @@
     },
     "masteryReq": 13,
     "name": "Vitrica",
-    "omegaAttenuation": 0.85000002,
+    "omegaAttenuation": 0.89999998,
     "patchlogs": [
       {
         "name": "Star Days: Hotfix 29.8.1",
@@ -45086,7 +45201,7 @@
     "criticalMultiplier": 1.8,
     "damagePerShot": [ 55, 80, 115.00001, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "The glorious original Orokin casting of Gara’s signature glass hammer. Deceptively light and swift, while remaining lethally effective.",
-    "disposition": 1,
+    "disposition": 2,
     "estimatedVaultDate": "2023 02 15",
     "fireRate": 1.2,
     "followThrough": 0.60000002,
@@ -45104,7 +45219,7 @@
     },
     "masteryReq": 14,
     "name": "Volnus Prime",
-    "omegaAttenuation": 0.5,
+    "omegaAttenuation": 0.80000001,
     "polarities": [ "Madurai", "Madurai" ],
     "procChance": 0.34000003,
     "productCategory": "Melee",
@@ -45307,7 +45422,7 @@
     },
     "masteryReq": 10,
     "name": "War",
-    "omegaAttenuation": 1,
+    "omegaAttenuation": 1.05,
     "patchlogs": [
       {
         "name": "Nightwave: Prime Vault: Hotfix 30.6.1",
@@ -50375,7 +50490,7 @@
     "criticalMultiplier": 2,
     "damagePerShot": [ 80, 0, 68, 150, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "Scorch enemies with blistering blows, or set them ablaze with the flying fire disc.",
-    "disposition": 3,
+    "disposition": 4,
     "fireRate": 0.83333337,
     "followThrough": 0.60000002,
     "heavyAttackDamage": 1788,
@@ -50392,7 +50507,7 @@
     },
     "masteryReq": 6,
     "name": "Zenistar",
-    "omegaAttenuation": 1.1,
+    "omegaAttenuation": 1.15,
     "patchlogs": [
       {
         "name": "Heart of Deimos: TennoGen: 29.3.1",
