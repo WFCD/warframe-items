@@ -488,8 +488,8 @@ class Parser {
       'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
       'Melee Mod', 'Arch-Melee Mod', 'Necramech Mod']
     const untradableTypes = ['Skin', 'Medallion', 'Key', 'Extractor', 'Pets', 'Ship Decoration',
-      'Glyph', 'Sigil', 'Fur Color', 'Syandana', 'Fur Pattern', 'Color Palette', 'Node', 'Exalted Weapon']
-    const tradableRegex = /(Prime|Vandal|Wraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma)/i
+      'Glyph', 'Sigil', 'Fur Color', 'Syandana', 'Fur Pattern', 'Color Palette', 'Node', 'Exalted Weapon', 'Warframe']
+    const tradableRegex = /(Prime|Vandal|Wraith\w|\wWraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma)(?!Derelict)/i
     const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))/i
     const notFiltered = !untradableTypes.includes(item.type) &&
       !item.name.match(untradableRegex) &&
