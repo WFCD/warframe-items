@@ -1925,6 +1925,70 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/FormaAura"
   },
   {
+    "buildPrice": 1000,
+    "buildQuantity": 20,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAItem",
+        "name": "Auron",
+        "description": "A brilliant, dense and conductive metal.Location: Plains of Eidolon",
+        "itemCount": 20,
+        "imageName": "auron.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/RareOreAAlloyABlueprint",
+        "name": "Blueprint",
+        "description": "Auron that has been forged into a stronger metal.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+        "itemCount": 5,
+        "imageName": "morphics.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "description": "Oxium is a rare lighter than air alloy of Orokin origin, used in certain Corpus Robotics.Locations: Venus, Jupiter, Mars, Neptune, Pluto, Eris, Europa, and Lua.",
+        "itemCount": 600,
+        "imageName": "oxium.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Auron that has been forged into a stronger metal.",
+    "imageName": "auroxium-alloy.png",
+    "itemCount": 50,
+    "name": "Auroxium Alloy",
+    "parents": [ "Ceno Helmet", "Vahd Mask", "Zauba Mask" ],
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Auroxium Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": false,
+    "type": "Alloy",
+    "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem"
+  },
+  {
     "category": "Misc",
     "description": "A foundry upgrade that allows two Forma to be crafted at the same time.",
     "excludeFromCodex": true,
@@ -3296,6 +3360,60 @@
     "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedMaggotCommon"
   },
   {
+    "buildPrice": 1000,
+    "buildQuantity": 3,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosEidolonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Convex and smooth, worked as a lens or for ornament.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBItem",
+        "name": "Embolos",
+        "description": "This rare gem forms in a clotted mass within the Infestation.",
+        "itemCount": 3,
+        "imageName": "embolos.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Convex and smooth, worked as a lens or for ornament.",
+    "imageName": "cabochon-embolos.png",
+    "itemCount": 10,
+    "name": "Cabochon Embolos",
+    "parents": [ "Cortege Stock", "Morgha Stock" ],
+    "patchlogs": [
+      {
+        "name": "Heart of Deimos: Hotfix 29.0.7",
+        "date": "2020-09-03T19:29:45Z",
+        "url": "https://forums.warframe.com/topic/1221646-heart-of-deimos-hotfix-2907/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to Trade \"Trapezium Xenorhast\" and \"Cabochon Embolos\". "
+      },
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Cabochon Embolos "
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBCutItem"
+  },
+  {
     "ammo": null,
     "attacks": [
       {
@@ -4438,6 +4556,70 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule"
+  },
+  {
+    "buildPrice": 1000,
+    "buildQuantity": 20,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/CommonOreBAlloyABlueprint",
+        "name": "Blueprint",
+        "description": "Coprun that has been forged into a stronger metal.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBItem",
+        "name": "Coprun",
+        "description": "A soft, malleable metal.Location: Plains of Eidolon",
+        "itemCount": 20,
+        "imageName": "coprun.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+        "itemCount": 400,
+        "imageName": "ferrite.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 50,
+        "imageName": "rubedo.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Coprun that has been forged into a stronger metal.",
+    "imageName": "coprite-alloy.png",
+    "itemCount": 100,
+    "name": "Coprite Alloy",
+    "parents": [ "Ceno Pauldrons", "Peram Fishing Spear", "Vahd Pauldrons", "Zauba Pauldrons" ],
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Coprite Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": false,
+    "type": "Alloy",
+    "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem"
   },
   {
     "category": "Misc",
@@ -9642,6 +9824,52 @@
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem"
   },
   {
+    "buildPrice": 1000,
+    "buildQuantity": 10,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosCommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Refined purity freed from the Infested mass.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemAItem",
+        "name": "Tiametrite",
+        "description": "Infested neurotransmitters condensed under pressure.",
+        "itemCount": 10,
+        "imageName": "tiametrite.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Refined purity freed from the Infested mass.",
+    "imageName": "faceted-tiametrite.png",
+    "itemCount": 1,
+    "name": "Faceted Tiametrite",
+    "parents": [ "Xaku Kintsu Helmet" ],
+    "patchlogs": [
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Faceted Tiametrite "
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemACutItem"
+  },
+  {
     "category": "Misc",
     "description": "PROCESSED FASS RESIDUE",
     "drops": [
@@ -9887,6 +10115,70 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite"
+  },
+  {
+    "buildPrice": 1000,
+    "buildQuantity": 20,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/UncommonOreAAlloyABlueprint",
+        "name": "Blueprint",
+        "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAItem",
+        "name": "Ferros",
+        "description": "A resilient metal that is hardened by impurities within.Location: Plains of Eidolon",
+        "itemCount": 20,
+        "imageName": "ferros.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 400,
+        "imageName": "plastids.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 200,
+        "imageName": "rubedo.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+    "imageName": "fersteel-alloy.png",
+    "itemCount": 20,
+    "name": "Fersteel Alloy",
+    "parents": [ "Advanced Nosam Cutter", "Ceno Apparel", "Ceno Cuirass", "Cortege Barrel", "Morgha Barrel", "Peram Fishing Spear", "Vahd Apparel", "Vahd Cuirass", "Zauba Apparel", "Zauba Cuirass" ],
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Fersteel Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": false,
+    "type": "Alloy",
+    "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem"
   },
   {
     "category": "Misc",
@@ -20179,6 +20471,42 @@
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/NoraGlassmakerDogTag"
   },
   {
+    "buildPrice": 2500,
+    "buildQuantity": 10,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisUncommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemAItem",
+        "name": "Goblite",
+        "description": "A strange crystal that grows inside the veins of extracted ore.",
+        "itemCount": 10,
+        "imageName": "goblite.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Polished and cut to perfection.",
+    "imageName": "goblite-tears.png",
+    "itemCount": 15,
+    "name": "Goblite Tears",
+    "parents": [ "Bonewidow Casing" ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem"
+  },
+  {
     "category": "Misc",
     "description": "Used in Ostron remedies to purify toxins.Location: Fisher Hai-Luk in Cetus",
     "drops": [
@@ -21202,6 +21530,40 @@
     "tradable": false,
     "type": "Kitgun Component",
     "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Handle/SUModularSecondaryHandleCPart"
+  },
+  {
+    "buildPrice": 1000,
+    "buildQuantity": 10,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisCommonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBItem",
+        "name": "Noctrul",
+        "description": "A black gemstone, with iridescent blue impurities.",
+        "itemCount": 10,
+        "imageName": "noctrul.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Polished and cut to perfection.",
+    "imageName": "heart-noctrul.png",
+    "name": "Heart Noctrul",
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem"
   },
   {
     "buildPrice": 50000,
@@ -32808,6 +33170,42 @@
     "uniqueName": "/Lotus/Upgrades/Mods/FusionBundles/MarketTier3FusionBundle"
   },
   {
+    "buildPrice": 10000,
+    "buildQuantity": 3,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisEidolonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBItem",
+        "name": "Thyst",
+        "description": "A beautiful and iridescent red shard.",
+        "itemCount": 3,
+        "imageName": "thyst.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Polished and cut to perfection.",
+    "imageName": "marquise-thyst.png",
+    "itemCount": 3,
+    "name": "Marquise Thyst",
+    "parents": [ "Haztech Apparel", "Haztech Cuirass", "Haztech Mask", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Mask", "Outrider Cuirass", "Outrider Mask", "Pax Soar", "Smelter Apparel", "Smelter Cuirass", "Smelter Mask", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Mask", "Vent Rat Cuirass", "Vent Rat Mask" ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem"
+  },
+  {
     "category": "Misc",
     "description": "",
     "excludeFromCodex": true,
@@ -39799,6 +40197,94 @@
     "uniqueName": "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryGoldTokenFusionBundle"
   },
   {
+    "buildPrice": 1000,
+    "buildQuantity": 10,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosCommonGemBCutBlueprint",
+        "name": "Blueprint",
+        "description": "Crystalline symmetry, a far cry from its corrupt origin.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBItem",
+        "name": "Dagonic",
+        "description": "Rivulets of Exocrine fluid, hardened over passing centuries.",
+        "itemCount": 10,
+        "imageName": "dagonic.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Crystalline symmetry, a far cry from its corrupt origin.",
+    "imageName": "purged-dagonic.png",
+    "name": "Purged Dagonic",
+    "patchlogs": [
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Purged Dagonic "
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBCutItem"
+  },
+  {
+    "buildPrice": 1000,
+    "buildQuantity": 10,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosUncommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Extracted from the Infestation and cut into a prestigious gem.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonGemAItem",
+        "name": "Heciphron",
+        "description": "Aggregates in the neo-lymph systems of Infested masses.",
+        "itemCount": 10,
+        "imageName": "heciphron.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Extracted from the Infestation and cut into a prestigious gem.",
+    "imageName": "purified-heciphron.png",
+    "name": "Purified Heciphron",
+    "patchlogs": [
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Purified Heciphron "
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonGemACutItem"
+  },
+  {
     "category": "Misc",
     "description": "For saving a specimen of this species.",
     "imageName": "purple-velocipod-tag.png",
@@ -39815,6 +40301,70 @@
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem"
+  },
+  {
+    "buildPrice": 1000,
+    "buildQuantity": 20,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/CommonOreAAlloyABlueprint",
+        "name": "Blueprint",
+        "description": "Pyrol that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Cryotic",
+        "name": "Cryotic",
+        "description": "Usually found in extreme sub-zero environments, Cryotic instantly freezes anything it contacts.Locations: Excavation Missions on Venus, Earth, Phobos, Europa, and Neptune.",
+        "itemCount": 200,
+        "imageName": "cryotic.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAItem",
+        "name": "Pyrol",
+        "description": "A tarnished, brittle metal.Location: Plains of Eidolon",
+        "itemCount": 20,
+        "imageName": "pyrol.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 50,
+        "imageName": "rubedo.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Pyrol that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
+    "imageName": "pyrotic-alloy.png",
+    "itemCount": 40,
+    "name": "Pyrotic Alloy",
+    "parents": [ "Ceno Greaves", "Focused Nosam Cutter", "Shockprod Fishing Spear", "Stunna Fishing Spear", "Tulok Fishing Spear", "Vahd Greaves", "Zauba Greaves" ],
+    "patchlogs": [
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "Pyrotic Alloy",
+        "changes": "",
+        "fixes": ""
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": false,
+    "type": "Alloy",
+    "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem"
   },
   {
     "category": "Misc",
@@ -39980,6 +40530,42 @@
     "tradable": false,
     "type": "Eidolon Shard",
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardBrilliantTierTwoItem"
+  },
+  {
+    "buildPrice": 10000,
+    "buildQuantity": 3,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisEidolonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemAItem",
+        "name": "Zodian",
+        "description": "A blue gem that radiates astral energy.",
+        "itemCount": 3,
+        "imageName": "zodian.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Polished and cut to perfection.",
+    "imageName": "radiant-zodian.png",
+    "itemCount": 3,
+    "name": "Radiant Zodian",
+    "parents": [ "Haztech Mask", "Haztech Pauldrons", "Kubrodon Ventkid Mask", "Kubrodon Ventkid Pauldrons", "Outrider Mask", "Outrider Pauldrons", "Pax Bolt", "Pax Charge", "Smelter Mask", "Smelter Pauldrons", "Vent Pobber Ventkid Mask", "Vent Pobber Ventkid Pauldrons", "Vent Rat Mask", "Vent Rat Pauldrons" ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem"
   },
   {
     "ammo": null,
@@ -44903,7 +45489,7 @@
     "excludeFromCodex": true,
     "imageName": "sentient-altar-scene.png",
     "name": "Sentient Altar Scene",
-    "tradable": false,
+    "tradable": true,
     "type": "Captura",
     "uniqueName": "/Lotus/Types/Items/PhotoBooth/PhotoboothTileSentientIntReverence"
   },
@@ -44913,7 +45499,7 @@
     "excludeFromCodex": true,
     "imageName": "sentient-balcony-scene.png",
     "name": "Sentient Balcony Scene",
-    "tradable": false,
+    "tradable": true,
     "type": "Captura",
     "uniqueName": "/Lotus/Types/Items/PhotoBooth/PhotoboothTileSentientConTallJunctionOne"
   },
@@ -44923,7 +45509,7 @@
     "excludeFromCodex": true,
     "imageName": "sentient-basin-scene.png",
     "name": "Sentient Basin Scene",
-    "tradable": false,
+    "tradable": true,
     "type": "Captura",
     "uniqueName": "/Lotus/Types/Items/PhotoBooth/PhotoboothTileSentientIntCaveDescent"
   },
@@ -44933,7 +45519,7 @@
     "excludeFromCodex": true,
     "imageName": "sentient-concourse-scene.png",
     "name": "Sentient Concourse Scene",
-    "tradable": false,
+    "tradable": true,
     "type": "Captura",
     "uniqueName": "/Lotus/Types/Items/PhotoBooth/PhotoboothTileSentientIntDescent"
   },
@@ -44943,7 +45529,7 @@
     "excludeFromCodex": true,
     "imageName": "sentient-fountain-scene.png",
     "name": "Sentient Fountain Scene",
-    "tradable": false,
+    "tradable": true,
     "type": "Captura",
     "uniqueName": "/Lotus/Types/Items/PhotoBooth/PhotoboothTileSentientConTransitionPlusOne"
   },
@@ -45936,6 +46522,40 @@
     "uniqueName": "/Lotus/Types/Items/Deimos/AnimalTagInfestedCritterCommon"
   },
   {
+    "buildPrice": 1000,
+    "buildQuantity": 10,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisCommonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemAItem",
+        "name": "Phasmin",
+        "description": "An eerily green gem found encased in metallic shards.",
+        "itemCount": 10,
+        "imageName": "phasmin.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Polished and cut to perfection.",
+    "imageName": "smooth-phasmin.png",
+    "name": "Smooth Phasmin",
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem"
+  },
+  {
     "category": "Misc",
     "description": "Recharges Synthesis Scanner charges.",
     "imageName": "sol-battery-widget.png",
@@ -46445,6 +47065,40 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/FormaStance"
   },
   {
+    "buildPrice": 5000,
+    "buildQuantity": 6,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemAItem",
+        "name": "Amarast",
+        "description": "A violet gem that forms from the crystallization of byproducts expelled from the Weeping Towers.",
+        "itemCount": 6,
+        "imageName": "amarast.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/SolarisRareGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Polished and cut to perfection.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Polished and cut to perfection.",
+    "imageName": "star-amarast.png",
+    "name": "Star Amarast",
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem"
+  },
+  {
     "category": "Misc",
     "description": "",
     "excludeFromCodex": true,
@@ -46780,6 +47434,52 @@
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/SteelEssence"
+  },
+  {
+    "buildPrice": 1000,
+    "buildQuantity": 6,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosRareGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "A prismatic refinement of raw Necrathene, highly sought after.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemAItem",
+        "name": "Necrathene",
+        "description": "Impacted within Infested husks, preserved for millennia.",
+        "itemCount": 6,
+        "imageName": "necrathene.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "A prismatic refinement of raw Necrathene, highly sought after.",
+    "imageName": "stellated-necrathene.png",
+    "itemCount": 16,
+    "name": "Stellated Necrathene",
+    "parents": [ "Voidrig Casing" ],
+    "patchlogs": [
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Stellated Necrathene "
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem"
   },
   {
     "buildPrice": 5000,
@@ -48397,6 +49097,60 @@
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem"
+  },
+  {
+    "buildPrice": 1000,
+    "buildQuantity": 3,
+    "buildTime": 60,
+    "category": "Misc",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/DeimosRecipes/Prospecting/DeimosEidolonGemACutBlueprint",
+        "name": "Blueprint",
+        "description": "Facets gleam with the un-light of the Void.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "drops": [  ]
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemAItem",
+        "name": "Xenorhast",
+        "description": "A nodule of primordial matter, encysted within Infested flesh.",
+        "itemCount": 3,
+        "imageName": "xenorhast.png",
+        "tradable": false,
+        "drops": [  ]
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Facets gleam with the un-light of the Void.",
+    "imageName": "trapezium-xenorhast.png",
+    "itemCount": 10,
+    "name": "Trapezium Xenorhast",
+    "parents": [ "Cortege Receiver", "Morgha Receiver" ],
+    "patchlogs": [
+      {
+        "name": "Heart of Deimos: Hotfix 29.0.7",
+        "date": "2020-09-03T19:29:45Z",
+        "url": "https://forums.warframe.com/topic/1221646-heart-of-deimos-hotfix-2907/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to Trade \"Trapezium Xenorhast\" and \"Cabochon Embolos\". "
+      },
+      {
+        "name": "Heart of Deimos: Update 29",
+        "date": "2020-08-25T19:57:29Z",
+        "url": "https://forums.warframe.com/topic/1216407-heart-of-deimos-update-29/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Trapezium Xenorhast "
+      }
+    ],
+    "skipBuildTimePrice": 5,
+    "tradable": true,
+    "type": "Cut Gem",
+    "uniqueName": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem"
   },
   {
     "buildPrice": 5000,
