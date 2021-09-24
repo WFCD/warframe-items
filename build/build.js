@@ -64,6 +64,7 @@ class Build {
           } else {
             result[item.productCategory] = [item]
           }
+          continue;
         }
 
         if (result[item.category]) {

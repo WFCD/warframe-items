@@ -45,7 +45,6 @@ class Items extends Array {
     }
 
     // Add items from options to array. Type equals the file name.
-    // Tradable determines if we should use sub-folder or stay on root.
     for (const category of this.options.category) {
       // Ignores the enemy category.
       if (this.options.ignoreEnemies && category === 'Enemy') continue
