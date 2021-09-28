@@ -19,7 +19,7 @@ pipeline:
     image: node:10
     commands:
       - git fetch --tags --quiet origin
-      - npx semantic-release
+      - npx semantic-release@17.4.7
     secrets: [ gh_token, npm_token ]
     when:
       branch: master
