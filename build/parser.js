@@ -556,9 +556,11 @@ class Parser {
     // Don't look for drop rates on item itself if it has components.
     if (item.components) {
       for (const component of item.components) {
-        const data = (component.uniqueName.includes('/Weapons/') &&
+        const data = ((component.uniqueName.includes('/Weapons/') &&
             !component.uniqueName.includes('/WeaponParts/') &&
-            component.name !== 'Blueprint')
+            component.name !== 'Blueprint') ||
+            /Collar\w+Component/.test(component.uniqueName)
+          )
           ? this.findDropLocations(component.name, drops.rates, true)
           : this.findDropLocations(`${item.name} ${component.name}`, drops.rates, true)
         component.drops = data.length ? data : []
