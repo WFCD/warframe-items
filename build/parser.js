@@ -560,7 +560,7 @@ class Parser {
             !component.uniqueName.includes('/WeaponParts/') &&
             component.name !== 'Blueprint') ||
             /Collar\w+Component/.test(component.uniqueName)
-          )
+        )
           ? this.findDropLocations(component.name, drops.rates, true)
           : this.findDropLocations(`${item.name} ${component.name}`, drops.rates, true)
         component.drops = data.length ? data : []
