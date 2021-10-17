@@ -18,7 +18,7 @@ module.exports = async (oldVersion) => {
 
     newVersion = {
       name: Name,
-      url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Link.replace(/\s/g, '_'))}`,
+      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Link.replace(/\s/g, '_'))}`,
       aliases: Aliases,
       parent: Parent,
       date: Date

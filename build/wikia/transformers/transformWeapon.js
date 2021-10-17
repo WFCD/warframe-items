@@ -159,7 +159,7 @@ const transformWeapon = (oldWeapon, imageUrls) => {
     newWeapon = {
       regex: `^${Name.toLowerCase().replace(/\s/g, '\\s')}$`,
       name: Name,
-      url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
+      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       mr: Mastery || 0,
       type: Class || Type,
       riven_disposition: Disposition,
