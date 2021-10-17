@@ -16,7 +16,7 @@ const transformMod = async (oldMod, imageUrls) => {
 
     newMod = {
       name: Name,
-      url: `http://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
+      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       thumbnail: imageUrls[Image],
       transmutable: Transmutable,
       introduced: Introduced

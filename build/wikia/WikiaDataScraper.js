@@ -70,7 +70,7 @@ const getImageUrls = async (things) => {
   }
 
   const urlRequests = titleBatches.map(titleBatch =>
-    axios.get('http://warframe.fandom.com/api.php', {
+    axios.get('https://warframe.fandom.com/api.php', {
       params: {
         action: 'query',
         titles: titleBatch.join('|'),
