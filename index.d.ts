@@ -48,13 +48,13 @@ declare module 'warframe-items' {
         consumeOnBuild?: boolean;
         components?: Component[];
         type?: Type;
-        imageName: string;
+        imageName?: string;
         category: Category;
         tradable: boolean;
         drops?: Drop[];
         patchlogs?: PatchLog[];
         channeling?: number;
-        ammo?: number;
+        ammo?: number | null;
         damage?: number | string;
         damageTypes?: DamageTypes;
         marketCost?: number | '';
@@ -138,6 +138,7 @@ declare module 'warframe-items' {
         excludeFromCodex?: boolean;
         levelStats?: LevelStat[];
         introduced?: Update;
+        attacks?: Attack[];
     }
 
     interface Component {
@@ -169,7 +170,7 @@ declare module 'warframe-items' {
         sentinel?: boolean;
         masteryReq?: number;
         omegaAttenuation?: number;
-        ammo?: number;
+        ammo?: number | null;
         chargeTime?: number;
         damage?: number | string;
         damageTypes?: DamageTypes;
@@ -209,6 +210,7 @@ declare module 'warframe-items' {
         heavySlamRadialDamage?: number;
         heavySlamRadius?: number;
         windUp?: number;
+        introduced?: Update;
         attacks?: Attack[];
     }
 
@@ -244,7 +246,7 @@ declare module 'warframe-items' {
         status_chance?: number;
         charge_time?: number;
         shot_type?: string;
-        shot_speed?: number;
+        shot_speed?: number | null;
         flight?: number | string;
         falloff?: Falloff;
         damage: DamageTypes;
@@ -256,14 +258,14 @@ declare module 'warframe-items' {
     }
     
     interface SlamAttack {
-        damage: number;
+        damage: number | string;
         radial: RadialDamage;
     }
     
     interface RadialDamage {
-        damage: number;
-        element: Element;
-        proc: Element;
+        damage: number | string;
+        element: Element | 'undefined';
+        proc: Element | 'undefined';
         radius: number;
     }
 
@@ -284,7 +286,7 @@ declare module 'warframe-items' {
     interface Falloff {
         start: number;
         end: number;
-        reduction: number;
+        reduction?: number;
     }
 
     interface SecondaryArea {
@@ -344,7 +346,7 @@ declare module 'warframe-items' {
 
     interface Drop {
         location: string;
-        type: Type;
+        type: string;
         rarity?: Rarity;
         chance: number | null;
         rotation?: Rotation;
@@ -383,6 +385,7 @@ declare module 'warframe-items' {
     interface UpgradeValue {
         value: number;
         locTag?: string;
+        reverseValueSymbol?: boolean;
     }
 
     type ProductCategory =
@@ -407,6 +410,8 @@ declare module 'warframe-items' {
     type Category =
         'All' |
         'Arcanes' |
+        'Arch-Gun' |
+        'Arch-Melee' |
         'Archwing' |
         'Fish' |
         'Gear' |
@@ -414,6 +419,7 @@ declare module 'warframe-items' {
         'Melee' |
         'Misc' |
         'Mods' |
+        'Node' |
         'Pets' |
         'Primary' |
         'Quests' |
@@ -473,7 +479,8 @@ declare module 'warframe-items' {
 
     type Sex =
         'Male' |
-        'Female'
+        'Female' |
+        'Androgynous'
 
     type ShotType =
         'Continuous' |
@@ -487,10 +494,12 @@ declare module 'warframe-items' {
         'Cephalon Simaris' |
         'Cephalon Suda' |
         'Corpus' |
+        'Entrati' |
         'Founder' |
         'Grineer' |
         'Infested' |
         'Invasion Reward' |
+        'Kuva Lich' |
         'Never Vaulted' |
         'New Loka' |
         'Orokin' |
@@ -500,8 +509,10 @@ declare module 'warframe-items' {
         'Prisma' |
         'Red Veil' |
         'Sentient' |
+        'Stalker' |
         'Steel Meridian' |
         'Syndicate' |
+        'Tenet' |
         'Tenno' |
         'Tutorial' |
         'Vandal' |
@@ -521,27 +532,51 @@ declare module 'warframe-items' {
         ''
 
     type Type =
+        'Alloy' |    
         'Amp' |
+        'Arcade Minigame Unlock' |
+        'Arcane' |
+        'Arch-Gun' |
+        'Arch-Melee' |
+        'Arch-Melee Mod' |
         'Archwing' |
+        'Archwing Mod' |
+        'Arm Cannon' |
+        'Assault Saw' |
         'Aura' |
+        'Ayatan Sculpture' |
+        'Ayatan Star' |
+        'Blade And Whip' |
         'Blade and Whip' |
         'Bow' |
+        'Captura' |
         'Cetus Bounty Rewards' |
         'Claws' |
+        'Color Palette' |
+        'Companion Mod' |
+        'Conservation Tag' |
+        'Creature Mod' |
         'Crossbow' |
+        'Currency' |
+        'Cut Gem' |
         'Dagger' |
         'Dual Daggers' |
         'Dual Pistols' |
         'Dual Shotguns' |
         'Dual Swords' |
         'Eidolon Shard' |
+        'Emotes' |
         'Enemy Blueprint Tables' |
         'Enemy Mod Tables' |
+        'Exalted Weapon' |
         'Extractor' |
         'Fish' |
+        'Fish Bait' |
         'Fish Part' |
         'Fist' |
         'Focus Lens' |
+        'Fur Color' |
+        'Fur Pattern' |
         'Gear' |
         'Gem' |
         'Glaive' |
@@ -549,6 +584,9 @@ declare module 'warframe-items' {
         'Gunblade' |
         'Hammer' |
         'Heavy Blade' |
+        'Helminth Charger' |
+        'K-Drive Component' |
+        'K-Drive Mod' |
         'Kavat' |
         'Key' |
         'Key Rewards' |
@@ -558,31 +596,45 @@ declare module 'warframe-items' {
         'Machete' |
         'Medallion' |
         'Melee' |
+        'Melee Mod' |
         'Misc' |
         'Mission Rewards' |
         'Mod Locations' |
+        'Necramech Mod' |
         'Nikana' |
+        'Node' |
+        'Note Packs' |
         'Nunchaku' |
         'Orbiter' |
+        'Parazon' |
+        'Pet Collar' |
+        'Pet Resource' |
+        'Pet Parts' |
         'Pets' |
         'Pistol' |
         'Plant' |
         'Polearm' |
         'Primary' |
+        'Railjack Mod' |
         'Rapier' |
         'Relic' |
         'Relics' |
         'Resource' |
         'Rifle' |
+        'Riven Mod' |
         'Scythe' |
         'Secondary' |
+        'Secondary Mod' |
         'Sentinel' |
         'Ship Decoration' |
         'Ship Segment' |
         'Shotgun' |
+        'Shotgun Mod' |
         'Shotgun Sidearm' |
         'Sigil' |
+        'Simulacrum' |
         'Skin' |
+        'Skins' |
         'Sniper Rifle' |
         'Solaris Bounty Rewards' |
         'Sortie Rewards' |
@@ -592,14 +644,29 @@ declare module 'warframe-items' {
         'Staff' |
         'Stance' |
         'Sword' |
+        'Sword And Shield' |
         'Sword and Shield' |
+        'Syandana' |
+        'Theme Background' |
+        'Theme Sound' |
+        'Themes' |
         'Thrown' |
         'Tonfa' |
         'Transient Rewards' |
         'Two-Handed Nikana' |
         'Warfan' |
         'Warframe' |
+        'Warframe Mod' |
         'Whip' |
+        'Zaw Dagger / Staff' |
+        'Zaw Machete / Hammer' |
+        'Zaw Machete / Polearm' |
+        'Zaw Nikana / Staff' |
+        'Zaw Rapier / Polearm' |
+        'Zaw Scythe / Heavy Blade' |
+        'Zaw Scythe / Staff' |
+        'Zaw Sword / Polearm' |
+        'Zaw Sword / Staff' |
         '---'
         
     type Element = Capitalize<keyof DamageTypes>;
