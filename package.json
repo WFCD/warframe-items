@@ -9,8 +9,8 @@
     "test": "mocha",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
-    "pretypings": "npx typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
-    "typings": "npx ajv validate -s ./items.schema.json -d ./data/json/All.json --all-errors --verbose"
+    "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
+    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --all-errors --verbose"
   },
   "repository": {
     "type": "git",
