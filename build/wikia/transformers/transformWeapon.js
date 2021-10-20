@@ -106,8 +106,8 @@ const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialPro
     damage: Number(SlamAttack || 0).toFixed(2),
     radial: {
       damage: Number(SlamRadialDmg || 0).toFixed(2),
-      element: String(SlamRadialElement),
-      proc: String(SlamRadialProc),
+      element: SlamRadialElement && String(SlamRadialElement),
+      proc: SlamRadialProc && String(SlamRadialProc),
       radius: Number(SlamRadius)
     }
   }
