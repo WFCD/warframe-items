@@ -32,6 +32,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build
+    - run: npm run typings
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -46,4 +47,3 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm test
-    - run: npm run typings
