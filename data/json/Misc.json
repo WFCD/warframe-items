@@ -8925,7 +8925,7 @@
     "tradable": false,
     "type": "Exalted Weapon",
     "uniqueName": "/Lotus/Powersuits/Excalibur/DoomSword",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/87/EWExaltedBlade.png/revision/latest?cb=20180624110903",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/87/EWExaltedBlade.png/revision/latest?cb=20211021175016",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Exalted_Blade",
     "windUp": 0.60000002
   },
@@ -8939,6 +8939,31 @@
     "uniqueName": "/Lotus/Types/Items/SyndicateDogTags/RedVeilRareDogTag"
   },
   {
+    "attacks": [
+      {
+        "name": "Normal",
+        "speed": 0.833,
+        "crit_chance": 15,
+        "crit_mult": 2,
+        "status_chance": 15,
+        "shot_speed": 15,
+        "flight": 15,
+        "damage": {
+          "impact": 37.5,
+          "slash": 175,
+          "puncture": 37.5
+        },
+        "slide": "536",
+        "slam": {
+          "damage": "750.00",
+          "radial": {
+            "damage": "250.00",
+            "element": "Impact",
+            "radius": 7
+          }
+        }
+      }
+    ],
     "blockingAngle": 60,
     "category": "Misc",
     "comboDuration": 5,
@@ -8946,6 +8971,7 @@
     "criticalMultiplier": 2,
     "damagePerShot": [ 5.25, 5.25, 24.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
     "description": "Summon a sword of pure light and immense power.",
+    "disposition": 3,
     "excludeFromCodex": true,
     "fireRate": 0.83333337,
     "followThrough": 1,
@@ -8954,6 +8980,13 @@
     "heavySlamRadialDamage": 140,
     "heavySlamRadius": 8,
     "imageName": "exalted-prime-blade.png",
+    "introduced": {
+      "name": "Update 23.0",
+      "url": "https://warframe.fandom.com/wiki/Update_23%23Update_23.0",
+      "aliases": [ "23", "23.0", "The Sacrifice" ],
+      "parent": "23.0",
+      "date": "2018-06-15"
+    },
     "masteryReq": 0,
     "name": "Exalted Prime Blade",
     "omegaAttenuation": 1,
@@ -9320,18 +9353,23 @@
         "fixes": "Fourth Ability: New Ability: Exalted Blade: Excalibur summons a sword of pure light and immense power.\nExcalibur’s Abilities have all been given a visual overhaul in line with his new Exalted Blade ability."
       }
     ],
+    "polarities": [ "Madurai", "Madurai", "Naramon" ],
     "procChance": 0.14999998,
     "productCategory": "SpecialItems",
     "range": 2.8,
+    "releaseDate": "2018-06-15",
     "slamAttack": 105,
     "slamRadialDamage": 35,
     "slamRadius": 7,
     "slideAttack": 75,
     "slot": 7,
+    "tags": [ "Tenno" ],
     "totalDamage": 35,
     "tradable": false,
-    "type": "Warframe",
+    "type": "Exalted Weapon",
     "uniqueName": "/Lotus/Powersuits/Excalibur/DoomSwordPrime",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/67/ExaltedPrimeBlade.png/revision/latest?cb=20200612022241",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Exalted_Prime_Blade",
     "windUp": 0.60000002
   },
   {
@@ -9401,7 +9439,7 @@
     "tradable": false,
     "type": "Exalted Weapon",
     "uniqueName": "/Lotus/Powersuits/Excalibur/DoomSwordUmbra",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/87/EWExaltedBlade.png/revision/latest?cb=20180624110903",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/07/ExaltedUmbraBlade.png/revision/latest?cb=20200612022241",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Exalted_Umbra_Blade",
     "windUp": 0.60000002
   },
