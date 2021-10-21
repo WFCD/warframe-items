@@ -9,6 +9,7 @@
     "test": "mocha",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
     "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --all-errors --allowUnionTypes --verbose"
   },
@@ -79,5 +80,10 @@
   "mocha": {
     "slow": 10000,
     "timeout": 10000
+  },
+  "clean-package": {
+    "remove": [
+      "mocha", "devDependencies", "eslintIgnore", "eslintConfig", "scripts", "clean-package"
+    ]
   }
 }
