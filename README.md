@@ -133,6 +133,7 @@ Parses the external data to match our schema and returns it to the build script.
 ### Usage and Testing
 You can run the build script with `npm run build`.
 Once built, you can verify the data with `npm test`.
+To verify the TypeScript typings are up to date, you can run `npm run typings`.
 
 <br>
 
