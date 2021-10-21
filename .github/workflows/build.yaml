@@ -23,7 +23,6 @@ jobs:
     - run: npm install
     - run: npm i -S warframe-patchlogs@latest
     - run: npm run build
-    - run: npm run typings
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         skip_dirty_check: false
