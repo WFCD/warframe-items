@@ -234,7 +234,7 @@ declare module 'warframe-items' {
         corrosive?: number;
         radiation?: number;
     }
-    
+
     interface Attack {
         name: string;
         duration?: number;
@@ -256,16 +256,16 @@ declare module 'warframe-items' {
         channeling?: number;
         slam?: SlamAttack;
     }
-    
+
     interface SlamAttack {
         damage: number | string;
         radial: RadialDamage;
     }
-    
+
     interface RadialDamage {
         damage: number | string;
-        element: Element | 'undefined';
-        proc: Element | 'undefined';
+        element?: Element;
+        proc?: Element;
         radius: number;
     }
 
@@ -366,7 +366,7 @@ declare module 'warframe-items' {
         name: string;
         count: number;
     }
-    
+
     interface Update {
         name: string;
         url: string;
@@ -532,7 +532,7 @@ declare module 'warframe-items' {
         ''
 
     type Type =
-        'Alloy' |    
+        'Alloy' |
         'Amp' |
         'Arcade Minigame Unlock' |
         'Arcane' |
@@ -668,6 +668,6 @@ declare module 'warframe-items' {
         'Zaw Sword / Polearm' |
         'Zaw Sword / Staff' |
         '---'
-        
+
     type Element = Capitalize<keyof DamageTypes>;
 }
