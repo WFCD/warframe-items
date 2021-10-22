@@ -588,10 +588,12 @@ declare module 'warframe-items' {
         'K-Drive Component' |
         'K-Drive Mod' |
         'Kavat' |
+        'Kavat Mod' |
         'Key' |
         'Key Rewards' |
         'Kitgun Component' |
         'Kubrow' |
+        'Kubrow Mod' |
         'Launcher' |
         'Machete' |
         'Medallion' |
@@ -615,6 +617,7 @@ declare module 'warframe-items' {
         'Plant' |
         'Polearm' |
         'Primary' |
+        'Primary Mod' |
         'Railjack Mod' |
         'Rapier' |
         'Relic' |
@@ -626,6 +629,7 @@ declare module 'warframe-items' {
         'Secondary' |
         'Secondary Mod' |
         'Sentinel' |
+        'Sentinel Mod' |
         'Ship Decoration' |
         'Ship Segment' |
         'Shotgun' |

@@ -320,9 +320,13 @@ class Parser {
     const types = require('../config/itemTypes.json')
 
     for (const type of types) {
-      if (item.uniqueName.includes(type.id)) {
-        item.type = type.name
-        if (item.type !== type.name) console.error(`${item.name} didn't update types`)
+      const contains = type.regex
+        ? new RegExp(type.id, 'ig').test(item.uniqueName)
+        : item.uniqueName.includes(type.id)
+      if (contains) {
+        if (type.append) item.type = `${item.type}${type.name}`
+        else item.type = type.name
+        // if (item.type !== type.name) console.error(`${item.name} didn't update types`)
         break
       }
     }
@@ -488,11 +492,11 @@ class Parser {
   addTradable (item) {
     const tradableTypes = ['Upgrades', 'Arcane', 'Fish', 'Focus Lens', 'Relic', 'Rifle Mod',
       'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
-      'Melee Mod', 'Arch-Melee Mod', 'Necramech Mod', 'Cut Gem', 'Captura']
+      'Melee Mod', 'Arch-Melee Mod', 'Necramech Mod', 'Cut Gem', 'Captura', 'Primary Mod', 'Sentinel Mod', 'Kubrow Mod', 'Kavat Mod']
     const untradableTypes = ['Skin', 'Medallion', 'Key', 'Extractor', 'Pets', 'Ship Decoration',
       'Glyph', 'Sigil', 'Fur Color', 'Syandana', 'Fur Pattern', 'Color Palette', 'Node', 'Exalted Weapon', 'Warframe']
     const tradableRegex = /(Prime|Vandal|Wraith\w|\wWraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma)(?!Derelict)/i
-    const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))/i
+    const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))|Umbral|Sacrificial/i
     const notFiltered = !untradableTypes.includes(item.type) &&
       !item.name.match(untradableRegex) &&
       !item.uniqueName.match(untradableRegex) &&
