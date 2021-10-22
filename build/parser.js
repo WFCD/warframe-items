@@ -324,9 +324,9 @@ class Parser {
         ? new RegExp(type.id, 'ig').test(item.uniqueName)
         : item.uniqueName.includes(type.id)
       if (contains) {
-        if (type.append) item.name = `${item.name}${type.name}`
+        if (type.append) item.type = `${item.type}${type.name}`
         else item.type = type.name
-        if (item.type !== type.name) console.error(`${item.name} didn't update types`)
+        // if (item.type !== type.name) console.error(`${item.name} didn't update types`)
         break
       }
     }
