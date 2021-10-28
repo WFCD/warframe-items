@@ -21,17 +21,20 @@ const get = async (url, binary = true) => {
 
 class Build {
   async init () {
+    const resources = await scraper.fetchResources()
     const raw = {
-      api: await scraper.fetchResources(),
+      api: resources.en,
       manifest: await scraper.fetchImageManifest(),
       drops: await scraper.fetchDropRates(),
       patchlogs: scraper.fetchPatchLogs(),
       wikia: await scraper.fetchWikiaData(),
-      vaultData: await scraper.fetchVaultData()
+      vaultData: await scraper.fetchVaultData(),
+      i18n: resources
     }
     const parsed = parser.parse(raw)
     const data = this.applyCustomCategories(parsed.data)
-    const all = this.saveJson(data)
+    const i18n = parser.applyI18n(data, raw.i18n)
+    const all = this.saveJson(data, i18n)
     this.saveWarnings(parsed.warnings)
     await this.saveImages(all, raw.manifest)
     this.updateReadme(raw.patchlogs.patchlogs)
@@ -81,7 +84,7 @@ class Build {
   /**
    * Generate JSON file for each category and one for all combined.
    */
-  saveJson (categories) {
+  saveJson (categories, i18n) {
     let all = []
     const sort = (a, b) => {
       if (!a.name) console.log(a)
@@ -104,6 +107,7 @@ class Build {
     // All.json (all items in one file)
     all.sort(sort)
     fs.writeFileSync(path.join(__dirname, '../data/json/All.json'), stringify(all))
+    fs.writeFileSync(path.join(__dirname, '../data/json/i18n.json'), stringify(i18n))
 
     return all
   }

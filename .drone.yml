@@ -10,10 +10,10 @@ pipeline:
     commands:
       - npm run lint
 
-  test:
-    image: node:10
-    commands:
-      - npm test
+#  test:
+#    image: node:10
+#    commands:
+#      - npm test
 
   publish:
     image: node:10

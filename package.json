@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "scripts": {
     "build": "node ./build/build.js",
-    "test": "mocha",
+    "test": "nyc mocha",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
@@ -35,6 +35,7 @@
     "axios": "^0.23.0",
     "cheerio": "^1.0.0-rc.3",
     "colors": "^1.3.3",
+    "decache": "^4.6.0",
     "eslint": "^7.31.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.17.2",
@@ -54,6 +55,7 @@
     "node-cmd": "^4.0.0",
     "node-fetch": "^2.6.1",
     "node-progress": "^0.1.0",
+    "nyc": "^15.1.0",
     "sharp": "^0.28.3",
     "socks5-http-client": "^1.0.4",
     "typescript-json-schema": "^0.51.0",
@@ -65,7 +67,9 @@
     ],
     "globals": {
       "describe": "readonly",
-      "it": "readonly"
+      "it": "readonly",
+      "beforeEach": "readonly",
+      "afterEach": "readonly"
     },
     "rules": {
       "brace-style": 0
@@ -88,7 +92,28 @@
       "eslintIgnore",
       "eslintConfig",
       "scripts",
-      "clean-package"
+      "clean-package",
+      "nyc"
     ]
+  },
+  "nyc": {
+    "exclude": [
+      "test/*",
+      "build/*",
+      "config/*",
+      "data/*",
+      "docker/*",
+      "index.d.ts"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "skip-full": true,
+    "branches": 100,
+    "lines": 100,
+    "functions": 100,
+    "statements": 100,
+    "check-coverage": true
   }
 }
