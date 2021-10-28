@@ -1,14 +1,21 @@
 declare module 'warframe-items' {
     export default class Items extends Array<Item>{
         constructor(options: ItemsOptions, ...items: Item[]);
+        options: ItemsOptions;
+        i18n: BundleofI18nBundle<Locale>;
     }
 
     interface ItemsOptions {
-        category: Category[]
+        category: Category[];
+        ignoreEnemies?: boolean;
+        i18n?: boolean|string[];
+        i18nOnObject?: boolean;
     }
 
+    type UniqueName = string;
+
     interface Item {
-        uniqueName: string;
+        uniqueName: UniqueName;
         name: string;
         polarity?: Polarity;
         rarity?: Rarity;
@@ -139,6 +146,7 @@ declare module 'warframe-items' {
         levelStats?: LevelStat[];
         introduced?: Update;
         attacks?: Attack[];
+        i18n?: I18nBundle<UniqueName>;
     }
 
     interface Component {
@@ -387,6 +395,40 @@ declare module 'warframe-items' {
         locTag?: string;
         reverseValueSymbol?: boolean;
     }
+
+    interface ItemI18n {
+        name: string;
+        description: string;
+        passiveDescription?: string;
+        abilities?: Ability[];
+        trigger?: string;
+        systemName?: string;
+        levelStats: LevelStat[];
+    }
+
+    type I18nBundle<Locale> = {
+        [Property in keyof Locale]: ItemI18n;
+    };
+
+    type BundleofI18nBundle<UniqueName> = {
+        [Property in keyof UniqueName]: I18nBundle<Locale>;
+    }
+
+    type Locale =
+        'de' |
+        'fr' |
+        'it' |
+        'ko' |
+        'es' |
+        'zh' |
+        'ru' |
+        'ja' |
+        'pl' |
+        'pt' |
+        'tc' |
+        'th' |
+        'tr' |
+        'uk'
 
     type ProductCategory =
         'KubrowPets' |

@@ -28,11 +28,18 @@
  *                         - Skins
  *                         - Warframes
  * @property {boolean} ignoreEnemies If true, don't load any enemy categories
+ * @property {boolean|Array<string>} i18n Whether or not to include i18n, or a list of allowed locales
+ * @property {boolean} i18nOnObject Whether or not to include i18n on the object itself and not on the "array"
  */
 
 const versions = require('./data/cache/.export.json')
-
-const defaultOptions = { category: ['All'] }
+let i18n = {}
+try {
+  i18n = require('./data/json/i18n.json')
+} catch (ignored) {
+  // can only happen in really weird stuff, and we're already defaulting, so it's ok
+}
+const defaultOptions = { category: ['All'], i18n: false, i18nOnObject: false }
 
 class Items extends Array {
   constructor (options, ...items) {
@@ -44,17 +51,38 @@ class Items extends Array {
       ...options
     }
 
+    this.i18n = {}
+
     // Add items from options to array. Type equals the file name.
     for (const category of this.options.category) {
       // Ignores the enemy category.
       if (this.options.ignoreEnemies && category === 'Enemy') continue
       const items = require(`./data/json/${category}.json`)
-
       for (const item of items) {
-        // need this because all will include enemies
-        if (this.options.ignoreEnemies && item.category === 'Enemy') continue
+        if (this.options.i18n) {
+          // only insert i18n for the objects we're inserting so we don't bloat memory
+          if (Array.isArray(this.options.i18n)) {
+            const raw = i18n[item.uniqueName]
+            Object.keys(raw).forEach(locale => {
+              if (!this.options.i18n.includes(locale)) {
+                delete raw[locale]
+              }
+            })
+            this.i18n[item.uniqueName] = raw
+          } else {
+            this.i18n[item.uniqueName] = i18n[item.uniqueName]
+          }
+        }
+        if (this.options.i18n && this.options.i18nOnObject) {
+          item.i18n = this.i18n[item.uniqueName]
+          // keep data just on the object so no bloat in extra this.i18n
+          delete this.i18n[item.uniqueName]
+        }
         this.push(item)
       }
+    }
+    if (!this.options.i18n || (this.options.i18n && this.options.i18nOnObject)) {
+      this.i18n = undefined
     }
 
     // Output won't be sorted if separate categories are chosen

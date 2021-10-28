@@ -8,11 +8,13 @@ const fs = require('fs')
 const path = require('path')
 const cheerio = require('cheerio')
 const exportCache = require('../data/cache/.export.json')
+const locales = require('../config/locales.json')
 const ModScraper = require('./wikia/scrapers/ModScraper')
 const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
 const VersionScraper = require('./wikia/scrapers/VersionScraper')
-const sanitize = (str) => str.replace(/\\r|\r?\n/g, '')
+// eslint-disable-next-line no-control-regex
+const sanitize = (str) => str.replace(/\\r|\r?\n|\x09/g, '').replace(/\\\\"/g, '\'')
 // const agent = new Agent({
 //  socksHost: process.env.SOCKS5_HOST,
 //  socksPort: process.env.SOCKS5_PORT,
@@ -33,21 +35,20 @@ const getJSON = async (url, disableProxy) => JSON.parse(sanitize(await get(url, 
 class Scraper {
   /**
    * Get Endpoints from Warframe's origin file
+   * @param {boolean} [manifest] to fetch only the manifest or everything else
+   * @param {string} [locale] Locale to fetch data for
    */
-  async fetchEndpoints (manifest) {
-    const origin = 'https://content.warframe.com/PublicExport/index_en.txt.lzma'
+  async fetchEndpoints (manifest, locale) {
+    const origin = `https://content.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`
     const raw = await get(origin, !prod)
     const decompressed = lzma.decompress(raw)
     const manifestRegex = /(\r?\n)?ExportManifest.*/
-    let filtered
 
     // We either don't need the manifest, or *only* the manifest
     if (manifest) {
-      filtered = manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '')
-      return filtered
+      return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '')
     } else {
-      filtered = decompressed.replace(manifestRegex, '')
-      return filtered.split(/\r?\n/g)
+      return decompressed.replace(manifestRegex, '').split(/\r?\n/g)
     }
   }
 
@@ -57,15 +58,36 @@ class Scraper {
   async fetchResources () {
     const endpoints = await this.fetchEndpoints()
     const result = []
-    const bar = new Progress('Fetching API Endpoints', endpoints.length)
+    const i18nEndpoints = {}
+    for (const locale of locales) {
+      i18nEndpoints[locale] = await this.fetchEndpoints(false, locale)
+    }
+    const totalEndpoints = (i18nEndpoints[Object.keys(i18nEndpoints)[0]].length * Object.keys(i18nEndpoints).length) + endpoints.length
+    const bar = new Progress('Fetching API Endpoints', totalEndpoints)
+
+    const fetchEndpoint = async (endpoint) => {
+      const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '')
+      const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`)
+      const data = raw ? raw[`Export${category}`] : null
+      bar.tick()
+      return { category, data }
+    }
 
     for (const endpoint of endpoints) {
-      const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '')
-      const data = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`))[`Export${category}`]
-      result.push({ category, data })
-      bar.tick()
+      result.push(await fetchEndpoint(endpoint))
     }
-    return result
+
+    const i18n = {
+      en: result
+    }
+
+    for (const locale of locales) {
+      i18n[locale] = []
+      for (const endpoint of i18nEndpoints[locale]) {
+        i18n[locale].push(await fetchEndpoint(endpoint))
+      }
+    }
+    return i18n
   }
 
   /**
