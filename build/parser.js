@@ -16,12 +16,17 @@ const warnings = {
 }
 
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
-const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z]{1,1} Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
-const prefixed = (name) => new RegExp(`((?:(?:${prefixes.join('|')})\\s?${name}.*)|(?:${name}\\s?(?:${suffixes.join('|')})\\s?.*))+`, 'i')
+const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z] Prime$|^Excalibur .*|^Lato .*|^Skana .*)/i
+const prefixed = (name) => new RegExp(`(((?:${prefixes.join('|')})\\s?${name}.*)|(?:${name}\\s?(?:${suffixes.join('|')})\\s?.*))+`, 'i')
 
-// Compares drop locations for items lexicographically by chance + location + rotation + rarity
+/**
+ * Drop comparator
+ * Compares drop locations for items lexicographically by chance + location + rotation + rarity
+ * @param {Drop} dropA
+ * @param {Drop} dropB
+ * @returns {number}
+ */
 const dropComparator = (dropA, dropB) => {
-  // Build a key for comparison
   const keyA = `${dropA.chance}:${dropA.location}:${dropA.rotation}:${dropA.rarity}`.toUpperCase()
   const keyB = `${dropB.chance}:${dropB.location}:${dropB.rotation}:${dropB.rarity}`.toUpperCase()
   return keyA.localeCompare(keyB)
@@ -82,7 +87,7 @@ class Parser {
 
       // Skip Weapon Components as they'll be accessible
       // through their parent. Warframe components are an exception
-      // since they are not items itself, but have compononents.
+      // since they are not items itself, but have components.
       if (item.uniqueName && item.uniqueName.includes('/Recipes')) continue
 
       item = this.addComponents(item, category, blueprints, data)
@@ -110,9 +115,8 @@ class Parser {
     this.addPatchlogs(result, data.patchlogs)
     this.addAdditionalWikiaData(result, category, data.wikia)
     this.addVaultData(result, data.vaultData)
-    this.addResistenceData(result, category)
+    this.addResistanceData(result, category)
     this.applyOverrides(result)
-
     return result
   }
 
@@ -195,6 +199,13 @@ class Parser {
    * Sanitize components slightly differently from normal items. Note that
    * we also add a .parents key which will give the component as standalone
    * item a list of all its parents.
+   * @param {Array<Item>} components
+   * @param {Item} result item to sanitize components on
+   * @param {Item} item item to compare to
+   * @param {Category} category
+   * @param {Array<Item>} blueprints
+   * @param {Object<string, Array<Item>>} data
+   * @param {boolean} secondPass
    */
   sanitizeComponents (components, result, item, category, blueprints, data, secondPass) {
     for (let i = 0; i < components.length; i++) {
@@ -354,7 +365,7 @@ class Parser {
       return
     }
     // eslint-disable-next-line no-useless-escape
-    const encode = (str) => str.replace('/', '').replace(/( |\/|\*)/g, '-').replace(/[:<>\[\]\?\!]/g, '').toLowerCase()
+    const encode = (str) => str.replace('/', '').replace(/[ \/*]/g, '-').replace(/[:<>\[\]?!]/g, '').toLowerCase()
     const imageStub = image.textureLocation
     const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '').replace(/!.*$/, '') // .png, .jpg, etc
 
@@ -579,6 +590,13 @@ class Parser {
     }
   }
 
+  /**
+   * Find drop locations
+   * @param {Item} item
+   * @param {Array<Drop>} dropChances
+   * @param {Boolean} isComponent whether or not this is a component item
+   * @returns {*}
+   */
   findDropLocations (item, dropChances, isComponent) {
     const variant = prefixed(item)
     const semiWrapped = new RegExp(`(?:^|\\s)+${item}(?:\\s|$)+`, 'i')
@@ -747,7 +765,7 @@ class Parser {
     }
   }
 
-  addResistenceData (item, category) {
+  addResistanceData (item, category) {
     if (category.toLowerCase() !== 'enemies') return
 
     const quantities = {
@@ -791,6 +809,39 @@ class Parser {
     delete item.resistValues
     delete item.resistPrefix
     delete item.resistTexts
+  }
+
+  /**
+   * Apply i18n and parse data
+   * @param {Object<string, Array<Item>>} data
+   * @param {Object<string, Array<Item>>} i18n
+   * @returns {Object<string, Object<string, Object>>}
+   */
+  applyI18n (data, i18n) {
+    const i18nAllowedKeys = ['name', 'description', 'passiveDescription', 'abilities', 'trigger', 'systemName', 'levelStats']
+    const locales = Object.keys(i18n).filter(key => key !== 'en')
+    const arr = []
+    const i18nArr = {}
+    Object.entries(data).map(([, arr]) => arr).forEach(sub => arr.push(...sub))
+    const bar = new Progress('Parsing i18n', arr.length)
+    arr.forEach(entry => {
+      const id = entry.uniqueName
+      if (!i18nArr[id]) i18nArr[id] = {}
+      locales.forEach(locale => {
+        for (const { data: i18nData } of i18n[locale]) {
+          const match = i18nData.find(i18nItem => i18nItem.uniqueName === id)
+          if (match) {
+            if (!i18nArr[id][locale]) i18nArr[id][locale] = {}
+            i18nAllowedKeys.forEach(key => {
+              i18nArr[id][locale][key] = match[key]
+            })
+            break
+          }
+        }
+      })
+      bar.tick()
+    })
+    return i18nArr
   }
 }
 
