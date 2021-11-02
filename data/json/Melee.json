@@ -42169,6 +42169,36 @@
             "radius": 4
           }
         }
+      },
+      {
+        "name": "Normal Shockwave",
+        "speed": 1,
+        "crit_chance": 38,
+        "crit_mult": 2.4,
+        "status_chance": 22,
+        "falloff": {
+          "start": 0,
+          "end": 4,
+          "reduction": 0.9
+        },
+        "damage": {
+          "impact": 190
+        }
+      },
+      {
+        "name": "Heavy Shockwave",
+        "speed": 1,
+        "crit_chance": 38,
+        "crit_mult": 2.4,
+        "status_chance": 22,
+        "falloff": {
+          "start": 0,
+          "end": 4,
+          "reduction": 0
+        },
+        "damage": {
+          "impact": 950
+        }
       }
     ],
     "blockingAngle": 55,
