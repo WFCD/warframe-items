@@ -328,7 +328,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
         "name": "Fish Oil",
         "description": "Used to create absolvents that purify gems.",
-        "itemCount": 35,
+        "itemCount": 20,
         "imageName": "fish-oil.png",
         "tradable": false,
         "drops": [  ]
@@ -337,7 +337,7 @@
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "morphics.png",
         "tradable": false,
         "drops": [  ]
@@ -346,7 +346,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 2,
+        "itemCount": 1,
         "imageName": "radian-sentirum.png",
         "tradable": false,
         "drops": [  ]
@@ -355,7 +355,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "seram-beetle-shell.png",
         "tradable": false,
         "drops": [  ]
@@ -1975,6 +1975,14 @@
     "parents": [ "Ceno Helmet", "Vahd Mask", "Zauba Mask" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Star Crimzian and Auroxium Alloy (From 15,000 Standing to 7,000)",
+        "fixes": ""
+      },
+      {
         "name": "Warframe Update 22: Plains of Eidolon",
         "date": "2017-10-12T22:00:20Z",
         "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
@@ -2050,6 +2058,574 @@
     "tradable": false,
     "type": "Relic",
     "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjection"
+  },
+  {
+    "category": "Misc",
+    "description": "Raw Orokin memory plasma. Varzia's Foundry can consume Aya to create Void Relics.",
+    "excludeFromCodex": true,
+    "imageName": "aya.png",
+    "name": "Aya",
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Maroo now has a Ayatan inspired map marker in Maroo’s Bazaar. ",
+        "fixes": "Varzia, a Dax from the Old War, will appear in Maroo’s Bazaar November 16th on all Platforms with a slew of Prime goods for you to obtain. You can either purchase Relics from her Wares with Aya (free path) or gain instant access to Prime items and bundles with Regal Aya (purchase path).\nAya is an earned currency that is your free path to gaining Prime items through the in-game Relic system. It is a resource that is exchanged for Void Relics and other non-premium items available in Varzia’s wares. Aya is found in Missions (The Void or Bounties) or has a chance of appearing in Relic Packs available for purchase in the Market for Platinum or Syndicate Offerings for Standing.\nRegal Aya is a premium currency (similar to Platinum, but not tradeable) that gives you instant access to Prime Warframes, Weapons, Accessories, and Bundles available in Varzia’s wares. It can be purchased in the Market or online storefronts.\nWe have an extremely thorough Dev Workshop / FAQ explaining how this Event came to be, including the introduction of Regal Aya. Simply put, The Prime Vault program has undergone many changes over the years, all driven by player feedback and requests.\nFixed inability to duplicate Ayatan Statues in the Dojo if available in the Vault."
+      },
+      {
+        "name": "Nidus Prime & Plague Star: Hotfix 30.7.5",
+        "date": "2021-09-16T20:15:52Z",
+        "url": "https://forums.warframe.com/topic/1281196-nidus-prime-plague-star-hotfix-3075/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Kuva Ayanga firing projectiles back on the player with maximum Fire Rate."
+      },
+      {
+        "name": "Update 30.5: Sisters of Parvos",
+        "date": "2021-07-06T15:02:09Z",
+        "url": "https://forums.warframe.com/topic/1269749-update-305-sisters-of-parvos/",
+        "additions": "",
+        "changes": "Made Ayatan Sculptures dynamically load if needed rather than keeping all loaded all the time to save ~3.5MB.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
+        "date": "2021-03-19T15:18:34Z",
+        "url": "https://forums.warframe.com/topic/1253565-update-29100-corpus-proxima-the-new-railjack/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Ayatan Sculptures not animating when using Ayatan Star auto-install. "
+      },
+      {
+        "name": "Star Days: Hotfix 29.8.1",
+        "date": "2021-02-18T15:57:52Z",
+        "url": "https://forums.warframe.com/topic/1249855-star-days-hotfix-2981/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed rare case of Ayatan Sculpture spawning inside geometry in the Grineer Fortress tileset. "
+      },
+      {
+        "name": "Star Days: Update 29.8.0",
+        "date": "2021-02-11T18:57:30Z",
+        "url": "https://forums.warframe.com/topic/1248934-star-days-update-2980/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed becoming trapped on the Ayatan screen when attempting to ‘Visit Maroo’ via the Ayatan screen."
+      },
+      {
+        "name": "Deimos: Arcana: Hotfix 29.5.7",
+        "date": "2020-12-10T21:22:06Z",
+        "url": "https://forums.warframe.com/topic/1239954-deimos-arcana-hotfix-2957/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Ayatan Amber Stars dropping far less frequently than before Deimos Arcana."
+      },
+      {
+        "name": "Update 29.5: Deimos Arcana",
+        "date": "2020-11-19T23:39:27Z",
+        "url": "https://forums.warframe.com/topic/1236257-update-295-deimos-arcana/",
+        "additions": "",
+        "changes": "Loid has come into possession of the Ayatan Kitha Sculpture! Struck to commemorate the Entrati family’s power and prestige, as well as safeguarding their memories of one another. Many things changed in the years that followed, and that which had once shone brightly grew dark and dim. But even a single Ayatan Star may make all the difference.\nChanged Ayatan Stars to sort as a rare Resource in the End of Mission screen. \nAyatan Screen Changes:",
+        "fixes": "Fixed the Kuva Ayanga dealing self damage."
+      },
+      {
+        "name": "Heart of Deimos: Hotfix 29.0.3",
+        "date": "2020-08-26T22:57:57Z",
+        "url": "https://forums.warframe.com/topic/1217375-heart-of-deimos-hotfix-2903/",
+        "additions": "",
+        "changes": "The Deimos Bounty Credit Cache rewards have been replaced with an Ayatan Amber Star.",
+        "fixes": ""
+      },
+      {
+        "name": "The Steel Path: Inaros Prime 28.2.1",
+        "date": "2020-08-01T13:58:08Z",
+        "url": "https://forums.warframe.com/topic/1209933-the-steel-path-inaros-prime-2821/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Kuva Ayanga missing its handle animations."
+      },
+      {
+        "name": "The Steel Path: Update 28.1.0",
+        "date": "2020-07-08T20:09:20Z",
+        "url": "https://forums.warframe.com/topic/1205630-the-steel-path-update-2810/",
+        "additions": "",
+        "changes": "Removed the ability to open up the main menu with a controller when using Navigation or browsing Ayatan Treasures (could result in a loss of functionality).",
+        "fixes": ""
+      },
+      {
+        "name": "Warframe Revised: Railjack Revisited (Part 1): Hotfix 27.4.4",
+        "date": "2020-05-07T19:20:27Z",
+        "url": "https://forums.warframe.com/topic/1191283-warframe-revised-railjack-revisited-part-1-hotfix-2744/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Kuva Ayanga causing self-damage when out in space."
+      },
+      {
+        "name": "Warframe Revised: Hotfix 27.2.2",
+        "date": "2020-03-06T20:01:27Z",
+        "url": "https://forums.warframe.com/topic/1173118-warframe-revised-hotfix-2722/",
+        "additions": "",
+        "changes": "Kuva Ayanga: 50%",
+        "fixes": ""
+      },
+      {
+        "name": "Warframe Revised: Update 27.2.0",
+        "date": "2020-03-05T15:32:32Z",
+        "url": "https://forums.warframe.com/topic/1172454-warframe-revised-update-2720/",
+        "additions": "",
+        "changes": "Kuva Lich and Ayatan Star in-world markers will start to fade as you approach them within certain distances:",
+        "fixes": ""
+      },
+      {
+        "name": "Empyrean: Ivara Prime 27.0.9",
+        "date": "2020-01-09T16:43:11Z",
+        "url": "https://forums.warframe.com/topic/1160497-empyrean-ivara-prime-2709/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/32221b681020ab4ef869f68bb1bd6ec3.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed various issues with the Kuva Ayangya, including not firing sometimes in space."
+      },
+      {
+        "name": "Empyrean: Update 27",
+        "date": "2019-12-13T02:34:29Z",
+        "url": "https://forums.warframe.com/topic/1151428-empyrean-update-27/",
+        "additions": "",
+        "changes": "Increased projectile speed of the Kuva Ayanga while in space.",
+        "fixes": ""
+      },
+      {
+        "name": "The Old Blood: Hotfix 26.0.7",
+        "date": "2019-11-14T21:23:52Z",
+        "url": "https://forums.warframe.com/topic/1142475-the-old-blood-hotfix-2607/",
+        "additions": "",
+        "changes": "Reduced the camera shake of the Kuva Ayanga explosions.\nFixed Kuva Lich weapons that do damage on both impact and explosion (Kuva Ogris, Kuva Ayanga, etc) doing significantly less overall damage than expected. This was due to the Elemental bonus only being applied to the \"on impact\" of the projectile itself and not the explosion.\nAnother fix for Ayatan Statues Taxed by the Kuva Lich not showing up with the rest of the Recovered items in the End of Mission screen.",
+        "fixes": "Fixes towards Ayatan Stars and other pickups that can’t be vacuumed launching themselves into unreachable corners. "
+      },
+      {
+        "name": "The Old Blood: Hotfix 26.0.6 + 26.0.6.1",
+        "date": "2019-11-07T22:13:30Z",
+        "url": "https://forums.warframe.com/topic/1140467-the-old-blood-hotfix-2606-26061/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Valence Transfer not applying to the Kuva Shildeg and Kuva Ayanga."
+      },
+      {
+        "name": "Update 26: The Old Blood",
+        "date": "2019-10-31T20:07:22Z",
+        "url": "https://forums.warframe.com/topic/1136784-update-26-the-old-blood/",
+        "additions": "",
+        "changes": "The Options screen, Ayatan Treasures screen, and Dojo Room Options UI have received a fresh new look!",
+        "fixes": "Fixed removing Decorations that you’ve just placed resulting in the item not stacking in your Inventory with ones you already own, and showing up as Ayatan Sculptures until you refresh the screen."
+      },
+      {
+        "name": "Atlas Prime: Hotfix 25.8.1 + 25.8.1.1",
+        "date": "2019-10-09T15:29:13Z",
+        "url": "https://forums.warframe.com/topic/1133158-atlas-prime-hotfix-2581-25811/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue that prevented Donating your last of a type of Ayatan Sculpture to the Clan Vault."
+      },
+      {
+        "name": "Prime Vault: Hotfix 25.7.3 + 25.7.3.1",
+        "date": "2019-09-03T18:00:39Z",
+        "url": "https://forums.warframe.com/topic/1125828-prime-vault-hotfix-2573-25731/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where \"Completed Ayatan Sculpture\" based Challenges couldn't be completed."
+      },
+      {
+        "name": "Saint of Altra: Update 25.7.0",
+        "date": "2019-08-29T21:35:56Z",
+        "url": "https://forums.warframe.com/topic/1123841-saint-of-altra-update-2570/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/b7051b1cd27e521570bda7f30b2dc0da.jpg",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Ayatan Treasure UI and animations not updating in real time as Stars are installed in the Ayatan Treasures menu.\nFixed an Ayatan Sculpture spawning under the floor in the Infested Corpus Rescue tileset. As reported here: https://old.reddit.com/r/Warframe/comments/cw3q6n/an_ayatan_sculpture_spawned_under_the_floor_with/"
+      },
+      {
+        "name": "Tenno Reinforcements: Update 25.4.0",
+        "date": "2019-07-18T19:02:05Z",
+        "url": "https://forums.warframe.com/topic/1112632-tenno-reinforcements-update-2540/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/bfacc64713b5a5a71637ca6bb3818d96.jpg",
+        "additions": "",
+        "changes": "Eligibility for the Get Clem & Maroo Ayatan Treasure Hunt missions now resets at 00:00 Monday each week (same as Nightwave) instead of an arbitrary 7-day cooldown from whenever you last completed them. This ensures you have a chance to complete the missions within the weekly refresh of Nightwave. ",
+        "fixes": ""
+      },
+      {
+        "name": "The Jovian Concord: Hotfix 25.0.2 + 25.0.2.1",
+        "date": "2019-05-23T20:41:54Z",
+        "url": "https://forums.warframe.com/topic/1095724-the-jovian-concord-hotfix-2502-25021/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error when getting an Ayatan Sculpture as a defense reward."
+      },
+      {
+        "name": "Buried Debts: Hotfix 24.4.2",
+        "date": "2019-03-08T23:25:35Z",
+        "url": "https://forums.warframe.com/topic/1068218-buried-debts-hotfix-2442/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to Trade if it includes an Ayatan Star."
+      },
+      {
+        "name": "Buried Debts: Update 24.4.0",
+        "date": "2019-03-08T02:01:23Z",
+        "url": "https://forums.warframe.com/topic/1067397-buried-debts-update-2440/",
+        "imgUrl": "http://n9e5v4d8.ssl.hwcdn.net/uploads/f07ee60119e2c8efc746da7ecf4cb49e.png",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed floor gaps in the Grineer Fortress tileset that resulted in Ayatans falling through to an unreachable place."
+      },
+      {
+        "name": "Fortuna: Hotfix 24.3.1 - Nightwave",
+        "date": "2019-02-27T23:20:18Z",
+        "url": "https://forums.warframe.com/topic/1064720-fortuna-hotfix-2431-nightwave/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed socketing an Ayatan Sculpture in your Dojo not contributing to its respective Wolf of Saturn Six Challenge."
+      },
+      {
+        "name": "Fortuna: Hotfix 24.1.3 + 24.1.3.1",
+        "date": "2018-12-05T19:00:08Z",
+        "url": "https://forums.warframe.com/topic/1040912-fortuna-hotfix-2413-24131/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error that could occur in the Ayatan Treasure screen. "
+      },
+      {
+        "name": "Fortuna: Hotfix 24.1.1 + 24.1.1.1",
+        "date": "2018-11-23T20:52:30Z",
+        "url": "https://forums.warframe.com/topic/1036429-fortuna-hotfix-2411-24111/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed struggles to pick up Ayatan Stars from inside Orb Vallis Caches. "
+      },
+      {
+        "name": "Fortuna: Hotfix 24.0.4",
+        "date": "2018-11-12T22:14:40Z",
+        "url": "https://forums.warframe.com/topic/1030143-fortuna-hotfix-2404/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error when attempting to install an Ayatan Star."
+      },
+      {
+        "name": "Fortuna: Hotfix 24.0.1",
+        "date": "2018-11-09T00:33:19Z",
+        "url": "https://forums.warframe.com/topic/1025890-fortuna-hotfix-2401/",
+        "additions": "",
+        "changes": "Removed random Ayatan Sculptures from Orb Vallis Cache Hunts rewards. ",
+        "fixes": ""
+      },
+      {
+        "name": "Fortuna: Update 24.0",
+        "date": "2018-11-08T20:46:20Z",
+        "url": "https://forums.warframe.com/topic/1025679-fortuna-update-240/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to Auto Install Ayatan Stars when using a controller. "
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.6",
+        "date": "2018-10-18T20:38:32Z",
+        "url": "https://forums.warframe.com/topic/1019814-chimera-hotfix-23106/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the camera doing a large movement after Auto Installing Stars into your Ayatan Sculpture. "
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.5",
+        "date": "2018-10-18T14:52:11Z",
+        "url": "https://forums.warframe.com/topic/1019687-chimera-hotfix-23105/",
+        "additions": "Added an ‘Auto Install’ button to the Ayatan Sculptures screen for Mastery Rank 10+ Tenno! This long requested feature allows you to auto install Stars from your Inventory to your Ayatan Sculpture with one-click. ",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Chimera: Hotfix 23.10.2",
+        "date": "2018-10-12T22:07:00Z",
+        "url": "https://forums.warframe.com/topic/1016966-chimera-hotfix-23102/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed earning multiple Ayatan Statues in an Arbitrations mission, but only receiving one once returning to your ship."
+      },
+      {
+        "name": "Mask of the Revenant: Update 23.8.0 + 23.8.0.1 + 23.8.0.2",
+        "date": "2018-09-12T18:41:12Z",
+        "url": "https://forums.warframe.com/topic/1008095-mask-of-the-revenant-update-2380-23801-23802/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed inability to see how many Stars are in your Ayatan Sculptures when trading them to another player. \nFixed accessing the Menu within the Ayatan Treasures screen resulting in the Menu being displaying in the background."
+      },
+      {
+        "name": "Beasts of the Sanctuary: Update 22.18.0",
+        "date": "2018-04-20T14:27:12Z",
+        "url": "https://forums.warframe.com/topic/947321-beasts-of-the-sanctuary-update-22180/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed minimap markers for Ayatan Stars remaining visible after pickup."
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.17.1 - 22.17.1.1",
+        "date": "2018-04-05T18:31:09Z",
+        "url": "https://forums.warframe.com/topic/942090-shrine-of-the-eidolon-hotfix-22171-221711/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Ayatan Valana Sculpture not being centered properly on the screen."
+      },
+      {
+        "name": "Shrine of the Eidolon: Zephyr Prime 22.16.4",
+        "date": "2018-03-20T17:58:34Z",
+        "url": "https://forums.warframe.com/topic/935648-shrine-of-the-eidolon-zephyr-prime-22164/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed being unable to access the ESC Menu when accessing it from the Ayatan Treasures screen."
+      },
+      {
+        "name": "Shrine of the Eidolon: Hotfix 22.16.3",
+        "date": "2018-03-16T21:21:48Z",
+        "url": "https://forums.warframe.com/topic/934023-shrine-of-the-eidolon-hotfix-22163/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed a script error when attempting to access the Market from the ESC menu while installing a Star in an Ayatan.\nFixed an issue where the cursor position (in the Ayatan installation screen) wasn't accurate for PC players when using a controller."
+      },
+      {
+        "name": "Shrine of the Eidolon: Update 22.16.0",
+        "date": "2018-03-15T20:27:52Z",
+        "url": "https://forums.warframe.com/topic/933296-shrine-of-the-eidolon-update-22160/",
+        "additions": "",
+        "changes": "Ayatan Sculptures \nwe know many of you enjoy creating monstrous creatures out of Ayatan, but we want to prevent any Endo tears from accidental non-refundable donations. Once everyone familiarizes themselves with this new 'Decorations in the Vault are permanent' we'll loosen this restriction.\nAyatans (with the same type and socket layout) placed as Orbiter Decorations can now be placed back to back as per: https://twitter.com/PabloPoon/status/966762954338250752 ",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Update 22.11.0",
+        "date": "2018-01-31T21:41:13Z",
+        "url": "https://forums.warframe.com/topic/914315-plains-of-eidolon-update-22110/",
+        "additions": "Added subcategories 'Resources' 'Ayatan' and 'Misc', to Codex > Universe > Objects.",
+        "changes": "",
+        "fixes": ""
+      },
+      {
+        "name": "Plains of Eidolon: Hotfix 22.0.3",
+        "date": "2017-10-16T21:47:16Z",
+        "url": "https://forums.warframe.com/topic/859709-plains-of-eidolon-hotfix-2203/",
+        "additions": "",
+        "changes": "Removed Ayatan Stars and Uncommon Resources from High Level Bounties and replaced with 100x Void Traces. Low Level Bounties will continue to have rewards that target interests of a newer player who might not have some Mods that veterans do. ",
+        "fixes": "Fixed script error when opening Ayatan Treasure list in Trade UI when in a Dojo."
+      },
+      {
+        "name": "Warframe Update 22: Plains of Eidolon",
+        "date": "2017-10-12T22:00:20Z",
+        "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
+        "additions": "",
+        "changes": "Changed Ayatan Star markers to only display if you're within 100 meters or so range of the drop.. Amber Star markers will also appear larger due to their rarity and to avoid confusion. \nThe Ayatan Star installing prompt will now only display once per Ayatan installing session rather than on every socket. ",
+        "fixes": ""
+      },
+      {
+        "name": "Chains of Harrow: Hotfix 21.5.2",
+        "date": "2017-08-18T20:40:16Z",
+        "url": "https://forums.warframe.com/topic/832984-chains-of-harrow-hotfix-2152/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Clients not seeing the in-world markers for Ayatan Stars and Datamasses.\nFixed a script error in Maroo’s Ayatan Hunt mission."
+      },
+      {
+        "name": "Chains of Harrow: Hotfix 21.4.1",
+        "date": "2017-08-10T21:41:50Z",
+        "url": "https://forums.warframe.com/topic/829696-chains-of-harrow-hotfix-2141/",
+        "additions": "",
+        "changes": "Maroo will patiently wait for the Stolen Dreams quest to be completed before she starts offering you weekly Ayatan Hunt missions.",
+        "fixes": ""
+      },
+      {
+        "name": "Chains of Harrow: Hotfix 21.0.7",
+        "date": "2017-07-13T16:02:08Z",
+        "url": "https://forums.warframe.com/topic/817066-chains-of-harrow-hotfix-2107/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed not being able to use the Codex Scanner to scan Ayatan Statues and other pickups."
+      },
+      {
+        "name": "Update 21: Chains of Harrow",
+        "date": "2017-06-29T03:00:20Z",
+        "url": "https://forums.warframe.com/topic/809842-update-21-chains-of-harrow/",
+        "additions": "",
+        "changes": "Removed ability to mark Ayatan Stars since they automatically generate a marker.\nImproved how rewards are sorted in the End of Mission screen. Rewards are now ordered as follows: Mission Score > Credits > Kuva > Components > Blueprints > Ayatan Sculptures > Ayatan Stars > Endo > Resources > Anything else.",
+        "fixes": "Potential fix for a script error when you hover and click next to the Ayatan Treasures window in the Mod segment. "
+      },
+      {
+        "name": "Octavia’s Anthem: Update 20.6.0 + 20.6.0.1",
+        "date": "2017-05-24T20:42:16Z",
+        "url": "https://forums.warframe.com/topic/800141-octavia%E2%80%99s-anthem-update-2060-20601/",
+        "additions": "",
+        "changes": "The Ayatan Sculpture screen now has a search bar and sorting options.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia’s Anthem: Update 20.5.0",
+        "date": "2017-05-17T19:16:26Z",
+        "url": "https://forums.warframe.com/topic/797978-octavia%E2%80%99s-anthem-update-2050/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed sell screen for Ayatan Sculptures and Prime Parts in Maroo’s Bazaar/Relay showing all items."
+      },
+      {
+        "name": "Octavia’s Anthem: Hotfix 20.2.3",
+        "date": "2017-04-19T22:08:42Z",
+        "url": "https://forums.warframe.com/topic/788574-octavia%E2%80%99s-anthem-hotfix-2023/",
+        "additions": "",
+        "changes": "Removed the Anasa Ayatan Sculpture from the Codex because currently there is no way to scan it.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia's Anthem: Hotfix 20.0.8",
+        "date": "2017-03-30T21:56:27Z",
+        "url": "https://forums.warframe.com/topic/780730-octavias-anthem-hotfix-2008/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed Maroo telling you she had an Ayatan Hunt mission for you but survey said that was a lie."
+      },
+      {
+        "name": "Octavia's Anthem: Hotfix 20.0.7",
+        "date": "2017-03-30T19:04:41Z",
+        "url": "https://forums.warframe.com/topic/780658-octavias-anthem-hotfix-2007/",
+        "additions": "",
+        "changes": "The Valana Ayatan Sculpture can now also be found in Maroo’s weekly Ayatan hunt mission.",
+        "fixes": ""
+      },
+      {
+        "name": "Octavia's Anthem: Update 20",
+        "date": "2017-03-24T19:46:02Z",
+        "url": "https://forums.warframe.com/topic/776642-octavias-anthem-update-20/",
+        "additions": "Added the Anasa Ayatan Sculpture to the Codex so that it may be linked in chat.\nAdded a new Ayatan Sculpture. The Valana Ayatan Sculpture can be acquired in-world as an addition to the discoverable Ayatan!",
+        "changes": "",
+        "fixes": "Fixed Ayatan Stars appearing in the wrong section while Trading."
+      },
+      {
+        "name": "Hotfix 19.13.1",
+        "date": "2017-03-10T20:03:48Z",
+        "url": "https://forums.warframe.com/topic/771478-hotfix-19131/",
+        "additions": "",
+        "changes": "Those that have been trade-banned or are below the minimum Mastery Rank for trading can now enter Maroo’s Bazaar to trade Ayatan for Endo from Maroo, but trading with other players in the Bazaar will not be accessible.",
+        "fixes": ""
+      },
+      {
+        "name": "Banshee Prime: Hotfix 19.11.5 + 19.11.6",
+        "date": "2017-02-28T22:44:49Z",
+        "url": "https://forums.warframe.com/topic/767736-banshee-prime-hotfix-19115-19116/",
+        "additions": "",
+        "changes": "Removed Ayatan Stars and Nav Coordinates from lockers and crates in Vor’s Prize to pace out the number of new objects encountered near the start of the game.",
+        "fixes": ""
+      },
+      {
+        "name": "The Glast Gambit: Hotfix 19.8.1",
+        "date": "2017-01-27T17:06:00Z",
+        "url": "https://forums.warframe.com/topic/755337-the-glast-gambit-hotfix-1981/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed the Anasa Ayatan Sculpture not being moveable after placing it in the Landing Craft."
+      },
+      {
+        "name": "The Glast Gambit: Update 19.8.0",
+        "date": "2017-01-25T19:24:45Z",
+        "url": "https://forums.warframe.com/topic/754548-the-glast-gambit-update-1980/",
+        "additions": "",
+        "changes": "The Anasa Ayatan Sculpture is here! This brand new Sortie exclusive Ayatan has replaced the 2000 Endo reward. This Ayatan can be enhanced to result in more Endo, or placed on your ship! It's base value is 2000 Endo. \nNew spawn locations have been introduced for Ayatan Sculptures in all levels. \nRemoved the Credit cost from Maroo's Ayatan to Endo conversion in Maroo's Bazaar.",
+        "fixes": ""
+      },
+      {
+        "name": "The War Within: 19.1.0 Ash Revisited",
+        "date": "2016-11-25T19:51:28Z",
+        "url": "https://forums.warframe.com/topic/725159-the-war-within-1910-ash-revisited/",
+        "additions": "",
+        "changes": "Please note regarding these changes that we took the large 2000 Endo chances and chopped/reassigned to give a more diverse set of options to have variety of other rewards. We are aiming to make the full drop table more broadly appealing. When The War Within launched, we added Rivens to Sorties as a common drop to be the new, interesting, and unique evergreen goal for players in Sorties.  Rivens remain common with these changes as we see them as the ultimate goal for Sorties. Regarding Nitain specifically, the majority of our recently active players have less than 9 Nitain in their accounts and there is considerable interest in some new ways to acquire, so we are trying out Sorties as an option. A next step here is being considered to add a completely new Ayatan in the place of 2K Endo to give collectors and Endo hunters something to look forward to.",
+        "fixes": ""
+      },
+      {
+        "name": "Update 19: The War Within",
+        "date": "2016-11-12T04:02:28Z",
+        "url": "https://forums.warframe.com/topic/715768-update-19-the-war-within/",
+        "additions": "",
+        "changes": "Ayatan Sculptures now show number of socketed Stars when viewed in your Inventory. \nReplaced outdated Mod tips with new tips about the Ayatan system.\nYou can now go to Maroo’s Bazaar even if you have reached your daily trade limit. This fixes players unable to do the Ayatan Sculpture mission due to reaching their trade limit.",
+        "fixes": "Fixed canceling the placement of an Ayatan Sculpture sometimes resulting in the Sculpture being replaced by another decoration as per: https://forums.warframe.com/topic/701672-ayatan-sculpture-disappeared-~-instead-left-with-two-sacred-vessels-bug/\nFixed the countdown timer  initiating again after grabbing the Ayatan Sculpture in Maroo’s daily hunt mission. "
+      },
+      {
+        "name": "The Index Preview: Hotfix #4",
+        "date": "2016-10-25T21:51:26Z",
+        "url": "https://forums.warframe.com/topic/710966-the-index-preview-hotfix-4/",
+        "additions": "",
+        "changes": "Revised the Ayatan Sculpture icons.",
+        "fixes": "Fixed being able to unintentionally scan placed Ayatan Sculptures in the Landing Craft.\nFixed being able to scan the Ayatan Sculpture spot after you’ve picked them up. Also fixes seeing the name displayed above the same spot."
+      },
+      {
+        "name": "The Index Preview: Hotfix #3",
+        "date": "2016-10-21T21:33:05Z",
+        "url": "https://forums.warframe.com/topic/709998-the-index-preview-hotfix-3/",
+        "additions": "",
+        "changes": "In an effort to fix inconsistent trade tax values, Amber and Cyan Stars now both have the same trade tax value of 2000 Credits, Ayatan Sculptures now have a base trade tax of 4000 Credits, plus 2000 Credits for each Star that is attached.",
+        "fixes": ""
+      },
+      {
+        "name": "The Index Preview",
+        "date": "2016-10-20T23:28:18Z",
+        "url": "https://forums.warframe.com/topic/709665-the-index-preview/",
+        "additions": "Added fail mission countdown and action required before countdown is done for Maroo’s Ayatan Sculpture hunt mission.",
+        "changes": "You can now scan the Ayatan Sculpture you find in Maroo’s weekly mission.",
+        "fixes": "Fixed an unresponsive screen due to Clients returning to their Liset and Hosts returning to Maroos Bazaar after completing an Ayatan Sculpture hunt mission.\nFixed Ayatan sculptures being super zoomed in and Stars being in the ground when viewing them from a Chat link. \nFixed Ayatan Stars and Sculptures not being scannable to be unlocked through the Codex.\nFixed a script error when picking up the Ayatan Sculpture in Maroo’s weekly mission. \nFixed the Ayatan Sculptures button being unselectable after selecting than deselecting a Mod."
+      },
+      {
+        "name": "The Vacuum Within",
+        "date": "2016-10-05T21:17:28Z",
+        "url": "https://forums.warframe.com/topic/705566-the-vacuum-within%C2%A0/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with Ayatan minimap markers not disappearing after pickup. "
+      },
+      {
+        "name": "The Silver Grove: U4.2",
+        "date": "2016-09-30T21:03:12Z",
+        "url": "https://forums.warframe.com/topic/704257-the-silver-grove-u42/",
+        "additions": "",
+        "changes": "Fixed trade window allowing you to list more copies of Ayatan Sculptures than you currently own.\nFixed Ayatan Sculptures and Stars not appearing when viewing in Codex.",
+        "fixes": ""
+      },
+      {
+        "name": "The Silver Grove: U4+4.1",
+        "date": "2016-09-29T19:31:28Z",
+        "url": "https://forums.warframe.com/topic/703921-the-silver-grove-u441/",
+        "additions": "Added a mini-map marker for Ayatan Stars. ",
+        "changes": "Carrier’s Vacuum and Corpus Scavenger Drones will no longer be able to pick up or affect the placement of Ayatan Stars. This was causing Stars to become unreachable or falling through the floor. \nA sound will now play when you find an Ayatan Star in loot containers.",
+        "fixes": "Fixed missing Codex entry for Ayatan Sculptures and Stars. "
+      },
+      {
+        "name": "The Silver Grove: U3.3",
+        "date": "2016-09-26T22:10:46Z",
+        "url": "https://forums.warframe.com/topic/703177-the-silver-grove-u33/",
+        "additions": "",
+        "changes": "Increased the context action size when picking up Ayatan Stars.",
+        "fixes": ""
+      },
+      {
+        "name": "The Silver Grove: U3.2",
+        "date": "2016-09-22T21:42:01Z",
+        "url": "https://forums.warframe.com/topic/701993-the-silver-grove-u32/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with Ayatan Sculptures placed within the Landing Craft turning into duplicate version of other decorations.\nNote: Individuals who had previously been effected by this will have their broken Ayatan Sculptures corrected in a forth coming script. Thanks for your patience!\nFixed an issue with Ayatan Sculptures not being collectable after a host migration.\nFixed an issue with duplicate Ayatan Sculptures being present if a previous host reconnected before the treasure was collected.\nFixed Ayatan Stars appearing blurry when placed on the ship as Decorations. \nFixed being able to purchase Warframe slots when selling Ayatan Sculptures/Stars. \nFixed not being able to remove the Ayatan Sah Sculpture and Ayatan Orta Sculpture once placed.\nFixed a duplicate Accept/Decline prompt being seen after selecting an Ayatan Mission."
+      },
+      {
+        "name": "The Silver Grove: U3 Ayatan",
+        "date": "2016-09-21T22:19:15Z",
+        "url": "https://forums.warframe.com/topic/701632-the-silver-grove-u3-ayatan/",
+        "additions": "How to Ayatan:\nMaroo will pay handsomely in Endo for your Ayatan treasures, but she’ll offer more for completed Sculptures. You’ll have to decide whether you want a quick payout or wait for the big prize and complete your Sculpture. If Endo isn’t what you desire most, you can keep your collection on display in your Landing Craft or trade your treasures with other Tenno.\nFinding Ayatan treasures in regular missions will be rare, but if you’re feeling adventurous, you can speak with Maroo for a special weekly treasure hunt mission that will test your coordination, speed, and mobility. If you enjoy the more leisurely approach to art collecting, you can always have other Tenno do the work for you and acquire your treasure through the trade system. Whatever your method of procurement, once you have a piece of Ayatan treasure, what you do with it will be up to you.",
+        "changes": "The Silver Grove: U3 Ayatan:",
+        "fixes": ""
+      }
+    ],
+    "tradable": false,
+    "type": "Misc",
+    "uniqueName": "/Lotus/Types/Items/MiscItems/SchismKey"
   },
   {
     "buildPrice": 100000,
@@ -3008,6 +3584,16 @@
     "itemCount": 20,
     "name": "Biotic Filter",
     "parents": [ "Bonewidow Capsule", "Voidrig Engine", "Voidrig Weapon Pod" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Biotic Filter: From 2 to 1\nBiotic Filter: From 6 to 3",
+        "fixes": ""
+      }
+    ],
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem"
@@ -3446,7 +4032,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
         "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "gyromag-systems.png",
         "tradable": false,
         "drops": [  ]
@@ -3455,7 +4041,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
         "name": "Longwinder Lathe Coagulant",
         "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.Acquired by disassembling Longwinder Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "longwinder-lathe-coagulant.png",
         "tradable": false,
         "drops": [  ]
@@ -3464,7 +4050,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
         "name": "Radiant Zodian",
         "description": "Polished and cut to perfection.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "radiant-zodian.png",
         "tradable": false,
         "drops": [  ]
@@ -3473,7 +4059,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
         "name": "Vega Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Vega Toroids from enemies located at the Spaceport in the Orb Vallis and from Mite Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "vega-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -3709,7 +4295,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
         "name": "Marquise Thyst",
         "description": "Polished and cut to perfection.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "marquise-thyst.png",
         "tradable": false,
         "drops": [  ]
@@ -3727,7 +4313,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
         "name": "Sola Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Sola Toroids from enemies located at the Temple of Profit in the Orb Vallis and from Kyta Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "sola-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -3736,7 +4322,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
         "name": "Tromyzon Entroplasma",
         "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.Acquired by disassembling Tromyzon Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "tromyzon-entroplasma.png",
         "tradable": false,
         "drops": [  ]
@@ -3864,6 +4450,16 @@
     "itemCount": 5,
     "name": "Charamote Sagan Module",
     "parents": [ "Haztech Apparel", "Haztech Cuirass", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Outrider Cuirass", "Smelter Apparel", "Smelter Cuirass", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Rat Cuirass" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Charamote Sagan Module cost reduced from 10 to 6\nCharamote Sagan Module cost reduced from 10 to 6\nCharamote Sagan Module cost reduced from 10 to 6",
+        "fixes": ""
+      }
+    ],
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem"
@@ -3904,9 +4500,19 @@
       }
     ],
     "imageName": "charc-electroplax.png",
-    "itemCount": 45,
+    "itemCount": 25,
     "name": "Charc Electroplax",
     "parents": [ "Fosfor Rahd", "Voidrig Weapon Pod" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Charc Electroplax: From 45 to 25",
+        "fixes": ""
+      }
+    ],
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem"
@@ -4218,7 +4824,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.Location: Plains of Eidolon",
-        "itemCount": 10,
+        "itemCount": 3,
         "imageName": "cetus-wisp.png",
         "tradable": false,
         "drops": [  ]
@@ -4227,7 +4833,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
         "name": "Fish Oil",
         "description": "Used to create absolvents that purify gems.",
-        "itemCount": 35,
+        "itemCount": 20,
         "imageName": "fish-oil.png",
         "tradable": false,
         "drops": [  ]
@@ -4236,7 +4842,7 @@
         "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "morphics.png",
         "tradable": false,
         "drops": [  ]
@@ -4245,7 +4851,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.Location: Fisher Hai-Luk in Cetus",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "murkray-liver.png",
         "tradable": false,
         "drops": [  ]
@@ -4607,6 +5213,14 @@
     "name": "Coprite Alloy",
     "parents": [ "Ceno Pauldrons", "Peram Fishing Spear", "Vahd Pauldrons", "Zauba Pauldrons" ],
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Coprite Alloy cost reduced from 85 to 60\nEsher Devar and Coprite Alloy (From 5,000 Standing to 2,500)",
+        "fixes": ""
+      },
       {
         "name": "Warframe Update 22: Plains of Eidolon",
         "date": "2017-10-12T22:00:20Z",
@@ -5209,6 +5823,14 @@
     "name": "Cuthol Tendrils",
     "parents": [ "Glappid Bait" ],
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Cuthol Tendrils cost reduced from 3 to 2\nCuthol Tendrils cost reduced from 3 to 2",
+        "fixes": ""
+      },
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
         "date": "2017-11-06T21:33:22Z",
@@ -6638,7 +7260,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
         "name": "Atmo Systems",
         "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "atmo-systems.png",
         "tradable": false,
         "drops": [  ]
@@ -6656,7 +7278,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
         "name": "Calda Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Calda Toroids from enemies located at the Enrichment Labs in the Orb Vallis and from Scyto Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "calda-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -6665,7 +7287,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
         "name": "Charamote Sagan Module",
         "description": "A device used to reconstruct degenerated matter into Orokin bio-material.Acquired by disassembling Charamote Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "charamote-sagan-module.png",
         "tradable": false,
         "drops": [  ]
@@ -6674,7 +7296,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
         "name": "Hespazym Alloy",
         "description": "A compound formed from Hesperon.",
-        "itemCount": 50,
+        "itemCount": 30,
         "imageName": "hespazym-alloy.png",
         "tradable": false,
         "drops": [  ]
@@ -8421,7 +9043,7 @@
   {
     "buildPrice": 10000,
     "buildQuantity": 1,
-    "buildTime": 3600,
+    "buildTime": 60,
     "category": "Misc",
     "components": [
       {
@@ -9483,7 +10105,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
         "name": "Atmo Systems",
         "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "atmo-systems.png",
         "tradable": false,
         "drops": [  ]
@@ -9501,7 +10123,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
         "name": "Calda Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Calda Toroids from enemies located at the Enrichment Labs in the Orb Vallis and from Scyto Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "calda-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -9510,7 +10132,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
         "name": "Hespazym Alloy",
         "description": "A compound formed from Hesperon.",
-        "itemCount": 50,
+        "itemCount": 30,
         "imageName": "hespazym-alloy.png",
         "tradable": false,
         "drops": [  ]
@@ -9519,7 +10141,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
         "name": "Longwinder Lathe Coagulant",
         "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.Acquired by disassembling Longwinder Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "longwinder-lathe-coagulant.png",
         "tradable": false,
         "drops": [  ]
@@ -10200,6 +10822,14 @@
     "parents": [ "Advanced Nosam Cutter", "Ceno Apparel", "Ceno Cuirass", "Cortege Barrel", "Morgha Barrel", "Peram Fishing Spear", "Vahd Apparel", "Vahd Cuirass", "Zauba Apparel", "Zauba Cuirass" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Fersteel Alloy cost reduced from 50 to 40\nFersteel Alloy cost reduced from 85 to 60\nMarquise Veridos and Fersteel Alloy (From 10,000 Standing to 5,000)",
+        "fixes": ""
+      },
+      {
         "name": "Warframe Update 22: Plains of Eidolon",
         "date": "2017-10-12T22:00:20Z",
         "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
@@ -10333,6 +10963,14 @@
     "name": "Fish Oil",
     "parents": [ "Archwing Launcher", "Twilight Bait" ],
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Fish Oil cost reduced from 35 to 20\nFish Oil cost reduced from 35 to 20\nFish Oil cost reduced from 35 to 20\nFish Oil cost reduced from 35 to 20",
+        "fixes": ""
+      },
       {
         "name": "Plains of Eidolon Remaster: Hotfix 24.7.2",
         "date": "2019-04-17T19:46:16Z",
@@ -16872,6 +17510,14 @@
     "name": "Forma",
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "When we first introduced Forma years ago, Warframe was a much smaller game. We had fewer weapons, fewer Warframes, and way fewer Mods. As players continue their Forma journey, there’s often discussions on doing a Quality of Life (QOL) pass to the way things work with our favourite Golden Puzzle Piece.\nWe want your Mastery Rank to be considered when using Forma to establish a baseline power level for your playable characters!\nIf a Mastery Rank 30 player uses a Forma, they won’t have to re-unlock any Abilities (or their Ranks) on a given item! Yes, they’ll still need to level the gear itself to apply another Forma but, depending on your Mastery Rank, you can have access to more (or all) Abilities on your unranked gear! This achieves our goal of keeping Forma essential to build customization, but allowing players with higher Mastery Ranks a more convenient experience.\nRight now, using a Forma on a Warframe (or Archwing/Necramech) requires you to start from 0 when it comes to Abilities you can use. Furthermore, you only get the first Rank of your First ability. Take Valkyr for instance. You install a Forma, and you’re back to only casting unranked Rip Line!\nOur change will make it so your Mastery Rank impacts how much you have unlocked by default on Forma use. Following our Valkyr example, with this change, a Mastery Rank 10 player would have all of her abilities unlocked upon applying a Forma to her, albeit not at their full strength!\nyou know by the time you’ve levelled your Valkyr on Hydron to 10, you unlock Hysteria. We are making your Mastery Rank ‘match’ those milestones, so to speak, with the end goal being a Mastery Rank 30 player can use Forma without ever having to be locked out of Abilities. Simply put, the higher your Mastery Rank, the higher the baseline of your gear when using Forma.\nSorties and Arbitrations now allow Mastery Rank 30+ players that have put at least 1 Forma into their Warframe to bypass the \"Rank 30 Warframe\" requirement.",
+        "fixes": ""
+      },
+      {
         "name": "Update 30.7: Nidus Prime & Plague Star",
         "date": "2021-09-08T16:58:55Z",
         "url": "https://forums.warframe.com/topic/1279845-update-307-nidus-prime-plague-star/",
@@ -18878,6 +19524,14 @@
     "name": "Forma",
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "When we first introduced Forma years ago, Warframe was a much smaller game. We had fewer weapons, fewer Warframes, and way fewer Mods. As players continue their Forma journey, there’s often discussions on doing a Quality of Life (QOL) pass to the way things work with our favourite Golden Puzzle Piece.\nWe want your Mastery Rank to be considered when using Forma to establish a baseline power level for your playable characters!\nIf a Mastery Rank 30 player uses a Forma, they won’t have to re-unlock any Abilities (or their Ranks) on a given item! Yes, they’ll still need to level the gear itself to apply another Forma but, depending on your Mastery Rank, you can have access to more (or all) Abilities on your unranked gear! This achieves our goal of keeping Forma essential to build customization, but allowing players with higher Mastery Ranks a more convenient experience.\nRight now, using a Forma on a Warframe (or Archwing/Necramech) requires you to start from 0 when it comes to Abilities you can use. Furthermore, you only get the first Rank of your First ability. Take Valkyr for instance. You install a Forma, and you’re back to only casting unranked Rip Line!\nOur change will make it so your Mastery Rank impacts how much you have unlocked by default on Forma use. Following our Valkyr example, with this change, a Mastery Rank 10 player would have all of her abilities unlocked upon applying a Forma to her, albeit not at their full strength!\nyou know by the time you’ve levelled your Valkyr on Hydron to 10, you unlock Hysteria. We are making your Mastery Rank ‘match’ those milestones, so to speak, with the end goal being a Mastery Rank 30 player can use Forma without ever having to be locked out of Abilities. Simply put, the higher your Mastery Rank, the higher the baseline of your gear when using Forma.\nSorties and Arbitrations now allow Mastery Rank 30+ players that have put at least 1 Forma into their Warframe to bypass the \"Rank 30 Warframe\" requirement.",
+        "fixes": ""
+      },
+      {
         "name": "Update 30.7: Nidus Prime & Plague Star",
         "date": "2021-09-08T16:58:55Z",
         "url": "https://forums.warframe.com/topic/1279845-update-307-nidus-prime-plague-star/",
@@ -19525,7 +20179,7 @@
   {
     "buildPrice": 10000,
     "buildQuantity": 1,
-    "buildTime": 3600,
+    "buildTime": 60,
     "category": "Misc",
     "components": [
       {
@@ -20211,6 +20865,14 @@
     "omegaAttenuation": 0.89999998,
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "When a stolen weapon deals damage to an enemy affected by The Lost: Gaze or The Vast Untime, Xaku heals by 25.\nFixed a gap between the casting animation with Xaku’s Gaze and freezing the target, which allowed them to die before they were affected by Gaze. ",
+        "fixes": ""
+      },
+      {
         "name": "Sisters of Parvos: Hotfix 30.5.2",
         "date": "2021-07-07T20:26:51Z",
         "url": "https://forums.warframe.com/topic/1270347-sisters-of-parvos-hotfix-3052/",
@@ -20641,7 +21303,7 @@
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
         "drops": [  ]
@@ -20650,7 +21312,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
         "name": "Cuthol Tendrils",
         "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "cuthol-tendrils.png",
         "tradable": false,
         "drops": [  ]
@@ -20659,7 +21321,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 20,
+        "itemCount": 10,
         "imageName": "marquise-veridos.png",
         "tradable": false,
         "drops": [  ]
@@ -20668,7 +21330,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
         "name": "Star Crimzian",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "star-crimzian.png",
         "tradable": false,
         "drops": [  ]
@@ -23243,7 +23905,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.Location: Plains of Eidolon",
-        "itemCount": 15,
+        "itemCount": 4,
         "imageName": "cetus-wisp.png",
         "tradable": false,
         "drops": [  ]
@@ -23252,7 +23914,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
         "name": "Fish Oil",
         "description": "Used to create absolvents that purify gems.",
-        "itemCount": 35,
+        "itemCount": 20,
         "imageName": "fish-oil.png",
         "tradable": false,
         "drops": [  ]
@@ -23261,7 +23923,7 @@
         "uniqueName": "/Lotus/Types/Items/MiscItems/NeuralSensor",
         "name": "Neural Sensors",
         "description": "Implanted neural-link for controlling augmentations. Grineer design.Location: Jupiter",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "neural-sensors.png",
         "tradable": false,
         "drops": [  ]
@@ -23270,7 +23932,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
         "name": "Norg Brain",
         "description": "An Ostron delicacy.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "norg-brain.png",
         "tradable": false,
         "drops": [  ]
@@ -23682,7 +24344,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
         "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "gyromag-systems.png",
         "tradable": false,
         "drops": [  ]
@@ -23691,7 +24353,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
         "name": "Radiant Zodian",
         "description": "Polished and cut to perfection.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "radiant-zodian.png",
         "tradable": false,
         "drops": [  ]
@@ -23700,7 +24362,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
         "name": "Tromyzon Entroplasma",
         "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.Acquired by disassembling Tromyzon Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "tromyzon-entroplasma.png",
         "tradable": false,
         "drops": [  ]
@@ -23709,7 +24371,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
         "name": "Vega Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Vega Toroids from enemies located at the Spaceport in the Orb Vallis and from Mite Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "vega-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -23805,7 +24467,7 @@
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
         "drops": [  ]
@@ -23814,7 +24476,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.Location: Plains of Eidolon",
-        "itemCount": 20,
+        "itemCount": 5,
         "imageName": "cetus-wisp.png",
         "tradable": false,
         "drops": [  ]
@@ -23823,7 +24485,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
         "name": "Cuthol Tendrils",
         "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "cuthol-tendrils.png",
         "tradable": false,
         "drops": [  ]
@@ -23832,7 +24494,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
         "name": "Fersteel Alloy",
         "description": "Ferros that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 50,
+        "itemCount": 40,
         "imageName": "fersteel-alloy.png",
         "tradable": false,
         "drops": [  ]
@@ -24404,6 +25066,14 @@
     "imageName": "kubrow-egg.png",
     "name": "Kubrow Egg",
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "For new players, we are changing the Kubrow Egg drop rate to be 100% from the first Kubrow Den and setting the Quest to Solo mode only. This change will only affect New Tenno playing the Quest for the first time, and does not affect Kubrow Egg drop rates outside of the Quest. We are also shortening the Survival mission within the Quest from 10 minutes to 5 minutes.",
+        "fixes": ""
+      },
       {
         "name": "Chimera: Update 23.10",
         "date": "2018-10-12T13:56:43Z",
@@ -24979,6 +25649,14 @@
     "itemCount": 6000,
     "name": "Kuva",
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Clarified the \"Hold Your Breath\" Nightwave Act to include “in the Kuva Fortress”, as to alleviate some confusion expressed here: https://forums.warframe.com/topic/1126851-de-please-make-the-kuva-survival-nightwave-explicit/ \nRemoved the ‘Repeat Mission” button after completing a Kuva Flood mission due to an exploit.",
+        "fixes": "Fixed a case where an enemy converted to a Kuva Lich Thrall under the influence of faction-changing abilities or Status (ex: Radiation Status) would be unable to be finished with a Mercy in a Defense mission. \nFixed script error with Kuva Lich’s Tactical Inversion ability.  "
+      },
       {
         "name": "Nights of Naberus: Hotfix 30.8.2",
         "date": "2021-10-13T19:53:31Z",
@@ -26721,6 +27399,14 @@
     "parents": [ "Bishamo Cuirass", "Bleeding Body Ephemera", "Naberus Ephemera", "Umbra Forma" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Clarified the \"Hold Your Breath\" Nightwave Act to include “in the Kuva Fortress”, as to alleviate some confusion expressed here: https://forums.warframe.com/topic/1126851-de-please-make-the-kuva-survival-nightwave-explicit/ \nRemoved the ‘Repeat Mission” button after completing a Kuva Flood mission due to an exploit.",
+        "fixes": "Fixed a case where an enemy converted to a Kuva Lich Thrall under the influence of faction-changing abilities or Status (ex: Radiation Status) would be unable to be finished with a Mercy in a Defense mission. \nFixed script error with Kuva Lich’s Tactical Inversion ability.  "
+      },
+      {
         "name": "Nights of Naberus: Hotfix 30.8.2",
         "date": "2021-10-13T19:53:31Z",
         "url": "https://forums.warframe.com/topic/1283941-nights-of-naberus-hotfix-3082/",
@@ -28270,7 +28956,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
         "name": "Charamote Sagan Module",
         "description": "A device used to reconstruct degenerated matter into Orokin bio-material.Acquired by disassembling Charamote Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "charamote-sagan-module.png",
         "tradable": false,
         "drops": [  ]
@@ -28279,7 +28965,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
         "description": "A modular component that regulates latitude and altitude in various Corpus systems.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "gyromag-systems.png",
         "tradable": false,
         "drops": [  ]
@@ -28288,7 +28974,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
         "name": "Radiant Zodian",
         "description": "Polished and cut to perfection.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "radiant-zodian.png",
         "tradable": false,
         "drops": [  ]
@@ -28297,7 +28983,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
         "name": "Vega Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Vega Toroids from enemies located at the Spaceport in the Orb Vallis and from Mite Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "vega-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -29636,7 +30322,7 @@
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
         "name": "Breath Of The Eidolon",
         "description": "A gas found solely on the plains of Eidolon, refined to its purest form.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
         "drops": [  ]
@@ -29645,7 +30331,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.Location: Plains of Eidolon",
-        "itemCount": 20,
+        "itemCount": 5,
         "imageName": "cetus-wisp.png",
         "tradable": false,
         "drops": [  ]
@@ -29654,7 +30340,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishBPartItem",
         "name": "Cuthol Tendrils",
         "description": "Ostrons extract the toxin and apply it to their weapons when hunting animals.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "cuthol-tendrils.png",
         "tradable": false,
         "drops": [  ]
@@ -29663,7 +30349,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem",
         "name": "Fish Oil",
         "description": "Used to create absolvents that purify gems.",
-        "itemCount": 35,
+        "itemCount": 20,
         "imageName": "fish-oil.png",
         "tradable": false,
         "drops": [  ]
@@ -29720,6 +30406,16 @@
     "itemCount": 5,
     "name": "Longwinder Lathe Coagulant",
     "parents": [ "Haztech Pauldrons", "Kubrodon Ventkid Pauldrons", "Outrider Pauldrons", "Pax Charge", "Smelter Pauldrons", "Vent Pobber Ventkid Pauldrons", "Vent Rat Pauldrons" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Longwinder Lathe Coagulant cost reduced from 10 to 6\nLongwinder Lathe Coagulant cost reduced from 10 to 6\nLongwinder Lathe Coagulant cost reduced from 10 to 6",
+        "fixes": ""
+      }
+    ],
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem"
@@ -31030,6 +31726,14 @@
     "imageName": "mark.png",
     "name": "Mark",
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "When a player redeems a code in the Market, we now show more robust icons to depict the item you’re redeeming (if applicable). ",
+        "fixes": "Aya is an earned currency that is your free path to gaining Prime items through the in-game Relic system. It is a resource that is exchanged for Void Relics and other non-premium items available in Varzia’s wares. Aya is found in Missions (The Void or Bounties) or has a chance of appearing in Relic Packs available for purchase in the Market for Platinum or Syndicate Offerings for Standing.\nRegal Aya is a premium currency (similar to Platinum, but not tradeable) that gives you instant access to Prime Warframes, Weapons, Accessories, and Bundles available in Varzia’s wares. It can be purchased in the Market or online storefronts.\nFixed script error caused by backing out of a weapon bundle screen in the in-game Market before it opens and then quickly snapping to the purchase weapon button and selecting it. \nFixed text for in-game Market Discounts being outside it’s text box."
+      },
       {
         "name": "Nights of Naberus: Update 30.8.0",
         "date": "2021-10-04T18:05:14Z",
@@ -33254,6 +33958,16 @@
     "itemCount": 3,
     "name": "Marquise Thyst",
     "parents": [ "Haztech Apparel", "Haztech Cuirass", "Haztech Mask", "Kubrodon Ventkid Apparel", "Kubrodon Ventkid Cuirass", "Kubrodon Ventkid Mask", "Outrider Cuirass", "Outrider Mask", "Pax Soar", "Smelter Apparel", "Smelter Cuirass", "Smelter Mask", "Vent Pobber Ventkid Apparel", "Vent Pobber Ventkid Cuirass", "Vent Pobber Ventkid Mask", "Vent Rat Cuirass", "Vent Rat Mask" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Marquise Thyst cost reduced from 5 to 3\nMarquise Thyst cost reduced from 5 to 3\nMarquise Thyst cost reduced from 5 to 3",
+        "fixes": ""
+      }
+    ],
     "skipBuildTimePrice": 5,
     "tradable": true,
     "type": "Cut Gem",
@@ -34436,6 +35150,14 @@
     "parents": [ "Air Support Charges", "Asa Syandana", "Atterax Desert-Camo Skin", "Auroxium Alloy", "Bishamo Pauldrons", "Blazing Step Ephemera", "Burston Solstice Skin", "Clan Key", "Corinth Solstice Skin", "Diriga Desert-Camo Skin", "Dual Zoren Dagger-Axe Skin", "Excalibur Mordred Helmet", "Exergis Shock-Camo Skin", "Falcor Shock-Camo Skin", "Forma", "Galatine Solstice Skin", "Grinlok Desert-Camo Skin", "Guandao Solstice Skin", "Guandao Synoid Skin", "Hek Desert-Camo Skin", "Hespazym Alloy", "Hydroid Ketos Helmet", "Ignis Solstice Skin", "Karak Desert-Camo Skin", "Lenz Solstice Skin", "Marelok Desert-Camo Skin", "Nightfall Apothic", "Plinx Shock-Camo Skin", "Pyrana Synoid Skin", "Rubico Synoid Skin", "Scindo Dagger-Axe Skin", "Scindo Solstice Skin", "Sunrise Apothic", "Synthula", "Tatsu Solstice Skin", "Tonkor Desert-Camo Skin", "Twilight Apothic", "Wolf Hood" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Morphics cost reduced from 10 to 6\nMorphics cost reduced from 10 to 6",
+        "fixes": ""
+      },
+      {
         "name": "Beasts of the Sanctuary: Hotfix 22.20.7",
         "date": "2018-05-30T19:03:25Z",
         "url": "https://forums.warframe.com/topic/961879-beasts-of-the-sanctuary-hotfix-22207/",
@@ -34576,6 +35298,26 @@
   },
   {
     "category": "Misc",
+    "description": "Consumed in the fusion process to power up existing Mods.",
+    "fusionPoints": 50000,
+    "imageName": "mpvdualpackfusionbundle.png",
+    "name": "Mpvdualpackfusionbundle",
+    "tradable": false,
+    "type": "Misc",
+    "uniqueName": "/Lotus/Upgrades/Mods/FusionBundles/MPVDualPackFusionBundle"
+  },
+  {
+    "category": "Misc",
+    "description": "Consumed in the fusion process to power up existing Mods.",
+    "fusionPoints": 10000,
+    "imageName": "mpvsinglepackfusionbundle.png",
+    "name": "Mpvsinglepackfusionbundle",
+    "tradable": false,
+    "type": "Misc",
+    "uniqueName": "/Lotus/Upgrades/Mods/FusionBundles/MPVSinglePackFusionBundle"
+  },
+  {
+    "category": "Misc",
     "description": "An ingredient used in Ostron cooking and medicines.Location: Fisher Hai-Luk in Cetus",
     "drops": [
       {
@@ -34602,6 +35344,14 @@
     "name": "Murkray Liver",
     "parents": [ "Cuthol Bait" ],
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Murkray Liver cost reduced from 3 to 2\nMurkray Liver cost reduced from 3 to 2\nMurkray Liver cost reduced from 3 to 2",
+        "fixes": ""
+      },
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
         "date": "2017-11-06T21:33:22Z",
@@ -35495,6 +36245,14 @@
     "parents": [ "Akvasto Forest-Camo Skin", "Arcane Aura Helmet", "Arcane Aurora Helmet", "Arcane Avalon Helmet", "Arcane Backdraft Helmet", "Arcane Chlora Helmet", "Arcane Chorus Helmet", "Arcane Coil Helmet", "Arcane Esprit Helmet", "Arcane Essence Helmet", "Arcane Flux Helmet", "Arcane Gambit Helmet", "Arcane Hemlock Helmet", "Arcane Locust Helmet", "Arcane Mag Gauss Helmet", "Arcane Menticide Helmet", "Arcane Meridian Helmet", "Arcane Pendragon Helmet", "Arcane Phoenix Helmet", "Arcane Pulse Helmet", "Arcane Reverb Helmet", "Arcane Scorpion Helmet", "Arcane Squall Helmet", "Arcane Storm Helmet", "Arcane Swindle Helmet", "Arcane Thrak Helmet", "Arcane Vanguard Helmet", "Arcane Vespa Helmet", "Atlas Tartarus Helmet", "Baruuk Meroe Helmet", "Bishamo Helmet", "Bishamo Pauldrons", "Chroma Drac Helmet", "Daedalus Chest Plate", "Daedalus Shoulder Plates", "Daedalus Spurs", "Daman Sugatra", "Detron Shock-Camo Skin", "Edo Chest Plate", "Edo Shin Plates", "Edo Shoulder Plates", "Eos Chest Plate", "Eos Shoulder Plates", "Eos Spurs", "Forma", "Gara Virago Helmet", "Gauss Mag Helmet", "Grendel Glutt Helmet", "Harrow Crucis Helmet", "Harrow Suffragan Helmet", "Hildryn Asuron Helmet", "Hydroid Triton Helmet", "Lavos Cordatus Helmet", "Limbo Magrite Helmet", "Loki Enigma Helmet", "Mesa Longhorn Helmet", "Mesa Ovis Helmet", "Nova Quantum Helmet", "Oberon Markhor Helmet", "Oberon Oryx Helmet", "Octavia Cadenza Helmet", "Patient Zero", "Pazza Sugatra", "Penta Shock-Camo Skin", "Prova Shock-Camo Skin", "Scindo Forest-Camo Skin", "Soma Forest-Camo Skin", "Synthula", "Tantu Sugatra", "Umbra Forma", "Valkyr Bastet Helmet", "Valkyr Kara Helmet", "Wisp Gaoth Helmet", "Yareli Physalia Helmet", "Yomo Syandana", "Zephyr Tengu Helmet" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Neurodes cost reduced from 10 to 6",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon Remaster: Hotfix 24.7.2",
         "date": "2019-04-17T19:46:16Z",
         "url": "https://forums.warframe.com/topic/1085611-plains-of-eidolon-remaster-hotfix-2472/",
@@ -35573,6 +36331,14 @@
     "imageName": "nightwave.png",
     "name": "Nightwave",
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Clarified the \"Hold Your Breath\" Nightwave Act to include “in the Kuva Fortress”, as to alleviate some confusion expressed here: https://forums.warframe.com/topic/1126851-de-please-make-the-kuva-survival-nightwave-explicit/ \nChanged Nightwave 'Cred Offerings' callout on controller to be the top face button (Y on Xbox) instead of clicking the right thumbstick, as it would conflict with the new Tenno Guide hover action. ",
+        "fixes": "Fixed “Executioner” Nightwave Act progressing from certain non-stealth kills."
+      },
       {
         "name": "Nights of Naberus: Hotfix 30.8.3",
         "date": "2021-10-18T17:04:26Z",
@@ -36522,6 +37288,14 @@
     "parents": [ "Glappid Bait", "Vasca Curative" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Norg Brain cost reduced from 3 to 2\nNorg Brain cost reduced from 3 to 2\nNorg Brain cost reduced from 3 to 2",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
         "date": "2017-11-06T21:33:22Z",
         "url": "https://forums.warframe.com/topic/874821-plains-of-eidolon-hotfix-2224/",
@@ -37451,6 +38225,26 @@
     "uniqueName": "/Lotus/Types/Items/MiscItems/PrimeBucks"
   },
   {
+    "category": "Misc",
+    "description": "Currency exchanged for Prime components and used to purchase items from the Void Trader.",
+    "excludeFromCodex": true,
+    "imageName": "orokin-ducats.png",
+    "name": "Orokin Ducats",
+    "patchlogs": [
+      {
+        "name": "Update 15.6.0",
+        "date": "2014-12-11T22:04:26Z",
+        "url": "https://forums.warframe.com/topic/363216-update-1560/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Players can trade in unused Prime parts for Orokin Ducats, the only currency that Baro Ki’Teer accepts.\nOrokin Ducats can be traded to Baro Ki’Teer alongside a sum of credits for unique Mods, weapons, and cosmetic items."
+      }
+    ],
+    "tradable": true,
+    "type": "Misc",
+    "uniqueName": "/Lotus/Types/StoreItems/Packages/MegaPrimeVault/MPVPrimeBucksPack"
+  },
+  {
     "buildPrice": 35000,
     "buildQuantity": 1,
     "buildTime": 82800,
@@ -38134,7 +38928,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.Location: Plains of Eidolon",
-        "itemCount": 10,
+        "itemCount": 3,
         "imageName": "cetus-wisp.png",
         "tradable": false,
         "drops": [  ]
@@ -38143,7 +38937,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
         "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.Location: Plains of Eidolon",
-        "itemCount": 60,
+        "itemCount": 40,
         "imageName": "grokdrul.png",
         "tradable": false,
         "drops": [  ]
@@ -38152,7 +38946,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.Location: Fisher Hai-Luk in Cetus",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "murkray-liver.png",
         "tradable": false,
         "drops": [  ]
@@ -38161,7 +38955,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
         "description": "Pyrol that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 85,
+        "itemCount": 60,
         "imageName": "pyrotic-alloy.png",
         "tradable": false,
         "drops": [  ]
@@ -38416,7 +39210,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
         "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.Location: Plains of Eidolon",
-        "itemCount": 60,
+        "itemCount": 40,
         "imageName": "grokdrul.png",
         "tradable": false,
         "drops": [  ]
@@ -38425,7 +39219,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 2,
+        "itemCount": 1,
         "imageName": "heart-nyth.png",
         "tradable": false,
         "drops": [  ]
@@ -38434,7 +39228,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
         "name": "Pyrotic Alloy",
         "description": "Pyrol that has been forged into a stronger metal.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 85,
+        "itemCount": 60,
         "imageName": "pyrotic-alloy.png",
         "tradable": false,
         "drops": [  ]
@@ -38443,7 +39237,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "seram-beetle-shell.png",
         "tradable": false,
         "drops": [  ]
@@ -38581,7 +39375,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
         "name": "Charamote Sagan Module",
         "description": "A device used to reconstruct degenerated matter into Orokin bio-material.Acquired by disassembling Charamote Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "charamote-sagan-module.png",
         "tradable": false,
         "drops": [  ]
@@ -38590,7 +39384,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
         "name": "Marquise Thyst",
         "description": "Polished and cut to perfection.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "marquise-thyst.png",
         "tradable": false,
         "drops": [  ]
@@ -38608,7 +39402,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
         "name": "Sola Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Sola Toroids from enemies located at the Temple of Profit in the Orb Vallis and from Kyta Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "sola-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -39942,7 +40736,7 @@
   {
     "buildPrice": 10000,
     "buildQuantity": 1,
-    "buildTime": 3600,
+    "buildTime": 60,
     "category": "Misc",
     "components": [
       {
@@ -40041,7 +40835,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem",
         "name": "Atmo Systems",
         "description": "A modular component that compensates for the multitude of atmospheric conditions encountered in the Origin System.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "atmo-systems.png",
         "tradable": false,
         "drops": [  ]
@@ -40059,7 +40853,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
         "name": "Calda Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Calda Toroids from enemies located at the Enrichment Labs in the Orb Vallis and from Scyto Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "calda-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -40068,7 +40862,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
         "name": "Hespazym Alloy",
         "description": "A compound formed from Hesperon.",
-        "itemCount": 50,
+        "itemCount": 30,
         "imageName": "hespazym-alloy.png",
         "tradable": false,
         "drops": [  ]
@@ -40077,7 +40871,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
         "name": "Tromyzon Entroplasma",
         "description": "A solvent that reconstitutes waste product from the Weeping Towers into degenerated matter.Acquired by disassembling Tromyzon Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "tromyzon-entroplasma.png",
         "tradable": false,
         "drops": [  ]
@@ -40144,7 +40938,7 @@
   {
     "buildPrice": 10000,
     "buildQuantity": 1,
-    "buildTime": 3600,
+    "buildTime": 60,
     "category": "Misc",
     "components": [
       {
@@ -40415,6 +41209,14 @@
     "parents": [ "Ceno Greaves", "Focused Nosam Cutter", "Shockprod Fishing Spear", "Stunna Fishing Spear", "Tulok Fishing Spear", "Vahd Greaves", "Zauba Greaves" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Pyrotic Alloy cost reduced from 85 to 60\nPyrotic Alloy and Tear Azurite (From 1,000 Standing to 500)",
+        "fixes": ""
+      },
+      {
         "name": "Warframe Update 22: Plains of Eidolon",
         "date": "2017-10-12T22:00:20Z",
         "url": "https://forums.warframe.com/topic/854253-warframe-update-22-plains-of-eidolon/",
@@ -40624,6 +41426,16 @@
     "itemCount": 3,
     "name": "Radiant Zodian",
     "parents": [ "Haztech Mask", "Haztech Pauldrons", "Kubrodon Ventkid Mask", "Kubrodon Ventkid Pauldrons", "Outrider Mask", "Outrider Pauldrons", "Pax Bolt", "Pax Charge", "Smelter Mask", "Smelter Pauldrons", "Vent Pobber Ventkid Mask", "Vent Pobber Ventkid Pauldrons", "Vent Rat Mask", "Vent Rat Pauldrons" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Gyromag Systems & Radiant Zodian cost reduced from 5 to 3\nGyromag Systems & Radiant Zodian cost reduced from 5 to 3\nGyromag Systems & Radiant Zodian cost reduced from 5 to 3",
+        "fixes": ""
+      }
+    ],
     "skipBuildTimePrice": 5,
     "tradable": true,
     "type": "Cut Gem",
@@ -40662,7 +41474,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 30,
+        "itemCount": 15,
         "imageName": "esher-devar.png",
         "tradable": false,
         "drops": [  ]
@@ -40671,7 +41483,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
         "name": "Iradite",
         "description": "A valuable mineral found on the Plains.",
-        "itemCount": 60,
+        "itemCount": 50,
         "imageName": "iradite.png",
         "tradable": false,
         "drops": [  ]
@@ -40680,7 +41492,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightLegendaryFishAPartItem",
         "name": "Seram Beetle Shell",
         "description": "This thick shell is used by Ostrons to manufacture tools and weapons.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "seram-beetle-shell.png",
         "tradable": false,
         "drops": [  ]
@@ -40689,7 +41501,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 30,
+        "itemCount": 20,
         "imageName": "tear-azurite.png",
         "tradable": false,
         "drops": [  ]
@@ -40751,6 +41563,14 @@
     "imageName": "railjack.png",
     "name": "Railjack",
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "from being part of the Railjack experience, to a great tool in our Open Worlds. While their firepower provides an advantage, the time and resource investment required to obtain one has shown to be a deterrent to newer players. As The New War approaches, we aim to alleviate that initial friction and provide an easier path of obtainment.\nSome decoration controls on controllers were adopted from Archwing and Railjack. We’ve decoupled those functions to create controls specific to decorating!\nYou will now be sent back to the Dojo instead of your Orbiter when everyone in your squad dies and loses all their revives in Railjack missions.\nOptimized several small hitches when standing near certain level triggers (i.e Navigation on the Railjack). ",
+        "fixes": "Fixed the UI prompt for Railjack Tactical Menu and Omni disappearing after a player casts Merulina as Yareli with a controller.\nFixed UI element inconsistency in Railjack Void Storms between Hosts and Clients.\nFixed an issue with the Railjack Forward Artillery reticle not changing if you swap weapons while in the seat.\nFixed being able to fly inside the Corpus Capital Ship’s model after parking the Railjack right against it. \nFixed Nidus Prime missing half of his body when exiting the Dorsal or Ventral Turrets in the Railjack.\nFixed the Railjack hologram above the Plexus console in the Orbiter defaulting to blue briefly before reverting to chosen color after returning to Orbiter from Relay or Hub.\nFixed player not reviving properly as Sevagoth’s Shadow if they die in Archwing in Railjack missions. \nFixed Client getting stuck “Waiting for Players” when attempting to extract from the Capitol Ship in Corpus Railjack missions if the Host dies and has run out of revives. \nFixed multiple NPCs (Railjack Crew or Spectres) attempting to revive other fellow NPC which ultimately ended with them not being able to be revived. \nFixed Railjack option appearing in the Orbiter Pause Menu before you acquire a Railjack.\nFixed getting a HTTP 400 error when attempting to fuse Vort Railjack weapons together.\nFixed a handful of Syandanas not sitting properly on Railjack Crew Members.  "
+      },
       {
         "name": "Nights of Naberus: Hotfix 30.8.3",
         "date": "2021-10-18T17:04:26Z",
@@ -41924,7 +42744,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 30,
+        "itemCount": 10,
         "imageName": "esher-devar.png",
         "tradable": false,
         "drops": [  ]
@@ -41933,7 +42753,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
         "name": "Iradite",
         "description": "A valuable mineral found on the Plains.",
-        "itemCount": 60,
+        "itemCount": 40,
         "imageName": "iradite.png",
         "tradable": false,
         "drops": [  ]
@@ -41942,7 +42762,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem",
         "name": "Murkray Liver",
         "description": "An ingredient used in Ostron cooking and medicines.Location: Fisher Hai-Luk in Cetus",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "murkray-liver.png",
         "tradable": false,
         "drops": [  ]
@@ -41951,7 +42771,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem",
         "name": "Tear Azurite",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 30,
+        "itemCount": 10,
         "imageName": "tear-azurite.png",
         "tradable": false,
         "drops": [  ]
@@ -45800,6 +46620,14 @@
     "parents": [ "Ceno Cuirass", "Ceno Helmet", "Vahd Cuirass", "Vahd Mask" ],
     "patchlogs": [
       {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Seram Beetle Shell cost reduced from 3 to 2\nSeram Beetle Shell cost reduced from 3 to 2\nSeram Beetle Shell cost reduced from 3 to 2",
+        "fixes": ""
+      },
+      {
         "name": "Plains of Eidolon Remaster: Hotfix 24.6.1",
         "date": "2019-04-05T02:00:14Z",
         "url": "https://forums.warframe.com/topic/1079735-plains-of-eidolon-remaster-hotfix-2461/",
@@ -46048,7 +46876,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
         "name": "Cetus Wisp",
         "description": "Strange stone lifeforms that call the Plains home. They are a rare find, clustering together, floating above a patch of ground they've taken an inexplicable interest in. They are an enigma.Location: Plains of Eidolon",
-        "itemCount": 15,
+        "itemCount": 4,
         "imageName": "cetus-wisp.png",
         "tradable": false,
         "drops": [  ]
@@ -46057,7 +46885,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
         "name": "Coprite Alloy",
         "description": "Coprun that has been forged into a stronger metal.",
-        "itemCount": 85,
+        "itemCount": 60,
         "imageName": "coprite-alloy.png",
         "tradable": false,
         "drops": [  ]
@@ -46066,7 +46894,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
         "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.Location: Plains of Eidolon",
-        "itemCount": 80,
+        "itemCount": 60,
         "imageName": "grokdrul.png",
         "tradable": false,
         "drops": [  ]
@@ -46075,7 +46903,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
         "name": "Norg Brain",
         "description": "An Ostron delicacy.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "norg-brain.png",
         "tradable": false,
         "drops": [  ]
@@ -46336,7 +47164,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem",
         "name": "Esher Devar",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 30,
+        "itemCount": 15,
         "imageName": "esher-devar.png",
         "tradable": false,
         "drops": [  ]
@@ -46345,7 +47173,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
         "name": "Iradite",
         "description": "A valuable mineral found on the Plains.",
-        "itemCount": 80,
+        "itemCount": 60,
         "imageName": "iradite.png",
         "tradable": false,
         "drops": [  ]
@@ -46354,7 +47182,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem",
         "name": "Marquise Veridos",
         "description": "Polished and cut to perfection.Location: Old Man Suumbaat in Cetus",
-        "itemCount": 20,
+        "itemCount": 10,
         "imageName": "marquise-veridos.png",
         "tradable": false,
         "drops": [  ]
@@ -46363,7 +47191,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem",
         "name": "Norg Brain",
         "description": "An Ostron delicacy.",
-        "itemCount": 3,
+        "itemCount": 2,
         "imageName": "norg-brain.png",
         "tradable": false,
         "drops": [  ]
@@ -46800,6 +47628,16 @@
     "itemCount": 20,
     "name": "Spinal Core Section",
     "parents": [ "Bonewidow Weapon Pod", "Cortege Barrel", "Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing", "Morgha Barrel", "Voidrig Capsule" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Spinal Core Section: From 30 to 15",
+        "fixes": ""
+      }
+    ],
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem"
@@ -47196,7 +48034,7 @@
   {
     "buildPrice": 10000,
     "buildQuantity": 1,
-    "buildTime": 3600,
+    "buildTime": 60,
     "category": "Misc",
     "components": [
       {
@@ -47547,10 +48385,18 @@
     "consumeOnBuild": false,
     "description": "A prismatic refinement of raw Necrathene, highly sought after.",
     "imageName": "stellated-necrathene.png",
-    "itemCount": 16,
+    "itemCount": 8,
     "name": "Stellated Necrathene",
     "parents": [ "Voidrig Casing" ],
     "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Stellated Necrathene: From 16 to 8",
+        "fixes": ""
+      },
       {
         "name": "Heart of Deimos: Update 29",
         "date": "2020-08-25T19:57:29Z",
@@ -47771,7 +48617,7 @@
         "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
         "name": "Longwinder Lathe Coagulant",
         "description": "A liquid that mixes with coolant fluid to produce a resilient gel that repairs leaks.Acquired by disassembling Longwinder Servofish.",
-        "itemCount": 10,
+        "itemCount": 6,
         "imageName": "longwinder-lathe-coagulant.png",
         "tradable": false,
         "drops": [  ]
@@ -47780,7 +48626,7 @@
         "uniqueName": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
         "name": "Marquise Thyst",
         "description": "Polished and cut to perfection.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "marquise-thyst.png",
         "tradable": false,
         "drops": [  ]
@@ -47798,7 +48644,7 @@
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
         "name": "Sola Toroid",
         "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Sola Toroids from enemies located at the Temple of Profit in the Orb Vallis and from Kyta Raknoids. They can also be found as pick-ups in caves located around the Orb Vallis.",
-        "itemCount": 5,
+        "itemCount": 3,
         "imageName": "sola-toroid.png",
         "tradable": false,
         "drops": [  ]
@@ -48028,7 +48874,7 @@
   {
     "buildPrice": 10000,
     "buildQuantity": 1,
-    "buildTime": 3600,
+    "buildTime": 60,
     "category": "Misc",
     "components": [
       {
@@ -49339,6 +50185,16 @@
     "itemCount": 5,
     "name": "Tromyzon Entroplasma",
     "parents": [ "Haztech Greaves", "Kubrodon Ventkid Greaves", "Outrider Greaves", "Pax Bolt", "Smelter Greaves", "Vent Pobber Ventkid Greaves", "Vent Rat Greaves" ],
+    "patchlogs": [
+      {
+        "name": "Update 30.9.0: Prime Resurgence",
+        "date": "2021-11-11T13:33:32Z",
+        "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
+        "additions": "",
+        "changes": "Tromyzon Entroplasma cost reduced from 10 to 6\nTromyzon Entroplasma cost reduced from 10 to 6\nTromyzon Entroplasma cost reduced from 10 to 6",
+        "fixes": ""
+      }
+    ],
     "tradable": false,
     "type": "Fish Part",
     "uniqueName": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem"
