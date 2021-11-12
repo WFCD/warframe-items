@@ -21154,6 +21154,14 @@
     "name": "Dojo",
     "patchlogs": [
       {
+        "name": "Prime Resurgence: Hotfix 30.9.3",
+        "date": "2021-11-12T21:13:48Z",
+        "url": "https://forums.warframe.com/topic/1286448-prime-resurgence-hotfix-3093/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue with the scale of player’s Dojo Decorations that were already placed prior to Update 30.9. We have a lot more work to do to square away issues with new and existing things \nA technical post mortem for the interested, previously we would only save the object scale of a decoration if it was not 1. In the 30.9 update, this changed to saving the scale of an object if it was not default. The problem is that some (about half a dozen that we’ve found)  decorations have a default size that is not 1. So their scale in old Dojos was never saved, and was now incorrectly assumed to be default. The Dojo’s actual decoration data never changed, we were just reading it in a new way that was logically incorrect.\nImprovements toward an issue with the new Dojo Arrival Gate item that caused players using it to fall through the floor due to load order (this only occurred in busy dojos)."
+      },
+      {
         "name": "Update 30.9.0: Prime Resurgence",
         "date": "2021-11-11T13:33:32Z",
         "url": "https://forums.warframe.com/topic/1286070-update-3090-prime-resurgence/",
@@ -23626,6 +23634,14 @@
     "imageName": "domestik-drone.png",
     "name": "Domestik Drone",
     "patchlogs": [
+      {
+        "name": "Prime Resurgence: Hotfix 30.9.3",
+        "date": "2021-11-12T21:13:48Z",
+        "url": "https://forums.warframe.com/topic/1286448-prime-resurgence-hotfix-3093/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Fixed an issue where Domestik Drones weren’t maintaining their placed Size while moving. "
+      },
       {
         "name": "Update 29.5: Deimos Arcana",
         "date": "2020-11-19T23:39:27Z",
@@ -72950,6 +72966,14 @@
     "imageName": "orokin.png",
     "name": "Orokin",
     "patchlogs": [
+      {
+        "name": "Prime Resurgence: Hotfix 30.9.3",
+        "date": "2021-11-12T21:13:48Z",
+        "url": "https://forums.warframe.com/topic/1286448-prime-resurgence-hotfix-3093/",
+        "additions": "",
+        "changes": "",
+        "fixes": "Orokin Cell"
+      },
       {
         "name": "Update 30.7: Nidus Prime & Plague Star",
         "date": "2021-09-08T16:58:55Z",
