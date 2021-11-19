@@ -148,7 +148,7 @@ class Build {
     fs.writeFileSync(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, null, 1))
 
     // Write new cache to disk
-    fs.writeFileSync(path.join(__dirname, '../data/cache/.images.json'), JSON.stringify(imageCache, null, 1))
+    fs.writeFileSync(path.join(__dirname, '../data/cache/.images.json'), JSON.stringify(imageCache.filter(i => i.hash), null, 1))
   }
 
   /**
@@ -162,7 +162,7 @@ class Build {
     const basePath = path.join(__dirname, '../data/img/')
     const filePath = path.join(basePath, item.imageName)
     const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
-    const sizeMedium = ['Resources', 'Misc', 'Fish']
+    const sizeMedium = ['Misc', 'Fish']
     const hash = manifest.find(i => i.uniqueName === item.uniqueName).fileTime
     const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
 
@@ -181,25 +181,30 @@ class Build {
     // Check if the previous image was for a component because they might
     // have different naming schemes like lex-prime
     if (!cached || cached.hash !== hash || cached.isComponent !== isComponent) {
-      const image = await get(imageUrl)
-      this.updateCache(item, cached, hash, isComponent)
+      try {
+        const image = await get(imageUrl)
+        this.updateCache(item, cached, hash, isComponent)
 
-      if (sizeBig.includes(item.category) || isComponent) {
-        await sharp(image).resize({ fit: 'fill', height: 342, width: 512 }).toFile(filePath)
-      } else if (sizeMedium.includes(item.category)) {
-        await sharp(image).resize({ fit: 'fill', height: 342, width: 512 }).toFile(filePath)
-      } else {
-        await sharp(image).toFile(filePath)
+        if (sizeBig.includes(item.category) || isComponent) {
+          await sharp(image).resize({ fit: 'fill', height: 342, width: 512 }).toFile(filePath)
+        } else if (sizeMedium.includes(item.category)) {
+          await sharp(image).resize({ fit: 'fill', height: 342, width: 512 }).toFile(filePath)
+        } else {
+          await sharp(image).toFile(filePath)
+        }
+        await minify([filePath], {
+          destination: basePath,
+          plugins: [
+            minifyJpeg(),
+            minifyPng({
+              quality: [0.2, 0.4]
+            })
+          ]
+        })
+      } catch (e) {
+        // swallow error
+        console.error(e);
       }
-      await minify([filePath], {
-        destination: basePath,
-        plugins: [
-          minifyJpeg(),
-          minifyPng({
-            quality: [0.2, 0.4]
-          })
-        ]
-      })
     }
   }
 
