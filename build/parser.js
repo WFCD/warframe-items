@@ -13,7 +13,7 @@ const warnings = {
   missingVaultData: [],
   polarity: [],
   missingType: [],
-  failedImage: [],
+  failedImage: []
 }
 
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
