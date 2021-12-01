@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm i -S warframe-patchlogs@latest
+    - run: npm i -D warframe-patchlogs@latest
     - run: npm run build
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:

@@ -700,6 +700,7 @@ declare module 'warframe-items' {
         'Tonfa' |
         'Transient Rewards' |
         'Two-Handed Nikana' |
+        'Unique' |
         'Warfan' |
         'Warframe' |
         'Warframe Mod' |
