@@ -556,10 +556,7 @@ class Parser {
             component.drops = saved.drops
           }
         }
-      }
-
-      // Otherwise attach to main item
-      else {
+      } else { // Otherwise attach to main item
         const saved = previousBuild.find(i => i.name === item.name)
         if (saved && saved.drops) {
           // chances were written as strings, caused by previous bad data
