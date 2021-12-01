@@ -1,8 +1,11 @@
-name: Actions
+name: Release
 on:
   push:
     branches:
       - master
+    paths:
+      - build/*
+      - data/*
 jobs:
   release:
     name: Release
