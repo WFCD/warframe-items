@@ -85,7 +85,7 @@ class Build {
    * Generate JSON file for each category and one for all combined.
    */
   saveJson (categories, i18n) {
-    let all = []
+    const all = []
     const sort = (a, b) => {
       if (!a.name) console.log(a)
       const res = a.name.localeCompare(b.name)
@@ -100,7 +100,6 @@ class Build {
     for (const category in categories) {
       const data = categories[category].sort(sort)
       // don't add the generated custom category data to all separately, since it's duplicate data
-      if (!allowedCustomCategories.includes(category)) all = all.concat(data)
       fs.writeFileSync(path.join(__dirname, `../data/json/${category}.json`), stringify(data))
     }
 
