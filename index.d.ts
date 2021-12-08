@@ -480,9 +480,7 @@ declare module 'warframe-items' {
         'Silent'
 
     type Polarity =
-        'Madurai' |
         'madurai' |
-        'Naramon' |
         'naramon' |
         'Penjaga' |
         'Umbra' |

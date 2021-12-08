@@ -1,6 +1,6 @@
 'use strict'
 
-const transformMod = async (oldMod, imageUrls) => {
+module.exports = async (oldMod, imageUrls) => {
   let newMod
   if (!oldMod || !oldMod.Name) {
     return undefined
@@ -27,5 +27,3 @@ const transformMod = async (oldMod, imageUrls) => {
   }
   return newMod
 }
-
-module.exports = transformMod
