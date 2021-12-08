@@ -755,6 +755,8 @@ class Parser {
   }
 
   applyOverrides (item) {
+    // universal polarity casing override
+    if (item.polarity) item.polarity = item.polarity.toLowerCase()
     const override = require('../config/overrides.json')[item.uniqueName]
     if (override) {
       Object.keys(override).forEach(key => {

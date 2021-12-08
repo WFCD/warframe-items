@@ -2,23 +2,22 @@
 
 const getColors = require('get-image-colors')
 const imageDownloader = require('image-downloader')
-
-const POLARITIES = {
-  Bar: 'naramon',
-  V: 'madurai',
-  D: 'vazarin',
-  U: 'umbra',
-  Ability: 'zenurik',
-  R: 'unairu'
-}
+const POLARITIES = require('./polarities')
 
 const transformPolarities = ({ Polarities, AuraPolarity }, targetWeapon) => {
   const outputFrame = { ...targetWeapon }
   if (AuraPolarity) {
-    outputFrame.auraPolarity = POLARITIES[AuraPolarity]
+    outputFrame.auraPolarity = (POLARITIES[AuraPolarity] || AuraPolarity || '').toLowerCase()
+    if (outputFrame.auraPolarity && !outputFrame.auraPolarity.length) outputFrame.auraPolarity = undefined
+    if (outputFrame.auraPolarity === 'none') outputFrame.auraPolarity = undefined
   }
   if (Polarities) {
-    outputFrame.polarities = Polarities.map(polarity => POLARITIES[polarity])
+    outputFrame.polarities = Polarities.map(polarity => {
+      let out
+      out = (POLARITIES[polarity] || polarity || '').toLowerCase()
+      if (out && !out.length) out = undefined
+      return out
+    }).filter(p => p)
   } else {
     outputFrame.polarities = []
   }
@@ -42,7 +41,7 @@ const mapColors = async (oldFrame, imageUrl) => {
   }
 }
 
-const transformWarframe = async (oldFrame, imageUrls) => {
+module.exports = async (oldFrame, imageUrls) => {
   let newFrame
   if (!oldFrame || !oldFrame.Name) {
     return undefined
@@ -83,5 +82,3 @@ const transformWarframe = async (oldFrame, imageUrls) => {
   }
   return newFrame
 }
-
-module.exports = transformWarframe
