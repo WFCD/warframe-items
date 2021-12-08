@@ -9,6 +9,7 @@ const transformPolarities = ({ Polarities, AuraPolarity }, targetWeapon) => {
   if (AuraPolarity) {
     outputFrame.auraPolarity = (POLARITIES[AuraPolarity] || AuraPolarity || '').toLowerCase()
     if (outputFrame.auraPolarity && !outputFrame.auraPolarity.length) outputFrame.auraPolarity = undefined
+    if (outputFrame.auraPolarity === 'none') outputFrame.auraPolarity = undefined
   }
   if (Polarities) {
     outputFrame.polarities = Polarities.map(polarity => {

@@ -22,6 +22,7 @@ const transformPolarities = ({ Polarities, StancePolarity }, targetWeapon) => {
   const outputWeapon = { ...targetWeapon }
   if (StancePolarity) {
     outputWeapon.stancePolarity = (POLARITIES[StancePolarity] || StancePolarity || '').toLowerCase()
+    if (outputWeapon.stancePolarity && !outputWeapon.stancePolarity.length) outputWeapon.stancePolarity = undefined
   }
   if (Polarities) {
     outputWeapon.polarities = Polarities.map(polarity => {
