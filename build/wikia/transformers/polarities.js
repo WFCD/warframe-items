@@ -4,5 +4,6 @@ module.exports = {
   D: 'vazarin',
   U: 'umbra',
   Ability: 'zenurik',
-  R: 'unairu'
+  R: 'unairu',
+  Aura: 'aura'
 }
