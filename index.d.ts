@@ -86,7 +86,7 @@ declare module 'warframe-items' {
         releaseDate?: string;
         vaultDate?: string;
         estimatedVaultDate?: string;
-        aura?: Aura;
+        aura?: Polarity;
         conclave?: boolean;
         color?: number;
         sex?: Sex;
@@ -444,11 +444,6 @@ declare module 'warframe-items' {
         'SpecialItems' |
         'Suits'
 
-    type Aura =
-        'madurai' |
-        'naramon' |
-        'vazarin'
-
     type Category =
         'All' |
         'Arcanes' |
@@ -480,18 +475,15 @@ declare module 'warframe-items' {
         'Silent'
 
     type Polarity =
-        'Madurai' |
+        'aura' |
         'madurai' |
-        'Naramon' |
         'naramon' |
-        'Penjaga' |
-        'Umbra' |
+        'penjaga' |
         'umbra' |
-        'Unairu' |
-        'Universal' |
-        'Vazarin' |
+        'unairu' |
+        'universal' |
         'vazarin' |
-        'Zenurik'
+        'zenurik'
 
     type Projectile =
         'Discharge' |

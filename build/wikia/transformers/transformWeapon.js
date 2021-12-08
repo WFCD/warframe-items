@@ -1,25 +1,5 @@
-const ELEMENTS = {
-  Electricity: 'electricity',
-  Corrosive: 'corrosive',
-  Toxin: 'toxin',
-  Heat: 'heat',
-  Blast: 'blast',
-  Radiation: 'radiation',
-  Cold: 'cold',
-  Viral: 'viral',
-  Magnetic: 'magnetic',
-  Gas: 'gas',
-  Void: 'void'
-}
-
-const POLARITIES = {
-  Bar: 'Naramon',
-  V: 'Madurai',
-  D: 'Vazarin',
-  U: 'Umbra',
-  Ability: 'Zenurik',
-  R: 'Unairu'
-}
+const POLARITIES = require('./polarities')
+const ELEMENTS = require('./elements')
 
 const damageTypes = [
   'Impact',
@@ -41,10 +21,16 @@ const damageTypes = [
 const transformPolarities = ({ Polarities, StancePolarity }, targetWeapon) => {
   const outputWeapon = { ...targetWeapon }
   if (StancePolarity) {
-    outputWeapon.stancePolarity = POLARITIES[StancePolarity] || StancePolarity
+    outputWeapon.stancePolarity = (POLARITIES[StancePolarity] || StancePolarity || '').toLowerCase()
+    if (outputWeapon.stancePolarity && !outputWeapon.stancePolarity.length) outputWeapon.stancePolarity = undefined
   }
   if (Polarities) {
-    outputWeapon.polarities = Polarities.map(polarity => POLARITIES[polarity] || polarity)
+    outputWeapon.polarities = Polarities.map(polarity => {
+      let out
+      out = (POLARITIES[polarity] || polarity || '').toLowerCase()
+      if (out && !out.length) out = undefined
+      return out
+    }).filter(p => p)
   } else {
     outputWeapon.polarities = []
   }
@@ -113,7 +99,7 @@ const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialPro
   }
 }
 
-const transformWeapon = (oldWeapon, imageUrls) => {
+module.exports = (oldWeapon, imageUrls) => {
   let newWeapon
   if (!oldWeapon || !oldWeapon.Name) {
     return undefined
@@ -212,5 +198,3 @@ const transformWeapon = (oldWeapon, imageUrls) => {
 
   return newWeapon
 }
-
-module.exports = transformWeapon
