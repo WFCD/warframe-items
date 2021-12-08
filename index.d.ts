@@ -13,6 +13,7 @@ declare module 'warframe-items' {
     }
 
     type UniqueName = string;
+    type DateString = string;
 
     interface Item {
         uniqueName: UniqueName;
@@ -84,8 +85,8 @@ declare module 'warframe-items' {
         itemCount?: number;
         parents?: string[];
         releaseDate?: string;
-        vaultDate?: string;
-        estimatedVaultDate?: string;
+        vaultDate?: DateString;
+        estimatedVaultDate?: DateString;
         aura?: Polarity;
         conclave?: boolean;
         color?: number;
@@ -362,7 +363,7 @@ declare module 'warframe-items' {
 
     interface PatchLog {
         name: string;
-        date: string;
+        date: DateString;
         url: string;
         imgUrl?: string;
         additions: string;
@@ -380,7 +381,7 @@ declare module 'warframe-items' {
         url: string;
         aliases: string[];
         parent: string;
-        date: string;
+        date: DateString;
     }
 
     interface UpgradeEntry {

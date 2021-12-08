@@ -723,6 +723,19 @@ class Parser {
   }
 
   /**
+   * Normalize Ogg vault dates to be technically ISO-8601 dates
+   * @param {string} vaultDate
+   * @returns {undefined|string}
+   */
+  normalizeOggDate (vaultDate) {
+    if (!vaultDate) return undefined
+    const never = ['n/a', 'none', 'never']
+    const stripped = vaultDate.replace(/\s/ig, '-')
+    if (never.includes(stripped)) return undefined
+    return stripped
+  }
+
+  /**
    * Adds releaseDate, vaultDate and estimatedVaultDate to all primes using
    * data from "Ducats or Plat".
    */
@@ -741,13 +754,13 @@ class Parser {
     }
 
     if (target.ReleaseDate) {
-      item.releaseDate = target.ReleaseDate
+      item.releaseDate = this.normalizeOggDate(target.ReleaseDate)
     }
     if (target.VaultedDate) {
-      item.vaultDate = target.VaultedDate
+      item.vaultDate = this.normalizeOggDate(target.VaultedDate)
     }
     if (target.EstimatedVaultedDate) {
-      item.estimatedVaultDate = target.EstimatedVaultedDate
+      item.estimatedVaultDate = this.normalizeOggDate(target.EstimatedVaultedDate)
     }
     if (target.Vaulted) {
       item.vaulted = target.Vaulted
