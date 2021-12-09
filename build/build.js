@@ -105,7 +105,7 @@ class Build {
 
     // All.json (all items in one file)
     all.sort(sort)
-    fs.writeFileSync(path.join(__dirname, '../data/json/All.json'), stringify(all))
+    fs.writeFileSync(path.join(__dirname, '../data/json/All.json'), stringify(all, 2))
     fs.writeFileSync(path.join(__dirname, '../data/json/i18n.json'), stringify(i18n))
 
     return all
