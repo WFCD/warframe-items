@@ -32,14 +32,25 @@
  * @property {boolean} i18nOnObject Whether or not to include i18n on the object itself and not on the "array"
  */
 
+const path = require('path')
+const fs = require('fs')
 const versions = require('./data/cache/.export.json')
+
 let i18n = {}
 try {
   i18n = require('./data/json/i18n.json')
 } catch (ignored) {
   // can only happen in really weird stuff, and we're already defaulting, so it's ok
 }
-const defaultOptions = { category: ['All'], i18n: false, i18nOnObject: false }
+
+const raw = fs.readdirSync(path.join(__dirname, './data/json/'))
+const ignored = ['All', 'i18n']
+const all = raw
+  .filter(f => f.includes('.json'))
+  .map(f => f.replace('.json', ''))
+  .filter(f => !ignored.includes(f))
+
+const defaultOptions = { category: all, i18n: false, i18nOnObject: false }
 
 class Items extends Array {
   constructor (options, ...items) {
@@ -49,6 +60,13 @@ class Items extends Array {
     this.options = {
       ...defaultOptions,
       ...options
+    }
+
+    const containedAll = this.options.category.includes('All')
+    if (containedAll) {
+      this.options.category = Array.from(new Set(
+        this.options.category.filter(c => c !== 'All').concat(all)
+      ))
     }
 
     this.i18n = {}
