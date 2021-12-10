@@ -100,7 +100,7 @@ class Build {
     for (const category in categories) {
       const data = categories[category].sort(sort)
       all = all.concat(data)
-      fs.writeFileSync(path.join(__dirname, `../data/json/${category}.json`), stringify(data))
+      fs.writeFileSync(path.join(__dirname, `../data/json/${category}.json`), JSON.stringify(JSON.parse(stringify(data))))
     }
 
     // All.json (all items in one file)
