@@ -5,5 +5,5 @@ module.exports = {
   U: 'umbra',
   Ability: 'zenurik',
   R: 'unairu',
-  Aura: 'aura'
-}
+  Aura: 'aura',
+};

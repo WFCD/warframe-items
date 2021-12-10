@@ -1,5 +1,5 @@
-const POLARITIES = require('./polarities')
-const ELEMENTS = require('./elements')
+const POLARITIES = require('./polarities');
+const ELEMENTS = require('./elements');
 
 const damageTypes = [
   'Impact',
@@ -15,94 +15,82 @@ const damageTypes = [
   'Blast',
   'Magnetic',
   'Gas',
-  'Void'
-]
+  'Void',
+];
 
 const transformPolarities = ({ Polarities, StancePolarity }, targetWeapon) => {
-  const outputWeapon = { ...targetWeapon }
+  const outputWeapon = { ...targetWeapon };
   if (StancePolarity) {
-    outputWeapon.stancePolarity = (POLARITIES[StancePolarity] || StancePolarity || '').toLowerCase()
-    if (outputWeapon.stancePolarity && !outputWeapon.stancePolarity.length) outputWeapon.stancePolarity = undefined
+    outputWeapon.stancePolarity = (POLARITIES[StancePolarity] || StancePolarity || '').toLowerCase();
+    if (outputWeapon.stancePolarity && !outputWeapon.stancePolarity.length) outputWeapon.stancePolarity = undefined;
   }
   if (Polarities) {
-    outputWeapon.polarities = Polarities.map(polarity => {
-      let out
-      out = (POLARITIES[polarity] || polarity || '').toLowerCase()
-      if (out && !out.length) out = undefined
-      return out
-    }).filter(p => p)
+    outputWeapon.polarities = Polarities.map((polarity) => {
+      let out;
+      out = (POLARITIES[polarity] || polarity || '').toLowerCase();
+      if (out && !out.length) out = undefined;
+      return out;
+    }).filter((p) => p);
   } else {
-    outputWeapon.polarities = []
+    outputWeapon.polarities = [];
   }
-  return outputWeapon
-}
+  return outputWeapon;
+};
 
 const parseAttack = (Attack) => {
   const attack = {
     name: Attack.AttackName,
-    duration: Attack && Attack.Duration &&
-      Number((Number(Attack.Duration) * 100).toFixed(2)),
-    radius: Attack && Attack.Radius &&
-      Number((Number(Attack.Radius) * 100).toFixed(2)),
+    duration: Attack && Attack.Duration && Number((Number(Attack.Duration) * 100).toFixed(2)),
+    radius: Attack && Attack.Radius && Number((Number(Attack.Radius) * 100).toFixed(2)),
     speed: Attack && Attack.FireRate,
     pellet: Attack.PelletName && {
       name: Attack.PelletName,
-      count: Attack.PelletCount
+      count: Attack.PelletCount,
     },
-    crit_chance: Attack.CritChance &&
-      Number((Number(Attack.CritChance) * 100).toFixed(2)),
-    crit_mult: Attack.CritMultiplier &&
-      Number(Number(Attack.CritMultiplier).toFixed(1)),
-    status_chance: Attack && Attack.StatusChance &&
-      Number((Number(Attack.StatusChance) * 100).toFixed(2)),
-    charge_time: Attack.ChargeTime &&
-      Number(Number(Attack.ChargeTime).toFixed(1)),
+    crit_chance: Attack.CritChance && Number((Number(Attack.CritChance) * 100).toFixed(2)),
+    crit_mult: Attack.CritMultiplier && Number(Number(Attack.CritMultiplier).toFixed(1)),
+    status_chance: Attack && Attack.StatusChance && Number((Number(Attack.StatusChance) * 100).toFixed(2)),
+    charge_time: Attack.ChargeTime && Number(Number(Attack.ChargeTime).toFixed(1)),
     shot_type: Attack.ShotType,
-    shot_speed: Attack.ShotSpeed &&
-      Number(Number(Attack.ShotSpeed).toFixed(1)),
-    ...Attack.ShotSpeed && {
-      flight: Number(Attack.ShotSpeed) || '???'
-    },
-    ...Attack.Falloff && {
+    shot_speed: Attack.ShotSpeed && Number(Number(Attack.ShotSpeed).toFixed(1)),
+    ...(Attack.ShotSpeed && {
+      flight: Number(Attack.ShotSpeed) || '???',
+    }),
+    ...(Attack.Falloff && {
       falloff: {
-        start: Attack.Falloff.StartRange &&
-          Number(Attack.Falloff.StartRange),
-        end: Attack.Falloff.EndRange &&
-          Number(Attack.Falloff.EndRange),
-        reduction: Attack.Falloff.Reduction &&
-          Number(Attack.Falloff.Reduction)
-      }
-    },
-    damage: {}
-  }
+        start: Attack.Falloff.StartRange && Number(Attack.Falloff.StartRange),
+        end: Attack.Falloff.EndRange && Number(Attack.Falloff.EndRange),
+        reduction: Attack.Falloff.Reduction && Number(Attack.Falloff.Reduction),
+      },
+    }),
+    damage: {},
+  };
 
   // Convert damage numbers and names
   if (Attack.Damage) {
     damageTypes.forEach((damageType) => {
       attack.damage[damageType.toLowerCase()] = Attack.Damage[damageType]
         ? Number(Attack.Damage[damageType].toFixed(2).replace(/(\.[\d]+)0/, '$1'))
-        : undefined
-    })
+        : undefined;
+    });
   }
-  return attack
-}
+  return attack;
+};
 
-const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialProc, SlamRadius }) => {
-  return {
+const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialProc, SlamRadius }) => ({
     damage: Number(SlamAttack || 0).toFixed(2),
     radial: {
       damage: Number(SlamRadialDmg || 0).toFixed(2),
       element: SlamRadialElement && String(SlamRadialElement),
       proc: SlamRadialProc && String(SlamRadialProc),
-      radius: Number(SlamRadius)
-    }
-  }
-}
+      radius: Number(SlamRadius),
+    },
+  });
 
 module.exports = (oldWeapon, imageUrls) => {
-  let newWeapon
+  let newWeapon;
   if (!oldWeapon || !oldWeapon.Name) {
-    return undefined
+    return undefined;
   }
   try {
     const {
@@ -139,8 +127,8 @@ module.exports = (oldWeapon, imageUrls) => {
       Attack7,
       Attack8,
       Attack9,
-      Attack10
-    } = oldWeapon
+      Attack10,
+    } = oldWeapon;
 
     newWeapon = {
       regex: `^${Name.toLowerCase().replace(/\s/g, '\\s')}$`,
@@ -149,17 +137,19 @@ module.exports = (oldWeapon, imageUrls) => {
       mr: Mastery || 0,
       type: Class || Type,
       riven_disposition: Disposition,
-      ...(ChargeAttack && ChargeAttack.StatusChance) &&
-        { status_chance: Number((Number(ChargeAttack.StatusChance) * 100).toFixed(2)) },
+      ...(ChargeAttack &&
+        ChargeAttack.StatusChance && {
+          status_chance: Number((Number(ChargeAttack.StatusChance) * 100).toFixed(2)),
+        }),
       polarities: Polarities,
       thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
-      ...MaxAmmo && { ammo: MaxAmmo },
+      ...(MaxAmmo && { ammo: MaxAmmo }),
       tags: Traits || [],
       vaulted: (Traits || []).includes('Vaulted'),
       introduced: Introduced,
       marketCost: Cost && Cost.MarketCost,
-      bpCost: Cost && Cost.BPCost
-    }
+      bpCost: Cost && Cost.BPCost,
+    };
 
     newWeapon.attacks = [
       NormalAttack && parseAttack(NormalAttack),
@@ -176,8 +166,8 @@ module.exports = (oldWeapon, imageUrls) => {
       SecondaryAreaAttack && parseAttack(SecondaryAreaAttack),
       SecondaryAttack && parseAttack(SecondaryAttack),
       ChargeAttack && parseAttack(ChargeAttack),
-      AreaAttack && parseAttack(AreaAttack)
-    ].filter(a => a)
+      AreaAttack && parseAttack(AreaAttack),
+    ].filter((a) => a);
 
     if (newWeapon.attacks[0]) {
       newWeapon.attacks[0] = {
@@ -185,16 +175,16 @@ module.exports = (oldWeapon, imageUrls) => {
         slide: SlideAttack && `${SlideAttack}${SlideElement ? ELEMENTS[SlideElement] : ''}`,
         jump: JumpAttack && `${JumpAttack}${JumpElement ? ELEMENTS[JumpElement] : ''}`,
         wall: WallAttack && `${WallAttack}${WallElement ? ELEMENTS[WallElement] : ''}`,
-        channeling: (SlideAttack && JumpAttack && WallAttack) && Number(ChannelMult || 1.5),
-        slam: SlamAttack && parseSlam(oldWeapon)
-      }
+        channeling: SlideAttack && JumpAttack && WallAttack && Number(ChannelMult || 1.5),
+        slam: SlamAttack && parseSlam(oldWeapon),
+      };
     }
 
-    newWeapon = transformPolarities(oldWeapon, newWeapon)
+    newWeapon = transformPolarities(oldWeapon, newWeapon);
   } catch (error) {
-    console.error(`Error parsing ${oldWeapon.Name}`)
-    console.error(error)
+    console.error(`Error parsing ${oldWeapon.Name}`);
+    console.error(error);
   }
 
-  return newWeapon
-}
+  return newWeapon;
+};

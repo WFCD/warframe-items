@@ -9,5 +9,5 @@ module.exports = {
   Viral: 'viral',
   Magnetic: 'magnetic',
   Gas: 'gas',
-  Void: 'void'
-}
+  Void: 'void',
+};
