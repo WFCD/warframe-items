@@ -100,12 +100,12 @@ class Build {
     for (const category in categories) {
       const data = categories[category].sort(sort)
       all = all.concat(data)
-      fs.writeFileSync(path.join(__dirname, `../data/json/${category}.json`), JSON.stringify(JSON.parse(stringify(data))))
+      fs.writeFileSync(path.join(__dirname, `../data/json/${category}.json`), stringify(data))
     }
 
     // All.json (all items in one file)
     all.sort(sort)
-    fs.writeFileSync(path.join(__dirname, '../data/json/All.json'), stringify(all))
+    fs.writeFileSync(path.join(__dirname, '../data/json/All.json'), stringify(all, 2))
     fs.writeFileSync(path.join(__dirname, '../data/json/i18n.json'), stringify(i18n))
 
     return all
