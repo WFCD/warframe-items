@@ -40,9 +40,9 @@ describe('index.js', () => {
     const items = wrapConstr({ category: ['Primary', 'All'] })
     assert(items.length > 0)
   })
-  it('should not error with no category defined alongside other options', () => {
+  it('should not error current worldstate-data supported locales', () => {
     try {
-      wrapConstr({ i18n: true, i18nOnObject: true })
+      wrapConstr({ i18n: ['de', 'es', 'fr', 'it', 'ko', 'pl', 'pt', 'ru', 'zh', 'cs', 'sr'], i18nOnObject: true })
     } catch (e) {
       assert(typeof e === 'undefined')
     }
