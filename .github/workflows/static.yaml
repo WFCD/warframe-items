@@ -30,7 +30,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: data/json
-        key: ${{ runner.os }}-${{ github.run.id }}${{ github.run.number }}
+        key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
     - uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
