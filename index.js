@@ -80,11 +80,14 @@ class Items extends Array {
           // only insert i18n for the objects we're inserting so we don't bloat memory
           if (Array.isArray(this.options.i18n)) {
             const raw = i18n[item.uniqueName]
-            Object.keys(raw).forEach(locale => {
-              if (!this.options.i18n.includes(locale)) {
-                delete raw[locale]
-              }
-            })
+            // only process if passed language is a supported i18n value
+            if (raw) {
+              Object.keys(raw).forEach(locale => {
+                if (!this.options.i18n.includes(locale)) {
+                  delete raw[locale]
+                }
+              })
+            }
             this.i18n[item.uniqueName] = raw
           } else {
             this.i18n[item.uniqueName] = i18n[item.uniqueName]

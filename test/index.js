@@ -40,6 +40,13 @@ describe('index.js', () => {
     const items = wrapConstr({ category: ['Primary', 'All'] })
     assert(items.length > 0)
   })
+  it('should not error current worldstate-data supported locales', () => {
+    try {
+      wrapConstr({ i18n: ['de', 'es', 'fr', 'it', 'ko', 'pl', 'pt', 'ru', 'zh', 'cs', 'sr'], i18nOnObject: true })
+    } catch (e) {
+      assert(typeof e === 'undefined')
+    }
+  })
 
   // Custom filter override in index.js
   it('should not return more or equal the number of objects after .filter(), when custom categories are specified.', () => {
