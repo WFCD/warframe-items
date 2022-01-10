@@ -1,14 +1,14 @@
 const prod = process.env.NODE_ENV === 'production'
 const ProgressBar = require('progress')
-const colors = require('colors/safe')
+const chalk = require('chalk')
 
 /**
  * Simple progress bar
  */
 class Progress extends ProgressBar {
   constructor (string, total) {
-    super(`${string.padEnd(24, ' ')}: ${colors.green('[')}:bar${colors.green(']')} :current/:total (:elapseds) :etas remaining`, {
-      incomplete: colors.red('-'),
+    super(`${string.padEnd(24, ' ')}: ${chalk.green('[')}:bar${chalk.green(']')} :current/:total (:elapseds) :etas remaining`, {
+      incomplete: chalk.red('-'),
       width: 20,
       total: total
     })
