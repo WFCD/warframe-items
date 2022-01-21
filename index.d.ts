@@ -690,6 +690,7 @@ declare module 'warframe-items' {
         'Theme Sound' |
         'Themes' |
         'Thrown' |
+        'Throwing' |
         'Tonfa' |
         'Transient Rewards' |
         'Two-Handed Nikana' |

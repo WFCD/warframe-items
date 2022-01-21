@@ -160,7 +160,7 @@ class Scraper {
     })
     bar.tick()
 
-    const weapons = await new WeaponScraper().scrape()
+    const weapons = [] // await new WeaponScraper().scrape()
     bar.tick()
     const warframes = await new WarframeScraper().scrape()
     bar.tick()
