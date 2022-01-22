@@ -1,15 +1,13 @@
 'use strict'
 
 const cheerio = require('cheerio')
-const axios = require('axios')
 const fs = require('fs-extra')
 const cmd = require('node-cmd')
 const fetch = require('node-fetch')
 
 const getLuaData = async (url) => {
   try {
-    const { data } = await axios.get(url)
-    const $ = cheerio.load(data)
+    const $ = cheerio.load(await fetch(url).then(data => data.text()))
     return $('#wpTextbox1').text()
   } catch (err) {
     console.error('Failed to fetch latest Lua data:')
