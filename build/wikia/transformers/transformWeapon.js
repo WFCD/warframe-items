@@ -44,7 +44,7 @@ const parseAttack = (Attack) => {
       Number((Number(Attack.Duration) * 100).toFixed(2)),
     radius: Attack && Attack.Radius &&
       Number((Number(Attack.Radius) * 100).toFixed(2)),
-    speed: Attack && Attack.FireRate,
+    speed: (Attack && Attack.FireRate) || undefined,
     pellet: Attack.PelletName && {
       name: Attack.PelletName,
       count: Attack.PelletCount
@@ -75,6 +75,8 @@ const parseAttack = (Attack) => {
     },
     damage: {}
   }
+
+  if (!Number.isFinite(attack.speed)) attack.speed = undefined
 
   // Convert damage numbers and names
   if (Attack.Damage) {
@@ -139,7 +141,8 @@ module.exports = (oldWeapon, imageUrls) => {
       Attack7,
       Attack8,
       Attack9,
-      Attack10
+      Attack10,
+      Attacks
     } = oldWeapon
 
     newWeapon = {
@@ -152,7 +155,6 @@ module.exports = (oldWeapon, imageUrls) => {
       ...(ChargeAttack && ChargeAttack.StatusChance) &&
         { status_chance: Number((Number(ChargeAttack.StatusChance) * 100).toFixed(2)) },
       polarities: Polarities,
-      thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
       ...MaxAmmo && { ammo: MaxAmmo },
       tags: Traits || [],
       vaulted: (Traits || []).includes('Vaulted'),
@@ -160,6 +162,8 @@ module.exports = (oldWeapon, imageUrls) => {
       marketCost: Cost && Cost.MarketCost,
       bpCost: Cost && Cost.BPCost
     }
+
+    newWeapon.thumbnail = imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')]
 
     newWeapon.attacks = [
       NormalAttack && parseAttack(NormalAttack),
@@ -177,7 +181,7 @@ module.exports = (oldWeapon, imageUrls) => {
       SecondaryAttack && parseAttack(SecondaryAttack),
       ChargeAttack && parseAttack(ChargeAttack),
       AreaAttack && parseAttack(AreaAttack)
-    ].filter(a => a)
+    ].concat(Attacks.map(parseAttack)).filter(a => a)
 
     if (newWeapon.attacks[0]) {
       newWeapon.attacks[0] = {

@@ -64,7 +64,6 @@ module.exports = async (oldFrame, imageUrls) => {
     newFrame = {
       name: Name,
       url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_').replace('_Prime', '/Prime'))}`,
-      thumbnail: imageUrls[Image],
       auraPolarity: AuraPolarity,
       conclave: Conclave,
       mr: Mastery || 0,
@@ -72,10 +71,11 @@ module.exports = async (oldFrame, imageUrls) => {
       sprint: Sprint,
       introduced: Introduced,
       sex: Sex,
-      color: parseInt(await mapColors(oldFrame, imageUrls[Image]), 16),
       vaulted: Vaulted || undefined
     }
     newFrame = transformPolarities(oldFrame, newFrame)
+    newFrame.thumbnail = imageUrls[Image]
+    newFrame.color = parseInt(await mapColors(oldFrame, imageUrls[Image]), 16)
   } catch (error) {
     console.error(`Error parsing ${oldFrame.Name}`)
     console.error(error)

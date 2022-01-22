@@ -4,6 +4,7 @@ const cheerio = require('cheerio')
 const axios = require('axios')
 const fs = require('fs-extra')
 const cmd = require('node-cmd')
+const fetch = require('node-fetch')
 
 const getLuaData = async (url) => {
   try {
@@ -69,38 +70,38 @@ const getImageUrls = async (things) => {
     titleBatches.push(titles.splice(0, 50))
   }
 
-  const urlRequests = titleBatches.map(titleBatch =>
-    axios.get('https://warframe.fandom.com/api.php', {
-      params: {
-        action: 'query',
-        titles: titleBatch.join('|'),
-        prop: 'imageinfo',
-        iiprop: 'url',
-        format: 'json'
-      }
-    }))
+  const urlRequests = titleBatches.map(titleBatch => {
+    const params = [
+      'action=query',
+      `titles=${titleBatch.join('|')}`,
+      'prop=imageinfo',
+      'iiprop=url',
+      'format=json'
+    ]
+    const request = new fetch.Request(`https://warframe.fandom.com/api.php?${params.join('&')}`)
+    return fetch(request).then(d => d.json())
+  })
 
   try {
-    const fetchedImageUrls = await Promise.all(urlRequests).then((res) => {
-      const urls = {}
-      res.forEach(({ data }) => {
-        Object.keys(data.query.pages).forEach((id) => {
-          if (id > -1) {
-            const title = data.query.pages[id].title.replace('File:', '')
-            const { url } = data.query.pages[id].imageinfo[0]
-            urls[title] = url
-          }
+    return Promise.all(urlRequests)
+      .then((res) => {
+        const urls = {}
+        res.forEach((data) => {
+          Object.keys(data.query.pages).forEach((id) => {
+            if (id > -1) {
+              const title = data.query.pages[id].title.replace('File:', '')
+              const { url } = data.query.pages[id].imageinfo[0]
+              urls[title] = url
+            }
+          })
         })
+        return urls
       })
-      return urls
-    })
       .catch(console.error)
-
-    return fetchedImageUrls
   } catch (err) {
     console.error('Failed to fetch image URLs:')
     console.error(err)
-    return []
+    return {}
   }
 }
 
@@ -116,9 +117,16 @@ const nameCompare = (first, second) => {
   return 0
 }
 
+/**
+ * Scrape Wikia data from data modules
+ */
 class WikiaDataScraper {
   constructor (url, luaObjectName, transformFunction) {
-    this.url = url
+    if (Array.isArray(url)) {
+      this.urls = url
+    } else {
+      this.url = url
+    }
     this.luaObjectName = luaObjectName
     this.transformFunction = transformFunction
     if (typeof transformFunction === 'undefined') {
@@ -127,10 +135,34 @@ class WikiaDataScraper {
   }
 
   async scrape () {
-    const luaData = await getLuaData(this.url)
-    if (this.luaObjectName === 'Versions') console.log(luaData)
-    const jsonData = await convertLuaDataToJson(luaData, this.luaObjectName)
-    if (jsonData.length === 0) {
+    const jsonData = {}
+    jsonData[`${this.luaObjectName}s`] = {}
+    if (this.url) {
+      const luaData = await getLuaData(this.url)
+      const jTemp = await convertLuaDataToJson(luaData, this.luaObjectName)
+      Object.keys(jTemp).forEach(key => {
+        if (!jTemp[key].name) {
+          jsonData[`${this.luaObjectName}s`] = {
+            ...jsonData[`${this.luaObjectName}s`],
+            ...jTemp
+          }
+        }
+      })
+    } else if (this.urls.length) {
+      for (const url of this.urls) {
+        const luaData = await getLuaData(url)
+        const jTemp = await convertLuaDataToJson(luaData, this.luaObjectName)
+        jsonData[`${this.luaObjectName}s`] = {
+          ...jsonData[`${this.luaObjectName}s`],
+          ...jTemp
+        }
+      }
+    }
+    if (jsonData[`${this.luaObjectName}s`][`${this.luaObjectName}s`]) {
+      jsonData[`${this.luaObjectName}s`] = jsonData[`${this.luaObjectName}s`][`${this.luaObjectName}s`]
+    }
+
+    if (!Object.keys(jsonData).length) {
       throw new Error('No json data')
     }
 
