@@ -19,7 +19,10 @@
 }, {
   "id": "AugmentCard",
   "name": "Warframe Mod"
-},{
+}, {
+  "id": "/Exalted",
+  "name": "Exalted Weapon"
+} ,{
   "id": "/Powersuits",
   "name": "Warframe"
 }, {
@@ -65,6 +68,9 @@
   "id": "/SpectreArmies",
   "name": "Specter"
 }, {
+  "id": "SentRifle",
+  "name": "Rifle"
+},{
   "id": "/SentientShards",
   "name": "Eidolon Shard"
 }, {
@@ -143,6 +149,9 @@
   "id": "/Mods/Melee",
   "name": "Melee Mod"
 }, {
+  "id": "/SentinelWeapons",
+  "name": "Companion Weapon"
+}, {
   "id": "/Sentinels",
   "name": "Sentinel"
 }, {
@@ -152,20 +161,14 @@
   "id": "/Shotgun",
   "name": "Shotgun"
 }, {
-  "id": "/Rifle",
-  "name": "Rifle"
-}, {
   "id": "/Pistols",
   "name": "Pistol"
 }, {
+  "id": "/ModularMelee",
+  "name": "Zaw Component"
+}, {
   "id": "/Melee",
   "name": "Melee"
-}, {
-  "id": "/LongGuns",
-  "name": "Rifle"
-}, {
-  "id": "/ShortGuns",
-  "name": "Pistol"
 }, {
   "id": "/OperatorAmplifiers",
   "name": "Amp"
@@ -194,8 +197,8 @@
   "id": "/Resources",
   "name": "Resource"
 }, {
-  "id": "/ModularMelee",
-  "name": "Zaw Component"
+  "id": "/InfModular",
+  "name": "Kitgun 1Component"
 }, {
   "id": "/SUModularSecondary",
   "name": "Kitgun Component"
@@ -246,7 +249,7 @@
   "name": "Conservation Tag"
 }, {
   "id": "SentinelWeapon",
-  "name": "Sentinel Weapon"
+  "name": "Companion Weapon"
 }, {
   "id": "Scarves",
   "name": "Syandana"
@@ -332,6 +335,10 @@
   "id": "MoaPetLeg",
   "name": "Pet Resource"
 }, {
+  "id": "MoaPetComponents/.*Weapon",
+  "regex": true,
+  "name": "Companion Weapon"
+},{
   "id": "PetCollar",
   "name": "Pet Collar"
 }, {
@@ -444,6 +451,13 @@
   "name": "Companion Mod",
   "regex": true
 }, {
+  "id": "PistolMod",
+  "name": "Secondary Mod"
+}, {
+  "id": "Mods/.*/Pistol",
+  "name": "Secondary Mod",
+  "regex": true
+}, {
   "id": "Sets\/.*\/Pistol",
   "name": "Secondary Mod",
   "regex": true
@@ -463,4 +477,71 @@
   "id": "Sets/",
   "name": " Mod",
   "append": true
+}, {
+  "id": "Akimbo",
+  "name": "Dual Pistols"
+}, {
+  "id": "/PrimeAk",
+  "name": "Dual Pistols"
+}, {
+  "id": "/AkPrime",
+  "name": "Dual Pistols"
+}, {
+  "id": "Uzi",
+  "name": "Dual Pistols"
+}, {
+  "id": "Harlequin",
+  "name": "Dual Pistols"
+}, {
+  "id": "Pistol",
+  "name": "Pistol"
+},  {
+  "id": "ZanukaPetMeleeWeapon",
+  "name": "Companion Weapon"
+}, {
+  "id": "PrimeBucks",
+  "name": "Currency"
+}, {
+  "id": "/CatbrowTail",
+  "name": "Skin"
+}, {
+  "id": "/CatbrowHead",
+  "name": "Skin"
+}, {
+  "id": "/MiscItems/Forma",
+  "name": "Forma"
+}, {
+  "id": "Shotgun",
+  "name": "Shotgun"
+}, {
+  "id": "/LongGuns",
+  "name": "Rifle"
+}, {
+  "id": "/ShortGuns",
+  "name": "Pistol"
+}, {
+  "id": "Exalted.*Weapon",
+  "regex": true,
+  "name": "Exalted Weapon"
+}, {
+  "id": "Powersuits/.*Weapon",
+  "regex": true,
+  "name": "Exalted Weapon"
+}, {
+  "id": "Rifle",
+  "name": "Rifle"
+}, {
+  "id": "ClanTech/.*Weapon",
+  "regex": true,
+  "name": "Rifle"
+}, {
+  "id": "Secondary",
+  "name": "Pistol"
+}, {
+  "id": "Primary",
+  "name": "Rifle"
+}, {
+  "id": "Weapon",
+  "regex": true,
+  "name": "Rifle"
 }]
