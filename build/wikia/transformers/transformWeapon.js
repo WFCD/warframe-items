@@ -160,28 +160,26 @@ module.exports = (oldWeapon, imageUrls) => {
       vaulted: (Traits || []).includes('Vaulted'),
       introduced: Introduced,
       marketCost: Cost && Cost.MarketCost,
-      bpCost: Cost && Cost.BPCost
+      bpCost: Cost && Cost.BPCost,
+      thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
+      attacks: [
+        NormalAttack && parseAttack(NormalAttack),
+        Attack1 && parseAttack(Attack1),
+        Attack2 && parseAttack(Attack2),
+        Attack3 && parseAttack(Attack3),
+        Attack4 && parseAttack(Attack4),
+        Attack5 && parseAttack(Attack5),
+        Attack6 && parseAttack(Attack6),
+        Attack7 && parseAttack(Attack7),
+        Attack8 && parseAttack(Attack8),
+        Attack9 && parseAttack(Attack9),
+        Attack10 && parseAttack(Attack10),
+        SecondaryAreaAttack && parseAttack(SecondaryAreaAttack),
+        SecondaryAttack && parseAttack(SecondaryAttack),
+        ChargeAttack && parseAttack(ChargeAttack),
+        AreaAttack && parseAttack(AreaAttack)
+      ].concat(Attacks.map(parseAttack)).filter(a => a)
     }
-
-    newWeapon.thumbnail = imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')]
-
-    newWeapon.attacks = [
-      NormalAttack && parseAttack(NormalAttack),
-      Attack1 && parseAttack(Attack1),
-      Attack2 && parseAttack(Attack2),
-      Attack3 && parseAttack(Attack3),
-      Attack4 && parseAttack(Attack4),
-      Attack5 && parseAttack(Attack5),
-      Attack6 && parseAttack(Attack6),
-      Attack7 && parseAttack(Attack7),
-      Attack8 && parseAttack(Attack8),
-      Attack9 && parseAttack(Attack9),
-      Attack10 && parseAttack(Attack10),
-      SecondaryAreaAttack && parseAttack(SecondaryAreaAttack),
-      SecondaryAttack && parseAttack(SecondaryAttack),
-      ChargeAttack && parseAttack(ChargeAttack),
-      AreaAttack && parseAttack(AreaAttack)
-    ].concat(Attacks.map(parseAttack)).filter(a => a)
 
     if (newWeapon.attacks[0]) {
       newWeapon.attacks[0] = {

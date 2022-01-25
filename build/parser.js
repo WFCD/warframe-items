@@ -14,7 +14,8 @@ const warnings = {
   missingVaultData: [],
   polarity: [],
   missingType: [],
-  failedImage: []
+  failedImage: [],
+  missingWikiThumb: []
 }
 
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
@@ -690,6 +691,8 @@ class Parser {
     item.sprint = wikiaItem.sprint
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
+
+    if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name)
   }
 
   addWeaponWikiaData (item, wikiaItem) {
@@ -719,6 +722,7 @@ class Parser {
     if (item.name && item.name.includes('MK1')) {
       item.name = item.name.replace('MK1', 'Mk1')
     }
+    if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name)
   }
 
   /**
@@ -728,6 +732,7 @@ class Parser {
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
     item.transmutable = wikiaItem.transmutable
+    if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name)
   }
 
   /**

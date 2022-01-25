@@ -71,11 +71,11 @@ module.exports = async (oldFrame, imageUrls) => {
       sprint: Sprint,
       introduced: Introduced,
       sex: Sex,
-      vaulted: Vaulted || undefined
+      vaulted: Vaulted || undefined,
+      thumbnail: imageUrls[Image],
+      color: parseInt(await mapColors(oldFrame, imageUrls[Image]), 16)
     }
     newFrame = transformPolarities(oldFrame, newFrame)
-    newFrame.thumbnail = imageUrls[Image]
-    newFrame.color = parseInt(await mapColors(oldFrame, imageUrls[Image]), 16)
   } catch (error) {
     console.error(`Error parsing ${oldFrame.Name}`)
     console.error(error)
