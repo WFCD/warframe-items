@@ -1,5 +1,5 @@
 const builtUntradable = ['Warframe', 'Throwing', 'Shotgun', 'Rifle', 'Pistol', 'Melee', 'Sword And Shield']
-const tradableConditions = (i) => !(builtUntradable.includes(i.type) && i.name.match(/Prime/ig))
+const tradableConditions = (item) => !(builtUntradable.includes(item.type) && item.name.match(/Prime/ig))
 
 const tradableTypes = ['Upgrades', 'Arcane', 'Fish', 'Focus Lens', 'Relic', 'Secondary Mod', 'Shotgun Mod',
   'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod', 'Melee Mod', 'Arch-Melee Mod', 'Necramech Mod',

@@ -6,6 +6,7 @@ const { prefixes, suffixes } = require('../config/variants')
 const dedupe = require('./dedupe')
 const _ = require('lodash')
 const title = (str = '') => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+const tradable = require('./tradable')
 const warnings = {
   missingImage: [],
   missingDucats: [],
@@ -530,7 +531,7 @@ class Parser {
    * Limit items to tradable/untradable if specified.
    */
   addTradable (item) {
-    item.tradable = require('./tradable')(item)
+    item.tradable = tradable(item)
   }
 
   /**
