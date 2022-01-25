@@ -31,5 +31,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
+          extra_plugins: |
+            @semantic-release/npm@8.0.3
+          semantic_version: 19.0.2
           branches: |
             ['master']
