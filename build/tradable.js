@@ -21,6 +21,6 @@ module.exports = (item) => {
     (item.productCategory ? !item.productCategory.match(/(SpecialItems)/) : true)
   const tradableByType = !!(tradableTypes.includes(item.type) && notFiltered)
   const tradableByName = !!((item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered)
-  const tradableByProp = !!((item.isAugment) && notFiltered)
+  const tradableByProp = !!(item.isAugment && notFiltered)
   return (tradableByType || tradableByName || tradableByProp) && tradableConditions(item)
 }
