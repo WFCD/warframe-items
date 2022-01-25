@@ -167,6 +167,7 @@ declare module 'warframe-items' {
         secondsPerShot?: number;
         damagePerSecond?: number;
         trigger?: Trigger;
+        damage?: DamageTypes;
         damageTypes?: DamageTypes;
         areaAttack?: AreaAttack;
         secondary?: Secondary;
@@ -497,7 +498,8 @@ declare module 'warframe-items' {
         cold?: number;
         viral?: number;
         gas?: number;
-        void?: number
+        void?: number;
+        total?: number;
     }
     interface Drop {
         location: string;
