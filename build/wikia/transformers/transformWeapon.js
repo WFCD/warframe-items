@@ -1,5 +1,5 @@
-const POLARITIES = require('./polarities')
 const ELEMENTS = require('./elements')
+const transformPolarity = require('./transformPolarity')
 
 const damageTypes = [
   'Impact',
@@ -17,25 +17,6 @@ const damageTypes = [
   'Gas',
   'Void'
 ]
-
-const transformPolarities = ({ Polarities, StancePolarity }, targetWeapon) => {
-  const outputWeapon = { ...targetWeapon }
-  if (StancePolarity) {
-    outputWeapon.stancePolarity = (POLARITIES[StancePolarity] || StancePolarity || '').toLowerCase()
-    if (outputWeapon.stancePolarity && !outputWeapon.stancePolarity.length) outputWeapon.stancePolarity = undefined
-  }
-  if (Polarities) {
-    outputWeapon.polarities = Polarities.map(polarity => {
-      let out
-      out = (POLARITIES[polarity] || polarity || '').toLowerCase()
-      if (out && !out.length) out = undefined
-      return out
-    }).filter(p => p)
-  } else {
-    outputWeapon.polarities = []
-  }
-  return outputWeapon
-}
 
 const parseAttack = (Attack) => {
   const attack = {
@@ -192,7 +173,7 @@ module.exports = (oldWeapon, imageUrls) => {
       }
     }
 
-    newWeapon = transformPolarities(oldWeapon, newWeapon)
+    newWeapon = transformPolarity(oldWeapon, newWeapon)
   } catch (error) {
     console.error(`Error parsing ${oldWeapon.Name}`)
     console.error(error)
