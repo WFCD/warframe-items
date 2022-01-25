@@ -6,6 +6,7 @@ const { prefixes, suffixes } = require('../config/variants')
 const dedupe = require('./dedupe')
 const _ = require('lodash')
 const title = (str = '') => str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+const tradable = require('./tradable')
 const warnings = {
   missingImage: [],
   missingDucats: [],
@@ -13,7 +14,8 @@ const warnings = {
   missingVaultData: [],
   polarity: [],
   missingType: [],
-  failedImage: []
+  failedImage: [],
+  missingWikiThumb: []
 }
 
 const filterBps = (blueprint) => !bpConflicts.includes(blueprint.uniqueName)
@@ -107,6 +109,7 @@ class Parser {
 
     if (result.rewardName) result.uniqueName = result.rewardName
     this.addType(result)
+    // this.addDamage(result)
     this.sanitize(result)
     this.addImageName(result, data.manifest, previous)
     this.addCategory(result, category)
@@ -349,10 +352,37 @@ class Parser {
       else if (item.faction) {
         item.type = item.faction
         delete item.faction
+      } else if (item.productCategory) {
+        item.type = item.productCategory
       } else {
         if (!warnings.missingType.includes(title(item.name))) warnings.missingType.push(title(item.name))
         item.type = 'Misc'
       }
+    }
+  }
+
+  /**
+   * Parse out damage types from "damage per shot" array
+   * @param {Item} item
+   */
+  addDamage (item) {
+    if (!item.damagePerShot) return
+    const [impact, slash, puncture, heat, cold, electricity, toxin, blast, radiation, gas, magnetic, viral, corrosive] = item.damagePerShot
+    item.damage = {
+      total: item.totalDamage,
+      impact,
+      puncture,
+      slash,
+      heat,
+      cold,
+      electricity,
+      toxin,
+      blast,
+      radiation,
+      gas,
+      magnetic,
+      viral,
+      corrosive
     }
   }
 
@@ -502,21 +532,7 @@ class Parser {
    * Limit items to tradable/untradable if specified.
    */
   addTradable (item) {
-    const tradableTypes = ['Upgrades', 'Arcane', 'Fish', 'Focus Lens', 'Relic', 'Rifle Mod',
-      'Secondary Mod', 'Shotgun Mod', 'Warframe Mod', 'Companion Mod', 'Archwing Mod', 'K-Drive Mod',
-      'Melee Mod', 'Arch-Melee Mod', 'Necramech Mod', 'Cut Gem', 'Captura', 'Primary Mod', 'Sentinel Mod', 'Kubrow Mod', 'Kavat Mod']
-    const untradableTypes = ['Skin', 'Medallion', 'Key', 'Extractor', 'Pets', 'Ship Decoration',
-      'Glyph', 'Sigil', 'Fur Color', 'Syandana', 'Fur Pattern', 'Color Palette', 'Node', 'Exalted Weapon', 'Warframe']
-    const tradableRegex = /(Prime|Vandal|Wraith\w|\wWraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma)(?!Derelict)/i
-    const untradableRegex = /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))|Umbral|Sacrificial/i
-    const notFiltered = !untradableTypes.includes(item.type) &&
-      !item.name.match(untradableRegex) &&
-      !item.uniqueName.match(untradableRegex) &&
-      (item.productCategory ? !item.productCategory.match(/(SpecialItems)/) : true)
-    const tradableByType = !!(tradableTypes.includes(item.type) && notFiltered)
-    const tradableByName = !!((item.uniqueName.match(tradableRegex) || item.name.match(tradableRegex)) && notFiltered)
-    const tradableByProp = !!((item.isAugment) && notFiltered)
-    item.tradable = tradableByType || tradableByName || tradableByProp
+    item.tradable = tradable(item)
   }
 
   /**
@@ -675,23 +691,18 @@ class Parser {
     item.sprint = wikiaItem.sprint
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
+
+    if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name)
   }
 
   addWeaponWikiaData (item, wikiaItem) {
     item.attacks = wikiaItem.attacks
     item.ammo = wikiaItem.ammo
-    item.damage = wikiaItem.damage
     item.marketCost = wikiaItem.marketCost
     item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
     item.tags = wikiaItem.tags
     item.stancePolarity = wikiaItem.stancePolarity
-    item.type = title(wikiaItem.type) !== 'Misc' ? title(wikiaItem.type) : item.type
-
-    if (warnings.missingType.includes(title(item.name)) && title(item.type) !== 'Misc') {
-      warnings.missingType.splice(warnings.missingType.indexOf(title(item.name)), 1)
-    }
-
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
     this.introduced = wikiaItem.introduced
@@ -711,6 +722,7 @@ class Parser {
     if (item.name && item.name.includes('MK1')) {
       item.name = item.name.replace('MK1', 'Mk1')
     }
+    if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name)
   }
 
   /**
@@ -720,6 +732,7 @@ class Parser {
     item.wikiaThumbnail = wikiaItem.thumbnail
     item.wikiaUrl = wikiaItem.url
     item.transmutable = wikiaItem.transmutable
+    if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name)
   }
 
   /**

@@ -238,7 +238,7 @@ declare module 'warframe-items' {
         pellet?: Pellet;
         toxin?: number;
         electricity?: number;
-        damage?: string;
+        damage?: DamageTypes;
         blast?: number;
         corrosive?: number;
         radiation?: number;
@@ -589,6 +589,7 @@ declare module 'warframe-items' {
         'Claws' |
         'Color Palette' |
         'Companion Mod' |
+        'Companion Weapon' |
         'Conservation Tag' |
         'Creature Mod' |
         'Crossbow' |
@@ -699,6 +700,7 @@ declare module 'warframe-items' {
         'Warframe' |
         'Warframe Mod' |
         'Whip' |
+        'Zaw Component' |
         'Zaw Dagger / Staff' |
         'Zaw Machete / Hammer' |
         'Zaw Machete / Polearm' |
