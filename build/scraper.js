@@ -10,7 +10,7 @@ const cheerio = require('cheerio')
 const exportCache = require('../data/cache/.export.json')
 const locales = require('../config/locales.json')
 const ModScraper = require('./wikia/scrapers/ModScraper')
-// const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
+const WeaponScraper = require('./wikia/scrapers/WeaponScraper')
 const WarframeScraper = require('./wikia/scrapers/WarframeScraper')
 const VersionScraper = require('./wikia/scrapers/VersionScraper')
 // eslint-disable-next-line no-control-regex
@@ -160,7 +160,7 @@ class Scraper {
     })
     bar.tick()
 
-    const weapons = [] // await new WeaponScraper().scrape()
+    const weapons = await new WeaponScraper().scrape()
     bar.tick()
     const warframes = await new WarframeScraper().scrape()
     bar.tick()
