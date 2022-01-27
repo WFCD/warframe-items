@@ -35,6 +35,19 @@ const dropComparator = (dropA, dropB) => {
   return keyA.localeCompare(keyB)
 }
 
+/**
+ * @typedef {Object} RawDrop
+ * @property {string} place
+ * @property {string} item
+ * @property {number} chance
+ * @property {string} rarity
+ */
+
+/**
+ * Map raw drops to minimal drops
+ * @param {RawDrop} drop raw drop info to map
+ * @returns {Drop}
+ */
 const dropMap = (drop) => {
   return {
     location: drop.place.replace('<b>', '').replace('</b>', ''),
