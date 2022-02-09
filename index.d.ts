@@ -436,6 +436,7 @@ declare module 'warframe-items' {
         'LongGuns' |
         'MechSuits' |
         'Melee' |
+        'OperatorAmps' |
         'Pistols' |
         'SentinelWeapons' |
         'Sentinels' |
