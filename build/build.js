@@ -202,7 +202,7 @@ class Build {
         })
       } catch (e) {
         // swallow error
-        console.error(e)
+        // console.error(e)
       }
     }
   }

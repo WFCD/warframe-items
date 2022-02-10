@@ -82,7 +82,7 @@ const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialPro
   }
 }
 
-module.exports = (oldWeapon, imageUrls) => {
+module.exports = (oldWeapon, imageUrls, blueprints) => {
   let newWeapon
   if (!oldWeapon || !oldWeapon.Name) {
     return undefined
@@ -92,7 +92,6 @@ module.exports = (oldWeapon, imageUrls) => {
       Mastery,
       Type,
       Class,
-      Cost,
       NormalAttack,
       MaxAmmo,
       Disposition,
@@ -140,8 +139,8 @@ module.exports = (oldWeapon, imageUrls) => {
       tags: Traits || [],
       vaulted: (Traits || []).includes('Vaulted'),
       introduced: Introduced,
-      marketCost: Cost && Cost.MarketCost,
-      bpCost: Cost && Cost.BPCost,
+      marketCost: blueprints[Name] && blueprints[Name].MarketCost,
+      bpCost: blueprints[Name] && blueprints[Name].BPCost,
       thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
       attacks: [
         NormalAttack && parseAttack(NormalAttack),
