@@ -4,6 +4,7 @@ const cheerio = require('cheerio')
 const fs = require('fs-extra')
 const cmd = require('node-cmd')
 const fetch = require('node-fetch')
+const blueprintUrl = 'https://warframe.fandom.com/wiki/Module:Blueprints/data?action=edit'
 
 const getLuaData = async (url) => {
   try {
@@ -115,10 +116,17 @@ const nameCompare = (first, second) => {
   return 0
 }
 
+let blueprints
+
+(async () => {
+  const { Blueprints, Suits } = await convertLuaDataToJson(await getLuaData(blueprintUrl), 'BlueprintsData')
+  blueprints = { ...Blueprints, ...Suits }
+})()
+
 /**
  * Scrape Wikia data from data modules
  */
-class WikiaDataScraper {
+module.exports = class WikiaDataScraper {
   constructor (url, luaObjectName, transformFunction) {
     if (Array.isArray(url)) {
       this.urls = url
@@ -175,7 +183,7 @@ class WikiaDataScraper {
       for (const thingName of Object.keys(jsonData[`${this.luaObjectName}s`])) {
         const thingToTransform = jsonData[`${this.luaObjectName}s`][thingName]
         if (thingToTransform && !thingToTransform.Name) thingToTransform.Name = thingName
-        const transformedThing = await this.transformFunction(thingToTransform, imageUrls)
+        const transformedThing = await this.transformFunction(thingToTransform, imageUrls, blueprints)
         things.push(transformedThing)
       }
 
@@ -187,5 +195,3 @@ class WikiaDataScraper {
     return things
   }
 }
-
-module.exports = WikiaDataScraper
