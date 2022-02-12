@@ -698,6 +698,8 @@ class Parser {
     item.conclave = wikiaItem.conclave
     item.color = wikiaItem.color
     item.introduced = wikiaItem.introduced
+    item.marketCost = wikiaItem.marketCost
+    item.bpCost = wikiaItem.bpCost
     item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
     item.sex = wikiaItem.sex
@@ -712,6 +714,7 @@ class Parser {
     item.attacks = wikiaItem.attacks
     item.ammo = wikiaItem.ammo
     item.marketCost = wikiaItem.marketCost
+    item.bpCost = wikiaItem.bpCost
     item.masteryReq = item.masteryReq || wikiaItem.mr
     item.polarities = wikiaItem.polarities
     item.tags = wikiaItem.tags

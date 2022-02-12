@@ -21,7 +21,7 @@ const mapColors = async (oldFrame, imageUrl) => {
   }
 }
 
-module.exports = async (oldFrame, imageUrls) => {
+module.exports = async (oldFrame, imageUrls, blueprints) => {
   let newFrame
   if (!oldFrame || !oldFrame.Name) {
     return undefined
@@ -53,7 +53,9 @@ module.exports = async (oldFrame, imageUrls) => {
       sex: Sex,
       vaulted: Vaulted || undefined,
       thumbnail: imageUrls[Image],
-      color: parseInt(await mapColors(oldFrame, imageUrls[Image]), 16)
+      color: parseInt(await mapColors(oldFrame, imageUrls[Image]), 16),
+      marketCost: blueprints[Name] && blueprints[Name].MarketCost,
+      bpCost: blueprints[Name] && blueprints[Name].BPCost
     }
     newFrame = transformPolarity(oldFrame, newFrame)
   } catch (error) {

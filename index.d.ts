@@ -66,6 +66,7 @@ declare module 'warframe-items' {
         damage?: number | string;
         damageTypes?: DamageTypes;
         marketCost?: number | '';
+        bpCost?: number | '';
         flight?: number | '???';
         polarities?: Polarity[];
         projectile?: Projectile;
@@ -184,7 +185,8 @@ declare module 'warframe-items' {
         damage?: number | string;
         damageTypes?: DamageTypes;
         flight?: number;
-        marketCost?: number;
+        marketCost?: number | '';
+        bpCost?: number | '';
         polarities?: Polarity[];
         stancePolarity?: Polarity;
         projectile?: Projectile;
