@@ -2,27 +2,7 @@
 
 const getColors = require('get-image-colors')
 const imageDownloader = require('image-downloader')
-const POLARITIES = require('./polarities')
-
-const transformPolarities = ({ Polarities, AuraPolarity }, targetWeapon) => {
-  const outputFrame = { ...targetWeapon }
-  if (AuraPolarity) {
-    outputFrame.auraPolarity = (POLARITIES[AuraPolarity] || AuraPolarity || '').toLowerCase()
-    if (outputFrame.auraPolarity && !outputFrame.auraPolarity.length) outputFrame.auraPolarity = undefined
-    if (outputFrame.auraPolarity === 'none') outputFrame.auraPolarity = undefined
-  }
-  if (Polarities) {
-    outputFrame.polarities = Polarities.map(polarity => {
-      let out
-      out = (POLARITIES[polarity] || polarity || '').toLowerCase()
-      if (out && !out.length) out = undefined
-      return out
-    }).filter(p => p)
-  } else {
-    outputFrame.polarities = []
-  }
-  return outputFrame
-}
+const transformPolarity = require('./transformPolarity')
 
 const mapColors = async (oldFrame, imageUrl) => {
   if (!imageUrl) return 0
@@ -75,7 +55,7 @@ module.exports = async (oldFrame, imageUrls) => {
       thumbnail: imageUrls[Image],
       color: parseInt(await mapColors(oldFrame, imageUrls[Image]), 16)
     }
-    newFrame = transformPolarities(oldFrame, newFrame)
+    newFrame = transformPolarity(oldFrame, newFrame)
   } catch (error) {
     console.error(`Error parsing ${oldFrame.Name}`)
     console.error(error)
