@@ -63,7 +63,7 @@ jobs:
     needs: [build, lint]
     strategy:
       matrix:
-        node-version: [12, 14, 16, 'lts/*']
+        node-version: [10, 12, 14, 16, 'lts/*']
     steps:
     - uses: actions/checkout@v2
     - uses: actions/cache@v2
@@ -74,7 +74,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Install Dependencies
-      run: npm ci
+    - name: Install Prod Dependencies
+      run: npm ci --only=prod
+    - name: Install Test Dependencies
+      run: npm install -g mocha decache assert nyc
     - name: Test
       run: npm test
