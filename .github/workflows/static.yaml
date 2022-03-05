@@ -7,13 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: ['lts/*']
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - name: Install Dependencies
       run: npm install
     - run: npm run lint
@@ -23,7 +24,7 @@ jobs:
     needs: [ lint ]
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: ['lts/*']
     steps:
     - uses: actions/checkout@v2
     - uses: leafo/gh-actions-lua@v8.0.0
@@ -31,9 +32,10 @@ jobs:
       with:
         path: data/json
         key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - run: npm install
     - run: npm run build
   types:
@@ -42,17 +44,18 @@ jobs:
     needs: [ build, lint ]
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [ 'lts/*' ]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install
+          cache: 'npm'
+      - run: npm ci
       - run: npm run typings
   test:
     name: Test
@@ -60,18 +63,20 @@ jobs:
     needs: [build, lint]
     strategy:
       matrix:
-        node-version: [11.x, 12.x, 13.x, 14.x, 15.x, 16.x]
+        node-version: [10, 12, 14, 16, 'lts/*']
     steps:
     - uses: actions/checkout@v2
     - uses: actions/cache@v2
       with:
         path: data/json
         key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - name: Install Main Dependencies
-      run: npm ci
+      run: npm ci --only=prod
     - name: Install Test Dependencies
       run: npm install mocha decache assert nyc
-    - run: npm test
+    - name: Test
+      run: npm test
