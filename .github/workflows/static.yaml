@@ -73,10 +73,9 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
     - name: Install Prod Dependencies
       run: npm ci --only=prod
     - name: Install Test Dependencies
-      run: npm install -g mocha decache assert nyc
+      run: npm install mocha decache assert nyc
     - name: Test
       run: npm test
