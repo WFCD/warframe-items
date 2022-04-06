@@ -160,8 +160,6 @@ class Build {
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`
     const basePath = path.join(__dirname, '../data/img/')
     const filePath = path.join(basePath, item.imageName)
-    const sizeBig = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Relics', 'Sentinels', 'Archwing', 'Skins', 'Pets', 'Arcanes']
-    const sizeMedium = ['Misc', 'Fish']
     const hash = manifest.find(i => i.uniqueName === item.uniqueName).fileTime
     const cached = imageCache.find(c => c.uniqueName === item.uniqueName)
 
@@ -184,13 +182,7 @@ class Build {
         const image = await get(imageUrl)
         this.updateCache(item, cached, hash, isComponent)
 
-        if (sizeBig.includes(item.category) || isComponent) {
-          await sharp(image).resize({ fit: 'fill', height: 342, width: 512 }).toFile(filePath)
-        } else if (sizeMedium.includes(item.category)) {
-          await sharp(image).resize({ fit: 'fill', height: 342, width: 512 }).toFile(filePath)
-        } else {
-          await sharp(image).toFile(filePath)
-        }
+        await sharp(image).toFile(filePath)
         await minify([filePath], {
           destination: basePath,
           plugins: [
