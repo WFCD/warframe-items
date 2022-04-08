@@ -9,6 +9,7 @@
     "test": "nyc mocha",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "postinstall": "install-peerdeps @wfcd/eslint-config@^1.1.4 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
     "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --all-errors --allowUnionTypes --verbose"
@@ -31,22 +32,19 @@
     "@types/imagemin-jpegtran": "^5.0.1",
     "@types/node-fetch": "^2.5.12",
     "@types/sharp": "^0.30.0",
+    "@wfcd/eslint-config": "^1.1.5",
     "ajv-cli": "^5.0.0",
     "cheerio": "^1.0.0-rc.3",
     "colors": "1.4.0",
     "decache": "^4.6.0",
-    "eslint": "^8.2.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
     "fs-extra": "^10.0.0",
     "get-image-colors": "^4.0.0",
     "image-downloader": "^4.0.3",
     "imagemin": "^7.0.1",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
+    "install-peerdeps": "^2.0.3",
     "lodash": "^4.17.19",
     "lua.vm.js": "0.0.1",
     "lzma": "^2.3.2",
@@ -61,22 +59,17 @@
     "warframe-patchlogs": "^1.708.0"
   },
   "eslintConfig": {
-    "extends": [
-      "standard"
+    "extends": ["@wfcd", "plugin:you-dont-need-lodash-underscore/compatible"]
+  },
+  "prettier": "@wfcd/eslint-config/prettier",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
     ],
-    "globals": {
-      "describe": "readonly",
-      "it": "readonly",
-      "beforeEach": "readonly",
-      "afterEach": "readonly",
-      "after": "readonly"
-    },
-    "rules": {
-      "brace-style": 0
-    },
-    "parserOptions": {
-      "ecmaVersion": "latest"
-    }
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-private-methods"
+    ]
   },
   "mocha": {
     "slow": 10000,
@@ -90,7 +83,9 @@
       "eslintConfig",
       "scripts",
       "clean-package",
-      "nyc"
+      "nyc",
+      "babel",
+      "prettier"
     ]
   },
   "nyc": {
