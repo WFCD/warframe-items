@@ -37,8 +37,6 @@
     "cheerio": "^1.0.0-rc.3",
     "colors": "1.4.0",
     "decache": "^4.6.0",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
-    "fs-extra": "^10.0.0",
     "get-image-colors": "^4.0.0",
     "image-downloader": "^4.0.3",
     "imagemin": "^7.0.1",
@@ -59,7 +57,9 @@
     "warframe-patchlogs": "^1.708.0"
   },
   "eslintConfig": {
-    "extends": ["@wfcd", "plugin:you-dont-need-lodash-underscore/compatible"]
+    "extends": [
+      "@wfcd"
+    ]
   },
   "prettier": "@wfcd/eslint-config/prettier",
   "babel": {

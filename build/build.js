@@ -1,6 +1,6 @@
 'use strict';
 
-const fs = require('node:fs/promises');
+const fs = require('fs/promises');
 const path = require('path');
 const crypto = require('crypto');
 const minify = require('imagemin');
@@ -45,11 +45,10 @@ class Build {
 
     // Log number of warnings at the end of the script
     let warningNum = 0;
-    await Promise.all(
-      Object.keys(parsed.warnings).map(async (warning) => {
-        warningNum += parsed.warnings[warning].length;
-      })
-    );
+    // eslint-disable-next-line no-restricted-syntax
+    for (const warning of Object.keys(parsed.warnings)) {
+      warningNum += parsed.warnings[warning].length;
+    }
     console.log(`\nFinished with ${warningNum} warnings.`);
   }
 
@@ -61,9 +60,13 @@ class Build {
    */
   applyCustomCategories(data) {
     const result = {};
-    data.forEach((chunk) => {
-      if (chunk.category === 'Recipes') return; // Skip blueprints
-      chunk.data.forEach((item) => {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const chunk of data) {
+      if (chunk.category === 'Recipes') continue; // Skip blueprints
+
+      for (let i = 0; i < chunk.data.length; i += 1) {
+        const item = chunk.data[i];
+
         // write an additional file for the desired custom categories
         if (item.productCategory && allowedCustomCategories.includes(item.productCategory)) {
           if (result[item.productCategory]) {
@@ -71,7 +74,7 @@ class Build {
           } else {
             result[item.productCategory] = [item];
           }
-          return;
+          continue;
         }
 
         if (result[item.category]) {
@@ -79,15 +82,15 @@ class Build {
         } else {
           result[item.category] = [item];
         }
-      });
-    });
+      }
+    }
 
     return result;
   }
 
   /**
    * Generate JSON file for each category and one for all combined.
-   * @param {Array<string>} categories list of categories to save and separate
+   * @param {Object<string, Array<module:warframe-items.Item>>} categories list of categories to save and separate
    * @param {Object<Partial<module:warframe-items.Item>>} i18n internationalization partials of Items
    * @returns {Array<module:warframe-items.Item>}
    * @async
@@ -104,23 +107,20 @@ class Build {
     };
 
     // Category names are provided by this.applyCustomCategories
-    await Promise.all(
-      categories.map(
-        categories.map(async (category) => {
-          const data = categories[category].sort(sort);
-          all = all.concat(data);
-          await fs.writeFile(
-            path.join(__dirname, `../data/json/${category}.json`),
-            JSON.stringify(JSON.parse(stringify(data)))
-          );
-        })
-      )
-    );
+    // eslint-disable-next-line guard-for-in,no-restricted-syntax
+    for (const category in categories) {
+      const data = categories[category].sort(sort);
+      all = all.concat(data);
+      await fs.writeFile(
+        path.join(__dirname, `../data/json/${category}.json`),
+        JSON.stringify(JSON.parse(stringify(data)))
+      );
+    }
 
     // All.json (all items in one file)
     all.sort(sort);
-    fs.writeFileSync(path.join(__dirname, '../data/json/All.json'), stringify(all));
-    fs.writeFileSync(path.join(__dirname, '../data/json/i18n.json'), stringify(i18n));
+    await fs.writeFile(path.join(__dirname, '../data/json/All.json'), stringify(all));
+    await fs.writeFile(path.join(__dirname, '../data/json/i18n.json'), stringify(i18n));
 
     return all;
   }
@@ -131,7 +131,8 @@ class Build {
    * @property {Array<string>} missingDucats list of item names for those missing ducat values
    * @property {Array<module:warframe-items.Item.name>} missingComponents list of item names for those
    *    missing components (usually weapons)
-   * @property {Array<module:warframe-items.Item.name>} missingVaultData list of item names for those missing vault data
+   * @property {Array<string<module:warframe-items.Item.name>>} missingVaultData list
+   *  of item names for those missing vault data
    * @property {Array<Array<module:warframe-items.Item.name, module:warframe-items.Polarity>>} polarity
    *  list of item names for those missing polarities
    * @property {Array<module:warframe-items.Item.name>} missingType list of item names for those missing item types
@@ -164,21 +165,19 @@ class Build {
     const bar = new Progress('Fetching Images', items.length);
     const duplicates = []; // Don't download component images or relics twice
 
-    await Promise.all(
-      items.map(async (item) => {
-        // Save image for parent item
-        await this.saveImage(item, false, duplicates, manifest);
-        // Save images for components if necessary
-        if (item.components) {
-          await Promise.all(
-            item.components.map(async (component) => {
-              return this.saveImage(component, true, duplicates, manifest);
-            })
-          );
+    // eslint-disable-next-line no-restricted-syntax
+    for (const item of items) {
+      // Save image for parent item
+      await this.saveImage(item, false, duplicates, manifest);
+      // Save images for components if necessary
+      if (item.components) {
+        // eslint-disable-next-line no-restricted-syntax
+        for (const component of item.components) {
+          await this.saveImage(component, true, duplicates, manifest);
         }
-        bar.tick();
-      })
-    );
+      }
+      bar.tick();
+    }
 
     // write the manifests after images have all succeeded
     exportCache.Manifest.hash = manifestHash;

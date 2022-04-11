@@ -108,13 +108,15 @@ class Parser {
     // Modify data from API to fit our schema. Note that we'll
     // skip 'Recipes' (Blueprints) as their data will be attached
     // to the parent item instead.
-    data.api.forEach((chunk) => {
-      if (chunk.category === 'Recipes') return;
+    // eslint-disable-next-line no-restricted-syntax
+    for (const chunk of data.api) {
+      if (chunk.category === 'Recipes') continue;
+      const parsedData = this.process(chunk.data, chunk.category, blueprints, data);
       result.push({
         category: chunk.category,
-        data: this.process(chunk.data, chunk.category, blueprints, data),
+        data: parsedData,
       });
-    });
+    }
 
     Object.keys(warnings).forEach((key) => {
       warnings[key].sort();
@@ -130,7 +132,7 @@ class Parser {
   /**
    * Go through every category on the API and adapt to our schema.
    * @param {Array<Partial<module:warframe-items.Item>>} items items to be processed
-   * @param {string} category Category being parsed
+   * @param {string<module:warframe-items.Category>} category Category being parsed
    * @param {Array<Partial<module:warframe-items.Item>>} blueprints items known to be blueprints
    * @param {RawItemData} data context data dependencies
    * @returns {Array<module:warframe-items.Item>}
@@ -139,26 +141,31 @@ class Parser {
     const result = [];
 
     const bar = new Progress(`Parsing ${category}`, items.length);
-    items.forEach((item, index) => {
+    if (!items.length) {
+      bar.interrupt(`No ${category}`);
+      return [];
+    }
+    for (let index = 0; index < items.length; index += 1) {
+      let item = items[index];
       // Skip Weapon Components as they'll be accessible
       // through their parent. Warframe components are an exception
       // since they are not items itself, but have components.
-      if (item.uniqueName && item.uniqueName.includes('/Recipes')) return;
+      if (item.uniqueName && item.uniqueName.includes('/Recipes')) continue;
 
       item = this.addComponents(item, category, blueprints, data);
       item = this.filter(item, category, data, items[index - 1]);
       result.push(item);
       bar.tick();
-    });
+    }
     return result;
   }
 
   /**
    * Modify individual keys of API data.
    * @param {Partial<module:warframe-items.Item>} original item to be processed
-   * @param {string} category Category being parsed
+   * @param {string<module:warframe-items.Category>} category Category being parsed
    * @param {RawItemData} data context data dependencies
-   * @param {Partial<module:warframe-items.Item>} previous item previous to this in the list
+   * @param {Partial<module:warframe-items.Item>} [previous] item previous to this in the list
    * @returns {Partial<module:warframe-items.Item>}
    */
   filter(original, category, data, previous) {
@@ -186,7 +193,7 @@ class Parser {
    * the build process without errors. Useful when you don't wanna
    * wait several minutes to test something. A quick version of {@link #filter}.
    * @param {Partial<module:warframe-items.Item>} original item to be processed
-   * @param {string} category Category being parsed
+   * @param {module:warframe-items.Category} category Category being parsed
    * @param {RawItemData} data context data dependencies
    * @param {Partial<module:warframe-items.Item>} previous item previous to this in the list
    * @returns {Partial<module:warframe-items.Item>}
@@ -210,10 +217,10 @@ class Parser {
    * won't store the blueprint as independent item as all its data is
    * attached to the parent.
    * @param {Partial<module:warframe-items.Item>} item item to be processed
-   * @param {string} category Category being parsed
+   * @param {string<module:warframe-items.Category>} category Category being parsed
    * @param {Array<Partial<module:warframe-items.Item>>} blueprints items known to be blueprints
    * @param {RawItemData} data context data dependencies
-   * @param {boolean} secondPass whether this is the second pass adding components, for nested component data
+   * @param {boolean} [secondPass] whether this is the second pass adding components, for nested component data
    * @returns {Partial<module:warframe-items.Item>}
    */
   addComponents(item, category, blueprints, data, secondPass) {
@@ -223,19 +230,24 @@ class Parser {
     const result = _.cloneDeep(item);
 
     // Look for original component entry in all categories
-    blueprint.ingredients.forEach((ingredient) => {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const ingredient of blueprint.ingredients) {
       let component;
-      data.api.every((catgegoryLookup) => {
-        component = catgegoryLookup.data.find((i) => i.uniqueName === ingredient.ItemType);
-        return !component;
-      });
+
+      // eslint-disable-next-line no-restricted-syntax
+      for (const categoryData of data.api) {
+        component = categoryData.data.find((i) => i.uniqueName === ingredient.ItemType);
+        if (component) break;
+      }
+
       if (!component) {
         warnings.missingComponents.push(ingredient.ItemType);
-        return;
+        continue;
       }
+
       component.itemCount = ingredient.ItemCount;
       components.push(component);
-    });
+    }
 
     // Add Blueprint itself
     components.push({
@@ -249,7 +261,7 @@ class Parser {
     // Attach relevant keys from blueprint to parent
     this.addBlueprintData(result, blueprint);
     this.sanitizeComponents(components, result, item, category, blueprints, data, secondPass);
-    Object.entries(components).forEach(this.applyOverrides);
+    components.forEach(this.applyOverrides);
     return result;
   }
 
@@ -273,27 +285,27 @@ class Parser {
    * @param {Array<module:warframe-items.Component>} components to be sanitized
    * @param {module:warframe-items.Item} result item to sanitize components on
    * @param {module:warframe-items.Item} item item to compare to
-   * @param {string} category that is being sanitized
+   * @param {string<module:warframe-items.Category>} category that is being sanitized
    * @param {Array<module:warframe-items.Item>} blueprints to provide build information
-   * @param {Object<string, Array<module:warframe-items.Item>>} data raw context data
+   * @param {RawItemData} data raw context data
    * @param {boolean} secondPass whether this is the second pass being processed to clean up internal data
    */
   sanitizeComponents(components, result, item, category, blueprints, data, secondPass) {
-    components.forEach((component) => {
-      component.parent = title(item.name); // Direct parent for this pass
+    for (let i = 0; i < components.length; i += 1) {
+      components[i].parent = title(item.name); // Direct parent for this pass
       // If a .parents key already exists from another item, add our
       // component additionally, otherwise create one. This mutates the
       // original component object.
-      if (component.parents) {
-        if (!component.parents.includes(title(item.name))) {
-          component.parents.push(title(item.name));
-          component.parents.sort((a, b) => a.localeCompare(b));
+      if (components[i].parents) {
+        if (!components[i].parents.includes(title(item.name))) {
+          components[i].parents.push(title(item.name));
+          components[i].parents.sort((a, b) => a.localeCompare(b));
         }
       } else {
-        component.parents = [title(item.name)];
+        components[i].parents = [title(item.name)];
       }
-      const override = this.filter(component, category, data);
-      delete component.parent;
+      const override = this.filter(components[i], category, data);
+      delete components[i].parent;
       delete override.parent;
       delete override.parents;
 
@@ -303,14 +315,14 @@ class Parser {
       if (override.uniqueName.includes('/Recipes') || item.tradable) {
         override.name = override.name.replace(`${title(item.name).replace(/<Archwing> /, '')} `, '');
       }
-      component = override;
+      components[i] = override;
 
       // Add component's components one level deep. Disabled for now because of
       // too much duplicate data.
       if (process.env.SECOND_PASS === 'true' && !secondPass) {
-        component = this.addComponents(component, category, blueprints, data, true);
+        components[i] = this.addComponents(components[i], category, blueprints, data, true);
       }
-    });
+    }
 
     // Sort to avoid "fake" updates due to order when data is rebuilt
     result.components = components.sort((a, b) => a.name.localeCompare(b.name));
@@ -330,9 +342,10 @@ class Parser {
 
     // Capitalize properties which are usually all uppercase
     const props = ['name', 'type', 'trigger', 'noise', 'rarity', 'faction'];
-    props.forEach((prop) => {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const prop of props) {
       if (item[prop]) item[prop] = title(item[prop]);
-    });
+    }
 
     // Remove <Archwing> from archwing names, add archwing key instead
     if (
@@ -353,11 +366,12 @@ class Parser {
     // Relics don't have their grade in the name for some reason
     if (item.type === 'Relic') {
       const grades = require('../config/relicGrades.json');
-      grades.forEach((grade) => {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const grade of grades) {
         if (item.uniqueName.includes(grade.id)) {
           item.name = item.name.replace('Relic', grade.refinement);
         }
-      });
+      }
     }
 
     // Use `name` key for abilities as well.
@@ -404,23 +418,23 @@ class Parser {
   addType(item) {
     if (item.parent) return;
     const types = require('../config/itemTypes.json');
-    types.every((type) => {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const type of types) {
       const contains = type.regex ? new RegExp(type.id, 'ig').test(item.uniqueName) : item.uniqueName.includes(type.id);
       if (contains) {
         if (type.append) item.type = `${item.type}${type.name}`;
         else item.type = type.name;
         // if (item.type !== type.name) console.error(`${item.name} didn't update types`)
-        return false;
+        break;
       }
-      return true;
-    });
+    }
 
     // No type assigned? Add 'Misc'.
     if (!item.type) {
       if ((item.description || '').includes('This resource')) item.type = 'Resource';
       else if (item.faction) {
         item.type = item.faction;
-        delete item.faction;
+        item.faction = undefined;
       } else if (item.productCategory) {
         item.type = item.productCategory;
       } else {
@@ -458,9 +472,9 @@ class Parser {
 
   /**
    * Add image name for images that will be fetched outside this scraper.
-   * @param {module:warframe-items.Item} item to have image name added
+   * @param {Partial<module:warframe-items.Item>} item to have image name added
    * @param {ImageManifest.Manifest} manifest to look up image from
-   * @param {module:warframe-items.Item} previous item to look up comparatively
+   * @param {Partial<module:warframe-items.Item>} [previous] item to look up comparatively
    */
   addImageName(item, manifest, previous) {
     const image = manifest.find((i) => i.uniqueName === item.uniqueName);
@@ -509,7 +523,8 @@ class Parser {
    * Add more meaningful item categories. These will be used to determine the
    * output file name.
    * @param {module:warframe-items.Item} item to have category massaged
-   * @param {string} category to parse and apply into {@link module:warframe-items.Category|categories}
+   * @param {string<module:warframe-items.Category>} category to parse and apply into
+   *    {@link module:warframe-items.Category|categories}
    */
   addCategory(item, category) {
     // Don't add categories for components when the parent already has one
@@ -558,7 +573,7 @@ class Parser {
       case 'Warframes':
         if (item.isArchwing) item.category = 'Archwing';
         else item.category = 'Warframes';
-        delete item.isArchwing;
+        item.isArchwing = undefined;
         break;
 
       case 'Weapons':
@@ -576,7 +591,7 @@ class Parser {
         else if (item.slot === 1) item.category = 'Primary';
         else if (item.type === 'Pets') item.category = 'Pets';
         else item.category = 'Misc';
-        delete item.isArchwing;
+        item.isArchwing = undefined;
         break;
 
       case 'Resources':
@@ -621,16 +636,17 @@ class Parser {
    */
   addDucats(item, ducats) {
     if (!item.name.includes('Prime') || !item.components) return;
-    item.components.forEach((component) => {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const component of item.components) {
       if (component.primeSellingPrice) component.ducats = component.primeSellingPrice;
 
-      if (!component.tradable) return;
+      if (!component.tradable) continue;
       const wikiaItem = ducats.find((d) => d.name.includes(`${item.name} ${component.name}`));
 
       if (wikiaItem && wikiaItem.ducats) component.ducats = wikiaItem.ducats;
       else if (!component.ducats && !(item.name.includes('Prime') && component.name.includes('Prime')))
         warnings.missingDucats.push(`${item.name} ${component.name}`);
-    });
+    }
   }
 
   /**
@@ -643,10 +659,10 @@ class Parser {
     if (!drops.changed) {
       // Get drop rates for components if available...
       if (item.components) {
-        item.components.forEach((component) => {
+        // eslint-disable-next-line no-restricted-syntax
+        for (const component of item.components) {
           const previous = previousBuild.find((i) => i.name === item.name && item.category !== 'Node');
-          // find a way to speed this up to jump out of #addDropRate, so we don't go through every item component
-          if (!previous?.components) return;
+          if (!previous || !previous.components) return;
 
           const saved = previous.components.find((c) => c.name === component.name);
           if (saved && saved.drops) {
@@ -656,7 +672,7 @@ class Parser {
             });
             component.drops = saved.drops;
           }
-        });
+        }
       } else {
         // Otherwise attach to main item
         const saved = previousBuild.find((i) => i.name === item.name);
@@ -672,7 +688,8 @@ class Parser {
 
     // Don't look for drop rates on item itself if it has components.
     if (item.components) {
-      item.components.forEach((component) => {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const component of item.components) {
         const data =
           (component.uniqueName.includes('/Weapons/') &&
             !component.uniqueName.includes('/WeaponParts/') &&
@@ -681,7 +698,7 @@ class Parser {
             ? this.findDropLocations(component.name, drops.rates, true)
             : this.findDropLocations(`${item.name} ${component.name}`, drops.rates, true);
         component.drops = data.length ? data : [];
-      });
+      }
     } else if (item.name !== 'Blueprint') {
       // Last word of relic is intact/rad, etc instead of 'Relic'
       const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name;
@@ -962,7 +979,7 @@ class Parser {
     const resultArray = [];
     const i18nArr = {};
     Object.entries(data)
-      .map(([, arr]) => arr)
+      .map(([, a]) => a)
       .forEach((sub) => resultArray.push(...sub));
     const bar = new Progress('Parsing i18n', resultArray.length);
     resultArray.forEach((entry) => {

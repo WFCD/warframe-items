@@ -1,9 +1,14 @@
 'use strict';
 
 const cheerio = require('cheerio');
-const fs = require('fs-extra');
+const fs = require('fs/promises');
+const os = require('os');
+const path = require('path');
+const { promisify } = require('util');
 const cmd = require('node-cmd');
 const fetch = require('node-fetch');
+
+const run = promisify(cmd.get);
 
 const blueprintUrl = 'https://warframe.fandom.com/wiki/Module:Blueprints/data?action=edit';
 
@@ -33,31 +38,24 @@ print(JSON:encode(${luaDataName}Data))
 `;
 
   // Run updated JSON lua script
-  if (!(await fs.exists('./tmp'))) {
-    await fs.mkdir('./tmp');
-  }
-  await fs.writeFile('./tmp/dataraw.lua', luaToJsonScript, {
+  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'temp-'));
+  const lua = path.join(temp, 'dataraw.lua');
+  const json = path.join(temp, 'dataraw.json');
+  await fs.writeFile(path.join(temp, 'dataraw.lua'), luaToJsonScript, {
     encoding: 'utf8',
     flag: 'w',
   });
 
   try {
-    await new Promise((resolve, reject) =>
-      cmd.get('lua ./tmp/dataraw.lua > ./tmp/dataraw.json', (err) => {
-        if (!err) {
-          resolve();
-        } else {
-          reject(err);
-          throw new Error(err);
-        }
-      })
-    );
+    await run(`lua ${lua} > ${json}`);
+    const dataRaw = await fs.readFile(json, { encoding: 'utf8' });
+    return JSON.parse(dataRaw);
   } catch (err) {
     console.error(`Failed to execute modified lua script:\n${err}`);
     console.error(err);
+  } finally {
+    await fs.rm(temp, { recursive: true, force: true });
   }
-  const dataRaw = await fs.readFile('./tmp/dataraw.json', 'UTF-8');
-  return JSON.parse(dataRaw);
 };
 
 const getImageUrls = async (things) => {
@@ -169,10 +167,6 @@ module.exports = class WikiaDataScraper {
 
     if (!Object.keys(jsonData).length) {
       throw new Error('No json data');
-    }
-
-    if (!(await fs.exists('./build'))) {
-      await fs.mkdir('./build');
     }
     const imageUrls = await getImageUrls(jsonData[`${this.luaObjectName}s`]);
 
