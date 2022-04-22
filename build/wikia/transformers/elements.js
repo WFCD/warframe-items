@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   Electricity: 'electricity',
   Corrosive: 'corrosive',
@@ -9,5 +11,5 @@ module.exports = {
   Viral: 'viral',
   Magnetic: 'magnetic',
   Gas: 'gas',
-  Void: 'void'
-}
+  Void: 'void',
+};

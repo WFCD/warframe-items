@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   Bar: 'naramon',
   V: 'madurai',
@@ -5,5 +7,5 @@ module.exports = {
   U: 'umbra',
   Ability: 'zenurik',
   R: 'unairu',
-  Aura: 'aura'
-}
+  Aura: 'aura',
+};

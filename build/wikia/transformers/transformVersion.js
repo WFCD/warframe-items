@@ -1,31 +1,25 @@
-'use strict'
+'use strict';
 
 module.exports = async (oldVersion) => {
-  let newVersion
+  let newVersion;
 
   if (!oldVersion || !oldVersion.Name) {
-    return undefined
+    return undefined;
   }
 
   try {
-    const {
-      Name,
-      Link,
-      Date,
-      Parent,
-      Aliases
-    } = oldVersion
+    const { Name, Link, Date, Parent, Aliases } = oldVersion;
 
     newVersion = {
       name: Name,
       url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Link.replace(/\s/g, '_'))}`,
       aliases: Aliases,
       parent: Parent,
-      date: Date
-    }
+      date: Date,
+    };
   } catch (error) {
-    console.error(`Error parsing ${oldVersion.Name}`)
-    console.error(error)
+    console.error(`Error parsing ${oldVersion.Name}`);
+    console.error(error);
   }
-  return newVersion
-}
+  return newVersion;
+};
