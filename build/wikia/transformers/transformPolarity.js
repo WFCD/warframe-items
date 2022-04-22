@@ -1,29 +1,31 @@
-const POLARITIES = require('./polarities')
+'use strict';
+
+const POLARITIES = require('./polarities');
 
 const transform = (field) => {
-  let output
+  let output;
   if (field) {
-    output = (POLARITIES[field] || field || '').toLowerCase()
-    if (output && !output.length) output = undefined
-    if (output === 'none') output = undefined
+    output = (POLARITIES[field] || field || '').toLowerCase();
+    if (output && !output.length) output = undefined;
+    if (output === 'none') output = undefined;
   }
-  return output
-}
+  return output;
+};
 
 /**
  * Transform polarity
- * @param {string} [AuraPolarity]
- * @param {string} [StancePolarity]
- * @param {string} [Polarity]
- * @param {string} [Polarities]
- * @param {module:warframe-items.Item} target
+ * @param {string} [AuraPolarity] string designating the polarity for the aura compatibility of a Warframe
+ * @param {module:warframe-items.Item} target item for which to standardize polarities
+ * @param {string} [StancePolarity] string designating the polarity for the stance compatibility of a melee weapon
+ * @param {string} [Polarity] string designating the polarity for the aura compatibility of a mod slot or Mod
+ * @param {Array<string>} [Polarities] list of strings designating polarities on a weapon or warframe
  * @returns {*}
  */
 module.exports = ({ AuraPolarity, StancePolarity, Polarity, Polarities }, target) => {
-  const output = { ...target }
-  output.auraPolarity = transform(AuraPolarity)
-  output.stancePolarity = transform(StancePolarity)
-  output.polarity = transform(Polarity)
-  output.polarities = Polarities && Polarities.length ? Polarities.map(transform) : undefined
-  return output
-}
+  const output = { ...target };
+  output.auraPolarity = transform(AuraPolarity);
+  output.stancePolarity = transform(StancePolarity);
+  output.polarity = transform(Polarity);
+  output.polarities = Polarities && Polarities.length ? Polarities.map(transform) : undefined;
+  return output;
+};
