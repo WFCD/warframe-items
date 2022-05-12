@@ -1,4 +1,4 @@
-## Warframe-items
+## Warframe Items
 
 [![Supported by Warframe Community Developers](https://warframestat.us/wfcd.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
 

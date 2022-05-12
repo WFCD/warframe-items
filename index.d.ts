@@ -532,9 +532,11 @@ declare module 'warframe-items' {
         'Cephalon Simaris' |
         'Cephalon Suda' |
         'Corpus' |
+        'Duviri' |
         'Entrati' |
         'Founder' |
         'Grineer' |
+        'Incarnon' |
         'Infested' |
         'Invasion Reward' |
         'Kuva Lich' |
@@ -555,7 +557,8 @@ declare module 'warframe-items' {
         'Tutorial' |
         'Vandal' |
         'Vaulted' |
-        'Wraith'
+        'Wraith' |
+        'Zariman'
 
     type Trigger =
         'Active' |
