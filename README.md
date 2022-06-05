@@ -82,6 +82,7 @@ allows you to add your own items before our gathered ones.
 | Resources | For building stuff |
 | Secondary | Secondary slot weapons |
 | Sentinels | Mechanical companions |
+| SentinelWeapons | Specialized weapons for sentinels |
 | Sigils | Chest & back art |
 | Skins | Henna for your frame |
 | Warframes | Warframes...|
@@ -97,7 +98,7 @@ in `/data/img`. You can find every item's image name stored in `item.imageName`.
 ### Image links
 
 Since there are so many images, and we can't publish them on npm due to the size, we've set up a CDN to get you images at `https://cdn.warframestat.us/img/${item.imageName}` that provides a linkable resource for you.
-
+https://runkit.com/tobitenno/615e52157b2af60008dce1f5
 <br>
 <br>
 
