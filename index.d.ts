@@ -6,7 +6,7 @@ declare module 'warframe-items' {
     }
 
     interface ItemsOptions {
-        category: Category[];
+        category: Array<Category | 'SentinelWeapons'>;
         ignoreEnemies?: boolean;
         i18n?: boolean|string[];
         i18nOnObject?: boolean;
