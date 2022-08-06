@@ -1,0 +1,20 @@
+name: Regression
+on:
+  schedule:
+    - cron: '0 * * * *'
+jobs:
+  regressions:
+    name: Regression Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version-file: .nvmrc
+      - name: Install Dependencies
+        run: npm i
+      - name: Run Regression
+        run: npm run regression

@@ -4,7 +4,12 @@ globals:
   beforeEach: readonly
   afterEach: readonly
   after: readonly
+  before: readonly
 rules:
   brace-style: 0
 parserOptions:
   ecmaVersion: latest
+  env: mocha
+  sourceType: module
+extends:
+  - '@wfcd/eslint-config/esm'
