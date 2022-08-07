@@ -1,37 +1,52 @@
 import assert from 'node:assert';
+import { resolve } from 'node:path';
 import dedupe from '../build/dedupe.js';
-import Items from '../index.js';
+
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+
+const itemPath = resolve('./index.js');
+const importFresh = async (path) => {
+  return (await import(`${path}?update=${Date.now()}`)).default;
+};
+let Items;
 
 const inits = [];
-const wrapConstr = (opts) => {
+const wrapConstr = async (opts) => {
   const before = Date.now();
-  const items = new Items(opts);
+  const items = new (await importFresh(itemPath))(opts);
   const after = Date.now();
   inits.push(after - before);
   return items;
 };
 
-const data = {
-  items: new Items(),
-  warframes: new Items({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
-  weapons: new Items({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true})
-}
 const namedExclusions = ['Excalibur Prime'];
+let data;
 
-describe('index.js', () => {
+beforeEach(async () => {
+  delete require.cache[itemPath];
+  Items = await importFresh(itemPath);
+  data = {
+    items: new Items(),
+    warframes: new Items({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
+    weapons: new Items({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true})
+  }
+});
+describe('index.js', function () {
+  this.timeout(10000);
   it('should contain items when initializing.', () => {
     const items = new Items();
     assert(items.length);
   });
-  it('should ignore enemies when configured.', () => {
-    let items = wrapConstr({ ignoreEnemies: true }).filter((i) => i.category === 'Enemy');
+  it('should ignore enemies when configured.', async () => {
+    let items = (await wrapConstr({ ignoreEnemies: true })).filter((i) => i.category === 'Enemy');
     assert(!items.length);
 
-    items = wrapConstr({ category: ['Enemy', 'Primary'], ignoreEnemies: true }).filter((i) => i.category === 'Enemy');
+    items = (await wrapConstr({ category: ['Enemy', 'Primary'], ignoreEnemies: true })).filter((i) => i.category === 'Enemy');
     assert(!items.length);
   });
-  it('should construct successfully with all & primary', () => {
-    const items = wrapConstr({ category: ['Primary', 'All'] });
+  it('should construct successfully with all & primary', async () => {
+    const items = await wrapConstr({ category: ['Primary', 'All'] });
     assert(items.length > 0);
   });
   it('should not error current worldstate-data supported locales', () => {
@@ -46,8 +61,8 @@ describe('index.js', () => {
       new Items({ category: 'Warframe' });
     });
   })
-  it('should apply custom categories are specified', () => {
-    const items = wrapConstr({ category: ['Primary'] });
+  it('should apply custom categories are specified', async () => {
+    const items = await wrapConstr({ category: ['Primary'] });
     const primes = items.filter((i) => i.name.includes('Prime'));
     assert(primes.length < items.length);
   });
@@ -85,17 +100,49 @@ describe('index.js', () => {
     assert.strictEqual(matches.length, 1, 'There can be only One');
     assert(Object.keys(matches[0]).includes('components'));
   });
+  it('i18n: should populate with a truthy boolean', async () => {
+    const items = await wrapConstr({ category: ['Mods'], i18n: ['es', 'tr'] });
+    assert(!!items.i18n[items[0].uniqueName].tr);
+    assert(!!items.i18n[items[0].uniqueName].es);
+  });
+  it('i18n: should not exist by default', async () => {
+    const items = await wrapConstr();
+    assert(!items.i18n);
+  });
+  it('i18n: should only contain requested locales', async () => {
+    const items = await wrapConstr({ category: ['Mods'], i18n: ['es'] });
+    assert(!items.i18n[items[0].uniqueName].tr);
+    assert(!!items.i18n[items[0].uniqueName].es);
+  });
+  it('i18n: should respect itemOnObject', async () => {
+    const items = await wrapConstr({ category: ['Mods'], i18n: ['es'], i18nOnObject: true });
+    assert(!items[0].i18n.tr);
+    assert(!!items[0].i18n.es);
+    assert(!items.i18n);
+  });
+  describe('integrity', async function () {
+    data = {
+      items: await wrapConstr(),
+      warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
+      weapons: await wrapConstr({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true}),
+    };
+
+    data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
+      it(`${warframe.name} should have components`, () => {
+        assert(warframe?.components?.length > 0);
+      });
+    });
+  });
   describe('drops', () => {
-    it('should not have drops for hikou', () => {
-      const items = wrapConstr({ category: ['Secondary'] });
+    it('should not have drops for hikou', async () => {
+      const items = await wrapConstr({ category: ['Secondary'] });
       const hikouMatches = items.filter((i) => i.name === 'Hikou');
       assert(hikouMatches.length === 1);
       const { drops } = hikouMatches[0];
       assert(typeof drops === 'undefined');
     });
-
-    it('should only have non-prime drops for Gorgon', () => {
-      const items = wrapConstr({ category: ['Primary'] });
+    it('should only have non-prime drops for Gorgon', async () => {
+      const items = await wrapConstr({ category: ['Primary'] });
       const matches = items.filter((i) => i.name === 'Gorgon');
       assert(matches.length === 1);
       const { drops } = matches[0];
@@ -108,9 +155,8 @@ describe('index.js', () => {
       const primeBpDrops = bp.drops.filter((n) => n.type.includes('Prime'));
       assert(primeBpDrops.length === 0);
     });
-
-    it('should have variant drops when requested', () => {
-      const items = wrapConstr({ category: ['Primary'] });
+    it('should have variant drops when requested', async () => {
+      const items = await wrapConstr({ category: ['Primary'] });
       const matches = items.filter((i) => i.name === 'Gorgon Wraith');
       assert(matches.length === 1);
       const { drops } = matches[0];
@@ -123,9 +169,8 @@ describe('index.js', () => {
       const variantDrops = bp.drops.filter((n) => n.type.includes('Wraith'));
       assert(variantDrops.length === 1);
     });
-
-    it('should only have 1 result for Mausolon', () => {
-      const items = wrapConstr({ category: ['Arch-Gun'] });
+    it('should only have 1 result for Mausolon', async () => {
+      const items = await wrapConstr({ category: ['Arch-Gun'] });
       const matches = items
         .filter((i) => i.name === 'Mausolon')
         .map((i) => {
@@ -135,36 +180,6 @@ describe('index.js', () => {
       const dd = dedupe(matches);
       assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
       assert.strictEqual(matches.length, 1, 'There can be only One');
-    });
-  });
-  describe('i18n', () => {
-    it('should not exist by default', () => {
-      const items = wrapConstr();
-      assert(!items.i18n);
-    });
-    it('should only contain requested locales', () => {
-      const items = wrapConstr({ category: ['Mods'], i18n: ['es'] });
-      assert(!items.i18n[items[0].uniqueName].tr);
-      assert(!!items.i18n[items[0].uniqueName].es);
-    });
-    it('should populate with a truthy boolean', () => {
-      const items = wrapConstr({ category: ['Mods'], i18n: true });
-      assert(!!items.i18n[items[0].uniqueName].tr);
-      assert(!!items.i18n[items[0].uniqueName].es);
-    });
-    it('should respect itemOnObject', () => {
-      const items = wrapConstr({ category: ['Mods'], i18n: ['es'], i18nOnObject: true });
-      assert(!items[0].i18n.tr);
-      assert(!!items[0].i18n.es);
-      assert(!items.i18n);
-    });
-  });
-  describe('integrity', function () {
-    this.timeout(10000);
-    data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
-      it(`${warframe.name} should have components`, () => {
-        assert(warframe?.components?.length > 0);
-      });
     });
   });
 });
