@@ -54,7 +54,7 @@ jobs:
     needs: [build, lint]
     strategy:
       matrix:
-        node-version: [12, 14, 16, 'lts/*']
+        node-version: [14, 16, 'lts/*']
     steps:
     - uses: actions/checkout@v2
     - uses: actions/cache@v2
