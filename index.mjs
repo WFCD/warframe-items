@@ -1,76 +1,75 @@
-'use strict';
-
 /* eslint-disable no-restricted-syntax */
 /**
  * Configuration options for warframe-items
  * @typedef {Object} Options
- *
  * @property {string[]} category List of allowed categories to be pulled in.
- *                        Default ['All'].
- *                        Allows any of:
- *                         - All
- *                         - Arcanes
- *                         - Archwing
- *                         - Arch-Gun
- *                         - Arch-Melee
- *                         - Corpus
- *                         - Enemy
- *                         - Fish
- *                         - Gear
- *                         - Glyphs
- *                         - Melee
- *                         - Misc
- *                         - Mods
- *                         - Pets
- *                         - Primary
- *                         - Quests
- *                         - Relics
- *                         - Resources
- *                         - Secondary
- *                         - Sentinels
- *                         - Skins
- *                         - Warframes
+ *     Default ['All'].
+ *     Allows any of:
+ *      - All
+ *      - Arcanes
+ *      - Archwing
+ *      - Arch-Gun
+ *      - Arch-Melee
+ *      - Corpus
+ *      - Enemy
+ *      - Fish
+ *      - Gear
+ *      - Glyphs
+ *      - Melee
+ *      - Misc
+ *      - Mods
+ *      - Pets
+ *      - Primary
+ *      - Quests
+ *      - Relics
+ *      - Resources
+ *      - Secondary
+ *      - Sentinels
+ *      - Skins
+ *      - Warframes
  * @property {boolean} ignoreEnemies If true, don't load any enemy categories
  * @property {boolean|Array<string>} i18n Whether or not to include i18n, or a list of allowed locales
  * @property {boolean} i18nOnObject Whether or not to include i18n on the object itself and not on the "array"
  */
 
-const path = require('path');
-const fs = require('fs');
+import { resolve, dirname } from 'node:path';
+import { readFileSync, readdirSync, accessSync, constants } from 'node:fs';
+import { fileURLToPath } from 'url';
 
-const canAccess = (filePath) => {
-  try {
-    fs.accessSync(filePath, fs.constants.R_OK);
-    return true;
-  } catch (e) {
-    return false;
-  }
-};
-const readJson = (filePath) => {
-  const resolved = path.resolve(__dirname, filePath);
-  if (canAccess(resolved)) return JSON.parse(fs.readFileSync(resolved, 'utf-8'));
-  return [];
+const require = (path) => {
+  const canAccess = (path) => {
+    try {
+      accessSync(path, constants.R_OK);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
+  const resolved = resolve(__dirname, path);
+  if (canAccess(resolved)) return JSON.parse(readFileSync(resolved, 'utf-8'));
+  else return {};
 };
 
-const versions = readJson('./data/cache/.export.json');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const versions = require('./data/cache/.export.json');
 
 let i18n = {};
 try {
-  i18n = readJson('./data/json/i18n.json');
+  i18n = require('./data/json/i18n.json');
 } catch (ignored) {
   // can only happen in really weird stuff, and we're already defaulting, so it's ok
 }
 
 const ignored = ['All', 'i18n'];
-const defaultCategories = fs
-  .readdirSync(path.join(__dirname, './data/json/'))
+const defaultCategories = readdirSync(resolve(__dirname, './data/json/'))
   .filter((f) => f.includes('.json'))
   .map((f) => f.replace('.json', ''))
   .filter((f) => !ignored.includes(f));
 
 const defaultOptions = { category: defaultCategories, i18n: false, i18nOnObject: false };
 
-module.exports = class Items extends Array {
+export default class Items extends Array {
   constructor(options, ...existingItems) {
     super(...existingItems);
 
@@ -93,10 +92,10 @@ module.exports = class Items extends Array {
     for (const category of this.options.category) {
       // Ignores the enemy category.
       if (this.options.ignoreEnemies && category === 'Enemy') continue;
-      const items = readJson(`./data/json/${category}.json`); // eslint-disable-line import/no-dynamic-require
+      const items = require(`./data/json/${category}.json`);
       for (const item of items) {
         if (this.options.i18n) {
-          // only insert i18n for the objects we're inserting, so we don't bloat memory
+          // only insert i18n for the objects we're inserting so we don't bloat memory
           if (Array.isArray(this.options.i18n)) {
             const raw = i18n[item.uniqueName];
             // only process if passed language is a supported i18n value

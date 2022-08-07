@@ -4,9 +4,14 @@
   "description": "Get all warframe items directly from Warframe's API.",
   "main": "index.js",
   "types": "index.d.ts",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.js"
+  },
   "scripts": {
     "build": "node ./build/build.js",
-    "test": "nyc mocha",
+    "test": "nyc mocha --exclude test/*.regression.spec.mjs",
+    "regression": "mocha --include test/index.regression.spec.mjs",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
     "postinstall": "install-peerdeps @wfcd/eslint-config@^1.1.4 -S",
