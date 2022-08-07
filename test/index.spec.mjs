@@ -26,11 +26,6 @@ let data;
 beforeEach(async () => {
   delete require.cache[itemPath];
   Items = await importFresh(itemPath);
-  data = {
-    items: new Items(),
-    warframes: new Items({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
-    weapons: new Items({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true})
-  }
 });
 describe('index.js', function () {
   this.timeout(10000);
@@ -100,25 +95,27 @@ describe('index.js', function () {
     assert.strictEqual(matches.length, 1, 'There can be only One');
     assert(Object.keys(matches[0]).includes('components'));
   });
-  it('i18n: should populate with a truthy boolean', async () => {
-    const items = await wrapConstr({ category: ['Mods'], i18n: ['es', 'tr'] });
-    assert(!!items.i18n[items[0].uniqueName].tr);
-    assert(!!items.i18n[items[0].uniqueName].es);
-  });
-  it('i18n: should not exist by default', async () => {
-    const items = await wrapConstr();
-    assert(!items.i18n);
-  });
-  it('i18n: should only contain requested locales', async () => {
-    const items = await wrapConstr({ category: ['Mods'], i18n: ['es'] });
-    assert(!items.i18n[items[0].uniqueName].tr);
-    assert(!!items.i18n[items[0].uniqueName].es);
-  });
-  it('i18n: should respect itemOnObject', async () => {
-    const items = await wrapConstr({ category: ['Mods'], i18n: ['es'], i18nOnObject: true });
-    assert(!items[0].i18n.tr);
-    assert(!!items[0].i18n.es);
-    assert(!items.i18n);
+  describe('i18n', () => {
+    it('should populate with a truthy boolean', async () => {
+      const items = await wrapConstr({ category: ['Mods'], i18n: ['es', 'tr'] });
+      assert(!!items.i18n[items[0].uniqueName].tr);
+      assert(!!items.i18n[items[0].uniqueName].es);
+    });
+    it('should not exist by default', async () => {
+      const items = await wrapConstr();
+      assert(!items.i18n);
+    });
+    it('should only contain requested locales', async () => {
+      const items = await wrapConstr({ category: ['Mods'], i18n: ['es'] });
+      assert(!items.i18n[items[0].uniqueName].tr);
+      assert(!!items.i18n[items[0].uniqueName].es);
+    });
+    it('should respect itemOnObject', async () => {
+      const items = await wrapConstr({ category: ['Mods'], i18n: ['es'], i18nOnObject: true });
+      assert(!items[0].i18n.tr);
+      assert(!!items[0].i18n.es);
+      assert(!items.i18n);
+    });
   });
   describe('integrity', async function () {
     data = {
