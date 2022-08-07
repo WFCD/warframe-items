@@ -24,8 +24,8 @@ jobs:
     - run: npm i -D warframe-patchlogs@latest
     - run: npm run build
     - run: |
-        chmod +x regression.sh
-        ./regression.sh
+        chmod +x .github/workflows/regression.sh
+        sh .github/workflows/regression.sh
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         skip_dirty_check: false
