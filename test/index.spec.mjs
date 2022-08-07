@@ -21,8 +21,6 @@ const wrapConstr = async (opts) => {
 };
 
 const namedExclusions = ['Excalibur Prime'];
-let data;
-
 beforeEach(async () => {
   delete require.cache[itemPath];
   Items = await importFresh(itemPath);
@@ -61,40 +59,6 @@ describe('index.js', function () {
     const primes = items.filter((i) => i.name.includes('Prime'));
     assert(primes.length < items.length);
   });
-  it('weapons should only have 1 result for Mausolon', () => {
-    const matches = data.weapons
-      .filter((i) => i.name === 'Mausolon')
-      .map((i) => {
-        delete i.patchlogs;
-        return i;
-      });
-    const dd = dedupe(matches);
-    assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-    assert.strictEqual(matches.length, 1, 'There can be only One');
-  });
-  it('warframes should only have 1 result for Octavia Prime', () => {
-    const matches = data.warframes
-      .filter((i) => i.name === 'Octavia Prime')
-      .map((i) => {
-        delete i.patchlogs;
-        return i;
-      });
-    const dd = dedupe(matches);
-    assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-    assert.strictEqual(matches.length, 1, 'There can be only One');
-  });
-  it('items should only have 1 result for Octavia Prime', () => {
-    const matches = data.items
-      .filter((i) => i.name === 'Octavia Prime')
-      .map((i) => {
-        delete i.patchlogs;
-        return i;
-      });
-    const dd = dedupe(matches);
-    assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-    assert.strictEqual(matches.length, 1, 'There can be only One');
-    assert(Object.keys(matches[0]).includes('components'));
-  });
   describe('i18n', () => {
     it('should populate with a truthy boolean', async () => {
       const items = await wrapConstr({ category: ['Mods'], i18n: ['es', 'tr'] });
@@ -118,12 +82,45 @@ describe('index.js', function () {
     });
   });
   describe('integrity', async function () {
-    data = {
+    const data = Object.freeze({
       items: await wrapConstr(),
       warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
       weapons: await wrapConstr({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true}),
-    };
-
+    });
+    it('weapons should only have 1 result for Mausolon', () => {
+      const matches = data.weapons
+        .filter((i) => i.name === 'Mausolon')
+        .map((i) => {
+          delete i.patchlogs;
+          return i;
+        });
+      const dd = dedupe(matches);
+      assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+      assert.strictEqual(matches.length, 1, 'There can be only One');
+    });
+    it('warframes should only have 1 result for Octavia Prime', () => {
+      const matches = data.warframes
+        .filter((i) => i.name === 'Octavia Prime')
+        .map((i) => {
+          delete i.patchlogs;
+          return i;
+        });
+      const dd = dedupe(matches);
+      assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+      assert.strictEqual(matches.length, 1, 'There can be only One');
+    });
+    it('items should only have 1 result for Octavia Prime', () => {
+      const matches = data.items
+        .filter((i) => i.name === 'Octavia Prime')
+        .map((i) => {
+          delete i.patchlogs;
+          return i;
+        });
+      const dd = dedupe(matches);
+      assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+      assert.strictEqual(matches.length, 1, 'There can be only One');
+      assert(Object.keys(matches[0]).includes('components'));
+    });
     data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
       it(`${warframe.name} should have components`, () => {
         assert(warframe?.components?.length > 0);
