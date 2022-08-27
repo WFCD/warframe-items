@@ -44,8 +44,8 @@ module.exports = async (oldFrame, imageUrls, blueprints) => {
       introduced: Introduced,
       sex: Sex,
       vaulted: Vaulted || undefined,
-      thumbnail: imageUrls[Image],
-      color: parseInt(await mapColors(oldFrame, imageUrls[Image]), 16),
+      thumbnail: imageUrls?.[Image],
+      color: parseInt(await mapColors(oldFrame, imageUrls?.[Image]), 16),
       marketCost: blueprints[Name] && blueprints[Name].MarketCost,
       bpCost: blueprints[Name] && blueprints[Name].BPCost,
     };
