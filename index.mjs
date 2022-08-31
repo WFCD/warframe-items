@@ -35,6 +35,8 @@
 import { resolve, dirname } from 'node:path';
 import { readFileSync, readdirSync, accessSync, constants } from 'node:fs';
 import { fileURLToPath } from 'url';
+import path from "path";
+import fs from "fs";
 
 const require = (path) => {
   const canAccess = (path) => {
@@ -51,6 +53,20 @@ const require = (path) => {
 };
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const cache = {};
+const readJson = (filePath) => {
+  if (cache[filePath]) return cache[filePath];
+  else {
+    const resolved = path.resolve(__dirname, filePath);
+    if (canAccess(resolved)) {
+      const parsed = JSON.parse(fs.readFileSync(resolved, 'utf-8'));
+      cache[filePath] = parsed;
+      return parsed;
+    }
+    return [];
+  }
+};
 
 const versions = require('./data/cache/.export.json');
 

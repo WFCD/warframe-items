@@ -46,10 +46,19 @@ const canAccess = (filePath) => {
     return false;
   }
 };
+
+const cache = {};
 const readJson = (filePath) => {
-  const resolved = path.resolve(__dirname, filePath);
-  if (canAccess(resolved)) return JSON.parse(fs.readFileSync(resolved, 'utf-8'));
-  return [];
+  if (cache[filePath]) return cache[filePath];
+  else {
+    const resolved = path.resolve(__dirname, filePath);
+    if (canAccess(resolved)) {
+      const parsed = JSON.parse(fs.readFileSync(resolved, 'utf-8'));
+      cache[filePath] = parsed;
+      return parsed;
+    }
+    return [];
+  }
 };
 
 const versions = readJson('./data/cache/.export.json');
