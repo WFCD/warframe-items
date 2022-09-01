@@ -38,24 +38,8 @@ import { fileURLToPath } from 'url';
 import path from "path";
 import fs from "fs";
 
-const require = (path) => {
-  const canAccess = (path) => {
-    try {
-      accessSync(path, constants.R_OK);
-      return true;
-    } catch (e) {
-      return false;
-    }
-  };
-  const resolved = resolve(__dirname, path);
-  if (canAccess(resolved)) return JSON.parse(readFileSync(resolved, 'utf-8'));
-  else return {};
-};
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 const cache = {};
-const readJson = (filePath) => {
+const require = (filePath) => {
   if (cache[filePath]) return cache[filePath];
   else {
     const resolved = path.resolve(__dirname, filePath);
@@ -67,6 +51,10 @@ const readJson = (filePath) => {
     return [];
   }
 };
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+
 
 const versions = require('./data/cache/.export.json');
 
