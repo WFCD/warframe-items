@@ -182,6 +182,7 @@ class Parser {
     this.addDropRate(result, data.drops);
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, category, data.wikia);
+    this.detectPrime(result)
     this.addVaultData(result, data.vaultData);
     this.addResistanceData(result, category);
     this.applyOverrides(result);
@@ -694,7 +695,7 @@ class Parser {
           (component.uniqueName.includes('/Weapons/') &&
             !component.uniqueName.includes('/WeaponParts/') &&
             component.name !== 'Blueprint') ||
-          /Collar\w+Component/.test(component.uniqueName)
+            /Collar\w+Component/.test(component.uniqueName)
             ? this.findDropLocations(component.name, drops.rates, true)
             : this.findDropLocations(`${item.name} ${component.name}`, drops.rates, true);
         component.drops = data.length ? data : [];
@@ -757,6 +758,12 @@ class Parser {
 
     const logs = patchlogs.patchlogs.getItemChanges(target);
     if (logs.length) item.patchlogs = logs;
+  }
+
+  detectPrime(item) {
+    if (!['Primary', 'Secondary', 'Warframes', 'Sentinels', 'Mods', 'Archwing', 'Arch-Melee', 'Arch-Gun'].includes(item.category)) return;
+
+    item.isPrime = item.uniqueName.includes('Prime');
   }
 
   /**
