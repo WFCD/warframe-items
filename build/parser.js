@@ -182,7 +182,7 @@ class Parser {
     this.addDropRate(result, data.drops);
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, category, data.wikia);
-    this.detectPrime(result)
+    this.detectPrime(result);
     this.addVaultData(result, data.vaultData);
     this.addResistanceData(result, category);
     this.applyOverrides(result);
@@ -761,7 +761,12 @@ class Parser {
   }
 
   detectPrime(item) {
-    if (!['Primary', 'Secondary', 'Warframes', 'Sentinels', 'Mods', 'Archwing', 'Arch-Melee', 'Arch-Gun'].includes(item.category)) return;
+    if (
+      !['Primary', 'Secondary', 'Warframes', 'Sentinels', 'Mods', 'Archwing', 'Arch-Melee', 'Arch-Gun'].includes(
+        item.category
+      )
+    )
+      return;
 
     item.isPrime = item.uniqueName.includes('Prime');
   }
