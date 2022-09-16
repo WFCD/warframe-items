@@ -149,6 +149,7 @@ declare module 'warframe-items' {
         introduced?: Update;
         attacks?: Attack[];
         i18n?: I18nBundle<UniqueName>;
+        isPrime?: boolean;
     }
 
     interface Component {
