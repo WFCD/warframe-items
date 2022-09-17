@@ -179,6 +179,7 @@ class Parser {
     this.addCategory(result, category);
     this.addTradable(result);
     this.addDucats(result, data.wikia.ducats);
+    this.addRelics(result, data.relics);
     this.addDropRate(result, data.drops);
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, category, data.wikia);
@@ -917,6 +918,19 @@ class Parser {
     if (target.Vaulted) {
       item.vaulted = target.Vaulted;
     }
+  }
+
+  /**
+   * Add:
+   * - relic data
+   * - vaulted data (probably use this over ogg)
+   * - market data on relics (urlName, id)
+   * @param {module:warframe-items.Item} item to have relics applied to
+   * @param {Array<module:warframe-relic-data.TitaniaRelic>} relics
+   */
+  addRelics(item, relics) {
+    // find relics that have this item as a reward
+    // if this is a relic... this will be trickier...
   }
 
   applyOverrides(item) {

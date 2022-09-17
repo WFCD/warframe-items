@@ -33,6 +33,7 @@ class Build {
       patchlogs: await scraper.fetchPatchLogs(),
       wikia: await scraper.fetchWikiaData(),
       vaultData: await scraper.fetchVaultData(),
+      relics: await scraper.generateRelicData(),
       i18n: resources,
     };
     const parsed = parser.parse(raw);

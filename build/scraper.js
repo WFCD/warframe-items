@@ -8,6 +8,9 @@ const lzma = require('lzma');
 const fs = require('node:fs/promises');
 const path = require('path');
 const cheerio = require('cheerio');
+
+const { Generator: RelicGenerator } = require('warframe-relic-data');
+
 const Progress = require('./progress');
 const exportCache = require('../data/cache/.export.json');
 const locales = require('../config/locales.json');
@@ -176,7 +179,7 @@ class Scraper {
   /**
    * @typedef {Object} WikiaData
    * @property {Array<WikiaWeapons>} weapons
-   * @property {Array<WikiaWarframes>} warframes
+   * @property {Array<WikiaWarframe>} warframes
    * @property {Array<WikiaMods>} mods
    * @property {Array<WikiaVersions>} versions
    * @property {Array<WikiaDucats>} ducats
@@ -255,6 +258,18 @@ class Scraper {
 
     bar.tick();
     return vaultData;
+  }
+
+  /**
+   * Generate Relic Data from Titania Project
+   * @returns {Promise<Array<TitaniaRelic>>}
+   */
+  async generateRelicData() {
+    const bar = new Progress('Generating Relic Data', 1);
+    const relicGenerator = new RelicGenerator();
+    const relicData = relicGenerator.generate();
+    bar.tick()
+    return relicData;
   }
 }
 
