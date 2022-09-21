@@ -67,18 +67,14 @@ class Scraper {
     const i18nEndpoints = {};
     await Promise.all(
       locales.map(async (locale) => {
-        i18nEndpoints[locale] = await this.fetchEndpoints(false, locale);
+        i18nEndpoints[locale] = await this.fetchEndpoints(false);
       })
     );
     const totalEndpoints =
       i18nEndpoints[Object.keys(i18nEndpoints)[0]].length * Object.keys(i18nEndpoints).length + endpoints.length;
     const bar = new Progress('Fetching API Endpoints', totalEndpoints);
 
-    const fetchEndpoint = async (endpoint, locale) => {
-      if (locale && locale !== 'en') {
-        bar.tick();
-        return undefined;
-      }
+    const fetchEndpoint = async (endpoint) => {
       const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '');
       const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`);
       const data = raw ? raw[`Export${category}`] : undefined;
