@@ -5,11 +5,27 @@
   "id": "/Mods/Archwing/Melee",
   "name": "Arch-Melee Mod"
 }, {
+  "id": "/Mods/Archwing/Rifle",
+  "name": "Arch-Gun Mod"
+}, {
+  "id": "/Mods/Archwing/Shotgun",
+  "name": "Arch-Gun Mod"
+}, {
+  "id": "/Mods/Archwing/Secondary",
+  "name": "Arch-Gun Mod"
+}, {
   "id": "/Archwing/Melee",
   "name": "Arch-Melee"
 }, {
   "id": "/Skins",
   "name": "Skin"
+}, {
+  "id": "/Mods/Archwing",
+  "name": "Archwing Mod"
+}, {
+  "id": "Powersuits/Archwing/.*Augment",
+  "regex": true,
+  "name": "Archwing Mod"
 }, {
   "id": "/Archwing",
   "name": "Archwing"
@@ -17,12 +33,32 @@
   "id": "/HeavyWeapons",
   "name": "Archwing"
 }, {
+  "id": "Powersuits/.*Augment",
+  "regex": true,
+  "name": "Warframe Mod"
+}, {
   "id": "AugmentCard",
   "name": "Warframe Mod"
 }, {
+  "id": "Exalted.*Weapon",
+  "regex": true,
+  "name": "Exalted Weapon"
+}, {
+  "id": "Powersuits\/.*\/?.*Weapon",
+  "regex": true,
+  "name": "Exalted Weapon"
+}, {
   "id": "/Exalted",
   "name": "Exalted Weapon"
-} ,{
+}, {
+  "id": "/Lotus/Powersuits/.*Exalted",
+  "regex": true,
+  "name": "Exalted Weapon"
+}, {
+  "id": "/Lotus/Powersuits/.*Mod",
+  "regex": true,
+  "name": "Warframe Mod"
+}, {
   "id": "/Powersuits",
   "name": "Warframe"
 }, {
@@ -125,17 +161,71 @@
   "id": "/Mods/Pistol",
   "name": "Secondary Mod"
 }, {
+  "id": "/PvPMods/Warframe",
+  "name": "Warframe Mod"
+}, {
+  "id": "/PvPMods/Rifle",
+  "name": "Primary Mod"
+}, {
+  "id": "/PvPMods/Pistol",
+  "name": "Secondary Mod"
+}, {
+  "id": "/PvPMods/Shotgun",
+  "name": "Shotgun Mod"
+}, {
+  "id": "/PvPMods/Melee",
+  "name": "Melee Mod"
+}, {
+  "id": "/PvPMods/Stances",
+  "name": "Stance Mod"
+}, {
+  "id": "/Melee/MeleeTrees",
+  "name": "Stance Mod"
+}, {
+  "id": "Mods/.*/Stances",
+  "regex": true,
+  "name": "Stance Mod"
+}, {
+  "id": "/DualSource/Warframe",
+  "name": "Warframe Mod"
+}, {
+  "id": "/DualSource/Rifle",
+  "name": "Primary Mod"
+}, {
+  "id": "/DualSource/Pistol",
+  "name": "Secondary Mod"
+}, {
+  "id": "/DualSource/Shotgun",
+  "name": "Shotgun Mod"
+}, {
+  "id": "/DualSource/Melee",
+  "name": "Melee Mod"
+}, {
   "id": "/Mods/Warframe",
   "name": "Warframe Mod"
 }, {
+  "id": "/Pets/MoaPets/MoaPetPrecept/",
+  "name": "Companion Mod"
+}, {
   "id": "/Pets/CreaturePets/CreaturePrecepts/",
-  "name": "Creature Mod"
+  "name": "Companion Mod"
+}, {
+  "id": "/Pets/.*Precepts/",
+  "regex": true,
+  "name": "Companion Mod"
 }, {
   "id": "/Mods/Sentinel",
   "name": "Companion Mod"
 }, {
-  "id": "/Mods/Archwing",
-  "name": "Archwing Mod"
+  "id": "/Mods/Aura",
+  "name": "Warframe Mod"
+}, {
+  "id": "/Mods/DataSpike",
+  "name": "Parazon Mod"
+}, {
+  "id": "/Mods/Syndicate",
+  "name": " Mod",
+  "append": true
 }, {
   "id": "/CreaturePetParts",
   "name": "Pet Parts"
@@ -155,6 +245,9 @@
   "id": "/SentinelWeapons",
   "name": "Companion Weapon"
 }, {
+  "id": "/Sentinels/SentinelPrecepts",
+  "name": "Companion Mod"
+}, {
   "id": "/Sentinels",
   "name": "Sentinel"
 }, {
@@ -169,9 +262,6 @@
 }, {
   "id": "/ModularMelee",
   "name": "Zaw Component"
-}, {
-  "id": "/Melee",
-  "name": "Melee"
 }, {
   "id": "/OperatorAmplifiers",
   "name": "Amp"
@@ -201,7 +291,7 @@
   "name": "Resource"
 }, {
   "id": "/InfModular",
-  "name": "Kitgun 1Component"
+  "name": "Kitgun Component"
 }, {
   "id": "/SUModularSecondary",
   "name": "Kitgun Component"
@@ -220,6 +310,9 @@
 }, {
   "id": "SettlementNode",
   "name": "Node"
+}, {
+  "id": "CosmeticEnhancers/Peculiars",
+  "name": "Peculiar Mod"
 }, {
   "id": "CosmeticEnhancers",
   "name": "Arcane"
@@ -251,6 +344,70 @@
   "id": "/AnimalTag",
   "name": "Conservation Tag"
 }, {
+  "id": "RawSentinelWeaponRandomMod",
+  "name": "Companion Weapon Riven Mod"
+}, {
+  "id": "RawArchgunRandomMod",
+  "name": "Arch-Gun Riven Mod"
+}, {
+  "id": "RawPrimaryRandomMod",
+  "name": "Rifle Riven Mod"
+}, {
+  "id": "RawRifleRandomMod",
+  "name": "Rifle Riven Mod"
+}, {
+  "id": "RawPistolRandomMod",
+  "name": "Pistol Riven Mod"
+}, {
+  "id": "RawSecondaryRandomMod",
+  "name": "Pistol Riven Mod"
+}, {
+  "id": "RawShotgunRandomMod",
+  "name": "Shotgun Riven Mod"
+}, {
+  "id": "RawMeleeRandomMod",
+  "name": "Melee Riven Mod"
+}, {
+  "id": "RawModularMeleeRandomMod",
+  "name": "Zaw Riven Mod"
+}, {
+  "id": "LotusArchgunRandomMod",
+  "name":"Arch-Gun Riven Mod"
+}, {
+  "id": "RawModularPistolRandomMod",
+  "name":"Kitgun Riven Mod"
+}, {
+  "id": "LotusModularPistolRandomMod",
+  "name":"Kitgun Riven Mod"
+}, {
+  "id": "LotusModularMeleeRandomMod",
+  "name":"Zaw Riven Mod"
+}, {
+  "id": "LotusPistolRandomMod",
+  "name":"Pistol Riven Mod"
+}, {
+  "id": "LotusRifleRandomMod",
+  "name":"Rifle Riven Mod"
+}, {
+  "id": "Mods/Randomized/LotusModularPistol",
+  "name":"Kitgun Riven Mod"
+}, {
+  "id": "Mods/Randomized/LotusModularRifle",
+  "name": "Kitgun Riven Mod"
+}, {
+  "id": "LotusShotgunRandom",
+  "name":"Shotgun Riven Mod"
+}, {
+  "id": "MeleeWeaponRandomMod",
+  "name":"Melee Riven Mod"
+}, {
+  "id": "Mods/Randomized/LotusModularShotgun",
+  "name": "Shotgun Riven Mod"
+}, {
+  "id": "/Mods/Randomized",
+  "append": true,
+  "name": " Riven Mod"
+}, {
   "id": "SentinelWeapon",
   "name": "Companion Weapon"
 }, {
@@ -266,38 +423,8 @@
   "id": "StoreItems/SuitCustomizations",
   "name": "Color Palette"
 }, {
-  "id": "LotusModularPistolRandomMod",
-  "name":"Riven Mod"
-}, {
-  "id": "LotusModularMeleeRandomMod",
-  "name":"Riven Mod"
-}, {
-  "id": "LotusArchgunRandomMod",
-  "name":"Riven Mod"
-}, {
   "id": "Mods/Archwing/Rifle",
   "name": "Arch-Gun Mod"
-}, {
-  "id": "LotusPistolRandomMod",
-  "name":"Riven Mod"
-}, {
-  "id": "LotusRifleRandomMod",
-  "name":"Riven Mod"
-}, {
-  "id": "Mods/Randomized/LotusModularPistol",
-  "name":"Riven Mod"
-}, {
-  "id": "Mods/Randomized/LotusModularRifle",
-  "name": "Riven Mod"
-}, {
-  "id": "LotusShotgunRandom",
-  "name":"Riven Mod"
-}, {
-  "id": "MeleeWeaponRandomMod",
-  "name":"Riven Mod"
-}, {
-  "id": "Mods/Randomized/LotusModularShotgun",
-  "name": "Riven Mod"
 }, {
   "id": "Mods/Nemesis",
   "name": "Warframe Mod"
@@ -341,7 +468,7 @@
   "id": "MoaPetComponents/.*Weapon",
   "regex": true,
   "name": "Companion Weapon"
-},{
+}, {
   "id": "PetCollar",
   "name": "Pet Collar"
 }, {
@@ -438,6 +565,10 @@
   "id": "Items/PrimeBucks",
   "name": "Currency"
 }, {
+  "id": "Kubrow.*Mod",
+  "name": "Companion Mod",
+  "regex": true
+}, {
   "id": "Sets\/.*\/Warframe",
   "name": "Warframe Mod",
   "regex": true
@@ -446,11 +577,15 @@
   "name": "Secondary Mod",
   "regex": true
 }, {
-  "id": "Sets\/.*\/Melee",
+  "id": "Sets/.*/Melee",
   "name": "Melee Mod",
   "regex": true
 }, {
   "id": "Sets\/.*\/Kavat",
+  "name": "Companion Mod",
+  "regex": true
+}, {
+  "id": "Sets\/.*\/Companion.*Mod",
   "name": "Companion Mod",
   "regex": true
 }, {
@@ -477,7 +612,16 @@
   "name": "Companion Mod",
   "regex": true
 }, {
+  "id": "Mods/Sets/.*",
+  "name": " Mod",
+  "regex": true,
+  "append": true
+}, {
   "id": "Sets/",
+  "name": " Mod",
+  "append": true
+}, {
+  "id": "Mods/OrokinChallenge",
   "name": " Mod",
   "append": true
 }, {
@@ -499,6 +643,9 @@
   "id": "Pistol",
   "name": "Pistol"
 },  {
+  "id": "/ZanukaPets/ZanukaPetPrecepts",
+  "name": "Companion Mod"
+}, {
   "id": "ZanukaPetMeleeWeapon",
   "name": "Companion Weapon"
 }, {
@@ -526,14 +673,6 @@
   "id": "/ShortGuns",
   "name": "Pistol"
 }, {
-  "id": "Exalted.*Weapon",
-  "regex": true,
-  "name": "Exalted Weapon"
-}, {
-  "id": "Powersuits/.*Weapon",
-  "regex": true,
-  "name": "Exalted Weapon"
-}, {
   "id": "Rifle",
   "name": "Rifle"
 }, {
@@ -547,7 +686,27 @@
   "id": "Primary",
   "name": "Rifle"
 }, {
+  "id": "NechroTech/Ability",
+  "name": "Exalted Weapon"
+}, {
+  "id": "Grineer/Melee",
+  "name": "Melee"
+}, {
   "id": "Weapon",
   "regex": true,
   "name": "Rifle"
+}, {
+  "id": "Upgrades/Mods/Fusers",
+  "name": "Resource"
+}, {
+  "id": "/Mods/TransmuteCores",
+  "name": "Transmutation Mod"
+}, {
+  "id": "Upgrades/Mods/.*Mod",
+  "regex": true,
+  "append": true,
+  "name": " Mod"
+}, {
+  "id": "/Melee",
+  "name": "Melee"
 }]

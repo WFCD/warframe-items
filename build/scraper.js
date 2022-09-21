@@ -74,7 +74,11 @@ class Scraper {
       i18nEndpoints[Object.keys(i18nEndpoints)[0]].length * Object.keys(i18nEndpoints).length + endpoints.length;
     const bar = new Progress('Fetching API Endpoints', totalEndpoints);
 
-    const fetchEndpoint = async (endpoint) => {
+    const fetchEndpoint = async (endpoint, locale) => {
+      if (locale && locale !== 'en') {
+        bar.tick();
+        return undefined;
+      }
       const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '');
       const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`);
       const data = raw ? raw[`Export${category}`] : undefined;
@@ -97,7 +101,7 @@ class Scraper {
         i18n[locale] = [];
         return Promise.all(
           i18nEndpoints[locale].map(async (endpoint) => {
-            i18n[locale].push(await fetchEndpoint(endpoint));
+            i18n[locale].push(await fetchEndpoint(endpoint, locale));
           })
         );
       })
@@ -129,6 +133,7 @@ class Scraper {
 
   /**
    * Get official drop rates and check if they changed since last build.
+   * @returns {DropData}
    */
   async fetchDropRates() {
     const bar = new Progress('Fetching Drop Rates', 1);
@@ -262,14 +267,18 @@ class Scraper {
 
   /**
    * Generate Relic Data from Titania Project
-   * @returns {Promise<Array<TitaniaRelic>>}
+   * @returns {Promise<Array<module:warframe-relic-data.TitaniaRelic>>}
    */
   async generateRelicData() {
     const bar = new Progress('Generating Relic Data', 1);
     const relicGenerator = new RelicGenerator();
-    const relicData = relicGenerator.generate();
-    bar.tick()
-    return relicData;
+    try {
+      const relicData = await relicGenerator.generate();
+      bar.tick();
+      return relicData;
+    } catch (e) {
+      console.error(e);
+    }
   }
 }
 

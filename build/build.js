@@ -276,12 +276,9 @@ class Build {
     }
   }
 
-  /* eslint-disable valid-jsdoc */
   /**
    * Update readme with newest patchlog version
-   * @param {module:warframe-patchlogs.Patchlogs} patchlogs
-   * @returns Promise<void>
-   * @async
+   * @param {module:warframe-patchlogs.Patchlogs} patchlogs for pulling the latest update
    */
   async updateReadme(patchlogs) {
     // eslint-disable-next-line import/no-dynamic-require
