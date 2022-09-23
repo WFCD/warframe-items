@@ -278,7 +278,7 @@ declare module 'warframe-items' {
     interface Relic extends MinimalItem {
         category: 'Relics';
         type: 'Relic';
-        locations: Array<TitaniaRelicLocation> | [];
+        locations: Array<TitaniaRelicLocation>;
         rewards: Array<TitaniaRelicReward>;
         vaulted: boolean;
         vaultDate: string;
