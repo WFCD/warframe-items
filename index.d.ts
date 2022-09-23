@@ -196,6 +196,25 @@ declare module 'warframe-items' {
         polarity?: Polarity;
     }
     interface SingleLevelMod extends Omit<Mod, 'levelStats'> {}
+    type ModType = 
+        'Railjack' |
+        'Necramech' |
+        'Warframe' |
+        'Secondary' |
+        'Melee' |
+        'Companion' |
+        'Primary' |
+        'K-Drive' |
+        'Riven' |
+        'Archwing' |
+        'Arch-Melee' |
+        'Arch-Gun' |
+        'Shotgun' |
+        'Creature' |
+        'Stance' |
+        'Parazon' |
+        'Transmutation' |
+        'Peculiar';
     interface Mod extends MinimalItem, WikiaItem, Droppable {
         baseDrain: number;
         category: 'Mods';
@@ -211,24 +230,7 @@ declare module 'warframe-items' {
         modSet?: UniqueName;
         isExilus?: boolean;
         modSetValues?: number[];
-        type: 'Railjack Mod' |
-            'Necramech Mod' |
-            'Warframe Mod' |
-            'Secondary Mod' |
-            'Melee Mod' |
-            'Companion Mod' |
-            'Primary Mod' |
-            'K-Drive Mod' |
-            'Riven Mod' |
-            'Archwing Mod' |
-            'Arch-Melee Mod' |
-            'Arch-Gun Mod' |
-            'Shotgun Mod' |
-            'Creature Mod' |
-            'Stance Mod' |
-            'Parazon Mod' |
-            'Transmutation Mod' |
-            'Peculiar Mod';
+        type: `${ModType} Mod`;
     }
     interface PrimeMod extends Omit<Mod, 'isPrime'> { isPrime: true; }
     interface Warframe extends Equippable, Buildable, WikiaItem, BaseItem {
