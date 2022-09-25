@@ -342,10 +342,15 @@ class Parser {
     }
 
     // Capitalize properties which are usually all uppercase
-    const props = ['name', 'type', 'trigger', 'noise', 'rarity', 'faction'];
+    const props = ['type', 'trigger', 'noise', 'rarity', 'faction'];
     // eslint-disable-next-line no-restricted-syntax
     for (const prop of props) {
       if (item[prop]) item[prop] = title(item[prop]);
+    }
+
+    // Capitalize name for everything but requiem relics
+    if (item.name && !item.name.toLowerCase().includes('requiem') && !item.name.toLowerCase().includes('relic')) {
+      item.name = title(item.name);
     }
 
     // Remove <Archwing> from archwing names, add archwing key instead
