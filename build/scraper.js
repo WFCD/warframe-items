@@ -9,7 +9,7 @@ const fs = require('node:fs/promises');
 const path = require('path');
 const cheerio = require('cheerio');
 
-const { Generator: RelicGenerator } = require('warframe-relic-data');
+const { Generator: RelicGenerator } = require('@wfcd/relics');
 
 const Progress = require('./progress');
 const exportCache = require('../data/cache/.export.json');
@@ -179,7 +179,7 @@ class Scraper {
 
   /**
    * @typedef {Object} WikiaData
-   * @property {Array<WikiaWeapons>} weapons
+   * @property {Array<WikiaWeapon>} weapons
    * @property {Array<WikiaWarframe>} warframes
    * @property {Array<WikiaMods>} mods
    * @property {Array<WikiaVersions>} versions
@@ -263,7 +263,7 @@ class Scraper {
 
   /**
    * Generate Relic Data from Titania Project
-   * @returns {Promise<Array<module:warframe-relic-data.TitaniaRelic>>}
+   * @returns {Promise<Array<TitaniaRelic>>}
    */
   async generateRelicData() {
     const bar = new Progress('Generating Relic Data', 1);
