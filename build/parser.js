@@ -83,7 +83,7 @@ const dropMap = (drop) => {
  * @property {PatchlogWrap} patchlogs patch data
  * @property {WikiaData} wikia warframe wikia data
  * @property {VaultData} vaultData Ogg vault data
- * @property {Array<module:warframe-relic-data.TitaniaRelics>} relics Generated relic data
+ * @property {Array<module:@wfcd/relics.TitaniaRelic>} relics Generated relic data
  * @property {Array<Partial<Item>>} i18n i18n data
  */
 
@@ -930,7 +930,7 @@ class Parser {
    * - vaulted data (probably use this over ogg)
    * - market data on relics (urlName, id)
    * @param {Item} item to have relics applied to
-   * @param {Array<module:warframe-relics-data.TitaniaRelic>} relics relic array to search
+   * @param {Array<module:@wfcd/relics.TitaniaRelic>} relics relic array to search
    */
   addRelics(item, relics) {
     if (item.type !== 'Relic') return;
