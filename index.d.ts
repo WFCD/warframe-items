@@ -544,8 +544,9 @@ declare module 'warframe-items' {
         item: TitaniaRelicRewardItem;
     }
     interface TitaniaRelicRewardItem {
+        uniqueName: string;
         name: string;
-        warframeMarket: TitaniaWFMInfo | null;
+        warframeMarket?: TitaniaWFMInfo;
     }
     interface TitaniaWFMInfo {
         id: string;
