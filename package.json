@@ -17,7 +17,8 @@
     "postinstall": "install-peerdeps @wfcd/eslint-config@^1.1.4 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
-    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --all-errors --allowUnionTypes --verbose"
+    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --all-errors --allowUnionTypes --verbose",
+    "validate": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -60,7 +61,8 @@
     "socks5-http-client": "^1.0.4",
     "tslib": "^2.4.0",
     "typescript-json-schema": "^0.54.0",
-    "warframe-patchlogs": "^1.773.0"
+    "warframe-patchlogs": "^1.773.0",
+    "@wfcd/relics": "^1.0.0"
   },
   "eslintConfig": {
     "extends": [
@@ -113,5 +115,10 @@
     "functions": 100,
     "statements": 100,
     "check-coverage": true
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
 }

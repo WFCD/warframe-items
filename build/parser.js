@@ -68,8 +68,7 @@ const dropMap = (drop) => {
 };
 
 /**
- * @typedef {Object} DropRate
- * @extends {RawDrop}
+ * @typedef {RawDrop} DropRate
  */
 /**
  * @typedef {Object} DropData
@@ -78,13 +77,14 @@ const dropMap = (drop) => {
  */
 /**
  * @typedef {Object} RawItemData
- * @property {{rates: Array<DropRate>, changed: boolean}} drops drop rates
+ * @property {Array<Partial<Item>>} api Raw api data
  * @property {ImageManifest.Manifest} manifest of image data
+ * @property {DropData} drops drop rates
  * @property {PatchlogWrap} patchlogs patch data
- * @property {VaultData} vaultData
- * @property {Array<Partial<module:warframe-items.Item>>} api Raw api data
- * @property {Array<Partial<module:warframe-items.Item>>} i18n i18n data
- * @property {WikiaData} wikia
+ * @property {WikiaData} wikia warframe wikia data
+ * @property {VaultData} vaultData Ogg vault data
+ * @property {Array<module:@wfcd/relics.TitaniaRelic>} relics Generated relic data
+ * @property {Array<Partial<Item>>} i18n i18n data
  */
 
 /**
@@ -93,16 +93,16 @@ const dropMap = (drop) => {
 class Parser {
   /**
    * @typedef {Object} ParsedData
-   * @property {Array<module:warframe-items.Item>} data
+   * @property {Array<Item>} data
    * @property {Warnings} warnings
    */
   /**
    * Entrypoint for build process.
-   * @param {RawItemData} data raw data to parse into {@link module:warframe-items.Item|Items}
+   * @param {RawItemData} data raw data to parse into {@link Item|Items}
    * @returns {ParsedData}
    */
   parse(data) {
-    const blueprints = data.api.find((c) => c.category === 'Recipes').data;
+    const blueprints = data.api.find((c) => c?.category === 'Recipes')?.data;
     const result = [];
 
     // Modify data from API to fit our schema. Note that we'll
@@ -110,7 +110,7 @@ class Parser {
     // to the parent item instead.
     // eslint-disable-next-line no-restricted-syntax
     for (const chunk of data.api) {
-      if (chunk.category === 'Recipes') continue;
+      if (!chunk || chunk?.category === 'Recipes') continue;
       const parsedData = this.process(chunk.data, chunk.category, blueprints, data);
       result.push({
         category: chunk.category,
@@ -131,11 +131,11 @@ class Parser {
 
   /**
    * Go through every category on the API and adapt to our schema.
-   * @param {Array<Partial<module:warframe-items.Item>>} items items to be processed
+   * @param {Array<Partial<Item>>} items items to be processed
    * @param {string<module:warframe-items.Category>} category Category being parsed
-   * @param {Array<Partial<module:warframe-items.Item>>} blueprints items known to be blueprints
+   * @param {Array<Partial<Item>>} blueprints items known to be blueprints
    * @param {RawItemData} data context data dependencies
-   * @returns {Array<module:warframe-items.Item>}
+   * @returns {Array<Item>}
    */
   process(items, category, blueprints, data) {
     const result = [];
@@ -148,7 +148,7 @@ class Parser {
     for (let index = 0; index < items.length; index += 1) {
       let item = items[index];
       // Skip Weapon Components as they'll be accessible
-      // through their parent. Warframe components are an exception
+      // through their parent. Warframes' components are an exception,
       // since they are not items itself, but have components.
       if (item.uniqueName && item.uniqueName.includes('/Recipes')) continue;
 
@@ -162,11 +162,11 @@ class Parser {
 
   /**
    * Modify individual keys of API data.
-   * @param {Partial<module:warframe-items.Item>} original item to be processed
+   * @param {Partial<Item>} original item to be processed
    * @param {string<module:warframe-items.Category>} category Category being parsed
    * @param {RawItemData} data context data dependencies
-   * @param {Partial<module:warframe-items.Item>} [previous] item previous to this in the list
-   * @returns {Partial<module:warframe-items.Item>}
+   * @param {Partial<Item>} [previous] item previous to this in the list
+   * @returns {Partial<Item>}
    */
   filter(original, category, data, previous) {
     const result = _.cloneDeep(original);
@@ -185,19 +185,20 @@ class Parser {
     this.detectPrime(result);
     this.addVaultData(result, data.vaultData);
     this.addResistanceData(result, category);
+    this.addRelics(result, data.relics);
     this.applyOverrides(result);
     return result;
   }
 
   /**
    * Debug method for parsing the bare minimum of data to finish
-   * the build process without errors. Useful when you don't wanna
+   * the build process without errors. Useful when you don't want to
    * wait several minutes to test something. A quick version of {@link #filter}.
-   * @param {Partial<module:warframe-items.Item>} original item to be processed
+   * @param {Partial<Item>} original item to be processed
    * @param {module:warframe-items.Category} category Category being parsed
    * @param {RawItemData} data context data dependencies
-   * @param {Partial<module:warframe-items.Item>} previous item previous to this in the list
-   * @returns {Partial<module:warframe-items.Item>}
+   * @param {Partial<Item>} previous item previous to this in the list
+   * @returns {Partial<Item>}
    */
   quickFilter(original, category, data, previous) {
     const result = _.cloneDeep(original);
@@ -217,12 +218,12 @@ class Parser {
    * Move components to the parent directly. This also means that we
    * won't store the blueprint as independent item as all its data is
    * attached to the parent.
-   * @param {Partial<module:warframe-items.Item>} item item to be processed
+   * @param {Partial<Item>} item item to be processed
    * @param {string<module:warframe-items.Category>} category Category being parsed
-   * @param {Array<Partial<module:warframe-items.Item>>} blueprints items known to be blueprints
+   * @param {Array<Partial<Item>>} blueprints items known to be blueprints
    * @param {RawItemData} data context data dependencies
    * @param {boolean} [secondPass] whether this is the second pass adding components, for nested component data
-   * @returns {Partial<module:warframe-items.Item>}
+   * @returns {Partial<Item>}
    */
   addComponents(item, category, blueprints, data, secondPass) {
     const blueprint = blueprints.filter(filterBps).find((b) => b.resultType === item.uniqueName);
@@ -268,8 +269,8 @@ class Parser {
 
   /**
    * Attach blueprint data to the parent item where sensible.
-   * @param {module:warframe-items.Item} item item to apply data to
-   * @param {Partial<module:warframe-items.Item>} blueprint with partial data
+   * @param {Item} item item to apply data to
+   * @param {Partial<Item>} blueprint with partial data
    */
   addBlueprintData(item, blueprint) {
     item.buildPrice = blueprint.buildPrice;
@@ -284,10 +285,10 @@ class Parser {
    * we also add a .parents key which will give the component as standalone
    * item a list of all its parents.
    * @param {Array<module:warframe-items.Component>} components to be sanitized
-   * @param {module:warframe-items.Item} result item to sanitize components on
-   * @param {module:warframe-items.Item} item item to compare to
+   * @param {Item} result item to sanitize components on
+   * @param {Item} item item to compare to
    * @param {string<module:warframe-items.Category>} category that is being sanitized
-   * @param {Array<module:warframe-items.Item>} blueprints to provide build information
+   * @param {Array<Item>} blueprints to provide build information
    * @param {RawItemData} data raw context data
    * @param {boolean} secondPass whether this is the second pass being processed to clean up internal data
    */
@@ -311,7 +312,7 @@ class Parser {
       delete override.parents;
 
       // Warframe/Weapon components should not include their parent's
-      // name so it's easier to work with them. This is especially critical
+      // name, so it's easier to work with them. This is especially critical
       // for parsing trade chat data.
       if (override.uniqueName.includes('/Recipes') || item.tradable) {
         override.name = override.name.replace(`${title(item.name).replace(/<Archwing> /, '')} `, '');
@@ -332,7 +333,7 @@ class Parser {
   /**
    * Remove unnecessary values, use consistent string casing, clarify some
    * obscure conventions.
-   * @param {Partial<module:warframe-items.Item>} item to be sanitized
+   * @param {Partial<Item>} item to be sanitized
    */
   sanitize(item) {
     // Some items have no name, so we use the last bit of the
@@ -419,7 +420,7 @@ class Parser {
    * Archwings are saved as /Lotus/Powersuits/Archwing/*, while Warframes are
    * saved as /Lotus/Powersuits/*, meaning that Archwing has to be looked for
    * first, otherwise it would be considered a Warframe.
-   * @param {Partial<module:warframe-items.Item>} item to have type adjusted on
+   * @param {Partial<Item>} item to have type adjusted on
    */
   addType(item) {
     if (item.parent) return;
@@ -452,7 +453,7 @@ class Parser {
 
   /**
    * Parse out damage types from "damage per shot" array
-   * @param {module:warframe-items.Item} item to have damage parsed on
+   * @param {Item} item to have damage parsed on
    */
   addDamage(item) {
     if (!item.damagePerShot) return;
@@ -478,9 +479,9 @@ class Parser {
 
   /**
    * Add image name for images that will be fetched outside this scraper.
-   * @param {Partial<module:warframe-items.Item>} item to have image name added
+   * @param {Partial<Item>} item to have image name added
    * @param {ImageManifest.Manifest} manifest to look up image from
-   * @param {Partial<module:warframe-items.Item>} [previous] item to look up comparatively
+   * @param {Partial<Item>} [previous] item to look up comparatively
    */
   addImageName(item, manifest, previous) {
     const image = manifest.find((i) => i.uniqueName === item.uniqueName);
@@ -528,7 +529,7 @@ class Parser {
   /**
    * Add more meaningful item categories. These will be used to determine the
    * output file name.
-   * @param {module:warframe-items.Item} item to have category massaged
+   * @param {Item} item to have category massaged
    * @param {string<module:warframe-items.Category>} category to parse and apply into
    *    {@link module:warframe-items.Category|categories}
    */
@@ -629,7 +630,7 @@ class Parser {
 
   /**
    * Limit items to tradable/untradable if specified.
-   * @param {module:warframe-items.Item} item to have tradability applied
+   * @param {Item} item to have tradability applied
    */
   addTradable(item) {
     item.tradable = tradable(item);
@@ -637,7 +638,7 @@ class Parser {
 
   /**
    * Add ducats for prime items. We'll need to get this data from the wikia.
-   * @param {module:warframe-items.Item} item to have ducats applied
+   * @param {Item} item to have ducats applied
    * @param {Array<WikiaDucats>} ducats to apply
    */
   addDucats(item, ducats) {
@@ -657,7 +658,7 @@ class Parser {
 
   /**
    * Add drop chances based on official drop tables
-   * @param {module:warframe-items.Item} item to add droprate to
+   * @param {Item} item to add droprate to
    * @param {DropData} drops to find item drops from
    */
   addDropRate(item, drops) {
@@ -706,7 +707,7 @@ class Parser {
         component.drops = data.length ? data : [];
       }
     } else if (item.name !== 'Blueprint') {
-      // Last word of relic is intact/rad, etc instead of 'Relic'
+      // Last word of relic is intact/rad, etc. instead of 'Relic'
       const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name;
       const data = this.findDropLocations(name, drops.rates);
       if (data.length) item.drops = data;
@@ -741,7 +742,7 @@ class Parser {
 
   /**
    * Get patchlogs from forums and attach when changes are found for item.
-   * @param {module:warframe-items.Item} item to add patchlogs upon
+   * @param {Item} item to add patchlogs upon
    * @param {PatchlogWrap} patchlogs to look up for item
    */
   addPatchlogs(item, patchlogs) {
@@ -765,6 +766,10 @@ class Parser {
     if (logs.length) item.patchlogs = logs;
   }
 
+  /**
+   * Detects whether the item is a prime item
+   * @param {Item} item to check for prime status
+   */
   detectPrime(item) {
     if (
       !['Primary', 'Secondary', 'Warframes', 'Sentinels', 'Mods', 'Archwing', 'Arch-Melee', 'Arch-Gun'].includes(
@@ -778,7 +783,7 @@ class Parser {
 
   /**
    * Adds data scraped from the wiki to a particular item
-   * @param {module:warframe-items.Item} item to have wikia data added to
+   * @param {Item} item to have wikia data added to
    * @param {module:warframe-items.Category} category of the data
    * @param {WikiaData} wikiaData from wikia to apply
    */
@@ -860,7 +865,7 @@ class Parser {
 
   /**
    * Add additional data for mods from the wiki
-   * @param {module:warframe-items.Item} item mod to append wikia data to
+   * @param {Item} item mod to append wikia data to
    * @param {WikiaMod} wikiaItem to pull data from
    */
   addModWikiaData(item, wikiaItem) {
@@ -886,7 +891,7 @@ class Parser {
   /**
    * Adds releaseDate, vaultDate and estimatedVaultDate to all primes using
    * data from "Ducats or Plat".
-   * @param {module:warframe-items.Item} item data to append vault data to
+   * @param {Item} item data to append vault data to
    * @param {VaultData} vaultData to look up data for the {@param item}
    */
   addVaultData(item, vaultData) {
@@ -917,6 +922,26 @@ class Parser {
     if (target.Vaulted) {
       item.vaulted = target.Vaulted;
     }
+  }
+
+  /**
+   * Add:
+   * - relic data
+   * - vaulted data (probably use this over ogg)
+   * - market data on relics (urlName, id)
+   * @param {Item} item to have relics applied to
+   * @param {Array<module:@wfcd/relics.TitaniaRelic>} relics relic array to search
+   */
+  addRelics(item, relics) {
+    if (item.type !== 'Relic') return;
+    const related = relics.filter((relic) => item.name.includes(relic.name));
+    item.locations = Array.from(new Set(related.map((relic) => relic.locations).flat()));
+    item.rewards = Array.from(new Set(related.map((relic) => relic.rewards).flat()));
+    [item.marketInfo] = Array.from(new Set(related.map((relic) => relic.warframeMarket)));
+
+    const [vaultInfo] = Array.from(new Set(related.map((relic) => relic.vaultInfo)));
+    item.vaulted = vaultInfo?.vaulted;
+    item.vaultDate = vaultInfo?.vaultDate;
   }
 
   applyOverrides(item) {
@@ -978,8 +1003,8 @@ class Parser {
 
   /**
    * Apply i18n and parse data
-   * @param {Object<string, Array<module:warframe-items.Item>>} data base data to apply i18n data to
-   * @param {Object<string, Array<module:warframe-items.Item>>} i18n internationalization data
+   * @param {Object<string, Array<Item>>} data base data to apply i18n data to
+   * @param {Object<string, Array<Item>>} i18n internationalization data
    * @returns {Object<string, Object<string, Object>>}
    */
   applyI18n(data, i18n) {
@@ -1003,6 +1028,7 @@ class Parser {
       const id = entry.uniqueName;
       if (!i18nArr[id]) i18nArr[id] = {};
       locales.forEach((locale) => {
+        if (!i18n[locale]?.[0]) return;
         i18n[locale].every(({ data: i18nData }) => {
           const match = i18nData.find((i18nItem) => i18nItem.uniqueName === id);
           if (match) {

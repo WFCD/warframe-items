@@ -33,6 +33,7 @@ class Build {
       patchlogs: await scraper.fetchPatchLogs(),
       wikia: await scraper.fetchWikiaData(),
       vaultData: await scraper.fetchVaultData(),
+      relics: await scraper.generateRelicData(),
       i18n: resources,
     };
     const parsed = parser.parse(raw);
@@ -275,12 +276,9 @@ class Build {
     }
   }
 
-  /* eslint-disable valid-jsdoc */
   /**
    * Update readme with newest patchlog version
-   * @param {module:warframe-patchlogs.Patchlogs} patchlogs
-   * @returns Promise<void>
-   * @async
+   * @param {module:warframe-patchlogs.Patchlogs} patchlogs for pulling the latest update
    */
   async updateReadme(patchlogs) {
     // eslint-disable-next-line import/no-dynamic-require
