@@ -4,7 +4,6 @@ declare module 'warframe-items' {
         options: ItemsOptions;
         i18n: BundleofI18nBundle<Locale>;
     }
-
     interface ItemsOptions {
         category: Array<Category | 'SentinelWeapons'>;
         ignoreEnemies?: boolean;
@@ -12,112 +11,120 @@ declare module 'warframe-items' {
         i18nOnObject?: boolean;
     }
 
+    type Item =
+        Extractor |
+        Melee |
+        Gun |
+        SentinelWeapon |
+        Warframe |
+        Mod |
+        SingleLevelMod |
+        RivenMod |
+        StanceMod |
+        PrimeMod |
+        RailjackMod |
+        ModularPetPart |
+        SolNode |
+        Skin |
+        Relic |
+        EmptyRelic |
+        Weapon |
+        ExaltedWeapon |
+        Resource |
+        Arcane |
+        Misc |
+        MinimalItem;
+
     type UniqueName = string;
     type DateString = string;
 
-    interface Item {
+    interface MinimalItem {
         uniqueName: UniqueName;
         name: string;
-        polarity?: Polarity;
-        rarity?: Rarity;
-        baseDrain?: number;
-        fusionLimit?: number;
-        upgradeEntries?: UpgradeEntry[];
-        availableChallenges?: AvailableChallenge[];
-        secondsPerShot?: number;
-        damagePerShot?: number[];
-        magazineSize?: number;
-        reloadTime?: number;
-        totalDamage?: number;
-        damagePerSecond?: number;
-        trigger?: Trigger;
+        i18n?: I18nBundle<UniqueName>;
+        type?: Type;
+        category?: Category;
+        tradable: boolean;
+        patchlogs?: PatchLog[];
+        imageName?: string;
         description?: string;
+        releaseDate?: string;
+        excludeFromCodex?: boolean;
+    }
+    interface BaseItem extends MinimalItem, Droppable {
+        showInInventory?: boolean;
+        conclave?: boolean;
+        productCategory?: ProductCategory;
+        rewardName?: string;
+        tier?: number;
+        primeOmegaAttenuation?: number;
+        primeSellingPrice?: number;
+        isPrime?: boolean;
+        vaulted?: boolean;
+        vaultDate?: DateString;
+        estimatedVaultDate?: DateString;
+        sentinel?: boolean;
+        parents?: string[];
+        color?: number;
+        excludeFromCodex?: boolean;
+    }
+    interface Equippable {
         hexColours?: Colour[];
+        polarities?: Polarity[];
+        slot?: number;
+    }
+    interface Buildable {
+        masteryReq?: number;
+        buildPrice?: number;
+        buildQuantity?: number;
+        buildTime?: number;
+        skipBuildTimePrice?: number;
+        consumeOnBuild?: boolean;
+        components?: Component[];
+        marketCost?: number | '';
+        bpCost?: number | '';
+        itemCount?: number;
+    }
+    interface WikiaItem {
+        wikiaThumbnail?: string;
+        wikiaUrl?: string;
+        tags?: Tag[];
+        introduced?: Update;
+    }
+    interface Droppable {
+        rarity?: Rarity;
+        probability?: number;
+        drops?: Drop[];
+        tradable: boolean;
+    }
+    interface Attackable {
+        totalDamage?: number;
+        fireRate?: number;
+        slot?: number;
+        procChance?: number;
+        omegaAttenuation?: number;
         accuracy?: number;
         criticalChance?: number;
         criticalMultiplier?: number;
-        procChance?: number;
-        fireRate?: number;
-        chargeAttack?: number;
+        noise?: Noise;
+        ammo?: number | null;
+        damage?: number | string;
+        attacks?: Attack[];
+        damagePerShot?: number[];
+        disposition?: Disposition;
+    }
+    interface Resource extends MinimalItem {
+        fusionPoints: number;
+    }
+
+    interface Misc extends Equippable, Buildable, WikiaItem, Droppable, Attackable, BaseItem {}
+    interface Melee extends Weapon {
+        category: 'Melee' | 'Arch-Melee';
+        stancePolarity?: Polarity;
         spinAttack?: number;
         leapAttack?: number;
         wallAttack?: number;
-        slot?: number;
-        noise?: Noise;
-        sentinel?: boolean;
-        masteryReq?: number;
-        omegaAttenuation?: number;
-        channelingDrain?: number;
-        channelingDamageMultiplier?: number;
-        buildPrice?: number;
-        buildTime?: number;
-        skipBuildTimePrice?: number;
-        buildQuantity?: number;
-        consumeOnBuild?: boolean;
-        components?: Component[];
-        type?: Type;
-        imageName?: string;
-        category: Category;
-        tradable: boolean;
-        drops?: Drop[];
-        patchlogs?: PatchLog[];
         channeling?: number;
-        ammo?: number | null;
-        damage?: number | string;
-        damageTypes?: DamageTypes;
-        marketCost?: number | '';
-        bpCost?: number | '';
-        flight?: number | '???';
-        polarities?: Polarity[];
-        projectile?: Projectile;
-        stancePolarity?: Polarity;
-        tags?: Tag[];
-        vaulted?: boolean | 'N/A';
-        wikiaThumbnail?: string;
-        wikiaUrl?: string;
-        disposition?: Disposition;
-        health?: number;
-        shield?: number;
-        armor?: number;
-        stamina?: number;
-        power?: number;
-        sprintSpeed?: number;
-        abilities?: Ability[];
-        itemCount?: number;
-        parents?: string[];
-        releaseDate?: string;
-        vaultDate?: DateString;
-        estimatedVaultDate?: DateString;
-        aura?: Polarity;
-        conclave?: boolean;
-        color?: number;
-        sex?: Sex;
-        sprint?: number;
-        passiveDescription?: string;
-        areaAttack?: AreaAttack;
-        secondary?: Secondary;
-        secondaryArea?: SecondaryArea;
-        statusChance?: number;
-        binCount?: number;
-        binCapacity?: number;
-        fillRate?: number;
-        durability?: number;
-        repairRate?: number;
-        capacityMultiplier?: number[];
-        specialities?: string[];
-        showInInventory?: boolean;
-        systemIndex?: number;
-        systemName?: string;
-        nodeType?: number;
-        missionIndex?: number;
-        factionIndex?: number;
-        minEnemyLevel?: number;
-        maxEnemyLevel?: number;
-        compatName?: string;
-        isAugment?: boolean;
-        transmutable?: boolean;
-        productCategory?: ProductCategory;
-        multishot?: number;
         blockingAngle?: number;
         comboDuration?: number;
         followThrough?: number;
@@ -131,31 +138,167 @@ declare module 'warframe-items' {
         heavySlamRadialDamage?: number;
         heavySlamRadius?: number;
         windUp?: number;
-        isUtility?: boolean;
-        modSet?: string;
-        rewardName?: string;
-        tier?: number;
-        probability?: number;
-        isExilus?: boolean;
-        fusionPoints?: number;
+        channelingDrain?: number;
+        channelingDamageMultiplier?: number;
+        chargeAttack?: number;
         chargeTime?: number;
-        exalted?: string[];
-        primeOmegaAttenuation?: number;
-        primeSellingPrice?: number;
-        maxLevelCap?: number;
-        modSetValues?: number[];
-        excludeFromCodex?: boolean;
-        levelStats?: LevelStat[];
-        introduced?: Update;
-        attacks?: Attack[];
-        i18n?: I18nBundle<UniqueName>;
-        isPrime?: boolean;
     }
-
-    interface Component {
-        uniqueName: string;
-        name: string;
-        description?: string;
+    interface Gun extends Weapon {
+        category: 'Primary' | 'Secondary' | 'Arch-Gun';
+        magazineSize?: number;
+        reloadTime?: number;
+        projectile?: Projectile;
+        flight?: number | '???';
+    }
+    interface SentinelWeapon extends Omit<Melee, 'category'> {
+        sentinel: true;
+        productCategory: 'SentinelWeapons';
+        category: 'Primary';
+    }
+    interface ExaltedWeapon extends Omit<Gun, 'category'>, Omit<Melee, 'category'>, Omit<Weapon, 'category'> {
+        category: 'Misc';
+        type: 'Exalted Weapon';
+    }
+    interface Weapon extends Equippable, Buildable, Attackable, WikiaItem, BaseItem {
+        category: Gun['category'] | Melee['category'];
+        fusionLimit?: number;
+        secondsPerShot?: number;
+        damagePerSecond?: number;
+        trigger?: Trigger;
+        damageTypes?: DamageTypes;
+        areaAttack?: AreaAttack;
+        secondary?: Secondary;
+        secondaryArea?: SecondaryArea;
+        statusChance?: number;
+        multishot?: number;
+        attacks?: Attack[];
+        maxLevelCap?: number;
+    }
+    interface Arcane extends Buildable, Partial<Omit<Mod, 'category' | 'type'>> {
+        category: 'Arcanes';
+        type: 'Arcane';
+        drops?: Drop[];
+        levelStats?: LevelStat[];
+    }
+    interface StanceMod extends Omit<Mod, 'levelStats'> {
+        type: 'Stance Mod';
+    }
+    interface RailjackMod extends Omit<Mod, 'levelStats'> {
+        upgradeEntries?: UpgradeEntry[];
+        category: 'Mods';
+        type: 'Railjack Mod';
+    }
+    interface RivenMod extends Omit<Mod, 'levelStats' | 'type' | 'category' | 'polarity'> {
+        category: 'Mods' | 'Misc';
+        type: 'Riven Mod' | `${WeaponType} Riven Mod`;
+        availableChallenges?: AvailableChallenge[];
+        upgradeEntries?: UpgradeEntry[];
+        polarity?: Polarity;
+    }
+    interface SingleLevelMod extends Omit<Mod, 'levelStats'> {}
+    type ModType = 
+        'Railjack' |
+        'Necramech' |
+        'Warframe' |
+        'Secondary' |
+        'Melee' |
+        'Companion' |
+        'Primary' |
+        'K-Drive' |
+        'Riven' |
+        'Archwing' |
+        'Arch-Melee' |
+        'Arch-Gun' |
+        'Shotgun' |
+        'Creature' |
+        'Stance' |
+        'Parazon' |
+        'Transmutation' |
+        'Peculiar';
+    interface Mod extends MinimalItem, WikiaItem, Droppable {
+        baseDrain: number;
+        category: 'Mods';
+        compatName?: string;
+        fusionLimit: number;
+        isAugment?: boolean;
+        isPrime: false;
+        levelStats?: LevelStat[];
+        polarity: Polarity;
+        transmutable?: boolean;
+        /** @deprecated probably replaced by Mod#isExilus */
+        isUtility?: boolean;
+        modSet?: UniqueName;
+        isExilus?: boolean;
+        modSetValues?: number[];
+        type: `${ModType} Mod`;
+    }
+    interface PrimeMod extends Omit<Mod, 'isPrime'> { isPrime: true; }
+    interface Warframe extends Equippable, Buildable, WikiaItem, BaseItem {
+        category: 'Warframes' | 'Archwing' | 'Pets' | 'Sentinels';
+        health: number;
+        shield: number;
+        armor: number;
+        stamina: number;
+        power: number;
+        sprintSpeed?: number;
+        abilities?: Ability[];
+        aura?: Polarity;
+        sex?: Sex;
+        sprint?: number;
+        passiveDescription?: string;
+        maxLevelCap?: number;
+        exalted?: Array<UniqueName>;
+    }
+    interface SolNode extends MinimalItem {
+        category: 'Node';
+        systemIndex: number;
+        systemName: SystemName;
+        nodeType: number;
+        missionIndex: number;
+        factionIndex?: number;
+        minEnemyLevel: number;
+        maxEnemyLevel: number;
+        masteryReq: number;
+        tradable: false;
+        type: 'Node';
+        drops?: Drop[];
+    }
+    interface Extractor extends MinimalItem, Buildable {
+        category: 'Misc';
+        binCount: number;
+        binCapacity: number;
+        fillRate: number;
+        durability: number;
+        repairRate: number;
+        capacityMultiplier?: number[];
+        specialities: string[];
+    }
+    interface Skin extends MinimalItem, Equippable {
+        category: 'Skins';
+        excludeFromCodex: true;
+    }
+    interface Relic extends MinimalItem {
+        category: 'Relics';
+        type: 'Relic';
+        locations: Array<TitaniaRelicLocation>;
+        rewards: Array<TitaniaRelicReward>;
+        vaulted: boolean;
+        vaultDate: string;
+        marketInfo: TitaniaWFMInfo | null;
+        tradable: true;
+        drops?: Drop[];
+    }
+    interface EmptyRelic extends Omit<Relic, 'marketInfo' | 'category' | 'tradable' | 'vaultDate' | 'vaulted'> {
+        category: 'Misc';
+        tradable: false;
+        locations: [];
+        rewards: [];
+        excludeFromCodex: true;
+    }
+    interface ModularPetPart extends MinimalItem, Droppable, Attackable, Equippable {
+        category: 'Pets';
+    }
+    interface Component extends MinimalItem {
         itemCount: number;
         imageName: string;
         tradable: boolean;
@@ -225,7 +368,6 @@ declare module 'warframe-items' {
         introduced?: Update;
         attacks?: Attack[];
     }
-
     interface Secondary {
         name?: string;
         crit_chance?: number;
@@ -246,7 +388,6 @@ declare module 'warframe-items' {
         corrosive?: number;
         radiation?: number;
     }
-
     interface Attack {
         name: string;
         duration?: number;
@@ -268,19 +409,16 @@ declare module 'warframe-items' {
         channeling?: number;
         slam?: SlamAttack;
     }
-
     interface SlamAttack {
         damage: number | string;
         radial: RadialDamage;
     }
-
     interface RadialDamage {
         damage: number | string;
         element?: Element;
         proc?: Element;
         radius: number;
     }
-
     interface AreaAttack {
         name: string;
         status_chance?: number;
@@ -294,13 +432,11 @@ declare module 'warframe-items' {
         speed?: number;
         falloff?: Falloff;
     }
-
     interface Falloff {
         start: number;
         end: number;
         reduction?: number;
     }
-
     interface SecondaryArea {
         name: string;
         status_chance?: number;
@@ -313,32 +449,26 @@ declare module 'warframe-items' {
         duration?: number;
         speed?: number;
     }
-
     interface Ability {
         name: string;
         description: string;
     }
-
     interface AvailableChallenge {
         fullName: string;
         description: string;
         complications: Complication[];
     }
-
     interface Colour {
         value: string;
     }
-
     interface LevelStat {
         stats: string[];
     }
-
     interface Complication {
         fullName: string;
         description: string;
         overrideTag?: string;
     }
-
     interface DamageTypes {
         impact?: number;
         puncture?: number;
@@ -355,7 +485,6 @@ declare module 'warframe-items' {
         gas?: number;
         void?: number
     }
-
     interface Drop {
         location: string;
         type: string;
@@ -363,7 +492,6 @@ declare module 'warframe-items' {
         chance: number | null;
         rotation?: Rotation;
     }
-
     interface PatchLog {
         name: string;
         date: DateString;
@@ -373,12 +501,10 @@ declare module 'warframe-items' {
         changes: string;
         fixes: string;
     }
-
     interface Pellet {
         name: string;
         count: number;
     }
-
     interface Update {
         name: string;
         url: string;
@@ -386,20 +512,17 @@ declare module 'warframe-items' {
         parent: string;
         date: DateString;
     }
-
     interface UpgradeEntry {
         tag: string;
         prefixTag: string;
         suffixTag: string;
         upgradeValues: UpgradeValue[];
     }
-
     interface UpgradeValue {
         value: number;
         locTag?: string;
         reverseValueSymbol?: boolean;
     }
-
     interface ItemI18n {
         name: string;
         description: string;
@@ -408,6 +531,26 @@ declare module 'warframe-items' {
         trigger?: string;
         systemName?: string;
         levelStats: LevelStat[];
+    }
+
+    interface TitaniaRelicLocation {
+        location: string;
+        rarity: Rarity;
+        chance: number;
+    }
+    interface TitaniaRelicReward {
+        rarity: Rarity;
+        chance: number;
+        item: TitaniaRelicRewardItem;
+    }
+    interface TitaniaRelicRewardItem {
+        uniqueName: string;
+        name: string;
+        warframeMarket?: TitaniaWFMInfo;
+    }
+    interface TitaniaWFMInfo {
+        id: string;
+        urlName: string
     }
 
     type I18nBundle<Locale> = {
@@ -452,27 +595,26 @@ declare module 'warframe-items' {
     type Category =
         'All' |
         'Arcanes' |
-        'Arch-Gun' |
-        'Arch-Melee' |
         'Archwing' |
         'Fish' |
         'Gear' |
         'Glyphs' |
-        'Melee' |
         'Misc' |
         'Mods' |
         'Node' |
         'Pets' |
-        'Primary' |
         'Quests' |
         'Relics' |
         'Resources' |
-        'Secondary' |
         'Sentinels' |
         'Sigils' |
         'Skins' |
-        'Warframes'
+        'Warframes' |
+        Weapon['category']
 
+    /**
+     * Riven disposition, a multiplier & range for omegaAttenuation
+     */
     type Disposition = 1 | 2 | 3 | 4 | 5
 
     type Noise =
@@ -575,14 +717,9 @@ declare module 'warframe-items' {
 
     type Type =
         'Alloy' |
-        'Amp' |
         'Arcade Minigame Unlock' |
         'Arcane' |
-        'Arch-Gun' |
-        'Arch-Melee' |
-        'Arch-Melee Mod' |
         'Archwing' |
-        'Archwing Mod' |
         'Arm Cannon' |
         'Assault Saw' |
         'Aura' |
@@ -595,10 +732,8 @@ declare module 'warframe-items' {
         'Cetus Bounty Rewards' |
         'Claws' |
         'Color Palette' |
-        'Companion Mod' |
         'Companion Weapon' |
         'Conservation Tag' |
-        'Creature Mod' |
         'Crossbow' |
         'Currency' |
         'Cut Gem' |
@@ -629,23 +764,18 @@ declare module 'warframe-items' {
         'Heavy Blade' |
         'Helminth Charger' |
         'K-Drive Component' |
-        'K-Drive Mod' |
         'Kavat' |
-        'Kavat Mod' |
         'Key' |
         'Key Rewards' |
         'Kitgun Component' |
         'Kubrow' |
-        'Kubrow Mod' |
         'Launcher' |
         'Machete' |
         'Medallion' |
         'Melee' |
-        'Melee Mod' |
         'Misc' |
         'Mission Rewards' |
         'Mod Locations' |
-        'Necramech Mod' |
         'Nikana' |
         'Node' |
         'Note Packs' |
@@ -660,23 +790,17 @@ declare module 'warframe-items' {
         'Plant' |
         'Polearm' |
         'Primary' |
-        'Primary Mod' |
-        'Railjack Mod' |
         'Rapier' |
         'Relic' |
         'Relics' |
         'Resource' |
         'Rifle' |
-        'Riven Mod' |
         'Scythe' |
         'Secondary' |
-        'Secondary Mod' |
         'Sentinel' |
-        'Sentinel Mod' |
         'Ship Decoration' |
         'Ship Segment' |
         'Shotgun' |
-        'Shotgun Mod' |
         'Shotgun Sidearm' |
         'Sigil' |
         'Simulacrum' |
@@ -689,7 +813,6 @@ declare module 'warframe-items' {
         'Speargun' |
         'Specter' |
         'Staff' |
-        'Stance' |
         'Sword' |
         'Sword And Shield' |
         'Sword and Shield' |
@@ -701,11 +824,11 @@ declare module 'warframe-items' {
         'Throwing' |
         'Tonfa' |
         'Transient Rewards' |
+        'Transmutation Mod' |
         'Two-Handed Nikana' |
         'Unique' |
         'Warfan' |
         'Warframe' |
-        'Warframe Mod' |
         'Whip' |
         'Zaw Component' |
         'Zaw Dagger / Staff' |
@@ -717,7 +840,39 @@ declare module 'warframe-items' {
         'Zaw Scythe / Staff' |
         'Zaw Sword / Polearm' |
         'Zaw Sword / Staff' |
-        '---'
+        '---' | Mod['type'] | RivenMod['type'] | WeaponType;
+
+    type WeaponType =
+        'Amp' |
+        'Arch-Gun' |
+        'Arch-Melee' |
+        'Rifle' |
+        'Pistol' |
+        'Melee' |
+        'Shotgun' |
+        'Kitgun' |
+        'Companion Weapon' |
+        'Zaw';
+
+    type SystemName = 'Mercury' |
+        'Venus' |
+        'Earth' |
+        'Lua' |
+        'Mars' |
+        'Deimos' |
+        'Phobos' |
+        'Ceres' |
+        'Jupiter' |
+        'Europa' |
+        'Saturn' |
+        'Uranus' |
+        'Neptune' |
+        'Pluto' |
+        'Sedna' |
+        'Eris' |
+        'Kuva Fortress' |
+        'Zariman' |
+        'Void';
 
     type Element = Capitalize<keyof DamageTypes>;
 }

@@ -8,6 +8,9 @@ const lzma = require('lzma');
 const fs = require('node:fs/promises');
 const path = require('path');
 const cheerio = require('cheerio');
+
+const { Generator: RelicGenerator } = require('@wfcd/relics');
+
 const Progress = require('./progress');
 const exportCache = require('../data/cache/.export.json');
 const locales = require('../config/locales.json');
@@ -64,7 +67,7 @@ class Scraper {
     const i18nEndpoints = {};
     await Promise.all(
       locales.map(async (locale) => {
-        i18nEndpoints[locale] = await this.fetchEndpoints(false, locale);
+        i18nEndpoints[locale] = await this.fetchEndpoints(false);
       })
     );
     const totalEndpoints =
@@ -94,7 +97,7 @@ class Scraper {
         i18n[locale] = [];
         return Promise.all(
           i18nEndpoints[locale].map(async (endpoint) => {
-            i18n[locale].push(await fetchEndpoint(endpoint));
+            i18n[locale].push(await fetchEndpoint(endpoint, locale));
           })
         );
       })
@@ -126,6 +129,7 @@ class Scraper {
 
   /**
    * Get official drop rates and check if they changed since last build.
+   * @returns {DropData}
    */
   async fetchDropRates() {
     const bar = new Progress('Fetching Drop Rates', 1);
@@ -175,8 +179,8 @@ class Scraper {
 
   /**
    * @typedef {Object} WikiaData
-   * @property {Array<WikiaWeapons>} weapons
-   * @property {Array<WikiaWarframes>} warframes
+   * @property {Array<WikiaWeapon>} weapons
+   * @property {Array<WikiaWarframe>} warframes
    * @property {Array<WikiaMods>} mods
    * @property {Array<WikiaVersions>} versions
    * @property {Array<WikiaDucats>} ducats
@@ -255,6 +259,22 @@ class Scraper {
 
     bar.tick();
     return vaultData;
+  }
+
+  /**
+   * Generate Relic Data from Titania Project
+   * @returns {Promise<Array<TitaniaRelic>>}
+   */
+  async generateRelicData() {
+    const bar = new Progress('Generating Relic Data', 1);
+    const relicGenerator = new RelicGenerator();
+    try {
+      const relicData = await relicGenerator.generate();
+      bar.tick();
+      return relicData;
+    } catch (e) {
+      console.error(e);
+    }
   }
 }
 

@@ -21,6 +21,13 @@ const mapColors = async (oldFrame, imageUrl) => {
   }
 };
 
+/**
+ * Transform wikia lua weapons into usable standardized json
+ * @param {Object} oldFrame old warframe in lua format
+ * @param {Record<string, unknown>} imageUrls name-url pairs
+ * @param {Record<string, Object>} blueprints blueprint objects
+ * @returns {Promise<WikiaWarframe>}
+ */
 module.exports = async (oldFrame, imageUrls, blueprints) => {
   let newFrame;
   if (!oldFrame || !oldFrame.Name) {

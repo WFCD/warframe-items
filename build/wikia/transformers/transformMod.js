@@ -14,7 +14,7 @@ module.exports = async (oldMod, imageUrls) => {
       url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       transmutable: Transmutable,
       introduced: Introduced,
-      thumbnail: imageUrls[Image],
+      thumbnail: imageUrls?.[Image],
     };
   } catch (error) {
     console.error(`Error parsing ${oldMod.Name}`);
