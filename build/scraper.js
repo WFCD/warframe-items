@@ -67,7 +67,7 @@ class Scraper {
     const i18nEndpoints = {};
     await Promise.all(
       locales.map(async (locale) => {
-        i18nEndpoints[locale] = await this.fetchEndpoints(false);
+        i18nEndpoints[locale] = await this.fetchEndpoints(false, locale);
       })
     );
     const totalEndpoints =
@@ -99,7 +99,7 @@ class Scraper {
       i18n[locale] = [];
       await Promise.all(
         i18nEndpoints[locale].map(async (endpoint) => {
-          i18n[locale].push(await fetchEndpoint(endpoint, locale));
+          i18n[locale].push(await fetchEndpoint(endpoint));
         })
       );
     }
