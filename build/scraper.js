@@ -67,7 +67,7 @@ class Scraper {
     const i18nEndpoints = {};
     await Promise.all(
       locales.map(async (locale) => {
-        i18nEndpoints[locale] = await this.fetchEndpoints(false);
+        i18nEndpoints[locale] = await this.fetchEndpoints(false, locale);
       })
     );
     const totalEndpoints =
@@ -92,16 +92,17 @@ class Scraper {
       en: result,
     };
 
-    await Promise.all(
-      locales.map(async (locale) => {
-        i18n[locale] = [];
-        return Promise.all(
-          i18nEndpoints[locale].map(async (endpoint) => {
-            i18n[locale].push(await fetchEndpoint(endpoint, locale));
-          })
-        );
-      })
-    );
+    // Request i18n sequentially by locale to avoid getting randomly stuck in some computers
+    // It is roughly the same speed as the "all async" method but is always successfull
+    for (let i = 0; i < locales.length; i += 1) {
+      const locale = locales[i];
+      i18n[locale] = [];
+      await Promise.all(
+        i18nEndpoints[locale].map(async (endpoint) => {
+          i18n[locale].push(await fetchEndpoint(endpoint));
+        })
+      );
+    }
     return i18n;
   }
 
