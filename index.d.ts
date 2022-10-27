@@ -283,7 +283,7 @@ declare module 'warframe-items' {
         locations: Array<TitaniaRelicLocation>;
         rewards: Array<TitaniaRelicReward>;
         vaulted: boolean;
-        vaultDate: string;
+        vaultDate?: string;
         marketInfo: TitaniaWFMInfo | null;
         tradable: true;
         drops?: Drop[];
