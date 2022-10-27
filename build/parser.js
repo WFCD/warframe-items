@@ -173,7 +173,7 @@ class Parser {
 
     if (result.rewardName) result.uniqueName = result.rewardName;
     this.addType(result);
-    this.addDamage(result)
+    this.addDamage(result);
     this.sanitize(result);
     this.addImageName(result, data.manifest, previous);
     this.addCategory(result, category);
@@ -453,7 +453,7 @@ class Parser {
 
   /**
    * Parse out damage types from "damage per shot" array
-   * @param {module:warframe-items.Item} item
+   * @param {module:warframe-items.Item} item to have damage parsed onto
    */
   addDamage(item) {
     if (!item.damagePerShot) return;
