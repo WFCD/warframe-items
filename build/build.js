@@ -1,5 +1,6 @@
 'use strict';
 
+const _ = require('lodash');
 const fs = require('fs/promises');
 const path = require('path');
 const crypto = require('crypto');
@@ -14,6 +15,7 @@ const scraper = require('./scraper');
 const parser = require('./parser');
 const imageCache = require('../data/cache/.images.json');
 const exportCache = require('../data/cache/.export.json');
+const locales = require('../config/locales.json');
 
 const allowedCustomCategories = ['SentinelWeapons'];
 
@@ -22,8 +24,16 @@ const get = async (url, binary = true) => {
   return binary ? res.buffer() : res.text();
 };
 
+const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg));
+
 class Build {
   async init() {
+    const updatedExportCache = await this.generateExportCache();
+    if (!force && _.isEqual(exportCache, updatedExportCache)) {
+      console.log('Finished, data already up-to-date');
+      return;
+    }
+
     const resources = await scraper.fetchResources();
     /** @type {RawItemData} */
     const raw = {
@@ -50,7 +60,28 @@ class Build {
     for (const warning of Object.keys(parsed.warnings)) {
       warningNum += parsed.warnings[warning].length;
     }
+
+    await fs.writeFile(
+      path.join(__dirname, '../data/cache/.export.json'),
+      JSON.stringify(updatedExportCache, undefined, 1)
+    );
+
     console.log(`\nFinished with ${warningNum} warnings.`);
+  }
+
+  async generateExportCache() {
+    const keyWhitelist = ['Manifest', 'DropChances', 'Patchlogs'];
+
+    const endpoints = await Promise.all([...locales, 'en'].map((locale) => scraper.fetchEndpoints(false, locale)));
+
+    return Object.fromEntries([
+      ...keyWhitelist.filter((key) => key in exportCache).map((key) => [key, exportCache[key]]),
+      ...endpoints
+        .flat()
+        .map((endpoint) => endpoint.split('!00_'))
+        .filter(([key, hash]) => key && hash)
+        .map(([key, hash]) => [key, { hash }]),
+    ]);
   }
 
   /**
