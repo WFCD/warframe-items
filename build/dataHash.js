@@ -20,9 +20,7 @@ class DataHash {
     const cacheEntries = Object.entries(this.exportCache);
 
     const compareHashs = () =>
-      Object.entries(this.exportCache)
-        .filter(([key]) => !exportKeyWhitelist.includes(key))
-        .every(([key, { hash }]) => hash === exportCache[key]?.hash);
+      Object.entries(this.exportCache).every(([key, { hash }]) => hash === exportCache[key]?.hash);
 
     return oldCacheEntries.length === cacheEntries.length && compareHashs();
   }
