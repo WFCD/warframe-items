@@ -110,7 +110,7 @@ declare module 'warframe-items' {
         criticalMultiplier?: number;
         noise?: Noise;
         ammo?: number | null;
-        damage?: number | string;
+        damage?: DamageTypes;
         attacks?: Attack[];
         damagePerShot?: number[];
         disposition?: Disposition;
@@ -167,7 +167,6 @@ declare module 'warframe-items' {
         secondsPerShot?: number;
         damagePerSecond?: number;
         trigger?: Trigger;
-        damage?: DamageTypes;
         damageTypes?: DamageTypes;
         areaAttack?: AreaAttack;
         secondary?: Secondary;
@@ -341,7 +340,7 @@ declare module 'warframe-items' {
         omegaAttenuation?: number;
         ammo?: number | null;
         chargeTime?: number;
-        damage?: number | string;
+        damage?: DamageTypes;
         damageTypes?: DamageTypes;
         flight?: number;
         marketCost?: number | '';
