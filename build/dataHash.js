@@ -46,11 +46,11 @@ class DataHash {
   }
 
   async fetchEndpoints() {
-    const localeEndpoitns = await Promise.all(
+    const localeEndpoints = await Promise.all(
       [...locales, 'en'].map((locale) => scraper.fetchEndpoints(false, locale))
     );
 
-    return localeEndpoitns.flat();
+    return localeEndpoints.flat();
   }
 }
 
