@@ -12,7 +12,7 @@ const Progress = require('./progress');
 const stringify = require('./stringify');
 const scraper = require('./scraper');
 const parser = require('./parser');
-const dataHash = require('./dataHash');
+const hashManager = require('./hashManager');
 const imageCache = require('../data/cache/.images.json');
 const exportCache = require('../data/cache/.export.json');
 
@@ -23,13 +23,13 @@ const get = async (url, binary = true) => {
   return binary ? res.buffer() : res.text();
 };
 
-const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg));
+const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg)) || process.env.FORCE !== 'true';
 
 class Build {
   async init() {
-    await dataHash.updateExportCache();
-    if (!force && process.env.FORCE !== 'true' && dataHash.isUptodate()) {
-      console.log('Finished, data already up-to-date');
+    await hashManager.updateExportCache();
+    if (!force && hashManager.isUptodate()) {
+      console.log('Data already up-to-date');
       return;
     }
 
@@ -60,7 +60,7 @@ class Build {
       warningNum += parsed.warnings[warning].length;
     }
 
-    await dataHash.saveExportCache();
+    await hashManager.saveExportCache();
 
     console.log(`\nFinished with ${warningNum} warnings.`);
   }

@@ -8,13 +8,17 @@ const locales = require('../config/locales.json');
 
 const exportKeyWhitelist = ['Manifest', 'DropChances', 'Patchlogs'];
 
-class DataHash {
+class HashManager {
   constructor() {
     this.exportCache = Object.fromEntries(
       exportKeyWhitelist.filter((key) => key in exportCache).map((key) => [key, exportCache[key]])
     );
   }
 
+  /**
+   * Compares DE's endpoint hashs between the cache and the last fetched ones
+   * @returns {boolean}
+   */
   isUptodate() {
     const oldCacheEntries = Object.entries(exportCache);
     const cacheEntries = Object.entries(this.exportCache);
@@ -33,7 +37,14 @@ class DataHash {
   }
 
   async updateExportCache() {
-    const endpoints = await this.fetchEndpoints();
+    const endpoints = [];
+
+    const allLocales = [...locales, 'en'];
+    for (let i = 0; i < allLocales.length; i += 1) {
+      const locale = allLocales[i];
+      endpoints.push(...(await scraper.fetchEndpoints(false, locale)));
+    }
+
     endpoints
       .flat()
       .map((endpoint) => endpoint.split('!00_'))
@@ -42,14 +53,6 @@ class DataHash {
         this.exportCache[key] = { hash };
       });
   }
-
-  async fetchEndpoints() {
-    const localeEndpoints = await Promise.all(
-      [...locales, 'en'].map((locale) => scraper.fetchEndpoints(false, locale))
-    );
-
-    return localeEndpoints.flat();
-  }
 }
 
-module.exports = new DataHash();
+module.exports = new HashManager();
