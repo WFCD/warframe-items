@@ -23,7 +23,7 @@ const get = async (url, binary = true) => {
   return binary ? res.buffer() : res.text();
 };
 
-const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg)) || process.env.FORCE !== 'true';
+const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg)) || process.env.FORCE === 'true';
 
 class Build {
   async init() {
