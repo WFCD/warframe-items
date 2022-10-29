@@ -2,6 +2,12 @@ name: Build
 on:
   schedule:
     - cron: "55 */6 * * *"
+  push:
+    branches:
+      - master
+    paths:
+      - 'build/*.js'
+      - 'config/*.json'
 
 jobs:
   build:
