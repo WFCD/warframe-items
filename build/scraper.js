@@ -81,8 +81,8 @@ class Scraper {
       bar.tick();
 
       if (category === 'Upgrades') {
-        const modSets = raw.ExportModSet.map((ms) => ({
-          ...ms,
+        const modSets = raw.ExportModSet.map((modSet) => ({
+          ...modSet,
           type: 'Mod Set',
         }));
         data.push(...modSets, ...raw.ExportAvionics, ...raw.ExportFocusUpgrades);
