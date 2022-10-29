@@ -110,7 +110,7 @@ declare module 'warframe-items' {
         criticalMultiplier?: number;
         noise?: Noise;
         ammo?: number | null;
-        damage?: number | string;
+        damage?: DamageTypes;
         attacks?: Attack[];
         damagePerShot?: number[];
         disposition?: Disposition;
@@ -340,7 +340,7 @@ declare module 'warframe-items' {
         omegaAttenuation?: number;
         ammo?: number | null;
         chargeTime?: number;
-        damage?: number | string;
+        damage?: DamageTypes;
         damageTypes?: DamageTypes;
         flight?: number;
         marketCost?: number | '';
@@ -497,7 +497,14 @@ declare module 'warframe-items' {
         cold?: number;
         viral?: number;
         gas?: number;
-        void?: number
+        void?: number;
+        tau?: number;
+        true?: number;
+        cinematic?: number;
+        shieldDrain?: number;
+        healthDrain?: number;
+        energyDrain?: number;
+        total?: number;
     }
     interface Drop {
         location: string;
