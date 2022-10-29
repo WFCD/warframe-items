@@ -33,7 +33,9 @@ declare module 'warframe-items' {
         Resource |
         Arcane |
         Misc |
-        MinimalItem;
+        MinimalItem |
+        ModSet |
+        FocusWay;
 
     type UniqueName = string;
     type DateString = string;
@@ -196,7 +198,18 @@ declare module 'warframe-items' {
         polarity?: Polarity;
     }
     interface SingleLevelMod extends Omit<Mod, 'levelStats'> {}
-    type ModType = 
+    interface FocusWay extends Omit<Mod, 'type'> {
+        type: 'Focus Way'
+    }
+    interface ModSet extends MinimalItem, Droppable {
+        category: 'Mods';
+        stats: string[];
+        numUpgradesInSet: number;
+        buffSet?: true;
+        type: 'Mod Set Mod';
+        isPrime: false;
+    }
+    type ModType =
         'Railjack' |
         'Necramech' |
         'Warframe' |
@@ -214,7 +227,8 @@ declare module 'warframe-items' {
         'Stance' |
         'Parazon' |
         'Transmutation' |
-        'Peculiar';
+        'Peculiar' |
+        'Plexus';
     interface Mod extends MinimalItem, WikiaItem, Droppable {
         baseDrain: number;
         category: 'Mods';
@@ -776,6 +790,7 @@ declare module 'warframe-items' {
         'Misc' |
         'Mission Rewards' |
         'Mod Locations' |
+        'Mod Set Mod' |
         'Nikana' |
         'Node' |
         'Note Packs' |

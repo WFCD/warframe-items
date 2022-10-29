@@ -79,6 +79,14 @@ class Scraper {
       const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`);
       const data = raw ? raw[`Export${category}`] : undefined;
       bar.tick();
+
+      if (category === 'Upgrades') {
+        const modSets = raw.ExportModSet.map((ms) => ({
+          ...ms,
+          type: 'Mod Set',
+        }));
+        data.push(...modSets, ...raw.ExportAvionics, ...raw.ExportFocusUpgrades);
+      }
       return { category, data };
     };
 
