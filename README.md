@@ -135,6 +135,10 @@ You can run the build script with `npm run build`.
 Once built, you can verify the data with `npm test`.
 To verify the TypeScript typings are up to date, you can run `npm run typings`.
 
+In case you want to skip hash checking in the build process run:
+`npm run build --force` or `npm run build -f`.
+It's also possible to set the environment variable `FORCE='true'`.
+
 <br>
 
 ## License
