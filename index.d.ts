@@ -498,6 +498,12 @@ declare module 'warframe-items' {
         viral?: number;
         gas?: number;
         void?: number;
+        tau?: number;
+        true?: number;
+        cinematic?: number;
+        shieldDrain?: number;
+        healthDrain?: number;
+        energyDrain?: number;
         total?: number;
     }
     interface Drop {

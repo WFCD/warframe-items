@@ -457,8 +457,32 @@ class Parser {
    */
   addDamage(item) {
     if (!item.damagePerShot) return;
-    const [impact, slash, puncture, heat, cold, electricity, toxin, blast, radiation, gas, magnetic, viral, corrosive] =
-      item.damagePerShot;
+    if (!item.damagePerShot.find((damageType) => damageType > 0)) return;
+    const [
+      impact,
+      slash,
+      puncture,
+      heat,
+      cold,
+      electricity,
+      toxin,
+      blast,
+      radiation,
+      gas,
+      magnetic,
+      viral,
+      corrosive,
+      voidDamage,
+      tau,
+      cinematic,
+      shieldDrain,
+      healthDrain,
+      energyDrain,
+      trueType,
+    ] = item.damagePerShot;
+    if (item.damagePerShot[13]) {
+      console.error(`${item.name} | ${item.damagePerShot[13]}`);
+    }
     item.damage = {
       total: item.totalDamage,
       impact,
@@ -474,6 +498,13 @@ class Parser {
       magnetic,
       viral,
       corrosive,
+      void: voidDamage,
+      tau,
+      cinematic,
+      shieldDrain,
+      healthDrain,
+      energyDrain,
+      true: trueType,
     };
   }
 
