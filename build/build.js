@@ -12,6 +12,7 @@ const Progress = require('./progress');
 const stringify = require('./stringify');
 const scraper = require('./scraper');
 const parser = require('./parser');
+const hashManager = require('./hashManager');
 const imageCache = require('../data/cache/.images.json');
 const exportCache = require('../data/cache/.export.json');
 
@@ -22,8 +23,16 @@ const get = async (url, binary = true) => {
   return binary ? res.buffer() : res.text();
 };
 
+const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg)) || process.env.FORCE === 'true';
+
 class Build {
   async init() {
+    await hashManager.updateExportCache();
+    if (!force && hashManager.isUptodate()) {
+      console.log('Data already up-to-date');
+      return;
+    }
+
     const resources = await scraper.fetchResources();
     /** @type {RawItemData} */
     const raw = {
@@ -50,6 +59,9 @@ class Build {
     for (const warning of Object.keys(parsed.warnings)) {
       warningNum += parsed.warnings[warning].length;
     }
+
+    await hashManager.saveExportCache();
+
     console.log(`\nFinished with ${warningNum} warnings.`);
   }
 
