@@ -173,7 +173,7 @@ class Parser {
 
     if (result.rewardName) result.uniqueName = result.rewardName;
     this.addType(result);
-    // this.addDamage(result)
+    this.addDamage(result);
     this.sanitize(result);
     this.addImageName(result, data.manifest, previous);
     this.addCategory(result, category);
@@ -453,12 +453,36 @@ class Parser {
 
   /**
    * Parse out damage types from "damage per shot" array
-   * @param {Item} item to have damage parsed on
+   * @param {module:warframe-items.Item} item to have damage parsed onto
    */
   addDamage(item) {
     if (!item.damagePerShot) return;
-    const [impact, slash, puncture, heat, cold, electricity, toxin, blast, radiation, gas, magnetic, viral, corrosive] =
-      item.damagePerShot;
+    if (!item.damagePerShot.find((damageType) => damageType > 0)) return;
+    const [
+      impact,
+      slash,
+      puncture,
+      heat,
+      cold,
+      electricity,
+      toxin,
+      blast,
+      radiation,
+      gas,
+      magnetic,
+      viral,
+      corrosive,
+      voidDamage,
+      tau,
+      cinematic,
+      shieldDrain,
+      healthDrain,
+      energyDrain,
+      trueType,
+    ] = item.damagePerShot;
+    if (item.damagePerShot[13]) {
+      console.error(`${item.name} | ${item.damagePerShot[13]}`);
+    }
     item.damage = {
       total: item.totalDamage,
       impact,
@@ -474,6 +498,13 @@ class Parser {
       magnetic,
       viral,
       corrosive,
+      void: voidDamage,
+      tau,
+      cinematic,
+      shieldDrain,
+      healthDrain,
+      energyDrain,
+      true: trueType,
     };
   }
 
