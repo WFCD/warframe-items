@@ -480,9 +480,6 @@ class Parser {
       energyDrain,
       trueType,
     ] = item.damagePerShot;
-    if (item.damagePerShot[13]) {
-      console.error(`${item.name} | ${item.damagePerShot[13]}`);
-    }
     item.damage = {
       total: item.totalDamage,
       impact,
