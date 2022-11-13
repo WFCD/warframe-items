@@ -174,6 +174,16 @@ describe('integrity', function () {
     assert.strictEqual(matches.length, 1, 'There can be only One');
     assert(Object.keys(matches[0]).includes('components'));
   });
+  describe('melee check', () => {
+    data.items
+      .filter(i => ['Amphis', 'Cadus', 'Cassowar', 'Caustacyst', 'Sigma & Octantis'].includes(i.name))
+      .forEach(item => {
+        it(`${item.name} should be melee`, () => {
+          assert.equal(item.type, 'Melee');
+        });
+      });
+
+  })
   data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
     it(`${warframe.name} should have components`, () => {
       assert(warframe?.components?.length > 0);
