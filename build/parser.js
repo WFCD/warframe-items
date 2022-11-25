@@ -962,7 +962,12 @@ class Parser {
    */
   addRelics(item, relics) {
     if (item.type !== 'Relic') return;
-    const related = relics.filter((relic) => item.name.includes(relic.name));
+
+    // Item names are /(Lith|Meso|Neo|Axi|Requiem) (Relic|\w+ \w+)/
+    const relicName = item.name.toLowerCase().split(' ').slice(0, 2).join(' ');
+
+    // Relic names are /(Lith|Meso|Neo|Axi|Requiem) (\w+)/
+    const related = relics.filter((relic) => relic.name.toLowerCase() === relicName);
     item.locations = Array.from(new Set(related.map((relic) => relic.locations).flat()));
     item.rewards = Array.from(new Set(related.map((relic) => relic.rewards).flat()));
     [item.marketInfo] = Array.from(new Set(related.map((relic) => relic.warframeMarket)));
