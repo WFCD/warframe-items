@@ -1,7 +1,7 @@
 name: Build
 on:
   schedule:
-    - cron: "55 */6 * * *"
+    - cron: "55 */1 * * *"
   push:
     branches:
       - master
@@ -28,7 +28,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm i -D warframe-patchlogs@latest
-    - run: npm run build
+    - if: ${{ github.event_name == 'schedule' }}
+      run: npm run build
+    - if: ${{ github.event_name != 'schedule' }}
+      run: npm run build -- --force
     - run: sh .github/workflows/regression.sh
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
