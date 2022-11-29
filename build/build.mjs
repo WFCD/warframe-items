@@ -1,20 +1,22 @@
-'use strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import crypto from 'crypto';
+import minify from 'imagemin';
+import minifyPng from 'imagemin-pngquant';
+import minifyJpeg from 'imagemin-jpegtran';
+import fetch from 'node-fetch';
+import sharp from 'sharp';
 
-const fs = require('fs/promises');
-const path = require('path');
-const crypto = require('crypto');
-const minify = require('imagemin');
-const minifyPng = require('imagemin-pngquant');
-const minifyJpeg = require('imagemin-jpegtran');
-const fetch = require('node-fetch');
-const sharp = require('sharp');
-const Progress = require('./progress');
-const stringify = require('./stringify');
-const scraper = require('./scraper');
-const parser = require('./parser');
-const hashManager = require('./hashManager');
-const imageCache = require('../data/cache/.images.json');
-const exportCache = require('../data/cache/.export.json');
+import Progress from './progress.mjs';
+import stringify from './stringify.mjs';
+import scraper from './scraper.mjs';
+import parser from './parser.mjs';
+import hashManager from './hashManager.mjs';
+import readJson from './readJson.mjs';
+
+const imageCache = await readJson(new URL('../data/cache/.images.json', import.meta.url));
+const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 
 const allowedCustomCategories = ['SentinelWeapons'];
 
@@ -125,15 +127,15 @@ class Build {
       const data = categories[category].sort(sort);
       all = all.concat(data);
       await fs.writeFile(
-        path.join(__dirname, `../data/json/${category}.json`),
+        new URL(`../data/json/${category}.json`, import.meta.url),
         JSON.stringify(JSON.parse(stringify(data)))
       );
     }
 
     // All.json (all items in one file)
     all.sort(sort);
-    await fs.writeFile(path.join(__dirname, '../data/json/All.json'), stringify(all));
-    await fs.writeFile(path.join(__dirname, '../data/json/i18n.json'), stringify(i18n));
+    await fs.writeFile(new URL('../data/json/All.json', import.meta.url), stringify(all));
+    await fs.writeFile(new URL('../data/json/i18n.json', import.meta.url), stringify(i18n));
 
     return all;
   }
@@ -160,7 +162,7 @@ class Build {
    * @param {Warnings} warnings warnings to save to file
    */
   async saveWarnings(warnings) {
-    return fs.writeFile(path.join(__dirname, '../data/warnings.json'), stringify(warnings));
+    return fs.writeFile(new URL('../data/warnings.json', import.meta.url), stringify(warnings));
   }
 
   /**
@@ -194,11 +196,14 @@ class Build {
 
     // write the manifests after images have all succeeded
     exportCache.Manifest.hash = manifestHash;
-    await fs.writeFile(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, undefined, 1));
+    await fs.writeFile(
+      new URL('../data/cache/.export.json', import.meta.url),
+      JSON.stringify(exportCache, undefined, 1)
+    );
 
     // Write new cache to disk
     await fs.writeFile(
-      path.join(__dirname, '../data/cache/.images.json'),
+      new URL('../data/cache/.images.json', import.meta.url),
       JSON.stringify(
         imageCache.filter((i) => i.hash),
         undefined,
@@ -220,7 +225,7 @@ class Build {
     if (!imageBase) return;
     const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '');
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`;
-    const basePath = path.join(__dirname, '../data/img/');
+    const basePath = fileURLToPath(new URL('../data/img/', import.meta.url));
     const filePath = path.join(basePath, item.imageName);
     const hash = manifest.find((i) => i.uniqueName === item.uniqueName).fileTime;
     const cached = imageCache.find((c) => c.uniqueName === item.uniqueName);
@@ -293,14 +298,13 @@ class Build {
    * @param {module:warframe-patchlogs.Patchlogs} patchlogs for pulling the latest update
    */
   async updateReadme(patchlogs) {
-    // eslint-disable-next-line import/no-dynamic-require
-    const logob64 = require(path.join(__dirname, '../data/logo.json'));
+    const logob64 = await readJson(new URL('../data/logo.json', import.meta.url));
     const version = patchlogs.posts[0].name
       .replace(/ \+ /g, '--')
       .replace(/[^0-9\-.]/g, '')
       .trim();
     const { url } = patchlogs.posts[0];
-    const readmeLocation = path.join(__dirname, '../README.md');
+    const readmeLocation = new URL('../README.md', import.meta.url);
     const readmeOld = await fs.readFile(readmeLocation, 'utf-8');
     const readmeNew = readmeOld.replace(
       /\[!\[warframe update.*/,

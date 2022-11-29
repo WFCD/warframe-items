@@ -1,6 +1,4 @@
-'use strict';
-
-const dedupe = require('./dedupe');
+import dedupe from './dedupe.mjs';
 
 /**
  * Pretty print JSON as it should be.
@@ -15,4 +13,4 @@ const replacer = (key, value) => (isArrayOfPrimitive(value) ? format(value) : va
 const expand = (str) => str.replace(/"\^\^\^(\[ .* ])"/g, (match, a) => a.replace(/\\"/g, '"')).replace(/\\\\"/g, "'");
 const stringify = (obj) => expand(JSON.stringify(Array.isArray(obj) ? dedupe(obj) : obj, replacer, 2));
 
-module.exports = stringify;
+export default stringify;

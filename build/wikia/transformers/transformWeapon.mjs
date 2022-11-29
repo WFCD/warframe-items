@@ -1,7 +1,5 @@
-'use strict';
-
-const ELEMENTS = require('./elements');
-const transformPolarity = require('./transformPolarity');
+import ELEMENTS from './elements.mjs';
+import transformPolarity from './transformPolarity.mjs';
 
 const damageTypes = [
   'Impact',
@@ -74,7 +72,7 @@ const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialPro
   };
 };
 
-module.exports = (oldWeapon, imageUrls, blueprints) => {
+export default (oldWeapon, imageUrls, blueprints) => {
   let newWeapon;
   if (!oldWeapon || !oldWeapon.Name) {
     return undefined;
