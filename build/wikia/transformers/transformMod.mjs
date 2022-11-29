@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = async (oldMod, imageUrls) => {
+export default async (oldMod, imageUrls) => {
   let newMod;
   if (!oldMod || !oldMod.Name) {
     return undefined;

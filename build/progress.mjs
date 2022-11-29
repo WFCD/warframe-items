@@ -1,8 +1,7 @@
-'use strict';
+import ProgressBar from 'progress';
+import colors from 'colors/safe.js';
 
 const prod = process.env.NODE_ENV === 'production';
-const ProgressBar = require('progress');
-const colors = require('colors/safe');
 
 /**
  * Simple progress bar
@@ -26,7 +25,7 @@ class Progress extends ProgressBar {
  * Use dummy object in prod because pm2 won't render
  * the progress bar properly.
  */
-module.exports = prod
+export default prod
   ? class Empty {
       interrupt() {}
       tick() {}

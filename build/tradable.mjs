@@ -1,5 +1,3 @@
-'use strict';
-
 const builtUntradable = ['Warframe', 'Throwing', 'Shotgun', 'Rifle', 'Pistol', 'Melee', 'Sword And Shield'];
 const tradableConditions = (item) => !(builtUntradable.includes(item.type) && item.name.match(/Prime/gi));
 
@@ -51,7 +49,7 @@ const untradableRegex =
  * @param {module:warframe-items.Item} item Item to determine tradability
  * @returns {boolean}
  */
-module.exports = (item) => {
+export default (item) => {
   const notFiltered =
     !untradableTypes.includes(item.type) &&
     !item.name.match(untradableRegex) &&
