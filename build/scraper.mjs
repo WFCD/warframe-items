@@ -1,23 +1,24 @@
-'use strict';
+import Agent from 'socks5-http-client/lib/Agent.js';
+import fetch from 'node-fetch';
+import crypto from 'crypto';
+import lzma from 'lzma';
+import fs from 'node:fs/promises';
+import cheerio from 'cheerio';
+
+import { Generator as RelicGenerator } from '@wfcd/relics';
+import patchlogs from 'warframe-patchlogs';
+
+import Progress from './progress.mjs';
+import ModScraper from './wikia/scrapers/ModScraper.mjs';
+import WeaponScraper from './wikia/scrapers/WeaponScraper.mjs';
+import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
+import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
+import readJson from './readJson.mjs';
+
+const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
+const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
 const prod = process.env.NODE_ENV === 'production';
-const Agent = require('socks5-http-client/lib/Agent');
-const fetch = require('node-fetch');
-const crypto = require('crypto');
-const lzma = require('lzma');
-const fs = require('node:fs/promises');
-const path = require('path');
-const cheerio = require('cheerio');
-
-const { Generator: RelicGenerator } = require('@wfcd/relics');
-
-const Progress = require('./progress');
-const exportCache = require('../data/cache/.export.json');
-const locales = require('../config/locales.json');
-const ModScraper = require('./wikia/scrapers/ModScraper');
-const WeaponScraper = require('./wikia/scrapers/WeaponScraper');
-const WarframeScraper = require('./wikia/scrapers/WarframeScraper');
-const VersionScraper = require('./wikia/scrapers/VersionScraper');
 // eslint-disable-next-line no-control-regex
 const sanitize = (str) => str.replace(/\\r|\r?\n|\x09/g, '').replace(/\\\\"/g, "'");
 const agent = process.env.SOCK5_HOST
@@ -149,7 +150,10 @@ class Scraper {
     // Update checksum
     if (changed) {
       exportCache.DropChances.hash = ratesHash;
-      await fs.writeFile(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, undefined, 1));
+      await fs.writeFile(
+        new URL('../data/cache/.export.json', import.meta.url),
+        JSON.stringify(exportCache, undefined, 1)
+      );
     }
 
     bar.tick();
@@ -170,13 +174,15 @@ class Scraper {
    */
   async fetchPatchLogs() {
     const bar = new Progress('Fetching Patchlogs', 1);
-    const patchlogs = require('warframe-patchlogs');
     const patchlogsHash = crypto.createHash('md5').update(JSON.stringify(patchlogs.posts)).digest('hex');
     const changed = exportCache.Patchlogs.hash !== patchlogsHash;
 
     if (changed) {
       exportCache.Patchlogs.hash = patchlogsHash;
-      await fs.writeFile(path.join(__dirname, '../data/cache/.export.json'), JSON.stringify(exportCache, undefined, 1));
+      await fs.writeFile(
+        new URL('../data/cache/.export.json', import.meta.url),
+        JSON.stringify(exportCache, undefined, 1)
+      );
     }
 
     bar.tick();
@@ -287,4 +293,4 @@ class Scraper {
   }
 }
 
-module.exports = new Scraper();
+export default new Scraper();

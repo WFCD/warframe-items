@@ -1,10 +1,10 @@
-'use strict';
+import fs from 'node:fs/promises';
 
-const fs = require('fs/promises');
-const path = require('path');
-const scraper = require('./scraper');
-const exportCache = require('../data/cache/.export.json');
-const locales = require('../config/locales.json');
+import scraper from './scraper.mjs';
+import readJson from './readJson.mjs';
+
+const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
+const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
 const exportKeyWhitelist = ['Manifest', 'DropChances', 'Patchlogs'];
 
@@ -31,7 +31,7 @@ class HashManager {
 
   async saveExportCache() {
     await fs.writeFile(
-      path.join(__dirname, '../data/cache/.export.json'),
+      new URL('../data/cache/.export.json', import.meta.url),
       JSON.stringify(this.exportCache, undefined, 1)
     );
   }
@@ -55,4 +55,4 @@ class HashManager {
   }
 }
 
-module.exports = new HashManager();
+export default new HashManager();

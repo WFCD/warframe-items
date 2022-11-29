@@ -1,12 +1,10 @@
-'use strict';
-
-const cheerio = require('cheerio');
-const fs = require('fs/promises');
-const os = require('os');
-const path = require('path');
-const { promisify } = require('util');
-const cmd = require('node-cmd');
-const fetch = require('node-fetch');
+import cheerio from 'cheerio';
+import fs from 'fs/promises';
+import os from 'os';
+import path from 'path';
+import { promisify } from 'util';
+import cmd from 'node-cmd';
+import fetch from 'node-fetch';
 
 const run = promisify(cmd.get);
 
@@ -121,7 +119,7 @@ let blueprints;
 /**
  * Scrape Wikia data from data modules
  */
-module.exports = class WikiaDataScraper {
+export default class WikiaDataScraper {
   constructor(url, luaObjectName, transformFunction) {
     if (Array.isArray(url)) {
       this.urls = url;
@@ -189,4 +187,4 @@ module.exports = class WikiaDataScraper {
     if (!things.length) console.error(`scraped no ${this.luaObjectName}`);
     return things;
   }
-};
+}

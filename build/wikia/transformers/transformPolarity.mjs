@@ -1,6 +1,4 @@
-'use strict';
-
-const POLARITIES = require('./polarities');
+import POLARITIES from './polarities.mjs';
 
 const transform = (field) => {
   let output;
@@ -21,7 +19,7 @@ const transform = (field) => {
  * @param {Array<string>} [Polarities] list of strings designating polarities on a weapon or warframe
  * @returns {*}
  */
-module.exports = ({ AuraPolarity, StancePolarity, Polarity, Polarities }, target) => {
+export default ({ AuraPolarity, StancePolarity, Polarity, Polarities }, target) => {
   const output = { ...target };
   output.auraPolarity = transform(AuraPolarity);
   output.stancePolarity = transform(StancePolarity);

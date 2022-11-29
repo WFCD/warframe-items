@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
   Bar: 'naramon',
   V: 'madurai',
   D: 'vazarin',

@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = async (oldVersion) => {
+export default async (oldVersion) => {
   let newVersion;
 
   if (!oldVersion || !oldVersion.Name) {

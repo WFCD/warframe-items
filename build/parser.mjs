@@ -1,13 +1,18 @@
-'use strict';
+import _ from 'lodash';
 
-const _ = require('lodash');
-const Progress = require('./progress');
-const previousBuild = require('../data/json/All.json');
-const watson = require('../config/dt_map.json');
-const bpConflicts = require('../config/bpConflicts.json');
-const { prefixes, suffixes } = require('../config/variants.json');
-const dedupe = require('./dedupe');
-const tradable = require('./tradable');
+import Progress from './progress.mjs';
+import dedupe from './dedupe.mjs';
+import tradable from './tradable.mjs';
+import readJson from './readJson.mjs';
+
+const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
+const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
+const bpConflicts = await readJson(new URL('../config/bpConflicts.json', import.meta.url));
+const { prefixes, suffixes } = await readJson(new URL('../config/variants.json', import.meta.url));
+const grades = await readJson(new URL('../config/relicGrades.json', import.meta.url));
+const polarities = await readJson(new URL('../config/polarities.json', import.meta.url));
+const types = await readJson(new URL('../config/itemTypes.json', import.meta.url));
+const overrides = await readJson(new URL('../config/overrides.json', import.meta.url));
 
 /**
  * Titlecase a string
@@ -372,7 +377,6 @@ class Parser {
 
     // Relics don't have their grade in the name for some reason
     if (item.type === 'Relic') {
-      const grades = require('../config/relicGrades.json');
       // eslint-disable-next-line no-restricted-syntax
       for (const grade of grades) {
         if (item.uniqueName.includes(grade.id)) {
@@ -396,7 +400,6 @@ class Parser {
 
     // Use proper polarity names
     if (item.polarity) {
-      const polarities = require('../config/polarities.json');
       const polarity = polarities.find((p) => p.id === item.polarity);
       if (polarity) {
         item.polarity = polarity.name;
@@ -424,7 +427,6 @@ class Parser {
    */
   addType(item) {
     if (item.parent) return;
-    const types = require('../config/itemTypes.json');
     // eslint-disable-next-line no-restricted-syntax
     for (const type of types) {
       const contains = type.regex ? new RegExp(type.id, 'ig').test(item.uniqueName) : item.uniqueName.includes(type.id);
@@ -980,7 +982,7 @@ class Parser {
   applyOverrides(item) {
     // universal polarity casing override
     if (item.polarity) item.polarity = item.polarity.toLowerCase();
-    const override = require('../config/overrides.json')[item.uniqueName];
+    const override = overrides[item.uniqueName];
     if (override) {
       Object.keys(override).forEach((key) => {
         item[key] = override[key];
@@ -1080,4 +1082,4 @@ class Parser {
   }
 }
 
-module.exports = new Parser();
+export default new Parser();

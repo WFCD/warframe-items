@@ -1,8 +1,7 @@
-'use strict';
+import getColors from 'get-image-colors';
+import imageDownloader from 'image-downloader';
 
-const getColors = require('get-image-colors');
-const imageDownloader = require('image-downloader');
-const transformPolarity = require('./transformPolarity');
+import transformPolarity from './transformPolarity.mjs';
 
 const mapColors = async (oldFrame, imageUrl) => {
   if (!imageUrl) return 0;
@@ -28,7 +27,7 @@ const mapColors = async (oldFrame, imageUrl) => {
  * @param {Record<string, Object>} blueprints blueprint objects
  * @returns {Promise<WikiaWarframe>}
  */
-module.exports = async (oldFrame, imageUrls, blueprints) => {
+export default async (oldFrame, imageUrls, blueprints) => {
   let newFrame;
   if (!oldFrame || !oldFrame.Name) {
     return undefined;
