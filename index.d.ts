@@ -704,6 +704,7 @@ declare module 'warframe-items' {
         'Infested' |
         'Invasion Reward' |
         'Kuva Lich' |
+        'Lua' |
         'Never Vaulted' |
         'New Loka' |
         'Orokin' |
@@ -719,6 +720,7 @@ declare module 'warframe-items' {
         'Tenet' |
         'Tenno' |
         'Tutorial' |
+        'Voruna' |
         'Vandal' |
         'Vaulted' |
         'Wraith' |
