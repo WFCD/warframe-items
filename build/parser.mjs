@@ -1,9 +1,9 @@
 import _ from 'lodash';
 
-import Progress from './progress.mjs';
 import dedupe from './dedupe.mjs';
-import tradable from './tradable.mjs';
+import Progress from './progress.mjs';
 import readJson from './readJson.mjs';
+import tradable from './tradable.mjs';
 
 const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
 const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
@@ -802,9 +802,17 @@ class Parser {
    */
   detectPrime(item) {
     if (
-      !['Primary', 'Secondary', 'Warframes', 'Sentinels', 'Mods', 'Archwing', 'Arch-Melee', 'Arch-Gun'].includes(
-        item.category
-      )
+      ![
+        'Primary',
+        'Secondary',
+        'Melee',
+        'Warframes',
+        'Sentinels',
+        'Mods',
+        'Archwing',
+        'Arch-Melee',
+        'Arch-Gun',
+      ].includes(item.category)
     )
       return;
 
