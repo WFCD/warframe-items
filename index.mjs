@@ -38,6 +38,15 @@ import { fileURLToPath } from 'url';
 import path from "path";
 import fs from "fs";
 
+const canAccess = (path) => {
+  try {
+    accessSync(path, constants.R_OK);
+    return true;
+  } catch (e) {
+    return false;
+  }
+};
+
 const cache = {};
 const require = (filePath) => {
   if (cache[filePath]) return cache[filePath];
@@ -53,8 +62,6 @@ const require = (filePath) => {
 };
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
-
 
 const versions = require('./data/cache/.export.json');
 
