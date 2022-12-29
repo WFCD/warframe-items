@@ -8,24 +8,21 @@ on:
     paths:
       - 'build/*.js'
       - 'config/*.json'
+      - 'index.m?js'
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v3
       with:
         token: ${{ secrets.GH_TOKEN }}
     - uses: leafo/gh-actions-lua@v8.0.0
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version-file: '.nvmrc'
     - run: npm install
     - run: npm i -D warframe-patchlogs@latest
     - if: ${{ github.event_name == 'schedule' }}

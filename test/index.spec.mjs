@@ -146,6 +146,9 @@ for (const base of ['index.js', 'index.mjs']) {
   describe(`${base} integrity`, async function () {
     this.timeout(10000);
     await setup();
+    after(() => {
+      delete require.cache[base];
+    });
     it('weapons should only have 1 result for Mausolon', () => {
       const matches = data.weapons
         .filter((i) => i.name === 'Mausolon')
@@ -184,7 +187,6 @@ for (const base of ['index.js', 'index.mjs']) {
       data.items
         .filter(i => ['Amphis', 'Cadus', 'Cassowar', 'Caustacyst', 'Sigma & Octantis'].includes(i.name))
         .forEach(item => {
-          before(setup);
           it(`${item.name} should be melee`, () => {
             assert.equal(item.type, 'Melee');
           });
@@ -192,7 +194,6 @@ for (const base of ['index.js', 'index.mjs']) {
     });
     data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
       it(`${warframe.name} should have components`, () => {
-        setup();
         assert(warframe?.components?.length > 0);
       });
     });

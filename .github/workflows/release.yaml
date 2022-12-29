@@ -11,9 +11,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -22,7 +19,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: '.nvmrc'
       - run: npm ci
       - run: npm run lint
       - run: npm test
