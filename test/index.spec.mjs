@@ -35,11 +35,13 @@ for (const base of ['index.js', 'index.mjs']) {
       });
     });
     beforeEach(async () => {
-      delete require.cache[itemPath];
       Items = await importFresh(itemPath);
     });
-    it('should contain items when initializing.', () => {
-      const items = new Items();
+    afterEach(async () => {
+      delete require.cache[itemPath];
+    });
+    it('should contain items when initializing.', async () => {
+      const items = await wrapConstr();
       assert(items.length);
     });
     it('should ignore enemies when configured.', async () => {
