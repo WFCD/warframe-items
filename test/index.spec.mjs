@@ -24,17 +24,16 @@ const wrapConstr = async (opts) => {
 const namedExclusions = ['Excalibur Prime'];
 
 for (const base of ['index.js', 'index.mjs']) {
-  const setup = async () => {
-    itemPath = resolve(`./${base}`);
-    Items = await importFresh(itemPath);
-    data = Object.freeze({
-      items: await wrapConstr(),
-      warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
-      weapons: await wrapConstr({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true}),
-    });
-  };
   describe(base, () => {
-    before(setup);
+    before(async () => {
+      itemPath = resolve(`./${base}`);
+      Items = await importFresh(itemPath);
+      data = Object.freeze({
+        items: await wrapConstr(),
+        warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
+        weapons: await wrapConstr({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true}),
+      });
+    });
     beforeEach(async () => {
       delete require.cache[itemPath];
       Items = await importFresh(itemPath);
@@ -145,7 +144,6 @@ for (const base of ['index.js', 'index.mjs']) {
   });
   describe(`${base} integrity`, async function () {
     this.timeout(10000);
-    await setup();
     after(() => {
       delete require.cache[base];
     });
