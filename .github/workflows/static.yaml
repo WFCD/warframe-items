@@ -32,7 +32,7 @@ jobs:
     - run: npm install
     - run: npm run build -- --force
       env:
-        NODE_OPTIONS:'--max_old_space_size=2048'
+        NODE_OPTIONS: '--max_old_space_size=2048'
   types:
     name: Type Checks
     runs-on: ubuntu-latest
