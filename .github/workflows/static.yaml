@@ -29,10 +29,8 @@ jobs:
       with:
         node-version-file: .nvmrc
         cache: 'npm'
-    - run: npm install
-    - run: npm run build -- --force
-      env:
-        NODE_OPTIONS: '--max_old_space_size=2048'
+    - run: npm ci
+    - run: npm run build
   types:
     name: Type Checks
     runs-on: ubuntu-latest
@@ -71,7 +69,7 @@ jobs:
       run: npm ci
     - name: Test
       env:
-        NODE_OPTIONS: '--max_old_space_size=2048'
+        NODE_OPTIONS: '--max_old_space_size=4096'
       run: npm test
     - name: Regression
       run: npm run regression
