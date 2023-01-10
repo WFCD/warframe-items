@@ -11,7 +11,7 @@
   "scripts": {
     "build": "node ./build/build.mjs",
     "test": "nyc mocha --exclude test/*.regression.spec.mjs",
-    "regression": "mocha --include test/index.regression.spec.mjs",
+    "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
     "postinstall": "install-peerdeps @wfcd/eslint-config@^1.1.4 -S",

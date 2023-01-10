@@ -24,23 +24,24 @@ const wrapConstr = async (opts) => {
 const namedExclusions = ['Excalibur Prime'];
 
 for (const base of ['index.js', 'index.mjs']) {
-  const setup = async () => {
-    itemPath = resolve(`./${base}`);
-    Items = await importFresh(itemPath);
-    data = Object.freeze({
-      items: await wrapConstr(),
-      warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
-      weapons: await wrapConstr({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true}),
-    });
-  };
   describe(base, () => {
-    before(setup);
+    before(async () => {
+      itemPath = resolve(`./${base}`);
+      Items = await importFresh(itemPath);
+      data = Object.freeze({
+        items: await wrapConstr(),
+        warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
+        weapons: await wrapConstr({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true}),
+      });
+    });
     beforeEach(async () => {
-      delete require.cache[itemPath];
       Items = await importFresh(itemPath);
     });
-    it('should contain items when initializing.', () => {
-      const items = new Items();
+    afterEach(async () => {
+      delete require.cache[itemPath];
+    });
+    it('should contain items when initializing.', async () => {
+      const items = await wrapConstr();
       assert(items.length);
     });
     it('should ignore enemies when configured.', async () => {
@@ -145,7 +146,9 @@ for (const base of ['index.js', 'index.mjs']) {
   });
   describe(`${base} integrity`, async function () {
     this.timeout(10000);
-    await setup();
+    after(() => {
+      delete require.cache[base];
+    });
     it('weapons should only have 1 result for Mausolon', () => {
       const matches = data.weapons
         .filter((i) => i.name === 'Mausolon')
@@ -184,7 +187,6 @@ for (const base of ['index.js', 'index.mjs']) {
       data.items
         .filter(i => ['Amphis', 'Cadus', 'Cassowar', 'Caustacyst', 'Sigma & Octantis'].includes(i.name))
         .forEach(item => {
-          before(setup);
           it(`${item.name} should be melee`, () => {
             assert.equal(item.type, 'Melee');
           });
@@ -192,7 +194,6 @@ for (const base of ['index.js', 'index.mjs']) {
     });
     data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
       it(`${warframe.name} should have components`, () => {
-        setup();
         assert(warframe?.components?.length > 0);
       });
     });
