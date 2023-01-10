@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 
 import scraper from './scraper.mjs';
 import readJson from './readJson.mjs';
+import crypto from "crypto";
 
 const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
@@ -16,23 +17,42 @@ class HashManager {
   }
 
   /**
-   * Compares DE's endpoint hashs between the cache and the last fetched ones
+   * Compares DE's endpoint hashes between the cache and the last fetched ones
    * @returns {boolean}
    */
-  isUptodate() {
+  get isUpdated() {
     const oldCacheEntries = Object.entries(exportCache);
     const cacheEntries = Object.entries(this.exportCache);
 
-    const compareHashs = () =>
+    const compareHashes = () =>
       Object.entries(this.exportCache).every(([key, { hash }]) => hash === exportCache[key]?.hash);
 
-    return oldCacheEntries.length === cacheEntries.length && compareHashs();
+    return oldCacheEntries.length === cacheEntries.length && compareHashes();
+  }
+
+  set imagesUpdated(updated) {
+    this.imagesManuallyUpdated = updated;
+  }
+
+  get needsImagePull() {
+    return !this.imagesManuallyUpdated || this.exportCache.Manifest.hash === exportCache.Manifest.hash;
   }
 
   async saveExportCache() {
     await fs.writeFile(
       new URL('../data/cache/.export.json', import.meta.url),
       JSON.stringify(this.exportCache, undefined, 1)
+    );
+  }
+
+  async saveImageCache(imageCache) {
+    return fs.writeFile(
+      new URL("../data/cache/.images.json", import.meta.url),
+      JSON.stringify(
+        imageCache.filter((i) => i.hash),
+        undefined,
+        1
+      )
     );
   }
 
@@ -52,6 +72,9 @@ class HashManager {
       .forEach(([key, hash]) => {
         this.exportCache[key] = { hash };
       });
+
+    const manifest = await scraper.fetchImageManifest(true);
+    this.exportCache.Manifest.hash = crypto.createHash('md5').update(JSON.stringify(manifest)).digest('hex');
   }
 }
 

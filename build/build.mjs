@@ -30,7 +30,7 @@ const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg
 class Build {
   async init() {
     await hashManager.updateExportCache();
-    if (!force && hashManager.isUptodate()) {
+    if (!force && hashManager.isUpdated) {
       console.log('Data already up-to-date');
       return;
     }
@@ -122,8 +122,7 @@ class Build {
     };
 
     // Category names are provided by this.applyCustomCategories
-    // eslint-disable-next-line guard-for-in,no-restricted-syntax
-    for (const category in categories) {
+    for (const category of Object.keys(categories)) {
       const data = categories[category].sort(sort);
       all = all.concat(data);
       await fs.writeFile(
@@ -172,21 +171,18 @@ class Build {
    * @async
    */
   async saveImages(items, manifest) {
-    const manifestHash = crypto.createHash('md5').update(JSON.stringify(manifest)).digest('hex');
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
     // hash, so any change to that changes the hash of the full thing.
-    if (exportCache.Manifest.hash === manifestHash) return;
+    if (!hashManager.needsImagePull) return;
     const bar = new Progress('Fetching Images', items.length);
     const duplicates = []; // Don't download component images or relics twice
 
-    // eslint-disable-next-line no-restricted-syntax
     for (const item of items) {
       // Save image for parent item
       await this.saveImage(item, false, duplicates, manifest);
       // Save images for components if necessary
       if (item.components) {
-        // eslint-disable-next-line no-restricted-syntax
         for (const component of item.components) {
           await this.saveImage(component, true, duplicates, manifest);
         }
@@ -195,21 +191,14 @@ class Build {
     }
 
     // write the manifests after images have all succeeded
-    exportCache.Manifest.hash = manifestHash;
-    await fs.writeFile(
-      new URL('../data/cache/.export.json', import.meta.url),
-      JSON.stringify(exportCache, undefined, 1)
-    );
-
-    // Write new cache to disk
-    await fs.writeFile(
-      new URL('../data/cache/.images.json', import.meta.url),
-      JSON.stringify(
-        imageCache.filter((i) => i.hash),
-        undefined,
-        1
-      )
-    );
+    hashManager.imagesUpdated = true;
+    try {
+      await hashManager.saveExportCache();
+      // Write new cache to disk
+      await hashManager.saveImageCache(imageCache);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   /**
@@ -260,7 +249,7 @@ class Build {
         });
       } catch (e) {
         // swallow error
-        // console.error(e)
+        console.error(e);
       }
     }
   }
