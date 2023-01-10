@@ -30,7 +30,7 @@ jobs:
         node-version-file: .nvmrc
         cache: 'npm'
     - run: npm ci
-    - run: npm run build
+    - run: npm run build -- --force
   types:
     name: Type Checks
     runs-on: ubuntu-latest
