@@ -120,6 +120,7 @@ class Build {
     };
 
     // Category names are provided by this.applyCustomCategories
+    // eslint-disable-next-line no-restricted-syntax
     for (const category of Object.keys(categories)) {
       const data = categories[category].sort(sort);
       all = all.concat(data);
@@ -176,11 +177,13 @@ class Build {
     const bar = new Progress('Fetching Images', items.length);
     const duplicates = []; // Don't download component images or relics twice
 
+    // eslint-disable-next-line no-restricted-syntax
     for (const item of items) {
       // Save image for parent item
       await this.saveImage(item, false, duplicates, manifest);
       // Save images for components if necessary
       if (item.components) {
+        // eslint-disable-next-line no-restricted-syntax
         for (const component of item.components) {
           await this.saveImage(component, true, duplicates, manifest);
         }
@@ -232,7 +235,14 @@ class Build {
     // have different naming schemes like lex-prime
     if (!cached || cached.hash !== hash || cached.isComponent !== isComponent) {
       try {
-        const image = await get(imageUrl);
+        const retry = (err) => {
+          if (err.code === 'ENOTFOUND') {
+            return get(imageUrl);
+          }
+
+          throw err;
+        };
+        const image = await get(imageUrl).catch(retry).catch(retry);
         this.updateCache(item, cached, hash, isComponent);
 
         await sharp(image).toFile(filePath);
