@@ -19,12 +19,12 @@ class HashManager {
    * @returns {boolean}
    */
   get isUpdated() {
-    const oldCacheEntries = Object.entries(previousExportCache);
-    const cacheEntries = Object.entries(this.exportCache);
+    const oldCacheKeys = Object.keys(previousExportCache);
+    const cacheKeys = Object.keys(this.exportCache);
 
-    const compareHashes = () => cacheEntries.every(([key, { hash }]) => hash === previousExportCache[key]?.hash);
+    const compareHashes = () => cacheKeys.every((key) => !this.hasChanged(key));
 
-    return oldCacheEntries.length === cacheEntries.length && compareHashes();
+    return oldCacheKeys.length === cacheKeys.length && compareHashes();
   }
 
   hasChanged(key) {
