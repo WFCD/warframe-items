@@ -74,6 +74,8 @@ class HashManager {
     const manifest = await scraper.fetchImageManifest(true);
     this.exportCache.Manifest = { hash: hashObject(manifest) };
 
+    const patchlogs = await scraper.fetchPatchLogs(true);
+    this.exportCache.Patchlogs = { hash: hashObject(patchlogs.posts) };
   }
 }
 

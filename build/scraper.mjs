@@ -168,32 +168,17 @@ class Scraper {
   }
 
   /**
-   * @typedef {Object} PatchlogWrap
-   * @property {module:warframe-patchlogs.Patchlogs} patchlogs Warframe patchlogs
-   * @property {boolean} changed whether or not there's an update
-   */
-  /**
    * Get patchlogs from the forums
-   * @returns {PatchlogWrap}
+   * @param {boolean} [skipProgress] whether to show progress
+   * @returns {module:warframe-patchlogs.Patchlogs}
    */
-  async fetchPatchLogs() {
-    const bar = new Progress('Fetching Patchlogs', 1);
-    const patchlogsHash = crypto.createHash('md5').update(JSON.stringify(patchlogs.posts)).digest('hex');
-    const changed = exportCache.Patchlogs.hash !== patchlogsHash;
-
-    if (changed) {
-      exportCache.Patchlogs.hash = patchlogsHash;
-      await fs.writeFile(
-        new URL('../data/cache/.export.json', import.meta.url),
-        JSON.stringify(exportCache, undefined, 1)
-      );
+  async fetchPatchLogs(skipProgress) {
+    const bar = skipProgress ? undefined : new Progress('Fetching Patchlogs', 1);
+    if (!skipProgress) {
+      bar.tick();
     }
 
-    bar.tick();
-    return {
-      patchlogs,
-      changed,
-    };
+    return patchlogs;
   }
 
   /**
