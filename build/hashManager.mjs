@@ -74,6 +74,9 @@ class HashManager {
     const manifest = await scraper.fetchImageManifest(true);
     this.exportCache.Manifest = { hash: hashObject(manifest) };
 
+    const dropRates = await scraper.fetchDropRates(true);
+    this.exportCache.DropChances = { hash: hashObject(dropRates) };
+
     const patchlogs = await scraper.fetchPatchLogs(true);
     this.exportCache.Patchlogs = { hash: hashObject(patchlogs.posts) };
   }

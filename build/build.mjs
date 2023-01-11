@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import crypto from 'crypto';
 import minify from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
 import minifyJpeg from 'imagemin-jpegtran';
@@ -16,7 +15,6 @@ import hashManager from './hashManager.mjs';
 import readJson from './readJson.mjs';
 
 const imageCache = await readJson(new URL('../data/cache/.images.json', import.meta.url));
-const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 
 const allowedCustomCategories = ['SentinelWeapons'];
 
