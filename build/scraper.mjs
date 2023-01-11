@@ -131,10 +131,13 @@ class Scraper {
    * @returns {ImageManifest.Manifest}
    */
   async fetchImageManifest(skipProgress) {
-    const bar = skipProgress ? null : new Progress('Fetching Image Manifest', 1);
+    const bar = skipProgress ? undefined : new Progress('Fetching Image Manifest', 1);
     const endpoint = await this.fetchEndpoints(true);
     const manifest = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`)).Manifest;
-    bar?.tick?.();
+    if (!skipProgress) {
+      bar.tick();
+    }
+
     return manifest;
   }
 

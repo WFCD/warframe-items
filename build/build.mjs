@@ -174,7 +174,7 @@ class Build {
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
     // hash, so any change to that changes the hash of the full thing.
-    if (!hashManager.needsImagePull) return;
+    if (!hashManager.hasChanged('Manifest')) return;
     const bar = new Progress('Fetching Images', items.length);
     const duplicates = []; // Don't download component images or relics twice
 

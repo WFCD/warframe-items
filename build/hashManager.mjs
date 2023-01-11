@@ -1,13 +1,15 @@
 import fs from 'node:fs/promises';
+import crypto from 'crypto';
 
-import scraper from './scraper.mjs';
 import readJson from './readJson.mjs';
-import crypto from "crypto";
+import scraper from './scraper.mjs';
 
 const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
 const exportKeyWhitelist = ['Manifest', 'DropChances', 'Patchlogs'];
+
+const hashObject = (obj) => crypto.createHash('md5').update(JSON.stringify(obj)).digest('hex');
 
 class HashManager {
   constructor() {
@@ -30,12 +32,8 @@ class HashManager {
     return oldCacheEntries.length === cacheEntries.length && compareHashes();
   }
 
-  set imagesUpdated(updated) {
-    this.imagesManuallyUpdated = updated;
-  }
-
-  get needsImagePull() {
-    return !this.imagesManuallyUpdated || this.exportCache.Manifest.hash === exportCache.Manifest.hash;
+  hasChanged(key) {
+    return key in this.exportCache && this.exportCache[key].hash !== exportCache[key]?.hash;
   }
 
   async saveExportCache() {
@@ -47,7 +45,7 @@ class HashManager {
 
   async saveImageCache(imageCache) {
     return fs.writeFile(
-      new URL("../data/cache/.images.json", import.meta.url),
+      new URL('../data/cache/.images.json', import.meta.url),
       JSON.stringify(
         imageCache.filter((i) => i.hash),
         undefined,
@@ -74,7 +72,8 @@ class HashManager {
       });
 
     const manifest = await scraper.fetchImageManifest(true);
-    this.exportCache.Manifest.hash = crypto.createHash('md5').update(JSON.stringify(manifest)).digest('hex');
+    this.exportCache.Manifest = { hash: hashObject(manifest) };
+
   }
 }
 
