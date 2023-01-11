@@ -4,18 +4,14 @@ import crypto from 'crypto';
 import readJson from './readJson.mjs';
 import scraper from './scraper.mjs';
 
-const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
+const previousExportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
-
-const exportKeyWhitelist = ['Manifest', 'DropChances', 'Patchlogs'];
 
 const hashObject = (obj) => crypto.createHash('md5').update(JSON.stringify(obj)).digest('hex');
 
 class HashManager {
   constructor() {
-    this.exportCache = Object.fromEntries(
-      exportKeyWhitelist.filter((key) => key in exportCache).map((key) => [key, exportCache[key]])
-    );
+    this.exportCache = {};
   }
 
   /**
@@ -23,17 +19,21 @@ class HashManager {
    * @returns {boolean}
    */
   get isUpdated() {
-    const oldCacheEntries = Object.entries(exportCache);
+    const oldCacheEntries = Object.entries(previousExportCache);
     const cacheEntries = Object.entries(this.exportCache);
 
-    const compareHashes = () =>
-      Object.entries(this.exportCache).every(([key, { hash }]) => hash === exportCache[key]?.hash);
+    const compareHashes = () => cacheEntries.every(([key, { hash }]) => hash === previousExportCache[key]?.hash);
 
     return oldCacheEntries.length === cacheEntries.length && compareHashes();
   }
 
   hasChanged(key) {
-    return key in this.exportCache && this.exportCache[key].hash !== exportCache[key]?.hash;
+    const keyInBoth = key in this.exportCache && key in previousExportCache;
+    if (!keyInBoth) {
+      console.warn(`Could not find the key: ${key} in both the saved cache and the current one`);
+    }
+
+    return !keyInBoth || this.exportCache[key]?.hash !== previousExportCache[key]?.hash;
   }
 
   async saveExportCache() {
