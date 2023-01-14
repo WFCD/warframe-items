@@ -33,6 +33,8 @@ jobs:
       run: npm run build -- --force
     - run: sh .github/workflows/regression.sh
     - uses: stefanzweifel/git-auto-commit-action@v4
+      env:
+        NODE_OPTIONS: '--max_old_space_size=4096'
       with:
         skip_dirty_check: false
         commit_message: 'fix(items): new items'
