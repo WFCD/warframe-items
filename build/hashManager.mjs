@@ -30,7 +30,7 @@ class HashManager {
   hasChanged(key) {
     const keyInBoth = key in this.exportCache && key in previousExportCache;
     if (!keyInBoth) {
-      console.warn(`Could not find the key: ${key} in both the saved cache and the current one`);
+      console.warn(`Key not found... ${key} missing`);
     }
 
     return !keyInBoth || this.exportCache[key]?.hash !== previousExportCache[key]?.hash;
