@@ -8,9 +8,9 @@ const jsonCache = new Map();
  */
 export default async (jsonURL) => {
   const { pathname } = jsonURL;
-  if (jsonCache.has(pathname)) {
-    return jsonCache.get(pathname);
+  if (!jsonCache.has(pathname)) {
+    jsonCache.set(pathname, JSON.parse(await fs.readFile(jsonURL, { encoding: 'utf-8' })));
   }
 
-  return JSON.parse(await fs.readFile(jsonURL, { encoding: 'utf-8' }));
+  return jsonCache.get(pathname);
 };

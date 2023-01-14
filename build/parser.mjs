@@ -4,6 +4,7 @@ import dedupe from './dedupe.mjs';
 import Progress from './progress.mjs';
 import readJson from './readJson.mjs';
 import tradable from './tradable.mjs';
+import hashManager from './hashManager.mjs';
 
 const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
 const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
@@ -76,15 +77,10 @@ const dropMap = (drop) => {
  * @typedef {RawDrop} DropRate
  */
 /**
- * @typedef {Object} DropData
- * @property {Array<DropRate>} rates item drop data rates
- * @property {boolean} changed whether the data has updated (based on hash)
- */
-/**
  * @typedef {Object} RawItemData
  * @property {Array<Partial<Item>>} api Raw api data
  * @property {ImageManifest.Manifest} manifest of image data
- * @property {DropData} drops drop rates
+ * @property {Array<DropRate>} drops drop rates
  * @property {PatchlogWrap} patchlogs patch data
  * @property {WikiaData} wikia warframe wikia data
  * @property {VaultData} vaultData Ogg vault data
@@ -689,11 +685,11 @@ class Parser {
   /**
    * Add drop chances based on official drop tables
    * @param {Item} item to add droprate to
-   * @param {DropData} drops to find item drops from
+   * @param {Array<DropRate>} drops to find item drops from
    */
   addDropRate(item, drops) {
     // Take drops from previous build if the droptables didn't change
-    if (!drops.changed) {
+    if (!hashManager.hasChanged('DropChances')) {
       // Get drop rates for components if available...
       if (item.components) {
         // eslint-disable-next-line no-restricted-syntax
@@ -732,14 +728,14 @@ class Parser {
             !component.uniqueName.includes('/WeaponParts/') &&
             component.name !== 'Blueprint') ||
           /Collar\w+Component/.test(component.uniqueName)
-            ? this.findDropLocations(component.name, drops.rates, true)
-            : this.findDropLocations(`${item.name} ${component.name}`, drops.rates, true);
+            ? this.findDropLocations(component.name, drops, true)
+            : this.findDropLocations(`${item.name} ${component.name}`, drops, true);
         component.drops = data.length ? data : [];
       }
     } else if (item.name !== 'Blueprint') {
       // Last word of relic is intact/rad, etc. instead of 'Relic'
       const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name;
-      const data = this.findDropLocations(name, drops.rates);
+      const data = this.findDropLocations(name, drops);
       if (data.length) item.drops = data;
     }
   }

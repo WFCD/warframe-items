@@ -1,38 +1,56 @@
 import fs from 'node:fs/promises';
+import crypto from 'crypto';
 
-import scraper from './scraper.mjs';
 import readJson from './readJson.mjs';
+import scraper from './scraper.mjs';
 
-const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
+const previousExportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
-const exportKeyWhitelist = ['Manifest', 'DropChances', 'Patchlogs'];
+const hashObject = (obj) => crypto.createHash('md5').update(JSON.stringify(obj)).digest('hex');
 
 class HashManager {
   constructor() {
-    this.exportCache = Object.fromEntries(
-      exportKeyWhitelist.filter((key) => key in exportCache).map((key) => [key, exportCache[key]])
-    );
+    this.exportCache = {};
   }
 
   /**
-   * Compares DE's endpoint hashs between the cache and the last fetched ones
+   * Compares DE's endpoint hashes between the cache and the last fetched ones
    * @returns {boolean}
    */
-  isUptodate() {
-    const oldCacheEntries = Object.entries(exportCache);
-    const cacheEntries = Object.entries(this.exportCache);
+  get isUpdated() {
+    const oldCacheKeys = Object.keys(previousExportCache);
+    const cacheKeys = Object.keys(this.exportCache);
 
-    const compareHashs = () =>
-      Object.entries(this.exportCache).every(([key, { hash }]) => hash === exportCache[key]?.hash);
+    const compareHashes = () => cacheKeys.every((key) => !this.hasChanged(key));
 
-    return oldCacheEntries.length === cacheEntries.length && compareHashs();
+    return oldCacheKeys.length === cacheKeys.length && compareHashes();
+  }
+
+  hasChanged(key) {
+    const keyInBoth = key in this.exportCache && key in previousExportCache;
+    if (!keyInBoth) {
+      console.warn(`Key not found... ${key} missing`);
+    }
+
+    return !keyInBoth || this.exportCache[key]?.hash !== previousExportCache[key]?.hash;
   }
 
   async saveExportCache() {
     await fs.writeFile(
       new URL('../data/cache/.export.json', import.meta.url),
       JSON.stringify(this.exportCache, undefined, 1)
+    );
+  }
+
+  async saveImageCache(imageCache) {
+    return fs.writeFile(
+      new URL('../data/cache/.images.json', import.meta.url),
+      JSON.stringify(
+        imageCache.filter((i) => i.hash),
+        undefined,
+        1
+      )
     );
   }
 
@@ -52,6 +70,15 @@ class HashManager {
       .forEach(([key, hash]) => {
         this.exportCache[key] = { hash };
       });
+
+    const manifest = await scraper.fetchImageManifest(true);
+    this.exportCache.Manifest = { hash: hashObject(manifest) };
+
+    const dropRates = await scraper.fetchDropRates(true);
+    this.exportCache.DropChances = { hash: hashObject(dropRates) };
+
+    const patchlogs = await scraper.fetchPatchLogs(true);
+    this.exportCache.Patchlogs = { hash: hashObject(patchlogs.posts) };
   }
 }
 
