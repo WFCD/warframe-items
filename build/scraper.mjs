@@ -1,8 +1,6 @@
 import Agent from 'socks5-http-client/lib/Agent.js';
 import fetch from 'node-fetch';
-import crypto from 'crypto';
 import lzma from 'lzma';
-import fs from 'node:fs/promises';
 import cheerio from 'cheerio';
 
 import { Generator as RelicGenerator } from '@wfcd/relics';
@@ -15,7 +13,6 @@ import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
 import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
 import readJson from './readJson.mjs';
 
-const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
 const prod = process.env.NODE_ENV === 'production';
@@ -127,69 +124,47 @@ class Scraper {
    */
   /**
    * Get the manifest of all available images.
+   * @param {boolean} [skipProgress] whether to show progress
    * @returns {ImageManifest.Manifest}
    */
-  async fetchImageManifest() {
-    const bar = new Progress('Fetching Image Manifest', 1);
+  async fetchImageManifest(skipProgress) {
+    const bar = skipProgress ? undefined : new Progress('Fetching Image Manifest', 1);
     const endpoint = await this.fetchEndpoints(true);
     const manifest = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`)).Manifest;
-    bar.tick();
+    if (!skipProgress) {
+      bar.tick();
+    }
+
     return manifest;
   }
 
   /**
    * Get official drop rates and check if they changed since last build.
+   * @param {boolean} [skipProgress] whether to show progress
    * @returns {DropData}
    */
-  async fetchDropRates() {
-    const bar = new Progress('Fetching Drop Rates', 1);
+  async fetchDropRates(skipProgress) {
+    const bar = skipProgress ? undefined : new Progress('Fetching Drop Rates', 1);
     const rates = await getJSON('https://drops.warframestat.us/data/all.slim.json', true);
-    const ratesHash = crypto.createHash('md5').update(JSON.stringify(rates)).digest('hex');
-    const changed = exportCache.DropChances.hash !== ratesHash;
-
-    // Update checksum
-    if (changed) {
-      exportCache.DropChances.hash = ratesHash;
-      await fs.writeFile(
-        new URL('../data/cache/.export.json', import.meta.url),
-        JSON.stringify(exportCache, undefined, 1)
-      );
+    if (!skipProgress) {
+      bar.tick();
     }
 
-    bar.tick();
-    return {
-      rates,
-      changed,
-    };
+    return rates;
   }
 
   /**
-   * @typedef {Object} PatchlogWrap
-   * @property {module:warframe-patchlogs.Patchlogs} patchlogs Warframe patchlogs
-   * @property {boolean} changed whether or not there's an update
-   */
-  /**
    * Get patchlogs from the forums
-   * @returns {PatchlogWrap}
+   * @param {boolean} [skipProgress] whether to show progress
+   * @returns {module:warframe-patchlogs.Patchlogs}
    */
-  async fetchPatchLogs() {
-    const bar = new Progress('Fetching Patchlogs', 1);
-    const patchlogsHash = crypto.createHash('md5').update(JSON.stringify(patchlogs.posts)).digest('hex');
-    const changed = exportCache.Patchlogs.hash !== patchlogsHash;
-
-    if (changed) {
-      exportCache.Patchlogs.hash = patchlogsHash;
-      await fs.writeFile(
-        new URL('../data/cache/.export.json', import.meta.url),
-        JSON.stringify(exportCache, undefined, 1)
-      );
+  async fetchPatchLogs(skipProgress) {
+    const bar = skipProgress ? undefined : new Progress('Fetching Patchlogs', 1);
+    if (!skipProgress) {
+      bar.tick();
     }
 
-    bar.tick();
-    return {
-      patchlogs,
-      changed,
-    };
+    return patchlogs;
   }
 
   /**

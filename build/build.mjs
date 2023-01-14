@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import crypto from 'crypto';
 import minify from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
 import minifyJpeg from 'imagemin-jpegtran';
@@ -16,7 +15,6 @@ import hashManager from './hashManager.mjs';
 import readJson from './readJson.mjs';
 
 const imageCache = await readJson(new URL('../data/cache/.images.json', import.meta.url));
-const exportCache = await readJson(new URL('../data/cache/.export.json', import.meta.url));
 
 const allowedCustomCategories = ['SentinelWeapons'];
 
@@ -30,7 +28,7 @@ const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg
 class Build {
   async init() {
     await hashManager.updateExportCache();
-    if (!force && hashManager.isUptodate()) {
+    if (!force && hashManager.isUpdated) {
       console.log('Data already up-to-date');
       return;
     }
@@ -53,7 +51,7 @@ class Build {
     const all = await this.saveJson(data, i18n);
     await this.saveWarnings(parsed.warnings);
     await this.saveImages(all, raw.manifest);
-    await this.updateReadme(raw.patchlogs.patchlogs);
+    await this.updateReadme(raw.patchlogs);
 
     // Log number of warnings at the end of the script
     let warningNum = 0;
@@ -122,8 +120,8 @@ class Build {
     };
 
     // Category names are provided by this.applyCustomCategories
-    // eslint-disable-next-line guard-for-in,no-restricted-syntax
-    for (const category in categories) {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const category of Object.keys(categories)) {
       const data = categories[category].sort(sort);
       all = all.concat(data);
       await fs.writeFile(
@@ -172,11 +170,10 @@ class Build {
    * @async
    */
   async saveImages(items, manifest) {
-    const manifestHash = crypto.createHash('md5').update(JSON.stringify(manifest)).digest('hex');
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
     // hash, so any change to that changes the hash of the full thing.
-    if (exportCache.Manifest.hash === manifestHash) return;
+    if (!hashManager.hasChanged('Manifest')) return;
     const bar = new Progress('Fetching Images', items.length);
     const duplicates = []; // Don't download component images or relics twice
 
@@ -195,21 +192,14 @@ class Build {
     }
 
     // write the manifests after images have all succeeded
-    exportCache.Manifest.hash = manifestHash;
-    await fs.writeFile(
-      new URL('../data/cache/.export.json', import.meta.url),
-      JSON.stringify(exportCache, undefined, 1)
-    );
-
-    // Write new cache to disk
-    await fs.writeFile(
-      new URL('../data/cache/.images.json', import.meta.url),
-      JSON.stringify(
-        imageCache.filter((i) => i.hash),
-        undefined,
-        1
-      )
-    );
+    hashManager.imagesUpdated = true;
+    try {
+      await hashManager.saveExportCache();
+      // Write new cache to disk
+      await hashManager.saveImageCache(imageCache);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   /**
@@ -245,7 +235,14 @@ class Build {
     // have different naming schemes like lex-prime
     if (!cached || cached.hash !== hash || cached.isComponent !== isComponent) {
       try {
-        const image = await get(imageUrl);
+        const retry = (err) => {
+          if (err.code === 'ENOTFOUND') {
+            return get(imageUrl);
+          }
+
+          throw err;
+        };
+        const image = await get(imageUrl).catch(retry).catch(retry);
         this.updateCache(item, cached, hash, isComponent);
 
         await sharp(image).toFile(filePath);
@@ -260,7 +257,7 @@ class Build {
         });
       } catch (e) {
         // swallow error
-        // console.error(e)
+        console.error(e);
       }
     }
   }
