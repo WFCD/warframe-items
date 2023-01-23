@@ -1,10 +1,10 @@
 import _ from 'lodash';
 
 import dedupe from './dedupe.mjs';
+import hashManager from './hashManager.mjs';
 import Progress from './progress.mjs';
 import readJson from './readJson.mjs';
 import tradable from './tradable.mjs';
-import hashManager from './hashManager.mjs';
 
 const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
 const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
@@ -869,7 +869,7 @@ class Parser {
   addWeaponWikiaData(item, wikiaItem) {
     item.attacks = wikiaItem.attacks;
     item.ammo = wikiaItem.ammo;
-    item.marketCost = wikiaItem.marketCost;
+    item.marketCost = wikiaItem.marketCost || undefined;
     item.bpCost = wikiaItem.bpCost;
     item.masteryReq = item.masteryReq || wikiaItem.mr;
     item.polarities = wikiaItem.polarities;
