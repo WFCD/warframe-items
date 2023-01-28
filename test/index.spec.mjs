@@ -2,7 +2,7 @@ import assert from 'node:assert';
 import { resolve } from 'node:path';
 import dedupe from '../build/dedupe.mjs';
 
-import { createRequire } from 'module'
+import { createRequire } from 'module';
 const require = createRequire(import.meta.url)
 
 let itemPath;
@@ -197,5 +197,11 @@ for (const base of ['index.js', 'index.mjs']) {
         assert(warframe?.components?.length > 0);
       });
     });
+
+    it('marketCost should be a number when present', () => {
+      data.items.filter(i => !namedExclusions.includes(i.marketCost)).forEach((item) => {
+        assert(item.marketCost)
+      })
+    }) 
   });
 }
