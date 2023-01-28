@@ -869,7 +869,7 @@ class Parser {
   addWeaponWikiaData(item, wikiaItem) {
     item.attacks = wikiaItem.attacks;
     item.ammo = wikiaItem.ammo;
-    item.marketCost = wikiaItem.marketCost || undefined;
+    item.marketCost = typeof wikiaItem.marketCost === 'number' ? wikiaItem.marketCost : undefined;
     item.bpCost = wikiaItem.bpCost;
     item.masteryReq = item.masteryReq || wikiaItem.mr;
     item.polarities = wikiaItem.polarities;
