@@ -83,7 +83,7 @@ declare module 'warframe-items' {
         skipBuildTimePrice?: number;
         consumeOnBuild?: boolean;
         components?: Component[];
-        marketCost?: number | '';
+        marketCost?: number;
         bpCost?: number | '';
         itemCount?: number;
     }
@@ -343,7 +343,7 @@ declare module 'warframe-items' {
         damage?: DamageTypes;
         damageTypes?: DamageTypes;
         flight?: number;
-        marketCost?: number | '';
+        marketCost?: number;
         bpCost?: number | '';
         polarities?: Polarity[];
         stancePolarity?: Polarity;
