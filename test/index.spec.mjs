@@ -2,7 +2,7 @@ import assert from 'node:assert';
 import { resolve } from 'node:path';
 import dedupe from '../build/dedupe.mjs';
 
-import { createRequire } from 'module'
+import { createRequire } from 'module';
 const require = createRequire(import.meta.url)
 
 let itemPath;
@@ -143,58 +143,58 @@ for (const base of ['index.js', 'index.mjs']) {
         assert.strictEqual(matches.length, 1, 'There can be only One');
       });
     });
-  });
-  describe(`${base} integrity`, async function () {
-    this.timeout(10000);
-    after(() => {
-      delete require.cache[base];
-    });
-    it('weapons should only have 1 result for Mausolon', () => {
-      const matches = data.weapons
-        .filter((i) => i.name === 'Mausolon')
-        .map((i) => {
-          delete i.patchlogs;
-          return i;
-        });
-      const dd = dedupe(matches);
-      assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-      assert.strictEqual(matches.length, 1, 'There can be only One');
-    });
-    it('warframes should only have 1 result for Octavia Prime', () => {
-      const matches = data.warframes
-        .filter((i) => i.name === 'Octavia Prime')
-        .map((i) => {
-          delete i.patchlogs;
-          return i;
-        });
-      const dd = dedupe(matches);
-      assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-      assert.strictEqual(matches.length, 1, 'There can be only One');
-    });
-    it('items should only have 1 result for Octavia Prime', () => {
-      const matches = data.items
-        .filter((i) => i.name === 'Octavia Prime')
-        .map((i) => {
-          delete i.patchlogs;
-          return i;
-        });
-      const dd = dedupe(matches);
-      assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-      assert.strictEqual(matches.length, 1, 'There can be only One');
-      assert(Object.keys(matches[0]).includes('components'));
-    });
-    describe('melee check', async () => {
-      data.items
-        .filter(i => ['Amphis', 'Cadus', 'Cassowar', 'Caustacyst', 'Sigma & Octantis'].includes(i.name))
-        .forEach(item => {
-          it(`${item.name} should be melee`, () => {
-            assert.equal(item.type, 'Melee');
+    describe('integrity', async () => {
+      it('weapons should only have 1 result for Mausolon', () => {
+        const matches = data.weapons
+          .filter((i) => i.name === 'Mausolon')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
           });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches.length, 1, 'There can be only One');
+      });
+      it('warframes should only have 1 result for Octavia Prime', () => {
+        const matches = data.warframes
+          .filter((i) => i.name === 'Octavia Prime')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches.length, 1, 'There can be only One');
+      });
+      it('items should only have 1 result for Octavia Prime', () => {
+        const matches = data.items
+          .filter((i) => i.name === 'Octavia Prime')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches.length, 1, 'There can be only One');
+        assert(Object.keys(matches[0]).includes('components'));
+      });
+      it('should reflect melee types', () => {
+        data.items
+          .filter(i => ['Amphis', 'Cadus', 'Cassowar', 'Caustacyst', 'Sigma & Octantis'].includes(i.name))
+          .forEach((item) => {
+            assert.equal(item.type, 'Melee', `${item.name} should be melee!`);
+          });
+      });
+      it('should reflect warframe components', () => {
+        data.warframes.filter(w => !namedExclusions.includes(w.name))
+          .forEach((warframe) => {
+            assert(warframe?.components?.length > 0, `${warframe.name} should have components`);
+          });
+      });
+      it('marketCost should be a number ', () => {
+        data.items.forEach((item) => {
+          assert(['number', 'undefined'].includes(typeof item.marketCost), `${item.name} marketCost should be a number if present`);
         });
-    });
-    data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
-      it(`${warframe.name} should have components`, () => {
-        assert(warframe?.components?.length > 0);
       });
     });
   });
