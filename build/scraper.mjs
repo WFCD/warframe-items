@@ -22,6 +22,23 @@ const prod = process.env.NODE_ENV === 'production';
  */
 class Scraper {
   endpointCache = new Map();
+
+  originServerAvailable = false;
+
+  async checkOriginServerAvailability() {
+    this.originServerAvailable = true;
+    try {
+      // If this call is successful, it means that the origin server is available.
+      await this.fetchEndpoints(true, 'en');
+    } catch (err) {
+      // Origin server not available, fall back to content server
+      this.originServerAvailable = false;
+      console.warn(
+        'origin.warframe.com not available. Using content.warframe.com instead. Data might not be up-to-date!!!'
+      );
+    }
+  }
+
   /**
    * Get Endpoints from Warframe's origin file
    * @param {boolean} [manifest] to fetch only the manifest or everything else
@@ -29,7 +46,14 @@ class Scraper {
    */
   async fetchEndpoints(manifest, locale) {
     return retryAttempts(5, async () => {
-      const origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
+      let origin = '';
+
+      if (!this.originServerAvailable) {
+        // Use content.warframe.com if the origin server is not available
+        origin = `https://content.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
+      } else {
+        origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
+      }
 
       let raw = this.endpointCache.get(origin);
       if (raw === undefined) {
