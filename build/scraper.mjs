@@ -1,5 +1,3 @@
-import Agent from 'socks5-http-client/lib/Agent.js';
-
 import lzma from 'lzma';
 import cheerio from 'cheerio';
 
@@ -13,7 +11,7 @@ import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
 import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
 import readJson from './readJson.mjs';
 
-import {get, getJSON} from './network.mjs';
+import { get, getJSON } from './network.mjs';
 
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
@@ -30,34 +28,33 @@ class Scraper {
    * @param {string} [locale] Locale to fetch data for
    */
   async fetchEndpoints(manifest, locale) {
-
     let attemptsLeft = 5;
-    while(attemptsLeft > 0){
-      try{        
+    while (attemptsLeft > 0) {
+      try {
         const origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
-        
-        let raw = this.endpointCache.get(origin);
-        if(raw == undefined){
-          raw = await get(origin, !prod); 
-        }
-  
-        const decompressed = lzma.decompress(raw);        
-        this.endpointCache.set(origin, raw); //Cache endpoint only if lzma.decrompress didn't throw an error (valid file)
 
-        const manifestRegex = /(\r?\n)?ExportManifest.*/;  
+        let raw = this.endpointCache.get(origin);
+        if (raw === undefined) {
+          raw = await get(origin, !prod);
+        }
+
+        const decompressed = lzma.decompress(raw);
+        this.endpointCache.set(origin, raw); // Cache endpoint only if lzma.decrompress didn't throw an error
+
+        const manifestRegex = /(\r?\n)?ExportManifest.*/;
         // We either don't need the manifest, or *only* the manifest
         if (manifest) {
           return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '');
         }
         return decompressed.replace(manifestRegex, '').split(/\r?\n/g);
-      }catch (error){      
-        if(attemptsLeft>0){
-          attemptsLeft--;
-        }else{
+      } catch (error) {
+        if (attemptsLeft > 0) {
+          attemptsLeft -= 1;
+        } else {
           throw error;
         }
       }
-    }    
+    }
   }
 
   /**
@@ -249,7 +246,8 @@ class Scraper {
    */
   async fetchVaultData() {
     const bar = new Progress('Fetching Vault Data', 1);
-    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json', true)).data;
+    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json', true))
+      .data;
 
     bar.tick();
     return vaultData;
