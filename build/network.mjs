@@ -18,3 +18,17 @@ export const get = async (url, disableProxy = !prod, compress = false) => {
 export const getJSON = async (url, disableProxy) => {
   return JSON.parse(sanitize(await get(url, disableProxy, true)));
 };
+
+export const retryAttempts = async (numAttempts, workerFn) => {
+  while (numAttempts > 0) {
+    try {
+      return workerFn();
+    } catch (error) {
+      if (numAttempts > 0) {
+        numAttempts -= 1;
+      } else {
+        throw error;
+      }
+    }
+  }
+};

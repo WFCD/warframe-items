@@ -11,7 +11,7 @@ import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
 import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
 import readJson from './readJson.mjs';
 
-import { get, getJSON } from './network.mjs';
+import { get, getJSON, retryAttempts } from './network.mjs';
 
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
@@ -28,33 +28,24 @@ class Scraper {
    * @param {string} [locale] Locale to fetch data for
    */
   async fetchEndpoints(manifest, locale) {
-    let attemptsLeft = 5;
-    while (attemptsLeft > 0) {
-      try {
-        const origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
+    return retryAttempts(5, async () => {
+      const origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
 
-        let raw = this.endpointCache.get(origin);
-        if (raw === undefined) {
-          raw = await get(origin, !prod);
-        }
-
-        const decompressed = lzma.decompress(raw);
-        this.endpointCache.set(origin, raw); // Cache endpoint only if lzma.decrompress didn't throw an error
-
-        const manifestRegex = /(\r?\n)?ExportManifest.*/;
-        // We either don't need the manifest, or *only* the manifest
-        if (manifest) {
-          return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '');
-        }
-        return decompressed.replace(manifestRegex, '').split(/\r?\n/g);
-      } catch (error) {
-        if (attemptsLeft > 0) {
-          attemptsLeft -= 1;
-        } else {
-          throw error;
-        }
+      let raw = this.endpointCache.get(origin);
+      if (raw === undefined) {
+        raw = await get(origin, !prod);
       }
-    }
+
+      const decompressed = lzma.decompress(raw);
+      this.endpointCache.set(origin, raw); // Cache endpoint only if lzma.decrompress didn't throw an error
+
+      const manifestRegex = /(\r?\n)?ExportManifest.*/;
+      // We either don't need the manifest, or *only* the manifest
+      if (manifest) {
+        return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '');
+      }
+      return decompressed.replace(manifestRegex, '').split(/\r?\n/g);
+    });
   }
 
   /**
