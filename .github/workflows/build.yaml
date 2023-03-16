@@ -29,6 +29,10 @@ jobs:
       run: npm run build
       env:
         NODE_OPTIONS: '--max_old_space_size=2048'
+        SOCKS5_USER: ${{ secrets.SOCKS5_USER }}
+        SOCKS5_PASS: ${{ secrets.SOCKS5_PASS }}
+        SOCKS5_HOST: ${{ secrets.SOCKS5_HOST }}
+        SOCKS5_PORT: ${{ secrets.SOCKS5_PORT }}
     - if: ${{ github.event_name != 'schedule' }}
       run: npm run build -- --force
     - run: sh .github/workflows/regression.sh

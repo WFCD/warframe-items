@@ -31,6 +31,11 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build -- --force
+      env:
+        SOCKS5_USER: ${{ secrets.SOCKS5_USER }}
+        SOCKS5_PASS: ${{ secrets.SOCKS5_PASS }}
+        SOCKS5_HOST: ${{ secrets.SOCKS5_HOST }}
+        SOCKS5_PORT: ${{ secrets.SOCKS5_PORT }}
   types:
     name: Type Checks
     runs-on: ubuntu-latest

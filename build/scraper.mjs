@@ -45,7 +45,7 @@ class Scraper {
    */
   async fetchEndpoints(manifest, locale) {
     const origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
-    const raw = await get(origin, !prod);
+    const raw = await get(origin, false);
     const decompressed = lzma.decompress(raw);
     const manifestRegex = /(\r?\n)?ExportManifest.*/;
 
@@ -74,7 +74,7 @@ class Scraper {
 
     const fetchEndpoint = async (endpoint) => {
       const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '');
-      const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`);
+      const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`, true);
       const data = raw ? raw[`Export${category}`] : undefined;
       bar.tick();
 
@@ -130,7 +130,7 @@ class Scraper {
   async fetchImageManifest(skipProgress) {
     const bar = skipProgress ? undefined : new Progress('Fetching Image Manifest', 1);
     const endpoint = await this.fetchEndpoints(true);
-    const manifest = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`)).Manifest;
+    const manifest = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`, true)).Manifest;
     if (!skipProgress) {
       bar.tick();
     }
@@ -182,7 +182,7 @@ class Scraper {
   async fetchWikiaData() {
     const bar = new Progress('Fetching Wikia Data', 5);
     const ducats = [];
-    const ducatsWikia = await get('http://warframe.wikia.com/wiki/Ducats/Prices/All');
+    const ducatsWikia = await get('http://warframe.wikia.com/wiki/Ducats/Prices/All', true);
     const $ = cheerio.load(ducatsWikia);
 
     $('.mw-content-text table tbody tr').each(function () {
@@ -245,7 +245,7 @@ class Scraper {
    */
   async fetchVaultData() {
     const bar = new Progress('Fetching Vault Data', 1);
-    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')).data;
+    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json', true)).data;
 
     bar.tick();
     return vaultData;
