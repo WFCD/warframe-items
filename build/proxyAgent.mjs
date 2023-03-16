@@ -2,6 +2,9 @@ import HttpsProxyAgent from 'https-proxy-agent';
 import SOCKS5Agent from 'socks5-http-client/lib/Agent.js';
 
 export default () => {
+  console.log('PROXY_TYPE: ', process.env.PROXY_TYPE);
+  console.log('PROXY_HTTPS_STRING: ', process.env.PROXY_HTTPS_STRING);
+
   switch (process.env.PROXY_TYPE) {
     case 'SOCKS5':
       if (process.env.PROXY_SOCKS5_HOST) {
