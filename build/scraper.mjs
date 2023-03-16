@@ -50,8 +50,12 @@ class Scraper {
           return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '');
         }
         return decompressed.replace(manifestRegex, '').split(/\r?\n/g);
-      }catch{        
-        attemptsLeft--;
+      }catch (error){      
+        if(attemptsLeft>0){
+          attemptsLeft--;
+        }else{
+          throw error;
+        }
       }
     }    
   }
