@@ -32,10 +32,12 @@ jobs:
     - run: npm ci
     - run: npm run build -- --force
       env:
-        SOCKS5_USER: ${{ secrets.SOCKS5_USER }}
-        SOCKS5_PASS: ${{ secrets.SOCKS5_PASS }}
-        SOCKS5_HOST: ${{ secrets.SOCKS5_HOST }}
-        SOCKS5_PORT: ${{ secrets.SOCKS5_PORT }}
+        PROXY_TYPE: 'HTTPS'
+        PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
+        PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
+        PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
+        PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
+        PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
   types:
     name: Type Checks
     runs-on: ubuntu-latest
