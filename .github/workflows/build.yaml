@@ -29,7 +29,7 @@ jobs:
       run: npm run build
       env:
         NODE_OPTIONS: '--max_old_space_size=2048'
-        PROXY_TYPE: 'HTTPS'
+        PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
         PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
         PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
         PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}

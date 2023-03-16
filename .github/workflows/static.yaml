@@ -32,7 +32,7 @@ jobs:
     - run: npm ci
     - run: npm run build -- --force
       env:
-        PROXY_TYPE: 'HTTPS'
+        PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
         PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
         PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
         PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
