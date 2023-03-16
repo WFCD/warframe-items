@@ -29,6 +29,12 @@ jobs:
       run: npm run build
       env:
         NODE_OPTIONS: '--max_old_space_size=2048'
+        PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
+        PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
+        PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
+        PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
+        PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
+        PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
     - if: ${{ github.event_name != 'schedule' }}
       run: npm run build -- --force
     - run: sh .github/workflows/regression.sh
