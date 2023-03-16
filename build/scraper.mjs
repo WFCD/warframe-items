@@ -48,12 +48,8 @@ class Scraper {
     return retryAttempts(5, async () => {
       let origin = '';
 
-      if (!this.originServerAvailable) {
-        // Use content.warframe.com if the origin server is not available
-        origin = `https://content.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
-      } else {
-        origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
-      }
+      // Use content.warframe.com if the origin server is not available
+      origin = `https://${this.originServerAvailable ? 'origin' : 'content'}.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
 
       let raw = this.endpointCache.get(origin);
       if (raw === undefined) {
