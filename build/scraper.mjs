@@ -1,5 +1,3 @@
-import Agent from 'socks5-http-client/lib/Agent.js';
-import fetch from 'node-fetch';
 import lzma from 'lzma';
 import cheerio from 'cheerio';
 
@@ -13,47 +11,61 @@ import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
 import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
 import readJson from './readJson.mjs';
 
+import { get, getJSON, retryAttempts } from './network.mjs';
+
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
 const prod = process.env.NODE_ENV === 'production';
-// eslint-disable-next-line no-control-regex
-const sanitize = (str) => str.replace(/\\r|\r?\n|\x09/g, '').replace(/\\\\"/g, "'");
-const agent = process.env.SOCK5_HOST
-  ? new Agent({
-      socksHost: process.env.SOCKS5_HOST,
-      socksPort: process.env.SOCKS5_PORT,
-      socksUsername: process.env.SOCKS5_USER,
-      socksPassword: process.env.SOCKS5_PASS,
-    })
-  : undefined;
-const get = async (url, disableProxy = !prod, compress = false) => {
-  const res = await fetch(url, {
-    agent: disableProxy ? undefined : agent,
-  });
-  return compress === false ? Uint8Array.from(await res.buffer()) : res.text();
-};
-const getJSON = async (url, disableProxy) => JSON.parse(sanitize(await get(url, disableProxy, true)));
 
 /**
  * Retrieves the base item data necessary for the parsing process
  */
 class Scraper {
+  endpointCache = new Map();
+
+  originServerAvailable = false;
+
+  async checkOriginServerAvailability() {
+    this.originServerAvailable = true;
+    try {
+      // If this call is successful, it means that the origin server is available.
+      await this.fetchEndpoints(true, 'en');
+    } catch (err) {
+      // Origin server not available, fall back to content server
+      this.originServerAvailable = false;
+      console.warn(
+        'origin.warframe.com not available. Using content.warframe.com instead. Data might not be up-to-date!!!'
+      );
+    }
+  }
+
   /**
    * Get Endpoints from Warframe's origin file
    * @param {boolean} [manifest] to fetch only the manifest or everything else
    * @param {string} [locale] Locale to fetch data for
    */
   async fetchEndpoints(manifest, locale) {
-    const origin = `https://content.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
-    const raw = await get(origin, !prod);
-    const decompressed = lzma.decompress(raw);
-    const manifestRegex = /(\r?\n)?ExportManifest.*/;
+    return retryAttempts(5, async () => {
+      let origin = '';
 
-    // We either don't need the manifest, or *only* the manifest
-    if (manifest) {
-      return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '');
-    }
-    return decompressed.replace(manifestRegex, '').split(/\r?\n/g);
+      // Use content.warframe.com if the origin server is not available
+      origin = `https://${this.originServerAvailable ? 'origin' : 'content'}.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
+
+      let raw = this.endpointCache.get(origin);
+      if (raw === undefined) {
+        raw = await get(origin, !prod);
+      }
+
+      const decompressed = lzma.decompress(raw);
+      this.endpointCache.set(origin, raw); // Cache endpoint only if lzma.decrompress didn't throw an error
+
+      const manifestRegex = /(\r?\n)?ExportManifest.*/;
+      // We either don't need the manifest, or *only* the manifest
+      if (manifest) {
+        return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '');
+      }
+      return decompressed.replace(manifestRegex, '').split(/\r?\n/g);
+    });
   }
 
   /**
@@ -74,7 +86,7 @@ class Scraper {
 
     const fetchEndpoint = async (endpoint) => {
       const category = endpoint.replace('Export', '').replace(/_[a-z]{2}\.json.*/, '');
-      const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`);
+      const raw = await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`, true);
       const data = raw ? raw[`Export${category}`] : undefined;
       bar.tick();
 
@@ -130,7 +142,7 @@ class Scraper {
   async fetchImageManifest(skipProgress) {
     const bar = skipProgress ? undefined : new Progress('Fetching Image Manifest', 1);
     const endpoint = await this.fetchEndpoints(true);
-    const manifest = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`)).Manifest;
+    const manifest = (await getJSON(`https://content.warframe.com/PublicExport/Manifest/${endpoint}`, true)).Manifest;
     if (!skipProgress) {
       bar.tick();
     }
@@ -182,7 +194,7 @@ class Scraper {
   async fetchWikiaData() {
     const bar = new Progress('Fetching Wikia Data', 5);
     const ducats = [];
-    const ducatsWikia = await get('http://warframe.wikia.com/wiki/Ducats/Prices/All');
+    const ducatsWikia = await get('http://warframe.wikia.com/wiki/Ducats/Prices/All', true);
     const $ = cheerio.load(ducatsWikia);
 
     $('.mw-content-text table tbody tr').each(function () {
@@ -245,7 +257,8 @@ class Scraper {
    */
   async fetchVaultData() {
     const bar = new Progress('Fetching Vault Data', 1);
-    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json')).data;
+    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json', true))
+      .data;
 
     bar.tick();
     return vaultData;

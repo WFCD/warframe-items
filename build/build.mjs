@@ -27,6 +27,8 @@ const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg
 
 class Build {
   async init() {
+    await scraper.checkOriginServerAvailability();
+
     await hashManager.updateExportCache();
     if (!force && hashManager.isUpdated) {
       console.log('Data already up-to-date');
