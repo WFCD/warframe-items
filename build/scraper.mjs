@@ -18,7 +18,7 @@ const locales = await readJson(new URL('../config/locales.json', import.meta.url
 const prod = process.env.NODE_ENV === 'production';
 // eslint-disable-next-line no-control-regex
 const sanitize = (str) => str.replace(/\\r|\r?\n|\x09/g, '').replace(/\\\\"/g, "'");
-const agent = process.env.SOCK5_HOST
+const agent = process.env.SOCKS5_HOST
   ? new Agent({
       socksHost: process.env.SOCKS5_HOST,
       socksPort: process.env.SOCKS5_PORT,
