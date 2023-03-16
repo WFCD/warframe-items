@@ -44,7 +44,7 @@ class Scraper {
    * @param {string} [locale] Locale to fetch data for
    */
   async fetchEndpoints(manifest, locale) {
-    const origin = `https://content.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
+    const origin = `https://origin.warframe.com/PublicExport/index_${locale || 'en'}.txt.lzma`;
     const raw = await get(origin, !prod);
     const decompressed = lzma.decompress(raw);
     const manifestRegex = /(\r?\n)?ExportManifest.*/;
