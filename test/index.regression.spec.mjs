@@ -56,9 +56,11 @@ describe('Regression: Using live API data', function () {
     assert.strictEqual(matches.length, 1, 'There can be only One');
     assert(Object.keys(matches[0]).includes('components'));
   });
-  data.warframes.filter(w => !namedExclusions.includes(w.name)).forEach((warframe) => {
-    it(`${warframe.name} should have components`, () => {
-      assert(warframe?.components?.length > 0);
+  data.warframes
+    .filter((w) => !namedExclusions.includes(w.name))
+    .forEach((warframe) => {
+      it(`${warframe.name} should have components`, () => {
+        assert(warframe?.components?.length > 0);
+      });
     });
-  });
 });

@@ -1,9 +1,9 @@
 import assert from 'node:assert';
 import { resolve } from 'node:path';
+import { createRequire } from 'module';
 import dedupe from '../build/dedupe.mjs';
 
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url)
+const require = createRequire(import.meta.url);
 
 let itemPath;
 let Items;
@@ -23,7 +23,9 @@ const wrapConstr = async (opts) => {
 
 const namedExclusions = ['Excalibur Prime'];
 
+// eslint-disable-next-line no-restricted-syntax
 for (const base of ['index.js', 'index.mjs']) {
+  // eslint-disable-next-line no-loop-func
   describe(base, () => {
     before(async () => {
       itemPath = resolve(`./${base}`);
@@ -31,7 +33,11 @@ for (const base of ['index.js', 'index.mjs']) {
       data = Object.freeze({
         items: await wrapConstr(),
         warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
-        weapons: await wrapConstr({ category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'], i18n: 'en', i18nOnObject: true}),
+        weapons: await wrapConstr({
+          category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'],
+          i18n: 'en',
+          i18nOnObject: true,
+        }),
       });
     });
     beforeEach(async () => {
@@ -48,7 +54,9 @@ for (const base of ['index.js', 'index.mjs']) {
       let items = (await wrapConstr({ ignoreEnemies: true })).filter((i) => i.category === 'Enemy');
       assert(!items.length);
 
-      items = (await wrapConstr({ category: ['Enemy', 'Primary'], ignoreEnemies: true })).filter((i) => i.category === 'Enemy');
+      items = (await wrapConstr({ category: ['Enemy', 'Primary'], ignoreEnemies: true })).filter(
+        (i) => i.category === 'Enemy'
+      );
       assert(!items.length);
     });
     it('should construct successfully with all & primary', async () => {
@@ -57,16 +65,20 @@ for (const base of ['index.js', 'index.mjs']) {
     });
     it('should not error current worldstate-data supported locales', async () => {
       try {
-        await wrapConstr({ i18n: ['de', 'es', 'fr', 'it', 'ko', 'pl', 'pt', 'ru', 'zh', 'cs', 'sr'], i18nOnObject: true });
+        await wrapConstr({
+          i18n: ['de', 'es', 'fr', 'it', 'ko', 'pl', 'pt', 'ru', 'zh', 'cs', 'sr'],
+          i18nOnObject: true,
+        });
       } catch (e) {
         assert(typeof e === 'undefined');
       }
     });
     it('does not fail on invalid categories', () => {
       assert.doesNotThrow(() => {
+        // eslint-disable-next-line no-new
         new Items({ category: 'Warframe' });
       });
-    })
+    });
     it('should apply custom categories are specified', async () => {
       const items = await wrapConstr({ category: ['Primary'] });
       const primes = items.filter((i) => i.name.includes('Prime'));
@@ -180,20 +192,24 @@ for (const base of ['index.js', 'index.mjs']) {
       });
       it('should reflect melee types', () => {
         data.items
-          .filter(i => ['Amphis', 'Cadus', 'Cassowar', 'Caustacyst', 'Sigma & Octantis'].includes(i.name))
+          .filter((i) => ['Amphis', 'Cadus', 'Cassowar', 'Caustacyst', 'Sigma & Octantis'].includes(i.name))
           .forEach((item) => {
             assert.equal(item.type, 'Melee', `${item.name} should be melee!`);
           });
       });
       it('should reflect warframe components', () => {
-        data.warframes.filter(w => !namedExclusions.includes(w.name))
+        data.warframes
+          .filter((w) => !namedExclusions.includes(w.name))
           .forEach((warframe) => {
             assert(warframe?.components?.length > 0, `${warframe.name} should have components`);
           });
       });
       it('marketCost should be a number ', () => {
         data.items.forEach((item) => {
-          assert(['number', 'undefined'].includes(typeof item.marketCost), `${item.name} marketCost should be a number if present`);
+          assert(
+            ['number', 'undefined'].includes(typeof item.marketCost),
+            `${item.name} marketCost should be a number if present`
+          );
         });
       });
     });

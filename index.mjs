@@ -35,35 +35,34 @@
 import { resolve, dirname } from 'node:path';
 import { readFileSync, readdirSync, accessSync, constants } from 'node:fs';
 import { fileURLToPath } from 'url';
-import path from "path";
-import fs from "fs";
+import path from 'path';
 
-const canAccess = (path) => {
+// eslint-disable-next-line no-use-before-define
+const versions = require('./data/cache/.export.json');
+
+const canAccess = (pathArg) => {
   try {
-    accessSync(path, constants.R_OK);
+    accessSync(pathArg, constants.R_OK);
     return true;
   } catch (e) {
     return false;
   }
 };
 
+const dirnameCurrent = dirname(fileURLToPath(import.meta.url));
+
 const cache = {};
 const require = (filePath) => {
   if (cache[filePath]) return cache[filePath];
-  else {
-    const resolved = path.resolve(__dirname, filePath);
-    if (canAccess(resolved)) {
-      const parsed = JSON.parse(fs.readFileSync(resolved, 'utf-8'));
-      cache[filePath] = parsed;
-      return parsed;
-    }
-    return [];
+
+  const resolved = path.resolve(dirnameCurrent, filePath);
+  if (canAccess(resolved)) {
+    const parsed = JSON.parse(readFileSync(resolved, 'utf-8'));
+    cache[filePath] = parsed;
+    return parsed;
   }
+  return [];
 };
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-const versions = require('./data/cache/.export.json');
 
 let i18n = {};
 try {
@@ -103,6 +102,7 @@ export default class Items extends Array {
     for (const category of this.options.category) {
       // Ignores the enemy category.
       if (this.options.ignoreEnemies && category === 'Enemy') continue;
+      // eslint-disable-next-line import/no-dynamic-require
       const items = require(`./data/json/${category}.json`);
       for (const item of items) {
         if (this.options.i18n) {
@@ -169,4 +169,4 @@ export default class Items extends Array {
     }
     return A;
   }
-};
+}
