@@ -1,4 +1,4 @@
-/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-restricted-syntax, import/no-dynamic-require */
 /**
  * Configuration options for warframe-items
  * @typedef {Object} Options
@@ -35,8 +35,8 @@
 import { resolve, dirname } from 'node:path';
 import { readFileSync, readdirSync, accessSync, constants } from 'node:fs';
 import { fileURLToPath } from 'url';
-import path from "path";
-import fs from "fs";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const canAccess = (path) => {
   try {
@@ -50,18 +50,15 @@ const canAccess = (path) => {
 const cache = {};
 const require = (filePath) => {
   if (cache[filePath]) return cache[filePath];
-  else {
-    const resolved = path.resolve(__dirname, filePath);
-    if (canAccess(resolved)) {
-      const parsed = JSON.parse(fs.readFileSync(resolved, 'utf-8'));
-      cache[filePath] = parsed;
-      return parsed;
-    }
-    return [];
-  }
-};
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+  const resolved = resolve(__dirname, filePath);
+  if (canAccess(resolved)) {
+    const parsed = JSON.parse(readFileSync(resolved, 'utf-8'));
+    cache[filePath] = parsed;
+    return parsed;
+  }
+  return [];
+};
 
 const versions = require('./data/cache/.export.json');
 
@@ -169,4 +166,4 @@ export default class Items extends Array {
     }
     return A;
   }
-};
+}

@@ -1,15 +1,12 @@
-globals:
-  describe: readonly
-  it: readonly
-  beforeEach: readonly
-  afterEach: readonly
-  after: readonly
-  before: readonly
 rules:
   brace-style: 0
+  no-restricted-syntax: 0
+  no-loop-func: 0
+  no-new: 0
 parserOptions:
   ecmaVersion: latest
-  env: mocha
   sourceType: module
 extends:
   - '@wfcd/eslint-config/esm'
+env:
+  mocha: true
