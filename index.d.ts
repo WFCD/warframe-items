@@ -757,6 +757,7 @@ declare module 'warframe-items' {
         'Color Palette' |
         'Companion Weapon' |
         'Conservation Tag' |
+        'Conservation Prey' |
         'Crossbow' |
         'Currency' |
         'Cut Gem' |
