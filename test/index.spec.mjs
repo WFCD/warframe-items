@@ -2,6 +2,9 @@ import assert from 'node:assert';
 import { resolve } from 'node:path';
 import { createRequire } from 'module';
 import dedupe from '../build/dedupe.mjs';
+import readJson from '../build/readJson.mjs';
+
+const masterableCategories = await readJson(new URL('../config/masterableCategories.json', import.meta.url));
 
 const require = createRequire(import.meta.url);
 
@@ -206,6 +209,20 @@ for (const base of ['index.js', 'index.mjs']) {
           assert(
             ['number', 'undefined'].includes(typeof item.marketCost),
             `${item.name} marketCost should be a number if present`
+          );
+        });
+      });
+      it('items should be marked masterable correctly ', () => {
+        data.items.forEach((item) => {
+          const masterable = masterableCategories.includes(item.category);
+          // If this item is not masterable and the property is missing completely, we skip checking it.
+          if (!masterable && item.masterable === undefined) {
+            return;
+          }
+          assert.equal(
+            item.masterable,
+            masterable,
+            `${item.name} should be marked as ${!masterable ? 'not ' : ''}masterable`
           );
         });
       });

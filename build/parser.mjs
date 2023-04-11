@@ -14,6 +14,7 @@ const grades = await readJson(new URL('../config/relicGrades.json', import.meta.
 const polarities = await readJson(new URL('../config/polarities.json', import.meta.url));
 const types = await readJson(new URL('../config/itemTypes.json', import.meta.url));
 const overrides = await readJson(new URL('../config/overrides.json', import.meta.url));
+const masterableCategories = await readJson(new URL('../config/masterableCategories.json', import.meta.url));
 
 /**
  * Titlecase a string
@@ -188,6 +189,7 @@ class Parser {
     this.addResistanceData(result, category);
     this.addRelics(result, data.relics);
     this.applyOverrides(result);
+    this.applyMasterable(result);
     return result;
   }
 
@@ -992,6 +994,14 @@ class Parser {
         item[key] = override[key];
       });
     }
+  }
+
+  /**
+   * Checks whether the item is masterable.
+   * @param {Item} item the item to add the attribute to
+   */
+  applyMasterable(item) {
+    item.masterable = item.category ? masterableCategories.includes(item.category) : false;
   }
 
   addResistanceData(item, category) {
