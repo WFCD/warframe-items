@@ -1001,7 +1001,7 @@ class Parser {
    * @param {Item} item the item to add the attribute to
    */
   applyMasterable(item) {
-    item.masterable = item.category ? masterableCategories.includes(item.category) : false;
+    item.masterable = masterableCategories.includes(item.category);
   }
 
   addResistanceData(item, category) {
