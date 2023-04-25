@@ -2,11 +2,9 @@ import assert from 'node:assert';
 import { resolve } from 'node:path';
 import { createRequire } from 'module';
 import dedupe from '../build/dedupe.mjs';
-import readJson from '../build/readJson.mjs';
-
-const masterableCategories = await readJson(new URL('../config/masterableCategories.json', import.meta.url));
 
 const require = createRequire(import.meta.url);
+const masterableCategories = require('../config/masterableCategories.json');
 
 let itemPath;
 let Items;
