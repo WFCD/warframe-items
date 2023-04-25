@@ -52,7 +52,7 @@ declare module 'warframe-items' {
         description?: string;
         releaseDate?: string;
         excludeFromCodex?: boolean;
-        masterable?: boolean;
+        masterable: boolean;
     }
     interface BaseItem extends MinimalItem, Droppable {
         showInInventory?: boolean;

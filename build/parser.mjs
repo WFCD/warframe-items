@@ -188,8 +188,8 @@ class Parser {
     this.addVaultData(result, data.vaultData);
     this.addResistanceData(result, category);
     this.addRelics(result, data.relics);
-    this.applyOverrides(result);
     this.applyMasterable(result);
+    this.applyOverrides(result);
     return result;
   }
 
