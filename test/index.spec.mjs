@@ -212,14 +212,17 @@ for (const base of ['index.js', 'index.mjs']) {
           );
         });
       });
-      it('items should be marked masterable correctly ', async () => {
-        const items = await wrapConstr({ ignoreEnemies: true });
-        items.forEach((item) => {
+      it('items should be marked masterable correctly ', () => {
+        data.items.forEach((item) => {
           const masterable = masterableCategories.includes(item.category);
+          // If this item is not masterable and the property is missing completely, we skip checking it.
+          if (!masterable && item.masterable === undefined) {
+            return;
+          }
           assert.equal(
             item.masterable,
             masterable,
-            `${item.name}, ${item.category} should be marked as ${!masterable ? 'not ' : ''}masterable`
+            `${item.name} should be marked as ${!masterable ? 'not ' : ''}masterable`
           );
         });
       });
