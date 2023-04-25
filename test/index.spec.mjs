@@ -4,6 +4,7 @@ import { createRequire } from 'module';
 import dedupe from '../build/dedupe.mjs';
 
 const require = createRequire(import.meta.url);
+const masterableCategories = require('../config/masterableCategories.json');
 
 let itemPath;
 let Items;
@@ -206,6 +207,17 @@ for (const base of ['index.js', 'index.mjs']) {
           assert(
             ['number', 'undefined'].includes(typeof item.marketCost),
             `${item.name} marketCost should be a number if present`
+          );
+        });
+      });
+      it('items should be marked masterable correctly ', async () => {
+        const items = await wrapConstr({ ignoreEnemies: true });
+        items.forEach((item) => {
+          const masterable = masterableCategories.includes(item.category);
+          assert.equal(
+            item.masterable,
+            masterable,
+            `${item.name} should be marked as ${!masterable ? 'not ' : ''}masterable`
           );
         });
       });
