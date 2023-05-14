@@ -779,6 +779,7 @@ declare module 'warframe-items' {
         'Fish Part' |
         'Fist' |
         'Focus Lens' |
+        'Forma' |
         'Fur Color' |
         'Fur Pattern' |
         'Gear' |
