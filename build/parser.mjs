@@ -696,10 +696,12 @@ class Parser {
       if (item.components) {
         // eslint-disable-next-line no-restricted-syntax
         for (const component of item.components) {
-          const previous = previousBuild.find((i) => i.name === item.name && item.category !== 'Node');
+          const previous = previousBuild.find(
+            (i) => i.name.toLowerCase() === item.name.toLowerCase() && item.category !== 'Node'
+          );
           if (!previous || !previous.components) return;
 
-          const saved = previous.components.find((c) => c.name === component.name);
+          const saved = previous.components.find((c) => c.name.toLowerCase() === component.name.toLowerCase());
           if (saved && saved.drops) {
             // chances were written as strings, caused by previous bad data
             saved.drops.forEach((drop) => {
@@ -710,7 +712,7 @@ class Parser {
         }
       } else {
         // Otherwise attach to main item
-        const saved = previousBuild.find((i) => i.name === item.name);
+        const saved = previousBuild.find((i) => i.name.toLowerCase() === item.name.toLowerCase());
         if (saved?.drops) {
           // chances were written as strings, caused by previous bad data
           saved.drops.forEach((drop) => {
@@ -744,7 +746,7 @@ class Parser {
 
   /**
    * Find drop locations
-   * @param {Item} item to find chances for
+   * @param {string} item to find chances for
    * @param {Array<DropRate>} dropChances drop chances
    * @returns {Iterable<Array<DropRate>>} but also deduped
    */
@@ -757,9 +759,10 @@ class Parser {
         .filter((drop) => {
           return (
             drop.item === item ||
-            ((drop.item.startsWith(item) || drop.item.endsWith(item)) &&
-              semiWrapped.test(drop.item) &&
-              !variant.test(drop.item))
+            ((drop.item.toLowerCase().startsWith(item.toLowerCase()) ||
+              drop.item.toLowerCase().endsWith(item.toLowerCase())) &&
+              semiWrapped.test(drop.item.toLowerCase()) &&
+              !variant.test(drop.item.toLowerCase()))
           );
         })
         .map(dropMap)
