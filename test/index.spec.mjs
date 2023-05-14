@@ -221,6 +221,48 @@ for (const base of ['index.js', 'index.mjs']) {
           );
         });
       });
+      it('resources should be resources', () => {
+        [
+          'Nano Spores',
+          'Alloy Plate',
+          'Salvage',
+          'Rubedo',
+          'Plastids',
+          'Circuits',
+          'Orokin Cell',
+          'Argon Crystal',
+          'Control Module',
+          'Mutalist Alad V Nav Coordinate',
+          'Cryptographic ALU',
+          'Omega Isotope',
+          'Riven Sliver',
+          'Kuva',
+          'Steel Essence',
+          'Morphics',
+          'Cryotic',
+          'Hexenon',
+          'Neural Sensors',
+          'Oxium',
+          'Polymer Bundle',
+          'Tellurium',
+          'Spectral Debris',
+          'Aya',
+          'Somatic Fibers',
+          'Endo',
+          'Nav Coordinate',
+          'Judgement Points',
+          'Synthula',
+          'Javlok Capacitor',
+          'Vitus Essence',
+          'Void Traces',
+          'Gallium',
+          'Antiserum Injector Fragment',
+        ].forEach((iName) => {
+          const results = data.items.filter((i) => iName === i.name);
+          assert(results?.length > 0);
+          results.forEach((res) => assert.strictEqual(res.type, 'Resource', `${res.name} should be a Resource type`));
+        });
+      });
     });
   });
 }
