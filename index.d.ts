@@ -697,6 +697,7 @@ declare module 'warframe-items' {
         'Cephalon Simaris' |
         'Cephalon Suda' |
         'Corpus' |
+        'Dax' |
         'Duviri' |
         'Entrati' |
         'Founder' |

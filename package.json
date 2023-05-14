@@ -17,7 +17,7 @@
     "postinstall": "install-peerdeps @wfcd/eslint-config@^1.4.1 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
-    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --all-errors --allowUnionTypes --verbose",
+    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
     "validate": "exit 0"
   },
   "repository": {
