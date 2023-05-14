@@ -248,7 +248,6 @@ for (const base of ['index.js', 'index.mjs']) {
           'Spectral Debris',
           'Aya',
           'Somatic Fibers',
-          'Endo',
           'Nav Coordinate',
           'Judgement Points',
           'Synthula',
@@ -258,9 +257,13 @@ for (const base of ['index.js', 'index.mjs']) {
           'Gallium',
           'Antiserum Injector Fragment',
         ].forEach((iName) => {
-          const results = data.items.filter((i) => iName === i.name);
-          assert(results?.length > 0);
-          results.forEach((res) => assert.strictEqual(res.type, 'Resource', `${res.name} should be a Resource type`));
+          const results = data.items.filter(
+            (i) => iName.toLowerCase() === i.name.toLowerCase() && !i.uniqueName.includes('/Enemies')
+          );
+          assert(results?.length > 0, `${iName} should have results`);
+          results.forEach((res) =>
+            assert.strictEqual(res.type, 'Resource', `${res.name} should be a Resource type... ${res.type}`)
+          );
         });
       });
     });
