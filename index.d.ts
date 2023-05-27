@@ -752,6 +752,7 @@ declare module 'warframe-items' {
         'Ayatan Star' |
         'Blade And Whip' |
         'Blade and Whip' |
+        'Boosters' |
         'Bow' |
         'Captura' |
         'Cetus Bounty Rewards' |
@@ -774,12 +775,12 @@ declare module 'warframe-items' {
         'Enemy Mod Tables' |
         'Exalted Weapon' |
         'Extractor' |
+        'Equipment Adapter' |
         'Fish' |
         'Fish Bait' |
         'Fish Part' |
         'Fist' |
         'Focus Lens' |
-        'Forma' |
         'Fur Color' |
         'Fur Pattern' |
         'Gear' |
