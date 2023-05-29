@@ -1,4 +1,4 @@
-import HttpsProxyAgent from 'https-proxy-agent';
+import { HttpsProxyAgent } from 'https-proxy-agent';
 import SOCKS5Agent from 'socks5-http-client/lib/Agent.js';
 
 export default () => {
