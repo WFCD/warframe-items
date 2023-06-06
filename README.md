@@ -48,9 +48,9 @@ npm install warframe-items
 ### Usage
 ```js
 const Items = require('warframe-items')
-const items = new Items(options, ...items)
+const items = new Items(options, ...oldItems)
 ```
-In this example, `items` is an Array with all items. The `...items` param
+In this example, `items` is an Array with all items. The `...oldItems` param
 allows you to add your own items before our gathered ones.
 
 <br>
