@@ -178,6 +178,10 @@ class Parser {
     this.addDamage(result);
     this.sanitize(result);
     this.addImageName(result, data.manifest, previous);
+    if (result.abilities) {
+      result.abilities.forEach((a) => this.addImageName(a, data.manifest, previous));
+    }
+
     this.addCategory(result, category);
     this.addTradable(result);
     this.addDucats(result, data.wikia.ducats);
@@ -387,6 +391,7 @@ class Parser {
     if (item.abilities) {
       item.abilities = item.abilities.map((a) => {
         return {
+          uniqueName: a.abilityUniqueName,
           name: title(a.abilityName),
           description: a.description,
         };
