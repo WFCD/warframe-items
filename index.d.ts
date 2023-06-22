@@ -465,6 +465,7 @@ declare module 'warframe-items' {
         speed?: number;
     }
     interface Ability {
+        uniqueName: String,
         name: string;
         description: string;
     }
