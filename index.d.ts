@@ -465,9 +465,10 @@ declare module 'warframe-items' {
         speed?: number;
     }
     interface Ability {
-        uniqueName: String,
+        uniqueName: string;
         name: string;
         description: string;
+        imageName: string;
     }
     interface AvailableChallenge {
         fullName: string;
