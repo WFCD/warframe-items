@@ -465,8 +465,10 @@ declare module 'warframe-items' {
         speed?: number;
     }
     interface Ability {
+        uniqueName: string;
         name: string;
         description: string;
+        imageName: string;
     }
     interface AvailableChallenge {
         fullName: string;
@@ -901,7 +903,8 @@ declare module 'warframe-items' {
         'Eris' |
         'Kuva Fortress' |
         'Zariman' |
-        'Void';
+        'Void'|
+        'Duviri';
 
     type Element = Capitalize<keyof DamageTypes>;
 }

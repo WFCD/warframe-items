@@ -190,6 +190,13 @@ class Build {
           await this.saveImage(component, true, duplicates, manifest);
         }
       }
+      // Save images for abilities
+      if (item.abilities) {
+        // eslint-disable-next-line no-restricted-syntax
+        for (const ability of item.abilities) {
+          await this.saveImage(ability, false, duplicates, manifest);
+        }
+      }
       bar.tick();
     }
 
