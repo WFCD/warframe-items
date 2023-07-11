@@ -33,9 +33,6 @@ that you could possibly need. To give you some idea:
 And tons more item specific data. Check out [/data/json](/data/json) to get an
 idea.
 
-You can also rest assured that this repository will be maintained for as long
-as Warframe stays alive, as it is has been built to provide all item data for [NexusHub](https://github.com/nexus-devs/NexusHub).
-
 <br>
 
 ### Installation
