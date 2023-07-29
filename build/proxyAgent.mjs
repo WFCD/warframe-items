@@ -25,7 +25,7 @@ export default () => {
       return undefined;
     default:
       console.log(
-        'No proxy will be used. This is most likely fine in developement but origin.warframe.com is usually blocked in most servers.'
+        'No proxy will be used. This is most likely fine in development but origin.warframe.com is usually blocked in most servers.'
       );
       return undefined;
   }

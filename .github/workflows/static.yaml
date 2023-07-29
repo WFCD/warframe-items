@@ -65,6 +65,7 @@ jobs:
         node-version:
           - 16
           - 'lts/*'
+          - 20
     steps:
     - uses: actions/checkout@v3
     - uses: actions/cache@v3
@@ -81,4 +82,6 @@ jobs:
         NODE_OPTIONS: '--max_old_space_size=4096'
       run: npm test
     - name: Regression
+      env:
+        NODE_OPTIONS: --experimental-fetch
       run: npm run regression

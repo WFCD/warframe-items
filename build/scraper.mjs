@@ -1,5 +1,5 @@
 import lzma from 'lzma';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 
 import { Generator as RelicGenerator } from '@wfcd/relics';
 import patchlogs from 'warframe-patchlogs';
@@ -197,7 +197,7 @@ class Scraper {
     const bar = new Progress('Fetching Wikia Data', 5);
     const ducats = [];
     const ducatsWikia = await get('http://warframe.wikia.com/wiki/Ducats/Prices/All', true);
-    const $ = cheerio.load(ducatsWikia);
+    const $ = load(ducatsWikia);
 
     $('.mw-content-text table tbody tr').each(function () {
       const name = $(this).find('td:nth-of-type(1) a:nth-of-type(2)').text();
