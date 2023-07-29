@@ -1,8 +1,8 @@
-import cheerio from 'cheerio';
 import fs from 'fs/promises';
 import os from 'os';
 import path from 'path';
 import { promisify } from 'util';
+import { load } from 'cheerio';
 import cmd from 'node-cmd';
 import fetch from 'node-fetch';
 
@@ -12,7 +12,7 @@ const blueprintUrl = 'https://warframe.fandom.com/wiki/Module:Blueprints/data?ac
 
 const getLuaData = async (url) => {
   try {
-    const $ = cheerio.load(await fetch(url).then((data) => data.text()));
+    const $ = load(await fetch(url).then((data) => data.text()));
     return $('#wpTextbox1').text();
   } catch (err) {
     console.error('Failed to fetch latest Lua data:');
