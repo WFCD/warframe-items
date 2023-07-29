@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import assert from 'node:assert';
 import dedupe from '../build/dedupe.mjs';
 
