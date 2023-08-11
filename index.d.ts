@@ -682,10 +682,7 @@ declare module 'warframe-items' {
         'Sabotage' |
         'Survival'
 
-    type Sex =
-        'Male' |
-        'Female' |
-        'Androgynous'
+    type Sex = 'Male' | 'Female' | 'Androgynous' | 'Non-binary (Pluriform)';
 
     type ShotType =
         'Continuous' |
