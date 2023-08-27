@@ -642,6 +642,7 @@ class Parser {
         else if (item.type === 'Ship Decoration') item.category = 'Skins';
         else if (item.type === 'Gem') item.category = 'Resources';
         else if (item.type === 'Plant') item.category = 'Resources';
+        else if (item.type === 'Relic') item.category = 'Relics';
         else item.category = 'Misc';
         break;
 

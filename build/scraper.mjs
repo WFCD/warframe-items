@@ -31,6 +31,7 @@ class Scraper {
       // If this call is successful, it means that the origin server is available.
       await this.fetchEndpoints(true, 'en');
     } catch (err) {
+      console.error(err);
       // Origin server not available, fall back to content server
       this.originServerAvailable = false;
       console.warn(
