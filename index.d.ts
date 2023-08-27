@@ -303,8 +303,7 @@ declare module 'warframe-items' {
         tradable: true;
         drops?: Drop[];
     }
-    interface EmptyRelic extends Omit<Relic, 'marketInfo' | 'category' | 'tradable' | 'vaultDate' | 'vaulted'> {
-        category: 'Misc';
+    interface EmptyRelic extends Omit<Relic, 'marketInfo' | 'tradable' | 'vaultDate' | 'vaulted'> {
         tradable: false;
         locations: [];
         rewards: [];
