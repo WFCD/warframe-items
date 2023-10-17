@@ -5,7 +5,7 @@ declare module 'warframe-items' {
         i18n: BundleofI18nBundle<Locale>;
     }
     interface ItemsOptions {
-        category: Array<Category | 'SentinelWeapons'>;
+        category: Array<Category>;
         ignoreEnemies?: boolean;
         i18n?: boolean|string[];
         i18nOnObject?: boolean;
@@ -155,15 +155,15 @@ declare module 'warframe-items' {
     }
     interface SentinelWeapon extends Omit<Melee, 'category'> {
         sentinel: true;
-        productCategory: 'SentinelWeapons';
-        category: 'Primary';
+        productCategory: 'Melee';
+        category: 'SentinelWeapons';
     }
     interface ExaltedWeapon extends Omit<Gun, 'category'>, Omit<Melee, 'category'>, Omit<Weapon, 'category'> {
         category: 'Misc';
         type: 'Exalted Weapon';
     }
     interface Weapon extends Equippable, Buildable, Attackable, WikiaItem, BaseItem {
-        category: Gun['category'] | Melee['category'];
+        category: Gun['category'] | Melee['category'] | SentinelWeapon['category'];
         fusionLimit?: number;
         secondsPerShot?: number;
         damagePerSecond?: number;
@@ -607,7 +607,6 @@ declare module 'warframe-items' {
         'Melee' |
         'OperatorAmps' |
         'Pistols' |
-        'SentinelWeapons' |
         'Sentinels' |
         'SpaceGuns' |
         'SpaceMelee' |
