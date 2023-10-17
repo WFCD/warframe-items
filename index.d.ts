@@ -155,7 +155,7 @@ declare module 'warframe-items' {
     }
     interface SentinelWeapon extends Omit<Melee, 'category'> {
         sentinel: true;
-        productCategory: 'Melee';
+        productCategory: 'SentinelWeapons';
         category: 'SentinelWeapons';
     }
     interface ExaltedWeapon extends Omit<Gun, 'category'>, Omit<Melee, 'category'>, Omit<Weapon, 'category'> {
@@ -608,6 +608,7 @@ declare module 'warframe-items' {
         'OperatorAmps' |
         'Pistols' |
         'Sentinels' |
+        'SentinelWeapons' |
         'SpaceGuns' |
         'SpaceMelee' |
         'SpaceSuits' |
