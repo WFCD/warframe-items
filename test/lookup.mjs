@@ -48,3 +48,5 @@ console.error(
 console.error(
   items.filter((i) => i.name.toLowerCase().includes('endo')).map((i) => `${i.uniqueName}::${i.type}::${i.name}`)
 );
+
+console.error(items.find((i) => i.name.includes('Dorrclave')));
