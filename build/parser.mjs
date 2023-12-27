@@ -21,7 +21,11 @@ const masterableCategories = await readJson(new URL('../config/masterableCategor
  * @param {string} str string to be titlecased
  * @returns {string}
  */
-const title = (str = '') => str.toLowerCase().replace(/\b\w/g, (l) => l.toUpperCase());
+const title = (str = '') =>
+  str
+    .toLowerCase()
+    .replace(/\b\w/g, (l) => l.toUpperCase())
+    .replace(/'S /gi, "'s ");
 
 /** @type {Warnings} */
 const warnings = {
