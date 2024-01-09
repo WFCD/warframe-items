@@ -192,7 +192,7 @@ class Parser {
     this.addDropRate(result, data.drops);
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, category, data.wikia);
-    this.detectPrime(result);
+    this.addIsPrime(result);
     this.addVaultData(result, data.vaultData);
     this.addResistanceData(result, category);
     this.addRelics(result, data.relics);
@@ -811,23 +811,35 @@ class Parser {
    * Detects whether the item is a prime item
    * @param {Item} item to check for prime status
    */
-  detectPrime(item) {
-    if (
-      ![
-        'Primary',
-        'Secondary',
-        'Melee',
-        'Warframes',
-        'Sentinels',
-        'Mods',
-        'Archwing',
-        'Arch-Melee',
-        'Arch-Gun',
-      ].includes(item.category)
-    )
-      return;
-
-    item.isPrime = item.uniqueName.includes('Prime');
+  addIsPrime(item) {
+    const unameSegments = item.uniqueName.split('/');
+    const lastUnameSegment = unameSegments[unameSegments.length - 1];
+    switch (item.category) {
+      case 'Mods':
+        const isLegendary = item.rarity === 'Legendary';
+        const isExpert = lastUnameSegment.includes('Expert') || unameSegments[unameSegments.length - 2] === 'Expert';
+        item.isPrime = isLegendary && (isExpert || lastUnameSegment.includes('Primed'));
+        break;
+      case 'Warframes':
+        item.isPrime = item.uniqueName.endsWith('Prime');
+        break;
+      case 'Primary':
+      case 'Secondary':
+      case 'Melee':
+      case 'Arch-Gun':
+      case 'Arch-Melee':
+        item.isPrime = item.tags?.includes('Prime') || lastUnameSegment.includes('Prime');
+        break;
+      case 'Sentinels':
+        item.isPrime = lastUnameSegment.startsWith('Prime');
+        break;
+      // there is only one archwing prime so far so we cant extrapolate much
+      case 'Archwing':
+        item.isPrime = item.uniqueName.includes('Prime');
+        break;
+      default:
+        break;
+    }
   }
 
   /**
