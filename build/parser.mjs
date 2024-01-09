@@ -192,7 +192,7 @@ class Parser {
     this.addDropRate(result, data.drops);
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, category, data.wikia);
-    this.addIsPrime(result);
+    this.detectPrime(result);
     this.addVaultData(result, data.vaultData);
     this.addResistanceData(result, category);
     this.addRelics(result, data.relics);
@@ -811,7 +811,7 @@ class Parser {
    * Detects whether the item is a prime item
    * @param {Item} item to check for prime status
    */
-  addIsPrime(item) {
+  detectPrime(item) {
     const unameSegments = item.uniqueName.split('/');
     const lastUnameSegment = unameSegments[unameSegments.length - 1];
     switch (item.category) {
@@ -956,7 +956,7 @@ class Parser {
    * @param {VaultData} vaultData to look up data for the {@param item}
    */
   addVaultData(item, vaultData) {
-    if (!item.name.endsWith('Prime')) return;
+    if (!item.isPrime) return;
     const target = vaultData.find((i) => i.Name.toLowerCase() === item.name.toLowerCase());
 
     if (!target) {
