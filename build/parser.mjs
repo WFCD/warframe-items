@@ -193,7 +193,7 @@ class Parser {
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, category, data.wikia);
     this.addIsPrime(result);
-    this.addVaultData(result, data.vaultData);
+    this.addVaultData(result, data.vaultData, category, data.wikia);
     this.addResistanceData(result, category);
     this.addRelics(result, data.relics);
     this.applyMasterable(result);
@@ -220,7 +220,7 @@ class Parser {
     this.addImageName(result, data.manifest, previous);
     this.addCategory(result, category);
 
-    this.addVaultData(result, data.vaultData);
+    this.addVaultData(result, data.vaultData, category, data.wikia);
 
     return result;
   }
@@ -954,12 +954,21 @@ class Parser {
    * data from "Ducats or Plat".
    * @param {Item} item data to append vault data to
    * @param {VaultData} vaultData to look up data for the {@param item}
+   * @param {module:warframe-items.Category} category of the data
+   * @param {WikiaData} wikiaData from wikia to apply
    */
-  addVaultData(item, vaultData) {
+  addVaultData(item, vaultData, category, wikiaData) {
+    let vaultCategory = category;
+    if (item.type === 'Archwing') vaultCategory = 'archwings';
+
     if (!item.name.endsWith('Prime')) return;
+    if (!['weapons', 'warframes', 'archwings', 'sentinels'].includes(vaultCategory.toLowerCase())) return;
+
+    if (vaultCategory === 'Sentinels') vaultCategory = 'companions';
+    const wikiaItem = wikiaData[vaultCategory.toLowerCase()].filter((i) => i).find((i) => i.name === item.name);
     const target = vaultData.find((i) => i.Name.toLowerCase() === item.name.toLowerCase());
 
-    if (!target) {
+    if (!target && !wikiaItem) {
       const isManuallyExcluded = primeExcludeRegex.test(item.name);
       const isSkin = item.category === 'Skins';
       const isSentinelWeapon =
@@ -971,18 +980,18 @@ class Parser {
       return;
     }
 
-    if (target.ReleaseDate) {
+    if (target?.ReleaseDate) {
       item.releaseDate = this.normalizeOggDate(target.ReleaseDate);
     }
-    if (target.VaultedDate) {
+    if (target?.VaultedDate) {
       item.vaultDate = this.normalizeOggDate(target.VaultedDate);
     }
-    if (target.EstimatedVaultedDate) {
+    if (target?.EstimatedVaultedDate) {
       item.estimatedVaultDate = this.normalizeOggDate(target.EstimatedVaultedDate);
     }
-    if (target.Vaulted) {
-      item.vaulted = target.Vaulted;
-    }
+
+    item.vaulted = target?.Vaulted ?? wikiaItem.vaulted;
+    if (item.vaulted === 'N/A') item.vaulted = true;
   }
 
   /**
