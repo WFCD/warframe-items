@@ -8,7 +8,7 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
         node-version-file: .nvmrc
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ lint ]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: leafo/gh-actions-lua@v10.0.0
     - uses: actions/cache@v3
       with:
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ build, lint ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/cache@v3
         with:
           path: data/json
@@ -67,7 +67,7 @@ jobs:
           - 'lts/*'
           - 20
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: actions/cache@v3
       with:
         path: data/json
