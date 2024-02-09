@@ -1,6 +1,5 @@
 import lzma from 'lzma';
 import { load } from 'cheerio';
-
 import { Generator as RelicGenerator } from '@wfcd/relics';
 import patchlogs from 'warframe-patchlogs';
 
@@ -12,7 +11,6 @@ import WeaponScraper from './wikia/scrapers/WeaponScraper.mjs';
 import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
 import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
 import readJson from './readJson.mjs';
-
 import { get, getJSON, retryAttempts } from './network.mjs';
 
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
