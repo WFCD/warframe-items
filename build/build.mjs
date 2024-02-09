@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
 import minify from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
 import minifyJpeg from 'imagemin-jpegtran';

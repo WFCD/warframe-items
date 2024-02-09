@@ -1,6 +1,7 @@
 import assert from 'node:assert';
 import { resolve } from 'node:path';
 import { createRequire } from 'module';
+
 import dedupe from '../build/dedupe.mjs';
 
 const require = createRequire(import.meta.url);
