@@ -1,4 +1,5 @@
 import assert from 'node:assert';
+
 import dedupe from '../build/dedupe.mjs';
 
 const grab = async (path) => {
