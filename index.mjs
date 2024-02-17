@@ -36,6 +36,9 @@ import { resolve, dirname } from 'node:path';
 import { readFileSync, readdirSync, accessSync, constants } from 'node:fs';
 import { fileURLToPath } from 'url';
 
+import * as colors from './utilities/colors.mjs';
+import * as find from './utilities/find.mjs';
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const canAccess = (path) => {
@@ -78,7 +81,12 @@ const defaultCategories = readdirSync(resolve(__dirname, './data/json/'))
 const defaultOptions = { category: defaultCategories, i18n: false, i18nOnObject: false };
 
 export default class Items extends Array {
-  constructor(options, ...existingItems) {
+  static utilities = {
+    find,
+    colors,
+  };
+
+  constructor(options = [''], ...existingItems) {
     super(...existingItems);
 
     // Merge provided options with defaults

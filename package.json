@@ -43,6 +43,7 @@
     "@wfcd/eslint-config": "^1.4.1",
     "@wfcd/relics": "^2.0.0",
     "ajv-cli": "^5.0.0",
+    "chai": "^5.1.0",
     "cheerio": "^1.0.0-rc.3",
     "colors": "1.4.0",
     "decache": "^4.6.0",
@@ -70,7 +71,21 @@
   "eslintConfig": {
     "extends": [
       "@wfcd"
-    ]
+    ],
+    "parserOptions": {
+      "requireConfigFile": false
+    },
+    "rules": {
+      "import/no-cycle": "off",
+      "import/extensions": [
+        2,
+        "never",
+        {
+          "mjs": "always",
+          "json": "always"
+        }
+      ]
+    }
   },
   "prettier": "@wfcd/eslint-config/prettier",
   "babel": {
@@ -124,5 +139,13 @@
     "lint",
     "validate",
     "test"
-  ]
+  ],
+  "peerDependencies": {
+    "warframe-worldstate-data": ">=2"
+  },
+  "peerDependenciesMeta": {
+    "warframe-worldstate-data": {
+      "optional": true
+    }
+  }
 }
