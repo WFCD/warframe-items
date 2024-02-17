@@ -18,6 +18,34 @@ const damageTypes = [
   'Void',
 ];
 
+/**
+ * @typedef {object} WikiaAttack
+ * @property {string} name - name of the attack
+ * @property {number} [duration] - duration of the attack
+ * @property {number} [radius] - radius of the attack
+ * @property {number} [speed] - speed of the attack
+ * @property {object} [pellet] - pellet stats
+ * @property {string} [pellet.name] - name of the pellet
+ * @property {number} [pellet.count] - number of pellets
+ * @property {number} [crit_chance] - crit chance of the attack
+ * @property {number} [crit_mult] - crit multiplier of the attack
+ * @property {number} [status_chance] - status chance of the attack
+ * @property {number} [charge_time] - charge time of the attack
+ * @property {string} [shot_type] - type of shot
+ * @property {number} [shot_speed] - speed of the shot
+ * @property {number} [flight] - flight speed of the shot
+ * @property {object} [falloff] - falloff stats
+ * @property {number} [falloff.start] - start of the falloff
+ * @property {number} [falloff.end] - end of the falloff
+ * @property {number} [falloff.reduction] - reduction of the falloff
+ * @property {Record<string, number>} damage - damage types and their values
+ */
+
+/**
+ * Parse attack to clean attack stats
+ * @param {Object} Attack - raw attack data
+ * @returns {WikiaAttack}
+ */
 const parseAttack = (Attack) => {
   const attack = {
     name: Attack.AttackName,
@@ -60,6 +88,25 @@ const parseAttack = (Attack) => {
   return attack;
 };
 
+/**
+ * @typedef {object} SlamAttack
+ * @property {string} damage - slam damage
+ * @property {object} radial - radial attack stats
+ * @property {string} radial.damage - radial damage
+ * @property {string} [radial.element] - element type
+ * @property {string} [radial.proc] - proc type
+ * @property {number} radial.radius - radius of the radial attack
+ */
+
+/**
+ * Parse slam to clean slam stats
+ * @param {string} SlamAttack - slam damage
+ * @param {string} SlamRadialDmg  - radial damage
+ * @param {string} SlamRadialElement - element type
+ * @param {string} SlamRadialProc - proc type
+ * @param {string} SlamRadius   - slam radius
+ * @returns {SlamAttack}
+ */
 const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialProc, SlamRadius }) => {
   return {
     damage: Number(SlamAttack || 0).toFixed(2),
@@ -72,6 +119,48 @@ const parseSlam = ({ SlamAttack, SlamRadialDmg, SlamRadialElement, SlamRadialPro
   };
 };
 
+/**
+ * @typedef {object} WikiaWeapon
+ * @property {string} regex - regex to match the weapon name
+ * @property {string} name - name of the weapon
+ * @property {string} url - url to the weapon's wiki page
+ * @property {number} mr - mastery rank required to use the weapon
+ * @property {string} type - type of weapon
+ * @property {number} riven_disposition - riven disposition of the weapon
+ * @property {number} status_chance - status chance of the weapon
+ * @property {number} ammo - max ammo of the weapon
+ * @property {string[]} polarities - polarities of the weapon
+ * @property {string[]} tags - tags of the weapon
+ * @property {boolean} vaulted - whether the weapon is vaulted
+ * @property {string} introduced - when the weapon was introduced
+ * @property {string} marketCost - market cost of the weapon
+ * @property {string} bpCost - blueprint cost of the weapon
+ * @property {string} thumbnail - url to the weapon's thumbnail
+ * @property {Array<WikiaAttack>} attacks - list of attacks the weapon has
+ * @property {object} [attacks.slide] - slide attack stats
+ * @property {object} [attacks.jump] - jump attack stats
+ * @property {object} [attacks.wall]
+ * @property {number} [attacks.channeling]
+ * @property {SlamAttack} [attacks.slam]
+ */
+
+/**
+ * @typedef {object} OldWeapon
+ */
+
+/**
+ * @typedef {object} Blueprint
+ * @property {string} MarketCost
+ * @property {string} BPCost
+ */
+
+/**
+ * Parse raw weapon data to a clean weapon object
+ * @param {Object} oldWeapon - raw weapon data
+ * @param {Record<string, string>} imageUrls - image urls
+ * @param {Record<string, Blueprint>} blueprints - blueprint data
+ * @returns {undefined|WikiaWeapon}
+ */
 export default (oldWeapon, imageUrls, blueprints) => {
   let newWeapon;
   if (!oldWeapon || !oldWeapon.Name) {
