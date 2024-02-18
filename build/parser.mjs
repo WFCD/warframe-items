@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import cloneDeep from 'lodash.clonedeep';
 
 import dedupe from './dedupe.mjs';
 import hashManager from './hashManager.mjs';
@@ -175,7 +175,7 @@ class Parser {
    * @returns {Partial<Item>}
    */
   filter(original, category, data, previous) {
-    const result = _.cloneDeep(original);
+    const result = cloneDeep(original);
 
     if (result.rewardName) result.uniqueName = result.rewardName;
     this.addType(result);
@@ -212,7 +212,7 @@ class Parser {
    * @returns {Partial<Item>}
    */
   quickFilter(original, category, data, previous) {
-    const result = _.cloneDeep(original);
+    const result = cloneDeep(original);
 
     if (result.rewardName) result.uniqueName = result.rewardName;
     this.addType(result);
@@ -240,7 +240,7 @@ class Parser {
     const blueprint = blueprints.filter(filterBps).find((b) => b.resultType === item.uniqueName);
     if (!blueprint) return item; // Some items just don't have blueprints
     const components = [];
-    const result = _.cloneDeep(item);
+    const result = cloneDeep(item);
 
     // Look for original component entry in all categories
     // eslint-disable-next-line no-restricted-syntax
