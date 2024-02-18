@@ -1,5 +1,9 @@
 // Project: warframe-items
 declare module 'warframe-items' {
+    /**
+     * Utilities around items
+     * only available from ESM import
+     */
     module 'warframe-items/utilities' {
         interface find {
             findItem: (uname: string) => Promise<Item | undefined>;
@@ -17,10 +21,6 @@ declare module 'warframe-items' {
         constructor(options: ItemsOptions, ...items: Item[]);
         options: ItemsOptions;
         i18n: BundleofI18nBundle<Locale>;
-        /**
-         * Utilities around items
-         * only available from ESM import
-         */;
     }
 
     interface ModResolveable {

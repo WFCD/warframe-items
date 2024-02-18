@@ -78,7 +78,7 @@ const defaultCategories = readdirSync(resolve(directory, './data/json/'))
 const defaultOptions = { category: defaultCategories, i18n: false, i18nOnObject: false };
 
 export default class Items extends Array {
-  constructor(options = [''], ...existingItems) {
+  constructor(options, ...existingItems) {
     super(...existingItems);
 
     // Merge provided options with defaults
