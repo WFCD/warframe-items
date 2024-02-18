@@ -51,6 +51,11 @@ const items = new Items(options, ...oldItems);
 // ESM
 import Items from 'warframe-items';
 const items = new Items(options, ...oldItems);
+
+// Utilities - Only works in import
+import { find, colors } from 'warframe-items/utilities';
+const excalPrime = find.findItem('/Lotus/Powersuits/Excalibur/ExcaliburPrime');
+// normal items operations now
 ```
 In this example, `items` is an Array with all items. The `...oldItems` param
 allows you to add your own items before our gathered ones.
@@ -121,13 +126,13 @@ to get you started.
 ### File structure
 All relevant scripts are found in `/build/` with
 
-[build.js](/build/build.js)<br>
+[build.mjs](/build/build.mjs)<br>
 The entrypoint for the build script. Here we also save JSON, image and cache data.
 
-[scraper.js](/build/scraper.js)<br>
+[scraper.mjs](/build/scraper.mjs)<br>
 Fetches all external data and returns it to the parser.
 
-[parser.js](/build/parser.js)<br>
+[parser.mjs](/build/parser.mjs)<br>
 Parses the external data to match our schema and returns it to the build script.
 
 <br>

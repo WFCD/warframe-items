@@ -1,4 +1,4 @@
-import Items from '../index.mjs';
+import Items from 'warframe-items';
 
 /**
  * Palette Coordinate representation

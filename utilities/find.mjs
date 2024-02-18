@@ -1,8 +1,5 @@
 import { translatePolarity } from 'warframe-worldstate-data/utilities';
-
-// Allow safely in this usecase
-// eslint-disable-next-line import/no-cycle
-import Items from '../index.mjs';
+import Items from 'warframe-items';
 
 /**
  * Find an item by unique name

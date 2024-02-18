@@ -1,12 +1,10 @@
 import { assert } from 'chai';
-
-import Items from '../../index.mjs';
+import Items from 'warframe-items';
+import { find } from 'warframe-items/utilities';
 
 import { marshall } from './utils.mjs';
 
-const {
-  find: { loadMods },
-} = Items.utilities;
+const { loadMods } = find;
 
 describe('#loadMods', () => {
   const items = new Items();

@@ -5,9 +5,14 @@
   "main": "index.js",
   "types": "index.d.ts",
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./index.mjs",
-    "require": "./index.js"
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./utilities": {
+      "import": "./utilities/index.mjs"
+    }
   },
   "scripts": {
     "build": "node ./build/build.mjs",
@@ -15,7 +20,8 @@
     "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,.cjs",
     "lint:fix": "eslint --ignore-path .gitignore . --fix --ext .js,.mjs,.cjs",
-    "postinstall": "install-peerdeps @wfcd/eslint-config@^1.4.1 -S",
+    "pretest": "npm i --no-save warframe-worldstate-data@^2",
+    "postinstall": "npx -p install-peerdeps@2.0.3 install-peerdeps @wfcd/eslint-config@^1 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
     "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
@@ -76,7 +82,6 @@
       "requireConfigFile": false
     },
     "rules": {
-      "import/no-cycle": "off",
       "import/extensions": [
         2,
         "never",

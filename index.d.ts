@@ -1,4 +1,18 @@
+// Project: warframe-items
 declare module 'warframe-items' {
+    module 'warframe-items/utilities' {
+        interface find {
+            findItem: (uname: string) => Promise<Item | undefined>;
+            loadMods: (upgrades?: Array<ModResolveable>) => Promise<{
+                arcane: Arcane[];
+                mods: ModUnion[];
+            }>
+        }
+        interface colors {
+            safeColor: (color: string) => Pixel | undefined;
+        }
+    }
+
     export default class Items extends Array<Item>{
         constructor(options: ItemsOptions, ...items: Item[]);
         options: ItemsOptions;
@@ -6,19 +20,7 @@ declare module 'warframe-items' {
         /**
          * Utilities around items
          * only available from ESM import
-         */
-        static utilities: {
-            find: {
-                findItem: (uname: string) => Promise<Item | undefined>;
-                loadMods: (upgrades?: Array<ModResolveable>) => Promise<{
-                    arcane: Arcane[];
-                    mods: ModUnion[];
-                }>
-            },
-            colors: {
-                safeColor: (color: string) => Pixel | undefined;
-            }
-        };
+         */;
     }
 
     interface ModResolveable {

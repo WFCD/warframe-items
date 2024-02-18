@@ -36,10 +36,7 @@ import { resolve, dirname } from 'node:path';
 import { readFileSync, readdirSync, accessSync, constants } from 'node:fs';
 import { fileURLToPath } from 'url';
 
-import * as colors from './utilities/colors.mjs';
-import * as find from './utilities/find.mjs';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const directory = dirname(fileURLToPath(import.meta.url));
 
 const canAccess = (path) => {
   try {
@@ -54,7 +51,7 @@ const cache = {};
 const require = (filePath) => {
   if (cache[filePath]) return cache[filePath];
 
-  const resolved = resolve(__dirname, filePath);
+  const resolved = resolve(directory, filePath);
   if (canAccess(resolved)) {
     const parsed = JSON.parse(readFileSync(resolved, 'utf-8'));
     cache[filePath] = parsed;
@@ -73,7 +70,7 @@ try {
 }
 
 const ignored = ['All', 'i18n'];
-const defaultCategories = readdirSync(resolve(__dirname, './data/json/'))
+const defaultCategories = readdirSync(resolve(directory, './data/json/'))
   .filter((f) => f.includes('.json'))
   .map((f) => f.replace('.json', ''))
   .filter((f) => !ignored.includes(f));
@@ -81,11 +78,6 @@ const defaultCategories = readdirSync(resolve(__dirname, './data/json/'))
 const defaultOptions = { category: defaultCategories, i18n: false, i18nOnObject: false };
 
 export default class Items extends Array {
-  static utilities = {
-    find,
-    colors,
-  };
-
   constructor(options = [''], ...existingItems) {
     super(...existingItems);
 
