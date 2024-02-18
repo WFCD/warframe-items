@@ -148,7 +148,7 @@ class Parser {
 
     const bar = new Progress(`Parsing ${category}`, items.length);
     if (!items.length) {
-      bar.interrupt(`No ${category}`);
+      bar?.interrupt?.(`No ${category}`);
       return [];
     }
     for (let index = 0; index < items.length; index += 1) {
