@@ -5,9 +5,14 @@
   "main": "index.js",
   "types": "index.d.ts",
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./index.mjs",
-    "require": "./index.js"
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./utilities": {
+      "import": "./utilities/index.mjs"
+    }
   },
   "scripts": {
     "build": "node ./build/build.mjs",
@@ -15,7 +20,8 @@
     "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,.cjs",
     "lint:fix": "eslint --ignore-path .gitignore . --fix --ext .js,.mjs,.cjs",
-    "postinstall": "install-peerdeps @wfcd/eslint-config@^1.4.1 -S",
+    "pretest": "npx npm-install-peers",
+    "postinstall": "npx -p install-peerdeps@2.0.3 install-peerdeps @wfcd/eslint-config@^1 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
     "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
@@ -37,12 +43,14 @@
   "devDependencies": {
     "@types/imagemin": "^8.0.0",
     "@types/imagemin-jpegtran": "^5.0.1",
+    "@types/lodash.clonedeep": "^4.5.9",
     "@types/node": "^18.17.1",
     "@types/node-fetch": "^2.5.12",
     "@types/sharp": "^0.32.0",
-    "@wfcd/eslint-config": "^1.4.1",
-    "@wfcd/relics": "^2.0.0",
+    "@wfcd/eslint-config": "^1",
+    "@wfcd/relics": "^2.0.9",
     "ajv-cli": "^5.0.0",
+    "chai": "^5.1.0",
     "cheerio": "^1.0.0-rc.3",
     "colors": "1.4.0",
     "decache": "^4.6.0",
@@ -52,8 +60,7 @@
     "imagemin": "^7.0.1",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
-    "install-peerdeps": "^2.0.3",
-    "lodash": "^4.17.19",
+    "lodash.clonedeep": "^4.5.0",
     "lua.vm.js": "0.0.1",
     "lzma": "^2.3.2",
     "mocha": "^10.0.0",
@@ -70,7 +77,10 @@
   "eslintConfig": {
     "extends": [
       "@wfcd"
-    ]
+    ],
+    "parserOptions": {
+      "requireConfigFile": false
+    }
   },
   "prettier": "@wfcd/eslint-config/prettier",
   "babel": {
@@ -78,8 +88,8 @@
       "@babel/preset-env"
     ],
     "plugins": [
-      "@babel/plugin-proposal-class-properties",
-      "@babel/plugin-proposal-private-methods"
+      "@babel/plugin-transform-class-properties",
+      "@babel/plugin-transform-private-methods"
     ]
   },
   "mocha": {
@@ -124,5 +134,13 @@
     "lint",
     "validate",
     "test"
-  ]
+  ],
+  "peerDependencies": {
+    "warframe-worldstate-data": "^2"
+  },
+  "peerDependenciesMeta": {
+    "warframe-worldstate-data": {
+      "optional": true
+    }
+  }
 }
