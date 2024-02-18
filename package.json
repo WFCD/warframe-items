@@ -20,7 +20,7 @@
     "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,.cjs",
     "lint:fix": "eslint --ignore-path .gitignore . --fix --ext .js,.mjs,.cjs",
-    "pretest": "npm i --no-save warframe-worldstate-data@^2",
+    "pretest": "npx npm-install-peers",
     "postinstall": "npx -p install-peerdeps@2.0.3 install-peerdeps @wfcd/eslint-config@^1 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
@@ -146,7 +146,7 @@
     "test"
   ],
   "peerDependencies": {
-    "warframe-worldstate-data": ">=2"
+    "warframe-worldstate-data": "^2"
   },
   "peerDependenciesMeta": {
     "warframe-worldstate-data": {
