@@ -1,9 +1,64 @@
+// Project: warframe-items
 declare module 'warframe-items' {
+    /**
+     * Utilities around items
+     * only available from ESM import
+     */
+    module 'warframe-items/utilities' {
+        interface find {
+            findItem: (uname: string) => Promise<Item | undefined>;
+            loadMods: (upgrades?: Array<ModResolveable>) => Promise<{
+                arcane: Arcane[];
+                mods: ModUnion[];
+            }>
+        }
+        interface colors {
+            safeColor: (color: string) => Pixel | undefined;
+        }
+    }
+
     export default class Items extends Array<Item>{
         constructor(options: ItemsOptions, ...items: Item[]);
         options: ItemsOptions;
         i18n: BundleofI18nBundle<Locale>;
     }
+
+    interface ModResolveable {
+        uniqueName: string;
+        rank?: number;
+    }
+
+    interface Palette {
+        /** Palette name (as seen in-game */
+        name: string;
+        /** Palette description */
+        description: string;
+    }
+
+    interface PaletteEntry {
+        palette: Palette;
+        position: {
+            /** Row position */
+            row: number;
+            /** Column position */
+            col: number;
+        };
+    }
+
+    class Pixel {
+        constructor(hex: string);
+        toJSON(): {
+            hex: string;
+            matches: PaletteEntry[];
+            isTransparent: boolean;
+        };
+        get pallets(): string[];
+        get matches(): PaletteEntry[];
+        /** whether the pixel is transparent */
+        get isTransparent(): boolean;
+        get hex(): string;
+    }
+
     interface ItemsOptions {
         category: Array<Category | 'SentinelWeapons'>;
         ignoreEnemies?: boolean;
@@ -36,6 +91,8 @@ declare module 'warframe-items' {
         MinimalItem |
         ModSet |
         FocusWay;
+
+    type ModUnion = Mod | SingleLevelMod | RivenMod | StanceMod | PrimeMod | RailjackMod;
 
     type UniqueName = string;
     type DateString = string;

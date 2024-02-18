@@ -177,7 +177,6 @@ class Scraper {
     const bar = skipProgress ? undefined : new Progress('Fetching Patchlogs', 1);
     if (!skipProgress) {
       bar.tick();
-      bar.interrupt(typeof patchlogs);
     }
 
     return patchlogs;

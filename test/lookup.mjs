@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
-
-import Items from '../index.mjs';
+import Items from 'warframe-items';
 
 const items = new Items();
 
