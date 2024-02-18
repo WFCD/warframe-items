@@ -22,7 +22,6 @@ jobs:
           node-version-file: '.nvmrc'
       - run: npm ci
       - run: npm run lint
-      - run: npm i --no-save warframe-worldstate-data@2
       - run: npm test
         env:
           NODE_OPTIONS: '--max_old_space_size=4096'
