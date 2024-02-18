@@ -19,5 +19,6 @@ jobs:
           node-version-file: .nvmrc
       - name: Install Dependencies
         run: npm i
+      - run: npx npm-install-peers
       - name: Run Regression
         run: npm run regression

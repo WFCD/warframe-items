@@ -21,7 +21,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,.cjs",
     "lint:fix": "eslint --ignore-path .gitignore . --fix --ext .js,.mjs,.cjs",
     "pretest": "npx npm-install-peers",
-    "postinstall": "npx -p install-peerdeps@2.0.3 install-peerdeps @wfcd/eslint-config@^1 -S",
+    "postinstall": "npx -p install-peerdeps@2.0.3 install-peerdeps @wfcd/eslint-config@^1.6.1 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
     "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
@@ -47,8 +47,8 @@
     "@types/node": "^18.17.1",
     "@types/node-fetch": "^2.5.12",
     "@types/sharp": "^0.32.0",
-    "@wfcd/eslint-config": "^1",
-    "@wfcd/relics": "^2.0.9",
+    "@wfcd/eslint-config": "^1.6.1",
+    "@wfcd/relics": "^2.0.10",
     "ajv-cli": "^5.0.0",
     "chai": "^5.1.0",
     "cheerio": "^1.0.0-rc.3",
@@ -137,10 +137,5 @@
   ],
   "peerDependencies": {
     "warframe-worldstate-data": "^2"
-  },
-  "peerDependenciesMeta": {
-    "warframe-worldstate-data": {
-      "optional": true
-    }
   }
 }
