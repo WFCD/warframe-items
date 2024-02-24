@@ -20,7 +20,6 @@
     "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,.cjs",
     "lint:fix": "eslint --ignore-path .gitignore . --fix --ext .js,.mjs,.cjs",
-    "pretest": "npx npm-install-peers",
     "postinstall": "npx -p install-peerdeps@2.0.3 install-peerdeps @wfcd/eslint-config@^1.6.1 -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
