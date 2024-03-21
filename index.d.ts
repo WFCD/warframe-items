@@ -5,26 +5,6 @@ declare module 'warframe-items' {
      * only available from ESM import
      */
     module 'warframe-items/utilities' {
-        interface ColorMap {
-            primary?: Pixel;
-            secondary?: Pixel;
-            tertiary?: Pixel;
-            accents?: Pixel;
-            emissive?: Pixel[];
-            energy?: Pixel[];
-        }
-
-        interface RawColors {
-            t0?: string;
-            t1?: string;
-            t2?: string;
-            t3?: string;
-            m0?: string;
-            m1?: string;
-            en?: string;
-            en1?: string;
-        }
-
         interface find {
             findItem: (uname: string) => Promise<Item | undefined>;
             loadMods: (upgrades?: Array<ModResolveable>) => Promise<{
@@ -36,6 +16,26 @@ declare module 'warframe-items' {
             safeColor: (color: string) => Pixel | undefined;
             mapColors: (colors: RawColors) => ColorMap | undefined;
         }
+    }
+
+    export interface ColorMap {
+        primary?: Pixel;
+        secondary?: Pixel;
+        tertiary?: Pixel;
+        accents?: Pixel;
+        emissive?: Pixel[];
+        energy?: Pixel[];
+    }
+
+    export interface RawColors {
+        t0?: string;
+        t1?: string;
+        t2?: string;
+        t3?: string;
+        m0?: string;
+        m1?: string;
+        en?: string;
+        en1?: string;
     }
 
     export default class Items extends Array<Item>{
