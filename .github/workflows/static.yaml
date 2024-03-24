@@ -8,44 +8,48 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version-file: .nvmrc
-        cache: 'npm'
-    - name: Install Dependencies
-      run: npm install
-    - run: npm run lint
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: ${{ github.event.pull_request.commits }}+1
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm install
+      - run: npm run lint
+      - name: Run commitlint
+        run: npx commitlint --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to ${{ github.event.pull_request.head.sha }} --verbose
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: [ lint ]
+    needs: [lint]
     steps:
-    - uses: actions/checkout@v4
-    - uses: leafo/gh-actions-lua@v10.0.0
-    - uses: actions/cache@v4
-      with:
-        path: data/json
-        key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-    - uses: actions/setup-node@v4
-      with:
-        node-version-file: .nvmrc
-        cache: 'npm'
-    - run: npm ci
-    - run: npm i -D warframe-patchlogs@^2
-    - run: npm i --no-save warframe-worldstate-data@^2
-    - run: npm run build -- --force
-      env:
-        PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
-        PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
-        PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
-        PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
-        PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
-        PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
+      - uses: actions/checkout@v4
+      - uses: leafo/gh-actions-lua@v10.0.0
+      - uses: actions/cache@v4
+        with:
+          path: data/json
+          key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: 'npm'
+      - run: npm ci
+      - run: npm i -D warframe-patchlogs@^2
+      - run: npm i --no-save warframe-worldstate-data@^2
+      - run: npm run build -- --force
+        env:
+          PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
+          PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
+          PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
+          PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
+          PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
+          PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
   types:
     name: Type Checks
     runs-on: ubuntu-latest
-    needs: [ build, lint ]
+    needs: [build, lint]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
@@ -69,23 +73,23 @@ jobs:
           - 'lts/*'
           - 20
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/cache@v4
-      with:
-        path: data/json
-        key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-    - uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install Dependencies
-      run: npm ci
-    - run: npm i -D warframe-patchlogs@^2
-    - run: npm i --no-save warframe-worldstate-data@^2
-    - name: Test
-      env:
-        NODE_OPTIONS: '--max_old_space_size=4096'
-      run: npm test
-    - name: Regression
-      env:
-        NODE_OPTIONS: --experimental-fetch
-      run: npm run regression
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: data/json
+          key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Dependencies
+        run: npm ci
+      - run: npm i -D warframe-patchlogs@^2
+      - run: npm i --no-save warframe-worldstate-data@^2
+      - name: Test
+        env:
+          NODE_OPTIONS: '--max_old_space_size=4096'
+        run: npm test
+      - name: Regression
+        env:
+          NODE_OPTIONS: --experimental-fetch
+        run: npm run regression
