@@ -2,8 +2,19 @@
   "name": "warframe-items",
   "version": "0.0.0-development",
   "description": "Get all warframe items directly from Warframe's API.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "homepage": "https://github.com/wfcd/warframe-items#readme",
+  "bugs": {
+    "url": "https://github.com/wfcd/warframe-items/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wfcd/warframe-items.git"
+  },
+  "license": "MIT",
+  "author": "Kaptard",
+  "contributors": [
+    "Tobiah <tobiah@pm.me>"
+  ],
   "exports": {
     ".": {
       "import": "./index.mjs",
@@ -14,32 +25,89 @@
       "import": "./utilities/index.mjs"
     }
   },
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "node ./build/build.mjs",
-    "test": "nyc mocha --exclude test/*.regression.spec.mjs",
-    "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,.cjs",
     "lint:fix": "eslint --ignore-path .gitignore . --fix --ext .js,.mjs,.cjs",
-    "postinstall": "npx -p install-peerdeps@2.0.3 install-peerdeps @wfcd/eslint-config@^1.6.1 -S",
+    "prepare": "husky && npx install-peerdeps @wfcd/eslint-config@latest -S",
     "prepublishOnly": "npm_config_yes=true npx clean-package",
+    "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
+    "test": "nyc mocha --exclude test/*.regression.spec.mjs",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
-    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
-    "validate": "exit 0"
+    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wfcd/warframe-items.git"
-  },
-  "author": "Kaptard",
-  "contributors": [
-    "Tobiah <tobiah@pm.me>"
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wfcd/warframe-items/issues"
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
-  "homepage": "https://github.com/wfcd/warframe-items#readme",
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix",
+      "npm test"
+    ],
+    "package*.json": [
+      "prettier --write",
+      "npm dedupe",
+      "npx sort-package-json"
+    ],
+    "*.{json,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-class-properties",
+      "@babel/plugin-transform-private-methods"
+    ],
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "prettier": "@wfcd/eslint-config/prettier",
+  "eslintConfig": {
+    "parserOptions": {
+      "requireConfigFile": false
+    },
+    "extends": [
+      "@wfcd"
+    ]
+  },
+  "mocha": {
+    "slow": 10000,
+    "spec": "test/**/*.spec.mjs",
+    "timeout": 10000
+  },
+  "nyc": {
+    "branches": 100,
+    "check-coverage": true,
+    "exclude": [
+      "test/*",
+      "build/*",
+      "config/*",
+      "data/*",
+      "docker/*",
+      "index.d.ts"
+    ],
+    "functions": 100,
+    "lines": 100,
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "skip-full": true,
+    "statements": 100
+  },
   "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "@types/imagemin": "^8.0.0",
     "@types/imagemin-jpegtran": "^5.0.1",
     "@types/lodash.clonedeep": "^4.5.9",
@@ -55,10 +123,12 @@
     "decache": "^4.6.0",
     "get-image-colors": "^4.0.0",
     "https-proxy-agent": "^7.0.0",
+    "husky": "^9.0.11",
     "image-downloader": "^4.0.3",
     "imagemin": "^7.0.1",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
+    "lint-staged": "^15.2.2",
     "lodash.clonedeep": "^4.5.0",
     "lua.vm.js": "0.0.1",
     "lzma": "^2.3.2",
@@ -66,6 +136,7 @@
     "node-cmd": "^4.0.0",
     "node-fetch": "^2.6.1",
     "nyc": "^15.1.0",
+    "prettier": "^3.2.5",
     "progress": "^2.0.3",
     "sharp": "^0.33.0",
     "socks5-http-client": "^1.0.4",
@@ -73,28 +144,8 @@
     "typescript-json-schema": "^0.63.0",
     "warframe-patchlogs": "^2.6.0"
   },
-  "eslintConfig": {
-    "extends": [
-      "@wfcd"
-    ],
-    "parserOptions": {
-      "requireConfigFile": false
-    }
-  },
-  "prettier": "@wfcd/eslint-config/prettier",
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-class-properties",
-      "@babel/plugin-transform-private-methods"
-    ]
-  },
-  "mocha": {
-    "slow": 10000,
-    "timeout": 10000,
-    "spec": "test/**/*.spec.mjs"
+  "peerDependencies": {
+    "warframe-worldstate-data": "^2"
   },
   "clean-package": {
     "remove": [
@@ -108,33 +159,5 @@
       "babel",
       "prettier"
     ]
-  },
-  "nyc": {
-    "exclude": [
-      "test/*",
-      "build/*",
-      "config/*",
-      "data/*",
-      "docker/*",
-      "index.d.ts"
-    ],
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "skip-full": true,
-    "branches": 100,
-    "lines": 100,
-    "functions": 100,
-    "statements": 100,
-    "check-coverage": true
-  },
-  "pre-commit": [
-    "lint",
-    "validate",
-    "test"
-  ],
-  "peerDependencies": {
-    "warframe-worldstate-data": "^2"
   }
 }
