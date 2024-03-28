@@ -12809,6 +12809,519 @@
   {
     "abilities": [
       {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/PagemasterBookAbility",
+        "name": "Noctua",
+        "description": "Open Noctua, Dante’s Exalted Tome, and unleash a tale of woe upon his enemies.",
+        "imageName": "noctua.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/PagemasterLifeAbility",
+        "name": "Light Verse",
+        "description": "Dante's vitalizing composition grants him and his allies Overguard and increases their Health.",
+        "imageName": "light-verse.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/PagemasterDeathAbility",
+        "name": "Dark Verse",
+        "description": "Dante's composition draws blood from nearby enemies, inflicting Slash Damage upon them.",
+        "imageName": "dark-verse.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/PagemasterFinalChapterAbility",
+        "name": "Final Verse",
+        "description": "Dante must compose two other Verses before his Final Verse.TRIUMPH: Two Light Verses cast in succession invigorate allies with a buff that increases Health and grants Overguard. Kills and assists briefly regenerate Overguard.<br>Dante must compose two other Verses before his Final Verse.TRAGEDY: Two Dark Verses cast in succession attack enemies. Any Damage Over Time they have suffered accumulates in a single blast.<br>Dante must compose two other Verses before his Final Verse.WORDWARDEN: A Light Verse followed by a Dark Verse supports allies with copies of Noctua. Noctua copies synchronize their attacks with their designated ally’s attacks.<br>Dante must compose two other Verses before his Final Verse.PAGEFLIGHT: A Dark Verse followed by a Light Verse summons Paragrimms that swoop at enemies, making them vulnerable to Status Chance and drawing enemy attacks away from allies.",
+        "imageName": "final-verse.png"
+      }
+    ],
+    "armor": 145,
+    "aura": "aura",
+    "buildPrice": 25000,
+    "buildQuantity": 1,
+    "buildTime": 259200,
+    "category": "Warframes",
+    "color": 0,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterBlueprint",
+        "name": "Blueprint",
+        "description": "Seeker of knowledge. Keeper of history. Daring researcher of Leverian lore. Dante composes arcane tales to support allies and devastate enemies.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Dante Warframe.",
+        "itemCount": 1,
+        "imageName": "chassis.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.05,
+            "location": "Deimos/Armatus (Disruption), Rotation C",
+            "rarity": "Rare",
+            "type": "Dante Chassis Blueprint"
+          }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Dante Warframe.",
+        "itemCount": 1,
+        "imageName": "neuroptics.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.05,
+            "location": "Deimos/Armatus (Disruption), Rotation C",
+            "rarity": "Rare",
+            "type": "Dante Neuroptics Blueprint"
+          }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Deimos.",
+        "itemCount": 3,
+        "imageName": "orokin-cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0025,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          { "chance": 0.0026, "location": "Brachiolyst Disperser", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0026, "location": "Brachiolyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Arca Heqet", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Arca Kucumatz", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Cinder Machinist", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Phase Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Swarm Satyr", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Alkonost", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Heqet", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Kucumatz", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Machinist", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Osprey", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Satyr", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Aurax Culveri Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Aurax Polaris Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Heqet", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Machinist", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Osprey", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Satyr", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0065, "location": "Mimic", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Aerolyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Ambulas", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Battalyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Conculyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Decaying Battalyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Decaying Conculyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Erra", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Hunhow", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Ortholyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Shadow Stalker", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Stalker", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Summulyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Symbilyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Typholyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Tyro Conculyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Alad V", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Artificer", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Captain Vor", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Cinderthresh Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Commander", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Councilor Vay Hek", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "General Sargas Ruk", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Gyre Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Ln2", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Ng", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Pack", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Pb", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Th", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Icemire Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "J3 Jordas Golem", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Jackal", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Jordas Golem", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Kela De Thaym", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Lephantis", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Lt Lech Kril", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Mutalist Alad V", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Phorid", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Rabbleback Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "The Sergeant", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Tyl Regor", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Vay Hek Terra Frame", "rarity": "Rare", "type": "Orokin Cell" },
+          {
+            "chance": 0.0367,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0376,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0403,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          { "chance": 0.044, "location": "Ceres/Ker (Caches), Rotation C", "rarity": "Rare", "type": "2X Orokin Cell" },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0442,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0714,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0833,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1042,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1079,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Endurance Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1936,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          { "chance": 0.5, "location": "Corrupted Vor", "rarity": "Common", "type": "Orokin Cell" }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Dante Warframe.",
+        "itemCount": 1,
+        "imageName": "systems.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.05,
+            "location": "Deimos/Armatus (Disruption), Rotation C",
+            "rarity": "Rare",
+            "type": "Dante Systems Blueprint"
+          }
+        ],
+        "masterable": false
+      }
+    ],
+    "conclave": false,
+    "consumeOnBuild": true,
+    "description": "Seeker of knowledge. Keeper of history. Daring researcher of Leverian lore. Dante composes arcane tales to support allies and devastate enemies.",
+    "exalted": ["/Lotus/Powersuits/Pagemaster/ExaltedBook"],
+    "health": 300,
+    "imageName": "dante.png",
+    "introduced": {
+      "name": "Update 35.5",
+      "url": "https://warframe.fandom.com/wiki/Update_35%23Update_35.5",
+      "aliases": ["35.5"],
+      "parent": "35.0",
+      "date": "2024-02-27"
+    },
+    "isPrime": false,
+    "masterable": true,
+    "masteryReq": 0,
+    "name": "Dante",
+    "passiveDescription": "Noctua scans targets, recording information for your Codex. Status Chance increases by |CHANCE|% on fully scanned targets.",
+    "polarities": ["madurai", "naramon"],
+    "power": 200,
+    "productCategory": "Suits",
+    "releaseDate": "2024-02-27",
+    "sex": "Male",
+    "shield": 150,
+    "skipBuildTimePrice": 50,
+    "sprint": 1.15,
+    "sprintSpeed": 1.15,
+    "stamina": 3,
+    "tradable": false,
+    "type": "Warframe",
+    "uniqueName": "/Lotus/Powersuits/Pagemaster/Pagemaster",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/0a/Dante.png/revision/latest?cb=20240327191058",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Dante"
+  },
+  {
+    "abilities": [
+      {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/FireBallAbility",
         "name": "Fireball",
         "description": "Charge and release a fiery projectile that ignites enemies on contact.",
@@ -23893,7 +24406,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Gara",
-    "passiveDescription": "A chance to create a radial blind lasting |DURATION|s when exposed to bright light.",
+    "passiveDescription": "A chance to create a radial blind lasting |DURATION|s when Gara casts Abilities.",
     "patchlogs": [
       {
         "name": "Lua’s Prey: Baruuk Prime: Hotfix 32.2.5",
@@ -25104,7 +25617,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Gara Prime",
-    "passiveDescription": "A chance to create a radial blind lasting |DURATION|s when exposed to bright light.",
+    "passiveDescription": "A chance to create a radial blind lasting |DURATION|s when Gara casts Abilities.",
     "patchlogs": [
       {
         "name": "Lua’s Prey: Baruuk Prime: Hotfix 32.2.5",
@@ -34733,21 +35246,21 @@
         "imageName": "desiccation.png"
       },
       {
-        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanDevourAbility",
-        "name": "Devour",
-        "description": "Hold power to trap target in quicksand and draw them in for devouring; this steals health and ultimately creates a friendly Sand Shadow.",
-        "imageName": "devour.png"
-      },
-      {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanStormAbility",
         "name": "Sandstorm",
-        "description": "Become a whirling spiral of sand that sends enemies flying and devours those trapped in quicksand.",
+        "description": "Become a sandstorm. Inaros devours enemies pulled into his whirlwind, healing himself.",
         "imageName": "sandstorm.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanArmorAbility",
+        "name": "Scarab Shell",
+        "description": "Activate to form Armor by draining Inaros' Health. Activate again to stop the formation early. The protective layer reduces incoming Damage and absorbs Status Effects.",
+        "imageName": "scarab-shell.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanSwarmAbility",
         "name": "Scarab Swarm",
-        "description": "Charge to transform Health into hardened Scarab Armor. Discharge to blast enemies with a scarab swarm. Survivors have their Health drained and bestowed on allies.",
+        "description": "Summon a Scarab Swarm to attack enemies with guaranteed Corrosion Status. Damage scales with Inaros' Health. Enemies killed while immersed in the swarm summon a Swarm Kavat that fights alongside Inaros and guides the scarabs to other enemies.",
         "imageName": "scarab-swarm.png"
       }
     ],
@@ -34856,7 +35369,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Inaros",
-    "passiveDescription": "While bleeding-out, Inaros becomes entombed in a protective Sarcophagus. He can revive himself by draining the life-force from nearby enemies and allies.",
+    "passiveDescription": "When Inaros takes lethal damage, he entombs himself in a sarcophagus and incarnates as sand to attack enemies, draining their lifeforce to revive himself.",
     "patchlogs": [
       {
         "name": "Veilbreaker: Hotfix 32.0.7",
@@ -35636,21 +36149,21 @@
         "imageName": "desiccation.png"
       },
       {
-        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanDevourAbility",
-        "name": "Devour",
-        "description": "Hold power to trap target in quicksand and draw them in for devouring; this steals health and ultimately creates a friendly Sand Shadow.",
-        "imageName": "devour.png"
-      },
-      {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanStormAbility",
         "name": "Sandstorm",
-        "description": "Become a whirling spiral of sand that sends enemies flying and devours those trapped in quicksand.",
+        "description": "Become a sandstorm. Inaros devours enemies pulled into his whirlwind, healing himself.",
         "imageName": "sandstorm.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanArmorAbility",
+        "name": "Scarab Shell",
+        "description": "Activate to form Armor by draining Inaros' Health. Activate again to stop the formation early. The protective layer reduces incoming Damage and absorbs Status Effects.",
+        "imageName": "scarab-shell.png"
       },
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/SandmanSwarmAbility",
         "name": "Scarab Swarm",
-        "description": "Charge to transform Health into hardened Scarab Armor. Discharge to blast enemies with a scarab swarm. Survivors have their Health drained and bestowed on allies.",
+        "description": "Summon a Scarab Swarm to attack enemies with guaranteed Corrosion Status. Damage scales with Inaros' Health. Enemies killed while immersed in the swarm summon a Swarm Kavat that fights alongside Inaros and guides the scarabs to other enemies.",
         "imageName": "scarab-swarm.png"
       }
     ],
@@ -36346,7 +36859,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Inaros Prime",
-    "passiveDescription": "While bleeding-out, Inaros becomes entombed in a protective Sarcophagus. He can revive himself by draining the life-force from nearby enemies and allies.",
+    "passiveDescription": "When Inaros takes lethal damage, he entombs himself in a sarcophagus and incarnates as sand to attack enemies, draining their lifeforce to revive himself.",
     "patchlogs": [
       {
         "name": "Veilbreaker: Hotfix 32.0.7",
@@ -45558,7 +46071,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/DecoyAbility",
         "name": "Decoy",
-        "description": "Loki deploys a holographic copy of himself, drawing enemy fire.",
+        "description": "Loki deploys a holographic copy of himself that draws enemy fire and absorbs a portion of nearby enemy health and shields.",
         "imageName": "decoy.png"
       },
       {
@@ -46695,7 +47208,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/DecoyAbility",
         "name": "Decoy",
-        "description": "Loki deploys a holographic copy of himself, drawing enemy fire.",
+        "description": "Loki deploys a holographic copy of himself that draws enemy fire and absorbs a portion of nearby enemy health and shields.",
         "imageName": "decoy.png"
       },
       {
@@ -55110,7 +55623,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/LightAbility",
         "name": "Eclipse",
-        "description": "Standing in light, Mirage deals heavy damage, while the shadows make Mirage difficult to track and even harder to hurt.",
+        "description": "(TAP) Temporarily reduce the damage Mirage takes from enemies.(HOLD) Temporarily increase Mirage's weapon damage.",
         "imageName": "eclipse.png"
       },
       {
@@ -56598,7 +57111,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/LightAbility",
         "name": "Eclipse",
-        "description": "Standing in light, Mirage deals heavy damage, while the shadows make Mirage difficult to track and even harder to hurt.",
+        "description": "(TAP) Temporarily reduce the damage Mirage takes from enemies.(HOLD) Temporarily increase Mirage's weapon damage.",
         "imageName": "eclipse.png"
       },
       {
@@ -88745,7 +89258,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/WellOfLifeAbility",
         "name": "Well Of Life",
-        "description": "Create a well of life on an enemy. Allies near the target gradually regenerate health and are immune to Status Effects. Allies gain additional health when they attack the target.",
+        "description": "Create a well of life on an enemy. Allies near the target gradually regenerate health and are immune to Status Effects. Status Effect damage intended for nearby allies will be absorbed by the enemy. Allies gain additional health when they attack the enemy.",
         "imageName": "well-of-life.png"
       },
       {
@@ -88763,7 +89276,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/BlessingAbility",
         "name": "Blessing",
-        "description": "Restore the health and shields of allies within Trinity's affinity aura while giving them some damage resistance.",
+        "description": "Restore the health and shields of nearby allies while reducing the damage they take from enemies.",
         "imageName": "blessing.png"
       }
     ],
@@ -89770,7 +90283,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/WellOfLifeAbility",
         "name": "Well Of Life",
-        "description": "Create a well of life on an enemy. Allies near the target gradually regenerate health and are immune to Status Effects. Allies gain additional health when they attack the target.",
+        "description": "Create a well of life on an enemy. Allies near the target gradually regenerate health and are immune to Status Effects. Status Effect damage intended for nearby allies will be absorbed by the enemy. Allies gain additional health when they attack the enemy.",
         "imageName": "well-of-life.png"
       },
       {
@@ -89788,7 +90301,7 @@
       {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/BlessingAbility",
         "name": "Blessing",
-        "description": "Restore the health and shields of allies within Trinity's affinity aura while giving them some damage resistance.",
+        "description": "Restore the health and shields of nearby allies while reducing the damage they take from enemies.",
         "imageName": "blessing.png"
       }
     ],

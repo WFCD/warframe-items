@@ -6479,12 +6479,12 @@
         "followThrough": 0.5,
         "range": 2.5,
         "slamAttack": 240,
-        "slamRadialDamage": 120,
+        "slamRadialDamage": 240,
         "slamRadius": 8,
         "slideAttack": 240,
         "heavyAttackDamage": 480,
         "heavySlamAttack": 480,
-        "heavySlamRadialDamage": 480,
+        "heavySlamRadialDamage": 360,
         "heavySlamRadius": 9,
         "windUp": 0.69999999,
         "itemCount": 1,
@@ -19852,7 +19852,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
         "name": "Scintillant",
-        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.Location: Cambion Drift",
+        "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.Location: Cambion Drift, Deimos",
         "itemCount": 5,
         "imageName": "scintillant.png",
         "tradable": false,
@@ -32133,7 +32133,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
         "name": "Thermal Sludge",
-        "description": "A by-product from the Weeping Towers terraforming processes.Location: Orb Vallis",
+        "description": "A by-product from the Weeping Towers terraforming processes.Location: Orb Vallis, Venus",
         "itemCount": 40,
         "imageName": "thermal-sludge.png",
         "tradable": false,
@@ -32262,6 +32262,522 @@
     "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpSentExperimentPistol/CrpSentExperimentPistol",
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/83/Ocucor.png/revision/latest?cb=20220612022008",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Ocucor"
+  },
+  {
+    "accuracy": 40,
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "speed": 1.4,
+        "crit_chance": 26,
+        "crit_mult": 2.4,
+        "status_chance": 22,
+        "shot_type": "Projectile",
+        "shot_speed": 100,
+        "flight": 100,
+        "damage": { "puncture": 220 }
+      },
+      {
+        "name": "Incarnon Form",
+        "speed": 2,
+        "crit_chance": 14,
+        "crit_mult": 1.6,
+        "status_chance": 18,
+        "shot_type": "Projectile",
+        "shot_speed": 40,
+        "flight": 40,
+        "damage": { "radiation": 30 }
+      },
+      {
+        "name": "Incarnon Mode Charge Attack",
+        "speed": 0.25,
+        "crit_chance": 38,
+        "crit_mult": 3.2,
+        "status_chance": 22,
+        "shot_type": "Hit-Scan",
+        "damage": { "heat": 2200 }
+      },
+      {
+        "name": "Incarnon Mode Charge Radial Attack",
+        "speed": 0.25,
+        "crit_chance": 38,
+        "crit_mult": 3.2,
+        "status_chance": 22,
+        "shot_type": "AoE",
+        "falloff": { "start": 0, "end": 3, "reduction": 0.3 },
+        "damage": { "heat": 1100 }
+      }
+    ],
+    "buildPrice": 20000,
+    "buildQuantity": 1,
+    "buildTime": 43200,
+    "category": "Secondary",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+        "name": "Argon Crystal",
+        "description": "A Void based radioactive resource that decays every day it is out of the Void.This resource can be found in the Void.",
+        "itemCount": 2,
+        "imageName": "argon-crystal.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0025,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Argon Crystal"
+          },
+          { "chance": 0.01, "location": "Ceres/Ker (Caches), Rotation C", "rarity": "Rare", "type": "Argon Crystal" },
+          { "chance": 0.01, "location": "Ceres/Thon (Caches), Rotation C", "rarity": "Rare", "type": "Argon Crystal" },
+          {
+            "chance": 0.01,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.01,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.01,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.01,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.0376,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Argon Crystal"
+          },
+          {
+            "chance": 0.0442,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.1106,
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Endurance Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Endurance Caches, Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Argon Crystal"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Hallowed Flame Mission Caches, Rotation C",
+            "rarity": "Uncommon",
+            "type": "Argon Crystal"
+          },
+          {
+            "chance": 0.1936,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Argon Crystal"
+          },
+          { "chance": 0.5, "location": "Corrupted Vor", "rarity": "Common", "type": "Argon Crystal" }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/EntratiWristGunBlueprint",
+        "name": "Blueprint",
+        "description": "Albrecht's Void experiments revealed the true destructive potential of this weapon. In Incarnon form, draw in ambient power to deal steadily increased damage to enemies. At full power, release a blast of <DT_FIRE>Heat.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemB",
+        "name": "Entrati Lanthorn",
+        "description": "A ceremonial beacon used to map Void locations on to real space.Locations: Albrecht's Laboratories (Deimos) and Zariman",
+        "itemCount": 6,
+        "imageName": "entrati-lanthorn.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0339,
+            "location": "Zariman Ten Zero (Level  60 - 65 Zariman Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "3X Entrati Lanthorn"
+          },
+          {
+            "chance": 0.0435,
+            "location": "Zariman Ten Zero (Level  50 - 55 Zariman Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.05,
+            "location": "Deimos/Cambire (Alchemy), Rotation B",
+            "rarity": "Rare",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.05,
+            "location": "Deimos/Munio (Mirror Defense), Rotation B",
+            "rarity": "Rare",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.05,
+            "location": "Deimos/Persto (Survival), Rotation B",
+            "rarity": "Rare",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.0667,
+            "location": "Zariman/Everview Arc (Void Flood), Rotation B",
+            "rarity": "Rare",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.0667,
+            "location": "Zariman/Oro Works (Void Armageddon), Rotation B",
+            "rarity": "Rare",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.0667,
+            "location": "Zariman/Tuvul Commons (Void Cascade), Rotation B",
+            "rarity": "Rare",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.0794,
+            "location": "Zariman Ten Zero (Level  70 - 75 Zariman Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "3X Entrati Lanthorn"
+          },
+          {
+            "chance": 0.1,
+            "location": "Zariman/Halako Perimeter (Exterminate)",
+            "rarity": "Uncommon",
+            "type": "Entrati Lanthorn"
+          },
+          {
+            "chance": 0.1,
+            "location": "Zariman/The Greenway (Mobile Defense)",
+            "rarity": "Uncommon",
+            "type": "Entrati Lanthorn"
+          },
+          { "chance": 1, "location": "Entrati Netracell Coffer", "rarity": "Common", "type": "Entrati Lanthorn" }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemB",
+        "name": "Necracoil",
+        "description": "This experimental array transmutes Void energy into high voltages with low currents.Location: Albrecht's Laboratories (Deimos)",
+        "itemCount": 400,
+        "imageName": "necracoil.png",
+        "tradable": false,
+        "drops": [
+          { "chance": 0.0625, "location": "Deimos/Effervo (Assassination)", "rarity": "Rare", "type": "15X Necracoil" },
+          { "chance": 0.0625, "location": "Deimos/Nex (Exterminate)", "rarity": "Rare", "type": "15X Necracoil" },
+          {
+            "chance": 0.0667,
+            "location": "Deimos/Persto (Survival), Rotation A",
+            "rarity": "Rare",
+            "type": "15X Necracoil"
+          },
+          {
+            "chance": 0.1,
+            "location": "Deimos/Cambire (Alchemy), Rotation A",
+            "rarity": "Uncommon",
+            "type": "15X Necracoil"
+          },
+          {
+            "chance": 0.1,
+            "location": "Deimos/Munio (Mirror Defense), Rotation A",
+            "rarity": "Uncommon",
+            "type": "15X Necracoil"
+          }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 3000,
+        "imageName": "salvage.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      }
+    ],
+    "consumeOnBuild": true,
+    "criticalChance": 0.25999999,
+    "criticalMultiplier": 2.4000001,
+    "damage": {
+      "total": 220,
+      "impact": 0,
+      "puncture": 0,
+      "slash": 220,
+      "heat": 0,
+      "cold": 0,
+      "electricity": 0,
+      "toxin": 0,
+      "blast": 0,
+      "radiation": 0,
+      "gas": 0,
+      "magnetic": 0,
+      "viral": 0,
+      "corrosive": 0,
+      "void": 0,
+      "tau": 0,
+      "cinematic": 0,
+      "shieldDrain": 0,
+      "healthDrain": 0,
+      "energyDrain": 0,
+      "true": 0
+    },
+    "damagePerShot": [0, 220, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "description": "Albrecht's Void experiments revealed the true destructive potential of this weapon. In Incarnon form, draw in ambient power to deal steadily increased damage to enemies. At full power, release a blast of <DT_FIRE>Heat.",
+    "disposition": 1,
+    "fireRate": 1.4000001,
+    "imageName": "onos.png",
+    "introduced": {
+      "name": "Update 31.5",
+      "url": "https://warframe.fandom.com/wiki/Update_31%23Update_31.5",
+      "aliases": ["31.5", "Angels of the Zariman"],
+      "parent": "31.0",
+      "date": "2022-04-27"
+    },
+    "isPrime": false,
+    "magazineSize": 20,
+    "masterable": true,
+    "masteryReq": 14,
+    "multishot": 1,
+    "name": "Onos",
+    "noise": "Alarming",
+    "omegaAttenuation": 0.5,
+    "polarities": ["madurai"],
+    "procChance": 0.22000003,
+    "productCategory": "Pistols",
+    "releaseDate": "2022-04-27",
+    "reloadTime": 2,
+    "skipBuildTimePrice": 35,
+    "slot": 0,
+    "tags": ["Entrati", "Incarnon"],
+    "totalDamage": 220,
+    "tradable": false,
+    "trigger": "Auto",
+    "type": "Rifle",
+    "uniqueName": "/Lotus/Weapons/Thanotech/EntratiWristGun/EntratiWristGunWeapon",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/b/b5/Onos.png/revision/latest?cb=20240327191016",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Onos"
   },
   {
     "accuracy": 16,
@@ -33078,7 +33594,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
         "name": "Gyromag Systems",
-        "description": "A modular component that regulates latitude and altitude in various Corpus systems. Obtained by completing Heists on Orb Vallis.",
+        "description": "A modular component that regulates latitude and altitude in various Corpus systems. Obtained by completing Heists on Orb Vallis (Venus).",
         "itemCount": 10,
         "imageName": "gyromag-systems.png",
         "tradable": false,
@@ -38312,7 +38828,7 @@
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
         "name": "Grokdrul",
-        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.Location: Plains of Eidolon",
+        "description": "A noxious mix of polysaccharides and long-chain polymers, Grokdrul is a standard chemical used in Grineer manufacturing.Location: Plains of Eidolon, Earth",
         "itemCount": 45,
         "imageName": "grokdrul.png",
         "tradable": false,
