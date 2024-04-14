@@ -56,7 +56,7 @@ describe('#loadMods', () => {
 
     const expectedRiven = {
       uniqueName: '/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare',
-      polarity: 'Varazin',
+      polarity: 'Vazarin',
       rarity: 'Common',
       imageName: 'rifle-riven-mod.png',
       category: 'Mods',
