@@ -3,15 +3,15 @@
 declare module 'warframe-items/utilities' {
   import { RawColors, Item, ModResolveable, Arcane, ModUnion, Pixel, ColorMap } from "warframe-items";
 
-  interface find {
-    findItem: (uname: string) => Promise<Item | undefined>;
-    loadMods: (upgrades?: Array<ModResolveable>) => Promise<{
+  namespace find {
+    function findItem(uname: string): Promise<Item | undefined>;
+    function loadMods(upgrades?: Array<ModResolveable>): Promise<{
       arcane: Arcane[];
       mods: ModUnion[];
-    }>
+    }>;
   }
-  interface colors {
-    safeColor: (color: string) => Pixel | undefined;
-    mapColors: (colors: RawColors) => ColorMap | undefined;
+  namespace colors {
+    function safeColor(color: string): Pixel | undefined;
+    function mapColors(colors: RawColors): ColorMap | undefined;
   }
 }
