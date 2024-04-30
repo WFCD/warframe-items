@@ -1,23 +1,5 @@
 // Project: warframe-items
 declare module 'warframe-items' {
-    /**
-     * Utilities around items
-     * only available from ESM import
-     */
-    module 'warframe-items/utilities' {
-        interface find {
-            findItem: (uname: string) => Promise<Item | undefined>;
-            loadMods: (upgrades?: Array<ModResolveable>) => Promise<{
-                arcane: Arcane[];
-                mods: ModUnion[];
-            }>
-        }
-        interface colors {
-            safeColor: (color: string) => Pixel | undefined;
-            mapColors: (colors: RawColors) => ColorMap | undefined;
-        }
-    }
-
     export interface ColorMap {
         primary?: Pixel;
         secondary?: Pixel;
