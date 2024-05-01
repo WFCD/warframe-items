@@ -1375,6 +1375,7 @@
     "masteryReq": 0,
     "name": "Argo & Vel",
     "omegaAttenuation": 0.85000002,
+    "polarities": ["madurai", "madurai", "vazarin"],
     "procChance": 0.24000001,
     "productCategory": "Melee",
     "range": 2.5,
@@ -2252,7 +2253,16 @@
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
-        "masterable": false
+        "masterable": false,
+        "drops": [
+          {
+            "chance": 0.0357,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation C",
+            "rarity": "Rare",
+            "type": "Balla Blueprint"
+          },
+          { "chance": 1, "location": "Ostron (Hok), Neutral", "rarity": "Common", "type": "Balla Blueprint" }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
@@ -2261,20 +2271,7 @@
         "itemCount": 15,
         "imageName": "fish-scales.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -2284,44 +2281,7 @@
         "itemCount": 20,
         "imageName": "nistlepod.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Nistlepod"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Nistlepod"
-          },
-          {
-            "chance": 0.1518,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "15X Nistlepod"
-          },
-          {
-            "chance": 0.1549,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "15X Nistlepod"
-          },
-          { "chance": 0.1668, "location": "Narmer Thumper", "rarity": "Rare", "type": "Nistlepod" },
-          { "chance": 0.1668, "location": "Tusk Thumper", "rarity": "Rare", "type": "Nistlepod" },
-          {
-            "chance": 0.2,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "15X Nistlepod"
-          },
-          { "chance": 0.2502, "location": "Narmer Thumper Bull", "rarity": "Rare", "type": "Nistlepod" },
-          { "chance": 0.2502, "location": "Tusk Thumper Bull", "rarity": "Rare", "type": "Nistlepod" },
-          { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Nistlepod" },
-          { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Nistlepod" }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -2331,26 +2291,7 @@
         "itemCount": 60,
         "imageName": "pyrotic-alloy.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Pyrotic Alloy"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Pyrotic Alloy"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Neutral",
-            "rarity": "Common",
-            "type": "Pyrotic Alloy x20 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -2360,26 +2301,7 @@
         "itemCount": 10,
         "imageName": "tear-azurite.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Tear Azurite"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Tear Azurite"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Neutral",
-            "rarity": "Common",
-            "type": "Tear Azurite x10 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       }
     ],
@@ -8752,6 +8674,7 @@
           { "chance": 0.11, "location": "Axi L6 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Blade" },
           { "chance": 0.11, "location": "Meso H6 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Blade" },
           { "chance": 0.11, "location": "Meso N14 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Blade" },
+          { "chance": 0.11, "location": "Meso W5 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Blade" },
           { "chance": 0.11, "location": "Neo F2 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Blade" },
           {
             "chance": 0.13,
@@ -8774,6 +8697,12 @@
           {
             "chance": 0.13,
             "location": "Meso N14 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Cobra & Crane Prime Blade"
+          },
+          {
+            "chance": 0.13,
+            "location": "Meso W5 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Cobra & Crane Prime Blade"
           },
@@ -8809,6 +8738,12 @@
           },
           {
             "chance": 0.17,
+            "location": "Meso W5 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Cobra & Crane Prime Blade"
+          },
+          {
+            "chance": 0.17,
             "location": "Neo F2 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Cobra & Crane Prime Blade"
@@ -8834,6 +8769,12 @@
           {
             "chance": 0.2,
             "location": "Meso N14 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Cobra & Crane Prime Blade"
+          },
+          {
+            "chance": 0.2,
+            "location": "Meso W5 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Cobra & Crane Prime Blade"
           },
@@ -9080,6 +9021,12 @@
           },
           {
             "chance": 0.1667,
+            "location": "Meso G7 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Cobra & Crane Prime Hilt"
+          },
+          {
+            "chance": 0.1667,
             "location": "Neo K6 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Cobra & Crane Prime Hilt"
@@ -9105,6 +9052,12 @@
           {
             "chance": 0.2,
             "location": "Lith H7 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Cobra & Crane Prime Hilt"
+          },
+          {
+            "chance": 0.2,
+            "location": "Meso G7 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Cobra & Crane Prime Hilt"
           },
@@ -9140,6 +9093,12 @@
           },
           {
             "chance": 0.2333,
+            "location": "Meso G7 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Cobra & Crane Prime Hilt"
+          },
+          {
+            "chance": 0.2333,
             "location": "Neo K6 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Cobra & Crane Prime Hilt"
@@ -9148,6 +9107,7 @@
           { "chance": 0.2533, "location": "Axi H6 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Hilt" },
           { "chance": 0.2533, "location": "Axi H7 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Hilt" },
           { "chance": 0.2533, "location": "Lith H7 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Hilt" },
+          { "chance": 0.2533, "location": "Meso G7 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Hilt" },
           { "chance": 0.2533, "location": "Neo K6 Relic", "rarity": "Uncommon", "type": "Cobra & Crane Prime Hilt" }
         ],
         "masterable": false,
@@ -9426,6 +9386,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ExaltedArchScythe/ExaltedAWScytheWeapon",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/9/95/Corufell.png/revision/latest?cb=20230216004659",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Corufell",
     "windUp": 1.3000001
   },
@@ -9623,6 +9584,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/CronusSword/CronusLongSword",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/7/75/Cronus.png/revision/latest?cb=20220407213545",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Cronus",
     "windUp": 0.60000002
   },
@@ -9712,7 +9674,16 @@
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
-        "masterable": false
+        "masterable": false,
+        "drops": [
+          {
+            "chance": 0.0357,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation C",
+            "rarity": "Rare",
+            "type": "Cyath Blueprint"
+          },
+          { "chance": 1, "location": "Ostron (Hok), Neutral", "rarity": "Common", "type": "Cyath Blueprint" }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/MiscItems/Eidolonium",
@@ -9721,164 +9692,7 @@
         "itemCount": 1,
         "imageName": "breath-of-the-eidolon.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0067,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Legendary",
-            "type": "Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.0067,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Legendary",
-            "type": "3X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.0357,
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.0357,
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.0472,
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.0472,
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.0485,
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.0485,
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.1689,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.1689,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.1689,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.1689,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.1689,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.1689,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.2174,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.2174,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.2174,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.2174,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.2174,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.2174,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.5,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation A",
-            "rarity": "Common",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.5,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation B",
-            "rarity": "Common",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.5,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation C",
-            "rarity": "Common",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.5,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation A",
-            "rarity": "Common",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.5,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation B",
-            "rarity": "Common",
-            "type": "5X Breath Of The Eidolon"
-          },
-          {
-            "chance": 0.5,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation C",
-            "rarity": "Common",
-            "type": "5X Breath Of The Eidolon"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -9888,26 +9702,7 @@
         "itemCount": 20,
         "imageName": "fersteel-alloy.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "6X Fersteel Alloy"
-          },
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "6X Fersteel Alloy"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Visitor",
-            "rarity": "Common",
-            "type": "Fersteel Alloy x20 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -9917,20 +9712,7 @@
         "itemCount": 55,
         "imageName": "fish-scales.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -9940,26 +9722,7 @@
         "itemCount": 6,
         "imageName": "marquise-veridos.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "6X Marquise Veridos"
-          },
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "6X Marquise Veridos"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Visitor",
-            "rarity": "Common",
-            "type": "Marquise Veridos x10 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       }
     ],
@@ -10402,6 +10165,7 @@
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/CronusSword/PrimeCronusLongSword",
     "vaultDate": "2015-07-07",
     "vaulted": true,
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/30/DakraPrime.png/revision/latest?cb=20220409164621",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Dakra_Prime",
     "windUp": 0.60000002
   },
@@ -10624,6 +10388,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Dagger/DarkDagger",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/0b/DarkDagger.png/revision/latest?cb=20220409164704",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Dark_Dagger",
     "windUp": 0.40000001
   },
@@ -11071,6 +10836,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkLongSword",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/c6/DarkSword.png/revision/latest?cb=20220409164914",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Dark_Sword",
     "windUp": 0.60000002
   },
@@ -11150,7 +10916,16 @@
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
-        "masterable": false
+        "masterable": false,
+        "drops": [
+          {
+            "chance": 0.0357,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation C",
+            "rarity": "Rare",
+            "type": "Dehtat Blueprint"
+          },
+          { "chance": 1, "location": "Ostron (Hok), Neutral", "rarity": "Common", "type": "Dehtat Blueprint" }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
@@ -11159,26 +10934,7 @@
         "itemCount": 40,
         "imageName": "fersteel-alloy.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "6X Fersteel Alloy"
-          },
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "6X Fersteel Alloy"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Visitor",
-            "rarity": "Common",
-            "type": "Fersteel Alloy x20 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -11188,20 +10944,7 @@
         "itemCount": 45,
         "imageName": "fish-scales.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -11211,30 +10954,7 @@
         "itemCount": 2,
         "imageName": "maprico.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Maprico"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Maprico"
-          },
-          { "chance": 0.1668, "location": "Narmer Thumper", "rarity": "Rare", "type": "Maprico" },
-          { "chance": 0.1668, "location": "Tusk Thumper", "rarity": "Rare", "type": "Maprico" },
-          { "chance": 0.25, "location": "Narmer Thumper Bull", "rarity": "Uncommon", "type": "Maprico" },
-          { "chance": 0.25, "location": "Tusk Thumper Bull", "rarity": "Uncommon", "type": "Maprico" },
-          { "chance": 0.2502, "location": "Narmer Thumper Bull", "rarity": "Rare", "type": "Maprico" },
-          { "chance": 0.2502, "location": "Tusk Thumper Bull", "rarity": "Rare", "type": "Maprico" },
-          { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Maprico" },
-          { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Maprico" },
-          { "chance": 0.5, "location": "Narmer Thumper Doma", "rarity": "Uncommon", "type": "Maprico" },
-          { "chance": 0.5, "location": "Tusk Thumper Doma", "rarity": "Uncommon", "type": "Maprico" }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -11244,26 +10964,7 @@
         "itemCount": 8,
         "imageName": "marquise-veridos.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "6X Marquise Veridos"
-          },
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "6X Marquise Veridos"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Visitor",
-            "rarity": "Common",
-            "type": "Marquise Veridos x10 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       }
     ],
@@ -11515,6 +11216,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TnoRapier/TnoRapier",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/5/5d/Destreza.png/revision/latest?cb=20220409165212",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Destreza",
     "windUp": 0.5
   },
@@ -12091,6 +11793,7 @@
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PRapier/DestrezaPrime",
     "vaultDate": "2020-03-31",
     "vaulted": true,
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/1f/DestrezaPrime.png/revision/latest?cb=20220409165219",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Destreza_Prime",
     "windUp": 0.5
   },
@@ -12223,6 +11926,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DexTheSecond/DexTheSecond",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e9/DexDakra.png/revision/latest?cb=20220409165425",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Dex_Dakra",
     "windUp": 0.69999999
   },
@@ -12305,6 +12009,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Dex2023Nikana/Dex2023Nikana",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/ef/DexNikana.png/revision/latest?cb=20240327191121",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Dex_Nikana",
     "windUp": 0.5
   },
@@ -12563,6 +12268,7 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/TnDagathBladeWhip/TnDagathBladeWhip",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/b/b9/Dorrclave.png/revision/latest?cb=20231019002438",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Dorrclave",
     "windUp": 0.40000001
   },
@@ -17800,6 +17506,7 @@
           { "chance": 0.1667, "location": "Axi M3 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.1667, "location": "Axi N1 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.1667, "location": "Axi O2 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
+          { "chance": 0.1667, "location": "Axi P7 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.1667, "location": "Axi R3 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.1667, "location": "Axi T9 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.1667, "location": "Lith C1 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
@@ -17855,6 +17562,7 @@
           { "chance": 0.2, "location": "Axi M3 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2, "location": "Axi N1 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2, "location": "Axi O2 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
+          { "chance": 0.2, "location": "Axi P7 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2, "location": "Axi R3 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2, "location": "Axi T9 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2, "location": "Lith C1 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Blade" },
@@ -17917,6 +17625,12 @@
           {
             "chance": 0.2333,
             "location": "Axi O2 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Fang Prime Blade"
+          },
+          {
+            "chance": 0.2333,
+            "location": "Axi P7 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Fang Prime Blade"
           },
@@ -18100,6 +17814,7 @@
           { "chance": 0.2533, "location": "Axi M3 Relic", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2533, "location": "Axi N1 Relic", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2533, "location": "Axi O2 Relic", "rarity": "Uncommon", "type": "Fang Prime Blade" },
+          { "chance": 0.2533, "location": "Axi P7 Relic", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2533, "location": "Axi R3 Relic", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2533, "location": "Axi T9 Relic", "rarity": "Uncommon", "type": "Fang Prime Blade" },
           { "chance": 0.2533, "location": "Lith C1 Relic", "rarity": "Uncommon", "type": "Fang Prime Blade" },
@@ -18299,6 +18014,12 @@
           {
             "chance": 0.1667,
             "location": "Meso T6 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Fang Prime Blueprint"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Meso V9 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Fang Prime Blueprint"
           },
@@ -18514,6 +18235,12 @@
           },
           {
             "chance": 0.2,
+            "location": "Meso V9 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Fang Prime Blueprint"
+          },
+          {
+            "chance": 0.2,
             "location": "Meso Z1 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Fang Prime Blueprint"
@@ -18700,6 +18427,12 @@
           },
           {
             "chance": 0.2333,
+            "location": "Meso V9 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Fang Prime Blueprint"
+          },
+          {
+            "chance": 0.2333,
             "location": "Meso Z1 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Fang Prime Blueprint"
@@ -18764,6 +18497,7 @@
           { "chance": 0.2533, "location": "Meso S4 Relic", "rarity": "Uncommon", "type": "Fang Prime Blueprint" },
           { "chance": 0.2533, "location": "Meso T1 Relic", "rarity": "Uncommon", "type": "Fang Prime Blueprint" },
           { "chance": 0.2533, "location": "Meso T6 Relic", "rarity": "Uncommon", "type": "Fang Prime Blueprint" },
+          { "chance": 0.2533, "location": "Meso V9 Relic", "rarity": "Uncommon", "type": "Fang Prime Blueprint" },
           { "chance": 0.2533, "location": "Meso Z1 Relic", "rarity": "Uncommon", "type": "Fang Prime Blueprint" },
           { "chance": 0.2533, "location": "Neo A10 Relic", "rarity": "Uncommon", "type": "Fang Prime Blueprint" },
           { "chance": 0.2533, "location": "Neo A9 Relic", "rarity": "Uncommon", "type": "Fang Prime Blueprint" },
@@ -18783,6 +18517,7 @@
         "tradable": true,
         "drops": [
           { "chance": 0.11, "location": "Axi A4 Relic", "rarity": "Uncommon", "type": "Fang Prime Handle" },
+          { "chance": 0.11, "location": "Axi B8 Relic", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.11, "location": "Axi I3 Relic", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.11, "location": "Axi O5 Relic", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.11, "location": "Axi V6 Relic", "rarity": "Uncommon", "type": "Fang Prime Handle" },
@@ -18805,6 +18540,12 @@
           {
             "chance": 0.13,
             "location": "Axi A4 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Fang Prime Handle"
+          },
+          {
+            "chance": 0.13,
+            "location": "Axi B8 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Fang Prime Handle"
           },
@@ -18971,6 +18712,7 @@
           { "chance": 0.1667, "location": "Neo K6 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.1667, "location": "Neo V2 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.17, "location": "Axi A4 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
+          { "chance": 0.17, "location": "Axi B8 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.17, "location": "Axi I3 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.17, "location": "Axi O5 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.17, "location": "Axi V6 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
@@ -18997,6 +18739,7 @@
           { "chance": 0.17, "location": "Neo S14 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.2, "location": "Axi A16 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.2, "location": "Axi A4 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
+          { "chance": 0.2, "location": "Axi B8 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.2, "location": "Axi H2 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.2, "location": "Axi I3 Relic (Radiant)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
           { "chance": 0.2, "location": "Axi L3 Relic (Flawless)", "rarity": "Uncommon", "type": "Fang Prime Handle" },
@@ -24921,6 +24664,12 @@
           },
           {
             "chance": 0.1667,
+            "location": "Neo P6 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Gunsen Prime Blueprint"
+          },
+          {
+            "chance": 0.1667,
             "location": "Neo Z10 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Gunsen Prime Blueprint"
@@ -24934,6 +24683,12 @@
           {
             "chance": 0.2,
             "location": "Neo C4 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Gunsen Prime Blueprint"
+          },
+          {
+            "chance": 0.2,
+            "location": "Neo P6 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Gunsen Prime Blueprint"
           },
@@ -24957,12 +24712,19 @@
           },
           {
             "chance": 0.2333,
+            "location": "Neo P6 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Gunsen Prime Blueprint"
+          },
+          {
+            "chance": 0.2333,
             "location": "Neo Z10 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Gunsen Prime Blueprint"
           },
           { "chance": 0.2533, "location": "Lith C11 Relic", "rarity": "Uncommon", "type": "Gunsen Prime Blueprint" },
           { "chance": 0.2533, "location": "Neo C4 Relic", "rarity": "Uncommon", "type": "Gunsen Prime Blueprint" },
+          { "chance": 0.2533, "location": "Neo P6 Relic", "rarity": "Uncommon", "type": "Gunsen Prime Blueprint" },
           { "chance": 0.2533, "location": "Neo Z10 Relic", "rarity": "Uncommon", "type": "Gunsen Prime Blueprint" }
         ]
       },
@@ -24975,8 +24737,15 @@
         "imageName": "prime-handle.png",
         "tradable": true,
         "drops": [
+          { "chance": 0.11, "location": "Meso W4 Relic", "rarity": "Uncommon", "type": "Gunsen Prime Handle" },
           { "chance": 0.11, "location": "Neo K7 Relic", "rarity": "Uncommon", "type": "Gunsen Prime Handle" },
           { "chance": 0.11, "location": "Neo T7 Relic", "rarity": "Uncommon", "type": "Gunsen Prime Handle" },
+          {
+            "chance": 0.13,
+            "location": "Meso W4 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Gunsen Prime Handle"
+          },
           {
             "chance": 0.13,
             "location": "Neo K7 Relic (Exceptional)",
@@ -24986,6 +24755,12 @@
           {
             "chance": 0.13,
             "location": "Neo T7 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Gunsen Prime Handle"
+          },
+          {
+            "chance": 0.17,
+            "location": "Meso W4 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Gunsen Prime Handle"
           },
@@ -25001,6 +24776,7 @@
             "rarity": "Uncommon",
             "type": "Gunsen Prime Handle"
           },
+          { "chance": 0.2, "location": "Meso W4 Relic (Radiant)", "rarity": "Uncommon", "type": "Gunsen Prime Handle" },
           { "chance": 0.2, "location": "Neo K7 Relic (Radiant)", "rarity": "Uncommon", "type": "Gunsen Prime Handle" },
           { "chance": 0.2, "location": "Neo T7 Relic (Radiant)", "rarity": "Uncommon", "type": "Gunsen Prime Handle" }
         ],
@@ -32093,7 +31869,16 @@
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
-        "masterable": false
+        "masterable": false,
+        "drops": [
+          {
+            "chance": 0.0357,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation C",
+            "rarity": "Rare",
+            "type": "Kronsh Blueprint"
+          },
+          { "chance": 1, "location": "Ostron (Hok), Neutral", "rarity": "Common", "type": "Kronsh Blueprint" }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
@@ -32102,32 +31887,7 @@
         "itemCount": 60,
         "imageName": "coprite-alloy.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Coprite Alloy"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Coprite Alloy"
-          },
-          { "chance": 0.1668, "location": "Narmer Thumper", "rarity": "Rare", "type": "Coprite Alloy" },
-          { "chance": 0.1668, "location": "Tusk Thumper", "rarity": "Rare", "type": "Coprite Alloy" },
-          { "chance": 0.2502, "location": "Narmer Thumper Bull", "rarity": "Rare", "type": "Coprite Alloy" },
-          { "chance": 0.2502, "location": "Tusk Thumper Bull", "rarity": "Rare", "type": "Coprite Alloy" },
-          { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Coprite Alloy" },
-          { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Coprite Alloy" },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Offworlder",
-            "rarity": "Common",
-            "type": "Coprite Alloy x20 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -32137,26 +31897,7 @@
         "itemCount": 10,
         "imageName": "esher-devar.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Esher Devar"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Esher Devar"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Offworlder",
-            "rarity": "Common",
-            "type": "Esher Devar x10 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -32166,20 +31907,7 @@
         "itemCount": 45,
         "imageName": "fish-scales.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -32189,45 +31917,7 @@
         "itemCount": 20,
         "imageName": "grokdrul.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Grokdrul"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Grokdrul"
-          },
-          {
-            "chance": 0.1518,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "15X Grokdrul"
-          },
-          {
-            "chance": 0.1549,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "15X Grokdrul"
-          },
-          { "chance": 0.1668, "location": "Narmer Thumper", "rarity": "Rare", "type": "Grokdrul" },
-          { "chance": 0.1668, "location": "Tusk Thumper", "rarity": "Rare", "type": "Grokdrul" },
-          {
-            "chance": 0.2,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "15X Grokdrul"
-          },
-          { "chance": 0.2502, "location": "Narmer Thumper Bull", "rarity": "Rare", "type": "Grokdrul" },
-          { "chance": 0.2502, "location": "Tusk Thumper Bull", "rarity": "Rare", "type": "Grokdrul" },
-          { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Grokdrul" },
-          { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Grokdrul" },
-          { "chance": 1, "location": "Grokdrul Drum", "rarity": "Common", "type": "Grokdrul" }
-        ],
+        "drops": [],
         "masterable": false
       }
     ],
@@ -33278,7 +32968,6 @@
         "polarities": ["vazarin"],
         "tags": ["Tenno"],
         "stancePolarity": "unairu",
-        "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e5/Tipedo.png/revision/latest?cb=20220612123502",
         "wikiaUrl": "https://warframe.fandom.com/wiki/Tipedo",
         "disposition": 5,
         "introduced": {
@@ -34233,14 +33922,28 @@
         "tradable": true,
         "drops": [
           { "chance": 0.02, "location": "Meso M4 Relic", "rarity": "Rare", "type": "Masseter Prime Blade" },
+          { "chance": 0.02, "location": "Neo M5 Relic", "rarity": "Rare", "type": "Masseter Prime Blade" },
           {
             "chance": 0.04,
             "location": "Meso M4 Relic (Exceptional)",
             "rarity": "Rare",
             "type": "Masseter Prime Blade"
           },
+          {
+            "chance": 0.04,
+            "location": "Neo M5 Relic (Exceptional)",
+            "rarity": "Rare",
+            "type": "Masseter Prime Blade"
+          },
           { "chance": 0.06, "location": "Meso M4 Relic (Flawless)", "rarity": "Rare", "type": "Masseter Prime Blade" },
-          { "chance": 0.1, "location": "Meso M4 Relic (Radiant)", "rarity": "Uncommon", "type": "Masseter Prime Blade" }
+          { "chance": 0.06, "location": "Neo M5 Relic (Flawless)", "rarity": "Rare", "type": "Masseter Prime Blade" },
+          {
+            "chance": 0.1,
+            "location": "Meso M4 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Masseter Prime Blade"
+          },
+          { "chance": 0.1, "location": "Neo M5 Relic (Radiant)", "rarity": "Uncommon", "type": "Masseter Prime Blade" }
         ],
         "masterable": false,
         "ducats": 100
@@ -34258,6 +33961,7 @@
         "drops": [
           { "chance": 0.11, "location": "Axi G12 Relic", "rarity": "Uncommon", "type": "Masseter Prime Blueprint" },
           { "chance": 0.11, "location": "Axi P6 Relic", "rarity": "Uncommon", "type": "Masseter Prime Blueprint" },
+          { "chance": 0.11, "location": "Neo P6 Relic", "rarity": "Uncommon", "type": "Masseter Prime Blueprint" },
           {
             "chance": 0.13,
             "location": "Axi G12 Relic (Exceptional)",
@@ -34267,6 +33971,12 @@
           {
             "chance": 0.13,
             "location": "Axi P6 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Masseter Prime Blueprint"
+          },
+          {
+            "chance": 0.13,
+            "location": "Neo P6 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Masseter Prime Blueprint"
           },
@@ -34283,6 +33993,12 @@
             "type": "Masseter Prime Blueprint"
           },
           {
+            "chance": 0.17,
+            "location": "Neo P6 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Masseter Prime Blueprint"
+          },
+          {
             "chance": 0.2,
             "location": "Axi G12 Relic (Radiant)",
             "rarity": "Uncommon",
@@ -34291,6 +34007,12 @@
           {
             "chance": 0.2,
             "location": "Axi P6 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Masseter Prime Blueprint"
+          },
+          {
+            "chance": 0.2,
+            "location": "Neo P6 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Masseter Prime Blueprint"
           }
@@ -34307,6 +34029,12 @@
         "drops": [
           {
             "chance": 0.1667,
+            "location": "Axi F2 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Masseter Prime Handle"
+          },
+          {
+            "chance": 0.1667,
             "location": "Lith A6 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Masseter Prime Handle"
@@ -34314,6 +34042,12 @@
           {
             "chance": 0.1667,
             "location": "Lith C10 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Masseter Prime Handle"
+          },
+          {
+            "chance": 0.2,
+            "location": "Axi F2 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Masseter Prime Handle"
           },
@@ -34331,6 +34065,12 @@
           },
           {
             "chance": 0.2333,
+            "location": "Axi F2 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Masseter Prime Handle"
+          },
+          {
+            "chance": 0.2333,
             "location": "Lith A6 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Masseter Prime Handle"
@@ -34341,6 +34081,7 @@
             "rarity": "Uncommon",
             "type": "Masseter Prime Handle"
           },
+          { "chance": 0.2533, "location": "Axi F2 Relic", "rarity": "Uncommon", "type": "Masseter Prime Handle" },
           { "chance": 0.2533, "location": "Lith A6 Relic", "rarity": "Uncommon", "type": "Masseter Prime Handle" },
           { "chance": 0.2533, "location": "Lith C10 Relic", "rarity": "Uncommon", "type": "Masseter Prime Handle" }
         ],
@@ -34515,7 +34256,16 @@
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
-        "masterable": false
+        "masterable": false,
+        "drops": [
+          {
+            "chance": 0.0357,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation C",
+            "rarity": "Rare",
+            "type": "Mewan Blueprint"
+          },
+          { "chance": 1, "location": "Ostron (Hok), Neutral", "rarity": "Common", "type": "Mewan Blueprint" }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem",
@@ -34524,256 +34274,7 @@
         "itemCount": 1,
         "imageName": "cetus-wisp.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0067,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Legendary",
-            "type": "3X Cetus Wisp"
-          },
-          {
-            "chance": 0.0067,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Legendary",
-            "type": "3X Cetus Wisp"
-          },
-          {
-            "chance": 0.0714,
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0714,
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0851,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation C",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.087,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation C",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0943,
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0943,
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0971,
-            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0971,
-            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0989,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation A",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.0989,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation B",
-            "rarity": "Rare",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.1011,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.1011,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.1013,
-            "location": "Earth/Cetus (Level 15 - 25 Plague Star), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.1351,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1351,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1351,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1351,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1351,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1351,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1404,
-            "location": "Earth/Cetus (Level 15 - 25 Plague Star), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.1611,
-            "location": "Earth/Cetus (Level 15 - 25 Plague Star), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.1739,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1739,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1739,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1739,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1739,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1739,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.1878,
-            "location": "Earth/Cetus (Level 20 - 40 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.1921,
-            "location": "Earth/Cetus (Level 20 - 40 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.2041,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.2041,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.2041,
-            "location": "Earth/Cetus (Level 100 - 100 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.2041,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.2041,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.2041,
-            "location": "Earth/Cetus (Level 40 - 60 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "2X Cetus Wisp"
-          },
-          {
-            "chance": 0.2222,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation C",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.2432,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.2432,
-            "location": "Earth/Cetus (Level 30 - 50 Cetus Bounty), Rotation B",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          {
-            "chance": 0.2931,
-            "location": "Earth/Cetus (Level 20 - 40 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "Cetus Wisp"
-          },
-          { "chance": 1, "location": "Operational Supply, Neutral", "rarity": "Common", "type": "Cetus Wisp" },
-          { "chance": 1, "location": "The Quills, Architect", "rarity": "Common", "type": "Cetus Wisp" }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -34783,26 +34284,7 @@
         "itemCount": 20,
         "imageName": "fersteel-alloy.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "6X Fersteel Alloy"
-          },
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "6X Fersteel Alloy"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Visitor",
-            "rarity": "Common",
-            "type": "Fersteel Alloy x20 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -34812,20 +34294,7 @@
         "itemCount": 55,
         "imageName": "fish-scales.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -34835,26 +34304,7 @@
         "itemCount": 6,
         "imageName": "marquise-veridos.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "6X Marquise Veridos"
-          },
-          {
-            "chance": 0.0553,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "6X Marquise Veridos"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Visitor",
-            "rarity": "Common",
-            "type": "Marquise Veridos x10 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       }
     ],
@@ -38825,7 +38275,16 @@
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
-        "masterable": false
+        "masterable": false,
+        "drops": [
+          {
+            "chance": 0.0357,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation C",
+            "rarity": "Rare",
+            "type": "Ooltha Blueprint"
+          },
+          { "chance": 1, "location": "Ostron (Hok), Neutral", "rarity": "Common", "type": "Ooltha Blueprint" }
+        ]
       },
       {
         "uniqueName": "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem",
@@ -38834,20 +38293,7 @@
         "itemCount": 20,
         "imageName": "fish-scales.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Fish Scales"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -38857,46 +38303,7 @@
         "itemCount": 20,
         "imageName": "iradite.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Iradite"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Iradite"
-          },
-          {
-            "chance": 0.1518,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "15X Iradite"
-          },
-          {
-            "chance": 0.1549,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "15X Iradite"
-          },
-          { "chance": 0.1668, "location": "Narmer Thumper", "rarity": "Rare", "type": "Iradite" },
-          { "chance": 0.1668, "location": "Tusk Thumper", "rarity": "Rare", "type": "Iradite" },
-          {
-            "chance": 0.2,
-            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation A",
-            "rarity": "Uncommon",
-            "type": "15X Iradite"
-          },
-          { "chance": 0.2502, "location": "Narmer Thumper Bull", "rarity": "Rare", "type": "Iradite" },
-          { "chance": 0.2502, "location": "Tusk Thumper Bull", "rarity": "Rare", "type": "Iradite" },
-          { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Iradite" },
-          { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Iradite" },
-          { "chance": 1, "location": "Iradite Formation", "rarity": "Common", "type": "Iradite" },
-          { "chance": 1, "location": "Ostron (Old Man Suumbaat), Surah", "rarity": "Common", "type": "Iradite Nugget" }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -38906,26 +38313,7 @@
         "itemCount": 60,
         "imageName": "pyrotic-alloy.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Pyrotic Alloy"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Pyrotic Alloy"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Neutral",
-            "rarity": "Common",
-            "type": "Pyrotic Alloy x20 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       },
       {
@@ -38935,26 +38323,7 @@
         "itemCount": 10,
         "imageName": "tear-azurite.png",
         "tradable": false,
-        "drops": [
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
-            "rarity": "Rare",
-            "type": "10X Tear Azurite"
-          },
-          {
-            "chance": 0.0316,
-            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
-            "rarity": "Rare",
-            "type": "10X Tear Azurite"
-          },
-          {
-            "chance": 1,
-            "location": "Ostron (Old Man Suumbaat), Neutral",
-            "rarity": "Common",
-            "type": "Tear Azurite x10 Blueprint"
-          }
-        ],
+        "drops": [],
         "masterable": false
       }
     ],
@@ -39284,6 +38653,7 @@
           { "chance": 0.11, "location": "Lith B3 Relic", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.11, "location": "Lith B5 Relic", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.11, "location": "Lith C4 Relic", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
+          { "chance": 0.11, "location": "Lith T12 Relic", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.11, "location": "Meso D1 Relic", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.11, "location": "Meso I1 Relic", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.11, "location": "Meso K6 Relic", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
@@ -39316,6 +38686,12 @@
           {
             "chance": 0.13,
             "location": "Lith C4 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Orthos Prime Blade"
+          },
+          {
+            "chance": 0.13,
+            "location": "Lith T12 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Orthos Prime Blade"
           },
@@ -39381,6 +38757,12 @@
           },
           {
             "chance": 0.17,
+            "location": "Lith T12 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Orthos Prime Blade"
+          },
+          {
+            "chance": 0.17,
             "location": "Meso D1 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Orthos Prime Blade"
@@ -39414,6 +38796,7 @@
           { "chance": 0.2, "location": "Lith B3 Relic (Radiant)", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.2, "location": "Lith B5 Relic (Radiant)", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.2, "location": "Lith C4 Relic (Radiant)", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
+          { "chance": 0.2, "location": "Lith T12 Relic (Radiant)", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.2, "location": "Meso D1 Relic (Radiant)", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.2, "location": "Meso I1 Relic (Radiant)", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
           { "chance": 0.2, "location": "Meso K6 Relic (Radiant)", "rarity": "Uncommon", "type": "Orthos Prime Blade" },
@@ -39852,6 +39235,12 @@
           },
           {
             "chance": 0.1667,
+            "location": "Neo A12 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Orthos Prime Handle"
+          },
+          {
+            "chance": 0.1667,
             "location": "Neo H1 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Orthos Prime Handle"
@@ -39972,6 +39361,12 @@
           {
             "chance": 0.2,
             "location": "Meso P5 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Orthos Prime Handle"
+          },
+          {
+            "chance": 0.2,
+            "location": "Neo A12 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Orthos Prime Handle"
           },
@@ -40102,6 +39497,12 @@
           },
           {
             "chance": 0.2333,
+            "location": "Neo A12 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Orthos Prime Handle"
+          },
+          {
+            "chance": 0.2333,
             "location": "Neo H1 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Orthos Prime Handle"
@@ -40150,6 +39551,7 @@
           { "chance": 0.2533, "location": "Meso K3 Relic", "rarity": "Uncommon", "type": "Orthos Prime Handle" },
           { "chance": 0.2533, "location": "Meso N4 Relic", "rarity": "Uncommon", "type": "Orthos Prime Handle" },
           { "chance": 0.2533, "location": "Meso P5 Relic", "rarity": "Uncommon", "type": "Orthos Prime Handle" },
+          { "chance": 0.2533, "location": "Neo A12 Relic", "rarity": "Uncommon", "type": "Orthos Prime Handle" },
           { "chance": 0.2533, "location": "Neo H1 Relic", "rarity": "Uncommon", "type": "Orthos Prime Handle" },
           { "chance": 0.2533, "location": "Neo M4 Relic", "rarity": "Uncommon", "type": "Orthos Prime Handle" },
           { "chance": 0.2533, "location": "Neo P3 Relic", "rarity": "Uncommon", "type": "Orthos Prime Handle" },
@@ -53183,6 +52585,7 @@
           { "chance": 0.11, "location": "Lith G6 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.11, "location": "Lith R5 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.11, "location": "Meso B8 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
+          { "chance": 0.11, "location": "Meso G7 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.11, "location": "Neo T6 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           {
             "chance": 0.13,
@@ -53204,6 +52607,12 @@
           },
           {
             "chance": 0.13,
+            "location": "Meso G7 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Tatsu Prime Blade"
+          },
+          {
+            "chance": 0.13,
             "location": "Neo T6 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Tatsu Prime Blade"
@@ -53211,10 +52620,12 @@
           { "chance": 0.17, "location": "Lith G6 Relic (Flawless)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.17, "location": "Lith R5 Relic (Flawless)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.17, "location": "Meso B8 Relic (Flawless)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
+          { "chance": 0.17, "location": "Meso G7 Relic (Flawless)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.17, "location": "Neo T6 Relic (Flawless)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.2, "location": "Lith G6 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.2, "location": "Lith R5 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.2, "location": "Meso B8 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
+          { "chance": 0.2, "location": "Meso G7 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" },
           { "chance": 0.2, "location": "Neo T6 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Blade" }
         ],
         "masterable": false,
@@ -53234,6 +52645,12 @@
           {
             "chance": 0.1667,
             "location": "Axi N10 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Tatsu Prime Blueprint"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Axi P7 Relic (Radiant)",
             "rarity": "Uncommon",
             "type": "Tatsu Prime Blueprint"
           },
@@ -53281,6 +52698,12 @@
           },
           {
             "chance": 0.2,
+            "location": "Axi P7 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Tatsu Prime Blueprint"
+          },
+          {
+            "chance": 0.2,
             "location": "Lith H6 Relic (Flawless)",
             "rarity": "Uncommon",
             "type": "Tatsu Prime Blueprint"
@@ -53323,6 +52746,12 @@
           },
           {
             "chance": 0.2333,
+            "location": "Axi P7 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Tatsu Prime Blueprint"
+          },
+          {
+            "chance": 0.2333,
             "location": "Lith H6 Relic (Exceptional)",
             "rarity": "Uncommon",
             "type": "Tatsu Prime Blueprint"
@@ -53358,6 +52787,7 @@
             "type": "Tatsu Prime Blueprint"
           },
           { "chance": 0.2533, "location": "Axi N10 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blueprint" },
+          { "chance": 0.2533, "location": "Axi P7 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blueprint" },
           { "chance": 0.2533, "location": "Lith H6 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blueprint" },
           { "chance": 0.2533, "location": "Meso G6 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blueprint" },
           { "chance": 0.2533, "location": "Meso S12 Relic", "rarity": "Uncommon", "type": "Tatsu Prime Blueprint" },
@@ -53377,6 +52807,7 @@
         "drops": [
           { "chance": 0.02, "location": "Axi T10 Relic", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           { "chance": 0.02, "location": "Lith T10 Relic", "rarity": "Rare", "type": "Tatsu Prime Handle" },
+          { "chance": 0.02, "location": "Lith T12 Relic", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           { "chance": 0.02, "location": "Neo T7 Relic", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           { "chance": 0.04, "location": "Axi T10 Relic (Exceptional)", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           {
@@ -53385,12 +52816,20 @@
             "rarity": "Rare",
             "type": "Tatsu Prime Handle"
           },
+          {
+            "chance": 0.04,
+            "location": "Lith T12 Relic (Exceptional)",
+            "rarity": "Rare",
+            "type": "Tatsu Prime Handle"
+          },
           { "chance": 0.04, "location": "Neo T7 Relic (Exceptional)", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           { "chance": 0.06, "location": "Axi T10 Relic (Flawless)", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           { "chance": 0.06, "location": "Lith T10 Relic (Flawless)", "rarity": "Rare", "type": "Tatsu Prime Handle" },
+          { "chance": 0.06, "location": "Lith T12 Relic (Flawless)", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           { "chance": 0.06, "location": "Neo T7 Relic (Flawless)", "rarity": "Rare", "type": "Tatsu Prime Handle" },
           { "chance": 0.1, "location": "Axi T10 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Handle" },
           { "chance": 0.1, "location": "Lith T10 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Handle" },
+          { "chance": 0.1, "location": "Lith T12 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Handle" },
           { "chance": 0.1, "location": "Neo T7 Relic (Radiant)", "rarity": "Uncommon", "type": "Tatsu Prime Handle" }
         ],
         "masterable": false,
@@ -54183,7 +53622,6 @@
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeTekko/PrimeTekko",
     "vaultDate": "2021-05-26",
     "vaulted": true,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/d/da/TekkoPrime.png/revision/latest?cb=20220612122914",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tekko_Prime",
     "windUp": 0.60000002
   },
@@ -54373,7 +53811,6 @@
     "tradable": true,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Melee/AHBoltace",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/61/TelosBoltace.png/revision/latest?cb=20220612122945",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Telos_Boltace",
     "windUp": 0.69999999
   },
@@ -54539,7 +53976,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Corpus/Melee/ShieldAndSword/CrpHammerShield/CrpHammerShield",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/ac/TenetAgendus.png/revision/latest?cb=20220612123014",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tenet_Agendus",
     "windUp": 1
   },
@@ -54657,7 +54093,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/CrpBigSlash/CrpBigSlash",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/20/TenetExec.png/revision/latest?cb=20220612123148",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tenet_Exec",
     "windUp": 1.1
   },
@@ -54796,7 +54231,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/d/db/TenetGrigori.png/revision/latest?cb=20220612123217",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tenet_Grigori",
     "windUp": 1
   },
@@ -54906,7 +54340,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Corpus/Melee/CrpBriefcase2HKatana/CrpBriefcase2HKatana",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/ee/TenetLivia.png/revision/latest?cb=20220612123232",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tenet_Livia",
     "windUp": 0.69999999
   },
@@ -55266,7 +54699,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/MonkSpade/TnoMonkStaff",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e5/Tipedo.png/revision/latest?cb=20220612123502",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tipedo",
     "windUp": 0.5
   },
@@ -55704,7 +55136,6 @@
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Staff/TipedoPrime/TipedoPrimeWeapon",
     "vaultDate": "2020-10-26",
     "vaulted": true,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/07/TipedoPrime.png/revision/latest?cb=20220612123518",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tipedo_Prime",
     "windUp": 0.5
   },
@@ -55875,7 +55306,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/FlowerPowerPolearm/FlowerPowerPolearmWep",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/d/d8/Tonbo.png/revision/latest?cb=20220612123534",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tonbo",
     "windUp": 0.90000004
   },
@@ -56216,7 +55646,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/19/TwinBasolk.png/revision/latest?cb=20220612123631",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Twin_Basolk",
     "windUp": 0.69999999
   },
@@ -56502,7 +55931,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/DualGrnEgyptSwdWeapon",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/68/TwinKrohkur.png/revision/latest?cb=20220612123727",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Twin_Krohkur",
     "windUp": 0.69999999
   },
@@ -57135,7 +56563,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Grineer/Melee/GunBlade/GrnGunBlade/GrnGunblade",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/32/Vastilok.png/revision/latest?cb=20220612123829",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Vastilok",
     "windUp": 0.40000001
   },
@@ -57261,7 +56688,6 @@
     "tradable": true,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Syndicates/SteelMeridian/Melee/SMSydon",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/eb/VaykorSydon.png/revision/latest?cb=20220612123941",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Vaykor_Sydon",
     "windUp": 0.90000004
   },
@@ -57412,7 +56838,6 @@
     "tradable": false,
     "type": "Rifle",
     "uniqueName": "/Lotus/Weapons/Sentients/SentJointedScythe/SentJointedScytheWeapon",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/1d/Venato.png/revision/latest?cb=20220612124101",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Venato",
     "windUp": 1
   },
@@ -57654,7 +57079,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Claws/TennoClaws",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/6b/Venka.png/revision/latest?cb=20220612124117",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Venka",
     "windUp": 0.60000002
   },
@@ -58110,7 +57534,6 @@
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws",
     "vaultDate": "2018-09-25",
     "vaulted": true,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/12/VenkaPrime.png/revision/latest?cb=20220612124131",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Venka_Prime",
     "windUp": 0.60000002
   },
@@ -58301,7 +57724,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Archon/Melee/Whip/ArchonWhipPlayerWep",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/4d/Verdilac.png/revision/latest?cb=20220612124146",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Verdilac",
     "windUp": 0.40000001
   },
@@ -58402,7 +57824,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Warfan/TnMoonWarfan/MoonWarfanWeapon",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/19/Vericres.png/revision/latest?cb=20220610211217",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Vericres",
     "windUp": 0.5
   },
@@ -58595,7 +58016,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/NWIIIOrokinSword/NWOrokinSword",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/ae/Vitrica.png/revision/latest?cb=20220612124245",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Vitrica",
     "windUp": 1.1
   },
@@ -58799,7 +58219,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/GlassHammer/GlassHammer",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/c/c5/Volnus.png/revision/latest?cb=20220612124301",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Volnus",
     "windUp": 1.1
   },
@@ -59202,7 +58621,6 @@
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeVolnus/VolnusPrimeWeapon",
     "vaulted": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/5/54/VolnusPrime.png/revision/latest?cb=20220612124316",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Volnus_Prime",
     "windUp": 1.1
   },
@@ -64420,7 +63838,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/a7/War.png/revision/latest?cb=20220612124425",
     "wikiaUrl": "https://warframe.fandom.com/wiki/War",
     "windUp": 1.1
   },
@@ -64631,7 +64048,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/ThrowingHammer",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/05/WolfSledge.png/revision/latest?cb=20220612124439",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Wolf_Sledge",
     "windUp": 1.2
   },
@@ -64898,7 +64314,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGhostCatcherGlaive/CrpGhostCatcherGlaive",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/25/Xoris.png/revision/latest?cb=20220612124452",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Xoris",
     "windUp": 1.2
   },
@@ -65224,7 +64639,6 @@
     "tradable": false,
     "type": "Melee",
     "uniqueName": "/Lotus/Weapons/Tenno/Melee/SunDialAxe/SundialAxeWeapon",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/45/Zenistar.png/revision/latest?cb=20220612124538",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Zenistar",
     "windUp": 1.1
   }
