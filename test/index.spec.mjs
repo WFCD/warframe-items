@@ -267,6 +267,16 @@ for (const base of ['index.js', 'index.mjs']) {
           );
         });
       });
+      it('should not change size when using filter', async () => {
+        const items = await wrapConstr({ category: ['Arch-Gun'] });
+        const realLength = items.length;
+        assert(realLength === items.filter(() => true).length);
+      });
+      it('should not change size when using map', async () => {
+        const items = await wrapConstr({ category: ['Arch-Gun'] });
+        const realLength = items.length;
+        assert(realLength === items.map((x) => x).length);
+      });
     });
   });
 }

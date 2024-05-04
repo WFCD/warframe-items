@@ -161,9 +161,21 @@ module.exports = class Items extends Array {
    */
   filter(fn) {
     const A = [];
-
     for (const el of this) {
       if (fn(el)) A.push(el);
+    }
+    return A;
+  }
+
+  /**
+   * @Override Array.prototype.map
+   *
+   * Needs to be reimplemented here because it exhibits the same issues as Array.prototype.filter.
+   */
+  map(fn) {
+    const A = [];
+    for (const el of this) {
+      A.push(fn(el));
     }
     return A;
   }
