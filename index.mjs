@@ -166,4 +166,16 @@ export default class Items extends Array {
     }
     return A;
   }
+
+  /**
+   * @Override Array.prototype.filter
+   *
+   * See filter override
+   */
+  map(fn) {
+    const a = [];
+    for (const el of this) a.push(fn(el));
+
+    return a;
+  }
 }

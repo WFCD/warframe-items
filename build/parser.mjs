@@ -531,7 +531,7 @@ class Parser {
       str
         .replace('/', '')
         .replace(/[ /*]/g, '-')
-        .replace(/[:<>[\]?!]/g, '')
+        .replace(/[:<>[\]?!"]/g, '')
         .toLowerCase();
     const imageStub = image.textureLocation;
     const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '').replace(/!.*$/, ''); // .png, .jpg, etc
