@@ -167,4 +167,16 @@ module.exports = class Items extends Array {
     }
     return A;
   }
+
+  /**
+   * @Override Array.prototype.map
+   *
+   * See filter override
+   */
+  map(fn) {
+    const a = [];
+    for (const el of this) a.push(fn(el));
+
+    return a;
+  }
 };
