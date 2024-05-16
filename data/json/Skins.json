@@ -999,7 +999,6 @@
   {
     "category": "Skins",
     "description": "A quick head nod.",
-    "excludeFromCodex": true,
     "imageName": "agree.png",
     "masterable": false,
     "name": "Agree",
@@ -2664,7 +2663,6 @@
   {
     "category": "Skins",
     "description": "A Tenno display of power and technique, followed up with a short bow.",
-    "excludeFromCodex": true,
     "imageName": "aquarid-narta.png",
     "masterable": false,
     "name": "Aquarid Narta",
@@ -7362,7 +7360,6 @@
   {
     "category": "Skins",
     "description": "",
-    "excludeFromCodex": true,
     "imageName": "barteremote.png",
     "masterable": false,
     "name": "Barteremote",
@@ -7625,6 +7622,26 @@
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Pacifist/UnlockPacifistNoble"
+  },
+  {
+    "category": "Skins",
+    "description": "A helmet for the Baruuk Warframe, designed by Ventralhound.",
+    "imageName": "baruuk-peacemaker-helmet.png",
+    "masterable": false,
+    "name": "Baruuk Peacemaker Helmet",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Pacifist/SWBaruukPeacemakerHelmet"
+  },
+  {
+    "category": "Skins",
+    "description": "A unique skin for the Baruuk Warframe, designed by Ventralhound.",
+    "imageName": "baruuk-peacemaker-skin.png",
+    "masterable": false,
+    "name": "Baruuk Peacemaker Skin",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Pacifist/SWBaruukPeacemakerSkin"
   },
   {
     "category": "Skins",
@@ -8815,7 +8832,6 @@
   {
     "category": "Skins",
     "description": "A celebratory display.",
-    "excludeFromCodex": true,
     "imageName": "boast.png",
     "masterable": false,
     "name": "Boast",
@@ -9341,7 +9357,6 @@
   {
     "category": "Skins",
     "description": "A short bow.",
-    "excludeFromCodex": true,
     "imageName": "bow.png",
     "masterable": false,
     "name": "Bow",
@@ -11258,6 +11273,16 @@
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Sentinels/Wings/InfBatWings"
+  },
+  {
+    "category": "Skins",
+    "description": "Watch your enemies fall before this weapon of the sunrise. A vibrant skin for the Cedo.",
+    "imageName": "cedo-daybreak-skin.png",
+    "masterable": false,
+    "name": "Cedo Daybreak Skin",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Nightwave/DaybreakCedoSkin"
   },
   {
     "category": "Skins",
@@ -13376,7 +13401,6 @@
   {
     "category": "Skins",
     "description": "A clap of approval.",
-    "excludeFromCodex": true,
     "imageName": "clap.png",
     "masterable": false,
     "name": "Clap",
@@ -14087,7 +14111,6 @@
   {
     "category": "Skins",
     "description": "A display of confidence and authority.",
-    "excludeFromCodex": true,
     "imageName": "commander.png",
     "masterable": false,
     "name": "Commander",
@@ -18717,7 +18740,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "cruzar-narta.png",
     "masterable": false,
     "name": "Cruzar Narta",
@@ -19712,11 +19734,576 @@
     "uniqueName": "/Lotus/Upgrades/Skins/Pagemaster/UnlockPagemasterAgile"
   },
   {
+    "buildPrice": 20000,
+    "buildQuantity": 1,
+    "buildTime": 43200,
     "category": "Skins",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Helmets/DanteAltHelmetBlueprint",
+        "name": "Blueprint",
+        "description": "For those midway upon their journey.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "description": "Various electronic components.Locations: Venus, Ceres, and the Kuva Fortress.",
+        "itemCount": 500,
+        "imageName": "circuits.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Circuits"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Circuits"
+          },
+          {
+            "chance": 0.1111,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "300X Circuits"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "300X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mars/Gradivus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Neruda (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Terminus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Halimede (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Thalassa (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Pluto/Charon (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Pluto/Cypress (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Sedna/Phithale (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Sedna/Rusalka (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Uranus/Portia (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Venus/Ishtar (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Circuits"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Void/Stribog (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Void/Marduk (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Circuits"
+          },
+          {
+            "chance": 0.1532,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "300X Circuits"
+          },
+          {
+            "chance": 0.1597,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "300X Circuits"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "300X Circuits"
+          },
+          {
+            "chance": 0.25,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "300X Circuits"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Deimos.",
+        "itemCount": 1200,
+        "imageName": "nano-spores.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1429,
+            "location": "Deimos/Formido (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1455,
+            "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Nano Spores"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Hallowed Flame Mission Caches, Rotation A",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1569,
+            "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Candiru (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Lepis (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Naeglar (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Psoro (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Viver (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Nano Spores"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
+        "name": "Nitain Extract",
+        "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
+        "itemCount": 2,
+        "imageName": "nitain-extract.png",
+        "tradable": false,
+        "drops": [
+          { "chance": 0.0013, "location": "Wolf Of Saturn Six", "rarity": "Rare", "type": "Nitain Extract" },
+          { "chance": 0.0013, "location": "Zealoid Prelate", "rarity": "Rare", "type": "Nitain Extract" },
+          {
+            "chance": 0.0067,
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Nitain Extract"
+          },
+          { "chance": 0.01, "location": "Ceres/Ker (Caches), Rotation C", "rarity": "Rare", "type": "Nitain Extract" },
+          { "chance": 0.01, "location": "Ceres/Thon (Caches), Rotation C", "rarity": "Rare", "type": "Nitain Extract" },
+          {
+            "chance": 0.01,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.01,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.01,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.01,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0101,
+            "location": "Hallowed Flame Endurance Caches, Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0101,
+            "location": "Hallowed Flame Mission Caches, Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0101,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0129,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.02,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0357,
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0357,
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0472,
+            "location": "Earth/Cetus (Level 15 - 25 Ghoul Bounty), Rotation A",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          },
+          {
+            "chance": 0.0472,
+            "location": "Earth/Cetus (Level 40 - 50 Ghoul Bounty), Rotation A",
+            "rarity": "Rare",
+            "type": "Nitain Extract"
+          }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+        "itemCount": 1500,
+        "imageName": "salvage.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      }
+    ],
+    "consumeOnBuild": true,
     "description": "For those midway upon their journey.",
     "imageName": "dante-cantist-helmet.png",
     "masterable": false,
     "name": "Dante Cantist Helmet",
+    "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Pagemaster/PagemasterAltHelmet"
@@ -20026,6 +20613,16 @@
   },
   {
     "category": "Skins",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "imageName": "dawn-pink.png",
+    "masterable": false,
+    "name": "Dawn Pink",
+    "tradable": false,
+    "type": "Fur Color",
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/CatbrowPetColorBaseDaybreak"
+  },
+  {
+    "category": "Skins",
     "description": "Like the morning’s first light, this Shawzin will wake the spirit within. Play this instrument by equipping and using the included Shawzin Emote.",
     "imageName": "dawn-shawzin.png",
     "masterable": false,
@@ -20218,6 +20815,76 @@
   },
   {
     "category": "Skins",
+    "description": "Dazzle friends and enemies alike, with this armor’s solar brilliance.",
+    "imageName": "daybreak-chest-plate.png",
+    "masterable": false,
+    "name": "Daybreak Chest Plate",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/Daybreak/DaybreakArmourC"
+  },
+  {
+    "category": "Skins",
+    "description": "Greet the new day with this brilliant emote.",
+    "imageName": "daybreak-emote.png",
+    "masterable": false,
+    "name": "Daybreak Emote",
+    "tradable": false,
+    "type": "Emotes",
+    "uniqueName": "/Lotus/Types/Items/Emotes/DaybreakEmote"
+  },
+  {
+    "category": "Skins",
+    "description": "Make your Kavat’s fur shine with solar majesty.",
+    "imageName": "daybreak-kavat-fur-pattern.png",
+    "masterable": false,
+    "name": "Daybreak Kavat Fur Pattern",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Catbrows/DaybreakCatbrowFur"
+  },
+  {
+    "category": "Skins",
+    "description": "Make your Kubrow’s fur shine with solar majesty.",
+    "imageName": "daybreak-kubrow-fur-pattern.png",
+    "masterable": false,
+    "name": "Daybreak Kubrow Fur Pattern",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Kubrows/Fur/DaybreakKubrowFur"
+  },
+  {
+    "category": "Skins",
+    "description": "Dazzle friends and enemies alike, with this armor’s solar brilliance.",
+    "imageName": "daybreak-leg-plates.png",
+    "masterable": false,
+    "name": "Daybreak Leg Plates",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/Daybreak/DaybreakArmourL"
+  },
+  {
+    "category": "Skins",
+    "description": "Dazzle friends and enemies alike, with this armor’s solar brilliance.",
+    "imageName": "daybreak-shoulder-plates.png",
+    "masterable": false,
+    "name": "Daybreak Shoulder Plates",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Armor/Daybreak/DaybreakArmourA"
+  },
+  {
+    "category": "Skins",
+    "description": "Rise up and raze your enemies with this radiant Syandana.",
+    "imageName": "daybreak-vanquished-banner.png",
+    "masterable": false,
+    "name": "Daybreak Vanquished Banner",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Nightwave/DaybreakGrnBannerScarf"
+  },
+  {
+    "category": "Skins",
     "description": "This skin immortalizes the pistol Lio De Nas used in self-defense when Ash came calling, in the story told by Drusus Leverian.",
     "imageName": "de-nas-pistol-skin.png",
     "masterable": false,
@@ -20374,7 +21041,6 @@
   {
     "category": "Skins",
     "description": "Celebrate the Tenno legacy with panache.",
-    "excludeFromCodex": true,
     "imageName": "deca-heirloom-emote.png",
     "masterable": false,
     "name": "Deca Heirloom Emote",
@@ -20385,7 +21051,6 @@
   {
     "category": "Skins",
     "description": "A deep bow.",
-    "excludeFromCodex": true,
     "imageName": "deep-bow.png",
     "masterable": false,
     "name": "Deep Bow",
@@ -20396,7 +21061,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "degage-narta.png",
     "masterable": false,
     "name": "Degage Narta",
@@ -21356,7 +22020,6 @@
   {
     "category": "Skins",
     "description": "A negatory hand wave.",
-    "excludeFromCodex": true,
     "imageName": "disagree.png",
     "masterable": false,
     "name": "Disagree",
@@ -26171,6 +26834,16 @@
   },
   {
     "category": "Skins",
+    "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
+    "imageName": "dusk-pink.png",
+    "masterable": false,
+    "name": "Dusk Pink",
+    "tradable": false,
+    "type": "Fur Color",
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/Colors/KubrowPetColorDaybreakMundane"
+  },
+  {
+    "category": "Skins",
     "description": "They're the squeezy little fellas from the ranges of the Vallis! Take them home today!",
     "imageName": "dusky-headed-virmink-floof.png",
     "masterable": false,
@@ -26670,7 +27343,6 @@
   {
     "category": "Skins",
     "description": "A Tenno display of power and technique, followed up with a short bow.",
-    "excludeFromCodex": true,
     "imageName": "eclipse-narta.png",
     "masterable": false,
     "name": "Eclipse Narta",
@@ -29218,6 +29890,16 @@
     "tradable": false,
     "type": "Ship Decoration",
     "uniqueName": "/Lotus/Types/Game/ActionFigureDioramas/CorpusIcePlanetDiorama"
+  },
+  {
+    "category": "Skins",
+    "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
+    "imageName": "evening-purple.png",
+    "masterable": false,
+    "name": "Evening Purple",
+    "tradable": false,
+    "type": "Fur Color",
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/Colors/KubrowPetColorDaybreakMid"
   },
   {
     "category": "Skins",
@@ -32382,7 +33064,6 @@
   {
     "category": "Skins",
     "description": "A Tenno display of power and technique, followed up with a short bow.",
-    "excludeFromCodex": true,
     "imageName": "fathom-narta.png",
     "masterable": false,
     "name": "Fathom Narta",
@@ -34868,7 +35549,6 @@
     "category": "Skins",
     "description": "A Tenno display of power and technique, followed up with a short bow.",
     "drops": [{ "chance": 1, "location": "Conclave, Whirlwind", "rarity": "Common", "type": "Follow Through" }],
-    "excludeFromCodex": true,
     "imageName": "follow.png",
     "masterable": false,
     "name": "Follow",
@@ -38528,6 +39208,16 @@
   },
   {
     "category": "Skins",
+    "description": "Send your enemies into the long night with this dawn inspired Glaive skin.",
+    "imageName": "glaive-daybreak-skin.png",
+    "masterable": false,
+    "name": "Glaive Daybreak Skin",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Nightwave/DayBreakGlaiveSkin"
+  },
+  {
+    "category": "Skins",
     "description": "A next-generation skin for the Glaive.",
     "imageName": "glaive-obsidian-skin.png",
     "masterable": false,
@@ -38787,7 +39477,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "glissade-narta.png",
     "masterable": false,
     "name": "Glissade Narta",
@@ -45371,7 +46060,6 @@
   {
     "category": "Skins",
     "description": "A classic means for friends to exchange greetings. Do you know any secret handshakes?",
-    "excludeFromCodex": true,
     "imageName": "handshake.png",
     "masterable": false,
     "name": "Handshake",
@@ -48209,6 +48897,16 @@
     "tradable": false,
     "type": "Ship Decoration",
     "uniqueName": "/Lotus/Types/Items/ShipDecos/LisetPropOperatorHoodDisplayDefault"
+  },
+  {
+    "category": "Skins",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "imageName": "horizon-pink.png",
+    "masterable": false,
+    "name": "Horizon Pink",
+    "tradable": false,
+    "type": "Fur Color",
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/CatbrowPetColorSecondaryDaybreak"
   },
   {
     "category": "Skins",
@@ -53142,7 +53840,6 @@
   {
     "category": "Skins",
     "description": "Command attention.",
-    "excludeFromCodex": true,
     "imageName": "interalpha-prime-narta.png",
     "masterable": false,
     "name": "Interalpha Prime Narta",
@@ -55256,7 +55953,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Kubrow/Collars/PrimeKubrowCollarABandComponent",
         "name": "Kavasa Prime Band",
-        "description": "A prime sentinel accessory-crafting component.",
+        "description": "A prime companion accessory-crafting component.",
         "primeSellingPrice": 45,
         "itemCount": 1,
         "imageName": "prime-kavasa-prime-band.png",
@@ -55332,7 +56029,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/Kubrow/Collars/PrimeKubrowCollarABuckleComponent",
         "name": "Kavasa Prime Buckle",
-        "description": "A prime sentinel accessory-crafting component.",
+        "description": "A prime companion accessory-crafting component.",
         "primeSellingPrice": 65,
         "itemCount": 1,
         "imageName": "prime-kavasa-prime-buckle.png",
@@ -56586,7 +57283,6 @@
   {
     "category": "Skins",
     "description": "Stand out from the crowd with this display of sophistication.",
-    "excludeFromCodex": true,
     "imageName": "ki'teer-presence.png",
     "masterable": false,
     "name": "Ki'Teer Presence",
@@ -57618,7 +58314,6 @@
   {
     "category": "Skins",
     "description": "A pose to reflect honor and respect.",
-    "excludeFromCodex": true,
     "imageName": "knee-bend.png",
     "masterable": false,
     "name": "Knee Bend",
@@ -57629,7 +58324,6 @@
   {
     "category": "Skins",
     "description": "A stationary pose on one's knees.",
-    "excludeFromCodex": true,
     "imageName": "kneel.png",
     "masterable": false,
     "name": "Kneel",
@@ -60445,7 +61139,6 @@
   {
     "category": "Skins",
     "description": "Two halves make a whole. Perform this emote with another Tenno's Right Hand of Eros to form a heart.",
-    "excludeFromCodex": true,
     "imageName": "left-hand-of-eros.png",
     "masterable": false,
     "name": "Left Hand Of Eros",
@@ -66113,6 +66806,16 @@
   },
   {
     "category": "Skins",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "imageName": "lua-purple.png",
+    "masterable": false,
+    "name": "Lua Purple",
+    "tradable": false,
+    "type": "Fur Color",
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/CatbrowPetColorTertiaryDaybreak"
+  },
+  {
+    "category": "Skins",
     "description": "A custom vignette that can be placed in your personal quarters.Also includes 2 Warframe Articula.",
     "excludeFromCodex": true,
     "imageName": "lua-vignette.png",
@@ -66398,7 +67101,6 @@
   {
     "category": "Skins",
     "description": "A peaceful reminder of Lunar Renewal.",
-    "excludeFromCodex": true,
     "imageName": "lunar-renewal-rabbit-flourish.png",
     "masterable": false,
     "name": "Lunar Renewal Rabbit Flourish",
@@ -66934,7 +67636,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "maestro-narta.png",
     "masterable": false,
     "name": "Maestro Narta",
@@ -67023,6 +67724,26 @@
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Mag/SWAnthroMagHelmet"
+  },
+  {
+    "category": "Skins",
+    "description": "A helmet for the Mag Warframe, designed by malaya, Awk'Q-Luz and Jadie.",
+    "imageName": "mag-celestis-helmet.png",
+    "masterable": false,
+    "name": "Mag Celestis Helmet",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Mag/SWMagCelestisHelmet"
+  },
+  {
+    "category": "Skins",
+    "description": "A unique skin for the Mag Warframe, designed by malaya, Awk'Q-Luz and Jadie.",
+    "imageName": "mag-celestis-skin.png",
+    "masterable": false,
+    "name": "Mag Celestis Skin",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Mag/SWMagCelestisSkin"
   },
   {
     "buildPrice": 0,
@@ -68150,7 +68871,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "manibus-narta.png",
     "masterable": false,
     "name": "Manibus Narta",
@@ -69037,7 +69757,6 @@
   {
     "category": "Skins",
     "description": "A pose to focus one's mind.",
-    "excludeFromCodex": true,
     "imageName": "meditate.png",
     "masterable": false,
     "name": "Meditate",
@@ -70778,6 +71497,16 @@
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Necramech/MechWeapon/MechEventMorghaSkin"
+  },
+  {
+    "category": "Skins",
+    "description": "Splices the genes in your pet Kubrow to change the color of its fur.",
+    "imageName": "morning-yellow.png",
+    "masterable": false,
+    "name": "Morning Yellow",
+    "tradable": false,
+    "type": "Fur Color",
+    "uniqueName": "/Lotus/Types/Game/KubrowPet/Colors/KubrowPetColorDaybreakVibrant"
   },
   {
     "category": "Skins",
@@ -74898,6 +75627,16 @@
   },
   {
     "category": "Skins",
+    "description": "A unique Nikana skin, designed by malaya and Scharkie.",
+    "imageName": "nikana-minos-skin.png",
+    "masterable": false,
+    "name": "Nikana Minos Skin",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/SteamWorkshop/Melee/Katana/SWMinosKatanaSkin"
+  },
+  {
+    "category": "Skins",
     "description": "A unique Nikana skin, designed by lukinu_u.",
     "imageName": "nikana-mithra-skin.png",
     "masterable": false,
@@ -75050,7 +75789,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "noble-narta.png",
     "masterable": false,
     "name": "Noble Narta",
@@ -78063,6 +78801,16 @@
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenNukor"
+  },
+  {
+    "category": "Skins",
+    "description": "Make this sunrise your enemy’s last with this luminous Nukor Skin.",
+    "imageName": "nukor-daybreak-skin.png",
+    "masterable": false,
+    "name": "Nukor Daybreak Skin",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Nightwave/DaybreakNukorSkin"
   },
   {
     "category": "Skins",
@@ -84303,7 +85051,6 @@
   {
     "category": "Skins",
     "description": "A display of finesse with the Parazon.",
-    "excludeFromCodex": true,
     "imageName": "parazon.png",
     "masterable": false,
     "name": "Parazon",
@@ -84962,7 +85709,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "pendulum-narta.png",
     "masterable": false,
     "name": "Pendulum Narta",
@@ -85496,7 +86242,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "poise-narta.png",
     "masterable": false,
     "name": "Poise Narta",
@@ -86708,9 +87453,9 @@
     "category": "Skins",
     "description": "This Display celebrates Pride. Designed by Debbysheen.",
     "excludeFromCodex": true,
-    "imageName": "pride-display.png",
+    "imageName": "pride-display-i.png",
     "masterable": false,
-    "name": "Pride Display",
+    "name": "Pride Display I",
     "tradable": false,
     "type": "Ship Decoration",
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Venus/PrideCommunityDisplay"
@@ -86718,9 +87463,9 @@
   {
     "category": "Skins",
     "description": "This Display celebrates Pride. Designed by ViperMenace.",
-    "imageName": "pride-display-2023.png",
+    "imageName": "pride-display-ii.png",
     "masterable": false,
-    "name": "Pride Display 2023",
+    "name": "Pride Display Ii",
     "tradable": false,
     "type": "Ship Decoration",
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Pride2023Display"
@@ -86729,9 +87474,9 @@
     "category": "Skins",
     "description": "This Display celebrates Pride. Designed by RoboMythos.",
     "excludeFromCodex": true,
-    "imageName": "pride-display-2024.png",
+    "imageName": "pride-display-iii.png",
     "masterable": false,
-    "name": "Pride Display 2024",
+    "name": "Pride Display Iii",
     "tradable": false,
     "type": "Ship Decoration",
     "uniqueName": "/Lotus/Types/Items/ShipDecos/Venus/Pride2024Display"
@@ -88627,11 +89372,781 @@
     "uniqueName": "/Lotus/Upgrades/Skins/ConcreteFrame/UnlockConcreteNoble"
   },
   {
+    "buildPrice": 20000,
+    "buildQuantity": 1,
+    "buildTime": 43200,
     "category": "Skins",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+        "itemCount": 1500,
+        "imageName": "alloy-plate.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Alloy Plate"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mars/Gradivus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Neruda (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Mercury/Terminus (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Alloy Plate"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Venus/Ishtar (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "750X Alloy Plate"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Helmets/QorvexAltHelmetBlueprint",
+        "name": "Blueprint",
+        "description": "Resist the siege.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+        "name": "Plastids",
+        "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+        "itemCount": 500,
+        "imageName": "plastids.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Plastids"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "120X Plastids"
+          },
+          {
+            "chance": 0.1111,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Ceres/Ker (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Ceres/Thon (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "100X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Jupiter/Adrastea (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Jupiter/Carpo (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Halimede (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Thalassa (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Pluto/Charon (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Pluto/Cypress (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Calypso (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Pallene (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Sedna/Phithale (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Sedna/Rusalka (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Uranus/Portia (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Void/Stribog (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1291,
+            "location": "Lua/Plato (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Plastids"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Venus/Orb Vallis (Level 5 - 15 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "100X Plastids"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Void/Marduk (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Candiru (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Lepis (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Naeglar (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Psoro (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Eris/Viver (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Uranus/Desdemona (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Uranus/Prospero (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Uranus/Setebos (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Venus/Orb Vallis (Level 5 - 15 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "100X Plastids"
+          },
+          {
+            "chance": 0.2,
+            "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Plastids"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Plastids"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 5 - 15 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "100X Plastids"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+        "itemCount": 1200,
+        "imageName": "rubedo.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Rubedo"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.0737,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "100X Rubedo"
+          },
+          {
+            "chance": 0.1111,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "300X Rubedo"
+          },
+          {
+            "chance": 0.1218,
+            "location": "Earth/Cervantes (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "150X Rubedo"
+          },
+          {
+            "chance": 0.125,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "300X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Ceres/Ker (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Ceres/Thon (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Jupiter/Adrastea (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Jupiter/Carpo (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Halimede (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Thalassa (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Pluto/Charon (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Pluto/Cypress (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Calypso (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Pallene (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "350X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Sedna/Phithale (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Sedna/Rusalka (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Uranus/Portia (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Void/Stribog (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.1291,
+            "location": "Lua/Plato (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "350X Rubedo"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Void/Marduk (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Rubedo"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "300X Rubedo"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Tellurium",
+        "name": "Tellurium",
+        "description": "This rare metal is foreign to the Origin System and can only be found in asteroids that have made the long journey from other stars.Locations: Archwing Missions on Uranus.",
+        "itemCount": 2,
+        "imageName": "tellurium.png",
+        "tradable": false,
+        "drops": [
+          { "chance": 0.0018, "location": "Exo Butcher", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Elite Lancer", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Eviscerator", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Gokstad Officer", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Gokstad Pilot", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Raider Carver", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Raider Eviscerator", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Raider", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Roller Sentry", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Exo Supressor", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Butcher", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Elite Lancer", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Eviscerator", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Gokstad Officer", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Gokstad Pilot", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Raider Carver", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Raider Eviscerator", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Raider", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Roller Sentry", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Gyre Supressor", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Butcher", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Elite Lancer", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Eviscerator", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Gokstad Officer", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Gokstad Pilot", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Raider Carver", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Raider Eviscerator", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Raider", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Roller Sentry", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0018, "location": "Kosma Supressor", "rarity": "Rare", "type": "Tellurium" },
+          {
+            "chance": 0.0067,
+            "location": "Mars/Gradivus (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Mercury/Neruda (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Mercury/Terminus (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0067,
+            "location": "Venus/Ishtar (Caches), Rotation C",
+            "rarity": "Legendary",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          { "chance": 0.0367, "location": "Pluto/Charon (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0367, "location": "Pluto/Cypress (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          { "chance": 0.0367, "location": "Sedna/Rusalka (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.0367, "location": "Uranus/Portia (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.044, "location": "Ceres/Ker (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.044, "location": "Ceres/Thon (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          { "chance": 0.044, "location": "Jupiter/Carpo (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.044, "location": "Saturn/Calypso (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          { "chance": 0.044, "location": "Saturn/Pallene (Caches), Rotation C", "rarity": "Rare", "type": "Tellurium" },
+          {
+            "chance": 0.0458,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation A",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0458,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation B",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0458,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0517,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation A",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0517,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation B",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.0517,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "Tellurium"
+          },
+          { "chance": 0.1082, "location": "Lua/Plato (Caches), Rotation C", "rarity": "Uncommon", "type": "Tellurium" },
+          {
+            "chance": 0.1549,
+            "location": "Uranus/Desdemona (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Uranus/Prospero (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.1549,
+            "location": "Uranus/Setebos (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.1575,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.1575,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Tellurium"
+          },
+          {
+            "chance": 0.1575,
+            "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Tellurium"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      }
+    ],
+    "consumeOnBuild": true,
     "description": "Resist the siege.",
     "imageName": "qorvex-raxpart-helmet.png",
     "masterable": false,
     "name": "Qorvex Raxpart Helmet",
+    "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Skin",
     "uniqueName": "/Lotus/Upgrades/Skins/ConcreteFrame/ConcreteFrameAltHelmet"
@@ -90481,6 +91996,26 @@
   },
   {
     "category": "Skins",
+    "description": "A helmet for the Revenant Warframe, designed by malaya, Awk'Q-Luz and Jadie.",
+    "imageName": "revenant-wight-helmet.png",
+    "masterable": false,
+    "name": "Revenant Wight Helmet",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Revenant/SWRevenantWightHelmet"
+  },
+  {
+    "category": "Skins",
+    "description": "A unique skin for the Revenant Warframe, designed by malaya, Awk'Q-Luz and Jadie.",
+    "imageName": "revenant-wight-skin.png",
+    "masterable": false,
+    "name": "Revenant Wight Skin",
+    "tradable": false,
+    "type": "Skin",
+    "uniqueName": "/Lotus/Upgrades/Skins/Revenant/SWRevenantWightSkin"
+  },
+  {
+    "category": "Skins",
     "description": "The Entrati family harmonize in a rare moment of unity in this Orbiter decoration.",
     "excludeFromCodex": true,
     "imageName": "rhapsody-in-blue.png",
@@ -91157,7 +92692,6 @@
   {
     "category": "Skins",
     "description": "Two halves make a whole. Perform this emote with another Tenno's Left Hand of Eros to form a heart.",
-    "excludeFromCodex": true,
     "imageName": "right-hand-of-eros.png",
     "masterable": false,
     "name": "Right Hand Of Eros",
@@ -95444,7 +96978,6 @@
   {
     "category": "Skins",
     "description": "Strike this pose to begin playing the Shawzin.",
-    "excludeFromCodex": true,
     "imageName": "shawzin.png",
     "masterable": false,
     "name": "Shawzin",
@@ -95788,7 +97321,6 @@
   {
     "category": "Skins",
     "description": "A casual shrug.",
-    "excludeFromCodex": true,
     "imageName": "shrug.png",
     "masterable": false,
     "name": "Shrug",
@@ -96479,7 +98011,6 @@
   {
     "category": "Skins",
     "description": "A casual disengagement from action.",
-    "excludeFromCodex": true,
     "imageName": "sit.png",
     "masterable": false,
     "name": "Sit",
@@ -97670,6 +99201,16 @@
   },
   {
     "category": "Skins",
+    "description": "Splices the genes in your pet Kavat to change the color of its fur.",
+    "imageName": "sol-yellow.png",
+    "masterable": false,
+    "name": "Sol Yellow",
+    "tradable": false,
+    "type": "Fur Color",
+    "uniqueName": "/Lotus/Types/Game/CatbrowPet/Colors/CatbrowPetColorAccentsDaybreak"
+  },
+  {
+    "category": "Skins",
     "description": "Repurposed and reliable, strap on Solaris armor and everything's green.",
     "imageName": "solaris-arm-guards.png",
     "masterable": false,
@@ -97978,7 +99519,6 @@
   {
     "category": "Skins",
     "description": "A Tenno display of power and technique, followed up with a short bow.",
-    "excludeFromCodex": true,
     "imageName": "solstice-narta.png",
     "masterable": false,
     "name": "Solstice Narta",
@@ -101702,7 +103242,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "systole-narta.png",
     "masterable": false,
     "name": "Systole Narta",
@@ -102404,7 +103943,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "tempo-narta.png",
     "masterable": false,
     "name": "Tempo Narta",
@@ -105295,7 +106833,6 @@
   {
     "category": "Skins",
     "description": "Bestowed upon those who joined together in celebration at TennoCon 2019.",
-    "excludeFromCodex": true,
     "imageName": "tennocon-2019.png",
     "masterable": false,
     "name": "Tennocon 2019",
@@ -105359,7 +106896,6 @@
   {
     "category": "Skins",
     "description": "Bestowed upon those who joined together in celebration at TennoCon 2021.",
-    "excludeFromCodex": true,
     "imageName": "tennocon-2021.png",
     "masterable": false,
     "name": "Tennocon 2021",
@@ -105480,7 +107016,6 @@
   {
     "category": "Skins",
     "description": "Bestowed upon those who joined together in celebration at TennoCon 2022.",
-    "excludeFromCodex": true,
     "imageName": "tennocon-2022.png",
     "masterable": false,
     "name": "Tennocon 2022",
@@ -105929,7 +107464,6 @@
   {
     "category": "Skins",
     "description": "Display balance and finesse with these rhythmic movements.",
-    "excludeFromCodex": true,
     "imageName": "terpsichore-narta.png",
     "masterable": false,
     "name": "Terpsichore Narta",
@@ -106771,7 +108305,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Ceres.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-ceres.png",
     "masterable": false,
     "name": "The Steel Path: Ceres",
@@ -106782,7 +108315,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Deimos.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-deimos.png",
     "masterable": false,
     "name": "The Steel Path: Deimos",
@@ -106793,7 +108325,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Derelict.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-derelict.png",
     "masterable": false,
     "name": "The Steel Path: Derelict",
@@ -106804,7 +108335,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Duviri.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-duviri.png",
     "masterable": false,
     "name": "The Steel Path: Duviri",
@@ -106815,7 +108345,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Earth.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-earth.png",
     "masterable": false,
     "name": "The Steel Path: Earth",
@@ -106826,7 +108355,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Eris.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-eris.png",
     "masterable": false,
     "name": "The Steel Path: Eris",
@@ -106837,7 +108365,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Europa.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-europa.png",
     "masterable": false,
     "name": "The Steel Path: Europa",
@@ -106848,7 +108375,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Jupiter.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-jupiter.png",
     "masterable": false,
     "name": "The Steel Path: Jupiter",
@@ -106859,7 +108385,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Kuva Fortress.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-kuva-fortress.png",
     "masterable": false,
     "name": "The Steel Path: Kuva Fortress",
@@ -106870,7 +108395,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Lua.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-lua.png",
     "masterable": false,
     "name": "The Steel Path: Lua",
@@ -106881,7 +108405,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Mars.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-mars.png",
     "masterable": false,
     "name": "The Steel Path: Mars",
@@ -106892,7 +108415,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Mercury.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-mercury.png",
     "masterable": false,
     "name": "The Steel Path: Mercury",
@@ -106903,7 +108425,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Neptune.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-neptune.png",
     "masterable": false,
     "name": "The Steel Path: Neptune",
@@ -106914,7 +108435,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Phobos.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-phobos.png",
     "masterable": false,
     "name": "The Steel Path: Phobos",
@@ -106925,7 +108445,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Pluto.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-pluto.png",
     "masterable": false,
     "name": "The Steel Path: Pluto",
@@ -106936,7 +108455,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Saturn.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-saturn.png",
     "masterable": false,
     "name": "The Steel Path: Saturn",
@@ -106947,7 +108465,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Sedna.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-sedna.png",
     "masterable": false,
     "name": "The Steel Path: Sedna",
@@ -106958,7 +108475,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: The Zariman",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-the-zariman.png",
     "masterable": false,
     "name": "The Steel Path: The Zariman",
@@ -106969,7 +108485,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Uranus.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-uranus.png",
     "masterable": false,
     "name": "The Steel Path: Uranus",
@@ -106980,7 +108495,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Venus.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-venus.png",
     "masterable": false,
     "name": "The Steel Path: Venus",
@@ -106991,7 +108505,6 @@
   {
     "category": "Skins",
     "description": "Awarded for completing The Steel Path: Void.",
-    "excludeFromCodex": true,
     "imageName": "the-steel-path-void.png",
     "masterable": false,
     "name": "The Steel Path: Void",
@@ -107203,7 +108716,6 @@
   {
     "category": "Skins",
     "description": "[PH] Awarded to Tenno who have shown unyielding dedication.",
-    "excludeFromCodex": true,
     "imageName": "thousand-days.png",
     "masterable": false,
     "name": "Thousand Days",
@@ -109646,7 +111158,6 @@
   {
     "category": "Skins",
     "description": "Only the True Master may use this Emote.",
-    "excludeFromCodex": true,
     "imageName": "true-master.png",
     "masterable": false,
     "name": "True Master",
@@ -117573,7 +119084,6 @@
         "type": "Necramech Seismic Wave"
       }
     ],
-    "excludeFromCodex": true,
     "imageName": "wave.png",
     "masterable": false,
     "name": "Wave",
@@ -119051,7 +120561,6 @@
   {
     "category": "Skins",
     "description": "Summon the pack.",
-    "excludeFromCodex": true,
     "imageName": "wolf-howl.png",
     "masterable": false,
     "name": "Wolf Howl",
@@ -119088,7 +120597,6 @@
   {
     "category": "Skins",
     "description": "By this greeting, one packmate shall know another.",
-    "excludeFromCodex": true,
     "imageName": "wolf-salute.png",
     "masterable": false,
     "name": "Wolf Salute",
