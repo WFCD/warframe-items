@@ -3526,7 +3526,7 @@
         "damage": { "radiation": 208 }
       },
       {
-        "name": "Beam AoE",
+        "name": "Secondary Fire AoE",
         "speed": 5,
         "crit_chance": 34,
         "crit_mult": 3,
@@ -5855,7 +5855,7 @@
       "name": "Update 6.0",
       "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_6.0",
       "aliases": ["6.0", "6", "Update 6"],
-      "parent": "0.60",
+      "parent": "6.0",
       "date": "2013-01-29"
     },
     "isPrime": false,
@@ -9569,7 +9569,7 @@
       "name": "Hotfix 6.3.1",
       "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Hotfix_6.3.1",
       "aliases": ["6.3.1"],
-      "parent": "0.60",
+      "parent": "6.0",
       "date": "2013-02-15"
     },
     "isPrime": false,
@@ -21792,7 +21792,7 @@
       "name": "Update 5.2",
       "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_5.2",
       "aliases": ["5.2"],
-      "parent": "0.50",
+      "parent": "5.0",
       "date": "2013-01-04"
     },
     "isPrime": false,
@@ -26404,7 +26404,7 @@
         "crit_mult": 2.3,
         "status_chance": 21,
         "shot_type": "Hit-Scan",
-        "falloff": { "start": 25, "end": 40, "reduction": 0 },
+        "falloff": { "start": 25, "end": 40, "reduction": 0.4805 },
         "damage": { "impact": 57.75, "slash": 9.63, "puncture": 9.63 }
       }
     ],
@@ -26456,11 +26456,11 @@
     "fireRate": 2.5000002,
     "imageName": "kuva-sobek.png",
     "introduced": {
-      "name": "Update 35.5",
-      "url": "https://warframe.fandom.com/wiki/Update_35%23Update_35.5",
-      "aliases": ["35.5"],
+      "name": "Update 35.6",
+      "url": "https://warframe.fandom.com/wiki/Update_35%23Update_35.6",
+      "aliases": ["35.6"],
       "parent": "35.0",
-      "date": "2024-03-27"
+      "date": "2024-05-15"
     },
     "isPrime": false,
     "magazineSize": 20,
@@ -26473,7 +26473,7 @@
     "omegaAttenuation": 0.5,
     "procChance": 0.20999998,
     "productCategory": "LongGuns",
-    "releaseDate": "2024-03-27",
+    "releaseDate": "2024-05-15",
     "reloadTime": 2.0999999,
     "skipBuildTimePrice": 0,
     "slot": 1,
@@ -39293,14 +39293,6 @@
         "damage": { "electricity": 10 }
       },
       {
-        "name": "Cube (shot by player)",
-        "speed": 4,
-        "crit_chance": 5,
-        "crit_mult": 1.5,
-        "status_chance": 26,
-        "damage": { "blast": 600 }
-      },
-      {
         "name": "Cube (direct hit)",
         "speed": 4,
         "crit_chance": 5,
@@ -39319,6 +39311,14 @@
         "status_chance": 26,
         "shot_type": "AoE",
         "damage": { "blast": 150 }
+      },
+      {
+        "name": "Cube (shot by player)",
+        "speed": 4,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 26,
+        "damage": { "blast": 600 }
       }
     ],
     "bpCost": 15000,
@@ -39746,14 +39746,6 @@
         "damage": { "electricity": 13 }
       },
       {
-        "name": "Cube (shot by player)",
-        "speed": 4,
-        "crit_chance": 5,
-        "crit_mult": 1.5,
-        "status_chance": 26,
-        "damage": { "blast": 600 }
-      },
-      {
         "name": "Cube (direct hit)",
         "speed": 4,
         "crit_chance": 5,
@@ -39772,6 +39764,14 @@
         "status_chance": 26,
         "shot_type": "AoE",
         "damage": { "blast": 150 }
+      },
+      {
+        "name": "Cube (shot by player)",
+        "speed": 4,
+        "crit_chance": 5,
+        "crit_mult": 1.5,
+        "status_chance": 26,
+        "damage": { "blast": 600 }
       }
     ],
     "category": "Primary",
@@ -50802,11 +50802,11 @@
     "fireRate": 12.000001,
     "imageName": "tenet-glaxion.png",
     "introduced": {
-      "name": "Update 35.5",
-      "url": "https://warframe.fandom.com/wiki/Update_35%23Update_35.5",
-      "aliases": ["35.5"],
+      "name": "Update 35.6",
+      "url": "https://warframe.fandom.com/wiki/Update_35%23Update_35.6",
+      "aliases": ["35.6"],
       "parent": "35.0",
-      "date": "2024-03-27"
+      "date": "2024-05-15"
     },
     "isPrime": false,
     "magazineSize": 90,
@@ -50819,7 +50819,7 @@
     "omegaAttenuation": 0.5,
     "procChance": 0.39999998,
     "productCategory": "LongGuns",
-    "releaseDate": "2024-03-27",
+    "releaseDate": "2024-05-15",
     "reloadTime": 2,
     "skipBuildTimePrice": 0,
     "slot": 1,

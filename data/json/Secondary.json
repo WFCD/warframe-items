@@ -287,17 +287,7 @@
         "damage": { "impact": 4.5, "slash": 2.7, "puncture": 1.8 }
       },
       {
-        "name": "Mid-Flight Detonation",
-        "speed": 2,
-        "crit_chance": 37,
-        "crit_mult": 2,
-        "status_chance": 19,
-        "shot_type": "AoE",
-        "falloff": { "start": 0, "end": 9, "reduction": 0.7 },
-        "damage": { "blast": 797 }
-      },
-      {
-        "name": "Embedded Detonation",
+        "name": "Detonation",
         "speed": 2,
         "crit_chance": 37,
         "crit_mult": 2,
@@ -738,7 +728,7 @@
       "name": "Update 5.3",
       "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_5.3",
       "aliases": ["5.3"],
-      "parent": "0.50",
+      "parent": "5.0",
       "date": "2013-01-10"
     },
     "isPrime": false,
@@ -2010,7 +2000,7 @@
       "name": "Update 6.0",
       "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_6.0",
       "aliases": ["6.0", "6", "Update 6"],
-      "parent": "0.60",
+      "parent": "6.0",
       "date": "2013-01-29"
     },
     "isPrime": false,
@@ -6594,7 +6584,7 @@
           "name": "Update 6.0",
           "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_6.0",
           "aliases": ["6.0", "6", "Update 6"],
-          "parent": "0.60",
+          "parent": "6.0",
           "date": "2013-01-29"
         },
         "releaseDate": "2013-01-29",
@@ -6682,13 +6672,14 @@
             "status_chance": 16,
             "damage": { "impact": 18, "slash": 84, "puncture": 18 },
             "slide": "240",
-            "slam": { "damage": "240.00", "radial": { "damage": "120.00", "radius": 8 } }
+            "slam": { "damage": "240.00", "radial": { "damage": "0.00", "radius": 8 } }
           }
         ],
         "marketCost": 130,
         "bpCost": 25000,
         "tags": ["Tenno"],
         "stancePolarity": "naramon",
+        "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/f/f8/DualSkana.png/revision/latest?cb=20220409170219",
         "wikiaUrl": "https://warframe.fandom.com/wiki/Dual_Skana",
         "disposition": 5,
         "introduced": {
@@ -26833,7 +26824,7 @@
       "name": "Update 6.3",
       "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_6.3",
       "aliases": ["6.3"],
-      "parent": "0.60",
+      "parent": "6.0",
       "date": "2013-02-14"
     },
     "isPrime": false,
@@ -27123,7 +27114,7 @@
           "name": "Update 6.3",
           "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_6.3",
           "aliases": ["6.3"],
-          "parent": "0.60",
+          "parent": "6.0",
           "date": "2013-02-14"
         },
         "releaseDate": "2013-02-14",
@@ -27985,8 +27976,8 @@
         "crit_mult": 1.9,
         "status_chance": 33,
         "shot_type": "Projectile",
-        "shot_speed": 500,
-        "flight": 500,
+        "shot_speed": 200,
+        "flight": 200,
         "damage": { "impact": 26.2, "slash": 36.7, "puncture": 68.1 }
       },
       {
@@ -28733,7 +28724,7 @@
       "name": "Update 5.0",
       "url": "https://warframe.fandom.com/wiki/Closed_Beta_Updates%23Update_5.0",
       "aliases": ["5", "5.0", "Update 5.0"],
-      "parent": "0.0",
+      "parent": "5.0",
       "date": "2012-12-18"
     },
     "isPrime": true,
@@ -32576,7 +32567,7 @@
         "speed": 0.25,
         "crit_chance": 38,
         "crit_mult": 3.2,
-        "status_chance": 22,
+        "status_chance": 26,
         "shot_type": "Hit-Scan",
         "damage": { "heat": 2200 }
       },
@@ -32585,7 +32576,7 @@
         "speed": 0.25,
         "crit_chance": 38,
         "crit_mult": 3.2,
-        "status_chance": 22,
+        "status_chance": 26,
         "shot_type": "AoE",
         "falloff": { "start": 0, "end": 3, "reduction": 0.3 },
         "damage": { "heat": 1100 }
@@ -35621,8 +35612,8 @@
         "crit_mult": 1.5,
         "status_chance": 13,
         "shot_type": "Projectile",
-        "shot_speed": 500,
-        "flight": 500,
+        "shot_speed": 200,
+        "flight": 200,
         "damage": { "impact": 33.67, "slash": 33.67, "puncture": 33.67 }
       }
     ],
@@ -39396,23 +39387,14 @@
     "accuracy": 100,
     "attacks": [
       {
-        "name": "Direct Hit",
-        "speed": 3.33,
-        "crit_chance": 22,
-        "crit_mult": 2,
-        "status_chance": 26,
-        "shot_type": "Projectile",
-        "shot_speed": 60,
-        "flight": 60,
-        "damage": {}
-      },
-      {
         "name": "Mid-Flight Detonation",
         "speed": 3.33,
         "crit_chance": 22,
         "crit_mult": 2,
         "status_chance": 26,
         "shot_type": "AoE",
+        "shot_speed": 60,
+        "flight": 60,
         "falloff": { "start": 0, "end": 4, "reduction": 0.5 },
         "damage": { "blast": 120 }
       },
@@ -39423,6 +39405,8 @@
         "crit_mult": 2,
         "status_chance": 10,
         "shot_type": "AoE",
+        "shot_speed": 60,
+        "flight": 60,
         "falloff": { "start": 0, "end": 4, "reduction": 0.5 },
         "damage": { "blast": 250 }
       }
@@ -40488,7 +40472,7 @@
         "shot_type": "Projectile",
         "shot_speed": 100,
         "flight": 100,
-        "damage": { "impact": 100 }
+        "damage": { "impact": 1000 }
       },
       {
         "name": "Alt-Fire AoE",
@@ -40498,7 +40482,7 @@
         "status_chance": 20,
         "shot_type": "AoE",
         "falloff": { "start": 0, "end": 6, "reduction": 0.4 },
-        "damage": { "radiation": 500 }
+        "damage": { "radiation": 1000 }
       }
     ],
     "buildPrice": 10000,
