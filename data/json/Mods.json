@@ -4929,7 +4929,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -4975,9 +4975,9 @@
         ]
       }
     ],
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "archgun-riven-mod.png",
     "introduced": {
       "name": "Update 24.8",
@@ -7185,32 +7185,32 @@
     "levelStats": [
       {
         "stats": [
-          "Damage dealt by Operator or Drifter grants 10% damage and 5% Void damage to your Companion's attacks for 10s. Companion Void damage adds +5% Amp and Energy Efficiency to Operator or Drifter for 5s."
+          "Damage dealt by Operator or Drifter grants 10% damage and 5% <DT_RADIANT>Void Damage to your Companion's attacks for 10s. Companion Void Damage adds +5% Amp and Energy Efficiency to Operator or Drifter for 5s."
         ]
       },
       {
         "stats": [
-          "Damage dealt by Operator or Drifter grants 20% damage and 10% Void damage to your Companion's attacks for 10s. Companion Void damage adds +10% Amp and Energy Efficiency to Operator or Drifter for 5s."
+          "Damage dealt by Operator or Drifter grants 20% damage and 10% <DT_RADIANT>Void Damage to your Companion's attacks for 10s. Companion Void Damage adds +10% Amp and Energy Efficiency to Operator or Drifter for 5s."
         ]
       },
       {
         "stats": [
-          "Damage dealt by Operator or Drifter grants 30% damage and 15% Void damage to your Companion's attacks for 10s. Companion Void damage adds +15% Amp and Energy Efficiency to Operator or Drifter for 5s."
+          "Damage dealt by Operator or Drifter grants 30% damage and 15% <DT_RADIANT>Void Damage to your Companion's attacks for 10s. Companion Void Damage adds +15% Amp and Energy Efficiency to Operator or Drifter for 5s."
         ]
       },
       {
         "stats": [
-          "Damage dealt by Operator or Drifter grants 40% damage and 20% Void damage to your Companion's attacks for 10s. Companion Void damage adds +20% Amp and Energy Efficiency to Operator or Drifter for 5s."
+          "Damage dealt by Operator or Drifter grants 40% damage and 20% <DT_RADIANT>Void Damage to your Companion's attacks for 10s. Companion Void Damage adds +20% Amp and Energy Efficiency to Operator or Drifter for 5s."
         ]
       },
       {
         "stats": [
-          "Damage dealt by Operator or Drifter grants 50% damage and 25% Void damage to your Companion's attacks for 10s. Companion Void damage adds +25% Amp and Energy Efficiency to Operator or Drifter for 5s."
+          "Damage dealt by Operator or Drifter grants 50% damage and 25% <DT_RADIANT>Void Damage to your Companion's attacks for 10s. Companion Void Damage adds +25% Amp and Energy Efficiency to Operator or Drifter for 5s."
         ]
       },
       {
         "stats": [
-          "Damage dealt by Operator or Drifter grants 60% damage and 30% Void damage to your Companion's attacks for 10s. Companion Void damage adds +30% Amp and Energy Efficiency to Operator or Drifter for 5s."
+          "Damage dealt by Operator or Drifter grants 60% damage and 30% <DT_RADIANT>Void Damage to your Companion's attacks for 10s. Companion Void Damage adds +30% Amp and Energy Efficiency to Operator or Drifter for 5s."
         ]
       }
     ],
@@ -8678,6 +8678,15 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Styanax",
+    "drops": [
+      {
+        "chance": 1,
+        "location": "Arbiters of Hexis, Maxim",
+        "rarity": "Common",
+        "type": "Axios Javelineers (Styanax)"
+      },
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Axios Javelineers (Styanax)" }
+    ],
     "fusionLimit": 3,
     "imageName": "axios-javelineers.jpg",
     "introduced": {
@@ -10458,10 +10467,10 @@
     "isAugment": true,
     "isPrime": false,
     "levelStats": [
-      { "stats": ["Frost gains 130% Critical Chance and 130% Critical Damage against frozen enemies."] },
-      { "stats": ["Frost gains 150% Critical Chance and 150% Critical Damage against frozen enemies."] },
-      { "stats": ["Frost gains 175% Critical Chance and 175% Critical Damage against frozen enemies."] },
-      { "stats": ["Frost gains 200% Critical Chance and 200% Critical Damage against frozen enemies."] }
+      { "stats": ["Frost gains +|CHANCE|% Critical Chance and +|DAMAGE|% Critical Damage against frozen enemies."] },
+      { "stats": ["Frost gains +|CHANCE|% Critical Chance and +|DAMAGE|% Critical Damage against frozen enemies."] },
+      { "stats": ["Frost gains +|CHANCE|% Critical Chance and +|DAMAGE|% Critical Damage against frozen enemies."] },
+      { "stats": ["Frost gains +|CHANCE|% Critical Chance and +|DAMAGE|% Critical Damage against frozen enemies."] }
     ],
     "masterable": false,
     "name": "Biting Frost",
@@ -11114,22 +11123,22 @@
     "levelStats": [
       {
         "stats": [
-          "Pillage Augment: Enemies affected by Haven will be set ablaze for 50 <DT_FIRE>Heat damage and restore 20 additional <SHIELD>Shields to Hildryn."
+          "Pillage Augment: Enemies affected by Haven will be set ablaze for 50 <DT_FIRE>Heat Damage and restore 20 additional <SHIELD>Shields to Hildryn."
         ]
       },
       {
         "stats": [
-          "Pillage Augment: Enemies affected by Haven will be set ablaze for 100 <DT_FIRE>Heat damage and restore 30 additional <SHIELD>Shields to Hildryn."
+          "Pillage Augment: Enemies affected by Haven will be set ablaze for 100 <DT_FIRE>Heat Damage and restore 30 additional <SHIELD>Shields to Hildryn."
         ]
       },
       {
         "stats": [
-          "Pillage Augment: Enemies affected by Haven will be set ablaze for 150 <DT_FIRE>Heat damage and restore 40 additional <SHIELD>Shields to Hildryn."
+          "Pillage Augment: Enemies affected by Haven will be set ablaze for 150 <DT_FIRE>Heat Damage and restore 40 additional <SHIELD>Shields to Hildryn."
         ]
       },
       {
         "stats": [
-          "Pillage Augment: Enemies affected by Haven will be set ablaze for 200 <DT_FIRE>Heat damage and restore 50 additional <SHIELD>Shields to Hildryn."
+          "Pillage Augment: Enemies affected by Haven will be set ablaze for 200 <DT_FIRE>Heat Damage and restore 50 additional <SHIELD>Shields to Hildryn."
         ]
       }
     ],
@@ -11311,22 +11320,22 @@
     "levelStats": [
       {
         "stats": [
-          "Seeking Talons Augment: Tap to perform a 6m AoE around Garuda. Garuda's Talons gain 25% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status."
+          "Seeking Talons Augment: Tap to perform a 6m AoE around Garuda. Garuda's Talons gain 25% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Slash Status."
         ]
       },
       {
         "stats": [
-          "Seeking Talons Augment: Tap to perform a 7m AoE around Garuda. Garuda's Talons gain 50% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status."
+          "Seeking Talons Augment: Tap to perform a 7m AoE around Garuda. Garuda's Talons gain 50% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Slash Status."
         ]
       },
       {
         "stats": [
-          "Seeking Talons Augment: Tap to perform a 8m AoE around Garuda. Garuda's Talons gain 75% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status."
+          "Seeking Talons Augment: Tap to perform a 8m AoE around Garuda. Garuda's Talons gain 75% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Slash Status."
         ]
       },
       {
         "stats": [
-          "Seeking Talons Augment: Tap to perform a 9m AoE around Garuda. Garuda's Talons gain 100% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Bleed Status."
+          "Seeking Talons Augment: Tap to perform a 9m AoE around Garuda. Garuda's Talons gain 100% additional Combo Count Chance when hitting targets affected by <DT_SLASH>Slash Status."
         ]
       }
     ],
@@ -13779,6 +13788,11 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Pistol",
+    "drops": [
+      { "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Semi-Pistol Cannonade" },
+      { "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Semi-Rifle Cannonade" },
+      { "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Shotgun Cannonade" }
+    ],
     "excludeFromCodex": true,
     "fusionLimit": 3,
     "imageName": "cannonade.jpg",
@@ -15539,10 +15553,10 @@
     "isAugment": true,
     "isPrime": false,
     "levelStats": [
-      { "stats": ["Snow Globe Augment: Enemies that enter have a 30% chance to become frozen solid for 4s."] },
-      { "stats": ["Snow Globe Augment: Enemies that enter have a 35% chance to become frozen solid for 5s."] },
-      { "stats": ["Snow Globe Augment: Enemies that enter have a 40% chance to become frozen solid for 6s."] },
-      { "stats": ["Snow Globe Augment: Enemies that enter have a 50% chance to become frozen solid for 8s."] }
+      { "stats": ["Snow Globe Augment: Enemies that enter have a 30% chance to become frozen solid for 10s."] },
+      { "stats": ["Snow Globe Augment: Enemies that enter have a 35% chance to become frozen solid for 10s."] },
+      { "stats": ["Snow Globe Augment: Enemies that enter have a 40% chance to become frozen solid for 10s."] },
+      { "stats": ["Snow Globe Augment: Enemies that enter have a 50% chance to become frozen solid for 10s."] }
     ],
     "masterable": false,
     "name": "Chilling Globe",
@@ -18480,7 +18494,7 @@
       { "stats": ["+17% Speed"] },
       { "stats": ["+21.3% Speed"] },
       { "stats": ["+25.5% Speed"] },
-      { "stats": ["+29.8% Speed"] },
+      { "stats": ["+29.7% Speed"] },
       { "stats": ["+34% Speed"] },
       { "stats": ["+38.3% Speed"] }
     ],
@@ -22220,6 +22234,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Loki",
+    "drops": [
+      { "chance": 1, "location": "Arbiters of Hexis, Maxim", "rarity": "Common", "type": "Damage Decoy (Loki)" },
+      { "chance": 1, "location": "Red Veil, Exalted", "rarity": "Common", "type": "Damage Decoy (Loki)" }
+    ],
     "fusionLimit": 3,
     "imageName": "damage-decoy.jpg",
     "introduced": {
@@ -22323,6 +22341,55 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Pistol/Event/AkbroncoViralDamageMod",
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e4/Damzav-VatiMod.png/revision/latest?cb=20200827045851",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Damzav-Vati"
+  },
+  {
+    "baseDrain": 6,
+    "category": "Mods",
+    "compatName": "Sevagoth",
+    "fusionLimit": 3,
+    "imageName": "dark-propagation.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isAugment": true,
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "Sow Augment: Enemies killed while inflicted with Sow spread its effect in a 9m radius. Shadow's Death Harvest also inflicts Sow."
+        ]
+      },
+      {
+        "stats": [
+          "Sow Augment: Enemies killed while inflicted with Sow spread its effect in a 11m radius. Shadow's Death Harvest also inflicts Sow."
+        ]
+      },
+      {
+        "stats": [
+          "Sow Augment: Enemies killed while inflicted with Sow spread its effect in a 13m radius. Shadow's Death Harvest also inflicts Sow."
+        ]
+      },
+      {
+        "stats": [
+          "Sow Augment: Enemies killed while inflicted with Sow spread its effect in a 15m radius. Shadow's Death Harvest also inflicts Sow."
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Dark Propagation",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "transmutable": false,
+    "type": "Warframe Mod",
+    "uniqueName": "/Lotus/Powersuits/Wraith/WraithSowAugmentCard",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/06/DarkPropagationMod.png/revision/latest?cb=20240618173103",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Dark_Propagation"
   },
   {
     "baseDrain": -2,
@@ -25111,6 +25178,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Nezha",
+    "drops": [
+      { "chance": 1, "location": "Cephalon Suda, Genius", "rarity": "Common", "type": "Divine Retribution (Nezha)" },
+      { "chance": 1, "location": "Steel Meridian, General", "rarity": "Common", "type": "Divine Retribution (Nezha)" }
+    ],
     "fusionLimit": 3,
     "imageName": "divine-retribution.jpg",
     "introduced": {
@@ -25124,22 +25195,22 @@
     "levelStats": [
       {
         "stats": [
-          "Divine Spears Augment: Status Effects on a speared enemy spread to all speared enemies. Spear explosions apply 0.75x Status Damage. Base Radius reduced to 14m."
+          "Divine Spears Augment: Status Effects spread to all speared enemies. Spear explosions scale by 0.75x of remaining <DT_SLASH>Slash, <DT_POISON>Toxin and <DT_FIRE>Heat Status Effects. Base Radius is 14m."
         ]
       },
       {
         "stats": [
-          "Divine Spears Augment: Status Effects on a speared enemy spread to all speared enemies. Spear explosions apply 1x Status Damage. Base Radius reduced to 14m."
+          "Divine Spears Augment: Status Effects spread to all speared enemies. Spear explosions scale by 1x of remaining <DT_SLASH>Slash, <DT_POISON>Toxin and <DT_FIRE>Heat Status Effects. Base Radius is 14m."
         ]
       },
       {
         "stats": [
-          "Divine Spears Augment: Status Effects on a speared enemy spread to all speared enemies. Spear explosions apply 1.25x Status Damage. Base Radius reduced to 14m."
+          "Divine Spears Augment: Status Effects spread to all speared enemies. Spear explosions scale by 1.25x of remaining <DT_SLASH>Slash, <DT_POISON>Toxin and <DT_FIRE>Heat Status Effects. Base Radius is 14m."
         ]
       },
       {
         "stats": [
-          "Divine Spears Augment: Status Effects on a speared enemy spread to all speared enemies. Spear explosions apply 1.5x Status Damage. Base Radius reduced to 14m."
+          "Divine Spears Augment: Status Effects spread to all speared enemies. Spear explosions scale by 1.5x of remaining <DT_SLASH>Slash, <DT_POISON>Toxin and <DT_FIRE>Heat Status Effects. Base Radius is 14m."
         ]
       }
     ],
@@ -26592,6 +26663,15 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Baruuk",
+    "drops": [
+      {
+        "chance": 1,
+        "location": "Arbiters of Hexis, Maxim",
+        "rarity": "Common",
+        "type": "Elusive Retribution (Baruuk)"
+      },
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Elusive Retribution (Baruuk)" }
+    ],
     "fusionLimit": 3,
     "imageName": "elusive-retribution.jpg",
     "introduced": {
@@ -40173,7 +40253,9 @@
         "type": "Arcane Guardian"
       },
       { "chance": 0.1192, "location": "Eidolon Gantulyst (Capture)", "rarity": "Uncommon", "type": "Arcane Guardian" },
-      { "chance": 0.1568, "location": "Eidolon Gantulyst", "rarity": "Uncommon", "type": "Arcane Guardian" }
+      { "chance": 0.1568, "location": "Eidolon Gantulyst", "rarity": "Uncommon", "type": "Arcane Guardian" },
+      { "chance": 1, "location": "Cephalon Suda, Genius", "rarity": "Common", "type": "Guardian Armor (Chroma)" },
+      { "chance": 1, "location": "The Perrin Sequence, Partner", "rarity": "Common", "type": "Guardian Armor (Chroma)" }
     ],
     "fusionLimit": 5,
     "imageName": "guardian.jpg",
@@ -40523,6 +40605,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Chroma",
+    "drops": [
+      { "chance": 1, "location": "Cephalon Suda, Genius", "rarity": "Common", "type": "Guardian Armor (Chroma)" },
+      { "chance": 1, "location": "The Perrin Sequence, Partner", "rarity": "Common", "type": "Guardian Armor (Chroma)" }
+    ],
     "fusionLimit": 3,
     "imageName": "guardian-armor.jpg",
     "introduced": {
@@ -42049,32 +42135,32 @@
     "levelStats": [
       {
         "stats": [
-          "Engages enemies within 10m with melee attacks, dealing 15 <DT_IMPACT> Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
+          "Engages enemies within 10m with melee attacks, dealing 15 <DT_IMPACT>Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
         ]
       },
       {
         "stats": [
-          "Engages enemies within 10m with melee attacks, dealing 30 <DT_IMPACT> Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
+          "Engages enemies within 10m with melee attacks, dealing 30 <DT_IMPACT>Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
         ]
       },
       {
         "stats": [
-          "Engages enemies within 10m with melee attacks, dealing 45 <DT_IMPACT> Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
+          "Engages enemies within 10m with melee attacks, dealing 45 <DT_IMPACT>Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
         ]
       },
       {
         "stats": [
-          "Engages enemies within 10m with melee attacks, dealing 60 <DT_IMPACT> Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
+          "Engages enemies within 10m with melee attacks, dealing 60 <DT_IMPACT>Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
         ]
       },
       {
         "stats": [
-          "Engages enemies within 10m with melee attacks, dealing 75 <DT_IMPACT> Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
+          "Engages enemies within 10m with melee attacks, dealing 75 <DT_IMPACT>Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
         ]
       },
       {
         "stats": [
-          "Engages enemies within 10m with melee attacks, dealing 90 <DT_IMPACT> Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
+          "Engages enemies within 10m with melee attacks, dealing 90 <DT_IMPACT>Impact Damage. Melee attacks are enhanced by Mods equipped in the Moa's weapon."
         ]
       }
     ],
@@ -42714,15 +42800,25 @@
     "isPrime": false,
     "levelStats": [
       {
-        "stats": ["Fire Blast Augment: Each enemy hit heals Ember by 10 to 20 depending on current Immolation level."]
+        "stats": [
+          "Fire Blast Augment: Each enemy hit heals by 10 to 20 depending on current Immolation level. With Ember, over healing grants you Overguard."
+        ]
       },
       {
-        "stats": ["Fire Blast Augment: Each enemy hit heals Ember by 15 to 30 depending on current Immolation level."]
+        "stats": [
+          "Fire Blast Augment: Each enemy hit heals by 15 to 30 depending on current Immolation level. With Ember, over healing grants you Overguard."
+        ]
       },
       {
-        "stats": ["Fire Blast Augment: Each enemy hit heals Ember by 20 to 40 depending on current Immolation level."]
+        "stats": [
+          "Fire Blast Augment: Each enemy hit heals by 20 to 40 depending on current Immolation level. With Ember, over healing grants you Overguard."
+        ]
       },
-      { "stats": ["Fire Blast Augment: Each enemy hit heals Ember by 25 to 50 depending on current Immolation level."] }
+      {
+        "stats": [
+          "Fire Blast Augment: Each enemy hit heals by 25 to 50 depending on current Immolation level. With Ember, over healing grants you Overguard."
+        ]
+      }
     ],
     "masterable": false,
     "name": "Healing Flame",
@@ -42743,7 +42839,7 @@
     "transmutable": false,
     "type": "Warframe Mod",
     "uniqueName": "/Lotus/Powersuits/Ember/FireBlastAugmentCard",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/5/5f/HealingFlameMod.png/revision/latest?cb=20191101055912",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/5/5f/HealingFlameMod.png/revision/latest?cb=20240618173618",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Healing_Flame"
   },
   {
@@ -45436,32 +45532,32 @@
     "levelStats": [
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 10% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 10% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 15% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 15% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 20% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 20% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 25% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 25% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 30% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 30% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 35% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 35% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       }
     ],
@@ -49477,22 +49573,22 @@
     "levelStats": [
       {
         "stats": [
-          "Ice Wave Augment: Leaves a frozen trail for 6s that slows down enemies that come into contact with it."
+          "Ice Wave Augment: Create a frozen trail for 6 seconds. Enemies that touch it are inflicted with <DT_FREEZE>Cold Status every second."
         ]
       },
       {
         "stats": [
-          "Ice Wave Augment: Leaves a frozen trail for 8s that slows down enemies that come into contact with it."
+          "Ice Wave Augment: Create a frozen trail for 8 seconds. Enemies that touch it are inflicted with <DT_FREEZE>Cold Status every second."
         ]
       },
       {
         "stats": [
-          "Ice Wave Augment: Leaves a frozen trail for 10s that slows down enemies that come into contact with it."
+          "Ice Wave Augment: Create a frozen trail for 10 seconds. Enemies that touch it are inflicted with <DT_FREEZE>Cold Status every second."
         ]
       },
       {
         "stats": [
-          "Ice Wave Augment: Leaves a frozen trail for 12s that slows down enemies that come into contact with it."
+          "Ice Wave Augment: Create a frozen trail for 12 seconds. Enemies that touch it are inflicted with <DT_FREEZE>Cold Status every second."
         ]
       }
     ],
@@ -49531,7 +49627,7 @@
     "transmutable": false,
     "type": "Warframe Mod",
     "uniqueName": "/Lotus/Powersuits/Frost/IceSpikeAugmentCard",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/f/f4/IceWaveImpedanceMod.png/revision/latest?cb=20230116090104",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/f/f4/IceWaveImpedanceMod.png/revision/latest?cb=20240618173615",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Ice_Wave_Impedance"
   },
   {
@@ -52166,32 +52262,32 @@
     "levelStats": [
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 10% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 10% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 15% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 15% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 20% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 20% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 25% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 25% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 30% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 30% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       },
       {
         "stats": [
-          " <DT_IMPACT> Impact Status Effects have 35% chance to apply a <DT_SLASH> Slash Status Effect (x2 when Fire Rate is below 2.5)"
+          " <DT_IMPACT>Impact Status Effects have 35% chance to apply a <DT_SLASH>Slash Status Effect (x2 when Fire Rate is below 2.5)"
         ]
       }
     ],
@@ -52221,6 +52317,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Styanax",
+    "drops": [
+      { "chance": 1, "location": "Arbiters of Hexis, Maxim", "rarity": "Common", "type": "Intrepid Stand (Styanax)" },
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Intrepid Stand (Styanax)" }
+    ],
     "fusionLimit": 3,
     "imageName": "intrepid-stand.jpg",
     "introduced": {
@@ -52992,10 +53092,10 @@
     "isAugment": true,
     "isPrime": false,
     "levelStats": [
-      { "stats": ["Radial Disarm Augment: Enemies will be affected by Confusion Status for 4s"] },
-      { "stats": ["Radial Disarm Augment: Enemies will be affected by Confusion Status for 5s"] },
-      { "stats": ["Radial Disarm Augment: Enemies will be affected by Confusion Status for 7s"] },
-      { "stats": ["Radial Disarm Augment: Enemies will be affected by Confusion Status for 9s"] }
+      { "stats": ["Radial Disarm Augment: Enemies will be affected by <DT_RADIATION>Radiation Status for 4s"] },
+      { "stats": ["Radial Disarm Augment: Enemies will be affected by <DT_RADIATION>Radiation Status for 5s"] },
+      { "stats": ["Radial Disarm Augment: Enemies will be affected by <DT_RADIATION>Radiation Status for 7s"] },
+      { "stats": ["Radial Disarm Augment: Enemies will be affected by <DT_RADIATION>Radiation Status for 9s"] }
     ],
     "masterable": false,
     "name": "Irradiating Disarm",
@@ -54359,7 +54459,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -54425,7 +54525,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -54519,7 +54619,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -54664,7 +54764,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -54842,7 +54942,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -55063,7 +55163,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -55296,7 +55396,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -55553,7 +55653,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -55841,7 +55941,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -56133,7 +56233,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -56429,7 +56529,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -56724,7 +56824,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -56802,7 +56902,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -57097,7 +57197,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -57183,7 +57283,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -57478,7 +57578,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -57587,7 +57687,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -57882,7 +57982,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -58019,7 +58119,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -58314,7 +58414,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -58460,7 +58560,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -58755,7 +58855,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -58908,7 +59008,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -59203,7 +59303,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -59371,7 +59471,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -59666,7 +59766,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -59844,7 +59944,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -60139,7 +60239,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -60324,7 +60424,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -60619,7 +60719,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -60787,7 +60887,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -60816,7 +60916,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -61111,7 +61211,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -61279,7 +61379,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -61333,7 +61433,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -61628,7 +61728,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -61796,7 +61896,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -61866,7 +61966,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -62161,7 +62261,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -62329,7 +62429,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -62407,7 +62507,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -62702,7 +62802,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -62870,7 +62970,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -62949,7 +63049,7 @@
         ]
       }
     ],
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "drops": [
       {
@@ -62968,7 +63068,7 @@
         "type": "Kitgun Riven Mod"
       }
     ],
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "kitgun-riven-mod.png",
     "introduced": {
       "name": "Update 24.0",
@@ -63237,22 +63337,22 @@
     "levelStats": [
       {
         "stats": [
-          "Larva Augment: Reactivate Larva to detonate and deal 300 <DT_POISON>Toxin damage in a 2m radius. This damage stacks for every enemy grabbed by the Larva."
+          "Larva Augment: Reactivate Larva to detonate and deal 300 <DT_POISON>Toxin Damage in a 2m radius. This damage stacks for every enemy grabbed by the Larva."
         ]
       },
       {
         "stats": [
-          "Larva Augment: Reactivate Larva to detonate and deal 400 <DT_POISON>Toxin damage in a 4m radius. This damage stacks for every enemy grabbed by the Larva."
+          "Larva Augment: Reactivate Larva to detonate and deal 400 <DT_POISON>Toxin Damage in a 4m radius. This damage stacks for every enemy grabbed by the Larva."
         ]
       },
       {
         "stats": [
-          "Larva Augment: Reactivate Larva to detonate and deal 500 <DT_POISON>Toxin damage in a 6m radius. This damage stacks for every enemy grabbed by the Larva."
+          "Larva Augment: Reactivate Larva to detonate and deal 500 <DT_POISON>Toxin Damage in a 6m radius. This damage stacks for every enemy grabbed by the Larva."
         ]
       },
       {
         "stats": [
-          "Larva Augment: Reactivate Larva to detonate and deal 600 <DT_POISON>Toxin damage in a 8m radius. This damage stacks for every enemy grabbed by the Larva."
+          "Larva Augment: Reactivate Larva to detonate and deal 600 <DT_POISON>Toxin Damage in a 8m radius. This damage stacks for every enemy grabbed by the Larva."
         ]
       }
     ],
@@ -65355,6 +65455,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Yareli",
+    "drops": [
+      { "chance": 1, "location": "Cephalon Suda, Genius", "rarity": "Common", "type": "Loyal Merulina (Yareli)" },
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Loyal Merulina (Yareli)" }
+    ],
     "fusionLimit": 3,
     "imageName": "loyal-merulina.jpg",
     "introduced": {
@@ -68305,13 +68409,13 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Trencher Target", "rarity": "Uncommon", "type": "Mecha Empowered" },
       {
-        "chance": 0.1144,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation B",
         "rarity": "Uncommon",
         "type": "Mecha Empowered"
       },
       {
-        "chance": 0.3937,
+        "chance": 0.3333,
         "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation B",
         "rarity": "Common",
         "type": "Mecha Empowered"
@@ -68355,13 +68459,13 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Trencher Target", "rarity": "Uncommon", "type": "Mecha Overdrive" },
       {
-        "chance": 0.0727,
+        "chance": 0.1176,
         "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation B",
-        "rarity": "Rare",
+        "rarity": "Uncommon",
         "type": "Mecha Overdrive"
       },
       {
-        "chance": 0.2667,
+        "chance": 0.25,
         "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation B",
         "rarity": "Uncommon",
         "type": "Mecha Overdrive"
@@ -68423,13 +68527,13 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Trencher Target", "rarity": "Uncommon", "type": "Mecha Pulse" },
       {
-        "chance": 0.1429,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation B",
         "rarity": "Uncommon",
         "type": "Mecha Pulse"
       },
       {
-        "chance": 0.1429,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation B",
         "rarity": "Uncommon",
         "type": "Mecha Pulse"
@@ -68493,7 +68597,7 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Trencher Target", "rarity": "Uncommon", "type": "Mecha Recharge" },
       {
-        "chance": 0.1111,
+        "chance": 0.1176,
         "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation B",
         "rarity": "Uncommon",
         "type": "Mecha Recharge"
@@ -68683,6 +68787,40 @@
     "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/Events/ProjectNightwatch/SentinelHealthRegenPreceptNightwatchMod",
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/a4/Medi-RayMod.png/revision/latest?cb=20211022120754",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Medi-Ray"
+  },
+  {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "Melee",
+    "drops": [{ "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Melee Elementalist" }],
+    "fusionLimit": 5,
+    "imageName": "melee-elementalist.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isPrime": false,
+    "levelStats": [
+      { "stats": ["+15% Status Damage", "+10% Heavy Attack Wind Up Speed"] },
+      { "stats": ["+30% Status Damage", "+20% Heavy Attack Wind Up Speed"] },
+      { "stats": ["+45% Status Damage", "+30% Heavy Attack Wind Up Speed"] },
+      { "stats": ["+60% Status Damage", "+40% Heavy Attack Wind Up Speed"] },
+      { "stats": ["+75% Status Damage", "+50% Heavy Attack Wind Up Speed"] },
+      { "stats": ["+90% Status Damage", "+60% Heavy Attack Wind Up Speed"] }
+    ],
+    "masterable": false,
+    "name": "Melee Elementalist",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "type": "Melee Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/MeleeStatusDamageDuoMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/8/86/MeleeElementalistMod.png/revision/latest?cb=20240618173101",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Melee_Elementalist"
   },
   {
     "baseDrain": -2,
@@ -69311,7 +69449,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -69377,7 +69515,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -69471,7 +69609,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -69616,7 +69754,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -69794,7 +69932,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -70015,7 +70153,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -70248,7 +70386,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -70505,7 +70643,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -70793,7 +70931,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -71085,7 +71223,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -71381,7 +71519,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -71676,7 +71814,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -71754,7 +71892,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -72049,7 +72187,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -72135,7 +72273,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -72430,7 +72568,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -72539,7 +72677,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -72834,7 +72972,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -72971,7 +73109,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -73266,7 +73404,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -73412,7 +73550,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -73707,7 +73845,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -73860,7 +73998,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -74155,7 +74293,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -74323,7 +74461,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -74618,7 +74756,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -74796,7 +74934,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -75091,7 +75229,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -75276,7 +75414,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -75571,7 +75709,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -75739,7 +75877,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -75768,7 +75906,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -76063,7 +76201,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -76231,7 +76369,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -76285,7 +76423,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -76580,7 +76718,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -76748,7 +76886,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -76818,7 +76956,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -77113,7 +77251,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -77281,7 +77419,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -77359,7 +77497,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -77654,7 +77792,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -77822,7 +77960,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -77901,7 +78039,7 @@
         ]
       }
     ],
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "drops": [
       {
@@ -77925,7 +78063,7 @@
         "type": "Melee Riven Mod"
       }
     ],
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "melee-riven-mod.png",
     "introduced": {
       "name": "Update 21.0",
@@ -78872,7 +79010,7 @@
       { "stats": ["+1.4 Punch Through"] },
       { "stats": ["+1.8 Punch Through"] },
       { "stats": ["+2.1 Punch Through"] },
-      { "stats": ["+2.5 Punch Through"] },
+      { "stats": ["+2.4 Punch Through"] },
       { "stats": ["+2.8 Punch Through"] },
       { "stats": ["+3.1 Punch Through"] },
       { "stats": ["+3.5 Punch Through"] },
@@ -83679,6 +83817,9 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Inaros",
+    "drops": [
+      { "chance": 1, "location": "Arbiters of Hexis, Maxim", "rarity": "Common", "type": "Negation Armor (Inaros)" }
+    ],
     "fusionLimit": 3,
     "imageName": "negation-armor.jpg",
     "introduced": {
@@ -83693,22 +83834,22 @@
     "levelStats": [
       {
         "stats": [
-          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly Slash Proc. Cooldown 60s."
+          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly <DT_SLASH>Slash Status Effect. Cooldown 60s."
         ]
       },
       {
         "stats": [
-          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly Slash Proc. Cooldown 48s."
+          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly <DT_SLASH>Slash Status Effect. Cooldown 48s."
         ]
       },
       {
         "stats": [
-          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly Slash Proc. Cooldown 38s."
+          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly <DT_SLASH>Slash Status Effect. Cooldown 38s."
         ]
       },
       {
         "stats": [
-          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly Slash Proc. Cooldown 30s."
+          "Scarab Shell Augment: When Inaros takes fatal damage, he consumes Scarab Shell to heal with a brief invulnerability that ends with a deadly <DT_SLASH>Slash Status Effect. Cooldown 30s."
         ]
       }
     ],
@@ -87354,6 +87495,15 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Nidus",
+    "drops": [
+      { "chance": 1, "location": "Steel Meridian, General", "rarity": "Common", "type": "Parasitic Vitality (Nidus)" },
+      {
+        "chance": 1,
+        "location": "The Perrin Sequence, Partner",
+        "rarity": "Common",
+        "type": "Parasitic Vitality (Nidus)"
+      }
+    ],
     "fusionLimit": 3,
     "imageName": "parasitic-vitality.jpg",
     "introduced": {
@@ -89256,37 +89406,37 @@
       {
         "stats": [
           "+15% Critical Damage",
-          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per Cold Status affecting them."
+          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per <DT_FREEZE>Cold Status affecting them."
         ]
       },
       {
         "stats": [
           "+30% Critical Damage",
-          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per Cold Status affecting them."
+          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per <DT_FREEZE>Cold Status affecting them."
         ]
       },
       {
         "stats": [
           "+45% Critical Damage",
-          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per Cold Status affecting them."
+          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per <DT_FREEZE>Cold Status affecting them."
         ]
       },
       {
         "stats": [
           "+60% Critical Damage",
-          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per Cold Status affecting them."
+          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per <DT_FREEZE>Cold Status affecting them."
         ]
       },
       {
         "stats": [
           "+75% Critical Damage",
-          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per Cold Status affecting them."
+          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per <DT_FREEZE>Cold Status affecting them."
         ]
       },
       {
         "stats": [
           "+90% Critical Damage",
-          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per Cold Status affecting them."
+          "On Kill or Assist: Slain enemies have a 2% chance to drop an Energy Orb per <DT_FREEZE>Cold Status affecting them."
         ]
       }
     ],
@@ -90715,6 +90865,40 @@
     "wikiaUrl": "https://warframe.fandom.com/wiki/Pistol_Amp"
   },
   {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "Pistol",
+    "drops": [{ "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Pistol Elementalist" }],
+    "fusionLimit": 5,
+    "imageName": "pistol-elementalist.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isPrime": false,
+    "levelStats": [
+      { "stats": ["+15% Status Damage", "+10% Reload Speed"] },
+      { "stats": ["+30% Status Damage", "+20% Reload Speed"] },
+      { "stats": ["+45% Status Damage", "+30% Reload Speed"] },
+      { "stats": ["+60% Status Damage", "+40% Reload Speed"] },
+      { "stats": ["+75% Status Damage", "+50% Reload Speed"] },
+      { "stats": ["+90% Status Damage", "+60% Reload Speed"] }
+    ],
+    "masterable": false,
+    "name": "Pistol Elementalist",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "type": "Secondary Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/PistolStatusDamageDuoMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/ae/PistolElementalistMod.png/revision/latest?cb=20240618173059",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Pistol_Elementalist"
+  },
+  {
     "baseDrain": 2,
     "category": "Mods",
     "compatName": "Pistol",
@@ -91068,7 +91252,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -91134,7 +91318,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -91228,7 +91412,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -91373,7 +91557,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -91551,7 +91735,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -91772,7 +91956,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -92005,7 +92189,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -92262,7 +92446,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -92550,7 +92734,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -92842,7 +93026,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -93138,7 +93322,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -93433,7 +93617,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -93511,7 +93695,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -93806,7 +93990,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -93892,7 +94076,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -94187,7 +94371,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -94296,7 +94480,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -94591,7 +94775,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -94728,7 +94912,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -95023,7 +95207,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -95169,7 +95353,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -95464,7 +95648,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -95617,7 +95801,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -95912,7 +96096,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -96080,7 +96264,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -96375,7 +96559,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -96553,7 +96737,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -96848,7 +97032,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -97033,7 +97217,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -97328,7 +97512,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -97496,7 +97680,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -97525,7 +97709,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -97820,7 +98004,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -97988,7 +98172,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -98042,7 +98226,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -98337,7 +98521,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -98505,7 +98689,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -98575,7 +98759,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -98870,7 +99054,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -99038,7 +99222,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -99116,7 +99300,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -99411,7 +99595,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -99579,7 +99763,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -99658,7 +99842,7 @@
         ]
       }
     ],
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "drops": [
       {
@@ -99677,7 +99861,7 @@
         "type": "Pistol Riven Mod"
       }
     ],
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "pistol-riven-mod.png",
     "introduced": {
       "name": "Update 19.5",
@@ -107009,16 +107193,24 @@
     "isPrime": false,
     "levelStats": [
       {
-        "stats": ["Fire Blast Augment: Allies hit by the expanding ring of fire will be granted 1s of Status Immunity."]
+        "stats": [
+          "Fire Blast Augment: Allies hit by the expanding ring of fire are cured of Status Effects and granted 1s of Status Immunity."
+        ]
       },
       {
-        "stats": ["Fire Blast Augment: Allies hit by the expanding ring of fire will be granted 2s of Status Immunity."]
+        "stats": [
+          "Fire Blast Augment: Allies hit by the expanding ring of fire are cured of Status Effects and granted 2s of Status Immunity."
+        ]
       },
       {
-        "stats": ["Fire Blast Augment: Allies hit by the expanding ring of fire will be granted 3s of Status Immunity."]
+        "stats": [
+          "Fire Blast Augment: Allies hit by the expanding ring of fire are cured of Status Effects and granted 3s of Status Immunity."
+        ]
       },
       {
-        "stats": ["Fire Blast Augment: Allies hit by the expanding ring of fire will be granted 4s of Status Immunity."]
+        "stats": [
+          "Fire Blast Augment: Allies hit by the expanding ring of fire are cured of Status Effects and granted 4s of Status Immunity."
+        ]
       }
     ],
     "masterable": false,
@@ -107030,7 +107222,7 @@
     "transmutable": false,
     "type": "Warframe Mod",
     "uniqueName": "/Lotus/Powersuits/Ember/FireBlastPvPAugmentCard",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/20/PurifyingFlamesMod.png/revision/latest?cb=20200502022455",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/2/20/PurifyingFlamesMod.png/revision/latest?cb=20240618173619",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Purifying_Flames"
   },
   {
@@ -109337,6 +109529,7 @@
     "transmutable": true,
     "type": "Warframe Mod",
     "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarProcTimeMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/f/f1/RapidResilienceMod.png/revision/latest?cb=20211022035922",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Rapid_Resilience"
   },
   {
@@ -109483,6 +109676,7 @@
     "transmutable": true,
     "type": "Shotgun Mod",
     "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponCritDamageModBeginner",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/48/RavageMod.png/revision/latest?cb=20180501162000",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Ravage"
   },
   {
@@ -109615,6 +109809,7 @@
     "transmutable": true,
     "type": "Shotgun Mod",
     "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/WeaponCritDamageMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/48/RavageMod.png/revision/latest?cb=20180501162000",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Ravage"
   },
   {
@@ -111180,6 +111375,7 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Citrine",
+    "drops": [{ "chance": 1, "location": "Red Veil, Exalted", "rarity": "Common", "type": "Recrystalize (Citrine)" }],
     "fusionLimit": 3,
     "imageName": "recrystalize.jpg",
     "introduced": {
@@ -118012,6 +118208,40 @@
     "wikiaUrl": "https://warframe.fandom.com/wiki/Rifle_Aptitude"
   },
   {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "Rifle",
+    "drops": [{ "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Rifle Elementalist" }],
+    "fusionLimit": 5,
+    "imageName": "rifle-elementalist.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isPrime": false,
+    "levelStats": [
+      { "stats": ["+15% Status Damage", "+0.1 Punch Through"] },
+      { "stats": ["+30% Status Damage", "+0.2 Punch Through"] },
+      { "stats": ["+45% Status Damage", "+0.3 Punch Through"] },
+      { "stats": ["+60% Status Damage", "+0.4 Punch Through"] },
+      { "stats": ["+75% Status Damage", "+0.5 Punch Through"] },
+      { "stats": ["+90% Status Damage", "+0.6 Punch Through"] }
+    ],
+    "masterable": false,
+    "name": "Rifle Elementalist",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "type": "Primary Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/RifleStatusDamageDuoMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/4b/RifleElementalistMod.png/revision/latest?cb=20240618173058",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Rifle_Elementalist"
+  },
+  {
     "availableChallenges": [
       {
         "fullName": "/Lotus/Types/Challenges/RandomizedKill",
@@ -118034,7 +118264,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -118100,7 +118330,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -118194,7 +118424,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -118339,7 +118569,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -118517,7 +118747,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -118738,7 +118968,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -118971,7 +119201,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -119228,7 +119458,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -119516,7 +119746,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -119808,7 +120038,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -120104,7 +120334,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -120399,7 +120629,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -120477,7 +120707,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -120772,7 +121002,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -120858,7 +121088,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -121153,7 +121383,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -121262,7 +121492,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -121557,7 +121787,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -121694,7 +121924,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -121989,7 +122219,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -122135,7 +122365,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -122430,7 +122660,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -122583,7 +122813,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -122878,7 +123108,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -123046,7 +123276,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -123341,7 +123571,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -123519,7 +123749,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -123814,7 +124044,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -123999,7 +124229,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -124294,7 +124524,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -124462,7 +124692,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -124491,7 +124721,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -124786,7 +125016,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -124954,7 +125184,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -125008,7 +125238,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -125303,7 +125533,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -125471,7 +125701,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -125541,7 +125771,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -125836,7 +126066,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -126004,7 +126234,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -126082,7 +126312,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -126377,7 +126607,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -126545,7 +126775,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -126624,7 +126854,7 @@
         ]
       }
     ],
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "drops": [
       {
@@ -126643,7 +126873,7 @@
         "type": "Rifle Riven Mod"
       }
     ],
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "rifle-riven-mod.png",
     "introduced": {
       "name": "Update 19.0",
@@ -127917,6 +128147,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Hydroid",
+    "drops": [
+      { "chance": 1, "location": "Cephalon Suda, Genius", "rarity": "Common", "type": "Rousing Plunder (Hydroid)" },
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Rousing Plunder (Hydroid)" }
+    ],
     "fusionLimit": 3,
     "imageName": "rousing-plunder.jpg",
     "introduced": {
@@ -133485,7 +133719,7 @@
       { "stats": ["+1.4 Punch Through"] },
       { "stats": ["+1.8 Punch Through"] },
       { "stats": ["+2.1 Punch Through"] },
-      { "stats": ["+2.5 Punch Through"] },
+      { "stats": ["+2.4 Punch Through"] },
       { "stats": ["+2.8 Punch Through"] },
       { "stats": ["+3.1 Punch Through"] },
       { "stats": ["+3.5 Punch Through"] },
@@ -134104,7 +134338,7 @@
       { "stats": ["+1.4 Punch Through"] },
       { "stats": ["+1.8 Punch Through"] },
       { "stats": ["+2.1 Punch Through"] },
-      { "stats": ["+2.5 Punch Through"] },
+      { "stats": ["+2.4 Punch Through"] },
       { "stats": ["+2.8 Punch Through"] },
       { "stats": ["+3.1 Punch Through"] },
       { "stats": ["+3.5 Punch Through"] },
@@ -134585,6 +134819,80 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Sentinel/SentinelExplosionMod",
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/f/f8/SelfDestructMod.png/revision/latest?cb=20231019070017",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Self_Destruct"
+  },
+  {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "Pistol",
+    "description": "Only compatible with Semi-Auto Trigger. Fire Rate cannot be modified.",
+    "drops": [
+      { "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Semi-Pistol Cannonade" }
+    ],
+    "fusionLimit": 5,
+    "imageName": "semi-pistol-cannonade.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isPrime": false,
+    "levelStats": [
+      { "stats": ["+50% Damage", "+0.25 Punch Through"] },
+      { "stats": ["+100% Damage", "+0.5 Punch Through"] },
+      { "stats": ["+150% Damage", "+0.75 Punch Through"] },
+      { "stats": ["+200% Damage", "+1 Punch Through"] },
+      { "stats": ["+250% Damage", "+1.25 Punch Through"] },
+      { "stats": ["+300% Damage", "+1.5 Punch Through"] }
+    ],
+    "masterable": false,
+    "name": "Semi-Pistol Cannonade",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "type": "Secondary Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Pistol/PistolSemiAutoFantasyMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/48/Semi-PistolCannonadeMod.png/revision/latest?cb=20240618173057",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Semi-Pistol_Cannonade"
+  },
+  {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "Rifle",
+    "description": "Only compatible with Semi-Auto Trigger. Fire Rate cannot be modified.",
+    "drops": [
+      { "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Semi-Rifle Cannonade" }
+    ],
+    "fusionLimit": 5,
+    "imageName": "semi-rifle-cannonade.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isPrime": false,
+    "levelStats": [
+      { "stats": ["+40% Damage", "+0.25 Punch Through"] },
+      { "stats": ["+80% Damage", "+0.5 Punch Through"] },
+      { "stats": ["+120% Damage", "+0.75 Punch Through"] },
+      { "stats": ["+160% Damage", "+1 Punch Through"] },
+      { "stats": ["+200% Damage", "+1.25 Punch Through"] },
+      { "stats": ["+240% Damage", "+1.5 Punch Through"] }
+    ],
+    "masterable": false,
+    "name": "Semi-Rifle Cannonade",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "type": "Primary Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Rifle/RifleSemiAutoFantasyMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/0/01/Semi-RifleCannonadeMod.png/revision/latest?cb=20240618173056",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Semi-Rifle_Cannonade"
   },
   {
     "baseDrain": 2,
@@ -135690,6 +135998,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Sevagoth",
+    "drops": [
+      { "chance": 1, "location": "Cephalon Suda, Genius", "rarity": "Common", "type": "Shadow Haze (Sevagoth)" },
+      { "chance": 1, "location": "The Perrin Sequence, Partner", "rarity": "Common", "type": "Shadow Haze (Sevagoth)" }
+    ],
     "fusionLimit": 3,
     "imageName": "shadow-haze.jpg",
     "introduced": {
@@ -136132,12 +136444,12 @@
     },
     "isPrime": false,
     "levelStats": [
-      { "stats": ["<DT_IMPACT>Impact damage reduces enemy armor by 1."] },
-      { "stats": ["<DT_IMPACT>Impact damage reduces enemy armor by 2."] },
-      { "stats": ["<DT_IMPACT>Impact damage reduces enemy armor by 3."] },
-      { "stats": ["<DT_IMPACT>Impact damage reduces enemy armor by 4."] },
-      { "stats": ["<DT_IMPACT>Impact damage reduces enemy armor by 5."] },
-      { "stats": ["<DT_IMPACT>Impact damage reduces enemy armor by 6."] }
+      { "stats": ["<DT_IMPACT>Impact Damage reduces enemy Armor by 1."] },
+      { "stats": ["<DT_IMPACT>Impact Damage reduces enemy Armor by 2."] },
+      { "stats": ["<DT_IMPACT>Impact Damage reduces enemy Armor by 3."] },
+      { "stats": ["<DT_IMPACT>Impact Damage reduces enemy Armor by 4."] },
+      { "stats": ["<DT_IMPACT>Impact Damage reduces enemy Armor by 5."] },
+      { "stats": ["<DT_IMPACT>Impact Damage reduces enemy Armor by 6."] }
     ],
     "masterable": false,
     "name": "Shattering Impact",
@@ -137058,22 +137370,34 @@
     "isPrime": false,
     "levelStats": [
       {
-        "stats": ["Enemies affected by Cold Status have a 5% chance to spread that status to other enemies within 6m."]
+        "stats": [
+          "Enemies affected by <DT_FREEZE>Cold Status have a 5% chance to spread that status to other enemies within 6m."
+        ]
       },
       {
-        "stats": ["Enemies affected by Cold Status have a 10% chance to spread that status to other enemies within 6m."]
+        "stats": [
+          "Enemies affected by <DT_FREEZE>Cold Status have a 10% chance to spread that status to other enemies within 6m."
+        ]
       },
       {
-        "stats": ["Enemies affected by Cold Status have a 15% chance to spread that status to other enemies within 6m."]
+        "stats": [
+          "Enemies affected by <DT_FREEZE>Cold Status have a 15% chance to spread that status to other enemies within 6m."
+        ]
       },
       {
-        "stats": ["Enemies affected by Cold Status have a 20% chance to spread that status to other enemies within 6m."]
+        "stats": [
+          "Enemies affected by <DT_FREEZE>Cold Status have a 20% chance to spread that status to other enemies within 6m."
+        ]
       },
       {
-        "stats": ["Enemies affected by Cold Status have a 25% chance to spread that status to other enemies within 6m."]
+        "stats": [
+          "Enemies affected by <DT_FREEZE>Cold Status have a 25% chance to spread that status to other enemies within 6m."
+        ]
       },
       {
-        "stats": ["Enemies affected by Cold Status have a 30% chance to spread that status to other enemies within 6m."]
+        "stats": [
+          "Enemies affected by <DT_FREEZE>Cold Status have a 30% chance to spread that status to other enemies within 6m."
+        ]
       }
     ],
     "masterable": false,
@@ -139142,6 +139466,77 @@
     "wikiaUrl": "https://warframe.fandom.com/wiki/Shotgun_Barrage"
   },
   {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "Shotgun",
+    "description": "Only compatible with Semi-Auto Trigger. Fire Rate cannot be modified.",
+    "drops": [{ "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Shotgun Cannonade" }],
+    "fusionLimit": 5,
+    "imageName": "shotgun-cannonade.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isPrime": false,
+    "levelStats": [
+      { "stats": ["+40% Damage", "+0.25 Punch Through"] },
+      { "stats": ["+80% Damage", "+0.5 Punch Through"] },
+      { "stats": ["+120% Damage", "+0.75 Punch Through"] },
+      { "stats": ["+160% Damage", "+1 Punch Through"] },
+      { "stats": ["+200% Damage", "+1.25 Punch Through"] },
+      { "stats": ["+240% Damage", "+1.5 Punch Through"] }
+    ],
+    "masterable": false,
+    "name": "Shotgun Cannonade",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "type": "Shotgun Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/ShotgunSemiAutoFantasyMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/5/5e/ShotgunCannonadeMod.png/revision/latest?cb=20240618173058",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Shotgun_Cannonade"
+  },
+  {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "Shotgun",
+    "drops": [
+      { "chance": 0.0043, "location": "Juna Sapper Moa", "rarity": "Uncommon", "type": "Shotgun Elementalist" }
+    ],
+    "fusionLimit": 5,
+    "imageName": "shotgun-elementalist.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isPrime": false,
+    "levelStats": [
+      { "stats": ["+15% Status Damage", "+10% Magazine Capacity"] },
+      { "stats": ["+30% Status Damage", "+20% Magazine Capacity"] },
+      { "stats": ["+45% Status Damage", "+30% Magazine Capacity"] },
+      { "stats": ["+60% Status Damage", "+40% Magazine Capacity"] },
+      { "stats": ["+75% Status Damage", "+50% Magazine Capacity"] },
+      { "stats": ["+90% Status Damage", "+60% Magazine Capacity"] }
+    ],
+    "masterable": false,
+    "name": "Shotgun Elementalist",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "type": "Shotgun Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/ShotgunStatusDamageDuoMod",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/1/17/ShotgunElementalistMod.png/revision/latest?cb=20240618173100",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Shotgun_Elementalist"
+  },
+  {
     "availableChallenges": [
       {
         "fullName": "/Lotus/Types/Challenges/RandomizedKill",
@@ -139164,7 +139559,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -139230,7 +139625,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -139324,7 +139719,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -139469,7 +139864,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -139647,7 +140042,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -139868,7 +140263,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -140101,7 +140496,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -140358,7 +140753,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -140646,7 +141041,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -140938,7 +141333,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -141234,7 +141629,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -141529,7 +141924,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -141607,7 +142002,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -141902,7 +142297,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -141988,7 +142383,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -142283,7 +142678,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -142392,7 +142787,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -142687,7 +143082,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -142824,7 +143219,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -143119,7 +143514,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -143265,7 +143660,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -143560,7 +143955,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -143713,7 +144108,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -144008,7 +144403,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -144176,7 +144571,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -144471,7 +144866,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -144646,7 +145041,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -144941,7 +145336,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -145099,7 +145494,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -145128,7 +145523,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -145423,7 +145818,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -145581,7 +145976,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -145635,7 +146030,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -145930,7 +146325,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -146088,7 +146483,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -146158,7 +146553,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -146453,7 +146848,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -146611,7 +147006,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -146689,7 +147084,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -146984,7 +147379,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -147142,7 +147537,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -147221,7 +147616,7 @@
         ]
       }
     ],
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "drops": [
       {
@@ -147240,7 +147635,7 @@
         "type": "Shotgun Riven Mod"
       }
     ],
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "shotgun-riven-mod.png",
     "introduced": {
       "name": "Update 19.5",
@@ -151181,6 +151576,55 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Sentinel/SentinelDropChanceMod",
     "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/5/5c/SparePartsMod.png/revision/latest?cb=20231019070143",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Spare_Parts"
+  },
+  {
+    "baseDrain": 6,
+    "category": "Mods",
+    "compatName": "Dagath",
+    "fusionLimit": 3,
+    "imageName": "spectral-spirit.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isAugment": true,
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "Grave Spirit Augment: Immediately assume Spectral Form. 25% chance for weapons and abilities to apply Doom. Kills outside of Spectral Form decrease its cooldown by 1s."
+        ]
+      },
+      {
+        "stats": [
+          "Grave Spirit Augment: Immediately assume Spectral Form. 50% chance for weapons and abilities to apply Doom. Kills outside of Spectral Form decrease its cooldown by 1s."
+        ]
+      },
+      {
+        "stats": [
+          "Grave Spirit Augment: Immediately assume Spectral Form. 75% chance for weapons and abilities to apply Doom. Kills outside of Spectral Form decrease its cooldown by 1s."
+        ]
+      },
+      {
+        "stats": [
+          "Grave Spirit Augment: Immediately assume Spectral Form. 100% chance for weapons and abilities to apply Doom. Kills outside of Spectral Form decrease its cooldown by 1s."
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Spectral Spirit",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "transmutable": false,
+    "type": "Warframe Mod",
+    "uniqueName": "/Lotus/Powersuits/Dagath/DagathApparitionAugmentCard",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/3/38/SpectralSpiritMod.png/revision/latest?cb=20240618173102",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Spectral_Spirit"
   },
   {
     "baseDrain": 6,
@@ -156684,30 +157128,6 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Sets/Strain/StrainSetMod"
   },
   {
-    "baseDrain": 10,
-    "category": "Mods",
-    "compatName": "Rifle",
-    "fusionLimit": 5,
-    "imageName": "strategic-pursuit.jpg",
-    "isPrime": false,
-    "isUtility": true,
-    "levelStats": [
-      { "stats": ["+25% Ammo Maximum", "-20% Magazine Capacity"] },
-      { "stats": ["+50% Ammo Maximum", "-40% Magazine Capacity"] },
-      { "stats": ["+75% Ammo Maximum", "-60% Magazine Capacity"] },
-      { "stats": ["+100% Ammo Maximum", "-80% Magazine Capacity"] },
-      { "stats": ["+125% Ammo Maximum", "-100% Magazine Capacity"] },
-      { "stats": ["+150% Ammo Maximum", "-120% Magazine Capacity"] }
-    ],
-    "masterable": false,
-    "name": "Strategic Pursuit",
-    "polarity": "madurai",
-    "rarity": "Rare",
-    "tradable": true,
-    "type": "Primary Mod",
-    "uniqueName": "/Lotus/Upgrades/Mods/PvPMods/Rifle/MarkTargetAddDamageMod"
-  },
-  {
     "baseDrain": 4,
     "category": "Mods",
     "compatName": "WARFRAME",
@@ -160150,13 +160570,13 @@
       { "chance": 0.05, "location": "Corpus Sniper Target", "rarity": "Uncommon", "type": "Synth Charge" },
       { "chance": 0.05, "location": "Corpus Supra Target", "rarity": "Uncommon", "type": "Synth Charge" },
       {
-        "chance": 0.0727,
+        "chance": 0.1176,
         "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation A",
-        "rarity": "Rare",
+        "rarity": "Uncommon",
         "type": "Synth Charge"
       },
       {
-        "chance": 0.2667,
+        "chance": 0.25,
         "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation A",
         "rarity": "Uncommon",
         "type": "Synth Charge"
@@ -160225,7 +160645,7 @@
       { "chance": 0.05, "location": "Corpus Sniper Target", "rarity": "Uncommon", "type": "Synth Deconstruct" },
       { "chance": 0.05, "location": "Corpus Supra Target", "rarity": "Uncommon", "type": "Synth Deconstruct" },
       {
-        "chance": 0.1111,
+        "chance": 0.1176,
         "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation A",
         "rarity": "Uncommon",
         "type": "Synth Deconstruct"
@@ -160302,13 +160722,13 @@
       { "chance": 0.05, "location": "Corpus Sniper Target", "rarity": "Uncommon", "type": "Synth Fiber" },
       { "chance": 0.05, "location": "Corpus Supra Target", "rarity": "Uncommon", "type": "Synth Fiber" },
       {
-        "chance": 0.1144,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation A",
         "rarity": "Uncommon",
         "type": "Synth Fiber"
       },
       {
-        "chance": 0.3937,
+        "chance": 0.3333,
         "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation A",
         "rarity": "Common",
         "type": "Synth Fiber"
@@ -160369,13 +160789,13 @@
       { "chance": 0.05, "location": "Corpus Sniper Target", "rarity": "Uncommon", "type": "Synth Reflex" },
       { "chance": 0.05, "location": "Corpus Supra Target", "rarity": "Uncommon", "type": "Synth Reflex" },
       {
-        "chance": 0.1429,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation A",
         "rarity": "Uncommon",
         "type": "Synth Reflex"
       },
       {
-        "chance": 0.1429,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation A",
         "rarity": "Uncommon",
         "type": "Synth Reflex"
@@ -162110,13 +162530,13 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Cestra Target", "rarity": "Uncommon", "type": "Tek Assault" },
       {
-        "chance": 0.0727,
+        "chance": 0.1176,
         "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
-        "rarity": "Rare",
+        "rarity": "Uncommon",
         "type": "Tek Assault"
       },
       {
-        "chance": 0.2667,
+        "chance": 0.25,
         "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
         "rarity": "Uncommon",
         "type": "Tek Assault"
@@ -162169,13 +162589,13 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Cestra Target", "rarity": "Uncommon", "type": "Tek Collateral" },
       {
-        "chance": 0.1429,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
         "rarity": "Uncommon",
         "type": "Tek Collateral"
       },
       {
-        "chance": 0.1429,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
         "rarity": "Uncommon",
         "type": "Tek Collateral"
@@ -162239,7 +162659,7 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Cestra Target", "rarity": "Uncommon", "type": "Tek Enhance" },
       {
-        "chance": 0.1111,
+        "chance": 0.1176,
         "location": "Venus/Orb Vallis (Level 20 - 40 Orb Vallis Bounty), Rotation C",
         "rarity": "Uncommon",
         "type": "Tek Enhance"
@@ -162299,13 +162719,13 @@
     "drops": [
       { "chance": 0.05, "location": "Corpus Cestra Target", "rarity": "Uncommon", "type": "Tek Gravity" },
       {
-        "chance": 0.1144,
+        "chance": 0.1667,
         "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation C",
         "rarity": "Uncommon",
         "type": "Tek Gravity"
       },
       {
-        "chance": 0.3937,
+        "chance": 0.3333,
         "location": "Venus/Orb Vallis (Level 30 - 50 Orb Vallis Bounty), Rotation C",
         "rarity": "Common",
         "type": "Tek Gravity"
@@ -162585,6 +163005,55 @@
     "wikiaUrl": "https://warframe.fandom.com/wiki/Tempo_Royale"
   },
   {
+    "baseDrain": 6,
+    "category": "Mods",
+    "compatName": "Protea",
+    "fusionLimit": 3,
+    "imageName": "temporal-artillery.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isAugment": true,
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "Blaze Artillery Augment : When Temporal Anchor is activated, one existing Artillery unit will attach to Protea, halting its duration countdown. Max combo count is 14x."
+        ]
+      },
+      {
+        "stats": [
+          "Blaze Artillery Augment : When Temporal Anchor is activated, one existing Artillery unit will attach to Protea, halting its duration countdown. Max combo count is 16x."
+        ]
+      },
+      {
+        "stats": [
+          "Blaze Artillery Augment : When Temporal Anchor is activated, one existing Artillery unit will attach to Protea, halting its duration countdown. Max combo count is 18x."
+        ]
+      },
+      {
+        "stats": [
+          "Blaze Artillery Augment : When Temporal Anchor is activated, one existing Artillery unit will attach to Protea, halting its duration countdown. Max combo count is 20x."
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Temporal Artillery",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "transmutable": false,
+    "type": "Warframe Mod",
+    "uniqueName": "/Lotus/Powersuits/Odalisk/OdaliskBFGAugmentCard",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/e/e8/TemporalArtilleryMod.png/revision/latest?cb=20240618173103",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Temporal_Artillery"
+  },
+  {
     "baseDrain": 4,
     "category": "Mods",
     "excludeFromCodex": true,
@@ -162643,6 +163112,15 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Protea",
+    "drops": [
+      { "chance": 1, "location": "Arbiters of Hexis, Maxim", "rarity": "Common", "type": "Temporal Erosion (Protea)" },
+      {
+        "chance": 1,
+        "location": "The Perrin Sequence, Partner",
+        "rarity": "Common",
+        "type": "Temporal Erosion (Protea)"
+      }
+    ],
     "fusionLimit": 3,
     "imageName": "temporal-erosion.jpg",
     "introduced": {
@@ -167277,6 +167755,7 @@
     "category": "Mods",
     "compatName": "Voruna",
     "drops": [
+      { "chance": 1, "location": "Red Veil, Exalted", "rarity": "Common", "type": "Ulfrun's Endurance (Voruna)" },
       { "chance": 1, "location": "Steel Meridian, General", "rarity": "Common", "type": "Ulfrun's Endurance (Voruna)" }
     ],
     "fusionLimit": 3,
@@ -167293,22 +167772,22 @@
     "levelStats": [
       {
         "stats": [
-          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from Bleed within 5m restore Voruna’s charges."
+          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from <DT_SLASH>Slash Status within 5m restore Voruna’s charges."
         ]
       },
       {
         "stats": [
-          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from Bleed within 10m restore Voruna’s charges."
+          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from <DT_SLASH>Slash Status within 10m restore Voruna’s charges."
         ]
       },
       {
         "stats": [
-          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from Bleed within 15m restore Voruna’s charges."
+          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from <DT_SLASH>Slash Status within 15m restore Voruna’s charges."
         ]
       },
       {
         "stats": [
-          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from Bleed within 20m restore Voruna’s charges."
+          "Ulfrun's Descent Augment: During Ulfrun’s attack, enemies that die from <DT_SLASH>Slash Status within 20m restore Voruna’s charges."
         ]
       }
     ],
@@ -168232,10 +168711,10 @@
     "uniqueName": "/Lotus/Upgrades/Mods/Railjack/Piloting/BaseSpeed"
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-crewshipinnatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168248,10 +168727,10 @@
     "upgradeEntries": [{ "tag": "InnateDamage", "prefixTag": "", "suffixTag": "", "upgradeValues": [{ "value": 0.1 }] }]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-crewshipinnatefireraterandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168266,10 +168745,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact.png",
     "isPrime": false,
     "masterable": false,
@@ -168289,10 +168768,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-laser-beam-railjackbeaminnatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168312,10 +168791,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-laser-blaster-blasterinnatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168335,10 +168814,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-laser-blaster-blastershotguninnatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168358,10 +168837,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-laser-pulselaser-pulselaserinnatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168381,10 +168860,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-massdriver-autocannon-autocannoninnatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168404,10 +168883,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-crewship-shrapnelshotgun-shrapnelshotguninnatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168427,10 +168906,10 @@
     ]
   },
   {
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "excludeFromCodex": true,
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "unfused-artifact-lotus-weapons-grineer-kuvalich-upgrades-innatedamagerandommod.png",
     "isPrime": false,
     "masterable": false,
@@ -168829,6 +169308,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Lavos",
+    "drops": [
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Valence Formation (Lavos)" },
+      { "chance": 1, "location": "Red Veil, Exalted", "rarity": "Common", "type": "Valence Formation (Lavos)" }
+    ],
     "fusionLimit": 3,
     "imageName": "valence-formation.jpg",
     "introduced": {
@@ -168843,22 +169326,22 @@
     "levelStats": [
       {
         "stats": [
-          "Passive Augment: Upon Ability cast, applies the Ability Element as 50% Elemental Damage to your weapons with guaranteed Status for 20s."
+          "Passive Augment: Casting an Ability imbued with extra Elemental Damage applies that Element as a 50% bonus to your weapons with guaranteed Status for 20s."
         ]
       },
       {
         "stats": [
-          "Passive Augment: Upon Ability cast, applies the Ability Element as 100% Elemental Damage to your weapons with guaranteed Status for 20s."
+          "Passive Augment: Casting an Ability imbued with extra Elemental Damage applies that Element as a 100% bonus to your weapons with guaranteed Status for 20s."
         ]
       },
       {
         "stats": [
-          "Passive Augment: Upon Ability cast, applies the Ability Element as 150% Elemental Damage to your weapons with guaranteed Status for 20s."
+          "Passive Augment: Casting an Ability imbued with extra Elemental Damage applies that Element as a 150% bonus to your weapons with guaranteed Status for 20s."
         ]
       },
       {
         "stats": [
-          "Passive Augment: Upon Ability cast, applies the Ability Element as 200% Elemental Damage to your weapons with guaranteed Status for 20s."
+          "Passive Augment: Casting an Ability imbued with extra Elemental Damage applies that Element as a 200% bonus to your weapons with guaranteed Status for 20s."
         ]
       }
     ],
@@ -168871,7 +169354,7 @@
     "transmutable": false,
     "type": "Warframe Mod",
     "uniqueName": "/Lotus/Powersuits/Alchemist/AlchemistPassiveAugmentCard",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/66/ValenceFormationMod.png/revision/latest?cb=20240327230459",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/66/ValenceFormationMod.png/revision/latest?cb=20240618173621",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Valence_Formation"
   },
   {
@@ -169582,7 +170065,7 @@
     "baseDrain": 0,
     "category": "Mods",
     "compatName": "WARFRAME",
-    "description": "Poison FX on Bullet Jump",
+    "description": "Toxin FX on Bullet Jump",
     "drops": [{ "chance": 1, "location": "Conclave, Hurricane", "rarity": "Common", "type": "Venomous Rise" }],
     "fusionLimit": 0,
     "imageName": "venomous-rise.jpg",
@@ -170805,6 +171288,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Hydroid",
+    "drops": [
+      { "chance": 1, "location": "Cephalon Suda, Genius", "rarity": "Common", "type": "Viral Tempest (Hydroid)" },
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Viral Tempest (Hydroid)" }
+    ],
     "fusionLimit": 3,
     "imageName": "viral-tempest.jpg",
     "introduced": {
@@ -174941,6 +175428,15 @@
     "baseDrain": 2,
     "category": "Mods",
     "compatName": "Excalibur Umbra",
+    "drops": [
+      {
+        "chance": 1,
+        "location": "Arbiters of Hexis, Maxim",
+        "rarity": "Common",
+        "type": "Warrior's Rest (Excalibur Umbra)"
+      },
+      { "chance": 1, "location": "Red Veil, Exalted", "rarity": "Common", "type": "Warrior's Rest (Excalibur Umbra)" }
+    ],
     "fusionLimit": 5,
     "imageName": "warrior's-rest.jpg",
     "introduced": {
@@ -175825,6 +176321,10 @@
     "baseDrain": 6,
     "category": "Mods",
     "compatName": "Kullervo",
+    "drops": [
+      { "chance": 1, "location": "New Loka, Flawless", "rarity": "Common", "type": "Wrath of Ukko (Kullervo)" },
+      { "chance": 1, "location": "Steel Meridian, General", "rarity": "Common", "type": "Wrath of Ukko (Kullervo)" }
+    ],
     "fusionLimit": 3,
     "imageName": "wrath-of-ukko.jpg",
     "isAugment": true,
@@ -175858,6 +176358,55 @@
     "tradable": true,
     "type": "Warframe Mod",
     "uniqueName": "/Lotus/Powersuits/PaxDuviricus/PaxFieldAugmentCard"
+  },
+  {
+    "baseDrain": 6,
+    "category": "Mods",
+    "compatName": "Qorvex",
+    "fusionLimit": 3,
+    "imageName": "wrecking-wall.jpg",
+    "introduced": {
+      "name": "Update 36.0",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.0",
+      "aliases": ["36", "36.0", "Jade Shadows"],
+      "parent": "36.0",
+      "date": "2024-06-18"
+    },
+    "isAugment": true,
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "Containment Wall Augment: Strip 35% of armor and shields from struck enemies. Hitting 5 or more enemies will restart the duration of any Chyrinka Pillars and empower them."
+        ]
+      },
+      {
+        "stats": [
+          "Containment Wall Augment: Strip 40% of armor and shields from struck enemies. Hitting 5 or more enemies will restart the duration of any Chyrinka Pillars and empower them."
+        ]
+      },
+      {
+        "stats": [
+          "Containment Wall Augment: Strip 45% of armor and shields from struck enemies. Hitting 5 or more enemies will restart the duration of any Chyrinka Pillars and empower them."
+        ]
+      },
+      {
+        "stats": [
+          "Containment Wall Augment: Strip 50% of armor and shields from struck enemies. Hitting 5 or more enemies will restart the duration of any Chyrinka Pillars and empower them."
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Wrecking Wall",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "releaseDate": "2024-06-18",
+    "tradable": true,
+    "transmutable": false,
+    "type": "Warframe Mod",
+    "uniqueName": "/Lotus/Powersuits/ConcreteFrame/ConcreteWallAugmentCard",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/a/ab/WreckingWallMod.png/revision/latest?cb=20240618173055",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Wrecking_Wall"
   },
   {
     "baseDrain": 0,
@@ -176011,7 +176560,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -176077,7 +176626,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -176171,7 +176720,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -176316,7 +176865,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -176494,7 +177043,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -176715,7 +177264,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -176948,7 +177497,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -177205,7 +177754,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -177493,7 +178042,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -177785,7 +178334,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -178081,7 +178630,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -178376,7 +178925,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -178454,7 +179003,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -178749,7 +179298,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -178835,7 +179384,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -179130,7 +179679,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -179239,7 +179788,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -179534,7 +180083,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -179671,7 +180220,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -179966,7 +180515,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -180112,7 +180661,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -180407,7 +180956,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -180560,7 +181109,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -180855,7 +181404,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -181023,7 +181572,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -181318,7 +181867,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -181496,7 +182045,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -181791,7 +182340,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -181976,7 +182525,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -182271,7 +182820,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -182439,7 +182988,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -182468,7 +183017,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -182763,7 +183312,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -182931,7 +183480,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -182985,7 +183534,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -183280,7 +183829,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -183448,7 +183997,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -183518,7 +184067,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -183813,7 +184362,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -183981,7 +184530,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -184059,7 +184608,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -184354,7 +184903,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDowned",
@@ -184522,7 +185071,7 @@
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnDisrupt",
-            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Damage"
+            "description": "without being disrupted by a <DT_MAGNETIC>Magnetic Status Effect"
           },
           {
             "fullName": "/Lotus/Types/Challenges/Complications/ResetOnProc",
@@ -184601,7 +185150,7 @@
         ]
       }
     ],
-    "baseDrain": -20980032,
+    "baseDrain": -807412176,
     "category": "Mods",
     "drops": [
       {
@@ -184615,7 +185164,7 @@
       { "chance": 0.012, "location": "Duviri/Endless: Tier 7 (Hard)", "rarity": "Rare", "type": "Zaw Riven Mod" },
       { "chance": 0.035, "location": "Enter Nihil's Oubliette, Rotation C", "rarity": "Rare", "type": "Zaw Riven Mod" }
     ],
-    "fusionLimit": 26,
+    "fusionLimit": 44,
     "imageName": "zaw-riven-mod.png",
     "introduced": {
       "name": "Update 21.0",
