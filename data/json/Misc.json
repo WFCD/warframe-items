@@ -355,10 +355,25 @@
       }
     ],
     "imageName": "alloy-plate.png",
-    "itemCount": 1600,
+    "itemCount": 600,
     "masterable": false,
     "name": "Alloy Plate",
-    "parents": ["Carrier", "Dethcube", "Diriga", "Excalibur Umbra", "Shade", "Wyrm"],
+    "parents": [
+      "Adrenal Stim",
+      "Calcifin Stim",
+      "Carrier",
+      "Dethcube",
+      "Diriga",
+      "Force Specter",
+      "Pharoma",
+      "Phase Specter",
+      "Shade",
+      "Squad Energy Restore (Medium)",
+      "Squad Shield Restore (Large)",
+      "Squad Shield Restore (Medium)",
+      "Titan Extractor Prime",
+      "Wyrm"
+    ],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -651,8 +666,10 @@
     "category": "Misc",
     "description": "A component of the Antiserum Injector.Location: Oestrus on Eris",
     "imageName": "antiserum-injector-fragment.png",
+    "itemCount": 500,
     "masterable": false,
     "name": "Antiserum Injector Fragment",
+    "parents": ["Antiserum Injector"],
     "patchlogs": [
       {
         "name": "The Glast Gambit: Hotfix 19.5.1 + 19.5.2",
@@ -1574,7 +1591,7 @@
       "Diriga",
       "Hidden Messages",
       "Incubator Power Core",
-      "Mirage",
+      "Potent Pherliac Pods",
       "The Jordas Precept",
       "The Limbo Theorem"
     ],
@@ -6196,8 +6213,10 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Charc Electroplax" }
     ],
     "imageName": "charc-electroplax.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Charc Electroplax",
+    "parents": ["Fosfor Rahd"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -6224,8 +6243,10 @@
       { "chance": 0.25, "location": "Polyp-Hog Juggernaut", "rarity": "Uncommon", "type": "Chitinous Husk" }
     ],
     "imageName": "chitinous-husk.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Chitinous Husk",
+    "parents": ["Pherliac Pods"],
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartC"
@@ -6441,7 +6462,28 @@
     "itemCount": 300,
     "masterable": false,
     "name": "Circuits",
-    "parents": ["<Archwing> Odonata", "Carrier", "Dethcube", "Djinn", "Genetic Code Template", "Shade", "Wyrm"],
+    "parents": [
+      "Advanced Nosam Cutter",
+      "Archwing Launcher",
+      "Carrier",
+      "Clotra Stim",
+      "Cosmic Specter",
+      "Dethcube",
+      "Djinn",
+      "Faithful Void Offering",
+      "Focused Nosam Cutter",
+      "Force Specter",
+      "Genetic Code Template",
+      "Humble Void Offering",
+      "Loc-Pin",
+      "Nosam Cutter",
+      "Passionate Void Offering",
+      "Refract Stim",
+      "Shade",
+      "Squad Health Restore (Large)",
+      "Sunpoint Plasma Drill",
+      "Wyrm"
+    ],
     "patchlogs": [
       {
         "name": "Prime Resurgence: Hotfix 30.9.3",
@@ -6876,16 +6918,7 @@
     "itemCount": 2,
     "masterable": false,
     "name": "Control Module",
-    "parents": [
-      "<Archwing> Elytron",
-      "<Archwing> Itzal",
-      "Carrier",
-      "Dethcube",
-      "Genetic Code Template",
-      "Incubator Power Core",
-      "Shade",
-      "Wyrm"
-    ],
+    "parents": ["Carrier", "Dethcube", "Genetic Code Template", "Incubator Power Core", "Shade", "Wyrm"],
     "patchlogs": [
       {
         "name": "Prime Resurgence: Hotfix 30.9.3",
@@ -6992,8 +7025,10 @@
     "consumeOnBuild": false,
     "description": "Coprun that has been forged into a stronger metal.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
     "imageName": "coprite-alloy.png",
+    "itemCount": 100,
     "masterable": false,
     "name": "Coprite Alloy",
+    "parents": ["Peram Fishing Spear"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -7436,7 +7471,7 @@
     "itemCount": 200,
     "masterable": false,
     "name": "Cryotic",
-    "parents": ["Pyrotic Alloy"],
+    "parents": ["Clotra Stim", "Fomorian Disruptor", "Pyrotic Alloy", "Refract Stim"],
     "patchlogs": [
       {
         "name": "Fortuna: Hotfix 24.0.5",
@@ -7629,8 +7664,10 @@
       { "chance": 1, "location": "Operational Supply, Neutral", "rarity": "Common", "type": "Cuthol Tendrils" }
     ],
     "imageName": "cuthol-tendrils.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Cuthol Tendrils",
+    "parents": ["Glappid Bait"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -8229,7 +8266,6 @@
     "tradable": false,
     "type": "Exalted Weapon",
     "uniqueName": "/Lotus/Powersuits/Pacifist/PacifistFist",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/9/9d/DesertWind.png/revision/latest?cb=20220409165108",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Desert_Wind",
     "windUp": 0.5
   },
@@ -8362,7 +8398,6 @@
     "type": "Exalted Weapon",
     "uniqueName": "/Lotus/Powersuits/Pacifist/PacifistFistPrime",
     "vaulted": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/9/9d/DesertWind.png/revision/latest?cb=20220409165108",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Desert_Wind_Prime",
     "windUp": 0.5
   },
@@ -9252,7 +9287,6 @@
     "tradable": false,
     "type": "Exalted Weapon",
     "uniqueName": "/Lotus/Powersuits/Fairy/FlightSword",
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/4/44/Diwata.png/revision/latest?cb=20220409165656",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Diwata"
   },
   {
@@ -9421,7 +9455,6 @@
     "type": "Exalted Weapon",
     "uniqueName": "/Lotus/Powersuits/Fairy/PrimeFlightSword",
     "vaulted": false,
-    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/9/9d/DiwataPrime.png/revision/latest?cb=20220409165707",
     "wikiaUrl": "https://warframe.fandom.com/wiki/Diwata_Prime"
   },
   {
@@ -12295,14 +12328,41 @@
     "masterable": false,
     "name": "Ferrite",
     "parents": [
+      "Air Support Charges",
+      "Ancient Healer Specter",
       "Axidrol Alloy",
+      "Bleeding Dragon Key",
+      "Charger Specter",
+      "Cipher",
       "Clan Key",
+      "Clem Clone",
       "Control Module",
       "Coprite Alloy",
+      "Corrupted Bombard Specter",
+      "Corrupted Lancer Specter",
+      "Decaying Dragon Key",
+      "Extinguished Dragon Key",
       "Helios",
+      "Hobbled Dragon Key",
       "Infested Catalyst",
+      "Lanzo Fishing Spear",
+      "Luminous Dye",
+      "Moa Specter",
       "Mutalist Alad V Assassinate",
-      "Taxon"
+      "Nosam Cutter",
+      "Roller Specter",
+      "Shield Osprey Specter",
+      "Shockprod Fishing Spear",
+      "Squad Ammo Restore (Medium)",
+      "Squad Energy Restore (Medium)",
+      "Squad Health Restore (Medium)",
+      "Squad Shield Restore (Large)",
+      "Squad Shield Restore (Medium)",
+      "Stunna Fishing Spear",
+      "Taxon",
+      "Titan Extractor",
+      "Tulok Fishing Spear",
+      "Vapor Specter"
     ],
     "patchlogs": [
       {
@@ -12413,7 +12473,7 @@
     "itemCount": 20,
     "masterable": false,
     "name": "Fersteel Alloy",
-    "parents": ["Cortege Barrel", "Morgha Barrel"],
+    "parents": ["Advanced Nosam Cutter", "Cortege Barrel", "Morgha Barrel", "Peram Fishing Spear"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -12549,8 +12609,10 @@
     "category": "Misc",
     "description": "Used as a source of food and to create bait for predatory fish.",
     "imageName": "fish-meat.png",
+    "itemCount": 20,
     "masterable": false,
     "name": "Fish Meat",
+    "parents": ["Cuthol Bait", "Glappid Bait", "Murkray Bait", "Norg Bait", "Peppered Bait", "Twilight Bait"],
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
@@ -12569,8 +12631,10 @@
     "category": "Misc",
     "description": "Used to create absolvents that purify gems.",
     "imageName": "fish-oil.png",
+    "itemCount": 30,
     "masterable": false,
     "name": "Fish Oil",
+    "parents": ["Archwing Launcher", "Twilight Bait"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -16406,10 +16470,10 @@
     "consumeOnBuild": true,
     "description": "This shape-altering component is fundamental to Orokin construction. Allows you to change the polarity of a mod slot on a Warframe, Companions or Weapon and then resets their affinity to Unranked. This can only be used on max Rank Warframes, Companions and Weapons.",
     "imageName": "forma.png",
-    "itemCount": 1,
+    "itemCount": 2,
     "masterable": false,
     "name": "Forma",
-    "parents": ["Djinn", "Equinox", "Helios"],
+    "parents": ["Djinn", "Helios"],
     "patchlogs": [
       {
         "name": "Update 32.2.0: Lua’s Prey",
@@ -17312,7 +17376,7 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Gallium",
-    "parents": ["Rhino", "Synthula", "Thaumic Distillate", "Venerdo Alloy"],
+    "parents": ["Cosmic Specter", "Razorback Cipher", "Synthula", "Thaumic Distillate", "Venerdo Alloy"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -18585,8 +18649,10 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Goopolla Spleen" }
     ],
     "imageName": "goopolla-spleen.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Goopolla Spleen",
+    "parents": ["Cuthol Bait", "Fosfor Blau", "Murkray Bait"],
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
@@ -20680,8 +20746,10 @@
       { "chance": 0.25, "location": "Polyp-Hog Juggernaut", "rarity": "Uncommon", "type": "Infected Palpators" }
     ],
     "imageName": "infected-palpators.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Infected Palpators",
+    "parents": ["Pherliac Pods"],
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartB"
@@ -21619,8 +21687,10 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Karkina Antenna" }
     ],
     "imageName": "karkina-antenna.png",
+    "itemCount": 3,
     "masterable": false,
     "name": "Karkina Antenna",
+    "parents": ["Fosfor Blau", "Norg Bait", "Vasca Curative"],
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
@@ -24409,7 +24479,7 @@
     "itemCount": 500,
     "masterable": false,
     "name": "Kuva",
-    "parents": ["Excalibur Umbra", "Garuda", "Harrow", "Nidus", "Umbra Forma"],
+    "parents": ["Umbra Forma"],
     "patchlogs": [
       {
         "name": "Lua’s Prey: Hotfix 32.2.4",
@@ -28461,10 +28531,8 @@
     "consumeOnBuild": true,
     "description": "A rare Orokin instrument.",
     "imageName": "mandachord.png",
-    "itemCount": 1,
     "masterable": false,
     "name": "Mandachord",
-    "parents": ["Octavia"],
     "patchlogs": [
       {
         "name": "Echoes of War: Banshee & Mirage Prime Vault: Hotfix 31.1.4",
@@ -32332,7 +32400,19 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Morphics",
-    "parents": ["Auroxium Alloy", "Clan Key", "Forma", "Hespazym Alloy", "Synthula", "Test Forma", "Voidrig Capsule"],
+    "parents": [
+      "Air Support Charges",
+      "Auroxium Alloy",
+      "Clan Key",
+      "Forma",
+      "Hespazym Alloy",
+      "Nightfall Apothic",
+      "Sunrise Apothic",
+      "Synthula",
+      "Test Forma",
+      "Twilight Apothic",
+      "Voidrig Capsule"
+    ],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -32412,8 +32492,10 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Mortus Horn" }
     ],
     "imageName": "mortus-horn.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Mortus Horn",
+    "parents": ["Murkray Bait"],
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
@@ -32522,8 +32604,10 @@
       { "chance": 1, "location": "Operational Supply, Neutral", "rarity": "Common", "type": "Murkray Liver" }
     ],
     "imageName": "murkray-liver.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Murkray Liver",
+    "parents": ["Cuthol Bait"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -32802,20 +32886,41 @@
     "masterable": false,
     "name": "Nano Spores",
     "parents": [
+      "Ancient Healer Specter",
       "Carrier",
+      "Charger Specter",
+      "Clem Clone",
+      "Clotra Stim",
       "Control Module",
+      "Corrupted Bombard Specter",
+      "Corrupted Lancer Specter",
+      "Cosmic Specter",
       "Dethcube",
-      "Excalibur Umbra",
+      "Fomorian Disruptor",
       "Gallium",
       "Genetic Code Template",
       "Incubator Power Core",
       "Infested Catalyst",
+      "Moa Specter",
       "Morphics",
       "Mutalist Alad V Assassinate",
       "Patient Zero",
+      "Phase Specter",
+      "Refract Stim",
+      "Roller Specter",
       "Sands Of Inaros",
       "Shade",
+      "Shield Osprey Specter",
+      "Squad Ammo Restore (Large)",
+      "Squad Ammo Restore (Small)",
+      "Squad Energy Restore (Large)",
+      "Squad Energy Restore (Small)",
+      "Squad Health Restore (Large)",
+      "Squad Health Restore (Medium)",
+      "Squad Health Restore (Small)",
+      "Squad Shield Restore (Small)",
       "Tempered Bapholite",
+      "Titan Extractor Prime",
       "Umbra Forma",
       "Wyrm"
     ],
@@ -34754,7 +34859,7 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Nitain Extract",
-    "parents": ["<Archwing> Amesha", "Sands Of Inaros", "The Silver Grove", "Vauban Prime"],
+    "parents": ["Sands Of Inaros", "The Silver Grove"],
     "patchlogs": [
       {
         "name": "Wukong Prime: Update 25.3.0",
@@ -34972,8 +35077,10 @@
       { "chance": 1, "location": "Operational Supply, Neutral", "rarity": "Common", "type": "Norg Brain" }
     ],
     "imageName": "norg-brain.png",
+    "itemCount": 3,
     "masterable": false,
     "name": "Norg Brain",
+    "parents": ["Glappid Bait", "Vasca Curative"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -35111,8 +35218,10 @@
     "category": "Misc",
     "description": "Produced by a Fomorian’s power core, these particles only appear on or around planets where a Fomorian is present.Location: When a Balor Fomorian is threatening a Planet's Relay, enemies on that Planet will drop this resource",
     "imageName": "omega-isotope.png",
+    "itemCount": 4,
     "masterable": false,
     "name": "Omega Isotope",
+    "parents": ["Fomorian Disruptor"],
     "patchlogs": [
       {
         "name": "Update 30.7: Nidus Prime & Plague Star",
@@ -35475,106 +35584,17 @@
     "masterable": false,
     "name": "Orokin Cell",
     "parents": [
-      "<Archwing> Odonata Prime",
-      "Ash",
-      "Ash Prime",
-      "Atlas",
-      "Atlas Prime",
-      "Banshee",
-      "Banshee Prime",
-      "Baruuk",
-      "Baruuk Prime",
-      "Caliban",
       "Carrier Prime",
-      "Chroma Prime",
-      "Citrine",
-      "Dagath",
-      "Dante",
       "Dethcube Prime",
-      "Ember",
-      "Ember Prime",
-      "Equinox Prime",
-      "Excalibur",
-      "Excalibur Umbra",
       "Forma",
-      "Frost",
-      "Frost Prime",
-      "Gara",
-      "Gara Prime",
-      "Garuda Prime",
-      "Gauss",
-      "Gauss Prime",
-      "Grendel",
-      "Grendel Prime",
-      "Gyre",
-      "Harrow Prime",
       "Helios Prime",
-      "Hildryn",
-      "Hildryn Prime",
-      "Hydroid",
-      "Hydroid Prime",
-      "Inaros",
-      "Inaros Prime",
-      "Ivara",
-      "Ivara Prime",
-      "Jade",
-      "Khora",
-      "Khora Prime",
-      "Lavos",
-      "Limbo",
-      "Limbo Prime",
-      "Loki",
-      "Loki Prime",
-      "Mag",
-      "Mag Prime",
-      "Mesa",
-      "Mesa Prime",
-      "Mirage Prime",
-      "Nekros",
-      "Nekros Prime",
-      "Nezha",
-      "Nezha Prime",
-      "Nidus Prime",
-      "Nova",
-      "Nova Prime",
-      "Nyx",
-      "Nyx Prime",
-      "Oberon",
-      "Oberon Prime",
-      "Octavia Prime",
       "Orokin Catalyst",
-      "Protea",
-      "Protea Prime",
-      "Revenant",
-      "Revenant Prime",
-      "Rhino Prime",
-      "Saryn",
-      "Saryn Prime",
-      "Sevagoth",
       "Shade Prime",
-      "Styanax",
       "Test Forma",
       "The Jordas Precept",
       "The Limbo Theorem",
-      "Titania",
-      "Titania Prime",
-      "Trinity",
-      "Trinity Prime",
-      "Valkyr",
-      "Valkyr Prime",
-      "Vauban",
       "Voidrig Engine",
-      "Volt",
-      "Volt Prime",
-      "Wisp",
-      "Wisp Prime",
-      "Wukong",
-      "Wukong Prime",
-      "Wyrm Prime",
-      "Xaku",
-      "Yareli",
-      "Zephyr",
-      "Zephyr Prime"
+      "Wyrm Prime"
     ],
     "patchlogs": [
       {
@@ -36196,7 +36216,14 @@
     "itemCount": 600,
     "masterable": false,
     "name": "Oxium",
-    "parents": ["Auroxium Alloy", "Helios", "Hidden Messages", "Sands Of Inaros"],
+    "parents": [
+      "Auroxium Alloy",
+      "Distilling Extractor",
+      "Distilling Extractor Prime",
+      "Helios",
+      "Hidden Messages",
+      "Sands Of Inaros"
+    ],
     "patchlogs": [
       {
         "name": "Echoes of the Zariman: Update 31.6",
@@ -37436,10 +37463,16 @@
     "name": "Plastids",
     "parents": [
       "Adramal Alloy",
+      "Adrenal Stim",
+      "Air Support Charges",
+      "Calcifin Stim",
+      "Cosmic Specter",
       "Diriga",
       "Fersteel Alloy",
+      "Force Specter",
       "Hespazym Alloy",
       "Infested Catalyst",
+      "Loc-Pin",
       "Patient Zero",
       "The Silver Grove",
       "Travocyte Alloy"
@@ -37626,7 +37659,30 @@
     "itemCount": 5000,
     "masterable": false,
     "name": "Polymer Bundle",
-    "parents": ["Clan Key", "Diriga", "Gallium", "Morphics", "Taxon"],
+    "parents": [
+      "Adrenal Stim",
+      "Calcifin Stim",
+      "Clan Key",
+      "Diriga",
+      "Distilling Extractor",
+      "Distilling Extractor Prime",
+      "Faithful Void Offering",
+      "Force Specter",
+      "Gallium",
+      "Humble Void Offering",
+      "Loc-Pin",
+      "Morphics",
+      "Passionate Void Offering",
+      "Phase Specter",
+      "Razorback Cipher",
+      "Squad Ammo Restore (Large)",
+      "Squad Ammo Restore (Small)",
+      "Squad Energy Restore (Large)",
+      "Squad Energy Restore (Small)",
+      "Squad Health Restore (Small)",
+      "Taxon",
+      "Titan Extractor"
+    ],
     "patchlogs": [
       {
         "name": "Prime Resurgence: Hotfix 30.9.3",
@@ -38276,8 +38332,10 @@
       { "chance": 0.25, "location": "Polyp-Hog Juggernaut", "rarity": "Uncommon", "type": "Pulsating Tubercles" }
     ],
     "imageName": "pulsating-tubercles.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Pulsating Tubercles",
+    "parents": ["Pherliac Pods"],
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartA"
@@ -38485,8 +38543,10 @@
     "consumeOnBuild": false,
     "description": "Pyrol that has been forged into a stronger metal.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
     "imageName": "pyrotic-alloy.png",
+    "itemCount": 40,
     "masterable": false,
     "name": "Pyrotic Alloy",
+    "parents": ["Focused Nosam Cutter", "Shockprod Fishing Spear", "Stunna Fishing Spear", "Tulok Fishing Spear"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -41643,14 +41703,28 @@
     "masterable": false,
     "name": "Salvage",
     "parents": [
+      "Air Support Charges",
+      "Ancient Healer Specter",
+      "Antiserum Injector",
+      "Charger Specter",
+      "Cipher",
+      "Clem Clone",
       "Control Module",
+      "Corrupted Bombard Specter",
+      "Corrupted Lancer Specter",
       "Djinn",
       "Gallium",
+      "Moa Specter",
       "Morphics",
       "Neural Sensors",
       "Neurodes",
       "Orokin Cell",
-      "Travocyte Alloy"
+      "Phase Specter",
+      "Roller Specter",
+      "Shield Osprey Specter",
+      "Squad Ammo Restore (Medium)",
+      "Travocyte Alloy",
+      "Vapor Specter"
     ],
     "patchlogs": [
       {
@@ -43988,8 +44062,10 @@
       { "chance": 0.25, "location": "Polyp-Hog Juggernaut", "rarity": "Uncommon", "type": "Severed Bile Sac" }
     ],
     "imageName": "severed-bile-sac.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Severed Bile Sac",
+    "parents": ["Pherliac Pods"],
     "tradable": false,
     "type": "Misc",
     "uniqueName": "/Lotus/Types/Items/MiscItems/JuggernautPartD"
@@ -44105,8 +44181,10 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Sharrac Teeth" }
     ],
     "imageName": "sharrac-teeth.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Sharrac Teeth",
+    "parents": ["Fosfor Rahd", "Norg Bait"],
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
@@ -48017,8 +48095,10 @@
     "consumeOnBuild": false,
     "description": "Distilled fuel for stims.",
     "imageName": "synthula.png",
+    "itemCount": 2,
     "masterable": false,
     "name": "Synthula",
+    "parents": ["Adrenal Stim", "Calcifin Stim", "Clotra Stim", "Refract Stim"],
     "patchlogs": [
       {
         "name": "Buried Debts: Update 24.4.0",
@@ -48179,8 +48259,10 @@
       { "chance": 0.1549, "location": "Uranus/Setebos (Caches), Rotation C", "rarity": "Uncommon", "type": "Tellurium" }
     ],
     "imageName": "tellurium.png",
+    "itemCount": 2,
     "masterable": false,
     "name": "Tellurium",
+    "parents": ["Antiserum Injector"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -49143,8 +49225,10 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Tralok Eyes" }
     ],
     "imageName": "tralok-eyes.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Tralok Eyes",
+    "parents": ["Murkray Bait"],
     "patchlogs": [
       {
         "name": "Plains of Eidolon: Hotfix 22.2.4",
@@ -51051,8 +51135,10 @@
       }
     ],
     "imageName": "void-traces.png",
+    "itemCount": 10,
     "masterable": false,
     "name": "Void Traces",
+    "parents": ["Bleeding Dragon Key", "Decaying Dragon Key", "Extinguished Dragon Key", "Hobbled Dragon Key"],
     "patchlogs": [
       {
         "name": "Veilbreaker: Hotfix 32.0.3",
