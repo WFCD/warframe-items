@@ -94,7 +94,7 @@
     "itemCount": 20,
     "masterable": false,
     "name": "Adramalium",
-    "parents": ["Adramal Alloy"],
+    "parents": ["Adramal Alloy", "Xaku Kintsu Helmet"],
     "patchlogs": [
       {
         "name": "Heart of Deimos: Hotfix 29.0.2",
@@ -827,8 +827,10 @@
     "consumeOnBuild": true,
     "description": "Capsule component for the Bonewidow Necramech.",
     "imageName": "bonewidow-capsule.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Capsule",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -901,8 +903,10 @@
     "consumeOnBuild": true,
     "description": "Casing component for the Bonewidow Necramech.",
     "imageName": "bonewidow-casing.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Casing",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -975,8 +979,10 @@
     "consumeOnBuild": true,
     "description": "Engine component for the Bonewidow Necramech.",
     "imageName": "bonewidow-engine.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Engine",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -1049,8 +1055,10 @@
     "consumeOnBuild": true,
     "description": "Weapon Pod component for the Bonewidow Necramech.",
     "imageName": "bonewidow-weapon-pod.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Weapon Pod",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -1152,8 +1160,21 @@
       { "chance": 0.2, "location": "Scyto Raknoid", "rarity": "Common", "type": "Calda Toroid" }
     ],
     "imageName": "calda-toroid.png",
+    "itemCount": 2,
     "masterable": false,
     "name": "Calda Toroid",
+    "parents": [
+      "Haztech Apparel (Operator)",
+      "Haztech Cuirass (Operator)",
+      "Kubrodon Ventkid Apparel",
+      "Kubrodon Ventkid Cuirass",
+      "Outrider Cuirass",
+      "Smelter Apparel (Operator)",
+      "Smelter Cuirass (Operator)",
+      "Vent Pobber Ventkid Apparel",
+      "Vent Pobber Ventkid Cuirass",
+      "Vent Rat Cuirass"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -1244,8 +1265,10 @@
     "consumeOnBuild": false,
     "description": "Resilient components used to reinforce the plated sheets of metal strapped to Grineer Ships.Location: Eximus units in the Grineer Shipyard Tileset, and Railjack missions in Earth, Saturn, and Veil Proximas",
     "imageName": "carbides.png",
+    "itemCount": 2000,
     "masterable": false,
     "name": "Carbides",
+    "parents": ["Protea Telema Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -1593,8 +1616,16 @@
       { "chance": 1, "location": "The Quills, Architect", "rarity": "Common", "type": "Cetus Wisp" }
     ],
     "imageName": "cetus-wisp.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Cetus Wisp",
+    "parents": [
+      "Zauba Apparel (Operator)",
+      "Zauba Cuirass (Operator)",
+      "Zauba Greaves (Operator)",
+      "Zauba Mask (Operator)",
+      "Zauba Pauldrons (Operator)"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -1718,8 +1749,10 @@
       { "chance": 1, "location": "Rogue Condroc", "rarity": "Common", "type": "Condroc Wing" }
     ],
     "imageName": "condroc-wing.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Condroc Wing",
+    "parents": ["Naberus Ephemera"],
     "tradable": false,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem"
@@ -2236,8 +2269,10 @@
     "category": "Resources",
     "description": "Excess circuitry disposed of during the Razorback manufacturing process, these components only appear in the vicinity of high level outer-orbit Corpus facilities after a Razorback Armada has been launched.Location: Corpus Archwing units on Jupiter and Neptune when a Razorback Armada is active",
     "imageName": "cryptographic-alu.png",
+    "itemCount": 4,
     "masterable": false,
     "name": "Cryptographic Alu",
+    "parents": ["Razorback Cipher"],
     "tradable": false,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Items/MiscItems/RazorbackCipherPart"
@@ -2427,8 +2462,10 @@
       }
     ],
     "imageName": "damaged-necramech-pod.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Damaged Necramech Pod",
+    "parents": ["Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing"],
     "tradable": true,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem"
@@ -2975,8 +3012,10 @@
     "category": "Resources",
     "description": "This robust, carnivorous plant has adapted to conditions in polluted waters. Location: Obtained by using a Codex Scanner on Dusklight Sarracenia plants growing in Grineer Shipyards found commonly on Ceres",
     "imageName": "dusklight-sarracenia.png",
+    "itemCount": 2,
     "masterable": false,
     "name": "Dusklight Sarracenia",
+    "parents": ["Nightfall Apothic"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenCobraLotusPlantItem"
@@ -2985,8 +3024,10 @@
     "category": "Resources",
     "description": "The quietest and most elusive of Voidtongue utterances. Sought after but never found by Albrecht.Location: Albrecht's Laboratories (Deimos)",
     "imageName": "echo-voca.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Echo Voca",
+    "parents": ["Qorvex"],
     "tradable": false,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagRare"
@@ -3213,8 +3254,10 @@
       { "chance": 1, "location": "Entrati Netracell Coffer", "rarity": "Common", "type": "Entrati Lanthorn" }
     ],
     "imageName": "entrati-lanthorn.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Entrati Lanthorn",
+    "parents": ["Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -3317,8 +3360,10 @@
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
     "imageName": "esher-devar.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Esher Devar",
+    "parents": ["Focused Nosam Cutter"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -3681,7 +3726,7 @@
     "itemCount": 10,
     "masterable": false,
     "name": "Fieldron",
-    "parents": ["Helios"],
+    "parents": ["Antiserum Injector", "Helios"],
     "patchlogs": [
       {
         "name": "Fortuna: Hotfix 24.0.5",
@@ -3887,8 +3932,10 @@
     "category": "Resources",
     "description": "This resilient plant provides a natural food source in frigid areas of the Origin system. Location: Obtained by using a Codex Scanner on Frostleaf plants that grow on Venus, Neptune, and Pluto",
     "imageName": "frostleaf.png",
+    "itemCount": 8,
     "masterable": false,
     "name": "Frostleaf",
+    "parents": ["Sunrise Apothic"],
     "patchlogs": [
       {
         "name": "The Silver Grove: Hotfix 4",
@@ -4119,8 +4166,10 @@
       }
     ],
     "imageName": "gorgaricus-spore.png",
+    "itemCount": 60,
     "masterable": false,
     "name": "Gorgaricus Spore",
+    "parents": ["Puppeteer"],
     "patchlogs": [
       {
         "name": "Empyrean: Prime Vault 27.1.1",
@@ -4300,8 +4349,18 @@
       { "chance": 1, "location": "Grokdrul Drum", "rarity": "Common", "type": "Grokdrul" }
     ],
     "imageName": "grokdrul.png",
+    "itemCount": 50,
     "masterable": false,
     "name": "Grokdrul",
+    "parents": [
+      "Archwing Launcher",
+      "Fosfor Blau",
+      "Lanzo Fishing Spear",
+      "Peram Fishing Spear",
+      "Shockprod Fishing Spear",
+      "Stunna Fishing Spear",
+      "Tulok Fishing Spear"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -4470,7 +4529,15 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Heart Nyth",
-    "parents": ["Exceptional Sentient Core"],
+    "parents": [
+      "Caliban Cranion Helmet",
+      "Exceptional Sentient Core",
+      "Vahd Apparel (Operator)",
+      "Vahd Cuirass (Operator)",
+      "Vahd Greaves (Operator)",
+      "Vahd Mask (Operator)",
+      "Vahd Pauldrons (Operator)"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -4576,8 +4643,24 @@
     "consumeOnBuild": false,
     "description": "A compound formed from Hesperon.Blueprint sold by Smokefinger in Fortuna on Venus.",
     "imageName": "hespazym-alloy.png",
+    "itemCount": 50,
     "masterable": false,
     "name": "Hespazym Alloy",
+    "parents": [
+      "Haztech Greaves (Operator)",
+      "Haztech Mask (Operator)",
+      "Kubrodon Ventkid Greaves",
+      "Kubrodon Ventkid Mask",
+      "Outrider Greaves",
+      "Outrider Mask",
+      "Smelter Greaves (Operator)",
+      "Smelter Mask (Operator)",
+      "Styanax Gerousic Helmet",
+      "Vent Pobber Ventkid Greaves",
+      "Vent Pobber Ventkid Mask",
+      "Vent Rat Greaves",
+      "Vent Rat Mask"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -4719,8 +4802,10 @@
       { "chance": 1, "location": "Ostron (Old Man Suumbaat), Surah", "rarity": "Common", "type": "Iradite Nugget" }
     ],
     "imageName": "iradite.png",
+    "itemCount": 50,
     "masterable": false,
     "name": "Iradite",
+    "parents": ["Archwing Launcher", "Fosfor Rahd", "Luminous Dye", "Pharoma"],
     "patchlogs": [
       {
         "name": "Prime Resurgence: Hotfix 30.9.4",
@@ -5018,8 +5103,10 @@
     "consumeOnBuild": false,
     "description": "A component used in secure Grineer communication networks.Location: Railjack missions in Earth, Saturn, and Veil Proximas",
     "imageName": "komms.png",
+    "itemCount": 4,
     "masterable": false,
     "name": "Komms",
+    "parents": ["Protea Telema Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -5188,8 +5275,10 @@
       }
     ],
     "imageName": "lua-thrax-plasm.png",
+    "itemCount": 50,
     "masterable": false,
     "name": "Lua Thrax Plasm",
+    "parents": ["Voruna"],
     "patchlogs": [
       {
         "name": "Lua’s Prey: Hotfix 32.2.4",
@@ -5264,8 +5353,10 @@
     "category": "Resources",
     "description": "This carnivorous plant can be found growing in the wilderness on Lua. Location: Obtained by using a Codex Scanner on Lunar Pitcher plants that grow on Lua",
     "imageName": "lunar-pitcher.png",
+    "itemCount": 50,
     "masterable": false,
     "name": "Lunar Pitcher",
+    "parents": ["Seeding Step Ephemera", "Twilight Apothic"],
     "patchlogs": [
       {
         "name": "Saint of Altra: Update 25.7.0",
@@ -5308,8 +5399,18 @@
       { "chance": 0.5, "location": "Tusk Thumper Doma", "rarity": "Uncommon", "type": "Maprico" }
     ],
     "imageName": "maprico.png",
+    "itemCount": 15,
     "masterable": false,
     "name": "Maprico",
+    "parents": [
+      "Cuthol Bait",
+      "Fosfor Blau",
+      "Fosfor Rahd",
+      "Glappid Bait",
+      "Norg Bait",
+      "Twilight Bait",
+      "Vasca Curative"
+    ],
     "patchlogs": [
       {
         "name": "The Sacrifice: Update 23",
@@ -5370,8 +5471,17 @@
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
     "imageName": "marquise-veridos.png",
+    "itemCount": 20,
     "masterable": false,
     "name": "Marquise Veridos",
+    "parents": [
+      "Advanced Nosam Cutter",
+      "Loid Sentinel Mask",
+      "Loid Sentinel Skin",
+      "Loid Sentinel Tail",
+      "Loid Sentinel Wing",
+      "Sunpoint Plasma Drill"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -5483,10 +5593,10 @@
     "category": "Resources",
     "description": "This uncommon plant can only be found at night. Location: Obtained by using a Codex Scanner on Moonlight Dragonlily plants that grow on Earth",
     "imageName": "moonlight-dragonlily.png",
-    "itemCount": 10,
+    "itemCount": 6,
     "masterable": false,
     "name": "Moonlight Dragonlily",
-    "parents": ["The Silver Grove"],
+    "parents": ["Lapis Antitoxin", "Nightfall Apothic", "The Silver Grove", "Topaz Antitoxin", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem"
@@ -5495,8 +5605,10 @@
     "category": "Resources",
     "description": "This rare plant can only be found at night. Location: Obtained by using a Codex Scanner on Moonlight Jadeleaf plants that grow on Earth",
     "imageName": "moonlight-jadeleaf.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Moonlight Jadeleaf",
+    "parents": ["Health Restore (Large)", "Lapis Antitoxin", "Twilight Apothic", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem"
@@ -5505,8 +5617,10 @@
     "category": "Resources",
     "description": "This common plant can only be found at night. Location: Obtained by using a Codex Scanner on Moonlight Threshcone plants that grow on Earth",
     "imageName": "moonlight-threshcone.png",
+    "itemCount": 15,
     "masterable": false,
     "name": "Moonlight Threshcone",
+    "parents": ["Amethyst Antitoxin", "Health Restore (Large)", "Topaz Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem"
@@ -5981,8 +6095,10 @@
       }
     ],
     "imageName": "mytocardia-spore.png",
+    "itemCount": 120,
     "masterable": false,
     "name": "Mytocardia Spore",
+    "parents": ["Hang Tenno"],
     "patchlogs": [
       {
         "name": "Fortuna: The Profit-Taker - Update 24.2",
@@ -6139,8 +6255,19 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Nistlepod" }
     ],
     "imageName": "nistlepod.png",
+    "itemCount": 15,
     "masterable": false,
     "name": "Nistlepod",
+    "parents": [
+      "Lanzo Fishing Spear",
+      "Peppered Bait",
+      "Peram Fishing Spear",
+      "Shockprod Fishing Spear",
+      "Stunna Fishing Spear",
+      "Tulok Fishing Spear",
+      "Twilight Bait",
+      "Vasca Curative"
+    ],
     "patchlogs": [
       {
         "name": "Warframe Update 22: Plains of Eidolon",
@@ -6245,7 +6372,7 @@
     "itemCount": 5,
     "masterable": false,
     "name": "Nullstones",
-    "parents": ["Nautilus"],
+    "parents": ["Nautilus", "Protea Mavv Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -6967,8 +7094,10 @@
     "category": "Resources",
     "description": "The manifestation of Thrax's malevolence that shapes the Orowyrms' outbursts.Location: Rewarded upon defeating the Orowyrm in Duviri ",
     "imageName": "pathos-clamp.png",
+    "itemCount": 10,
     "masterable": false,
     "name": "Pathos Clamp",
+    "parents": ["Kullervo"],
     "tradable": false,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriDragonDropItem"
@@ -7219,7 +7348,15 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Radian Sentirum",
-    "parents": ["Exceptional Sentient Core"],
+    "parents": [
+      "Ceno Apparel (Operator)",
+      "Ceno Cuirass (Operator)",
+      "Ceno Greaves (Operator)",
+      "Ceno Helmet (Operator)",
+      "Ceno Pauldrons (Operator)",
+      "Eidolon Ephemera",
+      "Exceptional Sentient Core"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -7382,8 +7519,10 @@
     "category": "Resources",
     "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments. Location: Obtained by using a Codex Scanner on Ruk's Claw plants that grow on Mars",
     "imageName": "ruk's-claw.png",
+    "itemCount": 6,
     "masterable": false,
     "name": "Ruk's Claw",
+    "parents": ["Twilight Apothic"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GftPlantRuksClawMaturePlantItem"
@@ -7599,7 +7738,13 @@
     "itemCount": 4,
     "masterable": false,
     "name": "Scintillant",
-    "parents": ["Bonewidow Capsule"],
+    "parents": [
+      "Bonewidow Capsule",
+      "Loid Sentinel Mask",
+      "Loid Sentinel Skin",
+      "Loid Sentinel Tail",
+      "Loid Sentinel Wing"
+    ],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -7881,8 +8026,17 @@
       { "chance": 0.2, "location": "Kyta Raknoid", "rarity": "Common", "type": "Sola Toroid" }
     ],
     "imageName": "sola-toroid.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Sola Toroid",
+    "parents": [
+      "Haztech Greaves (Operator)",
+      "Kubrodon Ventkid Greaves",
+      "Outrider Greaves",
+      "Smelter Greaves (Operator)",
+      "Vent Pobber Ventkid Greaves",
+      "Vent Rat Greaves"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -7990,7 +8144,7 @@
     "itemCount": 6,
     "masterable": false,
     "name": "Star Crimzian",
-    "parents": ["Bonewidow Capsule"],
+    "parents": ["Bonewidow Capsule", "Styanax Agogean Helmet"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -8229,10 +8383,10 @@
     "category": "Resources",
     "description": "This uncommon plant can only be found during the day. Location: Obtained by using a Codex Scanner on Sunlight Dragonlily plants that grow on Earth",
     "imageName": "sunlight-dragonlily.png",
-    "itemCount": 10,
+    "itemCount": 4,
     "masterable": false,
     "name": "Sunlight Dragonlily",
-    "parents": ["The Silver Grove"],
+    "parents": ["Citrine Antitoxin", "Lapis Antitoxin", "The Silver Grove", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem"
@@ -8241,8 +8395,10 @@
     "category": "Resources",
     "description": "This rare plant can only be found during the day. Location: Obtained by using a Codex Scanner on Sunlight Jadeleaf plants that grow on Earth",
     "imageName": "sunlight-jadeleaf.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Sunlight Jadeleaf",
+    "parents": ["Health Restore (Large)", "Lapis Antitoxin", "Sunrise Apothic", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem"
@@ -8251,8 +8407,10 @@
     "category": "Resources",
     "description": "This common plant can only be found during the day. Location: Obtained by using a Codex Scanner on Sunlight Threshcone plants that grow on Earth",
     "imageName": "sunlight-threshcone.png",
+    "itemCount": 15,
     "masterable": false,
     "name": "Sunlight Threshcone",
+    "parents": ["Beryl Antitoxin", "Citrine Antitoxin", "Health Restore (Large)", "Nightfall Apothic"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem"
@@ -8308,8 +8466,10 @@
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
     "imageName": "tear-azurite.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Tear Azurite",
+    "parents": ["Focused Nosam Cutter"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -8661,8 +8821,10 @@
       { "chance": 1, "location": "Thermal Sludge Cannister", "rarity": "Common", "type": "Thermal Sludge" }
     ],
     "imageName": "thermal-sludge.png",
+    "itemCount": 75,
     "masterable": false,
     "name": "Thermal Sludge",
+    "parents": ["Greedy Milk", "Puppeteer"],
     "patchlogs": [
       {
         "name": "Echoes of War: Banshee & Mirage Prime Vault: Hotfix 31.1.3",
@@ -8747,8 +8909,10 @@
       }
     ],
     "imageName": "thrax-plasm.png",
+    "itemCount": 300,
     "masterable": false,
     "name": "Thrax Plasm",
+    "parents": ["Gyre Automaton Helmet", "Raptwing Ephemera", "Seraphayre Ephemera", "Styanax Gerousic Helmet"],
     "patchlogs": [
       {
         "name": "Lua’s Prey: Hotfix 32.2.4",
@@ -9111,7 +9275,7 @@
     "itemCount": 750,
     "masterable": false,
     "name": "Titanium",
-    "parents": ["Bonewidow Engine"],
+    "parents": ["Bonewidow Engine", "Protea Mavv Helmet"],
     "patchlogs": [
       {
         "name": "Echoes of the Zariman: Update 31.6",
@@ -9371,8 +9535,10 @@
     "consumeOnBuild": false,
     "description": "A compound formed from Travoride.Blueprint sold by Smokefinger in Fortuna on Venus.",
     "imageName": "travocyte-alloy.png",
+    "itemCount": 30,
     "masterable": false,
     "name": "Travocyte Alloy",
+    "parents": ["Sunpoint Plasma Drill"],
     "skipBuildTimePrice": 5,
     "tradable": false,
     "type": "Gem",
@@ -9454,8 +9620,17 @@
       }
     ],
     "imageName": "vega-toroid.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Vega Toroid",
+    "parents": [
+      "Haztech Pauldrons (Operator)",
+      "Kubrodon Ventkid Pauldrons",
+      "Outrider Pauldrons",
+      "Smelter Pauldrons (Operator)",
+      "Vent Pobber Ventkid Pauldrons",
+      "Vent Rat Pauldrons"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -9554,8 +9729,27 @@
     "consumeOnBuild": false,
     "description": "A compound formed from Venerol.Blueprint sold by Smokefinger in Fortuna on Venus.",
     "imageName": "venerdo-alloy.png",
+    "itemCount": 40,
     "masterable": false,
     "name": "Venerdo Alloy",
+    "parents": [
+      "Haztech Apparel (Operator)",
+      "Haztech Cuirass (Operator)",
+      "Haztech Pauldrons (Operator)",
+      "Kubrodon Ventkid Apparel",
+      "Kubrodon Ventkid Cuirass",
+      "Kubrodon Ventkid Pauldrons",
+      "Outrider Cuirass",
+      "Outrider Pauldrons",
+      "Smelter Apparel (Operator)",
+      "Smelter Cuirass (Operator)",
+      "Smelter Pauldrons (Operator)",
+      "Vent Pobber Ventkid Apparel",
+      "Vent Pobber Ventkid Cuirass",
+      "Vent Pobber Ventkid Pauldrons",
+      "Vent Rat Cuirass",
+      "Vent Rat Pauldrons"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -9658,8 +9852,10 @@
     "category": "Resources",
     "description": "One of the few known plant species able to thrive on asteroids in deep space. Location: Obtained by using a Codex Scanner on Vestan Moss plants that grow on Mercury, Saturn, and Sedna",
     "imageName": "vestan-moss.png",
+    "itemCount": 12,
     "masterable": false,
     "name": "Vestan Moss",
+    "parents": ["Sunrise Apothic"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -9734,8 +9930,10 @@
       }
     ],
     "imageName": "voidgel-orb.png",
+    "itemCount": 45,
     "masterable": false,
     "name": "Voidgel Orb",
+    "parents": ["Gyre Automaton Helmet", "Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -9818,8 +10016,10 @@
     "category": "Resources",
     "description": "A Void Angel's living feather, ripped out in combat.Location: Zariman",
     "imageName": "voidplume-pinion.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Voidplume Pinion",
+    "parents": ["Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Angels of the Zariman: Hotfix 31.5.4",
@@ -9966,8 +10166,10 @@
     "consumeOnBuild": true,
     "description": "Capsule component for the Voidrig Necramech.",
     "imageName": "voidrig-capsule.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Capsule",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10058,8 +10260,10 @@
     "consumeOnBuild": true,
     "description": "Casing component for the Voidrig Necramech.",
     "imageName": "voidrig-casing.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Casing",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10151,8 +10355,10 @@
     "consumeOnBuild": true,
     "description": "Engine component for the Voidrig Necramech.",
     "imageName": "voidrig-engine.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Engine",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10243,8 +10449,10 @@
     "consumeOnBuild": true,
     "description": "Weapon Pod component for the Voidrig Necramech.",
     "imageName": "voidrig-weapon-pod.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Weapon Pod",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
