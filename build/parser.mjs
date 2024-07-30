@@ -1,4 +1,5 @@
 import cloneDeep from 'lodash.clonedeep';
+import { lastResourceName } from 'warframe-worldstate-data/utilities';
 
 import dedupe from './dedupe.mjs';
 import hashManager from './hashManager.mjs';
@@ -538,7 +539,7 @@ class Parser {
 
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
-    item.imageName = encode(item.name);
+    item.imageName = encode(lastResourceName(item.uniqueName));
 
     // Components usually have the same generic images, so we should remove the
     // parent name here. Note that there's a difference between prime/non-prime
