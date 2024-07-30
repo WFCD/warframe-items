@@ -58,7 +58,7 @@ describe('#loadMods', () => {
       uniqueName: '/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare',
       polarity: 'Vazarin',
       rarity: 'Common',
-      imageName: 'lotusriflerandommodrare.png',
+      imageName: 'rifle-riven-mod.png',
       category: 'Mods',
       buffs: [
         { tag: 'WeaponCritDamageMod', val: 0.3296302411049886 },
