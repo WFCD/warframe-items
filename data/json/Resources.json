@@ -10,7 +10,7 @@
         "name": "Adramalium",
         "description": "Sinewy and metallic, possessed of great elastic strength.Location: Cambion Drift (Deimos) from Yellow Mining Lesions, Spitia Infested Cysts, and Rolizor Infested Cysts.",
         "itemCount": 20,
-        "imageName": "adramalium.png",
+        "imageName": "deimos-common-ore-aitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -20,7 +20,7 @@
         "name": "Blueprint",
         "description": "Purged of spores and contaminants, this alloy is highly versatile.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "deimos-common-ore-aalloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -30,7 +30,7 @@
         "name": "Lucent Teroglobe",
         "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.Location: Cambion Drift on Deimos",
         "itemCount": 15,
-        "imageName": "lucent-teroglobe.png",
+        "imageName": "orb-stone-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -51,7 +51,7 @@
         "name": "Travoride",
         "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
         "itemCount": 20,
-        "imageName": "travoride.png",
+        "imageName": "solaris-common-ore-aitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -59,7 +59,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Purged of spores and contaminants, this alloy is highly versatile.Blueprint sold by Otak in the Necralisk on Deimos.",
-    "imageName": "adramal-alloy.png",
+    "imageName": "deimos-common-ore-aalloy-item.png",
     "itemCount": 80,
     "masterable": false,
     "name": "Adramal Alloy",
@@ -99,11 +99,11 @@
   {
     "category": "Resources",
     "description": "Sinewy and metallic, possessed of great elastic strength.Location: Cambion Drift (Deimos) from Yellow Mining Lesions, Spitia Infested Cysts, and Rolizor Infested Cysts.",
-    "imageName": "adramalium.png",
+    "imageName": "deimos-common-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Adramalium",
-    "parents": ["Adramal Alloy"],
+    "parents": ["Adramal Alloy", "Xaku Kintsu Helmet"],
     "patchlogs": [
       {
         "name": "Heart of Deimos: Hotfix 29.0.2",
@@ -177,7 +177,7 @@
         "type": "2X Advances Debt-Bond"
       }
     ],
-    "imageName": "advances-debt-bond.png",
+    "imageName": "debt-token-d.png",
     "masterable": false,
     "name": "Advances Debt-Bond",
     "patchlogs": [
@@ -224,7 +224,7 @@
       { "chance": 0.3775, "location": "Duviri Circuit", "rarity": "Common", "type": "7X Aggristone" },
       { "chance": 0.3872, "location": "Duviri Full Experience", "rarity": "Common", "type": "5X Aggristone" }
     ],
-    "imageName": "aggristone.png",
+    "imageName": "duviri-rock-item.png",
     "itemCount": 150,
     "masterable": false,
     "name": "Aggristone",
@@ -236,7 +236,7 @@
   {
     "category": "Resources",
     "description": "A violet gem that forms from the crystallization of byproducts expelled from the Weeping Towers.Location: Orb Vallis (Venus) from Blue Mining Veins and Resource Containers",
-    "imageName": "amarast.png",
+    "imageName": "solaris-rare-gem-aitem.png",
     "itemCount": 6,
     "masterable": false,
     "name": "Amarast",
@@ -259,7 +259,7 @@
     "category": "Resources",
     "description": "Used to locate the Ambulas production facility.This resource is dropped from Ambulas Units.",
     "excludeFromCodex": true,
-    "imageName": "animo-nav-beacon.png",
+    "imageName": "ambulas-data-fragment.png",
     "masterable": false,
     "name": "Animo Nav Beacon",
     "tradable": false,
@@ -373,7 +373,7 @@
         "type": "Asterite"
       }
     ],
-    "imageName": "asterite.png",
+    "imageName": "asterite-railjack-item.png",
     "masterable": false,
     "name": "Asterite",
     "patchlogs": [
@@ -452,7 +452,7 @@
       },
       { "chance": 1, "location": "Vox Solaris, Agent", "rarity": "Common", "type": "Atmo Systems" }
     ],
-    "imageName": "atmo-systems.png",
+    "imageName": "corpus-widget-bitem.png",
     "itemCount": 2,
     "masterable": false,
     "name": "Atmo Systems",
@@ -506,7 +506,7 @@
         "name": "Blueprint",
         "description": "Once installed, these delicate power systems fuse with a Corpus Obelisk's engines. Unused capacitors are therefore, highly prized.Location: Railjack missions in Venus, Neptune, and Pluto Proximas",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "aucrux-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -527,7 +527,7 @@
         "name": "Fieldron Sample",
         "description": "This destroyed Fieldron could further research into super-heated containment fields.Location: Venus, Mars, Jupiter, Europa, Neptune, and Pluto",
         "itemCount": 300,
-        "imageName": "fieldron-sample.png",
+        "imageName": "energy-fragment.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -546,7 +546,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Once installed, these delicate power systems fuse with a Corpus Obelisk's engines. Unused capacitors are therefore, highly prized.Location: Railjack missions in Venus, Neptune, and Pluto Proximas",
-    "imageName": "aucrux-capacitors.png",
+    "imageName": "aucrux-railjack-item.png",
     "masterable": false,
     "name": "Aucrux Capacitors",
     "patchlogs": [
@@ -583,7 +583,7 @@
       { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Auron" },
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Auron" }
     ],
-    "imageName": "auron.png",
+    "imageName": "rare-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Auron",
@@ -595,7 +595,7 @@
   {
     "category": "Resources",
     "description": "A sediment that formed from sulfuric rain that became trapped under the ice.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
-    "imageName": "axidite.png",
+    "imageName": "solaris-common-ore-bitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Axidite",
@@ -615,7 +615,7 @@
         "name": "Axidite",
         "description": "A sediment that formed from sulfuric rain that became trapped under the ice.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
         "itemCount": 20,
-        "imageName": "axidite.png",
+        "imageName": "solaris-common-ore-bitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -625,7 +625,7 @@
         "name": "Blueprint",
         "description": "A compound formed from Axidite.Blueprint sold by Smokefinger in Fortuna on Venus.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "solaris-common-ore-balloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -654,7 +654,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A compound formed from Axidite.Blueprint sold by Smokefinger in Fortuna on Venus.",
-    "imageName": "axidrol-alloy.png",
+    "imageName": "solaris-common-ore-balloy-item.png",
     "itemCount": 30,
     "masterable": false,
     "name": "Axidrol Alloy",
@@ -706,7 +706,7 @@
       { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Azurite" },
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Azurite" }
     ],
-    "imageName": "azurite.png",
+    "imageName": "common-gem-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Azurite",
@@ -736,7 +736,7 @@
   {
     "category": "Resources",
     "description": "Malleable, owing to ingrown veins of Infestation protein.Location: Cambion Drift (Deimos) from Yellow Mining Lesions, Rolizor Infested Cysts, and Bonus Vaults in Isolation Vault Bounties.",
-    "imageName": "bapholite.png",
+    "imageName": "deimos-common-ore-bitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Bapholite",
@@ -774,7 +774,7 @@
   {
     "category": "Resources",
     "description": "The deepest of Voidtongue moans, etched into stone. An unlikely asset in the construction of Albrecht's vessels.Location: Albrecht's Laboratories (Deimos)",
-    "imageName": "bellow-voca.png",
+    "imageName": "entrati-lab-dog-tag-uncommon.png",
     "masterable": false,
     "name": "Bellow Voca",
     "tradable": false,
@@ -785,7 +785,7 @@
     "category": "Resources",
     "description": "",
     "excludeFromCodex": true,
-    "imageName": "bioplasma.png",
+    "imageName": "bioplasma-item.png",
     "masterable": false,
     "name": "Bioplasma",
     "tradable": false,
@@ -803,7 +803,7 @@
         "name": "Biotic Filter",
         "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.Guaranteed to drop from these sources:AQUAPULMODUROID",
         "itemCount": 20,
-        "imageName": "biotic-filter.png",
+        "imageName": "deimos-orokin-fish-apart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -813,7 +813,7 @@
         "name": "Blueprint",
         "description": "Capsule component for the Bonewidow Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-part-systems-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -830,7 +830,7 @@
         "name": "Damaged Necramech Pod",
         "description": "A modular component for a Necramech. It’s damaged and in need of repair.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-pod.png",
+        "imageName": "damaged-mech-part-systems-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -840,7 +840,7 @@
         "name": "Scintillant",
         "description": "These scarce, hovering relics of the Orokin era can still be found monitoring the isolation vaults deep beneath the surface of Deimos.Location: Cambion Drift on Deimos",
         "itemCount": 4,
-        "imageName": "scintillant.png",
+        "imageName": "entrati-wisp-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -850,7 +850,7 @@
         "name": "Star Crimzian",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 6,
-        "imageName": "star-crimzian.png",
+        "imageName": "rare-gem-acut-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -858,9 +858,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Capsule component for the Bonewidow Necramech.",
-    "imageName": "bonewidow-capsule.png",
+    "imageName": "thanomech-part-systems-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Capsule",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -877,7 +879,7 @@
         "name": "Blueprint",
         "description": "Casing component for the Bonewidow Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-part-chassis-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -894,7 +896,7 @@
         "name": "Damaged Necramech Casing",
         "description": "The damaged remains of a Necramech supporting frame.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift, and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-casing.png",
+        "imageName": "damaged-mech-part-chassis-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -904,7 +906,7 @@
         "name": "Goblite Tears",
         "description": "Polished and cut to perfection.Blueprint sold by Smokefinger in Fortuna on Venus.",
         "itemCount": 15,
-        "imageName": "goblite-tears.png",
+        "imageName": "solaris-uncommon-gem-acut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -914,7 +916,7 @@
         "name": "Tempered Bapholite",
         "description": "Fused with its inert Infested tendrils into a durable alloy.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 100,
-        "imageName": "tempered-bapholite.png",
+        "imageName": "deimos-common-ore-balloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -924,7 +926,7 @@
         "name": "Thaumic Distillate",
         "description": "Thaumica reduced to its most durable, workable elements.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 20,
-        "imageName": "thaumic-distillate.png",
+        "imageName": "deimos-rare-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -932,9 +934,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Casing component for the Bonewidow Necramech.",
-    "imageName": "bonewidow-casing.png",
+    "imageName": "thanomech-part-chassis-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Casing",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -951,7 +955,7 @@
         "name": "Adramal Alloy",
         "description": "Purged of spores and contaminants, this alloy is highly versatile.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 120,
-        "imageName": "adramal-alloy.png",
+        "imageName": "deimos-common-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -961,7 +965,7 @@
         "name": "Blueprint",
         "description": "Engine component for the Bonewidow Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-part-engine-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -978,7 +982,7 @@
         "name": "Cranial Foremount",
         "description": "Beneath the membranous protein layers can be found a secondary 'skull'; flexible, tough and highly conductive.Source:MYXOSTOMATA",
         "itemCount": 2,
-        "imageName": "cranial-foremount.png",
+        "imageName": "deimos-orokin-fish-cpart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -988,7 +992,7 @@
         "name": "Damaged Necramech Engine",
         "description": "An engine designed for use in a Necramech. Unfortunately, it’s damaged.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-engine.png",
+        "imageName": "damaged-mech-part-engine-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -998,7 +1002,7 @@
         "name": "Titanium",
         "description": "This highly malleable metal was exploited in great quantities by the Orokin and can now only be found within space rock.Location: Railjack Missions",
         "itemCount": 750,
-        "imageName": "titanium.png",
+        "imageName": "titanium-railjack-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -1006,9 +1010,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Engine component for the Bonewidow Necramech.",
-    "imageName": "bonewidow-engine.png",
+    "imageName": "thanomech-part-engine-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Engine",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -1025,7 +1031,7 @@
         "name": "Blueprint",
         "description": "Weapon Pod component for the Bonewidow Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-part-weapon-pod-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -1042,7 +1048,7 @@
         "name": "Damaged Necramech Weapon Pod",
         "description": "A broken weapon system intended for a Necramech.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-pod.png",
+        "imageName": "damaged-mech-part-weapon-pod-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -1052,7 +1058,7 @@
         "name": "Devolved Namalon",
         "description": "Retrieved from its Infested state, restored to worth and utility.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 80,
-        "imageName": "devolved-namalon.png",
+        "imageName": "deimos-uncommon-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -1062,7 +1068,7 @@
         "name": "Scrap",
         "description": "A sample of sprockets, gyros and wires.Acquired by disassembling any Servofish.",
         "itemCount": 45,
-        "imageName": "scrap.png",
+        "imageName": "generic-fish-scrap-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -1072,7 +1078,7 @@
         "name": "Spinal Core Section",
         "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
         "itemCount": 6,
-        "imageName": "spinal-core-section.png",
+        "imageName": "deimos-orokin-fish-bpart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -1080,9 +1086,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Weapon Pod component for the Bonewidow Necramech.",
-    "imageName": "bonewidow-weapon-pod.png",
+    "imageName": "thanomech-part-weapon-pod-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Bonewidow Weapon Pod",
+    "parents": ["Bonewidow"],
     "skipBuildTimePrice": 25,
     "tradable": false,
     "type": "Resource",
@@ -1109,7 +1117,7 @@
         "name": "Mutagen Sample",
         "description": "These samples could advance our knowledge of biological research.Location: Eris and Deimos",
         "itemCount": 20,
-        "imageName": "mutagen-sample.png",
+        "imageName": "bio-fragment.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -1119,7 +1127,7 @@
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Location: Saturn, Neptune, Eris, and Deimos",
         "itemCount": 13000,
-        "imageName": "nano-spores.png",
+        "imageName": "nanospores.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -1130,7 +1138,7 @@
         "name": "Neurodes",
         "description": "Biotech sensor organ harvested from Infested entities.Location: Earth, Lua, Eris, and Deimos",
         "itemCount": 75,
-        "imageName": "neurodes.png",
+        "imageName": "neurode.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -1138,7 +1146,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A rare bacterial entity that increases the spread of Infestation found on Infested Ships.",
-    "imageName": "bracoid.png",
+    "imageName": "bracoid-railjack-item.png",
     "masterable": false,
     "name": "Bracoid",
     "patchlogs": [
@@ -1183,11 +1191,26 @@
       { "chance": 0.2, "location": "Narmer Scyto Raknoid", "rarity": "Common", "type": "Calda Toroid" },
       { "chance": 0.2, "location": "Scyto Raknoid", "rarity": "Common", "type": "Calda Toroid" }
     ],
-    "imageName": "calda-toroid.png",
-    "itemCount": 3,
+    "imageName": "arachnoid-hunger-item.png",
+    "itemCount": 2,
     "masterable": false,
     "name": "Calda Toroid",
-    "parents": ["Dissic Scaffold", "Exard Scaffold", "Propa Scaffold", "Urga Bracket"],
+    "parents": [
+      "Dissic Scaffold",
+      "Exard Scaffold",
+      "Haztech Apparel (Operator)",
+      "Haztech Cuirass (Operator)",
+      "Kubrodon Ventkid Apparel",
+      "Kubrodon Ventkid Cuirass",
+      "Outrider Cuirass",
+      "Propa Scaffold",
+      "Smelter Apparel (Operator)",
+      "Smelter Cuirass (Operator)",
+      "Urga Bracket",
+      "Vent Pobber Ventkid Apparel",
+      "Vent Pobber Ventkid Cuirass",
+      "Vent Rat Cuirass"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -1277,11 +1300,11 @@
     ],
     "consumeOnBuild": false,
     "description": "Resilient components used to reinforce the plated sheets of metal strapped to Grineer Ships.Location: Eximus units in the Grineer Shipyard Tileset, and Railjack missions in Earth, Saturn, and Veil Proximas",
-    "imageName": "carbides.png",
-    "itemCount": 800,
+    "imageName": "carbides-railjack-item.png",
+    "itemCount": 2000,
     "masterable": false,
     "name": "Carbides",
-    "parents": ["Basmu"],
+    "parents": ["Basmu", "Protea Telema Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -1316,7 +1339,7 @@
   {
     "category": "Resources",
     "description": "Cephalite Resonance used to enter the Glassmaker's Weave",
-    "imageName": "cephalite-resonance.png",
+    "imageName": "cephalon-fissure-time-point-item.png",
     "masterable": false,
     "name": "Cephalite Resonance",
     "patchlogs": [
@@ -1368,7 +1391,7 @@
   {
     "category": "Resources",
     "description": "Extracted from a Cerulean Fungus colony.",
-    "imageName": "cerulean-fungus-extract.png",
+    "imageName": "oro-fungus-aplant-item.png",
     "masterable": false,
     "name": "Cerulean Fungus Extract",
     "tradable": false,
@@ -1628,7 +1651,7 @@
       { "chance": 1, "location": "Operational Supply, Neutral", "rarity": "Common", "type": "Cetus Wisp" },
       { "chance": 1, "location": "The Quills, Architect", "rarity": "Common", "type": "Cetus Wisp" }
     ],
-    "imageName": "cetus-wisp.png",
+    "imageName": "cetus-wisp-item.png",
     "itemCount": 5,
     "masterable": false,
     "name": "Cetus Wisp",
@@ -1644,7 +1667,12 @@
       "Pencha Scaffold",
       "Shraksun Scaffold",
       "Vargeet Jai Ii",
-      "Vargeet Ruhang Ii"
+      "Vargeet Ruhang Ii",
+      "Zauba Apparel (Operator)",
+      "Zauba Cuirass (Operator)",
+      "Zauba Greaves (Operator)",
+      "Zauba Mask (Operator)",
+      "Zauba Pauldrons (Operator)"
     ],
     "patchlogs": [
       {
@@ -1768,8 +1796,8 @@
       { "chance": 1, "location": "Emperor Condroc", "rarity": "Common", "type": "Condroc Wing" },
       { "chance": 1, "location": "Rogue Condroc", "rarity": "Common", "type": "Condroc Wing" }
     ],
-    "imageName": "condroc-wing.png",
-    "itemCount": 15,
+    "imageName": "bird-of-prey-part-item.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Condroc Wing",
     "parents": [
@@ -1781,6 +1809,7 @@
       "Ekwana Ruhang Ii",
       "Jai",
       "Jai Ii",
+      "Naberus Ephemera",
       "Sepfahn"
     ],
     "tradable": false,
@@ -1824,7 +1853,7 @@
       },
       { "chance": 0.0752, "location": "Duviri Full Experience", "rarity": "Rare", "type": "Connla Sprout" }
     ],
-    "imageName": "connla-sprout.png",
+    "imageName": "duviri-plant-item-c.png",
     "itemCount": 40,
     "masterable": false,
     "name": "Connla Sprout",
@@ -1884,7 +1913,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A cell of encapsulated Void energy.Location: Lua",
-    "imageName": "copernics.png",
+    "imageName": "copernics-railjack-item.png",
     "masterable": false,
     "name": "Copernics",
     "patchlogs": [
@@ -1921,7 +1950,7 @@
   {
     "category": "Resources",
     "description": "A soft, malleable metal.Location: Plains of Eidolon (Earth) from Red Mining Veins",
-    "imageName": "coprun.png",
+    "imageName": "common-ore-bitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Coprun",
@@ -1943,7 +1972,7 @@
   {
     "category": "Resources",
     "description": "A cipher used to decode Corpus intel. Crafting component required to create a CORPUS VOID KEY",
-    "imageName": "corpus-cipher.png",
+    "imageName": "cipher-plus.png",
     "masterable": false,
     "name": "Corpus Cipher",
     "patchlogs": [
@@ -1971,7 +2000,7 @@
   {
     "category": "Resources",
     "description": "A Corpus datamass containing encrypted intel. Crafting component required to create a CORPUS VOID KEY",
-    "imageName": "corpus-datamass.png",
+    "imageName": "data-mass-plus.png",
     "masterable": false,
     "name": "Corpus Datamass",
     "tradable": false,
@@ -1989,7 +2018,7 @@
         "name": "Adramal Alloy",
         "description": "Purged of spores and contaminants, this alloy is highly versatile.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 80,
-        "imageName": "adramal-alloy.png",
+        "imageName": "deimos-common-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -1999,7 +2028,7 @@
         "name": "Blueprint",
         "description": "A Necramech weapon-crafting component.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-arch-gun-barrel-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -2016,7 +2045,7 @@
         "name": "Damaged Necramech Weapon Barrel",
         "description": "The damaged barrel of a heavy-duty Necramech weapon.Location: Isolation Vault and Arcana Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-barrel.png",
+        "imageName": "damaged-mech-weapon-barrel-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -2026,7 +2055,7 @@
         "name": "Fersteel Alloy",
         "description": "Ferros that has been forged into a stronger metal.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 20,
-        "imageName": "fersteel-alloy.png",
+        "imageName": "uncommon-ore-aalloy-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2036,7 +2065,7 @@
         "name": "Spinal Core Section",
         "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
         "itemCount": 20,
-        "imageName": "spinal-core-section.png",
+        "imageName": "deimos-orokin-fish-bpart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -2044,7 +2073,7 @@
     ],
     "consumeOnBuild": true,
     "description": "A Necramech weapon-crafting component.",
-    "imageName": "cortege-barrel.png",
+    "imageName": "thanotech-arch-gun-barrel-item.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Cortege Barrel",
@@ -2065,7 +2094,7 @@
         "name": "Blueprint",
         "description": "A Necramech weapon-crafting component.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-arch-gun-receiver-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -2082,7 +2111,7 @@
         "name": "Damaged Necramech Weapon Receiver",
         "description": "A broken frame that can be used in the construction of a Necramech weapon.Location: Isolation Vault and Arcana Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-receiver.png",
+        "imageName": "damaged-mech-weapon-receiver-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -2092,7 +2121,7 @@
         "name": "Devolved Namalon",
         "description": "Retrieved from its Infested state, restored to worth and utility.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 80,
-        "imageName": "devolved-namalon.png",
+        "imageName": "deimos-uncommon-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2102,7 +2131,7 @@
         "name": "Tink Dissipator Coil",
         "description": "Discharges excess heat and energy through the casing.Acquired by disassembling Tink Servofish.",
         "itemCount": 15,
-        "imageName": "tink-dissipator-coil.png",
+        "imageName": "solaris-fish-dissipator-coil-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -2112,7 +2141,7 @@
         "name": "Trapezium Xenorhast",
         "description": "Facets gleam with the un-light of the Void.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 10,
-        "imageName": "trapezium-xenorhast.png",
+        "imageName": "deimos-eidolon-gem-acut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2120,7 +2149,7 @@
     ],
     "consumeOnBuild": true,
     "description": "A Necramech weapon-crafting component.",
-    "imageName": "cortege-receiver.png",
+    "imageName": "thanotech-arch-gun-receiver-item.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Cortege Receiver",
@@ -2151,7 +2180,7 @@
         "name": "Blueprint",
         "description": "A Necramech weapon-crafting component.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-arch-gun-stock-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -2168,7 +2197,7 @@
         "name": "Cabochon Embolos",
         "description": "Convex and smooth, worked as a lens or for ornament.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 10,
-        "imageName": "cabochon-embolos.png",
+        "imageName": "deimos-eidolon-gem-bcut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2178,7 +2207,7 @@
         "name": "Damaged Necramech Weapon Stock",
         "description": "The fractured back portion of a large Necramech weapon.Location: Isolation Vault and Arcana Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-stock.png",
+        "imageName": "damaged-mech-weapon-stock-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -2188,7 +2217,7 @@
         "name": "Hexenon",
         "description": "A reagent commonly used to produce highly combustible fuel.Location: Jupiter",
         "itemCount": 250,
-        "imageName": "hexenon.png",
+        "imageName": "concentrated-gas.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -2199,7 +2228,7 @@
         "name": "Tempered Bapholite",
         "description": "Fused with its inert Infested tendrils into a durable alloy.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 80,
-        "imageName": "tempered-bapholite.png",
+        "imageName": "deimos-common-ore-balloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2207,7 +2236,7 @@
     ],
     "consumeOnBuild": true,
     "description": "A Necramech weapon-crafting component.",
-    "imageName": "cortege-stock.png",
+    "imageName": "thanotech-arch-gun-stock-item.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Cortege Stock",
@@ -2222,7 +2251,7 @@
     "description": "",
     "drops": [{ "chance": 1, "location": "Juggernaut Behemoth", "rarity": "Common", "type": "Cortichrome" }],
     "excludeFromCodex": true,
-    "imageName": "cortichrome.png",
+    "imageName": "juggernaut-behemoth-item.png",
     "masterable": false,
     "name": "Cortichrome",
     "tradable": false,
@@ -2240,7 +2269,7 @@
       { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Crimzian" },
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Crimzian" }
     ],
-    "imageName": "crimzian.png",
+    "imageName": "rare-gem-aitem.png",
     "itemCount": 6,
     "masterable": false,
     "name": "Crimzian",
@@ -2278,7 +2307,7 @@
   {
     "category": "Resources",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Crisma Toroids by defeating the Profit-Taker Orb on the Orb Vallis (Venus).",
-    "imageName": "crisma-toroid.png",
+    "imageName": "arachnoid-camper-item.png",
     "itemCount": 2,
     "masterable": false,
     "name": "Crisma Toroid",
@@ -2308,9 +2337,11 @@
   {
     "category": "Resources",
     "description": "Excess circuitry disposed of during the Razorback manufacturing process, these components only appear in the vicinity of high level outer-orbit Corpus facilities after a Razorback Armada has been launched.Location: Corpus Archwing units on Jupiter and Neptune when a Razorback Armada is active",
-    "imageName": "cryptographic-alu.png",
+    "imageName": "razorback-cipher-part.png",
+    "itemCount": 4,
     "masterable": false,
     "name": "Cryptographic Alu",
+    "parents": ["Razorback Cipher"],
     "tradable": false,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Items/MiscItems/RazorbackCipherPart"
@@ -2326,7 +2357,7 @@
         "name": "Blueprint",
         "description": "Vital components used in the creation of Corpus photon-networks.Location: Eximus units in the Corpus Ice Planet Tileset, and Railjack missions in Venus, Neptune, and Pluto Proximas",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "cubics-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -2366,7 +2397,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Vital components used in the creation of Corpus photon-networks.Location: Eximus units in the Corpus Ice Planet Tileset, and Railjack missions in Venus, Neptune, and Pluto Proximas",
-    "imageName": "cubic-diodes.png",
+    "imageName": "cubics-railjack-item.png",
     "masterable": false,
     "name": "Cubic Diodes",
     "patchlogs": [
@@ -2403,7 +2434,7 @@
   {
     "category": "Resources",
     "description": "This curse contains knowledge that will help Fibonacci prevent enemies from breaking free of The Sanctum. Feed curses to the Jahu Gargoyle in your Clan Dojo to re-calibrate its defensive capabilities.Location: Effervo (Deimos) during Operation Gargoyle's Cry",
-    "imageName": "curse-of-hearing.png",
+    "imageName": "entrati-event-curse-item-b.png",
     "masterable": false,
     "name": "Curse Of Hearing",
     "tradable": false,
@@ -2413,7 +2444,7 @@
   {
     "category": "Resources",
     "description": "This curse contains knowledge that will help Fibonacci prevent enemies from breaking free of The Sanctum. Feed curses to the Jahu Gargoyle in your Clan Dojo to re-calibrate its defensive capabilities.Location: Effervo (Deimos) during Operation Gargoyle's Cry",
-    "imageName": "curse-of-knowing.png",
+    "imageName": "entrati-event-curse-item-a.png",
     "masterable": false,
     "name": "Curse Of Knowing",
     "tradable": false,
@@ -2423,7 +2454,7 @@
   {
     "category": "Resources",
     "description": "This curse contains knowledge that will help Fibonacci prevent enemies from breaking free of The Sanctum. Feed curses to the Jahu Gargoyle in your Clan Dojo to re-calibrate its defensive capabilities.Location: Effervo (Deimos) during Operation Gargoyle's Cry",
-    "imageName": "curse-of-seeing.png",
+    "imageName": "entrati-event-curse-item-c.png",
     "masterable": false,
     "name": "Curse Of Seeing",
     "tradable": false,
@@ -2433,7 +2464,7 @@
   {
     "category": "Resources",
     "description": "Rivulets of Exocrine fluid, hardened over passing centuries.Location: Cambion Drift (Deimos) from Blue Mining Lesions, Sagiant Entrati Casket, and Bonus Vaults in Isolation Vault Bounties.",
-    "imageName": "dagonic.png",
+    "imageName": "deimos-common-gem-bitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Dagonic",
@@ -2463,7 +2494,7 @@
         "type": "Damaged Necramech Casing"
       }
     ],
-    "imageName": "damaged-necramech-casing.png",
+    "imageName": "damaged-mech-part-chassis-item.png",
     "masterable": false,
     "name": "Damaged Necramech Casing",
     "tradable": true,
@@ -2481,7 +2512,7 @@
         "type": "Damaged Necramech Engine"
       }
     ],
-    "imageName": "damaged-necramech-engine.png",
+    "imageName": "damaged-mech-part-engine-item.png",
     "masterable": false,
     "name": "Damaged Necramech Engine",
     "tradable": true,
@@ -2499,9 +2530,11 @@
         "type": "Damaged Necramech Pod"
       }
     ],
-    "imageName": "damaged-necramech-pod.png",
+    "imageName": "damaged-mech-part-systems-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Damaged Necramech Pod",
+    "parents": ["Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing"],
     "tradable": true,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem"
@@ -2571,7 +2604,7 @@
         "type": "Damaged Necramech Weapon Barrel"
       }
     ],
-    "imageName": "damaged-necramech-weapon-barrel.png",
+    "imageName": "damaged-mech-weapon-barrel-item.png",
     "masterable": false,
     "name": "Damaged Necramech Weapon Barrel",
     "tradable": true,
@@ -2589,7 +2622,7 @@
         "type": "Damaged Necramech Weapon Pod"
       }
     ],
-    "imageName": "damaged-necramech-weapon-pod.png",
+    "imageName": "damaged-mech-part-weapon-pod-item.png",
     "masterable": false,
     "name": "Damaged Necramech Weapon Pod",
     "tradable": true,
@@ -2661,7 +2694,7 @@
         "type": "Damaged Necramech Weapon Receiver"
       }
     ],
-    "imageName": "damaged-necramech-weapon-receiver.png",
+    "imageName": "damaged-mech-weapon-receiver-item.png",
     "masterable": false,
     "name": "Damaged Necramech Weapon Receiver",
     "tradable": true,
@@ -2733,7 +2766,7 @@
         "type": "Damaged Necramech Weapon Stock"
       }
     ],
-    "imageName": "damaged-necramech-weapon-stock.png",
+    "imageName": "damaged-mech-weapon-stock-item.png",
     "masterable": false,
     "name": "Damaged Necramech Weapon Stock",
     "tradable": true,
@@ -2743,7 +2776,7 @@
   {
     "category": "Resources",
     "description": "A token of Daughter's gratitude.Obtained from Daughter in the Necralisk on Deimos.",
-    "imageName": "daughter-token.png",
+    "imageName": "entrati-fragment-common-c.png",
     "masterable": false,
     "name": "Daughter Token",
     "patchlogs": [
@@ -2771,7 +2804,7 @@
         "type": "Detonite Ampule"
       }
     ],
-    "imageName": "detonite-ampule.png",
+    "imageName": "chem-fragment.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Detonite Ampule",
@@ -2801,7 +2834,7 @@
         "name": "Blueprint",
         "description": "Detonite injectors are the basis for explosive and incendiary weapons.Location: Clan Research (Chem Lab in the Dojo) and Grineer Invasion Rewards",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "chem-component-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -2822,7 +2855,7 @@
         "name": "Detonite Ampule",
         "description": "Researching the Detonite traces within could advance our weapon technology.Location: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress",
         "itemCount": 10,
-        "imageName": "detonite-ampule.png",
+        "imageName": "chem-fragment.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2852,7 +2885,7 @@
     ],
     "consumeOnBuild": true,
     "description": "Detonite injectors are the basis for explosive and incendiary weapons.Location: Clan Research (Chem Lab in the Dojo) and Grineer Invasion Rewards",
-    "imageName": "detonite-injector.png",
+    "imageName": "chem-component.png",
     "itemCount": 2,
     "masterable": false,
     "name": "Detonite Injector",
@@ -2913,7 +2946,7 @@
       { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Devar" },
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Devar" }
     ],
-    "imageName": "devar.png",
+    "imageName": "common-gem-bitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Devar",
@@ -2967,7 +3000,7 @@
         "name": "Blueprint",
         "description": "Retrieved from its Infested state, restored to worth and utility.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "deimos-uncommon-ore-aalloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -2977,7 +3010,7 @@
         "name": "Ferros",
         "description": "A resilient metal that is hardened by impurities within.Location: Plains of Eidolon (Earth) from Red Mining Veins and Thumpers",
         "itemCount": 20,
-        "imageName": "ferros.png",
+        "imageName": "uncommon-ore-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2987,7 +3020,7 @@
         "name": "Lucent Teroglobe",
         "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.Location: Cambion Drift on Deimos",
         "itemCount": 15,
-        "imageName": "lucent-teroglobe.png",
+        "imageName": "orb-stone-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -2997,7 +3030,7 @@
         "name": "Namalon",
         "description": "Infested mineral deposits mimicking the form of living organs.Location: Cambion Drift (Deimos) from Yellow Mining Lesions and Bonus Vaults in Isolation Vault Bounties.",
         "itemCount": 20,
-        "imageName": "namalon.png",
+        "imageName": "deimos-uncommon-ore-aitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -3016,7 +3049,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Retrieved from its Infested state, restored to worth and utility.Blueprint sold by Otak in the Necralisk on Deimos.",
-    "imageName": "devolved-namalon.png",
+    "imageName": "deimos-uncommon-ore-aalloy-item.png",
     "itemCount": 80,
     "masterable": false,
     "name": "Devolved Namalon",
@@ -3065,7 +3098,7 @@
       { "chance": 0.0258, "location": "Duviri/Endless: Tier 3 (Normal)", "rarity": "Rare", "type": "60X Dracroot" },
       { "chance": 0.0258, "location": "Duviri/Endless: Tier 4 (Normal)", "rarity": "Rare", "type": "60X Dracroot" }
     ],
-    "imageName": "dracroot.png",
+    "imageName": "duviri-plant-item-f.png",
     "itemCount": 30,
     "masterable": false,
     "name": "Dracroot",
@@ -3077,9 +3110,11 @@
   {
     "category": "Resources",
     "description": "This robust, carnivorous plant has adapted to conditions in polluted waters. Location: Obtained by using a Codex Scanner on Dusklight Sarracenia plants growing in Grineer Shipyards found commonly on Ceres",
-    "imageName": "dusklight-sarracenia.png",
+    "imageName": "zen-cobra-lotus-plant-item.png",
+    "itemCount": 2,
     "masterable": false,
     "name": "Dusklight Sarracenia",
+    "parents": ["Nightfall Apothic"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/ZenCobraLotusPlantItem"
@@ -3087,11 +3122,11 @@
   {
     "category": "Resources",
     "description": "The quietest and most elusive of Voidtongue utterances. Sought after but never found by Albrecht.Location: Albrecht's Laboratories (Deimos)",
-    "imageName": "echo-voca.png",
+    "imageName": "entrati-lab-dog-tag-rare.png",
     "itemCount": 2,
     "masterable": false,
     "name": "Echo Voca",
-    "parents": ["Mandonel"],
+    "parents": ["Mandonel", "Qorvex"],
     "tradable": false,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagRare"
@@ -3108,7 +3143,7 @@
       { "chance": 0.0443, "location": "Duviri/Endless: Tier 4 (Normal)", "rarity": "Rare", "type": "60X Eevani" },
       { "chance": 0.0752, "location": "Duviri Full Experience", "rarity": "Rare", "type": "Eevani" }
     ],
-    "imageName": "eevani.png",
+    "imageName": "duviri-plant-item-b.png",
     "itemCount": 30,
     "masterable": false,
     "name": "Eevani",
@@ -3120,7 +3155,7 @@
   {
     "category": "Resources",
     "description": "This rare gem forms in a clotted mass within the Infestation.Location: Cambion Drift (Deimos) from Blue Mining Lesions. This Rare Gem can only be mined by the Advanced Nosam Cutter or Sunpoint Plasma Drill.",
-    "imageName": "embolos.png",
+    "imageName": "deimos-eidolon-gem-bitem.png",
     "itemCount": 3,
     "masterable": false,
     "name": "Embolos",
@@ -3150,7 +3185,7 @@
   {
     "category": "Resources",
     "description": "A token celebrating the successful solution of a Duviri Enigma.Location: Earned by completing Enigmas in The Duviri Experience",
-    "imageName": "enigma-gyrum.png",
+    "imageName": "duviri-puzzle-item.png",
     "masterable": false,
     "name": "Enigma Gyrum",
     "tradable": false,
@@ -3230,7 +3265,7 @@
       { "chance": 1, "location": "Entrati Netracell Coffer", "rarity": "Common", "type": "Entrati Lanthorn" }
     ],
     "excludeFromCodex": true,
-    "imageName": "entrati-lanthorn.png",
+    "imageName": "entrati-lanthorn-bundle.png",
     "masterable": false,
     "name": "Entrati Lanthorn",
     "patchlogs": [
@@ -3319,11 +3354,11 @@
       },
       { "chance": 1, "location": "Entrati Netracell Coffer", "rarity": "Common", "type": "Entrati Lanthorn" }
     ],
-    "imageName": "entrati-lanthorn.png",
-    "itemCount": 16,
+    "imageName": "zariman-misc-item-b.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Entrati Lanthorn",
-    "parents": ["Alternox", "Ekhein", "Innodem", "Onos", "Phenmor"],
+    "parents": ["Alternox", "Ekhein", "Innodem", "Onos", "Phenmor", "Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -3368,7 +3403,7 @@
         "type": "150X Entrati Obols"
       }
     ],
-    "imageName": "entrati-obols.png",
+    "imageName": "entrati-lab-misc-item-a.png",
     "itemCount": 2400,
     "masterable": false,
     "name": "Entrati Obols",
@@ -3381,7 +3416,7 @@
     "category": "Resources",
     "description": "",
     "excludeFromCodex": true,
-    "imageName": "entratifragmentbase.png",
+    "imageName": "entrati-fragment-base.png",
     "masterable": false,
     "name": "Entratifragmentbase",
     "tradable": false,
@@ -3391,7 +3426,7 @@
   {
     "category": "Resources",
     "description": "",
-    "imageName": "entratilabdogtag.png",
+    "imageName": "entrati-lab-dog-tag.png",
     "masterable": false,
     "name": "Entratilabdogtag",
     "tradable": false,
@@ -3409,7 +3444,7 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "common-gem-bcut-ablueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -3419,7 +3454,7 @@
         "name": "Devar",
         "description": "A cloudy crystal.Location: Plains of Eidolon (Earth) from Blue Mining Veins and Thumpers",
         "itemCount": 10,
-        "imageName": "devar.png",
+        "imageName": "common-gem-bitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -3427,12 +3462,13 @@
     ],
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
-    "imageName": "esher-devar.png",
+    "imageName": "common-gem-bcut-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Esher Devar",
     "parents": [
       "Cryotra",
+      "Focused Nosam Cutter",
       "Korrudo",
       "Kronsh",
       "Plague Keewar",
@@ -3469,7 +3505,7 @@
         "name": "Blueprint",
         "description": "A coveted sample of Sentient internal anatomy. Specimens of this age and quality are both rare and valuable. Location: Eidolons found roaming the Plains of Eidolon on Earth at night",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "sentient-core-conversion-ablueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -3479,7 +3515,7 @@
         "name": "Heart Nyth",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "heart-nyth.png",
+        "imageName": "eidolon-gem-bcut-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -3489,7 +3525,7 @@
         "name": "Intact Sentient Core",
         "description": "An integral component of Sentient anatomy.  Rarely found undamaged, the specimen may prove useful.Location: Drops from Vomvalysts on the Plains of Eidolon (Earth) at night, and from Sentients found on Lua and the Veil Proxima",
         "itemCount": 10,
-        "imageName": "intact-sentient-core.png",
+        "imageName": "quills-dog-tag.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -3499,7 +3535,7 @@
         "name": "Radian Sentirum",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "radian-sentirum.png",
+        "imageName": "eidolon-gem-acut-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -3507,7 +3543,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A coveted sample of Sentient internal anatomy. Specimens of this age and quality are both rare and valuable. Location: Eidolons found roaming the Plains of Eidolon on Earth at night",
-    "imageName": "exceptional-sentient-core.png",
+    "imageName": "quills-uncommon-dog-tag.png",
     "itemCount": 5,
     "masterable": false,
     "name": "Exceptional Sentient Core",
@@ -3564,7 +3600,7 @@
       { "chance": 1, "location": "Exemplar Granum Crown Cache", "rarity": "Common", "type": "Exemplar Granum Crown" }
     ],
     "excludeFromCodex": true,
-    "imageName": "exemplar-granum-crown.png",
+    "imageName": "greed-token-gold.png",
     "masterable": false,
     "name": "Exemplar Granum Crown",
     "patchlogs": [
@@ -3694,7 +3730,7 @@
         "type": "2X Familial Debt-Bond"
       }
     ],
-    "imageName": "familial-debt-bond.png",
+    "imageName": "debt-token-e.png",
     "masterable": false,
     "name": "Familial Debt-Bond",
     "patchlogs": [
@@ -3714,7 +3750,7 @@
   {
     "category": "Resources",
     "description": "A symbol of Father's trust and confidence.Obtained from Father in the Necralisk on Deimos.",
-    "imageName": "father-token.png",
+    "imageName": "entrati-fragment-uncommon-a.png",
     "masterable": false,
     "name": "Father Token",
     "tradable": false,
@@ -3732,7 +3768,7 @@
       { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Ferros" },
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Ferros" }
     ],
-    "imageName": "ferros.png",
+    "imageName": "uncommon-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Ferros",
@@ -3752,7 +3788,7 @@
         "name": "Blueprint",
         "description": "ClanTech weaponized containment field to contain superheated substances.Location: Clan Research (Energy Lab in the Dojo) and Corpus Invasion Rewards",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "energy-component-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -3773,7 +3809,7 @@
         "name": "Fieldron Sample",
         "description": "This destroyed Fieldron could further research into super-heated containment fields.Location: Venus, Mars, Jupiter, Europa, Neptune, and Pluto",
         "itemCount": 10,
-        "imageName": "sample.png",
+        "imageName": "energy-fragment.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -3803,12 +3839,13 @@
     ],
     "consumeOnBuild": true,
     "description": "ClanTech weaponized containment field to contain superheated substances.Location: Clan Research (Energy Lab in the Dojo) and Corpus Invasion Rewards",
-    "imageName": "fieldron.png",
+    "imageName": "energy-component.png",
     "itemCount": 7,
     "masterable": false,
     "name": "Fieldron",
     "parents": [
       "Amprex",
+      "Antiserum Injector",
       "Arca Plasmor",
       "Arca Scisco",
       "Battacor",
@@ -3885,7 +3922,7 @@
   {
     "category": "Resources",
     "description": "This destroyed Fieldron could further research into super-heated containment fields.Location: Venus, Mars, Jupiter, Europa, Neptune, and Pluto",
-    "imageName": "fieldron-sample.png",
+    "imageName": "energy-fragment.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Fieldron Sample",
@@ -3907,7 +3944,7 @@
   {
     "category": "Resources",
     "description": "A Sentient Core of this quality and condition has rarely been found. Truly a special specimen.Location: Earned by capturing Eidolons found roaming the Plains of Eidolon on Earth at night",
-    "imageName": "flawless-sentient-core.png",
+    "imageName": "quills-rare-dog-tag.png",
     "masterable": false,
     "name": "Flawless Sentient Core",
     "patchlogs": [
@@ -3972,7 +4009,7 @@
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.Location: Mercury, Mars, Phobos, Europa, and Pluto",
         "itemCount": 40,
-        "imageName": "morphics.png",
+        "imageName": "morphic.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -3992,7 +4029,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A rare Orokin material used to create a tear in space and allow safe passage through the Void.",
-    "imageName": "fresnels.png",
+    "imageName": "fresnels-railjack-item.png",
     "masterable": false,
     "name": "Fresnels",
     "patchlogs": [
@@ -4029,7 +4066,7 @@
   {
     "category": "Resources",
     "description": "Engineered by the Orokin to convert airborne chemicals into breathable air.",
-    "imageName": "frostcap.png",
+    "imageName": "venus-mushroom-item.png",
     "masterable": false,
     "name": "Frostcap",
     "tradable": false,
@@ -4039,9 +4076,11 @@
   {
     "category": "Resources",
     "description": "This resilient plant provides a natural food source in frigid areas of the Origin system. Location: Obtained by using a Codex Scanner on Frostleaf plants that grow on Venus, Neptune, and Pluto",
-    "imageName": "frostleaf.png",
+    "imageName": "wild-ginger-bplant-item.png",
+    "itemCount": 8,
     "masterable": false,
     "name": "Frostleaf",
+    "parents": ["Sunrise Apothic"],
     "patchlogs": [
       {
         "name": "The Silver Grove: Hotfix 4",
@@ -4078,7 +4117,7 @@
         "name": "Blueprint",
         "description": "Antimatter fuel cell that powers the Grineer Ships.Location: Railjack missions in Earth, Saturn, and Veil Proximas",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "gallos-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -4088,7 +4127,7 @@
         "name": "Detonite Ampule",
         "description": "Researching the Detonite traces within could advance our weapon technology.Location: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress",
         "itemCount": 750,
-        "imageName": "detonite-ampule.png",
+        "imageName": "chem-fragment.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -4107,7 +4146,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Antimatter fuel cell that powers the Grineer Ships.Location: Railjack missions in Earth, Saturn, and Veil Proximas",
-    "imageName": "gallos-rods.png",
+    "imageName": "gallos-railjack-item.png",
     "masterable": false,
     "name": "Gallos Rods",
     "patchlogs": [
@@ -4156,7 +4195,7 @@
         "type": "15X Ganglion"
       }
     ],
-    "imageName": "ganglion.png",
+    "imageName": "inf-maprico-fruit-item.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Ganglion",
@@ -4192,7 +4231,7 @@
   {
     "category": "Resources",
     "description": "",
-    "imageName": "genericdojocolorpigment.png",
+    "imageName": "generic-dojo-color-pigment.png",
     "masterable": false,
     "name": "Genericdojocolorpigment",
     "tradable": false,
@@ -4203,7 +4242,7 @@
     "category": "Resources",
     "description": "Extracted from a Ghost Brush.",
     "excludeFromCodex": true,
-    "imageName": "ghost-brush-extract.png",
+    "imageName": "oro-porcelain-bush-aplant-item.png",
     "masterable": false,
     "name": "Ghost Brush Extract",
     "tradable": false,
@@ -4227,7 +4266,7 @@
         "type": "Goblite Tears X10 Blueprint"
       }
     ],
-    "imageName": "goblite.png",
+    "imageName": "solaris-uncommon-gem-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Goblite",
@@ -4287,8 +4326,8 @@
         "type": "5X Gorgaricus Spore"
       }
     ],
-    "imageName": "gorgaricus-spore.png",
-    "itemCount": 20,
+    "imageName": "venus-coconut-item.png",
+    "itemCount": 60,
     "masterable": false,
     "name": "Gorgaricus Spore",
     "parents": [
@@ -4298,6 +4337,7 @@
       "Lambeo Moa",
       "Nychus Moa",
       "Phazor Gyro",
+      "Puppeteer",
       "Rattleguts",
       "Slap",
       "Two-Sloops",
@@ -4344,7 +4384,7 @@
   {
     "category": "Resources",
     "description": "A rare sign of Grandmother's favor.Obtained from Grandmother in the Necralisk on Deimos.",
-    "imageName": "grandmother-token.png",
+    "imageName": "entrati-fragment-rare-a.png",
     "masterable": false,
     "name": "Grandmother Token",
     "tradable": false,
@@ -4366,7 +4406,7 @@
       { "chance": 1, "location": "Zenith Granum Crown Cache", "rarity": "Common", "type": "Zenith Granum Crown" }
     ],
     "excludeFromCodex": true,
-    "imageName": "granum-crown.png",
+    "imageName": "greed-token-blue.png",
     "masterable": false,
     "name": "Granum Crown",
     "patchlogs": [
@@ -4481,21 +4521,28 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Grokdrul" },
       { "chance": 1, "location": "Grokdrul Drum", "rarity": "Common", "type": "Grokdrul" }
     ],
-    "imageName": "grokdrul.png",
+    "imageName": "grokdrul-item.png",
     "itemCount": 40,
     "masterable": false,
     "name": "Grokdrul",
     "parents": [
+      "Archwing Launcher",
+      "Fosfor Blau",
       "Kronsh",
+      "Lanzo Fishing Spear",
       "Pencha Scaffold",
+      "Peram Fishing Spear",
       "Phahd Scaffold",
       "Plague Bokwin",
       "Quartakk",
       "Rabvee",
       "Seekalla",
+      "Shockprod Fishing Spear",
       "Shraksun Scaffold",
       "Shtung",
-      "Stubba"
+      "Stubba",
+      "Stunna Fishing Spear",
+      "Tulok Fishing Spear"
     ],
     "patchlogs": [
       {
@@ -4562,7 +4609,7 @@
   {
     "category": "Resources",
     "description": "A foreboding fragment of the vast Indifference.Location: Effervo (Deimos) during Operation Gargoyle's Cry",
-    "imageName": "grotesque-splinter.png",
+    "imageName": "entrati-event-octopede-item.png",
     "masterable": false,
     "name": "Grotesque Splinter",
     "tradable": false,
@@ -4599,7 +4646,7 @@
       },
       { "chance": 1, "location": "Vox Solaris, Operative", "rarity": "Common", "type": "Gyromag Systems" }
     ],
-    "imageName": "gyromag-systems.png",
+    "imageName": "corpus-widget-aitem.png",
     "itemCount": 3,
     "masterable": false,
     "name": "Gyromag Systems",
@@ -4645,7 +4692,7 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "eidolon-gem-bcut-ablueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -4655,7 +4702,7 @@
         "name": "Nyth",
         "description": "A rare local Gem, formed when the gas known as Breath of the Eidolon becomes trapped in molten iradite.Location: Plains of Eidolon (Earth) from Blue Mining Veins and Thumper Bulls. This Rare Gem can only be mined by the Advanced Nosam Cutter or Sunpoint Plasma Drill.",
         "itemCount": 3,
-        "imageName": "nyth.png",
+        "imageName": "eidolon-gem-bitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -4663,11 +4710,20 @@
     ],
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
-    "imageName": "heart-nyth.png",
+    "imageName": "eidolon-gem-bcut-aitem.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Heart Nyth",
-    "parents": ["Exceptional Sentient Core", "Phahd Scaffold"],
+    "parents": [
+      "Caliban Cranion Helmet",
+      "Exceptional Sentient Core",
+      "Phahd Scaffold",
+      "Vahd Apparel (Operator)",
+      "Vahd Cuirass (Operator)",
+      "Vahd Greaves (Operator)",
+      "Vahd Mask (Operator)",
+      "Vahd Pauldrons (Operator)"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -4694,7 +4750,7 @@
   {
     "category": "Resources",
     "description": "Aggregates in the neo-lymph systems of Infested masses.Location: Cambion Drift (Deimos) from Blue Mining Lesions.",
-    "imageName": "heciphron.png",
+    "imageName": "deimos-uncommon-gem-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Heciphron",
@@ -4732,7 +4788,7 @@
         "name": "Blueprint",
         "description": "A compound formed from Hesperon.Blueprint sold by Smokefinger in Fortuna on Venus.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "solaris-rare-ore-aalloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -4742,7 +4798,7 @@
         "name": "Hesperon",
         "description": "Clay that strengthens into extremely durable stone when brought to temperatures below zero.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
         "itemCount": 20,
-        "imageName": "hesperon.png",
+        "imageName": "solaris-rare-ore-aitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -4752,7 +4808,7 @@
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.Location: Mercury, Mars, Phobos, Europa, and Pluto",
         "itemCount": 2,
-        "imageName": "morphics.png",
+        "imageName": "morphic.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -4772,23 +4828,36 @@
     ],
     "consumeOnBuild": false,
     "description": "A compound formed from Hesperon.Blueprint sold by Smokefinger in Fortuna on Venus.",
-    "imageName": "hespazym-alloy.png",
-    "itemCount": 30,
+    "imageName": "solaris-rare-ore-aalloy-item.png",
+    "itemCount": 50,
     "masterable": false,
     "name": "Hespazym Alloy",
     "parents": [
       "Dissic Scaffold",
       "Exard Scaffold",
       "Frak Stabilizer",
+      "Haztech Greaves (Operator)",
+      "Haztech Mask (Operator)",
       "Highbrow",
       "Hothead",
+      "Kubrodon Ventkid Greaves",
+      "Kubrodon Ventkid Mask",
       "Lehan Core",
       "Needlenose",
+      "Outrider Greaves",
+      "Outrider Mask",
       "Propa Scaffold",
       "Runway",
+      "Smelter Greaves (Operator)",
+      "Smelter Mask (Operator)",
       "Stitch",
+      "Styanax Gerousic Helmet",
       "Tatsu",
-      "Thunderdrum"
+      "Thunderdrum",
+      "Vent Pobber Ventkid Greaves",
+      "Vent Pobber Ventkid Mask",
+      "Vent Rat Greaves",
+      "Vent Rat Mask"
     ],
     "patchlogs": [
       {
@@ -4808,7 +4877,7 @@
   {
     "category": "Resources",
     "description": "Clay that strengthens into extremely durable stone when brought to temperatures below zero.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
-    "imageName": "hesperon.png",
+    "imageName": "solaris-rare-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Hesperon",
@@ -4846,7 +4915,7 @@
       { "chance": 0.5, "location": "Tyro Conculyst", "rarity": "Common", "type": "Intact Sentient Core" },
       { "chance": 1, "location": "Eidolon Vomvalyst", "rarity": "Common", "type": "Intact Sentient Core" }
     ],
-    "imageName": "intact-sentient-core.png",
+    "imageName": "quills-dog-tag.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Intact Sentient Core",
@@ -4932,15 +5001,19 @@
       { "chance": 1, "location": "Iradite Formation", "rarity": "Common", "type": "Iradite" },
       { "chance": 1, "location": "Ostron (Old Man Suumbaat), Surah", "rarity": "Common", "type": "Iradite Nugget" }
     ],
-    "imageName": "iradite.png",
+    "imageName": "iradite-item.png",
     "itemCount": 50,
     "masterable": false,
     "name": "Iradite",
     "parents": [
+      "Archwing Launcher",
       "Cela Bracket",
+      "Fosfor Rahd",
       "Korb",
+      "Luminous Dye",
       "Ooltha",
       "Peye",
+      "Pharoma",
       "Plague Akwin",
       "Rahn Prism",
       "Raplak Prism",
@@ -5041,7 +5114,7 @@
         "name": "Fieldron Sample",
         "description": "This destroyed Fieldron could further research into super-heated containment fields.Location: Venus, Mars, Jupiter, Europa, Neptune, and Pluto",
         "itemCount": 500,
-        "imageName": "fieldron-sample.png",
+        "imageName": "energy-fragment.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -5060,7 +5133,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A self-replicating fluid comprised of nanoproxies capable of independently repairing worn and damaged systems.Location: Railjack missions in Venus, Neptune, and Pluto Proximas",
-    "imageName": "isos.png",
+    "imageName": "isos-railjack-item.png",
     "itemCount": 450,
     "masterable": false,
     "name": "Isos",
@@ -5091,7 +5164,7 @@
   {
     "category": "Resources",
     "description": "Used in the construction of Javloks",
-    "imageName": "javlok-capacitor.png",
+    "imageName": "grn-flame-spear-part.png",
     "itemCount": 6,
     "masterable": false,
     "name": "Javlok Capacitor",
@@ -5150,7 +5223,7 @@
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.Location: Mercury, Mars, Phobos, Europa, and Pluto",
         "itemCount": 65,
-        "imageName": "morphics.png",
+        "imageName": "morphic.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -5170,7 +5243,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Orokin devices used for navigating the solar winds.",
-    "imageName": "kesslers.png",
+    "imageName": "kesslers-railjack-item.png",
     "masterable": false,
     "name": "Kesslers",
     "patchlogs": [
@@ -5228,7 +5301,7 @@
         "name": "Detonite Ampule",
         "description": "Researching the Detonite traces within could advance our weapon technology.Location: Venus, Earth, Lua, Ceres, Saturn, Sedna, and the Kuva Fortress",
         "itemCount": 350,
-        "imageName": "detonite-ampule.png",
+        "imageName": "chem-fragment.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5238,7 +5311,7 @@
         "name": "Neural Sensors",
         "description": "Implanted neural-link for controlling augmentations. Grineer design.Location: Jupiter",
         "itemCount": 100,
-        "imageName": "neural-sensors.png",
+        "imageName": "neural-sensor.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -5247,9 +5320,11 @@
     ],
     "consumeOnBuild": false,
     "description": "A component used in secure Grineer communication networks.Location: Railjack missions in Earth, Saturn, and Veil Proximas",
-    "imageName": "komms.png",
+    "imageName": "komms-railjack-item.png",
+    "itemCount": 4,
     "masterable": false,
     "name": "Komms",
+    "parents": ["Protea Telema Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -5285,7 +5360,7 @@
       { "chance": 0.0752, "location": "Duviri Full Experience", "rarity": "Rare", "type": "Kovnik" },
       { "chance": 0.22, "location": "Duviri Circuit", "rarity": "Uncommon", "type": "Kovnik" }
     ],
-    "imageName": "kovnik.png",
+    "imageName": "duviri-plant-item-a.png",
     "itemCount": 100,
     "masterable": false,
     "name": "Kovnik",
@@ -5317,7 +5392,7 @@
       { "chance": 1, "location": "Splendid Mergoo", "rarity": "Common", "type": "Kuaka Spinal Claw" },
       { "chance": 1, "location": "Woodland Mergoo", "rarity": "Common", "type": "Kuaka Spinal Claw" }
     ],
-    "imageName": "kuaka-spinal-claw.png",
+    "imageName": "forest-rodent-part-item.png",
     "itemCount": 5,
     "masterable": false,
     "name": "Kuaka Spinal Claw",
@@ -5345,7 +5420,7 @@
       { "chance": 0.4, "location": "Kullervo's Hold, Rotation C", "rarity": "Common", "type": "5X Kullervo's Bane" },
       { "chance": 0.4, "location": "Kullervo's Hold, Rotation C", "rarity": "Common", "type": "7X Kullervo's Bane" }
     ],
-    "imageName": "kullervo's-bane.png",
+    "imageName": "duviri-kullervo-drop-item.png",
     "masterable": false,
     "name": "Kullervo's Bane",
     "tradable": false,
@@ -5361,7 +5436,7 @@
       { "chance": 0.65, "location": "Dax Herald", "rarity": "Common", "type": "Lamentus" },
       { "chance": 0.65, "location": "Dax Malleus", "rarity": "Common", "type": "Lamentus" }
     ],
-    "imageName": "lamentus.png",
+    "imageName": "duviri-enemy-drop-item.png",
     "itemCount": 40,
     "masterable": false,
     "name": "Lamentus",
@@ -5373,7 +5448,7 @@
   {
     "category": "Resources",
     "description": "A device of undetermined function and origin. Prized by Vox Solaris and the Quills.Earn Lazulite Toroids by defeating the Exploiter Orb on the Orb Vallis (Venus).",
-    "imageName": "lazulite-toroid.png",
+    "imageName": "arachnoid-camper-terra-item.png",
     "masterable": false,
     "name": "Lazulite Toroid",
     "tradable": false,
@@ -5384,7 +5459,7 @@
     "category": "Resources",
     "description": "A token symbolizing a converted Kuva Lich. Can be traded to other players for control of said Lich.",
     "excludeFromCodex": true,
-    "imageName": "lich-token.png",
+    "imageName": "captured-grineer-lich-token.png",
     "masterable": false,
     "name": "Lich Token",
     "tradable": false,
@@ -5432,11 +5507,11 @@
         "type": "3X Lua Thrax Plasm"
       }
     ],
-    "imageName": "lua-thrax-plasm.png",
+    "imageName": "eclipse-void-wraith-item.png",
     "itemCount": 50,
     "masterable": false,
     "name": "Lua Thrax Plasm",
-    "parents": ["Perigale", "Sarofang"],
+    "parents": ["Perigale", "Sarofang", "Voruna"],
     "patchlogs": [
       {
         "name": "Lua’s Prey: Hotfix 32.2.4",
@@ -5498,7 +5573,7 @@
         "type": "15X Lucent Teroglobe"
       }
     ],
-    "imageName": "lucent-teroglobe.png",
+    "imageName": "orb-stone-item.png",
     "itemCount": 140,
     "masterable": false,
     "name": "Lucent Teroglobe",
@@ -5510,9 +5585,11 @@
   {
     "category": "Resources",
     "description": "This carnivorous plant can be found growing in the wilderness on Lua. Location: Obtained by using a Codex Scanner on Lunar Pitcher plants that grow on Lua",
-    "imageName": "lunar-pitcher.png",
+    "imageName": "zen-pitcher-plant-item.png",
+    "itemCount": 50,
     "masterable": false,
     "name": "Lunar Pitcher",
+    "parents": ["Seeding Step Ephemera", "Twilight Apothic"],
     "patchlogs": [
       {
         "name": "Saint of Altra: Update 25.7.0",
@@ -5554,11 +5631,25 @@
       { "chance": 0.5, "location": "Narmer Thumper Doma", "rarity": "Uncommon", "type": "Maprico" },
       { "chance": 0.5, "location": "Tusk Thumper Doma", "rarity": "Uncommon", "type": "Maprico" }
     ],
-    "imageName": "maprico.png",
+    "imageName": "eidolon-fruit-item.png",
     "itemCount": 2,
     "masterable": false,
     "name": "Maprico",
-    "parents": ["Dehtat", "Ekwana Ii Jai", "Ekwana Ii Ruhang", "Jayap", "Vargeet Ii Jai", "Vargeet Ii Ruhang"],
+    "parents": [
+      "Cuthol Bait",
+      "Dehtat",
+      "Ekwana Ii Jai",
+      "Ekwana Ii Ruhang",
+      "Fosfor Blau",
+      "Fosfor Rahd",
+      "Glappid Bait",
+      "Jayap",
+      "Norg Bait",
+      "Twilight Bait",
+      "Vargeet Ii Jai",
+      "Vargeet Ii Ruhang",
+      "Vasca Curative"
+    ],
     "patchlogs": [
       {
         "name": "The Sacrifice: Update 23",
@@ -5600,7 +5691,7 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "uncommon-gem-acut-ablueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -5610,7 +5701,7 @@
         "name": "Veridos",
         "description": "A highly reflective, green gem.Location: Plains of Eidolon (Earth) from Blue Mining Veins and Thumpers",
         "itemCount": 10,
-        "imageName": "veridos.png",
+        "imageName": "uncommon-gem-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5618,11 +5709,26 @@
     ],
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
-    "imageName": "marquise-veridos.png",
-    "itemCount": 10,
+    "imageName": "uncommon-gem-acut-aitem.png",
+    "itemCount": 20,
     "masterable": false,
     "name": "Marquise Veridos",
-    "parents": ["Cyath", "Dehtat", "Dokrahm", "Flutterfire", "Granmu Prism", "Mewan", "Shwaak Prism", "Vulcax"],
+    "parents": [
+      "Advanced Nosam Cutter",
+      "Cyath",
+      "Dehtat",
+      "Dokrahm",
+      "Flutterfire",
+      "Granmu Prism",
+      "Loid Sentinel Mask",
+      "Loid Sentinel Skin",
+      "Loid Sentinel Tail",
+      "Loid Sentinel Wing",
+      "Mewan",
+      "Shwaak Prism",
+      "Sunpoint Plasma Drill",
+      "Vulcax"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -5705,7 +5811,7 @@
         "type": "2X Medical Debt-Bond"
       }
     ],
-    "imageName": "medical-debt-bond.png",
+    "imageName": "debt-token-c.png",
     "masterable": false,
     "name": "Medical Debt-Bond",
     "patchlogs": [
@@ -5733,11 +5839,11 @@
   {
     "category": "Resources",
     "description": "This uncommon plant can only be found at night. Location: Obtained by using a Codex Scanner on Moonlight Dragonlily plants that grow on Earth",
-    "imageName": "moonlight-dragonlily.png",
-    "itemCount": 10,
+    "imageName": "un-common-night-plant-item.png",
+    "itemCount": 6,
     "masterable": false,
     "name": "Moonlight Dragonlily",
-    "parents": ["The Silver Grove"],
+    "parents": ["Lapis Antitoxin", "Nightfall Apothic", "The Silver Grove", "Topaz Antitoxin", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonNightPlantItem"
@@ -5745,9 +5851,11 @@
   {
     "category": "Resources",
     "description": "This rare plant can only be found at night. Location: Obtained by using a Codex Scanner on Moonlight Jadeleaf plants that grow on Earth",
-    "imageName": "moonlight-jadeleaf.png",
+    "imageName": "rare-night-plant-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Moonlight Jadeleaf",
+    "parents": ["Health Restore (Large)", "Lapis Antitoxin", "Twilight Apothic", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareNightPlantItem"
@@ -5755,9 +5863,11 @@
   {
     "category": "Resources",
     "description": "This common plant can only be found at night. Location: Obtained by using a Codex Scanner on Moonlight Threshcone plants that grow on Earth",
-    "imageName": "moonlight-threshcone.png",
+    "imageName": "common-night-plant-item.png",
+    "itemCount": 15,
     "masterable": false,
     "name": "Moonlight Threshcone",
+    "parents": ["Amethyst Antitoxin", "Health Restore (Large)", "Topaz Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonNightPlantItem"
@@ -5773,7 +5883,7 @@
         "name": "Adramal Alloy",
         "description": "Purged of spores and contaminants, this alloy is highly versatile.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 80,
-        "imageName": "adramal-alloy.png",
+        "imageName": "deimos-common-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5783,7 +5893,7 @@
         "name": "Blueprint",
         "description": "A Necramech weapon-crafting component.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-grenade-launcher-barrel-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -5800,7 +5910,7 @@
         "name": "Damaged Necramech Weapon Barrel",
         "description": "The damaged barrel of a heavy-duty Necramech weapon.Location: Isolation Vault and Arcana Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-barrel.png",
+        "imageName": "damaged-mech-weapon-barrel-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -5810,7 +5920,7 @@
         "name": "Fersteel Alloy",
         "description": "Ferros that has been forged into a stronger metal.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 20,
-        "imageName": "fersteel-alloy.png",
+        "imageName": "uncommon-ore-aalloy-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5820,7 +5930,7 @@
         "name": "Spinal Core Section",
         "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
         "itemCount": 20,
-        "imageName": "spinal-core-section.png",
+        "imageName": "deimos-orokin-fish-bpart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -5829,7 +5939,7 @@
     "consumeOnBuild": true,
     "description": "A Necramech weapon-crafting component.",
     "excludeFromCodex": true,
-    "imageName": "morgha-barrel.png",
+    "imageName": "thanotech-grenade-launcher-barrel-item.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Morgha Barrel",
@@ -5850,7 +5960,7 @@
         "name": "Blueprint",
         "description": "A Necramech weapon-crafting component.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-grenade-launcher-receiver-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -5867,7 +5977,7 @@
         "name": "Damaged Necramech Weapon Receiver",
         "description": "A broken frame that can be used in the construction of a Necramech weapon.Location: Isolation Vault and Arcana Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-receiver.png",
+        "imageName": "damaged-mech-weapon-receiver-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -5877,7 +5987,7 @@
         "name": "Devolved Namalon",
         "description": "Retrieved from its Infested state, restored to worth and utility.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 80,
-        "imageName": "devolved-namalon.png",
+        "imageName": "deimos-uncommon-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5887,7 +5997,7 @@
         "name": "Tink Dissipator Coil",
         "description": "Discharges excess heat and energy through the casing.Acquired by disassembling Tink Servofish.",
         "itemCount": 15,
-        "imageName": "tink-dissipator-coil.png",
+        "imageName": "solaris-fish-dissipator-coil-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -5897,7 +6007,7 @@
         "name": "Trapezium Xenorhast",
         "description": "Facets gleam with the un-light of the Void.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 10,
-        "imageName": "trapezium-xenorhast.png",
+        "imageName": "deimos-eidolon-gem-acut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5906,7 +6016,7 @@
     "consumeOnBuild": true,
     "description": "A Necramech weapon-crafting component.",
     "excludeFromCodex": true,
-    "imageName": "morgha-receiver.png",
+    "imageName": "thanotech-grenade-launcher-receiver-item.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Morgha Receiver",
@@ -5927,7 +6037,7 @@
         "name": "Blueprint",
         "description": "A Necramech weapon-crafting component.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "thanotech-grenade-launcher-stock-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -5944,7 +6054,7 @@
         "name": "Cabochon Embolos",
         "description": "Convex and smooth, worked as a lens or for ornament.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 10,
-        "imageName": "cabochon-embolos.png",
+        "imageName": "deimos-eidolon-gem-bcut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5954,7 +6064,7 @@
         "name": "Damaged Necramech Weapon Stock",
         "description": "The fractured back portion of a large Necramech weapon.Location: Isolation Vault and Arcana Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-stock.png",
+        "imageName": "damaged-mech-weapon-stock-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -5964,7 +6074,7 @@
         "name": "Hexenon",
         "description": "A reagent commonly used to produce highly combustible fuel.Location: Jupiter",
         "itemCount": 250,
-        "imageName": "hexenon.png",
+        "imageName": "concentrated-gas.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -5975,7 +6085,7 @@
         "name": "Tempered Bapholite",
         "description": "Fused with its inert Infested tendrils into a durable alloy.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 80,
-        "imageName": "tempered-bapholite.png",
+        "imageName": "deimos-common-ore-balloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -5984,7 +6094,7 @@
     "consumeOnBuild": true,
     "description": "A Necramech weapon-crafting component.",
     "excludeFromCodex": true,
-    "imageName": "morgha-stock.png",
+    "imageName": "thanotech-grenade-launcher-stock-item.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Morgha Stock",
@@ -5997,7 +6107,7 @@
   {
     "category": "Resources",
     "description": "A mark of Mother's esteem.Obtained by completing Bounties in the Cambion Drift on Deimos. ",
-    "imageName": "mother-token.png",
+    "imageName": "entrati-fragment-uncommon-b.png",
     "masterable": false,
     "name": "Mother Token",
     "patchlogs": [
@@ -6057,7 +6167,7 @@
         "name": "Blueprint",
         "description": "This living mass can produce weaponized toxins for weaponry.Location: Clan Research (Bio Lab in the Dojo) and Infested Outbreak Invasion Rewards",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "bio-component-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -6078,7 +6188,7 @@
         "name": "Mutagen Sample",
         "description": "These samples could advance our knowledge of biological research.Location: Eris and Deimos",
         "itemCount": 10,
-        "imageName": "mutagen-sample.png",
+        "imageName": "bio-fragment.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -6108,7 +6218,7 @@
     ],
     "consumeOnBuild": true,
     "description": "This living mass can produce weaponized toxins for weaponry.Location: Clan Research (Bio Lab in the Dojo) and Infested Outbreak Invasion Rewards",
-    "imageName": "mutagen-mass.png",
+    "imageName": "bio-component.png",
     "itemCount": 5,
     "masterable": false,
     "name": "Mutagen Mass",
@@ -6190,7 +6300,7 @@
         "type": "3X Mutagen Sample"
       }
     ],
-    "imageName": "mutagen-sample.png",
+    "imageName": "bio-fragment.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Mutagen Sample",
@@ -6258,8 +6368,8 @@
         "type": "5X Mytocardia Spore"
       }
     ],
-    "imageName": "mytocardia-spore.png",
-    "itemCount": 20,
+    "imageName": "fungus-heart-item.png",
+    "itemCount": 120,
     "masterable": false,
     "name": "Mytocardia Spore",
     "parents": [
@@ -6267,6 +6377,7 @@
       "Deepbreath",
       "Drimper Bracket",
       "Fatboys",
+      "Hang Tenno",
       "Harpen Gyro",
       "Hona Bracket",
       "Kreska",
@@ -6301,7 +6412,7 @@
   {
     "category": "Resources",
     "description": "Infested mineral deposits mimicking the form of living organs.Location: Cambion Drift (Deimos) from Yellow Mining Lesions and Bonus Vaults in Isolation Vault Bounties.",
-    "imageName": "namalon.png",
+    "imageName": "deimos-uncommon-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Namalon",
@@ -6345,7 +6456,7 @@
         "type": "15X Necracoil"
       }
     ],
-    "imageName": "necracoil.png",
+    "imageName": "entrati-lab-misc-item-b.png",
     "itemCount": 75,
     "masterable": false,
     "name": "Necracoil",
@@ -6357,7 +6468,7 @@
   {
     "category": "Resources",
     "description": "Impacted within Infested husks, preserved for millennia.Location: Cambion Drift (Deimos) from Blue Mining Lesions and Requiem Obelisks.",
-    "imageName": "necrathene.png",
+    "imageName": "deimos-rare-gem-aitem.png",
     "itemCount": 6,
     "masterable": false,
     "name": "Necrathene",
@@ -6433,7 +6544,7 @@
       { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Nistlepod" },
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Nistlepod" }
     ],
-    "imageName": "nistlepod.png",
+    "imageName": "nistlebrush-item.png",
     "itemCount": 25,
     "masterable": false,
     "name": "Nistlepod",
@@ -6445,10 +6556,18 @@
       "Jai",
       "Jai Ii",
       "Laka",
+      "Lanzo Fishing Spear",
+      "Peppered Bait",
+      "Peram Fishing Spear",
       "Ruhang",
       "Ruhang Ii",
+      "Shockprod Fishing Spear",
+      "Stunna Fishing Spear",
+      "Tulok Fishing Spear",
+      "Twilight Bait",
       "Vargeet Jai",
-      "Vargeet Ruhang"
+      "Vargeet Ruhang",
+      "Vasca Curative"
     ],
     "patchlogs": [
       {
@@ -6467,7 +6586,7 @@
   {
     "category": "Resources",
     "description": "A black gemstone, with iridescent blue impurities.Location: Orb Vallis (Venus) from Blue Mining Veins and Resource Containers",
-    "imageName": "noctrul.png",
+    "imageName": "solaris-common-gem-bitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Noctrul",
@@ -6550,11 +6669,11 @@
       { "chance": 0.0714, "location": "Venus/Orvin-Haarc (Skirmish)", "rarity": "Rare", "type": "Nullstones" },
       { "chance": 0.0714, "location": "Venus/Vesper Strait (Skirmish)", "rarity": "Rare", "type": "Nullstones" }
     ],
-    "imageName": "nullstones.png",
-    "itemCount": 1,
+    "imageName": "nullstones-railjack-item.png",
+    "itemCount": 2,
     "masterable": false,
     "name": "Nullstones",
-    "parents": ["Basmu", "Nautilus"],
+    "parents": ["Basmu", "Nautilus", "Protea Mavv Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -6595,7 +6714,7 @@
       { "chance": 0.5, "location": "Tusk Thumper Doma", "rarity": "Uncommon", "type": "Nyth" },
       { "chance": 1, "location": "Operational Supply, Neutral", "rarity": "Common", "type": "Heart Nyth" }
     ],
-    "imageName": "nyth.png",
+    "imageName": "eidolon-gem-bitem.png",
     "itemCount": 3,
     "masterable": false,
     "name": "Nyth",
@@ -6789,7 +6908,7 @@
         "type": "4X Orokin Animus Matrix"
       }
     ],
-    "imageName": "orokin-animus-matrix.png",
+    "imageName": "necraloid-standing-rare-item.png",
     "masterable": false,
     "name": "Orokin Animus Matrix",
     "tradable": false,
@@ -7017,7 +7136,7 @@
         "type": "2X Orokin Ballistics Matrix"
       }
     ],
-    "imageName": "orokin-ballistics-matrix.png",
+    "imageName": "necraloid-standing-uncommon-item.png",
     "masterable": false,
     "name": "Orokin Ballistics Matrix",
     "tradable": false,
@@ -7027,7 +7146,7 @@
   {
     "category": "Resources",
     "description": "These Orokin devices emerge when the floating glaciers impact on the surface of Venus. Their purpose is unknown.",
-    "imageName": "orokin-monitor.png",
+    "imageName": "orokin-sensor-item.png",
     "masterable": false,
     "name": "Orokin Monitor",
     "tradable": false,
@@ -7255,7 +7374,7 @@
         "type": "2X Orokin Orientation Matrix"
       }
     ],
-    "imageName": "orokin-orientation-matrix.png",
+    "imageName": "necraloid-standing-common-item.png",
     "masterable": false,
     "name": "Orokin Orientation Matrix",
     "tradable": false,
@@ -7265,7 +7384,7 @@
   {
     "category": "Resources",
     "description": "Otak is grateful for your aid. This helps him to remember it.Obtained from Otak in the Necralisk on Deimos.",
-    "imageName": "otak-token.png",
+    "imageName": "entrati-fragment-common-a.png",
     "masterable": false,
     "name": "Otak Token",
     "tradable": false,
@@ -7275,11 +7394,11 @@
   {
     "category": "Resources",
     "description": "The manifestation of Thrax's malevolence that shapes the Orowyrms' outbursts.Location: Rewarded upon defeating the Orowyrm in Duviri ",
-    "imageName": "pathos-clamp.png",
+    "imageName": "duviri-dragon-drop-item.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Pathos Clamp",
-    "parents": ["Rauta"],
+    "parents": ["Kullervo", "Rauta"],
     "tradable": false,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriDragonDropItem"
@@ -7287,7 +7406,7 @@
   {
     "category": "Resources",
     "description": "An eerily green gem found encased in metallic shards.Location: Orb Vallis (Venus) from Blue Mining Veins and Resource Containers",
-    "imageName": "phasmin.png",
+    "imageName": "solaris-common-gem-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Phasmin",
@@ -7309,7 +7428,7 @@
   {
     "category": "Resources",
     "description": "",
-    "imageName": "plantitem.png",
+    "imageName": "plant-item.png",
     "masterable": false,
     "name": "Plantitem",
     "tradable": false,
@@ -7347,7 +7466,7 @@
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Location: Saturn, Neptune, Eris, and Deimos",
         "itemCount": 52000,
-        "imageName": "nano-spores.png",
+        "imageName": "nanospores.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -7367,7 +7486,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A parasitic growth that often infects Eximus units operating in Infested environs.Location: Eris",
-    "imageName": "pustrels.png",
+    "imageName": "pustrels-railjack-item.png",
     "masterable": false,
     "name": "Pustrels",
     "patchlogs": [
@@ -7432,7 +7551,7 @@
         "type": "15X Pustulite"
       }
     ],
-    "imageName": "pustulite.png",
+    "imageName": "inf-gorgaricus-seed-item.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Pustulite",
@@ -7466,7 +7585,7 @@
       { "chance": 0.3336, "location": "Narmer Thumper Doma", "rarity": "Rare", "type": "Pyrol" },
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Pyrol" }
     ],
-    "imageName": "pyrol.png",
+    "imageName": "common-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Pyrol",
@@ -7496,7 +7615,7 @@
   {
     "category": "Resources",
     "description": "With a blazing orange hue and rigid material strength, this compound is prized by ship and station architects.",
-    "imageName": "pyrus-essence.png",
+    "imageName": "phase-one-fire-element.png",
     "masterable": false,
     "name": "Pyrus Essence",
     "patchlogs": [
@@ -7524,7 +7643,7 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "eidolon-gem-acut-ablueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -7534,7 +7653,7 @@
         "name": "Sentirum",
         "description": "A rare Eidolon Gem, created from the fossilized blood of an ancient Sentient.Location: Plains of Eidolon (Earth) from Blue Mining Veins and Thumper Bulls. This Rare Gem can only be mined by the Advanced Nosam Cutter or Sunpoint Plasma Drill.",
         "itemCount": 3,
-        "imageName": "sentirum.png",
+        "imageName": "eidolon-gem-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -7542,11 +7661,21 @@
     ],
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
-    "imageName": "radian-sentirum.png",
+    "imageName": "eidolon-gem-acut-aitem.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Radian Sentirum",
-    "parents": ["Anspatha Brace", "Dorma Hound", "Exceptional Sentient Core"],
+    "parents": [
+      "Anspatha Brace",
+      "Ceno Apparel (Operator)",
+      "Ceno Cuirass (Operator)",
+      "Ceno Greaves (Operator)",
+      "Ceno Helmet (Operator)",
+      "Ceno Pauldrons (Operator)",
+      "Dorma Hound",
+      "Eidolon Ephemera",
+      "Exceptional Sentient Core"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -7573,7 +7702,7 @@
         "name": "Blueprint",
         "description": "An integral building block in the construction of Tenno relays.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "relay-thermic-strut-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -7583,7 +7712,7 @@
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.Location: Mercury, Mars, Phobos, Europa, and Pluto",
         "itemCount": 2,
-        "imageName": "morphics.png",
+        "imageName": "morphic.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -7605,7 +7734,7 @@
         "name": "Trembera Essence",
         "description": "A highly purified mineral compound prized for its strength, resiliency, and resistance to heat. Widely used in the construction of Tenno relays.",
         "itemCount": 15,
-        "imageName": "trembera-essence.png",
+        "imageName": "phase-three-earth-essence.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -7613,7 +7742,7 @@
     ],
     "consumeOnBuild": false,
     "description": "An integral building block in the construction of Tenno relays.",
-    "imageName": "relay-strut-component.png",
+    "imageName": "phase-one-clan-item.png",
     "masterable": false,
     "name": "Relay Strut Component",
     "skipBuildTimePrice": 10,
@@ -7651,7 +7780,7 @@
       },
       { "chance": 1, "location": "Vox Solaris, Hand", "rarity": "Common", "type": "Repeller Systems" }
     ],
-    "imageName": "repeller-systems.png",
+    "imageName": "corpus-widget-citem.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Repeller Systems",
@@ -7690,7 +7819,7 @@
     "category": "Resources",
     "description": "Combine multiple Rivens to create a new, different Riven.",
     "excludeFromCodex": true,
-    "imageName": "riven-transmuter.png",
+    "imageName": "sentient-secret-item.png",
     "masterable": false,
     "name": "Riven Transmuter",
     "patchlogs": [
@@ -7710,9 +7839,11 @@
   {
     "category": "Resources",
     "description": "This plant was introduced to arid regions across the Origin System, for its ability to collect moisture in harsh environments. Location: Obtained by using a Codex Scanner on Ruk's Claw plants that grow on Mars",
-    "imageName": "ruk's-claw.png",
+    "imageName": "gft-plant-ruks-claw-mature-plant-item.png",
+    "itemCount": 6,
     "masterable": false,
     "name": "Ruk's Claw",
+    "parents": ["Twilight Apothic"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/GftPlantRuksClawMaturePlantItem"
@@ -7724,7 +7855,7 @@
       { "chance": 1, "location": "Corrupted Jackal", "rarity": "Common", "type": "Rune Marrow" },
       { "chance": 1, "location": "Corrupted Vor", "rarity": "Common", "type": "Rune Marrow" }
     ],
-    "imageName": "rune-marrow.png",
+    "imageName": "duviri-fractal-item.png",
     "itemCount": 35,
     "masterable": false,
     "name": "Rune Marrow",
@@ -7770,7 +7901,7 @@
       { "chance": 0.3775, "location": "Duviri Circuit", "rarity": "Common", "type": "5X Saggen Pearl" },
       { "chance": 0.3872, "location": "Duviri Full Experience", "rarity": "Common", "type": "3X Saggen Pearl" }
     ],
-    "imageName": "saggen-pearl.png",
+    "imageName": "duviri-processed-item.png",
     "itemCount": 100,
     "masterable": false,
     "name": "Saggen Pearl",
@@ -7928,11 +8059,23 @@
         "type": "Scintillant"
       }
     ],
-    "imageName": "scintillant.png",
+    "imageName": "entrati-wisp-item.png",
     "itemCount": 4,
     "masterable": false,
     "name": "Scintillant",
-    "parents": ["Arcroid", "Bonewidow Capsule", "Catabolyst", "Macro Arcroid", "Macro Thymoid", "Quassus", "Thymoid"],
+    "parents": [
+      "Arcroid",
+      "Bonewidow Capsule",
+      "Catabolyst",
+      "Loid Sentinel Mask",
+      "Loid Sentinel Skin",
+      "Loid Sentinel Tail",
+      "Loid Sentinel Wing",
+      "Macro Arcroid",
+      "Macro Thymoid",
+      "Quassus",
+      "Thymoid"
+    ],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -8037,7 +8180,7 @@
       { "chance": 0.5, "location": "Tusk Thumper Doma", "rarity": "Uncommon", "type": "Sentirum" },
       { "chance": 1, "location": "Operational Supply, Neutral", "rarity": "Common", "type": "Radian Sentirum" }
     ],
-    "imageName": "sentirum.png",
+    "imageName": "eidolon-gem-aitem.png",
     "itemCount": 3,
     "masterable": false,
     "name": "Sentirum",
@@ -8128,7 +8271,7 @@
         "type": "2X Shelter Debt-Bond"
       }
     ],
-    "imageName": "shelter-debt-bond.png",
+    "imageName": "debt-token-b.png",
     "masterable": false,
     "name": "Shelter Debt-Bond",
     "patchlogs": [
@@ -8156,7 +8299,7 @@
         "type": "Shrill Voca"
       }
     ],
-    "imageName": "shrill-voca.png",
+    "imageName": "entrati-lab-dog-tag-common.png",
     "itemCount": 1,
     "masterable": false,
     "name": "Shrill Voca",
@@ -8168,7 +8311,7 @@
   {
     "category": "Resources",
     "description": "It is traditionally held that to see Silphsela floating in the air heralds an imminent change in the sky.Location: Duviri",
-    "imageName": "silphsela.png",
+    "imageName": "duviri-plant-item-e.png",
     "itemCount": 45,
     "masterable": false,
     "name": "Silphsela",
@@ -8181,7 +8324,7 @@
     "category": "Resources",
     "description": "A token symbolizing a converted Sister of Parvos. Can be traded to other players for control of said Sister of Parvos.",
     "excludeFromCodex": true,
-    "imageName": "sister-of-parvos-token.png",
+    "imageName": "captured-corpus-lich-token.png",
     "masterable": false,
     "name": "Sister Of Parvos Token",
     "tradable": false,
@@ -8192,7 +8335,7 @@
     "category": "Resources",
     "description": "Extracted from Skateweed.",
     "excludeFromCodex": true,
-    "imageName": "skateweed-extract.png",
+    "imageName": "ires-plant-item.png",
     "masterable": false,
     "name": "Skateweed Extract",
     "tradable": false,
@@ -8217,11 +8360,22 @@
       },
       { "chance": 0.2, "location": "Kyta Raknoid", "rarity": "Common", "type": "Sola Toroid" }
     ],
-    "imageName": "sola-toroid.png",
-    "itemCount": 3,
+    "imageName": "arachnoid-wraith-item.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Sola Toroid",
-    "parents": ["Cela Bracket", "Certus Brace", "Plaga Brace", "Suo Brace"],
+    "parents": [
+      "Cela Bracket",
+      "Certus Brace",
+      "Haztech Greaves (Operator)",
+      "Kubrodon Ventkid Greaves",
+      "Outrider Greaves",
+      "Plaga Brace",
+      "Smelter Greaves (Operator)",
+      "Suo Brace",
+      "Vent Pobber Ventkid Greaves",
+      "Vent Rat Greaves"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -8271,7 +8425,7 @@
   {
     "category": "Resources",
     "description": "A mark of Son's respect for services rendered.Obtained from Son in the Necralisk on Deimos.",
-    "imageName": "son-token.png",
+    "imageName": "entrati-fragment-common-b.png",
     "masterable": false,
     "name": "Son Token",
     "patchlogs": [
@@ -8307,7 +8461,7 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "rare-gem-acut-ablueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -8317,7 +8471,7 @@
         "name": "Crimzian",
         "description": "A blood-red gem.Location: Plains of Eidolon (Earth) from Blue Mining Veins and Thumpers",
         "itemCount": 6,
-        "imageName": "crimzian.png",
+        "imageName": "rare-gem-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -8325,11 +8479,11 @@
     ],
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
-    "imageName": "star-crimzian.png",
+    "imageName": "rare-gem-acut-aitem.png",
     "itemCount": 6,
     "masterable": false,
     "name": "Star Crimzian",
-    "parents": ["Bonewidow Capsule", "Granmu Prism", "Helstrum", "Ramflare"],
+    "parents": ["Bonewidow Capsule", "Granmu Prism", "Helstrum", "Ramflare", "Styanax Agogean Helmet"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -8473,7 +8627,7 @@
       { "chance": 1, "location": "Violence", "rarity": "Common", "type": "Steel Essence" }
     ],
     "excludeFromCodex": true,
-    "imageName": "steel-essence-lotus-types-items-miscitems-steelessence20pack.png",
+    "imageName": "steel-essence20-pack-lotus-types-items-misc-items-steel-essence20-pack.png",
     "masterable": false,
     "name": "Steel Essence",
     "patchlogs": [
@@ -8557,7 +8711,7 @@
   {
     "category": "Resources",
     "description": "This Void-touched stone contains an ominous essence.Location: Albrecht's Laboratories (Deimos)",
-    "imageName": "stela.png",
+    "imageName": "murmur-item.png",
     "masterable": false,
     "name": "Stela",
     "tradable": false,
@@ -8567,11 +8721,11 @@
   {
     "category": "Resources",
     "description": "This uncommon plant can only be found during the day. Location: Obtained by using a Codex Scanner on Sunlight Dragonlily plants that grow on Earth",
-    "imageName": "sunlight-dragonlily.png",
-    "itemCount": 10,
+    "imageName": "un-common-day-plant-item.png",
+    "itemCount": 4,
     "masterable": false,
     "name": "Sunlight Dragonlily",
-    "parents": ["The Silver Grove"],
+    "parents": ["Citrine Antitoxin", "Lapis Antitoxin", "The Silver Grove", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/UnCommonDayPlantItem"
@@ -8579,9 +8733,11 @@
   {
     "category": "Resources",
     "description": "This rare plant can only be found during the day. Location: Obtained by using a Codex Scanner on Sunlight Jadeleaf plants that grow on Earth",
-    "imageName": "sunlight-jadeleaf.png",
+    "imageName": "rare-day-plant-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Sunlight Jadeleaf",
+    "parents": ["Health Restore (Large)", "Lapis Antitoxin", "Sunrise Apothic", "Vermillion Antitoxin"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/RareDayPlantItem"
@@ -8589,9 +8745,11 @@
   {
     "category": "Resources",
     "description": "This common plant can only be found during the day. Location: Obtained by using a Codex Scanner on Sunlight Threshcone plants that grow on Earth",
-    "imageName": "sunlight-threshcone.png",
+    "imageName": "common-day-plant-item.png",
+    "itemCount": 15,
     "masterable": false,
     "name": "Sunlight Threshcone",
+    "parents": ["Beryl Antitoxin", "Citrine Antitoxin", "Health Restore (Large)", "Nightfall Apothic"],
     "tradable": false,
     "type": "Plant",
     "uniqueName": "/Lotus/Types/Items/Plants/MiscItems/CommonDayPlantItem"
@@ -8599,7 +8757,7 @@
   {
     "category": "Resources",
     "description": "Duviri citizens plagued by nightmares seek Tasoma, because its stalks can be crushed to create juice that invites pleasant dreams. Unfortunately, it is difficult to forage Tasoma as it only grows in caves.Location: Duviri",
-    "imageName": "tasoma-extract.png",
+    "imageName": "duviri-mushroom-item.png",
     "itemCount": 30,
     "masterable": false,
     "name": "Tasoma Extract",
@@ -8612,7 +8770,7 @@
     "category": "Resources",
     "description": "A Tasoma fungal spore, suitable for growing in the Dormizone’s garden.",
     "excludeFromCodex": true,
-    "imageName": "tasoma-spore.png",
+    "imageName": "duviri-mushroom-seed.png",
     "masterable": false,
     "name": "Tasoma Spore",
     "tradable": false,
@@ -8630,7 +8788,7 @@
         "name": "Azurite",
         "description": "A blue gem layered with impurities.Location: Plains of Eidolon (Earth) from Blue Mining Veins and Thumpers",
         "itemCount": 10,
-        "imageName": "azurite.png",
+        "imageName": "common-gem-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -8640,7 +8798,7 @@
         "name": "Blueprint",
         "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "common-gem-acut-ablueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -8648,11 +8806,20 @@
     ],
     "consumeOnBuild": false,
     "description": "Polished and cut to perfection.Blueprint sold by Old Man Suumbaat in Cetus on Earth.",
-    "imageName": "tear-azurite.png",
+    "imageName": "common-gem-acut-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Tear Azurite",
-    "parents": ["Balla", "Ooltha", "Plague Kripath", "Rahn Prism", "Raplak Prism", "Sepfahn", "Zipfire"],
+    "parents": [
+      "Balla",
+      "Focused Nosam Cutter",
+      "Ooltha",
+      "Plague Kripath",
+      "Rahn Prism",
+      "Raplak Prism",
+      "Sepfahn",
+      "Zipfire"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -8679,7 +8846,7 @@
         "name": "Bapholite",
         "description": "Malleable, owing to ingrown veins of Infestation protein.Location: Cambion Drift (Deimos) from Yellow Mining Lesions, Rolizor Infested Cysts, and Bonus Vaults in Isolation Vault Bounties.",
         "itemCount": 20,
-        "imageName": "bapholite.png",
+        "imageName": "deimos-common-ore-bitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -8689,7 +8856,7 @@
         "name": "Blueprint",
         "description": "Fused with its inert Infested tendrils into a durable alloy.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "deimos-common-ore-balloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -8699,7 +8866,7 @@
         "name": "Lucent Teroglobe",
         "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.Location: Cambion Drift on Deimos",
         "itemCount": 15,
-        "imageName": "lucent-teroglobe.png",
+        "imageName": "orb-stone-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -8709,7 +8876,7 @@
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Location: Saturn, Neptune, Eris, and Deimos",
         "itemCount": 1600,
-        "imageName": "nano-spores.png",
+        "imageName": "nanospores.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -8720,7 +8887,7 @@
         "name": "Pyrol",
         "description": "A tarnished, brittle metal.Location: Plains of Eidolon (Earth) from Red Mining Veins and Thumpers",
         "itemCount": 20,
-        "imageName": "pyrol.png",
+        "imageName": "common-ore-aitem.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -8728,7 +8895,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Fused with its inert Infested tendrils into a durable alloy.Blueprint sold by Otak in the Necralisk on Deimos.",
-    "imageName": "tempered-bapholite.png",
+    "imageName": "deimos-common-ore-balloy-item.png",
     "itemCount": 80,
     "masterable": false,
     "name": "Tempered Bapholite",
@@ -8824,7 +8991,7 @@
         "type": "5X Tepa Nodule"
       }
     ],
-    "imageName": "tepa-nodule.png",
+    "imageName": "venus-tree-item.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Tepa Nodule",
@@ -8867,7 +9034,7 @@
     "category": "Resources",
     "description": "Its power lies in its potential.Location: Duviri",
     "excludeFromCodex": true,
-    "imageName": "tertium.png",
+    "imageName": "duviri-endless-item.png",
     "masterable": false,
     "name": "Tertium",
     "tradable": false,
@@ -8885,7 +9052,7 @@
         "name": "Blueprint",
         "description": "Thaumica reduced to its most durable, workable elements.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "deimos-rare-ore-aalloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -8906,7 +9073,7 @@
         "name": "Lucent Teroglobe",
         "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.Location: Cambion Drift on Deimos",
         "itemCount": 15,
-        "imageName": "lucent-teroglobe.png",
+        "imageName": "orb-stone-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -8916,7 +9083,7 @@
         "name": "Thaumica",
         "description": "Can be molded by the Infestation but remains resistant to it.Location: Cambion Drift (Deimos) from Yellow Mining Lesions, Requiem Obelisks, and Spitia Infested Cysts.",
         "itemCount": 20,
-        "imageName": "thaumica.png",
+        "imageName": "deimos-rare-ore-aitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -8926,7 +9093,7 @@
         "name": "Venerol",
         "description": "A precious metal forged from coolant byproducts.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
         "itemCount": 20,
-        "imageName": "venerol.png",
+        "imageName": "solaris-uncommon-ore-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -8934,7 +9101,7 @@
     ],
     "consumeOnBuild": false,
     "description": "Thaumica reduced to its most durable, workable elements.Blueprint sold by Otak in the Necralisk on Deimos.",
-    "imageName": "thaumic-distillate.png",
+    "imageName": "deimos-rare-ore-aalloy-item.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Thaumic Distillate",
@@ -8965,7 +9132,7 @@
   {
     "category": "Resources",
     "description": "Can be molded by the Infestation but remains resistant to it.Location: Cambion Drift (Deimos) from Yellow Mining Lesions, Requiem Obelisks, and Spitia Infested Cysts.",
-    "imageName": "thaumica.png",
+    "imageName": "deimos-rare-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Thaumica",
@@ -9026,8 +9193,8 @@
       },
       { "chance": 1, "location": "Thermal Sludge Cannister", "rarity": "Common", "type": "Thermal Sludge" }
     ],
-    "imageName": "thermal-sludge.png",
-    "itemCount": 20,
+    "imageName": "coolant-item.png",
+    "itemCount": 75,
     "masterable": false,
     "name": "Thermal Sludge",
     "parents": [
@@ -9036,9 +9203,11 @@
       "Bellows",
       "Drimper Bracket",
       "Flatbelly",
+      "Greedy Milk",
       "Needlenose",
       "Ocucor",
       "Oloro Moa",
+      "Puppeteer",
       "Runway",
       "Tombfinger",
       "Trux Gyro",
@@ -9128,11 +9297,21 @@
         "type": "3X Lua Thrax Plasm"
       }
     ],
-    "imageName": "thrax-plasm.png",
-    "itemCount": 600,
+    "imageName": "void-wraith-item.png",
+    "itemCount": 300,
     "masterable": false,
     "name": "Thrax Plasm",
-    "parents": ["Aeolak", "Alternox", "Hespar", "Innodem", "Praedos"],
+    "parents": [
+      "Aeolak",
+      "Alternox",
+      "Gyre Automaton Helmet",
+      "Hespar",
+      "Innodem",
+      "Praedos",
+      "Raptwing Ephemera",
+      "Seraphayre Ephemera",
+      "Styanax Gerousic Helmet"
+    ],
     "patchlogs": [
       {
         "name": "Lua’s Prey: Hotfix 32.2.4",
@@ -9183,7 +9362,7 @@
     "category": "Resources",
     "description": "A beautiful and iridescent red shard.Location: Orb Vallis (Venus) from Blue Mining Veins and the Exploiter Orb. This Rare Gem can only be mined by the Advanced Nosam Cutter or Sunpoint Plasma Drill.",
     "drops": [{ "chance": 0.5001, "location": "Exploiter Orb", "rarity": "Uncommon", "type": "Thyst" }],
-    "imageName": "thyst.png",
+    "imageName": "solaris-eidolon-gem-bitem.png",
     "itemCount": 3,
     "masterable": false,
     "name": "Thyst",
@@ -9213,7 +9392,7 @@
   {
     "category": "Resources",
     "description": "Infested neurotransmitters condensed under pressure.Location: Cambion Drift (Deimos) from Blue Mining Lesions, Sagiant Entrati Caskets, and Bonus Vaults in Isolation Vault Bounties.",
-    "imageName": "tiametrite.png",
+    "imageName": "deimos-common-gem-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Tiametrite",
@@ -9296,7 +9475,7 @@
       { "chance": 0.3794, "location": "Corpus Ramsled", "rarity": "Common", "type": "Ticor Plate" }
     ],
     "excludeFromCodex": true,
-    "imageName": "ticor-plate.png",
+    "imageName": "scrap-railjack-item.png",
     "masterable": false,
     "name": "Ticor Plate",
     "patchlogs": [
@@ -9491,11 +9670,11 @@
         "type": "Titanium"
       }
     ],
-    "imageName": "titanium.png",
+    "imageName": "titanium-railjack-item.png",
     "itemCount": 750,
     "masterable": false,
     "name": "Titanium",
-    "parents": ["Basmu", "Bonewidow Engine"],
+    "parents": ["Basmu", "Bonewidow Engine", "Protea Mavv Helmet"],
     "patchlogs": [
       {
         "name": "Echoes of the Zariman: Update 31.6",
@@ -9571,7 +9750,7 @@
         "name": "Mutagen Sample",
         "description": "These samples could advance our knowledge of biological research.Location: Eris and Deimos",
         "itemCount": 45,
-        "imageName": "mutagen-sample.png",
+        "imageName": "bio-fragment.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -9581,7 +9760,7 @@
         "name": "Nano Spores",
         "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Location: Saturn, Neptune, Eris, and Deimos",
         "itemCount": 26000,
-        "imageName": "nano-spores.png",
+        "imageName": "nanospores.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -9601,7 +9780,7 @@
     ],
     "consumeOnBuild": false,
     "description": "An organ found on Infested Ships believed to facilitate communication within the Infested Hivemind.",
-    "imageName": "trachons.png",
+    "imageName": "trachons-railjack-item.png",
     "masterable": false,
     "name": "Trachons",
     "patchlogs": [
@@ -9686,7 +9865,7 @@
         "type": "Training Debt-Bond"
       }
     ],
-    "imageName": "training-debt-bond.png",
+    "imageName": "debt-token-a.png",
     "masterable": false,
     "name": "Training Debt-Bond",
     "patchlogs": [
@@ -9714,7 +9893,7 @@
         "name": "Blueprint",
         "description": "A compound formed from Travoride.Blueprint sold by Smokefinger in Fortuna on Venus.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "solaris-common-ore-aalloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -9746,7 +9925,7 @@
         "name": "Travoride",
         "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
         "itemCount": 20,
-        "imageName": "travoride.png",
+        "imageName": "solaris-common-ore-aitem.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -9754,7 +9933,7 @@
     ],
     "consumeOnBuild": false,
     "description": "A compound formed from Travoride.Blueprint sold by Smokefinger in Fortuna on Venus.",
-    "imageName": "travocyte-alloy.png",
+    "imageName": "solaris-common-ore-aalloy-item.png",
     "itemCount": 30,
     "masterable": false,
     "name": "Travocyte Alloy",
@@ -9772,6 +9951,7 @@
       "Shrewd",
       "Slap",
       "Steadyslam",
+      "Sunpoint Plasma Drill",
       "Tian Bracket",
       "Twin Kavats",
       "Zubb Bracket"
@@ -9784,7 +9964,7 @@
   {
     "category": "Resources",
     "description": "A mineral hardened by the crushing pressure of the Venusian atmosphere.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
-    "imageName": "travoride.png",
+    "imageName": "solaris-common-ore-aitem.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Travoride",
@@ -9806,7 +9986,7 @@
   {
     "category": "Resources",
     "description": "A highly purified mineral compound prized for its strength, resiliency, and resistance to heat. Widely used in the construction of Tenno relays.",
-    "imageName": "trembera-essence.png",
+    "imageName": "phase-three-earth-essence.png",
     "itemCount": 15,
     "masterable": false,
     "name": "Trembera Essence",
@@ -9835,7 +10015,7 @@
       { "chance": 0.0443, "location": "Duviri/Endless: Tier 3 (Normal)", "rarity": "Rare", "type": "60X Ueymag" },
       { "chance": 0.0443, "location": "Duviri/Endless: Tier 4 (Normal)", "rarity": "Rare", "type": "60X Ueymag" }
     ],
-    "imageName": "ueymag.png",
+    "imageName": "duviri-plant-item-g.png",
     "masterable": false,
     "name": "Ueymag",
     "tradable": false,
@@ -9856,11 +10036,22 @@
         "type": "3X Vega Toroid"
       }
     ],
-    "imageName": "vega-toroid.png",
-    "itemCount": 3,
+    "imageName": "arachnoid-microid-item.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Vega Toroid",
-    "parents": ["Cantic Prism", "Klamora Prism", "Lega Prism", "Zubb Bracket"],
+    "parents": [
+      "Cantic Prism",
+      "Haztech Pauldrons (Operator)",
+      "Klamora Prism",
+      "Kubrodon Ventkid Pauldrons",
+      "Lega Prism",
+      "Outrider Pauldrons",
+      "Smelter Pauldrons (Operator)",
+      "Vent Pobber Ventkid Pauldrons",
+      "Vent Rat Pauldrons",
+      "Zubb Bracket"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -9918,7 +10109,7 @@
         "name": "Blueprint",
         "description": "A compound formed from Venerol.Blueprint sold by Smokefinger in Fortuna on Venus.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "solaris-uncommon-ore-aalloy-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -9950,7 +10141,7 @@
         "name": "Venerol",
         "description": "A precious metal forged from coolant byproducts.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
         "itemCount": 20,
-        "imageName": "venerol.png",
+        "imageName": "solaris-uncommon-ore-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -9958,8 +10149,8 @@
     ],
     "consumeOnBuild": false,
     "description": "A compound formed from Venerol.Blueprint sold by Smokefinger in Fortuna on Venus.",
-    "imageName": "venerdo-alloy.png",
-    "itemCount": 30,
+    "imageName": "solaris-uncommon-ore-aalloy-item.png",
+    "itemCount": 40,
     "masterable": false,
     "name": "Venerdo Alloy",
     "parents": [
@@ -9969,17 +10160,33 @@
       "Flatbelly",
       "Gauth Bracket",
       "Gaze",
+      "Haztech Apparel (Operator)",
+      "Haztech Cuirass (Operator)",
+      "Haztech Pauldrons (Operator)",
       "Hona Bracket",
       "Krisys Core",
+      "Kubrodon Ventkid Apparel",
+      "Kubrodon Ventkid Cuirass",
+      "Kubrodon Ventkid Pauldrons",
       "Lambeo Moa",
       "Larkspur",
       "Lehan Core",
       "Nychus Moa",
       "Ocucor",
+      "Outrider Cuirass",
+      "Outrider Pauldrons",
       "Rattleguts",
+      "Smelter Apparel (Operator)",
+      "Smelter Cuirass (Operator)",
+      "Smelter Pauldrons (Operator)",
       "Sparkfire",
       "Step Tens",
-      "Thugs"
+      "Thugs",
+      "Vent Pobber Ventkid Apparel",
+      "Vent Pobber Ventkid Cuirass",
+      "Vent Pobber Ventkid Pauldrons",
+      "Vent Rat Cuirass",
+      "Vent Rat Pauldrons"
     ],
     "patchlogs": [
       {
@@ -9999,7 +10206,7 @@
   {
     "category": "Resources",
     "description": "A precious metal forged from coolant byproducts.Location: Orb Vallis (Venus) from Red Mining Veins and Resource Containers",
-    "imageName": "venerol.png",
+    "imageName": "solaris-uncommon-ore-item.png",
     "itemCount": 20,
     "masterable": false,
     "name": "Venerol",
@@ -10042,7 +10249,7 @@
       { "chance": 0.3336, "location": "Tusk Thumper Doma", "rarity": "Rare", "type": "Veridos" },
       { "chance": 1, "location": "Ostron (Old Man Suumbaat), Kin", "rarity": "Common", "type": "Veridos Glyph" }
     ],
-    "imageName": "veridos.png",
+    "imageName": "uncommon-gem-aitem.png",
     "itemCount": 10,
     "masterable": false,
     "name": "Veridos",
@@ -10082,9 +10289,11 @@
   {
     "category": "Resources",
     "description": "One of the few known plant species able to thrive on asteroids in deep space. Location: Obtained by using a Codex Scanner on Vestan Moss plants that grow on Mercury, Saturn, and Sedna",
-    "imageName": "vestan-moss.png",
+    "imageName": "moss-ground-cover-aplant-item.png",
+    "itemCount": 12,
     "masterable": false,
     "name": "Vestan Moss",
+    "parents": ["Sunrise Apothic"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10110,7 +10319,7 @@
   {
     "category": "Resources",
     "description": "Remnants of Jade's light. Echoes of her power.Obtained from Ascension missions on Brutus, Uranus.",
-    "imageName": "vestigial-motes.png",
+    "imageName": "ascension-resource-item.png",
     "masterable": false,
     "name": "Vestigial Motes",
     "tradable": false,
@@ -10158,11 +10367,11 @@
         "type": "Voidgel Orb"
       }
     ],
-    "imageName": "voidgel-orb.png",
-    "itemCount": 30,
+    "imageName": "zariman-misc-item-a.png",
+    "itemCount": 45,
     "masterable": false,
     "name": "Voidgel Orb",
-    "parents": ["Felarx", "Laetum"],
+    "parents": ["Felarx", "Gyre Automaton Helmet", "Laetum", "Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10188,7 +10397,7 @@
         "type": "Voidplume Crest"
       }
     ],
-    "imageName": "voidplume-crest.png",
+    "imageName": "zariman-dog-tag-rare.png",
     "masterable": false,
     "name": "Voidplume Crest",
     "patchlogs": [
@@ -10224,7 +10433,7 @@
         "type": "Voidplume Down"
       }
     ],
-    "imageName": "voidplume-down.png",
+    "imageName": "zariman-dog-tag-common.png",
     "masterable": false,
     "name": "Voidplume Down",
     "patchlogs": [
@@ -10244,11 +10453,11 @@
   {
     "category": "Resources",
     "description": "A Void Angel's living feather, ripped out in combat.Location: Zariman",
-    "imageName": "voidplume-pinion.png",
-    "itemCount": 10,
+    "imageName": "void-angel-item.png",
+    "itemCount": 5,
     "masterable": false,
     "name": "Voidplume Pinion",
-    "parents": ["Felarx", "Innodem", "Laetum", "Phenmor", "Praedos"],
+    "parents": ["Felarx", "Innodem", "Laetum", "Phenmor", "Praedos", "Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Angels of the Zariman: Hotfix 31.5.4",
@@ -10274,7 +10483,7 @@
   {
     "category": "Resources",
     "description": "A symbol of genius, fallen from Void Angels long ago.Location: Zariman",
-    "imageName": "voidplume-quill.png",
+    "imageName": "zariman-dog-tag-bounty.png",
     "itemCount": 15,
     "masterable": false,
     "name": "Voidplume Quill",
@@ -10312,7 +10521,7 @@
         "type": "Voidplume Vane"
       }
     ],
-    "imageName": "voidplume-vane.png",
+    "imageName": "zariman-dog-tag-uncommon.png",
     "masterable": false,
     "name": "Voidplume Vane",
     "patchlogs": [
@@ -10340,7 +10549,7 @@
         "name": "Blueprint",
         "description": "Capsule component for the Voidrig Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "necromech-part-systems-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -10357,7 +10566,7 @@
         "name": "Damaged Necramech Pod",
         "description": "A modular component for a Necramech. It’s damaged and in need of repair.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-pod.png",
+        "imageName": "damaged-mech-part-systems-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -10367,7 +10576,7 @@
         "name": "Devolved Namalon",
         "description": "Retrieved from its Infested state, restored to worth and utility.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 50,
-        "imageName": "devolved-namalon.png",
+        "imageName": "deimos-uncommon-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -10377,7 +10586,7 @@
         "name": "Morphics",
         "description": "An amorphous solid. Possibly Orokin technology.Location: Mercury, Mars, Phobos, Europa, and Pluto",
         "itemCount": 3,
-        "imageName": "morphics.png",
+        "imageName": "morphic.png",
         "tradable": false,
         "drops": [],
         "masterable": false,
@@ -10388,7 +10597,7 @@
         "name": "Spinal Core Section",
         "description": "Many delicate and complex nerve fibers are housed in the jointed vertebrae, which are one of the creature's most resilient parts. Found from Vitreospina fish known to eke out a primitive existence in cave systems.Guaranteed to drop from these sources:VITREOSPINACHONDRICORD",
         "itemCount": 12,
-        "imageName": "spinal-core-section.png",
+        "imageName": "deimos-orokin-fish-bpart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -10396,9 +10605,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Capsule component for the Voidrig Necramech.",
-    "imageName": "voidrig-capsule.png",
+    "imageName": "necromech-part-systems-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Capsule",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10433,7 +10644,7 @@
         "name": "Adramal Alloy",
         "description": "Purged of spores and contaminants, this alloy is highly versatile.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 60,
-        "imageName": "adramal-alloy.png",
+        "imageName": "deimos-common-ore-aalloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -10443,7 +10654,7 @@
         "name": "Blueprint",
         "description": "Casing component for the Voidrig Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "necromech-part-chassis-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -10460,7 +10671,7 @@
         "name": "Damaged Necramech Casing",
         "description": "The damaged remains of a Necramech supporting frame.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift, and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-casing.png",
+        "imageName": "damaged-mech-part-chassis-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -10470,7 +10681,7 @@
         "name": "Faceted Tiametrite",
         "description": "Refined purity freed from the Infested mass.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 30,
-        "imageName": "faceted-tiametrite.png",
+        "imageName": "deimos-common-gem-acut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -10480,7 +10691,7 @@
         "name": "Lucent Teroglobe",
         "description": "These orbs have long since fulfilled their original function, but still, thrum with faint power.Location: Cambion Drift on Deimos",
         "itemCount": 140,
-        "imageName": "lucent-teroglobe.png",
+        "imageName": "orb-stone-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -10488,9 +10699,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Casing component for the Voidrig Necramech.",
-    "imageName": "voidrig-casing.png",
+    "imageName": "necromech-part-chassis-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Casing",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10525,7 +10738,7 @@
         "name": "Blueprint",
         "description": "Engine component for the Voidrig Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "necromech-part-engine-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -10542,7 +10755,7 @@
         "name": "Damaged Necramech Engine",
         "description": "An engine designed for use in a Necramech. Unfortunately, it’s damaged.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-engine.png",
+        "imageName": "damaged-mech-part-engine-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -10563,7 +10776,7 @@
         "name": "Parasitic Tethermaw",
         "description": "Used to latch on to other life forms for feeding purposes, and to inject them with anticoagulants and sporelets.Source:LOBOTRISCID",
         "itemCount": 4,
-        "imageName": "parasitic-tethermaw.png",
+        "imageName": "deimos-infested-fish-gpart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -10573,7 +10786,7 @@
         "name": "Tempered Bapholite",
         "description": "Fused with its inert Infested tendrils into a durable alloy.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 50,
-        "imageName": "tempered-bapholite.png",
+        "imageName": "deimos-common-ore-balloy-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -10581,9 +10794,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Engine component for the Voidrig Necramech.",
-    "imageName": "voidrig-engine.png",
+    "imageName": "necromech-part-engine-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Engine",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10618,7 +10833,7 @@
         "name": "Biotic Filter",
         "description": "Sifting the glutinous Exocrine is an essential part of the survival process, and a reminder of the creature's original function.Guaranteed to drop from these sources:AQUAPULMODUROID",
         "itemCount": 3,
-        "imageName": "biotic-filter.png",
+        "imageName": "deimos-orokin-fish-apart-item.png",
         "tradable": false,
         "masterable": false,
         "drops": []
@@ -10628,7 +10843,7 @@
         "name": "Blueprint",
         "description": "Weapon Pod component for the Voidrig Necramech.",
         "itemCount": 1,
-        "imageName": "blueprint.png",
+        "imageName": "necromech-part-weapon-pod-blueprint.png",
         "tradable": false,
         "masterable": false,
         "drops": [
@@ -10645,7 +10860,7 @@
         "name": "Damaged Necramech Weapon Pod",
         "description": "A broken weapon system intended for a Necramech.Location: Enemy Necramechs found in Isolation Vault Bounties on the Cambion Drift (Deimos), and purchased from Loid in the Necralisk (Deimos) after completing The War Within quest",
         "itemCount": 1,
-        "imageName": "damaged-necramech-weapon-pod.png",
+        "imageName": "damaged-mech-part-weapon-pod-item.png",
         "tradable": true,
         "drops": [],
         "masterable": false
@@ -10655,7 +10870,7 @@
         "name": "Purged Dagonic",
         "description": "Crystalline symmetry, a far cry from its corrupt origin.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 30,
-        "imageName": "purged-dagonic.png",
+        "imageName": "deimos-common-gem-bcut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -10665,7 +10880,7 @@
         "name": "Purified Heciphron",
         "description": "Extracted from the Infestation and cut into a prestigious gem.Blueprint sold by Otak in the Necralisk on Deimos.",
         "itemCount": 40,
-        "imageName": "purified-heciphron.png",
+        "imageName": "deimos-uncommon-gem-acut-item.png",
         "tradable": false,
         "drops": [],
         "masterable": false
@@ -10673,9 +10888,11 @@
     ],
     "consumeOnBuild": true,
     "description": "Weapon Pod component for the Voidrig Necramech.",
-    "imageName": "voidrig-weapon-pod.png",
+    "imageName": "necromech-part-weapon-pod-item.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Voidrig Weapon Pod",
+    "parents": ["Voidrig"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -10694,7 +10911,7 @@
   {
     "category": "Resources",
     "description": "Highly charged particles of pure energy. The source of the Jade Light, and Jade's power. Highly coveted by Parvos Granum for his Jade Eximus program.Obtained from Operation Ascension missions (Brutus on Uranus) and special Operation Alerts during Operation: Belly of the Beast.",
-    "imageName": "volatile-motes.png",
+    "imageName": "ascension-event-resource-item.png",
     "masterable": false,
     "name": "Volatile Motes",
     "tradable": false,
@@ -10704,7 +10921,7 @@
   {
     "category": "Resources",
     "description": "A nodule of primordial matter, encysted within Infested flesh.Location: Cambion Drift (Deimos) from Blue Mining Lesions. This Rare Gem can only be mined by the Advanced Nosam Cutter or Sunpoint Plasma Drill.",
-    "imageName": "xenorhast.png",
+    "imageName": "deimos-eidolon-gem-aitem.png",
     "itemCount": 3,
     "masterable": false,
     "name": "Xenorhast",
@@ -10752,7 +10969,7 @@
       { "chance": 0.0443, "location": "Duviri/Endless: Tier 3 (Normal)", "rarity": "Rare", "type": "60X Yao Shrub" },
       { "chance": 0.0443, "location": "Duviri/Endless: Tier 4 (Normal)", "rarity": "Rare", "type": "60X Yao Shrub" }
     ],
-    "imageName": "yao-shrub.png",
+    "imageName": "duviri-plant-item-d.png",
     "itemCount": 40,
     "masterable": false,
     "name": "Yao Shrub",
@@ -10764,7 +10981,7 @@
   {
     "category": "Resources",
     "description": "",
-    "imageName": "zarimandogtag.png",
+    "imageName": "zariman-dog-tag.png",
     "masterable": false,
     "name": "Zarimandogtag",
     "tradable": false,
@@ -10784,7 +11001,7 @@
       { "chance": 1, "location": "Zenith Granum Crown Cache", "rarity": "Common", "type": "Zenith Granum Crown" }
     ],
     "excludeFromCodex": true,
-    "imageName": "zenith-granum-crown.png",
+    "imageName": "greed-token-black.png",
     "masterable": false,
     "name": "Zenith Granum Crown",
     "patchlogs": [
@@ -10805,7 +11022,7 @@
     "category": "Resources",
     "description": "A blue gem that radiates astral energy.Location: Orb Vallis (Venus) from Blue Mining Veins and the Exploiter Orb. This Rare Gem can only be mined by the Advanced Nosam Cutter or Sunpoint Plasma Drill.",
     "drops": [{ "chance": 0.5001, "location": "Exploiter Orb", "rarity": "Uncommon", "type": "Zodian" }],
-    "imageName": "zodian.png",
+    "imageName": "solaris-eidolon-gem-aitem.png",
     "itemCount": 3,
     "masterable": false,
     "name": "Zodian",
