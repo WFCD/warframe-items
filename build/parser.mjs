@@ -5,6 +5,7 @@ import hashManager from './hashManager.mjs';
 import Progress from './progress.mjs';
 import readJson from './readJson.mjs';
 import tradable from './tradable.mjs';
+import { lastResourceName } from 'warframe-worldstate-data/utilities';
 
 const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
 const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
@@ -531,29 +532,40 @@ class Parser {
       str
         .replace('/', '')
         .replace(/[ /*]/g, '-')
+        .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
         .replace(/[:<>[\]?!"]/g, '')
         .toLowerCase();
     const imageStub = image.textureLocation;
     const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '').replace(/!.*$/, ''); // .png, .jpg, etc
 
+    if (item.name === 'Blueprint') {
+      item.imageName = 'blueprint.png';
+      return;
+    }
+
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
-    item.imageName = encode(item.name);
+    item.imageName = encode(lastResourceName(item.uniqueName));
 
     // Components usually have the same generic images, so we should remove the
     // parent name here. Note that there's a difference between prime/non-prime
     // components, so we'll keep the prime in the name.
     if (item.parent) {
-      item.imageName = item.imageName.replace(`${encode(item.parent)}-`, '');
-      if (item.name.includes('Prime')) item.imageName = `prime-${item.imageName}`;
+      // Matching by uniqueName so only need to remove the first half, thanks DE for being consistent here
+      item.imageName = item.imageName.replace(/^[^-]+-/, '');
+
+      // since 'prime' is part of the uniqueName we no longer need to add it but I left code that will
+      // add it if it doesn't exist, I tested this one so yes it works
+      // if (item.name.includes('Prime')) item.imageName = item.imageName.replace(/^(?!prime-)/, 'prime-');
     }
 
     // Relics should use the same image based on type, as they all use the same.
     // The resulting format looks like `axi-intact`, `axi-radiant`
     if (item.type === 'Relic') {
-      item.imageName = item.imageName.replace(/-(.*?)-/, '-'); // Remove second word (type)
+      item.imageName = encode(item.name).replace(/-(.*?)-/, '-'); // Remove second word (type)
     }
 
+    // doesn't look like it's needed anymore because we now match by uniqueName instead of name
     // Some items have the same name - so add their uniqueName as an identifier
     if (previous && item.name === previous.name) {
       item.imageName += `-${encode(item.uniqueName)}`;
