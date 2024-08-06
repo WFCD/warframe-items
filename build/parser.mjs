@@ -1,11 +1,11 @@
 import cloneDeep from 'lodash.clonedeep';
+import { lastResourceName } from 'warframe-worldstate-data/utilities';
 
 import dedupe from './dedupe.mjs';
 import hashManager from './hashManager.mjs';
 import Progress from './progress.mjs';
 import readJson from './readJson.mjs';
 import tradable from './tradable.mjs';
-import { lastResourceName } from 'warframe-worldstate-data/utilities';
 
 const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
 const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
