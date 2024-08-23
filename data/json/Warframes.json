@@ -87060,6 +87060,648 @@
   {
     "abilities": [
       {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/WraithReapAbility",
+        "name": "Reap",
+        "description": "Sevagoth's Shadow flies outward ravaging enemies in his path. Survivors are damaged by Death’s Harvest over time. The souls of the dead fill the Death Well.",
+        "imageName": "wraith-reap-ability.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/WraithSowAbility",
+        "name": "Sow",
+        "description": "Plant a death seed in nearby targets to drain their lifeforce. Reap what has been sown to detonate afflicted enemies, dealing a percentage of their health as radial damage. The souls of the dead fill the Death Well. ",
+        "imageName": "wraith-sow-ability.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/WraithGloomAbility",
+        "name": "Gloom",
+        "description": "Summon a radial pulse wave that ensnares and slows enemies, siphoning their lifeforce for the Death Well. Allies within the wave steal health with each attack. ",
+        "imageName": "wraith-gloom-ability.png"
+      },
+      {
+        "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/WraithReaperAbility",
+        "name": "Exalted Shadow",
+        "description": "When the Death Well fills, Sevagoth's Shadow form is ready to be released. Tear the enemy asunder with a collection of melee-focused abilities. ",
+        "imageName": "wraith-reaper-ability.png"
+      }
+    ],
+    "armor": 185,
+    "buildPrice": 25000,
+    "buildQuantity": 1,
+    "buildTime": 259200,
+    "category": "Warframes",
+    "color": 0,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeBlueprint",
+        "name": "Blueprint",
+        "description": "The gilded helmsman emerges from the tempest, his shadow a lure for doomed souls.",
+        "itemCount": 1,
+        "primeSellingPrice": 45,
+        "imageName": "blueprint.png",
+        "tradable": true,
+        "masterable": false,
+        "ducats": 45
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeChassisComponent",
+        "name": "Chassis",
+        "description": "Chassis component of the Sevagoth Prime Warframe.",
+        "primeSellingPrice": 100,
+        "itemCount": 1,
+        "imageName": "prime-chassis-component.png",
+        "tradable": true,
+        "drops": [
+          { "chance": 0.02, "location": "Axi S17 Relic", "rarity": "Rare", "type": "Sevagoth Prime Chassis Blueprint" },
+          {
+            "chance": 0.04,
+            "location": "Axi S17 Relic (Exceptional)",
+            "rarity": "Rare",
+            "type": "Sevagoth Prime Chassis Blueprint"
+          },
+          {
+            "chance": 0.06,
+            "location": "Axi S17 Relic (Flawless)",
+            "rarity": "Rare",
+            "type": "Sevagoth Prime Chassis Blueprint"
+          },
+          {
+            "chance": 0.1,
+            "location": "Axi S17 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Chassis Blueprint"
+          }
+        ],
+        "masterable": false,
+        "ducats": 100
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeHelmetComponent",
+        "name": "Neuroptics",
+        "description": "Neuroptics component of the Sevagoth Prime Warframe.",
+        "primeSellingPrice": 15,
+        "itemCount": 1,
+        "imageName": "prime-helmet-component.png",
+        "tradable": true,
+        "drops": [
+          {
+            "chance": 0.1667,
+            "location": "Meso A7 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Neuroptics Blueprint"
+          },
+          {
+            "chance": 0.2,
+            "location": "Meso A7 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Neuroptics Blueprint"
+          },
+          {
+            "chance": 0.2333,
+            "location": "Meso A7 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Neuroptics Blueprint"
+          },
+          {
+            "chance": 0.2533,
+            "location": "Meso A7 Relic",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Neuroptics Blueprint"
+          }
+        ],
+        "masterable": false,
+        "ducats": 15
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "name": "Orokin Cell",
+        "description": "Ancient energy cell from the Orokin era.Location: Ceres, Saturn, and Deimos",
+        "itemCount": 1,
+        "imageName": "cell.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0025,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.0025,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Legendary",
+            "type": "Orokin Cell"
+          },
+          { "chance": 0.0026, "location": "Brachiolyst Disperser", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0026, "location": "Brachiolyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Arca Heqet", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Arca Kucumatz", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Cinder Machinist", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Phase Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0027, "location": "Amalgam Swarm Satyr", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Alkonost", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Heqet", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Kucumatz", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Machinist", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Osprey", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Amalgam Satyr", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Aurax Culveri Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Aurax Polaris Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Heqet", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Machinist", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Moa", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Osprey", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0038, "location": "Demolyst Satyr", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0065, "location": "Mimic", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Aerolyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Ambulas", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Battalyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Conculyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Decaying Battalyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Decaying Conculyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Erra", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Hunhow", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Ortholyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Protector Stalker", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Shadow Stalker", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Stalker", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Summulyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Symbilyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Typholyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0129, "location": "Tyro Conculyst", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Alad V", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Artificer", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Captain Vor", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Cinderthresh Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Commander", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Councilor Vay Hek", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "General Sargas Ruk", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Gyre Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Ln2", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Ng", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Pack", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Pb", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Hyena Th", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Icemire Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "J3 Jordas Golem", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Jackal", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Jordas Golem", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Kela De Thaym", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Lephantis", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Lt Lech Kril", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Mutalist Alad V", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Phorid", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Rabbleback Hyena", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "The Sergeant", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Tyl Regor", "rarity": "Rare", "type": "Orokin Cell" },
+          { "chance": 0.0258, "location": "Vay Hek Terra Frame", "rarity": "Rare", "type": "Orokin Cell" },
+          {
+            "chance": 0.0367,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0367,
+            "location": "Void/Stribog (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0376,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0403,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          { "chance": 0.044, "location": "Ceres/Ker (Caches), Rotation C", "rarity": "Rare", "type": "2X Orokin Cell" },
+          {
+            "chance": 0.044,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.044,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.0442,
+            "location": "Void/Marduk (Caches), Rotation C",
+            "rarity": "Rare",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1042,
+            "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1079,
+            "location": "Kuva Fortress/Dakata (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1082,
+            "location": "Lua/Plato (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Halimede (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Neptune/Thalassa (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Charon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Pluto/Cypress (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Phithale (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Sedna/Rusalka (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1258,
+            "location": "Uranus/Portia (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Endurance Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "2X Orokin Cell"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Hallowed Flame Mission Caches, Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Ker (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Ceres/Thon (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Adrastea (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Jupiter/Carpo (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Calypso (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.151,
+            "location": "Saturn/Pallene (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.1936,
+            "location": "Deimos/Formido (Caches), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation A",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation B",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.2,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.3333,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation A",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.3333,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation B",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.3333,
+            "location": "Venus/Orb Vallis (Level 100 - 100 Orb Vallis Bounty), Rotation C",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.3333,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation A",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.3333,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation B",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          },
+          {
+            "chance": 0.3333,
+            "location": "Venus/Orb Vallis (Level 40 - 60 Orb Vallis Bounty), Rotation C",
+            "rarity": "Common",
+            "type": "Orokin Cell"
+          },
+          { "chance": 0.5, "location": "Corrupted Vor", "rarity": "Common", "type": "Orokin Cell" }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeSystemsComponent",
+        "name": "Systems",
+        "description": "Systems component of the Sevagoth Prime Warframe.",
+        "primeSellingPrice": 15,
+        "itemCount": 1,
+        "imageName": "prime-systems-component.png",
+        "tradable": true,
+        "drops": [
+          {
+            "chance": 0.1667,
+            "location": "Lith C12 Relic (Radiant)",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Systems Blueprint"
+          },
+          {
+            "chance": 0.2,
+            "location": "Lith C12 Relic (Flawless)",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Systems Blueprint"
+          },
+          {
+            "chance": 0.2333,
+            "location": "Lith C12 Relic (Exceptional)",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Systems Blueprint"
+          },
+          {
+            "chance": 0.2533,
+            "location": "Lith C12 Relic",
+            "rarity": "Uncommon",
+            "type": "Sevagoth Prime Systems Blueprint"
+          }
+        ],
+        "masterable": false,
+        "ducats": 15
+      }
+    ],
+    "conclave": false,
+    "consumeOnBuild": true,
+    "description": "The gilded helmsman emerges from the tempest, his shadow a lure for doomed souls.",
+    "exalted": ["/Lotus/Powersuits/Wraith/SevagothShadowPrimeClawsWeapon"],
+    "health": 270,
+    "imageName": "sevagoth-prime.png",
+    "introduced": {
+      "name": "Update 36.1",
+      "url": "https://warframe.fandom.com/wiki/Update_36%23Update_36.1",
+      "aliases": ["36.1"],
+      "parent": "36.0",
+      "date": "2024-08-21"
+    },
+    "isPrime": true,
+    "masterable": true,
+    "masteryReq": 0,
+    "name": "Sevagoth Prime",
+    "passiveDescription": "On death, become Sevagoth's Shadow and fight to resurrect him by collecting the souls needed to rebuild his tombstone. ",
+    "polarities": ["vazarin", "naramon", "madurai"],
+    "power": 175,
+    "productCategory": "Suits",
+    "releaseDate": "2024-08-21",
+    "sex": "Male",
+    "shield": 270,
+    "skipBuildTimePrice": 50,
+    "sprint": 0.95,
+    "sprintSpeed": 0.94999999,
+    "stamina": 3,
+    "tradable": false,
+    "type": "Warframe",
+    "uniqueName": "/Lotus/Powersuits/Wraith/SevagothPrime",
+    "wikiaThumbnail": "https://static.wikia.nocookie.net/warframe/images/6/6b/SevagothPrime.png/revision/latest?cb=20240821165245",
+    "wikiaUrl": "https://warframe.fandom.com/wiki/Sevagoth%2FPrime"
+  },
+  {
+    "abilities": [
+      {
         "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/HopliteImpaleAbility",
         "name": "Axios Javelin",
         "description": "Throw an Axios Javelin. When the javelin impales an enemy against a wall, surrounding enemies are pulled into the area and suffer a burst of damage.",
