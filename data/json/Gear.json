@@ -89,7 +89,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/MiningLaserCBlueprint",
         "name": "Blueprint",
-        "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.",
+        "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.Travel far from Hub settlements for the best chance of mining rare minerals.",
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
@@ -129,7 +129,7 @@
       }
     ],
     "consumeOnBuild": true,
-    "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.",
+    "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.Travel far from Hub settlements for the best chance of mining rare minerals.",
     "imageName": "mining-laser-c.png",
     "masterable": false,
     "name": "Advanced Nosam Cutter",
@@ -2510,7 +2510,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/MiningLaserBBlueprint",
         "name": "Blueprint",
-        "description": "A more accurate variation of the Nosam Cutter.",
+        "description": "A more accurate variation of the Nosam Cutter.Travel far from Hub settlements for the best chance of mining rare minerals.",
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
@@ -2560,7 +2560,7 @@
       }
     ],
     "consumeOnBuild": true,
-    "description": "A more accurate variation of the Nosam Cutter.",
+    "description": "A more accurate variation of the Nosam Cutter.Travel far from Hub settlements for the best chance of mining rare minerals.",
     "imageName": "mining-laser-b.png",
     "masterable": false,
     "name": "Focused Nosam Cutter",
@@ -4456,7 +4456,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/EidolonRecipes/Prospecting/MiningLaserBlueprint",
         "name": "Blueprint",
-        "description": "Standard tool for cutting ore and gems out of stone.",
+        "description": "Standard tool for cutting ore and gems out of stone.Travel far from Hub settlements for the best chance of mining rare minerals.",
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
@@ -4486,7 +4486,7 @@
       }
     ],
     "consumeOnBuild": true,
-    "description": "Standard tool for cutting ore and gems out of stone.",
+    "description": "Standard tool for cutting ore and gems out of stone.Travel far from Hub settlements for the best chance of mining rare minerals.",
     "imageName": "mining-laser.png",
     "masterable": false,
     "name": "Nosam Cutter",
@@ -7621,6 +7621,289 @@
     "uniqueName": "/Lotus/Types/Restoratives/Consumable/AssassinBait"
   },
   {
+    "buildPrice": 7500,
+    "buildQuantity": 1,
+    "buildTime": 28800,
+    "category": "Gear",
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Components/StalkerBallBlueprint",
+        "name": "Blueprint",
+        "description": "Deploys a clone of the Stalker to fight for you.",
+        "itemCount": 1,
+        "imageName": "blueprint.png",
+        "tradable": false,
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "description": "Alloy pellets used in Grineer manufacturing.Location: Mercury, Earth, Lua, Neptune, and the Void",
+        "itemCount": 2500,
+        "imageName": "ferrite.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.1218,
+            "location": "Earth/Cervantes (Caches), Rotation B",
+            "rarity": "Uncommon",
+            "type": "300X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "400X Ferrite"
+          }
+        ],
+        "masterable": false
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+        "name": "Nano Spores",
+        "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Location: Saturn, Neptune, Eris, and Deimos",
+        "itemCount": 2500,
+        "imageName": "nanospores.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1324,
+            "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Nano Spores"
+          },
+          {
+            "chance": 0.1429,
+            "location": "Deimos/Formido (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.15,
+            "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Nano Spores"
+          },
+          {
+            "chance": 0.1518,
+            "location": "Hallowed Flame Mission Caches, Rotation A",
+            "rarity": "Uncommon",
+            "type": "500X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Candiru (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Lepis (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Naeglar (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Psoro (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.1667,
+            "location": "Eris/Viver (Caches), Rotation A",
+            "rarity": "Uncommon",
+            "type": "1000X Nano Spores"
+          },
+          {
+            "chance": 0.25,
+            "location": "Venus/Orb Vallis (Level 10 - 30 Orb Vallis Bounty), Rotation C",
+            "rarity": "Uncommon",
+            "type": "200X Nano Spores"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "description": "High value metals collected from war salvage.Location: Mars, Jupiter, and Sedna",
+        "itemCount": 2500,
+        "imageName": "salvage.png",
+        "tradable": false,
+        "drops": [
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation A",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.0316,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Rare",
+            "type": "10X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Neptune/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Lunaro (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Cephalon Capture (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          },
+          {
+            "chance": 0.1265,
+            "location": "Saturn/Variant Team Annihilation (Conclave), Rotation B",
+            "rarity": "Uncommon",
+            "type": "600X Salvage"
+          }
+        ],
+        "masterable": false,
+        "type": "Resource"
+      }
+    ],
+    "consumeOnBuild": false,
+    "description": "Deploys a clone of the Stalker to fight for you.",
+    "imageName": "stalker-ball.png",
+    "masterable": false,
+    "name": "Stalker Specter",
+    "skipBuildTimePrice": 10,
+    "tradable": false,
+    "type": "Gear",
+    "uniqueName": "/Lotus/Types/Restoratives/Consumable/StalkerBall"
+  },
+  {
     "category": "Gear",
     "description": "Celebrate the holiday with fireworks! Light up the sky with this single use consumable item.",
     "imageName": "fire-works-single.png",
@@ -7747,7 +8030,7 @@
       {
         "uniqueName": "/Lotus/Types/Restoratives/Consumable/MiningLaserC",
         "name": "Advanced Nosam Cutter",
-        "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.",
+        "description": "Enhanced with cybernetics, this tool is able to locate nearby gems and ore veins and has chance to retrieve Rare Gems on any Landscape.Travel far from Hub settlements for the best chance of mining rare minerals.",
         "itemCount": 1,
         "imageName": "laser-c.png",
         "tradable": false,
@@ -7757,7 +8040,7 @@
       {
         "uniqueName": "/Lotus/Types/Recipes/SolarisRecipes/Prospecting/MiningLaserSolarisBlueprint",
         "name": "Blueprint",
-        "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision. Can be used to retrieve Rare Gems on any Landscape.",
+        "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision.Can be used to retrieve Rare Gems on any Landscape. Travel far from Hub settlements for the best chance of mining rare minerals.",
         "itemCount": 1,
         "imageName": "blueprint.png",
         "tradable": false,
@@ -7797,7 +8080,7 @@
       }
     ],
     "consumeOnBuild": true,
-    "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision. Can be used to retrieve Rare Gems on any Landscape.",
+    "description": "Fast-ignition, high-intensity mining tool capable of extracting the rarest of materials with surgical precision.Can be used to retrieve Rare Gems on any Landscape. Travel far from Hub settlements for the best chance of mining rare minerals.",
     "imageName": "mining-laser-solaris.png",
     "masterable": false,
     "name": "Sunpoint Plasma Drill",
