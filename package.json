@@ -45,73 +45,7 @@
     "validate",
     "test"
   ],
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "body-max-line-length": [
-        0
-      ]
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --cache --fix",
-      "npm test"
-    ],
-    "package*.json": [
-      "prettier --write",
-      "npm dedupe",
-      "npx sort-package-json"
-    ],
-    "*.{json,yml,yaml}": [
-      "prettier --write"
-    ]
-  },
-  "babel": {
-    "plugins": [
-      "@babel/plugin-transform-class-properties",
-      "@babel/plugin-transform-private-methods"
-    ],
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
   "prettier": "@wfcd/eslint-config/prettier",
-  "eslintConfig": {
-    "parserOptions": {
-      "requireConfigFile": false
-    },
-    "extends": [
-      "@wfcd"
-    ]
-  },
-  "mocha": {
-    "slow": 10000,
-    "spec": "test/**/*.spec.mjs",
-    "timeout": 10000
-  },
-  "nyc": {
-    "branches": 100,
-    "check-coverage": true,
-    "exclude": [
-      "test/*",
-      "build/*",
-      "config/*",
-      "data/*",
-      "docker/*",
-      "index.d.ts"
-    ],
-    "functions": 100,
-    "lines": 100,
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "skip-full": true,
-    "statements": 100
-  },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
@@ -153,18 +87,5 @@
   },
   "peerDependencies": {
     "warframe-worldstate-data": "^2"
-  },
-  "clean-package": {
-    "remove": [
-      "mocha",
-      "devDependencies",
-      "eslintIgnore",
-      "eslintConfig",
-      "scripts",
-      "clean-package",
-      "nyc",
-      "babel",
-      "prettier"
-    ]
   }
 }

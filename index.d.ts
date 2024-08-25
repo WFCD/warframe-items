@@ -809,13 +809,10 @@ declare module 'warframe-items' {
         'Aura' |
         'Ayatan Sculpture' |
         'Ayatan Star' |
-        'Blade And Whip' |
-        'Blade and Whip' |
         'Boosters' |
         'Bow' |
         'Captura' |
         'Cetus Bounty Rewards' |
-        'Claws' |
         'Color Palette' |
         'Companion Weapon' |
         'Conservation Tag' |
@@ -823,11 +820,8 @@ declare module 'warframe-items' {
         'Crossbow' |
         'Currency' |
         'Cut Gem' |
-        'Dagger' |
-        'Dual Daggers' |
         'Dual Pistols' |
         'Dual Shotguns' |
-        'Dual Swords' |
         'Eidolon Shard' |
         'Emotes' |
         'Enemy Blueprint Tables' |
@@ -838,17 +832,13 @@ declare module 'warframe-items' {
         'Fish' |
         'Fish Bait' |
         'Fish Part' |
-        'Fist' |
         'Focus Lens' |
         'Fur Color' |
         'Fur Pattern' |
         'Gear' |
         'Gem' |
-        'Glaive' |
         'Glyph' |
         'Gunblade' |
-        'Hammer' |
-        'Heavy Blade' |
         'Helminth Charger' |
         'K-Drive Component' |
         'Kavat' |
@@ -857,17 +847,13 @@ declare module 'warframe-items' {
         'Kitgun Component' |
         'Kubrow' |
         'Launcher' |
-        'Machete' |
         'Medallion' |
-        'Melee' |
         'Misc' |
         'Mission Rewards' |
         'Mod Locations' |
         'Mod Set Mod' |
-        'Nikana' |
         'Node' |
         'Note Packs' |
-        'Nunchaku' |
         'Orbiter' |
         'Parazon' |
         'Pet Collar' |
@@ -876,14 +862,11 @@ declare module 'warframe-items' {
         'Pets' |
         'Pistol' |
         'Plant' |
-        'Polearm' |
         'Primary' |
-        'Rapier' |
         'Relic' |
         'Relics' |
         'Resource' |
         'Rifle' |
-        'Scythe' |
         'Secondary' |
         'Sentinel' |
         'Ship Decoration' |
@@ -897,38 +880,57 @@ declare module 'warframe-items' {
         'Sniper Rifle' |
         'Solaris Bounty Rewards' |
         'Sortie Rewards' |
-        'Sparring' |
         'Speargun' |
         'Specter' |
-        'Staff' |
-        'Sword' |
-        'Sword And Shield' |
-        'Sword and Shield' |
         'Syandana' |
         'Theme Background' |
         'Theme Sound' |
         'Themes' |
         'Thrown' |
         'Throwing' |
-        'Tonfa' |
         'Transient Rewards' |
         'Transmutation Mod' |
-        'Two-Handed Nikana' |
         'Unique' |
-        'Warfan' |
         'Warframe' |
-        'Whip' |
         'Zaw Component' |
-        'Zaw Dagger / Staff' |
-        'Zaw Machete / Hammer' |
-        'Zaw Machete / Polearm' |
-        'Zaw Nikana / Staff' |
-        'Zaw Rapier / Polearm' |
-        'Zaw Scythe / Heavy Blade' |
-        'Zaw Scythe / Staff' |
-        'Zaw Sword / Polearm' |
-        'Zaw Sword / Staff' |
-        '---' | Mod['type'] | RivenMod['type'] | WeaponType;
+        '---' | Mod['type'] | RivenMod['type'] | WeaponType | MeleeType;
+
+    type MeleeType =
+      'Blade And Whip' |
+      'Blade and Whip' |
+      'Claws' |
+      'Dagger' |
+      'Dual Daggers' |
+      'Dual Swords' |
+      'Fist' |
+      'Glaive' |
+      'Hammer' |
+      'Heavy Blade' |
+      'Machete' |
+      'Melee' |
+      'Nikana' |
+      'Nunchaku' |
+      'Polearm' |
+      'Rapier' |
+      'Scythe' |
+      'Sparring' |
+      'Staff' |
+      'Sword' |
+      'Sword And Shield' |
+      'Sword and Shield' |
+      'Tonfa' |
+      'Two-Handed Nikana' |
+      'Warfan' |
+      'Whip' |
+      'Zaw Dagger / Staff' |
+      'Zaw Machete / Hammer' |
+      'Zaw Machete / Polearm' |
+      'Zaw Nikana / Staff' |
+      'Zaw Rapier / Polearm' |
+      'Zaw Scythe / Heavy Blade' |
+      'Zaw Scythe / Staff' |
+      'Zaw Sword / Polearm' |
+      'Zaw Sword / Staff';
 
     type WeaponType =
         'Amp' |
@@ -937,6 +939,7 @@ declare module 'warframe-items' {
         'Rifle' |
         'Pistol' |
         'Melee' |
+        'Orb' |
         'Shotgun' |
         'Kitgun' |
         'Companion Weapon' |
