@@ -1,14 +1,10 @@
 name: Build
 on:
   schedule:
-    - cron: "55 */3 * * *"
+    - cron: '55 */3 * * *'
   push:
     branches:
       - master
-    paths:
-      - 'build/*.mjs'
-      - 'config/*.json'
-      - 'index.m?js'
 
 jobs:
   build:
@@ -16,35 +12,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GH_TOKEN }}
-    - uses: leafo/gh-actions-lua@v10.0.0
-    - uses: actions/setup-node@v4
-      with:
-        node-version-file: '.nvmrc'
-    - run: npm install
-    - run: npm i -D warframe-patchlogs@^2
-    - run: npm i --no-save warframe-worldstate-data@^2
-    - if: ${{ github.event_name == 'schedule' }}
-      run: npm run build
-      env:
-        NODE_OPTIONS: '--max_old_space_size=2048'
-        PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
-        PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
-        PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
-        PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
-        PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
-        PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
-    - if: ${{ github.event_name != 'schedule' }}
-      run: npm run build -- --force
-    - run: sh .github/workflows/regression.sh
-    - uses: stefanzweifel/git-auto-commit-action@v5
-      env:
-        NODE_OPTIONS: '--max_old_space_size=4096'
-      with:
-        skip_dirty_check: false
-        commit_message: 'fix(items): new items'
-        commit_user_name: wfcd-bot-boi
-        commit_user_email: botboi@warframestat.us
-        commit_author: wfcd-bot-boi <botboi@warframestat.us>
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - uses: leafo/gh-actions-lua@v10.0.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+      - run: npm install
+      - run: npm i -D warframe-patchlogs@^2
+      - run: npm i --no-save warframe-worldstate-data@^2
+      - if: ${{ github.event_name == 'schedule' }}
+        run: npm run build
+        env:
+          NODE_OPTIONS: '--max_old_space_size=2048'
+          PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
+          PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
+          PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
+          PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
+          PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
+          PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
+      - if: ${{ github.event_name != 'schedule' }}
+        run: npm run build -- --force
+        env:
+          NODE_OPTIONS: '--max_old_space_size=2048'
+          PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
+          PROXY_SOCKS5_USER: ${{ secrets.PROXY_SOCKS5_USER }}
+          PROXY_SOCKS5_PASS: ${{ secrets.PROXY_SOCKS5_PASS }}
+          PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
+          PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
+          PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
+      - run: sh .github/workflows/regression.sh
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        env:
+          NODE_OPTIONS: '--max_old_space_size=4096'
+        with:
+          skip_dirty_check: false
+          commit_message: 'fix(items): new items'
+          commit_user_name: wfcd-bot-boi
+          commit_user_email: botboi@warframestat.us
+          commit_author: wfcd-bot-boi <botboi@warframestat.us>
