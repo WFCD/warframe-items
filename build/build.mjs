@@ -136,7 +136,7 @@ class Build {
     // All.json (all items in one file)
     all.sort(sort);
     await fs.writeFile(new URL('../data/json/All.json', import.meta.url), stringify(all));
-    await fs.writeFile(new URL('../data/json/i18n.json', import.meta.url), stringify(i18n));
+    await fs.writeFile(new URL('../data/json/i18n.json', import.meta.url), JSON.stringify(JSON.parse(stringify(i18n))));
 
     return all;
   }
