@@ -103,7 +103,7 @@
     "itemCount": 20,
     "masterable": false,
     "name": "Adramalium",
-    "parents": ["Adramal Alloy"],
+    "parents": ["Adramal Alloy", "Xaku Kintsu Helmet"],
     "patchlogs": [
       {
         "name": "Heart of Deimos: Hotfix 29.0.2",
@@ -1195,7 +1195,22 @@
     "itemCount": 3,
     "masterable": false,
     "name": "Calda Toroid",
-    "parents": ["Dissic Scaffold", "Exard Scaffold", "Propa Scaffold", "Urga Bracket"],
+    "parents": [
+      "Dissic Scaffold",
+      "Exard Scaffold",
+      "Haztech Apparel (Operator)",
+      "Haztech Cuirass (Operator)",
+      "Kubrodon Ventkid Apparel",
+      "Kubrodon Ventkid Cuirass",
+      "Outrider Cuirass",
+      "Propa Scaffold",
+      "Smelter Apparel (Operator)",
+      "Smelter Cuirass (Operator)",
+      "Urga Bracket",
+      "Vent Pobber Ventkid Apparel",
+      "Vent Pobber Ventkid Cuirass",
+      "Vent Rat Cuirass"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -1289,7 +1304,7 @@
     "itemCount": 800,
     "masterable": false,
     "name": "Carbides",
-    "parents": ["Basmu"],
+    "parents": ["Basmu", "Protea Telema Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -1652,7 +1667,12 @@
       "Pencha Scaffold",
       "Shraksun Scaffold",
       "Vargeet Jai Ii",
-      "Vargeet Ruhang Ii"
+      "Vargeet Ruhang Ii",
+      "Zauba Apparel (Operator)",
+      "Zauba Cuirass (Operator)",
+      "Zauba Greaves (Operator)",
+      "Zauba Mask (Operator)",
+      "Zauba Pauldrons (Operator)"
     ],
     "patchlogs": [
       {
@@ -1789,6 +1809,7 @@
       "Ekwana Ruhang Ii",
       "Jai",
       "Jai Ii",
+      "Naberus Ephemera",
       "Sepfahn"
     ],
     "tradable": false,
@@ -2495,8 +2516,10 @@
       { "chance": 1, "location": "Entrati (Father), Neutral", "rarity": "Common", "type": "Damaged Necramech Pod" }
     ],
     "imageName": "damaged-necramech-pod.png",
+    "itemCount": 1,
     "masterable": false,
     "name": "Damaged Necramech Pod",
+    "parents": ["Loid Sentinel Mask", "Loid Sentinel Skin", "Loid Sentinel Tail", "Loid Sentinel Wing"],
     "tradable": true,
     "type": "Resource",
     "uniqueName": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem"
@@ -3320,7 +3343,16 @@
     "itemCount": 10,
     "masterable": false,
     "name": "Entrati Lanthorn",
-    "parents": ["Alternox", "Ekhein", "Grimoire", "Innodem", "Onos", "Phenmor"],
+    "parents": [
+      "Alternox",
+      "Ekhein",
+      "Grimoire",
+      "Innodem",
+      "Onos",
+      "Phenmor",
+      "Raptwing Ephemera",
+      "Seraphayre Ephemera"
+    ],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -4299,6 +4331,7 @@
       "Lambeo Moa",
       "Nychus Moa",
       "Phazor Gyro",
+      "Puppeteer",
       "Rattleguts",
       "Slap",
       "Two-Sloops",
@@ -4675,7 +4708,16 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Heart Nyth",
-    "parents": ["Exceptional Sentient Core", "Phahd Scaffold"],
+    "parents": [
+      "Caliban Cranion Helmet",
+      "Exceptional Sentient Core",
+      "Phahd Scaffold",
+      "Vahd Apparel (Operator)",
+      "Vahd Cuirass (Operator)",
+      "Vahd Greaves (Operator)",
+      "Vahd Mask (Operator)",
+      "Vahd Pauldrons (Operator)"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -4788,15 +4830,28 @@
       "Dissic Scaffold",
       "Exard Scaffold",
       "Frak Stabilizer",
+      "Haztech Greaves (Operator)",
+      "Haztech Mask (Operator)",
       "Highbrow",
       "Hothead",
+      "Kubrodon Ventkid Greaves",
+      "Kubrodon Ventkid Mask",
       "Lehan Core",
       "Needlenose",
+      "Outrider Greaves",
+      "Outrider Mask",
       "Propa Scaffold",
       "Runway",
+      "Smelter Greaves (Operator)",
+      "Smelter Mask (Operator)",
       "Stitch",
+      "Styanax Gerousic Helmet",
       "Tatsu",
-      "Thunderdrum"
+      "Thunderdrum",
+      "Vent Pobber Ventkid Greaves",
+      "Vent Pobber Ventkid Mask",
+      "Vent Rat Greaves",
+      "Vent Rat Mask"
     ],
     "patchlogs": [
       {
@@ -5260,8 +5315,10 @@
     "consumeOnBuild": false,
     "description": "A component used in secure Grineer communication networks.Location: Railjack missions in Earth, Saturn, and Veil Proximas",
     "imageName": "komms.png",
+    "itemCount": 4,
     "masterable": false,
     "name": "Komms",
+    "parents": ["Protea Telema Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -5523,10 +5580,10 @@
     "category": "Resources",
     "description": "This carnivorous plant can be found growing in the wilderness on Lua. Location: Obtained by using a Codex Scanner on Lunar Pitcher plants that grow on Lua",
     "imageName": "lunar-pitcher.png",
-    "itemCount": 6,
+    "itemCount": 50,
     "masterable": false,
     "name": "Lunar Pitcher",
-    "parents": ["Twilight Apothic"],
+    "parents": ["Seeding Step Ephemera", "Twilight Apothic"],
     "patchlogs": [
       {
         "name": "Saint of Altra: Update 25.7.0",
@@ -5657,6 +5714,10 @@
       "Dokrahm",
       "Flutterfire",
       "Granmu Prism",
+      "Loid Sentinel Mask",
+      "Loid Sentinel Skin",
+      "Loid Sentinel Tail",
+      "Loid Sentinel Wing",
       "Mewan",
       "Shwaak Prism",
       "Sunpoint Plasma Drill",
@@ -6310,6 +6371,7 @@
       "Deepbreath",
       "Drimper Bracket",
       "Fatboys",
+      "Hang Tenno",
       "Harpen Gyro",
       "Hona Bracket",
       "Kreska",
@@ -6600,7 +6662,7 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Nullstones",
-    "parents": ["Basmu", "Nautilus"],
+    "parents": ["Basmu", "Nautilus", "Protea Mavv Helmet"],
     "patchlogs": [
       {
         "name": "Update 29.10.0: Corpus Proxima & The New Railjack",
@@ -7592,7 +7654,17 @@
     "itemCount": 1,
     "masterable": false,
     "name": "Radian Sentirum",
-    "parents": ["Anspatha Brace", "Dorma Hound", "Exceptional Sentient Core"],
+    "parents": [
+      "Anspatha Brace",
+      "Ceno Apparel (Operator)",
+      "Ceno Cuirass (Operator)",
+      "Ceno Greaves (Operator)",
+      "Ceno Helmet (Operator)",
+      "Ceno Pauldrons (Operator)",
+      "Dorma Hound",
+      "Eidolon Ephemera",
+      "Exceptional Sentient Core"
+    ],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -7980,7 +8052,19 @@
     "itemCount": 4,
     "masterable": false,
     "name": "Scintillant",
-    "parents": ["Arcroid", "Bonewidow Capsule", "Catabolyst", "Macro Arcroid", "Macro Thymoid", "Quassus", "Thymoid"],
+    "parents": [
+      "Arcroid",
+      "Bonewidow Capsule",
+      "Catabolyst",
+      "Loid Sentinel Mask",
+      "Loid Sentinel Skin",
+      "Loid Sentinel Tail",
+      "Loid Sentinel Wing",
+      "Macro Arcroid",
+      "Macro Thymoid",
+      "Quassus",
+      "Thymoid"
+    ],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -8269,7 +8353,18 @@
     "itemCount": 3,
     "masterable": false,
     "name": "Sola Toroid",
-    "parents": ["Cela Bracket", "Certus Brace", "Plaga Brace", "Suo Brace"],
+    "parents": [
+      "Cela Bracket",
+      "Certus Brace",
+      "Haztech Greaves (Operator)",
+      "Kubrodon Ventkid Greaves",
+      "Outrider Greaves",
+      "Plaga Brace",
+      "Smelter Greaves (Operator)",
+      "Suo Brace",
+      "Vent Pobber Ventkid Greaves",
+      "Vent Rat Greaves"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -8377,7 +8472,7 @@
     "itemCount": 6,
     "masterable": false,
     "name": "Star Crimzian",
-    "parents": ["Bonewidow Capsule", "Granmu Prism", "Helstrum", "Ramflare"],
+    "parents": ["Bonewidow Capsule", "Granmu Prism", "Helstrum", "Ramflare", "Styanax Agogean Helmet"],
     "patchlogs": [
       {
         "name": "Update 30.9.0: Prime Resurgence",
@@ -9097,9 +9192,11 @@
       "Bellows",
       "Drimper Bracket",
       "Flatbelly",
+      "Greedy Milk",
       "Needlenose",
       "Ocucor",
       "Oloro Moa",
+      "Puppeteer",
       "Runway",
       "Tombfinger",
       "Trux Gyro",
@@ -9193,7 +9290,17 @@
     "itemCount": 600,
     "masterable": false,
     "name": "Thrax Plasm",
-    "parents": ["Aeolak", "Alternox", "Hespar", "Innodem", "Praedos"],
+    "parents": [
+      "Aeolak",
+      "Alternox",
+      "Gyre Automaton Helmet",
+      "Hespar",
+      "Innodem",
+      "Praedos",
+      "Raptwing Ephemera",
+      "Seraphayre Ephemera",
+      "Styanax Gerousic Helmet"
+    ],
     "patchlogs": [
       {
         "name": "Lua’s Prey: Hotfix 32.2.4",
@@ -9556,7 +9663,7 @@
     "itemCount": 750,
     "masterable": false,
     "name": "Titanium",
-    "parents": ["Basmu", "Bonewidow Engine"],
+    "parents": ["Basmu", "Bonewidow Engine", "Protea Mavv Helmet"],
     "patchlogs": [
       {
         "name": "Echoes of the Zariman: Update 31.6",
@@ -9922,7 +10029,18 @@
     "itemCount": 3,
     "masterable": false,
     "name": "Vega Toroid",
-    "parents": ["Cantic Prism", "Klamora Prism", "Lega Prism", "Zubb Bracket"],
+    "parents": [
+      "Cantic Prism",
+      "Haztech Pauldrons (Operator)",
+      "Klamora Prism",
+      "Kubrodon Ventkid Pauldrons",
+      "Lega Prism",
+      "Outrider Pauldrons",
+      "Smelter Pauldrons (Operator)",
+      "Vent Pobber Ventkid Pauldrons",
+      "Vent Rat Pauldrons",
+      "Zubb Bracket"
+    ],
     "patchlogs": [
       {
         "name": "Update 31: The New War",
@@ -10031,17 +10149,33 @@
       "Flatbelly",
       "Gauth Bracket",
       "Gaze",
+      "Haztech Apparel (Operator)",
+      "Haztech Cuirass (Operator)",
+      "Haztech Pauldrons (Operator)",
       "Hona Bracket",
       "Krisys Core",
+      "Kubrodon Ventkid Apparel",
+      "Kubrodon Ventkid Cuirass",
+      "Kubrodon Ventkid Pauldrons",
       "Lambeo Moa",
       "Larkspur",
       "Lehan Core",
       "Nychus Moa",
       "Ocucor",
+      "Outrider Cuirass",
+      "Outrider Pauldrons",
       "Rattleguts",
+      "Smelter Apparel (Operator)",
+      "Smelter Cuirass (Operator)",
+      "Smelter Pauldrons (Operator)",
       "Sparkfire",
       "Step Tens",
-      "Thugs"
+      "Thugs",
+      "Vent Pobber Ventkid Apparel",
+      "Vent Pobber Ventkid Cuirass",
+      "Vent Pobber Ventkid Pauldrons",
+      "Vent Rat Cuirass",
+      "Vent Rat Pauldrons"
     ],
     "patchlogs": [
       {
@@ -10226,7 +10360,7 @@
     "itemCount": 30,
     "masterable": false,
     "name": "Voidgel Orb",
-    "parents": ["Felarx", "Laetum"],
+    "parents": ["Felarx", "Gyre Automaton Helmet", "Laetum", "Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Update 31.5: Angels of the Zariman",
@@ -10312,7 +10446,7 @@
     "itemCount": 10,
     "masterable": false,
     "name": "Voidplume Pinion",
-    "parents": ["Felarx", "Innodem", "Laetum", "Phenmor", "Praedos"],
+    "parents": ["Felarx", "Innodem", "Laetum", "Phenmor", "Praedos", "Raptwing Ephemera", "Seraphayre Ephemera"],
     "patchlogs": [
       {
         "name": "Angels of the Zariman: Hotfix 31.5.4",
