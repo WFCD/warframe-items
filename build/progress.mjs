@@ -1,5 +1,5 @@
 import ProgressBar from 'progress';
-import colors from 'colors/safe.js';
+import colors from 'chalk';
 
 const prod = process.env.NODE_ENV === 'production';
 
