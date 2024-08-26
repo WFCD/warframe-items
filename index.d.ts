@@ -100,9 +100,11 @@ declare module 'warframe-items' {
     type UniqueName = string;
     type DateString = string;
 
-    interface MinimalItem {
+    interface Named {
         uniqueName: UniqueName;
         name: string;
+    }
+    interface MinimalItem extends Named {
         i18n?: I18nBundle<UniqueName>;
         type?: Type;
         category?: Category;
@@ -237,11 +239,17 @@ declare module 'warframe-items' {
         attacks?: Attack[];
         maxLevelCap?: number;
     }
-    interface Arcane extends Buildable, Partial<Omit<Mod, 'category' | 'type'>> {
+    interface Arcane extends Named, Buildable {
         category: 'Arcanes';
-        type: 'Arcane';
         drops?: Drop[];
+        excludeFromCodex?: true;
+        imageName: string;
         levelStats?: LevelStat[];
+        masterable: false;
+        patchlogs?: PatchLog[];
+        rarity?: Rarity;
+        tradable: true;
+        type: 'Arcane';
     }
     interface StanceMod extends Omit<Mod, 'levelStats'> {
         type: 'Stance Mod';
