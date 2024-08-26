@@ -37,8 +37,14 @@
     "regression": "mocha --include test/index.regression.spec.mjs --exclude test/index.spec.mjs",
     "test": "nyc mocha --exclude test/*.regression.spec.mjs",
     "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
-    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose"
+    "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
+    "validate": "npm ls"
   },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
   "prettier": "@wfcd/eslint-config/prettier",
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
