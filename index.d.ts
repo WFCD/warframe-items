@@ -21,7 +21,7 @@ declare module 'warframe-items' {
     }
 
     export default class Items extends Array<Item>{
-        constructor(options: ItemsOptions, ...items: Item[]);
+        constructor(options?: ItemsOptions, ...items: Item[]);
         options: ItemsOptions;
         i18n: BundleofI18nBundle<Locale>;
     }
