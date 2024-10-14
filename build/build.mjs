@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 import minify from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
@@ -14,7 +15,6 @@ import scraper from './scraper.mjs';
 import parser from './parser.mjs';
 import hashManager from './hashManager.mjs';
 import readJson from './readJson.mjs';
-import { createHash } from 'node:crypto';
 
 const imageCache = await readJson(new URL('../data/cache/.images.json', import.meta.url));
 
