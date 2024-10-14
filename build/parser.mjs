@@ -559,6 +559,11 @@ class Parser {
       item.imageName += `-${encode(item.uniqueName)}`;
     }
 
+    // Give generic arcane entries the same treamt asaa blueprint with a static arcane image
+    if (item.name === 'Arcane') {
+      item.imageName = 'arcane';
+    }
+
     // Add original file extension
     item.imageName += `.${ext}`;
   }
