@@ -14,6 +14,7 @@ import scraper from './scraper.mjs';
 import parser from './parser.mjs';
 import hashManager from './hashManager.mjs';
 import readJson from './readJson.mjs';
+import { createHash } from 'node:crypto';
 
 const imageCache = await readJson(new URL('../data/cache/.images.json', import.meta.url));
 
@@ -253,7 +254,11 @@ class Build {
           throw err;
         };
         const image = await get(imageUrl).catch(retry).catch(retry);
-        this.updateCache(item, cached, hash, isComponent);
+        const hashImg = createHash('SHA256').update(image).digest('hex');
+
+        if (cached && cached.hash === hashImg) return;
+
+        this.updateCache(item, cached, hash ?? hashImg, isComponent);
 
         await sharp(image).toFile(filePath);
         await minify([filePath], {
