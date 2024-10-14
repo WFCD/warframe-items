@@ -297,7 +297,8 @@ declare module 'warframe-items' {
         'Parazon' |
         'Transmutation' |
         'Peculiar' |
-        'Plexus';
+        'Plexus' |
+        'Posture';
     interface Mod extends MinimalItem, WikiaItem, Droppable {
         baseDrain: number;
         category: 'Mods';
