@@ -232,7 +232,7 @@ class Build {
     const cached = imageCache.find((c) => c.uniqueName === item.uniqueName);
 
     // We'll use a custom blueprint image
-    if (item.name === 'Blueprint') return;
+    if (item.name === 'Blueprint' || item.name === 'Arcane') return;
 
     // Don't download component images or relic images twice
     if (isComponent || item.type === 'Relic') {
