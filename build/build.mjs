@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 import minify from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
@@ -253,7 +254,11 @@ class Build {
           throw err;
         };
         const image = await get(imageUrl).catch(retry).catch(retry);
-        this.updateCache(item, cached, hash, isComponent);
+        const hashImg = createHash('SHA256').update(image).digest('hex');
+
+        if (cached && cached.hash === hashImg) return;
+
+        this.updateCache(item, cached, hash ?? hashImg, isComponent);
 
         await sharp(image).toFile(filePath);
         await minify([filePath], {
