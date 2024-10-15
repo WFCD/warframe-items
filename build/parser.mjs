@@ -1,3 +1,5 @@
+import { createHash } from 'crypto';
+
 import cloneDeep from 'lodash.clonedeep';
 
 import dedupe from './dedupe.mjs';
@@ -5,7 +7,6 @@ import hashManager from './hashManager.mjs';
 import Progress from './progress.mjs';
 import readJson from './readJson.mjs';
 import tradable from './tradable.mjs';
-import { createHash } from 'crypto';
 
 const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
 const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
@@ -160,7 +161,7 @@ class Parser {
       if (item.uniqueName && item.uniqueName.includes('/Recipes')) continue;
 
       item = this.addComponents(item, category, blueprints, data);
-      item = this.filter(item, category, data, items[index - 1]);
+      item = this.filter(item, category, data);
       result.push(item);
       bar.tick();
     }
@@ -175,16 +176,16 @@ class Parser {
    * @param {Partial<Item>} [previous] item previous to this in the list
    * @returns {Partial<Item>}
    */
-  filter(original, category, data, previous) {
+  filter(original, category, data) {
     const result = cloneDeep(original);
 
     if (result.rewardName) result.uniqueName = result.rewardName;
     this.addType(result);
     this.addDamage(result);
     this.sanitize(result);
-    this.addImageName(result, data.manifest, previous);
+    this.addImageName(result, data.manifest);
     if (result.abilities) {
-      result.abilities.forEach((a) => this.addImageName(a, data.manifest, previous));
+      result.abilities.forEach((a) => this.addImageName(a, data.manifest));
     }
 
     this.addCategory(result, category);
@@ -521,7 +522,7 @@ class Parser {
    * @param {ImageManifest.Manifest} manifest to look up image from
    * @param {Partial<Item>} [previous] item to look up comparatively
    */
-  addImageName(item, manifest, previous) {
+  addImageName(item, manifest) {
     const image = manifest.find((i) => i.uniqueName === item.uniqueName);
     if (!image) {
       if (!['Node'].includes(item.type)) warnings.missingImage.push(item.name);
