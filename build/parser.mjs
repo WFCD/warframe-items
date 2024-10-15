@@ -1,3 +1,5 @@
+import { createHash } from 'crypto';
+
 import cloneDeep from 'lodash.clonedeep';
 
 import dedupe from './dedupe.mjs';
@@ -159,7 +161,7 @@ class Parser {
       if (item.uniqueName && item.uniqueName.includes('/Recipes')) continue;
 
       item = this.addComponents(item, category, blueprints, data);
-      item = this.filter(item, category, data, items[index - 1]);
+      item = this.filter(item, category, data);
       result.push(item);
       bar.tick();
     }
@@ -174,16 +176,16 @@ class Parser {
    * @param {Partial<Item>} [previous] item previous to this in the list
    * @returns {Partial<Item>}
    */
-  filter(original, category, data, previous) {
+  filter(original, category, data) {
     const result = cloneDeep(original);
 
     if (result.rewardName) result.uniqueName = result.rewardName;
     this.addType(result);
     this.addDamage(result);
     this.sanitize(result);
-    this.addImageName(result, data.manifest, previous);
+    this.addImageName(result, data.manifest);
     if (result.abilities) {
-      result.abilities.forEach((a) => this.addImageName(a, data.manifest, previous));
+      result.abilities.forEach((a) => this.addImageName(a, data.manifest));
     }
 
     this.addCategory(result, category);
@@ -520,7 +522,7 @@ class Parser {
    * @param {ImageManifest.Manifest} manifest to look up image from
    * @param {Partial<Item>} [previous] item to look up comparatively
    */
-  addImageName(item, manifest, previous) {
+  addImageName(item, manifest) {
     const image = manifest.find((i) => i.uniqueName === item.uniqueName);
     if (!image) {
       if (!['Node'].includes(item.type)) warnings.missingImage.push(item.name);
@@ -535,6 +537,7 @@ class Parser {
         .toLowerCase();
     const imageStub = image.textureLocation;
     const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '').replace(/!.*$/, ''); // .png, .jpg, etc
+    const hash = createHash('sha256').update(item.uniqueName).digest('hex');
 
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
@@ -554,12 +557,18 @@ class Parser {
       item.imageName = item.imageName.replace(/-(.*?)-/, '-'); // Remove second word (type)
     }
 
-    // Some items have the same name - so add their uniqueName as an identifier
-    if (previous && item.name === previous.name) {
-      item.imageName += `-${encode(item.uniqueName)}`;
+    // // Some items have the same name - so add their uniqueName as an identifier
+    // if (previous && item.name === previous.name) {
+    //   item.imageName += `-${encode(item.uniqueName)}`;
+    // }
+
+    // Some items have the same name - so add a partial hash as an identifier
+    // but avoid making component images different
+    if (!item.parent && item.type !== 'Relic') {
+      item.imageName += `-${hash.slice(0, 10)}`;
     }
 
-    // Give generic arcane entries the same treamt asaa blueprint with a static arcane image
+    // Give generic arcane entries the same treatmeant asa blueprints with a static arcane image
     if (item.name === 'Arcane') {
       item.imageName = 'arcane';
     }
