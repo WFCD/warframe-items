@@ -564,14 +564,13 @@ class Parser {
 
     // Some items have the same name - so add a partial hash as an identifier
     // but avoid making component images different
-    if (!item.parent && item.type !== 'Relic') {
+    if (item.type !== 'Relic' && !/Recipes/.test(item.uniqueName)) {
       item.imageName += `-${hash.slice(0, 10)}`;
     }
 
-    // Give generic arcane entries the same treatmeant asa blueprints with a static arcane image
-    if (item.name === 'Arcane') {
-      item.imageName = 'arcane';
-    }
+    // Enforce arcane and blueprint image name
+    if (item.name === 'Arcane') item.imageName = 'arcane';
+    if (item.name === 'Blueprint') item.imageName = 'blueprint';
 
     // Add original file extension
     item.imageName += `.${ext}`;
