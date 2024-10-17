@@ -564,7 +564,9 @@ class Parser {
 
     // Some items have the same name - so add a partial hash as an identifier
     // but avoid making component images different
-    if (item.type !== 'Relic' && !/Recipes/.test(item.uniqueName)) {
+    //
+    // Regex avoids Warframe componenets and Necramech weapons and suit
+    if (item.type !== 'Relic' && !/Recipes|(Resources\/Mechs)/.test(item.uniqueName)) {
       item.imageName += `-${hash.slice(0, 10)}`;
     }
 
