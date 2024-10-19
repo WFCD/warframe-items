@@ -548,7 +548,11 @@ class Parser {
     // components, so we'll keep the prime in the name.
     if (item.parent) {
       item.imageName = item.imageName.replace(`${encode(item.parent)}-`, '');
-      if (item.name.includes('Prime')) item.imageName = `prime-${item.imageName}`;
+      if (item.name.includes('Prime')) {
+        item.imageName = `prime-${item.imageName}`;
+        // check if the image name ends with prime as some older prime secondaries use the full parent name
+        if (/prime$/.test(item.imageName)) item.imageName = item.imageName.replace(/-prime$/, '');
+      }
     }
 
     // Relics should use the same image based on type, as they all use the same.
