@@ -209,7 +209,7 @@ declare module 'warframe-items' {
     chargeTime?: number;
   }
   interface Gun extends Weapon {
-    category: 'Primary' | 'Secondary' | 'Arch-Gun';
+    category: 'Primary' | 'Secondary' | 'Arch-Gun' | 'Railjack';
     magazineSize?: number;
     reloadTime?: number;
     projectile?: Projectile;
@@ -658,6 +658,7 @@ declare module 'warframe-items' {
   type Locale = 'de' | 'fr' | 'it' | 'ko' | 'es' | 'zh' | 'ru' | 'ja' | 'pl' | 'pt' | 'tc' | 'th' | 'tr' | 'uk';
 
   type ProductCategory =
+    | 'CrewShipWeapons'
     | 'KubrowPets'
     | 'LongGuns'
     | 'MechSuits'
