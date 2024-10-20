@@ -93,6 +93,8 @@ class Scraper {
       const data = raw ? raw[`Export${category}`] : undefined;
       bar.tick();
 
+      if (category === 'Weapons') data.push(...raw.ExportWeapons, ...raw.ExportRailjackWeapons);
+
       if (category === 'Upgrades') {
         const modSets = raw.ExportModSet.map((modSet) => ({
           ...modSet,

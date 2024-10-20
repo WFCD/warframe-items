@@ -652,6 +652,7 @@ class Parser {
         } else if (item.slot === 5) item.category = 'Melee';
         else if (item.slot === 0) item.category = 'Secondary';
         else if (item.slot === 1) item.category = 'Primary';
+        else if (item.slot === 14) item.category = 'Railjack';
         else if (item.type === 'Pets') item.category = 'Pets';
         else item.category = 'Misc';
         item.isArchwing = undefined;
