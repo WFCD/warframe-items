@@ -107,7 +107,7 @@ class Scraper {
           abilities: raw.ExportAbilities,
         };
 
-        data.push(helminth, ...raw.ExportWarframes);
+        data.push(helminth);
       }
 
       if (category === 'Upgrades') {
