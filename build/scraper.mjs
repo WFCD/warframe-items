@@ -99,6 +99,11 @@ class Scraper {
         const helminth = {
           uniqueName: '/Lotus/Powersuits/PowersuitAbilities/Helminth',
           name: 'Helminth',
+          health: 0,
+          shield: 0,
+          armor: 0,
+          stamina: 0,
+          power: 0,
           abilities: raw.ExportAbilities,
         };
 
