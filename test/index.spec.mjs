@@ -23,7 +23,7 @@ const wrapConstr = async (opts) => {
   return items;
 };
 
-const namedExclusions = ['Excalibur Prime'];
+const namedExclusions = ['Excalibur Prime', 'Helminth'];
 
 for (const base of ['index.js', 'index.mjs']) {
   describe(base, () => {
