@@ -12,6 +12,7 @@ import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
 import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
 import readJson from './readJson.mjs';
 import { get, getJSON, retryAttempts } from './network.mjs';
+import { type } from 'os';
 
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
 
@@ -94,6 +95,16 @@ class Scraper {
       bar.tick();
 
       if (category === 'Weapons') data.push(...raw.ExportRailjackWeapons);
+
+      if (category === 'Warframes') {
+        const helminth = {
+          uniqueName: '/Lotus/Powersuits/PowersuitAbilities/Helminth',
+          name: 'Helminth',
+          abilities: raw.ExportAbilities,
+        };
+
+        data.push(helminth, ...raw.ExportWarframes);
+      }
 
       if (category === 'Upgrades') {
         const modSets = raw.ExportModSet.map((modSet) => ({
