@@ -224,7 +224,7 @@ class Build {
     const imageBase = manifest.find((i) => i.uniqueName === item.uniqueName);
     if (!imageBase) return;
     const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '');
-    const imageHash = imageStub.match(/!00_([\w\d\S]+)/);
+    const imageHash = imageStub.match(/!00_([\S]+)/);
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`;
     const basePath = fileURLToPath(new URL('../data/img/', import.meta.url));
     const filePath = path.join(basePath, item.imageName);
