@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createHash } from 'node:crypto';
 
 import minify from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
@@ -229,7 +228,7 @@ class Build {
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`;
     const basePath = fileURLToPath(new URL('../data/img/', import.meta.url));
     const filePath = path.join(basePath, item.imageName);
-    const hash = manifest.find((i) => i.uniqueName === item.uniqueName).fileTime ?? imageHash[1];
+    const hash = manifest.find((i) => i.uniqueName === item.uniqueName).fileTime || imageHash[1] || undefined;
     const cached = imageCache.find((c) => c.uniqueName === item.uniqueName);
 
     // We'll use a custom blueprint image
