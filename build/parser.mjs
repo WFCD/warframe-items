@@ -539,6 +539,16 @@ class Parser {
     const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '').replace(/!.*$/, ''); // .png, .jpg, etc
     const hash = createHash('sha256').update(item.uniqueName).digest('hex');
 
+    // Enforce arcane and blueprint image name
+    if (item.name === 'Arcane') {
+      item.imageName = `arcane.${ext}`;
+      return;
+    }
+    if (item.name === 'Blueprint') {
+      item.imageName = `blueprint.${ext}`;
+      return;
+    }
+
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
     item.imageName = encode(item.name);
@@ -561,6 +571,15 @@ class Parser {
       item.imageName = item.imageName.replace(/-(.*?)-/, '-'); // Remove second word (type)
     }
 
+    // Remove the mark number and house name from Railjack weapons
+    if (item.productCategory === 'CrewShipWeapons') {
+      item.imageName = item.imageName.replace(/(lavan|vidar|zetki)-|(-mk-i+)/g, '');
+
+      // Add original file extension
+      item.imageName += `.${ext}`;
+      return;
+    }
+
     // // Some items have the same name - so add their uniqueName as an identifier
     // if (previous && item.name === previous.name) {
     //   item.imageName += `-${encode(item.uniqueName)}`;
@@ -573,10 +592,6 @@ class Parser {
     if (item.type !== 'Relic' && !/Recipes|(Resources\/Mechs)/.test(item.uniqueName)) {
       item.imageName += `-${hash.slice(0, 10)}`;
     }
-
-    // Enforce arcane and blueprint image name
-    if (item.name === 'Arcane') item.imageName = 'arcane';
-    if (item.name === 'Blueprint') item.imageName = 'blueprint';
 
     // Add original file extension
     item.imageName += `.${ext}`;
@@ -652,6 +667,7 @@ class Parser {
         } else if (item.slot === 5) item.category = 'Melee';
         else if (item.slot === 0) item.category = 'Secondary';
         else if (item.slot === 1) item.category = 'Primary';
+        else if (item.slot === 14) item.category = 'Railjack';
         else if (item.type === 'Pets') item.category = 'Pets';
         else item.category = 'Misc';
         item.isArchwing = undefined;
