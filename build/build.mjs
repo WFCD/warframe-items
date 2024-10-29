@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createHash } from 'node:crypto';
 
 import minify from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
@@ -225,10 +224,11 @@ class Build {
     const imageBase = manifest.find((i) => i.uniqueName === item.uniqueName);
     if (!imageBase) return;
     const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '');
+    const imageHash = imageStub.match(/!00_([\S]+)/);
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`;
     const basePath = fileURLToPath(new URL('../data/img/', import.meta.url));
     const filePath = path.join(basePath, item.imageName);
-    const hash = manifest.find((i) => i.uniqueName === item.uniqueName).fileTime;
+    const hash = manifest.find((i) => i.uniqueName === item.uniqueName).fileTime || imageHash[1] || undefined;
     const cached = imageCache.find((c) => c.uniqueName === item.uniqueName);
 
     // We'll use a custom blueprint image
@@ -254,11 +254,8 @@ class Build {
           throw err;
         };
         const image = await get(imageUrl).catch(retry).catch(retry);
-        const hashImg = createHash('SHA256').update(image).digest('hex');
 
-        if (cached && cached.hash === hashImg) return;
-
-        this.updateCache(item, cached, hash ?? hashImg, isComponent);
+        this.updateCache(item, cached, hash, isComponent);
 
         await sharp(image).toFile(filePath);
         await minify([filePath], {
