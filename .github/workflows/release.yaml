@@ -30,7 +30,7 @@ jobs:
         run: npx commitlint --last
       - run: npm test
         env:
-          NODE_OPTIONS: '--max_old_space_size=4096'
+          NODE_OPTIONS: '--max_old_space_size=5120'
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4.1.1
         env:

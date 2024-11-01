@@ -2,6 +2,8 @@ import assert from 'node:assert';
 import { resolve } from 'node:path';
 import { createRequire } from 'module';
 
+import { expect } from 'chai';
+
 import dedupe from '../build/dedupe.mjs';
 
 const require = createRequire(import.meta.url);
@@ -23,7 +25,7 @@ const wrapConstr = async (opts) => {
   return items;
 };
 
-const namedExclusions = ['Excalibur Prime'];
+const namedExclusions = ['Excalibur Prime', 'Helminth'];
 
 for (const base of ['index.js', 'index.mjs']) {
   describe(base, () => {
@@ -277,6 +279,19 @@ for (const base of ['index.js', 'index.mjs']) {
       const items = await wrapConstr({ category: ['Arch-Gun'] });
       const realLength = items.length;
       assert(realLength === items.map((x) => x).length);
+    });
+    it('helminth should only have drops', async () => {
+      const items = await wrapConstr({ category: ['Warframes'] });
+      const helminth = items.find((i) => i.name === 'Helminth');
+      assert(typeof helminth.component, undefined);
+      assert(typeof helminth.drops, Array);
+    });
+    it('helminth should more the 4 abilites', async () => {
+      const items = await wrapConstr({ category: ['Warframes'] });
+      const helminth = items.find((i) => i.name === 'Helminth');
+      expect(helminth.abilities.length).above(4);
+      // There are 13 abilties in all but room was added in case DE added a few between here and now
+      expect(helminth.abilities.length).lessThan(20);
     });
   });
 }
