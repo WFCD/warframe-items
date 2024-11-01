@@ -95,6 +95,21 @@ class Scraper {
 
       if (category === 'Weapons') data.push(...raw.ExportRailjackWeapons);
 
+      if (category === 'Warframes') {
+        const helminth = {
+          uniqueName: '/Lotus/Powersuits/PowersuitAbilities/Helminth',
+          name: 'Helminth',
+          health: 0,
+          shield: 0,
+          armor: 0,
+          stamina: 0,
+          power: 0,
+          abilities: raw.ExportAbilities,
+        };
+
+        data.push(helminth);
+      }
+
       if (category === 'Upgrades') {
         const modSets = raw.ExportModSet.map((modSet) => ({
           ...modSet,
