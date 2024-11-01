@@ -47,7 +47,7 @@ jobs:
       - run: sh .github/workflows/regression.sh
       - uses: stefanzweifel/git-auto-commit-action@v5
         env:
-          NODE_OPTIONS: '--max_old_space_size=4608'
+          NODE_OPTIONS: '--max_old_space_size=5120'
         with:
           skip_dirty_check: false
           commit_message: 'fix(items): new items'
