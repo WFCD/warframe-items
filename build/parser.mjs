@@ -1072,7 +1072,7 @@ class Parser {
   applyMasterable(item) {
     item.masterable = masterableCategories.includes(item.category);
 
-    if (item.type?.includes('Component') || item.category == 'Pets') {
+    if (item.type?.includes('Component') || item.category === 'Pets') {
       const regex =
         /^((?=.*Amp)|(?=.*Modular))(?=.*Barrel).*$|^(?=.*Pet)(?=.*Head).*$|PetPowerSuit|PvPVariantTip|^(?=.*Hoverboard)(?=.*Deck).*$/;
       item.masterable = regex.test(item.uniqueName);
