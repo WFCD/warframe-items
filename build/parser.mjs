@@ -1070,7 +1070,12 @@ class Parser {
    * @param {Item} item the item to add the attribute to
    */
   applyMasterable(item) {
-    item.masterable = masterableCategories.includes(item.category);
+    item.masterable = masterableCategories.categories.includes(item.category);
+
+    if (item.type?.includes('Component') || item.category === 'Pets') {
+      const regex = new RegExp(masterableCategories.regex);
+      item.masterable = regex.test(item.uniqueName);
+    }
   }
 
   addResistanceData(item, category) {

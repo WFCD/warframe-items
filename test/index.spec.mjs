@@ -216,10 +216,18 @@ for (const base of ['index.js', 'index.mjs']) {
       it('items should be marked masterable correctly ', async () => {
         const items = await wrapConstr({ ignoreEnemies: true });
         items.forEach((item) => {
-          const masterable = masterableCategories.includes(item.category);
+          const masterable = (category, type, uniqueName) => {
+            if (type?.includes('Component') || category === 'Pets') {
+              const regex = new RegExp(masterableCategories.regex);
+              return regex.test(uniqueName);
+            }
+
+            return masterableCategories.categories.includes(category);
+          };
+
           assert.equal(
             item.masterable,
-            masterable,
+            masterable(item.category, item.type, item.uniqueName),
             `${item.name} should be marked as ${!masterable ? 'not ' : ''}masterable`
           );
         });
