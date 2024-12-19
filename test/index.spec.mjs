@@ -34,27 +34,33 @@ const wrapConstr = async (opts) => {
 
 const namedExclusions = ['Excalibur Prime', 'Helminth'];
 
+const setupItems = async () => {
+  Items = await importFresh(itemPath);
+  data = Object.freeze({
+    items: await wrapConstr(),
+    warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
+    weapons: await wrapConstr({
+      category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'],
+      i18n: 'en',
+      i18nOnObject: true,
+    }),
+  });
+};
+
 const test = (base) => {
   describe(base, () => {
     before(async () => {
       itemPath = resolve(`./${base}`);
-      Items = await importFresh(itemPath);
-      data = Object.freeze({
-        items: await wrapConstr(),
-        warframes: await wrapConstr({ category: ['Warframes', 'Archwing'], i18n: 'en', i18nOnObject: true }),
-        weapons: await wrapConstr({
-          category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'],
-          i18n: 'en',
-          i18nOnObject: true,
-        }),
-      });
+      await setupItems();
     });
     beforeEach(async () => {
       gc();
-      Items = await importFresh(itemPath);
+      await setupItems();
     });
     afterEach(async () => {
       delete require.cache[itemPath];
+      Items = undefined;
+      data = undefined;
       gc();
     });
     it('should contain items when initializing.', async () => {
