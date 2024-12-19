@@ -2,6 +2,7 @@ import assert from 'node:assert';
 import { resolve } from 'node:path';
 import { createRequire } from 'module';
 
+import gc from 'expose-gc/function.js';
 import { expect } from 'chai';
 
 import dedupe from '../build/dedupe.mjs';
@@ -14,8 +15,14 @@ let Items;
 let data;
 const inits = [];
 
-const importFresh = async (path) => {
-  return (await import(`${path}?update=${Date.now()}`)).default;
+/**
+ * Use for fresh imports
+ * @param {string} path to import
+ * @param {string?} discriminator extra query param to force cache bust
+ * @returns {Promise<module>}
+ */
+const importFresh = async (path, discriminator) => {
+  return (await import(`${path}?discriminator=${discriminator}`)).default;
 };
 const wrapConstr = async (opts) => {
   const before = Date.now();
@@ -27,7 +34,7 @@ const wrapConstr = async (opts) => {
 
 const namedExclusions = ['Excalibur Prime', 'Helminth'];
 
-for (const base of ['index.js', 'index.mjs']) {
+const test = (base) => {
   describe(base, () => {
     before(async () => {
       itemPath = resolve(`./${base}`);
@@ -43,10 +50,12 @@ for (const base of ['index.js', 'index.mjs']) {
       });
     });
     beforeEach(async () => {
+      gc();
       Items = await importFresh(itemPath);
     });
     afterEach(async () => {
       delete require.cache[itemPath];
+      gc();
     });
     it('should contain items when initializing.', async () => {
       const items = await wrapConstr();
@@ -86,7 +95,9 @@ for (const base of ['index.js', 'index.mjs']) {
       assert(primes.length < items.length);
     });
     describe('i18n', () => {
+      beforeEach(gc);
       it('should populate with a truthy boolean', async () => {
+        Items = await importFresh(itemPath, Date.now());
         const items = await wrapConstr({ category: ['Mods'], i18n: ['es', 'tr'] });
         assert(!!items.i18n[items[0].uniqueName].tr);
         assert(!!items.i18n[items[0].uniqueName].es);
@@ -108,6 +119,7 @@ for (const base of ['index.js', 'index.mjs']) {
       });
     });
     describe('drops', () => {
+      beforeEach(gc);
       it('should not have drops for hikou', async () => {
         const items = await wrapConstr({ category: ['Secondary'] });
         const hikouMatches = items.filter((i) => i.name === 'Hikou');
@@ -157,6 +169,7 @@ for (const base of ['index.js', 'index.mjs']) {
       });
     });
     describe('integrity', async () => {
+      beforeEach(gc);
       it('weapons should only have 1 result for Mausolon', () => {
         const matches = data.weapons
           .filter((i) => i.name === 'Mausolon')
@@ -302,4 +315,6 @@ for (const base of ['index.js', 'index.mjs']) {
       expect(helminth.abilities.length).lessThan(20);
     });
   });
-}
+};
+
+['index.js', 'index.mjs'].forEach(test);
