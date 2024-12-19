@@ -936,7 +936,8 @@ declare module 'warframe-items' {
     | 'Kuva Fortress'
     | 'Zariman'
     | 'Void'
-    | 'Duviri';
+    | 'Duviri'
+    | 'Höllvania';
 
   type Element = Capitalize<keyof DamageTypes>;
 }
