@@ -474,7 +474,7 @@ declare module 'warframe-items' {
     radiation?: number;
   }
   interface Attack {
-    name: string;
+    name?: string;
     duration?: number;
     radius?: number;
     speed?: number;
