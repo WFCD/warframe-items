@@ -1038,20 +1038,33 @@ class Parser {
    * @param {Array<module:@wfcd/relics.TitaniaRelic>} relics relic array to search
    */
   addRelics(item, relics) {
-    if (item.type !== 'Relic') return;
+    const hasRelicDrop = item.components?.some((c) => c.drops?.some((d) => d.location?.includes('Relic')));
+    if (item.type !== 'Relic' && !hasRelicDrop) return;
 
-    // Item names are /(Lith|Meso|Neo|Axi|Requiem) (Relic|\w+ \w+)/
-    const relicName = item.name.toLowerCase().split(' ').slice(0, 2).join(' ');
+    const addRelic = (relicItem, name, link = false) => {
+      // Item names are /(Lith|Meso|Neo|Axi|Requiem) (Relic|\w+ \w+)/
+      const relicName = name.toLowerCase().split(' ').slice(0, 2).join(' ');
 
-    // Relic names are /(Lith|Meso|Neo|Axi|Requiem) (\w+)/
-    const related = relics.filter((relic) => relic.name.toLowerCase() === relicName);
-    item.locations = Array.from(new Set(related.map((relic) => relic.locations).flat()));
-    item.rewards = Array.from(new Set(related.map((relic) => relic.rewards).flat()));
-    [item.marketInfo] = Array.from(new Set(related.map((relic) => relic.warframeMarket)));
+      // Relic names are /(Lith|Meso|Neo|Axi|Requiem) (\w+)/
+      const related = relics.filter((relic) => relic.name.toLowerCase() === relicName);
 
-    const [vaultInfo] = Array.from(new Set(related.map((relic) => relic.vaultInfo)));
-    item.vaulted = vaultInfo?.vaulted;
-    item.vaultDate = vaultInfo?.vaultDate;
+      if (link) [relicItem.uniqueName] = Array.from(new Set(related.map((relic) => relic.uniqueName).flat()));
+      else {
+        relicItem.locations = Array.from(new Set(related.map((relic) => relic.locations).flat()));
+        relicItem.rewards = Array.from(new Set(related.map((relic) => relic.rewards).flat()));
+        [relicItem.marketInfo] = Array.from(new Set(related.map((relic) => relic.warframeMarket)));
+
+        const [vaultInfo] = Array.from(new Set(related.map((relic) => relic.vaultInfo)));
+        relicItem.vaulted = vaultInfo?.vaulted;
+        relicItem.vaultDate = vaultInfo?.vaultDate;
+      }
+    };
+
+    if (hasRelicDrop) {
+      item.components.forEach((component) => component.drops?.forEach((drop) => addRelic(drop, drop.location, true)));
+    } else {
+      addRelic(item, item.name);
+    }
   }
 
   applyOverrides(item) {
