@@ -585,6 +585,7 @@ declare module 'warframe-items' {
     rarity?: Rarity;
     chance: number | null;
     rotation?: Rotation;
+    uniqueName?: string;
   }
   interface PatchLog {
     name: string;
