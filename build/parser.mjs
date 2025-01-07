@@ -1048,8 +1048,9 @@ class Parser {
       // Relic names are /(Lith|Meso|Neo|Axi|Requiem) (\w+)/
       const related = relics.filter((relic) => relic.name.toLowerCase() === relicName);
 
-      if (link) [relicItem.uniqueName] = Array.from(new Set(related.map((relic) => relic.uniqueName).flat()));
-      else {
+      if (link) {
+        [relicItem.uniqueName] = Array.from(new Set(related.map((relic) => relic.uniqueName).flat()));
+      } else {
         relicItem.locations = Array.from(new Set(related.map((relic) => relic.locations).flat()));
         relicItem.rewards = Array.from(new Set(related.map((relic) => relic.rewards).flat()));
         [relicItem.marketInfo] = Array.from(new Set(related.map((relic) => relic.warframeMarket)));
