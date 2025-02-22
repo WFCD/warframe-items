@@ -2,21 +2,33 @@ import { createHash } from 'crypto';
 
 import cloneDeep from 'lodash.clonedeep';
 
-import dedupe from './dedupe.mjs';
-import hashManager from './hashManager.mjs';
-import Progress from './progress.mjs';
-import readJson from './readJson.mjs';
-import tradable from './tradable.mjs';
+// import readJson from './readJson.mjs';
 
-const previousBuild = await readJson(new URL('../data/json/All.json', import.meta.url));
-const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
-const bpConflicts = await readJson(new URL('../config/bpConflicts.json', import.meta.url));
-const { prefixes, suffixes } = await readJson(new URL('../config/variants.json', import.meta.url));
-const grades = await readJson(new URL('../config/relicGrades.json', import.meta.url));
-const polarities = await readJson(new URL('../config/polarities.json', import.meta.url));
-const types = await readJson(new URL('../config/itemTypes.json', import.meta.url));
-const overrides = await readJson(new URL('../config/overrides.json', import.meta.url));
-const masterableCategories = await readJson(new URL('../config/masterableCategories.json', import.meta.url));
+import previousBuild from '../data/json/All.json' with { type: 'json' };
+import watson from '../config/dt_map.json' with { type: 'json' };
+import bpConflicts from '../config/bpConflicts.json' with { type: 'json' };
+import variants from '../config/variants.json' with { type: 'json' };
+import grades from '../config/relicGrades.json' with { type: 'json' };
+import polarities from '../config/polarities.json' with { type: 'json' };
+import types from '../config/itemTypes.json' with { type: 'json' };
+import overrides from '../config/overrides.json' with { type: 'json' };
+import masterableCategories from '../config/masterableCategories.json' with { type: 'json' };
+
+import tradable from './tradable.mjs';
+import Progress from './progress.mjs';
+import hashManager from './hashManager.mjs';
+import dedupe from './dedupe.mjs';
+
+const { prefixes, suffixes } = variants;
+
+// const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
+// const bpConflicts = await readJson(new URL('../config/bpConflicts.json', import.meta.url));
+// const { prefixes, suffixes } = await readJson(new URL('../config/variants.json', import.meta.url));
+// const grades = await readJson(new URL('../config/relicGrades.json', import.meta.url));
+// const polarities = await readJson(new URL('../config/polarities.json', import.meta.url));
+// const types = await readJson(new URL('../config/itemTypes.json', import.meta.url));
+// const overrides = await readJson(new URL('../config/overrides.json', import.meta.url));
+// const masterableCategories = await readJson(new URL('../config/masterableCategories.json', import.meta.url));
 
 /**
  * Titlecase a string
