@@ -244,6 +244,8 @@ const test = (base) => {
             return masterableCategories.categories.includes(category);
           };
 
+          if (item.name === 'Helminth') return;
+
           assert.equal(
             item.masterable,
             masterable(item.category, item.type, item.uniqueName),
@@ -307,18 +309,25 @@ const test = (base) => {
       const realLength = items.length;
       assert(realLength === items.map((x) => x).length);
     });
-    it('helminth should only have drops', async () => {
-      const items = await wrapConstr({ category: ['Warframes'] });
-      const helminth = items.find((i) => i.name === 'Helminth');
-      assert(typeof helminth.component, undefined);
-      assert(typeof helminth.drops, Array);
-    });
-    it('helminth should more the 4 abilites', async () => {
-      const items = await wrapConstr({ category: ['Warframes'] });
-      const helminth = items.find((i) => i.name === 'Helminth');
-      expect(helminth.abilities.length).above(4);
-      // There are 13 abilties in all but room was added in case DE added a few between here and now
-      expect(helminth.abilities.length).lessThan(20);
+    describe('helminth', async () => {
+      it('should only have drops', async () => {
+        const items = await wrapConstr({ category: ['Warframes'] });
+        const helminth = items.find((i) => i.name === 'Helminth');
+        assert(typeof helminth.component, undefined);
+        assert(typeof helminth.drops, Array);
+      });
+      it('should have more than 4 abilities', async () => {
+        const items = await wrapConstr({ category: ['Warframes'] });
+        const helminth = items.find((i) => i.name === 'Helminth');
+        expect(helminth.abilities.length).above(4);
+        // There are 13 abilties in all but room was added in case DE added a few between here and now
+        expect(helminth.abilities.length).lessThan(20);
+      });
+      it('should not be masterable', async () => {
+        const items = await wrapConstr({ category: ['Warframes'] });
+        const helminth = items.find((i) => i.name === 'Helminth');
+        expect(helminth.masterable).to.eq(false);
+      });
     });
   });
 };
