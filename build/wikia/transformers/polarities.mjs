@@ -6,4 +6,6 @@ export default {
   Ability: 'zenurik',
   R: 'unairu',
   Aura: 'aura',
+  Y: 'penjaga',
+  O: 'any',
 };

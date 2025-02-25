@@ -1,3 +1,5 @@
+import transformPolarity from './transformPolarity.mjs';
+
 /**
  * Transform wikia lua companions into usable standardized json
  * @param {Object} oldCompanion old companion in lua format
@@ -26,6 +28,7 @@ export default async (oldCompanion, imageUrls) => {
       estimatedVaultDate: EstimatedVaultDate,
       thumbnail: imageUrls?.[Image],
     };
+    newCompanion = transformPolarity(oldCompanion, newCompanion);
   } catch (error) {
     console.error(`Error parsing ${oldCompanion.Name}`);
     console.error(error);
