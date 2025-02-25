@@ -10,7 +10,7 @@ export default async (oldVersion) => {
 
     newVersion = {
       name: Name,
-      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Link.replace(/\s/g, '_'))}`,
+      url: `https://wiki.warframe.com/w/${encodeURIComponent(Link.replace(/\s/g, '_'))}`,
       aliases: Aliases,
       parent: Parent,
       date: Date,

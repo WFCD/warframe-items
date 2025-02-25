@@ -701,7 +701,17 @@ declare module 'warframe-items' {
 
   type Noise = 'Alarming' | 'Silent';
 
-  type Polarity = 'aura' | 'madurai' | 'naramon' | 'penjaga' | 'umbra' | 'unairu' | 'universal' | 'vazarin' | 'zenurik';
+  type Polarity =
+    | 'aura'
+    | 'madurai'
+    | 'naramon'
+    | 'penjaga'
+    | 'umbra'
+    | 'unairu'
+    | 'universal'
+    | 'vazarin'
+    | 'zenurik'
+    | 'any';
 
   type Projectile = 'Discharge' | 'Hitscan' | 'Projectile' | 'Thrown';
 
