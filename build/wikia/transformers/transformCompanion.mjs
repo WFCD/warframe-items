@@ -16,9 +16,7 @@ export default async (oldCompanion, imageUrls) => {
 
     newCompanion = {
       name: Name,
-      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(
-        Name.replace(/\s/g, '_').replace('_Prime', '/Prime')
-      )}`,
+      url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_').replace('_Prime', '/Prime'))}`,
       mr: Mastery || 0,
       polarities: Polarities,
       stamina: Stamina,

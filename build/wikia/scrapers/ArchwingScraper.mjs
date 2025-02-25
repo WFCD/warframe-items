@@ -3,6 +3,6 @@ import transformWarframe from '../transformers/transformWarframe.mjs';
 
 export default class ArchwingScraper extends WikiaDataScraper {
   constructor() {
-    super('https://warframe.fandom.com/wiki/Module:Warframes/data?action=edit', 'Archwing', transformWarframe);
+    super('https://wiki.warframe.com/w/Module:Warframes/data?action=edit', 'Archwing', transformWarframe);
   }
 }
