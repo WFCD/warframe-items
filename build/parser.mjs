@@ -900,7 +900,7 @@ class Parser {
 
     let wikiCategory = category.toLowerCase();
     if (category === 'Upgrades') wikiCategory = 'mods';
-    if (item.category == 'Archwing') wikiCategory = 'archwings';
+    if (item.category === 'Archwing') wikiCategory = 'archwings';
     if (category === 'Sentinels') wikiCategory = 'companions';
 
     const wikiaItem = wikiaData[wikiCategory].filter((i) => i).find((i) => i.name === item.name);
