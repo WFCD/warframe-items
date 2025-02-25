@@ -9,7 +9,7 @@ export default async (oldMod, imageUrls) => {
 
     newMod = {
       name: Name,
-      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
+      url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       transmutable: Transmutable,
       introduced: Introduced,
       thumbnail: imageUrls?.[Image],

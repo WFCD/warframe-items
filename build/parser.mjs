@@ -896,14 +896,18 @@ class Parser {
    * @param {WikiaData} wikiaData from wikia to apply
    */
   addAdditionalWikiaData(item, category, wikiaData) {
-    if (!['weapons', 'warframes', 'mods', 'upgrades'].includes(category.toLowerCase())) return;
+    if (!['weapons', 'warframes', 'mods', 'upgrades', 'sentinels'].includes(category.toLowerCase())) return;
 
-    const wikiaItem = wikiaData[category === 'Upgrades' ? 'mods' : category.toLowerCase()]
-      .filter((i) => i)
-      .find((i) => i.name === item.name);
+    let wikiCategory = category.toLowerCase();
+    if (category === 'Upgrades') wikiCategory = 'mods';
+    if (item.category === 'Archwing') wikiCategory = 'archwings';
+    if (category === 'Sentinels') wikiCategory = 'companions';
+
+    const wikiaItem = wikiaData[wikiCategory].filter((i) => i).find((i) => i.name === item.name);
     if (!wikiaItem) return;
 
     switch (category.toLowerCase()) {
+      case 'sentinels':
       case 'warframes':
         this.addWarframeWikiaData(item, wikiaItem);
         break;

@@ -1,3 +1,5 @@
+import transformPolarity from './transformPolarity.mjs';
+
 /**
  * Transform wikia lua companions into usable standardized json
  * @param {Object} oldCompanion old companion in lua format
@@ -16,9 +18,7 @@ export default async (oldCompanion, imageUrls) => {
 
     newCompanion = {
       name: Name,
-      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(
-        Name.replace(/\s/g, '_').replace('_Prime', '/Prime')
-      )}`,
+      url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_').replace('_Prime', '/Prime'))}`,
       mr: Mastery || 0,
       polarities: Polarities,
       stamina: Stamina,
@@ -28,6 +28,7 @@ export default async (oldCompanion, imageUrls) => {
       estimatedVaultDate: EstimatedVaultDate,
       thumbnail: imageUrls?.[Image],
     };
+    newCompanion = transformPolarity(oldCompanion, newCompanion);
   } catch (error) {
     console.error(`Error parsing ${oldCompanion.Name}`);
     console.error(error);

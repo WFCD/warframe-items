@@ -9,7 +9,7 @@ import fetch from 'node-fetch';
 
 const run = promisify(cmd.get);
 
-const blueprintUrl = 'https://warframe.fandom.com/wiki/Module:Blueprints/data?action=edit';
+const blueprintUrl = 'https://wiki.warframe.com/w/Module:Blueprints/data?action=edit';
 
 const getLuaData = async (url) => {
   try {
@@ -71,7 +71,7 @@ const getImageUrls = async (things) => {
 
   const urlRequests = titleBatches.map((titleBatch) => {
     const params = ['action=query', `titles=${titleBatch.join('|')}`, 'prop=imageinfo', 'iiprop=url', 'format=json'];
-    const request = new fetch.Request(`https://warframe.fandom.com/api.php?${params.join('&')}`);
+    const request = new fetch.Request(`https://wiki.warframe.com/api.php?${params.join('&')}`);
     return fetch(request).then((d) => d.json());
   });
 

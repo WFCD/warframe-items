@@ -207,7 +207,7 @@ export default (oldWeapon, imageUrls, blueprints) => {
     newWeapon = {
       regex: `^${Name.toLowerCase().replace(/\s/g, '\\s')}$`,
       name: Name,
-      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
+      url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       mr: Mastery || 0,
       type: Class || Type,
       riven_disposition: Disposition,

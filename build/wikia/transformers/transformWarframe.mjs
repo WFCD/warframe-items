@@ -39,9 +39,7 @@ export default async (oldFrame, imageUrls, blueprints) => {
 
     newFrame = {
       name: Name,
-      url: `https://warframe.fandom.com/wiki/${encodeURIComponent(
-        Name.replace(/\s/g, '_').replace('_Prime', '/Prime')
-      )}`,
+      url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_').replace('_Prime', '/Prime'))}`,
       auraPolarity: AuraPolarity,
       conclave: Conclave,
       mr: Mastery || 0,
