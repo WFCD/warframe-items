@@ -37,7 +37,7 @@ jobs:
     needs: [lint]
     steps:
       - uses: actions/checkout@v4
-      - uses: leafo/gh-actions-lua@v10.0.0
+      - uses: leafo/gh-actions-lua@v11.0.0
       - uses: actions/cache@v4
         with:
           path: data/json
