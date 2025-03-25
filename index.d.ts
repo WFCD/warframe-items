@@ -765,6 +765,7 @@ declare module 'warframe-items' {
     | 'Stalker'
     | 'Steel Meridian'
     | 'Syndicate'
+    | 'Technocyte Coda'
     | 'Tenet'
     | 'Tenno'
     | 'Tutorial'
