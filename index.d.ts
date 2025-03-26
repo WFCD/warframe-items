@@ -731,7 +731,7 @@ declare module 'warframe-items' {
     | 'Sabotage'
     | 'Survival';
 
-  type Sex = 'Male' | 'Female' | 'Androgynous' | 'Non-binary (Pluriform)';
+  type Sex = 'Male' | 'Female' | 'Androgynous' | 'Non-binary (Pluriform)' | 'Non-binary';
 
   type ShotType = 'Continuous' | 'Hit-Scan' | 'Projectile';
 
@@ -761,6 +761,7 @@ declare module 'warframe-items' {
     | 'Prime'
     | 'Prisma'
     | 'Red Veil'
+    | 'Scaldra'
     | 'Sentient'
     | 'Stalker'
     | 'Steel Meridian'
