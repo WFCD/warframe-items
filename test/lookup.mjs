@@ -1,6 +1,8 @@
+#! /usr/bin/env node
+
 /* eslint-disable no-console */
 import Items from 'warframe-items';
 
 const items = new Items();
 
-console.error(items.find((i) => i.name.includes('Grimoire')));
+console.error(items.find((i) => i.name.includes('Dual Viciss')));
