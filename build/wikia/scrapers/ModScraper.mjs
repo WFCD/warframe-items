@@ -3,6 +3,6 @@ import transformMod from '../transformers/transformMod.mjs';
 
 export default class ModScraper extends WikiaDataScraper {
   constructor() {
-    super('https://warframe.fandom.com/wiki/Module:Mods/data?action=edit', 'Mod', transformMod);
+    super('https://wiki.warframe.com/w/Module:Mods/data?action=edit', 'Mod', transformMod);
   }
 }

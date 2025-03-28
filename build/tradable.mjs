@@ -1,29 +1,23 @@
 const builtUntradable = ['Warframe', 'Throwing', 'Shotgun', 'Rifle', 'Pistol', 'Melee', 'Sword And Shield'];
 const tradableConditions = (item) => !(builtUntradable.includes(item.type) && item.name.match(/Prime/gi));
 
-const tradableTypes = [
-  'Arcane',
+const tradableMods = [
   'Arch-Melee Mod',
   'Archwing Mod',
-  'Captura',
   'Companion Mod',
-  'Cut Gem',
-  'Fish',
-  'Focus Lens',
   'K-Drive Mod',
   'Kavat Mod',
   'Kubrow Mod',
   'Melee Mod',
   'Necramech Mod',
   'Primary Mod',
-  'Relic',
   'Secondary Mod',
   'Sentinel Mod',
   'Shotgun Mod',
   'Stance Mod',
-  'Upgrades',
   'Warframe Mod',
 ];
+const tradableTypes = ['Arcane', 'Captura', 'Cut Gem', 'Fish', 'Focus Lens', 'Relic', 'Upgrades', ...tradableMods];
 const untradableTypes = [
   'Color Palette',
   'Exalted Weapon',
