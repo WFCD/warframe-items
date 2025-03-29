@@ -161,6 +161,7 @@ class Parser {
     const result = [];
 
     const bar = new Progress(`Parsing ${category}`, items.length);
+
     if (!items.length) {
       bar?.interrupt?.(`No ${category}`);
       return [];
@@ -192,7 +193,7 @@ class Parser {
     const result = cloneDeep(original);
 
     if (result.rewardName) result.uniqueName = result.rewardName;
-    this.addType(result);
+    this.addType(result, data);
     this.addDamage(result);
     this.sanitize(result);
     this.addImageName(result, data.manifest);
@@ -229,7 +230,7 @@ class Parser {
     const result = cloneDeep(original);
 
     if (result.rewardName) result.uniqueName = result.rewardName;
-    this.addType(result);
+    this.addType(result, data);
     this.sanitize(result);
     this.addImageName(result, data.manifest, previous);
     this.addCategory(result, category);
@@ -445,17 +446,25 @@ class Parser {
    * saved as /Lotus/Powersuits/*, meaning that Archwing has to be looked for
    * first, otherwise it would be considered a Warframe.
    * @param {Partial<Item>} item to have type adjusted on
+   * @param {RawItemData} data raw context data
    */
-  addType(item) {
+  addType(item, data) {
     if (item.parent) return;
-    // eslint-disable-next-line no-restricted-syntax
-    for (const type of types) {
-      const contains = type.regex ? new RegExp(type.id, 'ig').test(item.uniqueName) : item.uniqueName.includes(type.id);
-      if (contains) {
-        if (type.append) item.type = `${item.type}${type.name}`;
-        else item.type = type.name;
-        // if (item.type !== type.name) console.error(`${item.name} didn't update types`)
-        break;
+    const arcane = data.wikia.arcanes.find((entry) => entry.name === item.name);
+    if (arcane) {
+      item.type = `${arcane.type} Arcane`;
+    } else {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const type of types) {
+        const contains = type.regex
+          ? new RegExp(type.id, 'ig').test(item.uniqueName)
+          : item.uniqueName.includes(type.id);
+        if (contains) {
+          if (type.append) item.type = `${item.type}${type.name}`;
+          else item.type = type.name;
+          // if (item.type !== type.name) console.error(`${item.name} didn't update types`)
+          break;
+        }
       }
     }
 
@@ -917,6 +926,9 @@ class Parser {
       case 'upgrades':
         this.addModWikiaData(item, wikiaItem);
         break;
+      case 'arcanes':
+        this.addArcaneWikiaData(item, wikiaItem);
+        break;
       default:
         break;
     }
@@ -984,6 +996,19 @@ class Parser {
     item.wikiaThumbnail = wikiaItem.thumbnail;
     item.wikiaUrl = wikiaItem.url;
     item.transmutable = wikiaItem.transmutable;
+    if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name);
+  }
+
+  /**
+   * Add additional data for mods from the wiki
+   * @param {Item} item mod to append wikia data to
+   * @param {WikiaArcane} wikiaItem to pull data from
+   */
+  addArcaneWikiaData(item, wikiaItem) {
+    item.wikiaThumbnail = wikiaItem.thumbnail;
+    item.wikiaUrl = wikiaItem.url;
+    item.transmutable = wikiaItem.transmutable;
+    item.type = wikiaItem.type;
     if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name);
   }
 

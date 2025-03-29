@@ -180,7 +180,6 @@ export default class WikiaDataScraper {
           things.push(transformedThing);
         })
       );
-
       things.sort(nameCompare);
     } catch (e) {
       console.error(e.stack);

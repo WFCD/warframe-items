@@ -249,7 +249,7 @@ declare module 'warframe-items' {
     patchlogs?: PatchLog[];
     rarity?: Rarity;
     tradable: true;
-    type: 'Arcane';
+    type: 'Arcane' | `${ArcaneType} Arcane`;
   }
   interface StanceMod extends Omit<Mod, 'levelStats'> {
     type: 'Stance Mod';
@@ -299,6 +299,20 @@ declare module 'warframe-items' {
     | 'Peculiar'
     | 'Plexus'
     | 'Posture';
+
+  type ArcaneType =
+    | 'Primary'
+    | 'Secondary'
+    | 'Melee'
+    | 'Warframe'
+    | 'Amp'
+    | 'Operator'
+    | 'Zaw'
+    | 'Kitgun'
+    | 'Bow'
+    | 'Shotgun'
+    | 'Sniper';
+
   interface Mod extends MinimalItem, WikiaItem, Droppable {
     baseDrain: number;
     category: 'Mods';

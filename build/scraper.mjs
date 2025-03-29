@@ -4,6 +4,7 @@ import { Generator as RelicGenerator } from '@wfcd/relics';
 import patchlogs from 'warframe-patchlogs';
 
 import Progress from './progress.mjs';
+import ArcaneScraper from './wikia/scrapers/ArcaneScraper.mjs';
 import ArchwingScraper from './wikia/scrapers/ArchwingScraper.mjs';
 import CompanionScraper from './wikia/scrapers/CompanionScraper.mjs';
 import ModScraper from './wikia/scrapers/ModScraper.mjs';
@@ -207,13 +208,14 @@ class Scraper {
    * @property {Array<WikiaMods>} mods
    * @property {Array<WikiaVersions>} versions
    * @property {Array<WikiaDucats>} ducats
+   * @property {Array<WikiaArcanes>} arcanes
    */
   /**
    * Get additional data from wikia if it's not provided in the API
    * @returns {WikiaData}
    */
   async fetchWikiaData() {
-    const bar = new Progress('Fetching Wikia Data', 7);
+    const bar = new Progress('Fetching Wikia Data', 8);
     const ducats = [];
     const ducatsWikia = await get('https://wiki.warframe.com/w/Ducats/Prices/All', true);
     const $ = load(ducatsWikia);
@@ -231,6 +233,8 @@ class Scraper {
     bar.tick();
     const mods = await new ModScraper().scrape();
     bar.tick();
+    const arcanes = await new ArcaneScraper().scrape();
+    bar.tick();
     const versions = await new VersionScraper().scrape();
     bar.tick();
     const archwings = await new ArchwingScraper().scrape();
@@ -246,6 +250,7 @@ class Scraper {
       ducats,
       archwings,
       companions,
+      arcanes,
     };
   }
 
