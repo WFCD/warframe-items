@@ -5,10 +5,11 @@ export default async (oldMod, imageUrls) => {
   }
 
   try {
-    const { Image, Name, Transmutable, Introduced } = oldMod;
+    const { Image, Name, Transmutable, Introduced, InternalName } = oldMod;
 
     newMod = {
       name: Name,
+      uniqueName: InternalName,
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       transmutable: Transmutable,
       introduced: Introduced,

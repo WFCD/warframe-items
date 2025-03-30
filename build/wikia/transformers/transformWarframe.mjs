@@ -34,11 +34,13 @@ export default async (oldFrame, imageUrls, blueprints) => {
   }
 
   try {
-    const { AuraPolarity, Conclave, Image, Mastery, Polarities, Sprint, Introduced, Sex, Vaulted } = oldFrame;
+    const { AuraPolarity, Conclave, Image, Mastery, Polarities, Sprint, Introduced, Sex, Vaulted, InternalName } =
+      oldFrame;
     const { Name } = oldFrame;
 
     newFrame = {
       name: Name,
+      uniqueName: InternalName,
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_').replace('_Prime', '/Prime'))}`,
       auraPolarity: AuraPolarity,
       conclave: Conclave,

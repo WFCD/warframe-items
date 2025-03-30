@@ -155,6 +155,7 @@ declare module 'warframe-items' {
     wikiaUrl?: string;
     tags?: Tag[];
     introduced?: Update;
+    wikiAvailable?: boolean;
   }
   interface Droppable {
     rarity?: Rarity;
@@ -397,7 +398,7 @@ declare module 'warframe-items' {
   interface ModularPetPart extends MinimalItem, Droppable, Attackable, Equippable {
     category: 'Pets';
   }
-  interface Component extends MinimalItem {
+  interface Component extends MinimalItem, WikiaItem {
     itemCount: number;
     imageName: string;
     tradable: boolean;
@@ -436,8 +437,6 @@ declare module 'warframe-items' {
     tags?: Tag[];
     type?: Type;
     vaulted?: boolean;
-    wikiaThumbnail?: string;
-    wikiaUrl?: string;
     disposition?: Disposition;
     ducats?: number;
     channeling?: number;
