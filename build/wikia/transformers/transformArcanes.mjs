@@ -5,10 +5,11 @@ export default async (oldArcane, imageUrls) => {
   }
 
   try {
-    const { Image, Name, Transmutable, Introduced, Type } = oldArcane;
+    const { Image, Name, Transmutable, Introduced, Type, InternalName } = oldArcane;
 
     newArcane = {
       name: Name,
+      uniqueName: InternalName,
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       transmutable: Transmutable,
       introduced: Introduced,

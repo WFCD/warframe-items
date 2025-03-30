@@ -912,8 +912,11 @@ class Parser {
     if (item.category === 'Archwing') wikiCategory = 'archwings';
     if (category === 'Sentinels') wikiCategory = 'companions';
 
-    const wikiaItem = wikiaData[wikiCategory].filter((i) => i).find((i) => i.name === item.name);
+    const wikiaItem = wikiaData[wikiCategory]
+      .filter((i) => i)
+      .find((i) => i.uniqueName === item.uniqueName);
     if (!wikiaItem) return;
+    item.wikiAvailable = true;
 
     switch (category.toLowerCase()) {
       case 'sentinels':

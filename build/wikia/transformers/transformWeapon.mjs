@@ -202,11 +202,13 @@ export default (oldWeapon, imageUrls, blueprints) => {
       Attack9,
       Attack10,
       Attacks,
+      InternalName,
     } = oldWeapon;
 
     newWeapon = {
       regex: `^${Name.toLowerCase().replace(/\s/g, '\\s')}$`,
       name: Name,
+      uniqueName: InternalName,
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       mr: Mastery || 0,
       type: Class || Type,

@@ -13,11 +13,12 @@ export default async (oldWings, imageUrls) => {
   }
 
   try {
-    const { Image, Mastery, Polarities, Sprint, Introduced, Vaulted } = oldWings;
+    const { Image, Mastery, Polarities, Sprint, Introduced, Vaulted, InternalName } = oldWings;
     const { Name } = oldWings;
 
     newWings = {
       name: Name,
+      uniqueName: InternalName,
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_').replace('_Prime', '/Prime'))}`,
       mr: Mastery || 0,
       polarities: Polarities,
