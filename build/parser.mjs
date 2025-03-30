@@ -912,9 +912,7 @@ class Parser {
     if (item.category === 'Archwing') wikiCategory = 'archwings';
     if (category === 'Sentinels') wikiCategory = 'companions';
 
-    const wikiaItem = wikiaData[wikiCategory]
-      .filter((i) => i)
-      .find((i) => i.uniqueName === item.uniqueName);
+    const wikiaItem = wikiaData[wikiCategory].filter((i) => i).find((i) => i.uniqueName === item.uniqueName);
     if (!wikiaItem) return;
     item.wikiAvailable = true;
 
