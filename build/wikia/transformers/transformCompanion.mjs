@@ -13,11 +13,13 @@ export default async (oldCompanion, imageUrls) => {
   }
 
   try {
-    const { Image, Mastery, Polarities, Stamina, Introduced, Vaulted, VaultDate, EstimatedVaultDate } = oldCompanion;
+    const { Image, Mastery, Polarities, Stamina, Introduced, Vaulted, VaultDate, EstimatedVaultDate, InternalName } =
+      oldCompanion;
     const { Name } = oldCompanion;
 
     newCompanion = {
       name: Name,
+      uniqueName: InternalName,
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_').replace('_Prime', '/Prime'))}`,
       mr: Mastery || 0,
       polarities: Polarities,
