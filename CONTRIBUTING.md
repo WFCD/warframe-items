@@ -2,7 +2,7 @@
 
 Thanks for being interested in contributions!
 
-We have some quirks about `warframe-items`... especially pull requests.
+We have some quirks about `@wfcd/items`... especially pull requests.
 
 Make sure you've run
 ```bash
