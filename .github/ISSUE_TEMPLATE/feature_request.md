@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for warframe-items
+about: Suggest an idea for @wfcd/items
 title: ":tada:"
 labels: 'Scope: Data, Severity3: Minor, Type: Feature Request'
 assignees: ''

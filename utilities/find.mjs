@@ -1,5 +1,5 @@
 import { translatePolarity } from 'warframe-worldstate-data/utilities';
-import Items from 'warframe-items';
+import Items from '@wfcd/items';
 
 /**
  * Find an item by unique name

@@ -1,4 +1,4 @@
-import Items from 'warframe-items';
+import Items from '@wfcd/items';
 
 /**
  * Palette Coordinate representation
