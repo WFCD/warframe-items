@@ -1,5 +1,5 @@
-// Project: warframe-items
-declare module 'warframe-items' {
+// Project: @wfcd/items
+declare module '@wfcd/items' {
   export interface ColorMap {
     primary?: Pixel;
     secondary?: Pixel;

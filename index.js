@@ -2,7 +2,7 @@
 
 /* eslint-disable no-restricted-syntax */
 /**
- * Configuration options for warframe-items
+ * Configuration options for @wfcd/items
  * @typedef {Object} Options
  *
  * @property {string[]} category List of allowed categories to be pulled in.

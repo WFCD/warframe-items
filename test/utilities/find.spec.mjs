@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import Items from 'warframe-items';
-import { find } from 'warframe-items/utilities';
+import Items from '@wfcd/items';
+import { find } from '@wfcd/items/utilities';
 
 import { marshall } from './utils.mjs';
 

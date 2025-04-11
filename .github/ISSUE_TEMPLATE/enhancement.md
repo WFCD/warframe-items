@@ -1,6 +1,6 @@
 ---
 name: Enhancement
-about: Describe what you'd like to improve on an aspect of warframe-items
+about: Describe what you'd like to improve on an aspect of @wfcd/items
 title: ":rocket:"
 labels: 'Scope: Data, Severity3: Minor, Type: Enhancement'
 assignees: ''
