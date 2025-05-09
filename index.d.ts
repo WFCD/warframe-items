@@ -515,7 +515,7 @@ declare module '@wfcd/items' {
     damage: number | string;
     element?: Element;
     proc?: Element;
-    radius: number;
+    radius: number | null;
   }
   interface AreaAttack {
     name: string;

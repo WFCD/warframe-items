@@ -224,7 +224,7 @@ const test = (base) => {
             assert(warframe?.components?.length > 0, `${warframe.name} should have components`);
           });
       });
-      it('marketCost should be a number ', () => {
+      it('marketCost should be a number', () => {
         data.items.forEach((item) => {
           assert(
             ['number', 'undefined'].includes(typeof item.marketCost),
@@ -327,6 +327,29 @@ const test = (base) => {
         const items = await wrapConstr({ category: ['Warframes'] });
         const helminth = items.find((i) => i.name === 'Helminth');
         expect(helminth.masterable).to.eq(false);
+      });
+    });
+    describe('sentinels', async () => {
+      it('should have a sentinel category', async () => {
+        const items = await wrapConstr({ category: ['Sentinels'] });
+        assert(items.length > 0);
+      });
+      it('should have prime sentinels', async () => {
+        const items = await wrapConstr({ category: ['Sentinels'] });
+        const primes = items.filter((i) => i.isPrime);
+        assert(primes.length > 0);
+        const names = primes.map((prime) => prime.name);
+        const known = [
+          'Carrier Prime',
+          'Wyrm Prime',
+          'Shade Prime',
+          'Dethcube Prime',
+          'Nautilus Prime',
+          'Helios Prime',
+        ];
+        known.forEach((name) => {
+          assert(names.includes(name), `${name} should be in the list of primes`);
+        });
       });
     });
   });
