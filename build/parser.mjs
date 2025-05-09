@@ -2,8 +2,6 @@ import { createHash } from 'crypto';
 
 import cloneDeep from 'lodash.clonedeep';
 
-// import readJson from './readJson.mjs';
-
 import previousBuild from '../data/json/All.json' with { type: 'json' };
 import watson from '../config/dt_map.json' with { type: 'json' };
 import bpConflicts from '../config/bpConflicts.json' with { type: 'json' };
@@ -20,15 +18,6 @@ import hashManager from './hashManager.mjs';
 import dedupe from './dedupe.mjs';
 
 const { prefixes, suffixes } = variants;
-
-// const watson = await readJson(new URL('../config/dt_map.json', import.meta.url));
-// const bpConflicts = await readJson(new URL('../config/bpConflicts.json', import.meta.url));
-// const { prefixes, suffixes } = await readJson(new URL('../config/variants.json', import.meta.url));
-// const grades = await readJson(new URL('../config/relicGrades.json', import.meta.url));
-// const polarities = await readJson(new URL('../config/polarities.json', import.meta.url));
-// const types = await readJson(new URL('../config/itemTypes.json', import.meta.url));
-// const overrides = await readJson(new URL('../config/overrides.json', import.meta.url));
-// const masterableCategories = await readJson(new URL('../config/masterableCategories.json', import.meta.url));
 
 /**
  * Titlecase a string
@@ -887,7 +876,7 @@ class Parser {
         item.isPrime = item.tags?.includes('Prime') || lastUnameSegment.includes('Prime');
         break;
       case 'Sentinels':
-        item.isPrime = lastUnameSegment.startsWith('Prime');
+        item.isPrime = lastUnameSegment.startsWith('Prime') || item.name.endsWith('Prime');
         break;
       // there is only one archwing prime so far so we cant extrapolate much
       case 'Archwing':
