@@ -44,6 +44,11 @@ jobs:
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
+      - name: Bypass Cloudflare for GitHub Action
+        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
+        with:
+          cf_zone_id: ${{ secrets.CF_ZONE_ID }}
+          cf_api_token: ${{ secrets.CF_API_TOKEN }}
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
