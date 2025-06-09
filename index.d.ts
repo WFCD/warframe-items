@@ -63,7 +63,7 @@ declare module '@wfcd/items' {
   }
 
   interface ItemsOptions {
-    category: Array<Category | 'SentinelWeapons'>;
+    category?: Array<Category | 'SentinelWeapons'>;
     ignoreEnemies?: boolean;
     i18n?: boolean | string[];
     i18nOnObject?: boolean;
