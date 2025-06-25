@@ -450,9 +450,10 @@ class Parser {
           : item.uniqueName.includes(type.id);
         if (contains) {
           if (type.append) item.type = `${item.type}${type.name}`;
+          else if (item.wiki)
+            item.type = data.wikia.weapons.find((entry) => entry.name === item.name)?.type ?? type.name;
           else {
-            const weapon = data.wikia.weapons.find((entry) => entry.name === item.name);
-            item.type = weapon?.type ?? type.name;
+            item.type = type.name;
           }
           // if (item.type !== type.name) console.error(`${item.name} didn't update types`)
           break;
