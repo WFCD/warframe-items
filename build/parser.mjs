@@ -445,12 +445,13 @@ class Parser {
     } else {
       // eslint-disable-next-line no-restricted-syntax
       for (const type of types) {
+        const weapon = data.wikia.weapons.find((entry) => entry.name === item.name);
         const contains = type.regex
           ? new RegExp(type.id, 'ig').test(item.uniqueName)
           : item.uniqueName.includes(type.id);
         if (contains) {
           if (type.append) item.type = `${item.type}${type.name}`;
-          else item.type = type.name;
+          else item.type = weapon?.type ?? type.name;
           // if (item.type !== type.name) console.error(`${item.name} didn't update types`)
           break;
         }
