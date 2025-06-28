@@ -15,7 +15,6 @@ jobs:
           cache: 'npm'
       - name: Install Dependencies
         run: npm install
-
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -39,6 +38,12 @@ jobs:
     needs: [lint]
     steps:
       - uses: actions/checkout@v4
+      - name: Bypass Cloudflare for GitHub Action
+        if: ${{ secrets.CF_ZONE_ID && secrets.CF_API_TOKEN }}
+        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
+        with:
+          cf_zone_id: ${{ secrets.CF_ZONE_ID }}
+          cf_api_token: ${{ secrets.CF_API_TOKEN }}
       - uses: leafo/gh-actions-lua@v11.0.0
       - uses: actions/cache@v4
         with:
@@ -51,11 +56,6 @@ jobs:
       - run: npm ci
       - run: npm i -D warframe-patchlogs@^2
       - run: npm i --no-save warframe-worldstate-data@^2
-      - name: Bypass Cloudflare for GitHub Action
-        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
-        with:
-          cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-          cf_api_token: ${{ secrets.CF_API_TOKEN }}
       - run: npm run build -- --force
         env:
           PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
