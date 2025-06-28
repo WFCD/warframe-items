@@ -36,14 +36,17 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     needs: [lint]
+    env:
+      cf_zone_id: ${{ secrets.CF_ZONE_ID }}
+      cf_api_token: ${{ secrets.CF_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Bypass Cloudflare for GitHub Action
-        if: ${{ secrets.CF_ZONE_ID && secrets.CF_API_TOKEN }}
+        if: ${{ env.cf_api_token != ''&&  env.cf_zone_id != '' }}
         uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
         with:
-          cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-          cf_api_token: ${{ secrets.CF_API_TOKEN }}
+          cf_zone_id: ${{ env.cf_zone_id }}
+          cf_api_token: ${{ env.cf_api_token }}
       - uses: leafo/gh-actions-lua@v11.0.0
       - uses: actions/cache@v4
         with:
