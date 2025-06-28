@@ -44,11 +44,6 @@ jobs:
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-      - name: Bypass Cloudflare for GitHub Action
-        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
-        with:
-          cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-          cf_api_token: ${{ secrets.CF_API_TOKEN }}
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
@@ -56,6 +51,11 @@ jobs:
       - run: npm ci
       - run: npm i -D warframe-patchlogs@^2
       - run: npm i --no-save warframe-worldstate-data@^2
+      - name: Bypass Cloudflare for GitHub Action
+        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
+        with:
+          cf_zone_id: ${{ secrets.CF_ZONE_ID }}
+          cf_api_token: ${{ secrets.CF_API_TOKEN }}
       - run: npm run build -- --force
         env:
           PROXY_TYPE: ${{ secrets.PROXY_TYPE }}
@@ -107,11 +107,6 @@ jobs:
         env:
           NODE_OPTIONS: '--max_old_space_size=2048'
         run: npm test
-      - name: Bypass Cloudflare for GitHub Action
-        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
-        with:
-          cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-          cf_api_token: ${{ secrets.CF_API_TOKEN }}
       - name: Regression
         env:
           NODE_OPTIONS: --experimental-fetch
