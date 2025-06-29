@@ -90,9 +90,9 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 16
           - 'lts/*'
           - 20
+          - 22
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
