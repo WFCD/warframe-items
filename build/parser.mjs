@@ -953,7 +953,7 @@ class Parser {
     item.bpCost = wikiaItem.bpCost;
     item.masteryReq = item.masteryReq || wikiaItem.mr;
     item.polarities = wikiaItem.polarities;
-    item.tags = wikiaItem.tags;
+    item.tags = wikiaItem.tags?.filter((t) => Boolean(t.trim()));
     item.stancePolarity = wikiaItem.stancePolarity;
     item.wikiaThumbnail = wikiaItem.thumbnail;
     item.wikiaUrl = wikiaItem.url;
