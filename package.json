@@ -48,6 +48,9 @@
   "prettier": "@wfcd/eslint-config/prettier",
   "overrides": {
     "cross-spawn": "^6.0.6",
+    "nyc": {
+      "rimraf": "^3"
+    },
     "rimraf": "^6"
   },
   "devDependencies": {
