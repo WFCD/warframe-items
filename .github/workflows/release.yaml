@@ -24,7 +24,7 @@ jobs:
           node-version-file: '.nvmrc'
       - run: npm ci
       - run: npm i -D warframe-patchlogs@^2
-      - run: npm i --no-save warframe-worldstate-data@^2
+      - run: npm i --no-save warframe-worldstate-data@^3
       - run: npm run lint
       - name: Run commitlint
         run: npx commitlint --last

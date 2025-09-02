@@ -23,7 +23,7 @@ jobs:
           node-version-file: '.nvmrc'
       - run: npm install
       - run: npm i -D warframe-patchlogs@^2
-      - run: npm i --no-save warframe-worldstate-data@^2
+      - run: npm i --no-save warframe-worldstate-data@^3
       - name: Bypass Cloudflare for GitHub Action
         uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
         with:
