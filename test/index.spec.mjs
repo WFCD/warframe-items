@@ -44,6 +44,7 @@ const setupItems = async () => {
       i18n: 'en',
       i18nOnObject: true,
     }),
+    mods: await wrapConstr({ category: ['Mods'], i18n: 'en', i18nOnObject: true }),
   });
 };
 
@@ -296,6 +297,18 @@ const test = (base) => {
           results.forEach((res) =>
             assert.strictEqual(res.type, 'Resource', `${res.name} should be a Resource type... ${res.type}`)
           );
+        });
+      });
+      describe('augment cards', () => {
+        it('should not be all mods', () => {
+          const augments = data.mods.filter((i) => i.isAugment);
+          assert(data.mods.length > 0, 'There should be augment mods');
+          assert.notEqual(augments.length, data.mods.length, 'Not all mods are augments');
+        });
+        ['Loyal Merulina', 'Anchored Glide'].forEach((itemName) => {
+          it(`should have ${itemName} as an augment`, () => {
+            assert.equal(data.mods.find((item) => item.name === itemName).isAugment, true);
+          });
         });
       });
     });
