@@ -655,7 +655,7 @@ class Parser {
 
       case 'Upgrades':
         item.category = 'Mods';
-        if (item.uniqueName.includes('AugmentCard')) item.isAugment = true;
+        if (item.compatName !== 'Warframe' && item.type === 'Warframe Mod') item.isAugment = true;
         break;
 
       case 'Warframes':
