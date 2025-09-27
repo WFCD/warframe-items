@@ -47,7 +47,7 @@ jobs:
         with:
           cf_zone_id: ${{ env.cf_zone_id }}
           cf_api_token: ${{ env.cf_api_token }}
-      - uses: leafo/gh-actions-lua@v11.0.0
+      - uses: leafo/gh-actions-lua@v12.0.0
       - uses: actions/cache@v4
         with:
           path: data/json
