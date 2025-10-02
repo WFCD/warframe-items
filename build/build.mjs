@@ -221,8 +221,14 @@ class Build {
    * @async
    */
   async saveImage(item, isComponent, duplicates, manifest) {
-    const imageBase = manifest.find((i) => i.uniqueName === item.uniqueName);
+    let uniqueName = item.uniqueName;
+    if(item.type === 'Nightwave Act') {
+      uniqueName = item.uniqueName.replace(/[0-9]{1,3}/, '');
+    }
+
+    const imageBase = manifest.find((i) => i.uniqueName === uniqueName);
     if (!imageBase) return;
+
     const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '');
     const imageHash = imageStub.match(/!00_([\S]+)/);
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`;
