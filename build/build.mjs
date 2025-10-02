@@ -221,8 +221,8 @@ class Build {
    * @async
    */
   async saveImage(item, isComponent, duplicates, manifest) {
-    let uniqueName = item.uniqueName;
-    if(item.type === 'Nightwave Act') {
+    let { uniqueName } = item;
+    if (item.type === 'Nightwave Act') {
       uniqueName = item.uniqueName.replace(/[0-9]{1,3}/, '');
     }
 
