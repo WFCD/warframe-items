@@ -549,7 +549,7 @@ class Parser {
         .toLowerCase();
     const imageStub = image.textureLocation;
     const ext = imageStub.split('.')[imageStub.split('.').length - 1].replace(/\?!.*/, '').replace(/!.*$/, ''); // .png, .jpg, etc
-    const hash = createHash('sha256').update(item.uniqueName).digest('hex');
+    const hash = (str) => createHash('sha256').update(str).digest('hex');
 
     // Enforce arcane and blueprint image name
     if (item.name === 'Arcane') {
@@ -564,6 +564,14 @@ class Parser {
     // Turn any separators into dashes and remove characters that would break
     // the filesystem.
     item.imageName = encode(item.name);
+
+    if (item.type === 'Nightwave Act') {
+      const name = item.name.replace(/\sM{0,3}(CM|CD|D?C{0,3})?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?$/i, '').trim();
+      const sterilized = item.uniqueName.replace(/[0-9]{1,3}$/, '');
+      item.imageName = `${encode(name)}-${hash(sterilized).slice(0, 10)}.${ext}`;
+
+      return;
+    }
 
     // Components usually have the same generic images, so we should remove the
     // parent name here. Note that there's a difference between prime/non-prime
@@ -602,7 +610,7 @@ class Parser {
     //
     // Regex avoids Warframe componenets and Necramech weapons and suit
     if (item.type !== 'Relic' && !/Recipes|(Resources\/Mechs)/.test(item.uniqueName)) {
-      item.imageName += `-${hash.slice(0, 10)}`;
+      item.imageName += `-${hash(item.uniqueName).slice(0, 10)}`;
     }
 
     // Add original file extension
