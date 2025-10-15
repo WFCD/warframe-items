@@ -1,6 +1,6 @@
 {
   "name": "@wfcd/items",
-  "version": "0.0.0-development",
+  "version": "0.0.0-dev",
   "description": "Get all warframe items directly from Warframe's API.",
   "homepage": "https://github.com/wfcd/warframe-items#readme",
   "bugs": {
@@ -37,11 +37,6 @@
     "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
     "validate": "npm ls"
   },
-  "pre-commit": [
-    "lint",
-    "validate",
-    "test"
-  ],
   "prettier": "@wfcd/eslint-config/prettier",
   "overrides": {
     "cross-spawn": "^6.0.6",
