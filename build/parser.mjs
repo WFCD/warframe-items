@@ -465,6 +465,8 @@ class Parser {
         item.faction = undefined;
       } else if (item.productCategory) {
         item.type = item.productCategory;
+      } else if (item.systemName) {
+        item.type = 'Node';
       } else {
         if (!warnings.missingType.includes(title(item.name))) warnings.missingType.push(title(item.name));
         item.type = 'Misc';
