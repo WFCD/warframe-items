@@ -50,7 +50,7 @@ jobs:
           PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
           PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
       - run: sh .github/workflows/regression.sh
-      - uses: stefanzweifel/git-auto-commit-action@v6
+      - uses: stefanzweifel/git-auto-commit-action@v7
         env:
           NODE_OPTIONS: '--max_old_space_size=8192'
         with:
