@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: 'npm'
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: 'npm'
@@ -52,7 +52,7 @@ jobs:
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: 'npm'
@@ -77,7 +77,7 @@ jobs:
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: 'npm'
@@ -99,7 +99,7 @@ jobs:
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Dependencies
