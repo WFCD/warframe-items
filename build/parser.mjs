@@ -199,7 +199,7 @@ class Parser {
     this.addIsPrime(result);
     this.addVaultData(result, data.vaultData, category, data.wikia);
     this.addResistanceData(result, category);
-    this.addRelics(result, data.relics);
+    this.addRelics(result, data.relics, data.drops);
     this.applyMasterable(result);
     this.applyOverrides(result);
     return result;
@@ -1069,8 +1069,9 @@ class Parser {
    * - market data on relics (urlName, id)
    * @param {Item} item to have relics applied to
    * @param {Array<module:@wfcd/relics.TitaniaRelic>} relics relic array to search
+   * @param {Array<DropRate>} drops drop rate data for refinement-specific chances
    */
-  addRelics(item, relics) {
+  addRelics(item, relics, drops) {
     const hasRelicDrop = item.components?.some((c) => c.drops?.some((d) => d.location?.includes('Relic')));
     if (item.type !== 'Relic' && !hasRelicDrop) return;
 
@@ -1085,7 +1086,36 @@ class Parser {
         [relicItem.uniqueName] = Array.from(new Set(related.map((relic) => relic.uniqueName).flat()));
       } else {
         relicItem.locations = Array.from(new Set(related.map((relic) => relic.locations).flat()));
-        relicItem.rewards = Array.from(new Set(related.map((relic) => relic.rewards).flat()));
+
+        // Get base rewards structure from relics package (has item metadata)
+        const baseRewards = Array.from(new Set(related.map((relic) => relic.rewards).flat()));
+
+        // Build the correct "place" name for drops API lookup
+        const dropPlaceName = name.endsWith('Intact')
+          ? name.replace(/\sIntact$/, ' Relic')
+          : name.replace(/\s(\w+)$/, ' Relic ($1)');
+
+        // Find drops that match this relic refinement level
+        const dropsForRelic = drops?.filter((d) => d.place === dropPlaceName) ?? [];
+
+        // Update reward chances from drops data (keep other metadata from relics)
+        // Track used drops by index to handle duplicate item names correctly
+        const usedDropIndices = new Set();
+        relicItem.rewards = baseRewards.map((reward) => {
+          if (!reward.item?.name) return reward;
+
+          // Find first unused drop matching this item name
+          const dropIndex = dropsForRelic.findIndex(
+            (d, idx) => d.item === reward.item.name && !usedDropIndices.has(idx)
+          );
+
+          if (dropIndex !== -1) {
+            usedDropIndices.add(dropIndex);
+            return { ...reward, chance: dropsForRelic[dropIndex].chance };
+          }
+          return reward;
+        });
+
         [relicItem.marketInfo] = Array.from(new Set(related.map((relic) => relic.warframeMarket)));
 
         const [vaultInfo] = Array.from(new Set(related.map((relic) => relic.vaultInfo)));
