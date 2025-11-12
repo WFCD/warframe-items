@@ -365,6 +365,43 @@ const test = (base) => {
         });
       });
     });
+    describe('relics', async () => {
+      it('should have correct drop rates for each refinement level', async () => {
+        const relics = await wrapConstr({ category: ['Relics'] });
+
+        // Expected patterns for each refinement level
+        const expectedPatterns = {
+          Intact: { 25.33: 3, 11: 2, 2: 1 },
+          Exceptional: { 23.33: 3, 13: 2, 4: 1 },
+          Flawless: { 20: 3, 17: 2, 6: 1 },
+          Radiant: { 16.67: 3, 20: 2, 10: 1 },
+        };
+
+        Object.entries(expectedPatterns).forEach(([level, expected]) => {
+          const relicsAtLevel = relics.filter((r) => r.name.endsWith(level));
+          relicsAtLevel.forEach((relic) => {
+            // BUG: Skip Axi S19 - has no rewards (doesn't exist in game)
+            if (!relic.rewards || relic.rewards.length === 0) {
+              return;
+            }
+            // Group rewards by percentage
+            const chanceGroups = {};
+            relic.rewards.forEach((reward) => {
+              if (!chanceGroups[reward.chance]) {
+                chanceGroups[reward.chance] = 0;
+              }
+              chanceGroups[reward.chance] += 1;
+            });
+
+            assert.deepStrictEqual(
+              chanceGroups,
+              expected,
+              `${relic.name} should have exact distribution: ${JSON.stringify(expected)}`
+            );
+          });
+        });
+      });
+    });
   });
 };
 
