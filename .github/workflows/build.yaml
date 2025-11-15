@@ -25,7 +25,7 @@ jobs:
       - run: npm i -D warframe-patchlogs@^2
       - run: npm i --no-save warframe-worldstate-data@^3
       - name: Bypass Cloudflare for GitHub Action
-        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.1
+        uses: xiaotianxt/bypass-cloudflare-for-github-action@v2.0.1
         with:
           cf_zone_id: ${{ secrets.CF_ZONE_ID }}
           cf_api_token: ${{ secrets.CF_API_TOKEN }}
