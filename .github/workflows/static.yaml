@@ -36,10 +36,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     needs: [lint]
-#    env:
-#      cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-#      cf_api_token: ${{ secrets.CF_API_TOKEN }}
-#      cf_account_id: ${{ secrets.CF_ACCOUNT_ID }}
+    env:
+      cf_zone_id: ${{ secrets.CF_ZONE_ID }}
+      cf_api_token: ${{ secrets.CF_API_TOKEN }}
+      cf_account_id: ${{ secrets.CF_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v5
       - name: Bypass Cloudflare for GitHub Action
