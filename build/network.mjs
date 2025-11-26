@@ -13,7 +13,7 @@ export const get = async (url, disableProxy = !prod, compress = false) => {
   const res = await fetch(url, {
     agent: disableProxy ? undefined : agent,
     headers: {
-      'User-Agent': 'node-fetch (warframe-items)',
+      'user-agent': 'node-fetch (warframe-items)',
     },
   });
   return compress === false ? Uint8Array.from(await res.buffer()) : res.text();
