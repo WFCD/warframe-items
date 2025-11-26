@@ -17,7 +17,12 @@ export const get = async (url, disableProxy = !prod, compress = false) => {
 };
 
 export const getJSON = async (url, disableProxy) => {
-  return JSON.parse(sanitize(await get(url, disableProxy, true)));
+  try {
+    return JSON.parse(sanitize(await get(url, disableProxy, true)));
+  } catch (err) {
+    console.error(`failed to get json from ${url}: ${err.message}`);
+    process.exit(1);
+  }
 };
 
 export const retryAttempts = async (numAttempts, workerFn) => {
