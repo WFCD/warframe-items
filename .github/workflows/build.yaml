@@ -12,21 +12,10 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    env:
-      cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-      cf_api_token: ${{ secrets.CF_API_TOKEN }}
-      cf_account_id: ${{ secrets.CF_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v5
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - name: Bypass Cloudflare for GitHub Action
-        uses: xiaotianxt/bypass-cloudflare-for-github-action@v2.0.1
-        if: ${{ env.cf_api_token != '' &&  env.cf_zone_id != '' &&  env.cf_account_id != '' }}
-        with:
-          cf_zone_id: ${{ env.cf_zone_id }}
-          cf_api_token: ${{ env.cf_api_token }}
-          cf_account_id: ${{ env.cf_account_id }}
       - uses: leafo/gh-actions-lua@v12.0.0
       - uses: actions/setup-node@v6
         with:
