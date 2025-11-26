@@ -43,7 +43,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Bypass Cloudflare for GitHub Action
-        if: ${{ env.cf_api_token != ''&&  env.cf_zone_id != '' &&  env.cf_account_id != '' }}
+        if: ${{ env.cf_api_token != '' &&  env.cf_zone_id != '' &&  env.cf_account_id != '' }}
         uses: xiaotianxt/bypass-cloudflare-for-github-action@v2.0.1
         with:
           cf_zone_id: ${{ env.cf_zone_id }}
