@@ -941,13 +941,18 @@ declare module '@wfcd/items' {
     | 'Amp'
     | 'Arch-Gun'
     | 'Arch-Melee'
-    | 'Rifle'
-    | 'Pistol'
+    | 'Bow'
+    | 'Crossbow'
+    | 'Kitgun'
+    | 'Launcher'
+    | 'Companion Weapon'
     | 'Melee'
     | 'Orb'
+    | 'Pistol'
+    | 'Rifle'
     | 'Shotgun'
-    | 'Kitgun'
-    | 'Companion Weapon'
+    | 'Sniper Rifle'
+    | 'Speargun'
     | 'Zaw';
 
   type SystemName =
