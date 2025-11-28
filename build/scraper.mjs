@@ -93,6 +93,10 @@ class Scraper {
       const data = raw ? raw[`Export${category}`] : undefined;
       bar.tick();
 
+      if (category === 'SortieRewards') {
+        data.push(...raw.ExportNightwave.challenges);
+      }
+
       if (category === 'Weapons') data.push(...raw.ExportRailjackWeapons);
 
       if (category === 'Warframes') {
