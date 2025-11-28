@@ -755,6 +755,8 @@ class Parser {
    * @param {Array<DropRate>} drops to find item drops from
    */
   addDropRate(item, drops) {
+    if(item.type === 'Nightwave Act') return;
+
     // Take drops from previous build if the droptables didn't change
     if (!hashManager.hasChanged('DropChances')) {
       // Get drop rates for components if available...
@@ -842,8 +844,8 @@ class Parser {
    * @param {PatchlogWrap} patchlogs to look up for item
    */
   addPatchlogs(item, patchlogs) {
-    // Don't add patchlogs for components
-    if (item.parent) return;
+    // Don't add patchlogs for components or nightwave challenges
+    if (item.parent || item.type == 'Nightwave Act') return;
 
     // This process takes a lot of cpu time, so we won't repeat it unless the
     // patchlog hash changed.
