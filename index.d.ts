@@ -93,7 +93,8 @@ declare module '@wfcd/items' {
     | Misc
     | MinimalItem
     | ModSet
-    | FocusWay;
+    | FocusWay
+    | NightwaveChallenge;
 
   type ModUnion = Mod | SingleLevelMod | RivenMod | StanceMod | PrimeMod | RailjackMod;
 
@@ -184,6 +185,12 @@ declare module '@wfcd/items' {
   }
 
   interface Misc extends Equippable, Buildable, WikiaItem, Droppable, Attackable, BaseItem {}
+
+  interface NightwaveChallenge extends MinimalItem {
+    required: number;
+    standing: number;
+  }
+
   interface Melee extends Weapon {
     category: 'Melee' | 'Arch-Melee';
     stancePolarity?: Polarity;
@@ -844,6 +851,7 @@ declare module '@wfcd/items' {
     | 'Mission Rewards'
     | 'Mod Locations'
     | 'Mod Set Mod'
+    | 'Nightwave Act'
     | 'Node'
     | 'Note Packs'
     | 'Orbiter'
