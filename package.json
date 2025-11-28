@@ -14,13 +14,13 @@
   ],
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "import": "./index.mjs",
-      "require": "./index.js",
-      "types": "./index.d.ts"
+      "require": "./index.js"
     },
     "./utilities": {
-      "import": "./utilities/index.mjs",
-      "types": "./utilities/index.d.ts"
+      "types": "./utilities/index.d.ts",
+      "import": "./utilities/index.mjs"
     }
   },
   "main": "index.js",
@@ -89,7 +89,7 @@
     "socks5-http-client": "^1.0.4",
     "tslib": "^2.7.0",
     "typescript-json-schema": "^0.66.0",
-    "warframe-patchlogs": "^2.88.0"
+    "warframe-patchlogs": "^2.88.2"
   },
   "peerDependencies": {
     "warframe-worldstate-data": "^3.0.0"
