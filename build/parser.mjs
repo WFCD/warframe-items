@@ -565,7 +565,7 @@ class Parser {
     // the filesystem.
     item.imageName = encode(item.name);
 
-    if (item.type === 'Nightwave Act') {
+    if (item.type === 'Nightwave Challenge') {
       const name = item.name.replace(/\sM{0,3}(CM|CD|D?C{0,3})?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?$/i, '').trim();
       const sterilized = item.uniqueName.replace(/[0-9]{1,3}$/, '');
       item.imageName = `${encode(name)}-${hash(sterilized).slice(0, 10)}.${ext}`;
@@ -755,7 +755,7 @@ class Parser {
    * @param {Array<DropRate>} drops to find item drops from
    */
   addDropRate(item, drops) {
-    if(item.type === 'Nightwave Act') return;
+    if(item.type === 'Nightwave Challenge') return;
 
     // Take drops from previous build if the droptables didn't change
     if (!hashManager.hasChanged('DropChances')) {
@@ -845,7 +845,7 @@ class Parser {
    */
   addPatchlogs(item, patchlogs) {
     // Don't add patchlogs for components or nightwave challenges
-    if (item.parent || item.type == 'Nightwave Act') return;
+    if (item.parent || item.type == 'Nightwave Challenge') return;
 
     // This process takes a lot of cpu time, so we won't repeat it unless the
     // patchlog hash changed.

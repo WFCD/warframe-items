@@ -851,7 +851,7 @@ declare module '@wfcd/items' {
     | 'Mission Rewards'
     | 'Mod Locations'
     | 'Mod Set Mod'
-    | 'Nightwave Act'
+    | 'Nightwave Challenge'
     | 'Node'
     | 'Note Packs'
     | 'Orbiter'
