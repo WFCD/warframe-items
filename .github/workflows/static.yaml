@@ -58,7 +58,7 @@ jobs:
           PROXY_SOCKS5_HOST: ${{ secrets.PROXY_SOCKS5_HOST }}
           PROXY_SOCKS5_PORT: ${{ secrets.PROXY_SOCKS5_PORT }}
           PROXY_HTTPS_STRING: ${{ secrets.PROXY_HTTPS_STRING }}
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: data
           path: ./data/json/All.json
