@@ -2,11 +2,16 @@ import POLARITIES from './polarities.mjs';
 
 const transform = (field) => {
   let output;
-  if (field) {
-    output = (POLARITIES[field] || field || '').toLowerCase();
-    if (output && !output.length) output = undefined;
-    if (output === 'none') output = undefined;
+  try {
+    if (field) {
+      output = String(POLARITIES[field] ?? field ?? '').toLowerCase();
+      if (output && !output.length) output = undefined;
+      if (output === 'none') output = undefined;
+    }
+  } catch (error) {
+    console.error('Error transforming polarity:', field, error);
   }
+
   return output;
 };
 

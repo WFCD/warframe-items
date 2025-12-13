@@ -212,6 +212,7 @@ export default (oldWeapon, imageUrls, blueprints) => {
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       mr: Mastery || 0,
       type: Class || Type,
+      class: Class,
       riven_disposition: Disposition,
       ...(ChargeAttack &&
         ChargeAttack.StatusChance && { status_chance: Number((Number(ChargeAttack.StatusChance) * 100).toFixed(2)) }),
