@@ -53,7 +53,7 @@ jobs:
           commit_user_name: wfcd-bot-boi
           commit_user_email: botboi@warframestat.us
           commit_author: wfcd-bot-boi <botboi@warframestat.us>
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: data
           path: ./data/json/All.json
