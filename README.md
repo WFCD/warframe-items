@@ -66,6 +66,8 @@ allows you to add your own items before our gathered ones.
 | Option        | Default       | Description   |
 |:------------- |:------------- |:------------- |
 | category | `['All']` | Array of item categories to retrieve. Parallel to file names in /data/json. Useful if you don't wanna load lots and lots of MB of data into memory.
+| i18n | `false` | If `false` (default), no internationalization data is loaded. If set to an array of language codes (e.g., `['zh', 'de']`), translations are loaded from `/data/json/i18n.json` and accessible via the main instance's `i18n` field.<br> **Supported language codes**: `de`, `es`, `fr`, `it`, `ja`, `ko`, `pl`, `pt`, `ru`, `th`, `tr`, `uk`, `zh`.
+| i18nOnObject | `false` | When `true` and i18n is an array, translation data is attached directly to each item's own `i18n` field instead of being stored centrally. This causes the main instance's `i18n` field to be undefined.
 
 | Categories | Description|
 |:--- | :---- |
