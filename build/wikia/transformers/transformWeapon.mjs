@@ -203,6 +203,7 @@ export default (oldWeapon, imageUrls, blueprints) => {
       Attack10,
       Attacks,
       InternalName,
+      Slot,
     } = oldWeapon;
 
     newWeapon = {
@@ -224,6 +225,7 @@ export default (oldWeapon, imageUrls, blueprints) => {
       marketCost: blueprints[Name] && blueprints[Name].MarketCost,
       bpCost: blueprints[Name] && blueprints[Name].BPCost,
       thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
+      slot: Slot,
       attacks: [
         NormalAttack && parseAttack(NormalAttack),
         Attack1 && parseAttack(Attack1),

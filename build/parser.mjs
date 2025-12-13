@@ -908,6 +908,24 @@ class Parser {
   addAdditionalWikiaData(item, category, wikiaData) {
     if (!['weapons', 'warframes', 'mods', 'upgrades', 'sentinels'].includes(category.toLowerCase())) return;
 
+    const slots = [
+      ['Secondary'], // 0
+      ['Primary', 'Hound', 'Beast', 'Archgun', 'Robotic', 'Archgun (Atmosphere)', 'Amp'], // 1
+      [], // 2
+      [], // 3
+      ['Archgun'], // 4
+      ['Melee', 'Archmelee'], // 5
+      [], // 6
+      ['Archgun (Atmosphere)', 'Exalted', 'Secondary', 'Primary', 'Melee', 'Archgun', 'Archmelee'], // 7
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      ['Railjack Turret'], // 14
+    ];
+
     let wikiCategory = category.toLowerCase();
     if (category === 'Upgrades') wikiCategory = 'mods';
     if (item.category === 'Archwing') wikiCategory = 'archwings';
@@ -917,8 +935,11 @@ class Parser {
       .filter((i) => i)
       .find((i) => {
         const uMatch = i.uniqueName === item.uniqueName;
-        const weaponMatch = i.attacks ? i.class === item.category : true;
-        return uMatch && weaponMatch;
+        let nMatch = true;
+        if (category.toLowerCase() === 'weapons' && typeof item.slot !== 'undefined') {
+          nMatch = slots[item.slot]?.includes(i.slot);
+        }
+        return uMatch && nMatch;
       });
     if (!wikiaItem) return;
     item.wikiAvailable = true;
