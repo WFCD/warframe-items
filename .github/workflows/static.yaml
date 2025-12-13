@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: leafo/gh-actions-lua@v12.0.0
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
@@ -68,7 +68,7 @@ jobs:
     needs: [build, lint]
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
@@ -90,7 +90,7 @@ jobs:
           - 22
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: data/json
           key: ${{ runner.os }}-${{ github.run_id }}${{ github.run_number }}
