@@ -203,6 +203,7 @@ export default (oldWeapon, imageUrls, blueprints) => {
       Attack10,
       Attacks,
       InternalName,
+      Slot,
     } = oldWeapon;
 
     newWeapon = {
@@ -212,6 +213,7 @@ export default (oldWeapon, imageUrls, blueprints) => {
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       mr: Mastery || 0,
       type: Class || Type,
+      class: Class,
       riven_disposition: Disposition,
       ...(ChargeAttack &&
         ChargeAttack.StatusChance && { status_chance: Number((Number(ChargeAttack.StatusChance) * 100).toFixed(2)) }),
@@ -223,6 +225,7 @@ export default (oldWeapon, imageUrls, blueprints) => {
       marketCost: blueprints[Name] && blueprints[Name].MarketCost,
       bpCost: blueprints[Name] && blueprints[Name].BPCost,
       thumbnail: imageUrls[Image] || imageUrls[Image.replace(/_/g, ' ')],
+      slot: Slot,
       attacks: [
         NormalAttack && parseAttack(NormalAttack),
         Attack1 && parseAttack(Attack1),

@@ -306,7 +306,8 @@ declare module '@wfcd/items' {
     | 'Transmutation'
     | 'Peculiar'
     | 'Plexus'
-    | 'Posture';
+    | 'Posture'
+    | 'Tektolyst Artifact';
 
   type ArcaneType =
     | 'Primary'
@@ -971,7 +972,8 @@ declare module '@wfcd/items' {
     | 'Zariman'
     | 'Void'
     | 'Duviri'
-    | 'Höllvania';
+    | 'Höllvania'
+    | 'Dark Refractory, Deimos';
 
   type Element = Capitalize<keyof DamageTypes>;
 }
