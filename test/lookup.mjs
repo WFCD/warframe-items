@@ -7,7 +7,7 @@ import diff from 'json-diff';
 const lookup = process.argv[2];
 
 const items = new Items();
-const old = await fetch(`https://api.warframestat.us/item/${lookup}`).then((res) => res.json());
+const old = await fetch(`https://api.warframestat.us/warframes/${lookup}`).then((res) => res.json());
 const updated = items.find((i) => i.name === lookup);
 
 if (process.argv.includes('--diff')) {
