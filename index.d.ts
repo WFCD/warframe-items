@@ -351,7 +351,7 @@ declare module '@wfcd/items' {
     power: number;
     sprintSpeed?: number;
     abilities?: Ability[];
-    aura?: Polarity;
+    aura?: Polarity | Polarity[];
     sex?: Sex;
     sprint?: number;
     passiveDescription?: string;

@@ -4,12 +4,15 @@ const transform = (field) => {
   let output;
   try {
     if (field) {
-      output = String(POLARITIES[field] ?? field ?? '').toLowerCase();
+      if (typeof field !== 'string' && Array.isArray(field)) {
+        return field.map((f) => transform(f));
+      }
+      output = (POLARITIES[field] || field || '').toLowerCase();
       if (output && !output.length) output = undefined;
       if (output === 'none') output = undefined;
     }
   } catch (error) {
-    console.error('Error transforming polarity:', field, error);
+    console.error(`Error transforming polarity @${field} : ${error.message}`);
   }
 
   return output;
