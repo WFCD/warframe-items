@@ -1,4 +1,4 @@
-const builtUntradable = ['Warframe', 'Throwing', 'Shotgun', 'Rifle', 'Pistol', 'Melee', 'Sword And Shield'];
+const builtUntradable = ['Warframe', 'Throwing', 'Shotgun', 'Rifle', 'Pistol', 'Melee', 'Sword And Shield', 'Bow', 'Launcher', 'Sniper'];
 const tradableConditions = (item) => !(builtUntradable.includes(item.type) && item.name.match(/Prime/gi));
 
 const tradableArcanes = [
