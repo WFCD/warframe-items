@@ -878,7 +878,6 @@ declare module '@wfcd/items' {
     | 'Simulacrum'
     | 'Skin'
     | 'Skins'
-    | 'Sniper Rifle'
     | 'Solaris Bounty Rewards'
     | 'Sortie Rewards'
     | 'Specter'
