@@ -261,8 +261,6 @@ class Build {
         };
         const image = await get(imageUrl).catch(retry).catch(retry);
 
-        this.updateCache(item, cached, hash, isComponent);
-
         await sharp(image).toFile(filePath);
         await minify([filePath], {
           destination: basePath,
@@ -273,6 +271,8 @@ class Build {
             }),
           ],
         });
+
+        this.updateCache(item, cached, hash, isComponent);
       } catch (e) {
         // swallow error
         console.error(e);
