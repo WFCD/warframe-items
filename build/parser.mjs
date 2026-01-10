@@ -27,7 +27,8 @@ const { prefixes, suffixes } = variants;
 const title = (str = '') =>
   str
     .toLowerCase()
-    .replace(/\b\w/g, (l) => l.toUpperCase())
+    .replace(/(?<!ö)\b\w/g, (l) => l.toUpperCase())
+    .replace(/’/gi, "'")
     .replace(/'S /gi, "'s ");
 
 /** @type {Warnings} */
