@@ -11,7 +11,8 @@ describe('title() should be replace correctly', () => {
     const glyph = find.findItem(glyphUName);
     assert.equal(glyph.name, 'Gaming B*tches Glyph');
 
-    const cathedraleSceneUName = '/Lotus/Types/Items/PhotoBooth/TauOldPeace/PhotoboothTileTauOldPeaceCathedral1799ProtoframeRoom';
+    const cathedraleSceneUName =
+      '/Lotus/Types/Items/PhotoBooth/TauOldPeace/PhotoboothTileTauOldPeaceCathedral1799ProtoframeRoom';
     const cathedraleScene = find.findItem(cathedraleSceneUName);
     assert.equal(cathedraleScene.name, 'La Cathédrale Scene');
   });
