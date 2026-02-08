@@ -310,7 +310,7 @@ class Build {
 
   /**
    * Update readme with newest patchlog version
-   * @param {module:warframe-patchlogs.Patchlogs} patchlogs for pulling the latest update
+   * @param {module:@wfcd/patchlogs.Patchlogs} patchlogs for pulling the latest update
    */
   async updateReadme(patchlogs) {
     const logob64 = await readJson(new URL('../data/logo.json', import.meta.url));
