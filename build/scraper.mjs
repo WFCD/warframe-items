@@ -1,7 +1,7 @@
 import lzma from 'lzma';
 import { load } from 'cheerio';
 import { Generator as RelicGenerator } from '@wfcd/relics';
-import patchlogs from 'warframe-patchlogs';
+import patchlogs from '@wfcd/patchlogs';
 
 import Progress from './progress.mjs';
 import ArcaneScraper from './wikia/scrapers/ArcaneScraper.mjs';
@@ -193,7 +193,7 @@ class Scraper {
   /**
    * Get patchlogs from the forums
    * @param {boolean} [skipProgress] whether to show progress
-   * @returns {module:warframe-patchlogs.Patchlogs}
+   * @returns {module:@wfcd/patchlogs.Patchlogs}
    */
   async fetchPatchLogs(skipProgress) {
     const bar = skipProgress ? undefined : new Progress('Fetching Patchlogs', 1);
