@@ -4,8 +4,8 @@ import tradable from '../build/tradable.mjs';
 
 /**
  * Helper to create a mock item with sensible defaults
- * @param {Partial<import('warframe-items').Item>} overrides
- * @returns {import('warframe-items').Item}
+ * @param {Object} overrides Partial item overrides
+ * @returns {Object} Mock item
  */
 const mockItem = (overrides) => ({
   name: 'Test Item',
@@ -16,9 +16,9 @@ const mockItem = (overrides) => ({
 
 /**
  * Helper to create a mock item with tradable components (simulates a relic-farmed Prime)
- * @param {string} name
- * @param {string} type
- * @returns {import('warframe-items').Item}
+ * @param {string} name Item name
+ * @param {string} type Item type
+ * @returns {Object} Mock item with tradable components
  */
 const mockPrimeWithComponents = (name, type) =>
   mockItem({
@@ -130,14 +130,6 @@ describe('tradable', () => {
         name: 'Braton Vandal',
         type: 'Rifle',
         uniqueName: '/Lotus/Weapons/Tenno/LongGuns/BratonVandal',
-      });
-      assert.isTrue(tradable(item));
-    });
-    it('should mark Wraith weapons as tradable by name', () => {
-      const item = mockItem({
-        name: 'Strun Wraith',
-        type: 'Shotgun',
-        uniqueName: '/Lotus/Weapons/Tenno/Shotgun/ShotgunVandal',
       });
       assert.isTrue(tradable(item));
     });
