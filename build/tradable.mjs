@@ -10,32 +10,21 @@ const builtUntradable = [
   'Launcher',
   'Sniper',
 ];
-// Explicit tradability overrides for built Prime items that the component check gets wrong.
-// true = tradable despite no components (e.g. Baro Ki'teer weapons)
-// false = untradable despite having components (e.g. quest-locked weapons)
-const builtPrimeOverrides = {
-  'Gotva Prime': true,
-  'Galariak Prime': false,
-  'Sagek Prime': false,
-};
-
+/* eslint-disable-next-line valid-jsdoc */
 /**
- * Check if a built Prime item (Warframe, weapon) is tradable.
- * Built Prime items can't be traded directly, but are considered tradable
- * if their components (parts) can be traded as a set.
- * @param {module:warframe-items.Item} item Item to check
- * @returns {boolean}
+ * Gate built Prime items (Warframes, weapons) from being marked tradable.
+ * Built Prime items are not directly tradable -- only their individual
+ * components/parts are (e.g. Loki Prime Blueprint). Components get their
+ * own tradable flag set independently during parsing.
+ *
+ * To determine if a Prime set is tradable, check item.components for
+ * parts with tradable: true.
+ *
+ * Item-specific tradability overrides live in config/overrides.json
+ * (keyed by uniqueName) and are applied by parser.mjs applyOverrides()
+ * after this check runs.
  */
-const tradableConditions = (item) => {
-  if (!builtUntradable.includes(item.type) || !item.name.match(/Prime/gi)) {
-    return true;
-  }
-  if (item.name in builtPrimeOverrides) {
-    return builtPrimeOverrides[item.name];
-  }
-  // Default: tradable if item has tradable components (relic-farmed parts)
-  return !!item.components?.some((c) => c.tradable);
-};
+const tradableConditions = (item) => !(builtUntradable.includes(item.type) && item.name.match(/Prime/gi));
 
 const tradableArcanes = [
   'Arcane',
