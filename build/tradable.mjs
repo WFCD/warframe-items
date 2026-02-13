@@ -10,7 +10,6 @@ const builtUntradable = [
   'Launcher',
   'Sniper',
 ];
-/* eslint-disable-next-line valid-jsdoc */
 /**
  * Gate built Prime items (Warframes, weapons) from being marked tradable.
  * Built Prime items are not directly tradable -- only their individual
@@ -23,6 +22,9 @@ const builtUntradable = [
  * Item-specific tradability overrides live in config/overrides.json
  * (keyed by uniqueName) and are applied by parser.mjs applyOverrides()
  * after this check runs.
+ *
+ * @param {module:warframe-items.Item} item Item to check
+ * @returns {boolean}
  */
 const tradableConditions = (item) => !(builtUntradable.includes(item.type) && item.name.match(/Prime/gi));
 
