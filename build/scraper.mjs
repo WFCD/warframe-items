@@ -67,7 +67,10 @@ class Scraper {
       if (manifest) {
         return manifestRegex.exec(decompressed)[0].replace(/\r?\n/, '');
       }
-      return decompressed.replace(manifestRegex, '').split(/\r?\n/g);
+      return decompressed
+        .replace(manifestRegex, '')
+        .split(/\r?\n/g)
+        .filter((d) => d !== '');
     });
   }
 
