@@ -44,7 +44,6 @@ class Build {
       drops: await scraper.fetchDropRates(),
       patchlogs: await scraper.fetchPatchLogs(),
       wikia: await scraper.fetchWikiaData(),
-      vaultData: await scraper.fetchVaultData(),
       relics: await scraper.generateRelicData(),
       i18n: resources,
     };

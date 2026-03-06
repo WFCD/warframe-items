@@ -92,7 +92,6 @@ const dropMap = (drop) => {
  * @property {Array<DropRate>} drops drop rates
  * @property {PatchlogWrap} patchlogs patch data
  * @property {WikiaData} wikia warframe wikia data
- * @property {VaultData} vaultData Ogg vault data
  * @property {Array<module:@wfcd/relics.TitaniaRelic>} relics Generated relic data
  * @property {Array<Partial<Item>>} i18n i18n data
  */
@@ -198,7 +197,7 @@ class Parser {
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, category, data.wikia);
     this.addIsPrime(result);
-    this.addVaultData(result, data.vaultData, category, data.wikia);
+    this.addVaultData(result, category, data.wikia);
     this.addResistanceData(result, category);
     this.addRelics(result, data.relics, data.drops);
     this.applyMasterable(result);
@@ -224,8 +223,7 @@ class Parser {
     this.sanitize(result);
     this.addImageName(result, data.manifest, previous);
     this.addCategory(result, category);
-
-    this.addVaultData(result, data.vaultData, category, data.wikia);
+    this.addVaultData(result, category, data.wikia);
 
     return result;
   }
@@ -1043,27 +1041,13 @@ class Parser {
   }
 
   /**
-   * Normalize Ogg vault dates to be technically ISO-8601 dates
-   * @param {OggDateStamp} vaultDate vault date to normalize
-   * @returns {undefined|string}
-   */
-  normalizeOggDate(vaultDate) {
-    if (!vaultDate) return undefined;
-    const never = ['n/a', 'none', 'never'];
-    const stripped = vaultDate.replace(/\s/gi, '-');
-    if (never.includes(stripped)) return undefined;
-    return stripped;
-  }
-
-  /**
    * Adds releaseDate, vaultDate and estimatedVaultDate to all primes using
    * data from "Ducats or Plat".
    * @param {Item} item data to append vault data to
-   * @param {VaultData} vaultData to look up data for the {@param item}
    * @param {module:warframe-items.Category} category of the data
    * @param {WikiaData} wikiaData from wikia to apply
    */
-  addVaultData(item, vaultData, category, wikiaData) {
+  addVaultData(item, category, wikiaData) {
     let vaultCategory = category;
     if (item.type === 'Archwing') vaultCategory = 'archwings';
 
@@ -1072,7 +1056,7 @@ class Parser {
 
     if (vaultCategory === 'Sentinels') vaultCategory = 'companions';
     const wikiaItem = wikiaData[vaultCategory.toLowerCase()].filter((i) => i).find((i) => i.name === item.name);
-    const target = vaultData.find((i) => i.Name.toLowerCase() === item.name.toLowerCase());
+    const target = wikiaData.vaultData.find((i) => i.name.toLowerCase() === item.name.toLowerCase());
 
     if (!target && !wikiaItem) {
       const isManuallyExcluded = primeExcludeRegex.test(item.name);
@@ -1086,18 +1070,17 @@ class Parser {
       return;
     }
 
-    if (target?.ReleaseDate) {
-      item.releaseDate = this.normalizeOggDate(target.ReleaseDate);
+    item.vaulted = target?.vaulted ?? wikiaItem.vaulted;
+    if (target?.vaultDate) {
+      item.vaultDate = target.vaultDate;
     }
-    if (target?.VaultedDate) {
-      item.vaultDate = this.normalizeOggDate(target.VaultedDate);
+    if (target?.estimatedVaultDate) {
+      item.estimatedVaultDate = target.estimatedVaultDate;
+    } else if (item.releaseDate) {
+      const date = new Date(item.releaseDate);
+      date.setMonth(date.getMonth() + 21);
+      item.estimatedVaultDate = date.toISOString().split('T').at(0);
     }
-    if (target?.EstimatedVaultedDate) {
-      item.estimatedVaultDate = this.normalizeOggDate(target.EstimatedVaultedDate);
-    }
-
-    item.vaulted = target?.Vaulted ?? wikiaItem.vaulted;
-    if (item.vaulted === 'N/A') item.vaulted = true;
   }
 
   /**
