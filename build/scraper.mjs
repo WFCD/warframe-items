@@ -10,8 +10,10 @@ import CompanionScraper from './wikia/scrapers/CompanionScraper.mjs';
 import ModScraper from './wikia/scrapers/ModScraper.mjs';
 import WeaponScraper from './wikia/scrapers/WeaponScraper.mjs';
 import WarframeScraper from './wikia/scrapers/WarframeScraper.mjs';
+import VaultScraper from './wikia/scrapers/VaultScraper.mjs';
 import VersionScraper from './wikia/scrapers/VersionScraper.mjs';
 import readJson from './readJson.mjs';
+import sleep from './sleep.mjs';
 import { get, getJSON, retryAttempts } from './network.mjs';
 
 const locales = await readJson(new URL('../config/locales.json', import.meta.url));
@@ -215,13 +217,14 @@ class Scraper {
    * @property {Array<WikiaVersions>} versions
    * @property {Array<WikiaDucats>} ducats
    * @property {Array<WikiaArcanes>} arcanes
+   * @property {Array<VaultData>} vaultData
    */
   /**
    * Get additional data from wikia if it's not provided in the API
    * @returns {WikiaData}
    */
   async fetchWikiaData() {
-    const bar = new Progress('Fetching Wikia Data', 8);
+    const bar = new Progress('Fetching Wikia Data', 9);
     const ducats = [];
     const ducatsWikia = await get('https://wiki.warframe.com/w/Ducats/Prices/All', true);
     const $ = load(ducatsWikia);
@@ -233,19 +236,29 @@ class Scraper {
     });
     bar.tick();
 
+    await sleep(100);
     const weapons = await new WeaponScraper().scrape();
     bar.tick();
+    await sleep(100);
     const warframes = await new WarframeScraper().scrape();
     bar.tick();
+    await sleep(100);
     const mods = await new ModScraper().scrape();
     bar.tick();
+    await sleep(100);
     const arcanes = await new ArcaneScraper().scrape();
     bar.tick();
+    await sleep(100);
     const versions = await new VersionScraper().scrape();
     bar.tick();
+    await sleep(100);
     const archwings = await new ArchwingScraper().scrape();
     bar.tick();
+    await sleep(100);
     const companions = await new CompanionScraper().scrape();
+    bar.tick();
+    await sleep(100);
+    const vaultData = await new VaultScraper().scrape();
     bar.tick();
 
     return {
@@ -257,49 +270,8 @@ class Scraper {
       archwings,
       companions,
       arcanes,
+      vaultData,
     };
-  }
-
-  /**
-   * Formatted date string. Format: "YYYY MM DD"
-   * @typedef {string} OggDateStamp
-   */
-  /**
-   * @typedef {Object} OggRelic
-   * @property {string<module:warframe-items.Rarity>} Rarity
-   * @property {string} Name relic name, format: "%RelicEra% %Identifier%"
-   * @property {boolean} Vaulted whether or not the relic is vaulted
-   */
-  /**
-   * @typedef {Object} OggComponent
-   * @property {string} Name component name
-   * @property {Array<OggRelic>} Relics relics that can drop this component
-   * @property {number} Ducats sell price in ducats
-   */
-  /**
-   * @typedef {Object} VaultDataItem
-   * @property {boolean} Vaulted whether the item is vaulted
-   * @property {string<OggDateStamp>} ReleaseDate Ogg-date-formatted date stamp
-   * @property {Array<OggComponent>} Components
-   * @property {string<OggDateStamp>} EstimatedVaultedDate estimated date for the vault date
-   * @property {string<OggDateStamp>} VaultedDate actual vault date
-   */
-  /**
-   * @typedef {Object} VaultData
-   * @property {{code: number}} metadata
-   * @property {Array<VaultDataItem>} data
-   */
-  /**
-   * Get (estimated) vault dates from ducats or plat.
-   * @returns {VaultData}
-   */
-  async fetchVaultData() {
-    const bar = new Progress('Fetching Vault Data', 1);
-    const vaultData = (await getJSON('http://www.oggtechnologies.com/api/ducatsorplat/v2/MainItemData.json', true))
-      .data;
-
-    bar.tick();
-    return vaultData;
   }
 
   /**
