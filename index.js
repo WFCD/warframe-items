@@ -1,6 +1,5 @@
 'use strict';
 
-/* eslint-disable no-restricted-syntax */
 /**
  * Configuration options for @wfcd/items
  * @typedef {Object} Options
@@ -42,7 +41,7 @@ const canAccess = (filePath) => {
   try {
     fs.accessSync(filePath, fs.constants.R_OK);
     return true;
-  } catch (e) {
+  } catch (_e) {
     return false;
   }
 };
@@ -65,7 +64,7 @@ const versions = readJson('./data/cache/.export.json');
 let i18n = {};
 try {
   i18n = readJson('./data/json/i18n.json');
-} catch (ignored) {
+} catch (_ignored) {
   // can only happen in really weird stuff, and we're already defaulting, so it's ok
 }
 
@@ -101,7 +100,7 @@ module.exports = class Items extends Array {
     for (const category of this.options.category) {
       // Ignores the enemy category.
       if (this.options.ignoreEnemies && category === 'Enemy') continue;
-      const items = readJson(`./data/json/${category}.json`); // eslint-disable-line import/no-dynamic-require
+      const items = readJson(`./data/json/${category}.json`);
       for (const item of items) {
         if (this.options.i18n) {
           // only insert i18n for the objects we're inserting, so we don't bloat memory

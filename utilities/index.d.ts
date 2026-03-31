@@ -5,7 +5,7 @@ declare module '@wfcd/items/utilities' {
 
   namespace find {
     function findItem(uname: string): Item | undefined;
-    function loadMods(upgrades?: Array<ModResolveable>): {
+    function loadMods(upgrades?: ModResolveable[]): {
       arcane: Arcane[];
       mods: ModUnion[];
     };
