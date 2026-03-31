@@ -86,6 +86,7 @@ declare module '@wfcd/items' {
     | Skin
     | Relic
     | EmptyRelic
+    | RequiemEternaRelic
     | Weapon
     | ExaltedWeapon
     | Resource
@@ -402,6 +403,15 @@ declare module '@wfcd/items' {
     locations: [];
     rewards: [];
     excludeFromCodex: true;
+  }
+  interface RequiemEternaRelic extends Omit<
+    Relic,
+    'marketInfo' | 'tradable' | 'vaultDate' | 'vaulted' | 'locations' | 'rewards'
+  > {
+    tradable: false;
+    locations: [];
+    rewards: [];
+    drops: Drop[];
   }
   interface ModularPetPart extends MinimalItem, Droppable, Attackable, Equippable {
     category: 'Pets';
