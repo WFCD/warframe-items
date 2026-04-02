@@ -5,7 +5,7 @@ import { createRequire } from 'module';
 import gc from 'expose-gc/function.js';
 import { expect } from 'chai';
 
-import dedupe from '../build/dedupe.mjs';
+import dedupe from '../build/dedupe';
 
 const require = createRequire(import.meta.url);
 const masterableCategories = require('../config/masterableCategories.json');

@@ -63,7 +63,7 @@ declare module '@wfcd/items' {
   }
 
   interface ItemsOptions {
-    category?: Array<Category | 'SentinelWeapons'>;
+    category?: (Category | 'SentinelWeapons')[];
     ignoreEnemies?: boolean;
     i18n?: boolean | string[];
     i18nOnObject?: boolean;
@@ -85,6 +85,7 @@ declare module '@wfcd/items' {
     | SolNode
     | Skin
     | Relic
+    | RequiemEternaRelic
     | EmptyRelic
     | Weapon
     | ExaltedWeapon
@@ -247,15 +248,13 @@ declare module '@wfcd/items' {
     attacks?: Attack[];
     maxLevelCap?: number;
   }
-  interface Arcane extends Named, Buildable {
+  interface Arcane extends Named, Buildable, Droppable {
     category: 'Arcanes';
-    drops?: Drop[];
     excludeFromCodex?: true;
     imageName: string;
     levelStats?: LevelStat[];
     masterable: false;
     patchlogs?: PatchLog[];
-    rarity?: Rarity;
     tradable: true;
     type: 'Arcane' | `${ArcaneType} Arcane`;
   }
@@ -274,7 +273,7 @@ declare module '@wfcd/items' {
     upgradeEntries?: UpgradeEntry[];
     polarity?: Polarity;
   }
-  interface SingleLevelMod extends Omit<Mod, 'levelStats'> {}
+  type SingleLevelMod = Omit<Mod, 'levelStats'>;
   interface FocusWay extends Omit<Mod, 'type'> {
     type: 'Focus Way';
   }
@@ -356,7 +355,7 @@ declare module '@wfcd/items' {
     sprint?: number;
     passiveDescription?: string;
     maxLevelCap?: number;
-    exalted?: Array<UniqueName>;
+    exalted?: UniqueName[];
   }
   interface SolNode extends MinimalItem {
     category: 'Node';
@@ -389,8 +388,8 @@ declare module '@wfcd/items' {
   interface Relic extends MinimalItem {
     category: 'Relics';
     type: 'Relic';
-    locations: Array<TitaniaRelicLocation>;
-    rewards: Array<TitaniaRelicReward>;
+    locations: TitaniaRelicLocation[];
+    rewards: TitaniaRelicReward[];
     vaulted?: boolean;
     vaultDate?: string;
     marketInfo?: TitaniaWFMInfo | null;
@@ -403,49 +402,41 @@ declare module '@wfcd/items' {
     rewards: [];
     excludeFromCodex: true;
   }
+  interface RequiemEternaRelic extends Omit<
+    Relic,
+    'marketInfo' | 'tradable' | 'vaultDate' | 'vaulted' | 'locations' | 'rewards'
+  > {
+    tradable: false;
+    locations: [];
+    rewards: [];
+    drops: Drop[];
+  }
   interface ModularPetPart extends MinimalItem, Droppable, Attackable, Equippable {
     category: 'Pets';
   }
-  interface Component extends MinimalItem, WikiaItem {
+  interface Component extends MinimalItem, WikiaItem, Buildable, Attackable, Equippable {
     itemCount: number;
     imageName: string;
     tradable: boolean;
     drops?: Drop[];
     secondsPerShot?: number;
-    damagePerShot?: number[];
     magazineSize?: number;
     reloadTime?: number;
-    totalDamage?: number;
     damagePerSecond?: number;
     trigger?: Trigger;
-    accuracy?: number;
-    criticalChance?: number;
-    criticalMultiplier?: number;
-    procChance?: number;
-    fireRate?: number;
     chargeAttack?: number;
     spinAttack?: number;
     leapAttack?: number;
     wallAttack?: number;
-    slot?: number;
-    noise?: Noise;
     sentinel?: boolean;
-    masteryReq?: number;
-    omegaAttenuation?: number;
-    ammo?: number | null;
     chargeTime?: number;
-    damage?: DamageTypes;
     damageTypes?: DamageTypes;
     flight?: number;
-    marketCost?: number;
-    bpCost?: number | '';
-    polarities?: Polarity[];
     stancePolarity?: Polarity;
     projectile?: Projectile;
     tags?: Tag[];
     type?: Type;
     vaulted?: boolean;
-    disposition?: Disposition;
     ducats?: number;
     channeling?: number;
     channelingDrain?: number;
@@ -472,7 +463,6 @@ declare module '@wfcd/items' {
     heavySlamRadius?: number;
     windUp?: number;
     introduced?: Update;
-    attacks?: Attack[];
   }
   interface Secondary {
     name?: string;

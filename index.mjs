@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax, import/no-dynamic-require */
 /**
  * Configuration options for @wfcd/items
  * @typedef {Object} Options
@@ -42,7 +41,7 @@ const canAccess = (path) => {
   try {
     accessSync(path, constants.R_OK);
     return true;
-  } catch (e) {
+  } catch (_e) {
     return false;
   }
 };
@@ -65,7 +64,7 @@ const versions = require('./data/cache/.export.json');
 let i18n = {};
 try {
   i18n = require('./data/json/i18n.json');
-} catch (ignored) {
+} catch (_ignored) {
   // can only happen in really weird stuff, and we're already defaulting, so it's ok
 }
 
