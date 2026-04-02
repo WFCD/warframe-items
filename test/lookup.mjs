@@ -1,6 +1,5 @@
 #! /usr/bin/env node
 
-/* eslint-disable no-console, import/no-extraneous-dependencies */
 import Items from '@wfcd/items';
 import diff from 'json-diff';
 

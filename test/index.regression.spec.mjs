@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 
-import dedupe from '../build/dedupe.mjs';
+import dedupe from '../build/dedupe';
 
 const grab = async (path) => {
   return fetch(`https://api.warframestat.us/${path}/?language=en`).then((d) => d.json());
