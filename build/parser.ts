@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 
 import cloneDeep from 'lodash.clonedeep';
+import sanitize from 'sanitize-filename';
 
 import readJson from './readJson';
 import tradable from './tradable';
@@ -565,12 +566,16 @@ class Parser {
       if (!['Node'].includes(item.type)) warnings.missingImage.push(item.name);
       return;
     }
+
     const encode = (str: string): string =>
-      str
-        .replace('/', '')
-        .replace(/[ /*]/g, '-')
-        .replace(/[:<>[\]?!"]/g, '')
-        .toLowerCase();
+      sanitize(
+        str
+          .replace('/', '')
+          .replace(/[ /*]/g, '-')
+          .replace(/[:<>[\]?!"]/g, '')
+          .toLowerCase()
+      );
+
     const imageStub = image.textureLocation;
     const parts = imageStub.split('.');
     const ext = (parts[parts.length - 1] ?? 'png').replace(/\?!.*/, '').replace(/!.*$/, ''); // .png, .jpg, etc
