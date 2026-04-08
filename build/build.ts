@@ -267,7 +267,7 @@ class Build {
         this.updateCache(item, cached, hash, isComponent);
       } catch (e) {
         // swallow error
-        console.error(e);
+        console.error(JSON.stringify({name: item.imageName, path: filePath, error: e}));
       }
     }
   }
