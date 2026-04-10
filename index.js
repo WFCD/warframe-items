@@ -161,14 +161,25 @@ module.exports = class Items extends Array {
    */
   filter(fn) {
     const A = [];
+    const filteredNames = this.i18n ? new Set() : null;
 
     for (const el of this) {
-      if (fn(el)) A.push(el);
+      if (fn(el)) {
+        A.push(el);
+        if (filteredNames) filteredNames.add(el.uniqueName);
+      }
     }
-    if (this.i18n) {
-      const filteredNames = new Set(A.map((el) => el.uniqueName));
-      A.i18n = Object.fromEntries(Object.entries(this.i18n).filter(([key]) => filteredNames.has(key)));
+
+    if (filteredNames) {
+      const filteredI18n = {};
+      for (const uniqueName of filteredNames) {
+        if (Object.prototype.hasOwnProperty.call(this.i18n, uniqueName)) {
+          filteredI18n[uniqueName] = this.i18n[uniqueName];
+        }
+      }
+      A.i18n = filteredI18n;
     }
+
     A.versions = this.versions;
     return A;
   }
@@ -181,7 +192,7 @@ module.exports = class Items extends Array {
   map(fn) {
     const a = [];
     for (const el of this) a.push(fn(el));
-    a.i18n = this.i18n;
+    if (this.i18n) a.i18n = this.i18n;
     a.versions = this.versions;
     return a;
   }
