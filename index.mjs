@@ -191,8 +191,7 @@ export default class Items extends Array {
   map(fn) {
     const a = [];
     for (const el of this) a.push(fn(el));
-    if (this.i18n) a.i18n = this.i18n;
-    a.versions = this.versions;
+
     return a;
   }
 }

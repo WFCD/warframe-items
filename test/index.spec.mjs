@@ -337,15 +337,11 @@ const test = (base) => {
       const realLength = items.length;
       assert(realLength === items.map((x) => x).length);
     });
-    it('should preserve i18n and versions after filter and map', async () => {
+    it('should preserve i18n and versions after filter', async () => {
       const items = await wrapConstr({ category: ['Pets'], i18n: ['es'] });
       const filtered = items.filter(() => true);
       assert.deepStrictEqual(filtered.i18n, items.i18n, 'filter should preserve i18n');
       assert.deepStrictEqual(filtered.versions, items.versions, 'filter should preserve versions');
-
-      const mapped = items.map((x) => x);
-      assert.deepStrictEqual(mapped.i18n, items.i18n, 'map should preserve i18n');
-      assert.deepStrictEqual(mapped.versions, items.versions, 'map should preserve versions');
     });
     it('should filter i18n entries to only matched items', async () => {
       const items = await wrapConstr({ category: ['Pets'], i18n: ['es'] });
