@@ -337,6 +337,25 @@ const test = (base) => {
       const realLength = items.length;
       assert(realLength === items.map((x) => x).length);
     });
+    it('should preserve i18n and versions after filter and map', async () => {
+      const items = await wrapConstr({ category: ['Pets'], i18n: ['es'] });
+      const filtered = items.filter(() => true);
+      assert.deepStrictEqual(filtered.i18n, items.i18n, 'filter should preserve i18n');
+      assert.deepStrictEqual(filtered.versions, items.versions, 'filter should preserve versions');
+
+      const mapped = items.map((x) => x);
+      assert.deepStrictEqual(mapped.i18n, items.i18n, 'map should preserve i18n');
+      assert.deepStrictEqual(mapped.versions, items.versions, 'map should preserve versions');
+    });
+    it('should filter i18n entries to only matched items', async () => {
+      const targetUniqueName = '/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadB';
+      const items = await wrapConstr({ category: ['Pets'], i18n: ['es'] });
+      const filtered = items.filter((i) => i.uniqueName === targetUniqueName);
+      assert.strictEqual(filtered.length, 1, 'should have exactly one result');
+      assert.ok(filtered.i18n, 'filtered result should have i18n');
+      assert.ok(filtered.i18n[targetUniqueName], 'i18n should contain the matched item');
+      assert.strictEqual(Object.keys(filtered.i18n).length, 1, 'i18n should only contain the matched item');
+    });
     describe('helminth', async () => {
       it('should only have drops', async () => {
         const items = await wrapConstr({ category: ['Warframes'] });

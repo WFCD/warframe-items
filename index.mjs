@@ -164,6 +164,11 @@ export default class Items extends Array {
     for (const el of this) {
       if (fn(el)) A.push(el);
     }
+    if (this.i18n) {
+      const filteredNames = new Set(A.map((el) => el.uniqueName));
+      A.i18n = Object.fromEntries(Object.entries(this.i18n).filter(([key]) => filteredNames.has(key)));
+    }
+    A.versions = this.versions;
     return A;
   }
 
@@ -175,7 +180,8 @@ export default class Items extends Array {
   map(fn) {
     const a = [];
     for (const el of this) a.push(fn(el));
-
+    a.i18n = this.i18n;
+    a.versions = this.versions;
     return a;
   }
 }
