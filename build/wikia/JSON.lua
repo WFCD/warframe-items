@@ -14,8 +14,8 @@
 --    2) the web-page links above are maintained
 --    3) the 'AUTHOR_NOTE' string below is maintained
 --
-local VERSION = '20170927.26' -- version history at end of file
-local AUTHOR_NOTE = "-[ JSON.lua package by Jeffrey Friedl (http://regex.info/blog/lua/json) version 20170927.26 ]-"
+local VERSION = '20211016.28' -- version history at end of file
+local AUTHOR_NOTE = "-[ JSON.lua package by Jeffrey Friedl (http://regex.info/blog/lua/json) version 20211016.28 ]-"
 
 --
 -- The 'AUTHOR_NOTE' variable exists so that information about the source
@@ -171,6 +171,28 @@ local OBJDEF = {
 --
 --   (This is not the default because other routines may not work well with
 --   tables that have a metatable set, for example, Lightroom API calls.)
+--
+--
+-- DECODING AND STRICT PARSING
+--
+--   If strictParsing is true in your JSON object, or if you set strictParsing as a decode option,
+--   some kinds of technically-invalid JSON that would normally be accepted are rejected with an error.
+--
+--   For example, passing in an empty string
+--
+--      JSON:decode("")
+--
+--   normally succeeds with a return value of nil, but
+--
+--      JSON:decode("", nil, { strictParsing = true })
+--
+--   results in an error being raised (onDecodeError is called).
+--
+--      JSON.strictParsing = true
+--      JSON:decode("")
+--
+--   achieves the same thing.
+--
 --
 --
 -- ENCODING (from a lua table to a JSON string)
@@ -701,6 +723,37 @@ function OBJDEF:isString(item)
 end
 
 
+
+
+--
+-- Some utf8 routines to deal with the fact that Lua handles only bytes
+--
+local function top_three_bits(val)
+   return math.floor(val / 0x20)
+end
+
+local function top_four_bits(val)
+   return math.floor(val / 0x10)
+end
+
+local function unicode_character_bytecount_based_on_first_byte(first_byte)
+   local W = string.byte(first_byte)
+   if W < 0x80 then
+      return 1
+   elseif (W == 0xC0) or (W == 0xC1) or (W >= 0x80 and W <= 0xBF) or (W >= 0xF5) then
+      -- this is an error -- W can't be the start of a utf8 character
+      return 0
+   elseif top_three_bits(W) == 0x06 then
+      return 2
+   elseif top_four_bits(W) == 0x0E then
+      return 3
+   else
+      return 4
+   end
+end
+
+
+
 local function unicode_codepoint_as_utf8(codepoint)
    --
    -- codepoint is a number
@@ -896,6 +949,17 @@ local function grok_number(self, text, start, options)
 end
 
 
+local backslash_escape_conversion = {
+   ['"'] = '"',
+   ['/'] = "/",
+   ['\\'] = "\\",
+   ['b'] = "\b",
+   ['f'] = "\f",
+   ['n'] = "\n",
+   ['r'] = "\r",
+   ['t'] = "\t",
+}
+
 local function grok_string(self, text, start, options)
 
    if text:sub(start,start) ~= '"' then
@@ -912,48 +976,108 @@ local function grok_string(self, text, start, options)
          return VALUE, i + 1
       end
       if c ~= '\\' then
-         VALUE = VALUE .. c
-         i = i + 1
-      elseif text:match('^\\b', i) then
-         VALUE = VALUE .. "\b"
-         i = i + 2
-      elseif text:match('^\\f', i) then
-         VALUE = VALUE .. "\f"
-         i = i + 2
-      elseif text:match('^\\n', i) then
-         VALUE = VALUE .. "\n"
-         i = i + 2
-      elseif text:match('^\\r', i) then
-         VALUE = VALUE .. "\r"
-         i = i + 2
-      elseif text:match('^\\t', i) then
-         VALUE = VALUE .. "\t"
-         i = i + 2
-      else
-         local hex = text:match('^\\u([0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF])', i)
-         if hex then
-            i = i + 6 -- bypass what we just read
+         
+         -- should grab the next bytes as per the number of bytes for this utf8 character
+         local byte_count = unicode_character_bytecount_based_on_first_byte(c)
 
-            -- We have a Unicode codepoint. It could be standalone, or if in the proper range and
-            -- followed by another in a specific range, it'll be a two-code surrogate pair.
-            local codepoint = tonumber(hex, 16)
-            if codepoint >= 0xD800 and codepoint <= 0xDBFF then
-               -- it's a hi surrogate... see whether we have a following low
-               local lo_surrogate = text:match('^\\u([dD][cdefCDEF][0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF])', i)
-               if lo_surrogate then
-                  i = i + 6 -- bypass the low surrogate we just read
-                  codepoint = 0x2400 + (codepoint - 0xD800) * 0x400 + tonumber(lo_surrogate, 16)
-               else
-                  -- not a proper low, so we'll just leave the first codepoint as is and spit it out.
-               end
+         local next_character
+         if byte_count == 0 then
+            self:onDecodeError("non-utf8 sequence", text, i, options.etc)
+         elseif byte_count == 1 then
+            if options.strictParsing and string.byte(c) < 0x20 then
+               self:onDecodeError("Unescaped control character", text, i+1, options.etc)
+               return nil, start -- in case the error method doesn't abort, return something sensible
             end
-            VALUE = VALUE .. unicode_codepoint_as_utf8(codepoint)
+            next_character = c
+         elseif byte_count == 2 then
+            next_character = text:match('^(.[\128-\191])', i)
+         elseif byte_count == 3 then
+            next_character = text:match('^(.[\128-\191][\128-\191])', i)
+         elseif byte_count == 4 then
+            next_character = text:match('^(.[\128-\191][\128-\191][\128-\191])', i)
+         end
 
+         if not next_character then
+            self:onDecodeError("incomplete utf8 sequence", text, i, options.etc) 
+            return nil, i -- in case the error method doesn't abort, return something sensible           
+         end
+
+
+         VALUE = VALUE .. next_character
+         i = i + byte_count
+
+      else
+         --
+         -- We have a backslash escape
+         --
+         i = i + 1
+
+         local next_byte = text:match('^(.)', i)
+
+         if next_byte == nil then
+            -- string ended after the \ 
+            self:onDecodeError("unfinished \\ escape", text, i, options.etc)
+            return nil, start -- in case the error method doesn't abort, return something sensible
+         end
+
+         if backslash_escape_conversion[next_byte] then
+            VALUE = VALUE .. backslash_escape_conversion[next_byte]
+            i = i + 1
          else
+            --
+            -- The only other valid use of \ that remains is in the form of \u####
+            --
 
-            -- just pass through what's escaped
-            VALUE = VALUE .. text:match('^\\(.)', i)
-            i = i + 2
+            local hex = text:match('^u([0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF])', i)
+            if hex then
+               i = i + 5 -- bypass what we just read
+
+               -- We have a Unicode codepoint. It could be standalone, or if in the proper range and
+               -- followed by another in a specific range, it'll be a two-code surrogate pair.
+               local codepoint = tonumber(hex, 16)
+               if codepoint >= 0xD800 and codepoint <= 0xDBFF then
+                  -- it's a hi surrogate... see whether we have a following low
+                  local lo_surrogate = text:match('^\\u([dD][cdefCDEF][0123456789aAbBcCdDeEfF][0123456789aAbBcCdDeEfF])', i)
+                  if lo_surrogate then
+                     i = i + 6 -- bypass the low surrogate we just read
+                     codepoint = 0x2400 + (codepoint - 0xD800) * 0x400 + tonumber(lo_surrogate, 16)
+                  else
+                     -- not a proper low, so we'll just leave the first codepoint as is and spit it out.
+                  end
+               end
+               VALUE = VALUE .. unicode_codepoint_as_utf8(codepoint)
+
+            elseif options.strictParsing then
+               --local next_byte = text:match('^\\(.)', i) printf("NEXT[%s]", next_byte);
+               self:onDecodeError("illegal use of backslash escape", text, i, options.etc)
+               return nil, start -- in case the error method doesn't abort, return something sensible
+            else
+               local byte_count = unicode_character_bytecount_based_on_first_byte(next_byte)
+               if byte_count == 0 then
+                  self:onDecodeError("non-utf8 sequence after backslash escape", text, i, options.etc)
+                  return nil, start -- in case the error method doesn't abort, return something sensible
+               end
+
+               local next_character
+               if byte_count == 1 then
+                  next_character = next_byte
+               elseif byte_count == 2 then
+                  next_character = text:match('^(.[\128-\191])', i)
+               elseif byte_count == 3 then
+                  next_character = text:match('^(.[\128-\191][\128-\191])', i)
+               elseif byte_count == 3 then
+                  next_character = text:match('^(.[\128-\191][\128-\191][\128-\191])', i)
+               end
+
+               if next_character == nil then
+                  -- incomplete utf8 character after escape
+                  self:onDecodeError("incomplete utf8 sequence after backslash escape", text, i, options.etc)
+                  return nil, start -- in case the error method doesn't abort, return something sensible
+               end
+
+               VALUE = VALUE .. next_character
+               i = i + byte_count
+            end
          end
       end
    end
@@ -964,7 +1088,7 @@ end
 
 local function skip_whitespace(text, start)
 
-   local _, match_end = text:find("^[ \n\r\t]+", start) -- [http://www.ietf.org/rfc/rfc4627.txt] Section 2
+   local _, match_end = text:find("^[ \n\r\t]+", start) -- [ https://datatracker.ietf.org/doc/html/rfc7158#section-2 ]
    if match_end then
       return match_end + 1
    else
@@ -1080,7 +1204,7 @@ grok_one = function(self, text, start, options)
    end
 
    if text:find('^"', start) then
-      return grok_string(self, text, start, options.etc)
+      return grok_string(self, text, start, options)
 
    elseif text:find('^[-0123456789 ]', start) then
       return grok_number(self, text, start, options)
@@ -1123,6 +1247,29 @@ function OBJDEF:decode(text, etc, options)
    end
 
 
+   --
+   -- apply global options
+   --
+   if options.decodeNumbersAsObjects == nil then
+      options.decodeNumbersAsObjects = self.decodeNumbersAsObjects
+   end
+   if options.decodeIntegerObjectificationLength == nil then
+      options.decodeIntegerObjectificationLength = self.decodeIntegerObjectificationLength
+   end
+   if options.decodeDecimalObjectificationLength == nil then
+      options.decodeDecimalObjectificationLength = self.decodeDecimalObjectificationLength
+   end
+   if options.decodeIntegerStringificationLength == nil then
+      options.decodeIntegerStringificationLength = self.decodeIntegerStringificationLength
+   end
+   if options.decodeDecimalStringificationLength == nil then
+      options.decodeDecimalStringificationLength = self.decodeDecimalStringificationLength
+   end
+   if options.strictParsing == nil then
+      options.strictParsing = self.strictParsing
+   end
+
+
    if type(self) ~= 'table' or self.__index ~= OBJDEF then
       local error_message = "JSON:decode must be called in method format"
       OBJDEF:onDecodeError(error_message, nil, nil, options.etc)
@@ -1140,9 +1287,16 @@ function OBJDEF:decode(text, etc, options)
       return nil, error_message -- in case the error method doesn't abort, return something sensible
    end
 
+   -- If passed an empty string....
    if text:match('^%s*$') then
-      -- an empty string is nothing, but not an error
-      return nil
+      if options.strictParsing then
+         local error_message = "empty string passed to JSON:decode()"
+         self:onDecodeOfNilError(error_message, nil, nil, options.etc)
+         return nil, error_message -- in case the error method doesn't abort, return something sensible
+      else
+         -- we'll consider it nothing, but not an error
+         return nil
+      end
    end
 
    if text:match('^%s*<') then
@@ -1161,25 +1315,6 @@ function OBJDEF:decode(text, etc, options)
       local error_message = "JSON package groks only UTF-8, sorry"
       self:onDecodeError(error_message, text, nil, options.etc)
       return nil, error_message -- in case the error method doesn't abort, return something sensible
-   end
-
-   --
-   -- apply global options
-   --
-   if options.decodeNumbersAsObjects == nil then
-      options.decodeNumbersAsObjects = self.decodeNumbersAsObjects
-   end
-   if options.decodeIntegerObjectificationLength == nil then
-      options.decodeIntegerObjectificationLength = self.decodeIntegerObjectificationLength
-   end
-   if options.decodeDecimalObjectificationLength == nil then
-      options.decodeDecimalObjectificationLength = self.decodeDecimalObjectificationLength
-   end
-   if options.decodeIntegerStringificationLength == nil then
-      options.decodeIntegerStringificationLength = self.decodeIntegerStringificationLength
-   end
-   if options.decodeDecimalStringificationLength == nil then
-      options.decodeDecimalStringificationLength = self.decodeDecimalStringificationLength
    end
 
 
@@ -1220,20 +1355,14 @@ function OBJDEF:decode(text, etc, options)
 end
 
 local function backslash_replacement_function(c)
-   if c == "\n" then
-      return "\\n"
-   elseif c == "\r" then
-      return "\\r"
-   elseif c == "\t" then
-      return "\\t"
-   elseif c == "\b" then
-      return "\\b"
-   elseif c == "\f" then
-      return "\\f"
-   elseif c == '"' then
-      return '\\"'
-   elseif c == '\\' then
-      return '\\\\'
+   if     c == "\n" then     return "\\n"
+   elseif c == "\r" then     return "\\r"
+   elseif c == "\t" then     return "\\t"
+   elseif c == "\b" then     return "\\b"
+   elseif c == "\f" then     return "\\f"
+   elseif c == '"' then      return '\\"'
+   elseif c == '\\' then     return '\\\\'
+   elseif c == '/' then      return '/'
    else
       return string.format("\\u%04x", c:byte())
    end
@@ -1243,6 +1372,7 @@ local chars_to_be_escaped_in_JSON_string
    = '['
    ..    '"'    -- class sub-pattern to match a double quote
    ..    '%\\'  -- class sub-pattern to match a backslash
+   ..    '/'    -- class sub-pattern to match a forwardslash
    ..    '%z'   -- class sub-pattern to match a null
    ..    '\001' .. '-' .. '\031' -- class sub-pattern to match control characters
    .. ']'
@@ -1592,6 +1722,21 @@ return OBJDEF:new()
 
 --
 -- Version history:
+--
+--   20211016.28   Had forgotten to document the strictParsing option.
+--
+--   20211015.27   Better handle some edge-case errors [ thank you http://seriot.ch/projects/parsing_json.html ; all tests are now successful ]
+--
+--                 Added some semblance of proper UTF8 parsing, and now aborts with an error on ilformatted UTF8.
+--
+--                 Added the strictParsing option:
+--                    Aborts with an error on unknown backslash-escape in strings
+--                    Aborts on naked control characters in strings
+--                    Aborts when decode is passed a whitespace-only string
+--
+--                 For completeness, when encoding a Lua string into a JSON string, escape a forward slash.
+--
+--                 String decoding should be a bit more efficient now.
 --
 --   20170927.26   Use option.null in decoding as well. Thanks to Max Sindwani for the bump, and sorry to Oliver Hitz
 --                 whose first mention of it four years ago was completely missed by me.

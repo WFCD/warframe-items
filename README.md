@@ -119,7 +119,6 @@ to get you started.
 
 ### Dependencies
 - [Node.js > 10](https://nodejs.org/en/)
-- [Lua > 5](https://www.lua.org/download.html)
 - Build Tools (`build-essentials` on linux should be enough, on windows run `npm i -g windows-build-tools`)
 - libpng-dev12 (linux only)
 

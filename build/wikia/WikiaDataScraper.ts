@@ -1,13 +1,10 @@
-import fs from 'fs/promises';
-import os from 'os';
 import path from 'path';
-import { promisify } from 'util';
 
 import { load } from 'cheerio';
-import cmd from 'node-cmd';
 import fetch from 'node-fetch';
-
-const run = promisify(cmd.run);
+import { LuaFactory } from 'wasmoon';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
 
 const blueprintUrl = 'https://wiki.warframe.com/w/Module:Blueprints/data?action=edit';
 
@@ -22,37 +19,26 @@ const getLuaData = async (url: string): Promise<string> => {
 };
 
 const convertLuaDataToJson = async (luaData: string, luaDataName: string): Promise<Record<string, unknown>> => {
-  const objReturn = `return ${luaDataName}Data`;
-  const hasObjReturn = luaData.includes(objReturn);
+  const wikiaPath = fileURLToPath(new URL('../wikia/', import.meta.url));
+  const JSONlua = path.join(wikiaPath, 'JSON.lua');
 
-  const modifiedScript = hasObjReturn
-    ? luaData.replace(objReturn, '')
-    : luaData.replace('return {', `local ${luaDataName}Data = {`);
+  // Encode lua tables to json using http://regex.info/blog/lua/json
+  const factory = new LuaFactory();
+  const lua = await factory.createEngine();
+  await factory.mountFile('JSON.lua', readFileSync(JSONlua));
+  await lua.doString('JSON = assert(loadfile "JSON.lua")()');
+  lua.global.set(luaDataName, luaData);
+  await lua.doString(`${luaDataName} = assert(load(${luaDataName}))()`);
 
-  // Add JSON conversion
-  const luaToJsonScript = `JSON = (loadfile "build/wikia/JSON.lua")()
-${modifiedScript}
-print(JSON:encode(${luaDataName}Data))
-`;
-
-  // Run updated JSON lua script
-  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'temp-'));
-  const lua = path.join(temp, 'dataraw.lua');
-  const json = path.join(temp, 'dataraw.json');
-  await fs.writeFile(path.join(temp, 'dataraw.lua'), luaToJsonScript, {
-    encoding: 'utf8',
-    flag: 'w',
-  });
+  const data = await lua.doString(`return JSON:encode(${luaDataName})`);
 
   try {
-    await run(`lua ${lua} > ${json}`);
-    const dataRaw = await fs.readFile(json, { encoding: 'utf8' });
-    return JSON.parse(dataRaw) as Record<string, unknown>;
+    return JSON.parse(data) as Record<string, unknown>;
   } catch (err) {
-    console.error(`Failed to execute modified lua script:\n${String(err)}`);
+    console.error(`Failed encode lua to json:\n${String(err)}`);
     throw err;
   } finally {
-    await fs.rm(temp, { recursive: true, force: true });
+    lua.global.close();
   }
 };
 
