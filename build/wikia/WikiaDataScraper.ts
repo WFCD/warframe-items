@@ -22,24 +22,24 @@ const getLuaData = async (url: string): Promise<string> => {
 };
 
 const convertLuaDataToJson = async (luaData: string, luaDataName: string): Promise<Record<string, unknown>> => {
-  const objReturn = `return ${luaDataName}Data`;
-  const hasObjReturn = luaData.includes(objReturn);
+  // Run updated JSON lua script
+  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'temp-'));
+  const src = path.join(temp, 'datasrc.lua');
+  const lua = path.join(temp, 'dataraw.lua');
+  const json = path.join(temp, 'dataraw.json');
 
-  const modifiedScript = hasObjReturn
-    ? luaData.replace(objReturn, '')
-    : luaData.replace('return {', `local ${luaDataName}Data = {`);
+  await fs.writeFile(src, luaData, {
+    encoding: 'utf8',
+    flag: 'w',
+  });
 
   // Add JSON conversion
   const luaToJsonScript = `JSON = (loadfile "build/wikia/JSON.lua")()
-${modifiedScript}
-print(JSON:encode(${luaDataName}Data))
+local ${luaDataName} = loadfile("${src}")()
+print(JSON:encode(${luaDataName}))
 `;
 
-  // Run updated JSON lua script
-  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'temp-'));
-  const lua = path.join(temp, 'dataraw.lua');
-  const json = path.join(temp, 'dataraw.json');
-  await fs.writeFile(path.join(temp, 'dataraw.lua'), luaToJsonScript, {
+  await fs.writeFile(lua, luaToJsonScript, {
     encoding: 'utf8',
     flag: 'w',
   });
