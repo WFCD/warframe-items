@@ -35,9 +35,10 @@ const convertLuaDataToJson = async (luaData: string, luaDataName: string): Promi
   try {
     return JSON.parse(data) as Record<string, unknown>;
   } catch (err) {
-    lua.global.close();
     console.error(`Failed encode lua to json:\n${String(err)}`);
     throw err;
+  } finally {
+    lua.global.close();
   }
 };
 
