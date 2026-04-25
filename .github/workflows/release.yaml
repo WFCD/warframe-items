@@ -22,7 +22,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 5
-      - uses: leafo/gh-actions-lua@v12.0.0
+      - uses: leafo/gh-actions-lua@v13.0.0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v6
         with:
