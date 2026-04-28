@@ -365,9 +365,8 @@ class Build {
     }
 
     const hashMap = manifest.reduce<Record<string, string>>((acc, entry) => {
-      const hash = entry.textureLocation.split('!')[1];
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      acc[entry.uniqueName] = hash!; // this will never be undefined
+      const hash = entry.textureLocation.split('!')[1] ?? createHash('md5').update(entry.textureLocation).digest('hex');
+      acc[entry.uniqueName] = hash;
       return acc;
     }, {});
 
