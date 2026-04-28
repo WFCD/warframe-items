@@ -65,9 +65,10 @@ class Build {
     const parsed = parser.parse(raw);
     parsed.warnings.failedImage = [...warnings.failedImage]; // The parser doesn't keep tracked of failed images so this will be empty
 
-    let data = this.applyCustomCategories(parsed.data);
-    data = this.dedupImageNames(data, warnings);
+    const data = this.applyCustomCategories(parsed.data);
     const i18n = parser.applyI18n(data, raw.i18n);
+
+    this.dedupImageNames(data, warnings);
     await this.saveImages(data, raw.manifest, parsed.warnings);
     await this.saveJson(data, i18n);
     await this.saveWarnings(parsed.warnings);
@@ -319,7 +320,7 @@ class Build {
     return fs.writeFile(readmeLocation, readmeNew);
   }
 
-  dedupImageNames(data: Record<string, Item[]>, warnings: Warnings): Record<string, Item[]> {
+  dedupImageNames(data: Record<string, Item[]>, warnings: Warnings): void {
     const priorityMap: Record<string, number> = {
       Warframes: -1,
       Archwing: 0,
@@ -330,6 +331,7 @@ class Build {
       'Arch-Melee': 5,
       Railjack: 7,
       Sentinels: 8,
+      SentinelWeapons: 8,
       Pets: 9,
       Mods: 10,
       Arcanes: 11,
@@ -385,27 +387,38 @@ class Build {
 
       group.sort((a, b) => (priorityMap[a.category] ?? Infinity) - (priorityMap[b.category] ?? Infinity));
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      processedItems.push(group[0]!);
+      const mainItem = group[0]!;
+      processedItems.push(mainItem);
+
+      const seen = new Set<string>([mainItem.uniqueName]);
       for (const item of group.slice(1)) {
-        const imageName = item.imageName;
-        const index = imageName.indexOf('.');
-        item.imageName = imageName.slice(0, index) + item.category + imageName.slice(index);
+        // Don't rename duplicate items so that dedup can remove them when writing json files
+        if (!seen.has(item.uniqueName)) {
+          const imageName = item.imageName;
+          const index = imageName.indexOf('.');
+          item.imageName = imageName.slice(0, index) + item.category + imageName.slice(index);
+        }
+
         processedItems.push(item);
+        seen.add(item.uniqueName);
       }
     }
 
-    const newData: Record<string, Item[]> = {};
+    for (const key of Object.keys(data)) {
+      data[key] = [];
+    }
+
     for (const item of [...processedItems, ...noImage]) {
-      // write an additional file for the desired custom categories
       if (item.productCategory && allowedCustomCategories.includes(item.productCategory)) {
-        (newData[item.productCategory] ??= []).push(item);
+        // Since we're following the same logic as applying custom categories all keys should have an empty array and if they don't we should consider it an error
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        data[item.productCategory]!.push(item);
         continue;
       }
 
-      (newData[item.category] ??= []).push(item);
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      data[item.category]!.push(item);
     }
-
-    return newData;
   }
 }
 
