@@ -68,7 +68,7 @@ class Build {
     const data = this.applyCustomCategories(parsed.data);
     const i18n = parser.applyI18n(data, raw.i18n);
 
-    this.dedupImageNames(data, warnings);
+    this.dedupImageNames(data, raw.manifest, warnings);
     await this.saveImages(data, raw.manifest, parsed.warnings);
     await this.saveJson(data, i18n);
     await this.saveWarnings(parsed.warnings);
@@ -239,9 +239,11 @@ class Build {
       imageBase?.fileTime ?? imageHash?.[1] ?? createHash('md5').update(imageBase.textureLocation).digest('hex');
     const cached = imageCache.find((c) => c.uniqueName === item.uniqueName);
 
-    // We'll use a custom blueprint image
-    if (item.name === 'Blueprint' || item.name === 'Arcane' || history.includes(hash)) return;
-    history.push(hash);
+    // We'll use a custom blueprint and arcane image.
+    // Use the unmodified texture location as some broken images share the same hash but should be different,
+    // i.e. some focus icons are just white images most likely placeholders on DE's side but want to track them seperatly in case either changes
+    if (item.name === 'Blueprint' || item.name === 'Arcane' || history.includes(imageBase.textureLocation)) return;
+    history.push(imageBase.textureLocation);
 
     if (cached?.hash !== hash) {
       try {
@@ -320,7 +322,7 @@ class Build {
     return fs.writeFile(readmeLocation, readmeNew);
   }
 
-  dedupImageNames(data: Record<string, Item[]>, warnings: Warnings): void {
+  dedupImageNames(data: Record<string, Item[]>, manifest: ImageManifest, warnings: Warnings): void {
     const priorityMap: Record<string, number> = {
       Warframes: -1,
       Archwing: 0,
@@ -347,6 +349,7 @@ class Build {
       Enemy: 21,
       Misc: 22, // K-Drives, Drones, etc.
     };
+
     const items = Object.values(data).flat();
     const noImage = items.filter((i) => !i.imageName);
     const hasImage = items.filter((i) => i.imageName);
@@ -361,6 +364,13 @@ class Build {
 
       (itemsByImageName[item.imageName] ??= []).push(item);
     }
+
+    const hashMap = manifest.reduce<Record<string, string>>((acc, entry) => {
+      const hash = entry.textureLocation.split('!')[1];
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      acc[entry.uniqueName] = hash!; // this will never be undefined
+      return acc;
+    }, {});
 
     const relicRegex = /Relic(?:Lith|Meso|Neo|Axi)[A-D]/;
     const processedItems: Item[] = [];
@@ -393,7 +403,7 @@ class Build {
       const seen = new Set<string>([mainItem.uniqueName]);
       for (const item of group.slice(1)) {
         // Don't rename duplicate items so that dedup can remove them when writing json files
-        if (!seen.has(item.uniqueName)) {
+        if (!seen.has(item.uniqueName) && hashMap[item.uniqueName] !== hashMap[mainItem.uniqueName]) {
           const imageName = item.imageName;
           const index = imageName.indexOf('.');
           item.imageName = imageName.slice(0, index) + item.category + imageName.slice(index);
