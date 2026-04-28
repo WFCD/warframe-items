@@ -22,6 +22,7 @@ const transform = (field: string | string[] | undefined): string | string[] | un
 
 interface PolaritySource {
   AuraPolarity?: string;
+  ExilusPolarity?: string;
   StancePolarity?: string;
   Polarity?: string;
   Polarities?: string[];
@@ -29,6 +30,7 @@ interface PolaritySource {
 
 interface PolarityTarget {
   auraPolarity?: string;
+  exilusPolarity?: string;
   stancePolarity?: string;
   polarity?: string;
   polarities?: string[];
@@ -44,6 +46,7 @@ interface PolarityTarget {
 export default <T extends PolarityTarget>(source: PolaritySource, target: T): T => {
   const output = { ...target };
   output.auraPolarity = transform(source.AuraPolarity) as string | undefined;
+  output.exilusPolarity = transform(source.ExilusPolarity) as string | undefined;
   output.stancePolarity = transform(source.StancePolarity) as string | undefined;
   output.polarity = transform(source.Polarity) as string | undefined;
   output.polarities = source.Polarities?.length ? (transform(source.Polarities) as string[]) : undefined;
