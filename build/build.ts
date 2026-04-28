@@ -201,7 +201,7 @@ class Build {
             }
           }
         } catch {
-          if (!warnings.failedImage.includes(item.name)) warnings.missingImage.push(item.name);
+          if (!warnings.failedImage.includes(item.name)) warnings.failedImage.push(item.name);
           item.imageName = 'missing.png';
         }
         bar.tick();
@@ -271,7 +271,6 @@ class Build {
       } catch (e) {
         // swallow error
         console.error(e);
-        item.imageName = 'missing.png';
         throw e;
       }
     }
