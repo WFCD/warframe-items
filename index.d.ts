@@ -138,6 +138,7 @@ declare module '@wfcd/items' {
   interface Equippable {
     hexColours?: Colour[];
     polarities?: Polarity[];
+    exilusPolarity?: Polarity;
     slot?: number;
   }
   interface Buildable {

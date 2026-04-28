@@ -109,6 +109,7 @@ export interface WikiaWeapon {
   attacks?: unknown[];
   ammo?: number;
   polarities?: string[];
+  exilusPolarity?: string;
   stancePolarity?: string;
   tags?: string[];
   thumbnail?: string;
@@ -124,6 +125,7 @@ export interface WikiaWarframe {
   uniqueName?: string;
   url: string;
   auraPolarity?: string;
+  exilusPolarity?: string;
   conclave?: number;
   mr?: number;
   polarities?: string[];
@@ -338,6 +340,7 @@ export interface ItemComplete extends Item {
   attacks?: unknown[];
   ammo?: number;
   tags?: string[];
+  exilusPolarity?: string;
   stancePolarity?: string;
   disposition?: number;
   omegaAttenuation?: number;

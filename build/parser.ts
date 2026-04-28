@@ -997,6 +997,7 @@ class Parser {
     item.aura = wikiaItem.auraPolarity;
     item.conclave = wikiaItem.conclave;
     item.color = wikiaItem.color;
+    item.exilusPolarity = wikiaItem.exilusPolarity;
     item.introduced = wikiaItem.introduced as never;
     item.marketCost = wikiaItem.marketCost;
     item.bpCost = wikiaItem.bpCost;
@@ -1018,6 +1019,7 @@ class Parser {
     item.masteryReq = item.masteryReq ?? wikiaItem.mr;
     item.polarities = wikiaItem.polarities;
     item.tags = wikiaItem.tags?.filter((t) => Boolean(t.trim()));
+    item.exilusPolarity = wikiaItem.exilusPolarity;
     item.stancePolarity = wikiaItem.stancePolarity;
     item.wikiaThumbnail = wikiaItem.thumbnail;
     item.wikiaUrl = wikiaItem.url;
