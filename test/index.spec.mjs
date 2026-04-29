@@ -1,7 +1,7 @@
 import assert from 'node:assert';
 import { join, resolve } from 'node:path';
 import { createRequire } from 'module';
-import { access, accessSync, constants, existsSync, statSync } from 'node:fs';
+import { existsSync, statSync } from 'node:fs';
 import sharp from 'sharp';
 
 import gc from 'expose-gc/function.js';
