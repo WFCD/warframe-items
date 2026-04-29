@@ -393,7 +393,20 @@ class Build {
         continue;
       }
 
-      group.sort((a, b) => (priorityMap[a.category] ?? Infinity) - (priorityMap[b.category] ?? Infinity));
+      group.sort((a, b) => {
+        if (
+          (a.productCategory || b.productCategory) &&
+          allowedCustomCategories.includes(a.productCategory ?? b.productCategory ?? '')
+        ) {
+          return (
+            (priorityMap[a.productCategory ?? a.category] ?? Infinity) -
+            (priorityMap[b.productCategory ?? b.category] ?? Infinity)
+          );
+        }
+          
+        return (priorityMap[a.category] ?? Infinity) - (priorityMap[b.category] ?? Infinity);
+      });
+
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       const mainItem = group[0]!;
       processedItems.push(mainItem);
