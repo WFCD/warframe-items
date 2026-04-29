@@ -837,37 +837,22 @@ class Parser {
    * @param item to check for prime status
    */
   addIsPrime(item: ItemComplete): void {
+    const allowedPrimes = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Sentinels', 'Pets', 'Archwing', 'Mods'];
+    if (!allowedPrimes.includes(item.category)) return;
+
     const unameSegments = item.uniqueName.split('/');
     const lastUnameSegment = unameSegments[unameSegments.length - 1] ?? '';
-    switch (item.category) {
-      case 'Mods':
-        {
-          const isLegendary = item.rarity === 'Legendary';
-          const isExpert =
-            lastUnameSegment.includes('Expert') || (unameSegments[unameSegments.length - 2] ?? '') === 'Expert';
-          item.isPrime = isLegendary && (isExpert || lastUnameSegment.includes('Primed'));
-        }
-        break;
-      case 'Warframes':
-        item.isPrime = item.uniqueName.endsWith('Prime');
-        break;
-      case 'Primary':
-      case 'Secondary':
-      case 'Melee':
-      case 'Arch-Gun':
-      case 'Arch-Melee':
-        item.isPrime = item.tags?.includes('Prime') ?? lastUnameSegment.includes('Prime');
-        break;
-      case 'Sentinels':
-        item.isPrime = lastUnameSegment.startsWith('Prime') || item.name.endsWith('Prime');
-        break;
-      // there is only one archwing prime so far so we cant extrapolate much
-      case 'Archwing':
-        item.isPrime = item.uniqueName.includes('Prime');
-        break;
-      default:
-        break;
+
+    item.isPrime = lastUnameSegment.includes('Prime');
+
+    if (item.category === 'Mods') {
+      const isLegendary = item.rarity === 'Legendary';
+      const isExpert =
+        lastUnameSegment.includes('Expert') || (unameSegments[unameSegments.length - 2] ?? '') === 'Expert';
+      item.isPrime = isLegendary && (isExpert || lastUnameSegment.includes('Primed'));
     }
+
+    return;
   }
 
   /**
