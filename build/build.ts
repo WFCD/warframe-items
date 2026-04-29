@@ -25,6 +25,7 @@ import type {
   CategoryData,
   ApiCategory,
 } from './types/shared';
+import { createHash } from 'node:crypto';
 
 let imageCache: CachedItem[] = [];
 
@@ -39,6 +40,7 @@ const force = process.argv.slice(2).some((arg) => ['--force', '-f'].includes(arg
 
 class Build {
   async init(): Promise<void> {
+    const warnings = await readJson<Warnings>(new URL('../data/warnings.json', import.meta.url));
     // Load image cache
     imageCache = await readJson<CachedItem[]>(new URL('../data/cache/.images.json', import.meta.url));
 
@@ -61,11 +63,15 @@ class Build {
       i18n: resources,
     };
     const parsed = parser.parse(raw);
+    parsed.warnings.failedImage = [...warnings.failedImage]; // The parser doesn't keep tracked of failed images so this will be empty
+
     const data = this.applyCustomCategories(parsed.data);
     const i18n = parser.applyI18n(data, raw.i18n);
-    const all = await this.saveJson(data, i18n);
+
+    this.dedupImageNames(data, raw.manifest, warnings);
+    await this.saveImages(data, raw.manifest, parsed.warnings);
+    await this.saveJson(data, i18n);
     await this.saveWarnings(parsed.warnings);
-    await this.saveImages(all, raw.manifest);
     await this.updateReadme(raw.patchlogs);
 
     // Log number of warnings at the end of the script
@@ -123,7 +129,7 @@ class Build {
   async saveJson(
     categories: Record<string, Item[]>,
     i18n: Record<string, Record<string, Partial<Item>>>
-  ): Promise<Item[]> {
+  ): Promise<void> {
     let all: Item[] = [];
     const sort = (a: Item, b: Item): number => {
       if (!a.name) console.log(a);
@@ -150,8 +156,6 @@ class Build {
     all.sort(sort);
     await fs.writeFile(new URL('../data/json/All.json', import.meta.url), stringify(all));
     await fs.writeFile(new URL('../data/json/i18n.json', import.meta.url), JSON.stringify(JSON.parse(stringify(i18n))));
-
-    return all;
   }
 
   /**
@@ -167,30 +171,41 @@ class Build {
    * @param items items to append images to
    * @param manifest image manifest to look up items from
    */
-  async saveImages(items: Item[], manifest: ImageManifest): Promise<void> {
+  async saveImages(categories: Record<string, Item[]>, manifest: ImageManifest, warnings: Warnings): Promise<void> {
     // No need to go through every item if the manifest didn't change. I'm
     // guessing the `fileTime` key in each element works more or less like a
     // hash, so any change to that changes the hash of the full thing.
     if (!hashManager.hasChanged('Manifest')) return;
+    const items = Object.values(categories).flat();
     const bar = new Progress('Fetching Images', items.length);
-    const duplicates: string[] = []; // Don't download component images or relics twice
+    const history: string[] = []; // Don't download component images or relics twice
 
-    for (const item of items) {
-      // Save image for parent item
-      await this.saveImage(item, false, duplicates, manifest);
-      // Save images for components if necessary
-      if (item.components) {
-        for (const component of item.components) {
-          await this.saveImage(component, true, duplicates, manifest);
+    for (const category of Object.keys(categories)) {
+      const categoryData = categories[category];
+      if (!categoryData) continue;
+
+      for (const item of categoryData) {
+        try {
+          // Save image for parent item
+          await this.saveImage(item, false, history, manifest);
+          // Save images for components if necessary
+          if (item.components) {
+            for (const component of item.components) {
+              await this.saveImage(component, true, history, manifest);
+            }
+          }
+          // Save images for abilities
+          if (item.abilities) {
+            for (const ability of item.abilities) {
+              await this.saveImage(ability as Item, false, history, manifest);
+            }
+          }
+        } catch {
+          if (!warnings.failedImage.includes(item.name)) warnings.failedImage.push(item.name);
+          item.imageName = 'missing.png';
         }
+        bar.tick();
       }
-      // Save images for abilities
-      if (item.abilities) {
-        for (const ability of item.abilities) {
-          await this.saveImage(ability as Item, false, duplicates, manifest);
-        }
-      }
-      bar.tick();
     }
 
     // write the manifests after images have all succeeded
@@ -208,16 +223,11 @@ class Build {
    * Download and save images for items or components.
    * @param item to determine and save an image for
    * @param isComponent whether the item is a component or a parent
-   * @param duplicates list of duplicated (already existing) image names
+   * @param processed list of duplicated (already existing) image names
    * @param manifest image lookup list
    */
-  async saveImage(item: Item, isComponent: boolean, duplicates: string[], manifest: ImageManifest): Promise<void> {
-    let { uniqueName } = item;
-    if (item.type === 'Nightwave Act') {
-      uniqueName = item.uniqueName.replace(/[0-9]{1,3}$/, '');
-    }
-
-    const imageBase = manifest.find((i) => i.uniqueName === uniqueName);
+  async saveImage(item: Item, isComponent: boolean, history: string[], manifest: ImageManifest): Promise<void> {
+    const imageBase = manifest.find((i) => i.uniqueName === item.uniqueName);
     if (!imageBase) return;
 
     const imageStub = imageBase.textureLocation.replace(/\\/g, '/').replace('xport/', '');
@@ -225,24 +235,17 @@ class Build {
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`;
     const basePath = fileURLToPath(new URL('../data/img/', import.meta.url));
     const filePath = path.join(basePath, item.imageName);
-    const manifestItem = manifest.find((i) => i.uniqueName === item.uniqueName);
-    const hash = manifestItem?.fileTime ?? imageHash?.[1] ?? undefined;
+    const hash =
+      imageBase?.fileTime ?? imageHash?.[1] ?? createHash('md5').update(imageBase.textureLocation).digest('hex');
     const cached = imageCache.find((c) => c.uniqueName === item.uniqueName);
 
-    // We'll use a custom blueprint image
-    if (item.name === 'Blueprint' || item.name === 'Arcane') return;
+    // We'll use a custom blueprint and arcane image.
+    // Use the unmodified texture location as some broken images share the same hash but should be different,
+    // i.e. some focus icons are just white images most likely placeholders on DE's side but want to track them seperatly in case either changes
+    if (item.name === 'Blueprint' || item.name === 'Arcane' || history.includes(imageBase.textureLocation)) return;
+    history.push(imageBase.textureLocation);
 
-    // Don't download component images or relic images twice
-    if (isComponent || item.type === 'Relic') {
-      if (duplicates.includes(item.imageName)) {
-        return;
-      }
-      duplicates.push(item.imageName);
-    }
-
-    // Check if the previous image was for a component because they might
-    // have different naming schemes like lex-prime
-    if (!cached || cached.hash !== hash || cached.isComponent !== isComponent) {
+    if (cached?.hash !== hash) {
       try {
         const retry = (err: Error & { code?: string }): Promise<Buffer | string> => {
           if (err.code === 'ENOTFOUND') {
@@ -268,6 +271,7 @@ class Build {
       } catch (e) {
         // swallow error
         console.error(e);
+        throw e;
       }
     }
   }
@@ -315,6 +319,127 @@ class Build {
       )})](${url})`
     );
     return fs.writeFile(readmeLocation, readmeNew);
+  }
+
+  dedupImageNames(data: Record<string, Item[]>, manifest: ImageManifest, warnings: Warnings): void {
+    const priorityMap: Record<string, number> = {
+      Warframes: -1,
+      Archwing: 0,
+      Primary: 1,
+      Secondary: 2,
+      Melee: 3,
+      'Arch-Gun': 4,
+      'Arch-Melee': 5,
+      Railjack: 7,
+      Sentinels: 8,
+      SentinelWeapons: 8,
+      Pets: 9,
+      Mods: 10,
+      Arcanes: 11,
+      Relics: 12,
+      Quests: 13,
+      Gear: 14,
+      Resources: 15,
+      Fish: 16,
+      Skins: 17,
+      Glyphs: 18,
+      Sigils: 19,
+      Node: 20,
+      Enemy: 21,
+      Misc: 22, // K-Drives, Drones, etc.
+    };
+
+    const items = Object.values(data).flat();
+    const noImage = items.filter((i) => !i.imageName);
+    const hasImage = items.filter((i) => i.imageName);
+
+    const itemsByImageName: Record<string, Item[]> = {};
+    for (const item of hasImage) {
+      if (warnings.failedImage.includes(item.name)) {
+        item.imageName = 'missing.png';
+        noImage.push(item);
+        continue;
+      }
+
+      (itemsByImageName[item.imageName] ??= []).push(item);
+    }
+
+    const hashMap = manifest.reduce<Record<string, string>>((acc, entry) => {
+      const hash = entry.textureLocation.split('!')[1] ?? createHash('md5').update(entry.textureLocation).digest('hex');
+      acc[entry.uniqueName] = hash;
+      return acc;
+    }, {});
+
+    const relicRegex = /Relic(?:Lith|Meso|Neo|Axi)[A-D]/;
+    const processedItems: Item[] = [];
+    for (const imageName of Object.keys(itemsByImageName)) {
+      // Items are grouped by imageName, there are non in this loop that will be undefined
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const group = itemsByImageName[imageName]!;
+      if (group.length === 1) {
+        processedItems.push(...group);
+        continue;
+      }
+
+      // Components, Generic, and Relics are shared images.
+      // OmegaMod is the base image for the base random riven mod that is shared between the types
+      if (
+        imageName.includes('Component') ||
+        imageName.includes('Generic') ||
+        relicRegex.test(imageName) ||
+        imageName.includes('OmegaMod')
+      ) {
+        processedItems.push(...group);
+        continue;
+      }
+
+      group.sort((a, b) => {
+        if (
+          (a.productCategory || b.productCategory) &&
+          allowedCustomCategories.includes(a.productCategory ?? b.productCategory ?? '')
+        ) {
+          return (
+            (priorityMap[a.productCategory ?? a.category] ?? Infinity) -
+            (priorityMap[b.productCategory ?? b.category] ?? Infinity)
+          );
+        }
+          
+        return (priorityMap[a.category] ?? Infinity) - (priorityMap[b.category] ?? Infinity);
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const mainItem = group[0]!;
+      processedItems.push(mainItem);
+
+      const seen = new Set<string>([mainItem.uniqueName]);
+      for (const item of group.slice(1)) {
+        // Don't rename duplicate items so that dedup can remove them when writing json files
+        if (!seen.has(item.uniqueName) && hashMap[item.uniqueName] !== hashMap[mainItem.uniqueName]) {
+          const imageName = item.imageName;
+          const index = imageName.indexOf('.');
+          item.imageName = imageName.slice(0, index) + item.category + imageName.slice(index);
+        }
+
+        processedItems.push(item);
+        seen.add(item.uniqueName);
+      }
+    }
+
+    for (const key of Object.keys(data)) {
+      data[key] = [];
+    }
+
+    for (const item of [...processedItems, ...noImage]) {
+      if (item.productCategory && allowedCustomCategories.includes(item.productCategory)) {
+        // Since we're following the same logic as applying custom categories all keys should have an empty array and if they don't we should consider it an error
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        data[item.productCategory]!.push(item);
+        continue;
+      }
+
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      data[item.category]!.push(item);
+    }
   }
 }
 

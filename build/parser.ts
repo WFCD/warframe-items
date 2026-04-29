@@ -1,5 +1,3 @@
-import { createHash } from 'node:crypto';
-
 import cloneDeep from 'lodash.clonedeep';
 import sanitize from 'sanitize-filename';
 
@@ -561,85 +559,31 @@ class Parser {
    * @param manifest to look up image from
    */
   addImageName(item: ItemComplete, manifest: ImageManifest): void {
+    // Enforce arcane and blueprint image name
+    if (item.name === 'Arcane') {
+      item.imageName = `arcane.png`;
+      return;
+    }
+    if (item.name === 'Blueprint') {
+      item.imageName = `blueprint.png`;
+      return;
+    }
+
     const image = manifest.find((i) => i.uniqueName === item.uniqueName);
     if (!image) {
       if (!['Node'].includes(item.type)) warnings.missingImage.push(item.name);
       return;
     }
 
-    const encode = (str: string): string =>
-      sanitize(
-        str
-          .replace('/', '')
-          .replace(/[ /*]/g, '-')
-          .replace(/[:<>[\]?!"]/g, '')
-          .toLowerCase()
-      );
-
-    const imageStub = image.textureLocation;
-    const parts = imageStub.split('.');
-    const ext = (parts[parts.length - 1] ?? 'png').replace(/\?!.*/, '').replace(/!.*$/, ''); // .png, .jpg, etc
-    const hash = (str: string): string => createHash('sha256').update(str).digest('hex');
-
-    // Enforce arcane and blueprint image name
-    if (item.name === 'Arcane') {
-      item.imageName = `arcane.${ext}`;
-      return;
-    }
-    if (item.name === 'Blueprint') {
-      item.imageName = `blueprint.${ext}`;
+    const textureLocation = image.textureLocation.split('!')[0];
+    const filename = textureLocation?.split('/').reverse()[0];
+    if (filename === undefined) {
+      warnings.missingImage.push(item.name);
       return;
     }
 
-    // Turn any separators into dashes and remove characters that would break
-    // the filesystem.
-    item.imageName = encode(item.name);
-
-    if (item.type === 'Nightwave Challenge') {
-      const name = item.name.replace(/\sM{0,3}(CM|CD|D?C{0,3})?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?$/i, '').trim();
-      const sterilized = item.uniqueName.replace(/[0-9]{1,3}$/, '');
-      item.imageName = `${encode(name)}-${hash(sterilized).slice(0, 10)}.${ext}`;
-
-      return;
-    }
-
-    // Components usually have the same generic images, so we should remove the
-    // parent name here. Note that there's a difference between prime/non-prime
-    // components, so we'll keep the prime in the name.
-    if (item.parent) {
-      item.imageName = item.imageName.replace(`${encode(item.parent)}-`, '');
-      if (item.name.includes('Prime')) {
-        item.imageName = `prime-${item.imageName}`;
-        // check if the image name ends with prime as some older prime secondaries use the full parent name
-        if (item.imageName.endsWith('prime')) item.imageName = item.imageName.replace(/-prime$/, '');
-      }
-    }
-
-    // Relics should use the same image based on type, as they all use the same.
-    // The resulting format looks like `axi-intact`, `axi-radiant`
-    if (item.type === 'Relic') {
-      item.imageName = item.imageName.replace(/-(.*?)-/, '-'); // Remove second word (type)
-    }
-
-    // Remove the mark number and house name from Railjack weapons
-    if (item.productCategory === 'CrewShipWeapons') {
-      item.imageName = item.imageName.replace(/(lavan|vidar|zetki)-|(-mk-i+)/g, '');
-
-      // Add original file extension
-      item.imageName += `.${ext}`;
-      return;
-    }
-
-    // Some items have the same name - so add a partial hash as an identifier
-    // but avoid making component images different
-    //
-    // Regex avoids Warframe componenets and Necramech weapons and suit
-    if (item.type !== 'Relic' && !/Recipes|(Resources\/Mechs)/.test(item.uniqueName)) {
-      item.imageName += `-${hash(item.uniqueName).slice(0, 10)}`;
-    }
-
-    // Add original file extension
-    item.imageName += `.${ext}`;
+    // For the most part DE's texture locations are path safe but make sure it is on NTFS
+    item.imageName = sanitize(filename);
   }
 
   /**

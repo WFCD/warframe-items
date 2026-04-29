@@ -1,11 +1,14 @@
 import assert from 'node:assert';
-import { resolve } from 'node:path';
+import { join, resolve } from 'node:path';
 import { createRequire } from 'module';
+import { existsSync, statSync } from 'node:fs';
+import sharp from 'sharp';
 
 import gc from 'expose-gc/function.js';
 import { expect } from 'chai';
 
 import dedupe from '../build/dedupe';
+import { beforeEach } from 'mocha';
 
 const require = createRequire(import.meta.url);
 const masterableCategories = require('../config/masterableCategories.json');
@@ -400,6 +403,56 @@ const test = (base) => {
             );
           });
         });
+      });
+    });
+    describe('images', async () => {
+      let imageNames;
+      beforeEach(async () => {
+        const items = await wrapConstr({ category: ['All'] });
+        imageNames = items
+          .filter((item) => item && item.category !== 'Enemy')
+          .flatMap((item) => {
+            const result = [item];
+            if (Array.isArray(item?.components)) {
+              result.push(...item.components);
+            }
+            return result;
+          })
+          .filter((item) => typeof item.imageName === 'string');
+      });
+      it('should have the image stored on disk', async () => {
+        for (const { imageName, uniqueName } of imageNames) {
+          if (imageName === 'missing.png') continue;
+
+          const imagePath = join('./data/img/', imageName);
+          const nameInfo = `in { uniqueName: ${uniqueName}, imageName: ${imageName} }`;
+          const exists = existsSync(imagePath)
+          assert(exists, `${imageName} should exist ${nameInfo}`);
+          if (exists) {
+            const { size } = statSync(imagePath);
+            assert(size > 0, `size should be greater than zero ${nameInfo}`);
+          }
+        }
+      });
+      it('size should be greater than 0', async () => {
+        for (const { imageName, uniqueName } of imageNames) {
+          if (imageName === 'missing.png') continue;
+
+          const imagePath = join('./data/img/', imageName);
+          const nameInfo = `in { uniqueName: ${uniqueName}, imageName: ${imageName} }`;
+          const { size } = statSync(imagePath);
+          assert(size > 0, `size should be greater than zero ${nameInfo}`);
+        }
+      });
+      it('should be a valid image', async () => {
+        for (const { imageName } of imageNames) {
+          if (imageName === 'missing.png') continue;
+
+          const imagePath = join('./data/img/', imageName);
+          await sharp(imagePath)
+            .metadata()
+            .catch((e) => assert.fail(e));
+        }
       });
     });
   });
