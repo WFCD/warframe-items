@@ -837,7 +837,19 @@ class Parser {
    * @param item to check for prime status
    */
   addIsPrime(item: ItemComplete): void {
-    const allowedPrimes = ['Warframes', 'Primary', 'Secondary', 'Melee', 'Sentinels', 'Pets', 'Archwing', 'Mods'];
+    const allowedPrimes = [
+      'Warframes',
+      'Primary',
+      'Secondary',
+      'Melee',
+      'Sentinels',
+      'Pets',
+      'Archwing',
+      'Arch-Gun',
+      'Arch-Melee',
+      'Mods',
+    ];
+
     if (!allowedPrimes.includes(item.category)) return;
 
     const unameSegments = item.uniqueName.split('/');
