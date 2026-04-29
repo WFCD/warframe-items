@@ -81,6 +81,19 @@ const primeExcludeRegex = /(^Noggle .*|Extractor .*|^[A-Z] Prime$|^Excalibur .*|
 const prefixed = (name: string): RegExp =>
   new RegExp(`(((?:${prefixes.join('|')})\\s?${name}.*)|(?:${name}\\s?(?:${suffixes.join('|')})\\s?.*))+`, 'i');
 
+const allowedPrimes = [
+  'Warframes',
+  'Primary',
+  'Secondary',
+  'Melee',
+  'Sentinels',
+  'Pets',
+  'Archwing',
+  'Arch-Gun',
+  'Arch-Melee',
+  'Mods',
+];
+
 /**
  * Drop comparator
  * Compares drop locations for items lexicographically by chance + location + rotation + rarity
@@ -837,19 +850,6 @@ class Parser {
    * @param item to check for prime status
    */
   addIsPrime(item: ItemComplete): void {
-    const allowedPrimes = [
-      'Warframes',
-      'Primary',
-      'Secondary',
-      'Melee',
-      'Sentinels',
-      'Pets',
-      'Archwing',
-      'Arch-Gun',
-      'Arch-Melee',
-      'Mods',
-    ];
-
     if (!allowedPrimes.includes(item.category)) return;
 
     const unameSegments = item.uniqueName.split('/');
