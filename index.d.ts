@@ -405,11 +405,10 @@ declare module '@wfcd/items' {
   }
   interface RequiemEternaRelic extends Omit<
     Relic,
-    'marketInfo' | 'tradable' | 'vaultDate' | 'vaulted' | 'locations' | 'rewards'
+    'tradable' | 'vaultDate' | 'locations'
   > {
     tradable: false;
     locations: [];
-    rewards: [];
     drops: Drop[];
   }
   interface ModularPetPart extends MinimalItem, Droppable, Attackable, Equippable {
