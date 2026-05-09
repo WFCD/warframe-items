@@ -44,6 +44,6 @@ class EmptyProgress {
  * Use dummy object in prod because pm2 won't render
  * the progress bar properly.
  */
-const ProgressClass: ProgressInterface = (prod ? EmptyProgress : ProgressImpl) as ProgressInterface;
+const ProgressClass: ProgressInterface = (prod ? EmptyProgress : ProgressImpl);
 
 export default ProgressClass;

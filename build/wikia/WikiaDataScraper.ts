@@ -150,7 +150,7 @@ export default class WikiaDataScraper<T extends { name: string }> {
       this.url = url;
     }
     this.luaObjectName = luaObjectName;
-    this.transformFunction = transformFunction ?? (defaultTransform as TransformFunction<T>);
+    this.transformFunction = transformFunction ?? (defaultTransform);
   }
 
   async scrape(): Promise<T[]> {

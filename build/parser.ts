@@ -381,7 +381,7 @@ class Parser {
     }
 
     // Sort to avoid "fake" updates due to order when data is rebuilt
-    result.components = components.sort((a, b) => a.name.localeCompare(b.name)) as Item[];
+    result.components = components.sort((a, b) => a.name.localeCompare(b.name));
   }
 
   /**
@@ -400,7 +400,7 @@ class Parser {
     // Capitalize properties which are usually all uppercase
     const props: (keyof ItemComplete)[] = ['type', 'trigger', 'noise', 'rarity', 'faction'];
     for (const prop of props) {
-      if (item[prop]) item[prop] = title(String(item[prop])) as never;
+      if (item[prop]) item[prop] = title(String(item[prop]));
     }
 
     // Capitalize name for everything but requiem relics
@@ -443,7 +443,7 @@ class Parser {
           description: ability.description,
           imageName: ability.imageName || '',
         };
-      }) as never;
+      });
     }
 
     // Make descriptions a string, not array
@@ -913,16 +913,16 @@ class Parser {
     switch (category.toLowerCase()) {
       case 'sentinels':
       case 'warframes':
-        this.addWarframeWikiaData(item, wikiaItem as WikiaWarframe);
+        this.addWarframeWikiaData(item, wikiaItem);
         break;
       case 'weapons':
         this.addWeaponWikiaData(item, wikiaItem);
         break;
       case 'upgrades':
-        this.addModWikiaData(item, wikiaItem as WikiaMod);
+        this.addModWikiaData(item, wikiaItem);
         break;
       case 'arcanes':
-        this.addArcaneWikiaData(item, wikiaItem as WikiaArcane);
+        this.addArcaneWikiaData(item, wikiaItem);
         break;
       default:
         break;
@@ -1064,7 +1064,7 @@ class Parser {
    * @param drops drop rate data for refinement-specific chances
    */
   addRelics(item: ItemComplete, relics: TitaniaRelic[], drops: RawDrop[]): void {
-    const hasRelicDrop = (item.components as Component[] | undefined)?.some((c) =>
+    const hasRelicDrop = (item.components)?.some((c): boolean =>
       c.drops?.some((d) => d.location.includes('Relic'))
     );
     if (item.type !== 'Relic' && !hasRelicDrop) return;
