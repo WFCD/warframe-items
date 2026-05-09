@@ -31,6 +31,7 @@ export interface Item {
   abilities?: Ability[];
   isAugment?: boolean;
   tradable?: boolean;
+  drops?: Drop[];
   [key: string]: unknown;
 }
 
