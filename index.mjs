@@ -104,7 +104,8 @@ export default class Items extends Array {
         if (this.options.i18n) {
           // only insert i18n for the objects we're inserting so we don't bloat memory
           if (Array.isArray(this.options.i18n)) {
-            const raw = i18n[item.uniqueName];
+            const itemI18n = i18n[item.uniqueName];
+            const raw = itemI18n ? { ...itemI18n } : undefined;
             // only process if passed language is a supported i18n value
             if (raw) {
               Object.keys(raw).forEach((locale) => {
