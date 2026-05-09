@@ -160,15 +160,31 @@ export default class Items extends Array {
    */
   filter(fn) {
     const A = [];
+    const filteredNames = this.i18n ? new Set() : null;
 
     for (const el of this) {
-      if (fn(el)) A.push(el);
+      if (fn(el)) {
+        A.push(el);
+        if (filteredNames) filteredNames.add(el.uniqueName);
+      }
     }
+
+    if (filteredNames) {
+      const filteredI18n = {};
+      for (const uniqueName of filteredNames) {
+        if (Object.prototype.hasOwnProperty.call(this.i18n, uniqueName)) {
+          filteredI18n[uniqueName] = this.i18n[uniqueName];
+        }
+      }
+      A.i18n = filteredI18n;
+    }
+
+    A.versions = this.versions;
     return A;
   }
 
   /**
-   * @Override Array.prototype.filter
+   * @Override Array.prototype.map
    *
    * See filter override
    */
