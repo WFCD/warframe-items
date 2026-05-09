@@ -127,6 +127,18 @@ const test = (base) => {
         assert(!!items[0].i18n.es);
         assert(!items.i18n);
       });
+      it('should have i18n on object for different locales in same runtime', async () => {
+        const getItem = async (locale) => {
+          const items = await wrapConstr({ category: ['Pets'], i18n: [locale], i18nOnObject: true });
+          const firstItem = items[0];
+          return firstItem?.i18n;
+        };
+
+        const esI18n = await getItem('es');
+        assert.ok(esI18n.es, 'should have i18n on object for es');
+        const jaI18n = await getItem('ja');
+        assert.ok(jaI18n.ja, 'should have i18n on object for ja');
+      });
     });
     describe('drops', () => {
       beforeEach(gc);
