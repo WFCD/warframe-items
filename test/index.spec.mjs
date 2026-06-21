@@ -35,7 +35,7 @@ const wrapConstr = async (opts) => {
   return items;
 };
 
-const namedExclusions = ['Excalibur Prime', 'Helminth'];
+const namedExclusions = ['Excalibur Prime', 'Helminth', 'Orion & Sirius'];
 
 const setupItems = async () => {
   Items = await importFresh(itemPath);

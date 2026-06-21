@@ -13,7 +13,7 @@ const data = {
   mods: undefined,
 };
 
-const namedExclusions = ['Excalibur Prime', 'Helminth'];
+const namedExclusions = ['Excalibur Prime', 'Helminth', 'Orion & Sirius'];
 
 data.items = await grab('items');
 data.weapons = await grab('weapons');
