@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import minify from 'imagemin';
+import minify, { type Plugin } from 'imagemin';
 import minifyPng from 'imagemin-pngquant';
 import minifyJpeg from 'imagemin-jpegtran';
 import fetch from 'node-fetch';
@@ -264,7 +264,7 @@ class Build {
             minifyPng({
               quality: [0.2, 0.4],
             }),
-          ],
+          ] as Plugin[],
         });
 
         this.updateCache(item, cached, hash, isComponent);
@@ -374,7 +374,7 @@ class Build {
     const processedItems: Item[] = [];
     for (const imageName of Object.keys(itemsByImageName)) {
       // Items are grouped by imageName, there are non in this loop that will be undefined
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+       
       const group = itemsByImageName[imageName]!;
       if (group.length === 1) {
         processedItems.push(...group);
@@ -407,7 +407,7 @@ class Build {
         return (priorityMap[a.category] ?? Infinity) - (priorityMap[b.category] ?? Infinity);
       });
 
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+       
       const mainItem = group[0]!;
       processedItems.push(mainItem);
 
@@ -432,12 +432,12 @@ class Build {
     for (const item of [...processedItems, ...noImage]) {
       if (item.productCategory && allowedCustomCategories.includes(item.productCategory)) {
         // Since we're following the same logic as applying custom categories all keys should have an empty array and if they don't we should consider it an error
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+         
         data[item.productCategory]!.push(item);
         continue;
       }
 
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+       
       data[item.category]!.push(item);
     }
   }

@@ -79,6 +79,8 @@ const warnings: Warnings = {
   missingType: [],
   failedImage: [],
   missingWikiThumb: [],
+  missingReleaseDates: [],
+  ambiguousWikiMatch: [],
 };
 
 const filterBps = (blueprint: Partial<ItemComplete>): boolean => !bpConflicts.includes(blueprint.uniqueName ?? '');
@@ -230,6 +232,13 @@ class Parser {
     this.addRelics(result, data.relics, data.drops);
     this.applyMasterable(result);
     this.applyOverrides(result);
+    if (!result.releaseDate) {
+      if (result.masterable) {
+        warnings.missingReleaseDates.push(result.name);
+      } else if (result.category === 'Arcanes' && result.wikiAvailable) {
+        warnings.missingReleaseDates.push(result.name);
+      }
+    }
     return result;
   }
 
@@ -517,7 +526,7 @@ class Parser {
     }
 
     if (item.productCategory && productCategoryTypeMap[item.productCategory]) {
-      item.type = productCategoryTypeMap[item.productCategory];
+      item.type = productCategoryTypeMap[item.productCategory]!;
     }
   }
 
@@ -887,7 +896,10 @@ class Parser {
    * @param wikiaData from wikia to apply
    */
   addAdditionalWikiaData(item: ItemComplete, category: string, wikiaData: WikiaData): void {
-    if (!['weapons', 'warframes', 'mods', 'upgrades', 'sentinels'].includes(category.toLowerCase())) return;
+    if (
+      !['weapons', 'warframes', 'mods', 'upgrades', 'sentinels', 'relicarcane'].includes(category.toLowerCase())
+    )
+      return;
 
     const slots: string[][] = [
       ['Secondary'], // 0
@@ -909,33 +921,27 @@ class Parser {
 
     let wikiCategory = category.toLowerCase();
     if (category === 'Upgrades') wikiCategory = 'mods';
+    if (category === 'RelicArcane') wikiCategory = 'arcanes';
     if (item.category === 'Archwing') wikiCategory = 'archwings';
     if (category === 'Sentinels') wikiCategory = 'companions';
 
-    const wikiaItem = (wikiaData[wikiCategory as keyof WikiaData] as WikiaWeapon[]).find((i) => {
-      const uMatch = i.uniqueName === item.uniqueName;
-      let nMatch = true;
-      if (category.toLowerCase() === 'weapons' && typeof item.slot !== 'undefined') {
-        nMatch = slots[item.slot]?.includes(i.slot?.toString() ?? '') ?? false;
-      }
-      return uMatch && nMatch;
-    });
+    const wikiaItem = this.findWikiaItem(item, category, wikiCategory, wikiaData, slots);
     if (!wikiaItem) return;
     item.wikiAvailable = true;
 
     switch (category.toLowerCase()) {
       case 'sentinels':
       case 'warframes':
-        this.addWarframeWikiaData(item, wikiaItem);
+        this.addWarframeWikiaData(item, wikiaItem as WikiaWarframe);
         break;
       case 'weapons':
-        this.addWeaponWikiaData(item, wikiaItem);
+        this.addWeaponWikiaData(item, wikiaItem as WikiaWeapon);
         break;
       case 'upgrades':
-        this.addModWikiaData(item, wikiaItem);
+        this.addModWikiaData(item, wikiaItem as WikiaMod);
         break;
-      case 'arcanes':
-        this.addArcaneWikiaData(item, wikiaItem);
+      case 'relicarcane':
+        this.addArcaneWikiaData(item, wikiaItem as WikiaArcane);
         break;
       default:
         break;
@@ -945,6 +951,42 @@ class Parser {
       (v) => v.aliases.includes(wikiaItem.introduced ?? '') || v.name === wikiaItem.introduced
     );
     if (item.introduced) item.releaseDate = item.introduced.date;
+  }
+
+  /**
+   * Find a wiki entry by uniqueName, falling back to an exact name match.
+   * @param item item to match against wiki data
+   * @param category API category being parsed
+   * @param wikiCategory wiki data bucket key
+   * @param wikiaData scraped wiki data
+   * @param slots weapon slot compatibility map
+   * @returns matched wiki entry, if unambiguous
+   */
+  findWikiaItem(
+    item: ItemComplete,
+    category: string,
+    wikiCategory: string,
+    wikiaData: WikiaData,
+    slots: string[][]
+  ): { uniqueName?: string; name: string; slot?: unknown; introduced?: string } | undefined {
+    const wikiItems = (wikiaData[wikiCategory as keyof WikiaData] as
+      | { uniqueName?: string; name: string; slot?: unknown; introduced?: string }[]
+      | undefined) ?? [];
+
+    const uniqueMatch = wikiItems.find((i) => {
+      const uMatch = i.uniqueName === item.uniqueName;
+      let nMatch = true;
+      if (category.toLowerCase() === 'weapons' && typeof item.slot !== 'undefined') {
+        nMatch = slots[item.slot]?.includes(String(i.slot ?? '')) ?? false;
+      }
+      return uMatch && nMatch;
+    });
+    if (uniqueMatch) return uniqueMatch;
+
+    const nameMatches = wikiItems.filter((i) => i.name === item.name);
+    if (nameMatches.length === 1) return nameMatches[0];
+    if (nameMatches.length > 1) warnings.ambiguousWikiMatch.push(item.name);
+    return undefined;
   }
 
   addWarframeWikiaData(item: ItemComplete, wikiaItem: WikiaWarframe): void {
@@ -1018,7 +1060,7 @@ class Parser {
     item.wikiaThumbnail = wikiaItem.thumbnail;
     item.wikiaUrl = wikiaItem.url;
     item.transmutable = wikiaItem.transmutable;
-    item.type = wikiaItem.type ?? item.type;
+    item.rarity = wikiaItem.rarity ?? item.rarity;
     if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name);
   }
 
@@ -1077,8 +1119,8 @@ class Parser {
    * @param drops drop rate data for refinement-specific chances
    */
   addRelics(item: ItemComplete, relics: TitaniaRelic[], drops: RawDrop[]): void {
-    const hasRelicDrop = (item.components)?.some((c): boolean =>
-      c.drops?.some((d) => d.location.includes('Relic'))
+    const hasRelicDrop = item.components?.some((c) =>
+      c.drops?.some((d) => d.location.includes('Relic')) ?? false
     );
     if (item.type !== 'Relic' && !hasRelicDrop) return;
 
