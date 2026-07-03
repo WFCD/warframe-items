@@ -49,6 +49,11 @@ const masterableCategories = await readJson<MasterableCategories>(
   new URL('../config/masterableCategories.json', import.meta.url)
 );
 
+const productCategoryTypeMap: Record<string, string> = {
+  SpaceGuns: 'Arch-Gun',
+  SpaceMelee: 'Arch-Melee',
+};
+
 const { prefixes, suffixes } = variants;
 
 /**
@@ -502,13 +507,17 @@ class Parser {
         item.type = item.faction;
         item.faction = undefined;
       } else if (item.productCategory) {
-        item.type = item.productCategory;
+        item.type = productCategoryTypeMap[item.productCategory] ?? item.productCategory;
       } else if (item.systemName) {
         item.type = 'Node';
       } else {
         if (!warnings.missingType.includes(title(item.name))) warnings.missingType.push(title(item.name));
         item.type = 'Misc';
       }
+    }
+
+    if (item.productCategory && productCategoryTypeMap[item.productCategory]) {
+      item.type = productCategoryTypeMap[item.productCategory];
     }
   }
 
@@ -660,6 +669,10 @@ class Parser {
           if (typeof item.slot === 'undefined') item.category = 'Archwing';
           else if (item.slot === 1) item.category = 'Arch-Gun';
           else if (item.slot === 5) item.category = 'Arch-Melee';
+        } else if (item.productCategory === 'SpaceGuns') {
+          item.category = 'Arch-Gun';
+        } else if (item.productCategory === 'SpaceMelee') {
+          item.category = 'Arch-Melee';
         } else if (item.type.includes('Pet') || item.type.includes('Moa')) item.category = 'Pets';
         else if (item.type.includes('K-Drive')) item.category = 'Misc';
         else if (item.type.includes('Zaw')) {
