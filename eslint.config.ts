@@ -34,6 +34,7 @@ export default defineConfig(
       ],
       '@typescript-eslint/no-base-to-string': 'off',
       '@typescript-eslint/no-unnecessary-condition': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
     },
   },
   // Disable type checking for all JS files

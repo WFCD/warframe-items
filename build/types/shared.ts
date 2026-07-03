@@ -82,6 +82,8 @@ export interface Warnings {
   missingType: string[];
   failedImage: string[];
   missingWikiThumb: string[];
+  missingReleaseDates: string[];
+  ambiguousWikiMatch: string[];
 }
 
 export type Locales = Record<string, Record<string, unknown>>;
@@ -158,6 +160,7 @@ export interface WikiaArcane {
   transmutable?: boolean;
   introduced?: string;
   type?: string;
+  rarity?: string;
   thumbnail?: string;
   [key: string]: unknown;
 }
