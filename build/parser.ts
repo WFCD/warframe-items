@@ -225,7 +225,7 @@ class Parser {
     this.addDucats(result, data.wikia.ducats);
     this.addDropRate(result, data.drops);
     this.addPatchlogs(result, data.patchlogs);
-    this.addAdditionalWikiaData(result, category, data.wikia);
+    this.addAdditionalWikiaData(result, data.wikia);
     this.addIsPrime(result);
     this.addVaultData(result, category, data.wikia);
     this.addResistanceData(result, category);
@@ -890,16 +890,43 @@ class Parser {
   }
 
   /**
+   * Map finalized output categories to wiki data buckets and merge handlers.
+   * @param itemCategory category assigned by addCategory
+   * @returns wiki bucket and handler key, if wiki merge applies
+   */
+  resolveWikiaConfig(itemCategory?: string): { wikiCategory: string; handler: 'warframe' | 'weapon' | 'mod' | 'arcane' } | undefined {
+    switch (itemCategory) {
+      case 'Arcanes':
+        return { wikiCategory: 'arcanes', handler: 'arcane' };
+      case 'Warframes':
+        return { wikiCategory: 'warframes', handler: 'warframe' };
+      case 'Archwing':
+        return { wikiCategory: 'archwings', handler: 'warframe' };
+      case 'Primary':
+      case 'Secondary':
+      case 'Melee':
+      case 'Arch-Gun':
+      case 'Arch-Melee':
+        return { wikiCategory: 'weapons', handler: 'weapon' };
+      case 'Mods':
+        return { wikiCategory: 'mods', handler: 'mod' };
+      case 'Sentinels':
+        return { wikiCategory: 'companions', handler: 'warframe' };
+      default:
+        return undefined;
+    }
+  }
+
+  /**
    * Adds data scraped from the wiki to a particular item
    * @param item to have wikia data added to
-   * @param category of the data
    * @param wikiaData from wikia to apply
    */
-  addAdditionalWikiaData(item: ItemComplete, category: string, wikiaData: WikiaData): void {
-    if (
-      !['weapons', 'warframes', 'mods', 'upgrades', 'sentinels', 'relicarcane'].includes(category.toLowerCase())
-    )
-      return;
+  addAdditionalWikiaData(item: ItemComplete, wikiaData: WikiaData): void {
+    const config = this.resolveWikiaConfig(item.category);
+    if (!config) return;
+
+    const { wikiCategory, handler } = config;
 
     const slots: string[][] = [
       ['Secondary'], // 0
@@ -919,28 +946,21 @@ class Parser {
       ['Railjack Turret'], // 14
     ];
 
-    let wikiCategory = category.toLowerCase();
-    if (category === 'Upgrades') wikiCategory = 'mods';
-    if (category === 'RelicArcane') wikiCategory = 'arcanes';
-    if (item.category === 'Archwing') wikiCategory = 'archwings';
-    if (category === 'Sentinels') wikiCategory = 'companions';
-
-    const wikiaItem = this.findWikiaItem(item, category, wikiCategory, wikiaData, slots);
+    const wikiaItem = this.findWikiaItem(item, wikiCategory, wikiaData, slots);
     if (!wikiaItem) return;
     item.wikiAvailable = true;
 
-    switch (category.toLowerCase()) {
-      case 'sentinels':
-      case 'warframes':
+    switch (handler) {
+      case 'warframe':
         this.addWarframeWikiaData(item, wikiaItem as WikiaWarframe);
         break;
-      case 'weapons':
+      case 'weapon':
         this.addWeaponWikiaData(item, wikiaItem as WikiaWeapon);
         break;
-      case 'upgrades':
+      case 'mod':
         this.addModWikiaData(item, wikiaItem as WikiaMod);
         break;
-      case 'relicarcane':
+      case 'arcane':
         this.addArcaneWikiaData(item, wikiaItem as WikiaArcane);
         break;
       default:
@@ -956,7 +976,6 @@ class Parser {
   /**
    * Find a wiki entry by uniqueName, falling back to an exact name match.
    * @param item item to match against wiki data
-   * @param category API category being parsed
    * @param wikiCategory wiki data bucket key
    * @param wikiaData scraped wiki data
    * @param slots weapon slot compatibility map
@@ -964,7 +983,6 @@ class Parser {
    */
   findWikiaItem(
     item: ItemComplete,
-    category: string,
     wikiCategory: string,
     wikiaData: WikiaData,
     slots: string[][]
@@ -976,7 +994,7 @@ class Parser {
     const uniqueMatch = wikiItems.find((i) => {
       const uMatch = i.uniqueName === item.uniqueName;
       let nMatch = true;
-      if (category.toLowerCase() === 'weapons' && typeof item.slot !== 'undefined') {
+      if (wikiCategory === 'weapons' && typeof item.slot !== 'undefined') {
         nMatch = slots[item.slot]?.includes(String(i.slot ?? '')) ?? false;
       }
       return uMatch && nMatch;

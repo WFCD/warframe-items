@@ -32,6 +32,29 @@ describe('parser wiki merge', () => {
     assert.strictEqual(arcane?.rarity, 'Uncommon');
   });
 
+  it('does not merge relic entries from RelicArcane into the arcanes wiki bucket', () => {
+    const parsed = parser.parse(
+      buildRaw({
+        api: [
+          {
+            category: 'RelicArcane',
+            data: [
+              {
+                name: 'Lith A1 Relic',
+                uniqueName: '/Lotus/Types/Keys/Projections/LithA1Relic',
+                type: 'Relic',
+              },
+            ],
+          },
+        ],
+      })
+    );
+
+    const relic = findItem(parsed, 'Lith A1 Relic');
+    assert.strictEqual(relic?.category, 'Relics');
+    assert.strictEqual(relic?.wikiAvailable, undefined);
+  });
+
   it('falls back to an exact name match when uniqueName mismatches', () => {
     const parsed = parser.parse(
       buildRaw({
