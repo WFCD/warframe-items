@@ -6,6 +6,7 @@ interface OldArcane {
   Transmutable?: boolean;
   Introduced?: string;
   Type?: string;
+  Rarity?: string;
   InternalName?: string;
   [key: string]: unknown;
 }
@@ -17,7 +18,7 @@ export default (oldArcane: OldArcane, imageUrls: Record<string, string>): WikiaA
   }
 
   try {
-    const { Image, Name, Transmutable, Introduced, Type, InternalName } = oldArcane;
+    const { Image, Name, Transmutable, Introduced, Type, Rarity, InternalName } = oldArcane;
 
     newArcane = {
       name: Name,
@@ -26,6 +27,7 @@ export default (oldArcane: OldArcane, imageUrls: Record<string, string>): WikiaA
       transmutable: Transmutable,
       introduced: Introduced,
       type: Type,
+      rarity: Rarity ? Rarity.charAt(0).toUpperCase() + Rarity.slice(1).toLowerCase() : undefined,
       thumbnail: imageUrls[Image ?? ''],
     };
   } catch (error) {

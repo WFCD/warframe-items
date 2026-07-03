@@ -249,14 +249,16 @@ declare module '@wfcd/items' {
     attacks?: Attack[];
     maxLevelCap?: number;
   }
-  interface Arcane extends Named, Buildable, Droppable {
+  interface Arcane extends Named, Buildable, Droppable, WikiaItem {
     category: 'Arcanes';
     excludeFromCodex?: true;
     imageName: string;
     levelStats?: LevelStat[];
     masterable: false;
     patchlogs?: PatchLog[];
+    releaseDate?: DateString;
     tradable: true;
+    transmutable?: boolean;
     type: 'Arcane' | `${ArcaneType} Arcane`;
   }
   interface StanceMod extends Omit<Mod, 'levelStats'> {
