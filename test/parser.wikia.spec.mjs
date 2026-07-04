@@ -200,6 +200,102 @@ describe('parser wiki merge', () => {
   });
 });
 
+describe('exaltedSlot from wiki', () => {
+  it('maps wiki Slot onto exaltedSlot for exalted weapons', () => {
+    const wikia = baseWikia();
+    wikia.weapons.push(
+      {
+        name: 'Dex Pixia',
+        uniqueName: '/Lotus/Powersuits/Fairy/FlightPistols',
+        url: 'https://wiki.warframe.com/w/Dex_Pixia',
+        introduced: 'Update 38.6',
+        slot: 'Secondary',
+      },
+      {
+        name: 'Arquebex',
+        uniqueName: '/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/ExaltedArtilleryWeapon',
+        url: 'https://wiki.warframe.com/w/Arquebex',
+        introduced: 'Update 38.6',
+        slot: 'Archgun (Atmosphere)',
+      },
+      {
+        name: 'Ironbride',
+        uniqueName: '/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/NechroTechSwordWeapon',
+        url: 'https://wiki.warframe.com/w/Ironbride',
+        introduced: 'Update 38.6',
+        slot: 'Archmelee',
+      }
+    );
+
+    const parsed = parser.parse(
+      buildRaw({
+        api: [
+          {
+            category: 'Weapons',
+            data: [
+              {
+                name: 'Dex Pixia',
+                uniqueName: '/Lotus/Powersuits/Fairy/FlightPistols',
+                productCategory: 'SpecialItems',
+                slot: 7,
+                type: 'Exalted Weapon',
+              },
+              {
+                name: 'Arquebex',
+                uniqueName:
+                  '/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/ExaltedArtilleryWeapon',
+                productCategory: 'SpecialItems',
+                slot: 7,
+                type: 'Exalted Weapon',
+              },
+              {
+                name: 'Ironbride',
+                uniqueName:
+                  '/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/NechroTechSwordWeapon',
+                productCategory: 'SpecialItems',
+                slot: 7,
+                type: 'Exalted Weapon',
+                blockingAngle: 90,
+              },
+            ],
+          },
+        ],
+        wikia,
+      })
+    );
+
+    assert.strictEqual(findItem(parsed, 'Dex Pixia')?.exaltedSlot, 'Secondary');
+    assert.strictEqual(findItem(parsed, 'Arquebex')?.exaltedSlot, 'Arch-Gun');
+    assert.strictEqual(findItem(parsed, 'Ironbride')?.exaltedSlot, 'Arch-Melee');
+    assert.deepStrictEqual(parsed.warnings.missingExaltedSlot, []);
+  });
+
+  it('falls back to Melee from combat stats when wiki Slot is absent', () => {
+    const parsed = parser.parse(
+      buildRaw({
+        api: [
+          {
+            category: 'Weapons',
+            data: [
+              {
+                name: 'Desert Wind',
+                uniqueName: '/Lotus/Powersuits/Pacifist/PacifistFist',
+                productCategory: 'SpecialItems',
+                slot: 7,
+                type: 'Exalted Weapon',
+                blockingAngle: 90,
+                comboDuration: 5,
+              },
+            ],
+          },
+        ],
+      })
+    );
+
+    assert.strictEqual(findItem(parsed, 'Desert Wind')?.exaltedSlot, 'Melee');
+  });
+});
+
 describe('transformArcanes', () => {
   it('titlecases wiki rarity values', () => {
     const arcane = transformArcanes({ Name: 'Arcane Test', Rarity: 'legendary' }, {});

@@ -33,6 +33,7 @@ import type {
   Affector,
   Resistance,
   ApiCategory,
+  ExaltedSlot,
 } from './types/shared';
 
 const previousBuild = await readJson<ItemComplete[]>(new URL('../data/json/All.json', import.meta.url));
@@ -81,6 +82,7 @@ const warnings: Warnings = {
   missingWikiThumb: [],
   missingReleaseDates: [],
   ambiguousWikiMatch: [],
+  missingExaltedSlot: [],
 };
 
 const filterBps = (blueprint: Partial<ItemComplete>): boolean => !bpConflicts.includes(blueprint.uniqueName ?? '');
@@ -232,6 +234,7 @@ class Parser {
     this.addRelics(result, data.relics, data.drops);
     this.applyMasterable(result);
     this.applyOverrides(result);
+    this.addExaltedSlot(result, data.wikia);
     if (!result.releaseDate) {
       if (result.masterable) {
         warnings.missingReleaseDates.push(result.name);
@@ -891,11 +894,22 @@ class Parser {
 
   /**
    * Map finalized output categories to wiki data buckets and merge handlers.
-   * @param itemCategory category assigned by addCategory
+   * Exalted weapons stay in Misc but still merge from the weapons wiki bucket.
+   * @param item item being merged
    * @returns wiki bucket and handler key, if wiki merge applies
    */
-  resolveWikiaConfig(itemCategory?: string): { wikiCategory: string; handler: 'warframe' | 'weapon' | 'mod' | 'arcane' } | undefined {
-    switch (itemCategory) {
+  resolveWikiaConfig(
+    item: Pick<ItemComplete, 'category' | 'type' | 'uniqueName'>
+  ): { wikiCategory: string; handler: 'warframe' | 'weapon' | 'mod' | 'arcane' } | undefined {
+    // Type overrides apply later; honor them here so exalted weapons still merge wiki Slot.
+    const type = item.type === 'Exalted Weapon' || overrides[item.uniqueName]?.type === 'Exalted Weapon'
+      ? 'Exalted Weapon'
+      : item.type;
+    if (type === 'Exalted Weapon') {
+      return { wikiCategory: 'weapons', handler: 'weapon' };
+    }
+
+    switch (item.category) {
       case 'Arcanes':
         return { wikiCategory: 'arcanes', handler: 'arcane' };
       case 'Warframes':
@@ -923,7 +937,7 @@ class Parser {
    * @param wikiaData from wikia to apply
    */
   addAdditionalWikiaData(item: ItemComplete, wikiaData: WikiaData): void {
-    const config = this.resolveWikiaConfig(item.category);
+    const config = this.resolveWikiaConfig(item);
     if (!config) return;
 
     const { wikiCategory, handler } = config;
@@ -1038,6 +1052,13 @@ class Parser {
     item.wikiaThumbnail = wikiaItem.thumbnail;
     item.wikiaUrl = wikiaItem.url;
     item.introduced = wikiaItem.introduced as never;
+
+    const isExaltedWeapon =
+      item.type === 'Exalted Weapon' || overrides[item.uniqueName]?.type === 'Exalted Weapon';
+    if (isExaltedWeapon) {
+      const exaltedSlot = this.mapWikiSlotToExaltedSlot(wikiaItem.slot);
+      if (exaltedSlot) item.exaltedSlot = exaltedSlot;
+    }
 
     if (item.omegaAttenuation && item.omegaAttenuation <= 0.75) {
       item.disposition = 1;
@@ -1232,6 +1253,74 @@ class Parser {
       const regex = new RegExp(masterableCategories.regex);
       item.masterable = regex.test(item.uniqueName);
     }
+  }
+
+  /**
+   * Map wiki weapon Slot strings onto ExaltedSlot values.
+   * @param slot wiki Slot field
+   * @returns matching exalted slot, if known
+   */
+  mapWikiSlotToExaltedSlot(slot: unknown): ExaltedSlot | undefined {
+    switch (String(slot ?? '')) {
+      case 'Primary':
+        return 'Primary';
+      case 'Secondary':
+        return 'Secondary';
+      case 'Melee':
+        return 'Melee';
+      case 'Archgun':
+      case 'Archgun (Atmosphere)':
+      case 'Arch-Gun':
+        return 'Arch-Gun';
+      case 'Archmelee':
+      case 'Arch-Melee':
+        return 'Arch-Melee';
+      default:
+        return undefined;
+    }
+  }
+
+  /**
+   * Assign loadout slot classification for exalted weapons.
+   * Prefers wiki Slot (via prior wiki merge), then a direct weapons-bucket lookup,
+   * then melee/gun stat inference. Primary vs Secondary cannot be inferred from
+   * DE stats alone, so gun-like weapons without wiki data warn instead.
+   * @param item item to annotate
+   * @param wikiaData scraped wiki data
+   */
+  addExaltedSlot(item: ItemComplete, wikiaData: WikiaData): void {
+    if (item.type !== 'Exalted Weapon') return;
+    if (item.exaltedSlot) return;
+
+    const wikiWeapon =
+      wikiaData.weapons.find((weapon) => weapon.uniqueName === item.uniqueName) ??
+      (() => {
+        const nameMatches = wikiaData.weapons.filter((weapon) => weapon.name === item.name);
+        return nameMatches.length === 1 ? nameMatches[0] : undefined;
+      })();
+
+    const fromWiki = this.mapWikiSlotToExaltedSlot(wikiWeapon?.slot);
+    if (fromWiki) {
+      item.exaltedSlot = fromWiki;
+      return;
+    }
+
+    const isMelee = Boolean(
+      item.blockingAngle ?? item.comboDuration ?? item.stancePolarity ?? item.slamAttack
+    );
+    const isGun = Boolean(
+      item.accuracy !== undefined ||
+        item.reloadTime !== undefined ||
+        item.magazineSize !== undefined ||
+        item.trigger
+    );
+
+    if (isMelee && !isGun) {
+      item.exaltedSlot = 'Melee';
+      return;
+    }
+
+    warnings.missingExaltedSlot.push(item.name);
   }
 
   addResistanceData(item: ItemComplete, category: string): void {

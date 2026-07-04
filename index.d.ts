@@ -233,6 +233,7 @@ declare module '@wfcd/items' {
   interface ExaltedWeapon extends Omit<Gun, 'category'>, Omit<Melee, 'category'>, Omit<Weapon, 'category'> {
     category: 'Misc';
     type: 'Exalted Weapon';
+    exaltedSlot: ExaltedSlot;
   }
   interface Weapon extends Equippable, Buildable, Attackable, WikiaItem, BaseItem {
     category: Gun['category'] | Melee['category'];
@@ -706,6 +707,8 @@ declare module '@wfcd/items' {
     | 'Skins'
     | 'Warframes'
     | Weapon['category'];
+
+  type ExaltedSlot = 'Primary' | 'Secondary' | 'Melee' | 'Arch-Gun' | 'Arch-Melee';
 
   /**
    * Riven disposition, a multiplier & range for omegaAttenuation
