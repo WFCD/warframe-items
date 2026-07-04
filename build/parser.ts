@@ -905,7 +905,7 @@ class Parser {
     const type = item.type === 'Exalted Weapon' || overrides[item.uniqueName]?.type === 'Exalted Weapon'
       ? 'Exalted Weapon'
       : item.type;
-    if (type === 'Exalted Weapon') {
+    if (type === 'Exalted Weapon' || type === 'Kitgun Component') {
       return { wikiCategory: 'weapons', handler: 'weapon' };
     }
 
@@ -925,6 +925,8 @@ class Parser {
       case 'Mods':
         return { wikiCategory: 'mods', handler: 'mod' };
       case 'Sentinels':
+      case 'Pets':
+        // Sentinels, Kubrows, Kavats, Moas, Hounds, etc. all live in Module:Companions
         return { wikiCategory: 'companions', handler: 'warframe' };
       default:
         return undefined;

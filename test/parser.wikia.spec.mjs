@@ -200,6 +200,81 @@ describe('parser wiki merge', () => {
   });
 });
 
+describe('companion and kitgun wiki release dates', () => {
+  it('merges Introduced for Pets from the companions wiki bucket', () => {
+    const wikia = baseWikia();
+    wikia.companions.push({
+      name: 'Adarza Kavat',
+      uniqueName: '/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit',
+      url: 'https://wiki.warframe.com/w/Adarza_Kavat',
+      introduced: 'Update 38.6',
+    });
+
+    const parsed = parser.parse(
+      buildRaw({
+        api: [
+          {
+            category: 'Sentinels',
+            data: [
+              {
+                name: 'Adarza Kavat',
+                uniqueName: '/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit',
+                productCategory: 'KubrowPets',
+                type: 'Pets',
+              },
+            ],
+          },
+        ],
+        wikia,
+      })
+    );
+
+    const pet = findItem(parsed, 'Adarza Kavat');
+    assert.strictEqual(pet?.category, 'Pets');
+    assert.strictEqual(pet?.wikiAvailable, true);
+    assert.strictEqual(pet?.releaseDate, '2025-05-21');
+    assert(!parsed.warnings.missingReleaseDates.includes('Adarza Kavat'));
+  });
+
+  it('merges Introduced for Kitgun Components from the weapons wiki bucket', () => {
+    const wikia = baseWikia();
+    wikia.weapons.push({
+      name: 'Catchmoon (Secondary)',
+      uniqueName:
+        '/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart',
+      url: 'https://wiki.warframe.com/w/Catchmoon',
+      introduced: 'Update 38.6',
+      slot: 'Secondary',
+    });
+
+    const parsed = parser.parse(
+      buildRaw({
+        api: [
+          {
+            category: 'Weapons',
+            data: [
+              {
+                name: 'Catchmoon',
+                uniqueName:
+                  '/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart',
+                productCategory: 'Pistols',
+                type: 'Kitgun Component',
+              },
+            ],
+          },
+        ],
+        wikia,
+      })
+    );
+
+    const kitgun = findItem(parsed, 'Catchmoon');
+    assert.strictEqual(kitgun?.category, 'Misc');
+    assert.strictEqual(kitgun?.wikiAvailable, true);
+    assert.strictEqual(kitgun?.releaseDate, '2025-05-21');
+    assert(!parsed.warnings.missingReleaseDates.includes('Catchmoon'));
+  });
+});
+
 describe('exaltedSlot from wiki', () => {
   it('maps wiki Slot onto exaltedSlot for exalted weapons', () => {
     const wikia = baseWikia();

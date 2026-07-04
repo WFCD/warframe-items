@@ -23,23 +23,16 @@ const knownWikiArcanes = [
 /** Items with no standalone wiki Introduced entry or known InternalName gaps. */
 const allowedMissingReleaseDates = [
   'Bad Baby',
-  'Bhaira Hound',
   'Bonewidow',
   'Dark Split-Sword',
-  'Dorma Hound',
   'Enkaus',
   'Feverspine',
   'Flatbelly',
   'Grimoire',
-  'Hec Hound',
   'Imperator Vandal',
   'Kuva Ghoulsaw',
-  'Lambeo Moa',
   'Mandonel',
   'Needlenose',
-  'Nychus Moa',
-  'Oloro Moa',
-  'Para Moa',
   'Runway',
   'Voidrig',
 ];
