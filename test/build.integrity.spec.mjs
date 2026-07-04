@@ -8,6 +8,8 @@ const all = require('../data/json/All.json');
 const arcanes = require('../data/json/Arcanes.json');
 const warnings = JSON.parse(readFileSync(new URL('../data/warnings.json', import.meta.url), 'utf8'));
 
+const exaltedSlotValues = ['Primary', 'Secondary', 'Melee', 'Arch-Gun', 'Arch-Melee'];
+
 /** Arcane names that exist in Module:Arcane and should always merge after a build. */
 const knownWikiArcanes = [
   'Arcane Acceleration',
@@ -86,5 +88,22 @@ const rebuiltWithWikiMerge = arcanes.some((arcane) => arcane.wikiAvailable);
 
   it('ambiguousWikiMatch warnings should be empty', () => {
     assert.deepStrictEqual(warnings.ambiguousWikiMatch ?? [], []);
+  });
+});
+
+describe('exalted weapon slot integrity', () => {
+  it('every exalted weapon should have a valid exaltedSlot', () => {
+    const exalted = all.filter((item) => item.type === 'Exalted Weapon');
+    const missing = exalted.filter((item) => !item.exaltedSlot).map((item) => item.name);
+    assert.deepStrictEqual(missing, [], `Missing exaltedSlot: ${missing.join(', ')}`);
+
+    const invalid = exalted
+      .filter((item) => !exaltedSlotValues.includes(item.exaltedSlot))
+      .map((item) => item.name);
+    assert.deepStrictEqual(invalid, [], `Invalid exaltedSlot: ${invalid.join(', ')}`);
+  });
+
+  it('missingExaltedSlot warnings should be empty', () => {
+    assert.deepStrictEqual(warnings.missingExaltedSlot ?? [], []);
   });
 });
