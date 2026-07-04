@@ -34,7 +34,7 @@
     "regression": "NODE_OPTIONS='--import tsx' mocha --spec test/index.regression.spec.mjs",
     "test": "NODE_OPTIONS='--import tsx' nyc mocha --exclude test/*.regression.spec.mjs",
     "type-check": "tsc --noEmit",
-    "pretypings": "typescript-json-schema ./index.d.ts Items --out items.schema.json --noExtraProps --required --strictNullChecks",
+    "pretypings": "typescript-json-schema ./tsconfig.schema.json Items --out items.schema.json --noExtraProps --required --strictNullChecks",
     "typings": "ajv validate -s ./items.schema.json -d ./data/json/All.json --allowUnionTypes --verbose",
     "validate": "npm ls"
   },
