@@ -223,7 +223,7 @@ class Scraper {
     const bar = skipProgress ? undefined : new Progress('Fetching Image Manifest', 1);
     const endpoint = await this.fetchEndpoints(true);
     if (!endpoint) {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+       
       console.error(`No Image Manifest Retrieved from API: ${endpoint!}`);
       return process.exit(1);
     }
