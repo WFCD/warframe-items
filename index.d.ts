@@ -115,6 +115,7 @@ declare module '@wfcd/items' {
     imageName?: string;
     description?: string;
     releaseDate?: string;
+    codexSecret?: boolean;
     excludeFromCodex?: boolean;
     masterable: boolean;
   }
@@ -253,6 +254,7 @@ declare module '@wfcd/items' {
   interface Arcane extends Named, Buildable, Droppable, WikiaItem {
     category: 'Arcanes';
     excludeFromCodex?: true;
+    codexSecret?: boolean;
     imageName: string;
     levelStats?: LevelStat[];
     masterable: false;
