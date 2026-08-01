@@ -477,7 +477,6 @@ class Parser {
     }
 
     // Remove keys that only increase output size.
-    delete item.codexSecret;
     if (item.type !== 'enemy') delete item.longDescription;
     delete item.parentName;
     delete item.relicRewards; // We'll fetch the official drop data for this

@@ -115,6 +115,7 @@ declare module '@wfcd/items' {
     imageName?: string;
     description?: string;
     releaseDate?: string;
+    codexSecret?: boolean;
     excludeFromCodex?: boolean;
     masterable: boolean;
   }
