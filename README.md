@@ -127,13 +127,13 @@ to get you started.
 ### File structure
 All relevant scripts are found in `/build/` with
 
-[build.mjs](/build/build.mjs)<br>
+[build.ts](/build/build.ts)<br>
 The entrypoint for the build script. Here we also save JSON, image and cache data.
 
-[scraper.mjs](/build/scraper.mjs)<br>
+[scraper.ts](/build/scraper.ts)<br>
 Fetches all external data and returns it to the parser.
 
-[parser.mjs](/build/parser.mjs)<br>
+[parser.ts](/build/parser.ts)<br>
 Parses the external data to match our schema and returns it to the build script.
 
 <br>
