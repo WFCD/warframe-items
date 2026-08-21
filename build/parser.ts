@@ -223,9 +223,9 @@ class Parser {
     }
 
     this.addCategory(result, category);
+    this.addDropRate(result, data.drops);
     this.addTradable(result);
     this.addDucats(result, data.wikia.ducats);
-    this.addDropRate(result, data.drops);
     this.addPatchlogs(result, data.patchlogs);
     this.addAdditionalWikiaData(result, data.wikia);
     this.addIsPrime(result);
@@ -807,11 +807,20 @@ class Parser {
             : this.findDropLocations(`${item.name} ${component.name}`, drops, true);
         component.drops = data.length ? data : [];
       }
-    } else if (item.name !== 'Blueprint') {
-      // Last word of relic is intact/rad, etc. instead of 'Relic'
-      const name = item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name;
-      const data = this.findDropLocations(name, drops);
-      if (data.length) item.drops = data;
+    } else {
+      let name: string;
+      if (item.type === 'Relic'){
+        // Last word of relic is intact/rad, etc. instead of 'Relic'
+        name = item.name.replace(/\s(\w+)$/, ' Relic');
+      } else if (item.name === 'Blueprint' && item.parent) {
+        name = `${item.parent} ${item.name}`;
+      } else {
+        name = item.name;
+      }
+      if (name !== 'Blueprint') {
+        const data = this.findDropLocations(name, drops);
+        if (data.length) item.drops = data;
+      }
     }
   }
 
