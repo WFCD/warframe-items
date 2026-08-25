@@ -192,6 +192,63 @@ const test = (base) => {
     });
     describe('integrity', async () => {
       beforeEach(gc);
+      it('should not have tradable components for Galariak Prime', async () => {
+        const matches = data.weapons
+          .filter((i) => i.name === 'Galariak Prime')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+
+        matches[0].components.forEach(comp => {
+          assert.strictEqual(comp.tradable, false);
+        });
+      });
+      it('should not have tradable components for Sagek Prime', async () => {
+        const matches = data.weapons
+          .filter((i) => i.name === 'Sagek Prime')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+
+        matches[0].components.forEach(comp => {
+          assert.strictEqual(comp.tradable, false);
+        });
+      });
+      it('should have 4 tradable components for Boar Prime', async () => {
+        const matches = data.weapons
+          .filter((i) => i.name === 'Boar Prime')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+
+        let tradable = 0;
+        matches[0].components.forEach(comp => {
+          if (comp.tradable === true) {
+            tradable++
+          }
+        });
+        assert.strictEqual(tradable, 4);
+      });
+      it('should have Primed Continuity as tradable', async () => {
+        const matches = data.mods
+          .filter((i) => i.name === 'Primed Continuity')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches[0].tradable, true);
+      }); 
       it('weapons should only have 1 result for Mausolon', () => {
         const matches = data.weapons
           .filter((i) => i.name === 'Mausolon')
@@ -202,6 +259,17 @@ const test = (base) => {
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
         assert.strictEqual(matches.length, 1, 'There can be only One');
+      });
+      it('warframe Octavia Prime should be untradable', () => {
+        const matches = data.warframes
+          .filter((i) => i.name === 'Octavia Prime')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches[0].tradable, false);
       });
       it('warframes should only have 1 result for Octavia Prime', () => {
         const matches = data.warframes

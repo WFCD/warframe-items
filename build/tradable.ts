@@ -1,13 +1,23 @@
+import type {
+  Drop
+} from './types/shared';
+
 interface Item {
   type: string;
   name: string;
   uniqueName: string;
   productCategory?: string;
+  drops?: Drop[];
   isAugment?: boolean;
 }
 
 const builtUntradable = [
   'Warframe',
+  'Sentinel',
+  'Archwing',
+  'Arch-Gun',
+  'Arch-Melee',
+  'Pets',
   'Throwing',
   'Shotgun',
   'Rifle',
@@ -18,24 +28,6 @@ const builtUntradable = [
   'Launcher',
   'Sniper',
 ];
-/**
- * Gate built Prime items (Warframes, weapons) from being marked tradable.
- * Built Prime items are not directly tradable -- only their individual
- * components/parts are (e.g. Loki Prime Blueprint). Components get their
- * own tradable flag set independently during parsing.
- *
- * To determine if a Prime set is tradable, check item.components for
- * parts with tradable: true.
- *
- * Item-specific tradability overrides live in config/overrides.json
- * (keyed by uniqueName) and are applied by parser.mjs applyOverrides()
- * after this check runs.
- *
- * @param item Item to check
- * @returns
- */
-const tradableConditions = (item: Item): boolean =>
-  !(builtUntradable.includes(item.type) && item.name.match(/Prime/gi));
 
 const tradableArcanes = [
   'Arcane',
@@ -54,6 +46,7 @@ const tradableArcanes = [
 
 const tradableMods = [
   'Arch-Melee Mod',
+  'Arch-Gun Mod',
   'Archwing Mod',
   'Companion Mod',
   'K-Drive Mod',
@@ -98,6 +91,40 @@ const tradableRegex =
   /(Prime|Vandal|Wraith\w|\wWraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma|DamagedMech)(?!Derelict)/i;
 const untradableRegex =
   /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))|Umbral|Sacrificial/i;
+
+/**
+ * Gate built Prime items (Warframes, weapons) from being marked tradable.
+ * Built Prime items are not directly tradable -- only their individual
+ * components/parts are (e.g. Loki Prime Blueprint). Components get their
+ * own tradable flag set independently during parsing.
+ *
+ * To determine if a Prime set is tradable, check item.components for
+ * parts with tradable: true.
+ *
+ * Item-specific tradability overrides live in config/overrides.json
+ * (keyed by uniqueName) and are applied by parser.mjs applyOverrides()
+ * after this check runs.
+ *
+ * @param item Item to check
+ * @returns
+ */
+const tradableConditions = (item: Item): boolean => {
+  const primeItem = item.name.match(/Prime/gi);
+  if (builtUntradable.includes(item.type) && primeItem) {
+    return false
+  }
+  // calling this defensively on only prime things
+  // in case it might break something else, since we only
+  // care about prime things at the moment. Also for the few
+  // things that are prime and getting caught accidentally the 
+  // original behavior should be preserved with this tm
+  const primeFromUnique = item.uniqueName.match(/Prime/gi);
+  if ((primeFromUnique || primeItem) && !(tradableTypes.includes(item.type))) {
+    const result = !item.drops || item.drops.every((drop) => /Relic/gi.test(drop.location));
+    return result;
+  }
+  return true;
+}
 
 /**
  * Check if an item is tradable
