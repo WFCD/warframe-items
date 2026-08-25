@@ -203,7 +203,7 @@ const test = (base) => {
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
 
         matches[0].components.forEach(comp => {
-          assert(!comp.tradable)
+          assert.strictEqual(comp.tradable, false);
         });
       });
       it('should not have tradable components for Sagek Prime', async () => {
@@ -217,7 +217,7 @@ const test = (base) => {
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
 
         matches[0].components.forEach(comp => {
-          assert(!comp.tradable)
+          assert.strictEqual(comp.tradable, false);
         });
       });
       it('should have 4 tradable components for Boar Prime', async () => {
@@ -230,13 +230,13 @@ const test = (base) => {
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
 
-        var tradable = 0;
+        let tradable = 0;
         matches[0].components.forEach(comp => {
-          if (comp.tradable) {
+          if (comp.tradable === true) {
             tradable++
           }
         });
-        assert(tradable === 4);
+        assert.strictEqual(tradable, 4);
       });
       it('should have Primed Continuity as tradable', async () => {
         const matches = data.mods
@@ -247,7 +247,7 @@ const test = (base) => {
           });
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-        assert(matches[0].tradable);
+        assert.strictEqual(matches[0].tradable, true);
       }); 
       it('weapons should only have 1 result for Mausolon', () => {
         const matches = data.weapons
@@ -269,7 +269,7 @@ const test = (base) => {
           });
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
-        assert(!matches[0].tradable);
+        assert.strictEqual(matches[0].tradable, false);
       });
       it('warframes should only have 1 result for Octavia Prime', () => {
         const matches = data.warframes
