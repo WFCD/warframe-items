@@ -754,6 +754,7 @@ declare module '@wfcd/items' {
   type ShotType = 'Continuous' | 'Hit-Scan' | 'Projectile';
 
   type Tag =
+    | 'Amp'
     | 'Arbiters of Hexis'
     | 'Baro'
     | 'Cephalon'
@@ -769,6 +770,7 @@ declare module '@wfcd/items' {
     | 'Incarnon'
     | 'Infested'
     | 'Invasion Reward'
+    | 'Kitgun'
     | 'Kuva Lich'
     | 'Lua'
     | 'Never Vaulted'
@@ -792,7 +794,8 @@ declare module '@wfcd/items' {
     | 'Vandal'
     | 'Vaulted'
     | 'Wraith'
-    | 'Zariman';
+    | 'Zariman'
+    | 'Zaw';
 
   type Trigger = 'Active' | 'Auto' | 'Auto Burst' | 'Burst' | 'Charge' | 'Duplex' | 'Held' | 'Melee' | 'Semi' | '';
 

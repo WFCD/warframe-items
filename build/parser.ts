@@ -1,3 +1,6 @@
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
 import cloneDeep from 'lodash.clonedeep';
 import sanitize from 'sanitize-filename';
 
@@ -36,7 +39,10 @@ import type {
   ExaltedSlot,
 } from './types/shared';
 
-const previousBuild = await readJson<ItemComplete[]>(new URL('../data/json/All.json', import.meta.url));
+const previousBuildUrl = new URL('../data/json/All.json', import.meta.url);
+const previousBuild = existsSync(fileURLToPath(previousBuildUrl))
+  ? await readJson<ItemComplete[]>(previousBuildUrl)
+  : [];
 const watson = await readJson<Record<string, string>>(new URL('../config/dt_map.json', import.meta.url));
 const bpConflicts = await readJson<string[]>(new URL('../config/bpConflicts.json', import.meta.url));
 const variants = await readJson<VariantsConfig>(new URL('../config/variants.json', import.meta.url));

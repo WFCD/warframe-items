@@ -2,9 +2,12 @@ import assert from 'node:assert';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 
+import Items from '../index.mjs';
+
 const require = createRequire(import.meta.url);
 
-const all = require('../data/json/All.json');
+// All.json is gitignored; compose from per-category dumps via Items
+const all = new Items();
 const arcanes = require('../data/json/Arcanes.json');
 const warnings = JSON.parse(readFileSync(new URL('../data/warnings.json', import.meta.url), 'utf8'));
 
