@@ -37,6 +37,7 @@ import type {
   Resistance,
   ApiCategory,
   ExaltedSlot,
+  Damage,
 } from './types/shared';
 
 const previousBuildUrl = new URL('../data/json/All.json', import.meta.url);
@@ -55,6 +56,7 @@ const overrides = await readJson<Record<string, Partial<ItemComplete>>>(
 const masterableCategories = await readJson<MasterableCategories>(
   new URL('../config/masterableCategories.json', import.meta.url)
 );
+const damageTypes = await readJson<(keyof Damage)[]>(new URL('../config/damageTypes.json', import.meta.url));
 
 const productCategoryTypeMap: Record<string, string> = {
   SpaceGuns: 'Arch-Gun',
@@ -545,51 +547,11 @@ class Parser {
   addDamage(item: ItemComplete): void {
     if (!item.damagePerShot) return;
     if (!item.damagePerShot.find((damageType) => damageType > 0)) return;
-    const [
-      impact,
-      slash,
-      puncture,
-      heat,
-      cold,
-      electricity,
-      toxin,
-      blast,
-      radiation,
-      gas,
-      magnetic,
-      viral,
-      corrosive,
-      voidDamage,
-      tau,
-      cinematic,
-      shieldDrain,
-      healthDrain,
-      energyDrain,
-      trueType,
-    ] = item.damagePerShot;
-    item.damage = {
-      total: item.totalDamage,
-      impact,
-      puncture,
-      slash,
-      heat,
-      cold,
-      electricity,
-      toxin,
-      blast,
-      radiation,
-      gas,
-      magnetic,
-      viral,
-      corrosive,
-      void: voidDamage,
-      tau,
-      cinematic,
-      shieldDrain,
-      healthDrain,
-      energyDrain,
-      true: trueType,
-    };
+    const damage: Damage = { total: item.totalDamage };
+    damageTypes.forEach((type, i) => {
+      damage[type] = item.damagePerShot![i];
+    });
+    item.damage = damage;
   }
 
   /**
