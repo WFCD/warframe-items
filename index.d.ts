@@ -167,7 +167,7 @@ declare module '@wfcd/items' {
      * On disk / with `resolveComponents: false`: component refs.
      * After construction with default `resolveComponents: true`: full Component objects.
      */
-    components?: Array<Component | ComponentRef>;
+    components?: (Component | ComponentRef)[];
     marketCost?: number;
     bpCost?: number | '';
     itemCount?: number;

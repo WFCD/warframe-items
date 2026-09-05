@@ -1410,15 +1410,15 @@ class Parser {
           const existing = catalog.get(comp.uniqueName);
           if (existing) {
             addParentLink(existing, item.uniqueName);
-            const existingDrops = (existing.drops as Drop[] | undefined)?.length ?? 0;
-            const nextDrops = (comp.drops as Drop[] | undefined)?.length ?? 0;
+            const existingDrops = (existing.drops)?.length ?? 0;
+            const nextDrops = (comp.drops)?.length ?? 0;
             if (nextDrops > existingDrops) {
               existing.drops = cloneDeep(comp.drops);
             }
             continue;
           }
 
-          const entry = cloneDeep(comp) as Component;
+          const entry = cloneDeep(comp);
           delete entry.itemCount;
           delete entry.parent;
           delete entry.parents;
@@ -1453,7 +1453,7 @@ class Parser {
       const byName = a.name.localeCompare(b.name);
       if (byName !== 0) return byName;
       return a.uniqueName.localeCompare(b.uniqueName);
-    }) as Item[];
+    });
   }
 
   /**
@@ -1545,11 +1545,11 @@ class Parser {
       for (const locale of locales) {
         const target = localeBundle[locale];
         if (!target?.name) continue;
-        let name = String(target.name);
+        let name = target.name;
         for (const parentId of parentIds) {
           const parentLocaleName = i18nArr[parentId]?.[locale]?.name;
           if (parentLocaleName) {
-            name = this.stripParentFromComponentName(name, String(parentLocaleName));
+            name = this.stripParentFromComponentName(name, parentLocaleName);
           }
           const parent = parentByUnique.get(parentId);
           if (parent?.name) {
