@@ -24,7 +24,16 @@ declare module '@wfcd/items' {
     constructor(options?: ItemsOptions, ...items: Item[]);
     options: ItemsOptions;
     i18n: BundleofI18nBundle<Locale>;
+    /**
+     * Expand component refs on an item using the Components catalog (or a provided catalog).
+     */
+    static resolveComponents(item: Item, catalog?: Component[] | Map<string, Component>): Item;
   }
+
+  export function resolveComponents(
+    item: Item,
+    catalog?: Component[] | Map<string, Component> | Record<string, Component>
+  ): Item;
 
   interface ModResolveable {
     uniqueName: string;
@@ -67,6 +76,11 @@ declare module '@wfcd/items' {
     ignoreEnemies?: boolean;
     i18n?: boolean | string[];
     i18nOnObject?: boolean;
+    /**
+     * When true (default), expand component refs on items at construction
+     * using the Components catalog. Set false to keep on-disk refs.
+     */
+    resolveComponents?: boolean;
   }
 
   type Item =
@@ -149,10 +163,20 @@ declare module '@wfcd/items' {
     buildTime?: number;
     skipBuildTimePrice?: number;
     consumeOnBuild?: boolean;
-    components?: Component[];
+    /**
+     * On disk / with `resolveComponents: false`: component refs.
+     * After construction with default `resolveComponents: true`: full Component objects.
+     */
+    components?: Array<Component | ComponentRef>;
     marketCost?: number;
     bpCost?: number | '';
     itemCount?: number;
+  }
+
+  /** On-disk / unresolved parent.components entry */
+  interface ComponentRef {
+    uniqueName: UniqueName;
+    itemCount: number;
   }
   interface WikiaItem {
     wikiaThumbnail?: string;
@@ -420,9 +444,11 @@ declare module '@wfcd/items' {
     category: 'Pets';
   }
   interface Component extends MinimalItem, WikiaItem, Buildable, Attackable, Equippable {
-    itemCount: number;
+    itemCount?: number;
     imageName: string;
     tradable: boolean;
+    /** Parents that list this component (catalog + standalone ingredients used as components) */
+    parentUniqueNames?: UniqueName[];
     drops?: Drop[];
     secondsPerShot?: number;
     magazineSize?: number;
@@ -694,6 +720,7 @@ declare module '@wfcd/items' {
     | 'All'
     | 'Arcanes'
     | 'Archwing'
+    | 'Components'
     | 'Fish'
     | 'Gear'
     | 'Glyphs'

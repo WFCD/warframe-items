@@ -66,6 +66,7 @@ class Build {
     parsed.warnings.failedImage = [...warnings.failedImage]; // The parser doesn't keep tracked of failed images so this will be empty
 
     const data = this.applyCustomCategories(parsed.data);
+    parser.extractComponentCatalog(data);
     const i18n = parser.applyI18n(data, raw.i18n);
 
     this.dedupImageNames(data, raw.manifest, warnings);
@@ -181,6 +182,7 @@ class Build {
     const history: string[] = []; // Don't download component images or relics twice
 
     for (const category of Object.keys(categories)) {
+      if (category === 'Components') continue;
       const categoryData = categories[category];
       if (!categoryData) continue;
 
@@ -188,12 +190,6 @@ class Build {
         try {
           // Save image for parent item
           await this.saveImage(item, false, history, manifest);
-          // Save images for components if necessary
-          if (item.components) {
-            for (const component of item.components) {
-              await this.saveImage(component, true, history, manifest);
-            }
-          }
           // Save images for abilities
           if (item.abilities) {
             for (const ability of item.abilities) {
@@ -206,6 +202,17 @@ class Build {
         }
         bar.tick();
       }
+    }
+
+    // Save catalog component images once (parents only keep refs)
+    for (const component of categories.Components ?? []) {
+      try {
+        await this.saveImage(component, true, history, manifest);
+      } catch {
+        if (!warnings.failedImage.includes(component.name)) warnings.failedImage.push(component.name);
+        component.imageName = 'missing.png';
+      }
+      bar.tick();
     }
 
     // write the manifests after images have all succeeded
@@ -347,6 +354,7 @@ class Build {
       Node: 20,
       Enemy: 21,
       Misc: 22, // K-Drives, Drones, etc.
+      Components: 23,
     };
 
     const items = Object.values(data).flat();
