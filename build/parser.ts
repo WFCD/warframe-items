@@ -1352,7 +1352,131 @@ class Parser {
   }
 
   /**
-   * Apply i18n and parse data
+   * Collect nested crafting components into a Components catalog and replace parent
+   * components arrays with refs ({ uniqueName, itemCount }).
+   *
+   * Standalone items that appear as ingredients (resources, weapons, …) stay in their
+   * own categories — only uniqueNames that are not already top-level items are catalogued.
+   * Those standalone items get `parentUniqueNames` updated for reverse lookup.
+   * @param data categorized items (mutated in place)
+   */
+  extractComponentCatalog(data: Record<string, Item[]>): void {
+    const catalog = new Map<string, Component>();
+    const parentNameByUnique = new Map<string, string>();
+    const topLevelByUnique = new Map<string, Item>();
+
+    for (const [category, items] of Object.entries(data)) {
+      if (category === 'Components') continue;
+      for (const item of items) {
+        parentNameByUnique.set(item.uniqueName, item.name);
+        topLevelByUnique.set(item.uniqueName, item);
+      }
+    }
+
+    const addParentLink = (target: Item, parentUniqueName: string): void => {
+      const comp = target as Component;
+      const parents = comp.parentUniqueNames ?? [];
+      if (!parents.includes(parentUniqueName)) {
+        comp.parentUniqueNames = [...parents, parentUniqueName].sort((a, b) => a.localeCompare(b));
+      }
+    };
+
+    for (const [category, items] of Object.entries(data)) {
+      if (category === 'Components') continue;
+      for (const item of items) {
+        if (!item.components?.length) continue;
+
+        const refs: { uniqueName: string; itemCount: number }[] = [];
+        for (const comp of item.components as Component[]) {
+          if (!comp?.uniqueName) continue;
+          const itemCount = typeof comp.itemCount === 'number' ? comp.itemCount : 1;
+          refs.push({ uniqueName: comp.uniqueName, itemCount });
+
+          const topLevel = topLevelByUnique.get(comp.uniqueName);
+          const isRefOnly = !comp.name && !comp.imageName && !comp.description;
+
+          // Standalone top-level ingredient: never enter Components catalog
+          if (topLevel) {
+            addParentLink(topLevel, item.uniqueName);
+            continue;
+          }
+
+          if (isRefOnly) {
+            const existing = catalog.get(comp.uniqueName);
+            if (existing) addParentLink(existing, item.uniqueName);
+            continue;
+          }
+
+          const existing = catalog.get(comp.uniqueName);
+          if (existing) {
+            addParentLink(existing, item.uniqueName);
+            const existingDrops = (existing.drops)?.length ?? 0;
+            const nextDrops = (comp.drops)?.length ?? 0;
+            if (nextDrops > existingDrops) {
+              existing.drops = cloneDeep(comp.drops);
+            }
+            continue;
+          }
+
+          const entry = cloneDeep(comp);
+          delete entry.itemCount;
+          delete entry.parent;
+          delete entry.parents;
+          delete entry.components;
+          entry.category = 'Components';
+          entry.parentUniqueNames = [item.uniqueName];
+          catalog.set(comp.uniqueName, entry);
+        }
+        item.components = refs as Item[];
+      }
+    }
+
+    // Keep prior crafting-only catalog entries; drop any that now exist as top-level items
+    if (data.Components?.length) {
+      for (const existing of data.Components as Component[]) {
+        if (topLevelByUnique.has(existing.uniqueName)) continue;
+        if (!catalog.has(existing.uniqueName)) {
+          catalog.set(existing.uniqueName, existing);
+        }
+      }
+    }
+
+    for (const entry of catalog.values()) {
+      for (const parentId of entry.parentUniqueNames ?? []) {
+        const parentName = parentNameByUnique.get(parentId);
+        if (!parentName) continue;
+        entry.name = this.stripParentFromComponentName(entry.name, parentName);
+      }
+    }
+
+    data.Components = Array.from(catalog.values()).sort((a, b) => {
+      const byName = a.name.localeCompare(b.name);
+      if (byName !== 0) return byName;
+      return a.uniqueName.localeCompare(b.uniqueName);
+    });
+  }
+
+  /**
+   * Strip parent item name from a component name (English or locale forms).
+   * Handles "Parent Part" and "Parent: Part".
+   */
+  stripParentFromComponentName(name: string, parentName: string): string {
+    if (!name || !parentName) return name;
+    const parent = parentName.replace(/<Archwing> /, '');
+    const patterns = [`${parent}: `, `${parent} `, `${title(parent)}: `, `${title(parent)} `];
+    for (const pattern of patterns) {
+      if (name.startsWith(pattern)) {
+        return name.slice(pattern.length).trim() || name;
+      }
+    }
+    return name;
+  }
+
+  /**
+   * Apply i18n and parse data.
+   * Component catalog entries are included when present on `data` (after
+   * extractComponentCatalog). Locale component names are stripped in a second
+   * pass so parent locale names are available.
    * @param data base data to apply i18n data to
    * @param i18n internationalization data
    * @returns internationalized data
@@ -1376,6 +1500,12 @@ class Parser {
     Object.entries(data)
       .map(([, a]) => a)
       .forEach((sub) => resultArray.push(...sub));
+
+    const parentByUnique = new Map<string, Item>();
+    for (const entry of resultArray) {
+      parentByUnique.set(entry.uniqueName, entry);
+    }
+
     const bar = new Progress('Parsing i18n', resultArray.length);
     resultArray.forEach((entry) => {
       const id = entry.uniqueName;
@@ -1404,6 +1534,32 @@ class Parser {
       });
       bar.tick();
     });
+
+    // Second pass: strip parent prefixes from component locale names
+    // (parents must already have locale entries for accurate stripping)
+    for (const entry of data.Components ?? []) {
+      const id = entry.uniqueName;
+      const localeBundle = i18nArr[id];
+      if (!localeBundle) continue;
+      const parentIds = (entry as Component).parentUniqueNames ?? [];
+      for (const locale of locales) {
+        const target = localeBundle[locale];
+        if (!target?.name) continue;
+        let name = target.name;
+        for (const parentId of parentIds) {
+          const parentLocaleName = i18nArr[parentId]?.[locale]?.name;
+          if (parentLocaleName) {
+            name = this.stripParentFromComponentName(name, parentLocaleName);
+          }
+          const parent = parentByUnique.get(parentId);
+          if (parent?.name) {
+            name = this.stripParentFromComponentName(name, parent.name);
+          }
+        }
+        target.name = name;
+      }
+    }
+
     return i18nArr;
   }
 }

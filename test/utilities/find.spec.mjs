@@ -17,12 +17,19 @@ describe('#loadMods', () => {
     };
 
     const arcaneEnergize = loadMods([sampleArcane]);
+    const expected = items.find((i) => i.name === 'Arcane Energize');
+    assert.ok(expected, 'Arcane Energize should exist');
 
-    assert.deepEqual(
-      marshall(arcaneEnergize.arcanes[0]),
-      marshall(items.find((i) => i.name === 'Arcane Energize')),
-      'Arcane energize invalid'
-    );
+    const normalized = marshall({
+      ...expected,
+      rank: 5,
+      levelStats: expected.levelStats?.[5] ?? expected.levelStats,
+    });
+    delete normalized.drops;
+    delete normalized.patchlogs;
+    delete normalized.tradable;
+
+    assert.deepEqual(marshall(arcaneEnergize.arcanes[0]), normalized, 'Arcane energize invalid');
   });
   it('Should parse a mod correctly', () => {
     const sampleMod = {
@@ -31,12 +38,23 @@ describe('#loadMods', () => {
     };
 
     const hunterCommand = loadMods([sampleMod]);
-
-    assert.deepEqual(
-      hunterCommand.mods[0],
-      items.find((i) => i.uniqueName === '/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod'),
-      'Mod mismatch'
+    const expected = items.find(
+      (i) => i.uniqueName === '/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod'
     );
+    assert.ok(expected, 'Hunter Command should exist');
+
+    // loadMods clones/mutates: sets rank, collapses levelStats, strips drops/tradable/transmutable
+    const normalized = marshall({
+      ...expected,
+      rank: 5,
+      levelStats: expected.levelStats?.[5] ?? expected.levelStats,
+    });
+    delete normalized.drops;
+    delete normalized.patchlogs;
+    delete normalized.tradable;
+    delete normalized.transmutable;
+
+    assert.deepEqual(marshall(hunterCommand.mods[0]), normalized, 'Mod mismatch');
   });
   it('Should parse a riven mod correctly', () => {
     const sampleRiven = {

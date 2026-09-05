@@ -20,7 +20,8 @@ export const loadMods = (upgrades = []) => {
   const arcanes = [];
   const mods = [];
   upgrades.forEach((upgrade) => {
-    let upgradeData = findItem(upgrade.uniqueName) || upgrade;
+    const found = findItem(upgrade.uniqueName);
+    let upgradeData = found ? { ...found } : { ...upgrade };
 
     upgradeData.rank = upgrade.rank;
     upgradeData.uniqueName = upgrade.uniqueName;
