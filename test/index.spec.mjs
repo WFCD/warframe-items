@@ -201,6 +201,7 @@ const test = (base) => {
           });
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches.length, 1);
 
         assert.strictEqual(matches[0].wikiAvailable, true)        
       });
@@ -213,6 +214,7 @@ const test = (base) => {
           });
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches.length, 1);
 
         assert.strictEqual(matches[0].wikiAvailable, true)        
       });
@@ -225,6 +227,7 @@ const test = (base) => {
           });
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+        assert.strictEqual(matches.length, 1);
 
         assert.strictEqual(matches[0].wikiAvailable, true)        
       });

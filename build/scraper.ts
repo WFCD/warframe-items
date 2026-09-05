@@ -273,7 +273,7 @@ class Scraper {
    * @returns wikia data
    */
   async fetchWikiaData(): Promise<WikiaData> {
-    const bar = new Progress('Fetching Wikia Data', 9);
+    const bar = new Progress('Fetching Wikia Data', 10);
     const ducats: WikiaDucat[] = [];
     const ducatsWikia = await get('https://wiki.warframe.com/w/Ducats/Prices/All', true);
     const $ = load(ducatsWikia as string);
