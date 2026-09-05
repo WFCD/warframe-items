@@ -10,12 +10,13 @@ import CompanionScraper from './wikia/scrapers/CompanionScraper';
 import ModScraper from './wikia/scrapers/ModScraper';
 import WeaponScraper from './wikia/scrapers/WeaponScraper';
 import WarframeScraper from './wikia/scrapers/WarframeScraper';
+import NecramechScraper from './wikia/scrapers/NecramechScraper';
 import VaultScraper from './wikia/scrapers/VaultScraper';
 import VersionScraper from './wikia/scrapers/VersionScraper';
 import readJson from './readJson';
 import sleep from './sleep';
 import { get, getJSON, retryAttempts } from './network';
-import type { WikiaData } from './types/shared';
+import type { WikiaData, WikiaWarframe } from './types/shared';
 import type { TitaniaRelic } from '@wfcd/relics';
 import type { Patchlogs } from '@wfcd/patchlogs';
 
@@ -272,7 +273,7 @@ class Scraper {
    * @returns wikia data
    */
   async fetchWikiaData(): Promise<WikiaData> {
-    const bar = new Progress('Fetching Wikia Data', 9);
+    const bar = new Progress('Fetching Wikia Data', 10);
     const ducats: WikiaDucat[] = [];
     const ducatsWikia = await get('https://wiki.warframe.com/w/Ducats/Prices/All', true);
     const $ = load(ducatsWikia as string);
@@ -290,6 +291,8 @@ class Scraper {
     bar.tick();
     await sleep(100);
     const warframes = await new WarframeScraper().scrape();
+    bar.tick();
+    const necramechs = await new NecramechScraper().scrape();
     bar.tick();
     await sleep(100);
     const mods = await new ModScraper().scrape();
@@ -309,6 +312,14 @@ class Scraper {
     await sleep(100);
     const vaultData = await new VaultScraper().scrape();
     bar.tick();
+
+    // Combine scraped warframe and necramech data to keep 
+    // current data format (mechs and frames are 1 thing)
+    // for compatibility reasons
+    necramechs.forEach(mech => {
+      const mechToFrame = mech as WikiaWarframe
+      warframes.push(mechToFrame)
+    });
 
     return {
       weapons,

@@ -143,6 +143,18 @@ export interface WikiaWarframe {
   bpCost?: number;
   [key: string]: unknown;
 }
+export interface WikiaNecramech {
+  name: string;
+  uniqueName?: string;
+  url: string;
+  mr?: number;
+  polarities?: string[];
+  sprint?: number;
+  introduced?: string;
+  vaulted?: boolean;
+  thumbnail?: string;
+  [key: string]: unknown;
+}
 
 export interface WikiaMod {
   name: string;
