@@ -16,7 +16,8 @@ export function resolveComponents(item, catalog) {
     }
     const entry = map.get(ref.uniqueName);
     if (!entry) return ref;
-    const { parentUniqueNames: _parents, ...rest } = entry;
+    const rest = { ...entry };
+    delete rest.parentUniqueNames;
     return {
       ...rest,
       itemCount: typeof ref.itemCount === 'number' ? ref.itemCount : 1,
