@@ -192,6 +192,42 @@ const test = (base) => {
     });
     describe('integrity', async () => {
       beforeEach(gc);
+      it('should have wikia available for Dark Split-Sword', async () => {
+        const matches = data.weapons
+          .filter((i) => i.name === 'Dark Split-Sword')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+
+        assert.strictEqual(matches[0].wikiAvailable, true)        
+      });
+      it('should only have wikia available for Voidrig', async () => {
+        const matches = data.warframes
+          .filter((i) => i.name === 'Voidrig')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+
+        assert.strictEqual(matches[0].wikiAvailable, true)        
+      });
+      it('should only have wikia available for Bonewidow', async () => {
+        const matches = data.warframes
+          .filter((i) => i.name === 'Bonewidow')
+          .map((i) => {
+            delete i.patchlogs;
+            return i;
+          });
+        const dd = dedupe(matches);
+        assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
+
+        assert.strictEqual(matches[0].wikiAvailable, true)        
+      });
       it('should not have tradable components for Galariak Prime', async () => {
         const matches = data.weapons
           .filter((i) => i.name === 'Galariak Prime')
