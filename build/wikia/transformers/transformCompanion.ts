@@ -32,8 +32,8 @@ export default (
   }
 
   try {
-    const { Image, Mastery, Polarities, Stamina, Introduced, Vaulted, VaultDate, EstimatedVaultDate, InternalName } =
-      oldCompanion;
+    const { Image, Mastery, Polarities, Stamina, Introduced, Vaulted, VaultDate, EstimatedVaultDate, InternalName }
+      = oldCompanion;
     const { Name } = oldCompanion;
 
     newCompanion = {

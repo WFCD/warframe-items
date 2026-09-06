@@ -4,10 +4,10 @@ on:
     branches:
       - master
     paths:
-      - 'build/**'
-      - 'data/**'
-      - 'index.m?js'
-      - 'index.d.ts'
+      - "build/**"
+      - "data/**"
+      - index.m?js
+      - index.d.ts
 jobs:
   release:
     name: Release
@@ -26,7 +26,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v7
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: .nvmrc
       - run: npm ci
       - run: npm i -D @wfcd/patchlogs@^2
       - run: npm i --no-save warframe-worldstate-data@^3
@@ -35,7 +35,7 @@ jobs:
         run: npx commitlint --last
       - run: npm test
         env:
-          NODE_OPTIONS: '--max_old_space_size=5120'
+          NODE_OPTIONS: --max_old_space_size=5120
       - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

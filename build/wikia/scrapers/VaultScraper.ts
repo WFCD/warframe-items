@@ -25,8 +25,8 @@ export default class VaultScraper {
       if ($row.find('th').length) {
         return;
       }
-      const name =
-        $row.find('td:nth-child(1) > span').attr('data-param-name') ?? $row.find('td:nth-child(1) > a').text().trim();
+      const name
+        = $row.find('td:nth-child(1) > span').attr('data-param-name') ?? $row.find('td:nth-child(1) > a').text().trim();
       const vaultDate = $row.find('td:nth-child(2)').text().trim();
       if (name && vaultDate) {
         vaultData.push({ name, vaulted: true, vaultDate, estimatedVaultDate: vaultDate });
@@ -39,8 +39,8 @@ export default class VaultScraper {
       if ($row.find('th').length) {
         return;
       }
-      const name =
-        $row.find('td:nth-child(1) > span').attr('data-param-name') ?? $row.find('td:nth-child(1) > a').text().trim();
+      const name
+        = $row.find('td:nth-child(1) > span').attr('data-param-name') ?? $row.find('td:nth-child(1) > a').text().trim();
       if (name) {
         vaultData.push({ name, vaulted: false });
       }

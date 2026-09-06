@@ -1,7 +1,7 @@
 /// <reference types="../index.d.ts" />
 
 declare module '@wfcd/items/utilities' {
-  import { RawColors, Item, ModResolveable, Arcane, ModUnion, Pixel, ColorMap } from "@wfcd/items";
+  import { RawColors, Item, ModResolveable, Arcane, ModUnion, Pixel, ColorMap } from '@wfcd/items';
 
   namespace find {
     function findItem(uname: string): Item | undefined;

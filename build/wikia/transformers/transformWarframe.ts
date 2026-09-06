@@ -54,8 +54,8 @@ export default async (
   }
 
   try {
-    const { AuraPolarity, Conclave, Image, Mastery, Polarities, Sprint, Introduced, Sex, Vaulted, InternalName } =
-      oldFrame;
+    const { AuraPolarity, Conclave, Image, Mastery, Polarities, Sprint, Introduced, Sex, Vaulted, InternalName }
+      = oldFrame;
     const { Name } = oldFrame;
 
     newFrame = {

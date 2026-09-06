@@ -1,5 +1,5 @@
 import type {
-  Drop
+  Drop,
 } from './types/shared';
 
 interface Item {
@@ -87,10 +87,10 @@ const untradableTypes = [
   'Skin',
   'Syandana',
 ];
-const tradableRegex =
-  /(Prime|Vandal|Wraith\w|\wWraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma|DamagedMech)(?!Derelict)/i;
-const untradableRegex =
-  /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))|Umbral|Sacrificial/i;
+const tradableRegex
+  = /(Prime|Vandal|Wraith\w|\wWraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma|DamagedMech)(?!Derelict)/i;
+const untradableRegex
+  = /(Glyph|Mandachord|Greater.*Lens|Sugatra|\[|SentinelWeapons|Toroid|Bait|([A-Za-z]+ (Relic)))|Umbral|Sacrificial/i;
 
 /**
  * Gate built Prime items (Warframes, weapons) from being marked tradable.
@@ -111,12 +111,12 @@ const untradableRegex =
 const tradableConditions = (item: Item): boolean => {
   const primeItem = item.name.match(/Prime/gi);
   if (builtUntradable.includes(item.type) && primeItem) {
-    return false
+    return false;
   }
   // calling this defensively on only prime things
   // in case it might break something else, since we only
   // care about prime things at the moment. Also for the few
-  // things that are prime and getting caught accidentally the 
+  // things that are prime and getting caught accidentally the
   // original behavior should be preserved with this tm
   const primeFromUnique = item.uniqueName.match(/Prime/gi);
   if ((primeFromUnique || primeItem) && !(tradableTypes.includes(item.type))) {
@@ -124,7 +124,7 @@ const tradableConditions = (item: Item): boolean => {
     return result;
   }
   return true;
-}
+};
 
 /**
  * Check if an item is tradable
@@ -132,11 +132,11 @@ const tradableConditions = (item: Item): boolean => {
  * @returns
  */
 export default (item: Item): boolean => {
-  const notFiltered =
-    !untradableTypes.includes(item.type) &&
-    !untradableRegex.exec(item.name) &&
-    !untradableRegex.exec(item.uniqueName) &&
-    (item.productCategory ? !/(SpecialItems)/.exec(item.productCategory) : true);
+  const notFiltered
+    = !untradableTypes.includes(item.type)
+      && !untradableRegex.exec(item.name)
+      && !untradableRegex.exec(item.uniqueName)
+      && (item.productCategory ? !/(SpecialItems)/.exec(item.productCategory) : true);
   const tradableByType = (tradableTypes.includes(item.type) && notFiltered) satisfies boolean;
   const tradableByName = Boolean((tradableRegex.exec(item.uniqueName) ?? tradableRegex.exec(item.name)) && notFiltered);
   const tradableByProp = Boolean(item.isAugment && notFiltered);

@@ -12,7 +12,7 @@ const format = (arr: unknown[]): string => `^^^[ ${arr.map((val) => JSON.stringi
 const replacer = (_key: string, value: unknown): unknown =>
   isArrayOfPrimitive(value) ? format(value as unknown[]) : value;
 const expand = (str: string): string =>
-  str.replace(/"\^\^\^(\[ .* ])"/g, (_match, a: string) => a.replace(/\\"/g, '"')).replace(/\\\\"/g, "'");
+  str.replace(/"\^\^\^(\[ .* ])"/g, (_match, a: string) => a.replace(/\\"/g, '"')).replace(/\\\\"/g, '\'');
 const stringify = (obj: unknown): string => expand(JSON.stringify(Array.isArray(obj) ? dedupe(obj) : obj, replacer, 2));
 
 export default stringify;

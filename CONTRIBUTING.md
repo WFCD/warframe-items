@@ -27,7 +27,7 @@ If you find a bug, please file an issue. If you have a feature request, please f
 In either case, you're welcome to open a pull request with or without an issue, it would just be helpful to have the issue in case your PR gets abandoned or isn't the way we want to implement said fix/feature.
 
 ## Code Style
-We use [Prettier](https://prettier.io/) plugged into eslint for code formatting. Please make sure to run `npm run lint` before submitting a pull request.
+We use [ESLint Stylistic](https://eslint.style/) for code formatting (2-space indent, no tabs). Please make sure to run `npm run lint` before submitting a pull request.
 
 ## License
 

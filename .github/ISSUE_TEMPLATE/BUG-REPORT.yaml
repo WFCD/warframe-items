@@ -1,69 +1,62 @@
---- 
-body: 
-  - 
-    attributes: 
-      description: "A clear and concise description of what the bug is."
-      label: "Describe the bug"
-      placeholder: "Excalibur Prime is missing his face!"
+---
+body:
+  - attributes:
+      description: A clear and concise description of what the bug is.
+      label: Describe the bug
+      placeholder: Excalibur Prime is missing his face!
     id: description
     type: input
-    validations: 
+    validations:
       required: true
-  - 
-    attributes: 
+  - attributes:
       value: "**Versions:**"
     type: markdown
-  - 
-    attributes: 
-      label: "NodeJS Version"
-      placeholder: "e.g. v8.16.0"
+  - attributes:
+      label: NodeJS Version
+      placeholder: e.g. v8.16.0
     id: nodejs
     type: input
-    validations: 
+    validations:
       required: true
-  - 
-    attributes: 
-      label: "npm Version"
-      placeholder: "e.g. v6.11.0"
+  - attributes:
+      label: npm Version
+      placeholder: e.g. v6.11.0
     id: npm
     type: input
-    validations: 
+    validations:
       required: true
-  - 
-    attributes: 
+  - attributes:
       label: "@wfcd/items Version"
-      placeholder: "e.g. v1.576.0"
+      placeholder: e.g. v1.576.0
     id: version
     type: input
-    validations: 
+    validations:
       required: true
-  - 
-    attributes: 
-      description: "What version of our software are you running?"
-      label: "Access Method"
-      options: 
-        - "npm Package (Default)"
-        - "github download"
-        - "warframestat.us API"
+  - attributes:
+      description: What version of our software are you running?
+      label: Access Method
+      options:
+        - npm Package (Default)
+        - github download
+        - warframestat.us API
     id: access-method
     type: dropdown
-    validations: 
+    validations:
       required: true
-  - 
-    attributes: 
+  - attributes:
       description: "Also tell us, what did you expect to happen?"
-      label: "What happened?"
-      placeholder: "Tell us what you see! Feel free to add screenshots"
-      value: "A bug happened!"
+      label: What happened?
+      placeholder: Tell us what you see! Feel free to add screenshots
+      value: A bug happened!
     id: what-happened
     type: textarea
-    validations: 
+    validations:
       required: true
-description: "Create a report to help us improve"
-labels: 
+description: Create a report to help us improve
+labels:
   - "Type: Bug"
-  - "help wanted"
+  - help wanted
   - "Scope: Out of Scope"
   - "Severity4: Inconvenient"
-name: "Bug Report"
+name: Bug Report
 title: "[Bug] It's a bug!"

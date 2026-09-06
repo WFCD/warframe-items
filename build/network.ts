@@ -7,7 +7,7 @@ const prod = process.env.NODE_ENV === 'production';
 const agent = getProxyAgent();
 
 // eslint-disable-next-line no-control-regex
-const sanitize = (str: string): string => str.replace(/\\r|\r?\n|\x09/g, '').replace(/\\\\"/g, "'");
+const sanitize = (str: string): string => str.replace(/\\r|\r?\n|\x09/g, '').replace(/\\\\"/g, '\'');
 
 export const get = async (url: string, disableProxy = !prod, compress = false): Promise<Uint8Array | string> => {
   const res = await fetch(url, {

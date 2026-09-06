@@ -74,10 +74,10 @@ const title = (str = ''): string =>
   str
     .toLowerCase()
     .replace(/(?<![öéā*])\b\w/g, (l) => l.toUpperCase())
-    .replace(/`/gi, "'")
-    .replace(/’/gi, "'")
-    .replace(/'S /gi, "'s ")
-    .replace(/'S$/gi, "'s");
+    .replace(/`/gi, '\'')
+    .replace(/’/gi, '\'')
+    .replace(/'S /gi, '\'s ')
+    .replace(/'S$/gi, '\'s');
 
 const warnings: Warnings = {
   missingImage: [],
@@ -435,10 +435,10 @@ class Parser {
 
     // Remove <Archwing> from archwing names, add archwing key instead
     if (
-      item.name &&
-      (item.name.includes('<Archwing>') ||
-        item.uniqueName.includes('Tenno/Archwing') ||
-        item.uniqueName.includes('HeavyWeapons'))
+      item.name
+      && (item.name.includes('<Archwing>')
+        || item.uniqueName.includes('Tenno/Archwing')
+        || item.uniqueName.includes('HeavyWeapons'))
     ) {
       item.name = item.name.replace(/<Archwing> /, '');
       item.isArchwing = true;
@@ -766,18 +766,18 @@ class Parser {
     // Don't look for drop rates on item itself if it has components.
     if (item.components) {
       for (const component of item.components as Component[]) {
-        const data =
-          (component.uniqueName.includes('/Weapons/') &&
-            !component.uniqueName.includes('/WeaponParts/') &&
-            component.name !== 'Blueprint') ||
-          /Collar\w+Component/.test(component.uniqueName)
+        const data
+          = (component.uniqueName.includes('/Weapons/')
+            && !component.uniqueName.includes('/WeaponParts/')
+            && component.name !== 'Blueprint')
+          || /Collar\w+Component/.test(component.uniqueName)
             ? this.findDropLocations(component.name, drops, true)
             : this.findDropLocations(`${item.name} ${component.name}`, drops, true);
         component.drops = data.length ? data : [];
       }
     } else {
       let name: string;
-      if (item.type === 'Relic'){
+      if (item.type === 'Relic') {
         // Last word of relic is intact/rad, etc. instead of 'Relic'
         name = item.name.replace(/\s(\w+)$/, ' Relic');
       } else if (item.name === 'Blueprint' && item.parent) {
@@ -807,11 +807,11 @@ class Parser {
       dropChances
         .filter((drop) => {
           return (
-            drop.item === item ||
-            ((drop.item.toLowerCase().startsWith(item.toLowerCase()) ||
-              drop.item.toLowerCase().endsWith(item.toLowerCase())) &&
-              semiWrapped.test(drop.item.toLowerCase()) &&
-              !variant.test(drop.item.toLowerCase()))
+            drop.item === item
+            || ((drop.item.toLowerCase().startsWith(item.toLowerCase())
+              || drop.item.toLowerCase().endsWith(item.toLowerCase()))
+            && semiWrapped.test(drop.item.toLowerCase())
+            && !variant.test(drop.item.toLowerCase()))
           );
         })
         .map(dropMap)
@@ -860,8 +860,8 @@ class Parser {
 
     if (item.category === 'Mods') {
       const isLegendary = item.rarity === 'Legendary';
-      const isExpert =
-        lastUnameSegment.includes('Expert') || (unameSegments[unameSegments.length - 2] ?? '') === 'Expert';
+      const isExpert
+        = lastUnameSegment.includes('Expert') || (unameSegments[unameSegments.length - 2] ?? '') === 'Expert';
       item.isPrime = isLegendary && (isExpert || lastUnameSegment.includes('Primed'));
     }
 
@@ -1031,8 +1031,8 @@ class Parser {
     item.wikiaUrl = wikiaItem.url;
     item.introduced = wikiaItem.introduced as never;
 
-    const isExaltedWeapon =
-      item.type === 'Exalted Weapon' || overrides[item.uniqueName]?.type === 'Exalted Weapon';
+    const isExaltedWeapon
+      = item.type === 'Exalted Weapon' || overrides[item.uniqueName]?.type === 'Exalted Weapon';
     if (isExaltedWeapon) {
       const exaltedSlot = this.mapWikiSlotToExaltedSlot(wikiaItem.slot);
       if (exaltedSlot) item.exaltedSlot = exaltedSlot;
@@ -1104,9 +1104,9 @@ class Parser {
     if (!target && !wikiaItem) {
       const isManuallyExcluded = primeExcludeRegex.test(item.name);
       const isSkin = item.category === 'Skins';
-      const isSentinelWeapon =
-        (item.type === 'Sentinel' && ['Primary', 'Secondary', 'Melee'].includes(item.category)) ||
-        item.productCategory === 'SentinelWeapons';
+      const isSentinelWeapon
+        = (item.type === 'Sentinel' && ['Primary', 'Secondary', 'Melee'].includes(item.category))
+          || item.productCategory === 'SentinelWeapons';
       const isExaltedWeapon = ['SpecialItems'].includes(item.productCategory ?? '');
       if (!(isManuallyExcluded || isSkin || isSentinelWeapon || isExaltedWeapon))
         warnings.missingVaultData.push(item.name);
@@ -1270,12 +1270,12 @@ class Parser {
     if (item.type !== 'Exalted Weapon') return;
     if (item.exaltedSlot) return;
 
-    const wikiWeapon =
-      wikiaData.weapons.find((weapon) => weapon.uniqueName === item.uniqueName) ??
-      (() => {
-        const nameMatches = wikiaData.weapons.filter((weapon) => weapon.name === item.name);
-        return nameMatches.length === 1 ? nameMatches[0] : undefined;
-      })();
+    const wikiWeapon
+      = wikiaData.weapons.find((weapon) => weapon.uniqueName === item.uniqueName)
+        ?? (() => {
+          const nameMatches = wikiaData.weapons.filter((weapon) => weapon.name === item.name);
+          return nameMatches.length === 1 ? nameMatches[0] : undefined;
+        })();
 
     const fromWiki = this.mapWikiSlotToExaltedSlot(wikiWeapon?.slot);
     if (fromWiki) {
@@ -1287,10 +1287,10 @@ class Parser {
       item.blockingAngle ?? item.comboDuration ?? item.stancePolarity ?? item.slamAttack
     );
     const isGun = Boolean(
-      item.accuracy !== undefined ||
-        item.reloadTime !== undefined ||
-        item.magazineSize !== undefined ||
-        item.trigger
+      item.accuracy !== undefined
+      || item.reloadTime !== undefined
+      || item.magazineSize !== undefined
+      || item.trigger
     );
 
     if (isMelee && !isGun) {

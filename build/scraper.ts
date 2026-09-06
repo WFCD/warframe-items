@@ -113,9 +113,9 @@ class Scraper {
       })
     );
     const firstKey = Object.keys(i18nEndpoints)[0];
-    const totalEndpoints =
-      (firstKey && i18nEndpoints[firstKey] ? i18nEndpoints[firstKey].length : 0) * Object.keys(i18nEndpoints).length +
-      endpoints.length;
+    const totalEndpoints
+      = (firstKey && i18nEndpoints[firstKey] ? i18nEndpoints[firstKey].length : 0) * Object.keys(i18nEndpoints).length
+        + endpoints.length;
     const bar = new Progress('Fetching API Endpoints', totalEndpoints);
 
     const fetchEndpoint = async (endpoint: string | undefined): Promise<ApiChunk | undefined> => {
@@ -183,7 +183,7 @@ class Scraper {
           if (endpointResult) {
             result.push(endpointResult);
           }
-      })
+        })
     );
 
     const i18n: Record<string, ApiChunk[]> = {
@@ -223,7 +223,6 @@ class Scraper {
     const bar = skipProgress ? undefined : new Progress('Fetching Image Manifest', 1);
     const endpoint = await this.fetchEndpoints(true);
     if (!endpoint) {
-       
       console.error(`No Image Manifest Retrieved from API: ${endpoint!}`);
       return process.exit(1);
     }

@@ -202,7 +202,7 @@ const test = (base) => {
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
 
-        matches[0].components.forEach(comp => {
+        matches[0].components.forEach((comp) => {
           assert.strictEqual(comp.tradable, false);
         });
       });
@@ -216,7 +216,7 @@ const test = (base) => {
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
 
-        matches[0].components.forEach(comp => {
+        matches[0].components.forEach((comp) => {
           assert.strictEqual(comp.tradable, false);
         });
       });
@@ -231,9 +231,9 @@ const test = (base) => {
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
 
         let tradable = 0;
-        matches[0].components.forEach(comp => {
+        matches[0].components.forEach((comp) => {
           if (comp.tradable === true) {
-            tradable++
+            tradable++;
           }
         });
         assert.strictEqual(tradable, 4);
@@ -248,7 +248,7 @@ const test = (base) => {
         const dd = dedupe(matches);
         assert.strictEqual(dd.length, matches.length, 'Before and after dedupe should match');
         assert.strictEqual(matches[0].tradable, true);
-      }); 
+      });
       it('weapons should only have 1 result for Mausolon', () => {
         const matches = data.weapons
           .filter((i) => i.name === 'Mausolon')
@@ -530,7 +530,7 @@ const test = (base) => {
 
           const imagePath = join('./data/img/', imageName);
           const nameInfo = `in { uniqueName: ${uniqueName}, imageName: ${imageName} }`;
-          const exists = existsSync(imagePath)
+          const exists = existsSync(imagePath);
           assert(exists, `${imageName} should exist ${nameInfo}`);
           if (exists) {
             const { size } = statSync(imagePath);

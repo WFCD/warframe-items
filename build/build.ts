@@ -235,8 +235,8 @@ class Build {
     const imageUrl = `https://content.warframe.com/PublicExport/${imageStub}`;
     const basePath = fileURLToPath(new URL('../data/img/', import.meta.url));
     const filePath = path.join(basePath, item.imageName);
-    const hash =
-      imageBase?.fileTime ?? imageHash?.[1] ?? createHash('md5').update(imageBase.textureLocation).digest('hex');
+    const hash
+      = imageBase?.fileTime ?? imageHash?.[1] ?? createHash('md5').update(imageBase.textureLocation).digest('hex');
     const cached = imageCache.find((c) => c.uniqueName === item.uniqueName);
 
     // We'll use a custom blueprint and arcane image.
@@ -374,7 +374,7 @@ class Build {
     const processedItems: Item[] = [];
     for (const imageName of Object.keys(itemsByImageName)) {
       // Items are grouped by imageName, there are non in this loop that will be undefined
-       
+
       const group = itemsByImageName[imageName]!;
       if (group.length === 1) {
         processedItems.push(...group);
@@ -384,10 +384,10 @@ class Build {
       // Components, Generic, and Relics are shared images.
       // OmegaMod is the base image for the base random riven mod that is shared between the types
       if (
-        imageName.includes('Component') ||
-        imageName.includes('Generic') ||
-        relicRegex.test(imageName) ||
-        imageName.includes('OmegaMod')
+        imageName.includes('Component')
+        || imageName.includes('Generic')
+        || relicRegex.test(imageName)
+        || imageName.includes('OmegaMod')
       ) {
         processedItems.push(...group);
         continue;
@@ -395,19 +395,18 @@ class Build {
 
       group.sort((a, b) => {
         if (
-          (a.productCategory || b.productCategory) &&
-          allowedCustomCategories.includes(a.productCategory ?? b.productCategory ?? '')
+          (a.productCategory || b.productCategory)
+          && allowedCustomCategories.includes(a.productCategory ?? b.productCategory ?? '')
         ) {
           return (
-            (priorityMap[a.productCategory ?? a.category] ?? Infinity) -
-            (priorityMap[b.productCategory ?? b.category] ?? Infinity)
+            (priorityMap[a.productCategory ?? a.category] ?? Infinity)
+            - (priorityMap[b.productCategory ?? b.category] ?? Infinity)
           );
         }
-          
+
         return (priorityMap[a.category] ?? Infinity) - (priorityMap[b.category] ?? Infinity);
       });
 
-       
       const mainItem = group[0]!;
       processedItems.push(mainItem);
 
@@ -432,12 +431,11 @@ class Build {
     for (const item of [...processedItems, ...noImage]) {
       if (item.productCategory && allowedCustomCategories.includes(item.productCategory)) {
         // Since we're following the same logic as applying custom categories all keys should have an empty array and if they don't we should consider it an error
-         
+
         data[item.productCategory]!.push(item);
         continue;
       }
 
-       
       data[item.category]!.push(item);
     }
   }
