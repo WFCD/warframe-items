@@ -93,6 +93,7 @@ export type Locales = Record<string, Record<string, unknown>>;
 export interface WikiaData {
   weapons: WikiaWeapon[];
   warframes: WikiaWarframe[];
+  necramechs: WikiaNecramech[];
   mods: WikiaMod[];
   versions: WikiaVersion[];
   ducats: WikiaDucat[];
@@ -141,6 +142,21 @@ export interface WikiaWarframe {
   color?: number;
   marketCost?: number;
   bpCost?: number;
+  [key: string]: unknown;
+}
+
+export interface WikiaNecramech {
+  name: string;
+  uniqueName?: string;
+  url: string;
+  conclave?: number;
+  mr?: number;
+  polarities?: string[];
+  sprint?: number;
+  introduced?: string;
+  vaulted?: boolean;
+  thumbnail?: string;
+  marketCost?: number;
   [key: string]: unknown;
 }
 

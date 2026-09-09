@@ -884,6 +884,9 @@ class Parser {
     if (type === 'Exalted Weapon' || type === 'Kitgun Component') {
       return { wikiCategory: 'weapons', handler: 'weapon' };
     }
+    if (type === 'Necramech') {
+      return { wikiCategory: 'necramechs', handler: 'warframe' };
+    }
 
     switch (item.category) {
       case 'Arcanes':

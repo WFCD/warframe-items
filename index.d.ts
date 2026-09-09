@@ -851,6 +851,7 @@ declare module '@wfcd/items' {
       | 'Mission Rewards'
       | 'Mod Locations'
       | 'Mod Set Mod'
+      | 'Necramech'
       | 'Nightwave Challenge'
       | 'Node'
       | 'Note Packs'

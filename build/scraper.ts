@@ -10,6 +10,7 @@ import CompanionScraper from './wikia/scrapers/CompanionScraper';
 import ModScraper from './wikia/scrapers/ModScraper';
 import WeaponScraper from './wikia/scrapers/WeaponScraper';
 import WarframeScraper from './wikia/scrapers/WarframeScraper';
+import NecramechScraper from './wikia/scrapers/NecramechScraper';
 import VaultScraper from './wikia/scrapers/VaultScraper';
 import VersionScraper from './wikia/scrapers/VersionScraper';
 import readJson from './readJson';
@@ -20,8 +21,30 @@ import type { TitaniaRelic } from '@wfcd/relics';
 import type { Patchlogs } from '@wfcd/patchlogs';
 
 const locales = await readJson<string[]>(new URL('../config/locales.json', import.meta.url));
+const wikiaNameOverrides = await readJson<WikiaNameOverride[]>(new URL('../config/wikiaNameOverrides.json', import.meta.url));
 
 const prod = process.env.NODE_ENV === 'production';
+
+interface WikiaNameOverride {
+  name: string;
+  override: string;
+}
+
+/**
+ * Check for and apply overrides for WikiaData names
+ * @param wikiaData - set of WikiaData to check
+ */
+const applyNameOverrides = (wikiaData: WikiaData) => {
+  const overrideMap: Record<string, string> = Object.fromEntries(
+    wikiaNameOverrides.map((override) => [override.name, override.override])
+  );
+  for (const key of Object.keys(wikiaData) as (keyof WikiaData)[]) {
+    for (const entry of wikiaData[key]) {
+      const replacement = overrideMap[entry.name];
+      if (replacement) entry.name = replacement;
+    }
+  }
+};
 
 interface ApiChunk {
   category: string;
@@ -271,7 +294,7 @@ class Scraper {
    * @returns wikia data
    */
   async fetchWikiaData(): Promise<WikiaData> {
-    const bar = new Progress('Fetching Wikia Data', 9);
+    const bar = new Progress('Fetching Wikia Data', 10);
     const ducats: WikiaDucat[] = [];
     const ducatsWikia = await get('https://wiki.warframe.com/w/Ducats/Prices/All', true);
     const $ = load(ducatsWikia as string);
@@ -289,6 +312,9 @@ class Scraper {
     bar.tick();
     await sleep(100);
     const warframes = await new WarframeScraper().scrape();
+    bar.tick();
+    await sleep(100);
+    const necramechs = await new NecramechScraper().scrape();
     bar.tick();
     await sleep(100);
     const mods = await new ModScraper().scrape();
@@ -309,9 +335,10 @@ class Scraper {
     const vaultData = await new VaultScraper().scrape();
     bar.tick();
 
-    return {
+    const wikiaToReturn: WikiaData = {
       weapons,
       warframes,
+      necramechs,
       mods,
       versions,
       ducats,
@@ -320,6 +347,9 @@ class Scraper {
       arcanes,
       vaultData,
     };
+
+    applyNameOverrides(wikiaToReturn);
+    return wikiaToReturn;
   }
 
   /**
