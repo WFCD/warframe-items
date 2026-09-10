@@ -13,6 +13,7 @@ import WarframeScraper from './wikia/scrapers/WarframeScraper';
 import NecramechScraper from './wikia/scrapers/NecramechScraper';
 import VaultScraper from './wikia/scrapers/VaultScraper';
 import VersionScraper from './wikia/scrapers/VersionScraper';
+import HonoriaScraper from './wikia/scrapers/HonoriaScraper';
 import readJson from './readJson';
 import sleep from './sleep';
 import { get, getJSON, retryAttempts } from './network';
@@ -294,7 +295,7 @@ class Scraper {
    * @returns wikia data
    */
   async fetchWikiaData(): Promise<WikiaData> {
-    const bar = new Progress('Fetching Wikia Data', 10);
+    const bar = new Progress('Fetching Wikia Data', 11);
     const ducats: WikiaDucat[] = [];
     const ducatsWikia = await get('https://wiki.warframe.com/w/Ducats/Prices/All', true);
     const $ = load(ducatsWikia as string);
@@ -334,6 +335,9 @@ class Scraper {
     await sleep(100);
     const vaultData = await new VaultScraper().scrape();
     bar.tick();
+    await sleep(100);
+    const honorias = await new HonoriaScraper().scrape();
+    bar.tick();
 
     const wikiaToReturn: WikiaData = {
       weapons,
@@ -346,6 +350,7 @@ class Scraper {
       companions,
       arcanes,
       vaultData,
+      honorias,
     };
 
     applyNameOverrides(wikiaToReturn);

@@ -85,6 +85,7 @@ export interface Warnings {
   missingReleaseDates: string[];
   ambiguousWikiMatch: string[];
   missingExaltedSlot: string[];
+  missingHonoriaTitle: string[];
 }
 
 export type Locales = Record<string, Record<string, unknown>>;
@@ -101,6 +102,7 @@ export interface WikiaData {
   archwings: WikiaArchwing[];
   companions: WikiaCompanion[];
   vaultData: VaultData[];
+  honorias: WikiaHonoria[];
 }
 
 export interface WikiaWeapon {
@@ -320,7 +322,12 @@ export interface MasterableCategories {
   regex: string;
 }
 
-export type ExaltedSlot = 'Primary' | 'Secondary' | 'Melee' | 'Arch-Gun' | 'Arch-Melee';
+export type ExaltedSlot
+  = | 'Primary'
+    | 'Secondary'
+    | 'Melee'
+    | 'Arch-Gun'
+    | 'Arch-Melee';
 
 export interface ApiCategory {
   category?: string;
@@ -396,6 +403,8 @@ export interface ItemComplete extends Item {
   parent?: string;
   parents?: string[];
   exaltedSlot?: ExaltedSlot;
+  title?: string;
+  titleAffix?: string;
 }
 
 export interface Damage {
@@ -436,4 +445,12 @@ export interface Resistance {
 export interface Affector {
   element: string;
   modifier: number;
+}
+
+export interface WikiaHonoria {
+  uniqueName: string;
+  name: string;
+  position: string;
+  price?: object;
+  wikiaUrl: string;
 }
