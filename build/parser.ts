@@ -1094,7 +1094,7 @@ class Parser {
 
     if (item.type != 'Honorium') return;
     const wikiaItem = honorias.find((i) => i.uniqueName == item.uniqueName);
-    let title = item.name.replace('Honorium', '').trimEnd();
+    let title = item.name.replace('Honoria', '').trimEnd();
 
     // Use uniqueName because there's no other way to see what's missing
     if (!title && !wikiaItem) {
@@ -1112,7 +1112,9 @@ class Parser {
       case 'Suffix':
         item.title = `${placeholder} ${title}`;
         break;
-      case 'Expletive': // Right now placeholder matches what DE uses as one so we can pass it as is for now
+      case 'Expletive':
+        item.title = wikiaItem?.name; // Placeholder matches what the wikia uses
+        break;
       default:
         item.title = title;
     }
