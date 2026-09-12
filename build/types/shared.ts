@@ -102,7 +102,7 @@ export interface WikiaData {
   archwings: WikiaArchwing[];
   companions: WikiaCompanion[];
   vaultData: VaultData[];
-  honorias: WikiaHonoria[];
+  honoria: WikiaHonorium[];
 }
 
 export interface WikiaWeapon {
@@ -442,7 +442,7 @@ export interface Affector {
   modifier: number;
 }
 
-export interface WikiaHonoria {
+export interface WikiaHonorium {
   uniqueName: string;
   name: string;
   position: string;

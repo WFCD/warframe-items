@@ -38,7 +38,7 @@ import type {
   ApiCategory,
   ExaltedSlot,
   Damage,
-  WikiaHonoria,
+  WikiaHonorium,
 } from './types/shared';
 
 const previousBuildUrl = new URL('../data/json/All.json', import.meta.url);
@@ -245,7 +245,7 @@ class Parser {
     this.applyMasterable(result);
     this.applyOverrides(result);
     this.addExaltedSlot(result, data.wikia);
-    this.addHonoriaData(result, data.wikia.honorias);
+    this.addHonoriumData(result, data.wikia.honoria);
     if (!result.releaseDate) {
       if (result.masterable) {
         warnings.missingReleaseDates.push(result.name);
@@ -613,7 +613,7 @@ class Parser {
       case 'Flavour':
         if (item.name.includes('Sigil')) item.category = 'Sigils';
         else if (item.name.includes('Glyph')) item.category = 'Glyphs';
-        else if (item.name.includes('Honoria')) item.category = 'Honorias';
+        else if (item.name.includes('Honoria')) item.category = 'Honoria';
         else item.category = 'Skins';
         break;
 
@@ -1088,13 +1088,13 @@ class Parser {
     if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name);
   }
 
-  addHonoriaData(item: ItemComplete, honorias: WikiaHonoria[]) {
+  addHonoriumData(item: ItemComplete, honorias: WikiaHonorium[]) {
     // Follow what DE usually does
     const placeholder = '<NAME>';
 
-    if (item.type != 'Honoria') return;
+    if (item.type != 'Honorium') return;
     const wikiaItem = honorias.find((i) => i.uniqueName == item.uniqueName);
-    let title = item.name.replace('Honoria', '').trimEnd();
+    let title = item.name.replace('Honorium', '').trimEnd();
 
     // Use uniqueName because there's no other way to see what's missing
     if (!title && !wikiaItem) {

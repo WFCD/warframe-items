@@ -13,7 +13,7 @@ import WarframeScraper from './wikia/scrapers/WarframeScraper';
 import NecramechScraper from './wikia/scrapers/NecramechScraper';
 import VaultScraper from './wikia/scrapers/VaultScraper';
 import VersionScraper from './wikia/scrapers/VersionScraper';
-import HonoriaScraper from './wikia/scrapers/HonoriaScraper';
+import HonoriumScraper from './wikia/scrapers/HonoriaScraper';
 import readJson from './readJson';
 import sleep from './sleep';
 import { get, getJSON, retryAttempts } from './network';
@@ -336,7 +336,7 @@ class Scraper {
     const vaultData = await new VaultScraper().scrape();
     bar.tick();
     await sleep(100);
-    const honorias = await new HonoriaScraper().scrape();
+    const honoria = await new HonoriumScraper().scrape();
     bar.tick();
 
     const wikiaToReturn: WikiaData = {
@@ -350,7 +350,7 @@ class Scraper {
       companions,
       arcanes,
       vaultData,
-      honorias,
+      honoria,
     };
 
     applyNameOverrides(wikiaToReturn);

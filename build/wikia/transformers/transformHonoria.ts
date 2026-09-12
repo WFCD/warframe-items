@@ -1,4 +1,4 @@
-import { WikiaHonoria } from 'types/shared';
+import { WikiaHonorium } from 'types/shared';
 
 interface OldHonoria {
   InternalName: string;
@@ -6,8 +6,8 @@ interface OldHonoria {
   Position: string;
 }
 
-export default (oldHonoria: OldHonoria): WikiaHonoria | undefined => {
-  let newHonoria: WikiaHonoria | undefined;
+export default (oldHonoria: OldHonoria): WikiaHonorium | undefined => {
+  let newHonoria: WikiaHonorium | undefined;
   if (!oldHonoria.Name) return undefined;
 
   let position = oldHonoria.Position;
