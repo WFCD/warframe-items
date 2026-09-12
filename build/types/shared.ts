@@ -322,12 +322,7 @@ export interface MasterableCategories {
   regex: string;
 }
 
-export type ExaltedSlot
-  = | 'Primary'
-    | 'Secondary'
-    | 'Melee'
-    | 'Arch-Gun'
-    | 'Arch-Melee';
+export type ExaltedSlot = 'Primary' | 'Secondary' | 'Melee' | 'Arch-Gun' | 'Arch-Melee';
 
 export interface ApiCategory {
   category?: string;
