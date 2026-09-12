@@ -38,6 +38,7 @@ import type {
   ApiCategory,
   ExaltedSlot,
   Damage,
+  WikiaHonorium,
 } from './types/shared';
 
 const previousBuildUrl = new URL('../data/json/All.json', import.meta.url);
@@ -91,6 +92,7 @@ const warnings: Warnings = {
   missingReleaseDates: [],
   ambiguousWikiMatch: [],
   missingExaltedSlot: [],
+  missingHonoriaTitle: [],
 };
 
 const filterBps = (blueprint: Partial<ItemComplete>): boolean => !bpConflicts.includes(blueprint.uniqueName ?? '');
@@ -243,6 +245,7 @@ class Parser {
     this.applyMasterable(result);
     this.applyOverrides(result);
     this.addExaltedSlot(result, data.wikia);
+    this.addHonoriumData(result, data.wikia.honoria);
     if (!result.releaseDate) {
       if (result.masterable) {
         warnings.missingReleaseDates.push(result.name);
@@ -610,6 +613,7 @@ class Parser {
       case 'Flavour':
         if (item.name.includes('Sigil')) item.category = 'Sigils';
         else if (item.name.includes('Glyph')) item.category = 'Glyphs';
+        else if (item.name.includes('Honoria')) item.category = 'Honoria';
         else item.category = 'Skins';
         break;
 
@@ -1082,6 +1086,40 @@ class Parser {
     item.transmutable = wikiaItem.transmutable;
     item.rarity = wikiaItem.rarity ?? item.rarity;
     if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name);
+  }
+
+  addHonoriumData(item: ItemComplete, honorias: WikiaHonorium[]) {
+    // Follow what DE usually does
+    const placeholder = '<NAME>';
+
+    if (item.type != 'Honorium') return;
+    const wikiaItem = honorias.find((i) => i.uniqueName == item.uniqueName);
+    let title = item.name.replace('Honoria', '').trimEnd();
+
+    // Use uniqueName because there's no other way to see what's missing
+    if (!title && !wikiaItem) {
+      warnings.missingHonoriaTitle.push(item.uniqueName);
+      return;
+    }
+
+    if (!title && wikiaItem) title = wikiaItem.name;
+
+    item.titleAffix = wikiaItem?.position;
+    switch (item.titleAffix) {
+      case 'Prefix':
+        item.title = `${title} ${placeholder}`;
+        break;
+      case 'Suffix':
+        item.title = `${placeholder} ${title}`;
+        break;
+      case 'Expletive':
+        item.title = wikiaItem?.name; // Placeholder matches what the wikia uses
+        break;
+      default:
+        item.title = title;
+    }
+
+    item.wikiaUrl = wikiaItem?.wikiaUrl;
   }
 
   /**

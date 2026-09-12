@@ -95,7 +95,8 @@ declare module '@wfcd/items' {
       | MinimalItem
       | ModSet
       | FocusWay
-      | NightwaveChallenge;
+      | NightwaveChallenge
+      | Honorium;
 
   type ModUnion = Mod | SingleLevelMod | RivenMod | StanceMod | PrimeMod | RailjackMod;
 
@@ -697,6 +698,7 @@ declare module '@wfcd/items' {
       | 'Fish'
       | 'Gear'
       | 'Glyphs'
+      | 'Honoria'
       | 'Misc'
       | 'Mods'
       | 'Node'
@@ -839,6 +841,7 @@ declare module '@wfcd/items' {
       | 'Glyph'
       | 'Gunblade'
       | 'Helminth Charger'
+      | 'Honorium'
       | 'K-Drive Component'
       | 'Kavat'
       | 'Key'
@@ -977,4 +980,9 @@ declare module '@wfcd/items' {
       | 'Dark Refractory, Deimos';
 
   type Element = Capitalize<keyof DamageTypes>;
+
+  interface Honorium extends MinimalItem, WikiaItem {
+    title?: string;
+    titleAffix?: 'Prefix' | 'Suffix' | 'Expletive';
+  }
 }
