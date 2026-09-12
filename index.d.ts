@@ -96,7 +96,7 @@ declare module '@wfcd/items' {
       | ModSet
       | FocusWay
       | NightwaveChallenge
-      | Honoria;
+      | Honorium;
 
   type ModUnion = Mod | SingleLevelMod | RivenMod | StanceMod | PrimeMod | RailjackMod;
 
@@ -698,7 +698,7 @@ declare module '@wfcd/items' {
       | 'Fish'
       | 'Gear'
       | 'Glyphs'
-      | 'Honorias'
+      | 'Honoria'
       | 'Misc'
       | 'Mods'
       | 'Node'
@@ -841,7 +841,7 @@ declare module '@wfcd/items' {
       | 'Glyph'
       | 'Gunblade'
       | 'Helminth Charger'
-      | 'Honoria'
+      | 'Honorium'
       | 'K-Drive Component'
       | 'Kavat'
       | 'Key'
@@ -981,7 +981,7 @@ declare module '@wfcd/items' {
 
   type Element = Capitalize<keyof DamageTypes>;
 
-  interface Honoria extends MinimalItem, WikiaItem {
+  interface Honorium extends MinimalItem, WikiaItem {
     title?: string;
     titleAffix?: 'Prefix' | 'Suffix' | 'Expletive';
   }
