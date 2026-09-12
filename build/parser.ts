@@ -1088,12 +1088,12 @@ class Parser {
     if (!wikiaItem.thumbnail) warnings.missingWikiThumb.push(item.name);
   }
 
-  addHonoriumData(item: ItemComplete, honorias: WikiaHonorium[]) {
+  addHonoriumData(item: ItemComplete, honoria: WikiaHonorium[]) {
     // Follow what DE usually does
     const placeholder = '<NAME>';
 
     if (item.type != 'Honorium') return;
-    const wikiaItem = honorias.find((i) => i.uniqueName == item.uniqueName);
+    const wikiaItem = honoria.find((i) => i.uniqueName == item.uniqueName);
     let title = item.name.replace('Honoria', '').trimEnd();
 
     // Use uniqueName because there's no other way to see what's missing
