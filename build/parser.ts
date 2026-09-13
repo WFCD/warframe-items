@@ -1112,14 +1112,15 @@ class Parser {
       case 'Suffix':
         item.title = `${placeholder} ${title}`;
         break;
-      case 'Expletive':
-        item.title = wikiaItem?.name; // Placeholder matches what the wikia uses
-        break;
+      case 'Expletive': // Placeholder matches what the wikia uses
       default:
         item.title = title;
     }
 
+    item.req = wikiaItem?.description;
+    item.price = wikiaItem?.price;
     item.wikiaUrl = wikiaItem?.wikiaUrl;
+    item.tags = wikiaItem?.wikiaTags;
   }
 
   /**

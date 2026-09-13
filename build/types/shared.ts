@@ -400,6 +400,8 @@ export interface ItemComplete extends Item {
   exaltedSlot?: ExaltedSlot;
   title?: string;
   titleAffix?: string;
+  req?: string;
+  price?: object;
 }
 
 export interface Damage {
@@ -445,7 +447,9 @@ export interface Affector {
 export interface WikiaHonorium {
   uniqueName: string;
   name: string;
+  description?: string;
   position: string;
   price?: object;
   wikiaUrl: string;
+  wikiaTags: string[];
 }
