@@ -1,5 +1,15 @@
 import { WikiaHonorium } from 'types/shared';
 
+enum CurrencyType {
+  cc = 'Credits',
+  sc = 'Standing',
+  pc = 'Platinum',
+  ec = 'Endo',
+  kc = 'Kuva',
+  nc = 'Nightwave Credits',
+  ac = 'Aya',
+}
+
 interface OldHonoria {
   InternalName: string;
   Name: string;
@@ -13,26 +23,6 @@ const parseWikiSyntax = (text: string) => {
   const link = /\[{2}([^\]|]+)(?:\|([^\]]+))?\]{2}/g;
   const template = /\{{2}([^]+)\|([^]+)\}{2}/g;
 
-  // {{cc|Credits_Number}} {{pc|Platinum_Number}} {{ec|Endo_Number}} {{sc|Standing_Number}} {{kc|Kuva_Number}} {{nc|Nightwave_Cred_Number}} {{ac|Aya_Number}}
-  const currency = (type: string): string | undefined => {
-    switch (type) {
-      case 'cc':
-        return 'Credits';
-      case 'sc':
-        return 'Standing';
-      case 'pc':
-        return 'Platinum';
-      case 'ec':
-        return 'Endo';
-      case 'kc':
-        return 'Kuva';
-      case 'nc':
-        return 'Nightwave credits';
-      case 'ac':
-        return 'Aya';
-    }
-  };
-
   let sanitized = text.replaceAll(
     link,
     (_, g1: string, g2: string) => g2 || g1
@@ -40,7 +30,8 @@ const parseWikiSyntax = (text: string) => {
   if (template.test(sanitized) && !sanitized.includes('||')) {
     sanitized = sanitized.replaceAll(
       template,
-      (_, g1: string, g2: string) => `${g2} ${currency(g1) ?? ''}`
+      (_, g1: string, g2: string) =>
+        `${g2} ${CurrencyType[g1 as keyof typeof CurrencyType] ?? ''}`
     );
   } else {
     const input1 = /[^]+\|{2}/;
