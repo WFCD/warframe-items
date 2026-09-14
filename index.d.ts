@@ -95,7 +95,8 @@ declare module '@wfcd/items' {
       | MinimalItem
       | ModSet
       | FocusWay
-      | NightwaveChallenge;
+      | NightwaveChallenge
+      | Honorium;
 
   type ModUnion = Mod | SingleLevelMod | RivenMod | StanceMod | PrimeMod | RailjackMod;
 
@@ -697,6 +698,7 @@ declare module '@wfcd/items' {
       | 'Fish'
       | 'Gear'
       | 'Glyphs'
+      | 'Honoria'
       | 'Misc'
       | 'Mods'
       | 'Node'
@@ -754,39 +756,60 @@ declare module '@wfcd/items' {
   type ShotType = 'Continuous' | 'Hit-Scan' | 'Projectile';
 
   type Tag
-    = | 'Amp'
+    = | 'Adversary'
+      | 'Amp'
       | 'Arbiters of Hexis'
+      | 'Archimedea'
       | 'Baro'
+      | 'Boss Fight'
       | 'Cephalon'
       | 'Cephalon Simaris'
       | 'Cephalon Suda'
       | 'Corpus'
       | 'Dagath'
       | 'Dax'
+      | 'Descendia'
+      | 'Dog Days'
       | 'Duviri'
       | 'Entrati'
+      | 'Event'
+      | 'Follie\'s Hunt'
+      | 'Focus'
       | 'Founder'
       | 'Grineer'
+      | 'Hunhow'
       | 'Incarnon'
       | 'Infested'
+      | 'Insign'
       | 'Invasion Reward'
       | 'Kitgun'
+      | 'Kuva'
       | 'Kuva Lich'
       | 'Lua'
+      | 'KIM'
+      | 'Mastery'
+      | 'Miscellaneous'
       | 'Never Vaulted'
       | 'New Loka'
+      | 'Nightwave'
+      | 'Open World'
       | 'Orokin'
       | 'Perrin Sequence'
+      | 'Perita'
       | 'The Perrin Sequence'
       | 'Prime'
       | 'Prisma'
+      | 'Quest'
       | 'Red Veil'
+      | 'Roathe'
       | 'Scaldra'
       | 'Sentient'
+      | 'Staff'
       | 'Stalker'
       | 'Steel Meridian'
       | 'Syndicate'
       | 'Technocyte Coda'
+      | 'Tektolyst Artifact'
       | 'Tenet'
       | 'Tenno'
       | 'Tutorial'
@@ -839,6 +862,7 @@ declare module '@wfcd/items' {
       | 'Glyph'
       | 'Gunblade'
       | 'Helminth Charger'
+      | 'Honorium'
       | 'K-Drive Component'
       | 'Kavat'
       | 'Key'
@@ -977,4 +1001,11 @@ declare module '@wfcd/items' {
       | 'Dark Refractory, Deimos';
 
   type Element = Capitalize<keyof DamageTypes>;
+
+  interface Honorium extends MinimalItem, WikiaItem {
+    title?: string;
+    titleAffix?: 'Prefix' | 'Suffix' | 'Expletive';
+    req?: string;
+    price?: object;
+  }
 }
