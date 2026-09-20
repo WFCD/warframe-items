@@ -13,7 +13,7 @@ describe('#loadMods', () => {
     /** @type {ModResolveable} */
     const sampleArcane = {
       uniqueName: '/Lotus/Upgrades/CosmeticEnhancers/Utility/GolemArcaneRadialEnergyOnEnergyPickup',
-      rank: 5,
+      rank: 5
     };
 
     const arcaneEnergize = loadMods([sampleArcane]);
@@ -23,7 +23,7 @@ describe('#loadMods', () => {
     const normalized = marshall({
       ...expected,
       rank: 5,
-      levelStats: expected.levelStats?.[5] ?? expected.levelStats,
+      levelStats: expected.levelStats?.[5] ?? expected.levelStats
     });
     delete normalized.drops;
     delete normalized.patchlogs;
@@ -34,7 +34,7 @@ describe('#loadMods', () => {
   it('Should parse a mod correctly', () => {
     const sampleMod = {
       uniqueName: '/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod',
-      rank: 5,
+      rank: 5
     };
 
     const hunterCommand = loadMods([sampleMod]);
@@ -47,7 +47,7 @@ describe('#loadMods', () => {
     const normalized = marshall({
       ...expected,
       rank: 5,
-      levelStats: expected.levelStats?.[5] ?? expected.levelStats,
+      levelStats: expected.levelStats?.[5] ?? expected.levelStats
     });
     delete normalized.drops;
     delete normalized.patchlogs;
@@ -62,12 +62,12 @@ describe('#loadMods', () => {
       rank: 8,
       buffs: [
         { tag: 'WeaponCritDamageMod', val: 0.3296302411049886 },
-        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 },
+        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 }
       ],
       curses: [{ tag: 'WeaponAmmoMaxMod', val: 0.5835381164993515 }],
       compat: '/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/GrineerM16Rifle',
       lvlReq: 15,
-      pol: 'AP_DEFENSE',
+      pol: 'AP_DEFENSE'
     };
 
     const rivenMod = loadMods([sampleRiven]);
@@ -80,12 +80,12 @@ describe('#loadMods', () => {
       category: 'Mods',
       buffs: [
         { tag: 'WeaponCritDamageMod', val: 0.3296302411049886 },
-        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 },
+        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 }
       ],
       curses: [{ tag: 'WeaponAmmoMaxMod', val: 0.5835381164993515 }],
       masteryReq: 15,
       wikiaThumbnail: undefined,
-      wikiaUrl: undefined,
+      wikiaUrl: undefined
     };
 
     // ignore some fields
@@ -106,7 +106,7 @@ describe('#loadMods', () => {
   });
   it('should handle being passed a mod that should not have a rank assigned', () => {
     const sampleParazonMod = {
-      uniqueName: '/Lotus/Upgrades/Mods/DataSpike/Cipher/AutoHackMod',
+      uniqueName: '/Lotus/Upgrades/Mods/DataSpike/Cipher/AutoHackMod'
     };
     const parazonMod = loadMods([sampleParazonMod]);
     assert.deepEqual(

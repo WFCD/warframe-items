@@ -45,9 +45,9 @@ const setupItems = async () => {
     weapons: await wrapConstr({
       category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'],
       i18n: 'en',
-      i18nOnObject: true,
+      i18nOnObject: true
     }),
-    mods: await wrapConstr({ category: ['Mods'], i18n: 'en', i18nOnObject: true }),
+    mods: await wrapConstr({ category: ['Mods'], i18n: 'en', i18nOnObject: true })
   });
 };
 
@@ -88,7 +88,7 @@ const test = (base) => {
       try {
         await wrapConstr({
           i18n: ['de', 'es', 'fr', 'it', 'ko', 'pl', 'pt', 'ru', 'zh', 'cs', 'sr'],
-          i18nOnObject: true,
+          i18nOnObject: true
         });
       } catch (e) {
         assert(typeof e === 'undefined');
@@ -144,7 +144,7 @@ const test = (base) => {
         const items = await wrapConstr({
           category: ['Components'],
           i18n: ['de'],
-          i18nOnObject: true,
+          i18nOnObject: true
         });
         const match = items.find((i) => i.uniqueName === cerebrum);
         assert.ok(match, 'PrimeWyrmCerebrum should be in Components catalog');
@@ -472,7 +472,7 @@ const test = (base) => {
           'Vitus Essence',
           'Void Traces',
           'Gallium',
-          'Antiserum Injector Fragment',
+          'Antiserum Injector Fragment'
         ].forEach((iName) => {
           const results = data.items.filter(
             (i) => iName.toLowerCase() === i.name.toLowerCase() && !i.uniqueName.includes('/Enemies')
@@ -566,7 +566,7 @@ const test = (base) => {
           'Shade Prime',
           'Dethcube Prime',
           'Nautilus Prime',
-          'Helios Prime',
+          'Helios Prime'
         ];
         known.forEach((name) => {
           assert(names.includes(name), `${name} should be in the list of primes`);
@@ -582,7 +582,7 @@ const test = (base) => {
           Intact: { 25.33: 3, 11: 2, 2: 1 },
           Exceptional: { 23.33: 3, 13: 2, 4: 1 },
           Flawless: { 20: 3, 17: 2, 6: 1 },
-          Radiant: { 16.67: 3, 20: 2, 10: 1 },
+          Radiant: { 16.67: 3, 20: 2, 10: 1 }
         };
 
         Object.entries(expectedPatterns).forEach(([level, expected]) => {

@@ -47,7 +47,7 @@ export default (
       vaulted: Vaulted ?? undefined,
       vaultDate: VaultDate,
       estimatedVaultDate: EstimatedVaultDate,
-      thumbnail: imageUrls[Image ?? ''],
+      thumbnail: imageUrls[Image ?? '']
     };
     newCompanion = transformPolarity(oldCompanion, newCompanion);
   } catch (error) {

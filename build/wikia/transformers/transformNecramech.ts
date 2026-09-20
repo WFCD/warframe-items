@@ -49,7 +49,7 @@ export default (
       marketCost:
         blueprints[Name] && typeof (blueprints[Name] as Blueprint).MarketCost === 'number'
           ? ((blueprints[Name] as Blueprint).MarketCost as number)
-          : undefined,
+          : undefined
     };
     newMech = transformPolarity(oldMech, newMech);
   } catch (error) {

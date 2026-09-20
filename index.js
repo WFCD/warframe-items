@@ -82,7 +82,7 @@ const defaultOptions = {
   category: defaultCategories,
   i18n: false,
   i18nOnObject: false,
-  resolveComponents: true,
+  resolveComponents: true
 };
 
 /**
@@ -126,7 +126,7 @@ class Items extends Array {
     // Merge provided options with defaults
     this.options = {
       ...defaultOptions,
-      ...options,
+      ...options
     };
 
     if (typeof this.options.category === 'string') {
@@ -153,7 +153,7 @@ class Items extends Array {
     // Load non-Components first so real items win over catalog duplicates
     const categories = [
       ...this.options.category.filter((c) => c !== 'Components'),
-      ...(this.options.category.includes('Components') ? ['Components'] : []),
+      ...(this.options.category.includes('Components') ? ['Components'] : [])
     ];
 
     // Add items from options to array. Type equals the file name.

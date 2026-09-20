@@ -4,7 +4,7 @@
 /** @type {import('../../build/types/shared').WikiaVersion[]} */
 export const versions = [
   { name: 'Update 38.6', aliases: ['Update 38.6'], date: '2025-05-21' },
-  { name: 'Update 16.1', aliases: ['Update 16.1'], date: '2015-03-25' },
+  { name: 'Update 16.1', aliases: ['Update 16.1'], date: '2015-03-25' }
 ];
 
 /** @returns {WikiaData} */
@@ -15,22 +15,22 @@ export const baseWikia = () => ({
       uniqueName: '/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFramePrimeWarfanWeapon',
       url: 'https://wiki.warframe.com/w/Quassus_Prime',
       introduced: 'Update 38.6',
-      slot: 'Melee',
+      slot: 'Melee'
     },
     {
       name: 'Braton',
       uniqueName: '/Lotus/Weapons/Tenno/LongGuns/Braton/Braton',
       url: 'https://wiki.warframe.com/w/Braton',
       introduced: 'Update 38.6',
-      slot: 'Primary',
+      slot: 'Primary'
     },
     {
       name: 'Braton',
       uniqueName: '/Lotus/Weapons/Tenno/Pistols/Braton/BratonPistol',
       url: 'https://wiki.warframe.com/w/Braton',
       introduced: 'Update 38.6',
-      slot: 'Secondary',
-    },
+      slot: 'Secondary'
+    }
   ],
   warframes: [],
   mods: [],
@@ -43,7 +43,7 @@ export const baseWikia = () => ({
       url: 'https://wiki.warframe.com/w/Arcane_Acceleration',
       introduced: 'Update 38.6',
       type: 'Warframe',
-      rarity: 'Uncommon',
+      rarity: 'Uncommon'
     },
     {
       name: 'Arcane Aegis',
@@ -51,8 +51,8 @@ export const baseWikia = () => ({
       url: 'https://wiki.warframe.com/w/Arcane_Aegis',
       introduced: 'Update 38.6',
       type: 'Warframe',
-      rarity: 'Rare',
-    },
+      rarity: 'Rare'
+    }
   ],
   archwings: [],
   companions: [
@@ -60,10 +60,10 @@ export const baseWikia = () => ({
       name: 'Wyrm Prime',
       uniqueName: '/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPrimePowerSuit',
       url: 'https://wiki.warframe.com/w/Wyrm_Prime',
-      introduced: 'Update 16.1',
-    },
+      introduced: 'Update 16.1'
+    }
   ],
-  vaultData: [],
+  vaultData: []
 });
 
 /**
@@ -78,7 +78,7 @@ export const buildRaw = (overrides = {}) => ({
   wikia: baseWikia(),
   relics: [],
   i18n: { en: [] },
-  ...overrides,
+  ...overrides
 });
 
 /** @param {import('../../build/types/shared').CategoryData[]} categories */

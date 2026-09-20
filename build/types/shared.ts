@@ -27,7 +27,7 @@ export interface Item {
   category: string;
   productCategory?: string;
   imageName: string;
-  components?: Item[];
+  components?: (Item | ComponentRef)[];
   abilities?: Ability[];
   isAugment?: boolean;
   tradable?: boolean;

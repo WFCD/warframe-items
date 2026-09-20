@@ -30,17 +30,17 @@ describe('parser component catalog helpers', () => {
               name: 'Chassis',
               imageName: 'chassis.png',
               itemCount: 1,
-              description: 'Chassis component of the Ash Warframe.',
-            },
-          ],
-        },
-      ],
+              description: 'Chassis component of the Ash Warframe.'
+            }
+          ]
+        }
+      ]
     };
     parser.extractComponentCatalog(data);
     assert.strictEqual(data.Warframes[0].components.length, 1);
     assert.deepStrictEqual(data.Warframes[0].components[0], {
       uniqueName: '/Lotus/Types/Recipes/WarframeRecipes/AshChassisComponent',
-      itemCount: 1,
+      itemCount: 1
     });
     assert.strictEqual(data.Components.length, 1);
     assert.strictEqual(data.Components[0].name, 'Chassis');
@@ -56,8 +56,8 @@ describe('parser component catalog helpers', () => {
           name: 'Amphis',
           category: 'Melee',
           type: 'Melee',
-          imageName: 'amphis.png',
-        },
+          imageName: 'amphis.png'
+        }
       ],
       Warframes: [
         {
@@ -71,17 +71,17 @@ describe('parser component catalog helpers', () => {
               uniqueName: '/Lotus/Weapons/Tenno/Melee/Staff/GrnStaff',
               name: 'Amphis',
               imageName: 'amphis.png',
-              itemCount: 1,
-            },
-          ],
-        },
-      ],
+              itemCount: 1
+            }
+          ]
+        }
+      ]
     };
     parser.extractComponentCatalog(data);
     assert.strictEqual(data.Components?.length ?? 0, 0);
     assert.deepStrictEqual(data.Warframes[0].components[0], {
       uniqueName: '/Lotus/Weapons/Tenno/Melee/Staff/GrnStaff',
-      itemCount: 1,
+      itemCount: 1
     });
     assert.deepStrictEqual(data.Melee[0].parentUniqueNames, ['/Lotus/Powersuits/Dummy/Dummy']);
   });
@@ -102,11 +102,11 @@ describe('parser component catalog helpers', () => {
               uniqueName: chassisId,
               name: 'Chassis',
               imageName: 'chassis.png',
-              itemCount: 1,
-            },
-          ],
-        },
-      ],
+              itemCount: 1
+            }
+          ]
+        }
+      ]
     };
     parser.extractComponentCatalog(data);
 
@@ -117,10 +117,10 @@ describe('parser component catalog helpers', () => {
           category: 'Resources',
           data: [
             { uniqueName: ashId, name: 'Ash' },
-            { uniqueName: chassisId, name: 'Ash: Chassis', description: 'Chassis-Komponente.' },
-          ],
-        },
-      ],
+            { uniqueName: chassisId, name: 'Ash: Chassis', description: 'Chassis-Komponente.' }
+          ]
+        }
+      ]
     });
 
     assert.strictEqual(i18n[chassisId].de.name, 'Chassis');

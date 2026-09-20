@@ -20,7 +20,7 @@ const knownWikiArcanes = [
   'Arcane Energize',
   'Arcane Grace',
   'Magus Elevate',
-  'Virtuos Fury',
+  'Virtuos Fury'
 ];
 
 /** Items with no standalone wiki Introduced entry or known InternalName gaps. */
@@ -37,7 +37,7 @@ const allowedMissingReleaseDates = [
   'Mandonel',
   'Needlenose',
   'Runway',
-  'Voidrig',
+  'Voidrig'
 ];
 
 /** Skip when committed JSON predates wiki merge fixes (run `npm run build -- --force` locally). */

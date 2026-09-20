@@ -9,7 +9,7 @@ const ELEMENTS: Record<string, string> = {
   Viral: 'viral',
   Magnetic: 'magnetic',
   Gas: 'gas',
-  Void: 'void',
+  Void: 'void'
 };
 
 export default ELEMENTS;

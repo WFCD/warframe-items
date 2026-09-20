@@ -17,11 +17,11 @@ describe('parser wiki merge', () => {
               {
                 name: 'Arcane Acceleration',
                 uniqueName: '/Lotus/Upgrades/Cosmetic/Arcane/LotusArcaneAcceleration',
-                type: 'Arcane',
-              },
-            ],
-          },
-        ],
+                type: 'Arcane'
+              }
+            ]
+          }
+        ]
       })
     );
 
@@ -42,11 +42,11 @@ describe('parser wiki merge', () => {
               {
                 name: 'Lith A1 Relic',
                 uniqueName: '/Lotus/Types/Keys/Projections/LithA1Relic',
-                type: 'Relic',
-              },
-            ],
-          },
-        ],
+                type: 'Relic'
+              }
+            ]
+          }
+        ]
       })
     );
 
@@ -66,9 +66,9 @@ describe('parser wiki merge', () => {
                 name: 'Quassus Prime',
                 uniqueName: '/Lotus/Weapons/Tenno/Melee/Warfan/PrimeQuassus/PrimeQuassusWeapon',
                 slot: 5,
-                masteryReq: 14,
-              },
-            ],
+                masteryReq: 14
+              }
+            ]
           },
           {
             category: 'Sentinels',
@@ -76,11 +76,11 @@ describe('parser wiki merge', () => {
               {
                 name: 'Wyrm Prime',
                 uniqueName: '/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit',
-                type: 'Sentinel',
-              },
-            ],
-          },
-        ],
+                type: 'Sentinel'
+              }
+            ]
+          }
+        ]
       })
     );
 
@@ -99,12 +99,12 @@ describe('parser wiki merge', () => {
               {
                 name: 'Braton',
                 uniqueName: '/Lotus/Weapons/Tenno/LongGuns/Braton/BratonMk1',
-                slot: 1,
-              },
-            ],
-          },
+                slot: 1
+              }
+            ]
+          }
         ],
-        wikia,
+        wikia
       })
     );
 
@@ -121,8 +121,8 @@ describe('parser wiki merge', () => {
         uniqueName: '/Lotus/Upgrades/Cosmetic/Arcane/LotusArcaneNullifier',
         url: 'https://wiki.warframe.com/w/Arcane_Nullifier',
         introduced: 'Update 38.6',
-        type: 'Warframe',
-      },
+        type: 'Warframe'
+      }
     ];
 
     const parsed = parser.parse(
@@ -135,12 +135,12 @@ describe('parser wiki merge', () => {
                 name: 'Arcane Nullifier',
                 uniqueName: '/Lotus/Upgrades/Cosmetic/Arcane/LotusArcaneNullifier',
                 type: 'Arcane',
-                rarity: 'Rare',
-              },
-            ],
-          },
+                rarity: 'Rare'
+              }
+            ]
+          }
         ],
-        wikia,
+        wikia
       })
     );
 
@@ -160,12 +160,12 @@ describe('parser wiki merge', () => {
               {
                 name: 'Arcane Acceleration',
                 uniqueName: '/Lotus/Upgrades/Cosmetic/Arcane/LotusArcaneAcceleration',
-                type: 'Arcane',
-              },
-            ],
-          },
+                type: 'Arcane'
+              }
+            ]
+          }
         ],
-        wikia,
+        wikia
       })
     );
 
@@ -186,12 +186,12 @@ describe('parser wiki merge', () => {
               {
                 name: 'Arcane Defense',
                 uniqueName: '/Lotus/Upgrades/CosmeticEnhancers/Defensive/PunctureProcResist',
-                type: 'Arcane',
-              },
-            ],
-          },
+                type: 'Arcane'
+              }
+            ]
+          }
         ],
-        wikia,
+        wikia
       })
     );
 
@@ -207,7 +207,7 @@ describe('companion and kitgun wiki release dates', () => {
       name: 'Adarza Kavat',
       uniqueName: '/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit',
       url: 'https://wiki.warframe.com/w/Adarza_Kavat',
-      introduced: 'Update 38.6',
+      introduced: 'Update 38.6'
     });
 
     const parsed = parser.parse(
@@ -220,12 +220,12 @@ describe('companion and kitgun wiki release dates', () => {
                 name: 'Adarza Kavat',
                 uniqueName: '/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit',
                 productCategory: 'KubrowPets',
-                type: 'Pets',
-              },
-            ],
-          },
+                type: 'Pets'
+              }
+            ]
+          }
         ],
-        wikia,
+        wikia
       })
     );
 
@@ -244,7 +244,7 @@ describe('companion and kitgun wiki release dates', () => {
         '/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart',
       url: 'https://wiki.warframe.com/w/Catchmoon',
       introduced: 'Update 38.6',
-      slot: 'Secondary',
+      slot: 'Secondary'
     });
 
     const parsed = parser.parse(
@@ -258,12 +258,12 @@ describe('companion and kitgun wiki release dates', () => {
                 uniqueName:
                   '/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart',
                 productCategory: 'Pistols',
-                type: 'Kitgun Component',
-              },
-            ],
-          },
+                type: 'Kitgun Component'
+              }
+            ]
+          }
         ],
-        wikia,
+        wikia
       })
     );
 
@@ -284,21 +284,21 @@ describe('exaltedSlot from wiki', () => {
         uniqueName: '/Lotus/Powersuits/Fairy/FlightPistols',
         url: 'https://wiki.warframe.com/w/Dex_Pixia',
         introduced: 'Update 38.6',
-        slot: 'Secondary',
+        slot: 'Secondary'
       },
       {
         name: 'Arquebex',
         uniqueName: '/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/ExaltedArtilleryWeapon',
         url: 'https://wiki.warframe.com/w/Arquebex',
         introduced: 'Update 38.6',
-        slot: 'Archgun (Atmosphere)',
+        slot: 'Archgun (Atmosphere)'
       },
       {
         name: 'Ironbride',
         uniqueName: '/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/AbilitySword/NechroTechSwordWeapon',
         url: 'https://wiki.warframe.com/w/Ironbride',
         introduced: 'Update 38.6',
-        slot: 'Archmelee',
+        slot: 'Archmelee'
       }
     );
 
@@ -313,7 +313,7 @@ describe('exaltedSlot from wiki', () => {
                 uniqueName: '/Lotus/Powersuits/Fairy/FlightPistols',
                 productCategory: 'SpecialItems',
                 slot: 7,
-                type: 'Exalted Weapon',
+                type: 'Exalted Weapon'
               },
               {
                 name: 'Arquebex',
@@ -321,7 +321,7 @@ describe('exaltedSlot from wiki', () => {
                   '/Lotus/Types/Enemies/Orokin/Entrati/EntratiTech/NechroTech/ExaltedArtilleryWeapon',
                 productCategory: 'SpecialItems',
                 slot: 7,
-                type: 'Exalted Weapon',
+                type: 'Exalted Weapon'
               },
               {
                 name: 'Ironbride',
@@ -330,12 +330,12 @@ describe('exaltedSlot from wiki', () => {
                 productCategory: 'SpecialItems',
                 slot: 7,
                 type: 'Exalted Weapon',
-                blockingAngle: 90,
-              },
-            ],
-          },
+                blockingAngle: 90
+              }
+            ]
+          }
         ],
-        wikia,
+        wikia
       })
     );
 
@@ -359,11 +359,11 @@ describe('exaltedSlot from wiki', () => {
                 slot: 7,
                 type: 'Exalted Weapon',
                 blockingAngle: 90,
-                comboDuration: 5,
-              },
-            ],
-          },
-        ],
+                comboDuration: 5
+              }
+            ]
+          }
+        ]
       })
     );
 

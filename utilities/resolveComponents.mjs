@@ -20,7 +20,7 @@ export function resolveComponents(item, catalog) {
     delete rest.parentUniqueNames;
     return {
       ...rest,
-      itemCount: typeof ref.itemCount === 'number' ? ref.itemCount : 1,
+      itemCount: typeof ref.itemCount === 'number' ? ref.itemCount : 1
     };
   });
   return item;

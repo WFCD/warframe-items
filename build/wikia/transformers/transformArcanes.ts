@@ -28,7 +28,7 @@ export default (oldArcane: OldArcane, imageUrls: Record<string, string>): WikiaA
       introduced: Introduced,
       type: Type,
       rarity: Rarity ? Rarity.charAt(0).toUpperCase() + Rarity.slice(1).toLowerCase() : undefined,
-      thumbnail: imageUrls[Image ?? ''],
+      thumbnail: imageUrls[Image ?? '']
     };
   } catch (error) {
     console.error(`Error parsing ${oldArcane.Name}`);

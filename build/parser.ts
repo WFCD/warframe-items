@@ -38,7 +38,7 @@ import type {
   ApiCategory,
   ExaltedSlot,
   Damage,
-  WikiaHonorium,
+  WikiaHonorium
 } from './types/shared';
 
 const previousBuildUrl = new URL('../data/json/All.json', import.meta.url);
@@ -61,7 +61,7 @@ const damageTypes = await readJson<(keyof Damage)[]>(new URL('../config/damageTy
 
 const productCategoryTypeMap: Record<string, string> = {
   SpaceGuns: 'Arch-Gun',
-  SpaceMelee: 'Arch-Melee',
+  SpaceMelee: 'Arch-Melee'
 };
 
 const { prefixes, suffixes } = variants;
@@ -92,7 +92,7 @@ const warnings: Warnings = {
   missingReleaseDates: [],
   ambiguousWikiMatch: [],
   missingExaltedSlot: [],
-  missingHonoriaTitle: [],
+  missingHonoriaTitle: []
 };
 
 const filterBps = (blueprint: Partial<ItemComplete>): boolean => !bpConflicts.includes(blueprint.uniqueName ?? '');
@@ -110,7 +110,7 @@ const allowedPrimes = [
   'Archwing',
   'Arch-Gun',
   'Arch-Melee',
-  'Mods',
+  'Mods'
 ];
 
 /**
@@ -136,7 +136,7 @@ const dropMap = (drop: RawDrop): Drop => {
     location: drop.place.replace('<b>', '').replace('</b>', ''),
     type: drop.item,
     chance: Number.parseFloat(Number(drop.chance).toFixed(5)),
-    rarity: drop.rarity,
+    rarity: drop.rarity
   };
 };
 
@@ -161,7 +161,7 @@ class Parser {
       const parsedData = this.process(chunk.data, chunk.category ?? 'Unknown', blueprints ?? [], data);
       result.push({
         category: chunk.category ?? 'Unknown',
-        data: parsedData,
+        data: parsedData
       });
     }
 
@@ -175,7 +175,7 @@ class Parser {
 
     return {
       data: result,
-      warnings,
+      warnings
     };
   }
 
@@ -326,7 +326,7 @@ class Parser {
       name: 'Blueprint',
       description: item.description,
       itemCount: 1,
-      primeSellingPrice: (blueprint as ItemComplete).primeSellingPrice,
+      primeSellingPrice: (blueprint as ItemComplete).primeSellingPrice
     } as unknown as Component);
 
     // Attach relevant keys from blueprint to parent
@@ -469,7 +469,7 @@ class Parser {
           uniqueName: ability.abilityUniqueName ?? ability.uniqueName,
           name: title(ability.abilityName ?? ability.name),
           description: ability.description,
-          imageName: ability.imageName || '',
+          imageName: ability.imageName || ''
         };
       });
     }
@@ -744,7 +744,9 @@ class Parser {
           if (!previous?.components) return;
 
           const saved = (previous.components as Component[]).find(
-            (c) => c.name.toLowerCase() === component.name.toLowerCase()
+            (c) =>
+              (Boolean(c.uniqueName) && c.uniqueName === component.uniqueName)
+              || (Boolean(c.name) && Boolean(component.name) && c.name.toLowerCase() === component.name.toLowerCase())
           );
           if (saved?.drops) {
             // chances were written as strings, caused by previous bad data
@@ -843,7 +845,7 @@ class Parser {
 
     const target = {
       name: item.type === 'Relic' ? item.name.replace(/\s(\w+)$/, ' Relic') : item.name,
-      type: item.type,
+      type: item.type
     };
 
     const logs = patchlogs.patchlogs.getItemChanges(target);
@@ -942,7 +944,7 @@ class Parser {
       [],
       [],
       [],
-      ['Railjack Turret'], // 14
+      ['Railjack Turret'] // 14
     ];
 
     const wikiaItem = this.findWikiaItem(item, wikiCategory, wikiaData, slots);
@@ -1178,9 +1180,10 @@ class Parser {
    * @param drops drop rate data for refinement-specific chances
    */
   addRelics(item: ItemComplete, relics: TitaniaRelic[], drops: RawDrop[]): void {
-    const hasRelicDrop = item.components?.some((c) =>
-      c.drops?.some((d) => d.location.includes('Relic')) ?? false
-    );
+    const hasRelicDrop = item.components?.some((c) => {
+      const drops = 'drops' in c ? (c as Component).drops : undefined;
+      return drops?.some((d) => d.location.includes('Relic')) ?? false;
+    });
     if (item.type !== 'Relic' && !hasRelicDrop) return;
 
     const addRelic = (relicItem: ItemComplete | Drop, name: string, link = false): void => {
@@ -1348,7 +1351,7 @@ class Parser {
 
     const quantities = {
       positive: [0.25, 0.5, 0.75],
-      negative: [-0.25, -0.5, -0.75],
+      negative: [-0.25, -0.5, -0.75]
     };
     const parseAffectors = (affectors: string): Affector[] => {
       return affectors.split(' ').map((element) => {
@@ -1359,7 +1362,7 @@ class Parser {
           const parts = firstPart.split('_');
           return {
             element: firstPart.length > 0 ? (watson[firstPart] ?? title(parts[1] ?? '')) : 'None',
-            modifier: quantities.positive[pSplit.length - 2] ?? 0,
+            modifier: quantities.positive[pSplit.length - 2] ?? 0
           };
         }
         if (element.includes('-')) {
@@ -1369,12 +1372,12 @@ class Parser {
           const parts = firstPart.split('_');
           return {
             element: firstPart.length > 0 ? (watson[firstPart] ?? title(parts[1] ?? '')) : 'None',
-            modifier: quantities.negative[nSplit.length - 2] ?? 0,
+            modifier: quantities.negative[nSplit.length - 2] ?? 0
           };
         }
         return {
           element: 'None',
-          modifier: 0,
+          modifier: 0
         };
       });
     };
@@ -1382,7 +1385,7 @@ class Parser {
       return (enemy.resistValues ?? []).map((resist, index) => ({
         amount: resist,
         type: title((enemy.resistPrefix ?? [])[index]),
-        affectors: parseAffectors(((enemy.resistTexts ?? [])[index] ?? '').trim().replace(/\s\s/g, ' ')),
+        affectors: parseAffectors(((enemy.resistTexts ?? [])[index] ?? '').trim().replace(/\s\s/g, ' '))
       }));
     };
 
@@ -1469,7 +1472,7 @@ class Parser {
           entry.parentUniqueNames = [item.uniqueName];
           catalog.set(comp.uniqueName, entry);
         }
-        item.components = refs as Item[];
+        item.components = refs;
       }
     }
 
@@ -1534,7 +1537,7 @@ class Parser {
       'abilities',
       'trigger',
       'systemName',
-      'levelStats',
+      'levelStats'
     ];
     const locales = Object.keys(i18n).filter((key) => key !== 'en');
     const resultArray: Item[] = [];

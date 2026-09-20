@@ -24,7 +24,7 @@ class ProgressImpl extends ProgressBar {
       {
         incomplete: colors.red('-'),
         width: 20,
-        total,
+        total
       } as unknown as number
     );
   }

@@ -23,7 +23,7 @@ import type {
   CachedItem,
   PatchlogWrap,
   CategoryData,
-  ApiCategory,
+  ApiCategory
 } from './types/shared';
 import { createHash } from 'node:crypto';
 
@@ -60,7 +60,7 @@ class Build {
       patchlogs: (await scraper.fetchPatchLogs()) as unknown as PatchlogWrap,
       wikia: await scraper.fetchWikiaData(),
       relics: ((await scraper.generateRelicData()) ?? []) as never,
-      i18n: resources,
+      i18n: resources
     };
     const parsed = parser.parse(raw);
     parsed.warnings.failedImage = [...warnings.failedImage]; // The parser doesn't keep tracked of failed images so this will be empty
@@ -269,9 +269,9 @@ class Build {
           plugins: [
             minifyJpeg(),
             minifyPng({
-              quality: [0.2, 0.4],
-            }),
-          ] as Plugin[],
+              quality: [0.2, 0.4]
+            })
+          ] as Plugin[]
         });
 
         this.updateCache(item, cached, hash, isComponent);
@@ -295,7 +295,7 @@ class Build {
       imageCache.push({
         uniqueName: item.uniqueName,
         hash: hash ?? '',
-        isComponent,
+        isComponent
       });
     } else {
       cached.hash = hash ?? '';
@@ -354,7 +354,7 @@ class Build {
       Node: 20,
       Enemy: 21,
       Misc: 22, // K-Drives, Drones, etc.
-      Components: 23,
+      Components: 23
     };
 
     const items = Object.values(data).flat();

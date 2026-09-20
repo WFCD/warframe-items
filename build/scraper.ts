@@ -175,7 +175,7 @@ class Scraper {
           armor: 0,
           stamina: 0,
           power: 0,
-          abilities: raw.ExportAbilities,
+          abilities: raw.ExportAbilities
         };
 
         data.push(helminth);
@@ -211,7 +211,7 @@ class Scraper {
     );
 
     const i18n: Record<string, ApiChunk[]> = {
-      en: result,
+      en: result
     };
 
     // Request i18n sequentially by locale to avoid getting randomly stuck in some computers
@@ -350,7 +350,7 @@ class Scraper {
       companions,
       arcanes,
       vaultData,
-      honoria,
+      honoria
     };
 
     applyNameOverrides(wikiaToReturn);

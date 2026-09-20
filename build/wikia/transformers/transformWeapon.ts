@@ -16,7 +16,7 @@ const damageTypes = [
   'Blast',
   'Magnetic',
   'Gas',
-  'Void',
+  'Void'
 ];
 
 interface WikiaAttack {
@@ -138,7 +138,7 @@ const parseAttack = (Attack: AttackData): WikiaAttack => {
       Attack.PelletName && Attack.PelletCount
         ? {
             name: Attack.PelletName,
-            count: Attack.PelletCount,
+            count: Attack.PelletCount
           }
         : undefined,
     crit_chance: Attack.CritChance != null ? Number((Attack.CritChance * 100).toFixed(2)) : undefined,
@@ -148,16 +148,16 @@ const parseAttack = (Attack: AttackData): WikiaAttack => {
     shot_type: Attack.ShotType,
     shot_speed: Attack.ShotSpeed && Number(Attack.ShotSpeed.toFixed(1)),
     ...(Attack.ShotSpeed && {
-      flight: Attack.ShotSpeed,
+      flight: Attack.ShotSpeed
     }),
     ...(Attack.Falloff && {
       falloff: {
         start: Attack.Falloff.StartRange,
         end: Attack.Falloff.EndRange,
-        reduction: Attack.Falloff.Reduction,
-      },
+        reduction: Attack.Falloff.Reduction
+      }
     }),
-    damage: {},
+    damage: {}
   };
 
   if (!Number.isFinite(attack.speed)) attack.speed = undefined;
@@ -183,7 +183,7 @@ const parseSlam = ({
   SlamRadialDmg,
   SlamRadialElement,
   SlamRadialProc,
-  SlamRadius,
+  SlamRadius
 }: OldWeapon): SlamAttack => {
   return {
     damage: Number(SlamAttack ?? 0).toFixed(2),
@@ -191,8 +191,8 @@ const parseSlam = ({
       damage: Number(SlamRadialDmg ?? 0).toFixed(2),
       element: SlamRadialElement,
       proc: SlamRadialProc,
-      radius: Number(SlamRadius),
-    },
+      radius: Number(SlamRadius)
+    }
   };
 };
 
@@ -250,7 +250,7 @@ export default async (
       Attack10,
       Attacks,
       InternalName,
-      Slot,
+      Slot
     } = oldWeapon;
 
     newWeapon = {
@@ -263,7 +263,7 @@ export default async (
       class: Class,
       riven_disposition: Disposition,
       ...(ChargeAttack?.StatusChance && {
-        status_chance: Number((ChargeAttack.StatusChance * 100).toFixed(2)),
+        status_chance: Number((ChargeAttack.StatusChance * 100).toFixed(2))
       }),
       polarities: Polarities,
       ...(MaxAmmo && { ammo: MaxAmmo }),
@@ -295,10 +295,10 @@ export default async (
         SecondaryAreaAttack && parseAttack(SecondaryAreaAttack),
         SecondaryAttack && parseAttack(SecondaryAttack),
         ChargeAttack && parseAttack(ChargeAttack),
-        AreaAttack && parseAttack(AreaAttack),
+        AreaAttack && parseAttack(AreaAttack)
       ]
         .concat((Attacks ?? []).map(parseAttack))
-        .filter((a): a is WikiaAttack => Boolean(a)),
+        .filter((a): a is WikiaAttack => Boolean(a))
     };
 
     if (newWeapon.attacks?.[0]) {
@@ -308,7 +308,7 @@ export default async (
         jump: JumpAttack ? `${JumpAttack}${JumpElement ? (ELEMENTS[JumpElement] ?? '') : ''}` : undefined,
         wall: WallAttack ? `${WallAttack}${WallElement ? (ELEMENTS[WallElement] ?? '') : ''}` : undefined,
         channeling: SlideAttack && JumpAttack && WallAttack ? (ChannelMult ?? 1.5) : undefined,
-        slam: SlamAttack ? parseSlam(oldWeapon) : undefined,
+        slam: SlamAttack ? parseSlam(oldWeapon) : undefined
       };
     }
 

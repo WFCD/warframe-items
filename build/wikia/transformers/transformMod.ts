@@ -24,7 +24,7 @@ export default (oldMod: OldMod, imageUrls: Record<string, string>): WikiaMod | u
       url: `https://wiki.warframe.com/w/${encodeURIComponent(Name.replace(/\s/g, '_'))}`,
       transmutable: Transmutable,
       introduced: Introduced,
-      thumbnail: imageUrls[Image ?? ''],
+      thumbnail: imageUrls[Image ?? '']
     };
   } catch (error) {
     console.error(`Error parsing ${oldMod.Name}`);

@@ -49,7 +49,7 @@ export const loadMods = (upgrades = []) => {
           wikiaUrl: upgradeData.wikiaUrl || undefined,
           buffs: upgrade.buffs,
           curses: upgrade.curses,
-          masteryReq: upgrade.lvlReq,
+          masteryReq: upgrade.lvlReq
         };
       }
       delete upgradeData.transmutable;
@@ -59,11 +59,11 @@ export const loadMods = (upgrades = []) => {
   });
   return {
     arcanes,
-    mods,
+    mods
   };
 };
 
 export default {
   findItem,
-  loadMods,
+  loadMods
 };

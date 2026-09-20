@@ -25,7 +25,7 @@ const mapColors = async (oldFrame: OldWarframe, imageUrl?: string): Promise<numb
   try {
     const options = {
       url: imageUrl,
-      dest: `tmp/tmp-${oldFrame.Name ?? 'unknown'}.png`,
+      dest: `tmp/tmp-${oldFrame.Name ?? 'unknown'}.png`
     };
     const result = await downloadImage(options);
     const colors = await getColors(result.image, 'image/png');
@@ -79,7 +79,7 @@ export default async (
       bpCost:
         blueprints[Name] && typeof (blueprints[Name] as Blueprint).BPCost === 'number'
           ? ((blueprints[Name] as Blueprint).BPCost as number)
-          : undefined,
+          : undefined
     };
     newFrame = transformPolarity(oldFrame, newFrame);
   } catch (error) {
