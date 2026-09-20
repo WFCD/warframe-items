@@ -64,13 +64,6 @@ const readJson = (filePath) => {
 
 const versions = readJson('./data/cache/.export.json');
 
-let i18n = {};
-try {
-  i18n = readJson('./data/json/i18n.json');
-} catch (_ignored) {
-  // can only happen in really weird stuff, and we're already defaulting, so it's ok
-}
-
 const ignored = ['All', 'i18n'];
 const defaultCategories = fs
   .readdirSync(path.join(__dirname, './data/json/'))
@@ -83,6 +76,38 @@ const defaultOptions = {
   i18n: false,
   i18nOnObject: false,
   resolveComponents: true
+};
+
+/**
+ * Load per-locale i18n files and merge into uniqueName → locale → fields.
+ * @param {boolean|string|string[]} localesOption
+ * @returns {Record<string, Record<string, object>>}
+ */
+const loadI18n = (localesOption) => {
+  if (!localesOption) return {};
+
+  let locales;
+  if (localesOption === true) {
+    locales = readJson('./config/locales.json');
+    if (!Array.isArray(locales)) locales = [];
+  } else if (typeof localesOption === 'string') {
+    locales = [localesOption];
+  } else if (Array.isArray(localesOption)) {
+    locales = localesOption;
+  } else {
+    return {};
+  }
+
+  const out = {};
+  for (const locale of locales) {
+    const localeData = readJson(`./data/json/i18n/${locale}.json`);
+    if (!localeData || Array.isArray(localeData) || typeof localeData !== 'object') continue;
+    for (const [uniqueName, partial] of Object.entries(localeData)) {
+      if (!out[uniqueName]) out[uniqueName] = {};
+      out[uniqueName][locale] = partial;
+    }
+  }
+  return out;
 };
 
 /**
@@ -149,6 +174,7 @@ class Items extends Array {
     const catalogMap = shouldResolve ? buildResolveMap(readJson, defaultCategories) : null;
     const seenUniqueNames = new Set();
     const pendingResolve = [];
+    const i18n = this.options.i18n ? loadI18n(this.options.i18n) : {};
 
     // Load non-Components first so real items win over catalog duplicates
     const categories = [
@@ -167,27 +193,12 @@ class Items extends Array {
 
         const item = cloneItem(raw);
         if (this.options.i18n) {
-          // only insert i18n for the objects we're inserting, so we don't bloat memory
-          if (Array.isArray(this.options.i18n)) {
-            const itemI18n = i18n[item.uniqueName];
-            const rawI18n = itemI18n ? { ...itemI18n } : undefined;
-            // only process if passed language is a supported i18n value
-            if (rawI18n) {
-              Object.keys(rawI18n).forEach((locale) => {
-                if (!this.options.i18n.includes(locale)) {
-                  delete rawI18n[locale];
-                }
-              });
-            }
-            this.i18n[item.uniqueName] = rawI18n;
-          } else {
-            this.i18n[item.uniqueName] = i18n[item.uniqueName];
+          this.i18n[item.uniqueName] = i18n[item.uniqueName];
+          if (this.options.i18nOnObject) {
+            item.i18n = this.i18n[item.uniqueName];
+            // keep data just on the object so no bloat in extra this.i18n
+            delete this.i18n[item.uniqueName];
           }
-        }
-        if (this.options.i18n && this.options.i18nOnObject) {
-          item.i18n = this.i18n[item.uniqueName];
-          // keep data just on the object so no bloat in extra this.i18n
-          delete this.i18n[item.uniqueName];
         }
         if (shouldResolve) pendingResolve.push(item);
         this.push(item);

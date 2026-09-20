@@ -74,6 +74,10 @@ declare module '@wfcd/items' {
   interface ItemsOptions {
     category?: (Category | 'SentinelWeapons')[];
     ignoreEnemies?: boolean;
+    /**
+     * If true, load all locales from data/json/i18n/{locale}.json.
+     * If a string array, load only those locale files.
+     */
     i18n?: boolean | string[];
     i18nOnObject?: boolean;
     /**

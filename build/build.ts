@@ -9,7 +9,7 @@ import fetch from 'node-fetch';
 import sharp from 'sharp';
 
 import Progress from './progress';
-import stringify from './stringify';
+import stringify, { stringifyWarnings } from './stringify';
 import scraper from './scraper';
 import parser from './parser';
 import hashManager from './hashManager';
@@ -156,7 +156,29 @@ class Build {
     // All.json (all items in one file)
     all.sort(sort);
     await fs.writeFile(new URL('../data/json/All.json', import.meta.url), stringify(all));
-    await fs.writeFile(new URL('../data/json/i18n.json', import.meta.url), JSON.stringify(JSON.parse(stringify(i18n))));
+
+    // Per-locale i18n: data/json/i18n/{locale}.json
+    const i18nDir = new URL('../data/json/i18n/', import.meta.url);
+    await fs.mkdir(i18nDir, { recursive: true });
+    const byLocale: Record<string, Record<string, Partial<Item>>> = {};
+    for (const [uniqueName, locales] of Object.entries(i18n)) {
+      for (const [locale, partial] of Object.entries(locales)) {
+        byLocale[locale] ??= {};
+        byLocale[locale][uniqueName] = partial;
+      }
+    }
+    for (const [locale, data] of Object.entries(byLocale)) {
+      await fs.writeFile(
+        new URL(`../data/json/i18n/${locale}.json`, import.meta.url),
+        JSON.stringify(JSON.parse(stringify(data)))
+      );
+    }
+    // Drop legacy monolith if present
+    try {
+      await fs.unlink(new URL('../data/json/i18n.json', import.meta.url));
+    } catch {
+      // absent ok
+    }
   }
 
   /**
@@ -164,7 +186,7 @@ class Build {
    * @param warnings warnings to save to file
    */
   async saveWarnings(warnings: Warnings): Promise<void> {
-    return fs.writeFile(new URL('../data/warnings.json', import.meta.url), stringify(warnings));
+    return fs.writeFile(new URL('../data/warnings.json', import.meta.url), stringifyWarnings(warnings));
   }
 
   /**

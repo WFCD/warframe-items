@@ -15,4 +15,21 @@ const expand = (str: string): string =>
   str.replace(/"\^\^\^(\[ .* ])"/g, (_match, a: string) => a.replace(/\\"/g, '"')).replace(/\\\\"/g, '\'');
 const stringify = (obj: unknown): string => expand(JSON.stringify(Array.isArray(obj) ? dedupe(obj) : obj, replacer, 2));
 
+/**
+ * Same single-line primitive arrays as stringify, but eslint jsonc-safe
+ * (`array-bracket-spacing: never` → `["a"]` not `[ "a" ]`).
+ * Use for data/warnings.json only.
+ */
+const formatEslint = (arr: unknown[]): string => `^^^[${arr.map((val) => JSON.stringify(val)).join(', ')}]`;
+const expandEslint = (str: string): string =>
+  str.replace(/"\^\^\^(\[.*])"/g, (_match, a: string) => a.replace(/\\"/g, '"')).replace(/\\\\"/g, '\'');
+export const stringifyWarnings = (obj: unknown): string =>
+  expandEslint(
+    JSON.stringify(
+      obj,
+      (_key, value: unknown) => (isArrayOfPrimitive(value) ? formatEslint(value as unknown[]) : value),
+      2
+    )
+  );
+
 export default stringify;
