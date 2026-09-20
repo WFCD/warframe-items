@@ -68,6 +68,7 @@ allows you to add your own items before our gathered ones.
 | category | `['All']` | Array of item categories to retrieve. Parallel to file names in /data/json. Useful if you don't wanna load lots and lots of MB of data into memory.
 | i18n | `false` | If `false` (default), no internationalization data is loaded. If set to an array of language codes (e.g., `['zh', 'de']`), translations are loaded from `/data/json/i18n.json` and accessible via the main instance's `i18n` field.<br> **Supported language codes**: `de`, `es`, `fr`, `it`, `ja`, `ko`, `pl`, `pt`, `ru`, `th`, `tr`, `uk`, `zh`.
 | i18nOnObject | `false` | When `true` and i18n is an array, translation data is attached directly to each item's own `i18n` field instead of being stored centrally. This causes the main instance's `i18n` field to be undefined.
+| resolveComponents | `true` | When `true` (default), expand parent `components` refs into full objects from the `Components` catalog at construction (compat with the pre-catalog shape). Set `false` to keep `{ uniqueName, itemCount }` refs and call `Items.resolveComponents(item)` (or import `resolveComponents`) when needed.
 
 | Categories | Description|
 |:--- | :---- |
@@ -76,6 +77,7 @@ allows you to add your own items before our gathered ones.
 | Archwing | Archwings.... nuff said |
 | Arch-Gun | Archwing Guns |
 | Arch-Melee | Archwing Melee weapons |
+| Components | Crafting components catalog (deduped); parents store refs into this list |
 | Enemy | NPCs |
 | Fish | Fish that you fish|
 | Gear | Things you equip in your gear wheel
@@ -95,6 +97,31 @@ allows you to add your own items before our gathered ones.
 | Sigils | Chest & back art |
 | Skins | Henna for your frame |
 | Warframes | Warframes...|
+
+<br>
+
+### Component refs
+
+On disk, buildable items store lightweight component refs:
+
+```json
+"components": [{ "uniqueName": "/Lotus/.../AshChassisComponent", "itemCount": 1 }]
+```
+
+Full component payloads (name, drops, imageName, `parentUniqueNames`, …) live in `Components.json`.
+
+With default `resolveComponents: true`, the constructor expands refs in memory. For refs-only loads:
+
+```js
+const Items = require('@wfcd/items');
+const items = new Items({ category: ['Warframes'], resolveComponents: false });
+const ash = items.find((i) => i.name === 'Ash');
+Items.resolveComponents(ash); // expands ash.components from the catalog
+```
+
+Component `name` values stay stripped in all locales for catalog components (e.g. `Chassis`, not `Ash Chassis`); use the parent name when you need a fully qualified label.
+
+`Components.json` holds **crafting-only** parts (recipe pieces, blueprints). Standalone ingredients (Orokin Cell, Amphis, …) stay in their own categories; parents still ref them by `uniqueName`, and resolve looks them up there. Those standalone items may gain `parentUniqueNames` for reverse lookup.
 
 <br>
 
@@ -146,6 +173,8 @@ To verify the TypeScript typings are up to date, you can run `npm run typings`.
 In case you want to skip hash checking in the build process run:
 `npm run build -- --force` or `npm run build -- -f`.
 It's also possible to set the environment variable `FORCE='true'`.
+
+A normal build runs `extractComponentCatalog` then `applyI18n`, so `Components.json`, parent refs, and stripped component locale names are produced together — no separate migrate step.
 
 <br>
 

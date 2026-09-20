@@ -139,6 +139,68 @@ const test = (base) => {
         const jaI18n = await getItem('ja');
         assert.ok(jaI18n.ja, 'should have i18n on object for ja');
       });
+      it('should include stripped component locale names in i18n', async () => {
+        const cerebrum = '/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum';
+        const items = await wrapConstr({
+          category: ['Components'],
+          i18n: ['de'],
+          i18nOnObject: true,
+        });
+        const match = items.find((i) => i.uniqueName === cerebrum);
+        assert.ok(match, 'PrimeWyrmCerebrum should be in Components catalog');
+        assert.strictEqual(match.name, 'Cerebrum');
+        assert.ok(match.i18n?.de?.name, 'should have German i18n name');
+        assert.strictEqual(match.i18n.de.name, 'Cerebrum');
+        assert.ok(match.parentUniqueNames?.length);
+      });
+    });
+    describe('components catalog', () => {
+      beforeEach(gc);
+      it('should resolve components by default', async () => {
+        const items = await wrapConstr({ category: ['Warframes'] });
+        const ash = items.find((i) => i.name === 'Ash');
+        assert.ok(ash?.components?.length);
+        const chassis = ash.components.find((c) => c.name === 'Chassis');
+        assert.ok(chassis, 'resolved chassis should have a name');
+        assert.ok(chassis.imageName);
+        assert.strictEqual(chassis.itemCount, 1);
+      });
+      it('should leave refs when resolveComponents is false', async () => {
+        const items = await wrapConstr({ category: ['Warframes'], resolveComponents: false });
+        const ash = items.find((i) => i.name === 'Ash');
+        assert.ok(ash?.components?.length);
+        const chassis = ash.components.find((c) =>
+          c.uniqueName?.includes('AshChassisComponent')
+        );
+        assert.ok(chassis);
+        assert.strictEqual(chassis.name, undefined);
+        assert.strictEqual(chassis.itemCount, 1);
+      });
+      it('should expand refs via Items.resolveComponents', async () => {
+        Items = await importFresh(itemPath, Date.now());
+        const items = await wrapConstr({ category: ['Warframes'], resolveComponents: false });
+        const ash = items.find((i) => i.name === 'Ash');
+        Items.resolveComponents(ash);
+        const chassis = ash.components.find((c) => c.name === 'Chassis');
+        assert.ok(chassis);
+        assert.ok(chassis.imageName);
+      });
+      it('should include Components as a default category', async () => {
+        const items = await wrapConstr({ category: ['Components'] });
+        assert.ok(items.length > 1000);
+        assert.ok(items.every((i) => i.category === 'Components'));
+        // Standalone ingredients must not live in Components
+        assert.ok(!items.some((i) => i.name === 'Amphis'));
+        assert.ok(!items.some((i) => i.uniqueName === '/Lotus/Types/Items/MiscItems/OrokinCell'));
+      });
+      it('should resolve standalone ingredients from their own categories', async () => {
+        const items = await wrapConstr({ category: ['Warframes'] });
+        const ash = items.find((i) => i.name === 'Ash');
+        const cell = ash.components.find((c) => c.uniqueName?.includes('OrokinCell'));
+        assert.ok(cell);
+        assert.strictEqual(cell.name, 'Orokin Cell');
+        assert.notStrictEqual(cell.category, 'Components');
+      });
     });
     describe('drops', () => {
       beforeEach(gc);
