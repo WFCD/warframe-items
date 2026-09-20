@@ -114,7 +114,8 @@ declare module '@wfcd/items' {
       | ModSet
       | FocusWay
       | NightwaveChallenge
-      | Honorium;
+      | Honorium
+      | Component;
 
   type ModUnion = Mod | SingleLevelMod | RivenMod | StanceMod | PrimeMod | RailjackMod;
 
@@ -137,6 +138,8 @@ declare module '@wfcd/items' {
     codexSecret?: boolean;
     excludeFromCodex?: boolean;
     masterable: boolean;
+    /** Parents that list this item as a crafting component (catalog + standalone ingredients) */
+    parentUniqueNames?: UniqueName[];
   }
   interface BaseItem extends MinimalItem, Droppable {
     showInInventory?: boolean;
@@ -452,8 +455,6 @@ declare module '@wfcd/items' {
     itemCount?: number;
     imageName: string;
     tradable: boolean;
-    /** Parents that list this component (catalog + standalone ingredients used as components) */
-    parentUniqueNames?: UniqueName[];
     drops?: Drop[];
     secondsPerShot?: number;
     magazineSize?: number;
