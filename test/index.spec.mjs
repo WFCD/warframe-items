@@ -84,6 +84,11 @@ const test = (base) => {
       const items = await wrapConstr({ category: ['Primary', 'All'] });
       assert(items.length > 0);
     });
+    it('should tolerate seed items without uniqueName when resolving', async () => {
+      const items = new Items({ category: ['Mods'] }, { name: 'seed-without-id' });
+      assert(items.some((i) => i.name === 'seed-without-id'));
+      assert(items.length > 1);
+    });
     it('should not error current worldstate-data supported locales', async () => {
       try {
         await wrapConstr({
@@ -108,9 +113,23 @@ const test = (base) => {
       beforeEach(gc);
       it('should populate with a truthy boolean', async () => {
         Items = await importFresh(itemPath, Date.now());
+        const items = await wrapConstr({ category: ['Mods'], i18n: true });
+        assert(items.i18n);
+        assert(!!items.i18n[items[0].uniqueName].es);
+      });
+      it('should populate requested locales from an array', async () => {
+        Items = await importFresh(itemPath, Date.now());
         const items = await wrapConstr({ category: ['Mods'], i18n: ['es', 'tr'] });
         assert(!!items.i18n[items[0].uniqueName].tr);
         assert(!!items.i18n[items[0].uniqueName].es);
+      });
+      it('should ignore invalid i18n option types', async () => {
+        const items = await wrapConstr({ category: ['Mods'], i18n: { nope: true } });
+        assert.strictEqual(items.i18n, undefined);
+      });
+      it('should fall back when category is not an array', async () => {
+        const items = await wrapConstr({ category: null });
+        assert(items.length > 0);
       });
       it('should not exist by default', async () => {
         const items = await wrapConstr();
@@ -184,6 +203,14 @@ const test = (base) => {
         const chassis = ash.components.find((c) => c.name === 'Chassis');
         assert.ok(chassis);
         assert.ok(chassis.imageName);
+      });
+      it('should expand refs with an explicit catalog array', async () => {
+        Items = await importFresh(itemPath, Date.now());
+        const items = await wrapConstr({ category: ['Warframes'], resolveComponents: false });
+        const catalog = await wrapConstr({ category: ['Components'], resolveComponents: false });
+        const ash = items.find((i) => i.name === 'Ash');
+        Items.resolveComponents(ash, catalog);
+        assert.ok(ash.components.find((c) => c.name === 'Chassis'));
       });
       it('should include Components as a default category', async () => {
         const items = await wrapConstr({ category: ['Components'] });

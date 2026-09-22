@@ -89,7 +89,6 @@ const loadI18n = (localesOption) => {
   let locales;
   if (localesOption === true) {
     locales = readJson('./config/locales.json');
-    if (!Array.isArray(locales)) locales = [];
   } else if (typeof localesOption === 'string') {
     locales = [localesOption];
   } else if (Array.isArray(localesOption)) {
@@ -101,7 +100,7 @@ const loadI18n = (localesOption) => {
   const out = {};
   for (const locale of locales) {
     const localeData = readJson(`./data/json/i18n/${locale}.json`);
-    if (!localeData || Array.isArray(localeData) || typeof localeData !== 'object') continue;
+    if (!localeData || Array.isArray(localeData)) continue;
     for (const [uniqueName, partial] of Object.entries(localeData)) {
       if (!out[uniqueName]) out[uniqueName] = {};
       out[uniqueName][locale] = partial;
@@ -136,9 +135,7 @@ const buildResolveMap = (readJsonFn, categories) => {
     if (category === 'Components') continue;
     const items = readJsonFn(`./data/json/${category}.json`);
     for (const item of items) {
-      if (item?.uniqueName && !map.has(item.uniqueName)) {
-        map.set(item.uniqueName, item);
-      }
+      map.set(item.uniqueName, item);
     }
   }
   return map;
@@ -172,9 +169,12 @@ class Items extends Array {
 
     const shouldResolve = this.options.resolveComponents !== false;
     const catalogMap = shouldResolve ? buildResolveMap(readJson, defaultCategories) : null;
-    const seenUniqueNames = new Set();
     const pendingResolve = [];
-    const i18n = this.options.i18n ? loadI18n(this.options.i18n) : {};
+    const wantsI18n
+      = this.options.i18n === true
+        || typeof this.options.i18n === 'string'
+        || Array.isArray(this.options.i18n);
+    const i18n = loadI18n(this.options.i18n);
 
     // Load non-Components first so real items win over catalog duplicates
     const categories = [
@@ -188,11 +188,8 @@ class Items extends Array {
       if (this.options.ignoreEnemies && category === 'Enemy') continue;
       const items = readJson(`./data/json/${category}.json`);
       for (const raw of items) {
-        if (category === 'Components' && seenUniqueNames.has(raw.uniqueName)) continue;
-        if (raw.uniqueName) seenUniqueNames.add(raw.uniqueName);
-
         const item = cloneItem(raw);
-        if (this.options.i18n) {
+        if (wantsI18n) {
           this.i18n[item.uniqueName] = i18n[item.uniqueName];
           if (this.options.i18nOnObject) {
             item.i18n = this.i18n[item.uniqueName];
@@ -208,13 +205,13 @@ class Items extends Array {
     // Resolve after load; overlay in-memory items so loaded standalone ingredients win
     if (shouldResolve && catalogMap) {
       for (const item of this) {
-        if (item.uniqueName) catalogMap.set(item.uniqueName, item);
+        catalogMap.set(item.uniqueName, item);
       }
       for (const item of pendingResolve) {
         resolveComponents(item, catalogMap);
       }
     }
-    if (!this.options.i18n || (this.options.i18n && this.options.i18nOnObject)) {
+    if (!wantsI18n || this.options.i18nOnObject) {
       this.i18n = undefined;
     }
 
