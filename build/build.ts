@@ -71,6 +71,7 @@ class Build {
 
     this.dedupImageNames(data, raw.manifest, warnings);
     await this.saveImages(data, raw.manifest, parsed.warnings);
+    await this.alignImageNamesToDisk(data);
     await this.saveJson(data, i18n);
     await this.saveWarnings(parsed.warnings);
     await this.updateReadme(raw.patchlogs);
@@ -84,6 +85,24 @@ class Build {
     await hashManager.saveExportCache();
 
     console.log(`\nFinished with ${String(warningNum)} warnings.`);
+  }
+
+  /**
+   * Match imageName casing to files already in data/img (Linux/CI case-sensitive).
+   * Deterministic given the committed image tree.
+   */
+  async alignImageNamesToDisk(data: Record<string, Item[]>): Promise<void> {
+    const imgDir = fileURLToPath(new URL('../data/img/', import.meta.url));
+    const files = await fs.readdir(imgDir);
+    const byLower = new Map(files.map((f) => [f.toLowerCase(), f]));
+
+    for (const items of Object.values(data)) {
+      for (const item of items) {
+        if (!item.imageName || item.imageName === 'missing.png') continue;
+        const onDisk = byLower.get(item.imageName.toLowerCase());
+        if (onDisk) item.imageName = onDisk;
+      }
+    }
   }
 
   /**
@@ -411,13 +430,15 @@ class Build {
         continue;
       }
 
-      // Components, Generic, and Relics are shared images.
-      // OmegaMod is the base image for the base random riven mod that is shared between the types
+      // Components, Generic, Relics, OmegaMod, blueprint, and arcane are shared images —
+      // do not invent category-suffixed filenames that are never written to disk.
       if (
         imageName.includes('Component')
         || imageName.includes('Generic')
         || relicRegex.test(imageName)
         || imageName.includes('OmegaMod')
+        || imageName === 'blueprint.png'
+        || imageName === 'arcane.png'
       ) {
         processedItems.push(...group);
         continue;
