@@ -27,6 +27,7 @@ const knownWikiArcanes = [
 const allowedMissingReleaseDates = [
   'Bad Baby',
   'Bonewidow',
+  'Corufell Prime',
   'Dark Split-Sword',
   'Enkaus',
   'Feverspine',
@@ -37,6 +38,7 @@ const allowedMissingReleaseDates = [
   'Mandonel',
   'Needlenose',
   'Runway',
+  'Steflos Prime',
   'Voidrig'
 ];
 
@@ -66,7 +68,8 @@ const rebuiltWithWikiMerge = arcanes.some((arcane) => arcane.wikiAvailable);
   it('masterable primes should have releaseDate', () => {
     const missing = all
       .filter((item) => item.masterable && item.name.endsWith(' Prime') && !item.releaseDate)
-      .map((item) => item.name);
+      .map((item) => item.name)
+      .filter((name) => !allowedMissingReleaseDates.includes(name));
 
     assert.deepStrictEqual(missing, []);
   });

@@ -89,6 +89,20 @@ const test = (base) => {
       assert(items.some((i) => i.name === 'seed-without-id'));
       assert(items.length > 1);
     });
+    it('should resolve component refs on seed items', async () => {
+      Items = await importFresh(itemPath, Date.now());
+      const catalog = await wrapConstr({ category: ['Components'], resolveComponents: false });
+      const chassis = catalog.find((c) => c.uniqueName?.includes('AshChassisComponent'));
+      assert.ok(chassis);
+      const seed = {
+        name: 'Seed Ash',
+        uniqueName: '/test/SeedAsh',
+        components: [{ uniqueName: chassis.uniqueName, itemCount: 1 }]
+      };
+      const items = new Items({ category: ['Mods'] }, seed);
+      const resolved = items.find((i) => i.uniqueName === seed.uniqueName);
+      assert.ok(resolved?.components?.[0]?.name);
+    });
     it('should not error current worldstate-data supported locales', async () => {
       try {
         await wrapConstr({

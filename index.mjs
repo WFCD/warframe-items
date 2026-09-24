@@ -168,7 +168,7 @@ export default class Items extends Array {
 
     const shouldResolve = this.options.resolveComponents !== false;
     const catalogMap = shouldResolve ? buildResolveMap(requireJson, defaultCategories) : null;
-    const pendingResolve = [];
+    const pendingResolve = [...this];
     const wantsI18n
       = this.options.i18n === true
         || typeof this.options.i18n === 'string'

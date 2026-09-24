@@ -27,7 +27,10 @@ declare module '@wfcd/items' {
     /**
      * Expand component refs on an item using the Components catalog (or a provided catalog).
      */
-    static resolveComponents(item: Item, catalog?: Component[] | Map<string, Component>): Item;
+    static resolveComponents(
+      item: Item,
+      catalog?: Component[] | Map<string, Component> | Record<string, Component>
+    ): Item;
   }
 
   export function resolveComponents(
