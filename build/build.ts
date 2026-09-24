@@ -9,7 +9,7 @@ import fetch from 'node-fetch';
 import sharp from 'sharp';
 
 import Progress from './progress';
-import stringify from './stringify';
+import stringify, { stringifyWarnings } from './stringify';
 import scraper from './scraper';
 import parser from './parser';
 import hashManager from './hashManager';
@@ -23,7 +23,7 @@ import type {
   CachedItem,
   PatchlogWrap,
   CategoryData,
-  ApiCategory,
+  ApiCategory
 } from './types/shared';
 import { createHash } from 'node:crypto';
 
@@ -60,16 +60,18 @@ class Build {
       patchlogs: (await scraper.fetchPatchLogs()) as unknown as PatchlogWrap,
       wikia: await scraper.fetchWikiaData(),
       relics: ((await scraper.generateRelicData()) ?? []) as never,
-      i18n: resources,
+      i18n: resources
     };
     const parsed = parser.parse(raw);
     parsed.warnings.failedImage = [...warnings.failedImage]; // The parser doesn't keep tracked of failed images so this will be empty
 
     const data = this.applyCustomCategories(parsed.data);
+    parser.extractComponentCatalog(data);
     const i18n = parser.applyI18n(data, raw.i18n);
 
     this.dedupImageNames(data, raw.manifest, warnings);
     await this.saveImages(data, raw.manifest, parsed.warnings);
+    await this.alignImageNamesToDisk(data);
     await this.saveJson(data, i18n);
     await this.saveWarnings(parsed.warnings);
     await this.updateReadme(raw.patchlogs);
@@ -83,6 +85,24 @@ class Build {
     await hashManager.saveExportCache();
 
     console.log(`\nFinished with ${String(warningNum)} warnings.`);
+  }
+
+  /**
+   * Match imageName casing to files already in data/img (Linux/CI case-sensitive).
+   * Deterministic given the committed image tree.
+   */
+  async alignImageNamesToDisk(data: Record<string, Item[]>): Promise<void> {
+    const imgDir = fileURLToPath(new URL('../data/img/', import.meta.url));
+    const files = await fs.readdir(imgDir);
+    const byLower = new Map(files.map((f) => [f.toLowerCase(), f]));
+
+    for (const items of Object.values(data)) {
+      for (const item of items) {
+        if (!item.imageName || item.imageName === 'missing.png') continue;
+        const onDisk = byLower.get(item.imageName.toLowerCase());
+        if (onDisk) item.imageName = onDisk;
+      }
+    }
   }
 
   /**
@@ -155,7 +175,29 @@ class Build {
     // All.json (all items in one file)
     all.sort(sort);
     await fs.writeFile(new URL('../data/json/All.json', import.meta.url), stringify(all));
-    await fs.writeFile(new URL('../data/json/i18n.json', import.meta.url), JSON.stringify(JSON.parse(stringify(i18n))));
+
+    // Per-locale i18n: data/json/i18n/{locale}.json
+    const i18nDir = new URL('../data/json/i18n/', import.meta.url);
+    await fs.mkdir(i18nDir, { recursive: true });
+    const byLocale: Record<string, Record<string, Partial<Item>>> = {};
+    for (const [uniqueName, locales] of Object.entries(i18n)) {
+      for (const [locale, partial] of Object.entries(locales)) {
+        byLocale[locale] ??= {};
+        byLocale[locale][uniqueName] = partial;
+      }
+    }
+    for (const [locale, data] of Object.entries(byLocale)) {
+      await fs.writeFile(
+        new URL(`../data/json/i18n/${locale}.json`, import.meta.url),
+        JSON.stringify(JSON.parse(stringify(data)))
+      );
+    }
+    // Drop legacy monolith if present
+    try {
+      await fs.unlink(new URL('../data/json/i18n.json', import.meta.url));
+    } catch {
+      // absent ok
+    }
   }
 
   /**
@@ -163,7 +205,7 @@ class Build {
    * @param warnings warnings to save to file
    */
   async saveWarnings(warnings: Warnings): Promise<void> {
-    return fs.writeFile(new URL('../data/warnings.json', import.meta.url), stringify(warnings));
+    return fs.writeFile(new URL('../data/warnings.json', import.meta.url), stringifyWarnings(warnings));
   }
 
   /**
@@ -181,6 +223,7 @@ class Build {
     const history: string[] = []; // Don't download component images or relics twice
 
     for (const category of Object.keys(categories)) {
+      if (category === 'Components') continue;
       const categoryData = categories[category];
       if (!categoryData) continue;
 
@@ -188,12 +231,6 @@ class Build {
         try {
           // Save image for parent item
           await this.saveImage(item, false, history, manifest);
-          // Save images for components if necessary
-          if (item.components) {
-            for (const component of item.components) {
-              await this.saveImage(component, true, history, manifest);
-            }
-          }
           // Save images for abilities
           if (item.abilities) {
             for (const ability of item.abilities) {
@@ -206,6 +243,17 @@ class Build {
         }
         bar.tick();
       }
+    }
+
+    // Save catalog component images once (parents only keep refs)
+    for (const component of categories.Components ?? []) {
+      try {
+        await this.saveImage(component, true, history, manifest);
+      } catch {
+        if (!warnings.failedImage.includes(component.name)) warnings.failedImage.push(component.name);
+        component.imageName = 'missing.png';
+      }
+      bar.tick();
     }
 
     // write the manifests after images have all succeeded
@@ -262,9 +310,9 @@ class Build {
           plugins: [
             minifyJpeg(),
             minifyPng({
-              quality: [0.2, 0.4],
-            }),
-          ] as Plugin[],
+              quality: [0.2, 0.4]
+            })
+          ] as Plugin[]
         });
 
         this.updateCache(item, cached, hash, isComponent);
@@ -288,7 +336,7 @@ class Build {
       imageCache.push({
         uniqueName: item.uniqueName,
         hash: hash ?? '',
-        isComponent,
+        isComponent
       });
     } else {
       cached.hash = hash ?? '';
@@ -347,6 +395,7 @@ class Build {
       Node: 20,
       Enemy: 21,
       Misc: 22, // K-Drives, Drones, etc.
+      Components: 23
     };
 
     const items = Object.values(data).flat();
@@ -381,13 +430,15 @@ class Build {
         continue;
       }
 
-      // Components, Generic, and Relics are shared images.
-      // OmegaMod is the base image for the base random riven mod that is shared between the types
+      // Components, Generic, Relics, OmegaMod, blueprint, and arcane are shared images —
+      // do not invent category-suffixed filenames that are never written to disk.
       if (
         imageName.includes('Component')
         || imageName.includes('Generic')
         || relicRegex.test(imageName)
         || imageName.includes('OmegaMod')
+        || imageName === 'blueprint.png'
+        || imageName === 'arcane.png'
       ) {
         processedItems.push(...group);
         continue;

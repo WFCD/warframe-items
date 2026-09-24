@@ -20,7 +20,8 @@ export const loadMods = (upgrades = []) => {
   const arcanes = [];
   const mods = [];
   upgrades.forEach((upgrade) => {
-    let upgradeData = findItem(upgrade.uniqueName) || upgrade;
+    const found = findItem(upgrade.uniqueName);
+    let upgradeData = found ? { ...found } : { ...upgrade };
 
     upgradeData.rank = upgrade.rank;
     upgradeData.uniqueName = upgrade.uniqueName;
@@ -48,7 +49,7 @@ export const loadMods = (upgrades = []) => {
           wikiaUrl: upgradeData.wikiaUrl || undefined,
           buffs: upgrade.buffs,
           curses: upgrade.curses,
-          masteryReq: upgrade.lvlReq,
+          masteryReq: upgrade.lvlReq
         };
       }
       delete upgradeData.transmutable;
@@ -58,11 +59,11 @@ export const loadMods = (upgrades = []) => {
   });
   return {
     arcanes,
-    mods,
+    mods
   };
 };
 
 export default {
   findItem,
-  loadMods,
+  loadMods
 };

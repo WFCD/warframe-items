@@ -1,4 +1,4 @@
-import { WikiaHonorium } from 'types/shared';
+import type { WikiaHonorium } from '../../types/shared';
 
 enum CurrencyType {
   cc = 'Credits',
@@ -7,7 +7,7 @@ enum CurrencyType {
   ec = 'Endo',
   kc = 'Kuva',
   nc = 'Nightwave Credits',
-  ac = 'Aya',
+  ac = 'Aya'
 }
 
 interface OldHonoria {
@@ -17,6 +17,7 @@ interface OldHonoria {
   Position: string;
   Price: object;
   Tags: string[];
+  [key: string]: unknown;
 }
 
 const parseWikiSyntax = (text: string) => {
@@ -46,7 +47,8 @@ const parseWikiSyntax = (text: string) => {
   return sanitized.trim();
 };
 
-export default (oldHonoria: OldHonoria): WikiaHonorium | undefined => {
+export default (data: Record<string, unknown>): WikiaHonorium | undefined => {
+  const oldHonoria = data as unknown as OldHonoria;
   let newHonoria: WikiaHonorium | undefined;
   if (!oldHonoria.Name) return undefined;
 
@@ -64,7 +66,7 @@ export default (oldHonoria: OldHonoria): WikiaHonorium | undefined => {
       position: position,
       price: oldHonoria.Price,
       wikiaUrl: `https://wiki.warframe.com/w/Honoria#${oldHonoria.Name.replaceAll(' ', '_')}`,
-      wikiaTags: oldHonoria.Tags,
+      wikiaTags: oldHonoria.Tags
     };
   } catch (error) {
     console.error(`Error parsing ${oldHonoria.Name}`);

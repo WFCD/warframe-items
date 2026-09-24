@@ -12,6 +12,7 @@
  *                         - Archwing
  *                         - Arch-Gun
  *                         - Arch-Melee
+ *                         - Components
  *                         - Corpus
  *                         - Enemy
  *                         - Fish
@@ -32,10 +33,12 @@
  * @property {boolean} ignoreEnemies If true, don't load any enemy categories
  * @property {boolean|Array<string>} i18n Whether or not to include i18n, or a list of allowed locales
  * @property {boolean} i18nOnObject Whether or not to include i18n on the object itself and not on the "array"
+ * @property {boolean} resolveComponents When true (default), expand component refs on items at construction using the Components catalog
  */
 
 const path = require('path');
 const fs = require('fs');
+const { resolveComponents, toCatalogMap } = require('./utilities/resolveComponents');
 
 const canAccess = (filePath) => {
   try {
@@ -61,13 +64,6 @@ const readJson = (filePath) => {
 
 const versions = readJson('./data/cache/.export.json');
 
-let i18n = {};
-try {
-  i18n = readJson('./data/json/i18n.json');
-} catch (_ignored) {
-  // can only happen in really weird stuff, and we're already defaulting, so it's ok
-}
-
 const ignored = ['All', 'i18n'];
 const defaultCategories = fs
   .readdirSync(path.join(__dirname, './data/json/'))
@@ -75,17 +71,92 @@ const defaultCategories = fs
   .map((f) => f.replace('.json', ''))
   .filter((f) => !ignored.includes(f));
 
-const defaultOptions = { category: defaultCategories, i18n: false, i18nOnObject: false };
+const defaultOptions = {
+  category: defaultCategories,
+  i18n: false,
+  i18nOnObject: false,
+  resolveComponents: true
+};
 
-module.exports = class Items extends Array {
+/**
+ * Load per-locale i18n files and merge into uniqueName → locale → fields.
+ * @param {boolean|string|string[]} localesOption
+ * @returns {Record<string, Record<string, object>>}
+ */
+const loadI18n = (localesOption) => {
+  if (!localesOption) return {};
+
+  let locales;
+  if (localesOption === true) {
+    locales = readJson('./config/locales.json');
+  } else if (typeof localesOption === 'string') {
+    locales = [localesOption];
+  } else if (Array.isArray(localesOption)) {
+    locales = localesOption;
+  } else {
+    return {};
+  }
+
+  const out = {};
+  for (const locale of locales) {
+    const localeData = readJson(`./data/json/i18n/${locale}.json`);
+    if (!localeData || Array.isArray(localeData)) continue;
+    for (const [uniqueName, partial] of Object.entries(localeData)) {
+      if (!out[uniqueName]) out[uniqueName] = {};
+      out[uniqueName][locale] = partial;
+    }
+  }
+  return out;
+};
+
+/**
+ * Shallow-clone item so cached JSON stays as on-disk refs.
+ * @param {object} raw
+ * @returns {object}
+ */
+const cloneItem = (raw) => {
+  const item = { ...raw };
+  if (Array.isArray(raw.components)) {
+    item.components = raw.components.map((c) => ({ ...c }));
+  }
+  return item;
+};
+
+/**
+ * Map for resolve: crafting Components catalog + every other category file
+ * so standalone ingredients (Resources, Melee, …) resolve without living in Components.
+ * @param {(path: string) => object[]} readJsonFn
+ * @param {string[]} categories
+ * @returns {Map<string, object>}
+ */
+const buildResolveMap = (readJsonFn, categories) => {
+  const map = toCatalogMap(readJsonFn('./data/json/Components.json'));
+  for (const category of categories) {
+    if (category === 'Components') continue;
+    const items = readJsonFn(`./data/json/${category}.json`);
+    for (const item of items) {
+      map.set(item.uniqueName, item);
+    }
+  }
+  return map;
+};
+
+class Items extends Array {
   constructor(options, ...existingItems) {
     super(...existingItems);
 
     // Merge provided options with defaults
     this.options = {
       ...defaultOptions,
-      ...options,
+      ...options
     };
+
+    if (typeof this.options.category === 'string') {
+      this.options.category = [this.options.category];
+    }
+    if (!Array.isArray(this.options.category)) {
+      this.options.category = [...defaultCategories];
+    }
 
     const containedAll = this.options.category.includes('All');
     if (containedAll) {
@@ -96,39 +167,51 @@ module.exports = class Items extends Array {
 
     this.i18n = {};
 
+    const shouldResolve = this.options.resolveComponents !== false;
+    const catalogMap = shouldResolve ? buildResolveMap(readJson, defaultCategories) : null;
+    const pendingResolve = [...this];
+    const wantsI18n
+      = this.options.i18n === true
+        || typeof this.options.i18n === 'string'
+        || Array.isArray(this.options.i18n);
+    const i18n = loadI18n(this.options.i18n);
+
+    // Load non-Components first so real items win over catalog duplicates
+    const categories = [
+      ...this.options.category.filter((c) => c !== 'Components'),
+      ...(this.options.category.includes('Components') ? ['Components'] : [])
+    ];
+
     // Add items from options to array. Type equals the file name.
-    for (const category of this.options.category) {
+    for (const category of categories) {
       // Ignores the enemy category.
       if (this.options.ignoreEnemies && category === 'Enemy') continue;
       const items = readJson(`./data/json/${category}.json`);
-      for (const item of items) {
-        if (this.options.i18n) {
-          // only insert i18n for the objects we're inserting, so we don't bloat memory
-          if (Array.isArray(this.options.i18n)) {
-            const itemI18n = i18n[item.uniqueName];
-            const raw = itemI18n ? { ...itemI18n } : undefined;
-            // only process if passed language is a supported i18n value
-            if (raw) {
-              Object.keys(raw).forEach((locale) => {
-                if (!this.options.i18n.includes(locale)) {
-                  delete raw[locale];
-                }
-              });
-            }
-            this.i18n[item.uniqueName] = raw;
-          } else {
-            this.i18n[item.uniqueName] = i18n[item.uniqueName];
+      for (const raw of items) {
+        const item = cloneItem(raw);
+        if (wantsI18n) {
+          this.i18n[item.uniqueName] = i18n[item.uniqueName];
+          if (this.options.i18nOnObject) {
+            item.i18n = this.i18n[item.uniqueName];
+            // keep data just on the object so no bloat in extra this.i18n
+            delete this.i18n[item.uniqueName];
           }
         }
-        if (this.options.i18n && this.options.i18nOnObject) {
-          item.i18n = this.i18n[item.uniqueName];
-          // keep data just on the object so no bloat in extra this.i18n
-          delete this.i18n[item.uniqueName];
-        }
+        if (shouldResolve) pendingResolve.push(item);
         this.push(item);
       }
     }
-    if (!this.options.i18n || (this.options.i18n && this.options.i18nOnObject)) {
+
+    // Resolve after load; overlay in-memory items so loaded standalone ingredients win
+    if (shouldResolve && catalogMap) {
+      for (const item of this) {
+        catalogMap.set(item.uniqueName, item);
+      }
+      for (const item of pendingResolve) {
+        resolveComponents(item, catalogMap);
+      }
+    }
+    if (!wantsI18n || this.options.i18nOnObject) {
       this.i18n = undefined;
     }
 
@@ -142,6 +225,19 @@ module.exports = class Items extends Array {
     });
 
     this.versions = versions;
+  }
+
+  /**
+   * Expand component refs on an item using the Components catalog (or a provided catalog).
+   * @param {object} item
+   * @param {Map|object[]|Record<string, object>} [catalog]
+   * @returns {object}
+   */
+  static resolveComponents(item, catalog) {
+    return resolveComponents(
+      item,
+      catalog ?? buildResolveMap(readJson, defaultCategories)
+    );
   }
 
   /**
@@ -195,4 +291,6 @@ module.exports = class Items extends Array {
 
     return a;
   }
-};
+}
+
+module.exports = Items;

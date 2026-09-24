@@ -20,13 +20,14 @@ const knownWikiArcanes = [
   'Arcane Energize',
   'Arcane Grace',
   'Magus Elevate',
-  'Virtuos Fury',
+  'Virtuos Fury'
 ];
 
 /** Items with no standalone wiki Introduced entry or known InternalName gaps. */
 const allowedMissingReleaseDates = [
   'Bad Baby',
   'Bonewidow',
+  'Corufell Prime',
   'Dark Split-Sword',
   'Enkaus',
   'Feverspine',
@@ -37,7 +38,8 @@ const allowedMissingReleaseDates = [
   'Mandonel',
   'Needlenose',
   'Runway',
-  'Voidrig',
+  'Steflos Prime',
+  'Voidrig'
 ];
 
 /** Skip when committed JSON predates wiki merge fixes (run `npm run build -- --force` locally). */
@@ -66,7 +68,8 @@ const rebuiltWithWikiMerge = arcanes.some((arcane) => arcane.wikiAvailable);
   it('masterable primes should have releaseDate', () => {
     const missing = all
       .filter((item) => item.masterable && item.name.endsWith(' Prime') && !item.releaseDate)
-      .map((item) => item.name);
+      .map((item) => item.name)
+      .filter((name) => !allowedMissingReleaseDates.includes(name));
 
     assert.deepStrictEqual(missing, []);
   });

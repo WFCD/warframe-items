@@ -10,7 +10,7 @@ const data = {
   items: undefined,
   weapons: undefined,
   warframes: undefined,
-  mods: undefined,
+  mods: undefined
 };
 
 const namedExclusions = ['Excalibur Prime', 'Helminth', 'Orion & Sirius'];

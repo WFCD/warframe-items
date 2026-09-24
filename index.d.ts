@@ -24,7 +24,19 @@ declare module '@wfcd/items' {
     constructor(options?: ItemsOptions, ...items: Item[]);
     options: ItemsOptions;
     i18n: BundleofI18nBundle<Locale>;
+    /**
+     * Expand component refs on an item using the Components catalog (or a provided catalog).
+     */
+    static resolveComponents(
+      item: Item,
+      catalog?: Component[] | Map<string, Component> | Record<string, Component>
+    ): Item;
   }
+
+  export function resolveComponents(
+    item: Item,
+    catalog?: Component[] | Map<string, Component> | Record<string, Component>
+  ): Item;
 
   interface ModResolveable {
     uniqueName: string;
@@ -65,8 +77,17 @@ declare module '@wfcd/items' {
   interface ItemsOptions {
     category?: (Category | 'SentinelWeapons')[];
     ignoreEnemies?: boolean;
+    /**
+     * If true, load all locales from data/json/i18n/{locale}.json.
+     * If a string array, load only those locale files.
+     */
     i18n?: boolean | string[];
     i18nOnObject?: boolean;
+    /**
+     * When true (default), expand component refs on items at construction
+     * using the Components catalog. Set false to keep on-disk refs.
+     */
+    resolveComponents?: boolean;
   }
 
   type Item
@@ -96,7 +117,8 @@ declare module '@wfcd/items' {
       | ModSet
       | FocusWay
       | NightwaveChallenge
-      | Honorium;
+      | Honorium
+      | Component;
 
   type ModUnion = Mod | SingleLevelMod | RivenMod | StanceMod | PrimeMod | RailjackMod;
 
@@ -119,6 +141,8 @@ declare module '@wfcd/items' {
     codexSecret?: boolean;
     excludeFromCodex?: boolean;
     masterable: boolean;
+    /** Parents that list this item as a crafting component (catalog + standalone ingredients) */
+    parentUniqueNames?: UniqueName[];
   }
   interface BaseItem extends MinimalItem, Droppable {
     showInInventory?: boolean;
@@ -150,10 +174,20 @@ declare module '@wfcd/items' {
     buildTime?: number;
     skipBuildTimePrice?: number;
     consumeOnBuild?: boolean;
-    components?: Component[];
+    /**
+     * On disk / with `resolveComponents: false`: component refs.
+     * After construction with default `resolveComponents: true`: full Component objects.
+     */
+    components?: (Component | ComponentRef)[];
     marketCost?: number;
     bpCost?: number | '';
     itemCount?: number;
+  }
+
+  /** On-disk / unresolved parent.components entry */
+  interface ComponentRef {
+    uniqueName: UniqueName;
+    itemCount: number;
   }
   interface WikiaItem {
     wikiaThumbnail?: string;
@@ -421,7 +455,7 @@ declare module '@wfcd/items' {
     category: 'Pets';
   }
   interface Component extends MinimalItem, WikiaItem, Buildable, Attackable, Equippable {
-    itemCount: number;
+    itemCount?: number;
     imageName: string;
     tradable: boolean;
     drops?: Drop[];
@@ -695,6 +729,7 @@ declare module '@wfcd/items' {
     = | 'All'
       | 'Arcanes'
       | 'Archwing'
+      | 'Components'
       | 'Fish'
       | 'Gear'
       | 'Glyphs'
@@ -788,6 +823,7 @@ declare module '@wfcd/items' {
       | 'Lua'
       | 'KIM'
       | 'Mastery'
+      | 'Melica'
       | 'Miscellaneous'
       | 'Never Vaulted'
       | 'New Loka'
@@ -812,6 +848,7 @@ declare module '@wfcd/items' {
       | 'Tektolyst Artifact'
       | 'Tenet'
       | 'Tenno'
+      | 'Trials'
       | 'Tutorial'
       | 'Voruna'
       | 'Vandal'

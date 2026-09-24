@@ -18,26 +18,17 @@ export default defineConfig(
         semi: true,
         jsx: false,
         arrowParens: true,
-        // Prettier trailingComma: 'es5' — no 'es5' string in @stylistic schema
-        commaDangle: {
-          arrays: 'always-multiline',
-          objects: 'always-multiline',
-          imports: 'always-multiline',
-          exports: 'always-multiline',
-          functions: 'never',
-          enums: 'always-multiline',
-          generics: 'always-multiline',
-          tuples: 'always-multiline',
-        },
+        // No trailing comma on the last entry; separators only between items
+        commaDangle: 'never',
         quoteProps: 'as-needed',
         blockSpacing: true,
-        braceStyle: '1tbs',
-      }),
+        braceStyle: '1tbs'
+      })
     ],
     languageOptions: {
       globals: {
-        ...globals.node,
-      },
+        ...globals.node
+      }
     },
     rules: {
       '@stylistic/object-curly-spacing': ['error', 'always'],
@@ -49,10 +40,10 @@ export default defineConfig(
           ignoreStrings: true,
           ignoreTemplateLiterals: true,
           ignoreRegExpLiterals: true,
-          ignoreComments: true,
-        },
-      ],
-    },
+          ignoreComments: true
+        }
+      ]
+    }
   },
   // TypeScript strict rules only for .ts files
   {
@@ -61,8 +52,8 @@ export default defineConfig(
     languageOptions: {
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
+        tsconfigRootDir: import.meta.dirname
+      }
     },
     rules: {
       '@typescript-eslint/no-unused-vars': [
@@ -70,27 +61,27 @@ export default defineConfig(
         {
           argsIgnorePattern: '^_',
           varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
+          caughtErrorsIgnorePattern: '^_'
+        }
       ],
       '@typescript-eslint/no-base-to-string': 'off',
       '@typescript-eslint/no-unnecessary-condition': 'off',
-      '@typescript-eslint/no-non-null-assertion': 'off',
-    },
+      '@typescript-eslint/no-non-null-assertion': 'off'
+    }
   },
   // Disable type checking for all JS files
   {
     files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
-    ...tseslint.configs.disableTypeChecked,
+    ...tseslint.configs.disableTypeChecked
   },
   // Test files get Mocha globals
   {
     files: ['test/**/*.mjs', 'test/**/*.spec.mjs', 'test/**/*.spec.js'],
     languageOptions: {
       globals: {
-        ...globals.mocha,
-      },
-    },
+        ...globals.mocha
+      }
+    }
   },
   // Index files - allow CommonJS patterns
   {
@@ -101,11 +92,11 @@ export default defineConfig(
         {
           argsIgnorePattern: '^_',
           varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
+          caughtErrorsIgnorePattern: '^_'
+        }
       ],
-      'no-delete-var': 'off', // Allow delete for dynamic properties
-    },
+      'no-delete-var': 'off' // Allow delete for dynamic properties
+    }
   },
   // JSON
   ...jsonc.configs['recommended-with-json'],
@@ -116,8 +107,8 @@ export default defineConfig(
       'jsonc/quotes': ['error', 'double'],
       'jsonc/comma-dangle': ['error', 'never'],
       'jsonc/object-curly-spacing': ['error', 'always'],
-      'jsonc/array-bracket-spacing': ['error', 'never'],
-    },
+      'jsonc/array-bracket-spacing': ['error', 'never']
+    }
   },
   // YAML
   ...yml.configs.recommended,
@@ -125,8 +116,8 @@ export default defineConfig(
   {
     files: ['**/*.{yml,yaml}'],
     rules: {
-      'yml/indent': ['error', 2],
-    },
+      'yml/indent': ['error', 2]
+    }
   },
   // Ignore patterns
   {
@@ -142,7 +133,7 @@ export default defineConfig(
       '*.config.js',
       '*.config.mjs',
       '.*.js',
-      '.*.mjs',
-    ],
+      '.*.mjs'
+    ]
   }
 );

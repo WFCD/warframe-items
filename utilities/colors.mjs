@@ -43,11 +43,11 @@ export function mapColors(colors = undefined) {
     tertiary: safeColor(colors.t2),
     accents: safeColor(colors.t3),
     emissive: [safeColor(colors.m0), safeColor(colors.m1)].filter((c) => c),
-    energy: [safeColor(colors.en), safeColor(colors.en1)].filter((c) => c),
+    energy: [safeColor(colors.en), safeColor(colors.en1)].filter((c) => c)
   };
 }
 
 export default {
   mapColors,
-  safeColor,
+  safeColor
 };

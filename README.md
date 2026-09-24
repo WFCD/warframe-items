@@ -3,7 +3,7 @@
 [![Supported by Warframe Community Developers](https://warframestat.us/wfcd.png)](https://github.com/WFCD "Supported by Warframe Community Developers")
 
 [![npm](https://img.shields.io/npm/v/@wfcd/items.svg)](https://npmjs.org/@wfcd/items)
-[![warframe update](https://img.shields.io/badge/warframe_update-44-blue.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTgiIGhlaWdodD0iMTczIiB2aWV3Qm94PSIwIDAgMjk4IDE3MyI%2BPHBhdGggZD0iTTE4NSA2N2MxNSA4IDI4IDE2IDMxIDE5czIzIDE4LTcgNjBjMCAwIDM1LTMxIDI2LTc5LTE0LTctNjItMzYtNzAtNDUtNC01LTEwLTEyLTE1LTIyLTUgMTAtOSAxNC0xNSAyMi0xMyAxMy01OCAzOC03MiA0NS05IDQ4IDI2IDc5IDI2IDc5LTMwLTQyLTEwLTU3LTctNjBsMzEtMTkgMzYtMjIgMzYgMjJ6TTU1IDE3M2wtMTctM2MtOC0xOS0yMC00NC0yNC01MC01LTctNy0xMS0xNC0xNWwxOC0yYzE2LTMgMjItNyAzMi0xMyAxIDYgMCA5IDIgMTQtNiA0LTIxIDEwLTI0IDE2IDMgMTQgNSAyNyAyNyA1M3ptMTYtMTFsLTktMi0xNC0yOWEzMCAzMCAwIDAgMC04LThoN2wxMy00IDQgN2MtMyAyLTcgMy04IDZhODYgODYgMCAwIDAgMTUgMzB6bTE3MiAxMWwxNy0zYzgtMTkgMjAtNDQgMjQtNTAgNS03IDctMTEgMTQtMTVsLTE4LTJjLTE2LTMtMjItNy0zMi0xMy0xIDYgMCA5LTIgMTQgNiA0IDIxIDEwIDI0IDE2LTMgMTQtNSAyNy0yNyA1M3ptLTE2LTExbDktMiAxNC0yOWEzMCAzMCAwIDAgMSA4LThoLTdsLTEzLTQtNCA3YzMgMiA3IDMgOCA2YTg2IDg2IDAgMCAxLTE1IDMwem0tNzktNDBsLTYtNmMtMSAzLTMgNi02IDdsNSA1YTUgNSAwIDAgMSAyIDB6bS0xMy0yYTQgNCAwIDAgMSAxLTJsMi0yYTQgNCAwIDAgMSAyLTFsNC0xNy0xNy0xMC04IDcgMTMgOC0yIDctNyAyLTgtMTItOCA4IDEwIDE3em0xMiAxMWE1IDUgMCAwIDAtNC0yIDQgNCAwIDAgMC0zIDFsLTMwIDI3YTUgNSAwIDAgMCAwIDdsNCA0YTYgNiAwIDAgMCA0IDIgNSA1IDAgMCAwIDMtMWwyNy0zMWMyLTIgMS01LTEtN3ptMzkgMjZsLTMwLTI4LTYgNmE1IDUgMCAwIDEgMCAzbDI2IDI5YTEgMSAwIDAgMCAxIDBsNS0yIDItMmMxLTIgMy01IDItNnptNS00NWEyIDIgMCAwIDAtNCAwbC0xIDEtMi00YzEtMy01LTktNS05LTEzLTE0LTIzLTE0LTI3LTEzLTIgMS0yIDEgMCAyIDE0IDIgMTUgMTAgMTMgMTNhNCA0IDAgMCAwLTEgMyAzIDMgMCAwIDAgMSAxbC0yMSAyMmE3IDcgMCAwIDEgNCAyIDggOCAwIDAgMSAyIDNsMjAtMjFhNyA3IDAgMCAwIDEgMSA0IDQgMCAwIDAgNCAwYzEtMSA2IDMgNyA0aC0xYTMgMyAwIDAgMCAwIDQgMiAyIDAgMCAwIDQgMGw2LTZhMyAzIDAgMCAwIDAtM3oiIGZpbGw9IiMyZTk2ZWYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg%3D%3D)](https://forums.warframe.com/topic/1523956-update-44-iceblade-of-narin/)
+[![warframe update](https://img.shields.io/badge/warframe_update-43.5.4-blue.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTgiIGhlaWdodD0iMTczIiB2aWV3Qm94PSIwIDAgMjk4IDE3MyI%2BPHBhdGggZD0iTTE4NSA2N2MxNSA4IDI4IDE2IDMxIDE5czIzIDE4LTcgNjBjMCAwIDM1LTMxIDI2LTc5LTE0LTctNjItMzYtNzAtNDUtNC01LTEwLTEyLTE1LTIyLTUgMTAtOSAxNC0xNSAyMi0xMyAxMy01OCAzOC03MiA0NS05IDQ4IDI2IDc5IDI2IDc5LTMwLTQyLTEwLTU3LTctNjBsMzEtMTkgMzYtMjIgMzYgMjJ6TTU1IDE3M2wtMTctM2MtOC0xOS0yMC00NC0yNC01MC01LTctNy0xMS0xNC0xNWwxOC0yYzE2LTMgMjItNyAzMi0xMyAxIDYgMCA5IDIgMTQtNiA0LTIxIDEwLTI0IDE2IDMgMTQgNSAyNyAyNyA1M3ptMTYtMTFsLTktMi0xNC0yOWEzMCAzMCAwIDAgMC04LThoN2wxMy00IDQgN2MtMyAyLTcgMy04IDZhODYgODYgMCAwIDAgMTUgMzB6bTE3MiAxMWwxNy0zYzgtMTkgMjAtNDQgMjQtNTAgNS03IDctMTEgMTQtMTVsLTE4LTJjLTE2LTMtMjItNy0zMi0xMy0xIDYgMCA5LTIgMTQgNiA0IDIxIDEwIDI0IDE2LTMgMTQtNSAyNy0yNyA1M3ptLTE2LTExbDktMiAxNC0yOWEzMCAzMCAwIDAgMSA4LThoLTdsLTEzLTQtNCA3YzMgMiA3IDMgOCA2YTg2IDg2IDAgMCAxLTE1IDMwem0tNzktNDBsLTYtNmMtMSAzLTMgNi02IDdsNSA1YTUgNSAwIDAgMSAyIDB6bS0xMy0yYTQgNCAwIDAgMSAxLTJsMi0yYTQgNCAwIDAgMSAyLTFsNC0xNy0xNy0xMC04IDcgMTMgOC0yIDctNyAyLTgtMTItOCA4IDEwIDE3em0xMiAxMWE1IDUgMCAwIDAtNC0yIDQgNCAwIDAgMC0zIDFsLTMwIDI3YTUgNSAwIDAgMCAwIDdsNCA0YTYgNiAwIDAgMCA0IDIgNSA1IDAgMCAwIDMtMWwyNy0zMWMyLTIgMS01LTEtN3ptMzkgMjZsLTMwLTI4LTYgNmE1IDUgMCAwIDEgMCAzbDI2IDI5YTEgMSAwIDAgMCAxIDBsNS0yIDItMmMxLTIgMy01IDItNnptNS00NWEyIDIgMCAwIDAtNCAwbC0xIDEtMi00YzEtMy01LTktNS05LTEzLTE0LTIzLTE0LTI3LTEzLTIgMS0yIDEgMCAyIDE0IDIgMTUgMTAgMTMgMTNhNCA0IDAgMCAwLTEgMyAzIDMgMCAwIDAgMSAxbC0yMSAyMmE3IDcgMCAwIDEgNCAyIDggOCAwIDAgMSAyIDNsMjAtMjFhNyA3IDAgMCAwIDEgMSA0IDQgMCAwIDAgNCAwYzEtMSA2IDMgNyA0aC0xYTMgMyAwIDAgMCAwIDQgMiAyIDAgMCAwIDQgMGw2LTZhMyAzIDAgMCAwIDAtM3oiIGZpbGw9IiMyZTk2ZWYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg%3D%3D)](https://forums.warframe.com/topic/1520771-amir%E2%80%99s-shockwave-hotfix-4354/)
 [![build](https://github.com/WFCD/warframe-items/actions/workflows/build.yaml/badge.svg)](https://github.com/WFCD/warframe-items/actions/workflows/build.yaml)
 [![Discord](https://img.shields.io/discord/256087517353213954.svg?logo=discord)](https://discord.gg/jGZxH9f)
 
@@ -66,8 +66,9 @@ allows you to add your own items before our gathered ones.
 | Option        | Default       | Description   |
 |:------------- |:------------- |:------------- |
 | category | `['All']` | Array of item categories to retrieve. Parallel to file names in /data/json. Useful if you don't wanna load lots and lots of MB of data into memory.
-| i18n | `false` | If `false` (default), no internationalization data is loaded. If set to an array of language codes (e.g., `['zh', 'de']`), translations are loaded from `/data/json/i18n.json` and accessible via the main instance's `i18n` field.<br> **Supported language codes**: `de`, `es`, `fr`, `it`, `ja`, `ko`, `pl`, `pt`, `ru`, `th`, `tr`, `uk`, `zh`.
+| i18n | `false` | If `false` (default), no internationalization data is loaded. If `true`, all locales under `/data/json/i18n/{locale}.json` are loaded. If set to an array of language codes (e.g., `['zh', 'de']`), only those locale files are loaded. Translations are accessible via the main instance's `i18n` field.<br> **Supported language codes**: `de`, `es`, `fr`, `it`, `ja`, `ko`, `pl`, `pt`, `ru`, `th`, `tr`, `uk`, `zh`.
 | i18nOnObject | `false` | When `true` and i18n is an array, translation data is attached directly to each item's own `i18n` field instead of being stored centrally. This causes the main instance's `i18n` field to be undefined.
+| resolveComponents | `true` | When `true` (default), expand parent `components` refs into full objects from the `Components` catalog at construction (compat with the pre-catalog shape). Set `false` to keep `{ uniqueName, itemCount }` refs and call `Items.resolveComponents(item)` (or import `resolveComponents`) when needed.
 
 | Categories | Description|
 |:--- | :---- |
@@ -76,6 +77,7 @@ allows you to add your own items before our gathered ones.
 | Archwing | Archwings.... nuff said |
 | Arch-Gun | Archwing Guns |
 | Arch-Melee | Archwing Melee weapons |
+| Components | Crafting components catalog (deduped); parents store refs into this list |
 | Enemy | NPCs |
 | Fish | Fish that you fish|
 | Gear | Things you equip in your gear wheel
@@ -95,6 +97,31 @@ allows you to add your own items before our gathered ones.
 | Sigils | Chest & back art |
 | Skins | Henna for your frame |
 | Warframes | Warframes...|
+
+<br>
+
+### Component refs
+
+On disk, buildable items store lightweight component refs:
+
+```json
+"components": [{ "uniqueName": "/Lotus/.../AshChassisComponent", "itemCount": 1 }]
+```
+
+Full component payloads (name, drops, imageName, `parentUniqueNames`, …) live in `Components.json`.
+
+With default `resolveComponents: true`, the constructor expands refs in memory. For refs-only loads:
+
+```js
+const Items = require('@wfcd/items');
+const items = new Items({ category: ['Warframes'], resolveComponents: false });
+const ash = items.find((i) => i.name === 'Ash');
+Items.resolveComponents(ash); // expands ash.components from the catalog
+```
+
+Component `name` values stay stripped in all locales for catalog components (e.g. `Chassis`, not `Ash Chassis`); use the parent name when you need a fully qualified label.
+
+`Components.json` holds **crafting-only** parts (recipe pieces, blueprints). Standalone ingredients (Orokin Cell, Amphis, …) stay in their own categories; parents still ref them by `uniqueName`, and resolve looks them up there. Those standalone items may gain `parentUniqueNames` for reverse lookup.
 
 <br>
 
@@ -146,6 +173,8 @@ To verify the TypeScript typings are up to date, you can run `npm run typings`.
 In case you want to skip hash checking in the build process run:
 `npm run build -- --force` or `npm run build -- -f`.
 It's also possible to set the environment variable `FORCE='true'`.
+
+A normal build runs `extractComponentCatalog` then `applyI18n`, so `Components.json`, parent refs, and stripped component locale names are produced together — no separate migrate step.
 
 <br>
 

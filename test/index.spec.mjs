@@ -45,9 +45,9 @@ const setupItems = async () => {
     weapons: await wrapConstr({
       category: ['Primary', 'Secondary', 'Melee', 'Arch-Melee', 'Arch-Gun'],
       i18n: 'en',
-      i18nOnObject: true,
+      i18nOnObject: true
     }),
-    mods: await wrapConstr({ category: ['Mods'], i18n: 'en', i18nOnObject: true }),
+    mods: await wrapConstr({ category: ['Mods'], i18n: 'en', i18nOnObject: true })
   });
 };
 
@@ -84,11 +84,30 @@ const test = (base) => {
       const items = await wrapConstr({ category: ['Primary', 'All'] });
       assert(items.length > 0);
     });
+    it('should tolerate seed items without uniqueName when resolving', async () => {
+      const items = new Items({ category: ['Mods'] }, { name: 'seed-without-id' });
+      assert(items.some((i) => i.name === 'seed-without-id'));
+      assert(items.length > 1);
+    });
+    it('should resolve component refs on seed items', async () => {
+      Items = await importFresh(itemPath, Date.now());
+      const catalog = await wrapConstr({ category: ['Components'], resolveComponents: false });
+      const chassis = catalog.find((c) => c.uniqueName?.includes('AshChassisComponent'));
+      assert.ok(chassis);
+      const seed = {
+        name: 'Seed Ash',
+        uniqueName: '/test/SeedAsh',
+        components: [{ uniqueName: chassis.uniqueName, itemCount: 1 }]
+      };
+      const items = new Items({ category: ['Mods'] }, seed);
+      const resolved = items.find((i) => i.uniqueName === seed.uniqueName);
+      assert.ok(resolved?.components?.[0]?.name);
+    });
     it('should not error current worldstate-data supported locales', async () => {
       try {
         await wrapConstr({
           i18n: ['de', 'es', 'fr', 'it', 'ko', 'pl', 'pt', 'ru', 'zh', 'cs', 'sr'],
-          i18nOnObject: true,
+          i18nOnObject: true
         });
       } catch (e) {
         assert(typeof e === 'undefined');
@@ -108,9 +127,23 @@ const test = (base) => {
       beforeEach(gc);
       it('should populate with a truthy boolean', async () => {
         Items = await importFresh(itemPath, Date.now());
+        const items = await wrapConstr({ category: ['Mods'], i18n: true });
+        assert(items.i18n);
+        assert(!!items.i18n[items[0].uniqueName].es);
+      });
+      it('should populate requested locales from an array', async () => {
+        Items = await importFresh(itemPath, Date.now());
         const items = await wrapConstr({ category: ['Mods'], i18n: ['es', 'tr'] });
         assert(!!items.i18n[items[0].uniqueName].tr);
         assert(!!items.i18n[items[0].uniqueName].es);
+      });
+      it('should ignore invalid i18n option types', async () => {
+        const items = await wrapConstr({ category: ['Mods'], i18n: { nope: true } });
+        assert.strictEqual(items.i18n, undefined);
+      });
+      it('should fall back when category is not an array', async () => {
+        const items = await wrapConstr({ category: null });
+        assert(items.length > 0);
       });
       it('should not exist by default', async () => {
         const items = await wrapConstr();
@@ -138,6 +171,76 @@ const test = (base) => {
         assert.ok(esI18n.es, 'should have i18n on object for es');
         const jaI18n = await getItem('ja');
         assert.ok(jaI18n.ja, 'should have i18n on object for ja');
+      });
+      it('should include stripped component locale names in i18n', async () => {
+        const cerebrum = '/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum';
+        const items = await wrapConstr({
+          category: ['Components'],
+          i18n: ['de'],
+          i18nOnObject: true
+        });
+        const match = items.find((i) => i.uniqueName === cerebrum);
+        assert.ok(match, 'PrimeWyrmCerebrum should be in Components catalog');
+        assert.strictEqual(match.name, 'Cerebrum');
+        assert.ok(match.i18n?.de?.name, 'should have German i18n name');
+        assert.strictEqual(match.i18n.de.name, 'Cerebrum');
+        assert.ok(match.parentUniqueNames?.length);
+      });
+    });
+    describe('components catalog', () => {
+      beforeEach(gc);
+      it('should resolve components by default', async () => {
+        const items = await wrapConstr({ category: ['Warframes'] });
+        const ash = items.find((i) => i.name === 'Ash');
+        assert.ok(ash?.components?.length);
+        const chassis = ash.components.find((c) => c.name === 'Chassis');
+        assert.ok(chassis, 'resolved chassis should have a name');
+        assert.ok(chassis.imageName);
+        assert.strictEqual(chassis.itemCount, 1);
+      });
+      it('should leave refs when resolveComponents is false', async () => {
+        const items = await wrapConstr({ category: ['Warframes'], resolveComponents: false });
+        const ash = items.find((i) => i.name === 'Ash');
+        assert.ok(ash?.components?.length);
+        const chassis = ash.components.find((c) =>
+          c.uniqueName?.includes('AshChassisComponent')
+        );
+        assert.ok(chassis);
+        assert.strictEqual(chassis.name, undefined);
+        assert.strictEqual(chassis.itemCount, 1);
+      });
+      it('should expand refs via Items.resolveComponents', async () => {
+        Items = await importFresh(itemPath, Date.now());
+        const items = await wrapConstr({ category: ['Warframes'], resolveComponents: false });
+        const ash = items.find((i) => i.name === 'Ash');
+        Items.resolveComponents(ash);
+        const chassis = ash.components.find((c) => c.name === 'Chassis');
+        assert.ok(chassis);
+        assert.ok(chassis.imageName);
+      });
+      it('should expand refs with an explicit catalog array', async () => {
+        Items = await importFresh(itemPath, Date.now());
+        const items = await wrapConstr({ category: ['Warframes'], resolveComponents: false });
+        const catalog = await wrapConstr({ category: ['Components'], resolveComponents: false });
+        const ash = items.find((i) => i.name === 'Ash');
+        Items.resolveComponents(ash, catalog);
+        assert.ok(ash.components.find((c) => c.name === 'Chassis'));
+      });
+      it('should include Components as a default category', async () => {
+        const items = await wrapConstr({ category: ['Components'] });
+        assert.ok(items.length > 1000);
+        assert.ok(items.every((i) => i.category === 'Components'));
+        // Standalone ingredients must not live in Components
+        assert.ok(!items.some((i) => i.name === 'Amphis'));
+        assert.ok(!items.some((i) => i.uniqueName === '/Lotus/Types/Items/MiscItems/OrokinCell'));
+      });
+      it('should resolve standalone ingredients from their own categories', async () => {
+        const items = await wrapConstr({ category: ['Warframes'] });
+        const ash = items.find((i) => i.name === 'Ash');
+        const cell = ash.components.find((c) => c.uniqueName?.includes('OrokinCell'));
+        assert.ok(cell);
+        assert.strictEqual(cell.name, 'Orokin Cell');
+        assert.notStrictEqual(cell.category, 'Components');
       });
     });
     describe('drops', () => {
@@ -410,7 +513,7 @@ const test = (base) => {
           'Vitus Essence',
           'Void Traces',
           'Gallium',
-          'Antiserum Injector Fragment',
+          'Antiserum Injector Fragment'
         ].forEach((iName) => {
           const results = data.items.filter(
             (i) => iName.toLowerCase() === i.name.toLowerCase() && !i.uniqueName.includes('/Enemies')
@@ -504,7 +607,7 @@ const test = (base) => {
           'Shade Prime',
           'Dethcube Prime',
           'Nautilus Prime',
-          'Helios Prime',
+          'Helios Prime'
         ];
         known.forEach((name) => {
           assert(names.includes(name), `${name} should be in the list of primes`);
@@ -520,7 +623,7 @@ const test = (base) => {
           Intact: { 25.33: 3, 11: 2, 2: 1 },
           Exceptional: { 23.33: 3, 13: 2, 4: 1 },
           Flawless: { 20: 3, 17: 2, 6: 1 },
-          Radiant: { 16.67: 3, 20: 2, 10: 1 },
+          Radiant: { 16.67: 3, 20: 2, 10: 1 }
         };
 
         Object.entries(expectedPatterns).forEach(([level, expected]) => {

@@ -1,5 +1,5 @@
 import type {
-  Drop,
+  Drop
 } from './types/shared';
 
 interface Item {
@@ -26,7 +26,7 @@ const builtUntradable = [
   'Sword And Shield',
   'Bow',
   'Launcher',
-  'Sniper',
+  'Sniper'
 ];
 
 const tradableArcanes = [
@@ -41,7 +41,7 @@ const tradableArcanes = [
   'Sniper Arcane',
   'Operator Arcane',
   'Bow Arcane',
-  'Warframe Arcane',
+  'Warframe Arcane'
 ];
 
 const tradableMods = [
@@ -59,7 +59,7 @@ const tradableMods = [
   'Sentinel Mod',
   'Shotgun Mod',
   'Stance Mod',
-  'Warframe Mod',
+  'Warframe Mod'
 ];
 const tradableTypes = [
   'Captura',
@@ -69,7 +69,7 @@ const tradableTypes = [
   'Relic',
   'Upgrades',
   ...tradableArcanes,
-  ...tradableMods,
+  ...tradableMods
 ];
 const untradableTypes = [
   'Color Palette',
@@ -85,7 +85,7 @@ const untradableTypes = [
   'Ship Decoration',
   'Sigil',
   'Skin',
-  'Syandana',
+  'Syandana'
 ];
 const tradableRegex
   = /(Prime|Vandal|Wraith\w|\wWraith|Rakta|Synoid|Sancti|Vaykor|Telos|Secura|Ayatan|Prisma|DamagedMech)(?!Derelict)/i;

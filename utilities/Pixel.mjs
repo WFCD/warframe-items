@@ -14,7 +14,7 @@ import Items from '@wfcd/items';
  */
 const position = (ind) => ({
   row: (ind % 18) + 1,
-  col: Math.ceil(ind / 18),
+  col: Math.ceil(ind / 18)
 });
 
 /**
@@ -74,7 +74,7 @@ export default class Pixel {
             if (!this.#palettes.includes(name)) {
               this.#matches.push({
                 palette: { name, description },
-                position: position(index),
+                position: position(index)
               });
               this.#palettes.push(name);
             }
@@ -116,7 +116,7 @@ export default class Pixel {
     return {
       matches: this.#matches,
       isTransparent: this.#isTransparent,
-      hex: this.#hex,
+      hex: this.#hex
     };
   }
 }

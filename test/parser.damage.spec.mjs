@@ -14,26 +14,26 @@ const weapons = [
     name: 'Miter',
     uniqueName: '/Lotus/Weapons/Tenno/LongGuns/Miter/Miter',
     damagePerShot: [12.5, 12.5, 225],
-    dominant: 'slash',
+    dominant: 'slash'
   },
   {
     name: 'Dread',
     uniqueName: '/Lotus/Weapons/Tenno/Bows/DreadBow/DreadBow',
     damagePerShot: [16.800001, 16.800001, 302.39999],
-    dominant: 'slash',
+    dominant: 'slash'
   },
   {
     name: 'Paris Prime',
     uniqueName: '/Lotus/Weapons/Tenno/Bows/PrimeParisBow/PrimeParisBow',
     damagePerShot: [9, 288, 63.000004],
-    dominant: 'puncture',
+    dominant: 'puncture'
   },
   {
     name: 'Boltor',
     uniqueName: '/Lotus/Weapons/Tenno/Rifle/BoltoRifle/BoltoRifle',
     damagePerShot: [2.5, 20, 2.499999],
-    dominant: 'puncture',
-  },
+    dominant: 'puncture'
+  }
 ];
 
 const parseWeapon = ({ name, uniqueName, damagePerShot }) => {
@@ -48,11 +48,11 @@ const parseWeapon = ({ name, uniqueName, damagePerShot }) => {
               uniqueName,
               slot: 1,
               damagePerShot,
-              totalDamage: damagePerShot.reduce((sum, value) => sum + value, 0),
-            },
-          ],
-        },
-      ],
+              totalDamage: damagePerShot.reduce((sum, value) => sum + value, 0)
+            }
+          ]
+        }
+      ]
     })
   );
 
@@ -79,7 +79,7 @@ describe('addDamage', () => {
     const damage = parseWeapon({
       name: 'Ignis',
       uniqueName: '/Lotus/Weapons/Tenno/LongGuns/Flamethrower/Flamethrower',
-      damagePerShot: [0, 0, 0, 35],
+      damagePerShot: [0, 0, 0, 35]
     });
 
     assert.strictEqual(damage.heat, 35);
@@ -90,7 +90,7 @@ describe('addDamage', () => {
     const damage = parseWeapon({
       name: 'Zero Weapon',
       uniqueName: '/Lotus/Weapons/Tenno/LongGuns/Zero/Zero',
-      damagePerShot: [0, 0, 0],
+      damagePerShot: [0, 0, 0]
     });
 
     assert.strictEqual(damage, undefined);

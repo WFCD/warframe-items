@@ -27,7 +27,7 @@ export interface Item {
   category: string;
   productCategory?: string;
   imageName: string;
-  components?: Item[];
+  components?: (Item | ComponentRef)[];
   abilities?: Ability[];
   isAugment?: boolean;
   tradable?: boolean;
@@ -258,10 +258,16 @@ export interface RawDrop {
   rarity: string;
 }
 
+export interface ComponentRef {
+  uniqueName: string;
+  itemCount: number;
+}
+
 export interface Component extends Item {
   itemCount?: number;
   parent?: string;
   parents?: string[];
+  parentUniqueNames?: string[];
   primeSellingPrice?: number;
   ducats?: number;
   drops?: Drop[];

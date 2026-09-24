@@ -164,7 +164,7 @@ export default class WikiaDataScraper<T extends { name: string }> {
         if (!item.name) {
           jsonData[`${this.luaObjectName}s`] = {
             ...jsonData[`${this.luaObjectName}s`],
-            ...jTemp,
+            ...jTemp
           };
         }
       });
@@ -175,7 +175,7 @@ export default class WikiaDataScraper<T extends { name: string }> {
           const jTemp = await convertLuaDataToJson(luaData, this.luaObjectName);
           jsonData[`${this.luaObjectName}s`] = {
             ...jsonData[`${this.luaObjectName}s`],
-            ...jTemp,
+            ...jTemp
           };
         })
       );

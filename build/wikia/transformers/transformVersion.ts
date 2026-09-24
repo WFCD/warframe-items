@@ -24,7 +24,7 @@ export default (oldVersion: OldVersion): WikiaVersion | undefined => {
       url: `https://wiki.warframe.com/w/${encodeURIComponent(linkTarget.replace(/\s/g, '_'))}`,
       aliases: Aliases ?? [],
       parent: Parent,
-      date: Date,
+      date: Date
     };
   } catch (error) {
     console.error(`Error parsing ${oldVersion.Name}`);

@@ -7,7 +7,7 @@ const POLARITIES: Record<string, string> = {
   R: 'unairu',
   Aura: 'aura',
   Y: 'penjaga',
-  O: 'any',
+  O: 'any'
 };
 
 export default POLARITIES;

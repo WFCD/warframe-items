@@ -10,7 +10,7 @@ export default (): HttpsProxyAgent<string> | SOCKS5Agent | undefined => {
           socksHost: process.env.PROXY_SOCKS5_HOST,
           socksPort: process.env.PROXY_SOCKS5_PORT ? parseInt(process.env.PROXY_SOCKS5_PORT, 10) : undefined,
           socksUsername: process.env.PROXY_SOCKS5_USER,
-          socksPassword: process.env.PROXY_SOCKS5_PASS,
+          socksPassword: process.env.PROXY_SOCKS5_PASS
         });
       }
       console.warn('SOCKS5 proxy is selected but no configuration is provided.');

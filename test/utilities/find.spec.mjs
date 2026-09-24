@@ -13,30 +13,48 @@ describe('#loadMods', () => {
     /** @type {ModResolveable} */
     const sampleArcane = {
       uniqueName: '/Lotus/Upgrades/CosmeticEnhancers/Utility/GolemArcaneRadialEnergyOnEnergyPickup',
-      rank: 5,
+      rank: 5
     };
 
     const arcaneEnergize = loadMods([sampleArcane]);
+    const expected = items.find((i) => i.name === 'Arcane Energize');
+    assert.ok(expected, 'Arcane Energize should exist');
 
-    assert.deepEqual(
-      marshall(arcaneEnergize.arcanes[0]),
-      marshall(items.find((i) => i.name === 'Arcane Energize')),
-      'Arcane energize invalid'
-    );
+    const normalized = marshall({
+      ...expected,
+      rank: 5,
+      levelStats: expected.levelStats?.[5] ?? expected.levelStats
+    });
+    delete normalized.drops;
+    delete normalized.patchlogs;
+    delete normalized.tradable;
+
+    assert.deepEqual(marshall(arcaneEnergize.arcanes[0]), normalized, 'Arcane energize invalid');
   });
   it('Should parse a mod correctly', () => {
     const sampleMod = {
       uniqueName: '/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod',
-      rank: 5,
+      rank: 5
     };
 
     const hunterCommand = loadMods([sampleMod]);
-
-    assert.deepEqual(
-      hunterCommand.mods[0],
-      items.find((i) => i.uniqueName === '/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod'),
-      'Mod mismatch'
+    const expected = items.find(
+      (i) => i.uniqueName === '/Lotus/Upgrades/Mods/Sets/Hunter/CompanionHunterCommandMod'
     );
+    assert.ok(expected, 'Hunter Command should exist');
+
+    // loadMods clones/mutates: sets rank, collapses levelStats, strips drops/tradable/transmutable
+    const normalized = marshall({
+      ...expected,
+      rank: 5,
+      levelStats: expected.levelStats?.[5] ?? expected.levelStats
+    });
+    delete normalized.drops;
+    delete normalized.patchlogs;
+    delete normalized.tradable;
+    delete normalized.transmutable;
+
+    assert.deepEqual(marshall(hunterCommand.mods[0]), normalized, 'Mod mismatch');
   });
   it('Should parse a riven mod correctly', () => {
     const sampleRiven = {
@@ -44,12 +62,12 @@ describe('#loadMods', () => {
       rank: 8,
       buffs: [
         { tag: 'WeaponCritDamageMod', val: 0.3296302411049886 },
-        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 },
+        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 }
       ],
       curses: [{ tag: 'WeaponAmmoMaxMod', val: 0.5835381164993515 }],
       compat: '/Lotus/Weapons/Grineer/LongGuns/GrineerM16Homage/GrineerM16Rifle',
       lvlReq: 15,
-      pol: 'AP_DEFENSE',
+      pol: 'AP_DEFENSE'
     };
 
     const rivenMod = loadMods([sampleRiven]);
@@ -62,12 +80,12 @@ describe('#loadMods', () => {
       category: 'Mods',
       buffs: [
         { tag: 'WeaponCritDamageMod', val: 0.3296302411049886 },
-        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 },
+        { tag: 'WeaponCritChanceMod', val: 0.4403982743997111 }
       ],
       curses: [{ tag: 'WeaponAmmoMaxMod', val: 0.5835381164993515 }],
       masteryReq: 15,
       wikiaThumbnail: undefined,
-      wikiaUrl: undefined,
+      wikiaUrl: undefined
     };
 
     // ignore some fields
@@ -88,7 +106,7 @@ describe('#loadMods', () => {
   });
   it('should handle being passed a mod that should not have a rank assigned', () => {
     const sampleParazonMod = {
-      uniqueName: '/Lotus/Upgrades/Mods/DataSpike/Cipher/AutoHackMod',
+      uniqueName: '/Lotus/Upgrades/Mods/DataSpike/Cipher/AutoHackMod'
     };
     const parazonMod = loadMods([sampleParazonMod]);
     assert.deepEqual(

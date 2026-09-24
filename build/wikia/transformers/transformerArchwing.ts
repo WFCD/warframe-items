@@ -41,7 +41,7 @@ export default (
       sprint: Sprint,
       introduced: Introduced,
       vaulted: Vaulted ?? undefined,
-      thumbnail: imageUrls[Image ?? ''],
+      thumbnail: imageUrls[Image ?? '']
     };
     newWings = transformPolarity(oldWings, newWings);
   } catch (error) {
