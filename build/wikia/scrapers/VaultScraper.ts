@@ -11,9 +11,12 @@ export default class VaultScraper {
   async scrape(): Promise<VaultData[]> {
     const vaultInfoWikia = await get('https://wiki.warframe.com/w/Prime_Vault', true, true);
     const $ = load(vaultInfoWikia as string);
-    // Since data attributes are generated aferwards, we cannot rely on them to find the tables containing vaulted items
-    const tables = $('#mw-customcollapsible-vaulted > div > div > table').toArray();
-    const [vaultedItems, formerlyVaulted, notYetVaulted, neverVaulted] = tables;
+    const findTable = (title: string) =>
+      $(`.tabbertab[data-title="${title}"] table[data-tableid="CollectedPrimes"]`).get(0);
+    const vaultedItems = findTable('Vaulted Items');
+    const formerlyVaulted = findTable('Formerly Vaulted');
+    const notYetVaulted = findTable('Not Yet Vaulted');
+    const neverVaulted = findTable('Never Vaulted');
     if (!vaultedItems || !formerlyVaulted || !notYetVaulted || !neverVaulted) {
       throw new Error('Could not find the tables containing vaulted items on wiki page.');
     }
