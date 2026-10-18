@@ -832,6 +832,7 @@ declare module '@wfcd/items' {
       | 'Orokin'
       | 'Perrin Sequence'
       | 'Perita'
+      | 'Praghasa'
       | 'The Perrin Sequence'
       | 'Prime'
       | 'Prisma'
