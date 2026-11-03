@@ -80,6 +80,14 @@ const title = (str = ''): string =>
     .replace(/'S /gi, '\'s ')
     .replace(/'S$/gi, '\'s');
 
+/**
+ * Remove all DE glyph tags in names,
+ * such as <Archwing>, <Shard_red_simple>, <Retro_tm> and <Reputation_small>
+ * @param name name to be cleaned
+ * @returns name without glyph tags
+ */
+const stripGlyphs = (name: string): string => name.replace(/ ?<[^>]+>/g, '').trim();
+
 const warnings: Warnings = {
   missingImage: [],
   missingDucats: [],
@@ -446,9 +454,7 @@ class Parser {
       item.isArchwing = true;
     }
 
-    // Remove all DE glyph tags in names,
-    // such as <Archwing>, <Shard_red_simple>, <Retro_tm> and <Reputation_small>
-    item.name = item.name.replace(/ ?<[^>]+>/g, '').trim();
+    item.name = stripGlyphs(item.name);
 
     // Fix Mk1 weapons not matching wikia url
     if (item.name.includes('Mk1')) {
@@ -1575,6 +1581,8 @@ class Parser {
                 (target as never)[key] = (match as never)[key];
               }
             });
+            const localeItem = i18nArr[id]?.[locale];
+            if (localeItem?.name) localeItem.name = stripGlyphs(localeItem.name);
             return false;
           }
           return true;

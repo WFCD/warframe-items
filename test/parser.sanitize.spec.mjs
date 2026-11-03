@@ -26,4 +26,19 @@ describe('sanitize', () => {
     assert.strictEqual(item.name, 'Odonata');
     assert.strictEqual(item.isArchwing, true);
   });
+
+  it('should also strip the glyph from localized names', () => {
+    const shardId = '/Lotus/Types/Gameplay/NarmerSorties/ArchonCrystalNira';
+    const data = { Misc: [{ uniqueName: shardId, name: 'Amber Archon Shard', category: 'Misc' }] };
+    const i18n = parser.applyI18n(data, {
+      en: [],
+      de: [
+        {
+          category: 'Misc',
+          data: [{ uniqueName: shardId, name: '<SHARD_YELLOW_SIMPLE> Safrangelbe Archon Scherbe' }]
+        }
+      ]
+    });
+    assert.strictEqual(i18n[shardId].de.name, 'Safrangelbe Archon Scherbe');
+  });
 });
