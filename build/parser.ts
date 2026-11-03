@@ -436,16 +436,19 @@ class Parser {
       item.name = title(item.name);
     }
 
-    // Remove <Archwing> from archwing names, add archwing key instead
+    // Add archwing key before the <Archwing> tag is removed below
     if (
       item.name
       && (item.name.includes('<Archwing>')
         || item.uniqueName.includes('Tenno/Archwing')
         || item.uniqueName.includes('HeavyWeapons'))
     ) {
-      item.name = item.name.replace(/<Archwing> /, '');
       item.isArchwing = true;
     }
+
+    // Remove all DE glyph tags in names,
+    // such as <Archwing>, <Shard_red_simple>, <Retro_tm> and <Reputation_small>
+    item.name = item.name.replace(/ ?<[^>]+>/g, '').trim();
 
     // Fix Mk1 weapons not matching wikia url
     if (item.name.includes('Mk1')) {
