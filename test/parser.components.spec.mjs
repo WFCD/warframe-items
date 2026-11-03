@@ -13,6 +13,7 @@ describe('parser component catalog helpers', () => {
     assert.strictEqual(parser.stripParentFromComponentName('Wyrm Prime: Cerebrum', 'Wyrm Prime'), 'Cerebrum');
     assert.strictEqual(parser.stripParentFromComponentName('Ash: Chassis', 'Ash'), 'Chassis');
     assert.strictEqual(parser.stripParentFromComponentName('Chassis', 'Ash'), 'Chassis');
+    assert.strictEqual(parser.stripParentFromComponentName('Odonata Harness', '<ARCHWING> Odonata'), 'Harness');
   });
 
   it('extractComponentCatalog replaces parent components with refs', () => {

@@ -405,7 +405,7 @@ class Parser {
       // name, so it's easier to work with them. This is especially critical
       // for parsing trade chat data.
       if (override.uniqueName.includes('/Recipes') || item.tradable) {
-        override.name = override.name.replace(`${title(item.name).replace(/<Archwing> /, '')} `, '');
+        override.name = override.name.replace(`${stripGlyphs(title(item.name))} `, '');
       }
       components[i] = override;
 
@@ -1516,7 +1516,7 @@ class Parser {
    */
   stripParentFromComponentName(name: string, parentName: string): string {
     if (!name || !parentName) return name;
-    const parent = parentName.replace(/<Archwing> /, '');
+    const parent = stripGlyphs(parentName);
     const patterns = [`${parent}: `, `${parent} `, `${title(parent)}: `, `${title(parent)} `];
     for (const pattern of patterns) {
       if (name.startsWith(pattern)) {
