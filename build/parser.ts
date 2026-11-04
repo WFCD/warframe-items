@@ -80,6 +80,14 @@ const title = (str = ''): string =>
     .replace(/'S /gi, '\'s ')
     .replace(/'S$/gi, '\'s');
 
+/**
+ * Remove all DE glyph tags in names,
+ * such as <Archwing>, <Shard_red_simple>, <Retro_tm> and <Reputation_small>
+ * @param name name to be cleaned
+ * @returns name without glyph tags
+ */
+const stripGlyphs = (name: string): string => name.replace(/ ?<[^>]+>/g, '').trim();
+
 const warnings: Warnings = {
   missingImage: [],
   missingDucats: [],
@@ -397,7 +405,7 @@ class Parser {
       // name, so it's easier to work with them. This is especially critical
       // for parsing trade chat data.
       if (override.uniqueName.includes('/Recipes') || item.tradable) {
-        override.name = override.name.replace(`${title(item.name).replace(/<Archwing> /, '')} `, '');
+        override.name = override.name.replace(`${stripGlyphs(title(item.name))} `, '');
       }
       components[i] = override;
 
@@ -436,16 +444,17 @@ class Parser {
       item.name = title(item.name);
     }
 
-    // Remove <Archwing> from archwing names, add archwing key instead
+    // Add archwing key before the <Archwing> tag is removed below
     if (
       item.name
       && (item.name.includes('<Archwing>')
         || item.uniqueName.includes('Tenno/Archwing')
         || item.uniqueName.includes('HeavyWeapons'))
     ) {
-      item.name = item.name.replace(/<Archwing> /, '');
       item.isArchwing = true;
     }
+
+    item.name = stripGlyphs(item.name);
 
     // Fix Mk1 weapons not matching wikia url
     if (item.name.includes('Mk1')) {
@@ -1507,7 +1516,7 @@ class Parser {
    */
   stripParentFromComponentName(name: string, parentName: string): string {
     if (!name || !parentName) return name;
-    const parent = parentName.replace(/<Archwing> /, '');
+    const parent = stripGlyphs(parentName);
     const patterns = [`${parent}: `, `${parent} `, `${title(parent)}: `, `${title(parent)} `];
     for (const pattern of patterns) {
       if (name.startsWith(pattern)) {
@@ -1572,6 +1581,8 @@ class Parser {
                 (target as never)[key] = (match as never)[key];
               }
             });
+            const localeItem = i18nArr[id]?.[locale];
+            if (localeItem?.name) localeItem.name = stripGlyphs(localeItem.name);
             return false;
           }
           return true;
