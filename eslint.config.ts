@@ -42,7 +42,11 @@ export default defineConfig(
           ignoreRegExpLiterals: true,
           ignoreComments: true
         }
-      ]
+      ],
+      '@stylistic/quotes': ['error', 'single', {
+        avoidEscape: true,
+        allowTemplateLiterals: 'always'
+      }]
     }
   },
   // TypeScript strict rules only for .ts files
