@@ -796,6 +796,7 @@ declare module '@wfcd/items' {
       | 'Arbiters of Hexis'
       | 'Archimedea'
       | 'Baro'
+      | "Baro Ki'Teer"
       | 'Boss Fight'
       | 'Cephalon'
       | 'Cephalon Simaris'
@@ -808,7 +809,7 @@ declare module '@wfcd/items' {
       | 'Duviri'
       | 'Entrati'
       | 'Event'
-      | 'Follie\'s Hunt'
+      | "Follie's Hunt"
       | 'Focus'
       | 'Founder'
       | 'Grineer'
